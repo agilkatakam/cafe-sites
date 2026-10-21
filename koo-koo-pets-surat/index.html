@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Koo Koo Pet Shop | Surat</title>
+<meta name="description" content="Koo Koo is a pet shop and veterinary clinic at Silver Point, Puna Gam, Surat. Grooming, supplies and care under one roof. Call +91 99792 95134.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #18191b;
+  --surface: #222427;
+  --ink: #eff0f1;
+  --muted: #9c9ea3;
+  --soft: #b9bcc0;
+  --accent: #ff4a1f;
+  --accent-ink: #18191b;
+  --pad: 24px;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Clash Grotesk", sans-serif;
+  font-size: var(--step-body);
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+img, video { display: block; }
+a { color: inherit; }
+.topbar { height: 10px; background: var(--accent); }
+.desat { filter: grayscale(0.85) contrast(1.02); }
+
+/* ---------- hero: text band then sheet ---------- */
+.hero { padding: 34px var(--pad) 0; }
+.band {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14px;
+  font-size: 16px;
+  line-height: 1.45;
+  align-items: start;
+}
+.band h1 { font-size: 16px; font-weight: 500; letter-spacing: -0.01em; }
+.band .what { grid-column: 2; }
+.band .svc { grid-column: 3; }
+.band .rated { grid-column: 5; }
+.band .links { grid-column: 7; text-align: right; }
+.band ul { list-style: none; }
+.band li { color: var(--soft); }
+.band a { text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s ease; }
+.band a:hover { color: var(--accent); }
+.band .links a { display: block; margin-bottom: 6px; }
+.band .links a.call {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: 10px 16px; margin-top: 8px;
+  background: var(--accent); color: var(--accent-ink);
+  font-weight: 500; text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.band .links a.call:hover { transform: translateY(-2px); color: var(--accent-ink); }
+.ground { height: 160px; }
+
+.sheet {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 40px 14px;
+  padding: 0 var(--pad);
+  align-items: start;
+}
+.sheet figure { margin: 0; }
+.sheet img { width: 100%; height: auto; }
+.sheet .lead { grid-column: 1 / span 4; }
+.sheet .run-title { font-size: 16px; font-weight: 500; }
+
+/* ---------- gallery: dense masonry ---------- */
+.gallery { padding: 110px var(--pad); }
+.statement {
+  font-size: 22px; font-weight: 400; line-height: 1.35;
+  max-width: 30ch;
+  margin-left: 55%;
+  margin-bottom: 56px;
+  letter-spacing: -0.01em;
+}
+.masonry { columns: 6; column-gap: 4px; }
+.masonry figure { break-inside: avoid; margin: 0 0 4px; position: relative; }
+.masonry img { width: 100%; height: auto; }
+.masonry figcaption { font-size: var(--step-small); color: var(--muted); padding: 6px 0 14px; }
+.feature-tile { width: 280px; margin-bottom: 4px; }
+.feature-tile video, .feature-tile img { width: 280px; height: 160px; object-fit: cover; }
+
+/* ---------- features: one-size name columns ---------- */
+.features { padding: 110px var(--pad); position: relative; }
+.features h2 { font-size: 28px; font-weight: 500; letter-spacing: -0.01em; margin-bottom: 56px; }
+.feat-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+.feat-group h3 { font-size: 17px; font-weight: 500; margin-bottom: 14px; }
+.feat-group ul { list-style: none; }
+.feat-group li { font-size: 17px; line-height: 1.25; color: var(--soft); padding: 4px 0; transition: color 0.2s ease; cursor: default; }
+.feat-group li:hover, .feat-group li.on { color: var(--ink); }
+.feat-group .sum { display: none; }
+#g1 { grid-column: 1 / span 3; }
+#g2 { grid-column: 4 / span 3; }
+#g3 { grid-column: 7 / span 3; }
+.preview {
+  grid-column: 10 / span 3;
+  position: sticky; top: 120px;
+  align-self: start;
+  aspect-ratio: 4/3;
+}
+.preview img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; opacity: 0; transition: opacity 0.24s ease; }
+.preview img.on { opacity: 1; }
+
+/* ---------- intro ---------- */
+.intro { padding: 110px var(--pad) 90px; }
+.intro h2 { font-size: var(--step-small); font-weight: 500; color: var(--muted); margin-left: 15%; margin-bottom: 24px; letter-spacing: 0.02em; }
+.intro .narrow { max-width: 330px; margin-left: 15%; }
+.intro p { font-size: 16px; line-height: 1.5; margin-bottom: 1em; }
+.intro p.first { font-weight: 500; }
+.intro p:not(.first) { color: var(--soft); }
+
+/* ---------- testimonial ---------- */
+.testimonial { padding: 110px var(--pad); display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; align-items: start; }
+.testimonial h2 { grid-column: 1 / span 2; font-size: 15px; font-weight: 500; }
+.tframes { grid-column: 3 / span 10; display: grid; grid-template-columns: 4fr 3fr 3fr; gap: 8px; }
+.tframes img { width: 100%; height: 190px; object-fit: cover; }
+.tframes .who { font-size: 15px; margin-top: 10px; }
+.tframes .who b { font-weight: 500; color: var(--ink); display: block; }
+.tframes .who span { color: var(--muted); display: block; }
+
+/* ---------- cta ---------- */
+.cta { padding: 140px var(--pad) 110px; background: var(--surface); }
+.cta h2 {
+  font-size: 22px; font-weight: 400; letter-spacing: -0.01em;
+  max-width: 34ch; line-height: 1.35;
+  margin-left: 15%;
+}
+.cta .row { margin-left: 15%; margin-top: 24px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.button {
+  display: inline-flex; align-items: center;
+  min-height: 44px;
+  background: var(--accent); color: var(--accent-ink);
+  font-weight: 500; font-size: 16px;
+  text-decoration: none;
+  padding: 11px 18px;
+  transition: transform 0.2s ease;
+}
+.button:hover { transform: translateY(-2px); }
+.cta .addr { margin-left: 15%; margin-top: 20px; font-size: 16px; color: var(--soft); }
+.cta .mail { font-size: 16px; text-decoration: underline; text-underline-offset: 3px; }
+.cta .mail:hover { color: var(--accent); }
+
+/* ---------- footer ---------- */
+footer { padding: 0 var(--pad) 30px; }
+.footgrid { display: grid; grid-template-columns: 1fr auto 1fr; align-items: baseline; font-size: var(--step-small); }
+.footgrid .what { color: var(--muted); }
+.footgrid .mid { display: flex; gap: 24px; }
+.footgrid .mid a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.footgrid .mid a:hover { color: var(--accent); }
+.footgrid .right { text-align: right; color: var(--muted); }
+.credits { margin-top: 10px; font-size: var(--step-small); color: var(--muted); }
+.credits span { display: block; }
+
+/* ---------- reveal ---------- */
+.reveal { transform: translateY(18px); transition: transform 0.7s ease; }
+.reveal.in { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transform: none; transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- phone ---------- */
+.fab-call { display: none; }
+@media (max-width: 860px) {
+  :root { --pad: 20px; }
+  .band { grid-template-columns: 1fr 1fr; gap: 24px 12px; font-size: 14px; }
+  .band h1 { font-size: 14px; grid-column: 1; }
+  .band .what { grid-column: 2; }
+  .band .svc { grid-column: 1; }
+  .band .rated { grid-column: 2; }
+  .band .links { grid-column: 1 / span 2; text-align: left; }
+  .band .links a { display: inline-block; margin: 0 20px 6px 0; }
+  .band .links a.call { display: inline-flex; margin-top: 4px; }
+  .ground { height: 80px; }
+  .sheet { grid-template-columns: 1fr 1fr; gap: 32px 12px; }
+  .sheet .lead { grid-column: 1 / span 2; }
+  .gallery { padding: 80px var(--pad); }
+  .statement { margin-left: 0; font-size: 19px; max-width: none; }
+  .masonry { columns: 3; }
+  .masonry figcaption { font-size: 13px; }
+  .feature-tile { width: 100%; }
+  .feature-tile video, .feature-tile img { width: 100%; height: 160px; }
+  .features { padding: 80px var(--pad); }
+  .features h2 { font-size: 24px; margin-bottom: 40px; }
+  .feat-grid { display: block; }
+  .preview { display: none; }
+  .feat-group { margin-bottom: 36px; }
+  .feat-group li { font-size: 18px; line-height: 1.4; }
+  .feat-group .sum { display: block; font-size: 16px; color: var(--soft); margin-top: 10px; }
+  .intro { padding: 72px var(--pad) 80px; }
+  .intro h2, .intro .narrow { margin-left: 0; }
+  .intro .narrow { max-width: 78%; }
+  .testimonial { display: block; padding: 80px var(--pad); }
+  .testimonial h2 { margin-bottom: 24px; }
+  .tframes { display: block; }
+  .tframes figure { margin-bottom: 36px; }
+  .tframes img { height: 110px; }
+  .cta { padding: 110px var(--pad) 90px; }
+  .cta h2 { margin-left: 0; font-size: 18px; }
+  .cta .row { margin-left: 0; }
+  .cta .addr { margin-left: 0; }
+  footer { padding: 90px var(--pad) 84px; }
+  .footgrid { grid-template-columns: 1fr; gap: 8px; }
+  .footgrid .right { text-align: left; }
+}
+@media (max-width: 640px) {
+  .fab-call {
+    display: block; position: fixed; right: 16px; bottom: 16px; z-index: 50;
+    font-size: 14px; font-weight: 500;
+    background: var(--accent); color: var(--accent-ink);
+    padding: 12px 18px; text-decoration: none;
+    opacity: 0; transform: translateY(8px); pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  .fab-call.show { opacity: 1; transform: none; pointer-events: auto; }
+}
+</style>
+</head>
+<body>
+<div class="topbar" aria-hidden="true"></div>
+
+<header class="hero" id="top">
+  <div class="band">
+    <h1>Koo Koo Pet Shop</h1>
+    <p class="what">A pet shop and veterinary clinic in Puna Gam, Surat.</p>
+    <ul class="svc">
+      <li>Grooming</li>
+      <li>Baths and coat care</li>
+      <li>Haircuts and styling</li>
+      <li>Ear and eye care</li>
+      <li>Nail and paw care</li>
+      <li>Veterinary clinic</li>
+    </ul>
+    <ul class="rated">
+      <li>4.7 on Magicpin</li>
+      <li>250 online ratings</li>
+      <li>Free checkups for street animals</li>
+    </ul>
+    <div class="links">
+      <a href="https://www.facebook.com/people/Koo-koo-pet-shop/100082998354210/">Facebook</a>
+      <a href="mailto:kookoopetshop369@gmail.com">Email</a>
+      <a class="call" href="tel:+919979295134">Call the shop</a>
+    </div>
+  </div>
+  <div class="ground" aria-hidden="true"></div>
+
+  <div class="sheet">
+    <figure class="lead reveal"><img class="desat" src="assets/golden-sea-lead.jpg" width="800" height="839" alt="A dog running out of the sea"></figure>
+    <p class="run-title reveal">The clinic</p>
+    <figure class="reveal"><img class="desat" src="assets/clinic-dog-dogonly.jpg" width="672" height="1344" alt="A golden retriever on the exam table, held by the clinic team"></figure>
+    <figure class="reveal"><img class="desat" src="assets/clinic-cat-crop.jpg" width="736" height="832" alt="A cat being checked on the steel exam table"></figure>
+    <p class="run-title reveal">The shop</p>
+    <figure class="reveal"><img class="desat" src="assets/cover.jpg" width="1200" height="679" alt="The Koo Koo Pet Shop wordmark on white"></figure>
+    <p class="run-title reveal">Good company</p>
+    <figure class="reveal"><img class="desat" src="assets/golden-sea.jpg" width="800" height="1199" alt="A golden retriever by the water"></figure>
+    <figure class="reveal"><img class="desat" src="assets/cat-orange.jpg" width="800" height="1200" alt="An orange cat sitting upright"></figure>
+    <figure class="reveal"><img class="desat" src="assets/pup-paws.jpg" width="800" height="1000" alt="Puppy paws in the grass"></figure>
+    <figure class="reveal"><img class="desat" src="assets/cat-tabby.jpg" width="800" height="614" alt="A tabby cat watching from a chair"></figure>
+    <figure class="reveal"><img class="desat" src="assets/golden-flower.jpg" width="800" height="1422" alt="A golden retriever among flowers"></figure>
+  </div>
+</header>
+
+<section class="gallery" id="sheet">
+  <h2 class="statement reveal">Supplies, grooming and a clinic under one roof in Puna Gam.</h2>
+  <figure class="feature-tile reveal">
+    <video autoplay muted loop playsinline poster="assets/nails-trim.jpg" width="854" height="480">
+      <source src="assets/nails-trim.webm" type="video/webm">
+    </video>
+    <figcaption>Nail care, on film</figcaption>
+  </figure>
+  <div class="masonry">
+    <figure class="reveal"><img class="desat" src="assets/clinic-dog-dogonly.jpg" width="672" height="1344" alt="A golden retriever on the exam table"><figcaption>Exam day, clinic</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/golden-grass.jpg" width="800" height="1200" alt="A golden retriever in tall grass"><figcaption>Golden hour, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/cat-yellow.jpg" width="800" height="800" alt="A pale cat looking up"><figcaption>Whiskers, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/clinic-cat-crop.jpg" width="736" height="832" alt="A cat on the exam table"><figcaption>Cat checkup, clinic</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/pup-flower.jpg" width="800" height="1283" alt="A puppy sitting in flowers"><figcaption>First spring, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/cover.jpg" width="1200" height="679" alt="The Koo Koo Pet Shop wordmark on white"><figcaption>The card, print</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/cat-orange-w.jpg" width="800" height="533" alt="An orange cat, wide crop"><figcaption>Sunny spot, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/golden-sea-t.jpg" width="700" height="875" alt="A golden retriever portrait"><figcaption>Old friend, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/cat-tabby.jpg" width="800" height="614" alt="A tabby cat on a chair"><figcaption>Tabby, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/pup-paws.jpg" width="800" height="1000" alt="Puppy paws close up"><figcaption>Little feet, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/golden-flower.jpg" width="800" height="1422" alt="A golden retriever in flowers"><figcaption>In bloom, guest</figcaption></figure>
+    <figure class="reveal"><img class="desat" src="assets/cat-orange.jpg" width="800" height="1200" alt="An orange cat sitting tall"><figcaption>Sentinel, guest</figcaption></figure>
+  </div>
+</section>
+
+<section class="features" id="do">
+  <h2 class="reveal">What we do</h2>
+  <div class="feat-grid">
+    <div class="feat-group reveal" id="g1">
+      <h3>Grooming</h3>
+      <ul>
+        <li data-img="assets/golden-sea.jpg">Bath and blow dry</li>
+        <li data-img="assets/pup-flower.jpg">Haircut and styling</li>
+        <li data-img="assets/golden-sea.jpg">Coat care</li>
+        <li data-img="assets/clinic-dog-dogonly.jpg">Ear and eye care</li>
+        <li data-img="assets/pup-paws.jpg">Nail and paw care</li>
+      </ul>
+      <p class="sum">Full grooms, trims and the small careful jobs, done on the table in the shop.</p>
+    </div>
+    <div class="feat-group reveal" id="g2">
+      <h3>The clinic</h3>
+      <ul>
+        <li data-img="assets/clinic-cat-crop.jpg">Checkups</li>
+        <li data-img="assets/cat-tabby.jpg">Treatment and care</li>
+        <li data-img="assets/golden-grass.jpg">Free checkups for street animals</li>
+      </ul>
+      <p class="sum">A working veterinary clinic behind the shop, kind to pets and strays alike.</p>
+    </div>
+    <div class="feat-group reveal" id="g3">
+      <h3>The shop</h3>
+      <ul>
+        <li data-img="assets/cat-orange.jpg">Pet food</li>
+        <li data-img="assets/golden-flower.jpg">Healthy treats</li>
+        <li data-img="assets/cat-tabby.jpg">Care essentials</li>
+        <li data-img="assets/golden-grass.jpg">Accessories</li>
+      </ul>
+      <p class="sum">Food, treats and everyday care essentials on the shelves.</p>
+    </div>
+    <div class="preview" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="intro" id="about">
+  <h2 class="reveal">Why Koo Koo</h2>
+  <div class="narrow">
+    <p class="first reveal">Koo Koo is a pet shop and veterinary clinic at Silver Point, on Jivanjyot Circle in Puna Gam, Surat.</p>
+    <p class="reveal">Grooming, supplies and the clinic sit under one roof, so a bath, a bag of food and a checkup can all happen in one visit.</p>
+    <p class="reveal">Reviewers mention the polite staff, the fair prices and the well stocked shelves.</p>
+    <p class="reveal">The clinic also runs free checkups for street animals, which reviewers mention most warmly of all.</p>
+  </div>
+</section>
+
+<section class="testimonial" id="words">
+  <h2 class="reveal">Kind words</h2>
+  <div class="tframes">
+    <figure class="reveal">
+      <img class="desat" src="assets/clinic-dog-dogonly.jpg" width="672" height="1344" alt="A calm dog on the exam table">
+      <p class="who"><b>Helpful and polite staff</b><span>Praised most often in Magicpin reviews</span></p>
+    </figure>
+    <figure class="reveal">
+      <img class="desat" src="assets/clinic-cat-crop.jpg" width="736" height="832" alt="A cat at the clinic">
+      <p class="who"><b>Affordable rates</b><span>Praised in Magicpin reviews</span></p>
+    </figure>
+    <figure class="reveal">
+      <img class="desat" src="assets/golden-sea-t.jpg" width="700" height="875" alt="A golden retriever">
+      <p class="who"><b>Free checkups for street animals</b><span>Praised in Magicpin reviews</span></p>
+    </figure>
+  </div>
+</section>
+
+<section class="cta" id="call">
+  <h2 class="reveal">Call the shop about food, grooming or a checkup.</h2>
+  <div class="row reveal">
+    <a class="button" href="tel:+919979295134">Call +91 99792 95134</a>
+    <a class="mail" href="mailto:kookoopetshop369@gmail.com">kookoopetshop369@gmail.com</a>
+  </div>
+  <p class="addr reveal">G-27, Silver Point, Jivanjyot Circle, Puna Gam, Surat.</p>
+</section>
+
+<footer>
+  <div class="footgrid">
+    <span class="what">A pet shop in Surat</span>
+    <span class="mid">
+      <a href="tel:+919979295134">Call</a>
+      <a href="mailto:kookoopetshop369@gmail.com">Email</a>
+      <a href="https://www.facebook.com/people/Koo-koo-pet-shop/100082998354210/">Facebook</a>
+    </span>
+    <span class="right">&copy; 2026</span>
+  </div>
+  <p class="credits">
+    <span>Shop photos from Koo Koo&#39;s own page.</span>
+    <span>Pet portraits from Unsplash.</span>
+    <span>Film: Amuzujoe, CC BY-SA 4.0, Wikimedia Commons.</span>
+  </p>
+</footer>
+
+<a class="fab-call" href="tel:+919979295134">Call the shop</a>
+
+<script>
+(function () {
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Features index with preview
+  var frame = document.querySelector(".preview");
+  var items = document.querySelectorAll(".feat-group li[data-img]");
+  var cache = {};
+  items.forEach(function (li) {
+    var src = li.getAttribute("data-img");
+    var im = cache[src];
+    if (!im) {
+      im = document.createElement("img");
+      im.src = src; im.alt = ""; im.width = 900; im.height = 675;
+      im.className = "desat";
+      cache[src] = im;
+      frame.appendChild(im);
+    }
+    function on() {
+      var cur = frame.querySelector("img.on");
+      if (cur) cur.classList.remove("on");
+      im.classList.add("on");
+      items.forEach(function (x) { x.classList.remove("on"); });
+      li.classList.add("on");
+    }
+    li.addEventListener("mouseenter", on);
+    li.addEventListener("focus", on);
+  });
+  var first = items[0];
+  if (first) { cache[first.getAttribute("data-img")].classList.add("on"); first.classList.add("on"); }
+
+  // Mobile call action appears only past the hero
+  var fab = document.querySelector(".fab-call");
+  function fabT() { if (fab) fab.classList.toggle("show", window.scrollY > 520); }
+  window.addEventListener("scroll", fabT, { passive: true });
+  fabT();
+
+  // Entrances, transform only
+  var revs = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !reduced) {
+    var rio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); rio.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    revs.forEach(function (r) { rio.observe(r); });
+  } else {
+    revs.forEach(function (r) { r.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
