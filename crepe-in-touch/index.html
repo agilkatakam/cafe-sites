@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crêpe In Touch — Crêperie & café, Pondicherry</title>
+<meta name="description" content="Crêpe In Touch is a crêperie and café in an old house in the MG Road area of Pondicherry. Sweet and savoury crêpes, quiches, big salads, cakes. Open Tuesday to Sunday, 9 am to 6 pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0a; --surface:#151515; --ink:#efefef; --muted:#8c8c8c;
+  --accent:#b11226; --accent-ink:#ffffff;
+  --field-1:#efefef; --field-1-ink:#0a0a0a;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2.5rem,1.2rem + 5vw,5.5rem);
+  --margin:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Red Hat Text',system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,.display{font-family:'Red Hat Display',sans-serif;font-weight:900;letter-spacing:-0.03em;line-height:0.92;text-transform:uppercase}
+
+/* ---------- hero: pinned title over portraits ---------- */
+.hero{position:relative}
+.hero-stage{position:sticky;top:0;height:100svh;overflow:hidden;background-color:#ddd5c7;transition:background-color 600ms ease}
+.hero-title{position:absolute;left:0;right:0;top:120px;text-align:center;z-index:3;
+  font-size:clamp(64px,9.2vw,150px);color:var(--accent);white-space:nowrap}
+.hero-wordmark{position:absolute;top:24px;left:var(--margin);z-index:4;font-size:15px;font-weight:500;color:#0a0a0a}
+.hero-menu-link{position:absolute;top:24px;right:var(--margin);z-index:4;font-size:15px;font-weight:500;text-decoration:none;color:#0a0a0a}
+.hero-menu-link:hover{color:var(--accent)}
+.hero-figure{position:absolute;left:50%;transform:translateX(-50%);top:90px;bottom:0;width:37%;z-index:2}
+.hero-figure img{width:100%;height:100%;object-fit:cover}
+.hero-support{position:absolute;left:var(--margin);bottom:32px;z-index:4;max-width:26ch;font-size:18px;font-weight:500;line-height:1.4;color:#0a0a0a}
+.hero-action{position:absolute;right:var(--margin);bottom:32px;z-index:4}
+.btn{display:inline-block;background:var(--bg);color:var(--ink);font-weight:500;font-size:16px;text-decoration:none;padding:14px 28px;border:0;border-radius:0;transition:transform 180ms ease}
+.btn:hover{transform:translateY(-2px);background:var(--accent);color:var(--accent-ink)}
+.hero-panels{position:relative;z-index:1}
+.hero-panel{height:100svh}
+.hero-live{margin-top:10px;font-size:var(--step-small);font-weight:400}
+.hero-live .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px}
+.hero-live .dot.closed{background:#5a5a5a}
+
+/* ---------- intro: heading captions a panorama ---------- */
+.intro{min-height:100svh;padding-top:14svh}
+.intro h2{font-size:clamp(48px,6.5vw,96px);line-height:0.95;text-align:center;max-width:14ch;margin:0 auto}
+.intro-captions{display:flex;justify-content:center;gap:48px;margin-top:28px}
+.intro-captions p{width:150px;font-size:13px;line-height:1.45;color:var(--muted)}
+.intro figure{margin-top:40px;width:100%;height:60svh;overflow:hidden}
+.intro figure img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 1400ms ease}
+.intro figure.in img,.intro figure img.in{transform:scale(1)}
+
+/* ---------- list: giant word, filled bar rows ---------- */
+.menu{max-width:640px;margin:0 auto;padding:18svh var(--margin) 12svh;container-type:inline-size}
+.menu h2{font-size:32cqw;line-height:0.8;text-align:center}
+.bars{margin-top:20px}
+details.bar{background:var(--surface);margin-bottom:6px}
+details.bar summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;
+  height:56px;padding:0 18px;font-size:16px;font-weight:500;transition:background-color 180ms ease}
+details.bar summary:hover{background:#1d1d1d}
+details.bar summary::-webkit-details-marker{display:none}
+details.bar summary .plus{font-size:20px;font-weight:400;transition:transform 200ms ease}
+details.bar[open] summary .plus{transform:rotate(45deg)}
+details.bar .panel{padding:4px 20px 20px;font-size:16px;color:var(--muted)}
+details.bar .panel strong{color:var(--ink);font-weight:500}
+
+/* ---------- gallery ---------- */
+.gallery{position:relative;min-height:100svh;background:var(--accent);overflow:hidden;padding-top:12svh}
+.gallery h2{font-size:clamp(80px,10vw,160px);line-height:0.85;text-align:center;color:var(--accent-ink);position:relative;z-index:2}
+.gallery .print{position:absolute;width:22vw;border:8px solid #fff;background:#fff;z-index:3;transition:transform 240ms ease}
+.gallery .print img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.gallery .print.a{transform:rotate(-8deg);left:7%;bottom:10%}
+.gallery .print.b{transform:rotate(6deg);right:7%;bottom:18%}
+.gallery .print:hover{transform:rotate(0deg);z-index:5}
+.gallery .note{position:absolute;left:var(--margin);bottom:24px;font-size:16px;color:var(--accent-ink);max-width:30ch;z-index:4}
+
+/* ---------- contact: address in display rows ---------- */
+.contact{padding-top:14svh}
+.contact .row{font-family:'Red Hat Display',sans-serif;font-weight:900;letter-spacing:-0.03em;line-height:1.0;text-transform:uppercase;
+  font-size:clamp(28px,4.6vw,72px);padding:0 20px;min-height:150px;display:flex;align-items:flex-end;padding-bottom:38px;text-decoration:none}
+.contact .row{margin-bottom:28px}
+.contact .row:last-child{margin-bottom:0}
+.contact .row:nth-child(odd){background:var(--surface)}
+a.row:hover{color:var(--accent)}
+.contact .greet{background:var(--accent);color:var(--accent-ink);justify-content:space-between}
+.contact .greet .arrow{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;flex:none;border-radius:50%;background:var(--accent-ink);color:var(--accent);font-size:32px;text-decoration:none;transition:transform 180ms ease}
+.contact .greet .arrow:hover{transform:translateX(4px);background:var(--bg);color:var(--ink)}
+
+/* ---------- footer: invitation over a cropped name ---------- */
+.footer{position:relative;min-height:100svh;background:var(--field-1);color:var(--field-1-ink);overflow:hidden;display:flex;flex-direction:column}
+.footer-top{display:flex;justify-content:space-between;gap:40px;padding:12svh var(--margin) 0}
+.footer-invite h2{font-size:clamp(40px,5vw,72px);line-height:0.95}
+.footer-invite .btn{margin-top:28px}
+.footer-links{display:flex;flex-direction:column;gap:10px;font-size:16px;text-align:right}
+.footer-links a{text-decoration:none}
+.footer-links a:hover{color:var(--accent)}
+.footer-credits{display:flex;justify-content:space-between;gap:16px;font-size:13px;color:#5a5a5a;padding:0 var(--margin);margin-top:auto;margin-bottom:6px;position:relative;z-index:2}
+.footer-name{font-family:'Red Hat Display',sans-serif;font-weight:900;letter-spacing:-0.05em;line-height:0.8;text-transform:uppercase;
+  font-size:26vw;white-space:nowrap;transform:translateY(30%);color:var(--field-1-ink)}
+
+/* ---------- reveals ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 700ms ease,transform 700ms ease}
+.reveal.in{opacity:1;transform:none}
+.bars .bar.reveal:nth-child(2){transition-delay:70ms}
+.bars .bar.reveal:nth-child(3){transition-delay:140ms}
+.bars .bar.reveal:nth-child(4){transition-delay:210ms}
+.bars .bar.reveal:nth-child(5){transition-delay:280ms}
+.bars .bar.reveal:nth-child(6){transition-delay:350ms}
+.contact .row.reveal:nth-child(2){transition-delay:60ms}
+.contact .row.reveal:nth-child(3){transition-delay:120ms}
+.contact .row.reveal:nth-child(4){transition-delay:180ms}
+.contact .row.reveal:nth-child(5){transition-delay:240ms}
+.contact .row.reveal:nth-child(6){transition-delay:300ms}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero-stage{transition:none}
+  .gallery .print{transition:none}
+  .intro figure img{transform:none;transition:none}
+  .btn,.contact .greet .arrow{transition:none}
+}
+
+/* ---------- phone ---------- */
+@media (max-width:900px){.gallery{min-height:88svh}.footer-invite h2{font-size:6.5vw}.footer{min-height:86svh}.hero-support{max-width:19ch}.hero-figure{width:33%}}
+@media (max-width:700px){
+  :root{--margin:16px}
+  .hero-stage{display:flex;flex-direction:column}
+  .hero-title{position:relative;z-index:3;order:1;top:auto;left:auto;right:auto;margin:64px var(--margin) 0;font-size:14.5vw;white-space:normal;line-height:0.96}
+  .hero-wordmark{font-size:13px}
+  .hero-menu-link{font-size:13px}
+  .hero-figure{position:relative;order:3;left:auto;top:auto;transform:none;flex:1;min-height:0;width:auto;margin:16px 16px 0}
+  .hero-figure img{position:absolute;inset:0;width:100%;height:100%}
+  .hero-support{position:relative;z-index:4;order:2;left:auto;bottom:auto;margin:18px var(--margin) 0;max-width:24ch;font-size:18px}
+  .hero-action{position:absolute;right:16px;bottom:16px}
+  .intro h2{font-size:12vw;text-align:left;margin:0 var(--margin)}
+  .intro-captions{flex-direction:column;gap:8px;margin:20px var(--margin) 0}
+  .intro-captions p{width:auto;font-size:14px}
+  .intro figure{height:45svh}
+  .menu{padding:14svh 16px 10svh}
+  details.bar summary{height:54px}
+  .gallery{padding-top:10svh;min-height:88svh}
+  .gallery h2{font-size:19vw}
+  .gallery .print{width:46vw}
+  .gallery .print.a{left:4%;bottom:18%}
+  .gallery .print.b{right:2%;bottom:8%}
+  .gallery .note{font-size:15px;max-width:24ch}
+  .contact .row{font-size:7.6vw;min-height:84px;padding-bottom:16px}
+  .contact .greet .arrow{width:56px;height:56px;font-size:26px}
+  .footer-top{flex-direction:column;padding-top:10svh}
+  .footer-invite h2{font-size:11vw}
+  .footer-invite .btn{display:block;text-align:center}
+  .footer-links{flex-direction:row;text-align:left;gap:18px;font-size:15px}
+  .footer-credits{flex-direction:column;gap:4px;font-size:13px}
+  .footer-name{font-size:30vw;transform:translateY(14%)}
+}
+</style>
+</head>
+<body>
+
+<!-- hero: pinned title over portraits -->
+<section class="hero" id="top">
+  <div class="hero-stage" id="heroStage">
+    <span class="hero-wordmark">Crêpe in Touch</span>
+    <a class="hero-menu-link" href="#menu">Menu</a>
+    <h1 class="hero-title" id="heroTitle">Crêpe in Touch</h1>
+    <figure class="hero-figure" id="heroFigure">
+      <img id="heroImg" src="assets/p1-courtyard.jpg" width="768" height="1024" alt="The skylit courtyard of Crêpe In Touch, red wall and wooden chairs">
+    </figure>
+    <p class="hero-support">A crêperie and café inside an old Pondicherry house — sweet and savoury crêpes, quiches, big salads, cakes.
+      <span class="hero-live" id="heroLive"><span class="dot"></span>…</span>
+    </p>
+    <div class="hero-action"><a class="btn" href="mailto:crepeintouch@gmail.com">Write to the café</a></div>
+  </div>
+  <div class="hero-panels" id="heroPanels" aria-hidden="true">
+    <div class="hero-panel" data-img="assets/p1-courtyard.jpg" data-alt="The skylit courtyard of Crêpe In Touch, red wall and wooden chairs" data-bg="#ddd5c7"></div>
+    <div class="hero-panel" data-img="assets/p2-lounge.jpg" data-alt="Lounge corner with a red wall, framed art and cane chairs" data-bg="#b9c4b2"></div>
+    <div class="hero-panel" data-img="assets/p3-easel.jpg" data-alt="A quiet corner with an easel, chalkboard and standing lamp" data-bg="#adc0c7"></div>
+    <div class="hero-panel" data-img="assets/p4-nook.jpg" data-alt="A low coffee table between wooden chairs and a painted cupboard" data-bg="#d9b8ad"></div>
+    <div class="hero-panel" data-img="assets/p5-tealtable.jpg" data-alt="Teal-painted benches and table on a red oxide floor" data-bg="#d6c9ae"></div>
+  </div>
+</section>
+
+<!-- intro: heading captions a panorama -->
+<section class="intro">
+  <h2 class="reveal">An old house, a slow table</h2>
+  <div class="intro-captions reveal">
+    <p>Crêperie and café on Needarajapaiyer Street, in the MG Road area of Pondicherry.</p>
+    <p>A kids' corner with books and games lives inside the house.</p>
+  </div>
+  <figure class="reveal">
+    <img src="assets/wide-floor.jpg" width="2000" height="973" alt="Floor seating with mattresses and low tables under purple drapes" loading="lazy">
+  </figure>
+</section>
+
+<!-- list: giant word, filled bar rows -->
+<section class="menu" id="menu">
+  <h2 class="reveal">Menu</h2>
+  <div class="bars">
+    <details class="bar reveal" open>
+      <summary>Sweet crêpes <span class="plus">+</span></summary>
+      <div class="panel"><p>On the menu every day, alongside the savoury side.</p></div>
+    </details>
+    <details class="bar reveal">
+      <summary>Savoury crêpes <span class="plus">+</span></summary>
+      <div class="panel"><p>Buckwheat galettes with fillings — guests single out the pesto, sun-dried tomato and mozzarella.</p></div>
+    </details>
+    <details class="bar reveal">
+      <summary>Quiches <span class="plus">+</span></summary>
+      <div class="panel"><p>Part of the everyday menu, as the café puts it.</p></div>
+    </details>
+    <details class="bar reveal">
+      <summary>Big salads <span class="plus">+</span></summary>
+      <div class="panel"><p>Full-plate salads — a quinoa salad gets named in reviews.</p></div>
+    </details>
+    <details class="bar reveal">
+      <summary>Cakes <span class="plus">+</span></summary>
+      <div class="panel"><p>Cakes and bakes to go with coffee.</p></div>
+    </details>
+    <details class="bar reveal">
+      <summary>Hot &amp; cold drinks <span class="plus">+</span></summary>
+      <div class="panel"><p>Coffee, iced tea and more. <strong>Kitchen takes last orders at 5:30 pm.</strong></p></div>
+    </details>
+  </div>
+</section>
+
+<!-- gallery -->
+<section class="gallery">
+  <h2 class="reveal">Sweet<br>savoury</h2>
+  <div class="print a reveal"><img src="assets/food-galette.jpg" width="800" height="446" alt="A buckwheat galette folded over salad on a plate" loading="lazy"></div>
+  <div class="print b reveal"><img src="assets/p6-outdoor.jpg" width="576" height="1152" alt="A marble-topped table outside the café" loading="lazy"></div>
+  <p class="note">Photographs by people who ate here, shared on Zomato.</p>
+</section>
+
+<!-- contact: address in display rows -->
+<section class="contact" id="contact">
+  <p class="row reveal">Crêpe In Touch</p>
+  <a class="row reveal" href="https://www.google.com/maps/search/?api=1&query=Cr%C3%AApe+In+Touch&query_place_id=ChIJxVb34H9hUzoRSdNl7oByR18">29, Needarajapaiyer St</a>
+  <p class="row reveal">Puducherry 605001</p>
+  <p class="row reveal">Tue–Sun, 9 am – 6 pm</p>
+  <p class="row reveal">Mondays closed</p>
+  <a class="row reveal" href="tel:+919787810756">+91 97878 10756</a>
+  <p class="row greet reveal">Bonjour <a class="arrow" href="mailto:crepeintouch@gmail.com" aria-label="Email the café">→</a></p>
+</section>
+
+<!-- footer: invitation over a cropped name -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-invite">
+      <h2 class="reveal">Come sit<br>on the floor</h2>
+      <a class="btn" href="mailto:crepeintouch@gmail.com">Write to the café</a>
+    </div>
+    <nav class="footer-links">
+      <a href="https://instagram.com/crepeintouch" rel="noopener">Instagram — @crepeintouch</a>
+      <a href="mailto:crepeintouch@gmail.com">crepeintouch@gmail.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Cr%C3%AApe+In+Touch&query_place_id=ChIJxVb34H9hUzoRSdNl7oByR18" rel="noopener">Google Maps</a>
+    </nav>
+  </div>
+  <div class="footer-credits">
+    <span>Photographs: guests of the café, via Zomato</span>
+    <span>Concept site made for Crêpe In Touch</span>
+  </div>
+  <div class="footer-name" aria-hidden="true">Crêpe in Touch</div>
+</footer>
+
+<script>
+/* hero: swap portraits through the pinned stage */
+(function(){
+  var panels=[].slice.call(document.querySelectorAll('.hero-panel'));
+  var img=document.getElementById('heroImg');
+  var stage=document.getElementById('heroStage');
+  var current=-1;
+  function onScroll(){
+    var idx=0;
+    panels.forEach(function(p,i){
+      var r=p.getBoundingClientRect();
+      if(r.top<=window.innerHeight*0.5) idx=i;
+    });
+    if(idx!==current){
+      current=idx;
+      var p=panels[idx];
+      img.src=p.getAttribute('data-img');
+      img.alt=p.getAttribute('data-alt');
+      stage.style.backgroundColor=p.getAttribute('data-bg');
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+
+/* live hours: Tue–Sun 9:00–18:00, Monday closed, last order 17:30 (Asia/Kolkata) */
+(function(){
+  var el=document.getElementById('heroLive');
+  function now(){ return new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'})); }
+  try{
+    var n=now(), day=n.getDay(), mins=n.getHours()*60+n.getMinutes();
+    var open=9*60, close=18*60, last=17*60+30;
+    var closedToday=(day===1);
+    var msg;
+    if(closedToday){ msg='Closed today · opens 9 am tomorrow'; }
+    else if(mins<open){ msg='Opens 9 am today'; }
+    else if(mins<last){ msg='Open now · kitchen till 5:30 pm'; }
+    else if(mins<close){ msg='Open now · till 6 pm'; }
+    else if(day===0){ msg='Closed now · opens 9 am Tuesday'; }
+    else { msg='Closed now · opens 9 am tomorrow'; }
+    var isClosed=closedToday||mins>=close||mins<open;
+    el.innerHTML='<span class="dot'+(isClosed?' closed':'')+'"></span>'+msg;
+  }catch(e){ el.textContent=''; }
+})();
+
+/* reveals */
+(function(){
+  if(!('IntersectionObserver' in window)){ document.querySelectorAll('.reveal').forEach(function(n){n.classList.add('in')}); return; }
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(n){ io.observe(n); });
+})();
+</script>
+</body>
+</html>
