@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe AURIKA — Garden Café in Sector 43, Gurugram</title>
+<meta name="description" content="Cafe AURIKA is a garden cafe in Sushant Lok Phase I, Sector 43, Gurugram. Italian & Indian fusion, signature shakes, rooftop evenings and live weekend music. Open 8am to midnight.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --garden:#223527;
+  --garden-deep:#17251b;
+  --paper:#e8e8e6;
+  --ink:#24291f;
+  --red:#a31621;
+  --ink-soft:#55604f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--garden);color:var(--ink);font-family:'Inter',sans-serif;font-size:16.5px;line-height:1.6;}
+h1,h2,.price,.wordmark,.v-label{font-family:'Cormorant Garamond',serif;}
+a{color:inherit;}
+img{display:block;width:100%;height:100%;object-fit:cover;}
+
+.page{position:relative;z-index:2;background:var(--garden);}
+.sheet{max-width:960px;margin:0 auto;background:var(--paper);border-left:3px solid var(--ink);border-right:3px solid var(--ink);padding:0 clamp(20px,5vw,72px) 88px;}
+@media (max-width:640px){.sheet{border:none;padding:0 20px 72px;}}
+
+/* ---------- menu-card head ---------- */
+.card-head{text-align:center;padding:64px 0 0;}
+.arch-mark{width:54px;height:74px;margin:0 auto;background:var(--red);border-radius:999px 999px 6px 6px;}
+h1{font-size:clamp(44px,7vw,72px);font-weight:700;letter-spacing:.01em;margin-top:22px;line-height:1;}
+.card-sub{font-size:18.5px;font-weight:600;margin-top:14px;}
+.openline{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:14px;font-size:16.5px;font-weight:600;color:var(--ink);}
+.dot{width:10px;height:10px;border-radius:50%;background:#2f7a3d;animation:dotPulse 1.8s ease-in-out infinite;}
+.dot.closed{background:var(--red);}
+@keyframes dotPulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.5);opacity:.5;}}
+.card-line{font-family:'Cormorant Garamond',serif;font-size:clamp(21px,2.4vw,26px);font-weight:600;line-height:1.35;max-width:560px;margin:24px auto 0;}
+.head-cta{margin-top:30px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:16px;padding:13px 30px;}
+.btn-ink{background:var(--ink);color:var(--paper);}
+.btn-red{background:var(--red);color:var(--paper);}
+.hero-arch{margin:48px auto 0;max-width:460px;aspect-ratio:5/6;border-radius:999px 999px 6px 6px;}
+
+/* ---------- reveals: clip img inside observed figure ---------- */
+figure{overflow:hidden;position:relative;}
+figure img{clip-path:inset(0 0 100% 0);transition:clip-path .6s ease-out;}
+figure.on img{clip-path:inset(0 0 0 0);}
+
+/* ---------- menu sections ---------- */
+section{margin-top:72px;}
+h2{font-size:clamp(32px,4.4vw,46px);font-weight:700;text-align:center;line-height:1.1;}
+.sec-note{text-align:center;font-size:17px;color:var(--ink-soft);margin-top:10px;}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:6px 56px;margin-top:34px;}
+@media (max-width:680px){.menu-cols{grid-template-columns:1fr;}}
+.dish{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:10px 0;}
+.dish .d-name{font-weight:600;font-size:17px;}
+.dish .d-note{display:block;font-weight:400;font-size:15px;color:var(--ink-soft);}
+.dish .price{font-weight:700;font-size:19px;color:var(--red);white-space:nowrap;}
+.menu-note{margin-top:22px;font-size:15.5px;color:var(--ink-soft);text-align:center;}
+
+/* ---------- gallery ---------- */
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:36px;}
+.gal figure{aspect-ratio:4/3;}
+.gal .arch{aspect-ratio:4/5;border-radius:999px 999px 6px 6px;}
+.gal figcaption{font-size:15.5px;font-weight:500;padding-top:10px;text-align:center;color:var(--ink);}
+@media (max-width:560px){.gal{grid-template-columns:1fr;}}
+
+/* ---------- evenings ---------- */
+.feat{list-style:none;max-width:600px;margin:30px auto 0;}
+.feat li{padding:12px 0 12px 34px;position:relative;font-size:17px;}
+.feat li::before{content:"";position:absolute;left:0;top:16px;width:12px;height:16px;background:var(--red);border-radius:999px 999px 3px 3px;}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px 48px;max-width:760px;margin:34px auto 0;}
+@media (max-width:640px){.visit-grid{grid-template-columns:1fr;}}
+.v-label{font-weight:700;font-size:21px;margin-bottom:6px;}
+.v-block p{font-size:16.5px;}
+.v-block a{color:var(--red);text-decoration:none;font-weight:600;}
+.v-block a:hover{text-decoration:underline;}
+
+/* ---------- curtain footer ---------- */
+footer{background:var(--garden-deep);color:var(--paper);text-align:center;padding:96px 24px 64px;}
+.foot-word{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:min(15vw,110px);line-height:1;color:var(--paper);}
+.foot-meta{margin-top:22px;font-size:16.5px;}
+.foot-meta a{color:var(--paper);text-decoration:none;font-weight:600;}
+.foot-meta a:hover{color:#d9b48a;}
+.foot-note{margin-top:20px;font-size:14.5px;color:#b8c4b2;max-width:640px;margin-left:auto;margin-right:auto;}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;}
+  figure img{clip-path:inset(0 0 0 0);}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="sheet">
+
+    <header class="card-head">
+      <div class="arch-mark" aria-hidden="true"></div>
+      <h1>Cafe AURIKA</h1>
+      <p class="card-sub">Garden café · Italian &amp; Indian fusion · Sector 43, Gurugram</p>
+      <p class="openline"><span class="dot" id="openDot" aria-hidden="true"></span><span id="openText">Open daily, 8:00am – midnight</span></p>
+      <p class="card-line">Handcrafted pasta, signature shakes and rooftop evenings under the garden lights.</p>
+      <div class="head-cta">
+        <a class="btn btn-ink" href="tel:+918826002788">Call to order</a>
+        <a class="btn btn-red" href="#menu">See the menu</a>
+      </div>
+      <figure class="hero-arch"><img src="assets/z8.jpg" alt="The grey concrete facade of Cafe AURIKA with its arched red door"></figure>
+    </header>
+
+    <section id="menu">
+      <h2>From the kitchen</h2>
+      <p class="sec-note">The plates guests keep coming back for.</p>
+      <div class="menu-cols">
+        <div class="dish"><span class="d-name">Pesto Pasta<span class="d-note">basil pesto, pine nuts, parmesan, cherry tomatoes</span></span><span class="price">₹449</span></div>
+        <div class="dish"><span class="d-name">Tomato Basil Pasta<span class="d-note">classic arrabbiata, parmesan shavings</span></span><span class="price">₹399</span></div>
+        <div class="dish"><span class="d-name">White Sauce Pasta<span class="d-note">alfredo, fettuccine, mushrooms, herbs</span></span><span class="price">₹449</span></div>
+        <div class="dish"><span class="d-name">Farmer’s Special Pizza<span class="d-note">wood-fired, seasonal veggies, herb oil</span></span><span class="price">₹549</span></div>
+        <div class="dish"><span class="d-name">Chicken Parmesan<span class="d-note">baked with mozzarella and tomato sauce</span></span><span class="price">₹549</span></div>
+        <div class="dish"><span class="d-name">Non-Veg Kebab Platter<span class="d-note">house-spice marinade, mint chutney</span></span><span class="price">₹549</span></div>
+        <div class="dish"><span class="d-name">Falafel Platter<span class="d-note">hummus, pita, Mediterranean salad</span></span><span class="price">₹399</span></div>
+        <div class="dish"><span class="d-name">Broccoli Soup<span class="d-note">toasted seeds, a hint of nutmeg</span></span><span class="price">₹249</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Shakes, coffee &amp; coolers</h2>
+      <div class="menu-cols">
+        <div class="dish"><span class="d-name">Aurika Signature Brownie Shake<span class="d-note">brownie chunks, chocolate ice cream</span></span><span class="price">₹349</span></div>
+        <div class="dish"><span class="d-name">Nutella Shake<span class="d-note">hazelnut crunch topping</span></span><span class="price">₹329</span></div>
+        <div class="dish"><span class="d-name">Cappuccino<span class="d-note">rich espresso, velvety foam</span></span><span class="price">₹199</span></div>
+        <div class="dish"><span class="d-name">Classic Hot Chocolate<span class="d-note">Belgian chocolate, whipped cream</span></span><span class="price">₹249</span></div>
+        <div class="dish"><span class="d-name">Classic Mojito<span class="d-note">fresh mint, lime, soda</span></span><span class="price">₹249</span></div>
+        <div class="dish"><span class="d-name">Chicken Sandwich<span class="d-note">grilled chicken, aioli, toasted brioche</span></span><span class="price">₹399</span></div>
+      </div>
+      <p class="menu-note">Prices from the café’s current menu. About ₹400–1,200 per person.</p>
+    </section>
+
+    <section>
+      <h2>The garden, the plates</h2>
+      <p class="sec-note">Shot at the café, on its own tables.</p>
+      <div class="gal">
+        <figure><img src="assets/z2.jpg" alt="Garden courtyard tables under green canopies"><figcaption>The garden courtyard</figcaption></figure>
+        <figure><img src="assets/z10.jpg" alt="Curved terracotta seating under a green canopy"><figcaption>A corner for slow afternoons</figcaption></figure>
+        <figure class="arch"><img src="assets/z18.jpg" alt="Avocado toast on a Cafe AURIKA plate"><figcaption>Avocado toast, on the house plate</figcaption></figure>
+        <figure class="arch"><img src="assets/z16.jpg" alt="A chicken and rice plate with Cafe AURIKA branding"><figcaption>From the kitchen</figcaption></figure>
+        <figure><img src="assets/z14.jpg" alt="A sandwich with fries, flat-laid on a wooden table"></figure>
+        <figure><img src="assets/z19.jpg" alt="A tall orange cooler with mint and lime"></figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Evenings at Aurika</h2>
+      <ul class="feat">
+        <li>Live acoustic music on weekends, in the garden</li>
+        <li>Garden and rooftop seating, day and night</li>
+        <li>Private celebrations — birthdays, dates, rooftop bookings</li>
+        <li>Order pickup or delivery by phone or WhatsApp</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Visit us</h2>
+      <div class="visit-grid">
+        <div class="v-block">
+          <div class="v-label">Hours</div>
+          <p>Open every day, 8:00am – midnight.<br>Kitchen closes at 11:30pm.</p>
+        </div>
+        <div class="v-block">
+          <div class="v-label">Address</div>
+          <p>C-14, Block C, Sushant Lok Phase I,<br>Sector 43, Gurugram, Haryana 122003.</p>
+        </div>
+        <div class="v-block">
+          <div class="v-label">Call or write</div>
+          <p><a href="tel:+918826002788">+91 88260 02788</a><br><a href="mailto:hello@cafeaurika.in">hello@cafeaurika.in</a></p>
+        </div>
+        <div class="v-block">
+          <div class="v-label">Find it</div>
+          <p><a href="https://www.google.com/maps/search/?api=1&query=Cafe+AURIKA+Sector+43+Gurugram&query_place_id=ChIJkbUeMS8ZDTkRUc1wkoY8lnU" target="_blank" rel="noopener">Open in Google Maps</a><br>Rated 4.2 on Google, across a thousand reviews.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  <div class="foot-word">AURIKA</div>
+  <p class="foot-meta">Sushant Lok Phase I, Sector 43, Gurugram · <a href="tel:+918826002788">+91 88260 02788</a> · <a href="mailto:hello@cafeaurika.in">hello@cafeaurika.in</a></p>
+  <p class="foot-note">Photographs from the café’s public listings. Menu items and prices from the café’s published menu.</p>
+</footer>
+
+<script>
+(function(){
+  // Open-now: Mon-Sun 8:00-24:00 IST (kitchen closes 23:30)
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var mins=now.getHours()*60+now.getMinutes();
+    var dot=document.getElementById('openDot'), txt=document.getElementById('openText');
+    if(mins>=480 || mins<0){ /* open from 8:00 to midnight */ }
+    if(mins>=480){
+      var left=1440-mins,h=Math.floor(left/60),m=left%60;
+      txt.textContent='Open now · kitchen till 11:30pm, café till midnight';
+    }else{
+      dot.classList.add('closed');
+      txt.textContent='Closed right now · opens 8:00am';
+    }
+  }catch(e){}
+  var figs=document.querySelectorAll('figure');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target);} });
+    },{threshold:0.18});
+    figs.forEach(function(f){io.observe(f);});
+  }else{ figs.forEach(function(f){f.classList.add('on');}); }
+})();
+</script>
+</body>
+</html>
