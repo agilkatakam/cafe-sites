@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scola Kitchen &amp; Kaffe — Mediterranean café, Sector 7, Chandigarh</title>
+<meta name="description" content="Scola Kitchen & Kaffe is a Mediterranean café in the Inner Market of Sector 7-C, Chandigarh. Spanish, Greek, Moroccan, Turkish and Italian plates, open every day 11:00 to 23:30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ddd6c6; --surface:#d2cab8; --ink:#2a2a26; --muted:#59574e;
+  --accent:#4f6238; --accent-ink:#ffffff; --field:#3f5a2a; --field-ink:#ffffff;
+  --face:'Zilla Slab',serif;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.5rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,3rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 var(--step-body)/1.5 var(--face);-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rev.in{opacity:1;transform:none}
+
+.page{display:grid;grid-template-columns:45% 55%}
+.photo-half{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--surface);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;padding:40px 32px}
+.pcard{background:#fbf9f4;padding:12px 12px 10px;width:min(100%,430px)}
+.pcard img{width:100%;height:auto;object-fit:cover}
+.pcard figcaption{font:400 15px/1.3 var(--face);color:var(--muted);padding-top:8px}
+.read{min-height:100svh;display:flex;flex-direction:column}
+
+/* hero */
+.hero{min-height:100svh;position:relative;display:flex;flex-direction:column;padding:32px 32px 0 0}
+.hero-links{position:absolute;top:32px;right:32px;display:flex;gap:28px;z-index:6}
+.hero-links a{font:500 15px/1 var(--face);text-decoration:underline;text-underline-offset:4px}
+.hero-links a.act{background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:14px 24px;border-radius:2px;transition:background .25s}
+.hero-links a.act:hover{background:var(--ink)}
+.hero-mid{flex:1;display:flex;align-items:center;justify-content:center;padding:0 48px}
+.hero-mid p{max-width:26ch;font:400 24px/1.4 var(--face);color:var(--ink)}
+.wordmark{position:relative;z-index:5;margin-left:-9vw;padding:0 32px 34px 0;text-align:right;transform-origin:bottom right;will-change:transform}
+.wordmark h1{font:600 clamp(96px,11.5vw,180px)/0.9 var(--face);letter-spacing:-0.04em;text-transform:lowercase}
+.wm-sub{margin-top:10px;font:400 18px/1.3 var(--face);color:var(--ink)}
+
+/* sections in the reading column */
+.section{padding:96px 48px 96px 64px;max-width:640px}
+.intro p{font-size:16px;line-height:1.55;margin-bottom:1em;max-width:36ch;color:var(--muted)}
+.intro p:first-child{font-weight:500;color:var(--ink)}
+h2{font:600 var(--step-head)/1.05 var(--face);letter-spacing:-0.025em;margin-bottom:40px}
+
+/* list */
+.dish{padding:14px 0;cursor:pointer}
+.dish .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.dish .name{font:500 clamp(20px,1.6vw,24px)/1.2 var(--face);color:var(--muted);transition:color .25s}
+.dish .tag{font:400 15px/1 var(--face);color:var(--muted);white-space:nowrap}
+.dish .desc{max-height:0;overflow:hidden;transition:max-height .35s ease;font:400 15px/1.5 var(--face);color:var(--muted);max-width:38ch}
+.dish.open .desc{max-height:90px;margin-top:8px}
+.dish.open .name,.dish:hover .name{color:var(--ink)}
+.dish.open .name{color:var(--accent)}
+
+/* gallery */
+.gal-frame{width:300px;height:300px;position:relative;overflow:hidden}
+.gal-frame img{position:absolute;inset:0;opacity:0;animation:gal 18s linear infinite}
+.gal-frame img:nth-child(2){animation-delay:-3s}
+.gal-frame img:nth-child(3){animation-delay:-6s}
+.gal-frame img:nth-child(4){animation-delay:-9s}
+.gal-frame img:nth-child(5){animation-delay:-12s}
+.gal-frame img:nth-child(6){animation-delay:-15s}
+@keyframes gal{0%{opacity:1}13.5%{opacity:1}17%{opacity:0}96%{opacity:0}100%{opacity:1}}
+.gal-cap{margin-top:16px;font:400 14px/1.4 var(--face);color:var(--muted);min-height:20px}
+
+/* contact rows */
+.contact{padding:96px 0;max-width:none}
+.crow{padding:22px 48px 26px 64px}
+.crow.alt{background:var(--surface)}
+.crow .val{font:500 19px/1.3 var(--face)}
+.crow:first-child .val{font-size:30px;font-weight:600;line-height:1.1}
+.crow a.val{text-decoration:none}
+.crow a.val:hover{color:var(--accent)}
+
+/* footer */
+footer{display:grid;grid-template-columns:45% 55%;min-height:100svh}
+.foot-photo{overflow:hidden;display:flex;align-items:center;justify-content:center;padding:40px 32px}
+.foot-photo .pcard{width:min(100%,360px)}
+.foot-menu{background:var(--field);color:var(--field-ink);padding:80px 48px 28px;display:flex;flex-direction:column}
+.foot-menu .mark{font:600 22px/1 var(--face);margin-bottom:64px}
+.fmenu a{display:block;font:600 clamp(26px,2.4vw,36px)/1.2 var(--face);text-decoration:none;margin-bottom:20px;transition:transform .25s,color .25s}
+.fmenu a:hover{transform:translateX(12px);color:#cfd8bf}
+.foot-blocks{display:flex;gap:48px;margin-top:48px}
+.foot-blocks p{font-size:15px;line-height:1.55;max-width:24ch}
+.foot-legal{margin-top:auto;padding-top:40px;font-size:13px;line-height:1.6;color:#c9d2ba}
+.foot-legal p+p{margin-top:4px}
+
+@media (max-width:900px){
+  .page{grid-template-columns:1fr}
+  .photo-half{position:relative;height:auto;padding:32px 20px;gap:20px}
+  .pcard{width:min(100%,340px)}
+  .hero{min-height:0;padding:24px 20px 0}
+  .hero-links{position:static;justify-content:space-between;padding:0 0 8px}
+  .hero-mid{padding:64px 20px 40px}
+  .hero-mid p{font-size:18px}
+  .wordmark{margin-left:0;text-align:center;padding:0 20px 28px}
+  .wordmark h1{font-size:36vw}
+  .section{padding:72px 20px;max-width:none}
+  .intro p{max-width:none}
+  .gal-frame{width:72vw;height:72vw}
+  .crow{padding:18px 20px 20px}
+  footer{grid-template-columns:1fr}
+  .foot-photo{height:auto;padding:28px 20px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rev{opacity:1;transform:none;transition:none}
+  .gal-frame img{animation:none}
+  .gal-frame img:first-child{opacity:1}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="photo-half">
+    <figure class="pcard">
+      <img src="assets/interior.jpg" width="960" height="540" alt="Inside Scola: white cross-back chairs, dark tables and a mirrored wall" fetchpriority="high">
+      <figcaption>The Inner Market room</figcaption>
+    </figure>
+    <figure class="pcard">
+      <img src="assets/storefront.jpg" width="828" height="315" alt="The Scola Kitchen and Kaffe storefront in Sector 7, Chandigarh" loading="lazy">
+      <figcaption>The Sector 7 storefront</figcaption>
+    </figure>
+  </div>
+
+  <div class="read">
+    <header class="hero">
+      <nav class="hero-links">
+        <a href="#kitchen" data-ui>The kitchen</a>
+        <a href="#visit" data-ui>Find us</a>
+        <a class="act" href="tel:+911724630400" data-ui>Call the café</a>
+      </nav>
+      <div class="hero-mid">
+        <p>Spanish, Greek, Moroccan, Turkish and Italian plates in Sector 7&rsquo;s Inner Market.</p>
+      </div>
+      <div class="wordmark" id="wordmark">
+        <h1>scola</h1>
+        <p class="wm-sub">Mediterranean café · kitchen &amp; kaffe · Chandigarh</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section intro">
+        <p>Scola Kitchen &amp; Kaffe is a lively Mediterranean café at SCO 180, in the Inner Market of Sector 7-C, Chandigarh.</p>
+        <p>The kitchen moves along the coast: spanakopita and pita from Greece, shawarma from Turkey, risotto, lasagna, pizza and pasta from Italy.</p>
+        <p>Open every day of the week, 11 in the morning to 11:30 at night. About ₹2,400 for two.</p>
+      </section>
+
+      <section class="section" id="kitchen">
+        <h2 class="rev">From the kitchen</h2>
+        <div class="dish open rev"><div class="row"><span class="name">Spanakopita</span><span class="tag">Greek</span></div><p class="desc">Spinach and feta folded into crisp filo, the house signature.</p></div>
+        <div class="dish rev"><div class="row"><span class="name">Shawarma</span><span class="tag">Turkish</span></div><p class="desc">Slow-roasted and carved, wrapped with pickles and sauce.</p></div>
+        <div class="dish rev"><div class="row"><span class="name">Falafel &amp; pita</span><span class="tag">Middle Eastern</span></div><p class="desc">Crisp chickpea fritters with warm pita and dips.</p></div>
+        <div class="dish rev"><div class="row"><span class="name">Risotto</span><span class="tag">Italian</span></div><p class="desc">Slow-stirred rice, finished creamy.</p></div>
+        <div class="dish rev"><div class="row"><span class="name">Lasagna</span><span class="tag">Italian</span></div><p class="desc">Layered and baked, from the winter menu board.</p></div>
+        <div class="dish rev"><div class="row"><span class="name">Pizza</span><span class="tag">Italian</span></div><p class="desc">The table favourite across every review.</p></div>
+        <div class="dish rev"><div class="row"><span class="name">Pasta</span><span class="tag">Italian</span></div><p class="desc">Penne and spaghetti, tossed to order.</p></div>
+      </section>
+
+      <section class="section">
+        <h2 class="rev">On the table</h2>
+        <div class="gal-frame rev">
+          <img src="assets/dish-brunch.jpg" width="305" height="322" alt="A green plate with bread, an omelette and coffee at Scola" loading="lazy">
+          <img src="assets/dish-pasta.jpg" width="276" height="322" alt="Spaghetti with garlic bread at Scola" loading="lazy">
+          <img src="assets/dish-omelette.jpg" width="297" height="322" alt="A baked dish with toasted garlic bread at Scola" loading="lazy">
+          <img src="assets/dish-penne.jpg" width="332" height="322" alt="Penne in a cream sauce at Scola" loading="lazy">
+          <img src="assets/dish-rice.jpg" width="290" height="322" alt="Yellow rice with curry and toasted bread at Scola" loading="lazy">
+          <img src="assets/dish-dessert.jpg" width="242" height="322" alt="Dessert cups on a dark board at Scola" loading="lazy">
+        </div>
+        <p class="gal-cap" id="galCap">From the café's own listing galleries.</p>
+      </section>
+
+      <section class="contact" id="visit">
+        <div class="crow rev"><span class="val">Scola Kitchen &amp; Kaffe</span></div>
+        <div class="crow alt rev"><span class="val">SCO 180, Inner Market, Sector 7-C</span></div>
+        <div class="crow rev"><span class="val">Chandigarh 160019</span></div>
+        <div class="crow alt rev"><span class="val">Every day, 11:00 – 23:30</span></div>
+        <div class="crow rev"><a class="val" href="tel:+911724630400" data-ui>+91 172 463 0400</a></div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-photo">
+    <figure class="pcard">
+      <img src="assets/dish-brunch.jpg" width="305" height="322" alt="Bread, an omelette and coffee on a green plate at Scola" loading="lazy">
+      <figcaption>Bread, an omelette and coffee</figcaption>
+    </figure>
+  </div>
+  <div class="foot-menu">
+    <span class="mark">scola</span>
+    <nav class="fmenu">
+      <a href="#kitchen" data-ui>The kitchen</a>
+      <a href="#visit" data-ui>Find us</a>
+      <a href="tel:+911724630400" data-ui>Call</a>
+      <a href="mailto:scolachd@gmail.com" data-ui>Email</a>
+    </nav>
+    <div class="foot-blocks">
+      <p>SCO 180, Inner Market, Sector 7-C, Chandigarh 160019</p>
+      <p>Every day 11:00 – 23:30 · +91 172 463 0400 · scolachd@gmail.com</p>
+    </div>
+    <div class="foot-legal">
+      <p>Photographs from the café's own Facebook page and its restaurant-guru and Shoutlo listing galleries. Facts from its Facebook page and Google listing.</p>
+      <p>An independent introduction, not affiliated with the café. Scola Kitchen &amp; Kaffe · Chandigarh · 2026</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+
+const wm=document.getElementById('wordmark');
+let ticking=false;
+addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{
+  const p=Math.min(scrollY/(innerHeight*0.8),1);
+  wm.style.transform=`scale(${1-p*0.06})`;
+  ticking=false;});},{passive:true});
+
+document.querySelectorAll('.dish').forEach(d=>{
+  const open=()=>{document.querySelectorAll('.dish.open').forEach(o=>o!==d&&o.classList.remove('open'));d.classList.add('open');};
+  d.addEventListener('mouseenter',open);d.addEventListener('click',open);d.addEventListener('focus',open);
+});
+
+const caps=['Bread, an omelette and coffee','Spaghetti with garlic bread','Baked, with toasted bread','Penne in a cream sauce','Yellow rice with curry','Dessert cups'];
+const galCap=document.getElementById('galCap');let gi=0;
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(()=>{gi=(gi+1)%caps.length;galCap.textContent=caps[gi];},3000);
+}
+</script>
+</body>
+</html>
