@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Mulberry — BYOB Café, DLF Phase IV, Gurugram</title>
+<meta name="description" content="Cafe Mulberry is Gurugram's BYOB spot in DLF Phase IV. Multi-cuisine kitchen, live music and DJ nights, pool table, garden evenings. Open daily 12 noon to midnight.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#131511;
+  --bone:#e8e8e6;
+  --amber:#c9974e;
+  --bone-dim:#b8b3aa;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--ink);color:var(--bone);font-family:'Inter',sans-serif;font-size:17px;line-height:1.65;}
+h1,h2,.price{font-family:'DM Serif Display',serif;font-weight:400;}
+a{color:inherit;}
+img{display:block;width:100%;height:100%;object-fit:cover;}
+
+/* ---------- hero: the place fills the screen ---------- */
+.hero{position:relative;height:100svh;overflow:hidden;}
+.hero figure{position:absolute;inset:0;overflow:hidden;}
+.hero img{clip-path:inset(0);transform:scale(1.08);animation:heroSettle 2.4s ease-out forwards;}
+@keyframes heroSettle{to{transform:scale(1);}}
+.hero-nav{position:absolute;top:0;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:22px 26px;font-size:16px;font-weight:600;}
+.hero-nav nav{display:flex;gap:26px;}
+.hero-nav a{text-decoration:none;}
+.hero-nav a:hover{color:var(--amber);}
+.hero-bottom{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:0 26px 20px;background:rgba(19,21,17,.55);}
+.hero-where{font-size:18px;font-weight:600;padding-top:18px;}
+.openline{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:17px;font-weight:600;color:var(--bone);}
+.dot{width:10px;height:10px;border-radius:50%;background:#3fae5a;animation:dotPulse 1.8s ease-in-out infinite;}
+.dot.closed{background:#c14a36;}
+@keyframes dotPulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.5);opacity:.5;}}
+h1{font-size:clamp(52px,13vw,190px);line-height:1.02;letter-spacing:-0.01em;margin-top:6px;} .btn{display:inline-block;background:var(--amber);color:var(--ink);text-decoration:none;font-weight:600;font-size:17px;padding:12px 26px;} .hero-cta{margin:16px 0 6px;}
+@media (max-width:640px){ .hero-nav nav{gap:16px;font-size:15px;} h1{font-size:clamp(48px,15.5vw,90px);} }
+
+/* ---------- restraint: few words, large pictures ---------- */
+.statement{max-width:640px;margin:0 auto;padding:12vw 26px;text-align:left;}
+.statement h2{font-size:clamp(32px,4vw,50px);line-height:1.12;}
+.statement p{font-size:19px;margin-top:22px;color:var(--bone);}
+.statement .dim{color:var(--bone-dim);font-size:17px;}
+
+.wide{position:relative;}
+.wide figure{height:min(88svh,860px);overflow:hidden;}
+.wide.tall figure{height:auto;aspect-ratio:4/5;max-height:92svh;}
+@media (max-width:640px){.wide figure{height:66svh;}}
+.caption{max-width:640px;margin:0 auto;padding:16px 26px 0;font-size:16px;color:var(--bone-dim);opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease;} .caption.on{opacity:1;transform:none;}
+
+/* ---------- reveals: clip the img inside the observed figure ---------- */
+figure.reveal img{clip-path:inset(0 0 100% 0);transition:clip-path .7s ease-out;}
+figure.reveal.on img{clip-path:inset(0 0 0 0);}
+
+/* ---------- menu ---------- */
+.menu{max-width:760px;margin:0 auto;padding:10vw 26px;}
+.menu h2{font-size:clamp(32px,4.2vw,52px);line-height:1.1;}
+.menu .dim{color:var(--bone-dim);margin-top:12px;font-size:17px;}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:4px 48px;margin-top:34px;}
+@media (max-width:680px){.menu-cols{grid-template-columns:1fr;}}
+.dish{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:9px 0;font-size:17px;}
+.dish .d-name{font-weight:500;}
+.dish .price{font-size:19px;color:var(--amber);white-space:nowrap;}
+.menu-note{margin-top:20px;font-size:15px;color:var(--bone-dim);}
+
+/* ---------- food trio ---------- */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1200px;margin:0 auto;padding:0 26px;}
+.trio figure{aspect-ratio:4/3;overflow:hidden;}
+@media (max-width:640px){.trio{grid-template-columns:1fr;}}
+
+/* ---------- evenings ---------- */
+.feat{list-style:none;max-width:640px;margin:30px auto 0;padding:0 26px;}
+.feat li{padding:13px 0 13px 30px;position:relative;font-size:17px;}
+.feat li::before{content:"";position:absolute;left:0;top:21px;width:10px;height:10px;border-radius:50%;background:var(--amber);}
+
+/* ---------- visit ---------- */
+.visit{max-width:760px;margin:0 auto;padding:10vw 26px;}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px 48px;margin-top:34px;}
+@media (max-width:640px){.visit-grid{grid-template-columns:1fr;}}
+.v-label{font-weight:600;font-size:18px;margin-bottom:6px;}
+.v-block p{font-size:17px;color:var(--bone);}
+.v-block a{color:var(--amber);text-decoration:none;font-weight:600;}
+.v-block a:hover{text-decoration:underline;}
+
+/* ---------- footer ---------- */
+footer{padding:80px 26px 54px;text-align:center;overflow:hidden;}
+.foot-word{font-family:'DM Serif Display',serif;font-size:min(13.5vw,150px);line-height:1;color:var(--amber);}
+.foot-meta{margin-top:22px;font-size:17px;color:var(--bone);}
+.foot-meta a{color:var(--bone);text-decoration:none;font-weight:600;}
+.foot-meta a:hover{color:var(--amber);}
+.foot-note{margin:18px auto 0;font-size:15px;color:var(--bone-dim);max-width:620px;}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;}
+  .hero img{transform:none;}
+  figure.reveal img{clip-path:inset(0 0 0 0);} .caption{opacity:1;transform:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <figure><img src="assets/b13.jpg" alt="The garden seating at Cafe Mulberry, teal chairs under the trees"></figure>
+  <div class="hero-nav">
+    <a href="#menu">Menu</a>
+    <nav aria-label="Sections">
+      <a href="#evenings">Evenings</a>
+      <a href="#visit">Visit</a>
+      <a href="tel:+919821700121">Call</a>
+    </nav>
+  </div>
+  <div class="hero-bottom">
+    <p class="hero-where">BYOB café and multi-cuisine kitchen · DLF Phase IV, Gurugram</p>
+    <h1>Cafe Mulberry</h1>
+    <p class="openline"><span class="dot" id="openDot" aria-hidden="true"></span><span id="openText">Open daily, 12 noon – midnight</span></p>
+    <p class="hero-cta"><a class="btn" href="tel:+919821700121">Call to book a table</a></p>
+  </div>
+</div>
+
+<main>
+
+  <div class="statement">
+    <h2>Bring your bottle.</h2>
+    <p>We’ll take it from there. Cafe Mulberry is the BYOB spot Gurugram keeps coming back to — your favourite pour, a kitchen that runs Indian, Chinese, Continental and Lebanese, and evenings that stretch.</p>
+  </div>
+
+  <div class="wide tall">
+    <figure class="reveal"><img src="assets/b16.jpg" alt="The long table inside Cafe Mulberry against the orange slat wall"></figure>
+    <p class="caption">The long table inside — orange slats, green chairs, terrazzo floors.</p>
+  </div>
+
+  <section class="menu" id="menu">
+    <h2>What the kitchen sends out</h2>
+    <p class="dim">From the current menu — plates built to sit next to a bottle.</p>
+    <div class="menu-cols">
+      <div class="dish"><span class="d-name">Stuffed Cheese Garlic Bread</span><span class="price">₹449</span></div>
+      <div class="dish"><span class="d-name">Cheese Stuffed Mushroom</span><span class="price">₹499</span></div>
+      <div class="dish"><span class="d-name">Corn Chaat</span><span class="price">₹449</span></div>
+      <div class="dish"><span class="d-name">Peri-Peri Fries</span><span class="price">₹449</span></div>
+      <div class="dish"><span class="d-name">Crispy Chicken Burger</span><span class="price">₹499</span></div>
+      <div class="dish"><span class="d-name">Club Chicken Sandwich</span><span class="price">₹449</span></div>
+      <div class="dish"><span class="d-name">Teekha Paneer Grilled Sandwich</span><span class="price">₹449</span></div>
+      <div class="dish"><span class="d-name">Smoke Chicken Salad</span><span class="price">₹499</span></div>
+      <div class="dish"><span class="d-name">Broccoli Soup</span><span class="price">₹449</span></div>
+      <div class="dish"><span class="d-name">Manchow Soup</span><span class="price">₹349</span></div>
+    </div>
+    <p class="menu-note">Prices from the café’s published menu.</p>
+  </section>
+
+  <div class="trio">
+    <figure class="reveal"><img src="assets/b18.jpg" alt="Pasta and a blue mocktail on a garden table"></figure>
+    <figure class="reveal"><img src="assets/b19.jpg" alt="Spring rolls and a tandoor platter with a cooler"></figure>
+    <figure class="reveal"><img src="assets/b20.jpg" alt="Pizza, pasta and an orange cocktail on a table"></figure>
+  </div>
+
+  <section id="evenings" class="statement">
+    <h2>Evenings here run long.</h2>
+    <p>Live music and DJ nights, a pool table upstairs, and a garden that stays warm well past dinner.</p>
+    <ul class="feat" style="padding:0;">
+      <li>Live music and DJ nights through the week</li>
+      <li>Pool table and indoor lounge seating</li>
+      <li>Garden and terrace tables under the lights</li>
+      <li>Birthdays, corporate evenings and private celebrations</li>
+    </ul>
+  </section>
+
+  <div class="wide">
+    <figure class="reveal"><img src="assets/b14.jpg" alt="The indoor lounge at Cafe Mulberry with its pool table"></figure>
+    <p class="caption">Inside: the orange-slat lounge and the pool table.</p>
+  </div>
+
+  <section class="visit" id="visit">
+    <h2>Find the lights.</h2>
+    <div class="visit-grid">
+      <div class="v-block">
+        <div class="v-label">Hours</div>
+        <p>Open every day, 12 noon – midnight.</p>
+      </div>
+      <div class="v-block">
+        <div class="v-label">Address</div>
+        <p>Kasra no. 505–506, near Supermart 2,<br>DLF Phase IV, Gurugram, Haryana 122001.</p>
+      </div>
+      <div class="v-block">
+        <div class="v-label">Call or write</div>
+        <p><a href="tel:+919821700121">+91 98217 00121</a><br><a href="mailto:info@cafemulberry.com">info@cafemulberry.com</a></p>
+      </div>
+      <div class="v-block">
+        <div class="v-label">Find it</div>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Cafe+Mulberry+BYOB+DLF+Phase+IV&query_place_id=ChIJPzcOC60ZDTkRtASYW5Tv8dA" target="_blank" rel="noopener">Open in Google Maps</a><br>Rated 4.3 on Google.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="foot-word">Mulberry</div>
+  <p class="foot-meta">DLF Phase IV, Gurugram · <a href="tel:+919821700121">+91 98217 00121</a> · <a href="mailto:info@cafemulberry.com">info@cafemulberry.com</a></p>
+  <p class="foot-note">Photographs from the café’s own site and public listings. Menu items and prices from the café’s published menu.</p>
+</footer>
+
+<script>
+(function(){
+  // Open-now: daily 12:00-24:00 IST
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var mins=now.getHours()*60+now.getMinutes();
+    var dot=document.getElementById('openDot'), txt=document.getElementById('openText');
+    if(mins>=720){
+      var left=1440-mins,h=Math.floor(left/60),m=left%60;
+      txt.textContent='Open now · closes midnight'+(h>0?(' (in '+h+'h'+(m?(' '+m+'m'):'')+')'):(m?(' (in '+m+'m)'):''));
+    }else{
+      dot.classList.add('closed');
+      txt.textContent='Closed right now · opens 12 noon';
+    }
+  }catch(e){}
+  var figs=document.querySelectorAll('figure.reveal,.caption');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('on'); io.unobserve(en.target);} });
+    },{threshold:0.16});
+    figs.forEach(function(f){io.observe(f);});
+  }else{ figs.forEach(function(f){f.classList.add('on');}); }
+})();
+</script>
+</body>
+</html>

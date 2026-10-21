@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vipul Chudasama Salon - Hair, Makeup &amp; Bridal, Pali Hill, Bandra West</title>
+<meta name="description" content="Vipul Chudasama Salon, Pali Hill, Bandra West. Two decades of hair, makeup and bridal craft - salon, academy and consultancy. Call +91 97699 00010.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue:wght@400&family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grey:#a8a8aa; --grey2:#b4b4b6; --ink:#0e0e0e; --soft:#3a3a3c; --green:#1f5c49; --paper:#f3f3f1; --dark:#1b1b1c;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --r:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--grey);color:var(--ink);font-family:'Albert Sans',sans-serif;font-size:var(--step-body);line-height:1.55;overflow-x:hidden}
+img{display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Imbue',serif;font-weight:400;letter-spacing:-0.01em;line-height:0.9;text-transform:uppercase}
+.rl{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
+.rl.on{opacity:1;transform:none}
+.w{display:inline-block;white-space:nowrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---- hero: menu column + sticky photograph ---- */
+.hero{position:relative;display:flex;gap:12px;padding:12px;min-height:130svh}
+.photo{position:sticky;top:12px;width:50%;height:calc(100svh - 24px);border-radius:var(--r);overflow:hidden;flex:none;order:2}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.photo img.on{opacity:1}
+.pbar{position:absolute;left:0;right:0;bottom:0;height:56px;background:var(--paper);display:flex;align-items:center;justify-content:space-between;padding:0 22px;font-size:0.9375rem;z-index:5}
+.pbar a{text-decoration:none;font-weight:500}
+.sheet{order:1;flex:1;background:var(--paper);border-radius:var(--r);padding:26px 4vw 18svh;display:flex;flex-direction:column}
+.sheet .top{display:flex;align-items:center;justify-content:center;gap:3vw}
+.sheet .top a{font-size:var(--step-small);text-decoration:none;opacity:.7;transition:opacity .3s}
+.sheet .top a:hover{opacity:1}
+.wordmark{font-family:'Imbue',serif;text-transform:uppercase;font-size:clamp(2rem,3.4vw,3.2rem);letter-spacing:-0.01em;line-height:.95;text-align:center;white-space:nowrap}
+.hero .sheet h1{font-size:clamp(2.5rem,3.6vw,3.5rem);color:var(--green);max-width:18ch;margin:34% auto 0;text-align:center;line-height:1.02}
+.hero .sub{margin:26px auto 0;max-width:40ch;text-align:center;font-size:1.0625rem;color:var(--soft)}
+.hero .go{margin:34px auto 0;display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:500;font-size:1rem;padding:16px 34px;transition:background .3s}
+.hero .go:hover{background:#174a3b}
+
+/* ---- intro: narrow column, empty field ---- */
+.intro{padding:64px 0 120px}
+.intro .col{margin-left:15%;width:320px;max-width:78vw}
+.intro p{font-size:1rem;line-height:1.5;margin-bottom:1.5em;color:var(--soft)}
+.intro p.first{font-weight:500;color:var(--ink)}
+.intro a{color:var(--ink)}
+
+/* ---- gallery: drag row ---- */
+.gallery{padding:4svh 0 8svh;overflow:hidden}
+.gallery .bar{display:flex;align-items:baseline;justify-content:space-between;margin:0 32px 32px}
+.gallery h2{font-size:clamp(1.75rem,2.4vw,2.25rem)}
+.gallery .cnt{font-size:var(--step-small);color:var(--soft)}
+.drow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding-left:6vw;height:68svh;scrollbar-width:none;cursor:grab}
+.drow::-webkit-scrollbar{display:none}
+.drow.dragging{cursor:grabbing;scroll-snap-type:none}
+.drow>*{flex:none;scroll-snap-align:start;height:100%}
+.drow img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.drow .tall{aspect-ratio:3/4}
+.drow .stack{display:flex;flex-direction:column;gap:12px;aspect-ratio:3/4}
+.drow .stack>div{flex:1;overflow:hidden}
+.drow .wide{aspect-ratio:16/10}
+
+/* ---- features: capabilities as a printed menu ---- */
+.menu-sec{background:var(--dark);padding:10svh 12px}
+.msheet{background:var(--paper);width:580px;max-width:calc(100vw - 24px);margin:0 auto;padding:64px 48px 72px;
+  clip-path:polygon(0 12px,5% 0,10% 12px,15% 0,20% 12px,25% 0,30% 12px,35% 0,40% 12px,45% 0,50% 12px,55% 0,60% 12px,65% 0,70% 12px,75% 0,80% 12px,85% 0,90% 12px,95% 0,100% 12px,100% calc(100% - 12px),95% 100%,90% calc(100% - 12px),85% 100%,80% calc(100% - 12px),75% 100%,70% calc(100% - 12px),65% 100%,60% calc(100% - 12px),55% 100%,50% calc(100% - 12px),45% 100%,40% calc(100% - 12px),35% 100%,30% calc(100% - 12px),25% 100%,20% calc(100% - 12px),15% 100%,10% calc(100% - 12px),5% 100%,0 calc(100% - 12px))}
+.msheet h2{font-size:clamp(2.75rem,4vw,3.5rem);text-align:center;margin-bottom:40px}
+.msheet h3{font-family:'Albert Sans',sans-serif;text-transform:none;font-weight:700;font-size:1.25rem;letter-spacing:0;margin:44px 0 18px}
+.msheet h3:first-of-type{margin-top:0}
+.mitem{margin-bottom:18px}
+.mitem .nm{font-size:1.1875rem;font-weight:500}
+.mitem .ds{font-size:0.9375rem;color:var(--soft);max-width:34ch}
+
+/* ---- list: the printed menu sheet ---- */
+.list-sec{padding:10svh 12px}
+.lsheet{background:var(--paper);width:640px;max-width:calc(100vw - 20px);margin:0 auto;padding:64px;text-align:center;
+  clip-path:polygon(0 10px,6.25% 0,12.5% 10px,18.75% 0,25% 10px,31.25% 0,37.5% 10px,43.75% 0,50% 10px,56.25% 0,62.5% 10px,68.75% 0,75% 10px,81.25% 0,87.5% 10px,93.75% 0,100% 10px,100% calc(100% - 10px),93.75% 100%,87.5% calc(100% - 10px),81.25% 100%,75% calc(100% - 10px),68.75% 100%,62.5% calc(100% - 10px),56.25% 100%,50% calc(100% - 10px),43.75% 100%,37.5% calc(100% - 10px),31.25% 100%,25% calc(100% - 10px),18.75% 100%,12.5% calc(100% - 10px),6.25% 100%,0 calc(100% - 10px))}
+.lsheet h2{font-size:clamp(2.5rem,3.6vw,3rem)}
+.lsheet .note{font-size:0.9375rem;color:var(--soft);margin-top:10px}
+.lsheet h3{font-family:'Albert Sans',sans-serif;text-transform:none;font-weight:700;font-size:1.375rem;margin:56px 0 16px}
+.lsheet ul{list-style:none}
+.lsheet li{font-size:1.0625rem;margin-bottom:16px}
+.lsheet li a{text-decoration:none}
+.lsheet li a:hover{opacity:.6}
+.lsheet .tag{font-size:0.875rem;color:var(--soft)}
+.lsheet .end{margin-top:56px;font-size:1rem;color:var(--soft);line-height:1.6}
+
+/* ---- contact: address in display rows ---- */
+.crows{padding:8svh 0 0}
+.crow{min-height:150px;display:flex;align-items:flex-end;padding:0 20px 26px;background:var(--grey)}
+.crow:nth-child(even){background:var(--grey2)}
+.crow h2{font-weight:400}
+.crow a,.crow span{font-family:'Imbue',serif;text-transform:uppercase;font-size:clamp(2.75rem,6vw,5.5rem);line-height:1;letter-spacing:-0.01em;text-decoration:none;color:var(--ink)}
+.crow a:hover{color:var(--green)}
+.crow.hello{background:var(--green)}
+.crow.hello span{color:#fff}
+.crow.hello .arr{flex:none;width:0.9em;height:0.9em;border-radius:50%;background:#fff;color:var(--green);display:inline-flex;align-items:center;justify-content:center;margin-left:24px;margin-bottom:0.12em;text-decoration:none}
+.crow.hello .arr svg{width:44%;height:44%}
+
+/* ---- footer: name across the last photograph ---- */
+.foot{position:relative;height:100svh;overflow:hidden}
+.foot img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.62)}
+.foot .links{position:absolute;top:32px;left:32px;z-index:5}
+.foot .links a{display:block;color:var(--paper);text-decoration:none;font-size:1rem;margin-bottom:8px}
+.foot .links a:hover{opacity:.6}
+.foot .det{position:absolute;top:32px;right:32px;z-index:5;text-align:right}
+.foot .det a{display:block;color:var(--paper);text-decoration:none;font-size:1rem;margin-bottom:8px}
+.foot .name{position:absolute;left:0;right:0;bottom:72px;z-index:5;text-align:center;font-family:'Imbue',serif;text-transform:uppercase;color:var(--paper);font-size:clamp(3.4rem,12.6vw,15rem);line-height:.9;letter-spacing:-0.01em;white-space:nowrap}
+.foot .legal{position:absolute;left:0;right:0;bottom:20px;z-index:5;text-align:center;color:var(--paper);font-size:0.8125rem;opacity:.85}
+
+/* ---- phone ---- */
+@media (max-width:767px){
+  .hero{display:block;min-height:0;padding:12px}
+  .photo{position:sticky;top:12px;width:100%;height:56svh;order:0}
+  .pbar{font-size:var(--step-small);padding:0 16px;bottom:12svh}
+  .sheet{margin-top:-12svh;position:relative;z-index:10;padding:22px 20px 96px}
+  .wordmark{font-size:9vw;white-space:normal}
+  .hero .sheet h1{font-size:9vw;margin-top:12svh}
+  .hero .sub{font-size:1.0625rem}
+  .hero .go{display:flex;justify-content:center}
+  .intro{padding:72px 0 96px}
+  .intro .col{margin-left:20px;width:78%}
+  .gallery .bar{margin:0 20px 24px}
+  .drow{padding-left:20px;gap:8px;height:62svh}
+  .drow .tall{width:72vw}
+  .drow .stack{width:64vw}
+  .drow .wide{width:88vw;height:78%;margin-top:6svh}
+  .msheet{padding:56px 20px 60px}
+  .lsheet{padding:56px 28px 60px}
+  .crow{min-height:84px;padding:0 16px 16px}
+  .crow a,.crow span{font-size:9.6vw}
+  .crow.hello .arr{margin-left:16px}
+  .foot{height:88svh}
+  .foot .links{left:20px;top:24px}
+  .foot .det{right:20px;top:24px}
+  .foot .name{font-size:9vw;bottom:56px;white-space:normal;line-height:1}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto}
+  .rl{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="photo" id="heroPhoto">
+    <img src="assets/salon-floor.jpg" alt="The white salon floor at Vipul Chudasama Salon, Pali Hill" class="on" width="1200" height="675">
+    <img src="assets/salon-interior.jpg" alt="Styling stations and mirrors inside the salon" loading="lazy" width="960" height="750">
+    <img src="assets/client-chair.jpg" alt="A client mid-appointment in the salon chair" loading="lazy" width="743" height="1024">
+    <div class="pbar"><span>Pali Hill, Bandra West</span><a href="tel:+919769900010">+91 97699 00010</a></div>
+  </div>
+  <div class="sheet">
+    <div class="top">
+      <a href="#services">Services</a>
+      <div class="wordmark">Vipul Chudasama</div>
+      <a href="#visit">Visit</a>
+    </div>
+    <h1><span class="w">Hair</span> <span class="w">is</span> <span class="w">our</span> <span class="w">canvas.</span></h1>
+    <p class="sub">Two decades of hair, makeup and bridal craft in Pali Hill, Bandra West - salon, academy and consultancy under one roof.</p>
+    <a class="go" href="tel:+919769900010">Book an appointment</a>
+  </div>
+</header>
+
+<section class="intro">
+  <h2 class="sr">The salon</h2>
+  <div class="col">
+    <p class="first rl">Vipul Chudasama's name has been part of Indian hairdressing for over two decades - first as a hairdresser, then as the founder of a salon, an academy and a consultancy.</p>
+    <p class="rl">He has led more than 600 hair shows, seminars and masterclasses, and trained over 60,000 hairdressers worldwide. The Pali Hill salon is where that craft meets the chair.</p>
+    <p class="rl">Makeup is led by Pooja Chudasama, whose work spans fashion, editorial, film, television and bridal - with an eye for colour and skin that keeps brides coming back by referral.</p>
+    <p class="rl">Every guest is treated as a favourite, and every product on the shelf is professional grade. <a href="#visit">Come and experience it.</a></p>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="bar">
+    <h2 class="rl">The diaries</h2>
+    <span class="cnt">Seven photographs</span>
+  </div>
+  <div class="drow" id="drow">
+    <div class="tall rl"><img src="assets/red-waves.jpg" alt="Deep red waves styled at the salon" loading="lazy" width="743" height="1024"></div>
+    <div class="stack rl">
+      <div><img src="assets/client-chair.jpg" alt="A client in the salon chair" loading="lazy" width="743" height="1024"></div>
+      <div><img src="assets/curls-bw.jpg" alt="Natural curls, styled and set" loading="lazy" width="743" height="1024"></div>
+    </div>
+    <div class="wide rl"><img src="assets/salon-floor.jpg" alt="The salon floor at Pali Hill" loading="lazy" width="1200" height="675"></div>
+    <div class="stack rl">
+      <div><img src="assets/copper-bob.jpg" alt="A copper bob with a soft fringe" loading="lazy" width="743" height="1024"></div>
+      <div><img src="assets/salon-interior.jpg" alt="Mirrors and chairs along the salon wall" loading="lazy" width="960" height="750"></div>
+    </div>
+    <div class="tall rl"><img src="assets/editorial-updo.jpg" alt="An editorial braided updo in blue-black" loading="lazy" width="743" height="1024"></div>
+  </div>
+</section>
+
+<section class="menu-sec" id="services">
+  <div class="msheet">
+    <h2 class="rl">The services</h2>
+    <h3>Hair</h3>
+    <div class="mitem rl"><p class="nm">Cuts &amp; styling</p><p class="ds">From classic cuts to avant-garde shapes, worked to your face and routine.</p></div>
+    <div class="mitem rl"><p class="nm">Colour</p><p class="ds">Subtle to bold, with professional colour that holds between visits.</p></div>
+    <h3>Makeup</h3>
+    <div class="mitem rl"><p class="nm">Evening &amp; occasion</p><p class="ds">Glamorous looks built to last the whole event.</p></div>
+    <div class="mitem rl"><p class="nm">Daytime</p><p class="ds">Subtle makeovers that lift natural features.</p></div>
+    <h3>Bridal</h3>
+    <div class="mitem rl"><p class="nm">Bridal makeup &amp; hair</p><p class="ds">Customised to each bride, from ceremony to reception.</p></div>
+    <div class="mitem rl"><p class="nm">Mehndi designs</p><p class="ds">The finishing detail for the big day.</p></div>
+  </div>
+</section>
+
+<section class="list-sec" id="visit">
+  <h2 class="sr">Find the salon</h2>
+  <div class="lsheet rl">
+    <h2>VC Salon, Pali Hill</h2>
+    <p class="note">Salon, academy and consultancy in Bandra West, Mumbai.</p>
+    <h3>Find</h3>
+    <ul>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Vipul+Chudasama+Salon+Pali+Mala+Road+Bandra+West" target="_blank" rel="noopener">Jasmin House, 1st Floor</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Vipul+Chudasama+Salon+Pali+Mala+Road+Bandra+West" target="_blank" rel="noopener">Pali Mala Road, Pali Village, Pali Naka</a></li>
+      <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Vipul+Chudasama+Salon+Pali+Mala+Road+Bandra+West" target="_blank" rel="noopener">Bandra West, Mumbai 400050</a></li>
+    </ul>
+    <h3>Call</h3>
+    <ul>
+      <li><a href="tel:+919769900010">+91 97699 00010</a> <span class="tag">appointments &amp; enquiries</span></li>
+    </ul>
+    <h3>Write</h3>
+    <ul>
+      <li><a href="mailto:info@vipulchudasama.com">info@vipulchudasama.com</a> <span class="tag">general</span></li>
+      <li><a href="mailto:social@vipulchudasama.com">social@vipulchudasama.com</a> <span class="tag">press &amp; media</span></li>
+    </ul>
+    <h3>Follow</h3>
+    <ul>
+      <li><a href="https://www.instagram.com/vipulchudasamasalon" target="_blank" rel="noopener">@vipulchudasamasalon</a></li>
+    </ul>
+    <p class="end">Appointments by call or mail -<br>walk-ins are welcomed when a chair is free.</p>
+  </div>
+</section>
+
+<div class="crows">
+  <section class="crow rl"><h2><span>VC Salon, Jasmin House</span></h2></section>
+  <section class="crow rl"><h2><a href="https://www.google.com/maps/search/?api=1&amp;query=Vipul+Chudasama+Salon+Pali+Mala+Road+Bandra+West" target="_blank" rel="noopener">Pali Mala Road, Pali Naka</a></h2></section>
+  <section class="crow rl"><h2><span>Bandra West 400050</span></h2></section>
+  <section class="crow rl"><h2><a href="tel:+919769900010">+91 97699 00010</a></h2></section>
+  <section class="crow hello rl"><h2><span>Say hello</span><a class="arr" href="mailto:info@vipulchudasama.com" aria-label="Email the salon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></h2></section>
+</div>
+
+<footer class="foot">
+  <img class="bg" src="assets/salon-floor.jpg" alt="The salon floor at night" loading="lazy" width="1200" height="675">
+  <div class="links">
+    <a href="#services">Services</a>
+    <a href="#visit">Visit</a>
+    <a href="https://www.instagram.com/vipulchudasamasalon" target="_blank" rel="noopener">Instagram</a>
+  </div>
+  <div class="det">
+    <a href="tel:+919769900010">+91 97699 00010</a>
+    <a href="mailto:info@vipulchudasama.com">info@vipulchudasama.com</a>
+  </div>
+  <div class="name">Vipul Chudasama</div>
+  <p class="legal">© 2026 Vipul Chudasama Salon, Mumbai · Photographs: vcsalon.in</p>
+</footer>
+
+<script>
+/* slow crossfade on the hero photograph */
+(function(){
+  var box=document.getElementById('heroPhoto'),imgs=box.querySelectorAll('img'),i=0;
+  if(imgs.length<2||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  setInterval(function(){
+    if(document.hidden)return;
+    imgs[i].classList.remove('on');i=(i+1)%imgs.length;imgs[i].classList.add('on');
+  },5600);
+})();
+/* entrances */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}
+})},{threshold:0.15});
+document.querySelectorAll('.rl').forEach(function(el){io.observe(el)});
+/* drag the gallery row */
+var row=document.getElementById('drow'),down=false,sx=0,sl=0;
+row.addEventListener('pointerdown',function(e){down=true;sx=e.clientX;sl=row.scrollLeft;row.classList.add('dragging');row.setPointerCapture(e.pointerId);});
+row.addEventListener('pointermove',function(e){if(down)row.scrollLeft=sl-(e.clientX-sx);});
+['pointerup','pointercancel'].forEach(function(ev){row.addEventListener(ev,function(){down=false;row.classList.remove('dragging');});});
+</script>
+</body>
+</html>
