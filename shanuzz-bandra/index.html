@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shanuzz Unisex Salon - Hill Road, Bandra West, Mumbai</title>
+<meta name="description" content="Shanuzz Unisex Salon on Hill Road, Bandra West: precision cuts, balayage and bridal hair by Shanu and team. Rated 4.5 by 1,261 visitors on Google. Book by phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,800;1,700&family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#dedad3; --surface:#d3cec6; --paper:#f4f4f1; --ink:#0a0a0a; --muted:#5c5852;
+  --accent:#256f82; --accent-ink:#ffffff;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --margin:28px;
+  --foot-h:600px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--ink); font-family:'Libre Franklin',sans-serif; font-size:var(--step-body); line-height:1.5; }
+img { display:block; }
+a { color:inherit; }
+:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+h1,h2,h3 { font-family:'Besley',serif; font-weight:800; letter-spacing:-0.02em; line-height:0.95; }
+
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); font-family:'Libre Franklin',sans-serif; font-weight:600; font-size:16px; text-decoration:none; padding:13px 26px; border:none; cursor:pointer; transition:transform .18s ease; }
+.btn:hover { transform:translateY(-2px); }
+
+/* ============ HERO: the salon card, cropped ============ */
+.hero { position:relative; height:100svh; overflow:hidden; }
+.hero-top { position:absolute; top:0; left:0; right:0; display:flex; align-items:center; justify-content:space-between; padding:24px var(--margin); z-index:5; }
+.mono { font-family:'Besley',serif; font-weight:800; font-size:24px; text-decoration:none; }
+.hero-nav { display:flex; gap:28px; }
+.hero-nav a { text-decoration:none; font-size:15px; }
+.hero-nav a:hover { text-decoration:underline; text-underline-offset:4px; }
+.card { position:absolute; left:50%; transform:translateX(-50%); top:120px; width:min(500px, calc(100% - 56px)); height:calc(100svh - 60px); background:var(--paper); padding:56px 40px; text-align:center; }
+.card .corner { position:absolute; width:44px; height:44px; background:var(--bg); border-radius:50%; }
+.card .c1 { top:-22px; left:-22px; }
+.card .c2 { top:-22px; right:-22px; }
+.card h1 { font-weight:700; font-style:italic; font-size:clamp(52px,5.6vw,84px); margin:8px 0 24px; }
+.card h1 .l1 { display:block; text-align:left; }
+.card h1 .l2 { display:block; text-align:right; }
+.card .det { font-size:15px; display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; margin:10px 0; }
+.dia { display:inline-block; width:10px; height:10px; background:var(--ink); transform:rotate(45deg); flex:none; }
+.card .photo { margin:30px auto 0; width:62%; aspect-ratio:4/5; overflow:hidden; }
+.card .photo img { width:100%; height:100%; object-fit:cover; }
+.card .swatch { position:absolute; right:26px; bottom:120px; width:56px; height:56px; background:var(--accent); }
+.card .swatch span { position:absolute; left:0; right:0; top:calc(100% + 6px); font-size:13px; color:var(--muted); white-space:nowrap; }
+
+/* ============ MAIN sits above the curtain footer ============ */
+main { position:relative; z-index:2; background:var(--bg); }
+footer { position:relative; }
+
+/* ============ INTRO: title, note, facts row ============ */
+.intro { padding:140px var(--margin) 110px; }
+.intro-row { display:grid; grid-template-columns:repeat(12,1fr); gap:16px; align-items:end; }
+.intro h2 { grid-column:1/7; font-size:clamp(44px,5vw,76px); font-weight:800; }
+.intro .note { grid-column:10/13; width:100%; max-width:260px; font-size:16px; justify-self:end; }
+.facts { display:flex; justify-content:space-between; gap:24px; margin-top:110px; flex-wrap:wrap; }
+.fact .f { font-family:'Besley',serif; font-weight:800; letter-spacing:-0.02em; font-size:clamp(26px,3vw,42px); }
+.fact .e { font-size:14px; color:var(--muted); margin-top:6px; max-width:22ch; }
+
+/* ============ GALLERY: photo tiles with label strips ============ */
+.gallery { padding:60px var(--margin) 120px; }
+.gallery > h2 { font-size:32px; margin-bottom:40px; }
+.tiles { display:grid; grid-template-columns:repeat(4,1fr); gap:28px 12px; }
+.tile { }
+.tile .ph { overflow:hidden; }
+.tile .ph img { width:100%; height:100%; object-fit:cover; transition:transform .6s cubic-bezier(.2,.6,.2,1); }
+.tile:hover .ph img { transform:scale(1.045); }
+.tile .a { aspect-ratio:1/1; }
+.tile .b { aspect-ratio:4/5; }
+.strip { padding:12px; font-size:13px; line-height:1.45; }
+.strip .r1 { display:flex; justify-content:space-between; flex-wrap:wrap; column-gap:10px; row-gap:2px; font-weight:600; }
+.strip .r2 { display:flex; justify-content:space-between; margin-top:6px; }
+.s-ink { background:var(--surface); color:var(--ink); }
+.s-black { background:var(--ink); color:var(--bg); }
+.s-teal { background:var(--accent); color:var(--accent-ink); }
+
+/* ============ FEATURES: stacking colour sheets ============ */
+.sheets { padding:120px 0 20vh; }
+.sheets > h2 { font-size:clamp(40px,5vw,80px); margin:0 var(--margin) 48px; }
+.slot { height:135svh; }
+.sheet { position:sticky; top:0; height:86svh; display:flex; flex-direction:column; }
+.sheet .band { height:72px; display:flex; align-items:center; padding:0 var(--margin); flex:none; }
+.sheet .band h3 { font-size:clamp(24px,3vw,44px); }
+.sheet .body { flex:1; display:grid; grid-template-columns:repeat(12,1fr); gap:16px; padding:24px var(--margin) 0; overflow:hidden; }
+.sheet .desc { grid-column:1/6; align-self:end; padding-bottom:48px; font-size:18px; max-width:40ch; }
+.sheet .ph { grid-column:7/13; align-self:stretch; overflow:hidden; }
+.sheet .ph img { width:100%; height:100%; object-fit:cover; }
+.sh-1 { background:var(--surface); color:var(--ink); }
+.sh-2 { background:var(--ink); color:var(--bg); }
+.sh-3 { background:var(--accent); color:var(--accent-ink); }
+.sh-4 { background:var(--surface); color:var(--ink); }
+
+/* ============ LIST: the printed service card ============ */
+.menu { position:relative; padding:140px var(--margin); background:var(--ink); }
+.menu > h2 { color:var(--bg); font-size:32px; margin-bottom:56px; }
+.menu-card { position:relative; width:min(640px,100%); margin:0 auto; background:var(--paper); padding:64px; text-align:center; }
+.menu-card .scallop { position:absolute; left:0; right:0; height:14px; display:flex; justify-content:space-between; overflow:hidden; }
+.menu-card .scallop.top { top:-13px; }
+.menu-card .scallop.bottom { bottom:-13px; }
+.menu-card .scallop i { width:28px; height:28px; background:var(--ink); border-radius:50%; flex:none; }
+.menu-card h3 { font-size:clamp(34px,3.6vw,48px); }
+.menu-card .mnote { font-size:15px; color:var(--muted); margin-top:10px; }
+.mgroup { margin-top:56px; }
+.mgroup > h4 { font-family:'Libre Franklin',sans-serif; font-weight:600; font-size:22px; margin-bottom:20px; }
+.mitem { margin-top:16px; }
+.mitem .row { display:flex; justify-content:space-between; gap:16px; font-size:17px; text-align:left; }
+.mitem .row .nm { font-weight:600; }
+.mitem .row .pr { font-variant-numeric:tabular-nums; white-space:nowrap; }
+.mitem .ds { font-size:14px; color:var(--muted); text-align:left; margin-top:2px; }
+.menu-card .hours { margin-top:56px; font-size:15px; color:var(--muted); }
+
+/* ============ CONTACT: the clip-out coupon ============ */
+.coupon-sec { padding:120px var(--margin); }
+.coupon-sec > h2 { font-size:32px; margin-bottom:48px; }
+.coupon { position:relative; display:grid; grid-template-columns:46% 54%; background:var(--ink); color:var(--bg); }
+.coupon .notch { position:absolute; left:46%; width:28px; height:28px; margin-left:-14px; background:var(--bg); border-radius:50%; z-index:3; }
+.coupon .n-top { top:-14px; }
+.coupon .n-bot { bottom:-14px; }
+.coupon .left { padding:48px; display:flex; flex-direction:column; justify-content:space-between; min-height:280px; }
+.coupon .left h3 { font-size:clamp(28px,3vw,44px); text-transform:uppercase; }
+.coupon .left p { font-size:16px; max-width:30ch; }
+.coupon .right { padding:48px; border-left:5px dotted var(--bg); display:flex; flex-direction:column; gap:14px; justify-content:center; }
+.coupon .right a.big { font-family:'Besley',serif; font-weight:800; font-size:clamp(26px,3vw,40px); text-decoration:none; letter-spacing:-0.02em; }
+.coupon .right a.big:hover { text-decoration:underline; text-underline-offset:6px; }
+.coupon .right .sub { font-size:16px; }
+.coupon .right .btn { align-self:flex-start; margin-top:10px; }
+
+/* ============ FOOTER: back of the card (curtain) ============ */
+footer { background:var(--ink); color:var(--bg); display:flex; align-items:flex-end; padding-top:60px; }
+.fpanel { position:relative; background:var(--paper); color:var(--ink); margin:0 auto 40px; width:calc(100% - 2*var(--margin)); max-width:1100px; padding:64px 56px 44px; display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+.fscallop { position:absolute; top:-13px; left:0; right:0; height:14px; display:flex; justify-content:space-between; overflow:hidden; }
+.fscallop i { width:28px; height:28px; background:var(--ink); border-radius:50%; flex:none; }
+.fpanel .sign h2 { font-size:32px; margin-bottom:18px; }
+.fpanel .sign p { font-size:16px; max-width:34ch; }
+.fpanel .addr { font-size:18px; line-height:1.5; }
+.fpanel .addr a { display:block; text-decoration:none; padding:6px 0; }
+.fpanel .addr a:hover { text-decoration:underline; text-underline-offset:4px; }
+.stamp { position:absolute; top:20px; right:24px; width:88px; aspect-ratio:3/4; background:var(--paper); padding:6px; }
+.stamp img { width:100%; height:100%; object-fit:cover; }
+.imprint { position:absolute; bottom:14px; left:0; right:0; text-align:center; font-size:13px; color:var(--muted); padding:0 40px; }
+
+/* motion */
+.wipe { clip-path:inset(100% 0 0 0); transition:clip-path .8s cubic-bezier(.2,.6,.2,1); }
+.wipe.in { clip-path:inset(0 0 0 0); }
+.rise { opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.6,.2,1); }
+.rise.in { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) {
+  .rise, .wipe { opacity:1; transform:none; clip-path:none; transition:none; }
+  html { scroll-behavior:auto; }
+}
+
+@media (max-width:899px) {
+  :root { --margin:20px; }
+  .hero-nav { display:none; }
+  .card { top:96px; width:calc(100% - 24px); padding:36px 24px; }
+  .card h1 { font-size:12.5vw; margin:22px 0 18px; }
+  .card h1 .l1, .card h1 .l2 { text-align:center; }
+  .card .photo { width:78%; }
+  .card .swatch { display:none; }
+  .intro { padding:90px var(--margin) 80px; }
+  .intro-row { display:block; }
+  .intro h2 { font-size:11vw; }
+  .intro .note { max-width:none; margin-top:24px; font-size:16px; }
+  .facts { display:grid; grid-template-columns:1fr 1fr; row-gap:32px; margin-top:64px; }
+  .fact .f { font-size:26px; }
+  .tiles { grid-template-columns:1fr 1fr; gap:16px 8px; }
+  .strip .r2 { display:none; }
+  .slot { height:auto; }
+  .sheets { padding:80px 0 60px; }
+  .sheet { position:relative; height:auto; min-height:70svh; }
+  .sheet .band { height:52px; }
+  .sheet .band h3 { font-size:22px; }
+  .sheet .body { display:block; padding:20px 20px 0; }
+  .sheet .ph { aspect-ratio:4/3; }
+  .sheet .desc { padding:20px 0 32px; font-size:17px; max-width:none; }
+  .menu { padding:80px 20px; }
+  .menu-card { padding:44px 28px; }
+  .mgroup > h4 { font-size:20px; }
+  .mitem .row { font-size:16px; }
+  .coupon { grid-template-columns:1fr; }
+  .coupon .notch { display:none; }
+  .coupon .right { border-left:none; border-top:5px dotted var(--bg); padding:32px; }
+  .coupon .left { padding:32px; min-height:0; gap:20px; }
+  .fpanel { grid-template-columns:1fr; padding:48px 28px 56px; gap:28px; margin-bottom:24px; }
+  .stamp { width:64px; }
+  .imprint { position:static; margin-top:8px; padding:0; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="hero-top">
+    <a class="mono" href="#top">S.</a>
+    <nav class="hero-nav" aria-label="Sections">
+      <a href="#work">The work</a>
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+918369646564">Book by phone</a>
+  </div>
+  <div class="card">
+    <i class="corner c1"></i><i class="corner c2"></i>
+    <h1><span class="l1">Shanuzz</span><span class="l2">Bandra</span></h1>
+    <p class="det">Unisex salon &amp; academy</p>
+    <p class="det">Hill Road <i class="dia"></i> Bandra West <i class="dia"></i> Mumbai 400050</p>
+    <p class="det">Rated 4.5 by 1,261 visitors on Google</p>
+    <div class="photo"><img src="assets/shanu-portrait.jpg" alt="Shanu, owner and colourist at Shanuzz, in the salon" width="800" height="1200"></div>
+    <div class="swatch"><span>The house teal</span></div>
+  </div>
+</header>
+
+<main>
+<!-- INTRO -->
+<section class="intro" aria-label="About Shanuzz">
+  <div class="intro-row">
+    <h2 class="rise">Hair is the canvas</h2>
+    <p class="note rise">Shanu - hairdresser, colourist and educator - runs Shanuzz as a salon and academy. The Bandra room on Hill Road is one of three, known for natural-looking balayage and textured hair.</p>
+  </div>
+  <div class="facts">
+    <div class="fact rise"><div class="f">4.5 on Google</div><div class="e">1,261 reviews and counting</div></div>
+    <div class="fact rise"><div class="f">Hill Road</div><div class="e">1st Floor, Anzar Villa, opp. Andrews Church</div></div>
+    <div class="fact rise"><div class="f">Three rooms</div><div class="e">Andheri, Bandra and Balewadi, Pune</div></div>
+    <div class="fact rise"><div class="f">Salon &amp; academy</div><div class="e">Clients in the chairs, students on the floor</div></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="work" aria-label="The work">
+  <h2 class="rise">From the floor</h2>
+  <div class="tiles">
+    <div class="tile rise"><div class="ph a"><img src="assets/shanu-work.jpg" alt="A stylist at work on a client under the Shanuzz sign" width="959" height="1198" loading="lazy"></div><div class="strip s-black"><div class="r1"><span>Cut</span><span>Dry</span><span>Style</span><span>Finish</span></div><div class="r2"><span>The floor</span><span>Bandra</span></div></div></div>
+    <div class="tile rise"><div class="ph b"><img src="assets/hair-style.jpg" alt="A finished balayage with the stylist behind the chair" width="900" height="1200" loading="lazy"></div><div class="strip s-ink"><div class="r1"><span>Balayage</span><span>Texture</span><span>Gloss</span><span>Tone</span></div><div class="r2"><span>The work</span><span>Hill Rd</span></div></div></div>
+    <div class="tile rise"><div class="ph a"><img src="assets/colour-shelf.jpg" alt="Shelves of professional colour tubes in the salon" width="1200" height="800" loading="lazy"></div><div class="strip s-teal"><div class="r1"><span>Tone</span><span>Mix</span><span>Lift</span><span>Gloss</span></div><div class="r2"><span>The colour wall</span><span>In house</span></div></div></div>
+    <div class="tile rise"><div class="ph b"><img src="assets/shanu-portrait-alt.jpg" alt="Shanu, owner of Shanuzz" width="1114" height="1032" loading="lazy"></div><div class="strip s-ink"><div class="r1"><span>Shanu</span><span>Owner</span><span>Artist</span><span>Educator</span></div><div class="r2"><span>The owner</span><span>Colourist</span></div></div></div>
+    <div class="tile rise"><div class="ph b"><img src="assets/academy.jpg" alt="The Shanuzz academy training floor" width="1200" height="582" loading="lazy"></div><div class="strip s-ink"><div class="r1"><span>Academy</span><span>Cut</span><span>Colour</span><span>Style</span></div><div class="r2"><span>The academy</span><span>Andheri</span></div></div></div>
+    <div class="tile rise"><div class="ph a"><img src="assets/hair-style.jpg" alt="Detail of a finished textured style" width="900" height="1200" loading="lazy" style="object-position:20% 30%"></div><div class="strip s-teal"><div class="r1"><span>Wave</span><span>Curl</span><span>Shine</span><span>Set</span></div><div class="r2"><span>Detail</span><span>Bandra</span></div></div></div>
+    <div class="tile rise"><div class="ph b"><img src="assets/shanu-work.jpg" alt="Close detail of the stylist's finish" width="959" height="1198" loading="lazy" style="object-position:70% 20%"></div><div class="strip s-ink"><div class="r1"><span>Snip</span><span>Comb</span><span>Dry</span><span>Set</span></div><div class="r2"><span>Detail</span><span>Hill Rd</span></div></div></div>
+    <div class="tile rise"><div class="ph a"><img src="assets/colour-shelf.jpg" alt="More of the colour library on its shelves" width="1200" height="800" loading="lazy" style="object-position:50% 80%"></div><div class="strip s-black"><div class="r1"><span>Red</span><span>Ash</span><span>Gold</span><span>Beige</span></div><div class="r2"><span>The library</span><span>In house</span></div></div></div>
+  </div>
+</section>
+
+<!-- FEATURES: stacking sheets -->
+<section class="sheets" id="services" aria-label="What they do">
+  <h2 class="rise">What the chairs do</h2>
+  <div class="slot"><div class="sheet sh-1">
+    <div class="band"><h3>Cut &amp; style</h3></div>
+    <div class="body">
+      <p class="desc">Precision haircuts and styling for men and women, tailored in consultation to face, texture and routine.</p>
+      <div class="ph"><img src="assets/shanu-work.jpg" alt="A stylist cutting hair at Shanuzz" width="959" height="1198" loading="lazy"></div>
+    </div>
+  </div>
+  </div><div class="slot"><div class="sheet sh-2">
+    <div class="band"><h3>Colour &amp; balayage</h3></div>
+    <div class="body">
+      <p class="desc">Natural-looking balayage is the house obsession, alongside full colour, gloss and correction work.</p>
+      <div class="ph"><img src="assets/colour-shelf.jpg" alt="The colour library at Shanuzz" width="1200" height="800" loading="lazy"></div>
+    </div>
+  </div>
+  </div><div class="slot"><div class="sheet sh-3">
+    <div class="band"><h3>Care &amp; repair</h3></div>
+    <div class="body">
+      <p class="desc">Keratin and smoothening treatments, hair spa and deep conditioning to keep the work healthy for longer.</p>
+      <div class="ph"><img src="assets/hair-style.jpg" alt="A finished, healthy textured style" width="900" height="1200" loading="lazy"></div>
+    </div>
+  </div>
+  </div><div class="slot"><div class="sheet sh-4">
+    <div class="band"><h3>Bride &amp; occasion</h3></div>
+    <div class="body">
+      <p class="desc">Bridal and occasion hair styling, with makeup and manicure for the full morning-of chair.</p>
+      <div class="ph"><img src="assets/shanu-portrait.jpg" alt="Shanu in the salon" width="800" height="1200" loading="lazy"></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- LIST: the printed service card -->
+<section class="menu" aria-label="The service list">
+  <h2 class="rise">The service card</h2>
+  <div class="menu-card rise">
+    <div class="scallop top"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="scallop bottom"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <h3>Shanuzz, Bandra</h3>
+    <p class="mnote">Prices are quoted in the chair, after consultation - call to ask.</p>
+    <div class="mgroup">
+      <h4>Hair</h4>
+      <div class="mitem"><div class="row"><span class="nm">Precision cut &amp; styling</span><span class="pr">By consult</span></div><div class="ds">For men and women, finished to your routine</div></div>
+      <div class="mitem"><div class="row"><span class="nm">Advanced hair treatments</span><span class="pr">By consult</span></div><div class="ds">Repair and maintenance programmes</div></div>
+    </div>
+    <div class="mgroup">
+      <h4>Colour</h4>
+      <div class="mitem"><div class="row"><span class="nm">Balayage</span><span class="pr">By consult</span></div><div class="ds">The house speciality - natural, grown-out soft</div></div>
+      <div class="mitem"><div class="row"><span class="nm">Hair colour &amp; gloss</span><span class="pr">By consult</span></div><div class="ds">Full colour, tone and shine work</div></div>
+    </div>
+    <div class="mgroup">
+      <h4>Care</h4>
+      <div class="mitem"><div class="row"><span class="nm">Keratin &amp; smoothening</span><span class="pr">By consult</span></div><div class="ds">Frizz control and long-wear smoothness</div></div>
+      <div class="mitem"><div class="row"><span class="nm">Hair spa &amp; deep conditioning</span><span class="pr">By consult</span></div><div class="ds">Nourishing treatments for scalp and lengths</div></div>
+    </div>
+    <div class="mgroup">
+      <h4>Occasions</h4>
+      <div class="mitem"><div class="row"><span class="nm">Bridal &amp; occasion hair</span><span class="pr">By consult</span></div><div class="ds">Trials and morning-of styling</div></div>
+      <div class="mitem"><div class="row"><span class="nm">Makeup &amp; manicure</span><span class="pr">By consult</span></div><div class="ds">Finishing services from the salon floor</div></div>
+    </div>
+    <p class="hours">Open every day - call +91 83696 46564<br>for today's chair availability.</p>
+  </div>
+</section>
+
+<!-- CONTACT: the coupon -->
+<section class="coupon-sec" id="visit" aria-label="Book and visit">
+  <h2 class="rise">Clip this out</h2>
+  <div class="coupon rise">
+    <i class="notch n-top"></i><i class="notch n-bot"></i>
+    <div class="left">
+      <h3>Book a chair</h3>
+      <p>One phone call holds your slot. Walk past Andrews Church and climb to the first floor.</p>
+    </div>
+    <div class="right">
+      <a class="big" href="tel:+918369646564">+91 83696 46564</a>
+      <p class="sub">1st Floor, Anzar Villa, 92 Hill Road, opp. Andrews Church, Ranwar, Bandra West, Mumbai 400050</p>
+      <p class="sub"><a href="mailto:contact@shanuzz.com">contact@shanuzz.com</a></p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Shanuzz+Unisex+Salon&amp;query_place_id=ChIJ-czCHdfJ5zsR3rFuGFkXoCw">Get directions</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER: the back of the card, revealed as a curtain -->
+<footer aria-label="Footer">
+  <div class="fpanel rise">
+    <div class="fscallop"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="stamp"><img src="assets/shanu-portrait.jpg" alt="Shanu, owner of Shanuzz" width="800" height="1200" loading="lazy"></div>
+    <div class="sign">
+      <h2>See you in Bandra</h2>
+      <p>Bring a photo, a plan, or neither. The consultation comes first; the scissors come after.</p>
+    </div>
+    <div class="addr">
+      <a href="mailto:contact@shanuzz.com">contact@shanuzz.com</a>
+      <a href="tel:+918369646564">+91 83696 46564</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Shanuzz+Unisex+Salon&amp;query_place_id=ChIJ-czCHdfJ5zsR3rFuGFkXoCw">1st Floor, Anzar Villa, 92 Hill Rd, Bandra West</a>
+      <a href="https://shanuzz.com/" rel="noopener">shanuzz.com</a>
+    </div>
+    <p class="imprint">Shanuzz Unisex Salon - Andheri, Bandra &amp; Balewadi. All photographs from the salon's own website, shanuzz.com. Printed on the web, 2026.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        var el = e.target;
+        var sibs = Array.prototype.slice.call(el.parentElement.querySelectorAll('.rise,.wipe'));
+        var idx = sibs.indexOf(el);
+        setTimeout(function(){ el.classList.add('in'); }, 70 * Math.max(0, idx));
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rise,.wipe').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
