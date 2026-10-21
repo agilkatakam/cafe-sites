@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epic Poetry Cafe & Patisserie, Vyttila, Kochi</title>
+<meta name="description" content="Epic Poetry is a cafe and patisserie in Vyttila, Kochi. Single estate coffee, continental food and desserts made in house. Open 11 to 11 every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f4; --ink:#111111; --muted:#595959;
+  --accent:#1a4be0; --accent-ink:#ffffff;
+  --step-small:15px;
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --sans:'Schibsted Grotesk',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 var(--step-body)/1.4 var(--sans);letter-spacing:-0.01em;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+.wrap{padding-left:32px;padding-right:32px;max-width:1600px;margin-inline:auto}
+
+/* ---------- hero: tabbed folder stack ---------- */
+.hero{position:relative;min-height:100svh;background:var(--ink);color:#fff;overflow:hidden}
+.hero-top{position:relative;z-index:3;display:flex;justify-content:center;align-items:center;padding:24px 32px}
+.hero-top .wm{font:600 18px/1 var(--sans);letter-spacing:-0.01em}
+.hero-top .find{position:absolute;right:32px;top:26px;font:600 15px/1 var(--sans);color:#fff;text-decoration:underline;text-underline-offset:4px}
+.hero-top .find:hover{color:var(--accent)}
+.hero-head{position:relative;z-index:3;text-align:center;margin-top:5vh}
+.hero-head h1{font:800 clamp(88px,10vw,160px)/0.88 var(--sans);letter-spacing:-0.05em;text-transform:uppercase}
+.hero-head p{margin:22px auto 0;max-width:46ch;font:400 20px/1.4 var(--sans);color:#c9c9c9;letter-spacing:-0.01em}
+.stack{position:absolute;left:7vw;right:7vw;top:52%;bottom:0;z-index:2}
+.folder{position:absolute;left:0;right:0;display:block;text-decoration:none}
+.folder .tab{position:absolute;top:-34px;height:40px;width:190px;display:flex;align-items:center;justify-content:center;clip-path:polygon(0 100%,10% 0,90% 0,100% 100%);font:600 17px/1 var(--sans)}
+.folder .band{position:absolute;inset:0}
+.f1{top:0;z-index:1}.f2{top:62px;z-index:2}.f3{top:124px;z-index:3}.f4{top:186px;z-index:4}.f5{top:248px;z-index:5}
+.f1 .tab{left:6%;background:var(--accent);color:#fff}
+.f2 .tab{left:31%;background:#fff;color:var(--ink)}
+.f3 .tab{left:56%;background:var(--surface);color:var(--ink)}
+.f4 .tab{left:79%;background:var(--accent);color:#fff}
+.f1 .band{background:var(--accent)}
+.f2 .band{background:#fff}
+.f3 .band{background:var(--surface)}
+.f4 .band{background:var(--accent)}
+.f5 .band{background:#fff;display:flex;align-items:flex-start}
+.f5 .tab{left:6%;background:#fff;color:var(--ink)}
+.folder .band{transition:transform .25s}
+.folder:hover .band{transform:translateY(-6px)}
+.f1{height:calc(100% - 0px + 300px)}
+.f2{height:calc(100% - 62px + 300px)}
+.f3{height:calc(100% - 124px + 300px)}
+.f4{height:calc(100% - 186px + 300px)}
+.f5{height:calc(100% - 248px + 300px)}
+.f1 .band{display:flex;align-items:flex-start}
+.callbtn{margin:34px 0 0 34px;background:var(--accent);color:#fff;font:600 18px/1 var(--sans);padding:22px 34px;text-decoration:none;display:inline-block;clip-path:polygon(0 100%,0 12px,6px 0,calc(100% - 6px) 0,100% 12px,100% 100%);transition:background .2s}
+.callbtn:hover{background:#0f3ac0}
+
+/* ---------- shared section ---------- */
+section{padding:120px 0}
+h2{font:800 var(--step-head)/0.95 var(--sans);letter-spacing:-0.05em}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- intro ---------- */
+.intro .row1{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end}
+.intro .row1 h2{grid-column:1/8;font-weight:400;font-size:clamp(44px,5vw,76px)}
+.intro .note{grid-column:9/13;max-width:260px;font-size:var(--step-body)}
+.intro .facts{display:flex;justify-content:space-between;gap:32px;margin-top:110px;flex-wrap:wrap}
+.intro .fact b{display:block;font:400 clamp(26px,2.8vw,42px)/1.1 var(--sans);letter-spacing:-0.03em;white-space:nowrap}
+.intro .fact span{display:block;margin-top:8px;font-size:var(--step-small);color:var(--muted)}
+.intro .media{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-top:80px}
+.intro .media .mv{grid-column:8/13}
+.intro .media video{width:100%;aspect-ratio:4/3;object-fit:cover}
+.intro .media .cap{margin-top:10px;font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- list: index with preview ---------- */
+.table-sec{background:var(--surface)}
+.table-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-top:60px}
+.rows{grid-column:1/8}
+.rows h2{grid-column:1/8}
+.rowitem{display:block;text-decoration:none;padding:26px 0;transition:opacity .24s}
+.rowitem .t{font:800 clamp(26px,2.6vw,40px)/1 var(--sans);letter-spacing:-0.04em}
+.rowitem .d{margin-top:8px;font-size:var(--step-body);color:var(--muted);max-width:44ch}
+.rows.dim .rowitem{opacity:.35}
+.rows.dim .rowitem.hot{opacity:1}
+.rowitem .inline-img{display:none}
+.preview{grid-column:8/13;position:relative}
+.preview .frame{position:sticky;top:120px;aspect-ratio:4/5;overflow:hidden;background:var(--ink)}
+.preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .24s}
+.preview img.on{opacity:1}
+
+/* ---------- gallery ---------- */
+.gallery h2{margin-bottom:48px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 12px;align-items:start}
+.tile{background:var(--surface)}
+.tile img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.tile .strip{padding:12px;font-size:var(--step-small);line-height:1.35;min-height:88px}
+.tile .r1{display:flex;justify-content:space-between;gap:8px;font-variant-numeric:tabular-nums}
+.tile .r2{display:flex;justify-content:space-between;gap:8px;margin-top:6px;color:var(--muted)}
+.tile .r3{margin-top:6px;color:var(--muted)}
+.tile:nth-child(4n+1) .strip{background:var(--ink);color:#fff}
+.tile:nth-child(4n+1) .r2,.tile:nth-child(4n+1) .r3{color:#b5b5b5}
+.tile:nth-child(4n+3) .strip{background:var(--accent);color:#fff}
+.tile:nth-child(4n+3) .r2,.tile:nth-child(4n+3) .r3{color:#cfdbff}
+
+/* ---------- contact: coupon ---------- */
+.contact{padding:120px 0}
+.coupon{position:relative;margin:60px auto 0;max-width:1100px;background:var(--accent);color:var(--accent-ink);display:grid;grid-template-columns:5fr 6fr;min-height:300px}
+.coupon::before,.coupon::after{content:"";position:absolute;left:45.4%;width:28px;height:28px;border-radius:50%;background:var(--bg)}
+.coupon::before{top:-14px}
+.coupon::after{bottom:-14px}
+.coupon .left{padding:48px;border-right:5px dotted var(--bg);display:flex;flex-direction:column;justify-content:space-between;min-height:300px}
+.coupon .left h3{font:800 clamp(26px,2.8vw,40px)/1 var(--sans);letter-spacing:-0.04em;text-transform:uppercase;max-width:12ch}
+.coupon .left p{font-size:var(--step-body);max-width:30ch}
+.coupon .right{padding:48px;display:grid;gap:10px;align-content:center}
+.coupon .cell{display:flex;justify-content:space-between;align-items:center;gap:14px;background:#3f66e8;color:#fff;padding:15px 18px;font:600 var(--step-body)/1.2 var(--sans);text-decoration:none;transition:background .2s}
+.coupon .cell:hover{background:#5980ff}
+.coupon .cell small{font:400 var(--step-small)/1.2 var(--sans);color:#d5deff}
+
+/* ---------- footer: back of the card ---------- */
+footer{background:var(--ink);padding:120px 0 48px}
+.scallops{display:block;width:100%;height:26px}
+.card{background:var(--surface);max-width:1100px;margin:0 auto;padding:56px 48px 30px;display:grid;grid-template-columns:1fr 1fr;gap:40px;position:relative}
+.card .sign h4{font:400 32px/1.1 var(--sans);letter-spacing:-0.02em}
+.card .sign p{margin-top:16px;font-size:var(--step-body);max-width:34ch}
+.card .addr{display:grid;gap:12px;align-content:start}
+.card .addr a{font-size:var(--step-body);text-decoration:underline;text-underline-offset:4px}
+.card .addr a:hover{color:var(--accent)}
+.stamp{position:absolute;top:26px;right:26px;width:88px;padding:6px;background:var(--surface)}
+.stamp img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.imprint{grid-column:1/-1;margin-top:34px;text-align:center;font-size:var(--step-small);color:var(--muted)}
+.credits{max-width:72ch;margin:26px auto 0;padding:0 8px;font-size:var(--step-small);line-height:1.5;color:#b5b5b5}
+.credits a{color:#e0e6ff}
+
+/* ---------- phone ---------- */
+@media (max-width:900px){
+  .wrap{padding-left:20px;padding-right:20px}
+  section{padding:64px 0}
+  .hero-top{padding:20px}
+  .hero-top .find{right:20px}
+  .hero-head{margin-top:7vh;padding:0 20px}
+  .hero-head h1{font-size:14.5vw}
+  .hero-head p{font-size:18px}
+  .stack{left:12px;right:12px;top:48svh}
+  .folder .tab{width:128px;height:30px;top:-25px;font-size:14px}
+  .f2{top:50px}.f3{top:100px}.f4{top:150px}.f5{top:200px}
+  .f2 .tab{left:24%}.f3 .tab{left:46%}.f4 .tab{left:66%}
+  .f2{height:calc(100% - 50px + 300px)}.f3{height:calc(100% - 100px + 300px)}.f4{height:calc(100% - 150px + 300px)}.f5{height:calc(100% - 200px + 300px)}
+  .callbtn{margin:22px 0 0 20px;padding:18px 26px;font-size:16px}
+  .intro .row1 h2{grid-column:1/-1;font-size:11vw}
+  .intro .note{grid-column:1/-1;max-width:none;margin-top:18px}
+  .intro .facts{display:grid;grid-template-columns:1fr 1fr;gap:32px 24px;margin-top:56px}
+  .intro .fact b{font-size:26px;white-space:normal}
+  .intro .media .mv{grid-column:1/-1}
+  .table-grid{display:block;margin-top:40px}
+  .preview{display:none}
+  .rowitem .inline-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;margin-top:14px}
+  .tiles{grid-template-columns:1fr 1fr;gap:20px 8px}
+  .tile .strip{min-height:0}
+  .tile .r2{display:none}
+  .coupon{grid-template-columns:1fr;margin:40px 12px 0}
+  .coupon::before,.coupon::after{left:auto;top:46.5%}
+  .coupon::before{left:-14px}
+  .coupon::after{right:-14px;left:auto}
+  .coupon .left{border-right:none;border-bottom:5px dotted var(--bg);padding:36px 28px;min-height:0;gap:22px}
+  .coupon .right{padding:28px}
+  .card{grid-template-columns:1fr;margin:0 12px;padding:70px 28px 26px}
+  .stamp{width:64px;top:14px;right:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero-top">
+    <span class="wm">Epic Poetry</span>
+    <a class="find" href="#book" data-ui>Find us</a>
+  </div>
+  <div class="hero-head">
+    <h1>Epic Poetry</h1>
+    <p>A cafe and patisserie in Vyttila, Kochi. Good coffee, food worth staying for, eleven to eleven every day.</p>
+  </div>
+  <nav class="stack" aria-label="Sections">
+    <a class="folder f1" href="#room"><span class="tab">The room</span><span class="band"></span></a>
+    <a class="folder f2" href="#table"><span class="tab">On the table</span><span class="band"></span></a>
+    <a class="folder f3" href="#pictures"><span class="tab">In pictures</span><span class="band"></span></a>
+    <a class="folder f4" href="#book"><span class="tab">Bookings</span><span class="band"></span></a>
+    <div class="folder f5"><span class="tab">Call us</span><span class="band"><a class="callbtn" href="tel:+919384801109" data-ui>Call the cafe</a></span></div>
+  </nav>
+</header>
+
+<main>
+
+<section class="intro wrap" id="room">
+  <div class="row1">
+    <h2 class="reveal">Stay a while</h2>
+    <p class="note reveal">Arched windows, cane chairs, a wabi sabi calm. A room built for drinking coffee slowly, in Vyttila, Kochi.</p>
+  </div>
+  <div class="facts">
+    <div class="fact reveal"><b>11 to 11</b><span>open every day of the week</span></div>
+    <div class="fact reveal"><b>Vyttila</b><span>Janatha Junction, Kochi</span></div>
+    <div class="fact reveal"><b>Free Wi Fi</b><span>laptop friendly, quiet corners</span></div>
+    <div class="fact reveal"><b>Events</b><span>space for shoots and gatherings</span></div>
+  </div>
+  <div class="media">
+    <div class="mv reveal">
+      <video src="assets/pour-over-loop.webm" poster="assets/pour-over-poster.jpg" autoplay muted loop playsinline aria-label="Coffee being brewed, pour over method"></video>
+      <p class="cap">Single estate coffee, poured slowly. Stock footage, not the cafe's counter.</p>
+    </div>
+  </div>
+</section>
+
+<section class="table-sec" id="table">
+  <div class="wrap">
+    <h2 class="reveal">On the table</h2>
+    <div class="table-grid">
+      <div class="rows" id="rows">
+        <a class="rowitem reveal" href="#book" data-img="0">
+          <span class="t">Single estate coffee</span>
+          <span class="d" style="display:block">Specialty beans from one estate, brewed with care.</span>
+          <img class="inline-img" src="assets/cappuccino-and-cookie.jpg" alt="A cappuccino and a biscuit on a wooden table" loading="lazy">
+        </a>
+        <a class="rowitem reveal" href="#book" data-img="1">
+          <span class="t">Continental plates</span>
+          <span class="d" style="display:block">A continental menu with global influences, pasta to sandwiches.</span>
+          <img class="inline-img" src="assets/a-plate-of-red-sauce-pasta.jpg" alt="A plate of penne pasta in red sauce" loading="lazy">
+        </a>
+        <a class="rowitem reveal" href="#book" data-img="2">
+          <span class="t">Patisserie, in house</span>
+          <span class="d" style="display:block">Desserts made in house, cheesecakes to tarts.</span>
+          <img class="inline-img" src="assets/cheesecake-with-slice-cut-out.jpg" alt="A berry cheesecake with one slice cut" loading="lazy">
+        </a>
+        <a class="rowitem reveal" href="#room" data-img="3">
+          <span class="t">The room itself</span>
+          <span class="d" style="display:block">Arched windows and cane chairs, built for long afternoons.</span>
+          <img class="inline-img" src="assets/dessert-window.jpg" alt="Dessert being sauced by the arched window at Epic Poetry" loading="lazy">
+        </a>
+      </div>
+      <div class="preview" aria-hidden="true">
+        <div class="frame">
+          <img src="assets/cappuccino-and-cookie.jpg" alt="" class="on">
+          <img src="assets/a-plate-of-red-sauce-pasta.jpg" alt="">
+          <img src="assets/cheesecake-with-slice-cut-out.jpg" alt="">
+          <img src="assets/dessert-window.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery wrap" id="pictures">
+  <h2 class="reveal">In pictures</h2>
+  <div class="tiles">
+    <figure class="tile reveal"><img src="assets/dessert-window.jpg" alt="Dessert being sauced beside the arched window at Epic Poetry" loading="lazy"><figcaption class="strip"><span class="r1"><span>Dessert</span><span>window side</span></span><span class="r2"><span>Vyttila</span><span>the cafe</span></span><span class="r3">from the cafe's Instagram</span></figcaption></figure>
+    <figure class="tile reveal"><img src="assets/guitar-corner.jpg" alt="A guitar and books on a shelf above plants in the cafe corner" loading="lazy"><figcaption class="strip"><span class="r1"><span>Corner</span><span>shelf</span></span><span class="r2"><span>Vyttila</span><span>the cafe</span></span><span class="r3">from the cafe's Instagram</span></figcaption></figure>
+    <figure class="tile reveal"><img src="assets/cappuccino-and-cookie.jpg" alt="A cappuccino and a biscuit on wood" loading="lazy"><figcaption class="strip"><span class="r1"><span>Coffee</span><span>and a biscuit</span></span><span class="r2"><span>stock</span><span>atmosphere</span></span><span class="r3">Wikimedia Commons</span></figcaption></figure>
+    <figure class="tile reveal"><img src="assets/a-plate-of-red-sauce-pasta.jpg" alt="Penne pasta in red sauce" loading="lazy"><figcaption class="strip"><span class="r1"><span>Pasta</span><span>red sauce</span></span><span class="r2"><span>stock</span><span>atmosphere</span></span><span class="r3">Wikimedia Commons</span></figcaption></figure>
+    <figure class="tile reveal"><img src="assets/cheesecake-with-slice-cut-out.jpg" alt="A berry cheesecake" loading="lazy"><figcaption class="strip"><span class="r1"><span>Cheesecake</span><span>berry</span></span><span class="r2"><span>stock</span><span>atmosphere</span></span><span class="r3">Wikimedia Commons</span></figcaption></figure>
+    <figure class="tile reveal"><img src="assets/window-in-a-cafe-in-san-gimignano.jpg" alt="An open cafe window with plants" loading="lazy"><figcaption class="strip"><span class="r1"><span>Window</span><span>seat mood</span></span><span class="r2"><span>stock</span><span>atmosphere</span></span><span class="r3">Wikimedia Commons</span></figcaption></figure>
+    <figure class="tile reveal"><img src="https://picsum.photos/id/625/1200/1500" alt="A wooden table with white chairs beside large windows" loading="lazy"><figcaption class="strip"><span class="r1"><span>Table</span><span>by the glass</span></span><span class="r2"><span>stock</span><span>atmosphere</span></span><span class="r3">Unsplash, via picsum</span></figcaption></figure>
+    <figure class="tile reveal"><img src="https://picsum.photos/id/42/1200/1500" alt="A coffee cup on a long wooden table in a bright cafe" loading="lazy"><figcaption class="strip"><span class="r1"><span>Long table</span><span>bright room</span></span><span class="r2"><span>stock</span><span>atmosphere</span></span><span class="r3">Unsplash, via picsum</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="contact wrap" id="book">
+  <h2 class="reveal">Book a table</h2>
+  <div class="coupon reveal">
+    <div class="left">
+      <h3>Bookings and enquiry</h3>
+      <p>Call for a table, an event or a shoot. The room seats dates and deadlines alike.</p>
+    </div>
+    <div class="right">
+      <a class="cell" href="tel:+919384801109"><span>Call the cafe</span><small>+91 93848 01109</small></a>
+      <a class="cell" href="mailto:slvcoffee0@gmail.com"><span>Write to us</span><small>slvcoffee0@gmail.com</small></a>
+      <a class="cell" href="https://www.instagram.com/epicpoetrycafe" rel="noopener"><span>Instagram</span><small>@epicpoetrycafe</small></a>
+      <a class="cell" href="https://maps.app.goo.gl/oXX989mnEZr1okC48" rel="noopener"><span>Directions</span><small>Janatha Junction, Vyttila</small></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg class="scallops" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26 V13 Q50 -13 100 13 Q150 -13 200 13 Q250 -13 300 13 Q350 -13 400 13 Q450 -13 500 13 Q550 -13 600 13 Q650 -13 700 13 Q750 -13 800 13 Q850 -13 900 13 Q950 -13 1000 13 Q1050 -13 1100 13 Q1150 -13 1200 13 V26 Z" fill="#f4f4f4"/></svg>
+    <div class="card">
+      <div class="stamp"><img src="assets/guitar-corner.jpg" alt="" loading="lazy"></div>
+      <div class="sign">
+        <h4>Come for a coffee.</h4>
+        <p>Stay for the afternoon. Open eleven to eleven, every day of the week.</p>
+      </div>
+      <div class="addr">
+        <a href="mailto:slvcoffee0@gmail.com">slvcoffee0@gmail.com</a>
+        <a href="tel:+919384801109">+91 93848 01109</a>
+        <a href="https://maps.app.goo.gl/oXX989mnEZr1okC48" rel="noopener">Opposite Pillar No 841, Janatha Junction, Vyttila, Kochi 682019</a>
+        <a href="https://www.instagram.com/epicpoetrycafe" rel="noopener">@epicpoetrycafe on Instagram</a>
+      </div>
+      <p class="imprint">Epic Poetry Cafe and Patisserie, Vyttila, Kochi. An independent introduction, not affiliated with the cafe.</p>
+    </div>
+    <p class="credits">Two photographs are the cafe's own, from its public Instagram. Other pictures and footage are generic stock, shown for atmosphere and never of the cafe's own dishes or rooms: <a href="https://commons.wikimedia.org/wiki/File:Cappuccino_and_cookie.jpg">"Cappuccino and cookie"</a> by TricksterWildcat, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:A_plate_of_red_sauce_pasta.jpg">"A plate of red sauce pasta"</a> by Rocky Masum, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Cheesecake_with_slice_cut_out.jpg">"Cheesecake with slice cut out"</a> by Martin van Dam, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Window_in_a_cafe_in_San_Gimignano_(02182)2.jpg">"Window in a cafe in San Gimignano"</a> by Rhododendrites, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Pour_Over.ogv">"Pour Over"</a> film by Lev Lazinskiy, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, all via Wikimedia Commons; table and long table photographs from Unsplash via picsum.photos. Facts from the cafe's own website.</p>
+  </div>
+</footer>
+
+<script>
+// index with preview
+const rows = document.getElementById('rows');
+const items = [...rows.querySelectorAll('.rowitem')];
+const imgs = [...document.querySelectorAll('.preview img')];
+function show(i){
+  rows.classList.add('dim');
+  items.forEach((it,k)=>it.classList.toggle('hot',k===i));
+  imgs.forEach((im,k)=>im.classList.toggle('on',k===i));
+}
+items.forEach((it,i)=>{
+  it.addEventListener('pointerenter',()=>show(i));
+  it.addEventListener('focus',()=>show(i));
+});
+rows.addEventListener('pointerleave',()=>{rows.classList.remove('dim');items.forEach(it=>it.classList.remove('hot'));});
+// entrances
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
