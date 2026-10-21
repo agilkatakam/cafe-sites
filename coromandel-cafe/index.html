@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coromandel Café — La Maison Rose, White Town, Pondicherry</title>
+<meta name="description" content="Coromandel Café: a hundred-year-old pink French villa on Romain Rolland Street, White Town, Pondicherry. Wood-fired pizza, fresh bakes, coffee and long verandah lunches.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23232d1a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='38' fill='%23f4f2ea' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;0,7..72,500;1,7..72,400&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ground:#efeeea; --paper:#f8f7f4;
+  --ink:#232d1a; --ink-soft:#5a6549;
+  --line:#c9c4b0; --link:#3d4c26;
+  --display:"Literata",Georgia,serif;
+  --text:"Instrument Sans",system-ui,sans-serif;
+  --pad:clamp(20px,6vw,84px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font:400 16px/1.65 var(--text);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--link)}
+::selection{background:var(--ink);color:var(--ground)}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.masthead{border-bottom:2px solid var(--line);padding:22px var(--pad) 18px;text-align:center}
+.brand{font:500 clamp(22px,3.2vw,30px)/1 var(--display);letter-spacing:.14em;text-transform:uppercase}
+.brand .word{display:inline-block;white-space:nowrap}
+.brand .ltr{display:inline-block}
+.mastnav{margin-top:12px;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:center}
+.mastnav a{font:500 13px/1.2 var(--text);letter-spacing:.1em;text-decoration:none;color:var(--ink-soft);padding:6px 0}
+.mastnav a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+/* hero */
+.hero{padding:0 var(--pad)}
+.hero h1{margin-top:clamp(48px,8vh,96px);position:relative;z-index:2}
+.hero .brandline{display:block;font:300 clamp(44px,8.2vw,116px)/1.02 var(--display);letter-spacing:.01em}
+.hero .brandline .word{display:inline-block;white-space:nowrap}
+.hero .brandline .ltr{display:inline-block}
+.hero .descriptor{display:block;max-width:44ch;margin-top:22px;font:400 clamp(18px,1.6vw,21px)/1.55 var(--text);color:var(--ink)}
+.hero-figure{margin:44px 0 0 auto;width:min(72%,880px)}
+.hero-figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero-figure figcaption{margin-top:10px;font:400 13px/1.5 var(--text);color:var(--ink-soft)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;font:500 14px/1.2 var(--text);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid var(--ink);border-radius:4px;transition:background-color .25s ease,color .25s ease}
+.btn-solid{background:var(--ink);color:var(--ground)}
+.btn-solid:hover{background:transparent;color:var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--ground)}
+.rating-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--line);border-radius:999px;padding:8px 16px;font:500 13px/1.2 var(--text);color:var(--ink-soft);background:var(--paper)}
+.chip b{color:var(--ink);font-weight:500}
+/* sections */
+section{padding:0 var(--pad);margin-top:clamp(96px,12vh,150px)}
+.sec-head{padding-top:16px;margin-bottom:clamp(40px,6vh,72px);display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end}
+.sec-head h2{grid-column:1/7}
+.sec-head p{grid-column:8/13;margin-top:0}
+.sec-head h2{font:300 clamp(32px,4.6vw,58px)/1.08 var(--display);max-width:18ch}
+.sec-head p{max-width:42ch;margin-top:16px;font:400 16px/1.65 var(--text);color:var(--ink)}
+figure.photo img{width:100%;object-fit:cover}
+figure.photo figcaption{margin-top:10px;font:400 13px/1.5 var(--text);color:var(--ink-soft)}
+.house-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.house-a{grid-column:1/6;margin-top:60px}
+.house-a img{aspect-ratio:4/5}
+.house-b{grid-column:7/13}
+.house-b img{aspect-ratio:4/3}
+.house-note{grid-column:2/7;margin-top:56px}
+.house-note p{max-width:38ch;font:400 16px/1.7 var(--text);color:var(--ink)}
+.house-note p+p{margin-top:18px}
+/* menu */
+.menu-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.menu-list{grid-column:1/8}
+.menu-photo{grid-column:9/13;margin-top:120px}
+.menu-photo img{aspect-ratio:3/4}
+.group{margin-bottom:44px}
+.group h3{font:500 15px/1.2 var(--text);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);border-bottom:2px solid var(--line);padding-bottom:10px;margin-bottom:8px}
+.item{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:11px 0;border-bottom:2px solid var(--paper)}
+.item:hover{border-bottom-color:var(--line)}
+.item .name{font:400 20px/1.3 var(--display)}
+.item .note{font:400 13px/1.4 var(--text);color:var(--ink-soft)}
+.item .price{font:500 15px/1.2 var(--text);white-space:nowrap}
+.menu-foot{font:400 13px/1.5 var(--text);color:var(--ink-soft)}
+/* dessert interlude */
+.bake-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.bake-photo{grid-column:1/4}
+.bake-photo img{aspect-ratio:3/4}
+.bake-list{grid-column:5/13;margin-top:24px}
+/* visit */
+.visit-card{border:2px solid var(--ink);border-radius:6px;padding:clamp(28px,4vw,48px)}
+.visit-rows{display:grid;grid-template-columns:1fr 1fr;gap:24px 40px}
+.vrow{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:baseline}
+.vrow dt{font:500 15px/1.4 var(--text);color:var(--ink-soft)}
+.vrow dd{font:400 17px/1.55 var(--text)}
+.vrow a{color:var(--ink);text-decoration-thickness:1px;text-underline-offset:4px}
+.visit-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+/* footer */
+footer{margin-top:clamp(90px,10vh,130px);border-top:2px solid var(--line);padding:56px var(--pad) 40px;text-align:center}
+.foot-brand{font:500 clamp(26px,4vw,40px)/1.1 var(--display);letter-spacing:.12em;text-transform:uppercase}
+.foot-brand .word{display:inline-block;white-space:nowrap}
+.foot-brand .ltr{display:inline-block}
+.credits{margin:26px auto 0;max-width:60ch;font:400 13px/1.7 var(--text);color:var(--ink-soft)}
+.credits a{color:var(--link)}
+.foot-note{margin-top:14px;font:400 13px/1.6 var(--text);color:var(--ink-soft)}
+
+/* closing band */
+#visit,footer{background:var(--ink);color:var(--ground)}
+#visit{padding-top:clamp(64px,9vh,120px);padding-bottom:clamp(64px,9vh,120px)}
+footer{margin-top:0;border-top:2px solid #454f36}
+#visit .sec-head h2{color:var(--ground)}
+#visit .sec-head p{color:#c7cdb4}
+.vrow dt{color:#b9c2a4}
+.vrow dd{color:var(--ground)}
+.vrow a{color:var(--ground)}
+.visit-card{border-color:#5a6549}
+#visit .btn-solid{background:var(--ground);color:var(--ink);border-color:var(--ground)}
+#visit .btn-solid:hover{background:transparent;color:var(--ground)}
+#visit .btn-ghost{color:var(--ground);border-color:#8a9478}
+#visit .btn-ghost:hover{background:var(--ground);color:var(--ink);border-color:var(--ground)}
+.foot-brand{color:var(--ground)}
+.credits{color:#b9c2a4}
+.credits a{color:var(--ground)}
+.foot-note{color:#8a9478}
+/* motion */
+.js .rev{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.22,.61,.36,1),transform .9s cubic-bezier(.22,.61,.36,1)}
+.js .rev.in{opacity:1;transform:none}
+.js .ltr{transition:transform .7s cubic-bezier(.22,.61,.36,1),opacity .7s cubic-bezier(.22,.61,.36,1);opacity:0;transform:translateY(.5em)}
+.js .ltr.in{opacity:1;transform:none}
+.clip{overflow:hidden}
+.clip img{transform:scale(1.12);transition:transform 1.4s cubic-bezier(.22,.61,.36,1)}
+.clip.in img{transform:scale(1)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rev,.js .ltr{opacity:1!important;transform:none!important;transition:none!important}
+  .clip img{transform:none!important;transition:none!important}
+}
+/* responsive overrides at end */
+@media (max-width:900px){
+  .sec-head{display:block}
+  .sec-head p{margin-top:16px}
+  .visit-rows{grid-template-columns:1fr}
+  .hero-figure{width:100%}
+  .house-grid,.menu-grid,.bake-grid{display:block}
+  .house-a{margin-top:0}
+  .house-a,.house-b,.menu-photo,.bake-photo{margin-top:44px}
+  .house-note{margin-top:44px}
+  .bake-list{margin-top:48px}
+  .menu-photo{margin-top:56px}
+}
+@media (max-width:520px){
+  .vrow{grid-template-columns:1fr;gap:4px}
+  .hero .descriptor{font-size:18px}
+  .item .name{font-size:18px}
+}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="brand" data-ui><span class="word">Coromandel</span> <span class="word">Café</span></div>
+  <nav class="mastnav" aria-label="Sections">
+    <a href="#house">The house</a>
+    <a href="#menu">The menu</a>
+    <a href="#visit">Find us</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>
+    <span class="brandline" data-ui><span class="word">Coromandel</span> <span class="word">Café</span></span>
+    <span class="descriptor">Inside La Maison Rose, a hundred-year-old pink villa on Romain Rolland Street: breakfast, wood-fired pizza, fresh bakes and long verandah evenings.</span>
+  </h1>
+  <div class="hero-actions">
+    <a class="btn btn-solid" href="tel:+919489214332">Call +91 94892 14332</a>
+    <a class="btn btn-ghost" href="#menu">See the menu</a>
+  </div>
+  <div class="rating-row">
+    <span class="chip" data-ui><b>Tripadvisor 4.2</b> 362 reviews · Travellers' Choice</span>
+    <span class="chip" data-ui><b>Zomato 4.1</b> 2,889 dining votes</span>
+  </div>
+  <figure class="hero-figure clip">
+    <img src="assets/interior.jpg" alt="The dining room of Coromandel Café at La Maison Rose, with chandeliers, hand-painted palm murals on green walls and a high ceiling" width="1600" height="1066" loading="eager">
+    <figcaption>The chandelier room at La Maison Rose, palms painted by hand. From the café's Zomato gallery.</figcaption>
+  </figure>
+</div>
+
+<section id="house">
+  <div class="sec-head">
+    <h2>A villa that kept its ceilings</h2>
+    <p>Coromandel Café lives inside La Maison Rose, a restored French-colonial house in White Town: fifteen-foot ceilings, chandeliers, a white verandah with wicker chairs, and a green courtyard just off the promenade.</p>
+  </div>
+  <div class="house-grid">
+    <figure class="photo house-a clip rev">
+      <img src="assets/plates.jpg" alt="A spread of dishes at Coromandel Café — pizza, salads, breads and dips on a long table" width="1200" height="1600" loading="lazy">
+      <figcaption>A table set for sharing. From the café's Zomato gallery.</figcaption>
+    </figure>
+    <figure class="photo house-b clip rev">
+      <img src="assets/verandah.jpg" alt="The white verandah of Coromandel Café with wicker chairs, potted palms and a brass lamp" width="1200" height="1600" loading="lazy" style="object-position:50% 78%">
+      <figcaption>The verandah, wicker and palms. From the café's Zomato gallery.</figcaption>
+    </figure>
+    <div class="house-note rev">
+      <p>The kitchen bakes through the day: breads, cakes and a dessert counter with daily specials, and keeps a thoughtful line of vegan plates alongside the continental menu.</p>
+      <p>Come early for South Indian coffee on the verandah, or late for pizza and something cold as the street lamps come on.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="sec-head">
+    <h2>From the kitchen &amp; the bar</h2>
+    <p>From the café's printed menu card. All prices in rupees, exclusive of 5% GST.</p>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-list">
+      <div class="group rev">
+        <h3>Wood-fired pizza</h3>
+        <div class="item"><span class="name">Classic Margarita</span><span class="price">₹420</span></div>
+        <div class="item"><span class="name">Pesto Mushroom</span><span class="price">₹580</span></div>
+        <div class="item"><span class="name">Caramelized Onion &amp; Goat Cheese</span><span class="price">₹640</span></div>
+        <div class="item"><span class="name">Truffle Trouble</span><span class="price">₹790</span></div>
+      </div>
+      <div class="group rev">
+        <h3>Coffee &amp; chocolate</h3>
+        <div class="item"><span class="name">South Indian Coffee</span><span class="price">₹150</span></div>
+        <div class="item"><span class="name">Cappuccino</span><span class="price">₹190</span></div>
+        <div class="item"><span class="name">Honey Bee Americano</span><span class="price">₹180</span></div>
+        <div class="item"><span class="name">Cold Mason &amp; Co Drinking Chocolate</span><span class="price">₹260</span></div>
+      </div>
+      <div class="group rev">
+        <h3>From the kitchen</h3>
+        <div class="item"><span class="name">French Creamy Seafood Plate<br><span class="note">garlic-sautéed mahi mahi &amp; prawns, mini bagel</span></span><span class="price">₹480</span></div>
+        <div class="item"><span class="name">Chilli Satay Wings<br><span class="note">Korean fried wings, crushed spicy peanut</span></span><span class="price">₹440</span></div>
+        <div class="item"><span class="name">Tandoori Spiced Butter Chicken<br><span class="note">tomato-cashew butter chicken, basmati rice</span></span><span class="price">₹610</span></div>
+        <div class="item"><span class="name">Thai Prawn Curry<br><span class="note">red coconut sauce, sautéed prawns, basil</span></span><span class="price">₹660</span></div>
+      </div>
+    </div>
+    <figure class="photo menu-photo clip rev">
+      <img src="assets/tortelloni.jpg" alt="Handmade tortelloni in a cream sauce at Coromandel Café" width="1200" height="1612" loading="lazy">
+      <figcaption>Fresh pasta, folded in-house. From the café's Zomato gallery.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="bakes">
+  <div class="sec-head">
+    <h2>The dessert counter</h2>
+    <p>Baked in-house through the day; ask what's just come out of the oven.</p>
+  </div>
+  <div class="bake-grid">
+    <figure class="photo bake-photo clip rev">
+      <img src="assets/bagel.jpg" alt="A beetroot-cured salmon bagel with cream cheese at Coromandel Café" width="1200" height="1799" loading="lazy">
+      <figcaption>Beet-cured salmon bagel. From the café's Zomato gallery.</figcaption>
+    </figure>
+    <div class="bake-list">
+      <div class="group rev">
+        <h3>Desserts</h3>
+        <div class="item"><span class="name">Tiramisu</span><span class="price">₹360</span></div>
+        <div class="item"><span class="name">Pistachio Kulfi Cheesecake</span><span class="price">₹360</span></div>
+        <div class="item"><span class="name">Mason &amp; Co Chunky Blondie</span><span class="price">₹380</span></div>
+        <div class="item"><span class="name">Cardamom Coffee Sticky Date Pudding</span><span class="price">₹260</span></div>
+        <div class="item"><span class="name">Coromandel Pavlova</span><span class="price">₹360</span></div>
+      </div>
+      <p class="menu-foot rev">Eggless options marked on the menu card. The counter also carries a daily special that rarely lasts the evening.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="sec-head">
+    <h2>Find us in White Town</h2>
+    <p>A short walk from the promenade, behind the pink wall and the green door.</p>
+  </div>
+  <div class="visit-card">
+    <dl class="visit-rows">
+      <div class="vrow"><dt>Address</dt><dd>La Maison Rose, 8 Romain Rolland Street, White Town, Puducherry 605001</dd></div>
+      <div class="vrow"><dt>Hours</dt><dd>Open every day</dd></div>
+      <div class="vrow"><dt>Phone</dt><dd><a href="tel:+919489214332">+91 94892 14332</a> · <a href="tel:+914132221100">0413 222 1100</a></dd></div>
+      <div class="vrow"><dt>Email</dt><dd><a href="mailto:coromandelcafepondy@gmail.com">coromandelcafepondy@gmail.com</a></dd></div>
+    </dl>
+    <div class="visit-actions">
+      <a class="btn btn-solid" href="tel:+919489214332">Call the café</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Coromandel+Cafe+8+Romain+Rolland+Street+White+Town+Puducherry" target="_blank" rel="noopener">Open in Maps</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-brand" data-ui><span class="word">Coromandel</span> <span class="word">Café</span></div>
+  <p class="credits">Photographs from the café's own Zomato listing. Menu and prices from the café's printed menu card; ratings from Tripadvisor and Zomato. This page is an independent introduction and is not affiliated with the café.</p>
+  <p class="foot-note">Coromandel Café · La Maison Rose, White Town, Puducherry</p>
+</footer>
+
+<script>
+(function(){
+  var d=document;d.documentElement.classList.add('js');
+  function split(el){var words=el.querySelectorAll('.word');words.forEach(function(w){var t=w.textContent;w.setAttribute('aria-label',t);w.textContent='';for(var i=0;i<t.length;i++){var s=document.createElement('span');s.className='ltr';s.textContent=t[i];s.setAttribute('aria-hidden','true');s.style.transitionDelay=(i*0.035)+'s';w.appendChild(s);}});}
+  d.querySelectorAll('.brandline,.foot-brand').forEach(split);
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');e.target.querySelectorAll&&e.target.querySelectorAll('.ltr').forEach(function(l){l.classList.add('in')});io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px 22% 0px'});
+  d.querySelectorAll('.rev,.clip,.foot-brand').forEach(function(el){io.observe(el)});
+  var h=d.querySelector('.brandline');if(h){setTimeout(function(){h.querySelectorAll('.ltr').forEach(function(l){l.classList.add('in')});},120);}
+})();
+</script>
+</body>
+</html>
