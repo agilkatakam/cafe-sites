@@ -1,0 +1,14 @@
+# Cafesa — other_businesses row 423 (claimed S423 "building:cafesa-jaipur @4:12 PM IST", confirmed mine)
+- Name: Cafesa - Pure Veg. Multi Cuisine Cafe and Restaurant (short: Cafesa)
+- Addr: 12, Shiv Marg, Kirti Nagar, Shyam Nagar, Jaipur 302019 (at The White Moon hotel; cafe has NO own site, only hotel dining page)
+- Phone: +91 98290 17934 (TripAdvisor) | Email: cafesajaipur@gmail.com (TA owner-managed field + Sulekha)
+- Google 4.7/1,465 reviews (sheet)
+- Hours CONFLICT: Zomato 9am-11pm daily; restaurant-guru 7:30am-11pm (upd 16d); Swiggy "open till 11pm". Use 9am-11pm, flag to main.
+- Pure veg multi-cuisine: Italian, Mexican, Indian; coffee, mocktails, shakes, waffles, brownies
+- Dishes named in TA reviews: Gulabi Nagri Pasta, pink-sauce pasta, chilli garlic noodles, Special Thali, lassi, Manchurian, cheesy nachos, paneer tikka, aglio olio
+- Ambience: "newly introduced modern artistic cafe, modern architecture with heritage look"; blue interiors; cozy
+- Listings: Zomato (Cafesa Coffee House, Shyam Nagar), Swiggy dineout 730815, TripAdvisor d26659854, restaurant-guru
+- NO prices verified anywhere — do not print prices
+- Photos (assets/, cropped clean from restaurant-guru collages, mascot cells discarded): sign (night neon storefront), hall (yellow chairs/blue arches), yellow-room, arch, counter, blue-drink, red-drink (curry bowl), thali2 (full thali), honey-potato (blue mocktail), mocktail (cutlery)
+- Direction: "The split stage" seed 337710258, Young Serif/Source Serif 4, stone #dfdedb + blueprint #2456d6; hero menu-column + sticky photo w/ hours bar; sections intro(narrow col) -> list(sticky photo + active list) -> gallery(drag row) -> contact(address display rows) -> footer(name across last photo); motion slow crossfade of fixed photo
+- Idea sentence: "On this page, Cafesa's blue room becomes the fixed half of the screen while the menu reads beside it." Live thing: the fixed photograph crossfades to match each section; visitor action = call the cafe.

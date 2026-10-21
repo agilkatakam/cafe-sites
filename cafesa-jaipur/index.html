@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafesa. Pure veg multi-cuisine cafe, Shyam Nagar, Jaipur</title>
+<meta name="description" content="Cafesa is a pure vegetarian multi-cuisine cafe at The White Moon, Shyam Nagar, Jaipur. Italian, Mexican and Indian plates, coffee, mocktails and shakes. Open daily 9am to 11pm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#dfdedb; --surface:#d3d2ce; --ink:#26251e; --muted:#4f4d46; --accent:#2456d6; --accent-ink:#ffffff;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:var(--accent)}
+h1,h2,.display{font-family:"Young Serif",Georgia,serif;font-weight:400;letter-spacing:-0.02em;line-height:0.95}
+
+.stage{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.reader{background:var(--surface);min-width:0;grid-column:1;grid-row:1}
+.photo-panel{grid-column:2;grid-row:1;position:sticky;top:12px;height:calc(100svh - 24px);min-width:0;overflow:hidden;background:var(--ink)}
+.photo-panel img{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.photo-panel img.on{opacity:1}
+.hours-bar{position:absolute;left:0;right:0;bottom:0;z-index:3;background:var(--surface);min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 20px;font-size:var(--step-small);color:var(--ink)}
+.hours-bar span{min-width:0}
+.hours-call{display:none}
+
+.hero{text-align:center;padding:56px 24px 20vh}
+.hero-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:34vh}
+.hero-top a{font-size:var(--step-body);color:var(--ink);text-decoration:none}
+.wordmark{font-family:"Young Serif",Georgia,serif;font-size:34px;letter-spacing:-0.02em;color:var(--ink);text-decoration:none}
+.hero h1{font-size:clamp(40px,3.6vw,56px);color:var(--accent);max-width:18ch;margin:0 auto 20px}
+.hero-sub{font-size:var(--step-lead);line-height:1.5;max-width:40ch;margin:0 auto 36px;color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-size:var(--step-body);padding:16px 34px;border:none;cursor:pointer;font-family:inherit}
+.btn:active{transform:translateY(1px)}
+
+section{padding-left:64px;padding-right:64px}
+h2{font-size:clamp(32px,3.4vw,48px);margin-bottom:48px}
+.intro{padding-top:120px;padding-bottom:160px}
+.intro .col{max-width:330px}
+.intro p{font-size:16px;line-height:1.5;margin-bottom:1.2em;color:var(--muted)}
+.intro p:first-child{font-weight:600;color:var(--ink)}
+.intro a{color:var(--ink)}
+
+.menu{padding-bottom:140px}
+.menu-split{display:grid;grid-template-columns:5fr 6fr;gap:48px}
+.menu-photo{position:sticky;top:12vh;aspect-ratio:4/5;max-height:70vh;overflow:hidden;min-width:0}
+.menu-photo img{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.menu-photo img.on{opacity:1}
+.mrow{padding:14px 0;cursor:pointer}
+.mrow-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.mrow-head h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:clamp(20px,1.6vw,24px);color:var(--muted)}
+.mrow-head .tag{font-size:var(--step-small);color:var(--muted);text-align:right}
+.mrow.active .mrow-head h3{color:var(--ink)}
+.mdesc{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.mdesc p{font-size:16px;line-height:1.5;max-width:34ch;padding-top:10px;color:var(--muted)}
+.mrow.active .mdesc{max-height:200px}
+
+.gallery{padding-bottom:140px;overflow:hidden}
+.gal-row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;height:min(520px,68svh);scrollbar-width:none;-ms-overflow-style:none}
+.gal-row::-webkit-scrollbar{display:none}
+.gal-row>*{flex:0 0 auto;scroll-snap-align:start;min-width:0}
+.gal-tall{width:min(320px,72vw);height:100%}
+.gal-stack{display:grid;grid-template-rows:1fr 1fr;gap:12px;width:min(380px,64vw);height:100%}
+.gal-wide{width:min(620px,88vw);height:100%}
+.gal-note{font-size:var(--step-small);color:var(--muted);margin-top:16px}
+
+.contact{padding-left:0;padding-right:0;padding-bottom:120px}
+.crow{padding:28px 64px 8px;font-family:"Young Serif",Georgia,serif;letter-spacing:-0.02em;line-height:1.0;font-size:clamp(30px,4.4vw,64px)}
+.crow.alt{background:var(--bg)}
+.crow a{color:var(--ink);text-decoration:none}
+.crow a:hover{color:var(--accent)}
+.crow.greet{display:flex;align-items:center;gap:24px;background:var(--accent);color:var(--accent-ink)}
+.crow.greet .round{flex:0 0 auto;width:.9em;height:.9em;border-radius:50%;background:var(--accent-ink);color:var(--accent);display:flex;align-items:center;justify-content:center;text-decoration:none;font-family:"Young Serif",Georgia,serif;font-size:.4em}
+
+footer{position:relative;height:100svh;overflow:hidden}
+footer img.bg{position:absolute;inset:0;filter:brightness(0.62)}
+.foot-top{position:absolute;top:32px;left:64px;right:64px;z-index:2;display:flex;justify-content:space-between;gap:24px;color:var(--bg);font-size:16px}
+.foot-top a{color:var(--bg)}
+.foot-links a{display:block;margin-bottom:6px}
+.foot-contact{text-align:right}
+.foot-mark{position:absolute;left:64px;right:64px;bottom:56px;z-index:2;color:var(--bg);font-family:"Young Serif",Georgia,serif;letter-spacing:-0.02em;font-size:clamp(80px,18vw,300px);line-height:0.9}
+.foot-legal{position:absolute;left:64px;right:64px;bottom:20px;z-index:2;color:var(--bg);font-size:var(--step-small)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .photo-panel img,.menu-photo img{transition:none}
+  html{scroll-behavior:auto}
+}
+
+@media (max-width:760px){
+  .hours-area{display:none}
+  .hours-call{display:inline}
+  .stage{display:block;padding:0}
+  .photo-panel{position:sticky;top:0;height:56svh;z-index:1}
+  .reader{position:relative;z-index:2;margin-top:-24px}
+  .hero{padding:40px 20px 15vh}
+  .hero-top{margin-bottom:22vh}
+  .hero h1{font-size:9vw}
+  .btn{display:block;text-align:center}
+  section{padding-left:20px;padding-right:20px}
+  .intro{padding-top:72px;padding-bottom:96px}
+  .intro .col{max-width:78%}
+  .menu-split{display:block}
+  .menu-photo{position:sticky;top:0;aspect-ratio:4/3;max-height:38svh;margin:0 -20px 32px;z-index:1}
+  .crow{padding:20px 20px 6px;font-size:9.6vw}
+  .gallery .gal-row{height:62svh;gap:8px}
+  .foot-top{left:20px;right:20px;display:block}
+  .foot-contact{text-align:left;margin-top:16px}
+  .foot-mark{left:20px;right:20px;font-size:23vw}
+  .foot-legal{left:20px;right:20px;font-size:13px}
+  footer{height:88svh}
+}
+</style>
+</head>
+<body>
+
+<div class="stage">
+
+  <div class="photo-panel" id="fixedPhoto">
+    <img src="assets/sign.jpg" alt="Cafesa's green neon sign at night" class="on" data-sec="top">
+    <img src="assets/hall.jpg" alt="The dining room" data-sec="menu" loading="lazy">
+    <img src="assets/yellow-room.jpg" alt="Inside the cafe" data-sec="visit" loading="lazy">
+    <div class="hours-bar">
+      <span>Open daily, 9am &ndash; 11pm</span>
+      <span class="hours-area">Shyam Nagar, Jaipur</span>
+      <a class="hours-call" href="tel:+919829017934" style="color:var(--ink);font-weight:600">Call the cafe</a>
+    </div>
+  </div>
+
+  <div class="reader">
+
+    <header class="hero" id="top">
+      <div class="hero-top">
+        <a href="#menu">Menu</a>
+        <a class="wordmark" href="#top">Cafesa</a>
+        <a href="#visit">Visit</a>
+      </div>
+      <h1>Jaipur&rsquo;s blue room</h1>
+      <p class="hero-sub">A pure vegetarian multi-cuisine cafe at The White Moon, Shyam Nagar. Italian, Mexican and Indian plates, coffee all day.</p>
+      <a class="btn" href="tel:+919829017934">Call +91 98290 17934</a>
+    </header>
+
+    <section class="intro reveal">
+      <div class="col">
+        <p>Cafesa is a newly built, pure vegetarian cafe inside The White Moon hotel in Shyam Nagar, Jaipur. The room is modern and artistic, with a heritage look, and it is painted a deep, quiet blue.</p>
+        <p>The kitchen moves between Italian, Mexican and Indian cooking. Pastas and aglio olio sit next to Manchurian, paneer tikka and a special thali. Coffee, mocktails and shakes run all day, with waffles and brownies for the sweet end of the table.</p>
+        <p>Guests on TripAdvisor single out the Gulabi Nagri Pasta, the pink-sauce pasta and the chilli garlic noodles, and rate the cafe among Jaipur&rsquo;s best new tables. Google shows 4.7 from about 1,465 reviews.</p>
+        <p>Families, coffee dates and long four-hour dinners all fit here. <a href="#visit">Find the cafe</a>.</p>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <h2 class="reveal">The table</h2>
+      <div class="menu-split">
+        <div class="menu-photo" id="menuPhoto">
+          <img src="assets/thali2.jpg" alt="A full Cafesa thali spread" class="on" data-key="thali">
+          <img src="assets/blue-drink.jpg" alt="A red iced mocktail" data-key="pasta">
+          <img src="assets/honey-potato.jpg" alt="A blue mocktail" data-key="noodles">
+          <img src="assets/red-drink.jpg" alt="A bowl of curry" data-key="tikka">
+          <img src="assets/mocktail.jpg" alt="Cutlery on a plate" data-key="coffee">
+        </div>
+        <div class="menu-list">
+          <div class="mrow active" data-key="thali"><div class="mrow-head"><h3>Special Thali</h3><span class="tag">Indian</span></div><div class="mdesc"><p>The full spread: breads, curries, rice and sides on one platter, the table&rsquo;s usual first order.</p></div></div>
+          <div class="mrow" data-key="pasta"><div class="mrow-head"><h3>Gulabi Nagri Pasta</h3><span class="tag">Italian</span></div><div class="mdesc"><p>The pink-sauce pasta named for the Pink City, the dish reviewers mention by name.</p></div></div>
+          <div class="mrow" data-key="noodles"><div class="mrow-head"><h3>Chilli Garlic Noodles</h3><span class="tag">Indo-Chinese</span></div><div class="mdesc"><p>Called the best a guest ever had. Wok-tossed, garlicky, ordered on repeat.</p></div></div>
+          <div class="mrow" data-key="tikka"><div class="mrow-head"><h3>Paneer Tikka</h3><span class="tag">Indian</span></div><div class="mdesc"><p>Smoky, fresh and gone fast. The starter families order for the table.</p></div></div>
+          <div class="mrow" data-key="coffee"><div class="mrow-head"><h3>Coffee, mocktails &amp; shakes</h3><span class="tag">All day</span></div><div class="mdesc"><p>Brewed coffee, tall mocktails and thick shakes from open to close.</p></div></div>
+          <div class="mrow" data-key="pasta"><div class="mrow-head"><h3>Waffles &amp; brownies</h3><span class="tag">Dessert</span></div><div class="mdesc"><p>The sweet end of the table, made in the same kitchen.</p></div></div>
+        </div>
+      </div>
+      <p class="gal-note">Everything is vegetarian. Menus and prices live at the counter and on Zomato; the kitchen quotes for the day.</p>
+    </section>
+
+    <section class="gallery">
+      <h2 class="reveal">The blue room</h2>
+      <div class="gal-row reveal">
+        <div class="gal-tall"><img src="assets/hall.jpg" alt="The dining room with yellow chairs and blue arches" loading="lazy"></div>
+        <div class="gal-stack">
+          <div><img src="assets/arch.jpg" alt="Blue arched wall of the cafe" loading="lazy"></div>
+          <div><img src="assets/counter.jpg" alt="The service counter" loading="lazy"></div>
+        </div>
+        <div class="gal-wide"><img src="assets/yellow-room.jpg" alt="A quieter corner of the dining room" loading="lazy"></div>
+        <div class="gal-stack">
+          <div><img src="assets/blue-drink.jpg" alt="A red iced drink on the table" loading="lazy"></div>
+          <div><img src="assets/honey-potato.jpg" alt="A blue mocktail" loading="lazy"></div>
+        </div>
+        <div class="gal-tall"><img src="assets/thali2.jpg" alt="The thali spread" loading="lazy"></div>
+      </div>
+      <p class="gal-note">Photographs from the cafe&rsquo;s guests via Restaurant Guru.</p>
+    </section>
+
+    <section class="contact" id="visit">
+      <div class="crow alt reveal">Cafesa, at The White Moon</div>
+      <div class="crow reveal"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafesa+-+Pure+Veg.+Multi+Cuisine+Cafe+and+Restaurant&amp;query_place_id=ChIJgcq_VW61bTkRs39sqQa2Jn4" target="_blank" rel="noopener">12, Shiv Marg, Shyam Nagar</a></div>
+      <div class="crow alt reveal">Jaipur 302019</div>
+      <div class="crow reveal">Open daily, 9am &ndash; 11pm</div>
+      <div class="crow alt reveal"><a href="tel:+919829017934">+91 98290 17934</a></div>
+      <div class="crow greet reveal">Write to us <a class="round" href="mailto:cafesajaipur@gmail.com" aria-label="Email Cafesa">&rarr;</a></div>
+    </section>
+
+  </div>
+
+</div>
+
+<footer>
+  <img class="bg" src="assets/sign.jpg" alt="" loading="lazy">
+  <div class="foot-top">
+    <div class="foot-links">
+      <a href="#menu">Menu</a>
+      <a href="#visit">Visit</a>
+      <a href="https://www.zomato.com/jaipur/cafesa-coffee-house-shyam-nagar" target="_blank" rel="noopener">Zomato</a>
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g304555-d26659854-Reviews-Cafesa-Jaipur_Jaipur_District_Rajasthan.html" target="_blank" rel="noopener">TripAdvisor</a>
+    </div>
+    <div class="foot-contact">
+      <div><a href="tel:+919829017934">+91 98290 17934</a></div>
+      <div><a href="mailto:cafesajaipur@gmail.com">cafesajaipur@gmail.com</a></div>
+    </div>
+  </div>
+  <div class="foot-mark">Cafesa</div>
+  <div class="foot-legal">Photographs: Cafesa&rsquo;s guests via Restaurant Guru. This page is an introduction, not the cafe&rsquo;s official site.</div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  var fixed = document.querySelectorAll('#fixedPhoto img');
+  var secIO = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var key = e.target.id || 'top';
+      fixed.forEach(function(im){ im.classList.toggle('on', im.dataset.sec === key); });
+    });
+  },{rootMargin:'-40% 0px -40% 0px'});
+  ['top','menu','visit'].forEach(function(id){ var el=document.getElementById(id); if(el) secIO.observe(el); });
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.mrow'));
+  var mimgs = document.querySelectorAll('#menuPhoto img');
+  function activate(row){
+    rows.forEach(function(r){ r.classList.toggle('active', r===row); });
+    mimgs.forEach(function(im){ im.classList.toggle('on', im.dataset.key===row.dataset.key); });
+  }
+  rows.forEach(function(row){
+    row.addEventListener('click', function(){ activate(row); });
+    row.addEventListener('mouseenter', function(){ if(!reduced) activate(row); });
+  });
+  var rowIO = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting && !reduced) activate(e.target); });
+  },{rootMargin:'-45% 0px -45% 0px'});
+  rows.forEach(function(r){ rowIO.observe(r); });
+})();
+</script>
+</body>
+</html>
