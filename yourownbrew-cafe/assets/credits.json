@@ -1,0 +1,72 @@
+[
+ {
+  "file": "assets/foaming-filter-coffee.jpg",
+  "media": "image",
+  "ref": "openverse:2f4a1faa-ac72-46e1-997a-2913daa02b96",
+  "title": "Foaming filter coffee",
+  "creator": "Charles Haynes",
+  "creatorUrl": "https://www.flickr.com/photos/87232391@N00",
+  "date": null,
+  "license": "CC BY-SA 2.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=3167716",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Foaming_filter_coffee.jpg/1920px-Foaming_filter_coffee.jpg",
+  "width": 1920,
+  "height": 2517,
+  "bytes": 1316921,
+  "credit": "\"Foaming filter coffee\" by Charles Haynes, CC BY-SA 2.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-10-21T19:30:05.245Z"
+ },
+ {
+  "file": "assets/espresso-coffee-01.jpg",
+  "media": "image",
+  "ref": "commons:151468251",
+  "title": "Espresso Coffee 01",
+  "creator": "Jubair1985",
+  "creatorUrl": null,
+  "date": "2024-08-02",
+  "license": "CC0",
+  "licenseCode": "cc0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "creditRequired": false,
+  "page": "https://commons.wikimedia.org/wiki/File:Espresso_Coffee_01.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Espresso_Coffee_01.jpg/1920px-Espresso_Coffee_01.jpg",
+  "width": 1920,
+  "height": 1280,
+  "bytes": 537604,
+  "credit": "\"Espresso Coffee 01\" by Jubair1985, CC0, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-10-21T19:30:05.383Z"
+ },
+ {
+  "file": "assets/window-in-a-cafe-in-san-gimignano.jpg",
+  "media": "image",
+  "ref": "commons:139570600",
+  "title": "Window in a cafe in San Gimignano (02182)2",
+  "creator": "Rhododendrites",
+  "creatorUrl": null,
+  "date": "2023-10-10",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Window_in_a_cafe_in_San_Gimignano_(02182)2.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Window_in_a_cafe_in_San_Gimignano_%2802182%292.jpg/1920px-Window_in_a_cafe_in_San_Gimignano_%2802182%292.jpg",
+  "width": 1920,
+  "height": 2360,
+  "bytes": 633172,
+  "credit": "\"Window in a cafe in San Gimignano (02182)2\" by Rhododendrites, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-10-21T19:30:05.535Z"
+ }
+]

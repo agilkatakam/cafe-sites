@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Own Brew, Raj Mohalla, Indore</title>
+<meta name="description" content="Your Own Brew is a coffee shop on S Rajmohalla in Indore. Freshly brewed coffee and scrumptious food, all day, every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#ecebe7; --paper2:#e1dfd9; --ink:#38450f; --muted:#5d683a; --accent:#38450f; --dark:#38450f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--ink)}
+.serif{font-family:'Young Serif',Georgia,serif;font-weight:400;letter-spacing:-0.02em;line-height:0.95}
+
+/* split stage */
+.stage{display:grid;grid-template-columns:1fr 1fr}
+.frame{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--dark)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease;filter:brightness(.92) contrast(1.04)}
+.frame img.on{opacity:1}
+.read{padding:72px 64px 0}
+.measure{max-width:46ch}
+
+/* intro */
+.brandline{display:flex;justify-content:space-between;align-items:center;font-size:15px;color:var(--muted);margin-bottom:64px}
+.brandline .mark{display:flex;align-items:center;gap:12px;color:var(--ink)}
+.brandline .mark img{width:34px;height:34px;object-fit:cover;border-radius:50%}
+.brandline nav{display:flex;gap:24px}
+.brandline nav a{text-decoration:none;color:var(--muted)}
+.brandline nav a:hover{color:var(--ink)}
+.intro h1{font-family:'Young Serif',Georgia,serif;font-weight:400;letter-spacing:-0.02em;font-size:clamp(44px,4.6vw,68px);line-height:1.02;letter-spacing:-0.01em;margin-bottom:28px}
+.intro .tag{font-size:21px;line-height:1.5;color:var(--ink);max-width:26ch;margin-bottom:24px}
+.intro p{color:var(--ink);max-width:44ch;margin-bottom:18px}
+.intro .cta{display:inline-block;margin:6px 0 22px;background:var(--accent);color:#ecebe7;font-size:17px;font-weight:600;padding:14px 30px;border-radius:999px;text-decoration:none;min-height:48px}
+.intro .cta:hover{background:#232b08}
+
+/* sections */
+section.block{margin:120px 0}
+section.block h2{font-family:'Young Serif',Georgia,serif;font-weight:400;letter-spacing:-0.02em;font-size:clamp(30px,3vw,42px);line-height:1.08;margin-bottom:30px}
+section.block p{color:var(--ink);max-width:44ch;margin-bottom:16px}
+section.block p b{color:var(--ink);font-weight:400}
+
+/* menu list */
+.menu{list-style:none}
+.menu li{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:20px 0}
+.menu .dish{font-size:19px;font-weight:400}
+.menu .note{color:var(--muted);font-size:14.5px;text-align:right;max-width:22ch}
+.menu .veg{color:var(--accent);font-size:15px}
+
+/* statement: full width band */
+.statement{grid-column:1/-1;position:relative;z-index:2;background:var(--dark);color:#ecebe7;padding:16svh 8vw;text-align:center}
+.statement p{font-family:'Young Serif',Georgia,serif;font-weight:400;letter-spacing:-0.02em;font-size:clamp(28px,3.6vw,54px);line-height:1.15;max-width:26ch;margin:0 auto}
+.statement small{display:block;margin-top:34px;font-size:16px;color:#b6bba6}
+
+/* contact rows */
+.contact{grid-column:1/-1;margin-top:120px;position:relative;z-index:2;background:var(--paper)}
+.contact a.row,.contact div.row{display:flex;align-items:flex-end;min-height:150px;padding:0 20px 22px;font-size:clamp(34px,6vw,84px);line-height:1.0;font-weight:400;letter-spacing:-0.02em;text-decoration:none;color:var(--ink)}
+.contact .row:nth-child(odd){background:var(--paper2)}
+.contact a.row:hover{color:var(--accent)}
+.contact .hello{background:var(--accent);color:#ecebe7;display:flex;align-items:center;justify-content:space-between;min-height:150px;padding:0 20px;font-size:clamp(34px,6vw,84px);letter-spacing:-0.02em}
+.contact .hello .dot{flex:none;width:.9em;height:.9em;border-radius:50%;background:#fdf8ee;color:var(--accent);display:flex;align-items:center;justify-content:center;text-decoration:none;margin-left:24px}
+.contact .hello .dot svg{width:44%;height:44%}
+.contact .hello .dot:hover{background:var(--dark);color:#ecebe7}
+
+/* footer strip */
+.foot{grid-column:1/-1;position:relative;z-index:2;background:var(--paper);padding:30vh 20px 30px}
+.foot .credits{font-size:13px;color:var(--muted);max-width:72ch;margin:0 auto 26px;text-align:center;line-height:1.7}
+.foot .line{display:grid;grid-template-columns:1fr auto 1fr;font-size:14.5px}
+.foot .what{color:var(--muted)}
+.foot .mid{display:flex;gap:24px}
+.foot .mid a{text-decoration:none}
+.foot .mid a:hover{color:var(--accent)}
+.foot .yr{text-align:right;color:var(--muted)}
+
+/* entrances */
+.rise{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rise.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .stage{display:block}
+  .intro p,.intro .tag,section.block p,.menu,.read .measure{max-width:100%}
+  .intro h1{font-size:clamp(40px,7vw,64px)}
+  .frame{position:sticky;top:0;height:60svh;z-index:0}
+  .read{position:relative;z-index:1;background:var(--paper);padding:56px 22px 0;margin-top:-14svh;border-radius:22px 22px 0 0}
+  .brandline{margin-bottom:44px}
+  .brandline nav{display:none}
+  section.block{margin:84px 0}
+  .contact a.row,.contact div.row{min-height:84px;font-size:9.6vw;padding:0 16px 16px}
+  .contact .hello{min-height:84px;font-size:9.6vw;padding:0 16px}
+  .contact .hello .dot{width:56px;height:56px;margin-left:16px}
+  .statement{padding:14svh 22px}
+  .foot{padding:20vh 16px 24px}
+  .foot .line{display:block;font-size:14px}
+  .foot .mid{margin:8px 0;flex-wrap:wrap}
+  .foot .yr{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="frame" aria-hidden="true">
+    <img src="assets/foaming-filter-coffee.jpg" alt="" class="on" data-k="0">
+    <img src="assets/kebab-plate.jpg" alt="" data-k="1">
+    <img src="assets/kebab-dip.jpg" alt="" data-k="2">
+    <img src="assets/espresso-coffee-01.jpg" alt="" data-k="3">
+  </div>
+
+  <main class="read">
+    <div class="brandline">
+      <div class="mark"><img src="assets/yob-logo.png" alt="YOB logo"></div>
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="intro">
+      <h1 class="rise">Your Own Brew</h1>
+      <p class="tag rise">Freshly brewed coffee and scrumptious food, all day, every day.</p>
+      <div class="rise"><a class="cta" href="#menu">See the menu</a></div>
+      <p class="rise">A coffee shop on S Rajmohalla in Indore where the brew is the point. Lose yourself in the aroma of a fresh pour, munch on your favourite plates and linger in the coziest corner of the neighbourhood.</p>
+      <p class="rise">Regulars know it simply as <b>YOB</b>.</p>
+    </div>
+
+    <section class="block" id="menu" data-img="1">
+      <h2 class="rise">From the kitchen</h2>
+      <p class="rise">Coffee first, then a menu that runs from cafe classics to full North Indian plates.</p>
+      <ul class="menu">
+        <li class="rise"><span class="dish">Hara Bhara Kebab <span class="veg">(veg)</span></span><span class="note">spinach and pea patties, green chutney</span></li>
+        <li class="rise"><span class="dish">Paneer Lababdar <span class="veg">(veg)</span></span><span class="note">rich tomato gravy, fresh cream</span></li>
+        <li class="rise"><span class="dish">Kaaju Curry <span class="veg">(veg)</span></span><span class="note">cashews in a slow simmered sauce</span></li>
+        <li class="rise"><span class="dish">Daal Makhani <span class="veg">(veg)</span></span><span class="note">black lentils, butter, patience</span></li>
+        <li class="rise"><span class="dish">Arrabiata Pasta <span class="veg">(veg)</span></span><span class="note">garlic, chilli, tomato</span></li>
+        <li class="rise"><span class="dish">Chole Bhature <span class="veg">(veg)</span></span><span class="note">the Indore favourite, done right</span></li>
+        <li class="rise"><span class="dish">Oreo Shake</span><span class="note">cold, thick, unapologetic</span></li>
+      </ul>
+    </section>
+
+    <section class="block" id="visit" data-img="2">
+      <h2 class="rise">The room</h2>
+      <p class="rise">Tucked into Raj Mohalla, a short hop from Bombay Bazaar, YOB is built for slowing down. Come for a quick filter coffee, stay for a plate of kebabs and another round.</p>
+      <p class="rise">Tag your table with <b>#YOBCafe</b> when you stop by.</p>
+    </section>
+
+    <section class="block" data-img="3">
+      <h2 class="rise">All day, every day</h2>
+      <p class="rise">Morning brews, working lunches, late shakes. The kitchen and the coffee run through the day, so there is no wrong hour to walk in.</p>
+      <p class="rise">Call ahead for groups and celebrations on <b>+91 93999 59259</b>.</p>
+    </section>
+  </main>
+
+  <section class="statement">
+    <p>Lose yourself in freshly brewed coffee.</p>
+    <small>Your Own Brew, Raj Mohalla, Indore</small>
+  </section>
+
+  <section class="contact" id="contact" data-img="0">
+    <a class="row" href="https://www.google.com/maps/search/?api=1&amp;query=Your+Own+Brew+cafe&amp;query_place_id=ChIJX-vc3MD9YjkRie_F7M0EkbM" target="_blank" rel="noopener">Your Own Brew</a>
+    <a class="row" href="https://www.google.com/maps/search/?api=1&amp;query=Your+Own+Brew+cafe&amp;query_place_id=ChIJX-vc3MD9YjkRie_F7M0EkbM" target="_blank" rel="noopener">17, S Rajmohalla</a>
+    <div class="row">Indore 452002</div>
+    <div class="row">Open all day, every day</div>
+    <a class="row" href="tel:+919399959259">+91 93999 59259</a>
+    <div class="hello">Say hello<a class="dot" href="mailto:yobindore@gmail.com" aria-label="Email Your Own Brew"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <footer class="foot">
+    <p class="credits">The kebab plates and the YOB mark are Your Own Brew's own photographs. The coffee photographs are generic: &ldquo;Foaming filter coffee&rdquo; by Charles Haynes, CC BY-SA 2.0, and &ldquo;Espresso Coffee 01&rdquo; by Jubair1985, CC0, both via Wikimedia Commons.</p>
+    <div class="line">
+      <span class="what">A coffee shop in Indore</span>
+      <span class="mid"><a href="#menu">Menu</a><a href="#visit">Visit</a><a href="mailto:yobindore@gmail.com">Email</a></span>
+      <span class="yr">2026</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+// fixed photo crossfades as its section arrives
+const imgs=[...document.querySelectorAll('.frame img')];
+function show(k){imgs.forEach(i=>i.classList.toggle('on',+i.dataset.k===k))}
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){const k=e.target.dataset.img;if(k!==undefined)show(+k)}})
+},{threshold:.35});
+document.querySelectorAll('[data-img]').forEach(s=>io.observe(s));
+
+// entrances
+const io2=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io2.unobserve(e.target)}})
+},{threshold:.15});
+document.querySelectorAll('.rise').forEach(el=>io2.observe(el));
+
+// pause nothing heavy; reduced motion keeps the first image
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.querySelectorAll('.rise').forEach(el=>el.classList.add('in'));
+  show(0);
+}
+</script>
+</body>
+</html>
