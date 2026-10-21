@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sukoon Cafe · Cafe & Restaurant in Janki Nagar, Indore</title>
+<meta name="description" content="The Sukoon Cafe on A.B. Road, Janki Nagar, Indore: cafe and restaurant since 2019 with burgers, sandwiches, pizza, shakes and coffee, plus a celebration space for birthdays and kitty parties. Call +91 91444 90909.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f3f3f3; --ink:#232323; --muted:#595959;
+  --accent:#a1ffcb; --accent-ink:#232323;
+  --face:'Bodoni Moda',serif; --sans:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-y:overlay}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--sans);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+.hero{padding:24px 5vw 0}
+.hero-links{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.hero-links .nl{display:flex;gap:28px}
+.hero-links a{font:600 16px/1 var(--sans);text-decoration:underline;text-underline-offset:4px}
+.hero-links a.act{background:var(--ink);color:#fff;text-decoration:none;padding:14px 22px;transition:background .25s}
+.hero-links a.act:hover{background:var(--muted)}
+.hero-desc{margin-top:22px;max-width:44ch;font:500 18px/1.5 var(--sans);color:var(--ink)}
+.hero-photo{margin-top:26px;max-height:60vh;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:21/9}
+.wordmark{overflow:hidden;padding:0 5vw}
+.wordmark h1{font:500 clamp(44px,8.6vw,124px)/1 var(--face);letter-spacing:-0.02em;text-transform:uppercase;transform-origin:left bottom;animation:wm 0.9s cubic-bezier(.22,.61,.36,1) both}
+@keyframes wm{from{transform:scale(1.14)}to{transform:scale(1)}}
+.facts{display:flex;gap:5vw;flex-wrap:wrap;padding:26px 5vw 0;font:500 16px/1.5 var(--sans);color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+.tile-note{margin-top:90px;background:var(--accent);color:var(--accent-ink);padding:80px 5vw}
+.tile-note p{max-width:30ch;font:500 clamp(28px,3.6vw,50px)/1.15 var(--face);letter-spacing:-0.02em}
+.tile-note .where{margin-top:26px;font:500 17px/1.5 var(--sans);max-width:60ch}
+
+.lineup{padding:90px 5vw}
+.lineup h2, .frames h2, .contact h2{font:500 clamp(28px,3.4vw,46px)/1.05 var(--face);letter-spacing:-0.02em;margin-bottom:40px}
+.lineup-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lrow{padding:20px 22px;font:500 18px/1.35 var(--sans);border:2px solid var(--ink)}
+.lnote{margin-top:26px;font-size:16px;color:var(--muted);max-width:52ch}
+
+.frames{background:var(--surface);padding:90px 5vw}
+.frame-grid{display:flex;gap:6vw;align-items:flex-start;flex-wrap:wrap}
+.frame-grid figure{flex:none}
+.frame-grid .f1{width:min(34vw,420px)}
+.frame-grid .f2{width:min(26vw,320px);margin-top:70px}
+.frame-grid .f3{width:min(20vw,250px)}
+.frame-grid img{width:100%;height:auto}
+.frame-grid figcaption{margin-top:12px;font:500 16px/1.4 var(--sans);max-width:44ch;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.wordmark h1{animation:none}}
+
+.contact{padding:90px 5vw}
+.email-display{font:500 clamp(22px,4.6vw,64px)/1.1 var(--face);letter-spacing:-0.02em;word-break:break-all}
+.email-display a{text-decoration:none}
+.email-display a:hover{background:var(--accent)}
+.crows{margin-top:54px;display:grid;grid-template-columns:1fr 1fr;gap:40px 6vw;max-width:1100px}
+.crow .k{font:600 15px/1 var(--sans);color:var(--muted);display:block;margin-bottom:10px}
+.crow .v{font-size:18px;line-height:1.55;max-width:46ch}
+.crow a{text-decoration:underline;text-underline-offset:4px}
+.crow a:hover{background:var(--accent)}
+
+footer{background:var(--ink);color:#fff;padding:80px 5vw 36px}
+.foot-name{font:500 clamp(40px,7vw,110px)/1 var(--face);letter-spacing:-0.02em;text-transform:uppercase}
+.foot-grid{display:flex;gap:8vw;flex-wrap:wrap;margin-top:44px;font-size:15px;color:#b9b9b9}
+.foot-grid b{display:block;color:#fff;font-weight:600;margin-bottom:8px}
+.foot-grid a{color:#fff;text-decoration:underline;text-underline-offset:4px}
+.foot-legal{margin-top:56px;font-size:16px;line-height:1.6;color:#b9b9b9;max-width:60ch}
+
+@media (max-width:900px){
+  .hero{padding:20px 20px 0}
+  .hero-links{gap:12px;flex-wrap:nowrap}
+  .hero-links .nl{gap:18px}
+  .hero-links a{font-size:14px;white-space:nowrap}
+  .hero-links a.act{padding:14px 18px}
+  .hero-photo{margin-top:22px;max-height:none}
+  .hero-photo img{aspect-ratio:4/3}
+  .wordmark{padding:0 20px}
+  .facts{padding:22px 20px 0;gap:18px}
+  .tile-note, .lineup, .frames, .contact{padding-left:20px;padding-right:20px;margin-top:64px}
+  .tile-note, .lineup, .frames, .contact{padding-top:64px;padding-bottom:64px}
+  .frame-grid{gap:8vw}
+  .frame-grid .f1{width:64vw}
+  .frame-grid .f2{width:52vw;margin-top:0}
+  .frame-grid .f3{width:44vw}
+  .crows{grid-template-columns:1fr}
+  .lineup-list{grid-template-columns:1fr}
+  footer{padding:64px 20px 32px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <nav class="hero-links">
+    <div class="nl">
+      <a href="#menu" data-ui>Menu</a>
+      <a href="#visit" data-ui>Find us</a>
+    </div>
+    <a class="act" href="tel:+919144490909" data-ui>Call the cafe</a>
+  </nav>
+  <p class="hero-desc">Cafe & restaurant, est. 2019, serving comfort plates, shakes and coffee on A.B. Road, Janki Nagar, Indore.</p>
+  <div class="hero-photo">
+    <img src="assets/sign.jpg" alt="The Sukoon Cafe neon sign glowing at night" fetchpriority="high">
+  </div>
+</header>
+<div class="wordmark">
+  <h1>The <span>Sukoon</span> Cafe</h1>
+</div>
+<div class="facts">
+  <span><b>Cafe & restaurant</b> est. 2019</span>
+  <span><b>Janki Nagar</b> A.B. Road, Indore</span>
+  <span><b>Celebration space</b> birthdays, kitty parties</span>
+</div>
+
+<main>
+<section class="tile-note" aria-label="About">
+  <p class="reveal">Love at first bite, in a room built for slowing down.</p>
+  <p class="where reveal">A cozy cafe and restaurant near Holkar College serving comfort plates, shakes and coffee, with a private celebration space for birthdays, anniversaries and kitty parties.</p>
+</section>
+
+<section class="lineup" id="menu">
+  <h2 class="reveal">What the kitchen serves</h2>
+  <div class="lineup-list">
+  <div class="lrow reveal"><span>Burgers, from aloo tikki classics up</span></div>
+  <div class="lrow reveal"><span>Sandwiches and quick bites</span></div>
+  <div class="lrow reveal"><span>Pizza and pasta</span></div>
+  <div class="lrow reveal"><span>French fries and sides</span></div>
+  <div class="lrow reveal"><span>Shakes, cold drinks and coffee</span></div>
+  </div>
+  <p class="lnote">Combos for groups and parties. Call ahead for the day's specials and party bookings.</p>
+</section>
+
+<section class="frames" aria-label="Gallery">
+  <h2 class="reveal">Inside and out</h2>
+  <div class="frame-grid">
+    <figure class="f1 reveal"><img src="assets/party.jpg" alt="The celebration space at The Sukoon Cafe decorated with balloons" loading="lazy"><figcaption>The celebration space, set for a birthday.</figcaption></figure>
+    <figure class="f2 reveal"><img src="assets/coffee.jpg" alt="A cappuccino with a foam heart" loading="lazy"><figcaption>Coffee, unhurried.</figcaption></figure>
+    <figure class="f3 reveal"><img src="assets/sandwich.jpg" alt="A grilled sandwich, golden and warm" loading="lazy"><figcaption>Grilled and warm.</figcaption></figure>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <h2 class="reveal">Book a table or a party</h2>
+  <p class="email-display reveal"><a href="mailto:thesukoonc@gmail.com">thesukoonc@gmail.com</a></p>
+  <div class="crows">
+    <div class="crow reveal"><span class="k">Address</span><span class="v">LG 6,7, Shakuntala Complex, A.B. Road, Janki Nagar, near Holkar College, Indore, Madhya Pradesh 452001</span></div>
+    <div class="crow reveal"><span class="k">Call</span><span class="v"><a href="tel:+919144490909">+91 91444 90909</a><br>Party enquiries welcome</span></div>
+    <div class="crow reveal"><span class="k">Order in</span><span class="v">Find The Sukoon Cafe on Zomato for delivery</span></div>
+    <div class="crow reveal"><span class="k">Good to know</span><span class="v">Group friendly, celebration space, quick service</span></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-name">Sukoon</div>
+  <div class="foot-grid">
+    <div><b>Visit</b>LG 6,7, Shakuntala Complex<br>A.B. Road, Janki Nagar, Indore 452001</div>
+    <div><b>Contact</b><a href="tel:+919144490909">+91 91444 90909</a><br><a href="mailto:thesukoonc@gmail.com">thesukoonc@gmail.com</a></div>
+    <div><b>Hours</b>Open daily<br>Call for today's timings</div>
+  </div>
+  <p class="foot-legal">The neon sign and celebration-space photographs are The Sukoon Cafe's own, from its public Facebook page. Coffee and sandwich photographs are generic stock imagery shown for atmosphere, not dishes served at the cafe (Wikimedia Commons: cappuccino by Peachyeung316 CC BY-SA 4.0, sandwich by jeffreyw CC BY 2.0). An independent introduction, not affiliated with the cafe. Facts from the cafe's own Facebook page.</p>
+</footer>
+
+<script>
+const io = new IntersectionObserver((es) => {
+  for (const e of es) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+</body>
+</html>
