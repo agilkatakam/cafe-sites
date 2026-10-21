@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Always Sunday Cafe & Bistro - Specialty Coffee, Matcha & Brunch in Hyderabad</title>
+<meta name="description" content="Always Sunday Cafe & Bistro in Gachibowli, Hyderabad - specialty coffee, matcha, benne dosa and brunch, open 8 AM to midnight, every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Archivo+Black&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grey:#e9e8e4;
+  --grey-2:#dfddd7;
+  --ink:#191a17;
+  --green:#173e2d;
+  --green-2:#0f2c20;
+  --yellow:#f6d116;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--grey);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;font-weight:400;line-height:1.04}
+.wrap{max-width:1376px;margin:0 auto;padding:0 32px}
+
+/* header */
+header{position:sticky;top:0;z-index:60;background:var(--grey);border-bottom:2px solid var(--ink)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:'Archivo Black',sans-serif;font-size:19px}
+.mark img{width:38px;height:38px;object-fit:cover;border-radius:50%;border:2px solid var(--ink)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:600;font-size:16px}
+.nav-links a:not(.pill):hover{color:var(--green);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.pill{display:inline-block;background:var(--yellow);color:var(--ink);text-decoration:none;font-weight:700;font-size:16px;padding:11px 22px;border-radius:999px;border:2px solid var(--ink);transition:transform .22s ease,background .22s ease}
+.pill:hover{transform:translateY(-2px) rotate(-1deg)}
+
+/* hero: full-bleed, title band on the horizon */
+.hero{position:relative;height:calc(92svh - 70px);min-height:540px;overflow:hidden;background:var(--green-2)}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover}
+.hero .skyline{position:absolute;top:26px;left:32px;right:32px;display:flex;justify-content:space-between;gap:14px;z-index:3}
+.hero .tag{background:var(--grey);border:2px solid var(--ink);border-radius:999px;padding:8px 18px;font-size:15px;font-weight:700}
+.hero .title-band{position:absolute;left:0;right:0;bottom:0;background:var(--green);border-top:3px solid var(--yellow);padding:26px 32px 30px;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.hero h1{font-size:clamp(46px,7.4vw,104px);color:var(--yellow);letter-spacing:-0.01em}
+.hero .what{color:var(--grey);font-size:19px;max-width:34ch;padding-bottom:8px}
+
+/* shutter reveal */
+.shutter{position:relative;overflow:hidden}
+.shutter .slats{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;pointer-events:none}
+.shutter .slats i{flex:1;background:var(--grey);transform-origin:top;transition:transform .7s cubic-bezier(.7,0,.3,1)}
+.shutter.on .slats i{transform:scaleY(0)}
+.shutter.on .slats i:nth-child(2){transition-delay:.08s}
+.shutter.on .slats i:nth-child(3){transition-delay:.16s}
+.shutter.on .slats i:nth-child(4){transition-delay:.24s}
+.shutter.on .slats i:nth-child(5){transition-delay:.32s}
+.shutter.green .slats i{background:var(--green)}
+
+/* intro: pinned sentence, photographs pass */
+.intro{background:var(--grey);padding:0}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr}
+.pin{position:sticky;top:70px;height:calc(100vh - 70px);display:flex;flex-direction:column;justify-content:center;padding:0 32px}
+.pin .big{font-family:'Archivo Black',sans-serif;font-size:clamp(30px,3.4vw,44px);line-height:1.12;margin-bottom:22px}
+.pin .big em{font-style:normal;color:var(--green);text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:6px;text-underline-offset:8px}
+.pin p{font-size:18px;max-width:44ch}
+.passers{padding:70px 32px 70px 0}
+.passers figure{margin-bottom:48px;border:3px solid var(--ink)}
+.passers img{width:100%;height:520px;object-fit:cover}
+.passers figcaption{font-size:16px;font-weight:600;padding:12px 16px;background:var(--ink);color:var(--grey)}
+
+/* list: sticky photograph, active menu list */
+.menu{background:var(--green);color:var(--grey);padding:96px 0}
+.menu-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:64px;align-items:start}
+.sticky-ph{position:sticky;top:110px}
+.sticky-ph figure{border:3px solid var(--yellow)}
+.sticky-ph img{width:100%;height:600px;object-fit:cover}
+.sticky-ph figcaption{background:var(--yellow);color:var(--ink);font-weight:700;font-size:16px;padding:12px 16px}
+.menu h2{font-size:clamp(36px,4.4vw,58px);color:var(--yellow);margin-bottom:12px}
+.menu .note{font-size:18px;color:#cfe0d5;margin-bottom:44px;max-width:50ch}
+.mgroup{margin-bottom:40px}
+.mgroup h3{font-size:22px;color:var(--yellow);margin-bottom:6px}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:12px 10px;border-bottom:2px solid rgba(246,209,22,.28);transition:background .2s ease,padding-left .25s ease}
+.mrow:hover{background:rgba(246,209,22,.1);padding-left:18px}
+.mrow .n{font-weight:600;font-size:17px}
+.mrow .d{font-size:15px;color:#a8c3b1;font-weight:400}
+.mrow .p{font-family:'Archivo Black',sans-serif;font-size:17px;color:var(--yellow);white-space:nowrap}
+.menu .src{margin-top:26px;font-size:15px;color:#a8c3b1}
+
+/* gallery: photographs gathered round a heading */
+.gallery{background:var(--grey);padding:110px 0}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:center}
+.gal-grid figure{border:3px solid var(--ink)}
+.gal-grid img{width:100%;height:400px;object-fit:cover}
+.gal-grid .tall img{height:520px}
+.gal-head{text-align:center;padding:0 20px}
+.gal-head h2{font-size:clamp(40px,5.4vw,72px);color:var(--green)}
+.gal-head p{font-size:18px;max-width:38ch;margin:16px auto 0}
+.credit{margin-top:40px;text-align:center;font-size:15px;color:#55564f}
+
+/* contact: visit card on a photograph */
+.visit{position:relative;padding:120px 0;background:var(--green-2)}
+.visit .bg{position:absolute;inset:0}
+.visit .bg img{width:100%;height:100%;object-fit:cover;opacity:.38}
+.card{position:relative;z-index:2;max-width:760px;margin:0 auto;background:var(--grey);border:3px solid var(--ink);padding:52px 56px}
+.card h2{font-size:clamp(32px,3.8vw,48px);color:var(--green);margin-bottom:8px}
+.card .sub{font-size:18px;margin-bottom:32px}
+.card-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 40px;margin-bottom:36px}
+.cblock h3{font-size:17px;color:var(--green);margin-bottom:5px;font-family:'Archivo',sans-serif;font-weight:700}
+.cblock p,.cblock a{font-size:17px}
+.cblock a{font-weight:700;text-decoration:none;border-bottom:3px solid var(--yellow)}
+.cblock a:hover{background:var(--yellow)}
+.card .pill{margin-right:12px}
+
+/* footer: columns above, wordmark below */
+footer{background:var(--green-2);color:var(--grey);padding:80px 0 34px}
+.fcols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-bottom:64px}
+.fcols h3{font-size:17px;color:var(--yellow);margin-bottom:8px;font-family:'Archivo',sans-serif;font-weight:700}
+.fcols p,.fcols a{font-size:16px;color:#cfe0d5}
+.fcols a{text-decoration:none;border-bottom:2px solid rgba(246,209,22,.4)}
+.fcols a:hover{border-color:var(--yellow)}
+.wordmark{font-family:'Archivo Black',sans-serif;font-size:clamp(44px,8.3vw,118px);line-height:.95;color:var(--yellow);text-align:center;white-space:nowrap;max-width:100%;overflow:hidden}
+.wordmark .L{display:inline-block;transform:translateY(110%);transition:transform .7s cubic-bezier(.22,.9,.28,1)}
+.wordmark.on .L{transform:none}
+.fine{text-align:center;margin-top:26px;font-size:14px;color:#8fae9c}
+
+/* reveals */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,.9,.28,1)}
+.rv.on{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1024px){
+  .sticky-ph img{height:460px}
+  .passers img{height:440px}
+}
+@media (max-width:860px){
+  .intro-grid{grid-template-columns:1fr}
+  .pin{position:static;height:auto;padding:80px 32px 20px}
+  .passers{padding:30px 32px 60px}
+  .menu-grid{grid-template-columns:1fr;gap:40px}
+  .sticky-ph{position:static}
+  .gal-grid{grid-template-columns:1fr;gap:22px}
+  .gal-grid img,.gal-grid .tall img{height:380px}
+  .card-grid{grid-template-columns:1fr}
+  .fcols{grid-template-columns:1fr;margin-bottom:44px}
+  .wordmark{white-space:normal}
+}
+@media (max-width:640px){
+  .nav-links a:not(.pill){display:none}
+  .hero{min-height:520px}
+  .hero .skyline{left:20px;right:20px}
+  .hero .tag{font-size:13px;padding:7px 13px}
+  .hero .title-band{padding:20px}
+  .hero h1{font-size:46px}
+  .hero .what{font-size:18px}
+  .menu,.gallery,.visit{padding:72px 0}
+  .card{padding:36px 24px}
+  .passers img{height:340px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="mark" href="#top"><img src="assets/about.jpg" alt="Always Sunday monkey mark">Always Sunday</a>
+    <nav class="nav-links">
+      <a href="#room">The room</a>
+      <a href="#menu">Menu</a>
+      <a href="#unhinged">The wall</a>
+      <a class="pill" href="#visit">Plan a visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="bg shutter green"><div class="slats"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/img-03.jpg" alt="The dining room at Always Sunday: booths, rattan lamps and a wall of windows"></div>
+    <div class="skyline">
+      <span class="tag">Specialty coffee · Matcha · Brunch</span>
+      <span class="tag">Gachibowli, Hyderabad</span>
+    </div>
+    <div class="title-band">
+      <h1>Always Sunday</h1>
+      <p class="what">Cafe &amp; bistro where every day feels like Sunday. Open 8 AM to midnight, every single day.</p>
+    </div>
+  </section>
+
+  <section class="intro" id="room">
+    <div class="intro-grid">
+      <div class="pin">
+        <p class="big">Your local <em>living room</em>.</p>
+        <p>That is the promise painted on the window, and the room keeps it: a comic-book wall that runs floor to ceiling, a mural that reads Always Unhinged, a monkey on the sign, and tables built for staying a while.</p>
+      </div>
+      <div class="passers">
+        <figure class="shutter"><div class="slats"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/img-01.jpg" alt="Lounge chairs in front of the cafe's comic-book wall"><figcaption>The comic wall corner - Tinkle to Marvel, shelf after shelf.</figcaption></figure>
+        <figure class="shutter"><div class="slats"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/img-06.jpg" alt="A sunlit window booth with the cafe's floral tile floor"><figcaption>A window booth, mid-afternoon sun on the floral tiles.</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap menu-grid">
+      <div class="sticky-ph">
+        <figure class="shutter green"><div class="slats"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/img-08.jpg" alt="Four lounge chairs gathered before the cafe's curved comic-book wall"><figcaption>Pull a chair up. The menu is long; so is Sunday.</figcaption></figure>
+      </div>
+      <div>
+        <h2 class="rv">What is always cookin'</h2>
+        <p class="note rv">Straight from the cafe's own menus - benne dosas, a full matcha therapy list, and a kitchen that runs breakfast to bistro. Prices as printed.</p>
+        <div class="mgroup rv">
+          <h3>OG Sunday benne</h3>
+          <div class="mrow"><span class="n">The Classic benne dosa <span class="d">crispy dosa, potato masala, podi</span></span><span class="p">₹260</span></div>
+          <div class="mrow"><span class="n">Paneer Bhurji benne dosa</span><span class="p">₹310</span></div>
+          <div class="mrow"><span class="n">Avocado benne dosa</span><span class="p">₹340</span></div>
+          <div class="mrow"><span class="n">Mangalore buns, coconut chutney</span><span class="p">₹290</span></div>
+          <div class="mrow"><span class="n">Ghee podi idly, chutney</span><span class="p">₹260</span></div>
+        </div>
+        <div class="mgroup rv">
+          <h3>Matcha therapy &amp; coffee</h3>
+          <div class="mrow"><span class="n">Matcha latte <span class="d">hot or iced</span></span><span class="p">₹320</span></div>
+          <div class="mrow"><span class="n">Strawberry matcha cloud</span><span class="p">₹320</span></div>
+          <div class="mrow"><span class="n">Biscoff cream iced matcha latte</span><span class="p">₹350</span></div>
+          <div class="mrow"><span class="n">Sea salt Nutella latte</span><span class="p">₹350</span></div>
+          <div class="mrow"><span class="n">Pistachio butter latte</span><span class="p">₹350</span></div>
+          <div class="mrow"><span class="n">Lavender honey iced latte</span><span class="p">₹330</span></div>
+        </div>
+        <div class="mgroup rv">
+          <h3>From the bistro</h3>
+          <div class="mrow"><span class="n">Sunday chicken curry <span class="d">pulao, kachumber, sesame, garlic cream</span></span><span class="p">₹440</span></div>
+          <div class="mrow"><span class="n">Sunday lamb curry</span><span class="p">₹490</span></div>
+          <div class="mrow"><span class="n">Khao sui <span class="d">coconut curry noodles, lemongrass</span></span><span class="p">₹420</span></div>
+          <div class="mrow"><span class="n">Thai green or yellow curry, jasmine rice</span><span class="p">₹390</span></div>
+          <div class="mrow"><span class="n">Caprese toasty <span class="d">focaccia, pesto, balsamic reduction</span></span><span class="p">₹390</span></div>
+          <div class="mrow"><span class="n">Basque cheesecake <span class="d">chocolate &amp; pistachio sauce</span></span><span class="p">₹460</span></div>
+        </div>
+        <p class="src rv">Items and prices from the cafe's printed menus at alwayssunday.cafe. 50+ items on the full card.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="unhinged">
+    <div class="wrap">
+      <div class="gal-grid">
+        <figure class="shutter tall"><div class="slats"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/img-07.jpg" alt="The Always Unhinged mural painted on a green wall inside the cafe"></figure>
+        <div class="gal-head">
+          <h2 class="rv">Always unhinged</h2>
+          <p class="rv">The mural says it louder than we can. A cafe with a monkey mascot, a comic library and a benne dosa menu was never going to be beige.</p>
+        </div>
+        <figure class="shutter tall"><div class="slats"><i></i><i></i><i></i><i></i><i></i></div><img src="assets/img-05.jpg" alt="The Always Sunday storefront, Your Local Living Room on the window, monkey statue on the railing"></figure>
+      </div>
+      <p class="credit">Photographs and the monkey mark: Always Sunday Cafe &amp; Bistro, used with thanks.</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="bg"><img src="assets/img-06.jpg" alt=""></div>
+    <div class="wrap">
+      <div class="card rv">
+        <h2>Plan a visit</h2>
+        <p class="sub">Walk in any day of the week - the kettle is on from breakfast to midnight.</p>
+        <div class="card-grid">
+          <div class="cblock">
+            <h3>Where</h3>
+            <p>Ground floor, 17, Khajaguda - Nanakramguda Rd, Prashant Hills, Gachibowli, Hyderabad 500104</p>
+          </div>
+          <div class="cblock">
+            <h3>Hours</h3>
+            <p>8:00 AM - 12:00 midnight, every day</p>
+          </div>
+          <div class="cblock">
+            <h3>Call</h3>
+            <p><a href="tel:+919515438077">+91 95154 38077</a></p>
+          </div>
+          <div class="cblock">
+            <h3>Write</h3>
+            <p><a href="mailto:alwayssundayindia@gmail.com">alwayssundayindia@gmail.com</a></p>
+          </div>
+        </div>
+        <a class="pill" href="mailto:alwayssundayindia@gmail.com">Book a table</a>
+        <a class="pill" href="tel:+919515438077">Call the cafe</a>
+        <p style="margin-top:26px;font-size:16px">Corporate party coming up? The cafe hosts events with custom menus - write to them.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <h3>Always Sunday Cafe &amp; Bistro</h3>
+        <p>Specialty coffee, matcha, benne dosa and brunch in Gachibowli, Hyderabad. Rated 4.6 by over a thousand Google guests.</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p>Khajaguda - Nanakramguda Rd, Prashant Hills, Gachibowli, Hyderabad 500104<br>8 AM - 12 midnight, daily</p>
+      </div>
+      <div>
+        <h3>Talk</h3>
+        <p><a href="tel:+919515438077">+91 95154 38077</a><br><a href="mailto:alwayssundayindia@gmail.com">alwayssundayindia@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="wordmark" id="wordmark" aria-label="Always Sunday"></div>
+    <p class="fine">Photographs: Always Sunday Cafe &amp; Bistro</p>
+  </div>
+</footer>
+
+<script>
+// shutter reveals + rv reveals + wordmark trigger
+(function(){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+  },{threshold:.16});
+  document.querySelectorAll('.shutter,.rv').forEach(function(el){io.observe(el);});
+  io.observe(document.getElementById('wordmark'));
+  // hero shutter fires on load
+  window.addEventListener('load',function(){document.querySelector('.hero .shutter').classList.add('on');});
+})();
+// footer wordmark letters
+(function(){
+  var el=document.getElementById('wordmark');
+  var text='ALWAYS SUNDAY';var i=0;
+  text.split(' ').forEach(function(word,wi,arr){
+    var w=document.createElement('span');w.style.whiteSpace='nowrap';w.style.display='inline-block';
+    word.split('').forEach(function(ch){
+      var s=document.createElement('span');s.className='L';s.textContent=ch;
+      s.style.transitionDelay=(i++*30)+'ms';w.appendChild(s);
+    });
+    el.appendChild(w);
+    if(wi<arr.length-1){var sp=document.createElement('span');sp.className='L';sp.textContent='\u00A0';sp.style.transitionDelay=(i++*30)+'ms';el.appendChild(sp);}
+  });
+})();
+</script>
+</body>
+</html>
