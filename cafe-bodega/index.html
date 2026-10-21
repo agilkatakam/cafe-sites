@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bodega — Courtyard cafe at Sunaparanta, Panaji</title>
+<meta name="description" content="Bodega is the courtyard cafe at the Sunaparanta Centre for the Arts, Altinho, Panaji. All-day breakfast, whole-wheat pizzas and cakes by chef Vandana Naik. Open Monday to Saturday, 10 to 7.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#dcdad2; --surface:#d1cfc5; --ink:#2a2a26; --muted:#5a584f; --accent:#4f6238; --accent-ink:#ffffff; --field:#3f5a2a;
+  --mx:24px;
+  --s15:0.9375rem; --s16:1rem; --s17:1.125rem; --s24:clamp(1.25rem, 2.1vw, 1.875rem); --s32:clamp(1.75rem, 1.2rem + 1.4vw, 2.25rem);
+  --disp:clamp(7.5rem, 29vw, 29rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Barlow",Helvetica,Arial,sans-serif;font-size:var(--s16);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+h1,h2{font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-0.02em;line-height:0.9}
+.wipe img{clip-path:inset(100% 0 0 0);transition:clip-path .55s cubic-bezier(.19,1,.22,1)}
+.wipe.on img{clip-path:inset(0 0 0 0)}
+.rise{opacity:0;transform:translateY(26px);transition:opacity .55s ease,transform .55s cubic-bezier(.19,1,.22,1)}
+.rise.on{opacity:1;transform:none}
+.cap{font-size:var(--s16);color:var(--muted);margin-top:10px}
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;background:var(--bg);overflow:hidden}
+.hero .photo{position:absolute;top:0;left:0;right:0;height:58%;overflow:hidden}
+.hero .photo img{animation:drift 38s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.1) translate(-1.5%,1.2%)}}
+.hero nav{position:absolute;top:16px;right:var(--mx);z-index:5;display:flex;gap:26px;font-size:var(--s15)}
+.hero nav a{text-decoration:none;position:relative;color:#fff;font-weight:500}
+.hero nav a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:currentColor;transition:width .3s ease}
+.hero nav a:hover::after{width:100%}
+.hero .strip{position:absolute;left:var(--mx);right:var(--mx);top:calc(58% + 24px);display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.hero .strip p{max-width:46ch;font-size:var(--s17);color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:13px 28px;font-size:var(--s16);white-space:nowrap;transition:background .3s ease,transform .3s ease}
+.btn:hover{background:#40512c;transform:translateY(-2px)}
+.hero h1{position:absolute;left:50%;bottom:-0.05em;transform:translateX(-50%);font-size:var(--disp);letter-spacing:-0.045em;line-height:0.85;white-space:nowrap;color:var(--ink);transition:transform .2s linear}
+/* ---------- intro ---------- */
+.intro{background:var(--surface);padding:110px var(--mx) 120px}
+.intro h2{font-size:var(--s32);margin-left:15%;margin-bottom:48px}
+.intro .col{margin-left:15%;width:330px;max-width:78%}
+.intro .col p{font-size:var(--s16);margin-bottom:1em;color:var(--muted)}
+.intro .col p:first-of-type{font-weight:500;color:var(--ink)}
+.intro .col a{text-decoration:underline;text-underline-offset:3px}
+/* ---------- menu ---------- */
+.menu{padding:110px var(--mx) 120px}
+.menu h2{font-size:var(--s32);margin-bottom:64px}
+.menu .grp{font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:700;text-transform:uppercase;font-size:var(--s24);letter-spacing:-0.01em;color:var(--accent);margin:72px 0 20px}
+.menu .grp:first-of-type{margin-top:0}
+.menu table{width:100%;border-collapse:collapse}
+.menu td{font-size:var(--s24);line-height:1.5;padding:0;vertical-align:baseline}
+.menu td.k{width:33%;color:var(--muted)}
+.menu td.n{width:26%;color:var(--muted)}
+.menu td.v{text-align:right;font-variant-numeric:tabular-nums}
+.menu tr{opacity:0;transform:translateY(12px);transition:opacity .4s ease,transform .4s ease}
+.menu tr.on{opacity:1;transform:none}
+/* ---------- gallery ---------- */
+.gallery{padding:130px 0 80px;display:grid;grid-template-columns:repeat(12,1fr);column-gap:2vw;margin:0 var(--mx)}
+.gallery h2{grid-column:1/13;font-size:var(--s32);margin-bottom:8vh}
+.g-item{margin-bottom:3.5vh}
+.g1{grid-column:1/6;aspect-ratio:3/4}
+.g2{grid-column:7/13;aspect-ratio:5/4;margin-top:6vh}
+.g3{grid-column:5/13;aspect-ratio:3/2}
+.g4{grid-column:1/5;aspect-ratio:4/5;margin-top:4vh}
+.g5{grid-column:7/13;aspect-ratio:3/4}
+.g6{grid-column:1/7;aspect-ratio:5/4;margin-top:4vh}
+/* ---------- contact ---------- */
+.contact{position:relative;z-index:1;min-height:100svh;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:flex-end;padding:110px var(--mx) 9vh}
+.contact .say{position:absolute;top:96px;left:var(--mx);max-width:22ch;font-size:var(--s24)}
+.contact .row{position:absolute;top:46%;left:var(--mx);right:var(--mx);display:flex;justify-content:space-between;align-items:flex-start;font-size:var(--s16);color:#b9b6aa}
+.contact h2{position:absolute;top:40px;left:var(--mx);font-size:var(--s32)}
+.contact a.mail{display:block;font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:700;font-size:clamp(3rem, 9.4vw, 9rem);letter-spacing:-0.03em;line-height:0.9;text-decoration:none;white-space:nowrap;transition:color .3s ease}
+.contact a.mail:hover{color:#9fb98a}
+.contact .row{position:absolute;top:46%;left:var(--mx);right:var(--mx);display:flex;justify-content:space-between;align-items:flex-start;font-size:var(--s16);color:#b9b6aa}
+.contact .row a{text-decoration:underline;text-underline-offset:3px;margin-left:22px}
+.contact .row .soc a:first-child{margin-left:0}
+/* ---------- footer ---------- */
+footer{position:relative;z-index:2;background:var(--field);color:#fff;padding:0 var(--mx) 34px;overflow:hidden}
+footer .big{font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:700;font-size:var(--disp);letter-spacing:-0.045em;line-height:0.78;white-space:nowrap;text-align:center;margin:0 calc(-1*var(--mx)) 72px;padding-top:8vh;color:#e6e2d4}
+footer .places{display:grid;grid-template-columns:repeat(12,1fr);column-gap:2vw}
+footer .ways{grid-column:1/6}
+footer .ways a{display:block;font-size:var(--s32);font-family:"Barlow Condensed","Barlow",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-0.01em;text-decoration:none;line-height:1.15;color:#e6e2d4;transition:transform .3s ease}
+footer .ways a:hover{transform:translateX(10px)}
+footer .links{grid-column:7/13;display:flex;gap:56px;font-size:var(--s15)}
+footer .links a{display:block;text-decoration:none;margin-bottom:10px;color:#cdd6bd}
+footer .links a:hover{color:#fff;text-decoration:underline}
+footer .links b{display:block;font-weight:500;color:#fff;margin-bottom:14px}
+footer .legal{display:flex;justify-content:space-between;margin-top:96px;font-size:var(--s15);color:#aebba0}
+footer .legal a{color:#e6e2d4}
+/* ---------- responsive ---------- */
+@media (min-width:701px) and (max-width:1000px){
+  .g-item{margin-bottom:4vh}
+  .g2{margin-top:3vh}
+  .g4,.g6{margin-top:2vh}
+}
+@media (max-width:700px){
+  .hero .photo{height:54svh}
+  .hero nav{gap:16px;top:14px}
+  .hero .strip{top:calc(54svh + 14px);flex-direction:column;gap:16px}
+  .hero h1{font-size:clamp(4rem, 24vw, 7rem);bottom:10px}
+  .intro h2{margin-left:0}
+  .intro .col{margin-left:0;width:78%}
+  .menu td{display:block;width:100%!important;text-align:left!important}
+  .menu td.k{color:var(--muted);font-size:var(--s16);padding-top:18px}
+  .menu td.n{display:none}
+  .menu td.v{font-size:var(--s16);color:var(--muted);margin-top:-1.5em;text-align:right!important;display:block}
+  .menu td:first-child{font-size:1.375rem}
+  .menu .grp{margin:44px 0 14px}
+  .gallery{display:block;margin:0 20px;padding:80px 0 30px}
+  .gallery h2{margin-bottom:48px}
+  .g-item{margin-bottom:56px}
+  .g1,.g4,.g5{width:72%}
+  .g2,.g6{width:86%;margin-left:auto}
+  .g3{width:100%}
+  .contact{min-height:88svh;padding:100px 20px 40px}
+  .contact h2{top:36px;left:20px}
+  .contact .say{top:84px;left:20px;font-size:1.25rem}
+  .contact a.mail{white-space:normal;font-size:13.5vw;}
+  .contact .row{position:absolute;top:46%;left:var(--mx);right:var(--mx);display:flex;justify-content:space-between;align-items:flex-start;font-size:var(--s16);color:#b9b6aa}
+  .contact .row a{margin-left:0;margin-right:18px}
+  footer .big{font-size:clamp(4rem, 23vw, 7rem);margin-bottom:48px;padding-top:6vh}
+  footer .ways a{font-size:1.6rem}
+  footer .places{display:block}
+  footer .links{margin-top:40px;gap:34px;flex-wrap:wrap}
+  footer .legal{flex-direction:column;gap:10px;margin-top:64px}
+}
+@media (prefers-reduced-motion:reduce){
+  .wipe img,.rise,.menu tr{transition:none;clip-path:none;opacity:1;transform:none}
+  .hero .photo img{animation:none}
+  .hero h1{transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="photo"><img src="assets/building.jpg" alt="The blue and white Portuguese-era Sunaparanta Centre for the Arts, home of Bodega"></div>
+  <nav>
+    <a href="#chef">The chef</a>
+    <a href="#menu">The menu</a>
+    <a href="#courtyard">The courtyard</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="strip">
+    <p class="rise">A courtyard cafe at the Sunaparanta Centre for the Arts, Altinho, Panaji. Open Monday to Saturday, 10 to 7.</p>
+    <a class="btn rise" href="#visit">Plan a visit</a>
+  </div>
+  <h1 id="wordmark">Bodega</h1>
+</header>
+
+<main>
+
+<section class="intro" id="chef">
+  <h2 class="rise">The chef</h2>
+  <div class="col">
+    <p class="rise">Vandana Naik cooked for nearly two decades in New York, trained at the Culinary Institute of America, and ran one of Goa's favourite cafe brands before opening Bodega, her first restaurant.</p>
+    <p class="rise">Her food is the kind that makes unfamiliar dishes feel like comfort food the first time you eat them. Aretha Franklin called her desserts the best she had ever had; her cakes have travelled to tables that include Beyonce's and Ben Kingsley's.</p>
+    <p class="rise">Here she cooks quieter: soups, salads, sandwiches and cakes, baked fresh every day and served in the shade of an art centre courtyard. <a href="#menu">See the menu.</a></p>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2 class="rise">Eating in the courtyard</h2>
+  <p class="grp rise">All-day breakfast</p>
+  <table>
+    <tr><td>Eggs benedict with ham, on a waffle</td><td class="k">From the griddle</td><td class="n">All day</td><td class="v">₹200</td></tr>
+    <tr><td>Shakshuka, spicy tomato and feta, wholewheat poli</td><td class="k">Two eggs, baked</td><td class="n">All day</td><td class="v">₹200</td></tr>
+    <tr><td>Bagel with cream cheese and smoked salmon</td><td class="k">New York, by way of Panaji</td><td class="n">All day</td><td class="v">₹280</td></tr>
+    <tr><td>French toast, maple syrup and berry compote</td><td class="k">From the griddle</td><td class="n">All day</td><td class="v">₹240</td></tr>
+    <tr><td>Homemade granola with yogurt and banana</td><td class="k">The light one</td><td class="n">All day</td><td class="v">₹160</td></tr>
+  </table>
+  <p class="grp rise">Mains, twelve to half six</p>
+  <table>
+    <tr><td>Chicken mole with scallion rice</td><td class="k">The signature</td><td class="n">12:00 to 18:30</td><td class="v">₹320</td></tr>
+    <tr><td>Spicy shrimp crepe with tzatziki</td><td class="k">Crepe</td><td class="n">12:00 to 18:30</td><td class="v">₹320</td></tr>
+    <tr><td>Spinach and feta crepe, pickled carrot</td><td class="k">Crepe</td><td class="n">12:00 to 18:30</td><td class="v">₹280</td></tr>
+    <tr><td>Creamy garlic mushroom pasta</td><td class="k">Pasta</td><td class="n">12:00 to 18:30</td><td class="v">₹280</td></tr>
+  </table>
+  <p class="grp rise">Pizza and small plates</p>
+  <table>
+    <tr><td>Margherita, whole-wheat thin crust</td><td class="k">Eight-inch pizza</td><td class="n">All day</td><td class="v">₹280</td></tr>
+    <tr><td>Quattro fromaggi, whole-wheat thin crust</td><td class="k">Eight-inch pizza</td><td class="n">All day</td><td class="v">₹340</td></tr>
+    <tr><td>Mezze platter with whole-wheat pita</td><td class="k">Small plate</td><td class="n">All day</td><td class="v">₹220</td></tr>
+    <tr><td>Jalapeno cheese toast</td><td class="k">Small plate</td><td class="n">All day</td><td class="v">₹70</td></tr>
+  </table>
+</section>
+
+<section class="gallery" id="courtyard">
+  <h2 class="rise">The courtyard</h2>
+  <figure class="g-item g1 wipe"><img src="assets/courtyard.jpg" alt="Tables under shade sails in the Sunaparanta courtyard"><figcaption class="cap">Shade sails over the courtyard.</figcaption></figure>
+  <figure class="g-item g2 wipe"><img src="assets/pond.jpg" alt="A bowl of granola beside the courtyard pond"><figcaption class="cap">Granola by the courtyard pond.</figcaption></figure>
+  <figure class="g-item g3 wipe"><img src="assets/sign.jpg" alt="The painted al fresco Bodega signboard"><figcaption class="cap">The sign on the gate.</figcaption></figure>
+  <figure class="g-item g4 wipe"><img src="assets/pancakes.jpg" alt="A stack of pancakes topped with fruit compote"><figcaption class="cap">Pancakes, maple syrup, compote.</figcaption></figure>
+  <figure class="g-item g5 wipe"><img src="assets/cake.jpg" alt="A slice of dark chocolate cake with walnuts"><figcaption class="cap">The cake Aretha approved of.</figcaption></figure>
+  <figure class="g-item g6 wipe"><img src="assets/frenchtoast.jpg" alt="French toast with berry compote and cream"><figcaption class="cap">French toast, berries, done.</figcaption></figure>
+</section>
+
+<section class="contact" id="visit">
+  <h2 class="rise">Visit</h2>
+  <p class="say rise">Write about cakes, parties and the daily specials.</p>
+  <div class="row">
+    <div>+91 98119 99365 · Altinho, Panaji<br><span id="openline">Open Monday to Saturday, 10:00 to 19:00.</span></div>
+    <div class="soc"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Bodega&amp;query_place_id=ChIJ9Vry1uvAvzsR9F1n0OmemmA" target="_blank" rel="noopener">Directions to the courtyard</a></div>
+  </div>
+  <a class="mail" href="mailto:viennesquare@gmail.com">viennesquare<wbr>@gmail<wbr>.com</a>
+</section>
+
+</main>
+
+<footer>
+  <div class="big" aria-hidden="true">Bodega</div>
+  <div class="places">
+    <div class="ways">
+      <a href="mailto:viennesquare@gmail.com">Write</a>
+      <a href="tel:+919811999365">Call</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+Bodega&amp;query_place_id=ChIJ9Vry1uvAvzsR9F1n0OmemmA" target="_blank" rel="noopener">Find us</a>
+    </div>
+    <div class="links">
+      <div><b>The cafe</b><a href="#chef">The chef</a><a href="#menu">The menu</a><a href="#courtyard">The courtyard</a></div>
+      <div><b>Hours</b><a href="#visit">Mon to Sat</a><a href="#visit">10:00 to 19:00</a><a href="#visit">Sundays closed</a></div>
+      <div><b>Follow</b><a href="https://www.instagram.com/bodegagoa/" target="_blank" rel="noopener">Instagram</a><a href="http://www.facebook.com/BodegaGoa/" target="_blank" rel="noopener">Facebook</a><a href="https://www.zomato.com/goa/cafe-bodega-1-panaji" target="_blank" rel="noopener">Zomato</a></div>
+    </div>
+  </div>
+  <div class="legal">
+    <span>Photographs: the Zomato community and cafebodegagoa.in. Menu and prices from the cafe's own site. Unsolicited redesign concept, not affiliated.</span>
+    <a href="#top">Back to the top</a>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:0.15});
+  document.querySelectorAll('.wipe,.rise,.menu tr').forEach(function(el){io.observe(el)});
+  // scaling wordmark: hero name shrinks slightly as it leaves, footer name grows in
+  var wm=document.getElementById('wordmark');
+  addEventListener('scroll',function(){
+    var p=Math.min(1,scrollY/(innerHeight*0.7));
+    wm.style.transform='translateX(-50%) scale('+(1-0.07*p)+')';
+  },{passive:true});
+  // live open-now line (own hours: Mon-Sat 10:00-19:00, closed Sunday)
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var day=now.getDay(), mins=now.getHours()*60+now.getMinutes();
+    var t=now.toLocaleTimeString('en-IN',{hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Kolkata'}).toLowerCase();
+    var s;
+    if(day===0){s='It is '+t+' in Panaji. Closed today (Sunday), back Monday 10 am.'}
+    else if(mins>=600&&mins<1140){s='It is '+t+' in Panaji. Open now, until 7 pm.'}
+    else if(mins<600){s='It is '+t+' in Panaji. Opens at 10 am.'}
+    else{s='It is '+t+' in Panaji. Closed, opens 10 am.'}
+    document.getElementById('openline').textContent=s;
+  }catch(e){}
+});
+</script>
+</body>
+</html>

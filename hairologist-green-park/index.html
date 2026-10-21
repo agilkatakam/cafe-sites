@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hairologist Salon — Transforming Hair Into Confidence | Green Park, New Delhi</title>
+<meta name="description" content="Hairologist Salon in Green Park, New Delhi. Hair patch and extensions, cancer patient wigs, balayage, keratin, bridal and grooming. Open 7 days, 9:30 am to 9:00 pm. Book on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f2; --ink:#1f2b4d; --muted:#6a7186; --accent:#f7941d; --accent-ink:#1f2b4d;
+  --field-1:#05070a; --field-1-ink:#ffffff; --field-2:#e3e1dc; --field-2-ink:#1f2b4d;
+  --mx:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.franklin{font-family:"Libre Franklin",sans-serif;font-weight:700;letter-spacing:-0.035em}
+.rise{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease}
+.f,.rail figure,.row{opacity:0;transform:translateY(8px);transition:opacity .5s ease,transform .5s ease}
+.f.in,.rail figure.in,.row.in{opacity:1;transform:none}
+.sheet.dim .f{opacity:.3;transform:none}
+.sheet.dim .f.hot{opacity:1}
+.rows.dim .row{opacity:.35;transform:none}
+.rows.dim .row.hot{opacity:1}
+.rise.in{opacity:1;transform:none}
+
+/* ---------- hero : text band then sheet ---------- */
+.hero{padding:20px var(--mx) 0}
+.big{font-size:clamp(44px,8.4vw,120px);text-transform:uppercase;line-height:0.92;margin-top:8px}
+.big .sub{display:block;font-size:max(13px,0.22em);letter-spacing:-0.01em;text-transform:none;margin-top:0.4em}
+.tag{font-size:16px;margin-top:14px;max-width:52ch}
+.hero .band{margin-top:48px}
+.band{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;font-size:16px;line-height:1.5}
+.band .name{grid-column:1/2;text-transform:uppercase;font-size:16px;line-height:1.2;font-weight:700}
+.band .avail{grid-column:2/3}
+.band .svc{grid-column:3/5}
+.band .facts{grid-column:5/7}
+.band .links{grid-column:7/8;text-align:right}
+.lbl{display:block;color:var(--muted)}
+.band ul{list-style:none}
+.band ul li{padding-left:14px}
+.band .links a{display:inline-block}
+.tab{background:var(--accent);color:var(--accent-ink);padding:6px 14px;font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:0.02em;transition:transform .2s ease}
+.tab:hover{transform:translateY(-2px)}
+.band .links .plain{margin-top:10px;text-decoration:underline;text-underline-offset:3px}
+.sheet{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;margin-top:180px;align-items:start}
+.run{display:contents}
+.f{position:relative;transition:opacity .25s ease}
+.f figcaption{font-size:14px;color:var(--muted);margin-bottom:8px;min-height:22px}
+.f img,.f video{width:100%;aspect-ratio:2/3;object-fit:cover}
+.f.wide{grid-column:span 2}
+.f.wide video{aspect-ratio:auto;height:100%}
+.rundesc{position:fixed;left:16px;bottom:14px;font-size:14px;color:var(--muted);pointer-events:none;opacity:0;transition:opacity .2s ease;z-index:30}
+.rundesc.on{opacity:1}
+
+/* ---------- gallery strip ---------- */
+.strip{height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;margin-top:40px}
+.strip .trow{position:relative;padding:0 var(--mx);margin-bottom:20px}
+.strip h2{font-size:24px;font-weight:600}
+.strip h2 span{color:var(--muted);font-weight:400;font-size:16px;margin-left:8px}
+.rail{display:flex;gap:5vw;overflow-x:auto;padding:0 var(--mx);scrollbar-width:none;-ms-overflow-style:none}
+.rail::-webkit-scrollbar{display:none}
+.rail figure{flex:0 0 auto;width:13vw;min-width:170px;transition:transform .25s ease}
+.rail figure:hover{transform:scale(1.1)}
+.rail img{aspect-ratio:2/3;object-fit:cover;height:auto}
+
+/* ---------- intro ---------- */
+.intro{padding:96px 0 160px;display:flex;align-items:flex-start;gap:60px;padding-right:var(--mx)}
+.intro .side{margin-left:auto;width:34%;max-width:460px}
+.intro .side img{aspect-ratio:4/5;object-fit:cover}
+.intro .col{width:330px;margin-left:15%;font-size:16px;line-height:1.5;flex:none}
+.intro p+p{margin-top:1em}
+.intro .lead{font-weight:600}
+.intro .rest{color:var(--muted)}
+.intro a{text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- work ledger ---------- */
+.ledger{padding:64px 0 140px;position:relative}
+.ledger .col{width:560px;margin-left:22%}
+.ledger h2{font-size:24px;font-weight:600;margin-bottom:32px}
+.rows{position:relative}
+.row{display:flex;align-items:baseline;height:44px;cursor:default;transition:opacity .2s ease}
+.row .n{font-size:16px}
+.row .k{font-size:14px;color:var(--muted);margin-left:auto;margin-right:24px}
+.row .y{font-size:14px;font-variant-numeric:tabular-nums;color:var(--ink)}
+.preview{position:absolute;width:300px;aspect-ratio:4/3;left:calc(100% + 64px);top:0;opacity:0;transition:opacity .15s ease;pointer-events:none}
+.preview.on{opacity:1}
+.preview img{width:100%;height:100%;object-fit:cover}
+.mimg{display:none}
+
+/* ---------- cta ---------- */
+.cta{margin-top:40px}
+.tri{display:grid;grid-template-columns:1fr 1fr 1fr}
+.tri img{height:40svh;object-fit:cover}
+.cband{position:relative;background:var(--field-2);color:var(--field-2-ink);min-height:44svh;padding:64px var(--mx) 80px}
+.cband .stmt{font-size:26px;line-height:1.3;max-width:58%}
+.cband a.phrase{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px;font-weight:600}
+.cband .sub{margin-top:32px;font-size:16px;color:var(--ink)}
+.cband .who{position:absolute;right:var(--mx);bottom:40px;width:150px}
+.cband .who img{aspect-ratio:4/5;object-fit:cover}
+.cband .who p{font-size:14px;color:var(--muted);margin-top:8px}
+
+/* ---------- footer tiles ---------- */
+footer{padding:8px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px;background:var(--bg)}
+.tile{padding:20px;position:relative}
+.t-state{grid-column:1/5;background:var(--surface);height:220px}
+.t-state .s{font-size:24px;line-height:1.25}
+.t-state .legal{position:absolute;left:20px;bottom:20px;font-size:13px;color:var(--muted)}
+.t-nav{grid-column:5/8;background:var(--surface);height:220px}
+.t-nav a{display:block;font-size:16px;margin-bottom:8px}
+.t-nav a:hover{text-decoration:underline}
+.t-city{grid-column:8/10;background:var(--surface);height:220px;font-size:16px}
+.t-city .tm{position:absolute;left:20px;bottom:20px;font-variant-numeric:tabular-nums}
+.t-mail{grid-column:10/13;background:var(--surface);height:220px}
+.t-mail a{position:absolute;left:20px;right:20px;bottom:20px;font-size:20px;text-decoration:underline;text-underline-offset:4px;word-break:break-all}
+.t-mark{grid-column:1/9;background:var(--ink);color:var(--field-1-ink);height:320px;display:flex;align-items:center;justify-content:center}
+.t-mark .wm{font-family:"Libre Franklin",sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-0.035em;font-size:clamp(40px,8.5vw,120px)}
+.t-book{grid-column:9/13;background:var(--accent);color:var(--accent-ink);height:320px;display:block}
+.t-book .inv{font-size:26px;font-weight:600;line-height:1.2}
+.t-book svg{position:absolute;right:20px;bottom:20px;width:56px;height:56px}
+.t-book:hover .inv{text-decoration:underline}
+
+/* ---------- phone ---------- */
+@media (max-width:1000px){.preview{display:none}}
+@media (max-width:900px){
+  .mimg{display:block;margin:16px 0 8px}
+  .mimg img{aspect-ratio:16/10;object-fit:cover}
+  .intro{display:block;padding-right:0}
+  .intro .col{width:min(78%,560px);margin-left:20px}
+  .intro .side{width:min(78%,460px);margin:32px 0 0 20px;max-width:none}
+  .sheet{grid-template-columns:repeat(3,1fr)}
+  .f.wide{grid-column:span 2}
+  .strip{height:80svh}
+}
+@media (max-width:720px){
+  .big{font-size:11.5vw}
+  .band{grid-template-columns:1fr 1fr;gap:20px 12px;font-size:15px}
+  .band .name{grid-column:1/2}
+  .band .avail{grid-column:2/3}
+  .band .svc{grid-column:1/2}
+  .band .facts{grid-column:2/3}
+  .band .links{grid-column:1/3;text-align:left}
+  .sheet{grid-template-columns:1fr 1fr;gap:12px;margin-top:64px}
+  .f.wide{grid-column:span 2}
+  .strip{height:80svh;justify-content:flex-start;padding-top:12svh}
+  .rail{scroll-snap-type:x mandatory;gap:5vw}
+  .rail figure{width:34vw;min-width:0;scroll-snap-align:start}
+  .intro{padding:72px 20px 96px}
+  .intro .rest{color:var(--ink)}
+  .ledger{padding:48px 20px 96px}
+  .ledger .col{width:100%;margin-left:0}
+  .row{height:auto;min-height:52px;flex-wrap:wrap;align-items:center}
+  .row .k{order:3;flex-basis:100%;margin:0;font-size:13px}
+  .row .y{margin-left:auto}
+  .preview{display:none}
+  .tri{grid-template-columns:1fr 1fr}
+  .tri img{height:auto;aspect-ratio:4/3}
+  .tri figure:first-child{grid-column:1/3}
+  .cband{padding:48px 20px 140px}
+  .cband .stmt{font-size:20px;max-width:100%}
+  .t-mail a{font-size:16px}
+  .t-book .inv{font-size:20px}
+  .strip h2{font-size:20px}
+  .cband .who{width:96px;bottom:24px}
+  footer{grid-template-columns:1fr 1fr;gap:6px;padding:6px}
+  .t-mark{grid-column:1/3;height:160px;order:-2}
+  .t-book{grid-column:1/3;height:160px;order:-1}
+  .t-nav{grid-column:1/2;height:200px}
+  .t-mail{grid-column:2/3;height:200px}
+  .t-city{grid-column:1/2;height:180px}
+  .t-state{grid-column:2/3;height:180px}
+  .t-state .s{font-size:20px}
+  .cta-fixed{position:fixed;right:16px;bottom:14px;z-index:40;background:var(--accent);color:var(--accent-ink);padding:10px 16px;font-family:"Libre Franklin",sans-serif;font-weight:700;font-size:14px;text-transform:uppercase}
+}
+@media (min-width:721px){.cta-fixed{display:none}}
+</style>
+</head>
+<body>
+
+<!-- HERO: text band, then sheet -->
+<header class="hero">
+  <h1 class="big franklin">Hairologist <span class="sub">Salon — hair, colour &amp; trichology care</span></h1>
+  <p class="tag">Transforming hair into confidence: cuts, colour, extensions and trichology care in Green Park, New Delhi.</p>
+  <div class="band">
+    <div class="name franklin">Hairologist<br>Salon</div>
+    <p class="avail">Taking appointments seven days a week in Green Park, New&nbsp;Delhi.</p>
+    <div class="svc">
+      <span class="lbl">Services</span>
+      <ul>
+        <li>Hair patch &amp; extension</li>
+        <li>Cancer patients wigs</li>
+        <li>Colour &amp; balayage</li>
+        <li>Keratin &amp; botoplex</li>
+        <li>Scalp therapy</li>
+        <li>Bridal &amp; grooming</li>
+      </ul>
+    </div>
+    <div class="facts">
+      <span class="lbl">The salon</span>
+      <ul>
+        <li>Master stylists &amp; trichologists</li>
+        <li>15+ years of practice</li>
+        <li>VIP private styling suites</li>
+        <li>4.9 on Google, 89 reviews</li>
+        <li>Open 9:30&ndash;21:00, every day</li>
+      </ul>
+    </div>
+    <div class="links">
+      <a class="tab" href="https://wa.me/919311694139">Book</a><br>
+      <a class="plain" href="tel:+919311694139">+91 93116 94139</a>
+    </div>
+  </div>
+
+  <div class="sheet" id="sheet">
+    <div class="run" data-run="Colour and balayage, hand-painted and glossed in the custom colour bar.">
+      <figure class="f"><figcaption>Colour &amp; balayage</figcaption><img src="assets/frame-01.jpg" width="480" height="720" alt="Stylist sectioning hair for a colour service"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-02.jpg" width="480" height="720" alt="Consultation before a balayage service" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-03.jpg" width="480" height="720" alt="Stylist and client during a colour appointment" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-04.jpg" width="480" height="720" alt="Colour work in progress at the chair" loading="lazy"></figure>
+    </div>
+    <div class="run" data-run="Cuts shaped to the person, finished with a luxury blowout.">
+      <figure class="f"><figcaption>Cut &amp; styling</figcaption><img src="assets/frame-08.jpg" width="480" height="720" alt="Stylist cutting hair in the salon" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-09.jpg" width="480" height="720" alt="Reviewing a reference photo with the client" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-10.jpg" width="480" height="720" alt="Stylist finishing a bob cut" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-11.jpg" width="480" height="720" alt="Finished bob, front view" loading="lazy"></figure>
+    </div>
+    <div class="run" data-run="Clipper-over-comb detail, hot towel finish, matte clay.">
+      <figure class="f"><figcaption>Men&rsquo;s grooming</figcaption><img src="assets/frame-16.jpg" width="480" height="720" alt="Barber detailing a men's haircut with clippers" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-17.jpg" width="480" height="720" alt="Scissor work on a men's cut" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-18.jpg" width="480" height="720" alt="Client mid-cut in the chair" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-19.jpg" width="480" height="720" alt="Finished men's haircut, side profile" loading="lazy"></figure>
+    </div>
+    <figure class="f wide">
+      <figcaption>The floor</figcaption>
+      <video src="assets/salon-loop.mp4" poster="assets/salon-poster.jpg" width="540" height="960" autoplay muted loop playsinline aria-label="Inside Hairologist Salon during a consultation"></video>
+    </figure>
+    <div class="run" data-run="Every service starts with a scalp and hair diagnostic.">
+      <figure class="f"><figcaption>The consult</figcaption><img src="assets/frame-23.jpg" width="480" height="720" alt="Founder consulting a client before her service" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-24.jpg" width="480" height="720" alt="Consultation at the chair" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-25.jpg" width="480" height="720" alt="Discussing the finished look" loading="lazy"></figure>
+    </div>
+    <div class="run" data-run="Rose balayage, toned and glossed.">
+      <figure class="f"><figcaption>More colour</figcaption><img src="assets/frame-05.jpg" width="480" height="720" alt="Rose balayage result from behind" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-06.jpg" width="480" height="720" alt="Rose balayage waves" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-07.jpg" width="480" height="720" alt="Client with finished rose balayage" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-12.jpg" width="480" height="720" alt="Styling after a colour service" loading="lazy"></figure>
+    </div>
+    <div class="run" data-run="Sameer, Indu and Pragati run the floor.">
+      <figure class="f"><figcaption>The experts</figcaption><img src="assets/sameer.jpg" width="600" height="800" alt="Sameer, founder and creative director" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/indu.jpg" width="600" height="800" alt="Indu Chaudhary, head of department, hair patch and extensions" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/pragati.jpg" width="600" height="800" alt="Pragati Chanshouliya, beauty and makeup expert" loading="lazy"></figure>
+    </div>
+    <div class="run" data-run="Long layers, cut and set.">
+      <figure class="f"><figcaption>Long hair</figcaption><img src="assets/frame-26.jpg" width="480" height="720" alt="Client with finished long layers" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-27.jpg" width="480" height="720" alt="Finished long haircut" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-13.jpg" width="480" height="720" alt="Blowout finish at the chair" loading="lazy"></figure>
+    </div>
+    <div class="run" data-run="Trichology-led care for the scalp first.">
+      <figure class="f"><figcaption>Scalp &amp; care</figcaption><img src="assets/frame-14.jpg" width="480" height="720" alt="Stylist checking the hairline during a service" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-15.jpg" width="480" height="720" alt="Finished cut and colour from the back" loading="lazy"></figure>
+      <figure class="f"><figcaption></figcaption><img src="assets/frame-20.jpg" width="480" height="720" alt="Detailing the neckline" loading="lazy"></figure>
+    </div>
+  </div>
+</header>
+<div class="rundesc" id="rundesc"></div>
+
+<!-- GALLERY STRIP -->
+<section class="strip rise">
+  <div class="trow"><h2>The work <span>29 frames from the floor</span></h2></div>
+  <div class="rail" id="rail">
+    <figure><img src="assets/frame-01.jpg" width="480" height="720" alt="Colour service in progress" loading="lazy"></figure>
+    <figure><img src="assets/frame-03.jpg" width="480" height="720" alt="Stylist and client mid-appointment" loading="lazy"></figure>
+    <figure><img src="assets/frame-05.jpg" width="480" height="720" alt="Rose balayage from behind" loading="lazy"></figure>
+    <figure><img src="assets/frame-08.jpg" width="480" height="720" alt="Cutting at the chair" loading="lazy"></figure>
+    <figure><img src="assets/frame-10.jpg" width="480" height="720" alt="Finishing a bob" loading="lazy"></figure>
+    <figure><img src="assets/frame-13.jpg" width="480" height="720" alt="Blowout finish" loading="lazy"></figure>
+    <figure><img src="assets/frame-16.jpg" width="480" height="720" alt="Clipper detail on a men's cut" loading="lazy"></figure>
+    <figure><img src="assets/frame-19.jpg" width="480" height="720" alt="Finished men's cut, profile" loading="lazy"></figure>
+    <figure><img src="assets/frame-21.jpg" width="480" height="720" alt="Client checking his new cut" loading="lazy"></figure>
+    <figure><img src="assets/frame-23.jpg" width="480" height="720" alt="Founder in consultation" loading="lazy"></figure>
+    <figure><img src="assets/frame-26.jpg" width="480" height="720" alt="Long layers, finished" loading="lazy"></figure>
+    <figure><img src="assets/frame-29.jpg" width="480" height="720" alt="Final styling touches" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro rise">
+  <!--col first--><img src="assets/frame-29.jpg" width="480" height="720" alt="Final styling touches on a long haircut" loading="lazy"></div>
+  <div class="col">
+    <p class="lead">Hairologist is a hair salon built like a clinic and run like a couture house, in Green Park Market, New Delhi.</p>
+    <p class="rest">Founder and creative director Sameer leads a floor of master stylists and trichologists. Indu Chaudhary heads hair patch and extensions; Pragati Chanshouliya leads beauty and makeup.</p>
+    <p class="rest">The salon is known for medical-grade work: natural hair patches and micro-ring extensions, and ultra-gentle cranial prostheses for chemotherapy patients, fitted in private.</p>
+    <p class="rest">VIP styling suites, shiatsu wash lounges and a custom colour bar back up the everyday cuts, colour, keratin and bridal work.</p>
+    <p class="rest">Open seven days, 9:30 am to 9:00 pm. <a href="https://www.google.com/maps/search/?api=1&query=HAIROLOGIST+SALON&query_place_id=ChIJPTMO8enjDDkRtmHNCp7YQv4">Read the Google reviews</a>.</p>
+  </div>
+  <div class="side"><img src="assets/frame-29.jpg" width="480" height="720" alt="Final styling touches on a long haircut" loading="lazy"></div>
+</section>
+
+<!-- WORK LEDGER -->
+<section class="ledger rise" id="services">
+  <div class="col">
+    <h2>Services &amp; care</h2>
+    <div class="rows" id="rows">
+      <div class="mimg"><img src="assets/indu.jpg" width="600" height="800" alt="Indu Chaudhary, hair patch and extension expert" loading="lazy"></div>
+      <div class="row" data-img="assets/indu.jpg"><span class="n">Hair Patch &amp; Extension</span><span class="k">Specialist consult</span><span class="y">&mdash;</span></div>
+      <div class="mimg"><img src="assets/frame-23.jpg" width="480" height="720" alt="Private consultation at the salon" loading="lazy"></div>
+      <div class="row" data-img="assets/frame-23.jpg"><span class="n">Cancer Patients Wigs</span><span class="k">Compassion care</span><span class="y">&mdash;</span></div>
+      <div class="mimg"><img src="assets/frame-08.jpg" width="480" height="720" alt="Cutting at the chair" loading="lazy"></div>
+      <div class="row" data-img="assets/frame-08.jpg"><span class="n">Signature Director's Haircut</span><span class="k">Cut &amp; styling</span><span class="y">60 min</span></div>
+      <div class="row" data-img="assets/frame-05.jpg"><span class="n">French Balayage &amp; Silk Gloss</span><span class="k">Colour</span><span class="y">180 min</span></div>
+      <div class="row" data-img="assets/frame-02.jpg"><span class="n">Royal Botoplex &amp; Keratin</span><span class="k">Smoothening</span><span class="y">150 min</span></div>
+      <div class="row" data-img="assets/frame-14.jpg"><span class="n">Micro-Oxygen Scalp Detox</span><span class="k">Scalp therapy</span><span class="y">90 min</span></div>
+      <div class="row" data-img="assets/pragati.jpg"><span class="n">Beauty, Facial &amp; Waxing</span><span class="k">Skin</span><span class="y">60&ndash;90 min</span></div>
+      <div class="row" data-img="assets/frame-12.jpg"><span class="n">Manicure &amp; Pedicure</span><span class="k">Hands &amp; feet</span><span class="y">75 min</span></div>
+      <div class="row" data-img="assets/frame-26.jpg"><span class="n">Royal Couture Bridal</span><span class="k">Bridal &amp; grooming</span><span class="y">240 min</span></div>
+      <div class="row" data-img="assets/frame-19.jpg"><span class="n">Executive Men's Styling</span><span class="k">Men's</span><span class="y">45 min</span></div>
+      <div class="preview" id="preview"><img src="assets/frame-01.jpg" width="480" height="720" alt=""></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta rise">
+  <div class="tri">
+    <figure><img src="assets/frame-06.jpg" width="480" height="720" alt="Rose balayage waves" loading="lazy"></figure>
+    <figure><img src="assets/frame-28.jpg" width="480" height="720" alt="Client happy with her finished cut" loading="lazy"></figure>
+    <figure><img src="assets/frame-22.jpg" width="480" height="720" alt="Finished men's haircut" loading="lazy"></figure>
+  </div>
+  <div class="cband">
+    <h2 class="stmt" style="font-family:inherit;font-weight:600">Good hair weeks start here. <a class="phrase" href="https://wa.me/919311694139">WhatsApp us</a> to take a chair.</h2>
+    <p class="sub">Open seven days, 9:30 am to 9:00 pm.<br>Shop 31, LGF Green Park Market, Block G, Green Park Extension, New Delhi 110016.</p>
+    <div class="who">
+      <img src="assets/sameer.jpg" width="600" height="800" alt="Sameer, founder of Hairologist Salon" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="tile t-state">
+    <p class="s">Transforming hair into confidence.</p>
+    <p class="legal">© 2026 Hairologist Salon. Photography &amp; video: Hairologist Salon.</p>
+  </div>
+  <div class="tile t-nav">
+    <a href="#services">Services &amp; care</a>
+    <a href="https://wa.me/919311694139">Book on WhatsApp</a>
+    <a href="tel:+919311694139">Call +91 93116 94139</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=HAIROLOGIST+SALON&query_place_id=ChIJPTMO8enjDDkRtmHNCp7YQv4">Google Maps &amp; reviews</a>
+  </div>
+  <div class="tile t-city">New Delhi<span class="tm" id="ist">--:-- IST</span></div>
+  <div class="tile t-mail"><a href="mailto:hairologistsalon@gmail.com">hairologistsalon@gmail.com</a></div>
+  <div class="tile t-mark"><span class="wm">Hairologist</span></div>
+  <a class="tile t-book" href="https://wa.me/919311694139">
+    <span class="inv">Book your chair</span>
+    <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square" aria-hidden="true"><path d="M8 48 L48 8"/><path d="M20 8 L48 8 L48 36"/></svg>
+  </a>
+</footer>
+<a class="cta-fixed" href="https://wa.me/919311694139">Book</a>
+
+<script>
+// run hover: dim others, show description
+var sheet=document.getElementById('sheet'), desc=document.getElementById('rundesc');
+sheet.querySelectorAll('.run > .f').forEach(function(f){
+  f.addEventListener('mouseenter',function(){
+    var run=f.parentElement;
+    sheet.classList.add('dim');
+    run.querySelectorAll('.f').forEach(function(x){x.classList.add('hot')});
+    desc.textContent=run.getAttribute('data-run')||'';desc.classList.add('on');
+  });
+  f.addEventListener('mouseleave',function(){
+    sheet.classList.remove('dim');
+    sheet.querySelectorAll('.hot').forEach(function(x){x.classList.remove('hot')});
+    desc.classList.remove('on');
+  });
+});
+// ledger index-with-preview
+var rows=document.getElementById('rows'), pv=document.getElementById('preview'), pvi=pv.querySelector('img');
+rows.querySelectorAll('.row').forEach(function(r){
+  r.addEventListener('mouseenter',function(){
+    rows.classList.add('dim');r.classList.add('hot');
+    pvi.src=r.getAttribute('data-img');
+    pv.style.top=(r.offsetTop-40)+'px';pv.classList.add('on');
+  });
+  r.addEventListener('mouseleave',function(){rows.classList.remove('dim');r.classList.remove('hot');pv.classList.remove('on')});
+});
+// entrances
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:0.12});
+document.querySelectorAll('.rise').forEach(function(s){io.observe(s)});
+// staggered part entrances
+['#sheet .f','#rail figure','#rows .row'].forEach(function(sel){
+  document.querySelectorAll(sel).forEach(function(el,i){
+    el.style.transitionDelay=(Math.min(i,24)*35)+'ms';io.observe(el);
+  });
+});
+setTimeout(function(){document.querySelectorAll('.rise,.f,.rail figure,.row').forEach(function(s){s.classList.add('in')})},1600);
+// Delhi time
+function tick(){var d=new Date().toLocaleTimeString('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',hour12:false});document.getElementById('ist').textContent=d+' IST'}
+tick();setInterval(tick,30000);
+</script>
+</body>
+</html>

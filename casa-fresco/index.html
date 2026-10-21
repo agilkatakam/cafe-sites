@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Fresco - All-day dining in two restored Bangalore bungalows</title>
+<meta name="description" content="Casa Fresco is an all-day dining restaurant and cafe in Indiranagar and HSR Layout, Bengaluru: breakfasts, pastas, pizzas, burgers, sizzlers and bubble teas in restored bungalow spaces. Open 10 am to 11 pm every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eeecea; --surface:#e4e1dd; --ink:#333231; --muted:#5f5b57;
+  --accent:#5c6b54; --accent-ink:#ffffff; --field-1:#cdc3b6;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --pad: clamp(16px, 4vw, 64px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Work Sans',sans-serif;font-weight:400;font-size:var(--step-body);line-height:1.55;letter-spacing:0;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+::selection{background:var(--accent);color:var(--accent-ink)}
+h1,h2,h3{font-weight:300;letter-spacing:-0.035em;line-height:1}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:500;font-size:1rem;padding:14px 30px;transition:transform .25s ease}
+.btn:hover{transform:translateY(-3px)}
+.btn:active{transform:scale(.97)}
+
+/* ---------- hero: title in the sky ---------- */
+.hero{position:relative;height:100svh;overflow:hidden}
+.hero-img{position:absolute;inset:0;clip-path:inset(0 0 0 0)}
+.hero-img img{width:100%;height:100%;object-fit:cover;transform:scale(1)}
+.js .hero-img{clip-path:inset(0 100% 0 0);transition:clip-path 1.1s cubic-bezier(.65,0,.25,1)}
+.js .hero-img img{transform:scale(1.12);transition:transform 1.4s cubic-bezier(.3,.7,.3,1)}
+.js .hero-img.open{clip-path:inset(0 0 0 0)}
+.js .hero-img.open img{transform:scale(1)}
+.hero-sky{position:absolute;top:0;left:0;right:0;height:52%;background:rgba(238,236,234,0);pointer-events:none}
+.hero-head{position:absolute;top:56px;left:0;right:0;text-align:center;color:#ffffff}
+.hero-head h1{font-size:clamp(72px,7.2vw,112px);line-height:.9}
+.hero-sub{margin-top:22px;font-size:clamp(1.0625rem,1.5vw,1.375rem);font-weight:400}
+.hero-head h1 span{display:block}
+.hero-scrim{position:absolute;top:24px;left:50%;transform:translateX(-50%);width:min(92vw,900px);height:300px;background:rgba(30,28,26,.28);z-index:-1}
+.hero-line{position:absolute;top:52%;left:0;right:0;display:flex;justify-content:center;gap:260px;color:#ffffff;font-size:clamp(1rem,1.4vw,1.375rem);font-weight:400}
+.hero-line span{background:rgba(30,28,26,.28);padding:2px 8px}
+.hero-nav{position:absolute;top:32px;left:var(--pad);font-size:var(--step-small);font-weight:500;color:#ffffff;background:rgba(30,28,26,.35);padding:4px 10px}
+.hero-links{position:absolute;top:32px;right:var(--pad);display:flex;gap:28px;align-items:center;font-size:var(--step-small);font-weight:500}
+.hero-links a{color:#ffffff;background:rgba(30,28,26,.35);padding:4px 10px}
+.hero-links a:hover{text-decoration:underline}
+.hero-links .btn{background:var(--bg);color:var(--ink);padding:10px 22px;font-size:var(--step-small)}
+@media (max-width:640px){
+  .hero-head{top:96px}
+  .hero-head h1{font-size:11vw}
+  .hero-scrim{height:230px}
+  .hero-line{top:auto;bottom:128px;flex-direction:column;align-items:center;gap:8px;font-size:1.0625rem}
+  .hero-cta-m{position:absolute;left:0;right:0;bottom:0;height:96px;background:rgba(30,28,26,.45);display:flex;align-items:center;justify-content:center}
+  .hero-cta-m .btn{width:calc(100% - 48px);text-align:center;padding:16px 0}
+  .hero-links a:not(.btn){display:none}
+  .hero-links .btn{display:none}
+}
+@media (min-width:641px){.hero-cta-m{display:none}}
+
+/* ---------- intro: pinned sentence, photographs pass ---------- */
+.intro{position:relative;height:240svh}
+.intro-pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:3}
+.intro-sentence{max-width:62vw;text-align:center;font-size:clamp(24px,2.6vw,36px);line-height:1.25;font-weight:300;letter-spacing:-0.02em;color:#ffffff;background:#333231;padding:18px 28px}
+.pass{position:absolute;overflow:hidden}
+.pass img{width:100%;height:100%;object-fit:cover}
+.pass-1{top:8svh;left:6vw;width:30vw;aspect-ratio:4/5}
+.pass-2{top:82svh;right:0;width:44vw;aspect-ratio:16/10}
+.pass-3{top:158svh;left:24vw;width:26vw;aspect-ratio:1/1}
+@media (max-width:640px){
+  .intro{height:260svh}
+  .intro-pin{top:0}
+  .intro-sentence{max-width:calc(100vw - 40px);font-size:24px;line-height:1.3;padding:14px 18px}
+  .pass-1{top:8svh;left:0;width:70%}
+  .pass-2{top:80svh;right:0;width:84%}
+  .pass-3{top:150svh;left:0;width:58%}
+}
+
+/* ---------- menu: the printed sheet ---------- */
+.menu{background:var(--field-1);padding:120px 10px;position:relative;z-index:4}
+.sheet{background:var(--bg);width:min(640px,100%);margin:0 auto;padding:64px;text-align:center;clip-path:polygon(0 10px,4% 0,8% 10px,12% 0,16% 10px,20% 0,24% 10px,28% 0,32% 10px,36% 0,40% 10px,44% 0,48% 10px,52% 0,56% 10px,60% 0,64% 10px,68% 0,72% 10px,76% 0,80% 10px,84% 0,88% 10px,92% 0,96% 10px,100% 0,100% calc(100% - 10px),96% 100%,92% calc(100% - 10px),88% 100%,84% calc(100% - 10px),80% 100%,76% calc(100% - 10px),72% 100%,68% calc(100% - 10px),64% 100%,60% calc(100% - 10px),56% 100%,52% calc(100% - 10px),48% 100%,44% calc(100% - 10px),40% 100%,36% calc(100% - 10px),32% 100%,28% calc(100% - 10px),24% 100%,20% calc(100% - 10px),16% 100%,12% calc(100% - 10px),8% 100%,4% calc(100% - 10px),0 100%)}
+.sheet h2{font-size:clamp(2.5rem,4vw,3rem);letter-spacing:-0.035em}
+.sheet .note{margin-top:10px;font-size:1rem;color:var(--muted)}
+.group{margin-top:56px}
+.group h3{font-size:1.375rem;font-weight:400;letter-spacing:-0.01em}
+.group .items{margin-top:20px}
+.group .item{padding:8px 0;font-size:1.0625rem}
+.group .item span{display:block;font-size:var(--step-small);color:var(--muted)}
+.sheet .hours{margin-top:56px;font-size:1.0625rem;line-height:1.7}
+@media (max-width:640px){
+  .menu{padding:96px 10px}
+  .sheet{padding:44px 28px}
+}
+
+/* ---------- gallery: full-bleed sequence ---------- */
+.gallery{position:relative;z-index:2}
+.interlock{position:relative;z-index:5;width:240px;margin:0 auto -110px;font-size:1rem;color:var(--muted);background:var(--bg);padding:10px 12px}
+.g-frame{position:sticky;top:0;height:100svh;overflow:hidden}
+.g-frame img{width:100%;height:100%;object-fit:cover}
+.g-cap{position:absolute;left:var(--pad);bottom:0;right:0;height:120px;display:flex;align-items:center;background:rgba(30,28,26,.35);color:#ffffff;font-size:1rem;padding:0 var(--pad)}
+@media (max-width:640px){
+  .g-frame{height:88svh}
+  .interlock{margin-left:16px;margin-right:auto;width:60%}
+}
+
+/* ---------- contact: visit card on a photograph ---------- */
+.visit{position:relative;height:100svh;overflow:hidden;z-index:4}
+.visit-bg{position:absolute;inset:0;z-index:1}
+.visit-bg img{width:100%;height:100%;object-fit:cover}
+.visit-card{position:absolute;top:60px;right:60px;width:380px;background:var(--bg);padding:32px 32px 0;z-index:2}
+.visit-card h2{font-size:1.75rem;letter-spacing:-0.02em}
+.visit-card .addr{margin-top:14px;font-size:1rem;line-height:1.5}
+.hours-rows{margin-top:18px;font-size:1rem}
+.hours-rows .row{display:flex;justify-content:space-between;padding:4px 0}
+.open-now{margin-top:12px;font-size:var(--step-small);font-weight:500;color:var(--accent)}
+.open-now.closed{color:#8a4a3a}
+.visit-card .phone{margin-top:12px;font-size:1rem}
+.visit-card .second{margin-top:16px;padding-top:14px;font-size:0.9375rem;color:var(--muted)}
+.visit-card .btn{display:flex;align-items:center;justify-content:center;height:52px;margin:24px -32px 0;padding:0}
+@media (max-width:640px){
+  .visit{height:auto}
+  .visit-bg{position:relative;height:70svh}
+  .visit-card{position:relative;top:auto;right:auto;width:auto;margin:-80px 16px 0;padding:28px 24px 0;z-index:2}
+  .visit-card .btn{margin:24px -24px 0;height:56px}
+}
+
+/* ---------- footer ---------- */
+.footer-wrap{position:relative;z-index:1}
+footer{position:sticky;bottom:0;min-height:100svh;background:var(--ink);color:var(--bg);display:grid;grid-template-rows:auto 1fr auto;padding:40px var(--pad) 20px}
+.foot-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;font-size:1rem}
+.foot-cols b{display:block;font-weight:500;margin-bottom:10px}
+.foot-cols p,.foot-cols a{color:#b7b3ae;line-height:1.8;display:block}
+.foot-cols a:hover{color:var(--bg);text-decoration:underline}
+.foot-word{font-weight:300;letter-spacing:-0.035em;text-align:center;white-space:nowrap;font-size:17.2vw;line-height:1;color:var(--bg)}
+.foot-legal{text-align:center;font-size:var(--step-small);color:#b7b3ae;margin-top:12px}
+.above-footer{position:relative;z-index:2;background:var(--bg)}
+@media (max-width:640px){
+  .foot-cols{grid-template-columns:1fr 1fr;row-gap:32px}
+  footer{padding-top:32px}
+  .foot-word{font-size:16.5vw}
+}
+
+/* ---------- motion ---------- */
+.js .reveal{opacity:0;transform:translateY(26px)}
+.js .reveal.in{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.22,.9,.3,1)}
+.js .hero-head,.js .hero-line,.js .hero-nav,.js .hero-links{opacity:0;transition:opacity .7s ease .15s}
+.js .hero.ready .hero-head,.js .hero.ready .hero-line,.js .hero.ready .hero-nav,.js .hero.ready .hero-links{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .js .hero-img{clip-path:inset(0 0 0 0);transition:none}
+  .js .hero-img img{transform:none;transition:none}
+  .js .hero-head,.js .hero-line,.js .hero-nav,.js .hero-links{opacity:1;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero-img" id="heroImg"><img src="assets/hero-courtyard.jpg" alt="The covered courtyard at Casa Fresco Indiranagar, terracotta roof tiles and warm lamps"></div>
+  <p class="hero-nav">Casa Fresco · all-day dining and cafe</p>
+  <nav class="hero-links">
+    <a href="#menu">Menu</a>
+    <a href="#visit">Visit</a>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Fresco%2C+Indiranagar%3A+All-Day+Dining+%26+Caf%C3%A9&amp;query_place_id=ChIJLyuGuqAWrjsRUuzoP3abqxs">Get directions</a>
+  </nav>
+  <div class="hero-head">
+    <div class="hero-scrim"></div>
+    <h1><span>Casa</span><span>Fresco</span></h1>
+    <p class="hero-sub">All-day dining and cafe</p>
+  </div>
+  <div class="hero-line">
+    <span>All-day dining in</span>
+    <span>a restored Bangalore bungalow</span>
+  </div>
+  <div class="hero-cta-m">
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Fresco%2C+Indiranagar%3A+All-Day+Dining+%26+Caf%C3%A9&amp;query_place_id=ChIJLyuGuqAWrjsRUuzoP3abqxs">Get directions</a>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="intro-pin">
+    <p class="intro-sentence">Two restored Bangalore bungalows serving breakfast, lunch and dinner, all day.</p>
+  </div>
+  <div class="pass pass-1"><img src="assets/birds-eye-breakfast.jpg" alt="The Bird's Eye Breakfast at Casa Fresco" loading="lazy"></div>
+  <div class="pass pass-2"><img src="assets/cappuccino.jpg" alt="A cappuccino poured at Casa Fresco" loading="lazy"></div>
+  <div class="pass pass-3"><img src="assets/hanoi-coffee.jpg" alt="A Hanoi iced coffee on a teal table" loading="lazy"></div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="sheet reveal">
+    <h2>Casa Fresco</h2>
+    <p class="note reveal">Italian and American favourites, freshly prepared and made to order.</p>
+    <div class="group reveal">
+      <h3>Breakfasts, all day</h3>
+      <div class="items">
+        <p class="item">Bird's Eye Breakfast</p>
+        <p class="item">Farmhouse Breakfast</p>
+        <p class="item">Walter Sausage Breakfast</p>
+        <p class="item">Zagreb Omelette</p>
+        <p class="item">Souffle Cheddar Omelette</p>
+        <p class="item">Popeye's Omelette</p>
+      </div>
+    </div>
+    <div class="group reveal">
+      <h3>Burgers and plates</h3>
+      <div class="items">
+        <p class="item">Country Veg Burger</p>
+        <p class="item">Sam's Chicken Burger</p>
+        <p class="item">Korean Glaze Chicken</p>
+        <p class="item">Honey Chilly Potatoes</p>
+        <p class="item">Summer Melon Salad</p>
+        <p class="item"><span>Plus pastas, pizzas and sizzlers from the kitchen.</span></p>
+      </div>
+    </div>
+    <div class="group reveal">
+      <h3>Sweet and sips</h3>
+      <div class="items">
+        <p class="item">Choco Fantasy Pancakes</p>
+        <p class="item">Belgian Hot Chocolate</p>
+        <p class="item">Hanoi Iced Coffee</p>
+        <p class="item">Passion Fruit Boba</p>
+        <p class="item">Virgin Mojito</p>
+        <p class="item">Cappuccino</p>
+      </div>
+    </div>
+    <p class="hours reveal">Open every day<br>10:00 am - 11:00 pm</p>
+  </div>
+</section>
+
+<section class="gallery">
+  <p class="interlock reveal">Every dish is made to order, from breakfasts and pizzas to pastas, burgers and sizzlers. Good food takes a little care.</p>
+  <div class="g-frame"><img src="assets/lamp-room.jpg" alt="Inside the restored Indiranagar bungalow, rattan lamp and teal walls" loading="lazy"><p class="g-cap">Inside the restored Indiranagar bungalow.</p></div>
+  <div class="g-frame"><img src="assets/hsr-courtyard.jpg" alt="The leafy courtyard at Casa Fresco HSR, a Portuguese style bungalow" loading="lazy"><p class="g-cap">The covered courtyard at the HSR bungalow.</p></div>
+  <div class="g-frame"><img src="assets/farmhouse-breakfast.jpg" alt="The Farmhouse Breakfast plate at Casa Fresco" loading="lazy"><p class="g-cap">The Farmhouse Breakfast, served all day.</p></div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="visit-bg"><img src="assets/night-bungalow.jpg" alt="The Casa Fresco bungalow lit up at night" loading="lazy"></div>
+  <div class="visit-card">
+    <h2>Visit us</h2>
+    <p class="addr">609, 2nd Main Rd, off 100 Feet Road,<br>Indiranagar, Bengaluru 560038</p>
+    <div class="hours-rows">
+      <div class="row"><span>Monday - Sunday</span><span>10 am - 11 pm</span></div>
+    </div>
+    <p class="open-now" id="openNow">Checking today's hours</p>
+    <p class="phone"><a href="tel:+918025250005">080 2525 0005</a></p>
+    <p class="second">Also in HSR Layout: 73, 27th Main Road, Sector 1 · <a href="tel:+918049927445">080 4992 7445</a> · Large groups and parties on WhatsApp: <a href="https://wa.me/919538612243">+91 95386 12243</a></p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+Fresco%2C+Indiranagar%3A+All-Day+Dining+%26+Caf%C3%A9&amp;query_place_id=ChIJLyuGuqAWrjsRUuzoP3abqxs">Get directions</a>
+  </div>
+</section>
+
+<div class="footer-wrap">
+<footer>
+  <div class="foot-cols">
+    <div class="reveal"><b>Indiranagar</b><p>609, 2nd Main Rd,<br>off 100 Feet Road,<br>Bengaluru 560038<br><a href="tel:+918025250005">080 2525 0005</a></p></div>
+    <div class="reveal"><b>HSR Layout</b><p>73, 27th Main Road,<br>Phase 3, Sector 1,<br>Bengaluru<br><a href="tel:+918049927445">080 4992 7445</a></p></div>
+    <div class="reveal"><b>Contact</b><p><a href="mailto:hello@casafresco.in">hello@casafresco.in</a><a href="https://wa.me/919538612243">WhatsApp us</a><a href="https://www.instagram.com/casafrescoind/">@casafrescoind</a><a href="https://casafresco.in/">casafresco.in</a></p></div>
+    <div class="reveal"><b>Hours</b><p>Every day<br>10:00 am - 11:00 pm<br>Walk-ins welcome<br>Swiggy and Zomato delivery</p></div>
+  </div>
+  <div></div>
+  <div>
+    <p class="foot-word">Casa Fresco</p>
+    <p class="foot-legal">© 2026 Casa Fresco · Photographs: Casa Fresco</p>
+  </div>
+</footer>
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* Shutter image: the courtyard opens from the right edge */
+(function(){
+  var img=document.getElementById('heroImg'), hero=document.querySelector('.hero');
+  requestAnimationFrame(function(){requestAnimationFrame(function(){
+    img.classList.add('open');
+    setTimeout(function(){hero.classList.add('ready');},500);
+  });});
+})();
+
+/* Live thing: is the bungalow open right now? (10:00-23:00 IST, every day) */
+(function(){
+  var el=document.getElementById('openNow');
+  function tick(){
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var m=now.getHours()*60+now.getMinutes();
+    if(m>=600&&m<1380){el.textContent='Open now - kitchen until 11:00 pm';el.classList.remove('closed');}
+    else{el.textContent='Closed right now - opens at 10:00 am';el.classList.add('closed');}
+  }
+  tick();setInterval(tick,60000);
+})();
+
+/* Entrances */
+(function(){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
