@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Good Vibes Cafe, Taj Nagari, Agra</title>
+<meta name="description" content="Good Vibes Cafe, MIG-36 Shilpgram Road, Taj Nagari Phase 1, Agra. Call +91 81712 46792 or write to goodvibescafe123@gmail.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#f2f2ef;
+  --olive:#55603a;
+  --deep:#2f3319;
+  --line:#2f3319;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bone);color:var(--deep);
+  font-family:'Zilla Slab',serif;font-weight:400;
+  font-size:17px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+
+.rise{opacity:0;transform:translateY(16px);transition:opacity .45s ease,transform .45s ease}
+.rise.in{opacity:1;transform:none}
+
+/* ---------- split stage ---------- */
+html,body{overflow-x:clip}
+.panel{
+  position:fixed;inset:0;z-index:0;overflow:hidden;background:var(--deep);
+}
+.panel img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .9s ease;
+}
+.panel img.on{opacity:1}
+.column{
+  position:relative;z-index:1;max-width:700px;margin:42vh auto 0;
+  background:var(--bone);padding:56px 64px;border-radius:20px 20px 0 0;min-height:100svh;
+  border-top:2px solid var(--line);
+}
+.measure{max-width:46ch;width:100%;margin-left:auto;margin-right:auto}
+
+/* ---------- nav ---------- */
+nav{display:flex;justify-content:space-between;align-items:center;margin:0 auto 15vh;max-width:46ch;width:100%}
+.wordmark{font-weight:600;font-size:20px;text-decoration:none;letter-spacing:-.01em}
+.call{
+  text-decoration:none;font-weight:500;font-size:16px;
+  background:var(--deep);color:var(--bone);
+  padding:9px 20px;border-radius:999px;
+  transition:transform .25s ease;
+}
+.call:hover{transform:translateY(-2px)}
+
+/* ---------- intro ---------- */
+h1{
+  font-weight:600;font-size:clamp(34px,3.4vw,42px);
+  line-height:1.0;letter-spacing:-.025em;white-space:nowrap;
+}
+.what{font-size:20px;font-weight:500;margin-top:18px;line-height:1.4}
+.intro-note{margin-top:26px;max-width:38ch}
+
+/* ---------- sections ---------- */
+section{margin-top:15vh}
+h2{
+  font-weight:600;font-size:clamp(32px,3.4vw,44px);
+  line-height:1.02;letter-spacing:-.025em;max-width:20ch;
+}
+.lede{margin-top:14px;max-width:44ch}
+
+.facts{list-style:none;margin-top:36px}
+.facts li{
+  display:flex;justify-content:space-between;gap:20px;
+  border-top:2px solid var(--line);padding-top:14px;padding-bottom:14px;
+  font-size:16px;
+}
+.facts li:last-child{border-bottom:2px solid var(--line)}
+.facts b{font-weight:500}
+.facts .k{color:var(--olive);font-weight:500}
+
+/* ---------- gallery ---------- */
+.strip{
+  display:flex;gap:20px;overflow-x:auto;margin-top:36px;
+  scroll-snap-type:x mandatory;padding-bottom:10px;
+}
+.strip figure{flex:0 0 78%;scroll-snap-align:start}
+.strip img{width:100%;border-radius:12px;transition:transform .4s ease}
+.strip figure:hover img{transform:scale(1.02)}
+figcaption{font-size:14px;margin-top:8px;color:var(--olive)}
+
+/* ---------- visit ---------- */
+.visit{
+  position:relative;border-radius:16px;overflow:hidden;margin-top:0;
+}
+.visit .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.visit-card{
+  position:relative;background:var(--bone);border:2px solid var(--line);
+  border-radius:14px;padding:28px;margin:48px auto;max-width:400px;
+}
+.visit-card h3{font-weight:600;font-size:26px;line-height:1.1;margin-bottom:14px}
+.visit-card p{margin-bottom:10px;font-size:16px}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:500;font-size:16px;
+  border:2px solid var(--line);border-radius:999px;
+  padding:10px 20px;margin-top:8px;margin-right:10px;
+  transition:transform .25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--deep);color:var(--bone)}
+
+/* ---------- footer ---------- */
+footer{
+  display:grid;grid-template-columns:1fr 1fr;margin-top:15vh;
+  border-top:2px solid var(--line);
+}
+.foot-photo{min-height:260px;overflow:hidden}
+.foot-photo img{width:100%;height:100%;object-fit:cover}
+.foot-txt{background:var(--deep);color:var(--bone);padding:36px}
+.foot-mark{font-weight:600;font-size:clamp(24px,2.4vw,34px);line-height:1.02;letter-spacing:-.02em;white-space:nowrap}
+.foot-row{margin-top:20px;font-size:14px;color:#c9cec2}
+.foot-row a{color:var(--bone);text-decoration:none;border-bottom:2px solid var(--bone)}
+
+@media (max-width:900px){
+  .panel{position:sticky;top:0;height:55svh}
+  .column{padding:28px;margin-top:-12px;border-radius:16px 16px 0 0;max-width:none}
+  nav{margin-bottom:10vh}
+  .facts li{font-size:16px}
+  footer{grid-template-columns:1fr}
+  .strip figure{flex:0 0 85%}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;transition:none}
+  .panel img{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="stage" style="display:block">
+
+  <div class="panel" aria-hidden="true">
+    <img src="./assets/hero.webp" alt="" class="on" data-pane="intro">
+    <img src="./assets/p3.webp" alt="" data-pane="gallery">
+    <img src="./assets/p2.webp" alt="" data-pane="visit">
+  </div>
+
+  <div class="column">
+    <nav>
+      <a class="wordmark" href="#">Good Vibes</a>
+      <a class="call" href="tel:+918171246792">Call: 81712 46792</a>
+    </nav>
+
+    <div class="measure">
+      <header id="intro" data-pane="intro">
+        <h1 class="rise">Good Vibes Cafe</h1>
+        <p class="what rise">A cafe on Shilpgram Road, Taj Nagari, Agra.</p>
+        <p class="intro-note rise">Wicker chairs, a green ceiling and an easy room to sit in. Walk in for coffee and a plate from the kitchen, or call ahead and ask what is on.</p>
+      </header>
+
+      <section aria-labelledby="facts-h">
+        <h2 id="facts-h" class="rise">The place, in short</h2>
+        <ul class="facts">
+          <li class="rise"><b>Cafe</b><span class="k">Taj Nagari Phase 1</span></li>
+          <li class="rise"><b>Rated 4.7</b><span class="k">on Google</span></li>
+          <li class="rise"><b>+91 81712 46792</b><span class="k">call for timings</span></li>
+          <li class="rise"><b>goodvibescafe123@gmail.com</b><span class="k">write anytime</span></li>
+        </ul>
+      </section>
+
+      <section id="gallery" data-pane="gallery" aria-labelledby="gal-h">
+        <h2 id="gal-h" class="rise">Inside the room</h2>
+        <p class="lede rise">Photographs from the cafe's own listings.</p>
+        <div class="strip">
+          <figure class="rise"><img src="./assets/p5.webp" alt="A grilled sandwich with chips" width="1200" height="1200" loading="lazy"><figcaption>From the kitchen</figcaption></figure>
+          <figure class="rise"><img src="./assets/p4.webp" alt="A rice plate served at the cafe" width="1200" height="800" loading="lazy"><figcaption>From the kitchen</figcaption></figure>
+          <figure class="rise"><img src="./assets/p3.webp" alt="The lounge corner with wicker chairs" width="1200" height="800" loading="lazy"><figcaption>The corner lounge</figcaption></figure>
+          <figure class="rise"><img src="./assets/p6.webp" alt="A fried plate served at the cafe" width="1200" height="1200" loading="lazy"><figcaption>From the kitchen</figcaption></figure>
+        </div>
+      </section>
+
+      <section id="visit" data-pane="visit" aria-labelledby="visit-h" class="visit">
+        <img class="bgimg" src="./assets/p2.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="visit-card rise">
+          <h3 id="visit-h">Find the cafe</h3>
+          <p>MIG-36, Shilpgram Road, Taj Nagari Phase 1, Telipara, Tajganj, Agra, Uttar Pradesh 282001</p>
+          <p>Call ahead for timings.</p>
+          <a class="btn solid" href="tel:+918171246792">Call the cafe</a>
+          <a class="btn" href="mailto:goodvibescafe123@gmail.com">Write to us</a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="foot-photo"><img src="./assets/hero.webp" alt="The dining room at Good Vibes Cafe" loading="lazy"></div>
+        <div class="foot-txt">
+          <div class="foot-mark">Good Vibes Cafe</div>
+          <div class="foot-row">
+            <span>Taj Nagari, Agra</span>
+            <a href="tel:+918171246792">+91 81712 46792</a>
+            <a href="mailto:goodvibescafe123@gmail.com">goodvibescafe123@gmail.com</a>
+          </div>
+          <div class="foot-row" style="margin-top:14px">
+            <span>Photos from the cafe's own Swiggy listing.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rise').forEach(el=>io.observe(el));
+
+const panes=document.querySelectorAll('.panel img');
+const pio=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      const k=e.target.getAttribute('data-pane');
+      panes.forEach(p=>p.classList.toggle('on',p.getAttribute('data-pane')===k));
+    }
+  });
+},{rootMargin:'-40% 0px -40% 0px'});
+document.querySelectorAll('[data-pane]:not(img)').forEach(el=>pio.observe(el));
+
+const panelImgs=[...document.querySelectorAll('.panel img')];
+let ticking=false;
+function drift(){
+  const y=window.scrollY||0;
+  panelImgs.forEach(im=>{im.style.transform='translateY('+Math.min(60,y*0.05)+'px) scale(1.12)'});
+  ticking=false;
+}
+panelImgs.forEach(im=>{im.style.transform='scale(1.12)'});
+window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(drift);ticking=true}},{passive:true});
+</script>
+</body>
+</html>
