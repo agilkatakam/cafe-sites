@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Lilliput - Anjuna Beach, Goa. Open 8am to 6am.</title>
+<meta name="description" content="Cafe Lilliput, on Anjuna Beach since 1986. Breakfast by the sea, sundowners on the deck, DJs until dawn. Open every day 8 in the morning to 6 the next.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0a08; --surface:#181512; --ink:#e8e8e6; --muted:#b0aba3; --accent:#c9a45a; --accent-ink:#0c0a08;
+  --mx:24px;
+  --s-small:clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --s-body:clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --s-lead:clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --s-head:clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --disp:clamp(4.5rem, 15vw, 13rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Jost",sans-serif;font-weight:400;font-size:var(--s-body);line-height:1.6;letter-spacing:0.01em;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+h1,h2,h3{font-family:"Bodoni Moda",serif;font-weight:500;letter-spacing:-0.02em;line-height:0.95}
+::selection{background:var(--accent);color:var(--accent-ink)}
+
+/* ---------- hero: card over a dim room ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero .room{position:absolute;inset:0}
+.hero .room img{filter:brightness(0.72) contrast(1.05);transform:scale(1.06);animation:drift 34s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.06) translate(0,0)}to{transform:scale(1.13) translate(-1.5%,1%)}}
+.hero nav{position:absolute;top:26px;left:var(--mx);right:var(--mx);display:flex;justify-content:flex-end;gap:30px;z-index:3}
+.hero nav a{color:#fff;text-decoration:none;font-size:var(--s-small);font-weight:500;position:relative;padding-bottom:3px}
+.hero nav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--accent);transition:width .35s ease}
+.hero nav a:hover::after{width:100%}
+.hero .card{position:relative;z-index:2;background:var(--surface);width:min(580px, calc(100vw - 32px));min-height:70svh;padding:44px 40px 36px;display:flex;flex-direction:column;animation:rise .9s cubic-bezier(.2,.7,.2,1) .15s both}
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.hero .card .now{font-size:clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);color:var(--accent);margin-bottom:14px}
+.hero .card .now b{font-weight:500}
+.hero h1{font-size:clamp(3.4rem, 8vw, 6.4rem);margin:0 0 18px;color:var(--ink)}
+.hero .facts{font-size:var(--s-body);color:var(--muted);margin-bottom:18px}
+.hero .facts span+span::before{content:" · "}
+.hero .line{font-size:clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);color:var(--ink);max-width:40ch;margin-bottom:30px}
+.btn{display:inline-block;align-self:flex-start;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:var(--s-body);padding:14px 30px;transition:transform .3s ease,background .3s ease}
+.btn:hover{transform:translateY(-3px);background:#d8b46c}
+
+/* ---------- statement ---------- */
+.statement{padding:150px var(--mx) 140px;max-width:1150px;margin:0 auto}
+.statement p{font-family:"Bodoni Moda",serif;font-weight:500;font-size:clamp(1.25rem, 1.05rem + 1.35vw, 2.25rem);line-height:1.3;letter-spacing:-0.01em;max-width:26ch}
+
+/* ---------- the week: line-up ---------- */
+.week{background:var(--surface);padding:110px 0 120px}
+.week .inner{padding:0 var(--mx)}
+.week h2{color:var(--accent);font-size:clamp(1.25rem, 2.1vw, 1.875rem);font-family:"Jost",sans-serif;font-weight:400;letter-spacing:0.01em;padding:20px var(--mx);position:sticky;top:0;background:var(--surface);z-index:2}
+.week table{width:100%;border-collapse:collapse}
+.week td{font-size:clamp(1.25rem, 2.1vw, 1.875rem);line-height:1.5;padding:.35em var(--mx);vertical-align:baseline}
+.week td:nth-child(2){width:33%}
+.week td:nth-child(3){width:33%}
+.week td:nth-child(4){text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.week td.dim{color:var(--muted)}
+.week td.caps{text-transform:uppercase;letter-spacing:0.06em;color:var(--muted)}
+.week tbody tr{transition:background .3s ease}
+.week tbody tr:hover{background:#211d18}
+.week .note{padding:26px var(--mx) 0;font-size:var(--s-body);color:var(--muted);max-width:52ch}
+
+/* ---------- history: pinned stage ---------- */
+.history{position:relative;padding:140px var(--mx) 120px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px)}
+.history .stage{position:sticky;top:16svh}
+.history h2{font-size:var(--s-head);max-width:17ch}
+.history .steps .txt p{font-size:var(--s-lead);line-height:1.55;max-width:34ch;margin-bottom:64px}
+.history .steps .txt a{color:var(--accent);text-decoration:none}
+.history .steps .txt a:hover{text-decoration:underline}
+.history figure{height:64svh;overflow:hidden;margin-top:20px}
+.history figure img{filter:brightness(0.9) contrast(1.05)}
+.rev figure, figure.rev{clip-path:inset(0 0 0 0)}
+figure.rev img{transform:scale(1.12);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+figure.rev.on img{transform:scale(1)}
+
+/* ---------- day/night diptych ---------- */
+.duo{padding:150px var(--mx) 40px;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:end}
+.duo figure{height:72svh;overflow:hidden}
+.duo figure:last-child{height:52svh}
+.duo figure img{filter:brightness(0.9) contrast(1.05)}
+.duo figcaption{font-size:var(--s-small);color:var(--muted);padding-top:14px}
+
+/* ---------- gallery: small frames, wide space ---------- */
+.gallery{min-height:88svh;display:flex;flex-direction:column;justify-content:center;padding:100px 0;overflow:hidden}
+.gallery .row{display:flex;gap:5vw;overflow-x:auto;scrollbar-width:none;padding:40px var(--mx);scroll-snap-type:x proximity}
+.gallery .row::-webkit-scrollbar{display:none}
+.gallery figure{flex:0 0 auto;width:13vw;min-width:160px;height:32svh;min-height:300px;scroll-snap-align:center;overflow:hidden;transition:transform .25s ease}
+.gallery figure:hover{transform:scale(1.1)}
+.gallery figure img{filter:brightness(0.92) contrast(1.04)}
+.gallery .cap{font-size:var(--s-lead);color:var(--ink);padding:0 var(--mx);margin-bottom:-24px;position:relative;z-index:2}
+.gallery .cap span{color:var(--muted);font-size:var(--s-body)}
+
+/* ---------- contact: inverse field ---------- */
+.contact{background:var(--ink);color:var(--accent-ink);min-height:74svh;display:flex;flex-direction:column;padding:40px var(--mx) 5vh;position:relative;z-index:1}
+.contact .say{font-family:"Jost",sans-serif;font-weight:400;font-size:clamp(1.125rem, 1rem + 0.5vw, 1.375rem);max-width:22ch;line-height:1.5;letter-spacing:0.01em}
+.contact .addr{margin-top:9vh;font-size:var(--s-lead);line-height:1.45;color:#3c3730}
+.contact a.mail{margin-top:auto;display:block;font-family:"Bodoni Moda",serif;font-weight:500;font-size:clamp(2.6rem, 6.2vw, 5.6rem);letter-spacing:-0.02em;line-height:1;text-decoration:none;color:var(--accent-ink);transition:color .3s ease}
+.contact a.mail:hover{color:#8a6a25}
+.contact .row2{margin-top:26px;display:flex;justify-content:space-between;gap:20px;font-size:var(--s-small);color:#4a453e}
+.contact .row2 a{color:#4a453e;text-decoration:none}
+.contact .row2 a:hover{color:var(--accent-ink);text-decoration:underline}
+
+/* ---------- footer ---------- */
+footer{background:#060504;min-height:74svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px var(--mx) 20px}
+footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;font-size:var(--s-small)}
+footer .cols b{display:block;font-weight:500;color:var(--ink);margin-bottom:12px;font-size:var(--s-body)}
+footer .cols a, footer .cols span{display:block;color:var(--muted);text-decoration:none;line-height:1.9}
+footer .cols a:hover{color:var(--ink)}
+footer .word{font-family:"Bodoni Moda",serif;font-weight:500;font-size:min(var(--disp), 17vw);line-height:.9;letter-spacing:-0.02em;text-align:center;color:var(--ink);white-space:nowrap}
+footer .legal{margin-top:14px;display:flex;justify-content:space-between;gap:16px;font-size:var(--s-small);color:var(--muted)}
+footer .legal a{color:var(--muted)}
+
+/* ---------- reveals ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.rv.on{opacity:1;transform:none}
+
+@media (max-width: 860px){
+  .history{grid-template-columns:1fr}
+  .history .stage{position:relative;top:0;margin-bottom:48px}
+  .history figure{position:relative;top:0;height:52svh;margin-top:40px}
+  .history .steps .txt p{margin-bottom:48px}
+  .duo{grid-template-columns:1fr;align-items:start}
+  .duo figure, .duo figure:last-child{height:56svh}
+  .gallery figure{width:34vw;height:34svh}
+  footer .cols{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width: 480px){
+  .hero .card{padding:32px 24px 28px;min-height:70svh}
+  .hero h1{font-size:17vw}
+  .hero nav{gap:16px}
+  .week td{display:block;padding:.1em var(--mx)}
+  .week td:nth-child(2),.week td:nth-child(3){width:auto}
+  .week td:nth-child(4){text-align:left}
+  .week tbody tr{display:block;padding:16px 0}
+  .week td:nth-child(1){font-size:1.375rem}
+  .week td:nth-child(2),.week td:nth-child(3),.week td:nth-child(4){font-size:var(--s-small);color:var(--muted)}
+  .contact a.mail{font-size:11.5vw}
+  .contact .row2{flex-direction:column;gap:12px}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="room"><img src="assets/hero-sunset.jpg" alt="Two cocktails on a wooden deck table at Cafe Lilliput, the sun setting over Anjuna beach behind them"></div>
+  <nav>
+    <a href="#week">The week</a>
+    <a href="#story">The story</a>
+    <a href="#night">The night</a>
+    <a href="#visit">Visit</a>
+  </nav>
+  <div class="card">
+    <h1>Cafe<br>Lilliput</h1>
+    <p class="now" id="now">Right now in Anjuna: <b id="phase">the deck, warming up</b></p>
+    <p class="facts"><span>Anjuna Beach, Goa</span><span>Est. 1986</span><span>Open 8am to 6am</span></p>
+    <p class="line">The beach shack that grew up with Anjuna - breakfast by the sea, sundowners on the deck, and DJs until dawn.</p>
+    <a class="btn" href="#week">See the week</a>
+  </div>
+</header>
+
+<section class="statement rv">
+  <p>One shack on the sand, forty years of nights - and a kitchen that still opens at eight in the morning.</p>
+</section>
+
+<section class="week" id="week">
+  <h2 class="rv">The week at Lilliput</h2>
+  <div class="inner">
+  <table class="rv">
+    <tbody>
+      <tr><td>Sundowner by the Beach</td><td class="dim">sunset session</td><td class="dim">Sundays</td><td>₹500</td></tr>
+      <tr><td>Mixtape Friday</td><td class="dim">DJ night</td><td class="dim">Fridays</td><td>₹500</td></tr>
+      <tr><td>Saturday Blockbuster</td><td class="dim">the big night</td><td class="dim">Saturdays</td><td>₹500</td></tr>
+      <tr><td class="caps">Every day</td><td class="dim">kitchen, deck and bar</td><td class="dim">Monday to Sunday</td><td class="dim">8:00 - 6:00</td></tr>
+    </tbody>
+  </table>
+  <p class="note rv">Cover applies to event nights. Dates change week to week - the current posters live on the cafe's own site and Instagram.</p>
+  </div>
+</section>
+
+<section class="history" id="story">
+  <div class="stage"><h2>From a beach shack, 1986.</h2></div>
+  <div class="steps">
+    <div class="txt">
+      <p class="rv">In the heady days of the eighties, when Goa meant freedom and exploration, Lilliput was born - a gathering place for wanderers, dreamers and free spirits on Anjuna's sand.</p>
+      <p class="rv">The shack witnessed the birth of a global community drawn to the beach, the music and the magic of Goa - and gave the coastline its soundtrack, from hypnotic techno to soul-soothing rhythms.</p>
+      <p class="rv">Four decades on, the room has modernised and the essence has held: sit by the shore, let the breeze do its work, and stay as long as the night asks you to. <a href="#visit">Come find the deck.</a></p>
+    </div>
+    <figure class="rev"><img src="assets/bar-night.jpg" alt="The bar at Cafe Lilliput at night, bottles lit against a deep blue room"></figure>
+  </div>
+</section>
+
+<section class="duo">
+  <figure class="rev"><img src="assets/shack-beach.jpg" alt="Cafe Lilliput seen from the beach - the two-storey shack, sunbeds on the sand, palms overhead"><figcaption>Two in the afternoon.</figcaption></figure>
+  <figure class="rev"><img src="assets/dj-wide.jpg" alt="The main room at Cafe Lilliput late at night, a DJ over a packed floor"><figcaption>Two in the morning.</figcaption></figure>
+</section>
+
+<section class="gallery" id="night">
+  <p class="cap rv">The night, after ten <span>- 8 frames, drag sideways</span></p>
+  <div class="row">
+    <figure><img src="assets/g1.jpg" alt="The crowd facing the lit Cafe Lilliput screen"></figure>
+    <figure><img src="assets/g2.jpg" alt="Red lasers over the dancefloor"></figure>
+    <figure><img src="assets/g3.jpg" alt="A full floor dancing under the stage lights"></figure>
+    <figure><img src="assets/g4.jpg" alt="The DJ booth under purple fan lights"></figure>
+    <figure><img src="assets/g5.jpg" alt="A dancer with headphones against red neon"></figure>
+    <figure><img src="assets/g6.jpg" alt="Two DJs at the decks"></figure>
+    <figure><img src="assets/g7.jpg" alt="A performer under a ring of pink light"></figure>
+    <figure><img src="assets/g8.jpg" alt="A flautist playing in front of the painted mural"></figure>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <h2 class="say rv">Write about the week, the deck, and private nights.</h2>
+  <p class="addr rv">Or walk in: Anjuna Beach, Monteiro Vaddo,<br>Flea Market Road, Anjuna, Goa 403509</p>
+  <a class="mail rv" href="mailto:cafelilliput@gmail.com">cafelilliput<wbr>@gmail<wbr>.com</a>
+  <div class="row2">
+    <span>+91 96579 62708 · Anjuna Beach, Goa</span>
+    <span><a href="https://instagram.com/cafe.lilliput">Instagram</a> · <a href="https://facebook.com/CafeLilliputGoa">Facebook</a></span>
+  </div>
+</section>
+
+<footer>
+  <div class="cols rv">
+    <div><b>Find us</b><span>Anjuna Beach</span><span>Monteiro Vaddo</span><span>Flea Market Road</span><span>Anjuna, Goa 403509</span></div>
+    <div><b>The cafe</b><a href="#week">The week</a><a href="#story">The story</a><a href="#night">The night</a><a href="#visit">Visit</a></div>
+    <div><b>Hours</b><span>Monday to Sunday</span><span>8:00 to 6:00</span><span>the next morning</span></div>
+    <div><b>Follow</b><a href="https://instagram.com/cafe.lilliput">Instagram</a><a href="https://facebook.com/CafeLilliputGoa">Facebook</a><a href="https://www.zomato.com/goa/cafe-lilliput-anjuna">Zomato</a></div>
+  </div>
+  <div></div>
+  <div>
+    <div class="word rv">LILLIPUT</div>
+    <div class="legal">
+      <span>Photographs: the cafe's own gallery and the Zomato community. Unsolicited redesign concept, not affiliated.</span>
+      <a href="#top">Back to the top</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Live arc: where Lilliput is in its 22-hour day (IST)
+(function(){
+  var phases=[[8,"breakfast by the sea"],[12,"the long beach afternoon"],[17,"sundowner hour"],[19,"dinner on the deck"],[22,"the DJs take over"],[3,"the last dances"],[6,"a two-hour breath - back at 8"]];
+  function ist(){var n=new Date();return (n.getUTCHours()+5+(n.getUTCMinutes()>=30?1:0))%24;}
+  var h=ist(),label="the deck, warming up";
+  if(h>=8){for(var i=0;i<3;i++){if(h>=phases[i][0])label=phases[i][1];}}
+  if(h>=19)label=phases[3][1];
+  if(h>=22)label=phases[4][1];
+  if(h<6||h>=3&&h<6)label=phases[5][1];
+  if(h>=6&&h<8)label=phases[6][1];
+  var el=document.getElementById('phase');if(el)el.textContent=label;
+})();
+// Reveals
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.18});
+  document.querySelectorAll('.rv, figure.rev').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
