@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasleen Cakery, Custom Cakes in Chandigarh</title>
+<meta name="description" content="Jasleen Cakery is a home bakery in Sector 44, Chandigarh. Custom cakes for birthdays, anniversaries, engagements and weddings, baked to order. Call or write to order.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#3d0012; --surface:#4d0519; --ink:#ff99d3; --muted:#c77aa0; --accent:#ff99d3; --accent-ink:#3d0012;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Onest',Arial,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.display{font-family:'Unbounded',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-0.03em;line-height:1}
+
+/* entrances */
+.rise{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}
+.rise.on{opacity:1;transform:none}
+.wipe{opacity:0;transform:translateY(36px) scale(.985);transition:opacity 1.1s cubic-bezier(.22,.8,.24,1),transform 1.1s cubic-bezier(.22,.8,.24,1)}
+.wipe.on{opacity:1;transform:none}
+
+/* hero: the name as a monument, photo beside, a moving line below */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+.toprow{display:flex;justify-content:space-between;align-items:center;padding:28px 32px 0;font-size:15px}
+.toprow .wm{font-family:'Unbounded';font-weight:800;font-size:15px;letter-spacing:-0.02em;text-transform:uppercase}
+.toprow a{transition:color .4s ease}
+.toprow a:hover{color:#ffd3ea}
+.hero-main{flex:1;display:grid;grid-template-columns:repeat(12,1fr);gap:0 32px;align-items:center;padding:0 32px;margin-top:3vh}
+.hero-type{grid-column:1/8}
+.hname{font-family:'Unbounded';font-weight:800;text-transform:uppercase;letter-spacing:-0.04em;line-height:.98;font-size:clamp(64px,8.5vw,140px);margin:0}
+.hname span{display:block}
+.hero-photo{grid-column:9/13;aspect-ratio:1/1;position:relative}
+.hero-sub{margin-top:40px}
+.herocta{margin-top:32px}
+.hero-sub .s1{font-size:22px;max-width:36ch;line-height:1.4}
+.hero-sub .s2{margin-top:20px;font-size:16px;color:var(--muted)}
+.band{position:relative;margin-top:2vh}
+.marquee{overflow:hidden;white-space:nowrap}
+.mline{display:inline-block;margin:0;font-weight:800;font-family:'Unbounded';font-weight:800;text-transform:uppercase;letter-spacing:-0.04em;font-size:clamp(150px,15vw,230px);line-height:1.06;color:var(--ink);opacity:.34;animation:slide 36s linear infinite;will-change:transform}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mline span{padding-right:.55em}
+.mline .dot{display:inline-block;width:.22em;height:.22em;background:currentColor;border-radius:50%;margin:0 .18em .34em .55em}
+.bottomrow{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding:0 32px 40px;font-size:16px}
+.bottomrow .where{color:var(--muted)}
+.btn{background:var(--accent);color:var(--accent-ink);font-weight:500;padding:16px 34px;font-size:16px;display:inline-block;transition:transform .35s ease,background .35s ease}
+.btn:hover{transform:translateY(-2px);background:#ffb3de}
+
+/* intro: narrow column */
+.intro{padding:10vh 32px 11vh}
+.intro-col{margin-left:15%;width:min(430px,100%)}
+.intro-col p{font-size:16px;color:var(--muted);margin-bottom:1.2em}
+.intro-col p:first-child{color:var(--ink);font-weight:500}
+.intro-col a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;transition:color .4s ease}
+.intro-col a:hover{color:var(--ink)}
+
+/* list: statement + table pushed right */
+.list{padding:12vh 32px 10vh}
+.list h2{font-family:'Unbounded';font-weight:800;text-transform:uppercase;letter-spacing:-0.03em;line-height:.98;font-size:clamp(40px,4.5vw,68px);max-width:17ch;margin-left:3vw}
+.list-body{display:grid;grid-template-columns:repeat(12,1fr);gap:0 40px;margin-top:48px;align-items:center}
+.list-photo{grid-column:1/6;aspect-ratio:4/3;position:relative}
+.list-right{grid-column:7/13}
+.tlabel{display:block;font-size:14px;color:var(--muted);margin-bottom:20px}
+.trow{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:0 0 22px}
+.trow .occ{color:var(--muted);font-size:15px;min-width:30%}
+.trow .what{font-size:16px;flex:1}
+.trow .how{font-size:15px;color:var(--muted);text-align:right}
+.trow.gap{padding-top:44px}
+
+/* gallery: staggered pairs */
+.gallery{padding:7vh 32px 9vh}
+.gpair{display:grid;grid-template-columns:repeat(12,1fr);gap:0;margin-bottom:9vh}
+.gpair figure{position:relative;overflow:hidden}
+.gpair figcaption{font-size:14px;color:var(--muted);margin-top:10px}
+.gp-a{grid-column:1/5;aspect-ratio:3/4}
+.gp-b{grid-column:7/13;aspect-ratio:5/4;margin-top:9vh}
+.gp-c{grid-column:6/12;aspect-ratio:3/2}
+.gp-d{grid-column:2/5;aspect-ratio:4/5;margin-top:8vh}
+.gpair.mirror .gp-a{grid-column:9/13}
+.gpair.mirror .gp-b{grid-column:1/7}
+.gpair.mirror .gp-c{grid-column:2/8}
+.gpair.mirror .gp-d{grid-column:9/12}
+
+/* contact: address in display rows */
+.contact{padding:9vh 0 11vh}
+.crow{display:flex;align-items:flex-end;min-height:130px;padding:0 32px 16px;font-size:clamp(38px,6vw,88px);line-height:1.05;letter-spacing:-0.02em;font-weight:400;margin-bottom:28px}
+.crow a{transition:color .4s ease}
+.crow a:hover{color:#ffd3ea}
+.crow.hello{justify-content:flex-start;gap:28px;align-items:center;min-height:150px}
+.crow-img{width:1.6em;height:1.6em;border-radius:50%;object-fit:cover;margin-left:auto;flex:none}
+.roundbtn{width:.95em;height:.95em;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:inline-flex;align-items:center;justify-content:center;font-size:inherit;flex:none;transition:transform .35s ease}
+.roundbtn:hover{transform:rotate(-38deg)}
+.roundbtn svg{width:42%;height:42%}
+
+/* footer: invitation over a cropped name */
+.footer{position:relative;min-height:88svh;background:var(--ink);color:var(--bg);overflow:hidden;display:flex;flex-direction:column;padding:10vh 32px 0}
+.footer .invite{font-size:clamp(34px,4.5vw,68px);line-height:1.05;letter-spacing:-0.02em;max-width:12ch}
+.footer .invite .btn{margin-top:36px;background:var(--bg);color:var(--ink)}
+.footer .invite .btn:hover{background:#55082a}
+.footer .flinks{position:absolute;top:10vh;right:32px;display:flex;flex-direction:column;gap:10px;font-size:16px;text-align:right}
+.footer .flinks a{transition:opacity .4s ease;white-space:nowrap}
+.footer .flinks a:hover{opacity:.65}
+.fcredit{margin-top:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#a1527c;position:relative;z-index:2;padding-bottom:12px}
+.fname{font-family:'Unbounded';font-weight:800;text-transform:uppercase;letter-spacing:-0.04em;font-size:clamp(120px,20vw,400px);line-height:.85;white-space:nowrap;transform:translateY(30%);color:var(--bg);margin:0 -32px}
+
+@media (max-width:820px){
+  .toprow{padding:22px 20px 0}
+  .hero-main{display:block;padding:0 20px;margin-top:6vh}
+  .hname{font-size:16vw}
+  .hero-sub{margin-top:28px}
+  .hero-sub .s1{font-size:18px}
+  .hero-sub .s2{font-size:16px}
+  .hero-photo{width:64%;margin:44px 0 0 auto}
+  .band{margin-top:6vh}
+  .mline{font-size:24vw}
+  .bottomrow{padding:0 20px 20px;flex-direction:column;align-items:stretch;gap:20px}
+  .bottomrow .btn{text-align:center}
+  .intro{padding:72px 20px 96px}
+  .intro-col{margin-left:0;width:78%}
+  .list{padding:10vh 20px 12vh}
+  .list h2{margin-left:0;font-size:6.5vw;max-width:none}
+  .list-body{display:block;margin-top:56px}
+  .list-right{margin-top:40px}
+  .trow{flex-wrap:wrap;gap:6px;padding-bottom:22px}
+  .trow .occ{min-width:0;width:100%;font-size:14px}
+  .trow .how{margin-left:auto}
+  .list-photo{width:100%;margin:0;aspect-ratio:4/3}
+  .gpair{display:block;margin-bottom:64px}
+  .gpair figure{margin-bottom:64px}
+  .gp-a{width:70%}.gp-b{width:84%;margin:0 0 0 auto}.gp-c{width:100%}.gp-d{width:56%;margin:0}
+  .gpair.mirror .gp-a{width:84%;margin:0 0 0 auto}
+  .gpair.mirror .gp-b{width:70%;margin:0}
+  .gpair.mirror .gp-d{width:56%;margin:0 0 0 auto}
+  .crow{min-height:84px;font-size:9vw;padding:0 16px 12px;margin-bottom:20px}
+  .crow.hello{min-height:100px}
+  .footer{padding:9vh 20px 0}
+  .footer .invite{font-size:6.5vw}
+  .footer .flinks{position:static;margin-top:40px;flex-direction:row;gap:18px;text-align:left}
+  .fcredit{font-size:14px}
+  .fname{font-size:34vw}
+}
+@media (prefers-reduced-motion:reduce){
+  .mline{animation:none;transform:none}
+  .marquee{white-space:normal;text-align:center}
+  .marquee .mline span.extra{display:none}
+  .rise,.wipe{opacity:1;transform:none;clip-path:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="toprow rise">
+    <a href="#cakes">Cakes</a>
+    <span class="wm">Jasleen Cakery</span>
+    <a href="#order">Order</a>
+  </div>
+  <div class="hero-main">
+    <div class="hero-type rise">
+      <h1 class="hname"><span>Jasleen</span><span>Cakery</span></h1>
+      <div class="hero-sub">
+        <p class="s1">Custom cakes for the days that matter, baked to order in a Chandigarh home kitchen.</p>
+        <p class="herocta"><a class="btn" href="tel:+919815063569">Call to order</a></p>
+      </div>
+    </div>
+    <div class="hero-photo wipe"><img src="assets/hero-square.jpg" alt="A pink two tier cake with a floral hoop from Jasleen Cakery" width="700" height="700"></div>
+  </div>
+  <div class="band" aria-hidden="true">
+    <div class="marquee">
+      <span class="mline"><span>Jasleen Cakery</span><span class="dot"></span><span>Jasleen Cakery</span><span class="dot"></span><span>Jasleen Cakery</span><span class="dot"></span><span>Jasleen Cakery</span><span class="dot"></span></span>
+    </div>
+  </div>
+  <div class="bottomrow rise">
+    <span class="where">135 Sector 44 A, Chandigarh</span>
+    <span class="where">Cakes to order · Sector 44 home kitchen</span>
+  </div>
+</header>
+
+<main>
+
+<section class="intro">
+  <div class="intro-col">
+    <p class="rise">Jasleen Cakery is a home bakery in Sector 44, Chandigarh. Every cake is baked to order, never pulled from a shelf.</p>
+    <p class="rise">Birthdays, anniversaries, engagements and weddings: tell us the occasion and the date, and the cake is designed around it.</p>
+    <p class="rise">The workshop's signature is the working barrel cake, built to pour. Numbered tiers, fresh florals and hand set toppers fill the rest of the order book.</p>
+    <p class="rise">To order, call or <a href="mailto:jasleen0701@gmail.com">write to us</a> with your date.</p>
+  </div>
+</section>
+
+<section class="list" id="cakes">
+  <h2 class="rise">Cakes for the days that matter</h2>
+  <div class="list-body">
+    <figure class="list-photo wipe"><img src="assets/list-love.jpg" alt="A lavender engagement cake with a ring topper" loading="lazy" width="640" height="800"></figure>
+    <div class="list-right">
+      <span class="tlabel">occasions</span>
+      <div class="trow rise"><span class="occ">Birthday</span><span class="what">Themes built around the person</span><span class="how">made to order</span></div>
+      <div class="trow rise"><span class="occ">Anniversary</span><span class="what">Numbered tiers, silver and florals</span><span class="how">made to order</span></div>
+      <div class="trow rise"><span class="occ">Engagement</span><span class="what">Ring toppers and baat pakki cakes</span><span class="how">made to order</span></div>
+      <div class="trow rise"><span class="occ">Wedding</span><span class="what">Two tiers and above</span><span class="how">made to order</span></div>
+      <div class="trow rise gap"><span class="occ">Signature</span><span class="what">The working barrel cake, built to pour</span><span class="how">made to order</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="gpair">
+    <figure class="gp-a wipe"><img src="assets/gal-silver.jpg" alt="A silver 25th anniversary cake with fresh flowers" loading="lazy" width="600" height="800"><figcaption>Silver for twenty five years.</figcaption></figure>
+    <figure class="gp-b wipe"><img src="assets/gal-baat.jpg" alt="A white engagement cake with roses, reading baat pakki" loading="lazy" width="800" height="640"><figcaption>Baat pakki, in white and roses.</figcaption></figure>
+  </div>
+  <div class="gpair">
+    <figure class="gp-c wipe"><img src="assets/gal-straw.jpg" alt="Fresh strawberries" loading="lazy" width="1200" height="799"><figcaption>Strawberries, always in season.</figcaption></figure>
+    <figure class="gp-d wipe"><img src="assets/gal-hoop.jpg" alt="A pink cake inside a floral hoop" loading="lazy" width="800" height="1000"><figcaption>The floral hoop.</figcaption></figure>
+  </div>
+  <div class="gpair mirror">
+    <figure class="gp-a wipe"><img src="assets/gal-love.jpg" alt="A lavender cake with love written in gold" loading="lazy" width="600" height="800"><figcaption>Lavender and gold.</figcaption></figure>
+    <figure class="gp-b wipe"><img src="assets/gal-berry.jpg" alt="A cup of fresh raspberries" loading="lazy" width="1100" height="880"><figcaption>Raspberries by the cup.</figcaption></figure>
+  </div>
+</section>
+
+<section class="contact" id="order">
+  <p class="crow rise"><span>Jasleen Cakery</span><img class="crow-img" src="assets/gal-baat.jpg" alt="" width="800" height="640"></p>
+  <p class="crow rise"><a href="https://www.google.com/maps/search/?api=1&query=Jasleen+Cakery+Sector+44+Chandigarh" rel="noopener">135 Sector 44 A</a></p>
+  <p class="crow rise"><span>Chandigarh</span></p>
+  <p class="crow rise"><span>Always open</span></p>
+  <p class="crow rise"><a href="tel:+919815063569">+91 98150 63569</a></p>
+  <p class="crow hello rise"><span>Hello</span><a class="roundbtn" href="mailto:jasleen0701@gmail.com" aria-label="Write to Jasleen Cakery"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="invite rise">
+    <p>Have a day coming up?</p>
+    <a class="btn" href="tel:+919815063569">Order a cake</a>
+  </div>
+  <div class="flinks rise">
+    <a href="https://www.facebook.com/jasleencakery" rel="noopener">Facebook</a>
+    <a href="mailto:jasleen0701@gmail.com">jasleen0701@gmail.com</a>
+    <a href="tel:+919815063569">+91 98150 63569</a>
+  </div>
+  <div class="fcredit">
+    <span>© 2026 Jasleen Cakery, Chandigarh</span>
+    <span>Cake photographs from the bakery's public listings · fruit photographs Unsplash (veeterzy, Glen Carrie)</span>
+  </div>
+  <div class="fname" aria-hidden="true">Jasleen Cakery</div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('on'); obs.unobserve(e.target);} });
+},{threshold:.15,rootMargin:'0px 0px 30% 0px'});
+document.querySelectorAll('.rise,.wipe').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
