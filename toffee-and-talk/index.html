@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toffee and Talk - Cafe in Jayanagar, Bengaluru</title>
+<meta name="description" content="Toffee and Talk is an independent cafe in Jayanagar, Bengaluru - good coffee, honest food and a room built for conversation.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=chillax@400,500,600,700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blush:#f3d4cd;
+  --blush-2:#eac3bb;
+  --paper:#fdf7f4;
+  --aub:#3a1c31;
+  --aub-2:#5a2b4d;
+  --ink:#2b1425;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Satoshi',system-ui,sans-serif;
+  font-size:17px;line-height:1.6;color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Chillax',sans-serif;font-weight:600;line-height:1.08}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:var(--blush);border-bottom:3px solid var(--aub)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:'Chillax',sans-serif;font-weight:700;font-size:20px;text-decoration:none;letter-spacing:0}
+.brand .amp{color:var(--aub-2)}
+.nav-links{display:flex;gap:26px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:500;font-size:16px;position:relative}
+.nav-links a:not(.pill)::after{content:"";position:absolute;left:0;bottom:-5px;height:3px;width:0;background:var(--aub);border-radius:3px;transition:width .28s ease}
+.nav-links a:not(.pill):hover::after{width:100%}
+.pill{display:inline-block;background:var(--aub);color:var(--paper);text-decoration:none;font-weight:700;font-size:16px;padding:11px 22px;border-radius:999px;border:3px solid var(--aub);transition:background .25s ease,color .25s ease,transform .25s ease}
+.pill:hover{background:transparent;color:var(--aub);transform:translateY(-2px)}
+
+/* ---------- hero : tabbed folder stack ---------- */
+.hero{background:var(--blush);padding:64px 0 92px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(46px,5.4vw,74px);font-weight:700;color:var(--aub);margin-bottom:22px}
+.hero .lede{font-size:20px;max-width:46ch;margin-bottom:22px}
+.hero .lede strong{font-weight:700}
+.chips{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.chip{background:var(--paper);border:3px solid var(--aub);border-radius:999px;padding:8px 18px;font-size:16px;font-weight:700;color:var(--aub)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.pill.ghost{background:transparent;color:var(--aub)}
+.pill.ghost:hover{background:var(--aub);color:var(--paper)}
+
+.stack{position:relative;height:520px}
+.folder{position:absolute;inset:0;background:var(--paper);border:3px solid var(--aub);border-radius:22px;padding:26px;cursor:pointer;
+  transition:transform .55s cubic-bezier(.22,.9,.28,1),opacity .55s ease;
+}
+.folder .photo{border-radius:14px;overflow:hidden;height:380px;border:3px solid var(--aub)}
+.folder .photo img{width:100%;height:100%;object-fit:cover}
+.folder figcaption{margin-top:16px;font-family:'Chillax',sans-serif;font-weight:500;font-size:20px;color:var(--aub)}
+.folder .tab{position:absolute;top:-46px;height:46px;display:flex;align-items:center;padding:0 24px;background:var(--paper);border:3px solid var(--aub);border-bottom:none;border-radius:16px 16px 0 0;font-family:'Chillax',sans-serif;font-weight:600;font-size:16px;color:var(--aub)}
+.folder[data-i="0"] .tab{left:26px}
+.folder[data-i="1"] .tab{left:196px}
+.folder[data-i="2"] .tab{left:366px}
+.folder.is-back-1{transform:rotate(-2.4deg) translate(-16px,14px);opacity:.85}
+.folder.is-back-2{transform:rotate(2deg) translate(18px,26px);opacity:.7}
+.folder.is-front{transform:none;z-index:3}
+.folder:not(.is-front) .photo img{filter:saturate(.75)}
+.stack-hint{margin-top:64px;font-size:16px;color:var(--aub-2);font-weight:500}
+
+/* ---------- statement with inline thumbnails ---------- */
+.statement{background:var(--paper);padding:110px 0}
+.statement-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.statement p.big{font-family:'Chillax',sans-serif;font-weight:500;font-size:clamp(24px,3vw,34px);line-height:1.35;max-width:22ch;color:var(--aub)}
+.inline-thumb{display:inline-block;width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--aub);vertical-align:middle;margin:0 8px;transition:transform .35s cubic-bezier(.34,1.56,.64,1)}
+.inline-thumb:hover{transform:scale(1.35) rotate(6deg)}
+.statement .support{max-width:50ch;font-size:18px;margin-top:22px}
+
+/* ---------- menu : two columns, photo bullets ---------- */
+.menu{background:var(--blush);padding:100px 0;border-top:3px solid var(--aub);border-bottom:3px solid var(--aub)}
+.menu h2{font-size:clamp(34px,4vw,52px);color:var(--aub);margin-bottom:14px}
+.menu .note{font-size:18px;max-width:52ch;margin-bottom:52px}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px 64px}
+.mgroup{margin-bottom:34px}
+.mgroup h3{font-size:23px;color:var(--aub-2);margin-bottom:12px}
+.mrow{display:flex;align-items:center;gap:16px;padding:11px 10px;border-radius:16px;transition:background .25s ease,transform .25s ease}
+.mrow:hover{background:var(--paper);transform:translateX(8px)}
+.mrow .bullet{width:34px;height:26px;flex:none;position:relative;background:var(--blush-2);border:3px solid var(--aub);border-radius:8px;transition:transform .3s ease}
+.mrow .bullet::before{content:"";position:absolute;top:-9px;left:3px;width:14px;height:9px;background:var(--blush-2);border:3px solid var(--aub);border-bottom:none;border-radius:5px 5px 0 0}
+.mrow:hover .bullet{transform:rotate(-10deg) translateY(-2px)}
+.mrow .name{font-weight:700;font-size:17px}
+.mrow .sub{font-size:16px;color:#6b4a60}
+
+/* ---------- gallery : one frame, contents change ---------- */
+.gallery{background:var(--aub);color:var(--paper);padding:100px 0}
+.gallery h2{font-size:clamp(34px,4vw,52px);margin-bottom:14px;color:var(--blush)}
+.gallery .note{font-size:18px;color:var(--blush-2);margin-bottom:50px;max-width:52ch}
+.gal-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.index{position:relative;padding-left:26px}
+.index .marker{position:absolute;left:0;top:0;width:6px;border-radius:6px;background:var(--blush);transition:transform .4s cubic-bezier(.22,.9,.28,1),height .4s ease}
+.idx-item{display:block;width:100%;text-align:left;background:none;border:none;color:var(--blush-2);font-family:'Chillax',sans-serif;font-weight:500;font-size:clamp(20px,2.2vw,27px);padding:14px 0;cursor:pointer;transition:color .3s ease,transform .3s ease}
+.idx-item:hover{color:var(--paper);transform:translateX(6px)}
+.idx-item.active{color:var(--paper)}
+.frame{border:4px solid var(--blush);border-radius:24px;overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--aub-2)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .6s ease}
+.frame img.show{opacity:1}
+.frame-cap{margin-top:18px;font-size:16px;color:var(--blush-2);min-height:26px}
+.credit{margin-top:44px;font-size:16px;color:var(--blush-2)}
+
+/* ---------- visit : clip-out coupon ---------- */
+.visit{background:var(--paper);padding:110px 0}
+.coupon{max-width:880px;margin:0 auto;background:#fff;border:4px dashed var(--aub);border-radius:26px;padding:56px 60px;position:relative}
+.coupon::before,.coupon::after{content:"";position:absolute;top:50%;width:38px;height:38px;border-radius:50%;background:var(--paper);border:4px dashed var(--aub);transform:translateY(-50%)}
+.coupon::before{left:-23px}
+.coupon::after{right:-23px}
+.coupon h2{font-size:clamp(32px,3.6vw,46px);color:var(--aub);margin-bottom:10px}
+.coupon .snip{display:flex;align-items:center;gap:10px;font-size:16px;color:var(--aub-2);margin-bottom:30px;font-weight:500}
+.coupon .snip svg{flex:none;animation:wiggle 3.2s ease-in-out infinite}
+@keyframes wiggle{0%,88%,100%{transform:rotate(0)}92%{transform:rotate(-14deg)}96%{transform:rotate(10deg)}}
+.coupon-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px 44px;margin-bottom:36px}
+.cblock h3{font-size:19px;color:var(--aub-2);margin-bottom:6px}
+.cblock p,.cblock a{font-size:17px}
+.cblock a{font-weight:700;text-decoration:none;border-bottom:3px solid var(--blush-2);transition:border-color .25s ease}
+.cblock a:hover{border-color:var(--aub)}
+.coupon .pill{margin-right:12px}
+
+/* ---------- footer : the mark, built large ---------- */
+footer{background:var(--aub);color:var(--blush);padding:90px 0 46px;overflow:hidden}
+.bigmark{font-family:'Chillax',sans-serif;font-weight:700;font-size:clamp(44px,9.2vw,132px);line-height:1.02;color:var(--blush);white-space:nowrap}
+.bigmark .L{display:inline-block;transform:translateY(110%);transition:transform .7s cubic-bezier(.22,.9,.28,1)}
+.bigmark.on .L{transform:none}
+.foot-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:44px;font-size:16px;color:var(--blush-2)}
+.foot-row a{color:var(--blush)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,.9,.28,1)}
+.rv.on{opacity:1;transform:none}
+
+/* ---------- responsive (keep at end) ---------- */
+@media (max-width:1024px){
+  .stack{height:470px}
+  .folder .photo{height:330px}
+  .folder[data-i="1"] .tab{left:170px}
+  .folder[data-i="2"] .tab{left:314px}
+}
+@media (max-width:860px){
+  .statement-grid{grid-template-columns:1fr;gap:26px}
+  .hero-grid{grid-template-columns:1fr;gap:76px}
+  .gal-grid{grid-template-columns:1fr;gap:40px}
+  .coupon-grid{grid-template-columns:1fr}
+  .menu-cols{grid-template-columns:1fr}
+  .bigmark{white-space:normal}
+}
+@media (max-width:640px){
+  .nav-links a:not(.pill){display:none}
+  .hero{padding:44px 0 76px}
+  .hero h1{font-size:44px}
+  .stack{height:400px}
+  .folder{padding:16px}
+  .folder .photo{height:262px}
+  .folder figcaption{font-size:16px;margin-top:12px}
+  .folder .tab{font-size:13px;padding:0 14px;height:40px;top:-40px}
+  .folder[data-i="0"] .tab{left:16px}
+  .folder[data-i="1"] .tab{left:132px}
+  .folder[data-i="2"] .tab{left:248px}
+  .stack-hint{margin-top:56px}
+  .statement,.menu,.gallery,.visit{padding:72px 0}
+  .coupon{padding:38px 26px}
+  .coupon::before,.coupon::after{display:none}
+  .inline-thumb{width:50px;height:50px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">Toffee <span class="amp">and</span> Talk</a>
+    <nav class="nav-links">
+      <a href="#room">The room</a>
+      <a href="#menu">Menu</a>
+      <a href="#moments">Moments</a>
+      <a class="pill" href="#visit">Say hello</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Toffee and Talk</h1>
+        <p class="lede">A space for <strong>great coffee, good food, and wholesome conversations</strong> in Jayanagar, Bengaluru.</p>
+        <div class="chips">
+          <span class="chip">Independent cafe</span>
+          <span class="chip">Rated 4.5 by 675 guests</span>
+          <span class="chip">Jayanagar, Bengaluru</span>
+        </div>
+        <div class="hero-ctas">
+          <a class="pill" href="#menu">See the menu</a>
+          <a class="pill ghost" href="#moments">Step inside</a>
+        </div>
+      </div>
+      <div>
+        <div class="stack" id="stack">
+          <figure class="folder is-front" data-i="0">
+            <span class="tab">The room</span>
+            <div class="photo"><img src="assets/f23.jpg" alt="The long wooden table, green chairs and pendant lamps inside Toffee and Talk"></div>
+            <figcaption>Long tables, green chairs, warm lamps.</figcaption>
+          </figure>
+          <figure class="folder is-back-1" data-i="1">
+            <span class="tab">The table</span>
+            <div class="photo"><img src="assets/f62.jpg" alt="Guests talking over food at the community table, bookshelves behind them"></div>
+            <figcaption>Strangers arrive, a table full of talk remains.</figcaption>
+          </figure>
+          <figure class="folder is-back-2" data-i="2">
+            <span class="tab">The page</span>
+            <div class="photo"><img src="assets/f41.jpg" alt="A guest reading a novel over a cappuccino at Toffee and Talk"></div>
+            <figcaption>A book, a cappuccino, an unhurried hour.</figcaption>
+          </figure>
+        </div>
+        <p class="stack-hint">Pick a tab - each folder keeps one side of the cafe.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" id="room">
+    <div class="wrap">
+      <div class="statement-grid">
+        <p class="big rv">Slow down <img class="inline-thumb" src="assets/f21.jpg" alt="A cappuccino with latte art, held up at the table"> in a city that is always hustling <img class="inline-thumb" src="assets/f33.jpg" alt="A calligraphy workshop around the cafe's long table">.</p>
+        <div class="rv">
+          <p class="support">That line is the cafe's own mission: a place to feel at ease, and to find real community through shared moments. It runs deeper than the menu - a book club, talk circles and hands-on workshops, with room to host community events for groups of 5 to 60 people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <h2 class="rv">From the menu</h2>
+      <p class="note rv">Every plate is made to be the perfect companion to great coffee. A few favourites, straight from the cafe's own menu.</p>
+      <div class="menu-cols">
+        <div class="mgroup rv">
+          <h3>To begin</h3>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Ultimate Loaded Nachos</div><div class="sub">Corn chips, beans, guacamole, cheddar sauce</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Maharashtrian Thecha Paneer</div><div class="sub">A house favourite with a thecha kick</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Hummus Bowl</div><div class="sub">Sesame hummus, Cajun chickpea, pita</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Chilli Cheese Toast</div><div class="sub">The classic, done properly</div></div></div>
+        </div>
+        <div class="mgroup rv">
+          <h3>Toasts and bowls</h3>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Creamy Avocado Toast</div><div class="sub">Sourdough, labneh, confit cherry tomatoes</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Roasted Tomato and Ricotta Toast</div><div class="sub">Slow-roasted, generously topped</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Mexican Bowl</div><div class="sub">Lettuce, beans, pico de gallo, chilli mayo</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Seasonal Smoothie Bowl</div><div class="sub">Whatever the season is doing well</div></div></div>
+        </div>
+        <div class="mgroup rv">
+          <h3>Pasta, pizza, grills</h3>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Aglio e Olio</div><div class="sub">Garlic, olive oil, done simply</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Classic Margherita</div><div class="sub">Add grilled paneer if you like</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Thecha Pesto Paneer Pizza</div><div class="sub">Where Maharashtrian meets Italian</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Mumbai Masala Grilled Sandwich</div><div class="sub">A city classic, grilled crisp</div></div></div>
+        </div>
+        <div class="mgroup rv">
+          <h3>Sweet, and the coffee</h3>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Banana Walnut Cake</div><div class="sub">Add salted caramel if the day calls for it</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Tiramisu</div><div class="sub">Coffee meeting coffee</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Raspberry Noir</div><div class="sub">Dark, bright, gone quickly</div></div></div>
+          <div class="mrow"><span class="bullet" aria-hidden="true"></span><div><div class="name">Flat White</div><div class="sub">Also classic, toasted hazelnut, salted caramel</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery" id="moments">
+    <div class="wrap">
+      <h2 class="rv">Moments at the table</h2>
+      <p class="note rv">Run a finger down the index - the frame keeps up. Every photograph is the cafe's own.</p>
+      <div class="gal-grid">
+        <div class="index rv" id="index">
+          <span class="marker" id="marker"></span>
+          <button class="idx-item active" data-i="0">The long table</button>
+          <button class="idx-item" data-i="1">Quiet corners</button>
+          <button class="idx-item" data-i="2">Book club afternoons</button>
+          <button class="idx-item" data-i="3">Workshop circles</button>
+          <button class="idx-item" data-i="4">Games on the table</button>
+        </div>
+        <div class="rv">
+          <div class="frame" id="frame">
+            <img class="show" src="assets/f62.jpg" alt="Guests around the community table with bookshelves behind">
+            <img src="assets/f23.jpg" alt="The cafe's long wooden table under warm pendant lamps">
+            <img src="assets/f41.jpg" alt="A guest reading over coffee during a quiet afternoon">
+            <img src="assets/f33.jpg" alt="A calligraphy workshop spread across the long table">
+            <img src="assets/f63.jpg" alt="Two guests mid-game at the cafe">
+          </div>
+          <p class="frame-cap" id="frameCap">The community table, mid-conversation.</p>
+          <p class="credit">Photographs: Toffee and Talk, used with thanks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="coupon rv">
+        <h2>Come say hello</h2>
+        <p class="snip">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M8.5 7.8 20 19M8.5 16.2 20 5"/></svg>
+          <span>Cut along the dashes, keep the coffee. Everything you need to find us is on this coupon.</span>
+        </p>
+        <div class="coupon-grid">
+          <div class="cblock">
+            <h3>Where</h3>
+            <p>36th Cross, 20th Main Rd, Jayanagar, Bengaluru, Karnataka 560041</p>
+          </div>
+          <div class="cblock">
+            <h3>Call</h3>
+            <p><a href="tel:+917022711397">+91 70227 11397</a></p>
+          </div>
+          <div class="cblock">
+            <h3>Write</h3>
+            <p><a href="mailto:hello.toffeentalk@gmail.com">hello.toffeentalk@gmail.com</a></p>
+          </div>
+          <div class="cblock">
+            <h3>Home delivery</h3>
+            <p>Find the cafe on Swiggy, Zomato and Ownly.</p>
+          </div>
+        </div>
+        <a class="pill" href="mailto:hello.toffeentalk@gmail.com">Write to the cafe</a>
+        <a class="pill ghost" href="tel:+917022711397">Call the counter</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="bigmark" id="bigmark" aria-label="Toffee and Talk"></div>
+    <div class="foot-row">
+      <span>Toffee and Talk, Jayanagar, Bengaluru</span>
+      <span><a href="mailto:hello.toffeentalk@gmail.com">hello.toffeentalk@gmail.com</a> · <a href="mailto:bblissventures@gmail.com">bblissventures@gmail.com</a></span>
+      <span>Photographs: Toffee and Talk</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// hero folder stack
+(function(){
+  var folders=[].slice.call(document.querySelectorAll('.folder'));
+  function layout(active){
+    var order=[];
+    folders.forEach(function(f){ if(+f.dataset.i===active) order.unshift(f); else order.push(f); });
+    folders.forEach(function(f){
+      f.classList.remove('is-front','is-back-1','is-back-2');
+      var i=+f.dataset.i;
+      if(i===active){f.classList.add('is-front');f.style.zIndex=3;}
+    });
+    var backs=folders.filter(function(f){return +f.dataset.i!==active;});
+    backs[0].classList.add('is-back-1');backs[0].style.zIndex=2;
+    backs[1].classList.add('is-back-2');backs[1].style.zIndex=1;
+  }
+  folders.forEach(function(f){
+    f.addEventListener('click',function(){layout(+f.dataset.i);});
+  });
+  layout(0);
+})();
+
+// gallery: index with preview
+(function(){
+  var items=[].slice.call(document.querySelectorAll('.idx-item'));
+  var imgs=[].slice.call(document.querySelectorAll('#frame img'));
+  var cap=document.getElementById('frameCap');
+  var marker=document.getElementById('marker');
+  var caps=["The community table, mid-conversation.","A quiet corner for an unhurried hour.","The book club, lost in a good one.","Workshop circles - calligraphy, craft, clay.","Games stay on the table as long as you do."];
+  var cur=0,timer;
+  function show(i){
+    cur=i;
+    items.forEach(function(b,k){b.classList.toggle('active',k===i);});
+    imgs.forEach(function(im,k){im.classList.toggle('show',k===i);});
+    cap.textContent=caps[i];
+    var t=items[i];
+    marker.style.height=t.offsetHeight+'px';
+    marker.style.transform='translateY('+t.offsetTop+'px)';
+  }
+  function next(){show((cur+1)%items.length);}
+  function auto(){timer=setInterval(next,4500);}
+  items.forEach(function(b,i){
+    b.addEventListener('mouseenter',function(){clearInterval(timer);show(i);auto();});
+    b.addEventListener('click',function(){clearInterval(timer);show(i);auto();});
+  });
+  window.addEventListener('resize',function(){show(cur);});
+  show(0);auto();
+})();
+
+// footer big mark letters
+(function(){
+  var el=document.getElementById('bigmark');
+  var text='Toffee and Talk';var i=0;
+  text.split(' ').forEach(function(word,wi,arr){
+    var w=document.createElement('span');w.style.whiteSpace='nowrap';w.style.display='inline-block';
+    word.split('').forEach(function(ch){
+      var s=document.createElement('span');
+      s.className='L';s.textContent=ch;
+      s.style.transitionDelay=(i++*28)+'ms';
+      w.appendChild(s);
+    });
+    el.appendChild(w);
+    if(wi<arr.length-1){var sp=document.createElement('span');sp.className='L';sp.textContent='\u00A0';sp.style.transitionDelay=(i++*28)+'ms';el.appendChild(sp);}
+  });
+})();
+
+// reveals + bigmark trigger
+(function(){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+  },{threshold:.18});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+  io.observe(document.getElementById('bigmark'));
+})();
+</script>
+</body>
+</html>
