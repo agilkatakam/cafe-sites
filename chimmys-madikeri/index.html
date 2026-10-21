@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chimmy's Cafe and Roastery — Sampigekatte, Madikeri, Coorg</title>
+<meta name="description" content="Chimmy's Cafe and Roastery, Madikeri: specialty coffee, fresh bakes and sandwiches at Sampigekatte. Open 11am to 8:30pm, closed Tuesdays. Call +91 72599 41441.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f2; --ink:#1f2b4d; --muted:#6a7186;
+  --accent:#f7941d; --accent-ink:#1f2b4d;
+  --field-1:#05070a; --field-1-ink:#ffffff; --field-2:#e3e1dc; --field-2-ink:#1f2b4d;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --margin:32px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:"General Sans",system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block}
+a{color:inherit}
+h1,h2,h3,.disp{font-family:"Gambarino",Georgia,serif;font-weight:400;letter-spacing:-0.02em;line-height:0.92}
+
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ---------- hero: card over a dim room ---------- */
+.hero{position:relative;min-height:100svh}
+.hero-bg{position:absolute;top:0;left:0;right:0;height:100svh;overflow:hidden}
+.hero-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(0.7)}
+.card{position:sticky;top:19svh;width:55%;height:62svh;margin:0 auto;background:var(--field-2);color:var(--field-2-ink);padding:32px;display:flex;flex-direction:column;transform-origin:bottom left;z-index:3}
+.card h1{display:flex;justify-content:space-between;width:100%;font-size:clamp(2.25rem,4.2vw,3.75rem);text-transform:uppercase}
+.card .facts{margin-top:9%;font-size:clamp(1.05rem,1.4vw,1.3rem);line-height:1.35}
+.card .facts span{display:block}
+.card .note{margin-top:7%;font-size:1.125rem;max-width:30ch;color:var(--field-2-ink)}
+.card .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.card .credit{font-size:var(--step-small);color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;padding:14px 26px;font-size:1.0625rem;transition:background .25s ease}
+.btn:hover{background:#e07f0a}
+.card .tlink{font-size:1rem;text-decoration:underline;text-underline-offset:4px}
+.card .tlink:hover{color:var(--muted)}
+.hero-tail{height:22svh}
+
+/* ---------- intro: title, note, facts row ---------- */
+.intro{padding:140px var(--margin) 120px;background:var(--bg)}
+.intro .top{display:grid;grid-template-columns:repeat(12,1fr);gap:0 2vw;align-items:end}
+.intro h2{grid-column:1/7;font-size:clamp(2.75rem,5vw,4.75rem)}
+.intro .note{grid-column:10/13;width:260px;font-size:1rem;line-height:1.5;justify-self:end}
+.intro .facts-row{display:flex;justify-content:space-between;gap:32px;margin-top:120px;flex-wrap:wrap}
+.fact .f{font-family:"Gambarino",serif;font-size:clamp(1.75rem,3vw,2.75rem);line-height:1}
+.fact .e{margin-top:8px;font-size:var(--step-small);color:var(--muted)}
+.intro figure{margin:90px 0 0 auto;width:calc(5/12*100%);aspect-ratio:4/3}
+.intro figure img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- list: cards that fold into spines ---------- */
+.menu-wrap{height:210svh;position:relative;background:var(--surface)}
+.menu-stage{position:sticky;top:0;height:100svh;padding:0 var(--margin);overflow:hidden}
+.menu-stage h2{font-size:clamp(3rem,4.2vw,4rem);padding-top:12svh}
+.deck{display:flex;gap:14px;height:360px;margin-top:7svh}
+.slivers{display:flex;gap:6px}
+.slv{width:56px;height:100%;padding:18px 12px;cursor:pointer;writing-mode:vertical-rl;font-family:"Gambarino",serif;font-size:1.375rem;letter-spacing:-0.01em;border:0;text-align:left}
+.slv.t0{background:var(--field-2);color:var(--field-2-ink)}
+.slv.t1{background:var(--ink);color:#fff}
+.slv.t2{background:var(--surface);color:var(--ink)}
+.slv.on{outline:3px solid var(--accent);outline-offset:-3px}
+.pane{position:relative;flex:1}
+.mcard{position:absolute;top:0;left:0;width:min(620px,100%);height:100%;padding:32px;display:none;flex-direction:column;overflow:hidden}
+.mcard.on{display:flex}
+.mcard h3{font-size:1.875rem;line-height:1.1;max-width:12ch}
+.mcard p{margin-top:14px;font-size:1rem;max-width:38ch}
+.mcard .mfoot{margin-top:auto;display:flex;justify-content:space-between;font-size:1rem}
+.mcard .mfoot a{text-decoration:underline;text-underline-offset:4px}
+.mcard.t0{background:var(--field-2)}
+.mcard.t1{background:var(--ink);color:#fff}
+.mcard.t1 .mfoot,.mcard.t1 p{color:#d9dcef}
+.mcard.t2{background:var(--surface)}
+.mcard.past{width:120px;cursor:pointer}
+.mcard.past h3,.mcard.past p,.mcard.past .mfoot a{visibility:hidden}
+.mcard.past .mfoot{visibility:hidden}
+.mcard.past .spine{opacity:1}
+.menu-meta{margin-top:48px;font-size:1.0625rem;color:var(--ink)}
+
+/* ---------- gallery: tiles with label strips ---------- */
+.gallery{padding:120px var(--margin);background:var(--bg)}
+.gallery h2{font-size:2rem;margin-bottom:40px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 12px}
+.tile img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.tile:nth-child(3n) img{aspect-ratio:1/1}
+.strip{height:90px;padding:14px;font-size:0.8125rem;line-height:1.5;display:flex;flex-direction:column;justify-content:space-between;font-variant-numeric:tabular-nums}
+.strip .r1{display:flex;justify-content:space-between;gap:8px}
+.strip .r2{display:flex;justify-content:space-between;gap:8px;opacity:.75}
+.strip.s0{background:var(--ink);color:#fff}
+.strip.s1{background:var(--field-2);color:var(--ink)}
+.strip.s2{background:var(--surface);color:var(--ink)}
+.strip.s3{background:var(--field-1);color:#fff}
+
+/* ---------- contact: visit card on a photograph ---------- */
+.visit{position:relative;height:100svh;overflow:hidden}
+.visit>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vcard{position:absolute;top:60px;right:60px;width:380px;background:var(--field-2);padding:32px;border-radius:8px;z-index:2}
+.vcard h2{font-size:1.75rem}
+.vcard address{margin-top:16px;font-style:normal;font-size:1rem;line-height:1.5}
+.vcard .hrows{margin-top:18px;font-variant-numeric:tabular-nums}
+.vcard .hrow{display:flex;justify-content:space-between;font-size:1rem;padding:4px 0}
+.vcard .hrow span:first-child{color:var(--field-2-ink)}
+.vcard .tel{display:block;margin-top:18px;font-size:1rem;text-decoration:underline;text-underline-offset:4px}
+.vcard .btn{display:flex;align-items:center;justify-content:center;height:52px;margin:22px -32px -32px;border-radius:0 0 8px 8px}
+
+/* ---------- footer: back of the card ---------- */
+footer{background:var(--field-1);padding:120px var(--margin) 60px}
+.postcard{position:relative;width:calc(10/12*100%);margin:60px auto 0;background:var(--field-2);color:var(--field-2-ink);min-height:420px;padding:60px 48px 48px}
+.scallops{position:absolute;top:-24px;left:0;width:100%;height:24px}
+.pc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.pc-left h2{font-size:2rem;max-width:12ch}
+.pc-left p{margin-top:18px;font-size:1rem;max-width:34ch}
+.pc-right{position:relative}
+.pc-right ul{list-style:none;margin-top:8px}
+.pc-right li{margin-bottom:12px;font-size:1.125rem}
+.pc-right a{text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.stamp{position:absolute;top:0;right:0;width:88px;background:var(--field-2);padding:6px}
+.stamp img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.imprint{margin-top:64px;text-align:center;font-size:0.8125rem;color:var(--muted)}
+
+/* ---------- tablet ---------- */
+@media (max-width:1000px){
+  .card{width:72%}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+}
+/* ---------- phone ---------- */
+@media (max-width:640px){
+  :root{--margin:16px}
+  .hero-bg img{height:100svh}
+  .card{position:absolute;top:15svh;left:16px;right:16px;width:auto;height:70svh;margin:0;transform:none!important}
+  .card h1{flex-wrap:wrap;font-size:9vw;row-gap:.2em}
+  .card .facts{font-size:5.2vw;font-family:"General Sans",sans-serif;order:3}
+  .card .note{font-size:1.125rem;order:2}
+  .card .foot{flex-wrap:wrap;row-gap:12px;order:4}
+  .card .btn{flex:1 1 100%;text-align:center}
+  .hero-tail{height:0}
+  .intro{padding:96px var(--margin) 80px}
+  .intro h2{font-size:11vw;grid-column:1/13}
+  .intro .note{grid-column:1/13;justify-self:start;width:100%;margin-top:24px}
+  .intro .facts-row{display:grid;grid-template-columns:1fr 1fr;row-gap:32px;margin-top:64px}
+  .fact .f{font-size:1.625rem}
+  .intro figure{width:100%;margin-top:56px}
+  .menu-wrap{height:auto;padding:80px var(--margin)}
+  .slivers{display:none}
+  .menu-stage{position:static;height:auto;padding:0;overflow:visible}
+  .menu-stage h2{font-size:10vw;padding-top:0}
+  .deck{height:auto;margin-top:32px;display:flex;flex-direction:column;gap:12px}
+  .mcard{position:static;display:flex;width:100%!important;height:auto;min-height:180px;transform:none!important}
+  .mcard:nth-child(even){width:92%!important;margin-left:8%}
+  .mcard h3{font-size:1.5rem}
+  .mcard.past h3,.mcard.past p,.mcard.past .mfoot{visibility:visible}
+  .mcard .spine{display:none}
+  .menu-meta{margin-top:32px}
+  .gallery{padding:80px var(--margin)}
+  .gallery h2{font-size:1.5rem}
+  .tiles{grid-template-columns:1fr 1fr;gap:16px 8px}
+  .strip{height:auto;min-height:64px}
+  .strip .r2{display:none}
+  .visit{height:auto;overflow:visible;background:var(--bg)}
+  .visit>img{position:relative;width:100%;height:70svh}
+  .vcard{position:relative;top:auto;right:auto;width:calc(100% - 32px);margin:-80px auto 60px}
+  footer{padding:80px var(--margin) 48px}
+  .postcard{width:100%;padding:48px 24px 32px}
+  .pc-grid{grid-template-columns:1fr;gap:32px}
+  .stamp{width:64px}
+  .pc-right{padding-top:0}
+}
+</style>
+</head>
+<body>
+
+<!-- hero: card over a dim room -->
+<section class="hero" id="top">
+  <div class="hero-bg"><img src="./assets/counter.jpg" alt="The green fluted-tile counter at Chimmy's, with the pastry case and pendant lights"></div>
+  <div class="card" id="heroCard">
+    <h1><span>Chimmy's</span><span>Cafe</span><span>Roastery</span></h1>
+    <p class="facts"><span>11:00 am – 8:30 pm</span><span>Closed Tuesdays</span><span>Sampigekatte, Madikeri</span></p>
+    <p class="note">Specialty coffee, fresh bakes and slow afternoons in the heart of Coorg.</p>
+    <div class="foot">
+      <span class="credit">Sampigekatte, Madikeri, Coorg</span>
+      <a class="btn" href="tel:+917259941441">Call the cafe</a>
+      <a class="tlink" href="#menu">The menu &#8595;</a>
+    </div>
+  </div>
+  <div class="hero-tail"></div>
+</section>
+
+<!-- intro -->
+<section class="intro">
+  <div class="top">
+    <h2>A warm room for slow coffee</h2>
+    <p class="note rv">Chimmy's is a cafe and roastery on Sampigekatte in Madikeri: freshly brewed cups, cold coffees, artisanal drinks, sandwiches and pastries, in a space made to slow down in.</p>
+  </div>
+  <div class="facts-row rv">
+    <div class="fact"><div class="f">11:00 am</div><div class="e">doors open, first pour</div></div>
+    <div class="fact"><div class="f">8:30 pm</div><div class="e">last order of the evening</div></div>
+    <div class="fact"><div class="f">Tuesday</div><div class="e">the roastery rests</div></div>
+    <div class="fact"><div class="f">4.9 / 5</div><div class="e">252 Google reviews</div></div>
+  </div>
+  <figure class="rv"><img src="./assets/window.jpg" alt="Looking through the green-framed window into Chimmy's" loading="lazy"></figure>
+</section>
+
+<!-- list: cards that fold into spines -->
+<div class="menu-wrap" id="menu">
+  <div class="menu-stage">
+    <h2>On the card</h2>
+    <div class="deck" id="deck">
+      <div class="slivers" id="slivers">
+        <button class="slv t0" data-i="0">Coffee</button>
+        <button class="slv t1" data-i="1">Beverages</button>
+        <button class="slv t2" data-i="2">Bakes</button>
+        <button class="slv t0" data-i="3">Kitchen</button>
+      </div>
+      <div class="pane">
+      <article class="mcard t0" data-i="0">
+        <h3>Coffee, brewed to order</h3>
+        <p>Freshly brewed coffee and cold coffees from the roastery's own beans, poured at the green counter.</p>
+        <div class="mfoot"><span>The counter</span><a href="tel:+917259941441">Ask what's on</a></div>
+      </article>
+      <article class="mcard t1" data-i="1">
+        <h3>Handcrafted beverages</h3>
+        <p>Artisanal drinks beyond coffee: iced teas, juices and house specials for the long afternoon.</p>
+        <div class="mfoot"><span>The bar</span><a href="tel:+917259941441">Ask what's on</a></div>
+      </article>
+      <article class="mcard t2" data-i="2">
+        <h3>Fresh bakes</h3>
+        <p>Pastries and desserts from the case: chocolate mousse, bakes of the day, something sweet with every cup.</p>
+        <div class="mfoot"><span>The case</span><a href="tel:+917259941441">Ask what's on</a></div>
+      </article>
+      <article class="mcard t0" data-i="3">
+        <h3>Sandwiches and plates</h3>
+        <p>Sandwiches and cafe favourites made with quality ingredients: breakfast, lunch, dinner and brunch.</p>
+        <div class="mfoot"><span>The kitchen</span><a href="tel:+917259941441">Ask what's on</a></div>
+      </article>
+      </div>
+    </div>
+    <p class="menu-meta">Four lists. The full menu waits at the counter on Sampigekatte.</p>
+  </div>
+</div>
+
+<!-- gallery -->
+<section class="gallery">
+  <h2>From the room</h2>
+  <div class="tiles">
+    <figure class="tile rv"><img src="./assets/baristas.jpg" alt="Baristas at work behind the brew bar" loading="lazy"><figcaption class="strip s0"><span class="r1"><span>BREW</span><span>BAR</span><span>DAILY</span><span>11–8:30</span></span><span class="r2"><span>The counter</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/table.jpg" alt="A table of sandwiches and plates at Chimmy's" loading="lazy"><figcaption class="strip s1"><span class="r1"><span>PLATES</span><span>KITCHEN</span><span>FRESH</span><span>NOON</span></span><span class="r2"><span>The kitchen</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/room.jpg" alt="The dining room at Chimmy's, warm lights and wooden tables" loading="lazy"><figcaption class="strip s2"><span class="r1"><span>ROOM</span><span>SLOW</span><span>WARM</span><span>ALL DAY</span></span><span class="r2"><span>The room</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/dessert.jpg" alt="A pastry from the bakes case" loading="lazy"><figcaption class="strip s3"><span class="r1"><span>BAKES</span><span>CASE</span><span>SWEET</span><span>DAILY</span></span><span class="r2"><span>The case</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/iced-tea.jpg" alt="An iced tea from the bar" loading="lazy"><figcaption class="strip s1"><span class="r1"><span>ICED</span><span>TEA</span><span>BAR</span><span>COLD</span></span><span class="r2"><span>The bar</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/juice.jpg" alt="A fresh juice on the counter" loading="lazy"><figcaption class="strip s2"><span class="r1"><span>JUICE</span><span>FRESH</span><span>BAR</span><span>COLD</span></span><span class="r2"><span>The bar</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/corner-window.jpg" alt="A corner window seat" loading="lazy"><figcaption class="strip s3"><span class="r1"><span>SEAT</span><span>WINDOW</span><span>QUIET</span><span>COZY</span></span><span class="r2"><span>The room</span><span>Madikeri</span></span></figcaption></figure>
+    <figure class="tile rv"><img src="./assets/chairs.jpg" alt="Chairs by the window in the cafe" loading="lazy"><figcaption class="strip s0"><span class="r1"><span>TABLE</span><span>TWO</span><span>LIGHT</span><span>COZY</span></span><span class="r2"><span>The room</span><span>Madikeri</span></span></figcaption></figure>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="visit" id="visit">
+  <img src="./assets/counter.jpg" alt="The counter at Chimmy's Cafe and Roastery" loading="lazy">
+  <div class="vcard rv">
+    <h2>Visit us</h2>
+    <address>Yajna Comforts, Sampigekatte<br>Madikeri, Karnataka 571201</address>
+    <div class="hrows">
+      <div class="hrow"><span>Monday</span><span>11:00 – 20:30</span></div>
+      <div class="hrow"><span>Tuesday</span><span>Closed</span></div>
+      <div class="hrow"><span>Wed – Sun</span><span>11:00 – 20:30</span></div>
+    </div>
+    <a class="tel" href="tel:+917259941441">+91 72599 41441</a>
+    <a class="btn" href="mailto:manager.chimmys@gmail.com">Email the cafe</a>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="postcard">
+    <svg class="scallops" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0,24 L0,12 Q50,-12 100,12 Q150,-12 200,12 Q250,-12 300,12 Q350,-12 400,12 Q450,-12 500,12 Q550,-12 600,12 Q650,-12 700,12 Q750,-12 800,12 Q850,-12 900,12 Q950,-12 1000,12 Q1050,-12 1100,12 Q1150,-12 1200,12 L1200,24 Z" fill="#e3e1dc"/></svg>
+    <div class="pc-grid">
+      <div class="pc-left">
+        <h2>See you at Sampigekatte</h2>
+        <p>Come for a slow cup in the hills. Bring a friend, a book, or a free afternoon: the room was made for all three.</p>
+      </div>
+      <div class="pc-right">
+        <div class="stamp"><img src="./assets/window.jpg" alt="" loading="lazy"></div>
+        <ul>
+          <li><a href="mailto:manager.chimmys@gmail.com">manager.chimmys@gmail.com</a></li>
+          <li><a href="tel:+917259941441">+91 72599 41441</a></li>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Chimmy%27s+Cafe+and+Roastery&query_place_id=ChIJZcFa3xoBpTsRRAeDXhp3NA8" target="_blank" rel="noopener">Sampigekatte, Madikeri &#8599;</a></li>
+          <li><a href="https://www.tripadvisor.com/Restaurant_Review-g641714-d34080908-Reviews-Chimmy_s_Cafe_and_Roastery-Madikeri_Kodagu_Coorg_Karnataka.html" target="_blank" rel="noopener">Reviews on Tripadvisor &#8599;</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="imprint">Photographs: Chimmy's Cafe and Roastery, via Tripadvisor, Zomato and Restaurant Guru. An independent page, not the cafe's official site.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* hero card shrinks to a stub */
+  var card=document.getElementById('heroCard');
+  function heroShrink(){
+    if(reduced||window.innerWidth<=640)return;
+    var p=Math.min(1,window.scrollY/(window.innerHeight*0.9));
+    var s=1-p*0.72;
+    card.style.transform='scale('+s.toFixed(3)+')';
+  }
+  window.addEventListener('scroll',heroShrink,{passive:true});heroShrink();
+
+  /* menu cards fold into spines */
+  var wrap=document.getElementById('menu');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.mcard'));
+  var slvs=Array.prototype.slice.call(document.querySelectorAll('.slv'));
+  var n=cards.length;
+  function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
+  function step(k){
+    k=clamp(k,0,n-1);
+    cards.forEach(function(c,i){c.classList.toggle('on',i===k);});
+    slvs.forEach(function(v,i){v.classList.toggle('on',i===k);});
+  }
+  function onScroll(){
+    if(window.innerWidth<=640)return;
+    var r=wrap.getBoundingClientRect();
+    var total=r.height-window.innerHeight;
+    var p=clamp(-r.top/total,0,1);
+    step(Math.min(n-1,Math.floor(p*n)));
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  slvs.forEach(function(v){v.addEventListener('click',function(){step(parseInt(v.dataset.i,10));});});
+  step(0);
+
+  /* reveals */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:0.15});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

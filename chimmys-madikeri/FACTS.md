@@ -1,0 +1,12 @@
+# Chimmy's Cafe and Roastery — Madikeri, Coorg
+- Sheet1 row 511 (#510). Claim Q511 "building:chimmys-madikeri @4:55 PM IST" (re-read confirmed).
+- Email: manager.chimmys@gmail.com — owner-CLAIMED TripAdvisor listing Email field ("Someone from this business manages this listing" verified on tripadvisor.com page d34080908); phone +91 72599 41441 matches sheet.
+- No own website (chimmys.com is an unrelated US sauce brand; only Zomato/RG/district listings).
+- Address: Yajna Comforts, Sampigekatte (Sampige Katte), Kannanda Bane, Madikeri, Karnataka 571201.
+- Hours: 11:00 AM - 8:30 PM; Tuesday closed (TA + restaurant-guru, RG updated ~3 months ago).
+- Google 4.9/252 (sheet). TA 5.0/5 (6 reviews, Travelers' Choice).
+- Offer: specialty coffee, handcrafted beverages, fresh bakes, sandwiches, pastries; roastery. Breakfast, lunch, dinner, brunch; table service; cards accepted; parking.
+- Character: cozy aesthetic interior (green fluted-tile counter, pendant lights), work-friendly, in the heart of Madikeri.
+- Maps place_id: ChIJZcFa3xoBpTsRRAeDXhp3NA8.
+- Photos: 5 full-res owner-uploaded TA photos + Zomato dining/table shots + RG collage crops (mascot cells discarded); credit on page.
+- Gaps: no menu prices published anywhere; RG/Tuesday-closed single-source.
