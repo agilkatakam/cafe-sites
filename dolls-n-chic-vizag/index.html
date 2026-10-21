@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dolls N Chic Boutique, Visakhapatnam · Since 1989</title>
+<meta name="description" content="Dolls N Chic Boutique, Visakhapatnam's original western wear and footwear boutique since 1989. Prakasaraopeta, Jagadamba Junction.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#dedad3; --surface:#d3cec6; --ink:#0a0a0a; --soft:#3f3c37; --accent:#256f82; --accent-ink:#ffffff;
+  --step-small:clamp(.8125rem,.79rem + .1vw,.875rem);
+  --step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
+  --step-head:clamp(2.5rem,1.2rem + 5vw,5.5rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Chivo',sans-serif;font-weight:400;line-height:1.35;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1400px;margin:0 auto;padding:0 clamp(18px,4vw,64px)}
+h1,h2,h3{font-weight:900;text-transform:uppercase;letter-spacing:-.05em;line-height:.88}
+.small{font-size:var(--step-small)}
+.body-copy{font-size:var(--step-body);color:var(--ink)}
+.tag{font-size:var(--step-small);color:var(--soft)}
+.btn{display:inline-flex;align-items:center;gap:.6em;background:var(--accent);color:var(--accent-ink);font-weight:700;font-size:.95rem;padding:1em 1.6em;border-radius:999px;text-decoration:none;transition:transform .25s ease}
+.btn:hover{transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:50;background:var(--surface)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px}
+.brand{font-weight:900;text-transform:uppercase;letter-spacing:-.04em;font-size:1.15rem;line-height:1}
+.brand span{color:var(--accent)}
+nav{display:flex;gap:28px}
+nav a{font-weight:700;font-size:.95rem;text-decoration:none}
+nav a:hover{color:var(--accent)}
+.hero{padding:0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;min-height:92vh}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;gap:26px;padding:clamp(28px,4vw,64px);padding-left:max(clamp(18px,4vw,64px),calc((100vw - 1400px)/2 + clamp(18px,4vw,64px)))}
+.hero-copy h1{font-size:clamp(3.2rem,8.5vw,8rem)}
+.hero-copy h1 em{font-style:normal;color:var(--accent)}
+.hero-sub{font-size:var(--step-lead);max-width:30ch;color:var(--soft)}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px}
+.hero-lead{position:relative;overflow:hidden}
+.hero-lead img{width:100%;height:100%;object-fit:cover;object-position:50% 40%}
+.hero-tile{margin-top:6px;max-width:420px}
+.hero-tile img{width:100%;height:auto}
+.hero-tile figcaption{font-size:var(--step-small);color:var(--soft);margin-top:8px}
+.strip{background:var(--ink);overflow:hidden;white-space:nowrap;padding:18px 0}
+.strip-inner{display:inline-block;animation:mar 28s linear infinite}
+.strip span{font-weight:900;text-transform:uppercase;letter-spacing:-.03em;font-size:clamp(1.3rem,2.4vw,2rem);margin-right:1.4em;color:var(--bg)}
+.strip span i{font-style:normal;color:#7fb5c2}
+@keyframes mar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+section{padding:clamp(56px,8vw,120px) 0}
+section.alt{background:var(--surface)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(28px,4vw,56px)}
+.sec-head h2{font-size:var(--step-head)}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px)}
+.story-left{position:relative}
+.story-sticky{position:sticky;top:110px;display:flex;flex-direction:column;gap:18px}
+.story-sticky p{font-size:var(--step-body);color:var(--soft);max-width:38ch}
+.story-right{display:flex;flex-direction:column;gap:clamp(20px,3vw,36px)}
+.story-right p{font-size:var(--step-body)}
+.story-right p strong{font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:clamp(28px,4vw,48px)}
+.stat{background:var(--surface);padding:clamp(18px,2.5vw,32px) clamp(14px,2vw,28px)}
+section.alt .stat{background:var(--bg)}
+.stat b{display:block;font-weight:900;font-size:clamp(2rem,4vw,3.4rem);letter-spacing:-.04em;line-height:1;color:var(--accent)}
+.stat span{font-size:.95rem;color:var(--soft)}
+.stock-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,3vw,48px)}
+.card{background:var(--surface)}
+.card img{width:100%;height:clamp(320px,38vw,520px);object-fit:cover}
+.card .card-body{padding:clamp(18px,2.5vw,32px);display:flex;flex-direction:column;gap:12px}
+.card h3{font-size:clamp(1.5rem,2.4vw,2.2rem)}
+.card p{font-size:var(--step-body);color:var(--soft)}
+.shows-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,64px);align-items:center}
+.shows-list{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.show-item{background:var(--surface);padding:clamp(16px,2.4vw,26px) clamp(16px,2.4vw,28px);display:flex;align-items:baseline;justify-content:space-between;gap:18px}
+.show-item b{font-weight:900;text-transform:uppercase;letter-spacing:-.03em;font-size:clamp(1.2rem,2vw,1.8rem)}
+.show-item span{color:var(--soft);font-size:.95rem}
+.shows-pic img{width:100%;height:auto}
+.shows-pic figcaption{font-size:var(--step-small);color:var(--soft);margin-top:8px}
+.quote-block{padding:clamp(64px,9vw,140px) 0;text-align:center;background:var(--ink)}
+.quote-block blockquote{font-weight:900;text-transform:uppercase;letter-spacing:-.04em;line-height:1;font-size:clamp(1.6rem,3.6vw,3.2rem);max-width:26ch;margin:0 auto 22px;color:var(--bg)}
+.quote-block cite{font-style:normal;font-size:.95rem;color:#7fb5c2}
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,64px);align-items:start}
+.visit-facts{display:flex;flex-direction:column;gap:12px}
+.fact{background:var(--surface);padding:clamp(16px,2.2vw,26px) clamp(16px,2.4vw,28px)}
+.fact b{display:block;font-weight:700;font-size:.95rem;color:var(--soft);margin-bottom:6px}
+.fact p{font-size:var(--step-lead);font-weight:700}
+.fact a{color:var(--accent);text-decoration:none}
+.visit-note{font-size:var(--step-body);color:var(--soft);margin-top:10px;max-width:44ch}
+footer{padding:clamp(40px,5vw,72px) 0;background:var(--ink);color:var(--bg)}
+footer .wrap{display:flex;flex-direction:column;gap:18px}
+footer .f-brand{font-weight:900;text-transform:uppercase;letter-spacing:-.04em;font-size:1.4rem}
+footer .f-brand span{color:#7fb5c2}
+footer p{font-size:var(--step-small);color:#b8b3a9;max-width:70ch}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:960px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:40px clamp(18px,4vw,64px)}
+  .hero-lead{height:min(64vw,420px)}
+  .story-grid,.stock-grid,.shows-grid,.visit-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Dolls <span>N</span> Chic</div>
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#stock">The Racks</a>
+      <a href="#shows">Fashion Shows</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+919849167300">Call the shop</a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1>Dolls N<br><em>Chic</em></h1>
+      <p class="hero-sub">Visakhapatnam's original western wear and footwear boutique, dressing the city since 1989. Still the same corner shop in Prakasaraopeta, still full of something different.</p>
+      <div><a class="btn" href="#visit">Find the shop</a></div>
+      <figure class="hero-tile">
+        <img src="./assets/storefront.jpg" alt="The Dolls N Chic storefront in Prakasaraopeta, Visakhapatnam" width="741" height="533">
+        <figcaption>The corner shop on Prakasaraopeta. Photo: Yo! Vizag.</figcaption>
+      </figure>
+    </div>
+    <div class="hero-lead">
+      <img src="./assets/rack.jpg" alt="Rails of clothing in a boutique" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="strip" aria-hidden="true">
+  <div class="strip-inner">
+    <span>Western wear <i>·</i> Footwear <i>·</i> Since 1989 <i>·</i> Jagadamba Junction <i>·</i> Something different <i>·</i>&nbsp;</span><span>Western wear <i>·</i> Footwear <i>·</i> Since 1989 <i>·</i> Jagadamba Junction <i>·</i> Something different <i>·</i>&nbsp;</span>
+  </div>
+</div>
+
+<section id="story" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>The Story</h2>
+      <span class="tag">Thirty seven years and counting</span>
+    </div>
+    <div class="story-grid">
+      <div class="story-left">
+        <div class="story-sticky reveal">
+          <p>In 1989, when Vizag still dressed for tradition, two brothers opened a small shop of western wear near Jagadamba Junction. People laughed at clothes they did not understand.</p>
+          <p>Then cable TV arrived, the city wanted what its stars wore, and Dolls N Chic was already there.</p>
+          <figure class="hero-tile" style="max-width:100%">
+            <img src="./assets/denim.jpg" alt="Denim and casual western wear" width="1400" height="2100">
+          </figure>
+        </div>
+      </div>
+      <div class="story-right">
+        <p class="reveal"><strong>Dilip Bulchandani</strong> picks the clothing himself on buying trips to Mumbai and Delhi, the way he has since the beginning. <strong>Kamal Bulchandani</strong> curates the footwear. Their father ran Moti Creations in One Town; the brothers took the trade west.</p>
+        <p class="reveal">The shop opened with about 150 designs of footwear and 40 garments. It grew into more than 900 designs, heaped on tables and hung from every available surface, in the same corner premises it started in.</p>
+        <p class="reveal">The regulars never changed either. Generations of Vizag shoppers walk in knowing they will leave with something different, at prices a student can manage.</p>
+        <div class="stats reveal">
+          <div class="stat"><b>1989</b><span>Opened</span></div>
+          <div class="stat"><b>900+</b><span>Designs in stock</span></div>
+          <div class="stat"><b>2</b><span>Brothers, one shop</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stock">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>The Racks</h2>
+      <span class="tag">Clothes and shoes</span>
+    </div>
+    <div class="stock-grid">
+      <div class="card reveal">
+        <img src="./assets/rack.jpg" alt="Neutral knits and tops on a clothing rail" loading="lazy">
+        <div class="card-body">
+          <h3>Western Wear</h3>
+          <p>Tops, dresses, jeans and jumpsuits, chosen in Mumbai and Delhi and brought back to Vizag before the trend pages catch up.</p>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img src="./assets/heels.jpg" alt="A collection of women's heels" loading="lazy">
+        <div class="card-body">
+          <h3>Footwear</h3>
+          <p>Heels, flats and sandals from Kamal's own selection. What began as 150 designs is now the fullest shoe wall in the neighbourhood.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="shows" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>On the Ramp</h2>
+      <span class="tag">A Vizag first</span>
+    </div>
+    <div class="shows-grid">
+      <figure class="shows-pic reveal">
+        <img src="./assets/hanger.jpg" alt="A crochet top on a hanger" width="1400" height="2010" loading="lazy">
+        <figcaption>Classy Indo westerns, on the ramp decades ago.</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="body-copy" style="margin-bottom:26px">Long before fashion weeks reached the city, Dolls N Chic staged its own shows, swapping the usual ethnic wear for classy Indo westerns.</p>
+        <div class="shows-list">
+          <div class="show-item"><b>The Navy Ball</b><span>Vizag</span></div>
+          <div class="show-item"><b>Waltair Club</b><span>Vizag</span></div>
+          <div class="show-item"><b>Sea Pearl Hotel</b><span>Beach Road</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="quote-block">
+  <div class="wrap reveal">
+    <blockquote>&ldquo;The parallels are now called palazzos.&rdquo;</blockquote>
+    <cite>Dilip Bulchandani, on fashion coming back around</cite>
+  </div>
+</div>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Visit</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-facts reveal">
+        <div class="fact">
+          <b>Address</b>
+          <p>Prakasaraopeta, near Jagadamba Junction,<br>Visakhapatnam 530020</p>
+        </div>
+        <div class="fact">
+          <b>Phone</b>
+          <p><a href="tel:+919849167300">+91 98491 67300</a></p>
+        </div>
+        <p class="visit-note">Walk in with time on your hands. The best finds at Dolls N Chic are dug out of the heaps, not picked off the front rail.</p>
+      </div>
+      <figure class="hero-tile reveal" style="max-width:100%">
+        <img src="./assets/storefront.jpg" alt="Mannequins in dresses at the Dolls N Chic entrance" width="741" height="533">
+        <figcaption>Look for the pink sign near the Clock Tower. Photo: Yo! Vizag.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Dolls <span>N</span> Chic <span>Boutique</span></div>
+    <p>Dolls N Chic Boutique, Prakasaraopeta, Visakhapatnam. Western wear and footwear since 1989.</p>
+    <p>Storefront photographs: Yo! Vizag. Remaining photographs are generic boutique imagery from Unsplash, not the shop's own stock.</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.18});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
