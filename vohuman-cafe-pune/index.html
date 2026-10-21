@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vohuman Cafe —Irani chai, bun maska and the famous cheese omelette, Pune since 1978</title>
+<meta name="description" content="Vohuman Cafe, Dhole Patil Road, Pune. An Irani cafe opened by Hormuz Irani in 1978. Open 6 am to 6:30 pm every day. Bun maska, Irani chai and the cheese omelette regulars cross the city for.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#161c1a;
+  --surface:#1f2725;
+  --ink:#e3e2da;
+  --muted:#b7bcb4;
+  --accent:#9fc7b8;
+  --accent-ink:#161c1a;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2.5rem,1.2rem + 5vw,5.5rem);
+  --pad:clamp(20px,4vw,56px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Work Sans',Arial,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,.display{font-family:'Anton','Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:-0.01em;line-height:.86}
+/* ---------- hero: card over a dim room ---------- */
+.hero{position:relative;min-height:100svh}
+.hero-stage{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:var(--pad)}
+.hero-inner{display:flex;flex-direction:row-reverse;align-items:center;justify-content:center;width:100%;max-width:1360px;margin:0 auto}
+.hero-photo{display:block;width:auto;height:auto;max-width:min(52%,1050px);max-height:88svh}
+.card{animation:cardin .8s ease both;background:var(--surface);width:min(55%,760px);min-height:62vh;padding:32px;display:flex;flex-direction:column;justify-content:space-between;margin-right:clamp(-72px,-5vw,-32px);position:relative;z-index:1}
+.card-top{display:flex;justify-content:space-between;gap:12px}
+.card-top span{font-family:'Anton','Arial Narrow',sans-serif;text-transform:uppercase;font-size:clamp(30px,3vw,44px);line-height:1;letter-spacing:.01em}
+.card-sub{margin-top:14px;font-size:var(--step-lead);font-weight:600}
+.card-facts{margin-top:28px}
+.card-facts p{font-family:'Anton','Arial Narrow',sans-serif;text-transform:uppercase;font-size:var(--step-lead);line-height:1.15;color:var(--ink)}
+.card-line{margin-top:28px;max-width:30ch;font-size:var(--step-body);color:var(--muted)}
+.card-bottom{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:40px}
+.credit{font-size:var(--step-small);color:var(--muted);max-width:34ch}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-family:'Work Sans',sans-serif;font-weight:600;font-size:var(--step-body);padding:16px 32px;text-decoration:none;text-align:center}
+.textlink{font-size:var(--step-small);color:var(--ink);text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+/* ---------- sections ---------- */
+section{padding:140px var(--pad) 120px}
+.intro-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.intro-grid h2{grid-column:1/7;font-size:var(--step-head);font-weight:400}
+.intro-note{grid-column:10/13;align-self:end;max-width:260px;font-size:var(--step-body);color:var(--muted)}
+.facts-row{display:flex;justify-content:space-between;gap:32px;margin-top:120px;flex-wrap:wrap}
+.fact{min-width:140px;opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
+.facts-row.in .fact{opacity:1;transform:none}
+.facts-row.in .fact:nth-child(2){transition-delay:.08s}
+.facts-row.in .fact:nth-child(3){transition-delay:.16s}
+.facts-row.in .fact:nth-child(4){transition-delay:.24s}
+.fact b{display:block;font-family:'Anton','Arial Narrow',sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(30px,3vw,44px);line-height:1}
+.fact span{display:block;margin-top:8px;font-size:var(--step-small);color:var(--muted);max-width:20ch}
+/* ---------- the printed menu sheet ---------- */
+.menu-sec{padding-left:0;padding-right:0}
+.sheet{background:var(--surface);width:min(640px,calc(100% - 20px));margin:0 auto;padding:64px 64px 56px;clip-path:polygon(0 14px,5% 4px,10% 14px,15% 4px,20% 14px,25% 4px,30% 14px,35% 4px,40% 14px,45% 4px,50% 14px,55% 4px,60% 14px,65% 4px,70% 14px,75% 4px,80% 14px,85% 4px,90% 14px,95% 4px,100% 14px,100% calc(100% - 14px),95% calc(100% - 4px),90% calc(100% - 14px),85% calc(100% - 4px),80% calc(100% - 14px),75% calc(100% - 4px),70% calc(100% - 14px),65% calc(100% - 4px),60% calc(100% - 14px),55% calc(100% - 4px),50% calc(100% - 14px),45% calc(100% - 4px),40% calc(100% - 14px),35% calc(100% - 4px),30% calc(100% - 14px),25% calc(100% - 4px),20% calc(100% - 14px),15% calc(100% - 4px),10% calc(100% - 14px),5% calc(100% - 4px),0 calc(100% - 14px))}
+.sheet h2{text-align:center;font-size:var(--step-head)}
+.sheet .note{text-align:center;font-size:var(--step-small);color:var(--muted);margin-top:12px}
+.menu-group{margin-top:56px;opacity:0;transform:translateY(16px);transition:opacity .5s ease,transform .5s ease}
+.sheet.in .menu-group{opacity:1;transform:none}
+.sheet.in .menu-group:nth-of-type(2){transition-delay:.1s}
+.sheet.in .menu-group:nth-of-type(3){transition-delay:.2s}
+.menu-group h3{text-align:center;font-size:var(--step-lead);letter-spacing:.02em}
+.menu-group ul{list-style:none;margin-top:20px}
+.menu-group li{margin-top:16px}
+.menu-group li .dish{display:flex;justify-content:space-between;gap:16px;font-size:var(--step-body)}
+.menu-group li .desc{font-size:var(--step-small);color:var(--muted);margin-top:2px}
+.sheet .hours{margin-top:56px;text-align:center}
+.sheet .hours p{font-family:'Anton','Arial Narrow',sans-serif;text-transform:uppercase;font-size:var(--step-lead);line-height:1.3}
+/* ---------- gallery ---------- */
+.gal h2{font-size:var(--step-head);margin-bottom:40px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 12px}
+.tile{background:var(--surface)}
+.tile{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.tiles.in .tile{opacity:1;transform:none}
+.tiles.in .tile:nth-child(2){transition-delay:.06s}
+.tiles.in .tile:nth-child(3){transition-delay:.12s}
+.tiles.in .tile:nth-child(4){transition-delay:.18s}
+.tiles.in .tile:nth-child(5){transition-delay:.24s}
+.tiles.in .tile:nth-child(6){transition-delay:.3s}
+.tiles.in .tile:nth-child(7){transition-delay:.36s}
+.tiles.in .tile:nth-child(8){transition-delay:.42s}
+.tile img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.tile .strip{padding:12px;min-height:84px;font-size:var(--step-small)}
+.tile .strip .r1{display:flex;justify-content:space-between;gap:8px}
+.tile .strip .r2{display:flex;justify-content:space-between;gap:8px;color:var(--muted);margin-top:6px}
+.tile:nth-child(4n+2) .strip{background:var(--ink);color:var(--bg)}
+.tile:nth-child(4n+2) .strip .r2{color:#4a524d}
+.tile:nth-child(4n+3) .strip{background:var(--accent);color:var(--accent-ink)}
+.tile:nth-child(4n+3) .strip .r2{color:#2c3b34}
+/* ---------- contact: clip-out coupon ---------- */
+.coupon{background:var(--accent);color:var(--accent-ink);width:min(100%,1080px);margin:0 auto;position:relative;display:grid;grid-template-columns:46% 54%}
+.coupon::before,.coupon::after{content:"";position:absolute;left:46%;width:28px;height:28px;background:var(--bg);border-radius:50%;transform:translateX(-50%)}
+.coupon::before{top:-14px}
+.coupon::after{bottom:-14px}
+.coupon-left{padding:48px;border-right:5px dotted var(--bg);display:flex;flex-direction:column;justify-content:space-between;min-height:320px}
+.coupon-left h2{font-size:clamp(2rem,1rem + 3vw,3.5rem)}
+.coupon-left p{margin-top:32px;font-size:var(--step-body);max-width:30ch}
+.coupon-right{padding:48px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.act{opacity:0;transform:translateY(12px);transition:opacity .5s ease,transform .5s ease}
+.coupon.in .act{opacity:1;transform:none}
+.coupon.in .act:nth-child(2){transition-delay:.07s}
+.coupon.in .act:nth-child(3){transition-delay:.14s}
+.coupon.in .act:nth-child(4){transition-delay:.21s}
+ .act{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#b3d4c7;color:var(--accent-ink);min-height:52px;padding:12px 16px;text-decoration:none;font-size:var(--step-body);font-weight:600}
+.act span{font-weight:400;font-size:var(--step-small);text-align:right}
+/* ---------- footer ---------- */
+footer{padding:120px var(--pad) 64px;text-align:center}
+.foot-mark{font-family:'Anton','Arial Narrow',sans-serif;text-transform:uppercase;font-size:clamp(56px,14vw,220px);line-height:.9;letter-spacing:-0.01em;color:var(--surface);-webkit-text-stroke:1px var(--muted)}
+footer .meta{margin-top:48px;font-size:var(--step-small);color:var(--muted);max-width:70ch;margin-left:auto;margin-right:auto}
+footer .meta a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:1000px){
+  .hero-inner{flex-direction:column}
+  .hero-photo{max-width:100%;width:100%;max-height:44svh;object-fit:cover;object-position:center 28%}
+  .card{min-height:0;padding:24px;width:min(72%,760px);margin-right:0;margin-top:clamp(-72px,-8svh,-32px)}
+  .card-facts{margin-top:18px}
+  .card-line{margin-top:18px}
+  .card-bottom{margin-top:24px}
+}
+/* ---------- mobile ---------- */
+@media (max-width:760px){
+  .card{width:calc(100% - 32px);min-height:0;padding:24px}
+  .card-top{flex-direction:column;gap:4px}
+  .card-top span{font-size:clamp(30px,9vw,44px)}
+  .card-facts p{font-size:var(--step-lead)}
+  .card-bottom{flex-direction:column;align-items:stretch;gap:16px}
+  .btn{width:100%}
+  section{padding:96px 16px 80px}
+  .intro-grid h2{grid-column:1/13;font-size:11vw}
+  .intro-note{grid-column:1/13;max-width:none;margin-top:24px}
+  .facts-row{display:grid;grid-template-columns:1fr 1fr;row-gap:32px;margin-top:64px}
+  .fact b{font-size:26px}
+  .sheet{padding:28px 20px 24px;width:calc(100% - 20px)}
+  .tiles{grid-template-columns:1fr 1fr;gap:16px 8px}
+  .coupon{grid-template-columns:1fr;width:calc(100% - 24px)}
+  .coupon::before,.coupon::after{left:auto;top:auto}
+  .coupon::before{left:-14px;top:calc(42% - 14px);transform:none}
+  .coupon::after{right:-14px;left:auto;bottom:calc(58% - 14px);transform:none}
+  .coupon-left{border-right:none;border-bottom:5px dotted var(--bg);min-height:0;padding:28px}
+  .coupon-right{padding:28px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+}
+
+/* ---------- motion ---------- */
+@keyframes cardin{from{transform:translateY(32px)}to{transform:none}}
+.rise{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rise.in{opacity:1;transform:none}
+.btn,.act,.textlink{transition:transform .25s ease,opacity .25s ease}
+.btn:hover,.act:hover{transform:translateY(-2px)}
+.card{transition:transform .5s ease,opacity .5s ease;transform-origin:bottom left}
+
+.hero{transition:none}
+@media (prefers-reduced-motion:reduce){
+  .rise,.tile,.fact,.menu-group,.act,.card{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+  .btn,.act,.textlink,.card{transition:none}
+
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-stage">
+    <div class="hero-inner">
+    <img class="hero-photo" src="assets/entrance-today.jpg" alt="The entrance of Vohuman Cafe on Dhole Patil Road today, its sign in Marathi and English over the door" width="1050" height="1400">
+    <div class="card">
+      <h1 class="card-top"><span>Vohuman</span><span>Cafe</span></h1>
+      <p class="card-sub">An Irani cafe on Dhole Patil Road, Pune, open since 1978.</p>
+      <div class="card-facts">
+        <p>Since 1978</p>
+        <p>6 am – 6:30 pm, every day</p>
+        <p>Dhole Patil Road, Pune</p>
+      </div>
+      <p class="card-line">Irani chai, bun maska and the cheese omelette regulars cross the city for.</p>
+      <div class="card-bottom">
+        <p class="credit">An Irani cafe opened by Hormuz Irani in 1978. Photographs from the cafe's public album on Zomato.</p>
+        <a class="btn" href="tel:+919373323263">Call the counter</a>
+        <a class="textlink" href="#menu">Read the board</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="intro">
+  <div class="intro-grid rise">
+    <h2>Open since 1978</h2>
+    <p class="intro-note">Hormuz Irani, "Vohuman Uncle" to regulars, opened this cafe in 1978. The room has barely changed; neither has the recipe.</p>
+  </div>
+  <div class="facts-row rise">
+    <div class="fact"><b>Est. 1978</b><span>Opened by Hormuz Irani</span></div>
+    <div class="fact"><b>6 – 6:30</b><span>Every day, breakfast to early evening</span></div>
+    <div class="fact"><b>4.4 / 5</b><span>3,500+ ratings on Zomato</span></div>
+    <div class="fact"><b>Sangamvadi</b><span>Millennium Star, near Ruby Hall, Pune</span></div>
+  </div>
+</section>
+
+<section class="menu-sec" id="menu">
+  <div class="sheet rise">
+    <h2>Vohuman Cafe</h2>
+    <p class="note">From the board at the counter</p>
+    <div class="menu-group">
+      <h3>Chai &amp; more</h3>
+      <ul>
+        <li><p class="dish"><span>Tea cup</span><span>the house Irani chai</span></p></li>
+        <li><p class="dish"><span>Special tea</span><span>stronger, sweeter</span></p></li>
+        <li><p class="dish"><span>Nescafe</span><span>small or big</span></p></li>
+        <li><p class="dish"><span>Bournvita</span><span>small or big</span></p></li>
+        <li><p class="dish"><span>Milk</span><span>cup or glass</span></p></li>
+        <li><p class="dish"><span>Cream plate</span><span>from the top of the milk</span></p></li>
+      </ul>
+    </div>
+    <div class="menu-group">
+      <h3>Bun &amp; toast</h3>
+      <ul>
+        <li><p class="dish"><span>Bun butter</span><span>the bun maska: soft brun, cold butter</span></p></li>
+        <li><p class="dish"><span>Bun butter jam</span><span>the regular's order</span></p></li>
+        <li><p class="dish"><span>Toast butter</span><span>crisp, salted</span></p></li>
+        <li><p class="dish"><span>Toast butter jam</span><span></span></p></li>
+        <li><p class="dish"><span>Toast butter cheese</span><span></span></p></li>
+        <li><p class="dish"><span>Slice butter</span><span>one slice or two</span></p></li>
+      </ul>
+    </div>
+    <div class="menu-group">
+      <h3>Eggs</h3>
+      <ul>
+        <li><p class="dish"><span>Cheese omelette</span><span>the signature, one egg or two</span></p></li>
+        <li><p class="dish"><span>Omelette</span><span>single or double</span></p></li>
+        <li><p class="dish"><span>Egg burji</span><span>one egg or two, with pav</span></p></li>
+        <li><p class="dish"><span>Egg fry</span><span>one egg or two</span></p></li>
+      </ul>
+    </div>
+    <div class="hours">
+      <p>Open 6 am – 6:30 pm</p>
+      <p>Every day</p>
+    </div>
+  </div>
+</section>
+
+<section class="gal">
+  <h2>On the table</h2>
+  <div class="tiles rise">
+    <figure class="tile"><img src="assets/storefront-heritage.jpg" alt="The original Vohuman Cafe storefront, black and white photograph" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>The old room</span><span>Early days</span></span><span class="r2"><span>Since 1978</span><span>Pune</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/breakfast-overhead.jpg" alt="A breakfast table with bun maska, jam and chai" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Breakfast</span><span>Overhead</span></span><span class="r2"><span>Bun maska</span><span>Jam</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/bun-maska.jpg" alt="Bun maska with jam on a plate" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Bun maska</span><span>Classic</span></span><span class="r2"><span>Soft brun</span><span>Cold butter</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/table-spread.jpg" alt="A table with sandwiches, keema and chai" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Full table</span><span>For two</span></span><span class="r2"><span>Keema</span><span>Chai</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/omelette-chai.jpg" alt="Cheese omelettes with pav and glasses of chai" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Omelette</span><span>Signature</span></span><span class="r2"><span>Cheese</span><span>Pav</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/chai-glasses.jpg" alt="Glasses of Irani chai beside an omelette" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Irani chai</span><span>By the glass</span></span><span class="r2"><span>Strong</span><span>Sweet</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/full-spread.jpg" alt="A full spread of omelettes, pav and chai on a marble table" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>The spread</span><span>Counter side</span></span><span class="r2"><span>Eggs</span><span>Pav</span></span></figcaption></figure>
+    <figure class="tile"><img src="assets/entrance-today.jpg" alt="The Vohuman Cafe entrance and signboard today" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Entrance</span><span>Today</span></span><span class="r2"><span>6 am</span><span>6:30 pm</span></span></figcaption></figure>
+  </div>
+</section>
+
+<section class="contact-sec">
+  <div class="coupon rise">
+    <div class="coupon-left">
+      <h2>Come early, leave full</h2>
+      <p>Millennium Star, Chatrapati Shahu Maharaj Road, near Ruby Hall, Sangamvadi, Pune 411001.</p>
+    </div>
+    <div class="coupon-right">
+      <a class="act" href="tel:+919373323263">Call<span>+91 93733 23263</span></a>
+      <a class="act" href="https://wa.me/919373323263">WhatsApp<span>wa.me/919373323263</span></a>
+      <a class="act" href="mailto:vohumancafe@gmail.com">Email<span>vohumancafe@gmail.com</span></a>
+      <a class="act" href="https://www.google.com/maps/search/?api=1&query=Vohuman+Cafe&query_place_id=ChIJHQkrD1jAwjsReTIzCjxLghc">Directions<span>Google Maps</span></a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="foot-mark">Vohuman</p>
+  <p class="meta">Vohuman Cafe, Dhole Patil Road, Pune. Open 6 am – 6:30 pm every day. Photographs from the cafe's public photo album on <a href="https://www.zomato.com/pune/vohuman-cafe-dhole-patil-road/photos">Zomato</a>. Facts from the cafe's own board, its <a href="https://www.facebook.com/vohumancafe/">Facebook page</a> and its Zomato listing.</p>
+</footer>
+
+<script>
+(function(){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.rise').forEach(function(el){io.observe(el);});
+
+})();
+</script>
+</body>
+</html>
