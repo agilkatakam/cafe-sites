@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amma Mess | Madurai</title>
+<meta name="description" content="Amma Mess is Madurai's famous non veg table. Chettinad food on Alagar Kovil Main Road, Tallakulam. Call +91 98421 45900.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Imbue:wght@400&family=Albert+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #ff7a1f;
+  --paper: #ffffff;
+  --ink: #050f16;
+  --muted: #5a2306;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --radius: 16px;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Albert Sans", sans-serif;
+  font-size: var(--step-body);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; }
+a { color: inherit; }
+h1, h2 { font-family: "Imbue", serif; font-weight: 400; text-transform: uppercase; letter-spacing: -0.01em; line-height: 0.9; }
+
+/* ---------- split stage ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 12px; }
+.leftcol { min-width: 0; }
+.rightcol { position: relative; }
+.photosticky {
+  position: sticky; top: 12px;
+  height: calc(100svh - 24px);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.photosticky img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+.photosticky img.on { opacity: 1; }
+
+/* ---------- hero card ---------- */
+.hero {
+  background: var(--paper);
+  border-radius: var(--radius);
+  min-height: calc(100svh - 24px);
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.stripe {
+  display: flex; height: 56px; flex: none; overflow: hidden;
+}
+.stripe i { flex: 0 0 28px; height: 100%; }
+.stripe i:nth-child(odd) { background: var(--ink); }
+.stripe i:nth-child(even) { background: var(--paper); }
+.hero .cardbody {
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center;
+  padding: 48px 32px 0;
+}
+.hero h1 { font-size: clamp(44px, 5vw, 72px); width: 100%; }
+.hero .headline {
+  font-family: "Imbue", serif; text-transform: uppercase;
+  font-size: clamp(40px, 3.6vw, 56px);
+  line-height: 0.95; letter-spacing: -0.01em;
+  margin-top: 40px;
+}
+.hero .support {
+  font-size: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
+  max-width: 36ch;
+  margin-top: 20px;
+}
+.button {
+  display: block;
+  background: var(--ink); color: var(--bg);
+  font-family: "Albert Sans", sans-serif;
+  font-weight: 500; font-size: var(--step-body);
+  text-decoration: none; text-align: center;
+  padding: 16px 40px;
+  margin-top: 32px;
+  position: relative; overflow: hidden;
+  transition: transform 0.25s ease;
+}
+.bstripe { position: absolute; left: 0; right: 0; bottom: 0; height: 8px; display: flex; overflow: hidden; opacity: 0; transition: opacity 0.25s ease; }
+.bstripe i { flex: 0 0 28px; height: 100%; }
+.bstripe i:nth-child(odd) { background: var(--bg); }
+.bstripe i:nth-child(even) { background: var(--ink); }
+.button:hover .bstripe, .button:focus-visible .bstripe { opacity: 1; }
+.button:hover { transform: translateY(-2px); }
+.hero .links {
+  display: flex; gap: 32px; justify-content: center;
+  padding: 28px 0 28px; margin-top: auto;
+  font-size: var(--step-small);
+}
+.hero .links a { text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- intro ---------- */
+.intro {
+  background: var(--paper);
+  padding: 96px 64px 160px;
+}
+.intro h2, .dishes h2 { font-size: clamp(32px, 3.4vw, 48px); margin-bottom: 48px; }
+.intro .narrow { max-width: 330px; }
+.intro p { font-size: 16px; line-height: 1.5; margin-bottom: 1em; }
+.intro p.first { font-weight: 500; }
+.intro p:not(.first) { color: var(--muted); }
+
+/* ---------- dishes ---------- */
+.dishes {
+  background: var(--paper);
+  padding: 0 64px 128px;
+}
+.dish { border: 0; background: none; font: inherit; color: inherit; text-align: left; width: 100%; cursor: pointer; display: block; }
+.dish .rowtop {
+  display: flex; justify-content: space-between; align-items: baseline;
+  min-height: 58px; padding: 14px 0;
+  gap: 16px;
+}
+.dish .name { font-size: clamp(20px, 1.6vw, 24px); color: var(--muted); transition: color 0.25s ease; font-weight: 400; }
+.dish .tag { font-size: 15px; color: var(--muted); flex: none; }
+.dish.active .name { color: var(--ink); font-weight: 500; }
+.dish .desc {
+  display: block;
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 15px; line-height: 1.5; color: var(--ink);
+  max-width: 34ch;
+}
+.dish.active .desc { max-height: 120px; padding-bottom: 14px; }
+
+/* ---------- gallery ---------- */
+.gallery {
+  min-height: 100svh;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 20vh 24px;
+  gap: 0;
+}
+.gallery h2 { font-size: clamp(32px, 3.4vw, 48px); margin-bottom: 48px; text-align: center; }
+.frame {
+  position: relative;
+  width: min(40vw, 420px);
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+}
+.frame img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.frame img.on { opacity: 1; }
+.caption { position: relative; height: 1.6em; margin-top: 16px; width: 100%; text-align: center; }
+.caption span {
+  position: absolute; left: 0; right: 0;
+  font-size: 14px; color: var(--ink);
+  opacity: 0; transition: opacity 0.6s ease;
+}
+.caption span.on { opacity: 1; }
+
+/* ---------- contact ---------- */
+.contact { position: relative; }
+.contact .backdrop { position: relative; height: 100svh; overflow: hidden; }
+.contact .backdrop img { width: 100%; height: 100%; object-fit: cover; }
+.visit {
+  position: absolute; top: 60px; right: 60px;
+  width: 380px;
+  background: var(--paper);
+  border-radius: var(--radius);
+  padding: 32px 32px 0;
+}
+.visit h2 { font-size: 28px; text-transform: none; letter-spacing: 0; font-family: "Imbue", serif; }
+.visit .addr { font-size: 16px; margin-top: 16px; }
+.visit .phone { font-size: 16px; margin-top: 12px; font-weight: 500; }
+.visit .mail { font-size: 16px; margin-top: 4px; }
+.visit .mail a { text-decoration: underline; text-underline-offset: 3px; }
+.visit .button { width: calc(100% + 64px); margin: 28px 0 0 -32px; padding: 16px 0; height: 52px; }
+
+/* ---------- footer ---------- */
+.footstripe { height: 8px; display: flex; overflow: hidden; }
+.footstripe i { flex: 0 0 28px; height: 100%; }
+.footstripe i:nth-child(odd) { background: var(--ink); }
+.footstripe i:nth-child(even) { background: var(--bg); }
+footer { padding: 30vh 24px 30px; }
+.footgrid {
+  display: grid; grid-template-columns: 1fr auto 1fr; align-items: baseline;
+  font-size: var(--step-small);
+}
+.footgrid .what { color: var(--muted); }
+.footgrid .mid { display: flex; gap: 24px; }
+.footgrid .mid a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.footgrid .right { text-align: right; color: var(--muted); }
+.credits { margin-top: 10px; font-size: 14px; color: var(--muted); }
+
+/* ---------- reveal ---------- */
+.reveal { transform: translateY(18px); transition: transform 0.7s ease; }
+.reveal.in { transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transform: none; transition: none; }
+  .photosticky img, .frame img, .caption span { transition: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ---------- phone ---------- */
+@media (max-width: 860px) {
+  .split { display: flex; flex-direction: column; padding: 12px; gap: 0; }
+  .rightcol { order: -1; }
+  .photosticky { position: relative; top: 0; height: 48svh; }
+  .hero { min-height: 0; margin-top: -24px; }
+  .stripe { height: 40px; }
+  .hero .cardbody { padding: 40px 20px 0; }
+  .hero h1 { font-size: clamp(40px, 11vw, 56px); }
+  .hero .headline { font-size: 8vw; margin-top: 32px; }
+  .hero .links { flex-wrap: wrap; gap: 18px; padding: 24px 0; }
+  .intro { padding: 72px 20px 96px; }
+  .intro .narrow { max-width: 78%; }
+  .dishes { padding: 0 20px 96px; }
+  .dish .rowtop { min-height: 56px; }
+  .gallery { min-height: 0; padding: 96px 20px; }
+  .frame { width: 72vw; }
+  .contact .backdrop { height: 70svh; }
+  .visit {
+    position: relative; top: auto; right: auto;
+    width: auto; margin: -80px 16px 0;
+    padding: 28px 24px 0;
+  }
+  .visit .button { width: calc(100% + 48px); margin-left: -24px; height: 56px; }
+  footer { padding: 20vh 20px 24px; }
+  .footgrid { grid-template-columns: 1fr; gap: 8px; }
+  .footgrid .right { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<div class="split">
+  <div class="leftcol">
+
+    <section class="hero" id="top">
+      <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="cardbody">
+        <h1>Amma Mess</h1>
+        <p class="headline">Madurai's famous<br>meat mess</p>
+        <p class="support">Chettinad non veg on Alagar Kovil Main Road, Tallakulam. Serving Madurai since 1992.</p>
+        <a class="button" href="tel:+919842145900">Call the mess<span class="bstripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></a>
+      </div>
+      <nav class="links">
+        <a href="#dishes">The dishes</a>
+        <a href="#find">Find us</a>
+        <a href="mailto:ammamessmadurai@gmail.com">Email</a>
+      </nav>
+    </section>
+
+    <section class="intro" id="story">
+      <h2 class="reveal">The story</h2>
+      <div class="narrow">
+        <p class="first reveal">Amma Mess is Madurai's famous non veg table. It serves Chettinad food on Alagar Kovil Main Road in Tallakulam, with a second room in KK Nagar.</p>
+        <p class="reveal">The story begins in 1936, when Manickam, a cook returned from Burma, and his wife Amma Thai started a street stall with no name and no menu in Tallakulam.</p>
+        <p class="reveal">In 1992 their son Senthilvel and his wife Sumathi broke off from the family business to start Amma Mess. It has been Madurai's meat landmark since.</p>
+        <p class="reveal">The card runs wide: chicken, mutton, fish, crab and prawn, and game like quail, rabbit, pigeon and turkey.</p>
+        <p class="reveal">Ask anyone what to order first. They will say the bone marrow omelette.</p>
+      </div>
+    </section>
+
+    <section class="dishes" id="dishes">
+      <h2 class="reveal">The dishes</h2>
+      <div class="dishlist">
+        <button class="dish active" data-photo="1">
+          <span class="rowtop"><span class="name">Bone marrow omelette</span><span class="tag">signature</span></span>
+          <span class="desc">The omelette that made Amma Mess famous, cooked rich with bone marrow.</span>
+        </button>
+        <button class="dish" data-photo="2">
+          <span class="rowtop"><span class="name">Pallipalayam chicken</span><span class="tag">chicken</span></span>
+          <span class="desc">Chicken curry in the Pallipalayam style, a house special.</span>
+        </button>
+        <button class="dish" data-photo="1">
+          <span class="rowtop"><span class="name">Mudhal Mariyaadai meen kuzhambu</span><span class="tag">fish</span></span>
+          <span class="desc">The fish curry whose name means first respect.</span>
+        </button>
+        <button class="dish" data-photo="2">
+          <span class="rowtop"><span class="name">Nalli mutton roast</span><span class="tag">mutton</span></span>
+          <span class="desc">Mutton marrow bones, roasted dry.</span>
+        </button>
+        <button class="dish" data-photo="1">
+          <span class="rowtop"><span class="name">Kaadai 65</span><span class="tag">quail</span></span>
+          <span class="desc">Quail fried crisp in the 65 style.</span>
+        </button>
+        <button class="dish" data-photo="2">
+          <span class="rowtop"><span class="name">Rabbit roast</span><span class="tag">rabbit</span></span>
+          <span class="desc">Rabbit roast, from the game side of the card.</span>
+        </button>
+        <button class="dish" data-photo="1">
+          <span class="rowtop"><span class="name">Crab roast</span><span class="tag">crab</span></span>
+          <span class="desc">Crab, roasted dry.</span>
+        </button>
+        <button class="dish" data-photo="2">
+          <span class="rowtop"><span class="name">Chicken 65 biryani</span><span class="tag">biryani</span></span>
+          <span class="desc">Biryani built on a bed of Chicken 65.</span>
+        </button>
+      </div>
+    </section>
+
+  </div>
+  <div class="rightcol">
+    <div class="photosticky" id="photosticky">
+      <img src="assets/storefront.jpg" width="635" height="715" alt="The red Amma Mess fascia on Alagar Kovil Main Road" class="on">
+      <img src="assets/leaf-meal.jpg" width="1400" height="1867" alt="A banana leaf meal at Amma Mess with fish, omelette and chicken">
+      <img src="assets/parotta.jpg" width="1400" height="2490" alt="Parotta with two gravies on a banana leaf">
+    </div>
+  </div>
+</div>
+
+<section class="gallery" id="gallery">
+  <h2 class="reveal">From the counter</h2>
+  <div class="frame reveal" id="galframe">
+    <img src="assets/storefront.jpg" width="635" height="715" alt="The red Amma Mess fascia" class="on">
+    <img src="assets/leaf-meal.jpg" width="1400" height="1867" alt="A banana leaf meal with fish fry, omelette and chicken">
+    <img src="assets/parotta.jpg" width="1400" height="2490" alt="Parotta torn open beside two gravies">
+    <img src="assets/menu-card.jpg" width="1400" height="1867" alt="The Amma Mess menu card, printed in Tamil">
+    <img src="assets/interior.jpg" width="1400" height="788" alt="Inside the Tallakulam dining room">
+    <img src="assets/temple.jpg" width="1400" height="1866" alt="Meenakshi Amman Temple and its golden lotus tank in Madurai">
+  </div>
+  <div class="caption" id="galcaption">
+    <span class="on">The fascia on Alagar Kovil Road</span>
+    <span>A full leaf, rice and the day's curries</span>
+    <span>Parotta with salna</span>
+    <span>The card, in Tamil</span>
+    <span>Inside the Tallakulam room</span>
+    <span>Meenakshi Amman Temple, a walk away</span>
+  </div>
+</section>
+
+<section class="contact" id="find">
+  <div class="backdrop">
+    <img src="assets/storefront.jpg" width="635" height="715" alt="The red Amma Mess fascia and its counter on Alagar Kovil Main Road" style="object-position: center 62%;">
+  </div>
+  <div class="visit reveal">
+    <h2>Find us</h2>
+    <p class="addr">136, Alagar Kovil Main Road<br>Tallakulam, Madurai 625002</p>
+    <p class="phone">+91 98421 45900</p>
+    <p class="mail"><a href="mailto:ammamessmadurai@gmail.com">ammamessmadurai@gmail.com</a></p>
+    <a class="button" href="tel:+919842145900">Call the mess<span class="bstripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></a>
+  </div>
+</section>
+
+<div class="footstripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<footer>
+  <div class="footgrid">
+    <span class="what">A mess in Madurai</span>
+    <span class="mid">
+      <a href="tel:+919842145900">Call</a>
+      <a href="mailto:ammamessmadurai@gmail.com">Email</a>
+      <a href="#top">Top</a>
+    </span>
+    <span class="right">&copy; 2026</span>
+  </div>
+  <p class="credits">Temple photo: George Dagerotip on Unsplash</p>
+</footer>
+
+<script>
+(function () {
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Sticky photo crossfade: sections choose the base image, dish rows override.
+  var stickyImgs = document.querySelectorAll("#photosticky img");
+  function showSticky(i) {
+    stickyImgs.forEach(function (im, j) { im.classList.toggle("on", j === i); });
+  }
+  var dishes = document.querySelectorAll(".dish");
+  dishes.forEach(function (d) {
+    function activate() {
+      dishes.forEach(function (x) { x.classList.remove("active"); });
+      d.classList.add("active");
+      showSticky(parseInt(d.getAttribute("data-photo"), 10));
+    }
+    d.addEventListener("mouseenter", activate);
+    d.addEventListener("focus", activate);
+    d.addEventListener("click", activate);
+  });
+  var sectionPhoto = [["top", 0], ["story", 0], ["dishes", 1]];
+  if ("IntersectionObserver" in window && !reduced) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          for (var k = 0; k < sectionPhoto.length; k++) {
+            if (sectionPhoto[k][0] === e.target.id) showSticky(sectionPhoto[k][1]);
+          }
+        }
+      });
+    }, { threshold: 0.4 });
+    sectionPhoto.forEach(function (sp) {
+      var el = document.getElementById(sp[0]);
+      if (el) io.observe(el);
+    });
+  }
+
+  // Gallery: one frame, contents change. Tap advances. Pauses when tab hidden.
+  var fimgs = document.querySelectorAll("#galframe img");
+  var caps = document.querySelectorAll("#galcaption span");
+  var gi = 0, timer = null;
+  function gshow(n) {
+    gi = (n + fimgs.length) % fimgs.length;
+    fimgs.forEach(function (im, j) { im.classList.toggle("on", j === gi); });
+    caps.forEach(function (c, j) { c.classList.toggle("on", j === gi); });
+  }
+  function gnext() { gshow(gi + 1); }
+  function start() { if (!reduced && !timer) timer = setInterval(gnext, 3000); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+  document.getElementById("galframe").addEventListener("click", function () { gnext(); stop(); start(); });
+  document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
+  start();
+
+  // Entrances, transform only.
+  var revs = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window && !reduced) {
+    var rio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); rio.unobserve(e.target); }
+      });
+    }, { threshold: 0.2 });
+    revs.forEach(function (r) { rio.observe(r); });
+  } else {
+    revs.forEach(function (r) { r.classList.add("in"); });
+  }
+})();
+</script>
+</body>
+</html>
