@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tsuki | Pan-Asian restaurant, Koregaon Park, Pune</title>
+<meta name="description" content="Tsuki is a pan-Asian restaurant in a glasshouse on Lane 7, Koregaon Park, Pune. Sushi, dim sum, robata grill and a full bar. Dinner daily, lunch Friday to Sunday. Call +91 91721 14339.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f9f8; --surface:#ebf0ee; --ink:#06525c; --muted:#2f737d; --accent:#06525c; --accent-ink:#f7f9f8;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --r:14px; --pad:clamp(24px,4.5vw,64px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,.display{font-family:'Young Serif',Georgia,serif;font-weight:400;letter-spacing:-0.02em;line-height:0.95}
+
+/* ---------- layout: the split stage ---------- */
+.stage{position:sticky;top:0;height:100svh;width:50%;float:left;overflow:hidden;background:var(--ink)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.stage img.on{opacity:1}
+.stage .clock{position:absolute;left:24px;bottom:24px;z-index:3;background:var(--bg);border-radius:999px;padding:8px 16px;font-size:var(--step-small);display:flex;align-items:center;gap:8px;color:var(--ink)}
+.stage .clock i{width:8px;height:8px;border-radius:50%;background:var(--muted);display:inline-block}
+.stage .clock.open i{background:#2e7d32;animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.5);opacity:.55}}
+.column{margin-left:50%;width:50%;padding:0 var(--pad)}
+.column section{max-width:52ch}
+
+/* ---------- intro ---------- */
+.intro{padding:clamp(56px,9vh,110px) 0 0}
+.wordmark{font-family:'Young Serif',Georgia,serif;font-size:clamp(2.6rem,4.2vw,3.6rem);letter-spacing:-0.02em;line-height:0.95}
+.hero-head{font-size:var(--step-head);margin:22px 0 26px;max-width:16ch}
+.hero-head em{font-style:normal;color:var(--muted)}
+.intro-note{font-size:var(--step-body);max-width:42ch}
+.intro-note + .intro-note{margin-top:14px}
+.facts{margin:56px 0 0;display:flex;flex-direction:column;gap:14px;padding-bottom:clamp(60px,9vh,110px)}
+.fact{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.fact .f{font-family:'Young Serif',Georgia,serif;font-size:var(--step-lead);letter-spacing:-0.01em}
+.fact .n{font-size:var(--step-small);color:var(--muted);text-align:right}
+
+/* ---------- section headings ---------- */
+section h2{font-size:clamp(1.75rem,1.4rem + 1.4vw,2.5rem);margin-bottom:34px}
+section{padding:clamp(64px,10vh,120px) 0 0}
+
+.btn{display:inline-block;background:var(--ink);color:var(--accent-ink);font-family:'Young Serif',Georgia,serif;font-size:var(--step-body);text-decoration:none;padding:0 28px;height:52px;line-height:52px;border-radius:10px;transition:transform .3s cubic-bezier(.22,.8,.26,.99),background .3s}
+.btn:hover{transform:translateY(-2px);background:var(--muted)}
+
+/* ---------- menu list: two-ended rows ---------- */
+.mgroup{margin-top:88px}
+.mgroup:first-of-type{margin-top:0}
+.mgroup h3{font-size:var(--step-lead);margin-bottom:18px}
+.mrow{display:flex;justify-content:space-between;gap:18px;align-items:baseline;padding:11px 0;transition:transform .3s ease}
+.mrow:hover{transform:translateX(6px)}
+.mrow .d{max-width:34ch}
+.mrow .d small{display:block;font-family:'Source Serif 4',Georgia,serif;font-size:1rem;color:var(--muted);margin-top:2px;line-height:1.45}
+.mrow .p{font-family:'Young Serif',Georgia,serif;font-size:var(--step-body);white-space:nowrap}
+.mtag{font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- gallery: one frame, contents change ---------- */
+.frame{margin-top:6px;border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:4/3;background:var(--surface)}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s ease}
+.frame img.on{opacity:1}
+.frame .cap{position:absolute;left:14px;bottom:14px;background:var(--bg);border-radius:999px;padding:7px 14px;font-size:var(--step-small);transition:opacity .4s}
+.frame .nav{position:absolute;right:14px;bottom:14px;display:flex;gap:8px}
+.frame .nav button{width:40px;height:40px;border-radius:50%;border:0;background:var(--bg);color:var(--ink);font-size:1.05rem;cursor:pointer;transition:transform .25s ease,background .25s ease}
+.frame .nav button:hover{transform:scale(1.12);background:var(--surface)}
+@media (prefers-reduced-motion:reduce){.stage img,.frame img{transition:none}.stage .clock.open i{animation:none}}
+
+/* ---------- contact ---------- */
+.contact p.sentence{font-family:'Young Serif',Georgia,serif;font-size:var(--step-lead);line-height:1.3;max-width:26ch}
+.portrait{margin:40px 0;border-radius:var(--r);overflow:hidden}
+.portrait img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+.clinks{display:flex;flex-direction:column;gap:16px;font-size:var(--step-lead);font-family:'Young Serif',Georgia,serif}
+.clinks a{position:relative;width:fit-content;text-decoration:none;transition:color .25s}
+.clinks a::after{content:"";position:absolute;left:0;bottom:-3px;height:2px;width:100%;background:currentColor;transform:scaleX(.35);transform-origin:left;transition:transform .3s ease}
+.clinks a:hover::after{transform:scaleX(1)}
+.hoursline{margin-top:34px;font-size:1rem;color:var(--ink);line-height:1.7}
+.hoursline b{color:var(--ink);font-weight:600}
+
+/* ---------- footer: photo half, menu half ---------- */
+.footer{clear:both;display:grid;grid-template-columns:1fr 1fr;min-height:100svh;margin-top:clamp(70px,11vh,130px)}
+.footer .fphoto{position:relative;overflow:hidden}
+.footer .fphoto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.footer .fmenu{background:var(--ink);color:var(--bg);padding:64px var(--pad) 28px;display:flex;flex-direction:column}
+.footer .fword{font-family:'Young Serif',Georgia,serif;font-size:1.35rem;margin-bottom:44px}
+.flinks{display:flex;flex-direction:column;gap:28px}
+.flinks a{font-family:'Young Serif',Georgia,serif;font-size:clamp(1.5rem,2.6vw,2.2rem);letter-spacing:-0.02em;text-decoration:none;width:fit-content;transition:transform .3s ease,opacity .3s ease}
+.flinks:hover a{opacity:.45}
+.flinks a:hover{opacity:1;transform:translateX(12px)}
+.fcontact{margin-top:56px;display:flex;gap:40px;font-size:15px;line-height:1.7}
+.fcontact div{max-width:22ch}
+.fcontact a{text-decoration:none;border-bottom:2px solid currentColor}
+.legal{margin-top:auto;padding-top:40px;font-size:var(--step-small);opacity:.65}
+
+/* ---------- rise ---------- */
+.rise{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.rise.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rise{opacity:1;transform:none;transition:none}}
+
+@media (max-width:600px){
+  .intro-note.second{display:none}
+}
+
+/* ---------- phone ---------- */
+@media (max-width:900px){
+  .stage{position:relative;float:none;width:100%;height:44svh;z-index:1}
+  .column{margin-left:0;width:100%;background:var(--bg);position:relative;z-index:2;border-radius:var(--r) var(--r) 0 0;margin-top:-40px;padding-top:20px}
+  .column section{max-width:none}
+  .footer{grid-template-columns:1fr;min-height:0}
+  .footer .fphoto{height:50svh}
+  .fcontact{flex-direction:column;gap:22px}
+  .mrow:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="stage" id="stage" aria-hidden="true">
+  <img src="assets/room-day.jpg" alt="" class="on" data-pane="intro">
+  <img src="assets/room-evening.jpg" alt="" data-pane="menu">
+  <img src="assets/room-dusk.jpg" alt="" data-pane="gallery">
+  <img src="assets/room-glass.jpg" alt="" data-pane="visit">
+  <div class="clock" id="clock"><i></i><span id="clockText">…</span></div>
+</div>
+
+<main class="column">
+
+  <section class="intro" id="intro" data-stage="intro">
+    <div class="wordmark rise">Tsuki</div>
+    <h1 class="hero-head rise">Dinner in a <em>glasshouse</em>.</h1>
+    <p class="rise" style="margin:0 0 26px"><a class="btn" href="tel:+919172114339">Call to book a table</a></p>
+    <p class="intro-note rise">Tsuki is a pan-Asian restaurant in Koregaon Park, Pune. Thai curries, Cantonese dim sum, sushi and a charcoal robata grill, served in a plant-filled conservatory with a full bar.</p>
+    <p class="intro-note second rise">Evenings are dinner-only; lunch runs Friday to Sunday. The room glows after dark, which is very much the point.</p>
+        <div class="facts">
+      <div class="fact rise"><span class="f">4.6 of 5</span><span class="n">1,137 Google reviews</span></div>
+      <div class="fact rise"><span class="f">₹4,000 for two</span><span class="n">dinner, without alcohol</span></div>
+      <div class="fact rise"><span class="f">7:00-11:30 PM</span><span class="n">kitchen, every day</span></div>
+      <div class="fact rise"><span class="f">Lane 7</span><span class="n">Koregaon Park, Pune</span></div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu" data-stage="menu">
+    <h2 class="rise">The menu.</h2>
+
+    <div class="mgroup rise">
+      <h3>Dim sum and baos</h3>
+      <div class="mrow"><span class="d">Veg Crystal Dumpling <small>assorted vegetables, cilantro, sesame oil, crystal skin</small></span><span class="p">₹725</span></div>
+      <div class="mrow"><span class="d">Truffle and Edamame Dumpling <small>earthy truffle, sweet edamame, water chestnut</small></span><span class="p">₹875</span></div>
+      <div class="mrow"><span class="d">Har Gau <small>classic shrimp dumpling, bamboo shoot, sesame oil</small></span><span class="p">₹750</span></div>
+      <div class="mrow"><span class="d">Three Chilli Chicken Dumpling <small>king, Thai and banana chilli <span class="mtag">· spicy</span></small></span><span class="p">₹750</span></div>
+      <div class="mrow"><span class="d">Prawns Blue Pea Dumpling <small>chilli crispy, celery, coriander stem</small></span><span class="p">₹825</span></div>
+    </div>
+
+    <div class="mgroup rise">
+      <h3>Sushi</h3>
+      <div class="mrow"><span class="d">Sake Nigiri <small>Norwegian salmon over seasoned rice, two pieces</small></span><span class="p">₹550</span></div>
+      <div class="mrow"><span class="d">Aburi Sake Nigiri <small>salmon torched for a smoky, caramelised edge</small></span><span class="p">₹650</span></div>
+      <div class="mrow"><span class="d">Hotate Nigiri <small>sweet Hokkaido scallop</small></span><span class="p">₹825</span></div>
+      <div class="mrow"><span class="d">Norwegian Roll <small>salmon, avocado, cream cheese, tobiko, spring onion</small></span><span class="p">₹1,200</span></div>
+      <div class="mrow"><span class="d">Tsuki Special California Roll <small>crabstick, avocado, wasabi mayo, orange tobiko</small></span><span class="p">₹875</span></div>
+      <div class="mrow"><span class="d">Avo Yuzu Roll <small>avocado, cream cheese, yuzu-kosho, wasabi</small></span><span class="p">₹825</span></div>
+    </div>
+
+    <div class="mgroup rise">
+      <h3>Robata grill</h3>
+      <div class="mrow"><span class="d">Chicken Yakitori Skewer <small>charcoal grilled, teriyaki, togarashi</small></span><span class="p">₹650</span></div>
+      <div class="mrow"><span class="d">Robatayaki Prawn <small>buttery miso yuzu, shimi furikake</small></span><span class="p">₹775</span></div>
+      <div class="mrow"><span class="d">Tenderloin Skewer <small>Thai-style marinade, spicy tamarind dip</small></span><span class="p">₹725</span></div>
+      <div class="mrow"><span class="d">Isaan Grilled Pork <small>Belgian pork belly, house Thai marinade</small></span><span class="p">₹850</span></div>
+    </div>
+
+    <div class="mgroup rise">
+      <h3>Mains and curries</h3>
+      <div class="mrow"><span class="d">Thai Green Curry <small>zucchini, Thai aubergine, basil <span class="mtag">· vegan</span></small></span><span class="p">₹925</span></div>
+      <div class="mrow"><span class="d">Sichuan Mapo Tofu <small>silken tofu, Sichuan peppercorn, chilli oil <span class="mtag">· spicy</span></small></span><span class="p">₹775</span></div>
+      <div class="mrow"><span class="d">Chicken Japanese Katsu Curry <small>crispy panko chicken, mellow curry, potato, carrot</small></span><span class="p">₹1,050</span></div>
+      <div class="mrow"><span class="d">Thai Chilli Prawns <small>bell pepper, mushroom, Thai chilli paste</small></span><span class="p">₹875</span></div>
+      <div class="mrow"><span class="d">Black Bean Chicken <small>wok fried, house chilli black bean sauce</small></span><span class="p">₹825</span></div>
+    </div>
+
+    <div class="mgroup rise">
+      <h3>Rice and noodles</h3>
+      <div class="mrow"><span class="d">Dan Dan Noodles <small>sesame-rich, minced vegetables, Sichuan peppercorn <span class="mtag">· spicy</span></small></span><span class="p">₹825</span></div>
+      <div class="mrow"><span class="d">Yaki Soba Noodles <small>buckwheat, teppanyaki garlic butter</small></span><span class="p">₹750</span></div>
+      <div class="mrow"><span class="d">Truffle Edamame Fried Rice <small>teriyaki-glazed, truffle oil finish</small></span><span class="p">₹825</span></div>
+      <div class="mrow"><span class="d">Kao Phad Kra Prow <small>Thai basil fried rice, zucchini, broccoli <span class="mtag">· vegan</span></small></span><span class="p">₹775</span></div>
+    </div>
+
+    <div class="mgroup rise">
+      <h3>To finish</h3>
+      <div class="mrow"><span class="d">Nama Chocolate <small>silky Callebaut chocolate, whiskey note, flaky sea salt</small></span><span class="p">₹775</span></div>
+      <div class="mrow"><span class="d">Mango Sticky Rice <small>glutinous sticky rice, sweet-tart mango, in season</small></span><span class="p">seasonal</span></div>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery" data-stage="gallery">
+    <h2 class="rise">The room.</h2>
+    <div class="frame rise" data-ui>
+      <img src="assets/room-teal.jpg" alt="Rattan chairs and tables among plants inside Tsuki's conservatory dining room" class="on">
+      <img src="assets/food-table.jpg" alt="Edamame, crystal dumplings and a green curry on a wooden table">
+      <img src="assets/food-crudo.jpg" alt="A plate of sliced crudo with citrus and herbs">
+      <img src="assets/room-window.jpg" alt="The glasshouse dining room in the evening, lamps lit">
+      <span class="cap" id="frameCap">The conservatory, afternoon</span>
+      <div class="nav">
+        <button type="button" id="prevBtn" aria-label="Previous photograph">←</button>
+        <button type="button" id="nextBtn" aria-label="Next photograph">→</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="visit" data-stage="visit">
+    <h2 class="rise">Come for dinner.</h2>
+    <p class="sentence rise">Above The Daily All Day, opposite Sanskriti, on Lane 7, the glass box with the plants.</p>
+    <div class="portrait rise"><img src="assets/pour.jpg" alt="A cocktail being poured over a large ice cube at the bar"></div>
+    <div class="clinks rise">
+      <a href="tel:+919172114339">Call +91 91721 14339</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=TSUKI+%3A+Asian+Restaurant&amp;query_place_id=ChIJw3mzMdzBwjsRnl0VghkVCaI" target="_blank" rel="noopener">Get directions</a>
+    </div>
+    <p class="hoursline rise"><b>Monday-Thursday</b> · 7:00-11:30 PM<br><b>Friday-Sunday</b> · 12:00-3:00 PM and 7:00-11:30 PM<br>7, A Lane, Ashok Chakra Society, Vasani Nagar, Koregaon Park, Pune 411001</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="fphoto"><img src="assets/room-bar.jpg" alt="Tsuki's bar counter among hanging plants and warm lamps"></div>
+  <div class="fmenu">
+    <div class="fword">Tsuki</div>
+    <nav class="flinks">
+      <a href="#menu">Menu</a>
+      <a href="#gallery">The room</a>
+      <a href="#visit">Visit us</a>
+      <a href="mailto:guapohospitality@gmail.com">Email</a>
+      <a href="https://www.instagram.com/tsuki_pune" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/p/Tsuki-Pune-100086801103172/" target="_blank" rel="noopener">Facebook</a>
+    </nav>
+    <div class="fcontact">
+      <div>7, A Lane, Ashok Chakra Society, Vasani Nagar, Koregaon Park, Pune 411001</div>
+      <div><a href="tel:+919172114339">+91 91721 14339</a><br><a href="mailto:guapohospitality@gmail.com">guapohospitality@gmail.com</a></div>
+    </div>
+    <p class="legal">© 2026 Tsuki, Koregaon Park · FSSAI Lic. No. 11522079000052 · Photographs from the restaurant's own Swiggy Dineout and Zomato galleries</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // stage crossfade: image follows the section in view
+  var panes=[].slice.call(document.querySelectorAll('.stage img'));
+  var secs=[].slice.call(document.querySelectorAll('[data-stage]'));
+  var cur='intro';
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ cur=e.target.getAttribute('data-stage'); swap(); } });
+  },{rootMargin:'-45% 0px -45% 0px'});
+  secs.forEach(function(s){io.observe(s);});
+  function swap(){
+    panes.forEach(function(im){ im.classList.toggle('on', im.getAttribute('data-pane')===cur); });
+  }
+  // rise-in
+  var rio=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); rio.unobserve(e.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.rise').forEach(function(el){rio.observe(el);});
+
+  // gallery frame
+  var fimgs=[].slice.call(document.querySelectorAll('.frame img'));
+  var caps=['The conservatory, afternoon','The table, served','Crudo, citrus, herbs','The room after dark'];
+  var fi=0, cap=document.getElementById('frameCap'), ftimer=null;
+  function show(n){
+    fi=(n+fimgs.length)%fimgs.length;
+    fimgs.forEach(function(im,i){im.classList.toggle('on',i===fi);});
+    cap.textContent=caps[fi];
+  }
+  function auto(){ ftimer=setInterval(function(){ if(!document.hidden) show(fi+1); },5600); }
+  document.getElementById('nextBtn').addEventListener('click',function(){clearInterval(ftimer);show(fi+1);auto();});
+  document.getElementById('prevBtn').addEventListener('click',function(){clearInterval(ftimer);show(fi-1);auto();});
+  auto();
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)');
+  if(rm.matches){clearInterval(ftimer);}
+
+  // open/closed clock (IST)
+  function tick(){
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var d=now.getDay(), m=now.getHours()*60+now.getMinutes();
+    var lunch=(d===0||d===5||d===6) && m>=720 && m<900;
+    var dinner=m>=1140 && m<1410;
+    var el=document.getElementById('clock'), t=document.getElementById('clockText');
+    if(lunch){el.classList.add('open');t.textContent='Open for lunch · till 3 PM';}
+    else if(dinner){el.classList.add('open');t.textContent='Open for dinner · till 11:30 PM';}
+    else{el.classList.remove('open');t.textContent=(d===0||d===5||d===6)&&m<720?'Opens 12 PM today':'Opens 7 PM today';}
+  }
+  tick(); setInterval(tick,60000);
+})();
+</script>
+</body>
+</html>
