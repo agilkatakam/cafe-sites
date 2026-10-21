@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lea Droit Café · Grills, Pastas & Coffee in Heritage Town, Puducherry</title>
+<meta name="description" content="Lea Droit Café on Sri Aurobindo Street, Heritage Town, Puducherry: grilled specials, pastas, sandwiches, fresh juices, teas and coffee in a cozy room. Call +91 91235 04783.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f0f0f; --surface:#1a1a1a; --ink:#ffffff; --muted:#9a9a9a;
+  --accent:#dafa9c; --accent-ink:#0f0f0f;
+  --face:'Albert Sans',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--face);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* hero */
+.hero{position:relative;padding:26px 6vw 14vh;overflow:hidden}
+.hero-links{display:flex;justify-content:space-between;align-items:center;gap:20px;position:relative;z-index:5}
+.hero-links .nl{display:flex;gap:30px}
+.hero-links a{font:600 15px/1 var(--face);text-decoration:underline;text-underline-offset:4px}
+.hero-links a.act{background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:15px 22px;border-radius:999px;transition:background .25s}
+.hero-links a.act:hover{background:var(--ink)}
+.orb{position:absolute;right:-25vw;top:-12vh;width:80vw;height:80vw;max-width:1100px;max-height:1100px;border-radius:50%;z-index:1;overflow:hidden}
+.orb img{width:100%;height:100%;object-fit:cover}
+.hero h1{position:relative;z-index:4;font:600 clamp(64px,11vw,168px)/0.95 var(--face);letter-spacing:-0.035em;margin-top:13vh;max-width:9ch}
+.hero h1 .dot{color:var(--accent)}
+.hero-row{position:relative;z-index:4;margin-top:30px}
+.hero-sub{max-width:32ch;font-size:20px;line-height:1.5;color:var(--ink)}
+.hero-sub b{font-weight:600;color:var(--accent)}
+.hero-tag{margin-top:16px;max-width:40ch;color:var(--muted);font:600 16px/1.5 var(--face);letter-spacing:-0.01em}
+
+/* intro */
+.section{padding:110px 6vw;max-width:1500px;margin:0 auto}
+.statement{font:600 clamp(28px,3.3vw,46px)/1.2 var(--face);letter-spacing:-0.03em;max-width:none}
+.statement .th{display:inline-block;width:1.5em;height:1.5em;border-radius:50%;overflow:hidden;vertical-align:-0.34em;margin:0 .08em}
+.statement .th img{width:100%;height:100%;object-fit:cover}
+.intro-body{margin-top:34px;max-width:58ch;font-size:18px;line-height:1.65;color:var(--ink)}
+.intro-body .th{display:inline-block;width:1.6em;height:1.6em;border-radius:50%;overflow:hidden;vertical-align:-0.4em;margin:0 .06em}
+.intro-body .th img{width:100%;height:100%;object-fit:cover}
+.intro-body .dim{color:var(--muted)}
+
+/* menu */
+.menu-grid, .about-grid{display:grid;grid-template-columns:minmax(0,640px) 1fr;gap:6vw;align-items:center}
+.menu h2, .visit h2{font:600 clamp(28px,3.4vw,46px)/1.05 var(--face);letter-spacing:-0.03em;margin-bottom:44px}
+.mrow{display:flex;align-items:baseline;gap:14px;padding:16px 0}
+.mrow .nm{font:600 19px/1.3 var(--face);letter-spacing:-0.01em}
+.mrow .dots{flex:1;border-bottom:2px dotted #3a3a3a;transform:translateY(-5px)}
+.mrow .pr{font:600 19px/1 var(--face);color:var(--accent)}
+.mnote{margin-top:24px;color:var(--muted);font-size:16px;max-width:50ch}
+.menu-photo{justify-self:center;width:min(30vw,380px);height:min(30vw,380px);border-radius:50%;overflow:hidden}
+.menu-photo img{width:100%;height:100%;object-fit:cover}
+
+/* gallery circles */
+.gal{display:flex;gap:5vw;align-items:flex-end;flex-wrap:wrap}
+.gal figure{border-radius:50%;overflow:hidden;flex:none}
+.gal .c1{width:min(38vw,430px);height:min(38vw,430px)}
+.gal .c2{width:min(28vw,320px);height:min(28vw,320px);margin-bottom:60px}
+.gal .c3{width:min(21vw,240px);height:min(21vw,240px)}
+.gal img{width:100%;height:100%;object-fit:cover;transform:scale(1.14);transition:transform 1.1s cubic-bezier(.22,.61,.36,1)}
+.gal figure.open img{transform:scale(1)}
+.gal figcaption{position:absolute;left:-9999px}
+
+/* visit */
+.visit-rows{display:grid;grid-template-columns:1.2fr 1fr;gap:5vw;align-items:start}
+.crow{display:flex;justify-content:space-between;gap:24px;padding:26px 0;font-size:19px;flex-wrap:wrap}
+.crow .k{color:var(--muted);font-size:16px;min-width:110px;padding-top:3px}
+.crow .v{flex:1;max-width:none}
+.crow a{text-decoration:underline;text-underline-offset:4px}
+.crow a:hover{color:var(--accent)}
+
+footer{padding:90px 6vw 40px;background:var(--surface);position:relative;overflow:hidden}
+.foot-word{position:relative;font:600 clamp(52px,9vw,140px)/1 var(--face);letter-spacing:-0.035em;color:var(--ink)}
+.foot-orb{position:absolute;left:-8vw;bottom:-22vw;width:44vw;height:44vw;background:var(--accent);border-radius:50%}
+.foot-grid{position:relative;display:flex;gap:8vw;flex-wrap:wrap;margin-top:54px;font-size:16px;color:var(--muted)}
+.foot-grid b{display:block;color:var(--ink);font-weight:600;margin-bottom:8px}
+.foot-grid a{text-decoration:underline;text-underline-offset:4px;color:var(--ink)}
+.foot-legal{position:relative;margin-top:64px;font-size:15px;line-height:1.6;color:var(--muted);max-width:62ch}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.gal img{transform:none;transition:none}}
+
+@media (max-width:900px){
+  .hero{padding:22px 20px 10vh}
+  .hero-links{gap:12px;flex-wrap:nowrap}
+  .hero-links .nl{gap:18px}
+  .hero-links a{font-size:14px;white-space:nowrap}
+  .hero-links a.act{padding:15px 18px}
+  .orb{position:static;width:78vw;height:78vw;max-width:none;max-height:none;margin:10vw -22vw 0 auto}
+  .hero h1{font-size:19vw;margin-top:9vh}
+  .hero-row{margin-top:26px}
+  .hero-tag{font-size:15px}
+  .hero-sub{font-size:18px;max-width:38ch}
+  .section{padding:76px 20px;max-width:none}
+  .menu-grid, .about-grid{grid-template-columns:1fr;gap:54px}
+  .menu-photo{width:64vw;height:64vw}
+  .gal{gap:6vw}
+  .gal .c1{width:62vw;height:62vw}
+  .gal .c2{width:46vw;height:46vw;margin-bottom:0}
+  .gal .c3{width:36vw;height:36vw}
+  .crow{font-size:17px}
+  .visit-rows{grid-template-columns:1fr;gap:0}
+  footer{padding:70px 20px 32px}
+  .foot-orb{left:-30vw;bottom:-40vw;width:80vw;height:80vw}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <nav class="hero-links">
+    <div class="nl">
+      <a href="#menu" data-ui>Menu</a>
+      <a href="#visit" data-ui>Find us</a>
+    </div>
+    <a class="act" href="tel:+919123504783" data-ui>Call the café</a>
+  </nav>
+  <h1>Lea Droit Café<span class="dot">.</span></h1>
+  <div class="hero-row">
+    <p class="hero-sub">Grilled specials, pastas and slow coffee on Sri Aurobindo Street, <b>Heritage Town, Puducherry</b>.</p>
+    <p class="hero-tag">Peace in the right place, fresh plates, soulful food, comfort in every bite.</p>
+  </div>
+  <div class="orb"><img src="assets/cappuccino.jpg" alt="A cappuccino with a foam heart" loading="lazy"></div>
+</header>
+
+<main>
+<section class="section about" aria-label="About">
+  <div class="about-grid">
+  <div>
+  <p class="statement reveal">Where flavour meets comfort.</p>
+  <p class="intro-body reveal">Lea Droit Café is a cozy spot in the heart of Puducherry serving grilled specials, <span class="th"><img src="assets/pasta.jpg" alt="A plate of fresh pasta" loading="lazy"></span> pastas, fresh juices, sandwiches, burgers, <span class="th"><img src="assets/cappuccino.jpg" alt="A cappuccino with a foam heart" loading="lazy"></span> teas and coffee. <span class="dim">From seafood plates to quick bites, everything is made fresh. A room to unwind, eat well and let the meal linger.</span></p>
+  </div>
+  <figure class="menu-photo about-photo" data-reveal><img src="assets/pasta.jpg" alt="A generous plate of pasta" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="section menu" id="menu">
+  <div class="menu-grid">
+    <div>
+      <h2 class="reveal">The featured plates</h2>
+      <div class="mrows">
+        <div class="mrow reveal"><span class="nm">Grilled fish fillet</span><span class="dots"></span><span class="pr">₹255</span></div>
+        <div class="mrow reveal"><span class="nm">Salad</span><span class="dots"></span><span class="pr">₹189</span></div>
+        <div class="mrow reveal"><span class="nm">Chicken sandwich</span><span class="dots"></span><span class="pr">₹139</span></div>
+        <div class="mrow reveal"><span class="nm">Chicken 65</span><span class="dots"></span><span class="pr">₹130</span></div>
+        <div class="mrow reveal"><span class="nm">Cappuccino</span><span class="dots"></span><span class="pr">₹129</span></div>
+        <div class="mrow reveal"><span class="nm">Bread omelette</span><span class="dots"></span><span class="pr">₹110</span></div>
+        <div class="mrow reveal"><span class="nm">French fries</span><span class="dots"></span><span class="pr">₹99</span></div>
+        <div class="mrow reveal"><span class="nm">Fresh juice</span><span class="dots"></span><span class="pr">₹89</span></div>
+      </div>
+      <p class="mnote">Plus burgers, teas, seafood plates and quick bites. Call ahead for the day's specials.</p>
+    </div>
+    <figure class="menu-photo" data-reveal><img src="assets/sandwich.jpg" alt="A grilled sandwich, golden and warm" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="section" aria-label="Gallery">
+  <div class="gal">
+    <figure class="c1" data-reveal><img src="assets/pasta.jpg" alt="A generous plate of pasta" loading="lazy"><figcaption>Pasta night mood</figcaption></figure>
+    <figure class="c2" data-reveal><img src="assets/cappuccino.jpg" alt="A cappuccino with a foam heart" loading="lazy"><figcaption>Slow coffee</figcaption></figure>
+    <figure class="c3" data-reveal><img src="assets/juice.jpg" alt="A glass of fresh orange juice" loading="lazy"><figcaption>Fresh juice</figcaption></figure>
+  </div>
+</section>
+
+<section class="section visit" id="visit">
+  <h2 class="reveal">Find us in Heritage Town</h2>
+  <div class="visit-rows">
+    <div class="crow reveal"><span class="k">Address</span><span class="v">12, Sri Aurobindo Street, Heritage Town, Puducherry 605001</span></div>
+    <div class="visit-side">
+      <div class="crow reveal"><span class="k">Call</span><span class="v"><a href="tel:+919123504783">+91 91235 04783</a>, walk-ins welcome, call to book a table</span></div>
+      <div class="crow reveal"><span class="k">Write</span><span class="v"><a href="mailto:leadroidcafe2025@gmail.com">leadroidcafe2025@gmail.com</a></span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-orb" aria-hidden="true"></div>
+  <div class="foot-word">Lea Droit.</div>
+  <div class="foot-grid">
+    <div><b>Visit</b>12, Sri Aurobindo St<br>Heritage Town, Puducherry 605001</div>
+    <div><b>Contact</b><a href="tel:+919123504783">+91 91235 04783</a><br><a href="mailto:leadroidcafe2025@gmail.com">leadroidcafe2025@gmail.com</a></div>
+    <div><b>Order</b>Walk-ins and takeaway<br>Book a table by phone</div>
+  </div>
+  <p class="foot-legal">Food photographs are generic stock imagery shown for atmosphere, not dishes served at the café: cappuccino by Peachyeung316 (CC BY-SA 4.0), pasta by Philip Mallis (CC BY-SA 2.0), sandwich by jeffreyw (CC BY 2.0), orange juice by Rebeloasisx (CC BY-SA 4.0), all via Wikimedia Commons. An independent introduction, not affiliated with the café. Facts from leadroitcafe.in.</p>
+</footer>
+
+<script>
+const io = new IntersectionObserver((es) => {
+  for (const e of es) {
+    if (e.isIntersecting) {
+      e.target.classList.add(e.target.matches('figure') ? 'open' : 'in');
+      io.unobserve(e.target);
+    }
+  }
+}, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+document.querySelectorAll('.reveal, [data-reveal]').forEach((el) => io.observe(el));
+</script>
+</body>
+</html>
