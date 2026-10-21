@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strength Gym · Khar West &amp; Juhu, Mumbai</title>
+<meta name="description" content="Strength Gym is a multifunctional gym in Khar West, Mumbai: strength floor, cardio, swimming pool, steam, sauna, ice bath and personal training. Second branch in Juhu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e5e1d8;
+  --surface:#dad5ca;
+  --paper:#dad5ca;
+  --ink:#2a1d17;
+  --muted:#6b5b51;
+  --accent:#456f3a;
+  --accent-ink:#ffffff;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --radius:16px;
+  --margin:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Zilla Slab",Georgia,serif;
+  background:var(--bg);color:var(--ink);
+  font-size:var(--step-body);line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;width:100%;height:100%;object-fit:cover;border-radius:var(--radius);}
+a{color:inherit;}
+::selection{background:var(--accent);color:#fff;}
+h1,h2,h3{font-weight:600;letter-spacing:-0.025em;line-height:1;}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);}
+.reveal.on{opacity:1;transform:none;}
+.d1{transition-delay:.08s;}.d2{transition-delay:.16s;}.d3{transition-delay:.24s;}
+
+/* ---------- hero: striped card beside the room ---------- */
+.hero{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  padding:24px;min-height:100svh;align-items:start;
+}
+.card{
+  background:var(--paper);border-radius:var(--radius);
+  min-height:calc(100svh - 48px);
+  display:flex;flex-direction:column;
+  overflow:hidden;
+}
+.stripe{display:flex;height:56px;flex:none;}
+.stripe i{flex:1;background:var(--ink);}
+.stripe i:nth-child(even){background:var(--paper);}
+.card-body{
+  flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding:56px 40px 24px;
+}
+.wordmark{font-weight:600;font-size:32px;letter-spacing:-0.02em;}
+.wordmark span{color:var(--accent);}
+h1{
+  font-size:clamp(40px,3.9vw,56px);
+  margin-top:20px;line-height:1.02;
+}
+.hero-sub{
+  margin-top:22px;font-size:18px;line-height:1.5;
+  max-width:36ch;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:48px;padding:0 26px;margin-top:30px;
+  background:var(--accent);color:var(--accent-ink);
+  font-weight:500;font-size:17px;text-decoration:none;
+  border-radius:8px;position:relative;overflow:hidden;
+  transition:transform .15s ease;
+}
+.btn:hover{transform:translateY(-2px);}
+
+.card-links{
+  display:flex;justify-content:center;gap:30px;flex-wrap:wrap;
+  padding:0 24px 28px;font-size:14px;
+}
+.card-links a{
+  color:var(--ink);text-decoration:none;font-weight:500;
+  border-bottom:2px solid transparent;transition:border-color .15s;
+}
+.card-links a:hover{border-bottom-color:var(--accent);}
+.room{
+  position:sticky;top:24px;height:calc(100svh - 48px);
+  border-radius:var(--radius);overflow:hidden;
+}
+.room .frame{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease;}
+.room .frame.first,.room .frame.show{opacity:1;}
+.room .frame img{border-radius:0;transform:scale(1.02);animation:slowzoom 26s ease-in-out infinite alternate;}
+@keyframes slowzoom{from{transform:scale(1.02);}to{transform:scale(1.1);}}
+.room figcaption{
+  position:absolute;left:16px;bottom:14px;z-index:3;
+  background:var(--paper);color:var(--ink);
+  font-size:14px;font-weight:500;padding:7px 14px;border-radius:8px;
+  transition:opacity .4s;
+}
+
+/* ---------- sections ---------- */
+section{padding:120px var(--margin);}
+.wrap{max-width:none;margin:0;}
+
+/* intro: narrow column, empty field */
+.intro .col{
+  width:330px;margin-left:12%;
+}
+.intro p{font-size:18px;line-height:1.5;margin-bottom:1em;}
+.intro p:first-child{font-weight:500;}
+
+.intro a{font-weight:500;}
+
+/* features: pinned heading, passing rows on the green field */
+.rooms{
+  background:var(--accent);color:var(--accent-ink);
+}
+.rooms{padding-top:80px;padding-bottom:80px;}
+
+.rooms .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start;}
+.rooms h2{
+  grid-column:1/6;font-size:clamp(56px,6.6vw,104px);
+  position:sticky;top:32px;line-height:.95;
+}
+.blocks{grid-column:7/13;display:flex;flex-direction:column;gap:48px;}
+.block h3{font-size:32px;font-weight:600;margin-bottom:22px;}
+.block .row{display:flex;gap:32px;align-items:flex-start;}
+.block .ph{flex:0 0 150px;aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;}
+.block ul{list-style:none;font-size:18px;line-height:1.4;}
+.block li{margin-bottom:14px;padding-left:20px;position:relative;}
+.block li::before{content:"";position:absolute;left:0;top:.5em;width:8px;height:8px;border-radius:50%;background:currentColor;opacity:.7;}
+.block .ask{display:inline-block;margin-top:10px;font-size:18px;font-weight:500;color:#fff;text-decoration:none;border-bottom:2px solid rgba(255,255,255,.5);transition:border-color .15s;}
+.block .ask:hover{border-bottom-color:#fff;}
+.block.flip .row{flex-direction:row-reverse;}
+
+/* how-it-works: itinerary slip */
+.week .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start;}
+.week .lead-col{grid-column:1/6;}
+.week h2{font-size:clamp(40px,3.9vw,56px);margin-bottom:26px;}
+.week .lead-col p{max-width:30ch;}
+.slip{
+  grid-column:7/12;max-width:480px;background:var(--paper);
+  padding:36px 32px 52px;font-size:18px;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),97.5% 100%,95% calc(100% - 14px),92.5% 100%,90% calc(100% - 14px),87.5% 100%,85% calc(100% - 14px),82.5% 100%,80% calc(100% - 14px),77.5% 100%,75% calc(100% - 14px),72.5% 100%,70% calc(100% - 14px),67.5% 100%,65% calc(100% - 14px),62.5% 100%,60% calc(100% - 14px),57.5% 100%,55% calc(100% - 14px),52.5% 100%,50% calc(100% - 14px),47.5% 100%,45% calc(100% - 14px),42.5% 100%,40% calc(100% - 14px),37.5% 100%,35% calc(100% - 14px),32.5% 100%,30% calc(100% - 14px),27.5% 100%,25% calc(100% - 14px),22.5% 100%,20% calc(100% - 14px),17.5% 100%,15% calc(100% - 14px),12.5% 100%,10% calc(100% - 14px),7.5% 100%,5% calc(100% - 14px),2.5% 100%,0 calc(100% - 14px));
+}
+.slip h4{font-size:18px;font-weight:600;margin:28px 0 12px;}
+.slip h4:first-child{margin-top:0;}
+.slip .r{display:flex;align-items:baseline;gap:10px;margin-bottom:12px;font-variant-numeric:tabular-nums;}
+.slip .r>span:last-child{white-space:nowrap;}
+.slip .r .dots{flex:1;height:.55em;border-bottom:4px dotted var(--muted);}
+.slip .total{
+  display:flex;justify-content:space-between;align-items:center;
+  background:var(--ink);color:var(--paper);
+  margin:26px -32px -52px;padding:12px 32px;min-height:44px;
+  font-weight:500;
+}
+
+/* faq */
+.faq .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start;}
+.faq h2{grid-column:1/4;font-size:32px;}
+.faq .answers{
+  grid-column:5/13;columns:2;column-gap:56px;
+  font-size:18px;line-height:1.55;
+}
+.faq p{break-inside:avoid;margin-bottom:20px;}
+.faq p b{font-weight:500;}
+
+/* cta: a plain sentence, one action */
+.cta{padding-top:9svh;padding-bottom:11svh;}
+.cta p{font-size:21px;max-width:34ch;}
+.cta p.reveal{}
+
+.cta .row{display:flex;align-items:center;gap:26px;margin-top:24px;flex-wrap:wrap;}
+.cta .btn{margin-top:0;}
+.cta .mail{font-size:18px;font-weight:500;text-decoration:none;border-bottom:2px solid var(--accent);}
+.cta .mail:hover{color:var(--accent);}
+
+/* footer: a single quiet line */
+.foot-stripe{display:flex;height:8px;}
+.foot-stripe i{flex:1;background:var(--ink);}
+.foot-stripe i:nth-child(even){background:var(--bg);}
+footer{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  padding:26px var(--margin) 30px;font-size:14px;color:var(--muted);
+}
+footer .fl{font-weight:500;color:var(--ink);}
+footer .fc{display:flex;gap:24px;justify-content:center;}
+footer .fc a{color:var(--ink);text-decoration:none;font-weight:500;}
+footer .fc a:hover{color:var(--accent);}
+footer .fr{text-align:right;}
+
+/* ---------- phone ---------- */
+@media (max-width:760px){
+  section{padding:72px var(--margin);}
+  .hero{display:flex;flex-direction:column;padding:12px;min-height:0;}
+  .room{order:-1;}
+  .room{
+    position:relative;top:0;height:48svh;width:100%;
+  }
+  .card{
+    min-height:0;margin:-24px 12px 0;position:relative;z-index:2;
+  }
+  .stripe{height:40px;}
+  .card-body{padding:40px 24px 20px;}
+  h1{font-size:8vw;}
+  .card-links{padding-bottom:24px;gap:20px;}
+  .intro .col{width:78%;margin-left:0;}
+  .rooms .wrap{display:block;}
+  .rooms h2{
+    position:sticky;top:0;z-index:4;
+    font-size:9vw;line-height:1;
+    background:var(--accent);
+    margin:0 calc(-1 * var(--margin));padding:12px var(--margin);
+  }
+  .blocks{gap:72px;margin-top:36px;}
+  .block .row{flex-direction:column;}
+  .block.flip .row{flex-direction:column;}
+  .block .ph{flex:none;width:100%;aspect-ratio:4/3;}
+  .week .wrap,.faq .wrap{display:block;}
+  .week h2{margin-bottom:18px;}
+  .slip{margin-top:36px;width:100%;}
+  .faq h2{margin-bottom:24px;}
+  .faq .answers{columns:1;}
+  footer{grid-template-columns:1fr;gap:8px;font-size:14px;}
+  footer .fr{text-align:left;}
+  footer .fc{justify-content:flex-start;flex-wrap:wrap;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;}
+  .reveal{opacity:1;transform:none;}
+  .room .frame{display:none;}
+  .room .frame.first{display:block;}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="card">
+    <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="card-body">
+      <div class="wordmark">Strength <span>Gym</span></div>
+      <h1>Stronger than<br>yesterday.</h1>
+      <p class="hero-sub">Strength floor, swimming pool, steam, sauna and ice bath. One gym in Khar West, a second in Juhu.</p>
+      <a class="btn" href="tel:+919867911577">Call +91 98679 11577</a>
+    </div>
+    <nav class="card-links" aria-label="Sections">
+      <a href="#rooms">The rooms</a>
+      <a href="#week">First week</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+  </div>
+  <figure class="room" id="roomFrame">
+    <div class="frame first show"><img src="./assets/hero-room.jpg" alt="Members training on the cardio floor at Strength Gym" width="750" height="500"></div>
+    <div class="frame"><img src="./assets/floor.jpg" alt="Barbell and bench on the strength floor" width="750" height="499" loading="lazy"></div>
+    <div class="frame"><img src="./assets/pool.jpg" alt="Swimming coach beside the lap pool" width="750" height="500" loading="lazy"></div>
+    <div class="frame"><img src="./assets/recovery.jpg" alt="A member resting in the ice bath" width="740" height="493" loading="lazy"></div>
+    <figcaption id="roomCaption">The cardio floor</figcaption>
+  </figure>
+</header>
+
+<main>
+
+<section class="intro" id="about">
+  <div class="col reveal">
+    <p>Strength Gym is a multifunctional gym in Khar West, Mumbai, built on one idea: training should welcome every fitness level.</p>
+    <p>The floor covers strength training and cardio. The pool runs swimming lessons and aqua rehab therapy. Steam, sauna and an ice bath take care of recovery.</p>
+    <p>Members train with a plan: experienced coaches, personal training, and a nutrition plan when they want one.</p>
+    <p>A second branch trains at the Ramee Guestline Hotel in Juhu. Rated 4.8 from 136 Google reviews.</p>
+  </div>
+</section>
+
+<section class="rooms" id="rooms">
+  <div class="wrap">
+    <h2>The rooms</h2>
+    <div class="blocks">
+      <div class="block">
+        <h3 class="reveal">The gym floor</h3>
+        <div class="row reveal">
+          <div class="ph"><img src="./assets/floor.jpg" alt="Barbell racked over a bench on the strength floor" width="750" height="499" loading="lazy"></div>
+          <div>
+            <ul>
+              <li>Strength training</li>
+              <li>Cardio floor</li>
+              <li>Free weights</li>
+              <li>Modern equipment</li>
+            </ul>
+            <a class="ask" href="https://wa.me/919867911577?text=Hi%20Strength%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20the%20gym%20floor." rel="noopener">Ask about the floor</a>
+          </div>
+        </div>
+      </div>
+      <div class="block flip">
+        <h3 class="reveal d1">The pool</h3>
+        <div class="row reveal">
+          <div class="ph"><img src="./assets/pool.jpg" alt="Swimming coach instructing beside the lap pool" width="750" height="500" loading="lazy"></div>
+          <div>
+            <ul>
+              <li>Swimming pool</li>
+              <li>Swimming lessons</li>
+              <li>Aqua rehab therapy</li>
+              <li>All levels welcome</li>
+            </ul>
+            <a class="ask" href="https://wa.me/919867911577?text=Hi%20Strength%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20swimming." rel="noopener">Ask about the pool</a>
+          </div>
+        </div>
+      </div>
+      <div class="block">
+        <h3 class="reveal d1">Recovery</h3>
+        <div class="row reveal">
+          <div class="ph"><img src="./assets/sauna.jpg" alt="Towels and a wooden bucket inside the sauna" width="740" height="493" loading="lazy"></div>
+          <div>
+            <ul>
+              <li>Steam room</li>
+              <li>Sauna</li>
+              <li>Ice bath</li>
+              <li>Aqua rehab therapy</li>
+            </ul>
+            <a class="ask" href="https://wa.me/919867911577?text=Hi%20Strength%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20recovery%20facilities." rel="noopener">Ask about recovery</a>
+          </div>
+        </div>
+      </div>
+      <div class="block flip">
+        <h3 class="reveal d1">Personal training</h3>
+        <div class="row reveal">
+          <div class="ph"><img src="./assets/pt.jpg" alt="A trainer coaching a member one to one" width="740" height="494" loading="lazy"></div>
+          <div>
+            <ul>
+              <li>One-to-one coaching</li>
+              <li>Training plan</li>
+              <li>Nutrition plan</li>
+              <li>Experienced trainers</li>
+            </ul>
+            <a class="ask" href="https://wa.me/919867911577?text=Hi%20Strength%20Gym%2C%20I%27d%20like%20to%20know%20more%20about%20personal%20training." rel="noopener">Ask about coaching</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="week" id="week">
+  <div class="wrap">
+    <div class="lead-col reveal">
+      <h2>Your first week</h2>
+      <p>Walk in, look around, leave with a plan. Here is how a first week usually runs.</p>
+    </div>
+    <div class="slip reveal d1">
+      <h4>Day one</h4>
+      <div class="r"><span>Tour of the floor and pool</span><span class="dots" aria-hidden="true"></span><span>Day 1</span></div>
+      <div class="r"><span>A chat about your goals</span><span class="dots" aria-hidden="true"></span><span>Day 1</span></div>
+      <h4>Midweek</h4>
+      <div class="r"><span>Training plan, made for you</span><span class="dots" aria-hidden="true"></span><span>Day 2</span></div>
+      <div class="r"><span>First full session</span><span class="dots" aria-hidden="true"></span><span>Day 3</span></div>
+      <h4>Friday</h4>
+      <div class="r"><span>Swim, steam or sauna</span><span class="dots" aria-hidden="true"></span><span>Day 5</span></div>
+      <div class="total"><span>Your routine, running</span><span>1 week</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="visit">
+  <div class="wrap">
+    <h2 class="reveal">Questions</h2>
+    <div class="answers reveal d1">
+      <p><b>Where is Strength Gym?</b> Two branches in Mumbai: Ramee Techome, plot 786–787, 3rd Road, Govind Dham, Khar West 400052, and the Ramee Guestline Hotel, 462 AB Nair Road, Juhu 400049.</p>
+      <p><b>What are the timings?</b> Hours are not listed online; call <a href="tel:+919867911577">+91 98679 11577</a> and the team will confirm today's schedule.</p>
+      <p><b>Is there really a swimming pool?</b> Yes. The pool runs recreational swimming, swimming lessons and aqua rehab therapy.</p>
+      <p><b>Do you offer personal training?</b> Yes, one-to-one sessions with a trainer, backed by a training plan and a nutrition plan.</p>
+      <p><b>What about recovery?</b> Steam, sauna and an ice bath sit beside the gym floor, so a session can end properly.</p>
+      <p><b>Is it beginner friendly?</b> That is the gym's own promise: a welcoming, inclusive environment for all fitness levels.</p>
+      <p><b>Do you run yoga?</b> Yoga is listed among the gym's offerings; ask the front desk for the current class schedule.</p>
+      <p><b>How do I join?</b> Call <a href="tel:+919867911577">+91 98679 11577</a>, message on WhatsApp, or email <a href="mailto:info@strengthgym.in">info@strengthgym.in</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <p class="reveal">Come by the Khar floor, see the pool, and talk to a coach about your first week.</p>
+  <div class="row reveal d1">
+    <a class="btn" href="tel:+919867911577">Call +91 98679 11577</a>
+    <a class="mail" href="mailto:info@strengthgym.in">info@strengthgym.in</a>
+  </div>
+</section>
+
+</main>
+
+<div class="foot-stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<footer>
+  <div class="fl">Strength Gym · Khar West &amp; Juhu</div>
+  <div class="fc">
+    <a href="tel:+919867911577">Call</a>
+    <a href="https://wa.me/919867911577" rel="noopener">WhatsApp</a>
+    <a href="mailto:info@strengthgym.in">Email</a>
+  </div>
+  <div class="fr">Photographs: strengthgym.in · 2026</div>
+</footer>
+
+<script>
+(function(){
+  var frames=document.querySelectorAll('#roomFrame .frame');
+  var cap=document.getElementById('roomCaption');
+  var caps=['The cardio floor','The strength floor','The pool','The ice bath'];
+  var i=0,timer=null;
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function tick(){
+    frames[i].classList.remove('show');
+    i=(i+1)%frames.length;
+    frames[i].classList.add('show');
+    if(cap){cap.style.opacity=0;setTimeout(function(){cap.textContent=caps[i];cap.style.opacity=1;},400);}
+  }
+  function start(){if(!timer&&!reduced&&frames.length>1){timer=setInterval(tick,5600);}}
+  function stop(){if(timer){clearInterval(timer);timer=null;}}
+  document.addEventListener('visibilitychange',function(){document.hidden?stop():start();});
+  start();
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,1994 @@
+{
+ "url": "http://localhost:8799",
+ "at": "2026-10-21T08:58:57.987Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    1,
+    0.34,
+    0.97,
+    0.43,
+    0.21,
+    0.2
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 4,
+    "transitions": 16,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4658,
+     "screens": 5.2,
+     "words": 432,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-room.jpg",
+      "floor.jpg",
+      "pool.jpg",
+      "recovery.jpg",
+      "floor.jpg",
+      "pool.jpg",
+      "sauna.jpg",
+      "pt.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Stronger than yesterday.",
+     "words": 3,
+     "chars": 24,
+     "lines": 2,
+     "size": 56,
+     "vw": 3.9,
+     "font": "Zilla Slab",
+     "weight": 600,
+     "tracking": -0.025,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "left",
+     "widthRatio": 0.23,
+     "top": 355,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Stronger than yesterday.",
+     "words": 3,
+     "lines": 2,
+     "size": 56,
+     "font": "Zilla Slab"
+    },
+    "headings": [
+     {
+      "text": "Strength Gym",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.13,
+      "top": 287,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Stronger than yesterday.",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 355,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The rooms",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 95,
+      "vw": 6.6,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 1670,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The gym floor",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.48,
+      "top": 1670,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The pool",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.48,
+      "top": 1972,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Recovery",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.48,
+      "top": 2274,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Personal training",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.48,
+      "top": 2576,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Your first week",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3030,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.23,
+      "top": 3715,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Zilla Slab",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      18,
+      21,
+      32,
+      56,
+      95
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Zilla Slab",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 11.2
+     },
+     "measureChars": 48,
+     "max": {
+      "size": 95,
+      "vw": 6.6,
+      "font": "Zilla Slab",
+      "text": "The rooms"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e5e1d8",
+     "bodyBgHsl": {
+      "h": 42,
+      "s": 0.2,
+      "l": 0.87
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#dad5ca",
+       "top": 24,
+       "hsl": {
+        "h": 41,
+        "s": 0.18,
+        "l": 0.82
+       }
+      },
+      {
+       "color": "#456f3a",
+       "top": 1590,
+       "hsl": {
+        "h": 108,
+        "s": 0.31,
+        "l": 0.33
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a1d17",
+       "share": 0.81
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#6b5b51",
+       "share": 0.01
+      },
+      {
+       "color": "#dad5ca",
+       "share": 0.01
+      },
+      {
+       "color": "#456f3a",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#456f3a",
+      "hsl": {
+       "h": 108,
+       "s": 0.31,
+       "l": 0.33
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 8,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call +91 98679 11577"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     },
+     {
+      "type": "img",
+      "ratio": 0.48
+     },
+     {
+      "type": "img",
+      "ratio": 0.48
+     },
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "zilla slab"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4658,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 900,
+      "words": 34,
+      "media": 2,
+      "middle": 171,
+      "heading": {
+       "text": "Stronger than",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 181,
+      "right": 14,
+      "textLeft": 181,
+      "textRight": 567,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#about.intro",
+      "tag": "section",
+      "top": 900,
+      "height": 690,
+      "words": 81,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 191,
+      "right": 922,
+      "textLeft": 191,
+      "textRight": 922,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#rooms.rooms",
+      "tag": "section",
+      "top": 1590,
+      "height": 1320,
+      "words": 58,
+      "media": 4,
+      "middle": 284,
+      "heading": {
+       "text": "The rooms",
+       "size": 95,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 206,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#week.week",
+      "tag": "section",
+      "top": 2910,
+      "height": 685,
+      "words": 61,
+      "media": 0,
+      "middle": 391,
+      "heading": {
+       "text": "Your first week",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 260,
+      "textLeft": 24,
+      "textRight": 260,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.faq",
+      "tag": "section",
+      "top": 3595,
+      "height": 663,
+      "words": 164,
+      "media": 0,
+      "middle": 336,
+      "heading": {
+       "text": "Questions",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 33,
+      "textLeft": 24,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 4258,
+      "height": 315,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 1011,
+      "textLeft": 24,
+      "textRight": 1011,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Stronger than yesterday.",
+      "size": 56,
+      "top": 355,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 5
+     },
+     {
+      "x": 191,
+      "n": 4
+     },
+     {
+      "x": 732,
+      "n": 4
+     },
+     {
+      "x": 496,
+      "n": 3
+     },
+     {
+      "x": 984,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 180,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.92,
+    0.45,
+    0.94,
+    0.3,
+    0.31,
+    0.27
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 4,
+    "transitions": 16,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5302,
+     "screens": 5.2,
+     "words": 432,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-room.jpg",
+      "floor.jpg",
+      "pool.jpg",
+      "recovery.jpg",
+      "floor.jpg",
+      "pool.jpg",
+      "sauna.jpg",
+      "pt.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Stronger than yesterday.",
+     "words": 3,
+     "chars": 24,
+     "lines": 2,
+     "size": 40,
+     "vw": 5.2,
+     "font": "Zilla Slab",
+     "weight": 600,
+     "tracking": -0.025,
+     "leading": 1.02,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "left",
+     "widthRatio": 0.3,
+     "top": 420,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Stronger than yesterday.",
+     "words": 3,
+     "lines": 2,
+     "size": 40,
+     "font": "Zilla Slab"
+    },
+    "headings": [
+     {
+      "text": "Strength Gym",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 352,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Stronger than yesterday.",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 420,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The rooms",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 56,
+      "vw": 7.3,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 1794,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The gym floor",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 1794,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The pool",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 2117,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Recovery",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 2440,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Personal training",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 2763,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Your first week",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.37,
+      "top": 3263,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 4056,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Zilla Slab",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      18,
+      19,
+      21,
+      32,
+      40,
+      56
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Zilla Slab",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 11.2
+     },
+     "measureChars": 23,
+     "max": {
+      "size": 56,
+      "vw": 7.3,
+      "font": "Zilla Slab",
+      "text": "The rooms"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e5e1d8",
+     "bodyBgHsl": {
+      "h": 42,
+      "s": 0.2,
+      "l": 0.87
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#dad5ca",
+       "top": 24,
+       "hsl": {
+        "h": 41,
+        "s": 0.18,
+        "l": 0.82
+       }
+      },
+      {
+       "color": "#456f3a",
+       "top": 1714,
+       "hsl": {
+        "h": 108,
+        "s": 0.31,
+        "l": 0.33
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a1d17",
+       "share": 0.81
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#6b5b51",
+       "share": 0.01
+      },
+      {
+       "color": "#dad5ca",
+       "share": 0.01
+      },
+      {
+       "color": "#456f3a",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#456f3a",
+      "hsl": {
+       "h": 108,
+       "s": 0.31,
+       "l": 0.33
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 8,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call +91 98679 11577"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.46
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "zilla slab"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5302,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 1024,
+      "words": 34,
+      "media": 2,
+      "middle": 73,
+      "heading": {
+       "text": "Stronger than",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 78,
+      "right": 19,
+      "textLeft": 78,
+      "textRight": 231,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#about.intro",
+      "tag": "section",
+      "top": 1024,
+      "height": 690,
+      "words": 81,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 110,
+      "right": 330,
+      "textLeft": 110,
+      "textRight": 330,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#rooms.rooms",
+      "tag": "section",
+      "top": 1714,
+      "height": 1429,
+      "words": 58,
+      "media": 4,
+      "middle": 122,
+      "heading": {
+       "text": "The rooms",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#week.week",
+      "tag": "section",
+      "top": 3143,
+      "height": 793,
+      "words": 61,
+      "media": 0,
+      "middle": 131,
+      "heading": {
+       "text": "Your first week",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 118,
+      "textLeft": 24,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.faq",
+      "tag": "section",
+      "top": 3936,
+      "height": 941,
+      "words": 164,
+      "media": 0,
+      "middle": 112,
+      "heading": {
+       "text": "Questions",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 32,
+      "textLeft": 24,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 4877,
+      "height": 340,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 339,
+      "textLeft": 24,
+      "textRight": 339,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Stronger than yesterday.",
+      "size": 40,
+      "top": 420,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 5
+     },
+     {
+      "x": 110,
+      "n": 4
+     },
+     {
+      "x": 396,
+      "n": 4
+     },
+     {
+      "x": 272,
+      "n": 3
+     },
+     {
+      "x": 536,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.91,
+    0.49,
+    0.98,
+    0.95,
+    0.95,
+    0.59,
+    0.6,
+    0.36
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 4,
+    "transitions": 16,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6597,
+     "screens": 7.8,
+     "words": 432,
+     "img": 8,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 8,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-room.jpg",
+      "floor.jpg",
+      "pool.jpg",
+      "recovery.jpg",
+      "floor.jpg",
+      "pool.jpg",
+      "sauna.jpg",
+      "pt.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Strength Gym",
+     "words": 2,
+     "chars": 12,
+     "lines": 1,
+     "size": 32,
+     "vw": 8.2,
+     "font": "Zilla Slab",
+     "weight": 600,
+     "tracking": -0.02,
+     "leading": 1.5,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.49,
+     "top": 497,
+     "tag": "div",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Stronger than yesterday.",
+     "words": 3,
+     "lines": 2,
+     "size": 31.2,
+     "font": "Zilla Slab"
+    },
+    "headings": [
+     {
+      "text": "Strength Gym",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.49,
+      "top": 497,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Stronger than yesterday.",
+      "words": 3,
+      "chars": 24,
+      "lines": 2,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.47,
+      "top": 565,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The rooms",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 35.1,
+      "vw": 9,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 1671,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The gym floor",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 1766,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The pool",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2376,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Recovery",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2986,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Personal training",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 3597,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Your first week",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 4287,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Questions",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Zilla Slab",
+      "weight": 600,
+      "tracking": -0.025,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5051,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 9,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Zilla Slab",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      17,
+      18,
+      21,
+      31,
+      32,
+      35,
+      40
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Zilla Slab",
+      "size": 18,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 11.2
+     },
+     "measureChars": 38,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Zilla Slab",
+      "text": "Your first week"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#e5e1d8",
+     "bodyBgHsl": {
+      "h": 42,
+      "s": 0.2,
+      "l": 0.87
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#dad5ca",
+       "top": 417,
+       "hsl": {
+        "h": 41,
+        "s": 0.18,
+        "l": 0.82
+       }
+      },
+      {
+       "color": "#456f3a",
+       "top": 1591,
+       "hsl": {
+        "h": 108,
+        "s": 0.31,
+        "l": 0.33
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2a1d17",
+       "share": 0.81
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#6b5b51",
+       "share": 0.01
+      },
+      {
+       "color": "#dad5ca",
+       "share": 0.01
+      },
+      {
+       "color": "#456f3a",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#456f3a",
+      "hsl": {
+       "h": 108,
+       "s": 0.31,
+       "l": 0.33
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 8,
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call +91 98679 11577"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 8,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     },
+     {
+      "type": "img",
+      "ratio": 0.48
+     },
+     {
+      "type": "img",
+      "ratio": 0.48
+     },
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 889,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "zilla slab"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6597,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 889,
+      "words": 34,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Strength",
+       "size": 32,
+       "tag": "div"
+      },
+      "left": 42,
+      "right": 56,
+      "textLeft": 42,
+      "textRight": 56,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.intro",
+      "tag": "section",
+      "top": 889,
+      "height": 702,
+      "words": 81,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 100,
+      "textLeft": 24,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#rooms.rooms",
+      "tag": "section",
+      "top": 1591,
+      "height": 2624,
+      "words": 58,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "The rooms",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 135,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#week.week",
+      "tag": "section",
+      "top": 4215,
+      "height": 764,
+      "words": 61,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Your first week",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 56,
+      "textLeft": 24,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.faq",
+      "tag": "section",
+      "top": 4979,
+      "height": 1085,
+      "words": 164,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Questions",
+       "size": 32,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 25,
+      "textLeft": 24,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 6064,
+      "height": 390,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 39,
+      "textLeft": 24,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 6462,
+      "height": 135,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 149,
+      "textLeft": 24,
+      "textRight": 149,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Stronger than yesterday.",
+      "size": 31,
+      "top": 565,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 19
+     }
+    ],
+    "leftBlocks": 19,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"The rooms\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/desktop-page-01.jpg",
+    "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/home/sandbox/cafe-sites/strength-gym-khar/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
