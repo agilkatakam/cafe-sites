@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laura's Café. Rooftop cafe, Main Market Road, Pushkar</title>
+<meta name="description" content="Laura's Café is a rooftop cafe opposite Jhulelaal Ghat on Main Market Road, Pushkar. Pizzas, falafel, crepes and masala chai, open daily 9am to 11pm.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=clash-grotesk@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e5e1d8; --surface:#dad5ca; --ink:#2a1d17; --muted:#51423a; --accent:#456f3a; --accent-ink:#ffffff;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Clash Grotesk",Arial,sans-serif;font-weight:400;font-size:var(--step-body);line-height:1.55;letter-spacing:0;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:var(--accent)}
+h1,h2{font-weight:500;letter-spacing:-0.03em;line-height:0.95}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;overflow:hidden}
+.hero-top{position:absolute;top:0;left:32px;right:32px;height:72px;display:flex;align-items:center;justify-content:space-between;z-index:5}
+.hero-top a{color:var(--ink);text-decoration:none;font-size:var(--step-body)}
+.wordmark{font-size:22px;font-weight:500;letter-spacing:-0.02em;color:var(--ink);text-decoration:none}
+.mq-band{position:absolute;left:0;right:0;top:0;height:100%;z-index:2}
+.mq-line{position:absolute;top:calc(34% - 0.55em);left:0;z-index:3;white-space:nowrap;font-weight:500;font-size:clamp(90px,15vw,230px);letter-spacing:-0.02em;line-height:1.1;color:var(--ink);will-change:transform;animation:mq 40s linear infinite}
+.mq-line span{padding-right:0.35em}
+.mq-line .dot{color:var(--accent);font-style:normal;font-size:0.33em;vertical-align:0.28em;padding-right:0.9em}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.mq-photo{position:absolute;left:50%;top:calc(34% + 0.28em + 13vw);transform:translateX(-50%);width:272px;width:19vw;aspect-ratio:1;z-index:1}
+.hero-sentence{position:absolute;left:50%;transform:translateX(-50%);top:calc(34% + 26vw + 150px);width:100%;max-width:36ch;text-align:center;font-size:22px;line-height:1.4;color:var(--ink);z-index:4}
+.hero-fact{position:absolute;left:50%;transform:translateX(-50%);top:calc(34% + 26vw + 240px);font-size:var(--step-body);color:var(--muted);z-index:4}
+.hero-bottom{position:absolute;left:32px;right:32px;bottom:40px;display:flex;align-items:center;justify-content:space-between;gap:16px;z-index:5}
+.hero-loc{font-size:16px;color:var(--ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-size:var(--step-body);padding:16px 34px;font-family:inherit;border:none;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- intro: pinned sentence, photos pass at edges ---------- */
+.intro{position:relative;height:200svh}
+.intro-pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;z-index:2;pointer-events:none}
+.intro-pin p{font-size:clamp(24px,2.6vw,36px);line-height:1.15;letter-spacing:-0.02em;max-width:20ch;text-align:center;color:var(--ink)}
+.intro-img{position:absolute;z-index:1;overflow:hidden}
+.intro-img.i1{left:6vw;top:12svh;width:24vw;aspect-ratio:4/5}
+.intro-img.i2{right:0;top:75svh;width:38vw;aspect-ratio:16/10}
+.intro-img.i3{left:6vw;top:140svh;width:18vw;aspect-ratio:1}
+
+/* ---------- menu list ---------- */
+.menu{max-width:1200px;margin:0 auto;padding:120px 32px 140px}
+.menu h2{font-size:clamp(32px,3.4vw,48px);margin-bottom:48px}
+.menu-split{display:grid;grid-template-columns:5fr 6fr;gap:48px}
+.menu-photo{position:sticky;top:12vh;aspect-ratio:4/5;max-height:70vh;overflow:hidden;min-width:0}
+.menu-photo img{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.menu-photo img.on{opacity:1}
+.mrow{padding:14px 0;cursor:pointer}
+.mrow-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.mrow-head h3{font-weight:500;font-size:clamp(20px,1.6vw,24px);color:var(--muted)}
+.mrow-head .tag{font-size:var(--step-small);color:var(--muted);text-align:right}
+.mrow.active .mrow-head h3{color:var(--ink)}
+.mdesc{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.mdesc p{font-size:16px;line-height:1.5;max-width:34ch;padding-top:10px;color:var(--muted)}
+.mrow.active .mdesc{max-height:200px}
+.menu-note{font-size:var(--step-small);color:var(--muted);margin-top:24px}
+
+/* ---------- gallery ---------- */
+.gallery{padding:0 0 140px;overflow:hidden}
+.gallery h2{font-size:clamp(28px,2.4vw,36px);margin:0 0 32px 6vw}
+.gal-row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;height:min(520px,68svh);scrollbar-width:none;padding-left:6vw}
+.gal-row::-webkit-scrollbar{display:none}
+.gal-row>*{flex:0 0 auto;scroll-snap-align:start;min-width:0}
+.gal-tall{width:min(320px,72vw);height:100%}
+.gal-stack{display:grid;grid-template-rows:1fr 1fr;gap:12px;width:min(380px,64vw);height:100%}
+.gal-wide{width:min(620px,88vw);height:100%}
+
+/* ---------- contact: visit card on photo ---------- */
+.visit{position:relative;height:100svh;overflow:hidden}
+.visit>img.bg{position:absolute;inset:0}
+.vcard{position:absolute;top:60px;right:60px;width:380px;max-width:calc(100vw - 120px);background:var(--bg);border-radius:8px;padding:32px;z-index:2}
+.vcard h2{font-size:28px;font-weight:400;margin-bottom:16px}
+.vcard p{font-size:16px;line-height:1.5;margin-bottom:12px;color:var(--ink)}
+.vcard .hours{display:flex;justify-content:space-between;font-size:16px;color:var(--ink);font-variant-numeric:tabular-nums}
+.vcard .btn{display:block;text-align:center;margin-top:20px;height:52px;line-height:52px;padding:0}
+
+/* ---------- footer: back of the card ---------- */
+footer{background:var(--accent);padding:120px 32px 64px}
+.postcard{position:relative;background:var(--bg);max-width:1100px;margin:0 auto;padding:56px 48px 64px;clip-path:polygon(0 24px,4.16% 24px,4.16% 12px,8.33% 24px,12.5% 24px,12.5% 12px,16.66% 24px,20.83% 24px,20.83% 12px,25% 24px,29.16% 24px,29.16% 12px,33.33% 24px,37.5% 24px,37.5% 12px,41.66% 24px,45.83% 24px,45.83% 12px,50% 24px,54.16% 24px,54.16% 12px,58.33% 24px,62.5% 24px,62.5% 12px,66.66% 24px,70.83% 24px,70.83% 12px,75% 24px,79.16% 24px,79.16% 12px,83.33% 24px,87.5% 24px,87.5% 12px,91.66% 24px,95.83% 24px,95.83% 12px,100% 24px,100% 100%,0 100%)}
+.pc-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.pc-sign{font-size:32px;font-weight:500;letter-spacing:-0.02em;margin-bottom:16px}
+.pc-msg{font-size:16px;line-height:1.5;color:var(--muted);max-width:36ch}
+.pc-addr{position:relative}
+.pc-addr a{display:block;font-size:18px;line-height:1.4;margin-bottom:12px;color:var(--ink)}
+.pc-stamp{position:absolute;top:-8px;right:0;width:88px;aspect-ratio:3/4;background:var(--bg);padding:6px;transform:rotate(3deg)}
+.pc-imprint{margin-top:48px;text-align:center;font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- motion ---------- */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .mq-line{animation:none;transform:translateX(-25%)}
+  .menu-photo img{transition:none}
+  html{scroll-behavior:auto}
+}
+.mq-band:hover .mq-line{animation-play-state:paused}
+
+/* ---------- phone ---------- */
+@media (max-width:760px){
+  .hero-top{left:20px;right:20px}
+  .mq-line{font-size:34vw;top:calc(20% - 0.55em)}
+  .mq-photo{width:46vw;min-width:0;top:calc(20% + 24vw)}
+    .hero-sentence{top:calc(20% + 70vw + 28px);font-size:18px;max-width:32ch}
+  .hero-fact{top:calc(20% + 70vw + 108px);font-size:16px}
+  .hero-bottom{left:20px;right:20px;bottom:20px}
+  .hero-loc{display:none}
+  .hero-bottom .btn{display:block;width:100%;text-align:center}
+  .intro{height:180svh}
+  .intro-pin p{font-size:24px;max-width:16ch}
+  .intro-img.i1{left:20px;width:64%;top:80svh}
+  .intro-img.i2{right:20px;width:78%;top:100svh}
+  .intro-img.i3{left:20px;width:52%;top:140svh}
+  .menu{padding:80px 20px 100px}
+  .menu-split{display:block}
+  .menu-photo{position:sticky;top:0;aspect-ratio:4/3;max-height:38svh;margin:0 -20px 32px;z-index:1}
+  .gallery h2{margin-left:20px}
+  .gal-row{height:62svh;gap:8px;padding-left:20px;padding-right:20px}
+  .visit{height:auto}
+  .visit>img.bg{position:relative;height:70svh}
+  .vcard{position:relative;top:auto;right:auto;left:auto;width:auto;margin:-80px 16px 0}
+  .pc-cols{display:block}
+  .pc-addr{margin-top:32px}
+  .pc-stamp{width:64px}
+  footer{padding:80px 20px 48px}
+  .postcard{padding:40px 24px 48px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <p class="visually-hidden">Laura's Café, rooftop cafe in Pushkar.</p>
+  <div class="hero-top">
+    <a href="#menu">Menu</a>
+    <a class="wordmark" href="#top">Laura's Café</a>
+    <a href="#visit">Visit</a>
+  </div>
+  <div class="mq-band">
+    <h1 class="mq-line" aria-hidden="true">
+      <span>Laura's Café<span class="dot">&#9679;</span></span><span>Laura's Café<span class="dot">&#9679;</span></span><span>Laura's Café<span class="dot">&#9679;</span></span><span>Laura's Café<span class="dot">&#9679;</span></span>
+    </h1>
+    <div class="mq-photo"><img src="assets/big-pizza.jpg" alt="A loaded pizza at Laura's Café"></div>
+  </div>
+  <p class="hero-sentence">Rooftop pizzas, falafel and masala chai above Pushkar's main market.</p>
+  <p class="hero-fact">Opposite Jhulelaal Ghat &middot; open daily, 9am &ndash; 11pm</p>
+  <div class="hero-bottom">
+    <span class="hero-loc">Main Market Road, Pushkar, Rajasthan</span>
+    <a class="btn" href="tel:+919529105018">Call +91 95291 05018</a>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="intro-pin"><p>A rooftop table above the market, from breakfast to late dinner.</p></div>
+  <div class="intro-img i1"><img src="assets/terrace.jpg" alt="The rooftop terrace seating"></div>
+  <div class="intro-img i2"><img src="assets/night-lights.jpg" alt="Market Road lights from the roof at night" loading="lazy"></div>
+  <div class="intro-img i3"><img src="assets/salad.jpg" alt="A fresh salad bowl on a blue table" loading="lazy"></div>
+</section>
+
+<section class="menu" id="menu">
+  <h2 class="reveal">From the kitchen</h2>
+  <div class="menu-split">
+    <div class="menu-photo" id="menuPhoto">
+      <img src="assets/big-pizza.jpg" alt="Indian pizza" class="on" data-key="indian">
+      <img src="assets/pizza-whole.jpg" alt="Margherita pizza" data-key="marg">
+      <img src="assets/green-pizza.jpg" alt="Garden pizza with greens" data-key="garden">
+      <img src="assets/salad.jpg" alt="Salad bowl" data-key="salad">
+      <img src="assets/terrace.jpg" alt="The rooftop" data-key="roof">
+      <img src="assets/night-lights.jpg" alt="The market at night" data-key="night">
+    </div>
+    <div class="menu-list">
+      <div class="mrow active" data-key="indian"><div class="mrow-head"><h3>Indian pizza</h3><span class="tag">Guest favourite</span></div><div class="mdesc"><p>The pie guests tell first-timers to order, loaded and spiced for the local palate.</p></div></div>
+      <div class="mrow" data-key="marg"><div class="mrow-head"><h3>Margherita</h3><span class="tag">Italian</span></div><div class="mdesc"><p>The quiet classic, blistered in the oven and finished plain.</p></div></div>
+      <div class="mrow" data-key="garden"><div class="mrow-head"><h3>Garden pizza</h3><span class="tag">Vegetarian</span></div><div class="mdesc"><p>Greens and vegetables over a crisp base, straight from the oven.</p></div></div>
+      <div class="mrow" data-key="salad"><div class="mrow-head"><h3>Salads &amp; falafel</h3><span class="tag">Light plates</span></div><div class="mdesc"><p>Falafel, sandwiches and fresh bowls for the middle of a hot day.</p></div></div>
+      <div class="mrow" data-key="roof"><div class="mrow-head"><h3>Crepes &amp; French toast</h3><span class="tag">All day</span></div><div class="mdesc"><p>Sweet plates, parfait and fresh juices for slow rooftop mornings.</p></div></div>
+      <div class="mrow" data-key="night"><div class="mrow-head"><h3>Masala chai &amp; iced coffee</h3><span class="tag">Till 11pm</span></div><div class="mdesc"><p>After dark the market lights come on below and the kettle stays on.</p></div></div>
+    </div>
+  </div>
+  <p class="menu-note">Menus and prices are at the cafe and on Zomato; the counter tells you what is best today.</p>
+</section>
+
+<section class="gallery">
+  <h2 class="reveal">The roof and the table</h2>
+  <div class="gal-row reveal">
+    <div class="gal-tall"><img src="assets/terrace.jpg" alt="Rooftop seating at Laura's Café" loading="lazy"></div>
+    <div class="gal-stack">
+      <div><img src="assets/pizza-slice.jpg" alt="Pizza and a toasted sandwich" loading="lazy"></div>
+      <div><img src="assets/salad.jpg" alt="A salad bowl" loading="lazy"></div>
+    </div>
+    <div class="gal-wide"><img src="assets/night-lights.jpg" alt="Main Market Road at night from the roof" loading="lazy"></div>
+    <div class="gal-stack">
+      <div><img src="assets/pizza-whole.jpg" alt="A margherita pizza" loading="lazy"></div>
+      <div><img src="assets/night-roof.jpg" alt="Pushkar at night from the rooftop" loading="lazy"></div>
+    </div>
+    <div class="gal-tall"><img src="assets/green-pizza.jpg" alt="A garden pizza" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <img class="bg" src="assets/night-roof.jpg" alt="The view from Laura's Café at night" loading="lazy">
+  <div class="vcard reveal">
+    <h2>Visit us</h2>
+    <p>Opposite Jhulelaal Ghat,<br>Main Market Road, Choti Basti,<br>Pushkar, Rajasthan 305022</p>
+    <p class="hours"><span>Every day</span><span>9:00 &ndash; 23:00</span></p>
+    <p><a href="tel:+919529105018">+91 95291 05018</a></p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Laura%27s+Caf%C3%A9&amp;query_place_id=ChIJIwyEWSLdazkRmtlfZZ0VnKQ" target="_blank" rel="noopener">Get directions</a>
+  </div>
+</section>
+
+<footer>
+  <div class="postcard reveal">
+    <div class="pc-cols">
+      <div>
+        <p class="pc-sign">See you on the roof.</p>
+        <p class="pc-msg">Come for a slow breakfast, stay past sunset. The kettle is on from nine in the morning till eleven at night, every day of the week.</p>
+      </div>
+      <div class="pc-addr">
+        <div class="pc-stamp"><img src="assets/pizza-slice.jpg" alt=""></div>
+        <a href="mailto:bharattiwari052@gmail.com">bharattiwari052@gmail.com</a>
+        <a href="tel:+919529105018">+91 95291 05018</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Laura%27s+Caf%C3%A9&amp;query_place_id=ChIJIwyEWSLdazkRmtlfZZ0VnKQ" target="_blank" rel="noopener">Main Market Road, Pushkar</a>
+        <a href="https://www.zomato.com/pushkar/lauras-cafe-choti-basti" target="_blank" rel="noopener">Zomato listing</a>
+      </div>
+    </div>
+    <p class="pc-imprint">Photographs: Laura's Café guests via Restaurant Guru. An introduction page, not the cafe's official site.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:0.15});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.mrow'));
+  var mimgs = document.querySelectorAll('#menuPhoto img');
+  function activate(row){
+    rows.forEach(function(r){ r.classList.toggle('active', r===row); });
+    mimgs.forEach(function(im){ im.classList.toggle('on', im.dataset.key===row.dataset.key); });
+  }
+  rows.forEach(function(row){
+    row.addEventListener('click', function(){ activate(row); });
+    row.addEventListener('mouseenter', function(){ if(!reduced) activate(row); });
+  });
+  var rowIO = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting && !reduced) activate(e.target); });
+  },{rootMargin:'-45% 0px -45% 0px'});
+  rows.forEach(function(r){ rowIO.observe(r); });
+})();
+</script>
+</body>
+</html>

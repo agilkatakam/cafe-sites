@@ -1,0 +1,11 @@
+# Laura's Café — Sheet1 row 543 (claimed Q543 "building:lauras-cafe-pushkar @4:20 PM IST", write+re-read confirmed; dedupe clean both tabs)
+- Laura's Café, Choti Basti, Pushkar, Rajasthan 305022; opposite Jhulelaal Ghat, Main Market Rd
+- Phone +91 95291 05018 (sheet = TA) | Email bharattiwari052@gmail.com — owner-managed TripAdvisor Email field (https://www.tripadvisor.com/Restaurant_Review-g319729-d2401122-Reviews-Laura_s_Cafe-Pushkar_Ajmer_District_Rajasthan.html)
+- Google 4.4/667 (sheet)
+- Hours 9AM-11PM daily (restaurant-guru updated 11 days ago; Zomato "opens 9am" consistent)
+- Cuisines: Italian + Spanish (restaurant-guru). Guest picks: Indian pizza, Italian sandwiches, falafels, crepes, parfait, French toast, fresh juices, iced coffee, masala chai
+- No own website (TA Website link -> FB/menu host). Listings: Zomato pushkar/lauras-cafe-choti-basti, FB 149418958486887, zubu.in/menu/12097, menuweb PDF (broken, 4.5KB)
+- exa: https://exa.ai/library/place/bb0cdkdby9f
+- Photos to pull next run: restaurant-guru Lauras-Cafe-Pushkar collage frames (crop clean cells, drop mascot/stickered)
+- Direction draw still pending: node draw.mjs --sector restaurant (or cafe)
+- Note for report: spare lead left for others = Sheet1 559 Waah Shakers (already told main). Continue Sheet1 bottom-up after this: rows 542 and down (542 SOL HOUSE, 537 Lazy Monk, 532 Fire And Flare, 531 Juniper, 529 Cafe Yeti, 528 Yellow Llama, 526 Blue door, 525 Moonlight, 522 D.town...)
