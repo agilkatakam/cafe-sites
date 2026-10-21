@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kulture | Specialty coffee and bistro, Park Street, Kolkata</title>
+<meta name="description" content="Kulture is a specialty coffee bar, kitchen and sober bar on the third floor of Chowringhee Mansions, Park Street, Kolkata. Women-owned, 4.8 from 2,255 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c1410;
+  --panel:#12201a;
+  --ink:#eef0e8;
+  --muted:#a7b0a2;
+  --accent:#e8b54d;
+  --serif:'Fraunces',Georgia,serif;
+  --sans:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 clamp(20px,4vw,56px)}
+.rise{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rise.on{opacity:1;transform:none}
+.ph{filter:brightness(.92) contrast(1.03)}
+
+/* hero */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:center;position:relative;padding:84px 0 5vh}
+.hero-photo{width:min(40vw,480px);margin:0 auto;aspect-ratio:3/2;overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);transition:transform 2.4s ease}
+.hero-photo img.on{transform:scale(1)}
+.hero h1{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 50,"wght" 500;font-size:clamp(56px,10.5vw,160px);line-height:.95;text-align:center;letter-spacing:-.01em;margin-top:3.5vh}
+.hero .sub{text-align:center;color:var(--muted);font-size:18px;margin:3vh auto 0;max-width:36ch}
+.hero .cta{display:block;width:max-content;margin:4vh auto 0;background:var(--ink);color:var(--bg);font-weight:500;font-size:16px;padding:15px 34px;transition:background .3s}
+.hero .cta:hover{background:var(--accent)}
+.topline{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;padding:26px clamp(20px,4vw,56px);font-size:16px;color:var(--muted)}
+
+/* intro statement */
+.statement{padding-block:13vh 10vh}
+.statement p{font-family:var(--serif);font-weight:300;font-size:clamp(24px,2.4vw,34px);line-height:1.35;max-width:34ch}
+.statement .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:7vh}
+.fact .f{font-family:var(--serif);font-size:clamp(20px,1.7vw,26px);font-weight:400}
+.fact .n{color:var(--muted);font-size:15px;margin-top:6px}
+
+/* list section */
+.menu{padding-block:10vh 16vh}
+.menu-grid{display:grid;grid-template-columns:5fr 6fr;grid-template-areas:"photo head" "photo rows";gap:0 clamp(32px,5vw,80px);align-items:start}
+.menu-photo{grid-area:photo;position:sticky;top:12vh;aspect-ratio:4/5;overflow:hidden}
+.menu-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s ease}
+.menu-photo img.cur{opacity:1}
+.menu h2{grid-area:head;font-family:var(--serif);font-weight:300;font-size:clamp(32px,3.4vw,48px);margin-bottom:48px}
+.mrow{border:0;background:none;color:var(--muted);width:100%;text-align:left;padding:18px 0;cursor:pointer;display:block;font-family:var(--sans)}
+.mrow .top{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.mrow .name{font-size:clamp(20px,1.6vw,24px);color:var(--muted);transition:color .3s}
+.mrow .tag{font-size:16px;color:var(--muted)}
+.mrow .desc{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.mrow .desc p{font-size:16px;color:var(--muted);max-width:34ch;padding-top:10px;line-height:1.55}
+.mrow.active .name{color:var(--ink)}
+.mrow.active .desc{max-height:120px}
+.mrow:hover .name{color:var(--ink)}
+
+/* gallery mosaic */
+.gallery{position:relative;padding:24vh 0;min-height:100svh;display:flex;align-items:center;justify-content:center}
+.gallery .ghead{position:relative;z-index:2;text-align:center;max-width:520px}
+.gallery h2{font-family:var(--serif);font-weight:300;font-size:clamp(32px,2.6vw,40px);line-height:1.2}
+.gallery .ghead p{color:var(--muted);font-size:17px;margin-top:18px}
+.gimg{position:absolute;width:clamp(140px,15vw,200px);aspect-ratio:9/10;overflow:hidden}
+.gimg img{width:100%;height:100%;object-fit:cover}
+.g1{top:6%;left:16%}.g2{top:12%;right:14%}.g3{top:38%;left:6%}
+.g4{top:44%;right:5%}.g5{bottom:8%;left:20%}.g6{bottom:5%;right:18%}
+
+/* contact */
+.contact{min-height:86svh;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:flex-end;position:relative;padding:0 0 12vh}
+.contact .note{position:absolute;top:8vh;left:clamp(20px,4vw,56px);font-size:20px;max-width:22ch;color:#3d463e}
+.contact .mail{display:block;font-family:var(--serif);font-weight:300;font-size:clamp(30px,6.4vw,104px);line-height:1.05;letter-spacing:-.01em;padding:0 clamp(20px,4vw,56px);transition:color .3s;word-break:break-all}
+.contact .mail:hover{color:#8a6a1d}
+.contact .meta{display:flex;justify-content:space-between;padding:5vh clamp(20px,4vw,56px) 0;font-size:16px;color:#3d463e}
+.contact .meta a:hover{color:#8a6a1d}
+
+/* footer */
+.footer{background:var(--bg);min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px clamp(20px,4vw,56px) 24px;position:relative}
+.footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;font-size:16px}
+.footer .cols h3{font-size:16px;font-weight:500;color:var(--ink);margin-bottom:12px;font-family:var(--sans)}
+.footer .cols p,.footer .cols a{color:var(--muted);font-size:16px;line-height:1.7;display:block}
+.footer .cols a:hover{color:var(--ink)}
+.wordmark{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 50,"wght" 500;font-size:clamp(60px,22.8vw,330px);line-height:.9;text-align:center;letter-spacing:-.03em;color:var(--ink);align-self:end;white-space:nowrap}
+.legal{font-size:16px;color:var(--muted);text-align:center;margin-top:20px}
+
+@media (max-width:820px){
+  .gallery h2{font-size:7vw;max-width:14ch;margin:0 auto}
+  .hero-photo{width:62vw}
+  .wordmark{font-size:25vw}
+  .statement .facts{grid-template-columns:repeat(2,1fr);gap:20px}
+  .menu-grid{grid-template-columns:1fr;grid-template-areas:"head" "photo" "rows"}
+  .menu-photo{position:sticky;top:0;aspect-ratio:4/3;z-index:3}
+  .gimg{width:30%}
+  .g1{top:4%;left:4%}.g2{top:8%;right:4%}.g3{top:auto;bottom:26%;left:8%}
+  .g4{top:auto;bottom:22%;right:6%}.g5{bottom:4%;left:14%}.g6{bottom:2%;right:12%}
+  .footer .cols{grid-template-columns:1fr 1fr;gap:32px}
+  .footer{min-height:72svh}
+  .contact .meta{flex-direction:column;gap:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;transition:none}
+  .hero-photo img{transform:none;transition:none}
+  .gimg{transform:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="topline"><span>Park Street, Kolkata</span><span>From 8:30 in the morning</span></div>
+  <div class="hero-photo"><img src="assets/banquette-hall.jpg" alt="The dining room at Kulture, green banquettes and cane chairs" class="ph" id="heroImg"></div>
+  <h1>Kulture</h1>
+  <p class="sub">Specialty coffee, a kitchen and a sober bar, three floors up in Chowringhee Mansions.</p>
+  <a class="cta" href="tel:+919448040531">Call to book a table</a>
+</header>
+
+<main>
+<section class="statement wrap">
+  <p class="rise">A women-owned coffee house above Park Street. Four colours, cane chairs and a balcony for the evening sun.</p>
+  <div class="facts">
+    <div class="fact rise"><div class="f">4.8 of 5</div><div class="n">2,255 Google reviews</div></div>
+    <div class="fact rise"><div class="f">₹1,400 for two</div><div class="n">approximate, without alcohol</div></div>
+    <div class="fact rise"><div class="f">3rd floor</div><div class="n">Gate 1, Chowringhee Mansions</div></div>
+    <div class="fact rise"><div class="f">Sober bar</div><div class="n">mocktails, frappes, affogato</div></div>
+  </div>
+</section>
+
+<section class="menu wrap" id="menu">
+  <div class="menu-grid">
+    <div class="menu-photo" id="menuPhoto">
+      <img src="assets/room-yellow-door.jpg" alt="Yellow trimmed seating bay at Kulture" class="ph cur" data-key="coffee">
+      <img src="assets/bar-shelves.jpg" alt="The bar shelves at Kulture" class="ph" data-key="bar">
+      <img src="assets/rattan-corner.jpg" alt="Rattan chairs in a planted corner" class="ph" data-key="kitchen">
+      <img src="assets/green-gallery.jpg" alt="The green gallery corner at Kulture" class="ph" data-key="combos">
+    </div>
+    <div>
+      <h2 class="rise">What the day holds</h2>
+      <div id="rows" style="grid-area:rows">
+        <button class="mrow rise" data-key="coffee"><span class="top"><span class="name">Specialty coffee</span><span class="tag">the bar</span></span><span class="desc"><p>Pour overs, espresso and the house Kulture Frappe, plus the Cranberry Kick iced coffee regulars write home about.</p></span></button>
+        <button class="mrow rise" data-key="kitchen"><span class="top"><span class="name">The kitchen</span><span class="tag">continental and italian</span></span><span class="desc"><p>Chicken piccata pasta, thin crust pizzas, paneer shashlik and a fish roll with a following of its own.</p></span></button>
+        <button class="mrow rise" data-key="bar"><span class="top"><span class="name">The sober bar</span><span class="tag">zero proof</span></span><span class="desc"><p>Mocktails, whiskey smashes without the whiskey, tiramisu and affogato to finish. Nothing here needs alcohol to stay late.</p></span></button>
+        <button class="mrow rise" data-key="combos"><span class="top"><span class="name">Mon Bhora Ahar</span><span class="tag">₹499</span></span><span class="desc"><p>The Pujo meal for one: your choice of starter, a main course and a sweet finish.</p></span></button>
+        <button class="mrow rise" data-key="combos"><span class="top"><span class="name">Triptir Bhoj</span><span class="tag">₹1,399</span></span><span class="desc"><p>A feast for two this Puja: two starters, two mains and something sweet to round it off.</p></span></button>
+        <button class="mrow rise" data-key="combos"><span class="top"><span class="name">Maha Bhoj</span><span class="tag">₹2,299</span></span><span class="desc"><p>A spread for three or four: three starters, three mains and a sweet ending, built for long addas.</p></span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="ghead rise">
+    <h2>The room, in four colours</h2>
+    <p>Painted panelling, cane chairs and a shelf of books above one of Kolkata's oldest streets.</p>
+  </div>
+  <div class="gimg g1"><img src="assets/room-yellow-door.jpg" alt="Yellow seating bay" class="ph" loading="lazy"></div>
+  <div class="gimg g2"><img src="assets/bar-shelves.jpg" alt="Bar shelves" class="ph" loading="lazy"></div>
+  <div class="gimg g3"><img src="assets/rattan-corner.jpg" alt="Rattan corner" class="ph" loading="lazy"></div>
+  <div class="gimg g4"><img src="assets/banquette-hall.jpg" alt="Banquette hall" class="ph" loading="lazy"></div>
+  <div class="gimg g5"><img src="assets/reading-nook.jpg" alt="Reading nook" class="ph" loading="lazy"></div>
+  <div class="gimg g6"><img src="assets/green-gallery.jpg" alt="Green gallery" class="ph" loading="lazy"></div>
+</section>
+
+<section class="contact" id="contact">
+  <p class="note rise">Write to us about tables, the Pujo menu or a quiet corner for the afternoon.</p>
+  <a class="mail rise" href="mailto:oldquarter.js52@gmail.com">oldquarter.js52<br>@gmail.com</a>
+  <div class="meta">
+    <span>+91 94480 40531 · Kolkata</span>
+    <span><a href="https://www.instagram.com/kulture_coffee" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/kulture.coffee.in" rel="noopener">Facebook</a> · <a href="https://www.google.com/maps/search/?api=1&query=Kulture+Specialty+Coffee+Park+Street+Kolkata" rel="noopener">Map</a></span>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="cols">
+    <div><h3>Find us</h3><p>3rd Floor, Gate 1<br>Chowringhee Mansions<br>30, Jawaharlal Nehru Road<br>Park Street, Kolkata 700016</p></div>
+    <div><h3>Hours</h3><p>Every day<br>from 8:30 in the morning<br>Breakfast, lunch and dinner</p></div>
+    <div><h3>Good to know</h3><p>Women-owned<br>Free wifi<br>Work friendly<br>Outdoor balcony seats</p></div>
+    <div><h3>Contact</h3><a href="tel:+919448040531">+91 94480 40531</a><a href="mailto:oldquarter.js52@gmail.com">oldquarter.js52@gmail.com</a></div>
+  </div>
+  <div class="wordmark">Kulture</div>
+  <p class="legal">© 2026 Kulture, Specialty Coffee and Bistro, Kolkata. Photographs from the Kulture team.</p>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.18});
+document.querySelectorAll('.rise').forEach(el=>io.observe(el));
+io.observe(document.getElementById('heroImg'));
+
+const rows=[...document.querySelectorAll('.mrow')];
+const imgs=[...document.querySelectorAll('#menuPhoto img')];
+function activate(row){
+  rows.forEach(r=>r.classList.toggle('active',r===row));
+  const k=row.dataset.key;
+  imgs.forEach(im=>im.classList.toggle('cur',im.dataset.key===k));
+}
+rows.forEach(r=>{
+  r.addEventListener('mouseenter',()=>activate(r));
+  r.addEventListener('focus',()=>activate(r));
+  r.addEventListener('click',()=>activate(r));
+});
+activate(rows[0]);
+
+const rso=new IntersectionObserver(es=>{
+  es.forEach(e=>{ if(e.isIntersecting) activate(e.target); });
+},{rootMargin:'-45% 0px -45% 0px'});
+rows.forEach(r=>rso.observe(r));
+
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(!reduce){
+  const gimgs=[...document.querySelectorAll('.gimg')];
+  const speeds=[.06,.1,.04,.12,.08,.05];
+  addEventListener('scroll',()=>{
+    const g=document.getElementById('gallery');
+    const r=g.getBoundingClientRect();
+    const p=Math.min(1,Math.max(0,1-(r.top+r.height/2)/innerHeight));
+    gimgs.forEach((el,i)=>{el.style.transform=`translateY(${(p-.5)*2*speeds[i]*el.offsetHeight}px)`});
+  },{passive:true});
+}
+</script>
+</body>
+</html>
