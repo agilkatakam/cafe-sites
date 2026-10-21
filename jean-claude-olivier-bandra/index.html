@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jean Claude Olivier - Luxury Salon, Bandra West, Mumbai</title>
+<meta name="description" content="Jean Claude Olivier is a luxury hair salon on Waterfield Road's corner in Bandra West, Mumbai, cutting and colouring hair since 1990. Rated 4.7 by 722 visitors.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#ecebe7; --surface:#e1dfd9; --ink:#38450f; --muted:#5d683a;
+  --accent:#38450f; --accent-ink:#ecebe7; --field-1:#38450f; --field-1-ink:#ecebe7;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --margin:24px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--ink); font-family:'Bricolage Grotesque',sans-serif; font-size:var(--step-body); line-height:1.5; }
+img { display:block; }
+a { color:inherit; }
+:focus-visible { outline:2px solid var(--ink); outline-offset:3px; }
+h1,h2,h3 { font-weight:800; letter-spacing:-0.02em; line-height:0.95; }
+
+/* HERO: pinned name over portraits */
+.hero-wrap { height:220svh; position:relative; }
+.hero-pin { position:sticky; top:0; height:100svh; overflow:hidden; }
+.hero-title { position:absolute; top:110px; left:0; right:0; text-align:center; z-index:5; pointer-events:none; }
+.hero-title h1 { font-size:clamp(44px, 6.8vw, 116px); text-transform:uppercase; white-space:nowrap; }
+.hero-sub { margin-top:18px; font-size:16px; font-weight:500; display:inline-block; background:var(--bg); padding:6px 14px; border-radius:4px; }
+.hero-title h1 .wd { display:inline-block; white-space:nowrap; }
+.hero-title h1 .lt { display:inline-block; opacity:0; transform:translateY(0.6em); transition:transform .7s cubic-bezier(.2,.7,.2,1), opacity .7s ease; }
+.hero-title h1.on .lt { opacity:1; transform:none; }
+.hero-top { position:absolute; top:0; left:0; right:0; display:flex; justify-content:space-between; padding:20px var(--margin); z-index:6; font-size:15px; font-weight:500; }
+.hero-top a { text-decoration:none; }
+.hero-supp { position:absolute; left:var(--margin); bottom:32px; max-width:26ch; font-size:16px; font-weight:500; z-index:6; }
+.hero-cta { position:absolute; right:var(--margin); bottom:32px; z-index:6; }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); font-weight:500; font-size:17px; text-decoration:none; padding:14px 28px; border:none; cursor:pointer; font-family:inherit; transition:transform .18s ease; }
+.btn:hover { transform:translateY(-2px); }
+.hero-frames { position:absolute; inset:0; z-index:1; }
+.hero-frames figure { position:absolute; left:50%; transform:translateX(-50%); width:37%; aspect-ratio:2/3; overflow:hidden; }
+.hero-frames img { width:100%; height:100%; object-fit:cover; }
+.hf1 { top:22svh; }
+.hf2 { top:118svh; }
+.hf3 { top:208svh; }
+.hero-frames figcaption { position:absolute; left:0; bottom:10px; font-size:13px; background:var(--bg); color:var(--ink); padding:3px 10px; }
+
+/* INTRO: pinned sentence, photos pass */
+.intro-wrap { height:210svh; position:relative; }
+.intro-pin { position:sticky; top:0; height:100svh; display:flex; align-items:center; justify-content:center; z-index:3; pointer-events:none; }
+.intro-sentence { width:44%; max-width:640px; text-align:center; font-size:clamp(19px,2.3vw,33px); line-height:1.35; font-weight:500; }
+.intro-photos { position:absolute; inset:0; z-index:1; }
+.intro-photos figure { position:absolute; overflow:hidden; }
+.intro-photos img { width:100%; height:100%; object-fit:cover; filter:brightness(0.5); }
+.ip1 { width:19vw; aspect-ratio:3/4; left:1vw; top:30svh; }
+.ip2 { width:20vw; aspect-ratio:4/5; right:1vw; top:118svh; }
+.ip3 { width:17vw; aspect-ratio:3/4; right:3vw; top:172svh; }
+
+/* SHOWCASE: close-up with column card */
+.showcase { position:relative; height:100svh; overflow:hidden; }
+.showcase > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.show-card { position:absolute; left:25%; top:50%; transform:translateY(-50%); width:22vw; min-width:300px; min-height:52svh; background:var(--field-1); color:var(--field-1-ink); padding:32px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; text-align:center; }
+.show-card h2 { font-size:clamp(26px,2.6vw,36px); }
+.show-card p { font-size:17px; }
+.show-card img { width:100%; aspect-ratio:3/2; object-fit:cover; }
+.show-card .btn { background:var(--accent-ink); color:var(--ink); width:100%; text-align:center; }
+
+/* LIST: sticky photo + active list */
+.svc { display:grid; grid-template-columns:5fr 6fr; gap:6vw; padding:130px var(--margin); }
+.svc-photo { position:sticky; top:12vh; align-self:start; }
+.svc-photo img { width:100%; max-width:34vw; aspect-ratio:4/5; object-fit:cover; }
+.svc-head { grid-column:1 / -1; font-size:clamp(30px,3.4vw,48px); margin-bottom:8px; }
+.svc-row { padding:16px 8px; cursor:default; }
+.svc-row .rank { font-size:clamp(20px,1.6vw,24px); font-weight:500; color:var(--muted); transition:color .2s; }
+.svc-row .desc { font-size:15px; color:var(--muted); max-width:34ch; max-height:0; overflow:hidden; transition:max-height .3s ease, margin .3s ease; margin-top:0; }
+.svc-row.on .rank { color:var(--ink); }
+.svc-row.on .desc { max-height:6em; margin-top:8px; }
+.svc-row:hover { background:var(--surface); }
+
+/* ABOUT */
+.about { padding:40px 20px 120px; }
+.about-panel { background:var(--surface); padding:64px 56px; display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+.about-panel h2 { font-size:var(--step-head); margin-bottom:28px; }
+.about-panel p { max-width:46ch; margin-bottom:16px; }
+.about-panel p.dim { color:var(--muted); }
+.about-panel .photo { aspect-ratio:4/5; overflow:hidden; }
+.about-panel .photo img { width:100%; height:100%; object-fit:cover; }
+
+/* MARQUEE */
+.marquee { overflow:hidden; padding:26px 0; white-space:nowrap; background:var(--surface); }
+.mq-track { display:inline-flex; gap:56px; align-items:center; animation:mq 22s linear infinite; will-change:transform; }
+.mq-track span { font-weight:800; font-size:clamp(20px,2.6vw,34px); text-transform:uppercase; letter-spacing:0.02em; color:var(--muted); }
+.mq-track i { display:inline-block; width:12px; height:12px; background:var(--ink); transform:rotate(45deg); flex:none; }
+@keyframes mq { to { transform:translateX(-50%); } }
+
+/* CONTACT */
+.contact { position:relative; height:100svh; overflow:hidden; }
+.contact > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.visit-card { position:absolute; top:60px; left:60px; width:380px; background:var(--bg); color:var(--ink); padding:32px; z-index:5; }
+.visit-card h2 { font-size:var(--step-head); margin-bottom:14px; }
+.visit-card p { font-size:var(--step-body); }
+.visit-card .meta { margin:14px 0 18px; color:var(--muted); }
+.visit-card .meta b { color:var(--ink); font-weight:500; }
+.visit-card .btn { display:block; text-align:center; padding:15px; margin-bottom:10px; }
+.visit-card .alt { display:block; text-align:center; text-underline-offset:3px; }
+
+.contact-head { position:absolute; right:var(--margin); bottom:48px; z-index:5; font-size:clamp(40px,6vw,96px); color:var(--accent-ink); text-transform:uppercase; text-align:right; max-width:8em; }
+
+/* FOOTER */
+footer { background:var(--field-1); color:var(--field-1-ink); padding:100px var(--margin) 40px; text-align:center; }
+footer .footmark { font-weight:800; letter-spacing:-0.03em; line-height:0.9; font-size:clamp(26px,7.6vw,140px); text-transform:uppercase; white-space:nowrap; }
+footer .credits { margin-top:56px; font-size:13px; line-height:1.7; max-width:70ch; margin-left:auto; margin-right:auto; color:#c9cec0; }
+
+.rise { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s cubic-bezier(.2,.6,.2,1); }
+.rise.in { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) {
+  .rise { opacity:1; transform:none; transition:none; }
+  html { scroll-behavior:auto; }
+}
+
+@media (max-width:899px) {
+  :root { --margin:16px; }
+  .hero-title { top:64px; }
+  .hero-title h1 { font-size:11.5vw; white-space:normal; line-height:0.92; }
+  .hero-frames figure { width:calc(100% - 32px); }
+  .hf1 { top:34svh; }
+  .hero-supp { display:none; }
+  .hero-cta { left:16px; right:16px; bottom:16px; }
+  .hero-cta .btn { display:block; text-align:center; }
+  .hero-wrap { height:190svh; }
+  .intro-sentence { width:auto; margin:0 20px; font-size:24px; background:var(--bg); padding:20px 22px; }
+  .ip1 { width:64vw; left:0; top:48svh; }
+  .ip2 { width:80vw; right:0; top:120svh; }
+  .ip3 { width:52vw; left:5vw; top:172svh; }
+  .show-card { left:0; right:0; top:auto; bottom:0; transform:none; width:100%; min-height:46svh; align-items:flex-start; text-align:left; }
+  .show-card img { max-width:180px; position:absolute; right:20px; top:20px; }
+  .svc { grid-template-columns:1fr; padding:80px var(--margin); }
+  .svc-photo { position:relative; top:0; }
+  .svc-photo img { max-width:none; aspect-ratio:4/3; }
+  .about { padding:20px 10px 80px; }
+  .about-panel { grid-template-columns:1fr; padding:32px 24px; gap:32px; }
+  .contact { height:auto; }
+  .contact > img { position:relative; height:70svh; }
+  .visit-card { position:relative; top:auto; left:auto; width:auto; margin:-80px 16px 40px; }
+  .contact-head { bottom:auto; top:24px; left:16px; right:16px; text-align:left; font-size:clamp(32px,9vw,48px); max-width:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero-wrap" id="top">
+  <div class="hero-pin">
+    <div class="hero-frames" aria-hidden="false">
+      <figure class="hf1"><img src="assets/stylist-pink.jpg" alt="A Jean Claude Olivier stylist blow-drying a client's pink hair" width="500" height="500"><figcaption>The work, in progress</figcaption></figure>
+      <figure class="hf2"><img src="assets/chairs.jpg" alt="Styling chairs and mirrors inside the Bandra salon" width="1200" height="770" loading="lazy"><figcaption>The floor, Bandra West</figcaption></figure>
+      <figure class="hf3"><img src="assets/stylist-detail.jpg" alt="Close-up of a stylist finishing a blow-dry" width="500" height="500" loading="lazy"><figcaption>The finish</figcaption></figure>
+    </div>
+    <div class="hero-top">
+      <span>JCO &middot; since 1990</span>
+      <a href="#visit">Menu</a>
+    </div>
+    <div class="hero-title"><h1>Jean Claude Olivier</h1><p class="hero-sub">Luxury hair salon, Bandra West, Mumbai - since 1990</p></div>
+    <p class="hero-supp">A luxury hair salon on a Bandra West side street, at it since 1990. Rated 4.7 by 722 visitors on Google.</p>
+    <div class="hero-cta"><a class="btn" href="tel:+919987797773">Book a chair</a></div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="intro-wrap" aria-label="The salon">
+  <div class="intro-pin">
+    <p class="intro-sentence">Love is in the hair - the salon's own words, painted over thirty-two years of cuts, colour and care.</p>
+  </div>
+  <div class="intro-photos">
+    <figure class="ip1"><img src="assets/mirrors.jpg" alt="Tall mirrors and black styling chairs in the salon" width="1200" height="770" loading="lazy"></figure>
+    <figure class="ip2"><img src="assets/wash-stations.jpg" alt="Three wash stations along the salon wall" width="1200" height="770" loading="lazy"></figure>
+    <figure class="ip3"><img src="assets/product-shelf.jpg" alt="Shelves of Postquam cosmetics beside the stairs" width="1200" height="770" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- SHOWCASE -->
+<section class="showcase" aria-label="The cut">
+  <img src="assets/stylist-pink.jpg" alt="Close-up of a stylist working pink hair" width="500" height="500" loading="lazy">
+  <div class="show-card rise">
+    <h2>The cut</h2>
+    <p>From a Top Stylist to the Style Director - you choose the seniority of the chair.</p>
+    <img src="assets/stylist-detail.jpg" alt="A stylist finishing a blow-dry" width="500" height="500" loading="lazy">
+    <a class="btn" href="tel:+919987797773">Book by phone</a>
+  </div>
+</section>
+
+<!-- LIST: the hierarchy -->
+<section class="svc" aria-label="The stylists">
+  <h2 class="rise svc-head">Who cuts your hair</h2>
+  <div class="svc-photo">
+    <img id="svcimg" src="assets/reception.jpg" alt="The JCO reception desk at the Bandra salon" width="1200" height="770" loading="lazy">
+  </div>
+  <div class="svc-list">
+    <div class="svc-row rise on" data-img="assets/reception.jpg"><div class="rank">Style Director</div><div class="desc">The most senior chair in the house - the final word on shape and colour.</div></div>
+    <div class="svc-row rise" data-img="assets/chairs.jpg"><div class="rank">Art Director</div><div class="desc">Senior creative lead; cuts and colours with the director team.</div></div>
+    <div class="svc-row rise" data-img="assets/mirrors.jpg"><div class="rank">Senior Stylist</div><div class="desc">Years on the floor; handles cuts, colour and styling day to day.</div></div>
+    <div class="svc-row rise" data-img="assets/wash-stations.jpg"><div class="rank">Top Stylist</div><div class="desc">The house's rising stylists, trained in the JCO way.</div></div>
+    <p class="rise" style="color:var(--muted); font-size:15px; margin-top:24px; max-width:40ch;">The salon works hand in hand with Postquam Cosmetic, its long-time product partner. Every chair is booked by phone.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" aria-label="About the salon">
+  <div class="about-panel">
+    <div>
+      <h2 class="rise">Thirty-two years, one Bandra corner</h2>
+      <p class="rise">Jean Claude Olivier has dressed hair since 1990. The Bandra West salon is its first in India - a two-floor room off Waterfield Road with a reception desk, wash stations and a line of tall mirrors.</p>
+      <p class="rise dim">Rated 4.7 by 722 visitors on Google.</p>
+      <a class="btn rise" href="tel:+919987797773">Call the salon</a>
+    </div>
+    <div class="photo rise"><img src="assets/reception.jpg" alt="The reception desk at Jean Claude Olivier, Bandra" width="1200" height="770" loading="lazy"></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="mq-track" id="mqt">
+    <span>Cut</span><i></i><span>Colour</span><i></i><span>Styling</span><i></i><span>Blow-dry</span><i></i><span>Since 1990</span><i></i>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="visit" aria-label="Visit">
+  <h2 class="contact-head">Find us in Bandra</h2>
+  <img src="assets/storefront-night.jpg" alt="The Jean Claude Olivier storefront lit at night in Bandra" width="1200" height="770" loading="lazy">
+  <div class="visit-card rise">
+    <h2>Visit</h2>
+    <p>Jean Claude Olivier<br>
+    Shop X &amp; Y, Coral Apartment<br>
+    Road No. 24, opp. St. Theresa's Church gate<br>
+    Bandra West, Mumbai 400050</p>
+    <p class="meta"><b>+91 99877 97773</b><br>Rated <b>4.7</b> by 722 visitors on Google</p>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Jean+Claude+Olivier+Luxury+Salon+in+Bandra&amp;query_place_id=ChIJfQGjowvJ5zsRMcSuJT3Qg6I">Get directions</a>
+    <a class="alt" href="tel:+919987797773">Or call to book</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footmark">Jean Claude Olivier</div>
+  <p class="credits">All photographs are from the salon's own website, jeanclaudeolivier.in: its floor, mirrors, wash stations, products, storefront and stylists at work. The stylist hierarchy, "since 1990" and "Love is in the hair" are the salon's own claims.</p>
+</footer>
+
+<script>
+(function(){
+  // hero letter reveal
+  var h1 = document.querySelector('.hero-title h1');
+  var txt = h1.textContent;
+  h1.textContent = '';
+  var n = 0;
+  txt.split(' ').forEach(function(word, wi, arr){
+    var w = document.createElement('span');
+    w.className = 'wd';
+    word.split('').forEach(function(ch){
+      var s = document.createElement('span');
+      s.className = 'lt';
+      s.textContent = ch;
+      s.style.transitionDelay = (n * 38) + 'ms';
+      w.appendChild(s); n++;
+    });
+    h1.appendChild(w);
+    if (wi < arr.length - 1) h1.appendChild(document.createTextNode(' '));
+  });
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ h1.classList.add('on'); }); });
+
+  // duplicate marquee content for a seamless loop
+  var mq = document.getElementById('mqt');
+  mq.innerHTML += mq.innerHTML;
+
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (e.isIntersecting) {
+        var el = e.target;
+        var sibs = Array.prototype.slice.call(el.parentElement.querySelectorAll('.rise'));
+        var idx = sibs.indexOf(el);
+        setTimeout(function(){ el.classList.add('in'); }, 75 * Math.max(0, idx));
+        io.unobserve(el);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.rise').forEach(function(el){ io.observe(el); });
+
+  // services list: active row swaps the sticky photo
+  var rows = document.querySelectorAll('.svc-row[data-img]');
+  var img = document.getElementById('svcimg');
+  rows.forEach(function(r){
+    function on(){
+      rows.forEach(function(x){ x.classList.remove('on'); });
+      r.classList.add('on');
+      var src = r.getAttribute('data-img');
+      if (img.getAttribute('src') !== src) {
+        img.style.transition = 'opacity .3s ease'; img.style.opacity = 0;
+        setTimeout(function(){ img.src = src; img.style.opacity = 1; }, 300);
+      }
+    }
+    r.addEventListener('mouseenter', on);
+    r.addEventListener('click', on);
+    r.addEventListener('focus', on);
+    r.setAttribute('tabindex','0');
+  });
+})();
+</script>
+</body>
+</html>
