@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figurine Fitness, Indiranagar. India's first dance-fitness studio, Bengaluru</title>
+<meta name="description" content="Figurine Fitness in Indiranagar, Bengaluru. Dance aerobics, gym, pilates and power yoga, forty years running. From Rs 3,500 a month. Rated 4.8 from 474 Google reviews.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.className += ' js';</script>
+<style>
+:root{
+  --blue:#1423b8; --blue-deep:#1220a6; --ink:#ffffff; --ink-soft:#b4bcf0;
+  --green:#1fc27a; --green-ink:#0a0a0a;
+  --black:#000000; --yellow:#f7dd47; --pink:#e9479f;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --ease-out: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --stagger-item: 70ms;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--blue);color:var(--ink);font-family:'Jost',sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--green);outline-offset:3px}
+::selection{background:var(--yellow);color:var(--black)}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{font-weight:700;text-transform:uppercase;letter-spacing:-0.03em;line-height:0.9}
+
+/* ---------- hero: mosaic masthead ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column}
+.masthead{
+  display:grid;grid-template-columns:repeat(6,1fr);grid-template-rows:repeat(2,1fr);
+  height:52svh;
+}
+.masthead img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.masthead .ph2{grid-column:span 2}
+.tile-pink{background:var(--pink)}
+.tile-yellow{background:var(--yellow)}
+.tile-black{background:var(--black)}
+.tile-green{background:var(--green);grid-row:span 2}
+.header{
+  display:flex;align-items:stretch;margin-top:0;
+}
+.wordmark{
+  background:var(--ink);color:var(--blue);font-weight:700;text-transform:uppercase;
+  font-size:20px;letter-spacing:-0.02em;padding:14px 18px;align-self:flex-start;
+}
+.navrow{
+  background:var(--green);display:flex;align-items:center;gap:30px;
+  padding:0 24px;width:42%;margin-top:0;font-size:16px;font-weight:500;
+}
+.navrow a{color:var(--green-ink);transition:opacity 200ms}
+.navrow a:hover{opacity:0.65}
+.header__action{margin-left:auto;align-self:center;padding-right:20px}
+.btn{
+  display:inline-block;background:var(--green);color:var(--green-ink);font-weight:500;
+  font-size:16px;padding:16px 26px;line-height:1;min-height:44px;
+  transition:transform 160ms var(--ease-out), background 240ms;
+}
+.btn:hover{background:#26d98a}
+.btn:active{transform:scale(0.97)}
+.hero__body{flex:1;display:flex;flex-direction:column;justify-content:center;padding:40px 20px 60px}
+.hero__standfirst{font-size:20px;max-width:30ch;margin-bottom:48px}
+.hero h1{
+  font-size:clamp(48px,7vw,104px);letter-spacing:-0.06em;line-height:0.9;
+  margin-left:calc(36% - 20px);max-width:20ch;
+}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line>span{display:inline-block}
+.js .hero h1 .line>span{transform:translateY(110%);animation:line-up 900ms var(--ease-out) forwards;animation-delay:calc(120ms + var(--i)*110ms)}
+@keyframes line-up{to{transform:none}}
+.js [data-load]{opacity:0;transform:translateY(14px);animation:load-rise 700ms var(--ease-out) forwards;animation-delay:var(--d,400ms)}
+@keyframes load-rise{to{opacity:1;transform:none}}
+.js .masthead>*{opacity:0;animation:load-rise 600ms var(--ease-out) forwards;animation-delay:calc(var(--i,0)*60ms)}
+
+/* ---------- showcase: two objects, two fields ---------- */
+.showcase{display:grid;grid-template-columns:1fr 1fr}
+.panel{position:relative;height:92svh;overflow:hidden}
+.panel--yellow{background:var(--yellow);color:var(--black)}
+.panel--pink{background:var(--pink);color:var(--black)}
+.panel__img{position:absolute;top:0;left:50%;transform:translateX(-50%);width:130%;max-width:none;height:130%;object-fit:cover;object-position:top center}
+.panel h2{position:absolute;top:32px;left:28px;font-size:clamp(28px,2.6vw,40px);max-width:10ch;z-index:2}
+.panel__row{
+  position:absolute;left:28px;right:28px;bottom:26px;z-index:2;
+  display:flex;align-items:flex-end;justify-content:space-between;gap:16px;
+}
+.panel__name{font-size:20px;font-weight:500}
+.panel__fact{font-size:16px;opacity:0.75;margin-top:4px}
+.panel__actions{display:flex;gap:10px}
+.panel__actions .btn-ink{background:var(--black);color:#fff;padding:13px 20px;font-size:16px;font-weight:500;transition:transform 160ms var(--ease-out)}
+.panel__actions .btn-paper{background:#fff;color:var(--black);padding:13px 20px;font-size:16px;font-weight:500;transition:transform 160ms var(--ease-out)}
+.panel__actions a:active{transform:scale(0.96)}
+.panel__actions a:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- stats: stepped tiles ---------- */
+.stats{padding:100px 20px 120px;background:var(--black)}
+.stats h2{font-size:clamp(28px,2.4vw,36px);margin:0 0 26px calc(50% + 8px)}
+.stats__grid{display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+.stat-y{background:var(--yellow);color:var(--black);grid-column:1/7;height:70vh;position:relative}
+.stat-k{background:var(--blue);color:var(--ink);grid-column:7/10;height:44vh;margin-top:14vh;position:relative}
+.stat-p{background:var(--pink);color:var(--black);grid-column:10/13;height:34vh;margin-top:26vh;position:relative}
+.stat__fig{position:absolute;top:28px;left:28px;font-weight:700;font-size:clamp(48px,5.4vw,92px);letter-spacing:-0.03em;line-height:0.9}
+.stat__cap{position:absolute;bottom:24px;left:28px;right:28px;font-size:16px;line-height:1.4}
+
+/* ---------- about: inset panel ---------- */
+.about{background:var(--blue);padding:0 20px}
+.about__panel{background:var(--black);min-height:110svh;position:relative;overflow:hidden;padding:56px}
+.about__heading{font-size:clamp(40px,4.4vw,64px);max-width:14ch;position:relative;z-index:2;text-wrap:balance}
+.about__portrait{
+  position:absolute;left:56px;bottom:0;width:30vw;max-width:440px;aspect-ratio:1/1;
+  border-radius:50% 50% 0 0;overflow:hidden;transform:translateY(15%);
+}
+.about__portrait img{width:100%;height:100%;object-fit:cover}
+.about__blocks{position:absolute;left:60%;top:56px;width:320px;z-index:2;display:flex;flex-direction:column;gap:52px}
+.about__block h3{font-size:22px;margin-bottom:10px}
+.about__block p{font-size:16px;line-height:1.5;color:var(--ink-soft)}
+.about .btn{margin-top:4px}
+
+/* ---------- gallery: tiles with label strips ---------- */
+.gallery{background:var(--yellow);color:var(--black);padding:100px 24px 120px}
+.gallery h2{font-size:32px;margin:0 0 40px}
+.gallery__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 12px}
+.gtile{background:var(--black)}
+.gtile img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.gtile__strip{padding:14px;font-size:13px;line-height:1.45;color:#fff;min-height:84px}
+.gtile__strip .r1{display:flex;justify-content:space-between;gap:8px;font-weight:500;flex-wrap:wrap}
+.gtile__strip .r2{display:flex;justify-content:space-between;gap:8px;margin-top:6px;opacity:0.75}
+.gtile:nth-child(4n+2) .gtile__strip{background:var(--blue)}
+.gtile:nth-child(4n+3) .gtile__strip{background:var(--pink);color:var(--black)}
+.gtile:nth-child(4n+4) .gtile__strip{background:#fff;color:var(--black)}
+.gtile{transition:transform 300ms var(--ease-out)}
+.gtile:hover{transform:translateY(-6px)}
+
+/* ---------- contact: display rows ---------- */
+.contact{background:var(--blue);padding:100px 0 0}
+.contact__rows{list-style:none}
+.contact__rows li{
+  font-weight:700;text-transform:uppercase;letter-spacing:-0.03em;
+  font-size:clamp(26px,5.4vw,72px);line-height:1.04;padding:40px 20px 34px;
+}
+.contact__rows li:nth-child(odd){background:var(--blue-deep)}
+.contact__rows a{transition:opacity 200ms}
+.contact__rows a:hover{opacity:0.7}
+.contact__hello{background:var(--green);color:var(--green-ink);display:flex;align-items:center;gap:24px}
+.contact__hello .dot{
+  width:0.9em;height:0.9em;border-radius:50%;background:var(--black);color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;flex:none;
+  transition:transform 300ms var(--ease-out);
+}
+.contact__hello:hover .dot{transform:translateX(6px)}
+.contact__hello .dot svg{width:40%;height:40%}
+
+/* ---------- footer: contact as headline ---------- */
+.footer{background:var(--pink);color:var(--black);min-height:90svh;display:flex;flex-direction:column;justify-content:space-between;padding:40px 20px 30px}
+.footer__notes{display:flex;gap:40px;flex-wrap:wrap;font-size:16px;max-width:70%}
+.footer__notes .wm{font-weight:700;text-transform:uppercase}
+.footer__top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.footer__toplink{font-size:16px;text-decoration:underline;text-underline-offset:4px}
+.footer__phone{
+  font-weight:700;letter-spacing:-0.03em;font-size:clamp(40px,8.4vw,124px);
+  line-height:0.95;white-space:nowrap;
+}
+.footer__phone a:hover{text-decoration:underline;text-underline-offset:8px}
+.footer__meta{display:flex;justify-content:space-between;gap:20px;font-size:14px;margin-top:28px;flex-wrap:wrap}
+
+/* ---------- reveals ---------- */
+.js [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity 700ms var(--ease-out) calc(var(--i,0)*var(--stagger-item)),transform 700ms var(--ease-out) calc(var(--i,0)*var(--stagger-item))}
+.js [data-reveal].is-in{opacity:1;transform:none}
+.js .gtile{opacity:0;transform:translateY(26px);transition:opacity 600ms var(--ease-out) calc(var(--i,0)*55ms),transform 600ms var(--ease-out) calc(var(--i,0)*55ms)}
+.js .gtile.is-in{opacity:1;transform:none}
+.js .gtile.is-in:hover{transform:translateY(-6px)}
+.drift{animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:translateX(-50%) scale(1)}to{transform:translateX(-50%) scale(1.07)}}
+
+/* ---------- tablet / phone ---------- */
+@media (max-width: 900px){
+  .about__blocks{left:56%}
+}
+@media (max-width: 760px){
+  .about__panel{padding:36px 22px 0;min-height:0}
+  .about__heading{font-size:8.5vw;max-width:none}
+  .about__blocks{position:static;width:auto;margin-top:44px;gap:40px}
+  .about__portrait{position:relative;left:auto;bottom:auto;width:84vw;max-width:none;margin:48px auto 0;transform:translateY(18%)}
+}
+@media (max-width: 640px){
+  .masthead{grid-template-columns:repeat(3,1fr);height:38svh}
+  .masthead .m-hide{display:none}
+  .hero__body{padding:28px 16px 44px}
+  .hero h1{margin-left:0;font-size:11vw}
+  .hero__standfirst{font-size:17px;margin-bottom:32px}
+  .navrow{display:none}
+  .header__action{padding-right:16px}
+  .showcase{grid-template-columns:1fr}
+  .panel{height:78svh}
+  .panel__img{width:150%}
+  .panel h2{font-size:26px;top:24px;left:20px}
+  .panel__row{left:20px;right:20px;flex-direction:column;align-items:flex-start}
+  .panel__actions{width:100%}
+  .panel__actions a{flex:1;text-align:center}
+  .stats{padding:80px 16px 100px}
+  .stats h2{margin:0 0 22px}
+  .stats__grid{grid-template-columns:1fr 1fr;gap:6px}
+  .stat-y{grid-column:1/3;height:56vw;margin-top:0}
+  .stat-y .stat__fig{font-size:15vw}
+  .stat-k{grid-column:1/2;height:44vw;margin-top:0}
+  .stat-p{grid-column:2/3;height:44vw;margin-top:32px}
+  .stat-k .stat__fig,.stat-p .stat__fig{font-size:11vw;top:18px;left:18px}
+  .stat__cap{left:18px;bottom:16px;font-size:14px}
+  .gallery{padding:80px 16px 90px}
+  .gallery h2{font-size:24px;margin-bottom:28px}
+  .gallery__grid{grid-template-columns:1fr 1fr;gap:20px 8px}
+  .gtile__strip{min-height:0}
+  .gtile__strip .r2{display:none}
+  .contact{padding:90px 0 0}
+  .contact__rows li{font-size:9vw;padding:26px 16px 22px}
+  .footer{padding:28px 16px 24px}
+  .footer__phone{white-space:normal;font-size:12.5vw}
+}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js [data-reveal],.js [data-load],.js .gtile,.js .masthead>*,.js .hero h1 .line>span{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="masthead" aria-hidden="true">
+    <img style="--i:0" src="assets/web-gallery-3-1.jpg" width="1020" height="612" alt="">
+    <div class="tile-pink" style="--i:1"></div>
+    <img style="--i:2" src="assets/web-dance-aerobics.jpg" width="1200" height="800" alt="" class="ph2">
+    <div class="tile-yellow" style="--i:3"></div>
+    <div class="tile-green" style="--i:4"></div>
+    <img style="--i:5" src="assets/web-gallery-6.jpg" width="979" height="652" alt="">
+    <img style="--i:6" src="assets/web-gallery-10.jpg" width="714" height="510" alt="">
+    <div class="tile-black m-hide" style="--i:7"></div>
+  </div>
+  <div class="header">
+    <span class="wordmark" data-load style="--d:80ms">Figurine Fitness</span>
+    <nav class="navrow" data-load style="--d:160ms">
+      <a href="#programs">Programs</a>
+      <a href="#record">The record</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="header__action" data-load style="--d:240ms">
+      <a class="btn" href="tel:+919845032994">Book a free trial</a>
+    </div>
+  </div>
+  <div class="hero__body">
+    <p class="hero__standfirst" data-load style="--d:420ms">Figurine Fitness, Indiranagar. Dance aerobics, gym, pilates and power yoga, from ₹3,500 a month.</p>
+    <h1>
+      <span class="line"><span style="--i:0">Dance fitness,</span></span>
+      <span class="line"><span style="--i:1">forty years in.</span></span>
+    </h1>
+  </div>
+</header>
+
+<main>
+
+<section class="showcase" id="programs">
+  <h2 class="visually-hidden">Programs</h2>
+  <div class="panel panel--yellow" data-reveal style="--i:0">
+    <img class="panel__img drift" src="assets/web-gallery-6.jpg" width="979" height="652" alt="A dance aerobics batch at Figurine Fitness in neon kit" loading="lazy" decoding="async">
+    <h2 style="position:absolute">Pick your sweat</h2>
+    <div class="panel__row">
+      <div>
+        <div class="panel__name">Dance Aerobics</div>
+        <div class="panel__fact">Trainer-led batches, five days a week</div>
+      </div>
+      <div class="panel__actions">
+        <a class="btn-ink" href="tel:+919845032994">Try a class</a>
+        <a class="btn-paper" href="#visit">Visit</a>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel--pink" data-reveal style="--i:1">
+    <img class="panel__img" src="assets/web-gallery-10.jpg" width="714" height="510" alt="The gym floor at Figurine Fitness" loading="lazy" decoding="async">
+    <div class="panel__row">
+      <div>
+        <div class="panel__name">Gym, Pilates, Power Yoga</div>
+        <div class="panel__fact">Modern equipment, certified trainers</div>
+      </div>
+      <div class="panel__actions">
+        <a class="btn-ink" href="tel:+919845032994">Try a class</a>
+        <a class="btn-paper" href="#visit">Visit</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="record">
+  <h2 data-reveal style="--i:0">The record</h2>
+  <div class="stats__grid">
+    <div class="stat-y" data-reveal style="--i:1">
+      <div class="stat__fig">40+</div>
+      <div class="stat__cap">years since Santosh pioneered dance aerobics in India</div>
+    </div>
+    <div class="stat-k" data-reveal style="--i:2">
+      <div class="stat__fig">3 lakh+</div>
+      <div class="stat__cap">members trained, plus 400 instructors nationwide</div>
+    </div>
+    <div class="stat-p" data-reveal style="--i:3">
+      <div class="stat__fig">4.8</div>
+      <div class="stat__cap">from 474 Google reviews</div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="about__panel">
+    <h2 class="about__heading" data-reveal style="--i:0">The champion's studio.</h2>
+    <div class="about__portrait" data-reveal style="--i:2">
+      <img src="assets/web-gallery-5.jpg" width="979" height="652" alt="Partner dance work during a Figurine Fitness session" loading="lazy" decoding="async">
+    </div>
+    <div class="about__blocks">
+      <div class="about__block" data-reveal style="--i:1">
+        <h3>The founder</h3>
+        <p>Santosh turned a passion for rhythm and sport into India's first dance-fitness studio in the late 1980s. A national jazz champion and internationally qualified expert, he has trained over three lakh members and 400 instructors.</p>
+      </div>
+      <div class="about__block" data-reveal style="--i:2">
+        <h3>The method</h3>
+        <p>With his wife Anu and a team of 15-plus trainers, he leads dance fitness, gym training, rehabilitation and nutrition across Bangalore. No judgments: they only care that you show up.</p>
+      </div>
+      <div data-reveal style="--i:3">
+        <a class="btn" href="tel:+919845032994">Book a free trial</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2 data-reveal style="--i:0">The archive</h2>
+  <div class="gallery__grid">
+    <figure class="gtile" style="--i:0">
+      <img src="assets/web-gallery-3-1.jpg" width="1020" height="612" alt="Figurine Fitness collage: gym, aerobics, dance, yoga, kickboxing" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Studio</span><span>Indiranagar</span><span>Daily</span><span>All levels</span></div><div class="r2"><span>Since the late 1980s</span><span>Bengaluru</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:1">
+      <img src="assets/web-Media-3.jpg" width="1200" height="849" alt="Newspaper clipping: Rhythm's Gonna Get You, on Santosh's aerobics" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Press</span><span>Archive</span><span>Dance</span><span>Aerobics</span></div><div class="r2"><span>The early years</span><span>Bengaluru</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:2">
+      <img src="assets/web-dance-aerobics.jpg" width="1200" height="800" alt="A full dance aerobics batch mid-routine" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Batch</span><span>Trainer-led</span><span>Cardio</span><span>Music</span></div><div class="r2"><span>Five days a week</span><span>Indiranagar</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:3">
+      <img src="assets/web-Media-28.jpg" width="1200" height="849" alt="Newspaper clipping: Dictated by Dance, a profile of the studio" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Press</span><span>Archive</span><span>Profile</span><span>Dance</span></div><div class="r2"><span>The early years</span><span>Bengaluru</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:4">
+      <img src="assets/web-BOLLY-SWAG.jpg" width="883" height="1200" alt="A Bolly Swag session: two dancers mid-move" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Bolly</span><span>Swag</span><span>Dance</span><span>Fun</span></div><div class="r2"><span>Studio batch</span><span>Indiranagar</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:5">
+      <img src="assets/web-FIGURINE-FITNESS.jpg" width="1200" height="663" alt="A Figurine Fitness class in the orange studio room" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Class</span><span>Aerobics</span><span>Daily</span><span>Group</span></div><div class="r2"><span>Studio batch</span><span>Indiranagar</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:6">
+      <img src="assets/web-Transformations-1.jpg" width="819" height="819" alt="A member's before and after at Figurine Fitness" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Member</span><span>Result</span><span>Before</span><span>After</span></div><div class="r2"><span>Real members</span><span>Bengaluru</span></div></figcaption>
+    </figure>
+    <figure class="gtile" style="--i:7">
+      <img src="assets/web-Media-16.jpg" width="1200" height="849" alt="Newspaper clipping: Welcome to Wellville, featuring the studio" loading="lazy" decoding="async">
+      <figcaption class="gtile__strip"><div class="r1"><span>Press</span><span>Archive</span><span>Feature</span><span>Fitness</span></div><div class="r2"><span>The early years</span><span>Bengaluru</span></div></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <h2 class="visually-hidden">Visit the studio</h2>
+  <ul class="contact__rows">
+    <li data-reveal style="--i:0">Figurine Fitness</li>
+    <li data-reveal style="--i:1"><a href="https://www.google.com/maps/search/?api=1&query=Figurine+Fitness&query_place_id=ChIJa8lmBB4UrjsRWrtLKsCUSAk" target="_blank" rel="noopener">#3167, ESI Hospital Road</a></li>
+    <li data-reveal style="--i:2">Doopanahalli, Indiranagar</li>
+    <li data-reveal style="--i:3"><a href="tel:+919845032994">+91 98450 32994</a></li>
+    <li class="contact__hello" data-reveal style="--i:4">
+      <a href="tel:+919845032994" style="display:flex;align-items:center;gap:24px">Sweat with us
+        <span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+    </li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__notes">
+      <span class="wm">Figurine Fitness</span>
+      <span>#3167, ESI Hospital Road, Indiranagar, Bengaluru 560008</span>
+      <span>Dance aerobics, gym, pilates, power yoga. From ₹3,500 a month.</span>
+    </div>
+    <a class="footer__toplink" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
+  </div>
+  <div>
+    <div class="footer__phone"><a href="tel:+919845032994">+91 98450 32994</a></div>
+    <div class="footer__meta">
+      <span><a href="#programs" style="text-decoration:underline;text-underline-offset:4px">Programs</a> · <a href="#record" style="text-decoration:underline;text-underline-offset:4px">The record</a> · <a href="#visit" style="text-decoration:underline;text-underline-offset:4px">Visit</a></span>
+      <span>Concept redesign for Figurine Fitness. All photographs and press clippings from figurinefitness.in.</span>
+      <span>Bengaluru, 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+  }, { threshold: 0.05, rootMargin: '0px 0px 300px 0px' });
+  document.querySelectorAll('[data-reveal], .gtile').forEach(el => io.observe(el));
+  setTimeout(() => document.querySelectorAll('[data-reveal], .gtile').forEach(el => el.classList.add('is-in')), 2500);
+})();
+</script>
+</body>
+</html>
