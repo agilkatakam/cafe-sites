@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wise Owl The Coffee Shop - Hindustan Park, Gariahat, Kolkata</title>
+<meta name="description" content="Wise Owl The Coffee Shop is a women-owned cafe on Purna Das Road, Hindustan Park, Kolkata. Breakfast all day, shakes in a jar, soups and sandwiches in a bright yellow room. Open every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --surface:#f4f4f2;
+  --ink:#1f2b4d;
+  --muted:#6a7186;
+  --accent:#f7941d;
+  --accent-ink:#1f2b4d;
+  --field-1:#05070a;
+  --field-1-ink:#ffffff;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --radius:8px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Newsreader",Georgia,serif;
+  background:var(--bg);color:var(--ink);
+  font-size:var(--step-body);line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- hero ---------- */
+.hero{position:relative;height:100svh;overflow:hidden;background:var(--field-1)}
+.hero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero .ph.on{opacity:1;animation:herodrift 26s ease-in-out infinite alternate}
+.hero .ui{position:absolute;inset:0;z-index:3;color:#fff;display:flex;flex-direction:column}
+.hero .letterhead{position:absolute;top:24px;left:24px;font-size:14px;line-height:1.35;font-weight:500}
+.hero nav{position:absolute;top:24px;right:24px;font-size:14px}
+.hero nav a{color:#fff;text-decoration:none}
+.hero nav a.current{border-bottom:2px solid #fff;padding-bottom:2px}
+.hero nav a:hover{border-bottom:2px solid #fff;padding-bottom:2px}
+.hero .low{position:absolute;left:24px;right:24px;bottom:32px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.hero h1{font-weight:400;font-size:clamp(44px,4.2vw,64px);line-height:1.0;letter-spacing:-0.02em;max-width:12ch}
+.hero .side{text-align:right;max-width:32ch}
+.hero .side p{font-size:15px;margin-bottom:14px}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--accent-ink);
+  font-size:16px;font-weight:500;text-decoration:none;
+  padding:13px 22px;border-radius:var(--radius);min-height:44px;
+}
+.btn:hover{background:#e8860f}
+.hero .scrim{position:absolute;left:0;right:0;bottom:0;height:38%;z-index:2;background:rgba(5,7,10,.38)}
+
+/* ---------- intro: pinned sentence, photos pass ---------- */
+.intro{position:relative;height:220svh;background:var(--bg)}
+.intro .pin{
+  position:sticky;top:0;height:100svh;
+  display:flex;align-items:center;justify-content:center;
+  z-index:2;pointer-events:none;
+}
+.intro .pin h2{
+  background:var(--bg);
+  font-weight:400;font-size:clamp(24px,2.6vw,36px);line-height:1.25;letter-spacing:-0.01em;
+  text-align:center;max-width:24ch;
+  padding:28px 34px;
+}
+.intro .passer{position:absolute;z-index:1}
+.intro .p1{top:6svh;left:4vw;width:26vw;min-width:220px}
+.intro .p2{top:82svh;right:4vw;width:38vw;min-width:300px}
+.intro .p3{top:146svh;left:10vw;width:30vw;min-width:260px}
+.intro img{width:100%;height:auto}
+.intro figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+
+/* ---------- gallery curtain ---------- */
+.gallery{background:var(--bg)}
+.gallery h2{
+  font-weight:400;font-size:var(--step-head);letter-spacing:-0.02em;line-height:1.1;
+  margin:0 24px 40px;max-width:14ch;
+}
+.gallery .lead{
+  width:220px;margin-left:58%;margin-bottom:-64px;position:relative;z-index:4;
+  font-size:14px;line-height:1.5;color:#fff;
+  text-shadow:none;background:rgba(5,7,10,.55);padding:12px 14px;border-radius:var(--radius);
+}
+.curtain{position:relative;height:200svh}
+.curtain figure{position:sticky;top:0;height:100svh;overflow:hidden}
+.curtain img{width:100%;height:100%;object-fit:cover}
+.curtain figcaption{
+  position:absolute;left:24px;bottom:24px;z-index:3;
+  color:#fff;font-size:15px;
+  background:rgba(5,7,10,.55);padding:8px 12px;border-radius:var(--radius);
+}
+
+/* ---------- features ---------- */
+.features{background:var(--surface);padding:0 24px 88px}
+.features .statement{
+  min-height:34svh;display:flex;align-items:center;margin-bottom:60px;
+  font-weight:300;font-size:clamp(30px,3.4vw,56px);letter-spacing:-0.02em;line-height:1.1;
+  max-width:16ch;margin-left:35%;
+}
+.frow{display:grid;grid-template-columns:minmax(320px,38%) auto 1fr;gap:48px;align-items:start;margin-bottom:110px}
+.frow .ft h3{font-weight:400;font-size:clamp(24px,2.2vw,34px);letter-spacing:-0.015em;line-height:1.15;margin-bottom:14px}
+.frow .ft p{font-size:17px;color:var(--ink);max-width:38ch;line-height:1.55}
+.frow img{width:100%;height:auto}
+.frow:nth-of-type(odd) .fimg{width:380px}
+.frow:nth-of-type(even) .fimg{width:480px}
+.frow .fimg{justify-self:start}
+
+/* ---------- menu table ---------- */
+.menu{background:var(--bg);padding:96px 24px 140px}
+.menu h2{
+  font-weight:300;font-size:clamp(28px,3.2vw,52px);letter-spacing:-0.02em;line-height:1.05;
+  max-width:16ch;margin-bottom:96px;
+}
+.menu .wrap{display:grid;grid-template-columns:minmax(200px,2fr) 60px 7fr;gap:40px;align-items:end}
+.menu .mphoto{grid-column:1}
+.menu .mphoto img{width:100%;height:auto}
+.menu .tag{grid-column:2;font-size:14px;color:var(--muted);align-self:start}
+.menu table{grid-column:3;border-collapse:collapse;width:100%}
+.menu td{padding:12px 0;font-size:17px;vertical-align:baseline}
+.menu tr.gap td{padding-top:44px}
+.menu td.k{color:var(--muted);width:24%;font-size:15px}
+.menu td.p{text-align:right;font-weight:500;white-space:nowrap}
+.menu .note{margin-top:28px;font-size:14px;color:var(--muted);text-align:right}
+
+/* ---------- contact ---------- */
+.contact{position:relative;height:100svh;overflow:hidden}
+.contact>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:herodrift 30s ease-in-out infinite alternate}
+.card{
+  position:absolute;top:60px;right:60px;z-index:3;
+  width:380px;max-width:calc(100vw - 48px);
+  background:var(--bg);border-radius:var(--radius);
+  padding:32px;
+}
+.card h2{font-weight:300;font-size:28px;letter-spacing:-0.01em;margin-bottom:18px}
+.card p{font-size:16px;line-height:1.5;margin-bottom:14px}
+.card .muted{color:var(--muted)}
+.card a.tel{font-weight:500;text-decoration:none;border-bottom:2px solid var(--accent)}
+.card .btn{display:block;text-align:center;margin-top:20px;padding:15px 0;min-height:52px}
+.card .mail{font-size:15px;word-break:break-all}
+
+/* ---------- footer ---------- */
+.footer{
+  background:var(--ink);color:var(--field-1-ink);
+  min-height:78svh;display:grid;grid-template-rows:auto 1fr auto;
+  padding:40px 24px 20px;
+}
+.footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.footer .cols h3{font-size:16px;font-weight:500;margin-bottom:10px}
+.footer .cols ul{list-style:none;font-size:15px;color:rgba(255,255,255,.72);line-height:1.6}
+.footer .cols a{text-decoration:none}
+.footer .cols a:hover{text-decoration:underline}
+.footer .wm{
+  font-weight:300;letter-spacing:-0.04em;line-height:.95;
+  font-size:12.5vw;white-space:nowrap;text-align:center;
+}
+.footer .legal{font-size:var(--step-small);color:rgba(255,255,255,.6);text-align:center;margin-top:16px}
+
+/* entrances */
+@supports (animation-timeline: view()){
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  @keyframes rise{from{transform:translateY(26px)}to{transform:none}}
+  @keyframes herodrift{from{transform:scale(1.05) translateY(0)}to{transform:scale(1.13) translateY(-2%)}}
+}
+
+/* ---------- phone ---------- */
+@media (max-width:860px){
+  .hero .letterhead{font-size:13px}
+  .hero nav{font-size:0}
+  .hero nav a{font-size:14px}
+  .hero nav a:not(.current){display:none}
+  .hero .low{flex-direction:column;align-items:flex-start;bottom:24px}
+  .hero h1{font-size:9.5vw}
+  .hero .side{text-align:left;max-width:34ch}
+  .intro{height:210svh}
+  .intro .pin h2{font-size:24px;max-width:22ch;padding:22px 20px}
+  .intro .p1{top:70svh;left:5vw;width:64%}
+  .intro .p2{top:118svh;right:4vw;left:auto;width:78%}
+  .intro .p3{top:170svh;left:8vw;width:56%}
+  .gallery .lead{margin-left:5%;width:60%;margin-bottom:-70px}
+  .curtain figure{height:88svh}
+  .curtain{height:264svh}
+  .features .statement{margin-left:0;font-size:9vw;min-height:44svh}
+  .frow{display:block;margin-bottom:64px}
+  .frow .ft h3{font-size:26px}
+  .frow .ft p{margin-bottom:18px}
+  .frow:nth-child(odd) .fimg{width:70%;margin-left:auto}
+  .frow:nth-child(even) .fimg{width:88%}
+  .frow:nth-child(3) .fimg{width:55%}
+  .menu{padding:88px 20px 96px}
+  .menu h2{margin-bottom:48px}
+  .menu .wrap{display:block}
+  .menu .tag{display:none}
+  .menu td{font-size:16px}
+  .menu .mphoto{margin-top:40px}
+  .menu .mphoto img{max-width:60%;margin-left:auto}
+  .contact{height:auto;min-height:0}
+  .contact>img{position:relative;height:70svh}
+  .card{
+    position:relative;top:auto;right:auto;
+    margin:-80px 16px 0;
+    width:auto;
+  }
+  .card .btn{min-height:56px}
+  .footer{padding:32px 20px 16px}
+  .footer .cols{grid-template-columns:1fr 1fr;gap:32px}
+  .footer .wm{font-size:11vw;margin-top:16svh;white-space:normal}
+  .footer .legal{font-size:13px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important}
+  html{scroll-behavior:auto}
+  .hero .ph:first-child{opacity:1}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <img class="ph on" src="assets/hero1.jpg" alt="The yellow dining room at Wise Owl The Coffee Shop" width="2592" height="1458">
+  <img class="ph" src="assets/hero2.jpg" alt="" width="2592" height="1458" aria-hidden="true">
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="ui">
+    <p class="letterhead">Wise Owl<br>The Coffee Shop<br>Hindustan Park, Kolkata</p>
+    <nav aria-label="Page">
+      <a href="#top" class="current">Home</a>, <a href="#menu">Menu</a>, <a href="#room">The room</a>, <a href="#visit">Visit</a>
+    </nav>
+    <div class="low">
+      <h1>Wise Owl The Coffee Shop</h1>
+      <div class="side">
+        <p>More than just a coffee experience, on Purna Das Road, ten years running.</p>
+        <a class="btn" href="tel:+917044350606">Call +91 70443 50606</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="intro" id="story">
+  <div class="pin"><h2>All day in the yellow room.</h2></div>
+  <figure class="passer p1"><img src="assets/pass1.jpg" alt="French toast with a chocolate pour at Wise Owl" width="540" height="675" loading="lazy"><figcaption>A house favourite, from the cafe's own page.</figcaption></figure>
+  <figure class="passer p2"><img src="assets/pass2.jpg" alt="Burger and fries on a wooden board" width="1600" height="914" loading="lazy"><figcaption>Burger and fries, from the cafe's own listing.</figcaption></figure>
+  <figure class="passer p3"><img src="assets/pass3.jpg" alt="Inside the yellow room, wicker chairs and framed coffee art" width="1200" height="1200" loading="lazy"></figure>
+</section>
+
+<section class="gallery" id="room">
+  <h2 class="reveal">Come for the yellow room</h2>
+  <p class="lead">Yellow walls, framed coffee art, wicker chairs and a lattice of windows on Purna Das Road. Photographed for the cafe's own listing.</p>
+  <div class="curtain">
+    <figure><img src="assets/gal1.jpg" alt="The dining room with its yellow wall and framed art" width="2592" height="1458" loading="lazy"><figcaption>The yellow room, mid-morning.</figcaption></figure>
+    <figure><img src="assets/gal3.jpg" alt="The white lattice wall by the street" width="1936" height="1090" loading="lazy"><figcaption>The lattice wall by the street.</figcaption></figure>
+  </div>
+</section>
+
+<section class="features" id="why">
+  <h2 class="statement reveal">Why people stay a while</h2>
+  <div class="frow">
+    <div class="ft"><h3>Ten years on the same street</h3><p>The cafe is celebrating ten years on the same street, still women-owned, still on Purna Das Road. More than five thousand eight hundred diners have rated it 4.1 stars.</p></div>
+    <div></div>
+    <div class="fimg"><img src="assets/feat1.jpg" alt="Tables and framed art inside the cafe" width="1936" height="2420" loading="lazy"></div>
+  </div>
+  <div class="frow">
+    <div class="ft"><h3>Breakfast all day</h3><p>The All Day Breakfast Platter runs from opening to close: two fried eggs, sausages, fries, bacon and toast for &#8377;290. Omelettes and pancakes alongside.</p></div>
+    <div></div>
+    <div class="fimg"><img src="assets/feat2.jpg" alt="A burger and fries on a tray" width="960" height="640" loading="lazy"></div>
+  </div>
+  <div class="frow">
+    <div class="ft"><h3>Shakes in a jar</h3><p>Kitkat, Brownie, Butterscotch and eight more shakes in a jar, from &#8377;140. Fruit mojitos and a Sparkling Espresso for the coffee side.</p></div>
+    <div></div>
+    <div class="fimg"><img src="assets/feat3.jpg" alt="Burger with fries on a dark wooden board" width="1200" height="1200" loading="lazy"></div>
+  </div>
+  <div class="frow">
+    <div class="ft"><h3>Behind a white picket fence</h3><p>The shopfront sits back from the pavement behind plants and a picket fence, a few doors from Azad Hind Dhaba. Their own words: more than just a coffee experience.</p></div>
+    <div></div>
+    <div class="fimg"><img src="assets/feat4.jpg" alt="The cafe storefront with its white picket fence" width="960" height="348" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2 class="reveal">Shakes, soups and sandwiches</h2>
+  <div class="wrap">
+    <div class="mphoto reveal"><img src="assets/list-photo.jpg" alt="French toast at Wise Owl" width="540" height="675" loading="lazy"></div>
+    <p class="tag">Menu</p>
+    <table>
+      <tr><td class="k">Shakes in a jar</td><td>Kitkat Shake</td><td class="p">&#8377;200</td></tr>
+      <tr><td class="k"></td><td>Chocolate Shake</td><td class="p">&#8377;190</td></tr>
+      <tr><td class="k"></td><td>Mango, Strawberry, Banana or Lychee</td><td class="p">&#8377;140</td></tr>
+      <tr><td class="k"></td><td>Protein shakes</td><td class="p">&#8377;160</td></tr>
+      <tr class="gap"><td class="k">Mocktails</td><td>Sparkling Espresso</td><td class="p">&#8377;130</td></tr>
+      <tr><td class="k"></td><td>Virgin Mojito</td><td class="p">&#8377;130</td></tr>
+      <tr><td class="k"></td><td>Fruit mojitos</td><td class="p">&#8377;150</td></tr>
+      <tr><td class="k"></td><td>Sodas and smoothies</td><td class="p">&#8377;100 - 130</td></tr>
+      <tr class="gap"><td class="k">From the kitchen</td><td>All Day Breakfast Platter</td><td class="p">&#8377;290</td></tr>
+      <tr><td class="k"></td><td>Bacon &amp; Leek Soup</td><td class="p">&#8377;180</td></tr>
+      <tr><td class="k"></td><td>Veg Club Sandwich</td><td class="p">&#8377;250</td></tr>
+      <tr><td class="k"></td><td>Tuna Sandwich</td><td class="p">&#8377;220</td></tr>
+    </table>
+  </div>
+  <p class="note reveal">Prices from the cafe's printed menu. Taxes as applicable.</p>
+</section>
+
+<section class="contact" id="visit">
+  <img src="assets/contact-bg.jpg" alt="Inside the yellow room at Wise Owl" width="1936" height="1090" loading="lazy">
+  <div class="card reveal">
+    <h2>Visit</h2>
+    <p>66/2 B, Purna Das Road, near Azad Hind Dhaba,<br>Hindustan Park, Gariahat, Kolkata 700029</p>
+    <p class="muted">Open every day.</p>
+    <p><a class="tel" href="tel:+917044350606">+91 70443 50606</a></p>
+    <p class="mail"><a href="mailto:wiseowl.tcs@gmail.com">wiseowl.tcs@gmail.com</a></p>
+    <a class="btn" href="tel:+917044350606">Call the cafe</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="cols">
+    <div><h3>Address</h3><ul><li>66/2 B, Purna Das Road</li><li>Hindustan Park, Gariahat</li><li>Kolkata 700029</li></ul></div>
+    <div><h3>Page</h3><ul><li><a href="#story">The cafe</a></li><li><a href="#room">The room</a></li><li><a href="#menu">Menu</a></li><li><a href="#visit">Visit</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="tel:+917044350606">+91 70443 50606</a></li><li><a href="mailto:wiseowl.tcs@gmail.com">wiseowl.tcs@gmail.com</a></li><li><a href="https://www.facebook.com/WiseOwlTheCoffeeShop/" rel="noopener">Facebook</a></li></ul></div>
+    <div><h3>Hours</h3><ul><li>Open every day</li><li>Breakfast, lunch and dinner</li></ul></div>
+  </div>
+  <div></div>
+  <div>
+    <div class="wm" aria-hidden="true">Wise Owl</div>
+    <p class="legal">&copy; 2026 Wise Owl The Coffee Shop, Kolkata. Photographs from the cafe's own Zomato, Swiggy and Facebook pages.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var phs=document.querySelectorAll('.hero .ph');
+  var i=0;
+  if(phs.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var timer=null;
+    function tick(){ phs[i].classList.remove('on'); i=(i+1)%phs.length; phs[i].classList.add('on'); }
+    function start(){ if(!timer)timer=setInterval(tick,6000); }
+    function stop(){ clearInterval(timer); timer=null; }
+    document.addEventListener('visibilitychange',function(){ document.hidden?stop():start(); });
+    start();
+  }
+})();
+</script>
+</body>
+</html>
