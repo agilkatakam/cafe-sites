@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artjuna — Garden cafe in Anjuna, Goa</title>
+<meta name="description" content="Artjuna is Anjuna's garden cafe: all-day Mediterranean breakfast, hummus, shakshuka, a bakery and a bar under one long arched roof. Open daily 7:00–22:30.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eeecea; --surface:#e4e1dd; --ink:#333231; --muted:#6b6763; --muted2:#5a5652; --accent:#5c6b54; --accent-ink:#ffffff;
+  --mx:5vw;
+  --s14:0.875rem; --s16:1rem; --s18:1.125rem; --s24:1.5rem; --s32:clamp(1.7rem, 1.2rem + 1.8vw, 2.125rem);
+  --disp:clamp(4.5rem,8.3vw,8rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:var(--s18);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+h1,h2,h3{font-weight:300;line-height:1.02;letter-spacing:-0.02em}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);column-gap:2vw;margin:0 var(--mx)}
+.wipe img{clip-path:inset(100% 0 0 0);transition:clip-path .55s cubic-bezier(.19,1,.22,1)}
+.wipe.on img{clip-path:inset(0 0 0 0)}
+.wipe .cap{opacity:0;transition:opacity .45s ease .2s}
+.wipe.on .cap{opacity:1}
+.rise{opacity:0;transform:translateY(28px);transition:opacity .55s ease,transform .55s cubic-bezier(.19,1,.22,1)}
+.rise.on{opacity:1;transform:none}
+.cap{font-size:var(--s16);color:var(--muted);margin-top:10px}
+/* ---------- nav ---------- */
+.hero nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:26px var(--mx);font-size:var(--s16)}
+.hero nav a{text-decoration:none}
+.hero nav .links a{margin-right:26px;position:relative}
+.hero nav .links a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--ink);transition:width .35s ease}
+.hero nav .links a:hover::after{width:100%}
+.hero nav .word{font-size:var(--s18);font-weight:500;letter-spacing:0}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:14px 30px;font-size:var(--s16);transition:background .3s ease,transform .3s ease}
+.btn:hover{background:#4a5744;transform:translateY(-2px)}
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;overflow:hidden}
+.hero .shot{position:absolute;z-index:1}
+.hero .shot-a{right:var(--mx);top:8%;width:calc(4/12*100vw - 4.4vw);aspect-ratio:16/10}
+.hero .shot-b{left:var(--mx);bottom:-8vh;width:calc(4/12*100vw - 4.4vw);aspect-ratio:4/5;height:auto;min-height:54vh}
+.hero h1{position:absolute;z-index:2;left:0;right:0;top:0;height:52vh;pointer-events:none;font-size:var(--disp);line-height:1;letter-spacing:-0.03em;font-weight:300}
+.hero h1 .l1{position:absolute;left:calc(var(--mx) + 1/12*90vw);top:33vh}
+.hero h1 .l2{position:absolute;left:calc(var(--mx) + 5/12*90vw);top:calc(33vh + var(--disp)*1.04)}
+.hero h1 .mask{display:block;overflow:hidden}
+.hero h1 .mask span{display:block;transform:translateY(110%);transition:transform .9s cubic-bezier(.19,1,.22,1)}
+.hero.loaded h1 .mask span{transform:none}
+.hero.loaded h1 .l2 .mask span{transition-delay:.11s}
+.hero .lede{position:absolute;z-index:2;left:calc(var(--mx) + 5/12*90vw);top:calc(33vh + var(--disp)*2.2);max-width:36ch;font-size:var(--s18)}
+.hero .go{position:absolute;z-index:2;left:calc(var(--mx) + 5/12*90vw);top:calc(33vh + var(--disp)*2.2 + 96px)}
+/* ---------- intro ---------- */
+.intro{padding:80px 0 110px}
+.intro h2{grid-column:1/13;font-size:var(--s32);margin-bottom:72px}
+.intro .stmt{grid-column:6/13;font-size:var(--s24);line-height:1.35;font-weight:300}
+.intro .stmt::first-line{}
+.intro .stmt{text-indent:3em}
+.intro figure{grid-column:1/5;width:28vw;max-width:100%;aspect-ratio:1;margin-top:-6vh}
+.intro .note{grid-column:2/5;font-size:var(--s16);color:var(--muted);width:260px;margin-top:48px;line-height:1.55}
+/* ---------- list ---------- */
+.menu{background:var(--surface);padding:140px 0 150px}
+.menu h2{grid-column:1/13;font-size:var(--s32);line-height:1.05}
+.menu h2 .ind{display:block;text-indent:3vw}
+.menu .tag{grid-column:6/7;font-size:var(--s16);color:var(--muted2);margin-top:96px}
+.menu table{grid-column:7/13;margin-top:88px;border-collapse:collapse;width:100%}
+.menu tr{opacity:0;transform:translateY(14px);transition:opacity .4s ease,transform .4s cubic-bezier(.19,1,.22,1)}
+@media (prefers-reduced-motion:reduce){.menu tr{opacity:1;transform:none;transition:none}}
+.menu tr.on{opacity:1;transform:none}
+.menu td{font-size:var(--s16);padding:0 0 26px;vertical-align:baseline}
+.menu td.k{color:var(--muted2);width:34%}
+.menu td.v{text-align:right}
+.menu tr.grp td{padding-top:44px}
+.menu figure{grid-column:1/5;width:21vw;aspect-ratio:4/5;align-self:end;margin-top:40px}
+/* ---------- gallery ---------- */
+.gallery{padding:130px 0 80px}
+.gallery h2{grid-column:1/13;font-size:var(--s32);margin-bottom:7vh}
+.g-item{margin-bottom:4vh}
+.g1{grid-column:1/7;aspect-ratio:3/4}
+.g2{grid-column:6/13;aspect-ratio:5/4;margin-top:4vh;overflow:hidden}
+.g2 img{animation:drift 30s ease-in-out infinite alternate}
+.g3{grid-column:4/12;aspect-ratio:3/2}
+.g4{grid-column:1/6;aspect-ratio:4/5;margin-top:3vh}
+.g5{grid-column:7/13;aspect-ratio:3/4}
+.g6{grid-column:1/8;aspect-ratio:5/4;margin-top:3vh}
+.gal-line{grid-column:2/9;font-size:var(--s24);font-weight:300;line-height:1.35;margin:2vh 0 5vh}
+/* ---------- contact ---------- */
+.contact{padding:120px 0 120px;background:var(--surface)}
+.contact h2{grid-column:1/13;font-size:var(--s32);margin-bottom:64px}
+.contact .cstmt{grid-column:1/6;font-size:var(--s24);line-height:1.3;font-weight:300}
+.contact figure{grid-column:8/10;width:160px;aspect-ratio:1;justify-self:start}
+.contact .ask{grid-column:10/13}
+.contact .ask p.q{font-size:var(--s18);font-weight:500;margin-bottom:20px}
+.contact .ask a.lnk{display:block;font-size:var(--s18);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;margin-bottom:10px;transition:color .3s ease}
+.contact .ask a.lnk:hover{color:var(--accent)}
+.contact .ask .live{font-size:var(--s14);color:var(--muted);margin-top:22px;line-height:1.55}
+/* ---------- footer ---------- */
+footer{display:grid;grid-template-columns:1fr 1fr;min-height:100svh;background:var(--surface)}
+footer .photo{position:relative;overflow:hidden}
+footer .photo img{position:absolute;inset:0;animation:drift 36s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1) translate(0,0)}to{transform:scale(1.09) translate(-1.5%,1%)}}
+footer .half{padding:80px 5vw 40px;display:flex;flex-direction:column}
+footer .wm{font-size:var(--s18);font-weight:500;margin-bottom:80px}
+footer .fmenu{display:block;position:static;padding:0}
+footer .fmenu a{display:block;font-size:var(--s32);font-weight:500;text-decoration:none;line-height:1.25;margin-bottom:24px;transition:transform .35s ease,color .35s ease}
+footer .fmenu a:hover{transform:translateX(12px);color:var(--accent)}
+footer .cols{display:flex;flex-wrap:wrap;gap:28px 48px;margin-top:auto;padding-top:64px;font-size:var(--s16)}
+footer .cols a{text-decoration:underline;text-underline-offset:3px}
+footer .legal{font-size:var(--s14);color:var(--muted);margin-top:34px;line-height:1.6}
+/* ---------- responsive ---------- */
+@media (min-width:701px) and (max-width:1000px){
+  .contact .cstmt{grid-column:1/5}
+  .contact figure{grid-column:5/7;width:96px}
+  .contact .ask{grid-column:7/13}
+}
+@media (max-width:700px){
+  .grid{display:block;margin:0 20px}
+  .hero nav{padding:20px}
+  .hero nav .links a{margin-right:16px}
+  .hero{min-height:100svh}
+  .hero .shot-a{top:84px;right:20px;width:46%}
+  .hero h1 .l1{left:20px;top:26vh;font-size:14vw}
+  .hero h1 .l2{left:calc(20px + 22vw);top:calc(26vh + 15vw);font-size:14vw}
+  .hero .shot-b{position:absolute;left:20px;top:calc(26vh + 118px);bottom:auto;width:64%;aspect-ratio:4/5;min-height:0;max-height:44svh}
+  .hero .lede{position:absolute;left:20px;right:20px;top:auto;bottom:calc(2vh + 64px);max-width:none;font-size:var(--s18);background:var(--bg);padding:14px 0 0}
+  .hero .go{position:absolute;left:20px;bottom:2vh;top:auto}
+  .intro{padding:90px 0}
+  .intro h2{font-size:9.5vw;margin-bottom:44px}
+.intro .stmt{font-size:1.375rem;text-indent:0;margin:0 0 54px}
+  .intro figure{width:62%;margin:0 0 0 auto;aspect-ratio:4/5}
+  .intro .note{margin:-30vw 0 0;width:30%}
+  .menu{padding:90px 0}
+  .menu h2{font-size:9.5vw;margin-bottom:56px}
+  .menu h2 .ind{text-indent:0}
+  .menu .tag{display:none}
+  .menu table{margin:0}
+  .menu td{display:block;padding:0}
+  .menu td.k{padding-top:22px}
+  .menu td.k::after{content:"\2002\2002"}
+  .menu td.v{display:inline;text-align:left;margin-top:-1.45em;padding-bottom:0;font-weight:500}
+  .menu td:not(.k):not(.v){padding-bottom:22px}
+  .menu tr.grp td.k{padding-top:44px}
+  .menu figure{width:60%;margin:56px 0 0 auto}
+  .gallery{padding:90px 0 20px}
+  .gallery h2{margin-bottom:64px}
+  .g-item{margin-bottom:64px;aspect-ratio:auto}
+  .g1,.g4,.g5{width:70%}
+  .g2,.g6{width:84%;margin-left:auto}
+  .g3{width:100%}
+  .g1 img,.g2 img,.g3 img,.g4 img,.g5 img,.g6 img{position:static}
+  .g1{aspect-ratio:3/4}.g2{aspect-ratio:5/4}.g3{aspect-ratio:3/2}.g4{aspect-ratio:4/5}.g5{aspect-ratio:3/4}.g6{aspect-ratio:5/4}
+  .gal-line{font-size:1.375rem;margin:0 0 64px}
+  .contact{padding:90px 0}
+  .contact h2{font-size:9.5vw;margin-bottom:36px}
+.contact .cstmt{font-size:1.375rem;margin-bottom:44px}
+  .contact figure{width:96px;float:left;margin:0 22px 12px 0}
+  .contact .ask{overflow:hidden}
+  .contact .ask .live{clear:both;margin-top:30px}
+  footer{grid-template-columns:1fr;min-height:0}
+  footer .photo{height:50svh}
+  footer .half{padding:56px 20px 34px}
+  footer .wm{margin-bottom:44px}
+  footer .fmenu{display:block;position:static;padding:0}
+footer .fmenu a{font-size:8vw;margin-bottom:18px}
+  footer .cols{flex-direction:column;gap:22px;padding-top:44px}
+}
+@media (prefers-reduced-motion:reduce){
+  .wipe img,.wipe .cap,.rise{transition:none;clip-path:none;opacity:1;transform:none}
+  .hero h1 .mask span{transform:none;transition:none}
+  footer .photo img{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <nav>
+    <div class="links"><a href="#hall">The hall</a><a href="#table">The table</a></div>
+    <a class="word" href="#top">Artjuna</a>
+    <div class="links"><a href="#visit" style="margin-right:0">Visit</a></div>
+  </nav>
+  <figure class="shot shot-a wipe"><img src="assets/hall-wide.jpg" alt="The long arched hall of Artjuna, cane chairs under a translucent roof"></figure>
+  <h1 aria-label="Artjuna, garden hall">
+    <span class="l1"><span class="mask"><span>Artjuna</span></span></span>
+    <span class="l2"><span class="mask"><span>garden hall</span></span></span>
+  </h1>
+  <figure class="shot shot-b wipe"><img src="assets/lounge-tall.jpg" alt="Low sofas and cushions in a corner of the hall"></figure>
+  <p class="lede rise">A Mediterranean table in Anjuna, since 2005.</p>
+  <a class="btn go rise" href="#visit">Plan a visit</a>
+</header>
+
+<main>
+
+<section class="intro grid" id="hall">
+  <h2 class="rise">Grown, not built.</h2>
+  <p class="stmt rise">It began in 2005 with two tables and eight chairs under the trees. Today it is one long arched hall of cane chairs, collected art, a bakery, a bar and a book corner. The garden still does most of the hosting.</h2>
+  <figure class="wipe"><img src="assets/dining-square.jpg" alt="Cane chairs and framed art along the dining hall"><figcaption class="cap">The dining hall, art collected over twenty years.</figcaption></figure>
+  <p class="note rise">Rated 4.2 from over ten thousand Google reviews. Open every day of the year, 7:00 to 22:30.</p>
+</section>
+
+<section class="menu grid" id="table">
+  <h2>Breakfast until<span class="ind">the last cocktail</span></h2>
+  <p class="tag">The table</p>
+  <table>
+    <tr><td class="k">Morning</td><td>All-day breakfast and brunch</td><td class="v">from 7:00</td></tr>
+    <tr><td class="k">Plates</td><td>Hummus, falafel burger, shakshuka</td><td class="v">Mediterranean</td></tr>
+    <tr><td class="k">From the sea</td><td>Mediterranean seafood</td><td class="v">Lunch &amp; dinner</td></tr>
+    <tr class="grp"><td class="k">Baked</td><td>Homemade breads and cakes</td><td class="v">The bakery</td></tr>
+    <tr><td class="k">Fresh</td><td>Smoothies, salads, sandwiches, pasta</td><td class="v">All day</td></tr>
+    <tr class="grp"><td class="k">Evening</td><td>Cocktails at the long bar</td><td class="v">till 22:30</td></tr>
+  </table>
+  <figure class="wipe"><img src="assets/falafel.jpg" alt="Falafel with potato wedges and dip"><figcaption class="cap" style="color:var(--muted2)">Falafel, a house staple.</figcaption></figure>
+</section>
+
+<section class="gallery grid">
+  <h2 class="rise">The hall, piece by piece</h2>
+  <figure class="g-item g1 wipe"><img src="assets/bar-tall.jpg" alt="The bar counter under strings of flags"><figcaption class="cap">The bar, where evenings end up.</figcaption></figure>
+  <figure class="g-item g2 wipe"><img src="assets/hall-pan.jpg" alt="The full length of the hall with plants and cane tables"><figcaption class="cap">One roof, the length of the garden.</figcaption></figure>
+  <figure class="g-item g3 wipe"><img src="assets/cane-lounge.jpg" alt="Cane chairs and a low sofa in a reading corner"><figcaption class="cap">A corner for slow afternoons.</figcaption></figure>
+  <figure class="g-item g4 wipe"><img src="assets/garden-table.jpg" alt="A table laid with plates and a glass of wine among plants"><figcaption class="cap">Dinner among the plants.</figcaption></figure>
+  <p class="gal-line rise">Twenty years of walls, plants, cane chairs and collected art. The hall is the gallery.</p>
+  <figure class="g-item g5 wipe"><img src="assets/smoothie.jpg" alt="Two smoothie bowls topped with fruit"><figcaption class="cap">Breakfast, the healthy kind.</figcaption></figure>
+  <figure class="g-item g6 wipe"><img src="assets/shop.jpg" alt="Dresses and jewellery in the Artjuna Collection boutique"><figcaption class="cap">The Collection, the in-house boutique.</figcaption></figure>
+</section>
+
+<section class="contact grid" id="visit">
+  <h2 class="rise">Write to the cafe</h2>
+  <p class="cstmt rise">Big tables, gigs, pop-ups and questions. Write, and a person answers.</p>
+  <figure class="wipe"><img src="assets/garden-own.jpg" alt="The garden entrance of Artjuna on Market Road"></figure>
+  <div class="ask">
+    <p class="q">Planning a visit?</p>
+    <a class="lnk" href="mailto:customer.care@artjuna.com">customer.care@artjuna.com</a>
+    <a class="lnk" href="https://www.google.com/maps/search/?api=1&amp;query=Artjuna+Cafe+-+Anjuna&amp;query_place_id=ChIJVVVVVYbpvzsR4jXMTlDlgpA" target="_blank" rel="noopener">Directions to Market Road</a>
+    <p class="live"><span id="openline">Open daily 7:00 – 22:30.</span><br>972, Market Rd, Monteiro Vaddo, Anjuna, Goa 403509 · +91 77220 80190</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="photo"><img src="assets/hall-close.jpg" alt="A close view down the arched hall"></div>
+  <div class="half">
+    <p class="wm">Artjuna</p>
+    <nav class="fmenu">
+      <a href="#hall">The hall</a>
+      <a href="#table">The table</a>
+      <a href="#visit">Visit</a>
+      <a href="https://www.artjuna.com/artjuna-outlets/" target="_blank" rel="noopener">Other outlets</a>
+    </nav>
+    <div class="cols">
+      <div>972, Market Rd, Monteiro Vaddo<br>Anjuna, Goa 403509<br><a href="tel:+917722080190">+91 77220 80190</a></div>
+      <div>Open daily 7:00 – 22:30<br><a href="https://www.instagram.com/artjuna.goa/" target="_blank" rel="noopener">Instagram</a><br><a href="mailto:customer.care@artjuna.com">customer.care@artjuna.com</a></div>
+    </div>
+    <p class="legal">Photographs: Artjuna (artjuna.com) and the Zomato community. Facts from the cafe's own site and Google listing. Unsolicited redesign concept, not affiliated.</p>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  requestAnimationFrame(function(){document.querySelector('.hero').classList.add('loaded')});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:0.18});
+  document.querySelectorAll('.wipe,.rise,.menu tr').forEach(function(el){io.observe(el)});
+  // live open-now line (cafe's own published hours: daily 07:00-22:30)
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var mins=now.getHours()*60+now.getMinutes(), open=7*60, close=22*60+30;
+    var t=now.toLocaleTimeString('en-IN',{hour:'numeric',minute:'2-digit',hour12:true,timeZone:'Asia/Kolkata'}).toLowerCase();
+    var s;
+    if(mins>=open&&mins<close){s='It is '+t+' in Anjuna. Open now, until 10:30 pm.'}
+    else if(mins<open){s='It is '+t+' in Anjuna. Opens at 7:00 am.'}
+    else{s='It is '+t+' in Anjuna. Closed, opens 7:00 am.'}
+    document.getElementById('openline').textContent=s;
+  }catch(e){}
+});
+</script>
+</body>
+</html>
