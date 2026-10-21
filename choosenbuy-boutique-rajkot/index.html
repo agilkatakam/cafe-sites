@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose 'n' Buy Boutique, Rajkot</title>
+<meta name="description" content="Choose 'n' Buy Boutique, Gayatri Complex, Dr. Yagnik Road, Rajkot. Call +91 94277 28610 or write to choosenbuy@yahoo.com.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@100,300&display=swap" rel="stylesheet">
+<style>
+:root{
+  --yellow:#ffd249;
+  --pink:#ffc4ef;
+  --aqua:#a4f6f8;
+  --white:#ffffff;
+  --ink:#0a0a0a;
+  --muted:#5e4a0a;
+  --magenta:#f53fd6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--yellow);color:var(--ink);
+  font-family:'Hanken Grotesk',system-ui,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.pad{padding-left:24px;padding-right:24px;max-width:1240px;margin-left:auto;margin-right:auto}
+
+.rise{opacity:0;transform:translateY(18px);transition:opacity .45s ease,transform .45s ease}
+.rise.in{opacity:1;transform:none}
+
+/* ---------- nav ---------- */
+nav{
+  display:flex;justify-content:space-between;align-items:center;
+  padding-top:20px;padding-bottom:20px;position:relative;z-index:3;
+}
+.wordmark{font-family:'Zodiak',serif;font-weight:300;font-size:20px;text-decoration:none}
+.nav-right{display:flex;gap:12px}
+.pill{
+  text-decoration:none;font-weight:500;font-size:16px;
+  border:2px solid var(--ink);border-radius:999px;
+  padding-top:8px;padding-bottom:8px;padding-left:18px;padding-right:18px;
+  transition:transform .25s ease,background .25s ease,color .25s ease;
+}
+.pill:hover{transform:translateY(-2px)}
+.pill.solid{background:var(--ink);color:var(--yellow)}
+
+/* ---------- hero: headline across two fields ---------- */
+.hero{position:relative;min-height:88vh}
+.hero .top-field{position:absolute;top:0;left:0;right:0;height:50%;background:var(--yellow)}
+.hero .bottom-field{position:absolute;bottom:0;left:0;right:0;height:50%;background:var(--pink)}
+.hero-inner{
+  position:relative;z-index:2;min-height:88vh;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;
+  text-align:center;padding-left:20px;padding-right:20px;
+}
+.mask{overflow:hidden}
+h1{
+  font-family:'Zodiak',serif;font-weight:100;
+  font-size:clamp(56px,9.5vw,150px);
+  line-height:.9;letter-spacing:-.01em;text-transform:uppercase;
+  max-width:11ch;
+}
+h1 .row{display:block;transform:translateY(110%);animation:unmask 1s cubic-bezier(.2,.7,.2,1) forwards}
+h1 .r2{animation-delay:.18s}
+@keyframes unmask{to{transform:translateY(0)}}
+h1 .what{
+  display:block;font-family:'Hanken Grotesk',sans-serif;font-weight:500;
+  font-size:20px;line-height:1.4;letter-spacing:0;text-transform:none;
+  margin-top:24px;
+}
+h1 .what b{font-weight:500;background:var(--magenta);padding:2px 10px;border-radius:999px}
+
+/* ---------- statement ---------- */
+.statement{background:var(--white);padding-top:96px;padding-bottom:96px}
+.statement p.big{
+  font-family:'Zodiak',serif;font-weight:300;
+  font-size:clamp(28px,3.6vw,46px);line-height:1.25;letter-spacing:-.01em;
+  max-width:24ch;
+}
+.steps{list-style:none;margin-top:48px}
+.steps li{
+  display:flex;gap:20px;align-items:baseline;
+  border-top:2px solid var(--ink);padding-top:16px;padding-bottom:16px;
+}
+.steps li:last-child{border-bottom:2px solid var(--ink)}
+.steps .n{
+  font-family:'Zodiak',serif;font-weight:100;font-size:44px;line-height:1;min-width:64px;
+}
+.steps b{font-weight:500;font-size:17px}
+.steps span{font-size:16px;color:#5e4a0a}
+
+/* ---------- racks ---------- */
+.racks{background:var(--aqua);padding-top:96px;padding-bottom:96px}
+h2{
+  font-family:'Zodiak',serif;font-weight:300;
+  font-size:clamp(32px,4.4vw,54px);line-height:1.05;letter-spacing:-.01em;
+  max-width:20ch;
+}
+.racks-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;margin-top:48px;align-items:end}
+.racks-grid figure{position:relative}
+.racks-grid img{width:100%;border-radius:14px;transition:transform .5s ease}
+.racks-grid figure:hover img{transform:scale(1.02)}
+figcaption{font-size:14px;margin-top:10px}
+.racks-row2{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px}
+
+/* ---------- visit ---------- */
+.visit{background:var(--pink);padding-top:96px;padding-bottom:96px}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px;align-items:start}
+.visit-card{border:2px solid var(--ink);border-radius:16px;padding:28px;background:var(--white)}
+.visit-card h3{font-family:'Zodiak',serif;font-weight:300;font-size:28px;margin-bottom:14px}
+.visit-card p{margin-bottom:12px}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:500;font-size:16px;
+  border:2px solid var(--ink);border-radius:999px;
+  padding-top:10px;padding-bottom:10px;padding-left:20px;padding-right:20px;
+  margin-top:8px;margin-right:10px;
+  transition:transform .25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--white)}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:#f2f2ef;padding-top:56px;padding-bottom:36px}
+.foot-mark{
+  font-family:'Zodiak',serif;font-weight:100;text-transform:uppercase;
+  font-size:clamp(34px,6vw,84px);line-height:1;text-align:center;letter-spacing:.02em;
+}
+.foot-row{
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  margin-top:36px;font-size:14px;color:#d4d4cf;
+}
+.foot-row a{color:#f2f2ef;text-decoration:none;border-bottom:2px solid #f2f2ef}
+
+@media (max-width:900px){
+  .racks-grid,.racks-row2,.visit-grid{grid-template-columns:1fr;gap:24px}
+  .hero,.hero-inner{min-height:76vh}
+}
+@media (max-width:520px){
+  h1{font-size:clamp(44px,13vw,64px)}
+  h1 .what{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;transition:none}
+  h1 .row{animation:none;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="top-field"></div>
+  <div class="bottom-field"></div>
+  <div class="pad" style="position:relative;z-index:3">
+    <nav>
+      <a class="wordmark" href="#top">Choose &rsquo;n&rsquo; Buy</a>
+      <div class="nav-right">
+        <a class="pill solid" href="tel:+919427728610">94277 28610</a>
+      </div>
+    </nav>
+  </div>
+  <div class="hero-inner" id="top">
+    <h1>
+      <span class="mask"><span class="row">Choose &rsquo;n&rsquo;</span></span>
+      <span class="mask"><span class="row r2">Buy</span></span>
+      <span class="what">A boutique on Dr. Yagnik Road, Rajkot</span>
+    </h1>
+  </div>
+</header>
+
+<main>
+
+<section class="statement" aria-labelledby="how-h">
+  <div class="pad">
+    <h2 id="how-h" class="rise">A quote before you buy</h2>
+    <p class="big rise" style="margin-top:28px">Browse, try, and take a quotation home.</p>
+    <ol class="steps">
+      <li class="rise"><span class="n">1</span><div><b>Pick your pieces</b><br><span>Add what you like to the cart, in store or on their listing page</span></div></li>
+      <li class="rise"><span class="n">2</span><div><b>Review the cart</b><br><span>Check sizes and selections before you commit</span></div></li>
+      <li class="rise"><span class="n">3</span><div><b>Get the quotation</b><br><span>Download it as a formal quote from their own ordering system</span></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="racks" aria-labelledby="racks-h">
+  <div class="pad">
+    <h2 id="racks-h" class="rise">Colour, weave, drape</h2>
+    <div class="racks-grid">
+      <figure class="rise">
+        <img src="./assets/fabric-rolls.webp" alt="Rolls of colourful decorative fabric" width="1200" height="1600" loading="lazy">
+        <figcaption>Rolls of colour, the raw material of every good boutique rack.</figcaption>
+      </figure>
+      <figure class="rise">
+        <img src="./assets/saree.webp" alt="A traditional saree" width="1200" height="1800" loading="lazy">
+        <figcaption>The drape, up close.</figcaption>
+      </figure>
+    </div>
+    <div class="racks-row2">
+      <figure class="rise">
+        <img src="./assets/scarfs.webp" alt="Traditional scarfs at a bazaar" width="1200" height="800" loading="lazy">
+        <figcaption>Prints and borders.</figcaption>
+      </figure>
+      <figure class="rise">
+        <img src="./assets/silk1.webp" alt="Silk fabric texture" width="1200" height="800" loading="lazy">
+        <figcaption>Weave and sheen.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" aria-labelledby="visit-h">
+  <div class="pad">
+    <h2 id="visit-h" class="rise">Find the shop</h2>
+    <div class="visit-grid">
+      <div class="visit-card rise">
+        <h3>Choose &rsquo;n&rsquo; Buy Boutique</h3>
+        <p>Gayatri Complex, Dr. Yagnik Road,<br>Rajkot, Gujarat 360001</p>
+        <p>+91 94277 28610<br>choosenbuy@yahoo.com</p>
+        <a class="btn solid" href="tel:+919427728610">Call the boutique</a>
+        <a class="btn" href="mailto:choosenbuy@yahoo.com">Write to us</a>
+      </div>
+      <div class="rise">
+        <p style="font-family:'Zodiak',serif;font-weight:300;font-size:clamp(22px,2.8vw,32px);line-height:1.3">Call ahead for timings.</p>
+        <figure style="margin-top:24px">
+          <img src="./assets/market.webp" alt="A vibrant fabric market" width="1200" height="1800" loading="lazy" style="border-radius:14px">
+          <figcaption>A fabric bazaar in Gujarat.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-mark">Choose &rsquo;n&rsquo; Buy</div>
+  <div class="pad foot-row">
+    <span>Choose &rsquo;n&rsquo; Buy Boutique, Rajkot</span>
+    <a href="tel:+919427728610">+91 94277 28610</a>
+    <span>Imagery: Pexels stock photos, not shop photography</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els = document.querySelectorAll('.rise');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.05,rootMargin:'0px 0px 12% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+  var h1 = document.querySelector('h1');
+  if('requestAnimationFrame' in window && h1){
+    var ticking = false;
+    var update = function(){
+      ticking = false;
+      var vh = window.innerHeight || 1;
+      var p = Math.min(Math.max(window.scrollY / vh, 0), 1);
+      h1.style.transform = 'translateY(' + (p * -24).toFixed(1) + 'px)';
+    };
+    window.addEventListener('scroll', function(){
+      if(!ticking){ ticking = true; requestAnimationFrame(update); }
+    }, {passive:true});
+  }
+})();
+</script>
+
+</body>
+</html>
