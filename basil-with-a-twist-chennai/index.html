@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basil with a Twist - European restaurant in T. Nagar and OMR, Chennai</title>
+<meta name="description" content="Basil with a Twist is a women-owned European restaurant in Chennai. Thin-crust pizzas, pastas, risottos and candlelight dinners at T. Nagar and OMR, Sholinganallur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#a8a8aa;
+  --surface:#b4b4b6;
+  --ink:#0e0e0e;
+  --muted:#3a3a3c;
+  --accent:#1f5c49;
+  --accent-ink:#ffffff;
+  --field:#1b1b1c;
+  --field-ink:#ffffff;
+  --field-muted:rgba(255,255,255,.74);
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --radius:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"STIX Two Text",Georgia,serif;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:var(--step-body);
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- split layout ---------- */
+.page{display:grid;grid-template-columns:47% 53%}
+.stage{
+  grid-column:1;grid-row:1;
+  position:sticky;top:0;height:100svh;
+  background:var(--field);
+  padding:32px;
+}
+.stage img{
+  width:100%;height:100%;object-fit:cover;
+  border-radius:var(--radius);
+  transition:opacity .35s ease;
+}
+.column{grid-column:2;grid-row:1;background:var(--surface)}
+.full{grid-column:1/-1;position:relative;z-index:2}
+
+/* ---------- hero ---------- */
+.hero{
+  background:var(--field);color:var(--field-ink);
+  min-height:100svh;
+  display:flex;flex-direction:column;
+  padding:32px 32px 0 48px;
+  position:relative;
+}
+.hero-nav{
+  display:flex;gap:28px;justify-content:flex-end;
+  font-size:14px;
+}
+.hero-nav a{text-decoration:none}
+.hero-nav a:hover{text-decoration:underline}
+.hero-nav .action{
+  background:var(--accent);color:var(--accent-ink);
+  padding:8px 18px;border-radius:var(--radius);
+  margin-top:-8px;
+}
+.hero-nav .action:hover{background:#26705a;text-decoration:none}
+.hero-sentence{
+  margin-top:26svh;
+  max-width:26ch;
+  font-size:24px;line-height:1.3;
+  color:var(--field-muted);
+}
+.hero-name{
+  margin-top:auto;
+  font-weight:400;
+  font-size:clamp(64px,7.5vw,132px);
+  letter-spacing:-0.04em;
+  line-height:1.1;
+  white-space:nowrap;
+  padding-bottom:34px;
+  position:relative;z-index:3;
+  color:var(--field-ink);
+  transform-origin:left bottom;
+}
+@supports (animation-timeline: view()){
+  .hero-name{animation:wordmark-out linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+  @keyframes wordmark-out{to{transform:scale(.94)}}
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+}
+
+/* ---------- sections in the column ---------- */
+.section{padding:96px 48px 120px}
+.section h2{
+  font-weight:400;
+  font-size:clamp(30px,2.4vw,38px);
+  letter-spacing:-0.02em;
+  line-height:1.15;
+  margin-bottom:48px;
+}
+.lede{font-size:var(--step-lead);line-height:1.35;max-width:34ch}
+
+/* intro */
+.intro-text{max-width:340px;font-size:16px;line-height:1.5}
+.intro-text p + p{margin-top:1em}
+.intro-text p:first-child{font-weight:600}
+.intro-text .soft{color:var(--muted)}
+.intro-text a{text-underline-offset:3px}
+
+/* menu list */
+.dish-list{list-style:none}
+.dish{
+  border:0;background:none;font:inherit;color:inherit;text-align:left;
+  width:100%;padding:14px 4px;cursor:pointer;
+  display:grid;grid-template-columns:1fr auto;gap:6px 18px;align-items:baseline;
+}
+.dish .name{font-size:22px;color:var(--muted);transition:color .25s}
+.dish .price{font-size:14px;color:var(--muted)}
+.dish .desc{
+  grid-column:1/-1;
+  font-size:14px;line-height:1.45;color:var(--muted);
+  max-width:34ch;
+  max-height:0;overflow:hidden;
+  transition:max-height .35s ease,margin .35s ease;
+}
+.dish.active .name{color:var(--ink);font-weight:600}
+.dish.active .name::before{
+  content:"";display:inline-block;width:9px;height:9px;border-radius:50%;
+  background:var(--accent);margin-right:10px;vertical-align:2px;
+}
+.dish.active .desc{max-height:6em;margin-top:2px}
+.dish:hover .name{color:var(--ink)}
+.menu-note{margin-top:36px;font-size:14px;color:var(--muted);max-width:38ch}
+.phone-list-visual{display:none}
+
+/* gallery */
+.gallery{
+  background:var(--bg);
+  padding:96px 0 120px;
+  overflow:hidden;
+}
+.gallery h2{margin-left:6vw;margin-bottom:32px}
+.gallery .count{float:right;margin-right:32px;font-size:14px;color:var(--muted);margin-top:14px}
+.g-row{
+  display:flex;gap:12px;
+  overflow-x:auto;
+  scroll-snap-type:x proximity;
+  padding-left:6vw;
+  height:68svh;
+  scrollbar-width:none;
+  cursor:grab;
+}
+.g-row::-webkit-scrollbar{display:none}
+.g-row.dragging{cursor:grabbing;scroll-snap-type:none}
+.g-row figure{flex:none;scroll-snap-align:start}
+.g-row img{border-radius:var(--radius);height:100%;width:100%;object-fit:cover}
+.g-tall{height:100%}
+.g-tall img{aspect-ratio:3/4}
+.g-pair{display:flex;flex-direction:column;gap:12px;height:100%}
+.g-pair figure{flex:1;min-height:0}
+.g-pair img{aspect-ratio:4/3}
+.g-wide{height:100%;display:flex;align-items:center}
+.g-wide img{aspect-ratio:16/10}
+
+/* contact band */
+.contact{
+  background:var(--field);color:var(--field-ink);
+  padding:130px 32px 110px;
+}
+.contact-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);gap:24px;
+  align-items:start;
+}
+.contact h2{
+  grid-column:1/6;
+  font-weight:400;
+  font-size:clamp(24px,2.2vw,32px);
+  line-height:1.2;
+  letter-spacing:-0.015em;
+  margin:0;
+}
+.contact-portrait{grid-column:8/10}
+.contact-portrait img{width:100%;max-width:170px;border-radius:var(--radius)}
+.contact-links{grid-column:10/13}
+.contact-links .q{font-weight:600;font-size:17px;margin-bottom:20px}
+.contact-links a{
+  display:block;font-size:17px;text-underline-offset:3px;margin-bottom:10px;
+}
+.contact-links .city{font-size:var(--step-small);color:var(--field-muted);margin-top:16px}
+.rooms{
+  grid-column:1/-1;
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  margin-top:90px;
+}
+.room h3{font-weight:600;font-size:22px;margin-bottom:10px}
+.room p{font-size:16px;color:var(--field-muted);line-height:1.5;max-width:36ch}
+.room a{color:var(--field-ink);text-underline-offset:3px}
+
+/* footer */
+.footer{
+  height:100svh;position:relative;overflow:hidden;
+}
+.footer img.bg{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  filter:brightness(0.62);
+}
+.footer .layer{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;padding:32px}
+.footer .top{display:flex;justify-content:space-between;font-size:16px;color:#fff}
+.footer .top a{color:#fff;text-decoration:none;display:block;margin-bottom:6px}
+.footer .top a:hover{text-decoration:underline}
+.footer .top .c{text-align:right}
+.footer-name{
+  margin-top:auto;
+  color:var(--surface);
+  font-size:clamp(48px,10.2vw,220px);
+  letter-spacing:-0.04em;
+  line-height:1;
+  white-space:nowrap;
+  transform-origin:left bottom;
+}
+@supports (animation-timeline: view()){
+  .footer-name{animation:wordmark-in linear both;animation-timeline:view();animation-range:entry 0% entry 100%}
+  @keyframes wordmark-in{from{transform:scale(.94)}to{transform:scale(1)}}
+}
+.footer .legal{font-size:14px;color:rgba(255,255,255,.82);margin-top:18px;padding-bottom:24px}
+
+/* ---------- phone / narrow ---------- */
+@media (max-width:860px){
+  .page{display:flex;flex-direction:column}
+  .stage{
+    position:sticky;top:0;height:58svh;
+    padding:12px;z-index:0;
+  }
+  .column{position:relative;z-index:1;background:var(--surface)}
+  .hero{
+    background:var(--surface);color:var(--ink);
+    min-height:0;
+    padding:18px 20px 12px;
+    display:flex;
+  }
+  .hero-nav{
+    position:static;
+    justify-content:space-between;
+    margin-bottom:30px;
+  }
+  .hero-nav a{
+    color:var(--ink);
+    font-size:14px;
+    text-decoration:underline;text-underline-offset:3px;
+  }
+  .hero-nav a.action{
+    background:var(--accent);color:var(--accent-ink);
+    padding:7px 14px;border-radius:var(--radius);
+    text-decoration:none;margin:0;
+  }
+  .hero-nav .mid{display:none}
+  .hero-nav .m-show{display:block}
+  .hero-name{
+    font-size:8.6vw;
+    padding-bottom:6px;
+    color:var(--ink);
+    order:1;
+    margin-top:0;
+  }
+  .hero-sentence{
+    margin-top:10px;
+    font-size:17px;
+    max-width:30ch;
+    color:var(--muted);
+    order:2;
+  }
+  .section{padding:72px 20px 96px}
+  .section h2{font-size:clamp(26px,6.4vw,34px);margin-bottom:32px}
+  .intro-text{max-width:78%}
+  /* menu list with pinned photo band */
+  .phone-list-visual{
+    display:block;
+    position:sticky;top:0;height:38svh;z-index:2;
+    padding:0 20px;
+    margin:0 -20px 24px;
+    background:var(--surface);
+    padding-top:8px;
+  }
+  .phone-list-visual img{
+    width:100%;height:calc(38svh - 16px);object-fit:cover;border-radius:var(--radius);
+    transition:opacity .35s ease;
+  }
+  .dish .name{font-size:20px}
+  .gallery{padding:72px 0 96px}
+  .gallery h2{margin-left:20px}
+  .g-row{height:62svh;padding-left:20px;gap:8px}
+  .g-tall img{width:72vw}
+  .g-pair img{width:64vw}
+  .g-wide img{width:88vw}
+  .contact{padding:88px 20px 80px}
+  .contact-grid{display:block}
+  .contact h2{font-size:24px;margin-bottom:40px}
+  .contact .row2{display:flex;gap:20px;align-items:flex-start}
+  .contact-portrait img{max-width:96px}
+  .contact-links .q{font-size:17px;margin-bottom:14px}
+  .contact-links a{font-size:17px}
+  .rooms{grid-template-columns:1fr;margin-top:56px;gap:40px}
+  .footer{height:88svh}
+  .footer .layer{padding:28px 20px}
+  .footer .top{flex-direction:column;gap:24px}
+  .footer .top .c{text-align:left}
+  .footer-name{font-size:11.4vw}
+  .footer .legal{font-size:14px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important;transition:none !important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="stage" aria-hidden="true">
+    <img id="stageImg" src="assets/hero.jpg" alt="" width="864" height="1080">
+  </div>
+
+  <div class="column">
+
+    <section class="hero" id="top">
+      <nav class="hero-nav" aria-label="Page">
+        <a href="#story" class="mid">Story</a>
+        <a href="#menu" class="mid m-show">Menu</a>
+        <a href="#gallery" class="mid">Gallery</a>
+        <a href="#visit" class="mid">Visit</a>
+        <a href="tel:+919841085611" class="action">Call the restaurant</a>
+      </nav>
+      <p class="hero-sentence">European classics, thin-crust pizzas and candlelight dinners, in two Chennai rooms.</p>
+      <h1 class="hero-name">basil with a twist</h1>
+    </section>
+
+    <section class="section" id="story">
+      <h2 class="reveal">A twist on the European table</h2>
+      <div class="intro-text">
+        <p class="reveal">Basil with a Twist is a women-owned European restaurant on Habibullah Road in T. Nagar, Chennai, with a second room on OMR in Sholinganallur.</p>
+        <p class="soft reveal">The kitchen moves between Italian and continental classics: hand-tossed nine-inch thin crusts, pastas in pink, white and pesto sauces, slow arborio risottos, and Thai curries from its Around the World pages.</p>
+        <p class="soft reveal">The house keeps signatures of its own. Candlelight dinners on request, cakes and bakes made for the occasion, and vegan or no-onion-no-garlic plates cooked to order for anyone who asks.</p>
+        <p class="soft reveal">More than three thousand diners have rated the T. Nagar room 4.3 stars. Ask your host about the soup of the day when you call.</p>
+      </div>
+    </section>
+
+    <section class="section" id="menu">
+      <h2 class="reveal">From the menu</h2>
+      <div class="phone-list-visual"><img id="bandImg" src="assets/hero.jpg" alt="" width="864" height="1080" loading="lazy"></div>
+      <ul class="dish-list">
+        <li><button class="dish active" data-img="assets/hero.jpg">
+          <span class="name">Pink Primavera</span><span class="price">&#8377;340</span>
+          <span class="desc">Penne tossed in their signature pink sauce, a pomodoro and bechamel duet with olives and parmesan.</span>
+        </button></li>
+        <li><button class="dish" data-img="assets/dish-alfredo.jpg">
+          <span class="name">Alfredo</span><span class="price">&#8377;340</span>
+          <span class="desc">The classic white sauce pasta with bechamel, a sunny side up and herbs.</span>
+        </button></li>
+        <li><button class="dish" data-img="assets/dish-pesto.jpg">
+          <span class="name">Nutty Pesto</span><span class="price">&#8377;360</span>
+          <span class="desc">Basil pesto folded through the pasta, with olives and parmesan.</span>
+        </button></li>
+        <li><button class="dish" data-img="assets/dish-fungi.jpg">
+          <span class="name">Simply Fungi</span><span class="price">&#8377;460</span>
+          <span class="desc">A nine-inch thin crust with cheese, mushroom and spinach.</span>
+        </button></li>
+        <li><button class="dish" data-img="assets/dish-risotto.jpg">
+          <span class="name">Pumpkin Saffron Risotto</span><span class="price">&#8377;450</span>
+          <span class="desc">Creamy arborio rice with pumpkin puree and saffron.</span>
+        </button></li>
+        <li><button class="dish" data-img="assets/dish-prawns.jpg">
+          <span class="name">Pink Prawns Risotto</span><span class="price">&#8377;510</span>
+          <span class="desc">Prawns in pomodoro and bechamel sauce with arborio rice.</span>
+        </button></li>
+      </ul>
+      <p class="menu-note reveal">Soups start at &#8377;155, thin-crust pizzas run &#8377;410 to &#8377;660, and the Around the World curries &#8377;470 to &#8377;650. Prices from the restaurant's printed menu.</p>
+    </section>
+
+  </div>
+
+  <section class="gallery full" id="gallery">
+    <h2 class="reveal">On the table <span class="count">8 plates</span></h2>
+    <div class="g-row" id="grow">
+      <figure class="g-tall"><img src="assets/g-tall1.jpg" alt="Pink sauce pasta on a dark plate at Basil with a Twist" width="951" height="1268" loading="lazy"></figure>
+      <div class="g-pair">
+        <figure><img src="assets/g-pair1a.jpg" alt="Tomato risotto finished with parmesan" width="1080" height="810" loading="lazy"></figure>
+        <figure><img src="assets/g-pair1b.jpg" alt="A plate of sauteed garden vegetables" width="1206" height="905" loading="lazy"></figure>
+      </div>
+      <figure class="g-wide"><img src="assets/g-wide1.jpg" alt="Gnocchi in basil pesto" width="1280" height="800" loading="lazy"></figure>
+      <div class="g-pair">
+        <figure><img src="assets/g-pair2a.jpg" alt="Penne in pink sauce with parmesan" width="1080" height="810" loading="lazy"></figure>
+        <figure><img src="assets/g-pair2b.jpg" alt="Pasta in a creamy white sauce" width="951" height="714" loading="lazy"></figure>
+      </div>
+      <figure class="g-tall"><img src="assets/g-tall2.jpg" alt="Thin-crust pizza on a wooden peel" width="1012" height="1350" loading="lazy"></figure>
+      <figure class="g-wide"><img src="assets/g-wide2.jpg" alt="Pumpkin saffron risotto" width="1254" height="784" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="contact full" id="visit">
+    <div class="contact-grid">
+      <h2 class="reveal">Book a table, plan a celebration, order a cake.</h2>
+      <div class="row2" style="display:contents">
+      <div class="contact-portrait reveal"><img src="assets/portrait.jpg" alt="A risotto plate at Basil with a Twist" width="320" height="320" loading="lazy"></div>
+      <div class="contact-links reveal">
+        <p class="q">Planning something?</p>
+        <a href="mailto:basiltwistchennai@gmail.com">basiltwistchennai@gmail.com</a>
+        <a href="tel:+919841085611">+91 98410 85611</a>
+        <a href="https://www.facebook.com/BASILWITHATWIST" rel="noopener">facebook.com/BASILWITHATWIST</a>
+        <p class="city">Chennai, India. Open every day at both rooms.</p>
+      </div>
+      </div>
+      <div class="rooms">
+        <div class="room reveal">
+          <h3>T. Nagar</h3>
+          <p>58 A, Habibullah Road, near Vidyodaya School, Gangai Karai Puram, T. Nagar, Chennai 600017<br>
+          <a href="tel:+919841085611">+91 98410 85611</a></p>
+        </div>
+        <div class="room reveal">
+          <h3>OMR, Sholinganallur</h3>
+          <p>9, Kamala Street, Elcot SEZ, OMR, Sholinganallur, Chennai 600119<br>
+          <a href="tel:+917305785611">+91 73057 85611</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer full">
+    <img class="bg" src="assets/footer.jpg" alt="" width="1600" height="900" loading="lazy">
+    <div class="layer">
+      <div class="top">
+        <nav aria-label="Footer">
+          <a href="#story">Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <div class="c">
+          <a href="tel:+919841085611">+91 98410 85611</a>
+          <a href="mailto:basiltwistchennai@gmail.com">basiltwistchennai@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-name" aria-hidden="true">basil with a twist</div>
+      <p class="legal">&copy; 2026 Basil with a Twist, Chennai. Photographs from the restaurant's own collection.</p>
+    </div>
+  </footer>
+
+</main>
+<script>
+(function(){
+  var stage=document.getElementById('stageImg');
+  var band=document.getElementById('bandImg');
+  var dishes=Array.prototype.slice.call(document.querySelectorAll('.dish'));
+  function swap(img,src){
+    if(!img||img.getAttribute('src')===src)return;
+    img.style.opacity=0;
+    setTimeout(function(){
+      img.src=src;
+      img.onload=function(){img.style.opacity=1};
+    },180);
+  }
+  function activate(d){
+    dishes.forEach(function(x){x.classList.toggle('active',x===d)});
+    swap(stage,d.dataset.img);
+    swap(band,d.dataset.img);
+  }
+  dishes.forEach(function(d){
+    d.addEventListener('mouseenter',function(){activate(d)});
+    d.addEventListener('focus',function(){activate(d)});
+    d.addEventListener('click',function(){activate(d)});
+  });
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting)activate(e.target);
+      });
+    },{rootMargin:'-42% 0px -42% 0px'});
+    dishes.forEach(function(d){io.observe(d)});
+  }
+  // drag row
+  var row=document.getElementById('grow');
+  var down=false,startX=0,startL=0,moved=0;
+  row.addEventListener('pointerdown',function(e){
+    down=true;moved=0;startX=e.clientX;startL=row.scrollLeft;
+    row.classList.add('dragging');
+  });
+  window.addEventListener('pointermove',function(e){
+    if(!down)return;
+    var dx=e.clientX-startX;moved=Math.max(moved,Math.abs(dx));
+    row.scrollLeft=startL-dx;
+  });
+  window.addEventListener('pointerup',function(){
+    down=false;row.classList.remove('dragging');
+  });
+})();
+</script>
+</body>
+</html>
