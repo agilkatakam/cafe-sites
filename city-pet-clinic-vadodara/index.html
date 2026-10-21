@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>City Pet Clinic, veterinary clinic and pet shop in Manjalpur, Vadodara</title>
+<meta name="description" content="City Pet Clinic is Dr. Sunil Patel's veterinary clinic and animal hospital in Manjalpur, Vadodara, caring for pets since 2010. Vaccination, surgery, emergency care, pet food and accessories. Call +91 99251 19125.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ecebe7; --surface:#e1dfd9; --ink:#38450f; --muted:#5d683a; --accent:#38450f; --accentInk:#ecebe7;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'STIX Two Text',Georgia,serif;font-weight:400;font-size:19px;line-height:1.45;-webkit-font-smoothing:antialiased}
+img{display:block;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--ink);color:var(--accentInk)}
+
+/* ---------- HERO : narrow talk, wide headline, axis at 34% ---------- */
+.hero{min-height:100svh;display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto 1fr;column-gap:24px;padding:0 5vw}
+.hero-title{grid-column:5/13;grid-row:2;margin-top:6vh;font-weight:400;font-size:clamp(64px,8vw,130px);line-height:0.92;letter-spacing:-0.026em}
+.hero-title .line{display:block;overflow:hidden}
+.hero-title .line>span{display:inline-block;transform:translateY(110%);animation:rise 0.9s cubic-bezier(0.16,1,0.3,1) forwards}
+.hero-title .line:nth-child(2)>span{animation-delay:0.11s}
+@keyframes rise{to{transform:translateY(0)}}
+.hero-links{grid-column:5/13;grid-row:1;display:flex;gap:34px;padding-top:32px;font-size:15px}
+.hero-links a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;text-decoration-color:transparent}
+.hero-links a:hover{text-decoration-color:var(--ink)}
+.hero-left{grid-column:1/5;grid-row:1/4;display:flex;flex-direction:column}
+.wordmark{font-weight:600;font-size:20px;letter-spacing:-0.01em;padding-top:28px}
+.hero-support{margin-top:24vh;max-width:24ch;font-size:22px;line-height:1.35;opacity:0;animation:fadeup 0.8s ease 0.55s forwards}
+.hero-action{margin-top:36px;display:inline-block;background:var(--ink);color:var(--accentInk);padding:16px 26px;font-size:17px;font-weight:600;width:max-content;opacity:0;animation:fadeup 0.8s ease 0.55s forwards}
+@keyframes fadeup{to{opacity:1}}
+.hero-photo-wrap{grid-column:5/13;grid-row:3;position:relative;margin-top:6vh;margin-right:-5vw;height:34vh;min-height:260px;overflow:hidden}
+.hero-photo-wrap img{width:100%;height:100%;object-position:50% 38%}
+.hero-stat{position:absolute;top:0;left:0;width:260px;background:var(--accent);color:var(--accentInk);padding:26px 26px 30px;z-index:2}
+.hero-stat .num{font-size:40px;font-weight:600;line-height:1}
+.hero-stat .cap{font-size:15px;line-height:1.4;margin-top:10px;color:var(--accentInk)}
+
+/* ---------- INTRO : right-half paragraph, lone photo ---------- */
+.intro{position:relative;padding:70px 5vw 90px;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.intro-p{grid-column:6/13;font-size:clamp(24px,2.2vw,34px);line-height:1.25;text-indent:3em}
+.intro-photo{grid-column:1/4;width:22vw;height:22vw;align-self:end}
+.intro-note{grid-column:1/3;font-size:14px;line-height:1.5;max-width:180px;color:var(--muted);margin-top:30px}
+
+/* ---------- CARE : rows with margin photographs ---------- */
+.care{padding:0 5vw 150px}
+.care-head{display:flex;align-items:center;min-height:28svh;padding-left:calc(35% - 5vw)}
+.care-head h2{font-weight:400;font-size:clamp(40px,5vw,80px);line-height:1.05;letter-spacing:-0.026em;max-width:12ch}
+.care-row{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-top:96px;align-items:start}
+.care-row .txt{grid-column:5/10}
+.care-row h3{font-weight:400;font-size:clamp(28px,3vw,48px);line-height:1.05;letter-spacing:-0.02em}
+.care-row p{margin-top:18px;font-size:17px;line-height:1.55;max-width:34ch}
+.care-row .ph{grid-column:11/13;justify-self:end}
+.ph-a{width:240px;height:300px}
+.ph-b{width:320px;height:213px}
+.ph-c{width:180px;height:180px}
+
+/* ---------- VISIT : many into one ---------- */
+.visit{background:var(--surface);padding:140px 5vw}
+.visit-head{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.visit-head h2{grid-column:1/6;font-weight:400;font-size:clamp(36px,4vw,60px);line-height:1.08;letter-spacing:-0.026em}
+.visit-head p{grid-column:1/5;margin-top:24px;font-size:17px;line-height:1.55;max-width:34ch}
+.visit-diagram{margin-top:70px;width:100%;height:auto;display:block}
+.visit-steps{display:grid;grid-template-columns:repeat(3,1fr);column-gap:24px;margin-top:56px}
+.visit-steps h3{font-size:20px;font-weight:600}
+.visit-steps p{margin-top:10px;font-size:17px;line-height:1.5}
+
+/* ---------- PROOF : name block, statement block ---------- */
+.proof{display:grid;grid-template-columns:5fr 7fr;min-height:56svh;margin:100px 5vw 0}
+.proof-name{background:var(--ink);color:var(--accentInk);display:flex;align-items:center;padding:40px}
+.proof-name .n{font-size:32px;font-weight:600}
+.proof-name .r{font-size:16px;color:var(--accentInk);margin-top:8px}
+.proof-name .x{font-size:15px;color:#b9bfa6;margin-top:22px}
+.proof-quote{background:var(--surface);padding:48px}
+.proof-quote .q{font-size:clamp(28px,3vw,44px);line-height:1.15;letter-spacing:-0.02em;max-width:26ch}
+.proof-quote .s{margin-top:36px;font-size:17px;line-height:1.55;max-width:44ch}
+
+/* ---------- FAQ : large questions, answers beside ---------- */
+.faq{padding:90px 5vw}
+.faq-row{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-top:48px}
+.faq-row:first-child{margin-top:0}
+.faq-q{grid-column:1/7;font-size:clamp(26px,2.6vw,40px);line-height:1.1;font-weight:400;letter-spacing:-0.02em}
+.faq-row.head .faq-q{color:var(--muted)}
+.faq-a{grid-column:8/13;font-size:17px;line-height:1.55;max-width:46ch;padding-top:6px}
+.faq-a a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+
+/* ---------- CTA : three photographs, then a field ---------- */
+.cta-strip{display:flex;margin-top:90px}
+.cta-strip img{width:33.3334%;height:40svh}
+.cta-band{background:var(--accent);color:var(--accentInk);position:relative;padding:110px 5vw 130px;min-height:44svh}
+.cta-band .close{font-size:clamp(24px,2vw,30px);line-height:1.3;max-width:30ch}
+.cta-band .close a{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px}
+.cta-band .sub{margin-top:32px;font-size:16px;line-height:1.5;color:var(--accentInk)}
+.cta-band .face{position:absolute;right:5vw;bottom:40px;width:150px;height:188px}
+
+/* ---------- FOOTER : columns above, wordmark below ---------- */
+.footer{background:var(--ink);color:var(--accentInk);min-height:92svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px 5vw 24px}
+.footer-cols{display:grid;grid-template-columns:repeat(4,1fr);column-gap:24px;font-size:15px;line-height:1.6}
+.footer-cols h4{font-size:15px;font-weight:600;color:var(--accentInk);margin-bottom:10px}
+.footer-cols p,.footer-cols a{color:#b9bfa6;display:block}
+.footer-cols a:hover{color:var(--accentInk)}
+.footer-mid{display:flex;align-items:center;justify-content:center}
+.footer-word{font-size:clamp(40px,7.4vw,140px);line-height:1;letter-spacing:-0.03em;font-weight:600;white-space:nowrap;text-align:center}
+.footer-legal{text-align:center;font-size:13px;color:#b9bfa6;margin-top:20px}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1024px){
+  .proof{display:block;min-height:0}
+  .proof-name{min-height:0;padding:28px 32px;flex-direction:row;align-items:baseline;justify-content:space-between;gap:18px;flex-wrap:wrap}
+  .proof-name .x{margin-top:0}
+  .proof-name>div{display:contents}
+}
+@media (max-width:900px){
+  .hero{padding:0 20px;display:grid;grid-template-columns:1fr;grid-template-rows:none}
+  .wordmark{grid-row:1;padding-top:24px}
+  .hero-links{grid-column:1;grid-row:2;flex-wrap:wrap;gap:14px 22px;padding-top:18px}
+  .hero-title{grid-column:1;grid-row:3;margin-top:36px;font-size:clamp(52px,15vw,96px)}
+  .hero-left{grid-column:1;grid-row:auto;display:contents}
+  .hero-support{grid-row:4;margin-top:28px;max-width:26ch}
+  .hero-action{grid-row:5;margin-top:26px}
+  .hero-photo-wrap{grid-column:1;grid-row:6;margin:56px -20px 0;height:38vh;min-height:280px}
+  .hero-stat{position:static;width:100%;transform:none;padding:22px 24px}
+  .intro{padding:110px 20px;display:block}
+  .intro-photo{width:62vw;height:62vw;margin:56px 0 0}
+  .intro-note{margin-top:36px}
+  .care{padding:0 20px 110px}
+  .care-head{min-height:0;padding:30px 0 0}
+  .care-row{display:block;margin-top:70px}
+  .care-row .ph{margin-top:28px}
+  .visit{padding:90px 20px}
+  .visit-head{display:block}
+  .visit-head p{margin-top:20px;max-width:44ch}
+  .visit-steps{grid-template-columns:1fr;row-gap:32px}
+  .proof{display:block;min-height:0;margin:90px 20px 0}
+  .proof-name{min-height:0;padding:32px 24px}
+  .proof-quote{padding:40px 24px}
+  .faq{padding:110px 20px}
+  .faq-row{display:block;margin-top:64px}
+  .faq-a{margin-top:16px;padding-top:0}
+  .cta-strip{flex-direction:column}
+  .cta-strip img{width:100%;height:30svh}
+  .cta-band{padding:80px 20px 250px}
+  .footer{min-height:0;padding:40px 20px 24px}
+  .footer-cols{grid-template-columns:1fr 1fr;row-gap:32px}
+  .footer-mid{margin:60px 0}
+  .footer-word{font-size:11.5vw}
+}
+[data-reveal]{opacity:0;transform:translateY(12px);transition:opacity 0.5s ease,transform 0.5s cubic-bezier(0.16,1,0.3,1)}
+[data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-title .line>span{animation:none;transform:none}
+  .hero-support,.hero-action{animation:none;opacity:1}
+  [data-reveal]{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <h1 class="hero-title">
+      <span class="line"><span>Vet care,</span></span>
+      <span class="line"><span>since 2010.</span></span>
+    </h1>
+    <nav class="hero-links">
+      <a href="#care">Care</a>
+      <a href="#visit">A visit</a>
+      <a href="#questions">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-left">
+      <div class="wordmark">City Pet Clinic</div>
+      <p class="hero-support">Consultations, vaccination, surgery and a pet shop in Manjalpur, Vadodara.</p>
+      <a class="hero-action" href="tel:+919925119125">Call +91 99251 19125</a>
+    </div>
+    <div class="hero-photo-wrap">
+      <img src="assets/puppy.jpg" alt="A puppy recovering in a warm towel at City Pet Clinic" style="object-position:50% 60%">
+      <div class="hero-stat">
+        <div class="num">4.8 / 5</div>
+        <div class="cap">Rated on Google by 267 pet owners</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <p class="intro-p" data-reveal>Dr. Sunil Patel's veterinary clinic has cared for Manjalpur's pets since 2010.</p>
+    <img class="intro-photo" data-reveal src="assets/kitten.jpg" alt="A kitten recovering in a quiet corner of the clinic">
+    <p class="intro-note" data-reveal>GF 13, Samanvay Sequence, Ambe School Road, near Bahubali Circle, Suncity, Manjalpur, Vadodara 390010.</p>
+  </section>
+
+  <!-- CARE -->
+  <section class="care" id="care">
+    <div class="care-head" data-reveal><h2>What the clinic does</h2></div>
+    <div class="care-row" data-reveal>
+      <div class="txt">
+        <h3>Consultation and treatment</h3>
+        <p>General examinations, medicine and surgical treatment for pets, from routine complaints to conditions that need a closer look.</p>
+      </div>
+      <img class="ph ph-a" src="assets/puppy-blanket.jpg" alt="A puppy wrapped in a blanket after a checkup">
+    </div>
+    <div class="care-row" data-reveal>
+      <div class="txt">
+        <h3>Vaccination and deworming</h3>
+        <p>Scheduled vaccinations and deworming to keep dogs and cats protected through every stage of their growth.</p>
+      </div>
+      <img class="ph ph-b" src="assets/kitten.jpg" alt="A kitten waiting its turn at the clinic">
+    </div>
+    <div class="care-row" data-reveal>
+      <div class="txt">
+        <h3>Emergency and critical care</h3>
+        <p>The clinic lists emergency and critical care among its services. Call ahead so the team can be ready for you.</p>
+      </div>
+      <img class="ph ph-c" src="assets/puppy.jpg" alt="A puppy resting on a blanket">
+    </div>
+    <div class="care-row" data-reveal>
+      <div class="txt">
+        <h3>Food and accessories</h3>
+        <p>A pet shop inside the clinic stocks pet foods, nutrition products and everyday accessories, so follow up purchases stay simple.</p>
+      </div>
+      <img class="ph ph-b" src="assets/shop-shelves.jpg" alt="Shelves of pet food and products inside the clinic shop">
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="visit-head" data-reveal>
+      <h2>How a visit goes</h2>
+      <p>One phone call is usually enough. The clinic sees pets by consultation and asks owners to call before coming in, especially for emergencies.</p>
+    </div>
+    <svg class="visit-diagram" data-reveal viewBox="0 0 1200 260" aria-hidden="true">
+      <g fill="#b9bfa6">
+        <rect x="20" y="30" width="12" height="12"/><rect x="80" y="110" width="12" height="12"/><rect x="45" y="190" width="12" height="12"/><rect x="130" y="60" width="12" height="12"/><rect x="170" y="150" width="12" height="12"/><rect x="105" y="220" width="12" height="12"/><rect x="220" y="25" width="12" height="12"/><rect x="250" y="120" width="12" height="12"/><rect x="200" y="205" width="12" height="12"/><rect x="290" y="80" width="12" height="12"/><rect x="330" y="180" width="12" height="12"/><rect x="60" y="80" width="12" height="12"/><rect x="150" y="100" width="12" height="12"/><rect x="270" y="160" width="12" height="12"/>
+      </g>
+      <g fill="#5d683a">
+        <rect x="15" y="150" width="12" height="12"/><rect x="95" y="40" width="12" height="12"/><rect x="140" y="175" width="12" height="12"/><rect x="185" y="90" width="12" height="12"/><rect x="235" y="200" width="12" height="12"/><rect x="310" y="40" width="12" height="12"/><rect x="350" y="110" width="12" height="12"/><rect x="55" y="140" width="12" height="12"/><rect x="120" y="230" width="12" height="12"/><rect x="260" y="70" width="12" height="12"/>
+      </g>
+      <g fill="#38450f">
+        <rect x="420" y="112" width="13" height="13"/><rect x="445" y="112" width="13" height="13"/><rect x="470" y="112" width="13" height="13"/><rect x="495" y="112" width="13" height="13"/><rect x="520" y="112" width="13" height="13"/><rect x="545" y="112" width="13" height="13"/><rect x="570" y="112" width="13" height="13"/><rect x="595" y="112" width="13" height="13"/><rect x="620" y="112" width="13" height="13"/><rect x="645" y="112" width="13" height="13"/><rect x="670" y="112" width="13" height="13"/><rect x="695" y="112" width="13" height="13"/>
+        <rect x="420" y="130" width="13" height="13"/><rect x="445" y="130" width="13" height="13"/><rect x="470" y="130" width="13" height="13"/><rect x="495" y="130" width="13" height="13"/><rect x="520" y="130" width="13" height="13"/><rect x="545" y="130" width="13" height="13"/><rect x="570" y="130" width="13" height="13"/><rect x="595" y="130" width="13" height="13"/><rect x="620" y="130" width="13" height="13"/><rect x="645" y="130" width="13" height="13"/><rect x="670" y="130" width="13" height="13"/><rect x="695" y="130" width="13" height="13"/>
+        <rect x="420" y="148" width="13" height="13"/><rect x="445" y="148" width="13" height="13"/><rect x="470" y="148" width="13" height="13"/><rect x="495" y="148" width="13" height="13"/><rect x="520" y="148" width="13" height="13"/><rect x="545" y="148" width="13" height="13"/><rect x="570" y="148" width="13" height="13"/><rect x="595" y="148" width="13" height="13"/><rect x="620" y="148" width="13" height="13"/><rect x="645" y="148" width="13" height="13"/><rect x="670" y="148" width="13" height="13"/><rect x="695" y="148" width="13" height="13"/>
+      </g>
+      <g fill="#38450f">
+        <rect x="780" y="60" width="12" height="12"/><rect x="830" y="60" width="12" height="12"/><rect x="880" y="60" width="12" height="12"/><rect x="930" y="60" width="12" height="12"/><rect x="980" y="60" width="12" height="12"/><rect x="1030" y="60" width="12" height="12"/><rect x="1080" y="60" width="12" height="12"/><rect x="1130" y="60" width="12" height="12"/>
+        <rect x="780" y="110" width="12" height="12"/><rect x="830" y="110" width="12" height="12"/><rect x="880" y="110" width="12" height="12"/><rect x="930" y="110" width="12" height="12"/><rect x="980" y="110" width="12" height="12"/><rect x="1030" y="110" width="12" height="12"/><rect x="1080" y="110" width="12" height="12"/><rect x="1130" y="110" width="12" height="12"/>
+        <rect x="780" y="160" width="12" height="12"/><rect x="830" y="160" width="12" height="12"/><rect x="880" y="160" width="12" height="12"/><rect x="930" y="160" width="12" height="12"/><rect x="980" y="160" width="12" height="12"/><rect x="1030" y="160" width="12" height="12"/><rect x="1080" y="160" width="12" height="12"/><rect x="1130" y="160" width="12" height="12"/>
+        <rect x="780" y="210" width="12" height="12"/><rect x="830" y="210" width="12" height="12"/><rect x="880" y="210" width="12" height="12"/><rect x="930" y="210" width="12" height="12"/><rect x="980" y="210" width="12" height="12"/><rect x="1030" y="210" width="12" height="12"/><rect x="1080" y="210" width="12" height="12"/><rect x="1130" y="210" width="12" height="12"/>
+      </g>
+    </svg>
+    <div class="visit-steps" data-reveal>
+      <div><h3>Call</h3><p>Ring +91 99251 19125 and describe what is wrong. The clinic will tell you when to come in.</p></div>
+      <div><h3>Visit</h3><p>Bring your pet to GF 13, Samanvay Sequence in Manjalpur, near Bahubali Circle, for the consultation.</p></div>
+      <div><h3>Recover</h3><p>Medicine, diet guidance and food from the clinic shop take you through the follow up at home.</p></div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section class="proof">
+    <div class="proof-name" data-reveal>
+      <div>
+        <div class="n">4.8 / 5</div>
+        <div class="r">from 267 reviews on Google</div>
+        <div class="x">GF 13, Samanvay Sequence, Manjalpur, Vadodara</div>
+      </div>
+    </div>
+    <div class="proof-quote" data-reveal>
+      <p class="q">Dr. Sunil Patel's animal hospital, since 2010.</p>
+      <p class="s">Consultations, vaccination, deworming, medicine and surgical treatment, emergency and critical care, diet management, and a shop for pet foods and accessories.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="questions">
+    <div class="faq-row head"><div class="faq-q">Questions, answered</div><div class="faq-a">Six answers, checked against the clinic's current listings.</div></div>
+    <div class="faq-row" data-reveal>
+      <div class="faq-q">Where exactly is the clinic?</div>
+      <div class="faq-a">GF 13, Samanvay Sequence, Ambe School Road, near Bahubali Circle, Suncity, Manjalpur, Vadodara, Gujarat 390010.</div>
+    </div>
+    <div class="faq-row" data-reveal>
+      <div class="faq-q">Do I need an appointment?</div>
+      <div class="faq-a">Call <a href="tel:+919925119125">+91 99251 19125</a> before visiting. For emergencies, call first so the team can prepare.</div>
+    </div>
+    <div class="faq-row" data-reveal>
+      <div class="faq-q">When is the clinic open?</div>
+      <div class="faq-a">Published timings differ between listings, so the surest plan is to call <a href="tel:+919925119125">+91 99251 19125</a> and confirm the day's hours before you set out.</div>
+    </div>
+    <div class="faq-row" data-reveal>
+      <div class="faq-q">Who runs the clinic?</div>
+      <div class="faq-a">Dr. Sunil Patel, veterinary doctor. The clinic has practised in Manjalpur since 2010.</div>
+    </div>
+    <div class="faq-row" data-reveal>
+      <div class="faq-q">Can I buy pet food there?</div>
+      <div class="faq-a">Yes. The clinic's shop stocks pet foods, nutrition products, and everyday pet products and accessories.</div>
+    </div>
+    <div class="faq-row" data-reveal>
+      <div class="faq-q">Are surgical treatments available?</div>
+      <div class="faq-a">Yes. Listed services include medicine and surgical treatment, along with vaccination, deworming and diet management.</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-strip" data-reveal>
+    <img src="assets/kitten.jpg" alt="A kitten in a quiet corner of the clinic">
+    <img src="assets/puppy.jpg" alt="A puppy resting on a blanket">
+    <img src="assets/shop-shelves.jpg" alt="Pet food and products on the clinic shop shelves">
+  </div>
+  <section class="cta-band" id="contact" data-reveal>
+    <p class="close">For appointments, emergencies or pet food, <a href="tel:+919925119125">call +91 99251 19125</a> and the clinic will take it from there.</p>
+    <p class="sub">GF 13, Samanvay Sequence, Ambe School Road, near Bahubali Circle, Suncity, Manjalpur, Vadodara 390010.<br>Email: sunilpatel1190@gmail.com</p>
+    <img class="face" src="assets/puppy-blanket.jpg" alt="A small puppy wrapped in a warm blanket">
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-cols">
+    <div>
+      <h4>Address</h4>
+      <p>GF 13, Samanvay Sequence<br>Ambe School Road, near Bahubali Circle<br>Suncity, Manjalpur<br>Vadodara, Gujarat 390010</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <a href="#care">Care</a>
+      <a href="#visit">A visit</a>
+      <a href="#questions">Questions</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+919925119125">+91 99251 19125</a>
+      <a href="mailto:sunilpatel1190@gmail.com">sunilpatel1190@gmail.com</a>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p>Consultations every day.<br>Call to confirm the day's timings before visiting.</p>
+    </div>
+  </div>
+  <div class="footer-mid">
+    <div class="footer-word">City Pet Clinic</div>
+  </div>
+  <div class="footer-legal">City Pet Clinic, Manjalpur, Vadodara. Photographs are the clinic's own.</div>
+</footer>
+
+<script>
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.01,rootMargin:'0px 0px 30% 0px'});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
