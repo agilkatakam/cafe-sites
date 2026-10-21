@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coffee Planet — Specialty Coffee &amp; Goan Kitchen, Saligao</title>
+<meta name="description" content="The Coffee Planet in Saligao, North Goa. Specialty coffee, all-day breakfast and Goan favourites. Free Wi-Fi and co-working space. Open 9am-7pm, closed Thursdays.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#e8e8e6;
+  --ink:#2a1a12;
+  --accent:#8a4b2a;
+  --ink-soft:#57493f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--paper);color:var(--ink);font-family:'Newsreader',serif;font-size:18px;line-height:1.6;}
+h1,h2{font-family:'Fraunces',serif;}
+a{color:var(--accent);font-weight:600;text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{display:block;width:100%;height:100%;object-fit:cover;}
+
+.layout{display:grid;grid-template-columns:1fr 1fr;align-items:start;}
+.stage{position:sticky;top:0;height:100svh;overflow:hidden;background:var(--ink);}
+.stage img{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease;}
+.stage img.on{opacity:1;}
+.column{position:relative;background:var(--paper);padding:72px 64px 56px;min-height:100svh;}
+.measure{max-width:46ch;}
+
+h1{font-size:clamp(42px,4vw,58px);line-height:1.02;letter-spacing:-0.01em;font-weight:700;}
+h2{font-size:clamp(30px,2.6vw,40px);line-height:1.12;font-weight:600;letter-spacing:-0.01em;margin-bottom:18px;}
+.where{font-size:19px;font-weight:600;margin-top:18px;}
+.openline{display:flex;align-items:center;gap:12px;margin-top:16px;font-size:17px;font-weight:600;}
+.dot{width:11px;height:11px;border-radius:50%;background:#2f7a3d;animation:dotPulse 1.8s ease-in-out infinite;}
+.dot.closed{background:#9a2c1e;}
+@keyframes dotPulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.5);opacity:.5;}}
+.intro-note{font-size:21px;line-height:1.45;margin-top:26px;font-weight:500;}
+.cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
+.btn{display:inline-block;font-family:'Fraunces',serif;font-weight:600;font-size:17px;padding:13px 28px;text-decoration:none;}
+.btn-ink{background:var(--ink);color:var(--paper);}
+.btn-ink:hover{text-decoration:none;background:var(--accent);}
+.btn-plain{color:var(--accent);padding:13px 4px;}
+.btn-plain:hover{text-decoration:underline;}
+
+section{margin-top:88px;}
+section:first-child{margin-top:0;}
+.lede{font-size:19px;line-height:1.5;margin-bottom:26px;}
+.dish{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:9px 0;font-size:18px;}
+.dish .d-name{font-weight:500;}
+.dish .d-note{display:block;font-size:16px;font-weight:400;color:var(--ink-soft);}
+.dish .d-price{font-family:'Fraunces',serif;font-weight:600;white-space:nowrap;color:var(--accent);}
+.menu-note{margin-top:20px;font-size:16px;color:var(--ink-soft);}
+.feat{list-style:none;margin-top:6px;}
+.feat li{padding:8px 0 8px 26px;position:relative;font-size:18px;}
+.feat li::before{content:"";position:absolute;left:0;top:17px;width:9px;height:9px;border-radius:50%;background:var(--accent);}
+.v-block{margin-bottom:26px;}
+.v-label{font-family:'Fraunces',serif;font-weight:700;font-size:19px;margin-bottom:4px;}
+.v-block p{font-size:18px;}
+footer{margin-top:80px;padding-top:28px;font-size:16px;color:var(--ink-soft);}
+footer .f-name{font-family:'Fraunces',serif;font-size:30px;font-weight:700;color:var(--ink);margin-bottom:10px;}
+footer a{color:var(--accent);}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;}
+.reveal.on{opacity:1;transform:none;}
+
+@media (min-width:700px){
+  .feat{display:grid;grid-template-columns:1fr 1fr;gap:0 32px;}
+  #visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 36px;}
+}
+@media (max-width:1024px){
+  .layout{display:flex;flex-direction:column;align-items:stretch;}
+  .stage{position:sticky;top:0;height:42svh;z-index:1;}
+  .column{position:relative;z-index:2;padding:34px 24px 40px;margin-top:-1px;}
+  section{margin-top:56px;} .intro-note{margin-top:20px;} .cta-row{margin-top:24px;}
+  h1{font-size:clamp(38px,11vw,46px);}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important;transition:none !important;}
+  .reveal{opacity:1;transform:none;}
+  .stage img:first-child{opacity:1;}
+}
+.stage-caption{position:absolute;left:24px;bottom:24px;z-index:5;background:var(--paper);color:var(--ink);font-family:'Fraunces',serif;font-weight:600;font-size:16px;padding:10px 16px;}
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <div class="stage">
+    <img src="assets/p1.jpg" alt="Chorizo omelette with poi and tea at The Coffee Planet" class="on" data-layer="intro">
+    <img src="assets/p7.jpg" alt="Pancakes being dusted at the table" data-layer="breakfast">
+    <img src="assets/p2.jpg" alt="A stuffed sandwich with ketchup on a wooden table" data-layer="goan">
+    <img src="assets/p8.jpg" alt="A mocha with latte art held in both hands" data-layer="coffee">
+    <img src="assets/p6.jpg" alt="A full table of breakfast plates at the café" data-layer="space">
+    <img src="assets/p4.jpg" alt="A sandwich held up, ready to eat" data-layer="visit">
+    <div class="stage-caption">The Coffee Planet · Saligao, North Goa</div>
+  </div>
+
+  <main class="column">
+    <div class="intro" id="intro" data-layer="intro">
+      <h1>The Coffee Planet</h1>
+      <p class="where">Specialty coffee, all-day breakfast and Goan favourites in Saligao, North Goa.</p>
+      <p class="openline"><span class="dot" id="openDot" aria-hidden="true"></span><span id="openText">Open 9:00am – 7:00pm, closed Thursdays</span></p>
+      <p class="intro-note">Brewed fresh, served with soul. A cool, comfortable room with free Wi-Fi, space to work, and parking right outside.</p>
+      <div class="cta-row">
+        <a class="btn btn-ink" href="tel:+919975657328">Call the café</a>
+        <a class="btn btn-plain" href="#menu">Read the menu ↓</a>
+      </div>
+    </div>
+
+    <section id="menu" data-layer="breakfast">
+      <h2>Breakfast runs all day.</h2>
+      <div class="reveal">
+        <div class="dish"><span class="d-name">Ros Omelette with Pao<span class="d-note">Goan-style omelette loaded with chicken gravy, pao or poee</span></span><span class="d-price">₹160</span></div>
+        <div class="dish"><span class="d-name">Poee &amp; Chorizo Scramble Eggs</span><span class="d-price">₹180</span></div>
+        <div class="dish"><span class="d-name">Shakshuka<span class="d-note">eggs poached in spicy tomato and bell pepper sauce</span></span><span class="d-price">₹160</span></div>
+        <div class="dish"><span class="d-name">Coconut Milk Pancakes<span class="d-note">jaggery syrup and toasted coconut</span></span><span class="d-price">₹200</span></div>
+        <div class="dish"><span class="d-name">Bebinca French Toast<span class="d-note">caramelised bananas and chocolate</span></span><span class="d-price">₹200</span></div>
+        <div class="dish"><span class="d-name">Mangalore Buns &amp; Veg Xacuti</span><span class="d-price">₹160</span></div>
+        <div class="dish"><span class="d-name">English Breakfast<span class="d-note">eggs any style, grilled tomato, mushrooms, beans, hash brown, sausage, bacon, toast, tea or coffee</span></span><span class="d-price">₹599</span></div>
+      </div>
+    </section>
+
+    <section data-layer="goan">
+      <h2>The Goan kitchen.</h2>
+      <p class="lede">Mom’s corner and house picks — the Goan plates regulars come back for.</p>
+      <div class="reveal">
+        <div class="dish"><span class="d-name">Choris Roll<span class="d-note">Goan pork chorizo wrapped in a soft roll</span></span><span class="d-price">₹120</span></div>
+        <div class="dish"><span class="d-name">Chicken Cafreal Croquettes<span class="d-note">4 pcs, with peri peri mayo</span></span><span class="d-price">₹200</span></div>
+        <div class="dish"><span class="d-name">Prawn Rissóis<span class="d-note">5 pcs, classic or spicy</span></span><span class="d-price">₹380</span></div>
+        <div class="dish"><span class="d-name">Kapa with Peri Peri Dust<span class="d-note">crispy fried potato, tossed in peri peri</span></span><span class="d-price">₹60</span></div>
+        <div class="dish"><span class="d-name">Prawn Balchao Po’ Boy<span class="d-note">spicy prawn balchao, pickled onions, in a poee</span></span><span class="d-price">₹380</span></div>
+        <div class="dish"><span class="d-name">Mushroom &amp; Swiss Melt<span class="d-note">on sourdough</span></span><span class="d-price">₹280</span></div>
+      </div>
+    </section>
+
+    <section data-layer="coffee">
+      <h2>Coffee, hot and over ice.</h2>
+      <div class="reveal">
+        <div class="dish"><span class="d-name">Espresso</span><span class="d-price">₹140</span></div>
+        <div class="dish"><span class="d-name">Café Bica<span class="d-note">Portuguese espresso</span></span><span class="d-price">₹180</span></div>
+        <div class="dish"><span class="d-name">Cappuccino</span><span class="d-price">₹200</span></div>
+        <div class="dish"><span class="d-name">Flat White</span><span class="d-price">₹200</span></div>
+        <div class="dish"><span class="d-name">Spanish Latte</span><span class="d-price">₹250</span></div>
+        <div class="dish"><span class="d-name">Coffee Tonic</span><span class="d-price">₹250</span></div>
+        <div class="dish"><span class="d-name">Goan Cold Coffee</span><span class="d-price">₹220</span></div>
+        <div class="dish"><span class="d-name">Spiced Coconut Jaggery Latte</span><span class="d-price">₹220</span></div>
+      </div>
+      <p class="menu-note">From the café’s current menu; prices are before GST. Oat, almond and soy milk available.</p>
+    </section>
+
+    <section data-layer="space">
+      <h2>A room built for lingering.</h2>
+      <ul class="feat reveal">
+        <li>Free Wi-Fi throughout</li>
+        <li>A proper co-working space, not just a corner table</li>
+        <li>Ample parking right outside</li>
+        <li>Order in on Zomato when you can’t come by</li>
+      </ul>
+    </section>
+
+    <section data-layer="visit">
+      <h2>Find your caffeine orbit.</h2>
+      <div id="visit-grid">
+      <div class="v-block reveal">
+        <div class="v-label">Hours</div>
+        <p>9:00am – 7:00pm, every day except Thursday.</p>
+      </div>
+      <div class="v-block reveal">
+        <div class="v-label">Address</div>
+        <p>146/12, Village Saligao, Bardez, North Goa, Goa 403511.</p>
+      </div>
+      <div class="v-block reveal">
+        <div class="v-label">Call or write</div>
+        <p><a href="tel:+919975657328">+91 99756 57328</a><br><a href="mailto:hello@thecoffeeplanet.co.in">hello@thecoffeeplanet.co.in</a></p>
+      </div>
+      <div class="v-block reveal">
+        <div class="v-label">Find it</div>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=The+Coffee+Planet+Saligao&query_place_id=ChIJbbCQv3rBvzsRlI6EaPqCjcE" target="_blank" rel="noopener">Open in Google Maps</a> · <a href="https://www.instagram.com/thecoffee_planet" target="_blank" rel="noopener">@thecoffee_planet</a></p>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="f-name">The Coffee Planet</div>
+      <p>Saligao, Bardez, North Goa · <a href="https://www.instagram.com/thecoffee_planet" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:hello@thecoffeeplanet.co.in">Email</a></p>
+      <p style="margin-top:12px;">Photographs and menu from The Coffee Planet’s own collection.</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+(function(){
+  // Open-now: 9:00-19:00 IST, closed Thursday
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'Asia/Kolkata'}));
+    var day=now.getDay(), mins=now.getHours()*60+now.getMinutes();
+    var dot=document.getElementById('openDot'), txt=document.getElementById('openText');
+    if(day===4){ dot.classList.add('closed'); txt.textContent='Closed today (Thursday) · back 9:00am tomorrow'; }
+    else if(mins>=540 && mins<1140){
+      var left=1140-mins,h=Math.floor(left/60),m=left%60;
+      txt.textContent='Open now · closes 7:00pm'+(h>0?(' (in '+h+'h'+(m?(' '+m+'m'):'')+')'):(m?(' (in '+m+'m)'):''));
+    }else{
+      dot.classList.add('closed');
+      txt.textContent='Closed right now · opens 9:00am';
+    }
+  }catch(e){}
+  // Stage crossfade
+  var layers=document.querySelectorAll('.stage img');
+  function show(name){ layers.forEach(function(l){ l.classList.toggle('on', l.dataset.layer===name); }); }
+  var sections=document.querySelectorAll('[data-layer]:not(img)');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ show(en.target.dataset.layer); } });
+    },{rootMargin:'-45% 0px -45% 0px'});
+    sections.forEach(function(s){ io.observe(s); });
+    var rio=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('on'); rio.unobserve(en.target);} });
+    },{threshold:0.12});
+    document.querySelectorAll('.reveal').forEach(function(r){ rio.observe(r); });
+  }else{
+    document.querySelectorAll('.reveal').forEach(function(r){ r.classList.add('on'); });
+  }
+})();
+</script>
+</body>
+</html>

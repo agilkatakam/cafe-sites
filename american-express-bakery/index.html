@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>American Express Bakery — Est. 1908 | Byculla & Bandra, Mumbai</title>
+<meta name="description" content="Five generations of the Carvalho family have baked at American Express Bakery since 1908. AEB House, Byculla and Hill Road, Bandra. Cream rolls, patties, poi, plum cake.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#111111; --surface:#1c1c1c; --ink:#f2f2f2; --muted:#8f8f8f;
+  --accent:#a08672; --accent-ink:#111111;
+  --paper:#f2f2f2; --paper-ink:#1a1512;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --mx:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Jost",system-ui,sans-serif;font-size:var(--step-body);line-height:1.6;letter-spacing:0.01em;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.display{font-family:"Bodoni Moda",serif;font-weight:500;font-optical-sizing:auto;letter-spacing:-0.02em;line-height:0.95}
+.display .ln{display:block;color:inherit}
+.fade{opacity:0;transition:opacity 1.4s ease}
+.fade.in{opacity:1}
+
+/* ---------- hero: two panels ---------- */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;min-height:100svh}
+.card-sheet{background:var(--paper);color:var(--paper-ink);border-radius:20px;padding:28px 32px 40px;display:flex;flex-direction:column;position:relative}
+.sheet-top{display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:15px}
+.sheet-top a{color:#5c5347}.sheet-top a:hover{color:var(--accent-ink)}
+.wm{font-family:"Bodoni Moda",serif;font-size:22px;letter-spacing:0.02em;text-align:center;line-height:1.1}
+.sheet-mid{margin-top:12svh;text-align:center}
+.kick{font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent-ink);opacity:.75}
+.sheet-mid h1{font-size:clamp(40px,3.6vw,56px)}
+.sheet-mid h1 .ln{display:block}
+.sheet-mid h1 em{font-style:italic}
+.sheet-mid p{max-width:34ch;margin:22px auto 0;font-size:var(--step-lead);line-height:1.5}
+.btn{display:inline-block;background:var(--accent-ink);color:var(--paper);font-size:17px;padding:16px 38px;margin-top:30px;border-radius:4px;transition:background .3s ease}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+.sheet-foot{margin-top:auto;padding-top:40px;display:flex;justify-content:space-between;font-size:16px;color:#5c5347}
+.photo-panel{position:relative;border-radius:20px;overflow:hidden}
+.photo-panel .stick{position:sticky;top:12px;height:calc(100svh - 24px)}
+.photo-panel img{border-radius:20px;animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.07)}}
+.photobar{position:absolute;left:0;right:0;bottom:0;height:56px;background:var(--paper);color:var(--paper-ink);border-radius:0 0 20px 20px;display:flex;align-items:center;justify-content:space-between;padding:0 20px;font-size:16px}
+
+/* ---------- intro: headline crossing a photograph ---------- */
+.intro{padding:20svh var(--mx) 14svh;max-width:1240px;margin:0 auto;position:relative}
+.intro h2{font-size:var(--step-head);max-width:16ch;position:relative;z-index:2}
+.intro h2 .ln{color:var(--accent)}
+.intro figure{position:absolute;right:var(--mx);top:6svh;width:min(34vw,420px);aspect-ratio:3/4;z-index:1}
+.intro p{max-width:44ch;margin-top:8svh;font-size:var(--step-lead);line-height:1.55;color:var(--ink)}
+.intro .sig{margin-top:24px;font-size:16px;color:#b5b5b5}
+
+/* ---------- list: statement + table pushed right ---------- */
+.list{padding:10svh var(--mx);max-width:1240px;margin:0 auto}
+.list .stmt{font-size:var(--step-head);max-width:14ch}
+.menuwrap{display:flex;justify-content:flex-end;margin-top:6svh}
+.menu-card{width:min(560px,100%);background:var(--surface);border-radius:20px;padding:36px 36px 28px}
+.menu-card h3{font-size:15px;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+.menu-card table{width:100%;border-collapse:collapse;font-size:17px}
+.menu-card td{padding:10px 0;vertical-align:bottom}
+.menu-card td:last-child{text-align:right;color:#b5b5b5;white-space:nowrap;padding-left:16px}
+.menu-card .note{margin-top:18px;font-size:var(--step-small);color:#b5b5b5}
+
+/* ---------- gallery: rising triptych ---------- */
+.triptych{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:4svh 12px 12px;align-items:start}
+.triptych figure{border-radius:20px;overflow:hidden}
+.triptych figure:nth-child(1){aspect-ratio:3/4;margin-top:9svh}
+.triptych figure:nth-child(2){aspect-ratio:3/4;margin-top:3svh}
+.triptych figure:nth-child(3){aspect-ratio:3/4}
+.triptych figcaption{font-size:var(--step-small);color:#b5b5b5;padding:12px 4px 0;background:var(--bg)}
+
+/* ---------- contact: visit card on a photograph ---------- */
+.visit{position:relative;margin:14svh 12px 12px;border-radius:20px;overflow:hidden;min-height:88svh;display:flex;align-items:center;justify-content:center}
+.visit .bgimg{position:absolute;inset:0}
+.visit .bgimg:after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.45)}
+.vcard{position:relative;z-index:3;background:var(--paper);color:var(--paper-ink);border-radius:20px;padding:44px 48px;max-width:640px;width:calc(100% - 48px)}
+.vcard h2{font-size:clamp(30px,3vw,44px)}
+
+.vcard .rows{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:28px;font-size:17px}
+.vcard .rows h4{font-size:15px;letter-spacing:0.12em;text-transform:uppercase;color:#5c5347;margin-bottom:6px}
+.vcard .rows p{line-height:1.5}
+.vcard .actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+.vcard .actions .btn{margin-top:0}
+.btn.ghost{background:#ddd2c0;color:var(--paper-ink)}
+.btn.ghost:hover{background:var(--paper-ink);color:var(--paper)}
+
+/* ---------- footer: columns above, wordmark below ---------- */
+footer{padding:12svh var(--mx) 60px}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;font-size:16px;color:#b5b5b5}
+footer .cols h5{font-size:15px;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+footer .cols a{word-break:break-word;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#4a4a4a}
+footer .cols a:hover{color:var(--ink)}
+footer .word{position:relative;z-index:2;background:var(--bg);font-size:clamp(44px,9.4vw,150px);text-align:center;margin:10svh auto 0;line-height:1.05;white-space:nowrap;width:fit-content;padding:0 24px}
+footer .word .ln{color:var(--accent)}
+
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .photo-panel .stick{position:static;height:52svh}
+  .intro{padding-top:14svh}
+  .intro figure{position:relative;right:auto;top:auto;width:70%;margin:8svh 0 0 auto}
+  .intro h2{position:relative;z-index:2;margin-bottom:-7svh}
+  .intro p{margin-top:10svh}
+  .vcard{padding:32px 24px}
+  .vcard .rows{grid-template-columns:1fr}
+  footer .word{white-space:normal}
+}
+@media (max-width:520px){
+  footer .cols{grid-template-columns:1fr}
+  .sheet-top{font-size:14px}
+  .wm{font-size:19px}
+  .sheet-mid h1{font-size:11vw}
+  .triptych{grid-template-columns:1fr}
+  .triptych figure:nth-child(n){margin-top:0;aspect-ratio:4/3}
+  .menuwrap{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="card-sheet">
+    <div class="sheet-top">
+      <a href="#menu">Menu</a>
+      <div class="wm">American Express<br>Bakery</div>
+      <a href="#visit">Visit</a>
+    </div>
+    <div class="sheet-mid">
+      <h1 class="display"><span>Baking since</span> <span class="ln">1908.</span></h1>
+      <p><strong>American Express Bakery</strong> — five generations of the Carvalho family behind one counter. Cream rolls, patties, poi and plum cake, made fresh every day in Byculla and Bandra.</p>
+      <a class="btn" href="#menu">See the menu</a>
+    </div>
+    <div class="sheet-foot">
+      <span>Est. 1908</span>
+      <span>AEB House, Byculla</span>
+    </div>
+  </div>
+  <div class="photo-panel">
+    <div class="stick">
+      <img src="assets/hero.jpg" width="1600" height="1063" alt="Fresh bread and croissants in the basket at American Express Bakery">
+      <div class="photobar"><span>Baked fresh daily</span><span>66A Mirza Galib Marg, Byculla</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section class="intro fade">
+  <h2 class="display"><span>A wrought-iron</span> <span class="ln">house of bread.</span></h2>
+  <figure><img src="assets/lamppost.jpg" width="1100" height="1467" alt="The heritage wrought-iron pillar at AEB House, Byculla" loading="lazy"></figure>
+  <p>Francesco Carvalho started baking on Falkland Road in 1908. His goods reached American cruise ships so fast they nicknamed him American Express, and the name stayed. Around 1935 the bakery moved to Byculla, into AEB House — one of the few wrought-iron buildings left standing in Mumbai. The family still runs the ovens, five generations in.</p>
+  <p class="sig">The Carvalho family, bakers since 1908.</p>
+</section>
+
+<!-- LIST -->
+<section class="list" id="menu">
+  <h2 class="display stmt fade">The counter, as it has always been.</h2>
+  <div class="menuwrap fade">
+    <div class="menu-card">
+      <h3>From the printed menu</h3>
+      <table>
+        <tr><td>Round loaf</td><td>₹14</td></tr>
+        <tr><td>Poi, pack of 2</td><td>₹28</td></tr>
+        <tr><td>Khari, 200g</td><td>₹140</td></tr>
+        <tr><td>Cheese straws</td><td>₹195</td></tr>
+        <tr><td>Fruit &amp; nut biscotti, 250g</td><td>₹280</td></tr>
+        <tr><td>Garlic roast chicken sandwich</td><td>₹115</td></tr>
+        <tr><td>Plum cake, 250g</td><td>₹265</td></tr>
+        <tr><td>Date &amp; walnut cake, 250g</td><td>₹220</td></tr>
+        <tr><td>Apple pie</td><td>₹145</td></tr>
+        <tr><td>Lemon tart</td><td>₹70</td></tr>
+        <tr><td>Bread &amp; butter pudding</td><td>₹105</td></tr>
+      </table>
+      <p class="note">From the bakery's printed menu. Also on the counter: cream rolls, patties four ways, croissants, wine biscuits, rusk.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="triptych">
+  <figure class="fade"><img src="assets/cream-rolls.jpg" width="1200" height="900" alt="Cream rolls fresh from the oven" loading="lazy"><figcaption>Cream rolls, the counter favourite.</figcaption></figure>
+  <figure class="fade"><img src="assets/menu-card.jpg" width="640" height="904" alt="The printed American Express Bakery menu card" loading="lazy"><figcaption>The printed menu, unchanged in spirit.</figcaption></figure>
+  <figure class="fade"><img src="assets/loaves.jpg" width="1200" height="900" alt="Loaves resting in the Byculla bakery" loading="lazy"><figcaption>The morning's loaves at AEB House.</figcaption></figure>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="bgimg"><img src="assets/loaves.jpg" width="1200" height="900" alt="" loading="lazy"></div>
+  <div class="vcard fade">
+    <h2 class="display"><span>Come early,</span> <span class="ln">it sells out.</span></h2>
+    <div class="rows">
+      <div>
+        <h4>AEB House</h4>
+        <p>66A Mirza Galib Marg, Byculla,<br>Mumbai 400 008<br><a href="tel:+912223084441">022 2308 4441</a></p>
+      </div>
+      <div>
+        <h4>Bandra</h4>
+        <p>Villa Sushma, 87 Hill Road,<br>Bandra West, Mumbai 400 050<br><a href="tel:+912226422857">022 2642 2857</a></p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn" href="tel:+919136188386">Call the bakery</a>
+      <a class="btn ghost" href="mailto:americanexpressbakery@gmail.com">Write to us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="cols">
+    <div>
+      <h5>American Express Bakery</h5>
+      <p>Five generations of the Carvalho family. Byculla and Bandra, Mumbai. Rated 4.0 from 327 Google reviews.</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <p><a href="tel:+919136188386">+91 91361 88386</a><br><a href="mailto:americanexpressbakery@gmail.com">americanexpressbakery@gmail.com</a></p>
+    </div>
+    <div>
+      <h5>Credit</h5>
+      <p>Photographs and menu card: American Express Bakery. Mumbai · 2026</p>
+    </div>
+  </div>
+  <h2 class="word display"><span>American</span> <span class="ln">Express</span></h2>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:0.12});
+document.querySelectorAll('.fade').forEach(function(s){io.observe(s)});
+setTimeout(function(){document.querySelectorAll('.fade').forEach(function(s){s.classList.add('in')})},1600);
+</script>
+</body>
+</html>
+<script>if(location.hash.indexOf('#scr')===0){addEventListener('load',function(){setTimeout(function(){scrollTo(0,parseInt(location.hash.slice(4))*innerHeight)},400)})}</script>
