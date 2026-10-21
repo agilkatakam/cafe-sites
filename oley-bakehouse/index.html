@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oley Bakehouse - Sourdough, Patisserie and Cookies in Seshadripuram, Bengaluru</title>
+<meta name="description" content="Oley Bakehouse is Vyomiini and Adithya's small bakery in Seshadripuram, Bengaluru: seasonal sourdoughs, patisserie, eggless treats and slow coffee. Open Tuesday to Sunday.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#a8a8aa; --surface:#b4b4b6; --ink:#0e0e0e; --muted:#3a3a3c;
+  --accent:#1f5c49; --accent-ink:#ffffff; --field:#1b1b1c; --field-ink:#ffffff;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:"Zilla Slab",Georgia,serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:500;font-size:16px;padding:14px 26px;text-decoration:none;border-radius:12px;transition:transform .25s ease,opacity .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+.rv.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+.stage{display:grid;grid-template-columns:47% 53%}
+.col{min-width:0;position:relative;z-index:1}
+/* fixed photograph half */
+.side{position:sticky;top:0;height:100svh;padding:20px;background:var(--field)}
+.side .ph{position:absolute;inset:20px;border-radius:12px;overflow:hidden}
+.side .ph img{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.side .ph img.on{opacity:1}
+
+/* scrolling reading column */
+.read{background:var(--field);color:var(--field-ink);min-height:100svh;position:relative}
+.read .top{position:absolute;top:32px;right:32px;display:flex;gap:24px;font-size:15px;z-index:2}
+.read .top a{text-decoration:none;color:#cfcfcf}
+.read .top a:hover{color:#fff}
+.read .top a.act{background:var(--accent);color:var(--accent-ink);padding:8px 18px;border-radius:12px;font-weight:500;transition:opacity .25s ease}
+.read .top a.act:hover{opacity:.85;color:#fff}
+.read .lede{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%);font-size:24px;line-height:1.4;max-width:26ch;color:#e8e8e8;text-align:left}
+.name{position:absolute;left:-9vw;right:32px;bottom:40px;text-align:right;font-weight:400;font-size:clamp(88px,8.6vw,150px);letter-spacing:-0.04em;line-height:1;color:var(--field-ink);white-space:nowrap;z-index:2;transform-origin:100% 100%}
+
+.flow{background:var(--bg);color:var(--ink);padding:120px 48px 0;min-height:100svh}
+.sect{margin-bottom:140px;max-width:560px}
+.sect h2{font-size:clamp(26px,2.2vw,34px);font-weight:500;letter-spacing:-0.01em;margin-bottom:32px}
+.sect .k{color:var(--muted);font-size:var(--step-small);margin:40px 0 12px}
+.sect .k:first-of-type{margin-top:0}
+
+/* menu list */
+.row{display:flex;align-items:flex-start;gap:10px;min-height:36px;padding:7px 0;text-decoration:none}
+.row img{width:16px;height:16px;border-radius:50%;margin-top:6px}
+.row .n{font-size:16px;font-weight:500}
+.row .d{font-size:14px;color:var(--muted)}
+.row .v{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:9px;white-space:nowrap}
+
+/* story */
+.story p{margin-bottom:20px;max-width:46ch}
+.story p b{font-weight:500}
+.story .sig{font-style:italic;color:var(--muted)}
+
+/* testimonial */
+.quote{font-size:clamp(24px,1.9vw,32px);line-height:1.25;max-width:26ch}
+.quoteattr{margin-top:32px;font-size:16px;color:var(--muted)}
+.quoteimg{width:55%;aspect-ratio:1;margin-top:56px;margin-left:auto;border-radius:12px;overflow:hidden}
+
+/* gallery: breaks the split, full width */
+.gallery{background:var(--bg);padding:0 0 140px;position:relative}
+.gallery .ghead{display:flex;justify-content:space-between;align-items:baseline;padding:0 48px;margin-bottom:32px}
+.gallery h2{font-size:clamp(26px,2.2vw,34px);font-weight:500}
+.gallery .cnt{font-size:var(--step-small);color:var(--muted)}
+.galrow{display:flex;gap:12px;height:300px;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;padding-left:48px}
+.galrow::-webkit-scrollbar{display:none}
+.galrow figure{flex:0 0 auto;scroll-snap-align:start;border-radius:12px;overflow:hidden;margin:0}
+.galrow .tall{width:225px}
+.galrow .wide{width:480px}
+.galrow .stack{display:flex;flex-direction:column;gap:12px;width:320px}
+.galrow .stack figure{border-radius:12px;overflow:hidden;height:144px}
+
+/* contact */
+.contact{background:var(--field);color:var(--field-ink);padding:120px 48px 140px;position:relative}
+.contact h2{font-size:clamp(28px,2.6vw,44px);font-weight:500;margin-bottom:40px}
+.bar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.bar a{display:flex;align-items:center;justify-content:center;text-align:center;background:#2a2a2c;color:var(--field-ink);min-height:96px;border-radius:12px;text-decoration:none;font-size:17px;padding:14px;transition:background .25s ease}
+.bar a:hover{background:#343436}
+.bar a.go{background:var(--accent);color:var(--accent-ink)}
+.bar a.go:hover{background:#256b56}
+.smallprint{display:flex;justify-content:space-between;gap:24px;margin-top:16px;font-size:13px;color:#9a9a9c}
+
+/* footer: photograph is the footer */
+footer{position:relative;height:100svh;overflow:hidden}
+footer .bgimg{position:absolute;inset:0;filter:brightness(0.62)}
+footer .ft{position:absolute;top:32px;left:48px;font-size:16px;z-index:2}
+footer .ft a{display:block;color:#fff;text-decoration:none;margin-bottom:8px}
+footer .fc{position:absolute;top:32px;right:48px;text-align:right;font-size:16px;color:#fff;z-index:2}
+footer .fc a{color:#fff;text-decoration:none}
+.fname{position:absolute;left:0;right:0;bottom:56px;z-index:2}
+.fname svg{display:block;width:100%;height:auto}
+.legal{position:absolute;left:48px;right:48px;bottom:20px;font-size:13px;color:#e6e6e6;z-index:2}
+
+@media (max-width:900px){
+  .stage{display:block;background:var(--field)}
+  .side{position:sticky;top:0;height:58svh;padding:12px;z-index:0}
+  .side .ph{inset:12px}
+  .read{min-height:0;height:auto;padding:84px 0 120px}
+  .read .top{top:20px;right:20px;left:20px;justify-content:flex-end}
+  .read .lede{position:static;transform:none;margin:0 20px;font-size:18px;max-width:32ch}
+  .name{position:static;text-align:left;margin:24px 20px 0;font-size:11.5vw;transform-origin:0 100%}
+  .flow{padding:96px 20px 0}
+  .sect{margin-bottom:110px}
+  .galrow{height:56vw;padding-left:20px}
+  .galrow .tall{width:64vw}
+  .galrow .wide{width:88vw}
+  .galrow .stack{width:72vw}
+  .gallery .ghead{padding:0 20px}
+  .contact{padding:96px 20px 110px}
+  .bar{grid-template-columns:1fr}
+  .bar a{min-height:60px}
+  .smallprint{flex-direction:column;gap:8px}
+  footer .ft{left:20px}
+  footer .fc{right:20px;font-size:14px}
+  .legal{left:20px;right:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="side">
+    <div class="ph">
+      <img src="assets/hero-loaf.jpg" class="on" data-for="top" alt="A just-baked country sourdough, held in two hands">
+      <img src="assets/tres-leches.jpg" data-for="menu" alt="Elaneer tres leches in Oley's boxed packaging" loading="lazy">
+      <img src="assets/box-table.jpg" data-for="story" alt="Oley's ITS BAK'D boxes with a tiramisu tub" loading="lazy">
+      <img src="assets/tiramisu.jpg" data-for="quote" alt="Tiramisu and Oley boxes on the counter" loading="lazy">
+    </div>
+  </div>
+  <div class="col">
+  <div class="read" id="top">
+    <nav class="top"><a href="#menu">Menu</a><a href="#story">Story</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a class="act" href="https://oleybakehouse.co.in/onlineorder/">Order now</a></nav>
+    <p class="lede">A small bakehouse in Seshadripuram, Bengaluru. Seasonal sourdoughs, patisserie and slow coffee, baked by the two people who own it.</p>
+    <h1 class="name" id="wordmark">oley bakehouse</h1>
+  </div>
+
+<div class="flow">
+
+<section class="sect" id="menu">
+  <h2 class="rv">The menu, this season</h2>
+  <p class="k rv">Patisserie</p>
+  <div class="row rv"><img src="assets/d2.jpg" alt=""><span><span class="n">Elaneer tres leches</span><br><span class="d">Tender coconut, soaked slow</span></span><span class="v">eggless</span></div>
+  <div class="row rv"><img src="assets/d1.jpg" alt=""><span><span class="n">Tiramisu</span><br><span class="d">Coffee, cream, cocoa</span></span><span class="v">eggless</span></div>
+  <div class="row rv"><img src="assets/d3.jpg" alt=""><span><span class="n">Assorted brownies</span><br><span class="d">Classic, Biscoff, Nutella, cookies and cream</span></span><span class="v">egg</span></div>
+  <p class="k rv">Breads</p>
+  <div class="row rv"><img src="assets/d4.jpg" alt=""><span><span class="n">Country sourdough</span></span><span class="v">daily</span></div>
+  <div class="row rv"><img src="assets/d1.jpg" alt=""><span><span class="n">Chilli garlic sourdough</span></span><span class="v">daily</span></div>
+  <div class="row rv"><img src="assets/d2.jpg" alt=""><span><span class="n">Seeded sourdough</span></span><span class="v">daily</span></div>
+  <div class="row rv"><img src="assets/d3.jpg" alt=""><span><span class="n">100% whole wheat sourdough</span></span><span class="v">daily</span></div>
+  <div class="row rv"><img src="assets/d4.jpg" alt=""><span><span class="n">Korean cream cheese buns</span></span><span class="v">daily</span></div>
+  <p class="k rv">Cookies and crackers</p>
+  <div class="row rv"><img src="assets/d1.jpg" alt=""><span><span class="n">Chocolate chip cookie</span></span><span class="v">eggless</span></div>
+  <div class="row rv"><img src="assets/d2.jpg" alt=""><span><span class="n">Banana cake cookie</span></span><span class="v">eggless</span></div>
+  <p class="k rv">Beverages</p>
+  <div class="row rv"><img src="assets/d3.jpg" alt=""><span><span class="n">Hot chocolate</span></span><span class="v">all day</span></div>
+  <div class="row rv"><img src="assets/d4.jpg" alt=""><span><span class="n">Cold coffee</span></span><span class="v">all day</span></div>
+</section>
+
+<section class="sect story" id="story">
+  <h2 class="rv">Baked by its owners</h2>
+  <p class="rv">Oley is the dream of <b>Vyomiini and Adithya</b>, built from a shared love for the art and science of baking. From experimenting in small home kitchens to learning the craft professionally, every step shaped how they work: precision, creativity, and flavours that make people pause.</p>
+  <p class="rv">At Oley, baking is more than food. Each loaf, pastry and treat carries creativity, care and soulful ingredients. Not baking for the masses, but for meaning.</p>
+  <p class="sig rv">Vyomiini and Adithya, founders</p>
+</section>
+
+<section class="sect" id="quote">
+  <blockquote class="quote rv">&ldquo;We're not baking for the masses, we're baking for meaning.&rdquo;</blockquote>
+  <p class="quoteattr rv">Vyomiini and Adithya, founders of Oley</p>
+  <div class="quoteimg rv"><img src="assets/g5.jpg" loading="lazy" alt="A round of Oley sourdough held up to the camera"></div>
+</section>
+
+</div>
+</div>
+
+<section class="gallery" id="gallery">
+  <div class="ghead"><h2 class="rv">From the counter</h2><span class="cnt">8 photographs</span></div>
+  <div class="galrow">
+    <figure class="tall"><img src="assets/tres-leches.jpg" loading="lazy" alt="Elaneer tres leches with Oley packaging"></figure>
+    <div class="stack"><figure><img src="assets/g1.jpg" loading="lazy" alt="A glazed pastry on a plate with an Oley card"></figure><figure><img src="assets/g3.jpg" loading="lazy" alt="A glazed pastry served at the counter"></figure></div>
+    <figure class="wide"><img src="assets/box-table.jpg" loading="lazy" alt="Oley's branded boxes with a tub of tiramisu"></figure>
+    <div class="stack"><figure><img src="assets/g4.jpg" loading="lazy" alt="Tres leches and ITS BAK'D boxes"></figure><figure><img src="assets/g2.jpg" loading="lazy" alt="A slice of tiramisu in its tub"></figure></div>
+    <figure class="tall"><img src="assets/hero-loaf.jpg" loading="lazy" alt="A fresh sourdough loaf in two hands"></figure>
+    <figure class="wide"><img src="assets/tiramisu.jpg" loading="lazy" alt="Tiramisu and Oley boxes, wide shot"></figure>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <h2 class="rv">Come by for a loaf</h2>
+  <div class="bar rv">
+    <a href="tel:+919110204572">Call +91 91102 04572</a>
+    <a href="mailto:oleybakehouse@gmail.com">oleybakehouse@gmail.com</a>
+    <a class="go" href="https://oleybakehouse.co.in/onlineorder/">Order online</a>
+  </div>
+  <div class="smallprint rv">
+    <span>G-01, Pearl Naksha 161, 1st Main Rd, DN Ramaiah Layout, Seshadripuram, Bengaluru 560020</span>
+    <span>Tuesday to Sunday, 8:30 AM - 1:00 PM and 3:00 PM - 10:00 PM. Closed Mondays.</span>
+  </div>
+</section>
+
+<footer>
+  <div class="bgimg"><img src="assets/tiramisu.jpg" loading="lazy" alt=""></div>
+  <div class="ft"><a href="#menu">Menu</a><a href="#story">Story</a><a href="https://www.instagram.com/oleybakehouse/">Instagram</a><a href="https://oleybakehouse.co.in/onlineorder/">Order now</a></div>
+  <div class="fc"><a href="tel:+919110204572">+91 91102 04572</a><br><a href="mailto:oleybakehouse@gmail.com">oleybakehouse@gmail.com</a><br>Seshadripuram, Bengaluru</div>
+  <div class="fname">
+    <svg viewBox="0 0 1600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="oley bakehouse">
+      <text x="800" y="180" text-anchor="middle" font-family="Zilla Slab, serif" font-size="190" letter-spacing="-6" fill="#b4b4b6">oley bakehouse</text>
+    </svg>
+  </div>
+  <div class="legal">Concept redesign for Oley Bakehouse. All photographs from the bakehouse's own website, oleybakehouse.co.in. Bengaluru, 2026.</div>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)}})},{rootMargin:'300px 0px 300px 0px',threshold:0});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('is-in')})},2500);
+/* crossfade the fixed photograph as sections pass */
+var imgs=document.querySelectorAll('.side .ph img');
+var swap=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var k=e.target.id||'top';imgs.forEach(function(im){im.classList.toggle('on',im.dataset.for===k)})})},{rootMargin:'-45% 0px -45% 0px'});
+['menu','story','quote','top'].forEach(function(id){var el=document.getElementById(id);if(el)swap.observe(el)});
+/* scaling wordmark */
+var wm=document.getElementById('wordmark');
+addEventListener('scroll',function(){var s=Math.min(1,scrollY/(innerHeight*0.9));wm.style.transform='scale('+(1-s*0.06)+')'},{passive:true});
+</script>
+</body>
+</html>
