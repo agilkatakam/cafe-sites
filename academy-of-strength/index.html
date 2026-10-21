@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academy of Strength - Functional Training, Mobility and Animal Flow, Indiranagar and Whitefield</title>
+<meta name="description" content="Academy of Strength is a movement and functional training academy in Indiranagar and Whitefield, Bengaluru. Programs in functional training, mobility, animal flow and outdoor workouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d060b; --surface:#1b0e17; --ink:#ffffff; --muted:#9a8f97;
+  --accent:#d92d28; --accent-ink:#ffffff;
+  --field-1:#470c35; --field-2:#ffffff; --field-2-ink:#101421;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:"Figtree",system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+h1,h2,h3,.display{font-family:"League Spartan",sans-serif;font-weight:700;letter-spacing:-0.04em;line-height:0.88}
+.tri{width:0;height:0;border-left:.5em solid transparent;border-right:.5em solid transparent;border-bottom:.9em solid var(--accent)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s cubic-bezier(.19,1,.22,1)}
+.rv.is-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ============ HERO ============ */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;min-height:100svh;background:var(--bg)}
+.card{position:relative;background:var(--field-2);color:var(--field-2-ink);border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 48px 96px;overflow:hidden}
+.band{position:absolute;top:0;left:0;right:0;height:56px;display:flex}
+.band i{flex:1}
+.band i:nth-child(odd){background:var(--field-2-ink)}
+.band i:nth-child(4n+2){background:var(--accent)}
+.wordmark{font-family:"League Spartan",sans-serif;font-weight:700;font-size:clamp(26px,2.2vw,34px);letter-spacing:-0.03em;margin-bottom:34px}
+.wordmark span{color:var(--accent)}
+.card h1{font-size:clamp(40px,3.6vw,56px);text-transform:lowercase;margin-bottom:22px}
+.card .sub{font-size:17px;max-width:36ch;margin-bottom:34px;color:#3a3f4a}
+.btn{display:inline-block;background:#c92a25;color:var(--accent-ink);font-weight:600;font-size:17px;padding:16px 34px;border-radius:6px;text-decoration:none;transition:transform .25s ease,background .25s ease}
+.btn:hover{transform:translateY(-2px);background:#b02521}
+.card .links{position:absolute;bottom:28px;left:0;right:0;display:flex;justify-content:center;gap:34px;font-size:15px}
+.card .links a{text-decoration:none;color:var(--field-2-ink)}
+.card .links a:hover{color:var(--accent)}
+.hero .room{border-radius:var(--radius);overflow:hidden;position:relative;min-height:calc(100svh - 24px)}
+.hero .room img{position:absolute;inset:0}
+.xfade img{transition:opacity 1.6s ease}
+.xfade img.top{opacity:1}
+.xfade.swap img.top{opacity:0}
+@media (prefers-reduced-motion:reduce){.xfade img.top{display:none}}
+
+/* ============ WHITE MIDDLE ============ */
+.middle{background:var(--field-2);color:var(--field-2-ink)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+/* features paragraph */
+.features{padding:120px 0 90px}
+.features .big{font-family:"Figtree",sans-serif;font-weight:600;font-size:clamp(24px,2.6vw,36px);line-height:1.25;letter-spacing:-0.01em;max-width:62ch}
+.slot{display:inline-block;width:1.9em;height:1em;border-radius:0.18em;overflow:hidden;vertical-align:-0.12em;margin:0 0.08em}
+.features .tail{margin:56px 0 0 38%;font-size:18px;max-width:44ch;color:#3a3f4a}
+.features .tail .btn{margin-top:26px}
+
+/* triangle divider */
+.divider{height:120px;display:flex;align-items:center;justify-content:center;background:var(--field-2)}
+.divider .t{width:0;height:0;border-left:60px solid transparent;border-right:60px solid transparent;border-bottom:100px solid var(--accent)}
+
+/* list: programs + batches */
+.list{padding:20px 0 100px}
+.cat{display:flex;justify-content:space-between;align-items:baseline;margin:96px 0 40px}
+.cat:first-child{margin-top:0}
+.cat h2{font-size:clamp(32px,3.4vw,50px);text-transform:lowercase}
+.cat .count{font-size:16px;color:#6a7078}
+.items{display:grid;grid-template-columns:1fr 1fr;gap:36px 64px}
+.item{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start}
+.item .pic{width:64px;height:64px;clip-path:polygon(50% 0,100% 100%,0 100%);background:var(--surface)}
+.item h3{font-family:"Figtree",sans-serif;font-weight:600;font-size:18px;letter-spacing:0;line-height:1.3;display:flex;justify-content:space-between;gap:12px}
+.item h3 .w{font-weight:400;color:#6a7078;font-size:15px;white-space:nowrap}
+.item p{font-size:16px;color:#4a5058;margin-top:6px;max-width:38ch}
+.item .note{font-size:15px;color:var(--accent);font-weight:600;margin-top:6px}
+
+/* about panel */
+.about{padding:20px 20px 110px}
+.panel{background:var(--surface);color:var(--ink);border-radius:12px;min-height:92svh;position:relative;overflow:hidden;padding:56px}
+.panel .statement{font-size:clamp(34px,3.6vw,56px);text-transform:lowercase;max-width:10ch}
+.panel .shape{position:absolute;left:56px;bottom:-6%;width:44vw;max-width:640px;aspect-ratio:0.9;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.panel .blocks{position:absolute;right:56px;top:23%;width:300px;display:flex;flex-direction:column;gap:64px}
+.panel h3{font-family:"Figtree",sans-serif;font-weight:600;font-size:22px;letter-spacing:0;line-height:1.3;margin-bottom:12px}
+.panel p{font-size:16px;color:var(--muted)}
+.panel .blocks .btn{align-self:flex-start;margin-top:4px}
+
+/* gallery word tiles */
+.gallery{padding:8px;background:var(--bg)}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tile{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;border-radius:4px;overflow:hidden}
+.tile .big-word{font-family:"League Spartan",sans-serif;font-weight:700;font-size:clamp(40px,5.5vw,84px);letter-spacing:-0.03em;line-height:0.9;text-align:center;text-transform:lowercase}
+.tile .cap{margin-top:12px;text-align:center;font-size:14px;opacity:.85}
+.t-dark{background:var(--surface);color:#fff}
+.t-red{background:var(--accent);color:#fff}
+.t-plum{background:var(--field-1);color:#fff}
+.t-white{background:var(--field-2);color:var(--field-2-ink)}
+.t-photo{padding:0}
+.t-photo img{position:absolute;inset:0}
+
+/* contact coupon */
+.contact{padding:100px 0 80px}
+.coupon{position:relative;max-width:1080px;margin:0 auto;background:var(--field-1);color:#fff;border-radius:14px;display:grid;grid-template-columns:46% 54%;min-height:420px;
+  clip-path:polygon(0 0,44% 0,46% 14px,48% 0,100% 0,100% 100%,48% 100%,46% calc(100% - 14px),44% 100%,0 100%)}
+.coupon .left{padding:48px;display:flex;flex-direction:column;justify-content:space-between;border-right:5px dotted var(--bg)}
+.coupon h2{font-size:clamp(28px,3vw,44px);text-transform:uppercase;letter-spacing:0}
+.coupon .left p{font-size:16px;color:#d9c9d4;max-width:30ch}
+.coupon .right{padding:48px;display:flex;flex-direction:column;gap:10px;justify-content:center}
+.coupon .row{background:#5a1446;border-radius:6px;padding:14px 18px;font-size:16px;display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.coupon .row b{font-weight:600}
+.coupon .row span{color:#d9c9d4;font-size:14px;text-align:right}
+.coupon a.row{text-decoration:none;transition:background .25s ease}
+.coupon a.row:hover{background:#6b1b54}
+.coupon .go{display:block;background:var(--bg);color:#fff;text-align:center;font-weight:600;font-size:17px;padding:18px;border-radius:6px;text-decoration:none;margin-top:6px;transition:background .25s ease}
+.coupon .go:hover{background:var(--accent)}
+
+/* footer */
+.footer{background:var(--bg);padding:56px 24px 40px}
+.markband{display:flex;align-items:flex-end;justify-content:center;gap:4px;height:30svh;min-height:200px;margin-bottom:48px}
+.markband i{display:block;background:var(--surface);width:11.2%}
+.markband i.red{background:var(--accent)}
+.fgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;max-width:1240px;margin:0 auto}
+.flinks{grid-column:1/9;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.flinks h4{font-size:15px;font-weight:600;margin-bottom:12px}
+.flinks a{display:block;font-size:15px;color:var(--muted);text-decoration:none;margin-bottom:8px}
+.flinks a:hover{color:#fff}
+.faddr{grid-column:9/13;font-size:15px;color:var(--muted);line-height:1.6}
+.faddr b{color:#fff;font-weight:600}
+.fbase{display:flex;justify-content:space-between;align-items:center;max-width:1240px;margin:56px auto 0;font-size:13px;color:var(--muted)}
+.fbase .btn{font-size:14px;padding:12px 22px}
+
+/* ============ PHONE ============ */
+@media (max-width:820px){
+  .hero{display:block;padding:12px;min-height:0}
+  .hero .room{min-height:48svh;margin-bottom:-24px;position:relative;z-index:1}
+  .card{position:relative;z-index:2;padding:96px 24px 88px}
+  .band{height:40px}
+  .card h1{font-size:8vw}
+  .card .links{flex-wrap:wrap;gap:18px}
+  .features{padding:90px 0 60px}
+  .features .big{font-size:24px}
+  .features .tail{margin-left:0}
+  .items{grid-template-columns:1fr}
+  .cat h2{font-size:8.5vw}
+  .about{padding:10px 10px 80px}
+  .panel{padding:32px 24px;min-height:0}
+  .panel .statement{font-size:8.5vw;max-width:12ch;margin-bottom:44px}
+  .panel .blocks{position:static;width:auto;gap:44px;margin-bottom:56px}
+  .panel .shape{position:relative;left:auto;bottom:auto;width:86vw;margin:0 auto -18%}
+  .tiles{grid-template-columns:repeat(2,1fr);gap:6px}
+  .tile .big-word{font-size:15vw}
+  .contact{padding:70px 0 40px}
+  .coupon{grid-template-columns:1fr;clip-path:none;border-radius:14px;margin:0 12px}
+  .coupon .left{border-right:0;border-bottom:5px dotted var(--bg);gap:28px}
+  .flinks{grid-column:1/13;grid-template-columns:1fr 1fr}
+  .faddr{grid-column:1/13;margin-top:12px}
+  .footer{padding:36px 24px 32px}
+  .markband{min-height:170px;margin-bottom:36px}
+  .fbase{flex-direction:column;gap:20px;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="card">
+    <div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="wordmark">academy<span>of</span>strength</div>
+    <h1>Unleash a<br>stronger you.</h1>
+    <p class="sub">Functional training, mobility and animal flow in Indiranagar and Whitefield, Bengaluru.</p>
+    <a class="btn" href="tel:+919916099243">Enquire now</a>
+    <nav class="links">
+      <a href="#programs">Programs</a>
+      <a href="#batches">Batches</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+  <div class="room xfade" id="xfade">
+    <img src="assets/web-hall.jpg" width="640" height="480" alt="Inside the Academy of Strength training hall">
+    <img class="top" src="assets/web-hero.jpg" width="1400" height="933" alt="Animal flow practice on the outdoor deck at Academy of Strength">
+  </div>
+</header>
+
+<div class="middle">
+
+<section class="features">
+  <div class="wrap">
+    <h2 class="rv" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">What we train</h2>
+    <p class="big rv">Functional training <span class="slot"><img src="assets/web-bench.jpg" alt=""></span> builds resilient bodies. Mobility <span class="slot"><img src="assets/web-trio.jpg" alt=""></span> keeps joints honest. Animal flow <span class="slot"><img src="assets/web-flow.jpg" alt=""></span> makes it play.</p>
+    <div class="tail rv">
+      <p>There is a stronger you waiting to be unleashed. At the Academy of Strength we give you the tools to find it.</p>
+      <a class="btn" href="tel:+919916099243">Start with a call</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider" aria-hidden="true"><div class="t rv"></div></div>
+
+<section class="list" id="programs">
+  <div class="wrap">
+    <div class="cat rv"><h2>Programs</h2><span class="count">4 disciplines</span></div>
+    <div class="items">
+      <div class="item rv"><div class="pic"><img src="assets/web-bench.jpg" loading="lazy" alt="Coached barbell work"></div><div><h3>Functional training <span class="w">Mon Wed Fri</span></h3><p>Strength and conditioning with free-weight and body-weight exercises, building stronger, fitter and more resilient bodies.</p></div></div>
+      <div class="item rv"><div class="pic"><img src="assets/web-trio.jpg" loading="lazy" alt="Floor mobility session"></div><div><h3>Mobility <span class="w">Tue</span></h3><p>Breathing, stretching and exploring the full range of motion to improve body awareness and control while moving.</p></div></div>
+      <div class="item rv"><div class="pic"><img src="assets/web-flow.jpg" loading="lazy" alt="Animal flow movement"></div><div><h3>Animal flow <span class="w">Thu</span></h3><p>A ground-based bodyweight practice of balance, coordination and fun that develops better motor control.</p></div></div>
+      <div class="item rv"><div class="pic"><img src="assets/web-hero.jpg" loading="lazy" alt="Outdoor workout"></div><div><h3>Outdoor workout <span class="w">Sat</span></h3><p>The Saturday session, taken outside the four walls of the academy.</p></div></div>
+    </div>
+
+    <div class="cat rv" id="batches"><h2>Batches</h2><span class="count">in-centre and online</span></div>
+    <div class="items">
+      <div class="item rv"><div class="pic"><img src="assets/web-class.jpg" loading="lazy" alt="A morning batch warming up"></div><div><h3>Morning <span class="w">Mon-Sat</span></h3><p>6:30, 7:30, 8:30 and 9:30 AM, in the centre.</p></div></div>
+      <div class="item rv"><div class="pic"><img src="assets/web-hall.jpg" loading="lazy" alt="Evening training in the hall"></div><div><h3>Evening <span class="w">Mon-Fri</span></h3><p>5 to 6 PM and 7 to 8 PM, in the centre.</p></div></div>
+      <div class="item rv"><div class="pic"><img src="assets/web-selfie.jpg" loading="lazy" alt="Members after a session"></div><div><h3>Online <span class="w">MWF + TTS</span></h3><p>Monday, Wednesday, Friday at 6:30 AM, 7:30 AM and 7 PM. Tuesday, Thursday, Saturday at 7:30 AM.</p></div></div>
+      <div class="item rv"><div class="pic"><img src="assets/web-place.jpg" loading="lazy" alt="The academy floor"></div><div><h3>The weekend <span class="w">Sat-Sun</span></h3><p>Saturday is a half-day. Sunday is a holiday - rest is part of the program.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="panel">
+    <h2 class="statement rv">Three pillars, one academy.</h2>
+    <div class="shape rv"><img src="assets/web-trio.jpg" loading="lazy" alt="Athletes in a floor session at the academy"></div>
+    <div class="blocks">
+      <div class="rv"><h3>The philosophy</h3><p>Training, nutrition and recovery. Varied, science-based programs built for individual needs - building strength, improving mobility or getting shredded.</p></div>
+      <div class="rv"><h3>The method</h3><p>Movement and functional training for fitness enthusiasts of all levels, every program designed to maximise the potential of the human body and mind.</p>
+      <a class="btn" href="mailto:info@academyofstrength.in">Write to the academy</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="tiles">
+    <div class="tile t-red rv"><div class="big-word">6:30<br>am</div><div class="cap">first batch</div></div>
+    <div class="tile t-photo rv"><img src="assets/web-place.jpg" loading="lazy" alt="The training hall"></div>
+    <div class="tile t-dark rv"><div class="big-word">4</div><div class="cap">programs</div></div>
+    <div class="tile t-plum rv"><div class="big-word">m·w·f</div><div class="cap">functional training</div></div>
+    <div class="tile t-photo rv"><img src="assets/web-bench.jpg" loading="lazy" alt="Barbell training"></div>
+    <div class="tile t-white rv"><div class="big-word">tue</div><div class="cap">mobility</div></div>
+    <div class="tile t-photo rv"><img src="assets/web-flow.jpg" loading="lazy" alt="Animal flow practice"></div>
+    <div class="tile t-red rv"><div class="big-word">thu</div><div class="cap">animal flow</div></div>
+    <div class="tile t-dark rv"><div class="big-word">sat</div><div class="cap">outdoor workout</div></div>
+    <div class="tile t-photo rv"><img src="assets/web-selfie.jpg" loading="lazy" alt="Members at the academy"></div>
+    <div class="tile t-plum rv"><div class="big-word">sun</div><div class="cap">rest day</div></div>
+    <div class="tile t-white rv"><div class="big-word">2</div><div class="cap">centres</div></div>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <div class="wrap">
+    <div class="coupon rv">
+      <div class="left">
+        <h2>Cut out.<br>Show up.</h2>
+        <p>Every enquiry starts with a conversation. Call or write and the academy will find your batch.</p>
+      </div>
+      <div class="right">
+        <a class="row" href="tel:+919916099243"><b>Indiranagar</b><span>294, Third Floor, 100 Feet Road, Bengaluru 560038 · +91 99160 99243</span></a>
+        <a class="row" href="tel:+918050363039"><b>Whitefield</b><span>68/2, 1st Floor, 2nd Main Rd, Nallurahalli, Bengaluru 560066 · +91 80503 63039</span></a>
+        <a class="row" href="mailto:info@academyofstrength.in"><b>Email</b><span>info@academyofstrength.in</span></a>
+        <a class="go" href="tel:+919916099243">Call the academy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<footer class="footer">
+  <div class="markband" aria-hidden="true">
+    <i style="height:72%"></i><i style="height:88%"></i><i class="red" style="height:100%"></i><i style="height:80%"></i><i style="height:94%"></i><i style="height:76%"></i><i class="red" style="height:90%"></i><i style="height:82%"></i>
+  </div>
+  <div class="fgrid">
+    <div class="flinks">
+      <div><h4>Programs</h4><a href="#programs">Functional training</a><a href="#programs">Mobility</a><a href="#programs">Animal flow</a><a href="#programs">Outdoor workout</a></div>
+      <div><h4>Batches</h4><a href="#batches">Morning</a><a href="#batches">Evening</a><a href="#batches">Online</a></div>
+      <div><h4>Centres</h4><a href="#visit">Indiranagar</a><a href="#visit">Whitefield</a></div>
+      <div><h4>Contact</h4><a href="mailto:info@academyofstrength.in">Email</a><a href="tel:+919916099243">Call Indiranagar</a><a href="tel:+918050363039">Call Whitefield</a></div>
+    </div>
+    <div class="faddr">
+      <b>Academy of Strength</b><br>294, Third Floor, 100 Feet Road, Indiranagar, Bengaluru 560038<br><br>68/2, 1st Floor, 2nd Main Rd, Nallurahalli, Whitefield, Bengaluru 560066
+    </div>
+  </div>
+  <div class="fbase">
+    <span>Concept redesign for Academy of Strength. Photographs from academyofstrength.in and the academy's Instagram. Bengaluru, 2026.</span>
+    <a class="btn" href="tel:+919916099243">Enquire now</a>
+  </div>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)}})},{rootMargin:'300px 0px 300px 0px',threshold:0});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+setTimeout(function(){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('is-in')})},2500);
+var xf=document.getElementById('xfade'),vis=true;
+document.addEventListener('visibilitychange',function(){vis=!document.hidden});
+setInterval(function(){if(vis && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){xf.classList.toggle('swap')}},6000);
+</script>
+</body>
+</html>
