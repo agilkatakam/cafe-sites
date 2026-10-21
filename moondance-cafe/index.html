@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moon Dance Cafe, Bar &amp; German Bakery, Kasol</title>
+<meta name="description" content="Moon Dance Cafe, Bar and German Bakery on the main road in Kasol. Trout, bakes, coffee and slow evenings since 1992. Open ten to eleven, every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@100,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f1f10; --surface:#162a17; --ink:#ffffff; --muted:#a8b2a8; --accent:#c6f19d; --accentInk:#0f1f10;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:var(--ink);text-decoration:none}
+.serif{font-family:'Zodiak',Georgia,serif;font-weight:100;letter-spacing:-0.01em;line-height:1.0}
+.mut{color:var(--muted)}
+
+/* nav */
+nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:flex-start;padding:30px}
+nav .brand{font-size:15px;font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+nav .brand small{display:block;font-weight:400;letter-spacing:.06em;text-transform:none;color:var(--muted);font-size:13px;margin-top:4px}
+nav .links{display:flex;gap:26px;margin-top:4px}
+nav .links a{font-size:15px;color:var(--muted)}
+nav .links a:hover{color:var(--ink)}
+nav .action{background:var(--accent);color:var(--accentInk);font-size:15px;font-weight:500;padding:10px 22px;border-radius:999px;min-width:64px;text-align:center}
+@media(max-width:820px){nav .links{display:none}}
+
+/* hero: two prints in darkness */
+.hero{position:relative;min-height:100svh;overflow:hidden}
+.hero .big{position:absolute;top:11%;right:5vw;width:min(58vw,780px);aspect-ratio:16/10;overflow:hidden}
+.hero .big img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.8) contrast(1.05)}
+.hero .big img.b2{opacity:0;animation:fadeB 14s infinite;filter:brightness(.55) contrast(1.05)}
+@keyframes fadeB{0%{opacity:0}8%{opacity:1}44%{opacity:1}52%{opacity:0}100%{opacity:0}}
+.hero .small{position:absolute;left:5vw;bottom:36vh;width:min(26vw,320px);aspect-ratio:1;object-fit:cover;filter:brightness(.88) contrast(1.05)}
+.hero .statement{position:absolute;left:5vw;bottom:24vh;max-width:20ch;font-size:clamp(28px,2.6vw,38px);line-height:1.25;font-weight:300;z-index:2}
+.hero h1{position:absolute;left:0;right:0;bottom:4vh;text-align:center;font-size:clamp(52px,11.5vw,168px);text-transform:uppercase;white-space:nowrap}
+@media(max-width:820px){
+  .hero{display:flex;flex-direction:column;justify-content:space-evenly;min-height:100svh;padding-bottom:4vh}
+  .hero nav{position:static}
+  .hero .big{position:relative;width:78%;margin-left:auto;margin-right:0}
+  .hero .small{position:static;width:30%;margin:-24px 0 0 20px}
+  .hero .statement{position:static;margin:0 20px;max-width:20ch;font-size:26px}
+  .hero h1{position:static;padding:0 20px;text-align:left;font-size:13vw;line-height:1.02;white-space:nowrap}
+}
+
+/* intro: pinned sentence, photographs pass */
+.intro{position:relative;height:220svh}
+.intro .pin{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.intro .sentence{position:relative;z-index:2;width:50%;text-align:center;font-family:'Zodiak',Georgia,serif;font-weight:300;font-size:clamp(34px,4.4vw,64px);line-height:1.14}
+.intro .pass{position:absolute;z-index:1;opacity:0;animation:fade 18s infinite}
+.intro .pass img{object-fit:cover;width:100%;height:100%;filter:brightness(.8) contrast(1.05)}
+.intro .p1{width:16vw;aspect-ratio:4/5;left:4vw;top:14svh;animation-delay:0s}
+.intro .p2{width:15vw;aspect-ratio:4/5;right:5vw;top:26svh;animation-delay:6s}
+.intro .p3{width:16vw;aspect-ratio:16/10;left:7vw;bottom:8svh;animation-delay:12s}
+@keyframes fade{0%{opacity:0}8%{opacity:1}30%{opacity:1}38%{opacity:0}100%{opacity:0}}
+@media(max-width:820px){
+  .intro{height:260svh}
+  .intro .sentence{width:auto;max-width:20ch;font-size:8vw;padding:0 20px}
+  .intro .p1{width:64%;left:0;top:8svh}
+  .intro .p2{width:78%;right:0;top:auto;bottom:14svh}
+  .intro .p3{width:52%;left:4vw;bottom:auto;top:44svh}
+}
+
+/* list: sticky photograph, active rows */
+.menu{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;padding:16vh 5vw}
+.menu .stick{grid-column:1/6;position:sticky;top:12vh;align-self:start}
+.menu .stick img{width:100%;max-width:34vw;aspect-ratio:4/5;object-fit:cover;filter:brightness(.85) contrast(1.05)}
+.menu .rows{grid-column:7/12}
+.menu h2{font-family:'Zodiak',Georgia,serif;font-weight:300;font-size:clamp(32px,3.4vw,52px);line-height:1.1;margin-bottom:6vh}
+.menu .row{padding:26px 0}
+.menu .row h3{font-size:clamp(21px,1.6vw,26px);font-weight:500;margin-bottom:6px}
+.menu .row p{font-size:17px;color:var(--muted);max-width:34ch}
+.menu .row em{font-style:normal;color:var(--accent)}
+@media(max-width:820px){
+  .menu{display:block;padding:10vh 20px}
+  .menu .stick{position:static;margin:0 -20px 8vh}
+  .menu .stick img{max-width:none;width:100%;aspect-ratio:4/3;max-height:38svh}
+}
+
+/* gallery around a heading */
+.gallery{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;padding:12vh 5vw;overflow:hidden}
+.gallery .centre{position:relative;z-index:2;text-align:center;max-width:26ch}
+.gallery h2{font-family:'Zodiak',Georgia,serif;font-weight:300;font-size:clamp(30px,2.6vw,40px);line-height:1.15;margin-bottom:18px}
+.gallery .centre p{font-size:17px;color:var(--muted)}
+.gallery .g{position:absolute;overflow:hidden}
+.gallery .g img{width:100%;height:100%;object-fit:cover;filter:brightness(.78) contrast(1.05)}
+.gallery .g1{width:15vw;aspect-ratio:4/5;left:6vw;top:10%}
+.gallery .g2{width:13vw;aspect-ratio:1;right:9vw;top:8%}
+.gallery .g3{width:16vw;aspect-ratio:4/5;right:5vw;bottom:9%}
+.gallery .g4{width:14vw;aspect-ratio:1;left:9vw;bottom:8%}
+.gallery .g5{width:12vw;aspect-ratio:4/5;left:26vw;top:4%}
+@media(max-width:820px){
+  .gallery{min-height:90svh}
+  .gallery h2{font-size:7vw}
+  .gallery .g1{width:30%;left:4%;top:6%}
+  .gallery .g2{width:30%;right:4%;top:4%}
+  .gallery .g3{width:30%;right:6%;bottom:6%}
+  .gallery .g4{width:30%;left:5%;bottom:5%}
+  .gallery .g5{width:30%;left:35%;bottom:2%}
+}
+
+/* contact: visit card on a photograph */
+.contact{position:relative;min-height:100svh}
+.contact .backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.55) contrast(1.05)}
+.contact .card{position:absolute;top:14vh;left:8vw;width:380px;max-width:86vw;background:#fff;color:var(--accentInk);border-radius:8px;padding:32px;z-index:2}
+.contact .card img{width:120px;margin:0 auto 18px}
+.contact .card h2{font-family:'Zodiak',Georgia,serif;font-weight:300;font-size:30px;line-height:1.1;text-align:center;margin-bottom:6px}
+.contact .card .sub{text-align:center;font-size:15px;color:#3c4a3d;margin-bottom:22px}
+.contact .card ul{list-style:none}
+.contact .card li{padding:12px 0;font-size:16px;display:flex;justify-content:space-between;gap:12px}
+.contact .card li span:first-child{color:#3c4a3d}
+.contact .card li a{color:var(--accentInk);font-weight:500;text-align:right}
+.contact .cta{display:block;margin-top:22px;background:var(--accentInk);color:#fff;text-align:center;padding:16px;border-radius:999px;font-weight:500;font-size:17px;min-width:64px}
+@media(max-width:820px){
+  .contact{min-height:70svh}
+  .contact .card{top:auto;bottom:-80px;left:16px;right:16px;width:auto}
+}
+
+/* footer: one quiet line */
+footer{padding:34vh 30px 30px;font-size:14px;color:var(--muted);display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer .fl{display:flex;gap:22px}
+footer a{color:var(--ink)}
+.credits{padding:0 30px 26px;font-size:16px;line-height:1.6;color:var(--muted);max-width:70ch}
+.credits a{color:var(--muted);text-decoration:underline}
+@media(max-width:820px){footer{display:block;line-height:2}}
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.6,.2,1),transform .9s cubic-bezier(.2,.6,.2,1)}
+[data-reveal].in{opacity:1;transform:none}
+nav .action,.contact .cta,nav .links a{transition:transform .25s ease,background-color .25s ease}
+nav .action:hover,.contact .cta:hover{transform:translateY(-2px)}
+.menu .row h3{transition:color .3s ease}
+.menu .row:hover h3{color:var(--accent)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}[data-reveal]{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<section class="hero" id="top">
+  <nav>
+    <div class="brand">Moon Dance<small>Cafe, Bar &amp; German Bakery</small></div>
+    <div class="links">
+      <a href="#menu">The table</a>
+      <a href="#room">The room</a>
+      <a href="#visit">Visit</a>
+    </div>
+    <a class="action" href="tel:+919459901111">Call the cafe</a>
+  </nav>
+  <div class="big"><img src="assets/hero-room.jpg" alt="A wooden chair by a tall window at dusk"><img class="b2" src="assets/hero-prints.jpg" alt="A small plant on a table against a coloured wall" loading="lazy"></div>
+  <img class="small" src="assets/trout-plate.jpg" alt="A plate of fresh trout with mushrooms and greens at Moon Dance">
+  <p class="statement">On the main road since 1992.</p>
+  <h1 class="serif">Moon Dance</h1>
+</section>
+
+<section class="intro">
+  <div class="pin">
+    <figure class="pass p1"><img src="assets/kitchen-dark.jpg" alt="Pans and kitchen tools on dark wood" loading="lazy"></figure>
+    <figure class="pass p2"><img src="assets/teapot.jpg" alt="A glass teapot of herbal tea on a counter" loading="lazy"></figure>
+    <figure class="pass p3"><img src="assets/long-table.jpg" alt="A long wooden table set for coffee" loading="lazy"></figure>
+    <p class="sentence">Trout, bakes and slow evenings.</p>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="stick" data-reveal><img src="assets/trout-plate.jpg" alt="Fresh trout, mushrooms and greens at Moon Dance" loading="lazy"></div>
+  <div class="rows">
+    <h2 class="serif" data-reveal>The table</h2>
+    <div class="row" data-reveal><h3>Fresh river trout</h3><p>The plate the valley knows us for, pan seared with mushrooms and greens.</p></div>
+    <div class="row" data-reveal><h3>Bakes from the German counter</h3><p>Breads, pies and cakes from the German bakery, through the day.</p></div>
+    <div class="row" data-reveal><h3>The bar</h3><p>Poured slow, best taken with the room and the music.</p></div>
+    <div class="row" data-reveal><h3>Coffee and mountain chai</h3><p>For the long tables, the long talks and the long rain outside.</p></div>
+    <div class="row" data-reveal><h3>Open <em>ten to eleven</em>, every day</h3><p>Walk in near the bridge on the main road, Kasol.</p></div>
+  </div>
+</section>
+
+<section class="gallery" id="room">
+  <figure class="g g1" data-reveal><img src="assets/forest-mist.jpg" alt="Mist over a coniferous forest slope" loading="lazy"></figure>
+  <figure class="g g2" data-reveal><img src="assets/teapot.jpg" alt="Tea service on a wooden counter" loading="lazy"></figure>
+  <figure class="g g3" data-reveal><img src="assets/kitchen-dark.jpg" alt="Kitchen tools on dark wood" loading="lazy"></figure>
+  <figure class="g g4" data-reveal><img src="assets/long-table.jpg" alt="Coffee on a long wooden table" loading="lazy"></figure>
+  <figure class="g g5" data-reveal><img src="assets/strawberries.jpg" alt="Fresh strawberries" loading="lazy"></figure>
+  <div class="centre" data-reveal>
+    <h2 class="serif">The mood</h2>
+    <p>Generic atmosphere photographs, shot elsewhere, in the spirit of the place.</p>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <img class="backdrop" src="assets/hero-room.jpg" alt="The cafe at dusk" loading="lazy">
+  <div class="card" data-reveal>
+    <img src="assets/moondance-badge.png" alt="Moon Dance Kasol Cafe and Bar badge">
+    <h2>Moon Dance</h2>
+    <p class="sub">Cafe, Bar &amp; German Bakery, since 1992</p>
+    <ul>
+      <li><span>Call</span><a href="tel:+919459901111">+91 94599 01111</a></li>
+      <li><span>Write</span><a href="mailto:ammy.yukio@gmail.com">ammy.yukio@gmail.com</a></li>
+      <li><span>Find us</span><a href="https://www.google.com/maps/search/?api=1&amp;query=MoonDance+Kasol+Cafe+%26+Bar&amp;query_place_id=ChIJ94_d-2lcBDkR53UMdG-lPZU" rel="noopener">Near the bridge, Main Road, Kasol 175105</a></li>
+      <li><span>Hours</span><a href="#visit">10 am to 11 pm, daily</a></li>
+      <li><span>Elsewhere</span><a href="https://www.facebook.com/moondancekasol" rel="noopener">facebook.com/moondancekasol</a></li>
+    </ul>
+    <a class="cta" href="tel:+919459901111">Call the cafe</a>
+  </div>
+</section>
+
+<footer>
+  <span>Moon Dance Cafe, Bar &amp; German Bakery. Main road, Kasol, since 1992.</span>
+  <span class="fl"><a href="tel:+919459901111">Call</a><a href="mailto:ammy.yukio@gmail.com">Email</a><a href="https://www.google.com/maps/search/?api=1&amp;query=MoonDance+Kasol+Cafe+%26+Bar&amp;query_place_id=ChIJ94_d-2lcBDkR53UMdG-lPZU" rel="noopener">Directions</a></span>
+  <span>2026</span>
+</footer>
+<p class="credits">An independent introduction, not affiliated with the cafe. The trout plate and the badge are the cafe's own, from their Facebook page. All other photographs are generic atmosphere shots via Unsplash: Logan Adermatt, Todd Quackenbush, Luke Chesser, Vee O, Padurariu Alexandru and veeterzy, plus a misty forest slope by Jon Flobrant, CC0, via Wikimedia Commons. Facts from the cafe's own Facebook page and public listings.</p>
+
+<script>
+const io=new IntersectionObserver(es=>{for(const e of es){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}},{threshold:0.18});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
