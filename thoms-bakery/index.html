@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thom's Bakery - Fraser Town, Bengaluru</title>
+<meta name="description" content="Thom's Bakery is a bakery and supermarket on Wheeler Road in Fraser Town, Bengaluru - rated 4.4 by 15,960 guests on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#1a2039; --surface:#212846; --ink:#f9a3c0; --muted:#b9879c;
+  --accent:#f9a3c0; --accent-ink:#1a2039; --pale:#f9e4ec;
+  --step-small:0.84rem; --step-body:1.06rem; --step-lead:1.35rem;
+  --step-head:clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+  --radius:4px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { background:var(--bg); color:var(--ink); font-family:'Public Sans',sans-serif; font-size:var(--step-body); line-height:1.5; }
+img { display:block; }
+a { color:inherit; }
+:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.disp { font-family:'Big Shoulders',sans-serif; font-weight:800; text-transform:uppercase; letter-spacing:-0.005em; line-height:.88; }
+
+/* hero: sentence split by a frame */
+.hero-wrap { height:280svh; position:relative; }
+.hero { position:sticky; top:0; height:100svh; overflow:hidden; }
+.hero .top { position:absolute; top:24px; left:32px; right:32px; display:flex; justify-content:space-between; align-items:center; z-index:5; }
+.hero .wm { font-weight:600; font-size:15px; }
+.hero .nav { display:flex; gap:26px; align-items:center; font-size:15px; }
+.hero .nav a { text-decoration:none; color:var(--muted); }
+.hero .nav a:hover { color:var(--ink); }
+.hero .nav a.btn { color:var(--accent-ink); }
+.btn { display:inline-block; background:var(--accent); color:var(--accent-ink); font-weight:600; font-size:15px; text-decoration:none; padding:10px 22px; border-radius:var(--radius); transition:transform .18s ease; }
+.btn:hover { transform:translateY(-2px); }
+.btn:active { transform:translateY(0); }
+.hero .split, .hero .split-twin { position:absolute; top:50%; transform:translateY(-50%); z-index:6; pointer-events:none; margin:0; }
+.hero .split { left:32px; }
+.hero .split-twin { right:32px; text-align:right; font-family:'Big Shoulders',sans-serif; font-weight:800; }
+.hero .half { display:inline-block; font-family:'Big Shoulders',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(2.4rem,7.2vw,7rem); line-height:.9; letter-spacing:-0.005em; max-width:9.6ch; background:var(--bg); padding:8px 14px 12px; border-radius:6px; }
+.reel { position:absolute; left:50%; top:0; transform:translateX(-50%); width:min(35vw,470px); z-index:1; transition:transform .7s cubic-bezier(.2,.6,.2,1); }
+.reel .frame { width:100%; aspect-ratio:4/5; margin:24px 0; overflow:hidden; border-radius:var(--radius); }
+.reel .frame img { width:100%; height:100%; object-fit:cover; }
+.hero .supp { position:absolute; left:32px; bottom:32px; max-width:34ch; font-size:var(--step-body); color:var(--muted); z-index:4; }
+
+/* intro: pinned sentence, photographs pass on the sides */
+.intro-wrap { height:260svh; position:relative; }
+.intro-pin { position:sticky; top:0; height:100svh; display:flex; align-items:center; justify-content:center; pointer-events:none; z-index:3; }
+.intro-pin p { font-family:'Big Shoulders',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(1.8rem,3.2vw,2.25rem); line-height:1.1; text-align:center; max-width:22ch; background:var(--bg); padding:8px 18px 12px; border-radius:6px; }
+.intro-flow { position:absolute; inset:0; z-index:1; }
+.pass { position:absolute; overflow:hidden; border-radius:var(--radius); }
+.pass img { width:100%; height:100%; object-fit:cover; }
+.pass1 { width:28vw; max-width:400px; aspect-ratio:4/5; left:5vw; top:22svh; }
+.pass2 { width:40vw; max-width:620px; aspect-ratio:16/10; right:0; top:95svh; }
+.pass3 { width:22vw; max-width:330px; aspect-ratio:1/1; left:26vw; top:165svh; }
+.pass4 { width:26vw; max-width:380px; aspect-ratio:4/5; right:6vw; top:222svh; }
+
+/* gallery: full-bleed curtain */
+.gal-wrap { height:300svh; position:relative; }
+.gal-note { position:relative; z-index:6; width:230px; margin-left:58%; margin-bottom:-110px; font-size:14px; color:var(--muted); }
+.gal { position:sticky; top:0; height:100svh; overflow:hidden; }
+.gal .shot { position:absolute; inset:0; isolation:isolate; }
+.gal .shot img { width:100%; height:100%; object-fit:cover; }
+.gal .cap { position:absolute; left:32px; bottom:28px; right:auto; display:flex; align-items:center; font-size:16px; color:#fff; background:rgba(10,12,24,.62); padding:10px 16px; border-radius:var(--radius); z-index:3; }
+.gal .shot:nth-child(2) { clip-path:inset(100% 0 0 0); transition:clip-path .1s linear; }
+.gal .shot:nth-child(3) { clip-path:inset(100% 0 0 0); transition:clip-path .1s linear; }
+
+/* features: four cards dealt into a fan */
+.fan-wrap { height:340svh; position:relative; background:var(--surface); }
+.fan { position:sticky; top:0; height:100svh; overflow:hidden; }
+.fan .fhead { position:absolute; top:44px; left:32px; z-index:5; }
+.fan .fhead h2 { font-family:'Big Shoulders',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(2.2rem,4vw,3.8rem); line-height:.9; }
+.fan .fhead p { color:var(--muted); margin-top:10px; max-width:30ch; }
+.card-f { position:absolute; width:300px; height:380px; border-radius:20px; padding:26px; left:50%; top:50%; transform:translate(-50%,140svh); transition:transform .8s cubic-bezier(.2,.6,.2,1); }
+.card-f h3 { font-family:'Big Shoulders',sans-serif; font-weight:800; text-transform:uppercase; font-size:30px; line-height:.95; }
+.card-f img { width:60%; aspect-ratio:1/1; object-fit:cover; border-radius:var(--radius); margin:16px 0; }
+.card-f p { font-size:16px; line-height:1.45; }
+.card-f.c1 { background:#f9e4ec; color:#1a2039; z-index:4; }
+.card-f.c2 { background:#f9a3c0; color:#1a2039; z-index:5; }
+.card-f.c3 { background:#b9879c; color:#1a2039; z-index:6; }
+.card-f.c4 { background:#3a4470; color:#f9a3c0; z-index:7; }
+.fan-wrap.dealt1 .c1 { transform:translate(calc(-50% - 375px),-50%) rotate(-4deg); }
+.fan-wrap.dealt2 .c2 { transform:translate(calc(-50% - 125px),-50%) rotate(-1.5deg); }
+.fan-wrap.dealt3 .c3 { transform:translate(calc(-50% + 125px),-50%) rotate(1.5deg); }
+.fan-wrap.dealt4 .c4 { transform:translate(calc(-50% + 375px),-50%) rotate(4deg); }
+
+/* list: sticky photograph, active list */
+.listsec { display:grid; grid-template-columns:5fr 6fr; gap:6vw; padding:18vh 6vw; align-items:start; }
+.list-photo { position:sticky; top:12vh; }
+.list-photo .ph { width:100%; max-width:440px; aspect-ratio:4/5; overflow:hidden; border-radius:var(--radius); position:relative; }
+.list-photo img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; opacity:0; visibility:hidden; transition:opacity .3s ease, visibility 0s linear .3s; }
+.list-photo img.on { opacity:1; visibility:visible; transition:opacity .3s ease; }
+.list-col h2 { font-family:'Big Shoulders',sans-serif; font-weight:800; text-transform:uppercase; font-size:clamp(2rem,3.4vw,3rem); margin-bottom:44px; }
+.lrow { display:block; width:100%; text-align:left; background:none; border:0; color:var(--muted); font-family:'Public Sans',sans-serif; font-size:clamp(1.15rem,1.6vw,1.4rem); padding:16px 0; cursor:pointer; }
+.lrow .ltop { display:flex; justify-content:space-between; align-items:baseline; }
+.lrow .lval { font-size:15px; }
+.lrow.on { color:var(--ink); font-weight:600; }
+.lrow .ldesc { max-height:0; overflow:hidden; transition:max-height .3s ease; font-size:16px; font-weight:400; color:var(--muted); max-width:34ch; }
+.lrow.on .ldesc { max-height:5em; padding-top:8px; }
+
+/* contact: visit card on a photograph */
+.contact { position:relative; height:100svh; overflow:hidden; }
+.contact > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.vcard { position:absolute; top:60px; right:60px; width:380px; max-width:calc(100vw - 32px); background:var(--pale); color:var(--accent-ink); border-radius:8px; padding:32px; z-index:3; }
+.vcard h2 { font-weight:400; font-size:28px; }
+.vcard address { font-style:normal; font-size:16px; margin-top:14px; line-height:1.5; }
+.vcard .vemail { display:block; font-size:16px; margin-top:14px; color:var(--accent-ink); }
+.vcard .btn { display:block; text-align:center; margin:24px -32px -32px; border-radius:0 0 8px 8px; padding:17px 0; font-size:16px; }
+
+/* footer: a single quiet line */
+.foot { display:grid; grid-template-columns:1fr auto 1fr; align-items:baseline; padding:30vh 32px 30px; font-size:14px; color:var(--muted); }
+.foot .fl { display:flex; gap:24px; justify-content:center; }
+.foot .fl a { color:var(--ink); text-decoration:none; }
+.foot .fl a:hover { text-decoration:underline; text-underline-offset:3px; }
+.foot .fr { text-align:right; }
+.foot .fr a { color:var(--muted); }
+
+/* reveals */
+.js .rise { opacity:0; transform:translateY(26px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.6,.2,1); }
+.js .rise.in { opacity:1; transform:none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .rise { opacity:1 !important; transform:none !important; transition:none; }
+  .hero-wrap, .intro-wrap, .gal-wrap, .fan-wrap { height:auto; }
+  .hero, .intro-pin, .gal, .fan { position:relative; height:auto; min-height:100svh; }
+  .card-f { position:relative; transform:none !important; left:auto; top:auto; margin:12px; display:inline-block; }
+  html { scroll-behavior:auto; }
+}
+
+@media (max-width: 900px) {
+  .hero .split { top:14%; transform:none; left:20px; }
+  .hero .split-twin { top:31%; transform:none; right:20px; }
+  .hero .half { font-size:11.5vw; max-width:none; white-space:nowrap; }
+  .reel { width:min(78vw,360px); }
+  .hero .supp { font-size:15px; }
+  .pass1 { width:64vw; left:6vw; top:24svh; }
+  .pass2 { width:78vw; right:0; top:110svh; }
+  .pass3 { width:52vw; left:6vw; top:195svh; }
+  .gal-note { margin-left:20px; width:60%; }
+  .fan-wrap { height:auto; }
+  .fan { position:relative; height:auto; padding:120px 0 60px; overflow:visible; }
+  .fan .fhead { position:static; padding:0 20px; }
+  .cards-row { display:grid; gap:16px; padding:26px 20px; }
+  .card-f { position:relative; left:auto; top:auto; transform:none !important; width:100%; max-width:440px; margin:0 auto; height:auto; min-height:380px; }
+  .listsec { display:block; padding:12vh 20px; }
+  .list-photo { position:relative; top:auto; margin-bottom:40px; }
+  .list-photo .ph { max-width:100%; height:auto; aspect-ratio:auto; }
+  .list-photo img { position:relative; inset:auto; display:none; opacity:1; visibility:visible; transition:none; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover; }
+  .list-photo img.on { display:block; }
+  .list-col h2 { margin:36px 0 28px; }
+  .contact { height:auto; }
+  .contact > img { position:relative; height:70svh; }
+  .vcard { position:relative; top:auto; right:auto; margin:-80px 16px 40px; width:auto; }
+  .foot { display:flex; flex-direction:column; gap:8px; padding:20vh 20px 24px; }
+  .foot .fl { justify-content:flex-start; flex-wrap:wrap; }
+  .foot .fr { text-align:left; }
+}
+</style>
+</head>
+<body>
+<script>document.body.className='js';</script>
+
+<div class="hero-wrap" id="herowrap">
+  <section class="hero">
+    <div class="top">
+      <span class="wm">Thom's</span>
+      <nav class="nav" aria-label="Page">
+        <a href="#counter">The counter</a>
+        <a href="#facts">The facts</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Thom%E2%80%99s+Bakery&amp;query_place_id=ChIJfSf0T_MWrjsRyFJUM6cpINw">Get directions</a>
+      </nav>
+    </div>
+    <h1 class="split"><span class="half">Fraser Town's</span></h1>
+    <h2 class="split-twin"><span class="half">cake counter.</span></h2>
+    <div class="reel" id="reel">
+      <div class="frame"><img src="assets/s_thoms-black-forest-piece-153.jpg" width="750" height="632" alt="A piece of Black Forest cake, from the bakery's own photographs" fetchpriority="high"></div>
+      <div class="frame"><img src="assets/s_chocolate-mousse.jpg" width="750" height="750" alt="A chocolate mousse slice, from the bakery's own photographs" loading="lazy"></div>
+      <div class="frame"><img src="assets/s_thoms-butter-scotch-pastry-5055.jpg" width="700" height="700" alt="A butterscotch pastry slice, from the bakery's own photographs" loading="lazy"></div>
+      <div class="frame"><img src="assets/s_thoms-blueberry-pastry.jpg" width="750" height="635" alt="A blueberry pastry slice, from the bakery's own photographs" loading="lazy"></div>
+    </div>
+    <p class="supp">A bakery and supermarket on Wheeler Road, Fraser Town, Bengaluru - rated 4.4 by 15,960 guests on Google.</p>
+  </section>
+</div>
+
+<div class="intro-wrap" id="introwrap">
+  <div class="intro-pin">
+    <p>15,960 guests. One counter.</p>
+  </div>
+  <div class="intro-flow" aria-hidden="true">
+    <div class="pass pass1"><img src="assets/s_rich-plum-cake.jpg" alt="" loading="lazy"></div>
+    <div class="pass pass2"><img src="assets/s_thoms-chocochip-muffin-164.jpg" alt="" loading="lazy"></div>
+    <div class="pass pass3"><img src="assets/s_thoms-blueberry-pastry.jpg" alt="" loading="lazy"></div>
+    <div class="pass pass4"><img src="assets/s_chocolate-mousse.jpg" alt="" loading="lazy"></div>
+  </div>
+</div>
+
+<div class="gal-wrap" id="galwrap">
+  <section class="gal" aria-label="Photographs from the counter">
+    <div class="shot">
+      <img src="assets/s_butterscotch-cake-3.jpg" alt="A whole butterscotch cake, from the bakery's own photographs" loading="lazy">
+      <div class="cap">Butterscotch cake</div>
+    </div>
+    <div class="shot" id="shot2">
+      <img src="assets/s_blueberry-cake-3.jpg" alt="A blueberry glaze cake, from the bakery's own photographs" loading="lazy">
+      <div class="cap">Blueberry cake</div>
+    </div>
+    <div class="shot" id="shot3">
+      <img src="assets/s_rich-plum-cake.jpg" alt="The rich plum cake, from the bakery's own photographs" loading="lazy">
+      <div class="cap">Rich plum cake</div>
+    </div>
+  </section>
+</div>
+
+<div class="fan-wrap" id="fanwrap">
+  <section class="fan" id="facts">
+    <div class="fhead">
+      <h2>The facts</h2>
+      <p>Dealt from the counter, one at a time.</p>
+    </div>
+    <div class="cards-row">
+      <div class="card-f c1"><h3>4.4</h3><img src="assets/s_thoms-sponge-cake-250gm.jpg" alt="Slices of sponge cake, from the bakery's own photographs" loading="lazy"><p>The Google rating, out of 5.</p></div>
+      <div class="card-f c2"><h3>15,960</h3><img src="assets/s_thoms-blueberry-muffin-155.jpg" alt="A blueberry muffin, from the bakery's own photographs" loading="lazy"><p>Guest reviews and counting.</p></div>
+      <div class="card-f c3"><h3>Fraser Town</h3><img src="assets/s_thoms-plain-bread.jpg" alt="A loaf of plain bread, from the bakery's own photographs" loading="lazy"><p>Wheeler Road, Cleveland Town, Bengaluru 560005.</p></div>
+      <div class="card-f c4"><h3>Home delivery</h3><img src="assets/s_thoms-chocolate-fudge-cake-168.2.jpg" alt="A chocolate fudge cake, from the bakery's own photographs" loading="lazy"><p>The shop delivers itself, and through Dunzo - its own words.</p></div>
+    </div>
+  </section>
+</div>
+
+<section class="listsec" id="counter">
+  <div class="list-photo">
+    <div class="ph" id="lph">
+      <img class="on" data-k="plum" src="assets/s_rich-plum-cake.jpg" alt="The rich plum cake, from the bakery's own photographs" loading="lazy">
+      <img data-k="forest" src="assets/s_thoms-black-forest-piece-153.jpg" alt="A piece of Black Forest cake, from the bakery's own photographs" loading="lazy">
+      <img data-k="butter" src="assets/s_butterscotch-cake-3.jpg" alt="A whole butterscotch cake, from the bakery's own photographs" loading="lazy">
+      <img data-k="muffin" src="assets/s_thoms-blueberry-muffin-155.jpg" alt="A blueberry muffin, from the bakery's own photographs" loading="lazy">
+      <img data-k="sponge" src="assets/s_thoms-sponge-cake-250gm.jpg" alt="Slices of sponge cake, from the bakery's own photographs" loading="lazy">
+      <img data-k="bread" src="assets/s_thoms-plain-bread.jpg" alt="A loaf of plain bread, from the bakery's own photographs" loading="lazy">
+    </div>
+  </div>
+  <div class="list-col">
+    <h2>From the counter</h2>
+    <button class="lrow on" data-k="plum"><span class="ltop"><span>Rich Plum Cake</span><span class="lval">cakes</span></span><span class="ldesc">The counter's signature bake, first on its own shop's list.</span></button>
+    <button class="lrow" data-k="forest"><span class="ltop"><span>Black Forest</span><span class="lval">cakes</span></span><span class="ldesc">By the kilo or by the piece.</span></button>
+    <button class="lrow" data-k="butter"><span class="ltop"><span>Butterscotch</span><span class="lval">cakes</span></span><span class="ldesc">Whole cakes and pastry slices.</span></button>
+    <button class="lrow" data-k="muffin"><span class="ltop"><span>Blueberry Muffin</span><span class="lval">bakes</span></span><span class="ldesc">From the cakes and pastries shelf.</span></button>
+    <button class="lrow" data-k="sponge"><span class="ltop"><span>Sponge Cake</span><span class="lval">bakes</span></span><span class="ldesc">Sold by weight, 250 grams and up.</span></button>
+    <button class="lrow" data-k="bread"><span class="ltop"><span>Plain Bread</span><span class="lval">breads</span></span><span class="ldesc">From the breads and buns shelf.</span></button>
+    <p style="margin-top:36px; font-size:var(--step-small); color:var(--muted);">The counter's list and photographs: the bakery's own, from <a href="https://thomsonline.in/" style="color:inherit;">thomsonline.in</a>.</p>
+  </div>
+</section>
+
+<section class="contact">
+  <img src="assets/s_blueberry-cake-3.jpg" alt="" loading="lazy">
+  <div class="vcard">
+    <h2>Find us</h2>
+    <address>1/2, Wheeler Road, Cleveland Town,<br>Fraser Town, Bengaluru 560005</address>
+    <a class="vemail" href="mailto:thomsbakeryonline@gmail.com">thomsbakeryonline@gmail.com</a>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Thom%E2%80%99s+Bakery&amp;query_place_id=ChIJfSf0T_MWrjsRyFJUM6cpINw">Get directions</a>
+  </div>
+</section>
+
+<footer class="foot">
+  <span>Thom's Bakery, Fraser Town</span>
+  <div class="fl">
+    <a href="#counter">The counter</a>
+    <a href="#facts">The facts</a>
+    <a href="https://thomsonline.in/">thomsonline.in</a>
+  </div>
+  <span class="fr">2026 &middot; <a href="https://thomsonline.in/">their shop</a></span>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function prog(wrap){
+    var r = wrap.getBoundingClientRect();
+    var total = r.height - innerHeight;
+    return Math.min(1, Math.max(0, -r.top / (total || 1)));
+  }
+  var herowrap = document.getElementById('herowrap'), reel = document.getElementById('reel');
+  var galwrap = document.getElementById('galwrap'), shot2 = document.getElementById('shot2'), shot3 = document.getElementById('shot3');
+  var fanwrap = document.getElementById('fanwrap');
+  var introwrap = document.getElementById('introwrap'), passes = document.querySelectorAll('.pass');
+  function onScroll(){
+    if (reduced) return;
+    /* hero reel: 3 steps */
+    var p1 = prog(herowrap);
+    var step = Math.min(3, Math.floor(p1 * 3.999));
+    var frameH = reel.querySelector('.frame').offsetHeight + 24;
+    var target = -(step * frameH) + (reel.parentElement.offsetHeight / 2) - frameH / 2 + 12;
+    reel.style.transform = 'translateX(-50%) translateY(' + Math.round(target) + 'px)';
+    /* gallery curtain */
+    var p2 = prog(galwrap);
+    shot2.style.clipPath = 'inset(' + Math.max(0, 100 - p2 * 300) + '% 0 0 0)';
+    shot3.style.clipPath = 'inset(' + Math.max(0, 200 - p2 * 300) + '% 0 0 0)';
+    /* intro parallax */
+    var p0 = prog(introwrap);
+    passes.forEach(function(el, i){
+      var dir = i % 2 ? 1 : -1;
+      el.style.transform = 'translateY(' + Math.round(dir * (p0 - 0.5) * 180) + 'px)';
+    });
+    /* fan deal */
+    var p3 = prog(fanwrap);
+    fanwrap.classList.toggle('dealt1', p3 > 0.08);
+    fanwrap.classList.toggle('dealt2', p3 > 0.32);
+    fanwrap.classList.toggle('dealt3', p3 > 0.56);
+    fanwrap.classList.toggle('dealt4', p3 > 0.78);
+  }
+  addEventListener('scroll', onScroll, { passive: true });
+  addEventListener('resize', onScroll);
+  onScroll();
+
+  /* list crossfade */
+  var rows = document.querySelectorAll('.lrow'), imgs = document.querySelectorAll('#lph img');
+  function activate(k){
+    rows.forEach(function(r){ r.classList.toggle('on', r.dataset.k === k); });
+    imgs.forEach(function(im){ im.classList.toggle('on', im.dataset.k === k); });
+  }
+  rows.forEach(function(r){
+    r.addEventListener('mouseenter', function(){ activate(r.dataset.k); });
+    r.addEventListener('focus', function(){ activate(r.dataset.k); });
+    r.addEventListener('click', function(){ activate(r.dataset.k); });
+  });
+
+  /* reveals */
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: .1 });
+    document.querySelectorAll('.rise').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.rise').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>

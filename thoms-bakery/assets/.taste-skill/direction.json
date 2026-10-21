@@ -1,0 +1,585 @@
+{
+ "version": 1,
+ "at": "2026-10-21T07:39:19.933Z",
+ "seed": 15960440,
+ "redraws": 0,
+ "input": {
+  "brief": "",
+  "sector": "hospitality",
+  "tone": null,
+  "have": [],
+  "keep": [],
+  "avoid": [],
+  "sections": [
+   "intro",
+   "gallery",
+   "features",
+   "list",
+   "contact",
+   "footer"
+  ],
+  "direction": null
+ },
+ "imagery": "atmosphere",
+ "allow": [],
+ "direction": {
+  "id": "pinned-poster",
+  "name": "The pinned poster",
+  "sectors": [
+   "culture",
+   "music",
+   "event",
+   "fashion",
+   "personal-portfolio",
+   "studio-portfolio",
+   "physical-product",
+   "ecommerce",
+   "hospitality",
+   "consumer-app"
+  ],
+  "tones": [
+   "bold",
+   "editorial"
+  ],
+  "needs": [],
+  "idea": "Something stays put while everything else changes. A title holds its place across the viewport and the images beneath it swap; the name is split to two opposite corners and the page passes between the halves; a single frame stays centred while its contents change. Every scroll step is a new cover of the same magazine. The idea suits subjects that are a series (a book of portraits, a line-up, a collection, a set of projects): the fixed element says what the series is, the changing element shows its members.",
+  "composition": "A sticky layer holds the fixed element for the height of two to three viewports: usually the title at 10–14vw across the middle or top of the screen, or two words pinned to the top-left and bottom-right corners. Under it, a stack of full-height panels scrolls by, each a single large photograph (portrait 4:5, centred, 40–50% of the viewport wide) with one line of caption at the same small size everywhere. The title sits above the images in the stacking order and uses `mix-blend-mode: difference` or a solid colour that reads on every panel. When the pinned run ends, the page releases into ordinary flowing sections with a narrow measure. Build with `position: sticky`; never hijack the scroll.",
+  "typography": "The pinned title is the only large type on the page. Captions and body share one small size (15–17px). Tight tracking and solid weight so the title reads over photographs.",
+  "typeClasses": [
+   "grotesk-tight",
+   "condensed-heavy",
+   "heavy-black",
+   "extended-heavy"
+  ],
+  "colour": "One strong title colour against a pale or dark ground. Each panel may take its own flat ground colour sampled from its photograph.",
+  "paletteTags": [
+   "two-tone",
+   "photographic-neutral",
+   "single-field"
+  ],
+  "imagery": "A series of photographs with the same crop ratio and the same framing (all portraits, all objects, all rooms), so that swapping them reads as one image changing. Five to eight in the pinned run.",
+  "sectionTags": [
+   "photo-led",
+   "poster",
+   "type-led"
+  ],
+  "motion": "pinned-story",
+  "richness": "Repetition with change. The fixed title makes each new photograph feel like an event, so the photographs must be good and consistent.",
+  "pitfalls": "If the title is not legible over every panel, the idea fails: test each one. Keep the pinned run under six viewports or it feels like a trap. On a phone the title shrinks to 16–18vw and stays pinned at the top; panels become full-width. A pin longer than three screens, or one where the screens under it are nearly empty, read in blind tests as a stuck page. Every screen under the pin needs its own content, and nothing may pass over the pinned words.",
+  "seenIn": [
+   "opl-city-of-angels",
+   "aww-normal-is-boring",
+   "aww-glitch-grit",
+   "aww-revelatio-studio"
+  ],
+  "allow": [],
+  "needsPictures": true
+ },
+ "hero": {
+  "id": "sentence-split-by-frame",
+  "name": "Sentence split by a frame",
+  "archetype": "inline-media-sentence",
+  "directions": [
+   "sentence-as-layout",
+   "pinned-poster",
+   "product-performs"
+  ],
+  "needs": [],
+  "blueprint": "A white or pale ground. One short sentence is broken in two and pushed to the edges: the first half flush to the 32px left margin, the second half flush to the right margin, both on the vertical centre line at clamp(40px, 3.6vw, 60px), medium weight. Between them, dead centre on columns 5–8, sits one media frame: 35% of the viewport wide, 16:9, corners 4px, holding a photograph or a working fragment of the product. The frame belongs to a vertical reel: the bottom 60px of the previous frame shows at the top edge of the viewport and the top 60px of the next at the bottom edge, same width, 24px gaps, so the centre column reads as a strip passing through the sentence. The stage is sticky; the reel advances three or four steps while the two halves of the sentence hold their place. Wordmark top-left; three text links and the single action as a small solid button top-right, all at 15px. Bottom-left on columns 1–4: one supporting sentence at 18px, its last line 32px above the bottom edge. The other corners stay empty.",
+  "mobile": "The halves stack: the first half of the sentence at 9vw flush left under the wordmark, then the frame at full width minus 16px margins and 4:3, then the second half flush right at 9vw. The neighbouring frames show as 28px slivers above and below. The supporting sentence and the action button follow at 16px. The links collapse to one word.",
+  "headline": "One sentence of four to six words split into two halves of up to about 14 characters each; the frame between them shows what it is about.",
+  "motion": "pinned-story",
+  "seenIn": [
+   "aww-made-with-gsap-1",
+   "aww-artem-shcherbakov"
+  ]
+ },
+ "type": {
+  "id": "big-shoulders-public",
+  "name": "Big Shoulders / Public Sans",
+  "class": "condensed-heavy",
+  "display": {
+   "family": "Big Shoulders",
+   "source": "google",
+   "weights": [
+    800
+   ],
+   "italic": false,
+   "settings": "weight 800 · tracking -0.005em · leading 0.88 · uppercase",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@800&family=Public+Sans:wght@400;600&display=swap\" rel=\"stylesheet\">"
+  },
+  "text": {
+   "family": "Public Sans",
+   "source": "google",
+   "weights": [
+    400,
+    600
+   ],
+   "italic": false,
+   "settings": "400 for body, 600 for emphasis · leading 1.5 · tracking 0",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@800&family=Public+Sans:wght@400;600&display=swap\" rel=\"stylesheet\">"
+  },
+  "standsInFor": [
+   "Founders Grotesk Condensed",
+   "PP Neue York",
+   "Knockout"
+  ],
+  "note": "A tall American gothic taken from city signage, blunt and civic, over a plain public-service sans. Suits culture indexes, community projects, bars, sport clubs and local campaigns.",
+  "seenIn": [
+   "aww-mosbys-files",
+   "opl-the-sapphic-bar-index",
+   "opl-the-deep-end",
+   "aww-colonia-zacamil"
+  ],
+  "links": [
+   "https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@800&family=Public+Sans:wght@400;600&display=swap"
+  ],
+  "scale": {
+   "step-small": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)",
+   "step-body": "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)",
+   "step-lead": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)",
+   "step-head": "clamp(2.5rem, 1.2rem + 5vw, 5.5rem)"
+  }
+ },
+ "palette": {
+  "id": "navy-pink",
+  "name": "Navy and pink",
+  "tags": [
+   "two-tone",
+   "single-field"
+  ],
+  "bg": "#1a2039",
+  "surface": "#212846",
+  "ink": "#f9a3c0",
+  "muted": "#b9879c",
+  "accent": "#f9a3c0",
+  "accentInk": "#1a2039",
+  "note": "One navy field runs the entire page. Pink does everything else, from the name and headings to body text, and fills one solid button.",
+  "seenIn": [
+   "aww-trevor-noah"
+  ]
+ },
+ "photos": {
+  "set": "coast",
+  "title": "Coast",
+  "note": "sea, shoreline, cliffs, piers and beaches",
+  "treatment": null,
+  "others": [
+   "fog-and-quiet",
+   "mountain",
+   "forest",
+   "water"
+  ],
+  "photos": [
+   {
+    "id": 641,
+    "alt": "Empty lifeguard chair on a beach at pastel dusk",
+    "tone": "mid",
+    "colours": [
+     "peach",
+     "slate blue",
+     "dusty teal"
+    ],
+    "mono": false,
+    "calm": "right",
+    "quality": 5,
+    "ratio": 1.5,
+    "by": "Fré Sonneveld",
+    "page": "https://unsplash.com/photos/2qLT_Rq-2tk"
+   },
+   {
+    "id": 77,
+    "alt": "Wooden jetty leading to a small pavilion over calm sea",
+    "tone": "mid",
+    "colours": [
+     "warm tan",
+     "pale teal",
+     "soft grey"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 5,
+    "ratio": 1.48,
+    "by": "May Pamintuan",
+    "page": "https://unsplash.com/photos/j9nfqTi5T5o"
+   },
+   {
+    "id": 1049,
+    "alt": "Rock island reflected on a wet beach under a pale sky",
+    "tone": "light",
+    "colours": [
+     "pale grey",
+     "soft white",
+     "dark green"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 5,
+    "ratio": 1.25,
+    "by": "Rosan Harmens",
+    "page": "https://unsplash.com/photos/Sd8O2SgKDJA"
+   },
+   {
+    "id": 626,
+    "alt": "Red and white lighthouse in turquoise sea below a chalk cliff",
+    "tone": "light",
+    "colours": [
+     "turquoise",
+     "white",
+     "grass green"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 5,
+    "ratio": 1.5,
+    "by": "Nick Diamantidis",
+    "page": "https://unsplash.com/photos/jkPKQWK1sKU"
+   },
+   {
+    "id": 853,
+    "alt": "Lone rock in a calm blue sea beneath a pastel sky",
+    "tone": "mid",
+    "colours": [
+     "sea blue",
+     "peach",
+     "pale pink"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 5,
+    "ratio": 1.51,
+    "by": "Stephen Radford",
+    "page": "https://unsplash.com/photos/674bDNKmnIk"
+   },
+   {
+    "id": 1052,
+    "alt": "Black sea stacks off a dark beach with white surf under a pale sky",
+    "tone": "light",
+    "colours": [
+     "black",
+     "white",
+     "pale grey"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 5,
+    "ratio": 1.5,
+    "by": "Annie Spratt",
+    "page": "https://unsplash.com/photos/x8R2oSWZRSE"
+   },
+   {
+    "id": 640,
+    "alt": "Aerial view of turquoise surf breaking onto golden sand",
+    "tone": "mid",
+    "colours": [
+     "sand",
+     "turquoise",
+     "white"
+    ],
+    "mono": false,
+    "calm": "bottom",
+    "quality": 5,
+    "ratio": 1.5,
+    "by": "Sarah Bürvenich",
+    "page": "https://unsplash.com/photos/vigsqYux_-8"
+   },
+   {
+    "id": 12,
+    "alt": "Dark rocks on a sandy beach with calm sea and islands",
+    "tone": "mid",
+    "colours": [
+     "sand beige",
+     "dark brown",
+     "pale grey"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Paul Jarvis",
+    "page": "https://unsplash.com/photos/I_9ILwtsl_k"
+   }
+  ]
+ },
+ "motion": {
+  "id": "pinned-story",
+  "name": "Pinned story",
+  "description": "One element holds its place with `position: sticky` (a title, a frame, a product fragment) while the items that belong to it scroll past or swap inside it. The page's ordinary scrolling does the work; nothing is hijacked. Hold it for about one screen per step and three screens at most, two held stages per page at most, with a line of text on every held screen. Recipe: 'Pinned story' in references/motion.md."
+ },
+ "sections": [
+  {
+   "id": "intro-pinned-sentence-photos-pass",
+   "role": "intro",
+   "name": "Pinned sentence, photographs pass",
+   "shape": "pinned",
+   "tags": [
+    "photo-led",
+    "type-led"
+   ],
+   "directions": [
+    "pinned-poster",
+    "uneven-photographs",
+    "dark-room",
+    "sentence-as-layout",
+    "place-carries-it"
+   ],
+   "needs": [],
+   "blueprint": "A wrapper 300svh tall. Inside it a `position: sticky; top: 0` layer of 100svh holds one sentence of 8–14 words, centred, three lines at clamp(36px, 4.6vw, 68px), leading 1.1, in a block 62% of the viewport wide. The sentence is a paragraph, not a heading; it is white with `mix-blend-mode: difference` (or a solid ink that reads over every photograph) and has a higher `z-index` than the images. Behind it, three photographs sit in normal flow at different sizes and sides and scroll past the fixed sentence: a 4:5 portrait 24vw wide with its left edge at 6vw; 70svh lower a 16:10 landscape 38vw wide touching the right margin; 70svh lower a 1:1 frame 18vw wide starting at 30vw. Each crosses the sentence once. When the wrapper ends, the sentence releases and scrolls away with the last photograph. No scroll hijacking.",
+   "mobile": "Wrapper 260svh. The sentence pins at 40% of the screen height at 8.4vw, four or five lines, with 20px margins. Photographs alternate: 64% wide on the left margin, 78% wide on the right margin, then 52% on the left, with 50svh between them.",
+   "seenIn": [
+    "opl-the-deep-end",
+    "aww-revelatio-studio"
+   ]
+  },
+  {
+   "id": "gallery-full-bleed-sequence",
+   "role": "gallery",
+   "name": "Full-bleed sequence, text interlocked",
+   "shape": "full-bleed",
+   "tags": [
+    "photo-led"
+   ],
+   "directions": [
+    "place-carries-it",
+    "dark-room",
+    "hero-object",
+    "pinned-poster",
+    "borrowed-category"
+   ],
+   "needs": [],
+   "blueprint": "Three photographs, each 100vw by 100svh, shown one after another with nothing between them. Each is `position: sticky; top: 0` inside a wrapper 300svh tall, so the second slides up over the first and the third over the second like a curtain; no scroll hijacking. The section above interlocks with the first photograph: a narrow paragraph at 13–14px, 220px wide, sitting on the column line at 58% of the width, is pulled down with a negative bottom margin so its last four lines overlap the photograph's top edge, in a colour that reads on both ground and image. Each photograph carries one caption line at 15px in white at the bottom-left margin, over a neutral dark scrim limited to the lowest 120px. No heading. Choose three frames with the same light and a calm lower-left corner. The last photograph releases into the next section.",
+   "mobile": "Each photograph is 100vw by 88svh in a portrait crop and still sticks so the next covers it. The interlocking paragraph sits at the left margin, 60% wide, overlapping the first photograph by three lines. Captions stay bottom-left at 14px.",
+   "seenIn": [
+    "aww-white-desert",
+    "aww-squarespace-foundations"
+   ]
+  },
+  {
+   "id": "features-four-cards-dealt-into-a-fan",
+   "role": "features",
+   "name": "Four cards dealt into a fan",
+   "shape": "pinned",
+   "tags": [
+    "colour-field",
+    "poster"
+   ],
+   "directions": [
+    "pinned-poster",
+    "loud-flat-poster",
+    "borrowed-category",
+    "colour-chapters",
+    "specimen-catalogue"
+   ],
+   "needs": [],
+   "blueprint": "Four values, rules or features, each on a card dealt onto the table as the page scrolls. A wrapper about 400svh tall holds a sticky stage of 100svh on the page's darkest flat ground. Each card is a portrait panel of 340×400px with a 20px radius, filled with its own palette colour (four colours that differ clearly in lightness), no border, no shadow. On a card, with 28px padding: its name at 32px in heavy capitals on one or two lines at the top, a photograph or a single picture of the thing at 60% of the card's width in the middle, and one sentence at 16px at the foot. Card one lands alone at the centre; each further quarter of the wrapper deals the next from below the bottom edge, landing 250px to the right of the one before, rotated between -4 and 4 degrees and overlapping only its right 90px, until the four form a fan about 1,090px wide centred on the stage. Keep each card's name, picture and sentence inside its left 240px, so no card ever covers another's words. In the study the cards overlap by two thirds and bury the earlier titles; here nothing lies on top of text. The heading, two to four words at clamp(40px, 4vw, 60px), sits top-left on the stage on the 32px margin with one sentence at 17px under it. The stage releases after the fourth card has settled; under reduced motion the fan is simply there.",
+   "mobile": "No pin. The cards sit in one row that scrolls sideways with scroll-snap, each 82% of the width with the next peeking in at the right edge, all upright. The heading and sentence sit above the row.",
+   "seenIn": [
+    "aww-made-with-gsap-1"
+   ]
+  },
+  {
+   "id": "list-sticky-photo-active-list",
+   "role": "list",
+   "name": "Sticky photograph, active list",
+   "shape": "split",
+   "tags": [
+    "photo-led",
+    "type-led",
+    "object-led"
+   ],
+   "directions": [
+    "hero-object",
+    "split-stage",
+    "place-carries-it",
+    "dark-room",
+    "pinned-poster"
+   ],
+   "needs": [],
+   "blueprint": "Two columns. The left, columns 1–5, is `position: sticky; top: 12vh` and holds one photograph or object at 4:5, 34vw wide, unframed on the ground. The right, columns 7–11, holds a vertical list of five to nine names (treatments, rooms, courses, services) at clamp(20px, 1.6vw, 24px), each row 58px tall with the name at the left and a price or duration right-aligned at 15px in the soft ink. The active row is full ink; the others rest at 40% opacity. Hovering, focusing or scrolling a row to the middle of the viewport makes it active, crossfades the left photograph to that item's image over 300ms, and opens a three-line description at 15px, 34ch wide, directly under the name, pushing later rows down. A heading of two or three words at clamp(32px, 3.4vw, 48px) sits above the list, aligned to its left edge, 48px above the first row.",
+   "mobile": "The photograph becomes a 4:3 band pinned to the top of the screen at 38svh while the list scrolls beneath it; the heading sits above the first row. Rows are 56px tall and the description opens on tap. The image changes with the row nearest the band.",
+   "seenIn": [
+    "opl-neuropelvic-surgery",
+    "opl-humanoid-index"
+   ]
+  },
+  {
+   "id": "contact-visit-card-on-photograph",
+   "role": "contact",
+   "name": "Visit card on a photograph",
+   "shape": "full-bleed",
+   "tags": [
+    "photo-led",
+    "object-led"
+   ],
+   "directions": [
+    "place-carries-it",
+    "dark-room",
+    "page-is-the-object",
+    "pinned-poster",
+    "hero-object"
+   ],
+   "needs": [],
+   "blueprint": "A full-bleed photograph of the place, 100vw by 100svh, carries one solid card and nothing else. The card is a filled panel in the paper colour, fully opaque, 380px wide with 8px corners and 32px padding, placed in the upper-right corner 60px from the top and right edges (or the upper-left: pick the corner where the photograph is calmest). It holds, top to bottom: a two- or three-word title at 28px in a light weight; the address on two lines at 16px; the opening hours as three rows with days at the left and times right-aligned in tabular figures; the phone number; then, flush with the card's bottom edge and spanning its width, a solid booking button 52px tall. The card may be `position: sticky; top: 60px` inside a taller section so it holds while the photograph scrolls beneath it. The photograph's focal point must stay clear of the card. No heading outside the card.",
+   "mobile": "The photograph is 100vw by 70svh. The card leaves the corner: it spans the width with 16px margins and overlaps the photograph's bottom edge by 80px, so image and card interlock. The booking button is full width, 56px tall, at the card's bottom.",
+   "seenIn": [
+    "opl-the-deep-end",
+    "opl-madie"
+   ]
+  },
+  {
+   "id": "footer-single-quiet-line",
+   "role": "footer",
+   "name": "A single quiet line",
+   "shape": "strip",
+   "tags": [
+    "quiet"
+   ],
+   "directions": [
+    "quiet-instrument",
+    "contact-sheet",
+    "product-performs",
+    "split-stage",
+    "dark-room",
+    "pinned-poster"
+   ],
+   "needs": [],
+   "blueprint": "No footer block at all. After at least 30svh of empty page ground, one baseline 30px above the bottom edge carries three items in the page's ordinary small text size (14–16px), the same size and weight as the navigation: at the left margin, what this is in three or four words; centred, two to five links separated by 24px of space; at the right margin, the year and a privacy link. Use a three-column grid (1fr auto 1fr) so the centre group is truly centred whatever the side lengths. No logo, no background change, no line above it, no columns. Links are in the full ink; the rest in the softer ink. If the page has a narrow text column, the three items may instead sit on that column's left edge as one wrapped line. The restraint only works if the page above has already made its invitation.",
+   "mobile": "Three short lines at 14px on the left margin with 8px between them: the description, the links on one wrapped line, then year and privacy. Links stay in the full ink. Leave 20svh of empty ground above and 24px below.",
+   "seenIn": [
+    "aww-studio-k95-3",
+    "aww-gil-huybrecht",
+    "opl-rows",
+    "opl-compile",
+    "opl-tiny-computer-co"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "id": "aww-revelatio-studio",
+   "name": "Revelatio Studio",
+   "url": "https://revelatio.studio/",
+   "source": "Awwwards Site of the Day",
+   "kind": "agency",
+   "score": 7.6,
+   "idea": "The team photograph is the hero: it starts as a small CRT-curved mosaic of typographic glyphs and resolves into a full-bleed group portrait as you scroll.",
+   "mood": [
+    "dark",
+    "restrained",
+    "technical",
+    "human"
+   ],
+   "archetype": "bottom-anchored-type",
+   "hero": "Pure black viewport. Centred, about 58% of the width and 57% of the height, is a canvas showing a group photo rebuilt from tiny coloured glyphs, its edges barrel-distorted like a CRT tube; it is dim, so black dominates. The headline is modest: two lines at 2.5vw in regular-weight grotesk, flush to the bottom-left corner with a 30px margin. Navigation is split into two small dark-grey rounded rectangles: logo mark plus four links top-left, language switch and contact top-right. Nothing else; roughly 80% of the screen is black.",
+   "type": "Neue Haas Grotesk Text 55 Roman is the only face and weight. Headline just 36px with -0.03em tracking against 15px body; hierarchy comes from position and grey value. The footer city list jumps to roughly 5vw; the digest records a 12.5vw maximum.",
+   "colour": "#000000 #ffffff #2b2b2b #8a8a8a — Black intro and footer, white work and capabilities sections. The interface has no accent; all colour comes from project thumbnails and the faint tints inside the glyph mosaic.",
+   "imagery": "A studio group portrait rendered as a glyph mosaic on canvas, then as a dim near-full-bleed photograph; project tiles are square-cornered brand visuals in saturated flat colours, set on white with caption rows beneath.",
+   "layout": "About 30px side margins throughout. Black full-screen opening, then a white work grid mixing one large tile with a narrow companion and a three-up row, a three-column plain-text capabilities list, and a black footer of oversized dim text. Captions sit under images, tags right-aligned.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "Pinned for about two viewports: the hero canvas grows with scroll from a centred 58%-wide mosaic to a near full-bleed image with a thin black margin, while the glyph cells shrink until the picture reads as a dim photograph of about twenty people. The headline scrolls away and only the two nav boxes remain in the top corners."
+    },
+    {
+     "role": "work",
+     "description": "White background. First row: one large landscape tile spanning roughly two-thirds of the width beside a narrower tile about one-third wide and half as tall, top-aligned. Second row: three equal tiles. All square-cornered with about 16px gutters. Beneath each: project name at left, two tiny grey tags right-aligned on the same line, then a two-line grey description at about 11px. A small underlined see-all link with an arrow sits below the grid at left."
+    },
+    {
+     "role": "features",
+     "description": "White section opened by a hairline and a tiny label. Three text columns, each with a small grey category title and beneath it a tight stack of eight to ten service names in 15px regular grotesk at about 1.2 line-height, with no bullets, icons or cards. Columns share the work grid's left edges, leaving the right third partly empty."
+    },
+    {
+     "role": "footer",
+     "description": "Black full-viewport block filled with a run-on, comma-separated list of client cities set at about 5vw in very dark grey, barely visible against black, wrapping over seven flush-left lines. Exactly one city, the last, is lit white, which implies a cycling highlight. The nav boxes stay fixed at the top corners."
+    }
+   ],
+   "steal": [
+    "Render a photograph as a grid of small coloured glyphs on canvas and let scroll increase its size and resolution until it becomes the real photo.",
+    "Hold the hero headline at 2.5vw in a bottom corner and let a dim central image and empty black carry the scale.",
+    "Set a long list in near-invisible dark grey at display size and light one item at a time."
+   ],
+   "media": "A centred 16:10 canvas covering 60% of the width and height plays the team film as a dot matrix with a curved, tube-like outline, and grows to cover the whole screen over three screens of scroll. Below: an asymmetric two-plus-one then three-up grid of 16:9 work cards (video players scaled to 133% of the card so the letterboxing is cropped), a cursor image trail over a pinned city list, a draggable marquee of result cards, and a slider of cards with staggered image heights bleeding off the right edge; square corners.",
+   "motion": "No preloader was seen and the hero is composed at 400ms (load 23s); Lenis then holds two sticky 900px stages, the hero screen scaling from 60% to full bleed over 2700px and one city at a time lighting up over 3600px. The ground flips black, white, black by section with a 0.35s ease on colour across about 11,000 nodes, stat numerals roll like an odometer, and transforms run 0.4s on cubic-bezier(0.625,0.05,0,1) with 0.8s exits on (0.625,0,0.875,0)."
+  },
+  {
+   "id": "opl-city-of-angels",
+   "name": "City of Angels",
+   "url": "https://cityxofxangels.com",
+   "source": "One Page Love",
+   "kind": "culture",
+   "score": 7.6,
+   "idea": "A fixed poster: the book title stays pinned across the viewport while portraits and press quotes swap underneath it, so every scroll step is a new cover.",
+   "mood": [
+    "bold",
+    "sunny",
+    "street",
+    "editorial",
+    "direct"
+   ],
+   "archetype": "giant-wordmark",
+   "hero": "Pale icy-blue page. The title runs as one line of extra-bold uppercase grotesk at 10vw, centred, spanning about 82% of the width in saturated cyan, 120px from the top. A single portrait photograph, 37% of the viewport wide and nearly full height, is centred beneath; the title crosses over its upper quarter, so the middle letters sit on the image. The author name sits top-centre in small bold caps, a two-bar menu icon top-right. Bottom-left, a 13-line bold paragraph in a narrow 340px column; bottom-right, a solid black five-point star about 70px wide.",
+   "type": "ABC Diatype throughout: weight 800 uppercase for the 144px title, bold copy around 20-24px with leading near 1.0; Founders Grotesk Mono in tiny caps for quote attributions. Two sizes plus a label. The final frame catches title letters slanting to oblique.",
+   "colour": "#e4f8fd #06aeef #0a0a0a #c8b59d — The page colour is a pale tint of the title's cyan; cyan appears only on the title, the opening words and quotation marks. Text and star are black. The digest records one solid cyan section.",
+   "imagery": "Full-length street-style portraits, all vertical at about 2:3, saturated natural light, subject standing centre. One image at a time, square corners, centred on the page with the title overprinting it.",
+   "layout": "One pinned composition repeated for seven screens: central image column, fixed title, and a single text block that alternates between the left and right gutters and shifts height each step. Margins about 46px; nothing else on screen.",
+   "sections": [
+    {
+     "role": "proof",
+     "description": "Each scroll step keeps the pinned title and swaps the central portrait. One press quote sits in a column 180-340px wide in an outer gutter, alternating right, left, right, and placed at a different height each time (upper, middle, lower). Quotes are bold black with tight leading and cyan quotation marks; the source follows in tiny underlined or mono caps. The black star stays bottom-right and is caught at different rotation angles."
+    },
+    {
+     "role": "list",
+     "description": "Not captured in the shots, but the digest records four stacked, centred, uppercase links at 144px (10vw) in the same extra-bold grotesk, plus a solid cyan section: navigation reuses the title's exact type size, one link per line, so the menu is another poster rather than a small list."
+    }
+   ],
+   "steal": [
+    "Pin one giant title across the viewport and let a single centred image change beneath it, with the type overprinting the photo's top quarter.",
+    "Use a pale tint of the accent colour as the page background so the saturated title and the background read as one hue.",
+    "Give each scroll step one text block and move it between left and right gutters at varying heights instead of stacking sections."
+   ]
+  },
+  {
+   "id": "aww-tengile-malamala-collection",
+   "name": "Tengile Malamala Collection",
+   "url": "https://tengilemalamala.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "hospitality",
+   "score": 7.6,
+   "idea": "Let the land and animals carry everything: one staggered hairline-serif headline over aerial footage, then cream pages of olive-green serif text with photographs placed at uneven sizes.",
+   "mood": [
+    "serene",
+    "luxurious",
+    "earthy",
+    "editorial"
+   ],
+   "archetype": "fullbleed-media-overlay",
+   "hero": "Aerial river footage fills the viewport, slightly darkened. Three small white caps items sit on the top edge: an enquiry link hard left, a stacked three-line wordmark centred, 'menu' hard right. The headline is two words on two lines in thin serif capitals about 8.3vw tall: the first line starts 10% from the left, the second is indented to 40% and ends near 90%, so the pair steps diagonally across the middle third. Below, starting at the 50% line, a three-line serif sentence at about 20px and a small white square-cornered button with a separate arrow square beside it. The lower third is left to the water.",
+   "type": "PP Fragment at hairline weight (220): capitals for the 120px headline, sentence case for 28-36px olive statements. Inter at 11-16px for labels, nav and small paragraphs. Three serif sizes, two sans sizes; the serif never goes bold.",
+   "colour": "#f5eee9 #5c6e21 #181608 #e3e1d4 #ffffff — Warm cream page with every word, large or small, in one olive green; the footer inverts to a solid olive field with cream text. Photography supplies all other colour.",
+   "imagery": "Wildlife and lodge photography, natural and saturated, square corners, no overlays. Mixed aspect ratios placed at different widths and vertical offsets; lodge listings use equal landscape triplets; hero and closing band are full-bleed aerials.",
+   "layout": "Narrow 16px outer margins and a twelve-column grid used asymmetrically: label and small paragraph in the left columns, the large statement starting at the midpoint. Sections alternate between loosely scattered image pairs and tidy three-up rows.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "Cream field. A tiny sans caps label top-left. A 28px olive serif paragraph of eight lines occupies only the right half, starting at the midpoint. Far below on the left, a five-line 12px sans paragraph about 180px wide. Images are placed loose: a landscape elephant photo under the right text, a tall leopard portrait lower at the left margin, a wide crop of elephant legs upper right of the next screen. No two share a top edge or width."
+    },
+    {
+     "role": "showcase",
+     "description": "A tiny caps label, then an olive serif statement at about 36px running the full width for four lines. Beneath: a sub-label, a 12px paragraph held to a third of the width, then three equal landscape photos with 8px gutters spanning margin to margin, each captioned below in small serif. The same block repeats for a second category; one tile is dimmed with a short caps line laid over it to mark it as not yet open."
+    },
+    {
+     "role": "cta",
+     "description": "A full-bleed aerial of an elephant crossing a sandbank with a short serif statement, a small sans paragraph and the white button-plus-arrow pair set in the right half only. It butts directly against a solid olive footer: five columns of small cream links under tiny caps headings in the top third, a large empty green area beneath, and a legal line along the bottom edge."
+    }
+   ],
+   "steal": [
+    "Stagger a two-line headline: first line from the left margin, second indented by 30% so the pair steps diagonally across the image.",
+    "Set every piece of text in a single brand colour on cream and make the footer that same colour as a solid field.",
+    "Split the button into two adjacent squares, label and arrow, with a 4px gap, small and square-cornered, instead of one pill."
+   ],
+   "media": "A 10s muted aerial montage covers the whole first screen with type set on it and no visible scrim. Below: a split with an image and paragraph in the right half from the centre line, staggered image pairs with uneven heights and offsets, a three-up card row with captions, an inset full-width slider, a constellation of thumbnails round a centred heading, a slow portrait marquee, and a sticky full-bleed landscape with the closing call scrolling over it; 33 images, pictures oversized about 110% in their masks for drift.",
+   "motion": "There is no preloader and only the montage cuts after 400ms, but under Lenis content stays hidden until each reveal fires: blocks rise and sharpen from a blur over 1.6s cubic-bezier(0.19,1,0.22,1), others fade with a filter over 1s cubic-bezier(0.165,0.84,0.44,1), pictures drift inside their masks, and the closing landscape holds on a sticky root. The ground steps from cream to sage-beige to olive, and the marquee loops on 120s."
+  }
+ ],
+ "scenes": []
+}
