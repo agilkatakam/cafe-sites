@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neighbors — Café, eatery & bar in Assagao, Goa</title>
+<meta name="description" content="Neighbors is a café, eatery and bar on a quiet lane in Assagao, Goa. Breakfast, coffee, Goan and French plates, open 9 am to 8 pm.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=panchang@700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1c1c1c; --surface:#262626; --ink:#f1f1ef; --muted:#9a9b96;
+  --accent:#8fa68e; --accent-ink:#1c1c1c; --field:#c8c5ba; --field-ink:#1c1c1c;
+  --margin:32px;
+  --display:'Panchang',sans-serif; --body:'Switzer',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--accent-ink)}
+
+/* ---------- nav ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;justify-content:space-between;align-items:baseline;padding:32px var(--margin);mix-blend-mode:difference}
+.nav-word{font-family:var(--display);font-size:15px;font-weight:700;letter-spacing:.42em;text-transform:uppercase;color:#fff;text-decoration:none}
+.nav-link{font-size:15px;font-weight:500;color:#fff;text-decoration:none;transition:opacity .25s}
+.nav-link:hover{opacity:.6}
+
+/* ---------- hero: counter object, wide wordmark ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:84px var(--margin) 56px;text-align:center}
+.hero-photo{width:min(28vw,370px);aspect-ratio:4/5;overflow:hidden;margin-bottom:30px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;filter:brightness(.9);opacity:0;transition:opacity 1.6s ease}
+.hero-photo img.on{opacity:1}
+.hero-name{font-family:var(--display);font-weight:700;font-size:66px;letter-spacing:.2em;text-indent:.2em;text-transform:uppercase;white-space:nowrap;margin-bottom:24px;transform:scaleX(1.7)}
+.hero-line{font-size:clamp(22px,2.2vw,32px);font-weight:400;line-height:1.25;max-width:24ch;margin-bottom:36px}
+.hero-specs{display:flex;align-items:center;gap:48px;font-size:15px;color:var(--muted)}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font-size:15px;font-weight:600;text-decoration:none;padding:14px 26px;transition:background .25s,color .25s}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+
+/* ---------- intro: pinned sentence, photographs pass ---------- */
+.intro{position:relative;height:300svh}
+.intro-stage{position:sticky;top:0;z-index:2;height:100svh;overflow:hidden;pointer-events:none}
+.intro-sentence{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:3;width:66%;text-align:center;font-size:clamp(30px,3.8vw,56px);line-height:1.1;font-weight:500;color:#fff;mix-blend-mode:difference}
+.intro-photo{position:absolute;z-index:1;overflow:hidden}
+.intro-photo img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) contrast(1.05)}
+.intro-photo.p1{width:30vw;aspect-ratio:4/5;left:6vw;top:112svh}
+.intro-photo.p2{width:46vw;aspect-ratio:16/10;right:0;top:182svh}
+.intro-photo.p3{width:30vw;aspect-ratio:1/1;left:30vw;top:252svh}
+
+.s-short{display:none}
+/* ---------- menu: line-up at one type size ---------- */
+.menu{padding:18svh var(--margin)}
+.menu-title{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.4vw,52px);text-transform:uppercase;letter-spacing:.14em;color:var(--accent);margin-bottom:64px}
+.menu-table{display:grid;grid-template-columns:1.2fr 1fr 1fr auto;column-gap:24px;font-size:clamp(20px,2.1vw,30px);line-height:1.5}
+.menu-table>div{padding:12px 0}
+.menu-table .when{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.menu-note{margin-top:56px;font-size:16px;color:var(--muted);max-width:52ch}
+
+/* ---------- gallery: small frames, wide space ---------- */
+.gallery{position:relative;height:64svh;display:flex;align-items:center;overflow:hidden;margin:10svh 0}
+.gallery-head{position:absolute;top:calc(50% - 15svh - 44px);left:var(--margin);z-index:2;font-size:22px;font-weight:500}
+.gallery-head span{color:var(--muted)}
+.gallery-track{display:flex;gap:5vw;overflow-x:auto;scrollbar-width:none;padding:0 var(--margin);width:100%}
+.gallery-track::-webkit-scrollbar{display:none}
+.frame{flex:0 0 auto;width:13vw;min-width:160px;height:30svh;min-height:230px;overflow:hidden;transition:transform .25s ease}
+.frame:hover{transform:scale(1.1)}
+.frame img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) contrast(1.05)}
+
+/* ---------- contact: the email as display type ---------- */
+.contact{position:relative;height:80svh;margin-top:8svh;background:var(--field);color:var(--field-ink);display:flex;flex-direction:column;justify-content:flex-end;padding:var(--margin)}
+.contact-note{position:absolute;top:40px;left:var(--margin);font-size:21px;max-width:24ch}
+.contact-mail{display:block;font-family:var(--display);font-weight:700;font-size:clamp(34px,5.4vw,84px);line-height:1.02;letter-spacing:-.02em;white-space:nowrap;text-decoration:none;color:var(--field-ink);margin-bottom:10vh;transition:color .25s}
+.contact-mail:hover{color:#5c705c}
+.contact-meta{display:flex;justify-content:space-between;font-size:14px}
+.contact-meta a{text-decoration:none}
+.contact-meta a:hover{text-decoration:underline}
+
+.page{position:relative;background:var(--bg)}
+/* ---------- footer: a single quiet line ---------- */
+.footer{position:relative;z-index:1;background:var(--bg);padding:30svh var(--margin) 30px;font-size:15px}
+.footer-grid{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline}
+.footer-grid .l{color:var(--muted)}
+.footer-grid .c{display:flex;gap:24px;justify-content:center}
+.footer-grid .c a{color:var(--ink);text-decoration:none}
+.footer-grid .c a:hover{color:var(--accent)}
+.footer-grid .r{text-align:right;color:var(--muted)}
+
+/* ---------- entrance + reveals ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.hero-photo,.hero-name,.hero-line,.hero-specs{animation:rise .8s ease both}
+.hero-name{animation-delay:.12s}.hero-line{animation-delay:.24s}.hero-specs{animation-delay:.36s}
+.mob-br{display:none}
+/* ---------- reveals ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- phone ---------- */
+@media (max-width:700px){
+  :root{--margin:16px}
+  .nav{padding:20px var(--margin)}
+  .hero{padding:96px var(--margin) 72px}
+  .hero-photo{width:min(64vw,300px);margin-bottom:36px}
+  .hero-name{font-size:24px;letter-spacing:.12em;text-indent:.12em;margin-bottom:22px;transform:scaleX(1.3)}
+  .hero-line{font-size:24px;margin-bottom:34px}
+  .hero-specs{gap:20px;font-size:14px;flex-wrap:wrap;justify-content:center}
+  .intro-sentence{width:86%;font-size:26px}
+  .s-long{display:none}
+  .s-short{display:inline}
+  .intro-photo.p1{width:56vw}
+  .intro-photo.p2{width:78vw;top:178svh}
+  .intro-photo.p3{width:44vw;left:14vw;top:250svh}
+  .menu-table{grid-template-columns:1fr auto;font-size:19px}
+  .menu-table .fmt,.menu-table .room{display:none}
+  .gallery-head{top:calc(50% - 15svh - 40px);font-size:20px}
+  .frame{width:38vw;height:26svh}
+  .contact-note{font-size:18px}
+  .contact-mail{margin-bottom:38svh;white-space:normal;font-size:11.5vw}
+  .mob-br{display:block}
+  .contact-meta{flex-direction:column;gap:12px;font-size:15px}
+  .footer{padding:20svh var(--margin) 24px;font-size:14px}
+  .footer-grid{grid-template-columns:1fr;gap:8px}
+  .footer-grid .c{justify-content:flex-start;flex-wrap:wrap}
+  .footer-grid .r{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-photo,.hero-name,.hero-line,.hero-specs{animation:none}
+  .hero-photo img{transition:none}
+  .reveal{opacity:1;transform:none;transition:none}
+  .frame:hover{transform:none}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-word" href="#top">Neighbors</a>
+  <a class="nav-link" href="#write">Write to us</a>
+</nav>
+
+<main class="page">
+<header class="hero" id="top">
+  <div class="hero-photo" id="crossfade">
+    <img src="assets/counter.jpg" alt="The coffee counter at Neighbors, teal fluted bar and espresso machine" class="on">
+    <img src="assets/bar-teal.jpg" alt="The teal bar at Neighbors under a wooden slat roof">
+    <img src="assets/garden.jpg" alt="Garden tables under the palms at Neighbors, Assagao">
+  </div>
+  <h1 class="hero-name">Neighbors</h1>
+  <p class="hero-line">A café, eatery and bar on a quiet lane in Assagao, Goa.</p>
+  <div class="hero-specs">
+    <span>H.No 189, Mazal Waddo</span>
+    <a class="btn" href="mailto:ginny@neighborsgoa.com">Write to the café</a>
+    <span>Open 9 am – 8 pm</span>
+  </div>
+</header>
+
+<section class="intro" aria-label="About">
+  <div class="intro-stage">
+    <p class="intro-sentence"><span class="s-long">Slow breakfasts, good coffee, a bar that knows the village.</span><span class="s-short">Good coffee, slow breakfasts, a village bar.</span></p>
+  </div>
+  <figure class="intro-photo p1"><img src="assets/garden.jpg" alt="Garden seating under palm trees at Neighbors"></figure>
+  <figure class="intro-photo p2"><img src="assets/pavilion-alt.jpg" alt="The open wooden pavilion dining room at Neighbors"></figure>
+  <figure class="intro-photo p3"><img src="assets/bar-teal.jpg" alt="Teal fluted bar inside the pavilion"></figure>
+</section>
+
+<section class="menu" id="menu" aria-label="What we serve">
+  <h2 class="menu-title reveal">On the table</h2>
+  <div class="menu-table reveal">
+    <div>Breakfast &amp; coffee</div><div class="fmt">the morning table</div><div class="room">garden or pavilion</div><div class="when">from 9 am</div>
+    <div>Sandwiches</div><div class="fmt">toasted, stacked</div><div class="room">all day</div><div class="when">9 – 8</div>
+    <div>French plates</div><div class="fmt">the eatery side</div><div class="room">all day</div><div class="when">9 – 8</div>
+    <div>Goan &amp; seafood</div><div class="fmt">local catch</div><div class="room">all day</div><div class="when">9 – 8</div>
+    <div>Bakery &amp; desserts</div><div class="fmt">from the oven</div><div class="room">all day</div><div class="when">9 – 8</div>
+    <div>Healthy bowls &amp; salads</div><div class="fmt">the light side</div><div class="room">all day</div><div class="when">9 – 8</div>
+    <div>Cocktails &amp; bar</div><div class="fmt">the evening side</div><div class="room">bar counter</div><div class="when">till 8 pm</div>
+  </div>
+  <p class="menu-note reveal">The kitchen runs on Zomato's listed hours, 9 am to 8 pm. Menus change with what's good at the market; ask when you write.</p>
+</section>
+
+<section class="gallery" aria-label="Photographs">
+  <p class="gallery-head reveal">The room <span>— 8 frames</span></p>
+  <div class="gallery-track">
+    <div class="frame"><img src="assets/sign.jpg" alt="The blue Neighbors sign at the gate"></div>
+    <div class="frame"><img src="assets/counter.jpg" alt="Coffee counter and teal bar"></div>
+    <div class="frame"><img src="assets/interior-brick.jpg" alt="Interior with the brick Neighbors wall"></div>
+    <div class="frame"><img src="assets/food-burger.jpg" alt="The egg burger with fries"></div>
+    <div class="frame"><img src="assets/food-fish.jpg" alt="A fish plate at Neighbors"></div>
+    <div class="frame"><img src="assets/dining.jpg" alt="Pavilion dining tables"></div>
+    <div class="frame"><img src="assets/garden.jpg" alt="Garden tables under the palms"></div>
+    <div class="frame"><img src="assets/food-salad.jpg" alt="A salad plate on the garden table"></div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="write" aria-label="Contact">
+  <p class="contact-note reveal">Write to us about tables, the menu, or an evening at the bar.</p>
+  <a class="contact-mail" id="mailLine" href="mailto:ginny@neighborsgoa.com">ginny@<span class="mob-br"></span>neighborsgoa.com</a>
+  <div class="contact-meta">
+    <span>+91 788 788 9118 · Assagao, Goa</span>
+    <span><a href="https://instagram.com/neighborsgoa" rel="noopener">Instagram</a> · <a href="https://www.zomato.com/goa/neighbors-1-assagao" rel="noopener">Zomato</a> · <a href="https://www.google.com/maps/search/?api=1&query=Neighbors+Goa&query_place_id=ChIJM-ozttPrvzsRX3ftgtr3S-8" rel="noopener">Maps</a></span>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid reveal">
+    <span class="l">Café, eatery &amp; bar — Assagao</span>
+    <span class="c"><a href="https://instagram.com/neighborsgoa" rel="noopener">Instagram</a><a href="https://www.zomato.com/goa/neighbors-1-assagao" rel="noopener">Zomato</a><a href="https://www.zomato.com/goa/neighbors-1-assagao/photos" rel="noopener">Photos: Zomato</a></span>
+    <span class="r">2026</span>
+  </div>
+</footer>
+
+<script>
+// slow crossfade: three frames, 1.6s fade, ~5.6s hold; pauses hidden; reduced motion = first only
+(function(){
+  var imgs = document.querySelectorAll('#crossfade img');
+  if (imgs.length < 2) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var i = 0, t = null;
+  function tick(){
+    imgs[i].classList.remove('on');
+    i = (i + 1) % imgs.length;
+    imgs[i].classList.add('on');
+  }
+  function start(){ if (!t) t = setInterval(tick, 5600); }
+  function stop(){ clearInterval(t); t = null; }
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
+  start();
+})();
+// fit the email line to the content width
+(function(){
+  var el = document.getElementById('mailLine');
+  if (!el) return;
+  function fit(){
+    el.style.fontSize = '';
+    var size = parseFloat(getComputedStyle(el).fontSize), guard = 60;
+    while (el.scrollWidth > el.clientWidth && guard-- > 0) {
+      size *= 0.97; el.style.fontSize = size + 'px';
+    }
+  }
+  fit(); window.addEventListener('resize', fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+})();
+// reveals
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { threshold: 0.12 });
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waah Shakers - Cafe &amp; Restro in Pushkar</title>
+<meta name="description" content="Waah Shakers is a cafe and restro near Hotel Oasis, Pushkar - thick shakes, cold coffee, 12-inch pizzas and thalis, open until 11 at night.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7ebe6;
+  --panel:#fdeee8;
+  --ink:#43182a;
+  --ink-soft:#6d4252;
+  --accent:#a62a4c;
+  --line:#e5c9c0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Work Sans',sans-serif;font-size:17px;line-height:1.6}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:var(--ink)}
+h1,h2,h3{font-family:'Fraunces',serif}
+
+/* the sticky stage: one photograph that stays while you read */
+.layout{display:flex;align-items:stretch}
+.stage-side{width:50vw;flex:none;padding:32px 0 32px 32px}
+.stage{position:sticky;top:32px;height:calc(100svh - 64px);z-index:1}
+.frame{position:relative;width:100%;height:100%;border-radius:22px;overflow:hidden;background:var(--ink)}
+.frame img{position:absolute;inset:0;clip-path:inset(0 0 100% 0);transition:clip-path .8s cubic-bezier(.7,0,.3,1)}
+.frame img.live{clip-path:inset(0 0 0% 0);z-index:2}
+.cap{position:absolute;left:18px;bottom:18px;z-index:3;background:var(--ink);color:var(--panel);font-size:15px;font-weight:600;padding:10px 16px;border-radius:999px;transition:opacity .3s ease}
+
+/* the reading column */
+.read{position:relative;flex:1;padding:32px 32px 60px 40px;max-width:50vw}
+.top{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:64px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:'Fraunces',serif;font-weight:900;font-size:22px}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--accent);color:var(--panel);border-radius:50%;font-family:'Fraunces',serif;font-weight:900;font-size:24px;transition:transform .3s ease}
+.brand:hover .mark{transform:rotate(-12deg) scale(1.08)}
+.top nav{display:flex;gap:26px}
+.top nav a{text-decoration:none;font-weight:600;font-size:16px;color:var(--ink-soft);transition:color .2s ease}
+.top nav a:hover{color:var(--accent)}
+
+.hero{min-height:74svh;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font-size:clamp(52px,4.6vw,72px);font-weight:900;line-height:1.02;letter-spacing:-0.01em;margin-bottom:22px}
+.hero .lede{font-size:20px;line-height:1.5;color:var(--ink-soft);max-width:38ch;margin-bottom:24px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{border:2px solid var(--ink);border-radius:999px;padding:7px 16px;font-size:15px;font-weight:600;background:var(--panel)}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;font-size:16px;padding:13px 26px;border-radius:999px;border:2px solid var(--ink);transition:transform .22s ease,background .22s ease,color .22s ease}
+.btn.solid{background:var(--ink);color:var(--panel)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost:hover{background:var(--ink);color:var(--panel)}
+
+section{margin-bottom:110px}
+section h2{font-size:36px;font-weight:700;margin-bottom:14px}
+section .intro{color:var(--ink-soft);margin-bottom:30px;max-width:44ch}
+
+.mgroup{margin-bottom:34px}
+.mgroup h3{font-size:22px;font-weight:700;color:var(--accent);margin-bottom:10px}
+.mrow{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:7px 4px;transition:background .2s ease,padding-left .25s ease}
+.mrow:hover{background:var(--panel);padding-left:12px}
+.mrow .n{font-weight:600}
+.mrow .d{font-weight:400;color:var(--ink-soft);font-size:15px}
+.mrow .p{font-weight:700;white-space:nowrap}
+.mnote{font-size:15px;color:var(--ink-soft);margin-top:6px}
+
+.room-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+.room-grid figure{border-radius:16px;overflow:hidden;height:300px}
+.room-grid figcaption{position:absolute}
+
+.facts{list-style:none}
+.facts li{position:relative;padding:12px 0 12px 40px;font-size:17px}
+.facts li::before{content:"!";position:absolute;left:0;top:12px;width:26px;height:26px;background:var(--accent);color:var(--panel);border-radius:50%;font-family:'Fraunces',serif;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:16px}
+
+.visit-card{background:var(--panel);border:2px solid var(--ink);border-radius:20px;padding:34px 32px}
+.visit-card dl{display:grid;grid-template-columns:1fr 1fr;gap:22px 30px;margin-bottom:28px}
+.visit-card dt{font-weight:700;font-size:15px;color:var(--accent);margin-bottom:3px}
+.visit-card dd{font-size:16px;line-height:1.5}
+.visit-card a{color:var(--ink)}
+.visit-card .actions{margin-top:4px}
+
+footer{border-top:2px solid var(--line);padding-top:44px}
+.fcols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px;margin-bottom:52px}
+.fcols h3{font-size:17px;font-family:'Work Sans',sans-serif;font-weight:700;color:var(--accent);margin-bottom:8px}
+.fcols p, .fcols a{font-size:15px;line-height:1.6;color:var(--ink-soft);text-decoration:none}
+.fcols a:hover{color:var(--accent)}
+.fcols a{display:block}
+.wordmark{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(40px,4.4vw,64px);line-height:1;color:var(--ink);text-align:center;margin-bottom:18px}
+.wordmark .w{display:inline-block;white-space:nowrap}
+.wordmark .L{display:inline-block;transform:translateY(110%);transition:transform .6s cubic-bezier(.22,.9,.28,1)}
+.wordmark.on .L{transform:none}
+.credit{text-align:center;font-size:14px;color:var(--ink-soft);margin-bottom:8px}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s cubic-bezier(.22,.9,.28,1)}
+.rv.on{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  .rv,.wordmark .L{opacity:1;transform:none}
+  .frame img:first-child{clip-path:inset(0 0 0% 0)}
+}
+
+/* phone: the stage becomes a photograph on top, then the reading column */
+@media (max-width:860px){
+  .layout{display:block}
+  .stage-side{width:auto;padding:20px 20px 0}
+  .stage{position:relative;top:0;height:40svh;margin-bottom:24px}
+  .read{margin-left:0;max-width:none;padding:0 20px 48px}
+  .top{margin-bottom:28px}
+  .top nav{gap:14px}
+  .top nav a{font-size:14px}
+  .brand{font-size:18px;white-space:nowrap}
+  .mark{width:34px;height:34px;font-size:20px}
+  .hero{min-height:0;margin-bottom:96px}
+  .hero h1{font-size:15vw}
+  .lede,.intro,.facts li{max-width:46ch}
+  .mgroup{max-width:540px}
+  .visit-card{max-width:560px}
+  .fcols p{max-width:44ch}
+  .credit{max-width:60ch;margin-left:auto;margin-right:auto}
+  section{margin-bottom:88px}
+  .room-grid{grid-template-columns:1fr;height:auto}
+  .room-grid figure{height:260px}
+  .visit-card dl{grid-template-columns:1fr}
+  .fcols{grid-template-columns:1fr;gap:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="layout"><div class="stage-side"><div class="stage" aria-hidden="true">
+  <figure class="frame">
+    <img src="assets/facade-night.jpg" alt="Waah Shakers lit up at night, near Hotel Oasis, Pushkar" class="live" data-pane="top">
+    <img src="assets/shakes.jpg" alt="Two thick chocolate shakes on the cafe table" data-pane="menu">
+    <img src="assets/interior-windows.jpg" alt="The pink dining room with wooden tables and big windows" data-pane="room">
+    <img src="assets/facade-day.jpg" alt="The cafe's front view by day" data-pane="visit">
+    <figcaption class="cap" id="cap" data-ui>The cafe at night</figcaption>
+  </figure>
+</div></div>
+
+<main class="read">
+  <header class="top" data-ui>
+    <a class="brand" href="#top"><span class="mark">!</span>Waah Shakers</a>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#room">The room</a>
+      <a href="#visit">Find us</a>
+    </nav>
+  </header>
+
+  <section class="hero rv" id="top">
+    <h1>Waah Shakers</h1>
+    <p class="lede">A cafe &amp; restro in the heart of Pushkar - thick shakes, cold coffee, 12-inch pizzas and full thalis, a short walk from the lake.</p>
+    <div class="actions">
+      <a class="btn solid" href="tel:+917726822344">Call the cafe</a>
+      <a class="btn ghost" href="#menu">See the menu</a>
+    </div>
+    <div class="chips">
+      <span class="chip">4.9 on Google (521 reviews)</span>
+      <span class="chip">Travellers' Choice on TripAdvisor</span>
+      <span class="chip">Open until 11 PM</span>
+    </div>
+  </section>
+
+  <section id="menu" class="rv">
+    <h2>The short card</h2>
+    <p class="intro">Straight off the cafe's printed menu card, prices as printed. The full card runs twelve pages - this is what people come back for.</p>
+
+    <div class="mgroup">
+      <h3>Shake's</h3>
+      <div class="mrow"><span class="n">Chocolate, Oreo, Kit Kate, Brownie or Snickers bar shake</span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Banana, strawberry, mango or butter scotch shake</span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Kesar Badam or Nutella shake</span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Nutella Banana / Strawberry Banana mix</span><span class="p">&#8377;200</span></div>
+    </div>
+
+    <div class="mgroup">
+      <h3>Shaker's Special Shake</h3>
+      <div class="mrow"><span class="n">Banana Date shake</span><span class="p">&#8377;200</span></div>
+      <div class="mrow"><span class="n">Biscof or Ferrero Rocher shake</span><span class="p">&#8377;250</span></div>
+      <div class="mrow"><span class="n">Rose Faluda with chia seed</span><span class="p">&#8377;250</span></div>
+      <div class="mrow"><span class="n">Strawberry, banana, almond, walnut &amp; cashew mix</span><span class="p">&#8377;250</span></div>
+    </div>
+
+    <div class="mgroup">
+      <h3>Coffee, hot &amp; cold</h3>
+      <div class="mrow"><span class="n">Espresso <span class="d">/ double</span></span><span class="p">&#8377;100 / 150</span></div>
+      <div class="mrow"><span class="n">Cappuccino, Americano or Macchiato</span><span class="p">&#8377;150</span></div>
+      <div class="mrow"><span class="n">Latte, Mocha, Flat white or Cortado</span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Affogato <span class="d">2 vanilla scoops, double shot</span></span><span class="p">&#8377;200</span></div>
+      <div class="mrow"><span class="n">Ice latte, Ice Cappuccino or Ice Mocha <span class="d">350 ml</span></span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Cold Brew / Coconut Cold Brew <span class="d">350 ml</span></span><span class="p">&#8377;150 / 200</span></div>
+    </div>
+
+    <div class="mgroup">
+      <h3>Pizza, 12 inch</h3>
+      <div class="mrow"><span class="n">Margherita</span><span class="p">&#8377;300</span></div>
+      <div class="mrow"><span class="n">Veg Bite <span class="d">onion, tomato, capsicum</span></span><span class="p">&#8377;400</span></div>
+      <div class="mrow"><span class="n">Villa Special <span class="d">sweet corn &amp; capsicum</span></span><span class="p">&#8377;500</span></div>
+      <div class="mrow"><span class="n">Farm Paneer Tikka <span class="d">olives, red sauce</span></span><span class="p">&#8377;500</span></div>
+      <div class="mrow"><span class="n">Punjabi <span class="d">green olive, paneer, the works</span></span><span class="p">&#8377;600</span></div>
+    </div>
+
+    <div class="mgroup">
+      <h3>Thali &amp; North Indian</h3>
+      <div class="mrow"><span class="n">Mini Meal thali <span class="d">dal tadka, paneer butter masala, mix veg, 4 butter chapati, rice, salad, ice cream</span></span><span class="p">&#8377;300</span></div>
+      <div class="mrow"><span class="n">Shakers Special Meal thali <span class="d">malai kofta, lachha parantha, jeera rice &amp; more</span></span><span class="p">&#8377;400</span></div>
+      <div class="mrow"><span class="n">Butter Paneer Masala, Shahi Paneer or Kadai Paneer</span><span class="p">&#8377;280</span></div>
+      <div class="mrow"><span class="n">Kaju Kari <span class="d">fried gravy</span></span><span class="p">&#8377;350</span></div>
+    </div>
+
+    <div class="mgroup">
+      <h3>Mocktails &amp; fresh juice</h3>
+      <div class="mrow"><span class="n">Mojitos - virgin, kiwi, strawberry, raspberry, blueberry, watermelon</span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Blue lagon</span><span class="p">&#8377;180</span></div>
+      <div class="mrow"><span class="n">Orange or pineapple juice</span><span class="p">&#8377;150</span></div>
+    </div>
+  </section>
+
+  <section id="room" class="rv">
+    <h2>The room</h2>
+    <p class="intro">Pink walls, wooden tables, a coffee bar up front and a turf garden out back. The wall by the door says it: coffee is always a good idea.</p>
+    <div class="room-grid">
+      <figure><img src="assets/interior-decal.jpg" alt="Dining corner with the 'Coffee is always a good idea' wall decal"></figure>
+      <figure><img src="assets/garden.jpg" alt="The turf garden seating with plants and outdoor tables"></figure>
+    </div>
+  </section>
+
+  <section id="good" class="rv">
+    <h2>Good to know</h2>
+    <ul class="facts">
+      <li>Live music evenings - the cafe posts its lineup on Facebook.</li>
+      <li>Birthday parties arranged on request, with special thalis and mocktails.</li>
+      <li>Garden seating out back, family tables inside.</li>
+      <li>Breakfast, lunch and dinner - Maggi to thali to pizza.</li>
+    </ul>
+  </section>
+
+  <section id="visit" class="rv">
+    <h2>Find us</h2>
+    <div class="visit-card">
+      <dl>
+        <div><dt>Where</dt><dd>Near Hotel Oasis, opposite Arjun Baba Dharmshala, Prachin Hanuman Gadi, Pushkar, Rajasthan 305022</dd></div>
+        <div><dt>Hours</dt><dd>Open until 11:00 PM</dd></div>
+        <div><dt>Call</dt><dd><a href="tel:+917726822344">+91 77268 22344</a></dd></div>
+        <div><dt>Write</dt><dd><a href="mailto:shakerspushkar@gmail.com">shakerspushkar@gmail.com</a></dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn solid" href="tel:+917726822344">Call the cafe</a>
+        <a class="btn ghost" href="mailto:shakerspushkar@gmail.com">Write to us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fcols">
+      <div>
+        <h3>Waah Shakers</h3>
+        <p>Cafe &amp; restro in Pushkar for shakes, coffee, pizza and thali. Rated 4.9 by more than five hundred Google guests, and a Travellers' Choice on TripAdvisor.</p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p>Near Hotel Oasis, Pushkar,<br>Rajasthan 305022<br>Open until 11 PM</p>
+      </div>
+      <div>
+        <h3>Talk</h3>
+        <a href="tel:+917726822344">+91 77268 22344</a>
+        <a href="mailto:shakerspushkar@gmail.com">shakerspushkar@gmail.com</a>
+      </div>
+    </div>
+    <div class="wordmark" id="wordmark" aria-label="Waah Shakers"></div>
+    <p class="credit">Photographs from the cafe's own Zomato, TripAdvisor and Google listings.</p>
+  </footer>
+</main></div>
+
+<script>
+// photo panes follow the section you are reading
+(function(){
+  var imgs = document.querySelectorAll('.frame img');
+  var cap = document.getElementById('cap');
+  var captions = {top:'The cafe at night', menu:'Shakes on the table', room:'The pink room', visit:'The front view by day'};
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var pane = e.target.getAttribute('data-pane') || (e.target.id==='menu'?'menu':e.target.id==='room'?'room':e.target.id==='visit'?'visit':'top');
+      imgs.forEach(function(im){ im.classList.toggle('live', im.getAttribute('data-pane')===pane); });
+      if(captions[pane]) cap.textContent = captions[pane];
+    });
+  },{rootMargin:'-40% 0px -50% 0px'});
+  document.querySelectorAll('.hero, #menu, #room, #visit').forEach(function(s){
+    s.setAttribute('data-pane', s.id==='menu'?'menu':s.id==='room'?'room':s.id==='visit'?'visit':'top');
+    io.observe(s);
+  });
+})();
+// reveals + wordmark
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
+  },{threshold:.15});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+  var el = document.getElementById('wordmark');
+  var i = 0;
+  'WAAH SHAKERS'.split(' ').forEach(function(word, wi, arr){
+    var w = document.createElement('span'); w.className = 'w';
+    word.split('').forEach(function(ch){
+      var s = document.createElement('span'); s.className = 'L'; s.textContent = ch;
+      s.style.transitionDelay = (i++*32)+'ms'; w.appendChild(s);
+    });
+    el.appendChild(w);
+    if(wi < arr.length-1) el.appendChild(document.createTextNode(' '));
+  });
+  io.observe(el);
+})();
+</script>
+</body>
+</html>
