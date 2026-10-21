@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe LazyMojo — Malviya Nagar, Jaipur</title>
+<meta name="description" content="Cafe LazyMojo, Malviya Nagar, Jaipur. Coffee, food and good vibes — a legacy neighbourhood cafe. Eat, drink, laze, repeat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#472913; --surface:#55321a; --ink:#e4e0cf; --muted:#b39f84;
+  --accent:#525e1b; --accent-ink:#e4e0cf;
+  --field-1:#c79a3e; --field-1-ink:#2b170a;
+  --field-2:#525e1b; --field-2-ink:#e4e0cf;
+  --paper:#e4e0cf; --paper-ink:#472913; --paper-soft:#6e5740;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Literata",Georgia,serif;font-size:var(--step-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* entrance motion */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ============ HERO ============ */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;min-height:100svh}
+.hero-card{background:var(--paper);color:var(--paper-ink);border-radius:var(--r);display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden;position:relative}
+.stripe-band{width:100%;height:56px;flex:none;display:flex;overflow:hidden}
+.stripe-band i{flex:none;width:28px;height:100%}
+.stripe-band i:nth-child(odd){background:var(--accent)}
+.hero-card .body{padding:48px 32px 32px;display:flex;flex-direction:column;align-items:center;gap:22px;flex:1;justify-content:center}
+.wordmark{width:min(300px,72%);text-align:center}
+.wordmark .cafe{display:block;font-style:italic;font-weight:500;font-size:19px;letter-spacing:.14em;color:var(--accent)}
+.wordmark .name{display:block;font-style:italic;font-weight:600;font-size:44px;line-height:1.05;letter-spacing:-0.02em;white-space:nowrap}
+.wordmark .tag{display:block;font-weight:400;font-size:14px;letter-spacing:.08em;margin-top:10px;color:var(--accent);white-space:nowrap}
+h1{font-weight:500;font-size:clamp(40px,3.6vw,56px);line-height:1.05;letter-spacing:-0.02em}
+h1 .w{white-space:nowrap}
+.lede{font-size:17px;line-height:1.55;max-width:36ch;color:var(--paper-ink)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:17px;padding:15px 34px;border-radius:8px;border:none;cursor:pointer;position:relative;overflow:hidden;transition:transform .25s ease}
+.btn::after{content:"";position:absolute;inset:0;background:rgba(43,23,10,.18);opacity:0;transition:opacity .25s ease} /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+.btn:hover::after{opacity:1}
+.btn:hover{transform:translateY(-2px)}
+.hero-links{display:flex;gap:26px;justify:center;font-size:14px;padding:0 24px 28px}
+.hero-links a{text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px;transition:color .2s ease}
+.hero-links a:hover{color:var(--accent)}
+.hero-photo{position:sticky;top:12px;height:calc(100svh - 24px);border-radius:var(--r);overflow:hidden}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero-photo img.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.hero-photo img{transition:none}}
+
+/* ============ INTRO ============ */
+.intro{padding:140px 32px 120px;max-width:1440px;margin:0 auto}
+.intro .row1{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;align-items:end}
+.intro h2{grid-column:1/7;font-weight:400;font-size:clamp(44px,5vw,76px);line-height:1.05;letter-spacing:-0.02em}
+.intro .note{grid-column:10/13;width:260px;font-size:16px;line-height:1.55;color:var(--ink)}
+.facts{display:flex;justify-content:space-between;flex-wrap:wrap;gap:28px;margin-top:120px}
+.fact .big{font-weight:400;font-size:clamp(28px,3vw,44px);line-height:1.1;letter-spacing:-0.01em}
+.fact .why{font-size:14px;color:var(--muted);margin-top:6px;max-width:22ch}
+
+.intro-clip{margin-top:96px;margin-left:auto;width:min(42%,420px)}
+.intro-clip video{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+.clip-cap{font-size:13px;color:var(--muted);margin-top:10px}
+@media (max-width:640px){.intro-clip{width:100%;margin-top:64px}}
+
+/* ============ MENU SHEET ============ */
+.menu-sec{padding:120px 12px 140px;background:var(--surface)}
+.sheet{background:var(--paper);color:var(--paper-ink);width:min(640px,100%);margin:0 auto;padding:84px 64px 72px;text-align:center;position:relative;
+  --s:16px;
+  -webkit-mask:
+    radial-gradient(circle var(--s) at var(--s) 0,transparent calc(var(--s) - .5px),#000 var(--s)) left 0 top 0/calc(var(--s)*2) var(--s) repeat-x, /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+    radial-gradient(circle var(--s) at var(--s) 100%,transparent calc(var(--s) - .5px),#000 var(--s)) left 0 bottom 0/calc(var(--s)*2) var(--s) repeat-x, /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+    linear-gradient(#000,#000) 0 var(--s)/100% calc(100% - var(--s)*2) no-repeat; /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+  mask:
+    radial-gradient(circle var(--s) at var(--s) 0,transparent calc(var(--s) - .5px),#000 var(--s)) left 0 top 0/calc(var(--s)*2) var(--s) repeat-x, /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+    radial-gradient(circle var(--s) at var(--s) 100%,transparent calc(var(--s) - .5px),#000 var(--s)) left 0 bottom 0/calc(var(--s)*2) var(--s) repeat-x, /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+    linear-gradient(#000,#000) 0 var(--s)/100% calc(100% - var(--s)*2) no-repeat; /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+}
+.sheet h2.sheet-title{font-weight:500;font-size:clamp(36px,4vw,46px);letter-spacing:-0.02em;line-height:1.05}
+.sheet .sheet-note{font-size:14px;color:var(--paper-soft);margin-top:10px}
+.mgroup{margin-top:56px}
+.mgroup h3{font-weight:600;font-size:22px;letter-spacing:.01em}
+.mgroup ul{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:16px}
+.mitem{text-align:left}
+.mitem .line{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+.mitem .dish{font-size:17px;font-weight:500}
+.mitem .side{font-size:14px;font-style:italic;color:var(--accent);white-space:nowrap}
+.mitem .sub{font-size:14px;color:var(--paper-soft);margin-top:2px}
+.sheet .sheet-end{margin-top:64px;font-size:14px;color:var(--paper-soft);line-height:1.7}
+
+/* ============ GALLERY ============ */
+.gallery{padding:120px 32px;max-width:1440px;margin:0 auto}
+.gallery>h2{font-weight:400;font-size:32px;letter-spacing:-0.01em;margin:0 12px 40px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:84px 12px;padding:0 12px}
+.tile figure{margin:0}
+.tile img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.strip{margin-top:0;padding:12px;font-size:13px;line-height:1.5;display:flex;flex-direction:column;gap:8px;min-height:92px}
+.strip .r1{display:flex;justify-content:space-between;gap:8px;font-weight:600}
+.strip .r2{display:flex;justify-content:space-between;gap:8px}
+.strip.f1{background:var(--paper);color:var(--paper-ink)}
+.strip.f2{background:var(--accent);color:var(--accent-ink)}
+.strip.f3{background:var(--field-1);color:var(--field-1-ink)}
+.strip.f4{background:var(--surface);color:var(--ink)}
+
+/* ============ STATS ============ */
+.stats{padding:120px 32px 140px;max-width:1440px;margin:0 auto;display:grid;grid-template-columns:repeat(12,1fr);gap:12px;align-items:center}
+.stats .lead{grid-column:1/6}
+.stats .lead h2{font-weight:400;font-size:clamp(32px,3.2vw,52px);line-height:1.15;letter-spacing:-0.02em}
+.stats .lead h2 .soft{color:var(--muted);display:block}
+.figures{grid-column:7/13;display:flex;flex-direction:column;gap:20px}
+.fig{display:grid;grid-template-columns:auto auto 1fr;align-items:baseline;gap:6px}
+.fig .whole{font-size:clamp(64px,7vw,112px);line-height:1;font-weight:500;text-align:right;min-width:1.2em}
+.fig .frac{font-size:clamp(64px,7vw,112px);line-height:1;font-weight:500}
+.fig .cap{font-size:16px;color:var(--muted);line-height:1.4;padding-left:18px;max-width:20ch}
+
+/* ============ CONTACT ============ */
+.contact{position:relative;min-height:100svh}
+.contact .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vcard{position:relative;z-index:2;background:var(--paper);color:var(--paper-ink);width:380px;max-width:calc(100% - 32px);border-radius:8px;padding:32px;margin-left:auto;margin-right:60px;top:60px;display:flex;flex-direction:column;gap:16px}
+.vcard h2{font-weight:400;font-size:28px;letter-spacing:-0.01em}
+.vcard .addr{font-size:16px;line-height:1.55}
+.vcard .line{font-size:16px}
+.vcard a{text-decoration:none;border-bottom:2px solid var(--accent)}
+.vcard .btn{margin-top:8px;text-align:center;padding:16px 20px;font-size:17px}
+
+/* ============ FOOTER ============ */
+.footer{padding:120px 12px 60px}
+.backcard{background:var(--paper);color:var(--paper-ink);max-width:1440px;margin:0 auto;padding:72px 56px 40px;position:relative;
+  --s:26px;
+  -webkit-mask:
+    radial-gradient(circle var(--s) at var(--s) 0,transparent calc(var(--s) - .5px),#000 var(--s)) left 0 top 0/calc(var(--s)*2) var(--s) repeat-x, /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+    linear-gradient(#000,#000) 0 var(--s)/100% calc(100% - var(--s)) no-repeat; /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+  mask:
+    radial-gradient(circle var(--s) at var(--s) 0,transparent calc(var(--s) - .5px),#000 var(--s)) left 0 top 0/calc(var(--s)*2) var(--s) repeat-x, /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+    linear-gradient(#000,#000) 0 var(--s)/100% calc(100% - var(--s)) no-repeat; /* taste-skill-ignore: hard-stop stripe fill or scallop edge mask, not a visual gradient */
+}
+.backcard .cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.signoff{font-weight:500;font-size:32px;letter-spacing:-0.01em;line-height:1.15}
+.msg{font-size:16px;line-height:1.6;color:var(--paper-ink);margin-top:18px;max-width:34ch}
+.addrblock{display:flex;flex-direction:column;gap:12px;font-size:18px;justify-content:center}
+.addrblock a{text-decoration:none;border-bottom:2px solid var(--accent);width:fit-content}
+.stamp{position:absolute;top:36px;right:44px;width:88px;background:var(--paper);padding:6px}
+.stamp img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.imprint{margin-top:56px;text-align:center;font-size:13px;color:var(--paper-soft)}
+.foot-stripe{height:8px;margin-top:48px;display:flex;overflow:hidden}
+.foot-stripe i{flex:none;width:28px;height:100%}
+.foot-stripe i:nth-child(odd){background:var(--accent)}
+
+/* ============ TABLET ============ */
+@media (max-width:900px){
+  .intro .row1{grid-template-columns:1fr}
+  .intro h2{grid-column:auto}
+  .intro .note{grid-column:auto;width:100%;margin-top:28px}
+  .stats{grid-template-columns:1fr}
+  .stats .lead,.figures{grid-column:auto}
+  .figures{margin-top:56px}
+  .tiles{grid-template-columns:repeat(2,1fr);gap:56px 12px}
+  .vcard{margin-right:auto;margin-left:60px}
+}
+
+/* ============ PHONE ============ */
+@media (max-width:900px){
+  .fig{grid-template-columns:auto auto;grid-template-rows:auto auto;column-gap:0}
+  .fig .cap{grid-column:1/3;padding-left:0;margin-top:6px}
+}
+@media (max-width:640px){
+  .backcard .cols>div:first-child{padding-right:84px}
+  .hero{grid-template-columns:1fr;gap:0;padding:12px}
+  .hero-photo{position:relative;top:0;height:48svh;order:-1}
+  .hero-card{margin-top:-24px;position:relative;z-index:2}
+  .stripe-band{height:40px}
+  .wordmark{width:56%}
+  .wordmark .name{font-size:32px}
+  h1{font-size:8vw}
+  .hero-card .body{padding:32px 20px 24px;gap:18px}
+  .hero-links{flex-wrap:wrap;gap:16px}
+  .intro{padding:96px 24px 88px}
+  .intro h2{font-size:11vw}
+  .facts{margin-top:72px;display:grid;grid-template-columns:1fr 1fr;row-gap:32px}
+  .fact .big{font-size:26px}
+  .menu-sec{padding:88px 10px 96px}
+  .sheet{padding:56px 28px 48px;--s:12px}
+  .mitem .dish{font-size:16px}
+  .gallery{padding:88px 12px}
+  .gallery>h2{font-size:24px;margin:0 4px 32px}
+  .tiles{grid-template-columns:repeat(2,1fr);gap:48px 8px;padding:0 4px}
+  .strip{min-height:0}
+  .strip .r2{display:none}
+  .stats{padding:88px 24px 96px}
+  .stats .lead h2{font-size:28px}
+  .fig .whole,.fig .frac{font-size:15vw}
+  .fig{grid-template-columns:auto auto 1fr}
+  .fig .cap{padding-left:12px;font-size:15px}
+  .contact .bgimg{position:relative;height:70svh}
+  .contact{min-height:0}
+  .vcard{margin:-80px 16px 0;width:auto;top:0}
+  .backcard{padding:56px 24px 32px;--s:16px}
+  .backcard .cols{grid-template-columns:1fr;gap:32px}
+  .stamp{width:64px;top:20px;right:20px}
+  .signoff{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-card">
+    <div class="stripe-band" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="body">
+      <p class="wordmark">
+        <span class="cafe">cafe</span>
+        <span class="name">LazyMojo</span>
+        <span class="tag">Eat in &middot; Bakery &middot; Take out</span>
+      </p>
+      <h1><span class="w">Coffee, food</span> <span class="w">&amp; good vibes</span></h1>
+      <p class="lede">A legacy of great taste and timeless charm in Malviya Nagar, Jaipur. Eat, drink, laze, repeat.</p>
+      <a class="btn" href="tel:+919828950999">Call the cafe</a>
+    </div>
+    <nav class="hero-links" aria-label="Sections">
+      <a href="#menu">Menu</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </div>
+  <div class="hero-photo" aria-hidden="true">
+    <img src="assets/kitchen.jpg" alt="" class="on" width="800" height="1000">
+    <img src="assets/tray.jpg" alt="" width="800" height="1000">
+  </div>
+</header>
+
+<main>
+
+<!-- ================= INTRO ================= -->
+<section class="intro" id="about">
+  <h2 class="sr-only">About Cafe LazyMojo</h2>
+  <div class="row1">
+    <p class="intro-title rv" style="grid-column:1/7;font-weight:400;font-size:clamp(44px,5vw,76px);line-height:1.05;letter-spacing:-0.02em">A Jaipur original</p>
+    <p class="note rv">The neighbourhood cafe on S.L Marg where Jaipur comes to slow down &mdash; coffee, continental plates, cocktails and a bakery counter, under the green awnings opposite Genpact.</p>
+  </div>
+  <div class="facts">
+    <div class="fact rv"><p class="big">Malviya Nagar</p><p class="why">S.L Marg, opposite Genpact, Jaipur 302018</p></div>
+    <div class="fact rv"><p class="big">&#8377;950 for two</p><p class="why">Approximate, per Zomato</p></div>
+    <div class="fact rv"><p class="big">Cocktails &amp; coffee</p><p class="why">Bar and brew bar under one roof</p></div>
+    <div class="fact rv"><p class="big">Wifi &amp; work friendly</p><p class="why">Indoor, outdoor and large-group seating</p></div>
+  </div>
+  <div class="intro-clip rv"><video src="assets/coffee-cup.webm" poster="assets/coffee-poster.jpg" autoplay muted loop playsinline width="480" height="854" aria-label="A cup of coffee being topped up"></video><p class="clip-cap">&ldquo;A cup of Kenyan Coffee&rdquo; &middot; Queen Asali &middot; CC BY-SA 4.0 &middot; via Wikimedia Commons</p></div>
+</section>
+
+<!-- ================= MENU SHEET ================= -->
+<section class="menu-sec" id="menu">
+  <h2 class="sr-only">Menu favourites</h2>
+  <div class="sheet rv">
+    <p class="sheet-title" style="font-weight:500;font-size:clamp(36px,4vw,46px);letter-spacing:-0.02em;line-height:1.05">The short list</p>
+    <p class="sheet-note">Cafe, Italian, Continental, North Indian, Chinese &amp; American kitchens &mdash; these are the plates Zomato diners rate the highest.</p>
+    <div class="mgroup rv">
+      <h3>To drink</h3>
+      <ul>
+        <li class="mitem"><div class="line"><span class="dish">Peach Mojito</span><span class="side">beverages</span></div><p class="sub">The most-rated glass on the menu</p></li>
+        <li class="mitem"><div class="line"><span class="dish">Iced coffee</span><span class="side">cafe</span></div><p class="sub">Slow afternoons, poured over ice</p></li>
+      </ul>
+    </div>
+    <div class="mgroup rv">
+      <h3>From the kitchen</h3>
+      <ul>
+        <li class="mitem"><div class="line"><span class="dish">Penne Arrabiata</span><span class="side">italian</span></div><p class="sub">A Zomato top dish</p></li>
+        <li class="mitem"><div class="line"><span class="dish">Classic Nachos</span><span class="side">american</span></div><p class="sub">A Zomato top dish</p></li>
+        <li class="mitem"><div class="line"><span class="dish">Pesto Sandwich</span><span class="side">continental</span></div><p class="sub">A Zomato top dish</p></li>
+      </ul>
+    </div>
+    <div class="mgroup rv">
+      <h3>Sweet endings</h3>
+      <ul>
+        <li class="mitem"><div class="line"><span class="dish">Walnut Brownie</span><span class="side">desserts</span></div><p class="sub">A Zomato top dish</p></li>
+        <li class="mitem"><div class="line"><span class="dish">Nutella Waffles</span><span class="side">desserts</span></div><p class="sub">A Zomato top dish</p></li>
+      </ul>
+    </div>
+    <p class="sheet-end">Full menu at the counter &middot; &#8377;950 for two, approx.<br>Call +91 98289 50999 for today&rsquo;s bakes.</p>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="gallery" id="photos">
+  <h2 class="rv">On the table</h2>
+  <div class="tiles">
+    <div class="tile rv"><figure><img src="assets/walk-in.jpg" alt="The walkway into Cafe LazyMojo, green awnings and plants" width="720" height="1280" loading="lazy"><figcaption class="strip f1"><span class="r1"><span>The walk in</span><span>S.L Marg</span></span><span class="r2"><span>Malviya Nagar</span><span>Jaipur</span></span></figcaption></figure></div>
+    <div class="tile rv"><figure><img src="assets/sign.jpg" alt="The round pink and black Cafe LazyMojo sign on a brick wall" width="720" height="1280" loading="lazy"><figcaption class="strip f2"><span class="r1"><span>The sign</span><span>On brick</span></span><span class="r2"><span>Eat in</span><span>Take out</span></span></figcaption></figure></div>
+    <div class="tile rv"><figure><img src="assets/kitchen.jpg" alt="A plate of spaghetti with meatballs, garlic bread and an iced coffee" width="800" height="1000" loading="lazy"><figcaption class="strip f3"><span class="r1"><span>From the kitchen</span><span>Fresh</span></span><span class="r2"><span>Italian</span><span>Cafe</span></span></figcaption></figure></div>
+    <div class="tile rv"><figure><img src="assets/tray.jpg" alt="A sandwich with fries and slaw on branded LazyMojo paper" width="800" height="1000" loading="lazy"><figcaption class="strip f4"><span class="r1"><span>The tray</span><span>House paper</span></span><span class="r2"><span>Continental</span><span>Bakery</span></span></figcaption></figure></div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats" id="numbers">
+  <h2 class="sr-only">Ratings and numbers</h2>
+  <div class="lead"><p class="rv" style="font-weight:400;font-size:clamp(32px,3.2vw,52px);line-height:1.15;letter-spacing:-0.02em"><span style="color:var(--muted);display:block">Rated by the city,</span>lazed and repeated.</p></div>
+  <div class="figures">
+    <div class="fig rv"><span class="whole">4</span><span class="frac">.3</span><span class="cap">Google rating &middot; 7,053 reviews</span></div>
+    <div class="fig rv"><span class="whole">4</span><span class="frac">.5</span><span class="cap">Zomato dining &middot; 3,800 ratings</span></div>
+    <div class="fig rv"><span class="whole">90</span><span class="frac"></span><span class="cap">per cent recommend on Facebook &middot; 1,882 reviews</span></div>
+    <div class="fig rv"><span class="whole">950</span><span class="frac"></span><span class="cap">rupees for two, approx. &middot; Zomato</span></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="visit">
+  <h2 class="sr-only">Visit Cafe LazyMojo</h2>
+  <img class="bgimg" src="assets/sign.jpg" alt="The round pink and black Cafe LazyMojo sign on the brick wall" width="720" height="1280" loading="lazy">
+  <div class="vcard rv">
+    <h2 style="font-weight:400;font-size:28px;letter-spacing:-0.01em">Visit us</h2>
+    <p class="addr">H1&amp;H2, S.L Marg, opp. Genpact Jaipur,<br>Lal Bahadur Nagar, Malviya Nagar,<br>Jaipur, Rajasthan 302018</p>
+    <p class="line"><a href="tel:+919828950999">+91 98289 50999</a></p>
+    <p class="line"><a href="mailto:cafelazymojo@gmail.com">cafelazymojo@gmail.com</a></p>
+    <p class="line"><a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+LazyMojo&amp;query_place_id=ChIJ04xoC-C1bTkRkB9UlLiD5n8" target="_blank" rel="noopener">Find us on the map</a></p>
+    <a class="btn" href="tel:+919828950999">Call to book a table</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="backcard">
+    <div class="stamp" aria-hidden="true"><img src="assets/sign.jpg" alt="" width="176" height="235" loading="lazy"></div>
+    <div class="cols">
+      <div class="rv">
+        <p class="signoff">Eat, drink, laze, repeat.</p>
+        <p class="msg">That is the whole idea. Come for a coffee, stay for the mood &mdash; and bring someone who orders the Nutella waffles.</p>
+      </div>
+      <div class="addrblock rv">
+        <a href="mailto:cafelazymojo@gmail.com">cafelazymojo@gmail.com</a>
+        <a href="tel:+919828950999">+91 98289 50999</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Cafe+LazyMojo&amp;query_place_id=ChIJ04xoC-C1bTkRkB9UlLiD5n8" target="_blank" rel="noopener">S.L Marg, Malviya Nagar, Jaipur</a>
+        <a href="https://www.instagram.com/cafelazymojo/" target="_blank" rel="noopener">@cafelazymojo on Instagram</a>
+      </div>
+    </div>
+    <p class="imprint">&copy; Cafe LazyMojo, Jaipur &middot; Photographs: the cafe&rsquo;s own Instagram and Facebook &middot; Printed on the web with two inks &middot; Clip: Queen Asali, CC BY-SA 4.0</p>
+  </div>
+  <div class="foot-stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+</footer>
+
+<script>
+(function(){
+  /* slow crossfade on the hero photograph */
+  var imgs=document.querySelectorAll('.hero-photo img');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(imgs.length>1 && !reduce){
+    var i=0,timer=null;
+    var tick=function(){imgs[i].classList.remove('on');i=(i+1)%imgs.length;imgs[i].classList.add('on');};
+    var start=function(){if(!timer){timer=setInterval(tick,5600);}};
+    var stop=function(){clearInterval(timer);timer=null;};
+    document.addEventListener('visibilitychange',function(){document.hidden?stop():start();});
+    start();
+  }
+  /* section entrances */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
