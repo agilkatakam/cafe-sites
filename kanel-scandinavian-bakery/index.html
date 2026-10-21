@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanel Scandinavian Bakery · Sector 7, Chandigarh</title>
+<meta name="description" content="Kanel Scandinavian Bakery, SCO 193, Sector 7, Chandigarh. Desserts, specialty coffee and sourdough, open daily 10 AM to 11 PM. Call +91 88473 26238.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700&family=Public+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#edccbe;
+  --surface:#e8c2b2;
+  --surface-2:#f2d8cc;
+  --ink:#351a2b;
+  --muted:#6c4857;
+  --margin:clamp(20px,5vw,72px);
+  --font-d:'Big Shoulders Display',sans-serif;
+  --font-t:'Public Sans',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-t);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-d);font-weight:500;line-height:1.02}
+
+/* ---------- entrance ---------- */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .rise-1{animation-delay:.06s}.rise-2{animation-delay:.14s}.rise-3{animation-delay:.22s}
+  .rise-4{animation-delay:.3s}.rise-5{animation-delay:.38s}.rise-6{animation-delay:.46s}
+}
+
+/* ---------- hero: card over a dim room ---------- */
+.hero{height:180svh;position:relative}
+.hero__stage{position:sticky;top:0;height:100svh;overflow:clip;background:var(--ink)}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;filter:brightness(.72);transform-origin:center}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:herozoom 22s ease-in-out infinite alternate}
+  @keyframes herozoom{from{transform:scale(1)}to{transform:scale(1.07)}}
+}
+.hero__pass{position:absolute;opacity:0;pointer-events:none}
+.hero__pass--cake{right:4vw;top:14svh;height:58svh;width:auto}
+.hero__pass--berries{left:8vw;top:6svh;height:28svh;width:auto}
+.hero__card{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:55%;height:62%;background:var(--surface);color:var(--ink);
+  padding:32px;display:flex;flex-direction:column;justify-content:space-between;
+  will-change:transform;
+}
+.hero__title{display:flex;justify-content:space-between;gap:12px;font-weight:700;text-transform:uppercase;font-size:clamp(28px,2.6vw,40px);line-height:1}
+.hero__facts{font-family:var(--font-d);font-weight:500;font-size:clamp(22px,1.9vw,30px);line-height:1.08;text-transform:uppercase}
+.hero__facts span{display:block}
+.hero__note{font-family:var(--font-d);font-weight:500;font-size:clamp(20px,1.7vw,27px);line-height:1.12;max-width:30ch;text-transform:uppercase;color:var(--muted)}
+.hero__foot{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.hero__credit{font-size:13px;color:var(--muted)}
+.btn{
+  display:inline-block;white-space:nowrap;background:var(--ink);color:var(--bg);font-family:var(--font-t);font-weight:700;font-size:16px;
+  padding:15px 34px;text-decoration:none;text-align:center;transition:transform .18s ease,background .18s ease,color .18s ease;
+}
+.btn:hover{background:var(--muted);transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero__link{white-space:nowrap;font-size:16px;font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.hero__link:hover{color:var(--muted)}
+
+/* ---------- intro ---------- */
+.intro{padding:140px var(--margin) 120px;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.intro__head{grid-column:1/7;font-weight:500;font-size:clamp(44px,5vw,76px)}
+.intro__note{grid-column:10/13;width:260px;max-width:100%;font-size:16px;align-self:end;padding-bottom:6px}
+.intro__facts{grid-column:1/13;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:120px}
+.fact__v{font-family:var(--font-d);font-weight:500;font-size:clamp(28px,3vw,44px);line-height:1.05;white-space:nowrap}
+.fact__k{font-size:13px;color:var(--muted);margin-top:6px}
+.intro__photo{grid-column:8/13;margin-top:64px;aspect-ratio:4/3;object-fit:cover;width:100%}
+
+/* ---------- list: cards that fold into spines ---------- */
+.deck{background:var(--ink);color:var(--bg)}
+.deck__wrap{height:280svh;position:relative}
+.deck__stage{position:sticky;top:0;height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:clip}
+.deck__head{position:absolute;left:var(--margin);top:11svh;font-size:clamp(48px,4.2vw,64px);font-weight:500}
+.deck__band{position:relative;height:360px;margin:0 var(--margin);overflow:visible}
+.deck__track{position:relative;height:100%;will-change:transform}
+.deck__card{
+  position:absolute;top:0;width:min(620px,calc(100% - 380px));height:360px;padding:32px;
+  display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;
+  will-change:transform;
+}
+.deck__card h3{font-size:30px;font-weight:500;line-height:1.1}
+.deck__card p{font-size:16px;line-height:1.5;max-width:44ch;margin-top:12px}
+.deck__foot{display:flex;justify-content:space-between;align-items:baseline;font-size:16px}
+.deck__tag{color:inherit;opacity:.72}
+.deck__go{font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.deck__card:hover .deck__go{text-decoration-thickness:3px}
+.tone-1{background:var(--bg);color:var(--ink)}
+.tone-2{background:var(--surface);color:var(--ink)}
+.tone-3{background:var(--surface-2);color:var(--ink)}
+.deck__tail{margin:48px var(--margin) 0;font-size:17px}
+.deck__tail a{font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}
+.deck__tail a:hover{color:var(--surface)}
+/* flat fallback (small screens / reduced motion): stacked or drag row */
+.deck--flat .deck__wrap{height:auto}
+.deck--flat .deck__stage{position:static;height:auto;display:block;padding:96px var(--margin) 80px;overflow:visible}
+.deck--flat .deck__head{position:static;margin-bottom:48px}
+.deck--flat .deck__band{height:auto;margin:0}
+.deck--flat .deck__track{display:grid;gap:12px;transform:none !important}
+.deck--flat .deck__card{position:static;width:100%;height:auto;min-height:240px}
+.deck--flat .deck__tail{margin:48px 0 0}
+
+/* ---------- gallery: photo tiles with label strips ---------- */
+.case{padding:120px var(--margin) 96px}
+.case__head{font-size:32px;font-weight:500;margin-bottom:40px}
+.case__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 12px;list-style:none}
+.tile__img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.tile__strip{height:92px;padding:12px;font-size:13px;line-height:1.45;display:flex;flex-direction:column;justify-content:space-between;font-variant-numeric:tabular-nums}
+.tile__row{display:flex;justify-content:space-between;gap:8px}
+.tile__row--name{font-weight:700}
+.pair-1{background:var(--bg);color:var(--ink)}
+.pair-2{background:var(--ink);color:var(--bg)}
+.pair-3{background:var(--surface);color:var(--ink)}
+.pair-4{background:var(--ink);color:var(--surface)}
+.case__credit{margin-top:28px;font-size:13px;color:var(--muted)}
+
+/* ---------- contact: visit card on a photograph ---------- */
+.visit{position:relative;height:100svh;min-height:640px}
+.visit__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.visit__card{
+  position:absolute;top:60px;right:60px;width:380px;background:var(--bg);color:var(--ink);
+  border-radius:8px;padding:32px;
+}
+.visit__card h2{font-size:28px;font-weight:500;margin-bottom:16px}
+.visit__addr{font-size:16px;line-height:1.5;margin-bottom:16px}
+.visit__hours{list-style:none;font-size:16px;margin-bottom:16px;font-variant-numeric:tabular-nums}
+.visit__hours li{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.visit__phone{display:block;font-size:18px;font-weight:700;text-decoration:none;margin-bottom:20px}
+.visit__phone:hover{text-decoration:underline;text-underline-offset:4px}
+.visit__btn{display:block;width:100%;height:52px;line-height:52px;padding:0;text-align:center}
+
+/* ---------- footer: the back of the card ---------- */
+.foot{background:var(--ink);padding:96px 0 64px}
+.foot__panel{position:relative;margin:0 var(--margin);background:var(--bg);color:var(--ink);min-height:420px;padding:56px 48px 64px;display:flex;gap:48px}
+.foot__scallops{display:block;width:100%;height:26px;fill:var(--bg);position:absolute;left:0;top:-25px}
+.foot__left{flex:1;display:flex;flex-direction:column;justify-content:flex-end}
+.foot__sign{font-size:32px;font-weight:500;margin-bottom:12px}
+.foot__msg{font-size:16px;max-width:34ch}
+.foot__right{flex:1;position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:12px}
+.foot__stamp{position:absolute;top:0;right:0;width:88px;padding:6px;background:var(--bg)}
+.foot__stamp img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.foot__link{font-size:18px;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px;width:max-content}
+.foot__link:hover{color:var(--muted)}
+.foot__imprint{position:absolute;left:0;right:0;bottom:20px;text-align:center;font-size:13px;color:var(--muted)}
+
+/* ---------- phone ---------- */
+@media (max-width:820px){
+  body{font-size:16px}
+  .hero__card{width:calc(100% - 32px);height:70svh;padding:24px}
+  .hero__title{display:block;font-size:38px}
+  .hero__title span{display:inline}
+  .hero__title span:first-child{display:block}
+  .hero__title span+span::before{content:' '}
+  .hero__facts{font-size:21px}
+  .hero__note{font-size:19px}
+  .hero__pass--cake{right:4vw;top:8svh;height:52svh}
+  .hero__credit{display:none}
+  .hero__foot .btn{flex:1}
+  .hero__pass--berries{left:4vw;top:4svh;height:24svh}
+  .intro{padding:96px var(--margin) 80px;display:block}
+  .intro__head{font-size:11vw}
+  .intro__note{width:100%;margin-top:24px}
+  .intro__facts{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;row-gap:32px;column-gap:16px}
+  .fact__v{font-size:26px;white-space:normal}
+  .intro__photo{margin-top:48px;width:100%}
+  .deck__head{font-size:10vw;top:8svh}
+  .case{padding:80px var(--margin) 64px}
+  .case__head{font-size:24px;margin-bottom:32px}
+  .case__grid{grid-template-columns:1fr 1fr;gap:20px 8px}
+  .tile__strip{height:72px}
+  .tile__row--note{display:none}
+  .visit{height:auto;min-height:0}
+  .visit__img{position:relative;height:70svh;min-height:420px}
+  .visit__card{position:relative;top:auto;right:auto;width:auto;margin:-80px 16px 0;border-radius:8px}
+  .visit__btn{height:56px;line-height:56px}
+  .foot{padding:72px 0 56px}
+  .foot__panel{flex-direction:column;gap:32px;padding:48px 24px 72px;min-height:0}
+  .foot__stamp{width:64px;top:0;right:0}
+  .foot__right{padding-top:88px}
+  .foot__link{font-size:17px}
+  .foot__imprint{position:static;margin-top:40px}
+}
+</style>
+</head>
+<body>
+
+<!-- hero: card over a dim room -->
+<header class="hero" id="top">
+  <div class="hero__stage" id="heroStage">
+    <img class="hero__img" id="heroImg" src="assets/hero-room.jpg" alt="The KANEL sign on the wall above the coffee bar at Kanel Scandinavian Bakery" fetchpriority="high">
+    <img class="hero__pass hero__pass--cake" id="passCake" src="assets/pass-cake.jpg" alt="" aria-hidden="true">
+    <img class="hero__pass hero__pass--berries" id="passBerries" src="assets/pass-berries.jpg" alt="" aria-hidden="true">
+    <div class="hero__card" id="heroCard">
+      <h1 class="hero__title"><span>Kanel</span><span>Scandinavian</span><span>Bakery</span></h1>
+      <div>
+        <p class="hero__facts">
+          <span>SCO 193, Sector 7</span>
+          <span>Chandigarh</span>
+          <span>Open daily 10 AM - 11 PM</span>
+        </p>
+        <p class="hero__note" style="margin-top:18px">Desserts, specialty coffee and sourdough, baked in one small room.</p>
+      </div>
+      <div class="hero__foot">
+        <span class="hero__credit">Photographs by the bakery</span>
+        <a class="btn" href="tel:+918847326238">Call the counter</a>
+        <a class="hero__link" href="#case">The bakes</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- intro -->
+<section class="intro" aria-label="About Kanel">
+  <h2 class="intro__head rise">Named for cinnamon</h2>
+  <p class="intro__note rise rise-2">Kanel means cinnamon in Swedish. Aprajita Singh's small Sector 7 bakery pairs Scandinavian-style cakes and sourdough with a serious coffee programme.</p>
+  <div class="intro__facts">
+    <div class="fact rise rise-1"><div class="fact__v">SCO 193</div><div class="fact__k">Sector 7-C, Chandigarh 160019</div></div>
+    <div class="fact rise rise-2"><div class="fact__v">10 AM - 11 PM</div><div class="fact__k">open every day of the week</div></div>
+    <div class="fact rise rise-3"><div class="fact__v">4.1 of 5</div><div class="fact__k">from 281 Google reviews</div></div>
+    <div class="fact rise rise-4"><div class="fact__v">House blend</div><div class="fact__k">cherry, apricots, milk chocolate</div></div>
+  </div>
+  <img class="intro__photo rise rise-3" src="assets/intro-photo.jpg" alt="A meringue and berry cake on the counter, the cafe room behind it" loading="lazy">
+</section>
+
+<!-- list: cards that fold into spines -->
+<section class="deck" id="deck" aria-label="House favourites">
+  <div class="deck__wrap" id="deckWrap">
+    <div class="deck__stage">
+      <h2 class="deck__head">Known for these</h2>
+      <div class="deck__band" id="deckBand"><div class="deck__track" id="deckTrack">
+        <article class="deck__card tone-1" data-i="0">
+          <div><h3>Tiramisu</h3><p>The slice reviewers name most often: espresso-soaked, cocoa-dusted, cleanly cut.</p></div>
+          <div class="deck__foot"><span class="deck__tag">Most mentioned</span><a class="deck__go" href="tel:+918847326238">Call ahead</a></div>
+        </article>
+        <article class="deck__card tone-2" data-i="1">
+          <div><h3>Carrot cake</h3><p>A thick cap of frosting over a spiced crumb; the second name in every review.</p></div>
+          <div class="deck__foot"><span class="deck__tag">Thick frosting</span><a class="deck__go" href="tel:+918847326238">Call ahead</a></div>
+        </article>
+        <article class="deck__card tone-3" data-i="2">
+          <div><h3>Budapest cake</h3><p>Crisp meringue layers with cream and berries, soft in the middle.</p></div>
+          <div class="deck__foot"><span class="deck__tag">Meringue and berries</span><a class="deck__go" href="tel:+918847326238">Call ahead</a></div>
+        </article>
+        <article class="deck__card tone-1" data-i="3">
+          <div><h3>Kanel House Blend</h3><p>A medium-light roast from two Indian estates: cherry, apricots and milk chocolate in the cup.</p></div>
+          <div class="deck__foot"><span class="deck__tag">Specialty coffee</span><a class="deck__go" href="tel:+918847326238">Call ahead</a></div>
+        </article>
+      </div></div>
+      <p class="deck__tail">Four house favourites, plus cookies, ganache, sourdough and pizza on the day. <a href="tel:+918847326238">Call the counter</a> to set a box aside.</p>
+    </div>
+  </div>
+</section>
+
+<!-- gallery: photo tiles with label strips -->
+<section class="case" id="case" aria-label="From the case">
+  <h2 class="case__head rise">From the case</h2>
+  <ul class="case__grid">
+    <li class="tile rise rise-1"><img class="tile__img" src="assets/t-counter.jpg" alt="The espresso machine and grinder on the Kanel counter" loading="lazy"><div class="tile__strip pair-2"><div class="tile__row tile__row--name"><span>The coffee bar</span><span>espresso</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>ground to order</span></div></div></li>
+    <li class="tile rise rise-2"><img class="tile__img" src="assets/t-tart.jpg" alt="A chocolate tart in a Kanel box with a Kanel label" loading="lazy"><div class="tile__strip pair-1"><div class="tile__row tile__row--name"><span>Chocolate tart</span><span>boxed</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>from the case</span></div></div></li>
+    <li class="tile rise rise-3"><img class="tile__img" src="assets/t-fruitcake.jpg" alt="A whole cream cake topped with fresh fruit on a gold stand" loading="lazy"><div class="tile__strip pair-4"><div class="tile__row tile__row--name"><span>Celebration cake</span><span>fresh fruit</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>whole cakes</span></div></div></li>
+    <li class="tile rise rise-4"><img class="tile__img" src="assets/t-sponge.jpg" alt="A frosted sponge cake in a Kanel box" loading="lazy"><div class="tile__strip pair-3"><div class="tile__row tile__row--name"><span>Frosted sponge</span><span>boxed</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>from the case</span></div></div></li>
+    <li class="tile rise rise-1"><img class="tile__img" src="assets/t-berries.jpg" alt="Fresh blueberries in punnets on the marble table by the window" loading="lazy"><div class="tile__strip pair-3"><div class="tile__row tile__row--name"><span>Fresh berries</span><span>by the window</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>on the marble table</span></div></div></li>
+    <li class="tile rise rise-2"><img class="tile__img" src="assets/t-meringue.jpg" alt="A meringue cake with cream and berry filling and a chocolate drizzle" loading="lazy"><div class="tile__strip pair-2"><div class="tile__row tile__row--name"><span>Meringue and berries</span><span>cream layers</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>crisp outside</span></div></div></li>
+    <li class="tile rise rise-3"><img class="tile__img" src="assets/t-slices.jpg" alt="A tasting plate with four cake slices on a black plate with a Kanel sticker" loading="lazy"><div class="tile__strip pair-1"><div class="tile__row tile__row--name"><span>Cake slices</span><span>tasting plate</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>four at a time</span></div></div></li>
+    <li class="tile rise rise-4"><img class="tile__img" src="assets/t-sheet.jpg" alt="The printed Kanel house blend coffee info sheet by the grinder" loading="lazy"><div class="tile__strip pair-4"><div class="tile__row tile__row--name"><span>House blend</span><span>info sheet</span></div><div class="tile__row"><span>Kanel</span><span>Sector 7</span></div><div class="tile__row tile__row--note"><span>two Indian estates</span></div></div></li>
+  </ul>
+  <p class="case__credit">All photographs by Kanel Scandinavian Bakery.</p>
+</section>
+
+<!-- contact: visit card on a photograph -->
+<section class="visit" id="visit" aria-label="Visit Kanel">
+  <img class="visit__img" src="assets/visit-room.jpg" alt="The coffee bar and espresso machine at Kanel, Sector 7" loading="lazy">
+  <div class="visit__card rise rise-2">
+    <h2>Visit Kanel</h2>
+    <p class="visit__addr">SCO 193, Sector 7-C<br>Sector 7, Chandigarh 160019</p>
+    <ul class="visit__hours">
+      <li><span>Monday - Friday</span><span>10 AM - 11 PM</span></li>
+      <li><span>Saturday</span><span>10 AM - 11 PM</span></li>
+      <li><span>Sunday</span><span>10 AM - 11 PM</span></li>
+    </ul>
+    <a class="visit__phone" href="tel:+918847326238">+91 88473 26238</a>
+    <a class="btn visit__btn" href="tel:+918847326238">Call the bakery</a>
+  </div>
+</section>
+
+</main>
+
+<!-- footer: the back of the card -->
+<footer class="foot">
+  <div class="foot__panel">
+    <svg class="foot__scallops" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,26 L0,13 A50,13 0 0 1 100,13 A50,13 0 0 1 200,13 A50,13 0 0 1 300,13 A50,13 0 0 1 400,13 A50,13 0 0 1 500,13 A50,13 0 0 1 600,13 A50,13 0 0 1 700,13 A50,13 0 0 1 800,13 A50,13 0 0 1 900,13 A50,13 0 0 1 1000,13 A50,13 0 0 1 1100,13 A50,13 0 0 1 1200,13 L1200,26 Z"/>
+    </svg>
+    <div class="foot__left">
+      <h2 class="foot__sign">See you at the counter</h2>
+      <p class="foot__msg">Slices, whole cakes and bread travel well. Call ahead, or write to us about a celebration.</p>
+    </div>
+    <div class="foot__right">
+      <div class="foot__stamp"><img src="assets/stamp.jpg" alt="A close crop of the fresh fruit celebration cake"></div>
+      <a class="foot__link" href="mailto:kanelscandibakery@gmail.com">kanelscandibakery@gmail.com</a>
+      <a class="foot__link" href="tel:+918847326238">+91 88473 26238</a>
+      <a class="foot__link" href="https://www.google.com/maps/search/?api=1&amp;query=Kanel+Scandinavian+Bakery+Sector+7+Chandigarh" target="_blank" rel="noopener">SCO 193, Sector 7-C, Chandigarh</a>
+      <a class="foot__link" href="#visit">Open daily, 10 AM - 11 PM</a>
+    </div>
+    <p class="foot__imprint">© 2026 Kanel Scandinavian Bakery · SCO 193, Sector 7, Chandigarh · All photographs by the bakery</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var narrow = window.matchMedia('(max-width: 820px)').matches;
+
+  /* hero: shrink the card to a corner stub while photos pass on flat ground */
+  var hero = document.querySelector('.hero');
+  var card = document.getElementById('heroCard');
+  var heroImg = document.getElementById('heroImg');
+  var passA = document.getElementById('passCake');
+  var passB = document.getElementById('passBerries');
+
+  /* deck: fold cards into spines while the stage is pinned */
+  var deck = document.getElementById('deck');
+  var wrap = document.getElementById('deckWrap');
+  var band = document.getElementById('deckBand');
+  var cards = Array.prototype.slice.call(band.querySelectorAll('.deck__card'));
+  var N = cards.length;
+
+  if (reduced) {
+    deck.classList.add('deck--flat');
+    return;
+  }
+
+  var track = document.getElementById('deckTrack');
+  var gap = 32, maxX = 0;
+
+  function layoutDeck(){
+    if (window.innerWidth <= 820){
+      deck.classList.add('deck--flat');
+      return;
+    }
+    deck.classList.remove('deck--flat');
+    var bandW = band.clientWidth;
+    var cardW = Math.min(620, bandW - 380);
+    cards.forEach(function(c, i){
+      c.style.width = cardW + 'px';
+      c.style.left = (i * (cardW + gap)) + 'px';
+    });
+    maxX = Math.max(0, N * cardW + (N - 1) * gap - bandW);
+  }
+
+  function clamp(v,a,b){ return Math.min(b, Math.max(a, v)); }
+
+  var queued = false;
+  function onScroll(){
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function(){
+      queued = false;
+
+      /* hero */
+      var hr = hero.getBoundingClientRect();
+      var hp = clamp(-hr.top / (hr.height - window.innerHeight), 0, 1);
+      var stageW = window.innerWidth, stageH = window.innerHeight;
+      var s = 1 - 0.72 * hp;
+      var cardW = card.offsetWidth, cardH = card.offsetHeight;
+      var cx = stageW / 2, cy = stageH / 2;
+      var targetX = 32 + (cardW * s) / 2;
+      var targetY = stageH - 24 - (cardH * s) / 2;
+      var tx = (targetX - cx) * hp;
+      var ty = (targetY - cy) * hp;
+      card.style.transform = 'translate(calc(-50% + ' + tx.toFixed(1) + 'px), calc(-50% + ' + ty.toFixed(1) + 'px)) scale(' + s.toFixed(3) + ')';
+      heroImg.style.opacity = String(clamp(1 - hp * 1.5, 0, 1));
+      var pp = clamp((hp - 0.35) / 0.65, 0, 1);
+      passA.style.opacity = String(pp);
+      passB.style.opacity = String(pp);
+      passA.style.transform = 'translateY(' + ((1 - pp) * 60).toFixed(1) + 'px)';
+      passB.style.transform = 'translateY(' + ((1 - pp) * 90).toFixed(1) + 'px)';
+
+      /* deck: pinned sideways travel, no overlap */
+      if (!deck.classList.contains('deck--flat')){
+        var dr = wrap.getBoundingClientRect();
+        var range = dr.height - window.innerHeight;
+        var p = clamp(-dr.top / range, 0, 1);
+        track.style.transform = 'translate3d(' + (-p * maxX).toFixed(1) + 'px,0,0)';
+      }
+    });
+  }
+
+  layoutDeck();
+  window.addEventListener('resize', function(){ layoutDeck(); onScroll(); });
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* clicking a card scrolls the pinned run until it is fully in view */
+  cards.forEach(function(c, i){
+    c.addEventListener('click', function(ev){
+      if (ev.target.closest('a')) return;
+      if (deck.classList.contains('deck--flat')) return;
+      var dr = wrap.getBoundingClientRect();
+      var range = dr.height - window.innerHeight;
+      var target = Math.min(1, (i * (parseFloat(c.style.left) && (parseFloat(c.style.left) / (maxX || 1)))));
+      var y = window.scrollY + dr.top + range * target;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    });
+  });
+})();
+</script>
+</body>
+</html>
