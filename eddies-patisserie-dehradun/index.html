@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eddie's Patisserie &amp; Cafe, Dehradun</title>
+<meta name="description" content="Eddie's Patisserie & Coffee Shop — cakes, pastries and coffee on Chakrata Road, Dehradun. Above Punjab National Bank, Yamuna Colony.">
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#241610;
+  --paper:#f6f6f4;
+  --red:#c62f24;
+  --muted:#6b5a4e;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Epilogue',system-ui,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin-left:auto;margin-right:auto;padding-left:24px;padding-right:24px}
+
+/* entrance motion */
+.rise{opacity:0;transform:translateY(16px);transition:opacity .45s ease,transform .45s ease}
+.rise.in{opacity:1;transform:none}
+
+/* ---------- top bar ---------- */
+.topbar{
+  display:flex;justify-content:space-between;align-items:center;
+  padding-top:18px;padding-bottom:18px;
+}
+.brandmark{
+  font-weight:800;
+  font-size:20px;letter-spacing:.01em;text-decoration:none;
+}
+.topbar a.phone{
+  font-size:15px;font-weight:500;text-decoration:none;
+  border:2px solid var(--ink);border-radius:999px;
+  padding-top:8px;padding-bottom:8px;padding-left:18px;padding-right:18px;
+  transition:transform .25s ease,background .25s ease,color .25s ease;
+}
+.topbar a.phone:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+
+/* ---------- hero ---------- */
+.hero{padding-top:2vh;text-align:center;overflow:hidden}
+.wordmark{
+  font-weight:800;
+  font-size:clamp(64px,17.5vw,248px);
+  line-height:.92;letter-spacing:-.02em;
+  white-space:nowrap;display:block;
+  will-change:transform;transform-origin:50% 100%;
+}
+h1 .what{
+  display:block;
+  font-size:20px;font-weight:500;line-height:1.4;letter-spacing:0;
+  margin-top:18px;white-space:normal;
+}
+h1 .what span{color:var(--red)}
+.hero-strip{
+  margin-top:24px;
+  margin-left:auto;margin-right:auto;
+  max-width:1056px;
+  padding-left:24px;padding-right:24px;
+}
+.hero-strip img{
+  width:100%;border-radius:14px;
+  animation:slowzoom 26s ease-in-out infinite alternate;
+}
+@keyframes slowzoom{from{transform:scale(1)}to{transform:scale(1.05)}}
+.hero-strip figcaption{
+  text-align:left;font-size:14px;color:var(--muted);
+  margin-top:10px;
+}
+
+/* ---------- sections ---------- */
+section{padding-top:64px;padding-bottom:24px}
+h2{
+  font-weight:800;
+  font-size:clamp(30px,4.4vw,52px);line-height:1.06;letter-spacing:-.01em;
+  max-width:26ch;
+}
+.lede{font-size:17px;color:var(--muted);margin-top:14px;max-width:60ch}
+
+.intro-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start;
+  margin-top:32px;
+}
+.intro-grid p{margin-bottom:18px}
+.fact-chips{list-style:none;margin-top:8px}
+.fact-chips li{
+  display:flex;gap:12px;align-items:baseline;
+  padding-top:14px;padding-bottom:14px;
+  border-top:2px solid var(--ink);
+}
+.fact-chips li:last-child{border-bottom:2px solid var(--ink)}
+.fact-chips b{
+  font-weight:800;
+  font-size:20px;min-width:88px;
+}
+.fact-chips span{font-size:15px;color:var(--muted)}
+
+/* ---------- favourites ---------- */
+.menu-list{list-style:none;margin-top:44px}
+.menu-list li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:24px;
+  padding-top:16px;padding-bottom:16px;
+  border-top:2px solid var(--ink);
+}
+.menu-list li:last-child{border-bottom:2px solid var(--ink)}
+.menu-list .dish{
+  font-weight:800;
+  font-size:clamp(20px,2.4vw,26px);line-height:1.15;
+}
+.menu-list .note{font-size:15px;color:var(--muted);text-align:right;max-width:34ch}
+
+/* ---------- gallery ---------- */
+.gallery{margin-top:44px}
+.g-row{display:flex;gap:24px;align-items:flex-end;flex-wrap:wrap}
+.g-row + .g-row{margin-top:20px}
+figure.tile{position:relative}
+figure.tile img{border-radius:12px;width:100%;transition:transform .5s ease}
+figure.tile:hover img{transform:scale(1.02)}
+figure.tile figcaption{
+  font-size:14px;font-weight:500;color:var(--ink);
+  background:var(--paper);
+  display:inline-block;
+  padding-top:6px;padding-bottom:6px;padding-left:12px;padding-right:12px;
+  border:2px solid var(--ink);border-radius:999px;
+  margin-top:-18px;margin-left:14px;position:relative;
+}
+.w-outside{flex:0 1 832px}
+.w-croissants{flex:0 1 720px}
+.w-pastas,.w-ambience{flex:0 1 400px}
+.w-goodies,.w-decor{flex:0 1 200px}
+
+/* ---------- visit ---------- */
+.visit-grid{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:36px;margin-top:32px;
+}
+.visit-card{border:2px solid var(--ink);border-radius:16px;padding:28px}
+.visit-card h3{
+  font-weight:800;font-size:26px;
+  margin-bottom:14px;
+}
+.visit-card p{margin-bottom:12px}
+.visit-card .small{font-size:14px;color:var(--muted)}
+.visit-actions{margin-top:20px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:500;font-size:15px;
+  border:2px solid var(--ink);border-radius:999px;
+  padding-top:10px;padding-bottom:10px;padding-left:20px;padding-right:20px;
+  transition:transform .25s ease,background .25s ease,color .25s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn.solid{background:var(--ink);color:var(--paper)}
+.btn:not(.solid):hover{background:var(--ink);color:var(--paper)}
+blockquote p{
+  font-weight:800;
+  font-size:clamp(20px,5.5vw,26px);line-height:1.25;
+}
+blockquote cite{
+  display:block;font-style:normal;
+  font-weight:500;font-size:14px;color:var(--muted);margin-top:16px;
+}
+
+/* ---------- footer ---------- */
+footer{
+  margin-top:80px;background:var(--ink);color:var(--paper);
+  padding-top:64px;padding-bottom:40px;
+  overflow:hidden;
+}
+.foot-mark{
+  font-weight:800;
+  font-size:clamp(56px,13vw,190px);line-height:.95;letter-spacing:-.02em;
+  white-space:nowrap;text-align:center;color:var(--paper);
+}
+.foot-row{
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  margin-top:40px;font-size:14px;color:#d4d4d0;
+}
+.foot-row a{color:#f0f0ec;text-decoration:none;border-bottom:2px solid #f0f0ec}
+
+@media (max-width:860px){
+  .intro-grid,.visit-grid{grid-template-columns:1fr;gap:32px}
+  section{padding-top:72px}
+  .menu-list li{flex-direction:column;gap:6px}
+  .menu-list .note{text-align:left;max-width:none}
+}
+@media (max-width:480px){
+  body{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rise{opacity:1;transform:none;transition:none}
+  .hero-strip img{animation:none}
+  *{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap topbar">
+    <a class="brandmark" href="#top">Eddie&rsquo;s</a>
+    <a class="phone" href="tel:+917895202808">+91 78952 02808</a>
+  </div>
+  <div class="wrap" id="top">
+    <h1><span class="wordmark" id="wordmark">EDDIE&rsquo;S</span><span class="what">Patisserie &amp; coffee shop <span>&middot;</span> Chakrata Road, Dehradun</span></h1>
+  </div>
+  <figure class="hero-strip">
+    <img src="./assets/cake.webp" alt="Fresh strawberry cake at Eddie's Patisserie" width="1056" height="592" fetchpriority="high">
+    <figcaption>Fresh strawberry cake, behind the counter glass.</figcaption>
+  </figure>
+</header>
+
+<main>
+
+<section class="wrap" aria-labelledby="story-h">
+  <h2 id="story-h">Above the bank, a Dehradun fixture</h2>
+  <div class="intro-grid">
+    <div>
+      <p>Eddie&rsquo;s Patisserie &amp; Coffee Shop sits on the first floor above the Punjab National Bank branch on Chakrata Road, in Yamuna Colony. The counter is self-service: cakes, pastries and cup-cakes lined up behind the glass, coffee brewed hot and cold at the other end.</p>
+      <p>Inside it is tiled wood and glass tables; outside, a row of tables in the sun among pots of seasonal flowers. There is a take-out menu, a shelf of board games for anyone staying a while, and a TripAdvisor Travelers&rsquo; Choice award on the window.</p>
+    </div>
+    <ul class="fact-chips">
+      <li class="rise"><b>4.4</b><span>on Google, from 2,300+ reviews</span></li>
+      <li class="rise"><b>Top 10%</b><span>TripAdvisor Travelers&rsquo; Choice</span></li>
+      <li class="rise"><b>1st floor</b><span>above Punjab National Bank, Chakrata Road</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="counter-h">
+  <h2 id="counter-h">From the counter</h2>
+  <p class="lede">The menu runs long. These are the things Dehradun keeps coming back for.</p>
+  <ul class="menu-list">
+    <li class="rise"><span class="dish">Cakes &amp; pastries</span><span class="note">the glass counter full of the day&rsquo;s baking</span></li>
+    <li class="rise"><span class="dish">Cup-cakes</span><span class="note">the sinful end of the display</span></li>
+    <li class="rise"><span class="dish">Port cheese sandwich</span><span class="note">toasted, with its famous textured crust</span></li>
+    <li class="rise"><span class="dish">Chicken burger</span><span class="note">loaded with ham, cheese and egg &mdash; a house signature</span></li>
+    <li class="rise"><span class="dish">Coffee, hot &amp; cold</span><span class="note">the other half of the name</span></li>
+    <li class="rise"><span class="dish">Pasta</span><span class="note">from the take-out menu</span></li>
+  </ul>
+</section>
+
+<section class="wrap gallery" aria-labelledby="gallery-h">
+  <h2 id="gallery-h">The place itself</h2>
+  <div class="g-row rise" style="margin-top:44px">
+    <figure class="tile w-outside">
+      <img src="./assets/outside.webp" alt="Outdoor tables at Eddie's" width="832" height="468" loading="lazy">
+      <figcaption>Sunny tables out front</figcaption>
+    </figure>
+    <figure class="tile w-goodies">
+      <img src="./assets/goodies.webp" alt="Pastries behind the glass" width="200" height="200" loading="lazy">
+      <figcaption>Behind the glass</figcaption>
+    </figure>
+  </div>
+  <div class="g-row rise">
+    <figure class="tile w-croissants">
+      <img src="./assets/croissants.webp" alt="Artisan butter croissants" width="720" height="400" loading="lazy">
+      <figcaption>Artisan butter croissants</figcaption>
+    </figure>
+    <figure class="tile w-decor">
+      <img src="./assets/decor.webp" alt="Tiled wood decor inside Eddie's" width="200" height="200" loading="lazy">
+      <figcaption>Tiled wood walls</figcaption>
+    </figure>
+  </div>
+  <div class="g-row rise">
+    <figure class="tile w-pastas">
+      <img src="./assets/pastas.webp" alt="Pasta at Eddie's" width="400" height="300" loading="lazy">
+      <figcaption>Pasta at the counter</figcaption>
+    </figure>
+    <figure class="tile w-ambience">
+      <img src="./assets/ambience.webp" alt="Inside Eddie's, glass tables and chairs" width="400" height="300" loading="lazy">
+      <figcaption>Inside, glass and wood</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="wrap" aria-labelledby="visit-h">
+  <h2 id="visit-h">Come by</h2>
+  <div class="visit-grid">
+    <div class="visit-card">
+      <h3>Find us</h3>
+      <p>102, Chakrata Road, above Punjab National Bank,<br>Yamuna Colony, Khurbura Mohalla,<br>Dehradun, Uttarakhand 248001</p>
+      <p>+91 78952 02808<br>eddiespatisserie@hotmail.com</p>
+      <p class="small">Call the counter for hours and the take-out menu.</p>
+      <div class="visit-actions">
+        <a class="btn solid" href="tel:+917895202808">Call the counter</a>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Eddie%27s+Patisserie+%26+Caf%C3%A9&amp;query_place_id=ChIJRaaVZPApCTkRep-XwrVBly8" target="_blank" rel="noopener">Open in Maps</a>
+      </div>
+    </div>
+    <div>
+      <blockquote>
+        <p>&ldquo;Cakes, pastries and cup-cakes enticing visitors from behind the glass counters.&rdquo;</p>
+        <cite>&mdash; TripAdvisor review</cite>
+      </blockquote>
+      <p class="lede" style="margin-top:28px">Board games on the shelf. Flowers in pots outside. Coffee until they close.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-mark" aria-hidden="true">EDDIE&rsquo;S</div>
+  <div class="wrap foot-row">
+    <span>Eddie&rsquo;s Patisserie &amp; Coffee Shop, Dehradun</span>
+    <a href="tel:+917895202808">+91 78952 02808</a>
+    <span>Photos by TripAdvisor visitors</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var mark = document.getElementById('wordmark');
+  if('requestAnimationFrame' in window && mark){
+    var ticking = false;
+    var update = function(){
+      ticking = false;
+      var vh = window.innerHeight || 1;
+      var p = Math.min(Math.max(window.scrollY / vh, 0), 1);
+      mark.style.transform = 'scale(' + (1 - 0.06 * p).toFixed(4) + ')';
+    };
+    window.addEventListener('scroll', function(){
+      if(!ticking){ ticking = true; requestAnimationFrame(update); }
+    }, {passive:true});
+    update();
+  }
+  var els = document.querySelectorAll('.rise');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.05,rootMargin:'0px 0px 12% 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
