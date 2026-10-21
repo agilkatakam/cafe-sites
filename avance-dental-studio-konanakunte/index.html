@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avance Dental Studio - Speciality Dental Clinic &amp; Implant Centre, Konanakunte, Bengaluru</title>
+<meta name="description" content="Avance Dental Studio is a speciality dental clinic and implant centre in Konanakunte, Bengaluru, led by Dr. Aswathy, BDS. Open six days a week and Sunday mornings.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --ink:#1c2329; --muted:#576763;
+  --mint:#d9ece5; --mint-deep:#bcdfd3;
+  --accent:#0d6e63; --accent-ink:#ffffff;
+  --radius:4px;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Switzer',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:var(--step-body);line-height:1.5;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:16px;padding:14px 22px;border-radius:var(--radius);transition:background .25s ease}
+.btn:hover{background:#0a584f}
+
+/* ---------- hero ---------- */
+.hero{position:relative;height:100svh;overflow:hidden;background:var(--mint)}
+.hero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero .ph.on{opacity:1}
+.hero .veil{position:absolute;top:0;bottom:0;left:0;width:100%;z-index:2;background:rgba(12,18,20,.42)}
+.hero .ui{position:absolute;inset:0;z-index:3;display:flex;flex-direction:column}
+.hero .wordmark{position:absolute;top:32px;left:32px;font-weight:600;font-size:16px;letter-spacing:-0.01em;color:#fff}
+.hero .topright{position:absolute;top:32px;right:32px;display:flex;align-items:center;gap:22px}
+.hero .menuword{color:#fff;font-size:16px;text-decoration:none;border-bottom:2px solid transparent}
+.hero .menuword:hover{border-bottom-color:#fff}
+.hero .mid{position:absolute;left:32px;top:50%;transform:translateY(-50%);max-width:46%;color:#fff;z-index:5}
+.hero h1{font-weight:600;font-size:clamp(44px,3.9vw,60px);line-height:1.08;letter-spacing:-0.04em}
+.hero .stand{margin-top:20px;font-size:18px;line-height:1.5;max-width:40ch}
+.hero .cards{position:absolute;right:32px;bottom:32px;display:flex;gap:16px;z-index:4}
+.hero .card{display:block;width:210px;text-decoration:none;color:var(--ink);background:#fff;border-radius:var(--radius);overflow:hidden;transition:transform .3s ease}
+.hero .card:hover{transform:translateY(-3px)}
+.hero .card img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.hero .card .bar{display:flex;align-items:center;justify-content:space-between;height:40px;padding:0 12px;font-size:16px}
+.hero .card .bar span:last-child{font-size:18px}
+
+/* ---------- shared section grid ---------- */
+section{padding:140px 32px 120px}
+.grid12{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+h2{font-weight:600;letter-spacing:-0.03em;line-height:1.05}
+@supports (animation-timeline: view()){
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  @keyframes rise{from{transform:translateY(26px)}to{transform:none}}
+}
+
+/* ---------- intro ---------- */
+.intro h2{font-weight:400;font-size:clamp(44px,5vw,76px);grid-column:1/7}
+.intro .note{grid-column:10/13;font-size:16px;line-height:1.55;width:260px;align-self:end;padding-bottom:6px}
+.intro .facts{display:flex;justify-content:space-between;gap:32px;margin-top:120px;flex-wrap:wrap}
+.intro .fact{font-weight:400;font-size:clamp(28px,3vw,44px);letter-spacing:-0.02em;line-height:1.1}
+.intro .fact small{display:block;font-size:13px;color:var(--muted);margin-top:10px;letter-spacing:0}
+.intro .photo{margin-top:96px;margin-left:41.666%;width:41.666%}
+.intro .photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
+
+/* ---------- statement ---------- */
+.statement{background:var(--mint);padding-top:160px;padding-bottom:160px}
+.statement p.big{font-weight:500;font-size:clamp(26px,2.7vw,36px);line-height:1.3;letter-spacing:-0.02em;max-width:30ch}
+.statement .slot{display:inline-block;width:1.9em;height:1em;border-radius:0.18em;object-fit:cover;vertical-align:-0.12em;margin:0 0.06em}
+.statement .support{margin-top:72px;margin-left:50%;max-width:34ch;font-size:18px}
+.statement .support .btn{margin-top:24px}
+
+/* ---------- visit (how it works) ---------- */
+.visit h2{font-size:clamp(36px,4vw,60px);grid-column:1/5}
+.visit .lead{grid-column:1/5;font-size:17px;margin-top:20px;max-width:30ch;color:var(--muted)}
+.visit svg{display:block;width:100%;height:auto;margin:72px 0 40px}
+.visit .steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px}
+.visit .step h3{font-size:20px;font-weight:600;margin-bottom:8px}
+.visit .step p{font-size:16px;color:var(--muted);max-width:26ch}
+
+/* ---------- testimonial ---------- */
+.testimonial .portrait{grid-column:2/6}
+.testimonial .portrait img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius)}
+.testimonial blockquote{grid-column:7/13;margin-top:120px;font-weight:400;font-size:clamp(24px,2.4vw,34px);line-height:1.2;letter-spacing:-0.02em;max-width:30ch}
+.testimonial .who{grid-column:7/13;margin-top:32px;font-size:16px;color:var(--muted)}
+.testimonial .small{grid-column:10/12;margin-top:96px}
+.testimonial .small img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:var(--radius)}
+
+/* ---------- faq ---------- */
+.faq h2{font-size:clamp(24px,2.2vw,32px);grid-column:1/4}
+.faq .answers{grid-column:5/13;columns:2;column-gap:56px;font-size:16px;line-height:1.55}
+.faq .answers p{break-inside:avoid;margin-bottom:20px;max-width:36ch}
+.faq .answers b{font-weight:500}
+
+/* ---------- cta ---------- */
+.cta{background:var(--ink);color:#fff;min-height:90svh;display:flex;flex-direction:column;justify-content:space-between;padding-top:120px;padding-bottom:40px}
+.cta h2{font-weight:600;font-size:clamp(56px,9vw,150px);line-height:0.9;letter-spacing:-0.04em;max-width:8ch}
+.cta .row{display:flex;align-items:flex-end;justify-content:space-between;gap:32px}
+.cta .row p{font-size:20px;max-width:32ch}
+
+/* ---------- footer ---------- */
+.footer{background:var(--ink);color:#fff;min-height:72svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px 32px 24px}
+.footer .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.footer .cols h3{font-size:16px;font-weight:600;margin-bottom:12px}
+.footer .cols ul{list-style:none;font-size:15px;line-height:1.7;color:#b9c4c2;overflow-wrap:anywhere}
+.footer .cols a{color:#b9c4c2;text-decoration:none}
+.footer .cols a:hover{color:#fff}
+.footer .word{font-weight:600;letter-spacing:-0.05em;line-height:0.9;font-size:17.5vw;text-align:center;white-space:nowrap}
+.footer .legal{font-size:13px;color:#8fa09d;text-align:center;margin-top:20px}
+
+/* ---------- phone ---------- */
+@media (max-width:860px){
+  section{padding:88px 20px 72px}
+  .hero .wordmark{top:20px;left:20px}
+  .hero .topright{top:20px;right:20px}
+  .hero .menuword{display:none}
+  .hero .mid{left:20px;right:20px;max-width:none;top:44%}
+  .hero h1{font-size:9vw}
+    .hero .cards{left:16px;right:16px;bottom:16px}
+  .hero .card{width:50%}
+  .hero .card .bar{font-size:14px}
+  .intro h2{font-size:11vw;grid-column:1/13}
+  .intro .note{grid-column:1/13;width:auto;max-width:34ch;margin-top:24px}
+  .intro .facts{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:64px}
+  .intro .fact{font-size:22px}
+  .intro .photo{margin-left:0;width:100%;margin-top:56px}
+  .statement p.big{font-size:24px;max-width:none}
+  .statement .support{margin-left:0}
+  .visit h2,.visit .lead{grid-column:1/13}
+  .visit .steps{grid-template-columns:1fr;gap:32px}
+  .testimonial .portrait{grid-column:1/13;width:72%}
+  .testimonial blockquote{grid-column:1/13;margin-top:32px;font-size:24px}
+  .testimonial .who{grid-column:1/13;margin-top:16px}
+  .testimonial .small{grid-column:1/13;width:44%;margin-left:56%;margin-top:48px}
+  .faq h2{grid-column:1/13;margin-bottom:32px}
+  .faq .answers{grid-column:1/13;columns:1}
+  .faq .answers p{max-width:60ch}
+  .cta h2{font-size:15vw}
+  .cta .row{flex-direction:column;align-items:flex-start}
+  .cta .row .btn{width:100%;text-align:center;padding:18px 22px}
+  .footer .cols{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+  .footer .word{font-size:16vw}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero .ph{transition:none}
+  .reveal{animation:none !important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <img class="ph on" src="assets/hero1.jpg" alt="The treatment room at Avance Dental Studio, with its dental chair and mint walls" width="1600" height="900">
+  <img class="ph" src="assets/hero2.jpg" alt="" width="1600" height="900" aria-hidden="true">
+  <div class="veil" aria-hidden="true"></div>
+  <div class="ui">
+    <p class="wordmark">Avance Dental Studio</p>
+    <div class="topright">
+      <a class="menuword" href="#visit">Menu</a>
+      <a class="btn" href="https://avance.dentostack.com/" target="_blank" rel="noopener">Book a visit</a>
+    </div>
+    <div class="mid">
+      <h1>Avance<br>Dental Studio</h1>
+      <p class="stand">A speciality dental clinic and implant centre in Konanakunte, Bengaluru, led by Dr. Aswathy, BDS.</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="#studio"><img src="assets/card1.jpg" alt="The dental chair and instruments" width="760" height="506" loading="lazy"><span class="bar"><span>The treatment room</span><span>&#8594;</span></span></a>
+      <a class="card" href="#visit"><img src="assets/card2.jpg" alt="The studio's wall sign with consultation hours" width="760" height="506" loading="lazy"><span class="bar"><span>Consultation hours</span><span>&#8594;</span></span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="intro" id="studio">
+  <div class="grid12">
+    <h2 class="reveal">The practice</h2>
+    <p class="note reveal">Dr. Aswathy, BDS, Chief Dental Surgeon, leads this women-owned studio on the first floor of Sri Narasimha Towers, Bank Colony.</p>
+  </div>
+  <div class="facts reveal">
+    <div class="fact">10:00 - 7:30<small>Mon to Sat</small></div>
+    <div class="fact">10:00 - 1:30<small>Sunday</small></div>
+    <div class="fact">5.0<small>Google, 11 reviews</small></div>
+    <div class="fact">Konanakunte<small>Bengaluru</small></div>
+  </div>
+  <div class="photo reveal"><video autoplay muted loop playsinline poster="assets/intro.jpg" aria-label="A slow pan across the treatment room at Avance Dental Studio" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)"><source src="assets/room.mp4" type="video/mp4"></video></div>
+</section>
+
+<section class="statement">
+  <p class="big reveal">A speciality <img class="slot" src="assets/slot2.jpg" alt="" width="420" height="280" loading="lazy"> dental clinic and <img class="slot" src="assets/slot3.jpg" alt="" width="420" height="336" loading="lazy"> implant centre in Konanakunte, led by <img class="slot" src="assets/slot1.jpg" alt="" width="420" height="310" loading="lazy"> Dr. Aswathy, BDS.</p>
+  <p class="support reveal">Every visit starts with a consultation, and the studio's own booking page holds the diary.</p>
+</section>
+
+<section class="visit" id="visit">
+  <div class="grid12">
+    <h2 class="reveal">Your visit</h2>
+    <p class="lead reveal">Three steps, no waiting-room guesswork.</p>
+  </div>
+  <svg viewBox="0 0 1200 260" aria-hidden="true">
+    <rect x="230.0" y="20.4" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-20.2 230.0 20.4)"/>
+<rect x="315.9" y="104.5" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-15.2 315.9 104.5)"/>
+<rect x="195.8" y="70.0" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(19.5 195.8 70.0)"/>
+<rect x="166.8" y="158.7" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-14.2 166.8 158.7)"/>
+<rect x="265.1" y="101.5" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-10.9 265.1 101.5)"/>
+<rect x="115.0" y="84.4" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-21.7 115.0 84.4)"/>
+<rect x="210.0" y="92.3" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-5.4 210.0 92.3)"/>
+<rect x="396.6" y="101.3" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(16.6 396.6 101.3)"/>
+<rect x="113.4" y="38.2" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-10.9 113.4 38.2)"/>
+<rect x="312.0" y="173.2" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-14.6 312.0 173.2)"/>
+<rect x="225.2" y="28.0" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-12.8 225.2 28.0)"/>
+<rect x="268.8" y="114.5" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-21.4 268.8 114.5)"/>
+<rect x="262.9" y="141.7" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-19.4 262.9 141.7)"/>
+<rect x="126.0" y="193.6" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(22.6 126.0 193.6)"/>
+<rect x="333.1" y="94.1" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-6.1 333.1 94.1)"/>
+<rect x="239.7" y="77.1" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-24.8 239.7 77.1)"/>
+<rect x="304.7" y="28.8" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-22.4 304.7 28.8)"/>
+<rect x="86.2" y="24.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-5.8 86.2 24.6)"/>
+<rect x="378.8" y="171.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-14.3 378.8 171.6)"/>
+<rect x="113.8" y="27.0" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(13.7 113.8 27.0)"/>
+<rect x="182.7" y="207.3" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(18.4 182.7 207.3)"/>
+<rect x="292.7" y="134.2" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(2.2 292.7 134.2)"/>
+<rect x="62.6" y="190.4" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(24.2 62.6 190.4)"/>
+<rect x="204.1" y="89.1" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-20.4 204.1 89.1)"/>
+<rect x="200.1" y="122.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(3.8 200.1 122.6)"/>
+<rect x="373.4" y="221.4" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(8.3 373.4 221.4)"/>
+<rect x="227.8" y="224.2" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-4.7 227.8 224.2)"/>
+<rect x="55.4" y="144.1" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(23.6 55.4 144.1)"/>
+<rect x="277.5" y="76.4" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(16.0 277.5 76.4)"/>
+<rect x="19.0" y="202.4" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-6.4 19.0 202.4)"/>
+<rect x="236.5" y="129.2" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(8.7 236.5 129.2)"/>
+<rect x="308.3" y="108.2" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-10.8 308.3 108.2)"/>
+<rect x="15.3" y="124.8" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(2.5 15.3 124.8)"/>
+<rect x="213.9" y="54.4" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-7.7 213.9 54.4)"/>
+<rect x="187.9" y="192.5" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(5.2 187.9 192.5)"/>
+<rect x="72.2" y="86.1" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-13.6 72.2 86.1)"/>
+<rect x="107.2" y="222.4" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-17.5 107.2 222.4)"/>
+<rect x="349.0" y="131.7" width="10" height="10" rx="1.5" fill="#1c2329" transform="rotate(-6.9 349.0 131.7)"/>
+<rect x="313.4" y="106.4" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(20.0 313.4 106.4)"/>
+<rect x="178.1" y="208.0" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(2.9 178.1 208.0)"/>
+<rect x="426.7" y="141.1" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(1.4 426.7 141.1)"/>
+<rect x="438.5" y="84.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(1.1 438.5 84.6)"/>
+<rect x="448.3" y="165.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(4.9 448.3 165.6)"/>
+<rect x="451.9" y="177.8" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-0.6 451.9 177.8)"/>
+<rect x="461.1" y="166.0" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(5.8 461.1 166.0)"/>
+<rect x="469.1" y="139.2" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-2.1 469.1 139.2)"/>
+<rect x="481.3" y="78.3" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-5.0 481.3 78.3)"/>
+<rect x="490.0" y="120.4" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-4.9 490.0 120.4)"/>
+<rect x="493.4" y="87.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(4.8 493.4 87.6)"/>
+<rect x="503.6" y="170.8" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-5.3 503.6 170.8)"/>
+<rect x="510.3" y="168.3" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-0.2 510.3 168.3)"/>
+<rect x="521.6" y="83.2" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-5.8 521.6 83.2)"/>
+<rect x="535.1" y="85.1" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(0.3 535.1 85.1)"/>
+<rect x="546.3" y="81.5" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-1.8 546.3 81.5)"/>
+<rect x="557.7" y="166.7" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(6.5 557.7 166.7)"/>
+<rect x="567.1" y="133.2" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-1.1 567.1 133.2)"/>
+<rect x="568.5" y="168.5" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(1.8 568.5 168.5)"/>
+<rect x="581.3" y="90.7" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(7.5 581.3 90.7)"/>
+<rect x="585.1" y="124.8" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(0.2 585.1 124.8)"/>
+<rect x="589.3" y="129.6" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-1.4 589.3 129.6)"/>
+<rect x="611.8" y="133.9" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-3.4 611.8 133.9)"/>
+<rect x="620.0" y="154.5" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(6.8 620.0 154.5)"/>
+<rect x="623.9" y="111.0" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-6.4 623.9 111.0)"/>
+<rect x="638.0" y="95.3" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(6.3 638.0 95.3)"/>
+<rect x="640.5" y="112.8" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-4.2 640.5 112.8)"/>
+<rect x="655.7" y="124.1" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-1.8 655.7 124.1)"/>
+<rect x="652.1" y="135.7" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(4.7 652.1 135.7)"/>
+<rect x="666.8" y="142.4" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(3.0 666.8 142.4)"/>
+<rect x="672.4" y="134.0" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(3.1 672.4 134.0)"/>
+<rect x="683.4" y="110.8" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-2.6 683.4 110.8)"/>
+<rect x="695.5" y="126.8" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-6.3 695.5 126.8)"/>
+<rect x="707.0" y="118.4" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(1.5 707.0 118.4)"/>
+<rect x="701.1" y="134.3" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-6.9 701.1 134.3)"/>
+<rect x="723.8" y="127.0" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-6.1 723.8 127.0)"/>
+<rect x="733.4" y="143.8" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(6.2 733.4 143.8)"/>
+<rect x="734.3" y="144.2" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(0.1 734.3 144.2)"/>
+<rect x="744.1" y="125.8" width="10" height="10" rx="1.5" fill="#9fb5b0" transform="rotate(-4.0 744.1 125.8)"/>
+<rect x="757.7" y="135.5" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-1.3 757.7 135.5)"/>
+<rect x="768.6" y="142.2" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(-0.1 768.6 142.2)"/>
+<rect x="770.7" y="131.7" width="10" height="10" rx="1.5" fill="#0d6e63" transform="rotate(5.2 770.7 131.7)"/>
+<rect x="820.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 820.0 62.0)"/>
+<rect x="857.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 857.0 62.0)"/>
+<rect x="894.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 894.0 62.0)"/>
+<rect x="931.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 931.0 62.0)"/>
+<rect x="968.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 968.0 62.0)"/>
+<rect x="1005.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1005.0 62.0)"/>
+<rect x="1042.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1042.0 62.0)"/>
+<rect x="1079.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1079.0 62.0)"/>
+<rect x="1116.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1116.0 62.0)"/>
+<rect x="1153.0" y="62.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1153.0 62.0)"/>
+<rect x="820.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 820.0 99.0)"/>
+<rect x="857.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 857.0 99.0)"/>
+<rect x="894.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 894.0 99.0)"/>
+<rect x="931.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 931.0 99.0)"/>
+<rect x="968.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 968.0 99.0)"/>
+<rect x="1005.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1005.0 99.0)"/>
+<rect x="1042.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1042.0 99.0)"/>
+<rect x="1079.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1079.0 99.0)"/>
+<rect x="1116.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1116.0 99.0)"/>
+<rect x="1153.0" y="99.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1153.0 99.0)"/>
+<rect x="820.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 820.0 136.0)"/>
+<rect x="857.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 857.0 136.0)"/>
+<rect x="894.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 894.0 136.0)"/>
+<rect x="931.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 931.0 136.0)"/>
+<rect x="968.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 968.0 136.0)"/>
+<rect x="1005.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1005.0 136.0)"/>
+<rect x="1042.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1042.0 136.0)"/>
+<rect x="1079.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1079.0 136.0)"/>
+<rect x="1116.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1116.0 136.0)"/>
+<rect x="1153.0" y="136.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1153.0 136.0)"/>
+<rect x="820.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 820.0 173.0)"/>
+<rect x="857.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 857.0 173.0)"/>
+<rect x="894.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 894.0 173.0)"/>
+<rect x="931.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 931.0 173.0)"/>
+<rect x="968.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 968.0 173.0)"/>
+<rect x="1005.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1005.0 173.0)"/>
+<rect x="1042.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1042.0 173.0)"/>
+<rect x="1079.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1079.0 173.0)"/>
+<rect x="1116.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1116.0 173.0)"/>
+<rect x="1153.0" y="173.0" width="12" height="12" rx="1.5" fill="#0d6e63" transform="rotate(0.0 1153.0 173.0)"/>
+  </svg>
+  <div class="steps">
+    <div class="step reveal"><h3>Book</h3><p>Call either number, or pick a morning, afternoon or evening slot on the studio's booking page.</p></div>
+    <div class="step reveal"><h3>Consult</h3><p>Sit with the doctor, talk through what is going on, and get examined.</p></div>
+    <div class="step reveal"><h3>Plan</h3><p>Leave with a treatment plan you understand before any work begins.</p></div>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="grid12">
+    <div class="portrait reveal"><img src="assets/portrait.jpg" alt="Inside the treatment room at Avance Dental Studio" width="900" height="1200" loading="lazy"></div>
+    <blockquote class="reveal">&#8220;Well-maintained clinic and supportive and experienced doctors.&#8221;</blockquote>
+    <p class="who">Merin Elza George, Google review</p>
+    <div class="small reveal"><img src="assets/small.jpg" alt="The reception desk at the studio" width="560" height="560" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="grid12">
+    <h2 class="reveal">Questions</h2>
+    <div class="answers reveal">
+      <p><b>Where is Avance Dental Studio?</b> On the first floor of Sri Narasimha Towers, Anjanapura Main Road, Bank Colony, Konanakunte, Bengaluru 560062.</p>
+      <p><b>What are the consulting hours?</b> Monday to Saturday, 10:00 AM to 7:30 PM.</p>
+      <p><b>Is the studio open on Sundays?</b> Yes, on Sunday mornings from 10:00 AM to 1:30 PM.</p>
+      <p><b>Who is the doctor?</b> Dr. Aswathy, BDS, Chief Dental Surgeon, leads the studio.</p>
+      <p><b>Does the studio do implants?</b> The studio calls itself a speciality dental clinic and implant centre on its own sign, so implants are part of the practice.</p>
+      <p><b>How do I book?</b> Call +91 78929 79917 or +91 99013 68435, or use the appointment form on the studio's booking page.</p>
+      <p><b>Is it a women-led practice?</b> Yes. The studio identifies as women-owned.</p>
+      <p><b>What do patients say?</b> The studio holds a 5.0 rating from 11 Google reviews, mentioning supportive doctors and a well-maintained clinic.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2 class="reveal">Book a consultation</h2>
+  <div class="row">
+    <p>Call +91 78929 79917, or pick a slot on the studio's own booking page.</p>
+    <a class="btn" href="https://avance.dentostack.com/" target="_blank" rel="noopener">Book a visit</a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="cols">
+    <div><h3>Address</h3><ul><li>1st floor, Sri Narasimha Towers</li><li>Anjanapura Main Rd, Bank Colony</li><li>Konanakunte, Bengaluru 560062</li></ul></div>
+    <div><h3>Page</h3><ul><li><a href="#studio">The practice</a></li><li><a href="#visit">Your visit</a></li><li><a href="#faq">Questions</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="tel:+917892979917">+91 78929 79917</a></li><li><a href="tel:+919901368435">+91 99013 68435</a></li><li><a href="mailto:draswathy.avancedental@gmail.com">draswathy.avancedental@gmail.com</a></li></ul></div>
+    <div><h3>Hours</h3><ul><li>Mon - Sat, 10:00 - 7:30</li><li>Sun, 10:00 - 1:30</li></ul></div>
+  </div>
+  <div></div>
+  <div>
+    <div class="word" aria-hidden="true">Avance</div>
+    <p class="legal">&#169; 2026 Avance Dental Studio, Konanakunte, Bengaluru. Photographs from the clinic's own Google Business profile.</p>
+  </div>
+</footer>
+
+<script>
+// hero crossfade: two photographs, one quiet room light shift
+(function(){
+  var phs=document.querySelectorAll('.hero .ph');
+  if(phs.length<2||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var i=0,t=null;
+  function tick(){i=(i+1)%phs.length;phs.forEach(function(p,k){p.classList.toggle('on',k===i)});}
+  function start(){if(!t)t=setInterval(tick,6000);}
+  function stop(){clearInterval(t);t=null;}
+  document.addEventListener('visibilitychange',function(){document.hidden?stop():start();});
+  start();
+})();
+</script>
+</body>
+</html>
