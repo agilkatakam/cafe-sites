@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinod Channa — Celebrity Fitness Trainer, Bandra West, Mumbai</title>
+<meta name="description" content="Vinod Channa is a fitness trainer and consultant in Bandra West, Mumbai. Personal training, online coaching, corporate workshops and group training.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414;
+  --paper:#ffffff;
+  --red:#d92b21;
+  --grey:#eceae6;
+  --gut:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"Schibsted Grotesk",Arial,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  font-size:17px;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;width:100%;height:100%;object-fit:cover;}
+a{color:inherit;}
+::selection{background:var(--red);color:#fff;}
+
+/* ---------- header / hero ---------- */
+.hero{position:relative;}
+.topbar{
+  position:absolute;top:0;left:0;right:0;z-index:5;
+  display:flex;align-items:stretch;
+}
+.wordmark{
+  background:var(--ink);color:#fff;
+  font-weight:800;font-size:15px;letter-spacing:.04em;
+  padding:14px 18px;display:flex;align-items:center;
+}
+.wordmark em{font-style:normal;color:var(--red);margin-right:8px;}
+.navlinks{
+  background:var(--red);color:#fff;
+  display:flex;align-items:center;gap:26px;
+  padding:0 22px;
+}
+.navlinks a{
+  color:#fff;text-decoration:none;font-size:15px;font-weight:600;white-space:nowrap;transition:border-color .15s;letter-spacing:.02em;
+  border-bottom:2px solid transparent;
+}
+.navlinks a:hover{border-bottom-color:#fff;}
+.topbar .spacer{flex:1;background:rgba(255,255,255,.0);}
+.cta-btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:46px;padding:0 22px;
+  background:var(--red);color:#fff;
+  font-weight:600;font-size:15px;text-decoration:none;
+  border:2px solid var(--red);
+  transition:background .18s,color .18s;
+}
+.cta-btn:hover{background:transparent;color:var(--red);}
+.topbar .cta-btn{margin:10px var(--gut) 0 0;align-self:flex-start;background:var(--ink);border-color:var(--ink);}
+.topbar .cta-btn:hover{background:#fff;color:var(--ink);}
+
+.masthead{
+  height:52vh;min-height:340px;
+  display:grid;gap:0;
+  grid-template-columns:repeat(6,1fr);
+  grid-template-rows:1fr 1fr;
+  grid-template-areas:
+    "red ph1 ph1 vin blk ph2"
+    "red ph1 ph1 vin gry ph3";
+}
+.masthead .cell{overflow:hidden;position:relative;}
+.masthead .cell img{filter:grayscale(1) contrast(1.06);transform:scale(1.02);}
+.c-red{grid-area:red;background:var(--red);}
+.c-ph1{grid-area:ph1;}
+.c-ph1 img{animation:drift 22s ease-in-out infinite alternate;}
+@keyframes drift{from{transform:scale(1.02) translateX(0);}to{transform:scale(1.1) translateX(-2%);}}
+.c-vin{grid-area:vin;}
+.c-blk{grid-area:blk;background:var(--ink);}
+.c-ph2{grid-area:ph2;}
+.c-gry{grid-area:gry;background:var(--grey);}
+.c-ph3{grid-area:ph3;}
+
+.title-row{
+  position:relative;
+  padding:0 var(--gut) 40px;
+}
+h1{
+  font-weight:800;
+  font-size:clamp(64px,8.3vw,128px);
+  line-height:.95;letter-spacing:-.02em;
+  margin-left:calc(42% - var(--gut));
+  margin-top:-.5em;
+  position:relative;z-index:6;
+  text-transform:uppercase;
+}
+h1 .line{display:block;overflow:hidden;}
+h1 .line span{display:block;transform:translateY(110%);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards;}
+h1 .line:nth-child(2) span{animation-delay:.14s;color:var(--red);}
+@keyframes rise{to{transform:translateY(0);}}
+.standfirst{
+  max-width:30ch;font-size:24px;line-height:1.35;
+  margin-top:26px;font-weight:400;
+}
+.standfirst strong{font-weight:600;}
+.hero-actions{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;}
+.cta-btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink);}
+.cta-btn.ghost:hover{background:var(--ink);color:#fff;}
+
+/* ---------- sections ---------- */
+section{padding:96px var(--gut);}
+h2{
+  font-weight:800;font-size:clamp(34px,4.2vw,58px);
+  letter-spacing:-.02em;line-height:1;margin-bottom:44px;
+  text-transform:uppercase;
+}
+h2 .step{display:block;margin-left:9vw;color:var(--red);}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);}
+.d1{transition-delay:.08s;}.d2{transition-delay:.16s;}.d3{transition-delay:.24s;}.d4{transition-delay:.32s;}
+.specimen .giant{transition:transform .5s cubic-bezier(.2,.7,.2,1);}
+.specimen:hover .giant{transform:translateY(-6px);}
+.reveal.on{opacity:1;transform:none;}
+
+/* intro */
+.intro{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;}
+.intro h2{grid-column:1/-1;}
+.intro .statement{grid-column:7/13;font-size:24px;line-height:1.4;font-weight:400;}
+.intro .statement strong{font-weight:600;color:var(--red);}
+.intro .clients{
+  grid-column:7/13;margin-top:26px;font-size:17px;font-weight:600;
+}
+.intro .clients span{display:block;font-weight:400;font-size:16px;margin-bottom:10px;color:#555;}
+.intro .photo{grid-column:1/6;grid-row:1/4;min-height:420px;}
+.intro .photo img{filter:grayscale(1) contrast(1.05);}
+.intro .chooser{grid-column:7/13;margin-top:40px;}
+.chooser-label{font-size:16px;font-weight:600;margin-bottom:14px;color:#555;}
+.chooser-btns{display:flex;flex-wrap:wrap;gap:10px;}
+.chooser-btns button{
+  font:inherit;font-size:15px;font-weight:600;
+  padding:12px 20px;min-height:46px;cursor:pointer;
+  background:transparent;color:var(--ink);border:2px solid var(--ink);
+  transition:background .15s,color .15s,transform .1s;
+}
+.chooser-btns button:active{transform:scale(.97);}
+.chooser-btns button[aria-pressed="true"]{background:var(--red);border-color:var(--red);color:#fff;}
+.chooser-out{
+  margin-top:18px;font-size:17px;max-width:46ch;min-height:76px;
+  border-left:3px solid var(--red);padding-left:16px;
+}
+.chooser-out strong{display:block;font-weight:600;}
+
+/* showcase */
+.showcase{background:var(--grey);}
+.specimens{
+  display:grid;grid-template-columns:1fr 1fr;gap:24px;
+  height:58vh;min-height:380px;overflow:hidden;
+  align-items:start;
+}
+.specimen{position:relative;}
+.specimen .giant{
+  font-weight:800;letter-spacing:-.04em;line-height:.8;
+  font-size:clamp(150px,24vw,340px);
+  white-space:nowrap;
+  height:.6em;overflow:hidden;
+}
+.specimen.a .giant{color:var(--red);}
+.specimen .cap{margin-top:56px;font-size:17px;max-width:32ch;}
+.specimen .cap strong{font-weight:600;display:block;font-size:17px;}
+.specimen.b{text-align:right;}
+.specimen.b .cap{margin-left:auto;}
+.vs{
+  text-align:center;font-weight:800;font-size:15px;letter-spacing:.2em;
+  text-transform:uppercase;color:#555;margin:22px 0 0;
+}
+
+/* proof */
+.proof table{width:100%;border-collapse:collapse;font-size:17px;}
+.proof th{
+  text-align:left;font-size:15px;font-weight:600;color:#777;padding:0 12px 12px 0;
+  border-bottom:2px solid var(--ink);
+}
+.proof th:last-child,.proof td:last-child{text-align:right;padding-right:0;}
+.proof td{padding:16px 12px 16px 0;border-bottom:1px solid var(--grey);vertical-align:top;}
+.proof td.year{font-weight:800;color:var(--red);white-space:nowrap;width:70px;}
+.proof tr.grp td{padding-top:30px;}
+.proof tr.gap td{border:none;padding:6px;}
+.proof a{text-decoration:none;border-bottom:2px solid var(--red);}
+.proof a:hover{color:var(--red);}
+.proof .reviews{margin-top:34px;font-size:17px;color:#555;}
+.proof .reviews strong{color:var(--red);font-weight:800;}
+
+/* contact */
+.contact{background:var(--grey);}
+.contact .sentence{
+  font-weight:600;font-size:32px;line-height:1.2;letter-spacing:-.01em;
+  max-width:48ch;
+}
+.contact .sentence em{font-style:normal;color:var(--red);}
+.contact-row{display:flex;align-items:flex-end;gap:28px;margin-top:44px;flex-wrap:wrap;}
+.contact-row img{width:150px;height:150px;object-fit:cover;border-radius:50%;}
+.contact-links{display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
+.contact .city{margin-top:22px;font-size:17px;color:#555;}
+
+footer{
+  background:var(--ink);color:#fff;
+  padding:36px var(--gut);
+  display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;
+  font-size:15px;
+}
+footer .fmark{font-weight:800;letter-spacing:.04em;}
+footer .fmark em{font-style:normal;color:var(--red);}
+footer a{color:#fff;}
+footer .credits{opacity:.65;}
+
+/* ---------- tablet ---------- */
+@media (max-width:900px){
+  .topbar .cta-btn{display:none;}
+  section{padding:72px var(--gut);}
+  .intro{grid-template-columns:1fr 1fr;}
+  .intro .statement,.intro .clients,.intro .chooser{grid-column:2/3;}
+  .intro .photo{grid-column:1/2;grid-row:1/4;min-height:300px;}
+  .masthead{grid-template-columns:repeat(4,1fr);grid-template-areas:
+    "red ph1 ph1 vin"
+    "blk ph1 ph1 ph2";}
+  .c-gry,.c-ph3{display:none;}
+  h1{margin-left:30%;}
+}
+
+/* ---------- phone ---------- */
+@media (max-width:520px){
+  .topbar{position:static;flex-wrap:wrap;}
+  .navlinks{flex:1;gap:16px;justify-content:space-evenly;padding:0 20px;}
+  .topbar .cta-btn{display:none;}
+  .masthead{
+    height:auto;min-height:0;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,26vw);
+    grid-template-areas:
+      "red ph1 vin"
+      "blk ph1 ph2";
+  }
+  .c-gry,.c-ph3{display:none;}
+  h1{
+    font-size:13vw;margin-left:0;margin-top:14px;
+  }
+  .topbar .spacer{display:none;}
+  .navlinks{flex-basis:100%;gap:14px;}
+  .proof th:nth-child(4),.proof td:nth-child(4){display:none;}
+  .standfirst{font-size:18px;}
+  .hero-actions .ghost{display:none;}
+  section{padding:56px var(--gut);}
+  .intro{grid-template-columns:1fr;}
+  .intro .photo{grid-column:1/2;grid-row:auto;min-height:240px;max-height:300px;}
+  .intro .statement,.intro .clients,.intro .chooser{grid-column:1/2;}
+  .intro .statement{font-size:21px;}
+  .specimens{grid-template-columns:1fr;height:auto;overflow:visible;}
+  .specimen .giant{font-size:34vw;height:.62em;}
+  .specimen.b{text-align:left;}
+  .specimen.b .cap{margin-left:0;}
+  .vs{display:none;}
+  .contact .sentence{font-size:24px;max-width:none;}
+  .proof table{font-size:15px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;}
+  .reveal{opacity:1;transform:none;}
+  h1 .line span{transform:none;}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="topbar">
+    <div class="wordmark"><em>VC</em> Fitness</div>
+    <nav class="navlinks" aria-label="Sections">
+      <a href="#coach">The coach</a>
+      <a href="#results">Results</a>
+      <a href="#press">Press</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="spacer"></div>
+    <a class="cta-btn" href="https://wa.me/918291855866" rel="noopener">Book a consultation</a>
+  </div>
+
+  <div class="masthead" aria-hidden="true">
+    <div class="cell c-red"></div>
+    <div class="cell c-ph1"><img src="./assets/training1-c.jpg" alt="" loading="eager"></div>
+    <div class="cell c-vin"><img src="./assets/vinod-c.jpg" alt="" loading="eager"></div>
+    <div class="cell c-blk"></div>
+    <div class="cell c-ph2"><img src="./assets/training2-c.jpg" alt="" loading="lazy"></div>
+    <div class="cell c-gry"></div>
+    <div class="cell c-ph3"><img src="./assets/training3-c.jpg" alt="" loading="lazy"></div>
+  </div>
+
+  <div class="title-row">
+    <h1><span class="line"><span>Vinod</span></span><span class="line"><span>Channa</span></span></h1>
+    <p class="standfirst"><strong>Celebrity fitness trainer and consultant.</strong> Bandra West, Mumbai.</p>
+    <div class="hero-actions">
+      <a class="cta-btn" href="https://wa.me/918291855866" rel="noopener">Book a consultation</a>
+      <a class="cta-btn ghost" href="mailto:Channa.Vinod@Gmail.Com">Channa.Vinod@Gmail.Com</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="intro reveal" id="coach">
+  <h2>The coach</h2>
+  <div class="photo reveal"><img src="./assets/training2-c.jpg" alt="Vinod Channa holding a full split across two benches in a gym" loading="lazy"></div>
+  <p class="statement reveal d1">Vinod Channa has spent over two decades coaching some of India's most photographed bodies. His method is <strong>one coach, one client, one measured plan</strong> — from the first consultation to the last rep.</p>
+  <p class="clients reveal d2"><span>Clients listed on his own site include</span>John Abraham · Shilpa Shetty · Anant Ambani · Riteish Deshmukh · Arjun Rampal</p>
+  <div class="chooser reveal d3">
+    <p class="chooser-label">Choose how you train</p>
+    <div class="chooser-btns" role="group" aria-label="Training formats">
+      <button type="button" aria-pressed="true" data-f="0">Personal</button>
+      <button type="button" aria-pressed="false" data-f="1">Online</button>
+      <button type="button" aria-pressed="false" data-f="2">Corporate</button>
+      <button type="button" aria-pressed="false" data-f="3">Group</button>
+    </div>
+    <p class="chooser-out" id="chooserOut"><strong>Personal training</strong>One-to-one sessions with Vinod, built around your body and your goals. It starts with a personal consultation.</p>
+  </div>
+</section>
+
+<section class="showcase reveal" id="results">
+  <h2>Results<span class="step">on record</span></h2>
+  <div class="specimens">
+    <div class="specimen a reveal d1">
+      <div class="giant" aria-hidden="true">108</div>
+      <p class="cap"><strong>108 kilos</strong>Anant Ambani's documented transformation. Reported by Business Today, June 2025.</p>
+    </div>
+    <div class="specimen b reveal d2">
+      <div class="giant" aria-hidden="true">21</div>
+      <p class="cap"><strong>21 kilos</strong>Shilpa Shetty's post-pregnancy loss under his coaching. Reported by Rediff, October 2016.</p>
+    </div>
+  </div>
+  <p class="vs reveal d3">Two journeys · one coach</p>
+</section>
+
+<section class="proof reveal" id="press">
+  <h2>In the<span class="step">press</span></h2>
+  <table class="reveal d1">
+    <thead>
+      <tr><th>Year</th><th>Coverage</th><th>Publication</th><th>Topic</th></tr>
+    </thead>
+    <tbody>
+      <tr class="grp"><td class="year">2016</td><td><a href="https://m.rediff.com/getahead/report/health-revealed-how-shilpa-shetty-lost-21-kilos/20161026.htm" rel="noopener">"Revealed: How Shilpa Shetty lost 21 kilos"</a></td><td>Rediff</td><td>Weight loss</td></tr>
+      <tr class="gap"><td colspan="4"></td></tr>
+      <tr class="grp"><td class="year">2024</td><td><a href="https://www.aajtak.in/visualstories/lifestyle/vinod-channa-who-was-anant-ambanis-trainer-told-3-ways-to-reduce-belly-tummy-fat-how-how-burn-body-fat-and-3-tips-to-melt-belly-fat-tvism-197725-31-12-2024" rel="noopener">Three ways to reduce belly fat</a></td><td>Aaj Tak</td><td>Fat loss</td></tr>
+      <tr class="gap"><td colspan="4"></td></tr>
+      <tr class="grp"><td class="year">2025</td><td><a href="https://www.businesstoday.in/visualstories/health/108-kg-down-anant-ambanis-trainer-reveals-the-3-eating-habit-code-to-fight-aging-239660-05-06-2025" rel="noopener">"108 kg down": the eating-habit code behind the transformation</a></td><td>Business Today</td><td>Nutrition</td></tr>
+      <tr class="gap"><td colspan="4"></td></tr>
+      <tr class="grp"><td class="year">More</td><td><a href="https://www.gqindia.com/content/john-abraham-fitness-trainer-shares-the-workout-routine-that-keeps-the-actor-fit-at-50" rel="noopener">The workout routine that keeps John Abraham fit at 50</a></td><td>GQ India</td><td>Training</td></tr>
+      <tr><td></td><td><a href="https://economictimes.indiatimes.com/news/new-updates/john-abraham-and-shilpa-shettys-fitness-trainer-shares-three-easy-eating-habits-to-delay-aging-and-get-youthful-skin/articleshow/121689897.cms?from=mdr" rel="noopener">Three eating habits to delay ageing</a></td><td>Economic Times</td><td>Nutrition</td></tr>
+      <tr><td></td><td><a href="https://www.hindustantimes.com/lifestyle/health/fitness-trainer-who-helped-nita-ambani-anant-lose-kilos-busts-weightlifting-myth-does-it-harm-bones-in-long-run-101750581460334-amp.html" rel="noopener">Busting the weightlifting myth</a></td><td>Hindustan Times</td><td>Strength</td></tr>
+      <tr><td></td><td><a href="https://doctor.ndtv.com/living-healthy/shilpa-shettys-trainer-vinod-channa-explains-the-many-benefits-of-aerial-yoga-this-is-how-she-perfor-1982501" rel="noopener">On the benefits of aerial yoga</a></td><td>NDTV</td><td>Mobility</td></tr>
+      <tr><td></td><td><a href="https://www.idiva.com/health-wellness/diet-detox/what-celebrity-trainers-really-eat-vinod-channa/16051094" rel="noopener">What celebrity trainers really eat</a></td><td>idiva</td><td>Nutrition</td></tr>
+    </tbody>
+  </table>
+  <p class="reviews reveal d2"><strong>4.6</strong> from 80 Google reviews.</p>
+</section>
+
+<section class="contact reveal" id="contact">
+  <p class="sentence reveal d1">Enquiries for <em>personal training</em>, <em>online coaching</em> and <em>corporate workshops</em>.</p>
+  <div class="contact-row reveal d2">
+    <img src="./assets/vinod-c.jpg" alt="Portrait of Vinod Channa">
+    <div class="contact-links">
+      <a class="cta-btn" href="https://wa.me/918291855866" rel="noopener">WhatsApp +91 82918 55866</a>
+      <a class="cta-btn ghost" href="mailto:Channa.Vinod@Gmail.Com">Channa.Vinod@Gmail.Com</a>
+    </div>
+  </div>
+  <p class="city reveal d3">Bandra West, Mumbai.</p>
+</section>
+
+</main>
+
+<footer>
+  <div class="fmark"><em>VC</em> Fitness</div>
+  <div>Pinnacle House, 5th Floor, 15th Road, P D Hinduja Junction, Bandra West, Mumbai 400050 · +91 98704 06617</div>
+  <div class="credits">Photographs: vinodchannafitness.com · Press titles belong to their publications</div>
+</footer>
+
+<script>
+(function(){
+  var formats=[
+    {t:"Personal training",d:"One-to-one sessions with Vinod, built around your body and your goals. It starts with a personal consultation."},
+    {t:"Online training",d:"The same programming, wherever you are. Train from home or while travelling."},
+    {t:"Corporate training",d:"Professional workshops and sessions for teams and events, run at your workplace."},
+    {t:"Group training",d:"Small-group sessions for five or more members. Bring your own group."}
+  ];
+  var out=document.getElementById('chooserOut');
+  document.querySelectorAll('.chooser-btns button').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.chooser-btns button').forEach(function(x){x.setAttribute('aria-pressed','false');});
+      b.setAttribute('aria-pressed','true');
+      var f=formats[+b.dataset.f];
+      out.innerHTML='<strong>'+f.t+'</strong>'+f.d;
+    });
+  });
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

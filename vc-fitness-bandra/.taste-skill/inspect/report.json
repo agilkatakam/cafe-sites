@@ -1,0 +1,1804 @@
+{
+ "url": "http://localhost:8799",
+ "at": "2026-10-21T08:45:43.527Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.59,
+    0.28,
+    0.69,
+    0.48,
+    0.62,
+    0.74
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 3,
+    "transitions": 16,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4643,
+     "screens": 5.2,
+     "words": 281,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "training1-c.jpg",
+      "vinod-c.jpg",
+      "training2-c.jpg",
+      "training3-c.jpg",
+      "training2-c.jpg",
+      "vinod-c.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "VINOD CHANNA",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 119.5,
+     "vw": 8.3,
+     "font": "Schibsted Grotesk",
+     "weight": 800,
+     "tracking": -0.02,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.58,
+     "top": 408,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "VINOD CHANNA",
+     "words": 2,
+     "lines": 2,
+     "size": 119.5,
+     "font": "Schibsted Grotesk"
+    },
+    "headings": [
+     {
+      "text": "VINOD CHANNA",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 119.5,
+      "vw": 8.3,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.58,
+      "top": 408,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "THE COACH",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 58,
+      "vw": 4,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 1374,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RESULTS ON RECORD",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 58,
+      "vw": 4,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 2179,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "108",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 340,
+      "vw": 23.6,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 2339,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "21",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 340,
+      "vw": 23.6,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.48,
+      "top": 2339,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "IN THE PRESS",
+      "words": 3,
+      "chars": 12,
+      "lines": 2,
+      "size": 58,
+      "vw": 4,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 3097,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Enquiries for personal training, online coaching and corporate workshops.",
+      "words": 9,
+      "chars": 73,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Schibsted Grotesk",
+      "weight": 600,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.67,
+      "top": 4097,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      24,
+      32,
+      58,
+      120,
+      340
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 17,
+      "leading": 1.45,
+      "weight": 600,
+      "tracking": 0,
+      "contrast": 18.4
+     },
+     "measureChars": 57,
+     "max": {
+      "size": 340,
+      "vw": 23.6,
+      "font": "Schibsted Grotesk",
+      "text": "108"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eceae6",
+       "top": 2083,
+       "hsl": {
+        "h": 40,
+        "s": 0.14,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#141414",
+       "share": 0.67
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#d92b21",
+       "share": 0.08
+      },
+      {
+       "color": "#555555",
+       "share": 0.07
+      },
+      {
+       "color": "#777777",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#d92b21",
+      "hsl": {
+       "h": 3,
+       "s": 0.74,
+       "l": 0.49
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 9,
+     "inHero": 3,
+     "radius": 0,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation",
+      "Book a consultation",
+      "Channa.Vinod@Gmail.Com"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.18
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": false,
+     "height": 834,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4643,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 834,
+      "words": 24,
+      "media": 1,
+      "middle": 129,
+      "heading": {
+       "text": "Vinod",
+       "size": 120,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 0,
+      "textLeft": 18,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#coach.intro.reveal",
+      "tag": "section",
+      "top": 834,
+      "height": 1249,
+      "words": 86,
+      "media": 1,
+      "middle": 143,
+      "heading": {
+       "text": "The coach",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 29,
+      "textLeft": 20,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#results.showcase.reveal",
+      "tag": "section",
+      "top": 2083,
+      "height": 918,
+      "words": 38,
+      "media": 0,
+      "middle": 221,
+      "heading": {
+       "text": "108",
+       "size": 340,
+       "tag": "div"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#press.proof.reveal",
+      "tag": "section",
+      "top": 3001,
+      "height": 1000,
+      "words": 94,
+      "media": 0,
+      "middle": 415,
+      "heading": {
+       "text": "In the",
+       "size": 58,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact.reveal",
+      "tag": "section",
+      "top": 4001,
+      "height": 509,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Enquiries for",
+       "size": 32,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 496,
+      "textLeft": 20,
+      "textRight": 496,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 4510,
+      "height": 134,
+      "words": 31,
+      "media": 0,
+      "middle": 104,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "VINOD CHANNA",
+      "size": 120,
+      "top": 408,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 4
+     },
+     {
+      "x": 150,
+      "n": 2
+     },
+     {
+      "x": 588,
+      "n": 2
+     },
+     {
+      "x": 732,
+      "n": 2
+     },
+     {
+      "x": 751,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.18,
+    "voidBox": {
+     "x": 480,
+     "y": 660,
+     "w": 960,
+     "h": 240
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 5,
+   "filled": [
+    0.61,
+    0.28,
+    0.87,
+    0.26,
+    0.67
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 3,
+    "transitions": 16,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 4663,
+     "screens": 4.6,
+     "words": 278,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "training1-c.jpg",
+      "vinod-c.jpg",
+      "training2-c.jpg",
+      "training2-c.jpg",
+      "vinod-c.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "VINOD CHANNA",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 64,
+     "vw": 8.3,
+     "font": "Schibsted Grotesk",
+     "weight": 800,
+     "tracking": -0.02,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.66,
+     "top": 500,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "VINOD CHANNA",
+     "words": 2,
+     "lines": 2,
+     "size": 64,
+     "font": "Schibsted Grotesk"
+    },
+    "headings": [
+     {
+      "text": "VINOD CHANNA",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 64,
+      "vw": 8.3,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.66,
+      "top": 500,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "THE COACH",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 1217,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RESULTS ON RECORD",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 2158,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "108",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 184.3,
+      "vw": 24,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 2270,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "21",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 184.3,
+      "vw": 24,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 2270,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "IN THE PRESS",
+      "words": 3,
+      "chars": 12,
+      "lines": 2,
+      "size": 34,
+      "vw": 4.4,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 3051,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Enquiries for personal training, online coaching and corporate workshops.",
+      "words": 9,
+      "chars": 73,
+      "lines": 2,
+      "size": 32,
+      "vw": 4.2,
+      "font": "Schibsted Grotesk",
+      "weight": 600,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 4078,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      24,
+      32,
+      34,
+      64,
+      184
+     ],
+     "sizeCount": 8,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 17,
+      "leading": 1.45,
+      "weight": 600,
+      "tracking": 0,
+      "contrast": 18.4
+     },
+     "measureChars": 29,
+     "max": {
+      "size": 184.3,
+      "vw": 24,
+      "font": "Schibsted Grotesk",
+      "text": "108"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.03,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eceae6",
+       "top": 2086,
+       "hsl": {
+        "h": 40,
+        "s": 0.14,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#141414",
+       "share": 0.68
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.16
+      },
+      {
+       "color": "#d92b21",
+       "share": 0.08
+      },
+      {
+       "color": "#555555",
+       "share": 0.07
+      },
+      {
+       "color": "#777777",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#d92b21",
+      "hsl": {
+       "h": 3,
+       "s": 0.74,
+       "l": 0.49
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": 0,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation",
+      "Channa.Vinod@Gmail.Com"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 2,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.27
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 821,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 4663,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 821,
+      "words": 21,
+      "media": 1,
+      "middle": 51,
+      "heading": {
+       "text": "Vinod",
+       "size": 64,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 0,
+      "textLeft": 18,
+      "textRight": 245,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#coach.intro.reveal",
+      "tag": "section",
+      "top": 821,
+      "height": 1265,
+      "words": 86,
+      "media": 1,
+      "middle": 24,
+      "heading": {
+       "text": "The coach",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#results.showcase.reveal",
+      "tag": "section",
+      "top": 2086,
+      "height": 894,
+      "words": 38,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "108",
+       "size": 184,
+       "tag": "div"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#press.proof.reveal",
+      "tag": "section",
+      "top": 2979,
+      "height": 1027,
+      "words": 94,
+      "media": 0,
+      "middle": 32,
+      "heading": {
+       "text": "In the",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact.reveal",
+      "tag": "section",
+      "top": 4006,
+      "height": 461,
+      "words": 17,
+      "media": 1,
+      "middle": 9,
+      "heading": {
+       "text": "Enquiries for",
+       "size": 32,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 43,
+      "textLeft": 20,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 4468,
+      "height": 195,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 44,
+      "textLeft": 20,
+      "textRight": 44,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 2536,
+      "height": 348
+     }
+    ],
+    "h1s": [
+     {
+      "text": "VINOD CHANNA",
+      "size": 64,
+      "top": 500,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 4
+     },
+     {
+      "x": 89,
+      "n": 2
+     },
+     {
+      "x": 238,
+      "n": 2
+     },
+     {
+      "x": 396,
+      "n": 2
+     },
+     {
+      "x": 415,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.56,
+    0.49,
+    0.89,
+    0.22,
+    0.87,
+    0.93
+   ],
+   "motion": {
+    "elements": 18,
+    "css": 3,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4304,
+     "screens": 5.1,
+     "words": 261,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "training1-c.jpg",
+      "training2-c.jpg",
+      "vinod-c.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "VINOD CHANNA",
+     "words": 2,
+     "chars": 12,
+     "lines": 2,
+     "size": 50.7,
+     "vw": 13,
+     "font": "Schibsted Grotesk",
+     "weight": 800,
+     "tracking": -0.02,
+     "leading": 0.95,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 290,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "VINOD CHANNA",
+     "words": 2,
+     "lines": 2,
+     "size": 50.7,
+     "font": "Schibsted Grotesk"
+    },
+    "headings": [
+     {
+      "text": "VINOD CHANNA",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 290,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "THE COACH",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 625,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RESULTS ON RECORD",
+      "words": 3,
+      "chars": 17,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1739,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "108",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 132.6,
+      "vw": 34,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1851,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "21",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 132.6,
+      "vw": 34,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2112,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "IN THE PRESS",
+      "words": 3,
+      "chars": 12,
+      "lines": 2,
+      "size": 34,
+      "vw": 8.7,
+      "font": "Schibsted Grotesk",
+      "weight": 800,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2461,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Enquiries for personal training, online coaching and corporate workshops.",
+      "words": 9,
+      "chars": 73,
+      "lines": 3,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Schibsted Grotesk",
+      "weight": 600,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 3548,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Schibsted Grotesk",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      21,
+      24,
+      34,
+      51,
+      133
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Schibsted Grotesk",
+      "size": 17,
+      "leading": 1.45,
+      "weight": 600,
+      "tracking": 0,
+      "contrast": 18.4
+     },
+     "measureChars": 33,
+     "max": {
+      "size": 132.6,
+      "vw": 34,
+      "font": "Schibsted Grotesk",
+      "text": "108"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#eceae6",
+       "top": 1683,
+       "hsl": {
+        "h": 40,
+        "s": 0.14,
+        "l": 0.91
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#141414",
+       "share": 0.67
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.17
+      },
+      {
+       "color": "#d92b21",
+       "share": 0.08
+      },
+      {
+       "color": "#555555",
+       "share": 0.06
+      },
+      {
+       "color": "#777777",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#d92b21",
+      "hsl": {
+       "h": 3,
+       "s": 0.74,
+       "l": 0.49
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 1,
+     "radius": 0,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Book a consultation"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 1,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.12
+     },
+     {
+      "type": "img",
+      "ratio": 0.09
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": false,
+     "height": 569,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "schibsted grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4304,
+    "margins": {
+     "left": 20,
+     "right": 21
+    },
+    "sections": [
+     {
+      "sel": "header#top.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 569,
+      "words": 20,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Vinod",
+       "size": 51,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 0,
+      "textLeft": 18,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#coach.intro.reveal",
+      "tag": "section",
+      "top": 569,
+      "height": 1114,
+      "words": 86,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The coach",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#results.showcase.reveal",
+      "tag": "section",
+      "top": 1683,
+      "height": 722,
+      "words": 33,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "108",
+       "size": 133,
+       "tag": "div"
+      },
+      "left": 20,
+      "right": 39,
+      "textLeft": 20,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#press.proof.reveal",
+      "tag": "section",
+      "top": 2405,
+      "height": 1088,
+      "words": 83,
+      "media": 0,
+      "middle": 13,
+      "heading": {
+       "text": "In the",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 39,
+      "textLeft": 20,
+      "textRight": 39,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#contact.contact.reveal",
+      "tag": "section",
+      "top": 3492,
+      "height": 573,
+      "words": 17,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Enquiries for",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 28,
+      "textLeft": 20,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 4065,
+      "height": 239,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 32,
+      "textLeft": 20,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "VINOD CHANNA",
+      "size": 51,
+      "top": 290,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 9
+     },
+     {
+      "x": 55,
+      "n": 2
+     },
+     {
+      "x": 39,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 12,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/desktop-page-01.jpg",
+    "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/home/sandbox/cafe-sites/vc-fitness-bandra/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
