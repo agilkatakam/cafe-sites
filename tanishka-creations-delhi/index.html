@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tanishka Creations | Designer Boutique, Rohini Delhi</title>
+<meta name="description" content="Tanishka Creations is a designer boutique in Rohini, Delhi. Blouses, suits, lehengas and gowns, custom stitched and altered to your measure. Open daily 10 AM to 9 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#150708;
+  --surface:#1f0b0d;
+  --ink:#eae8e3;
+  --muted:#c9bba9;
+  --accent:#c9a24a;
+  --accent-ink:#1c0d05;
+  --pad:clamp(20px,4vw,64px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Newsreader',Georgia,serif;
+  font-weight:400;
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{padding-left:var(--pad);padding-right:var(--pad)}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.1s cubic-bezier(.2,.6,.2,1),transform 1.1s cubic-bezier(.2,.6,.2,1)}
+.rv.on{opacity:1;transform:translateY(0)}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .xfade img{opacity:0}
+  .xfade img:first-child{opacity:1}
+}
+
+/* header */
+header{
+  position:absolute;top:0;left:0;right:0;z-index:10;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:30px var(--pad);
+}
+header .mark{font-size:16px;font-weight:500}
+header .mark span{color:var(--accent)}
+header a.visit{font-size:16px;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:5px;transition:opacity .4s}
+header a.visit:hover{opacity:.65}
+
+/* hero */
+.hero{
+  min-height:100svh;
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  position:relative;
+}
+.hero .object{
+  width:23vw;max-width:330px;min-width:190px;
+  aspect-ratio:4/5;
+  margin-top:12vh;
+  overflow:hidden;
+}
+.hero .object img{width:100%;height:100%;object-fit:cover;filter:brightness(0.9)}
+.hero h1{
+  width:100%;margin-top:2.5vh;
+  font-weight:300;text-align:center;white-space:nowrap;
+  font-size:min(7.6vw,7rem);
+  letter-spacing:0.05em;line-height:1.05;
+  text-transform:uppercase;
+}
+.hero .line{margin-top:1.5vh;font-size:22px;font-weight:400;color:var(--ink);text-align:center}
+.hero .spec{
+  margin-top:3vh;
+  display:flex;align-items:center;gap:44px;
+  font-size:15px;color:var(--muted);font-style:italic;
+}
+.hero .spec .btn{
+  background:var(--ink);color:var(--bg);
+  padding:14px 32px;
+  font-size:16px;font-style:normal;
+  transition:background .4s,color .4s;
+  white-space:nowrap;
+}
+.hero .spec .btn:hover{background:var(--accent);color:var(--accent-ink)}
+@media (max-width:768px){
+  header{padding:20px}
+  .hero{justify-content:center;padding-bottom:0}
+  .hero .object{width:56%;margin-top:0}
+  .hero h1{margin-top:3.5vh}
+  .hero .line{font-size:19px;padding:0 20px;margin-top:2vh}
+  .hero .spec{flex-direction:column;gap:18px;margin-top:3.5vh}
+  .hero .spec .btn{width:calc(100vw - 40px);text-align:center}
+}
+
+/* intro */
+.intro{height:100svh;position:relative;overflow:hidden}
+.intro .stage{position:relative;height:100%}
+.intro .sentence{
+  position:absolute;z-index:5;
+  left:50%;top:48%;transform:translate(-50%,-50%);
+  width:34%;max-width:520px;
+  text-align:center;
+  font-size:clamp(24px,1.2rem + 1.4vw,32px);
+  line-height:1.35;
+  font-weight:300;
+}
+.intro .ph{position:absolute;overflow:hidden;z-index:2}
+.intro .ph img{width:100%;height:100%;object-fit:cover;filter:brightness(0.85) contrast(1.05)}
+.intro .ph1{width:24vw;aspect-ratio:4/5;left:6vw;top:8svh}
+.intro .ph2{width:31vw;max-width:590px;right:6vw;top:12svh}
+.intro .ph2 img{height:auto;aspect-ratio:590/262;object-fit:cover}
+.intro .ph2 figcaption{margin-top:8px;font-size:13px;color:var(--muted);font-style:italic}
+.intro .ph3{width:19vw;aspect-ratio:1/1;right:12vw;top:58svh}
+@media (max-width:768px){
+  .intro .sentence{width:66%;font-size:22px;top:44%}
+  .intro .ph1{width:32vw;top:5svh;left:5vw}
+  .intro .ph2{width:48vw;top:60svh;right:5vw}
+  .intro .ph3{width:26vw;top:70svh;left:7vw}
+}
+
+/* list */
+.list{padding:8vh var(--pad) 7vh}
+.list .group{
+  font-size:24px;
+  color:var(--accent);
+  font-weight:400;
+  margin:6vh 0 28px;
+}
+.list .group:first-child{margin-top:0}
+.list table{width:100%;border-collapse:collapse}
+.list td{
+  font-size:21px;
+  font-weight:300;
+  padding:0.68em 0;
+  vertical-align:baseline;
+}
+.list td.c2{width:31%;color:var(--muted)}
+.list td.c3{width:26%;color:var(--muted)}
+.list td.c4{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+@media (max-width:768px){
+  .list td{display:block;padding:0;font-size:16px}
+  .list td.c1{font-size:22px;padding-top:18px}
+  .list td.c2,.list td.c3,.list td.c4{width:auto;text-align:left;display:inline}
+  .list td.c3::before{content:" · "}
+  .list td.c4::before{content:" · "}
+  .list tr{display:block;padding-bottom:18px}
+}
+
+/* gallery */
+.gallery{padding:6vh var(--pad) 6vh;position:relative}
+.gallery h2{font-size:24px;color:var(--accent);font-weight:400;margin-bottom:6vh}
+.gallery figure{position:relative}
+.gallery img{filter:brightness(0.88) contrast(1.04)}
+.gallery figcaption{margin-top:10px;font-size:13px;color:var(--muted);font-style:italic}
+.g-a{width:36%}
+.g-b{width:44%;margin-left:auto;margin-top:12vh}
+.g-c{width:40%;margin-left:44%;margin-top:12vh}
+.g-d{width:30%;margin-left:8%;margin-top:12vh}
+.g-e{width:40%;margin-left:4%;margin-top:12vh}
+@media (max-width:768px){
+  .g-a{width:70%}
+  .g-b{width:84%;margin-top:64px}
+  .g-c{width:64%;margin-left:22%;margin-top:64px}
+  .g-d{width:56%;margin-top:64px}
+  .g-e{width:100%;margin-left:0;margin-top:64px}
+}
+
+/* contact */
+.contact{position:relative;min-height:100svh;overflow:hidden}
+.contact .bg{position:absolute;inset:0;overflow:hidden}
+.contact .bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.55) contrast(1.05);opacity:0;transition:opacity 1.6s ease}
+.contact .bg img.show{opacity:1}
+.contact .card{
+  position:absolute;top:60px;right:var(--pad);
+  width:380px;max-width:calc(100vw - 40px);
+  background:var(--ink);color:var(--bg);
+  padding:32px;border-radius:8px;
+}
+.contact .card h2{font-size:24px;font-weight:400;line-height:1.2}
+.contact .card address{font-style:normal;margin-top:16px;font-size:16px;line-height:1.55;color:#3d3230}
+.contact .card .hours{margin-top:18px;font-size:16px}
+.contact .card .hours .row{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums;color:#3d3230;padding:2px 0}
+.contact .card .rating{margin-top:12px;font-size:13px;color:#6d5c56;font-style:italic}
+.contact .card .phone{margin-top:18px;font-size:19px;font-weight:500}
+.contact .card .phone a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+.contact .card .mail{margin-top:8px;font-size:16px;color:#3d3230}
+.contact .card .mail a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+.contact .card .cta{
+  display:block;text-align:center;
+  margin:24px -32px -32px;
+  padding:16px 0;
+  background:var(--accent);color:var(--accent-ink);
+  font-size:16px;
+  border-radius:0 0 8px 8px;
+  transition:filter .4s;
+}
+.contact .card .cta:hover{filter:brightness(1.12)}
+@media (max-width:768px){
+  .contact .bg{height:64svh;bottom:auto}
+  .contact .card{position:relative;top:auto;right:auto;margin:52svh auto 0;width:calc(100% - 32px)}
+}
+
+/* footer */
+footer{
+  background:var(--ink);color:var(--bg);
+  min-height:92svh;
+  display:grid;grid-template-rows:auto 1fr auto;
+  padding:40px var(--pad) 24px;
+}
+footer .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+footer .cols h3{font-size:16px;font-weight:500;margin-bottom:12px}
+footer .cols ul{list-style:none;font-size:16px;line-height:1.8;color:#4e4038}
+footer .cols a{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+footer .word{align-self:end}
+footer .word svg{width:100%;height:auto;display:block}
+footer .word text{font-family:'Newsreader',Georgia,serif;font-weight:300;fill:var(--bg)}
+footer .legal{margin-top:10px;font-size:16px;color:#54453a;line-height:1.7;max-width:72ch}
+footer .legal a{text-decoration:underline;text-decoration-color:#b9a89c;text-underline-offset:3px}
+@media (max-width:768px){
+  footer .cols{grid-template-columns:1fr 1fr;gap:32px 20px}
+  footer .word{margin-top:16svh}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="mark">Tanishka <span>Creations</span></div>
+  <a class="visit" href="#visit">Visit</a>
+</header>
+
+<section class="hero">
+  <div class="object rv">
+    <img src="assets/standee.jpg" alt="The boutique's own standee at Avantika Market, listing its stitching services" width="800" height="1200">
+  </div>
+  <h1>Tanishka Creations</h1>
+  <p class="line rv">A designer boutique in Rohini, Delhi.</p>
+  <div class="spec rv">
+    <span>Be traditional, be trendy</span>
+    <a class="btn" href="tel:+919599184882">Call to order</a>
+    <span>Open every day</span>
+  </div>
+</section>
+
+<section class="intro" aria-label="About the boutique">
+  <div class="stage">
+    <p class="sentence">Blouses, suits, lehengas and gowns, cut and stitched to your measure.</p>
+    <div class="ph ph1 rv"><img src="assets/pink-dress-with-embroidery-detail-crafts-museum.jpg" alt="Gold zardozi handwork on silk, from the Crafts Museum in Delhi" width="1920" height="1277" loading="lazy"></div>
+    <div class="ph ph2 rv"><img src="assets/signboard.jpg" alt="The full maroon and gold signboard of Tanishka Creations above the shop" width="590" height="262" loading="lazy"></div>
+    <div class="ph ph3 rv"><img src="assets/punjab-shawl-embroidery.jpg" alt="Running stitch embroidery on a shawl from Punjab" width="1600" height="1067" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="list" aria-label="Services">
+  <h2 class="group rv">Made to measure</h2>
+  <table class="rv">
+    <tr><td class="c1">Blouses</td><td class="c2">designer cuts</td><td class="c3">padded, lined or plain</td><td class="c4">stitched new</td></tr>
+    <tr><td class="c1">Suits</td><td class="c2">palazzo, anarkali, sharara</td><td class="c3">cut to your cloth</td><td class="c4">stitched new</td></tr>
+    <tr><td class="c1">Lehengas</td><td class="c2">skirt, blouse and dupatta</td><td class="c3">the full set</td><td class="c4">stitched new</td></tr>
+    <tr><td class="c1">Gowns</td><td class="c2">evening and occasion</td><td class="c3">fitted to you</td><td class="c4">stitched new</td></tr>
+  </table>
+  <h2 class="group rv">Customisation and alterations</h2>
+  <table class="rv">
+    <tr><td class="c1">Kurtis</td><td class="c2">everyday and festive</td><td class="c3">resized and restyled</td><td class="c4">altered</td></tr>
+    <tr><td class="c1">Sarees</td><td class="c2">drape and fall</td><td class="c3">edged and finished</td><td class="c4">altered</td></tr>
+    <tr><td class="c1">Your own garment</td><td class="c2">any cloth, any cut</td><td class="c3">repair and refit</td><td class="c4">altered</td></tr>
+  </table>
+</section>
+
+<section class="gallery" aria-label="Photographs">
+  <h2 class="rv">The boutique and its craft</h2>
+  <figure class="g-a rv">
+    <img src="assets/shopfront-portrait.jpg" alt="The ornate maroon and gold door of the boutique" width="345" height="431" loading="lazy">
+    <figcaption>The boutique door, Avantika Market Road</figcaption>
+  </figure>
+  <figure class="g-b rv">
+    <img src="assets/silk-sari-weaving-at-kanchipuram-tamil-nadu.jpg" alt="Silk threads stretched on a hand loom in Kanchipuram" width="1920" height="1440" loading="lazy">
+    <figcaption>Silk threads on a hand loom, Kanchipuram (archive)</figcaption>
+  </figure>
+  <figure class="g-c rv">
+    <img src="assets/embroidery-on-a-saree-01.jpg" alt="Detailed embroidery across a saree" width="1600" height="1200" loading="lazy">
+    <figcaption>Embroidery on a saree (archive)</figcaption>
+  </figure>
+  <figure class="g-d rv">
+    <img src="assets/signboard.jpg" alt="The full maroon and gold signboard of Tanishka Creations" width="590" height="262" loading="lazy">
+    <figcaption>The shop's signboard, photographed for its own listing</figcaption>
+  </figure>
+  <figure class="g-e rv">
+    <img src="assets/standee.jpg" alt="The boutique's services standee on the market pavement" width="800" height="1200" loading="lazy">
+    <figcaption>The pavement standee, photographed for the shop's own listing</figcaption>
+  </figure>
+</section>
+
+<section class="contact" id="visit" aria-label="Visit the boutique">
+  <div class="bg">
+    <img class="show" src="assets/shopfront-wide.jpg" alt="" width="1600" height="997">
+  </div>
+  <div class="card rv">
+    <h2>Visit the boutique</h2>
+    <address>A-184, Avantika Market Road<br>Sector 2, Rohini, Delhi 110085</address>
+    <div class="hours">
+      <div class="row"><span>Monday to Saturday</span><span>10 AM to 9 PM</span></div>
+      <div class="row"><span>Sunday</span><span>10 AM to 9 PM</span></div>
+    </div>
+    <p class="rating">Rated 5.0 by thirteen visitors on Google</p>
+    <p class="phone"><a href="tel:+919599184882">+91 95991 84882</a></p>
+    <p class="mail"><a href="mailto:amitgunnu1310@gmail.com">amitgunnu1310@gmail.com</a></p>
+    <a class="cta" href="tel:+919599184882">Call the boutique</a>
+  </div>
+</section>
+
+<footer>
+  <div class="cols">
+    <div>
+      <h3>Address</h3>
+      <ul>
+        <li>A-184, Avantika Market Road</li>
+        <li>Sector 2, Rohini</li>
+        <li>Delhi 110085</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+919599184882">+91 95991 84882</a></li>
+        <li><a href="mailto:amitgunnu1310@gmail.com">amitgunnu1310@gmail.com</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <ul>
+        <li>Open every day</li>
+        <li>10 AM to 9 PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="word">
+    <svg viewBox="0 0 1200 190" role="img" aria-label="Tanishka">
+      <text x="600" y="150" text-anchor="middle" textLength="1150" lengthAdjust="spacingAndGlyphs" font-size="190">TANISHKA</text>
+    </svg>
+  </div>
+  <p class="legal">Boutique photographs from the shop's own public listing. Archive photographs: <a href="https://commons.wikimedia.org/wiki/File:Pink_dress_with_embroidery,_detail,_Crafts_Museum,_New_Delhi.jpg">Yann, CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Embroidery_on_a_shawl_from_Punjab_05.jpg">Kritzolina, CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Embroidery_on_a_saree_01.jpg">Kritzolina, CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/w/index.php?curid=7838951">McKay Savage, CC BY 2.0</a>; silk and metal thread sari fragment, CC0, via Wikimedia Commons.</p>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});}
+  else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('on');io.unobserve(en.target);}});
+    },{rootMargin:'0px 0px 14% 0px',threshold:0.05});
+    els.forEach(function(e){io.observe(e)});
+  }
+  var bg=document.querySelectorAll('.xfade img');
+  if(bg.length>1 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var i=0;
+    setInterval(function(){
+      bg[i].classList.remove('show');
+      i=(i+1)%bg.length;
+      bg[i].classList.add('show');
+    },5600);
+  }
+})();
+</script>
+</body>
+</html>
