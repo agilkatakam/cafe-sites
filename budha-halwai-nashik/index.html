@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budha Halwai, Famous Jalebi Since 1957, Nashik</title>
+<meta name="description" content="Budha Halwai at Naikwadi Pura, Nashik has fried its famous jalebi since 1957. Jalebi, Pakka Pedha, Raghavdas Ladoo and more from the counter behind Bhadrakali Mandir.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f1ea; --surface:#eae1d1; --ink:#2d2018; --muted:#6b5b48;
+  --accent:#a03123; --accent-ink:#fdf8ee;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Switzer',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:var(--step-body);line-height:1.45;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{padding-left:6vw;padding-right:6vw}
+section{padding-top:140px}
+h2{font-weight:400;letter-spacing:-0.03em;line-height:1.05}
+@supports (animation-timeline: view()){
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  @keyframes rise{from{transform:translateY(26px)}to{transform:none}}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;padding:10vh 6vw 0}
+.hero .stand{margin-top:14px;font-size:19px;color:var(--ink)}
+.hero h1{font-weight:400;font-size:clamp(56px,8.5vw,140px);letter-spacing:-0.04em;line-height:1.0;position:relative;z-index:2;margin-top:14px}
+.hero .lower{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start;margin-top:24px}
+.hero .side{grid-column:1/5;max-width:30ch}
+.hero .photo{position:relative;grid-column:6/13;margin-top:-4.5vw;z-index:1}
+.hero .photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.hero .note{font-size:15px;color:var(--ink)}
+.hero-btn{margin-top:18px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:16px;padding:14px 22px;border-radius:4px;transition:background .25s ease}
+.btn:hover{background:#7e271c}
+
+/* ---------- intro ---------- */
+.intro .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.intro .text{grid-column:2/7;font-size:var(--step-lead);line-height:1.45;max-width:40ch}
+.intro .text p+p{margin-top:20px}
+.intro .pic{grid-column:8/11;margin-top:72px}
+.intro .pic img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.intro .pic figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* ---------- list ---------- */
+.list{margin-top:120px;background:var(--surface);padding:120px 6vw;display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.list h2{font-size:clamp(32px,4vw,60px);grid-column:1/5}
+.list ul{list-style:none;grid-column:6/13}
+.list li{padding:14px 0;font-size:clamp(22px,2.6vw,38px);font-weight:400;letter-spacing:-0.02em}
+.list li small{font-size:inherit;color:var(--muted);letter-spacing:0;font-weight:400}
+
+/* ---------- gallery ---------- */
+.gallery{margin-top:160px}
+.gallery .wide{width:66.666%;margin-left:0}
+.gallery .wide img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery .row2{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:120px;align-items:start}
+.gallery .row2 .sq{grid-column:9/12;margin-top:80px}
+.gallery .row2 .sq img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.gallery .row2 .words{grid-column:2/7;font-size:17px;max-width:38ch}
+.gallery .row3{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:120px;align-items:start}
+.gallery .row3 .tall{grid-column:3/6}
+.gallery .row3 .tall img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.gallery .row3 .mid{grid-column:7/12;margin-top:140px}
+.gallery .row3 .mid img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.gallery figcaption{font-size:13px;color:var(--muted);margin-top:8px}
+
+/* ---------- contact ---------- */
+.contact{margin-top:160px;background:var(--surface);padding:120px 6vw 100px}
+.contact h2{font-size:clamp(32px,4vw,60px)}
+.contact .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:64px}
+.contact .cell{grid-column:span 4}
+.contact .cell h3{font-size:16px;font-weight:500;margin-bottom:10px}
+.contact .cell p,.contact .cell a{font-size:17px;line-height:1.6;text-decoration:none}
+.contact .cell a:hover{text-decoration:underline}
+.contact .btn{display:inline-block;margin-top:56px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:16px;padding:14px 22px;border-radius:4px;transition:background .25s ease}
+.contact .btn:hover{background:#7e271c}
+
+/* ---------- footer ---------- */
+.footer{margin-top:0;background:var(--ink);color:#f6efe3;padding:80px 6vw 24px;min-height:70svh;display:grid;grid-template-rows:auto 1fr auto}
+.footer .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.footer .cols h3{font-size:16px;font-weight:500;margin-bottom:12px}
+.footer .cols ul{list-style:none;font-size:15px;line-height:1.7;color:#c9b9a4;overflow-wrap:anywhere}
+.footer .cols a{color:#c9b9a4;text-decoration:none}
+.footer .cols a:hover{color:#fff}
+.footer .word{font-weight:400;letter-spacing:-0.04em;line-height:0.9;font-size:15vw;text-align:center;white-space:nowrap;color:#f6efe3}
+.footer .legal{font-size:13px;color:#9a8a74;text-align:center;margin-top:20px}
+
+@media (max-width:860px){
+  section{padding-top:88px}
+  .wrap{padding-left:20px;padding-right:20px}
+  .hero{padding:12vh 20px 0;min-height:auto;padding-bottom:72px}
+  .hero h1{font-size:14vw}
+  .hero .lower{display:block;margin-top:24px}
+  .hero .photo{width:100%;margin-top:32px}
+  .hero .side{max-width:none}
+  .intro .text{grid-column:1/13}
+  .intro .pic{grid-column:1/13;width:72%;margin-top:48px}
+  .list{padding:80px 20px;display:block}
+  .list li{flex-direction:column;gap:4px}
+  .gallery{margin-top:88px}
+  .gallery .wide{width:100%}
+  .gallery .row2 .sq{grid-column:1/13;width:60%;margin-left:40%;margin-top:0}
+  .gallery .row2 .words{grid-column:1/13;margin-top:32px}
+  .gallery .row3 .tall{grid-column:1/13;width:64%}
+  .gallery .row3 .mid{grid-column:1/13;margin-top:32px}
+  .gallery .row2,.gallery .row3{margin-top:56px}
+  .contact{padding:80px 20px 72px}
+  .contact .cell{grid-column:1/13;margin-top:24px}
+  .footer .cols{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+  .footer .word{font-size:14vw}
+}
+@media (prefers-reduced-motion: reduce){
+  .reveal{animation:none !important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <h1>Budha Halwai</h1>
+  <p class="stand">A sweet shop in Nashik, famous for its jalebi since 1957.</p>
+  <div class="lower">
+    <div class="side">
+      <p class="note">A sweet counter behind Bhadrakali Mandir that Nashik has queued at for three generations.</p>
+      <a class="btn hero-btn" href="tel:+912532509091">Call the counter</a>
+    </div>
+    <div class="photo"><img src="assets/hero.jpg" alt="The Budha Halwai shop front with its red signboard" width="1600" height="1200"></div>
+  </div>
+</header>
+
+<main>
+<section class="intro wrap">
+  <div class="grid">
+    <div class="text reveal">
+      <p>Budha Halwai began in 1957, and its jalebi turned into the taste the city points at first. Hot, crisp coils come off the kadhai through the day, and the counter does a steady trade in pedhas, ladoos and samosas alongside.</p>
+      <p>The shop stands in the old lanes of Naikwadi Pura, a few steps behind Bhadrakali Mandir, much as it always has.</p>
+    </div>
+    <figure class="pic reveal">
+      <img src="assets/counter.jpg" alt="Evening crowd at the Budha Halwai counter" width="900" height="1200" loading="lazy">
+      <figcaption>The evening queue at the counter</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="list">
+  <h2 class="reveal">From the counter</h2>
+  <ul class="reveal">
+    <li>Jalebi, <small>fried through the day, sold hot</small></li>
+    <li>Pakka Pedha, <small>the shop&#8217;s own recipe</small></li>
+    <li>Raghavdas Ladoo, <small>a Nashik favourite</small></li>
+    <li>Special Dry Samosa, <small>crisp and savoury</small></li>
+    <li>Seasonal mithai, <small>as the calendar turns</small></li>
+  </ul>
+</section>
+
+<section class="gallery wrap">
+  <h2 style="position:absolute;left:-9999px">The shop and its sweets</h2>
+  <figure class="wide reveal">
+    <video autoplay muted loop playsinline poster="assets/plate1.jpg" aria-label="A slow pan across fresh jalebi and snacks" style="width:100%;aspect-ratio:4/3;object-fit:cover"><source src="assets/plate.mp4" type="video/mp4"></video>
+    <figcaption>Jalebi and snacks, fresh off the counter</figcaption>
+  </figure>
+  <div class="row2">
+    <p class="words reveal">Three generations of Nashik have grown up on these plates. The recipe has not moved, and neither has the shop.</p>
+    <figure class="sq reveal">
+      <img src="assets/plate3.jpg" alt="A paper plate of jalebi and fafda" width="900" height="1200" loading="lazy">
+      <figcaption>Jalebi with fafda</figcaption>
+    </figure>
+  </div>
+  <div class="row3">
+    <figure class="tall reveal">
+      <img src="assets/plate2.jpg" alt="Jalebi and fafda with a green chilli" width="900" height="1200" loading="lazy">
+      <figcaption>The classic pairing</figcaption>
+    </figure>
+    <figure class="mid reveal">
+      <img src="assets/shop-day.jpg" alt="The shop in daylight with its display counter" width="1600" height="1067" loading="lazy">
+      <figcaption>The shop through the day</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="contact">
+  <h2 class="reveal">Find the shop</h2>
+  <div class="grid reveal">
+    <div class="cell"><h3>Address</h3><p>Behind Bhadrakali Mandir Road, Naikwadi Pura, Tivandha Chowk, Nashik, Maharashtra 422001</p></div>
+    <div class="cell"><h3>Call</h3><p><a href="tel:+912532509091">+91 253 250 9091</a></p></div>
+    <div class="cell"><h3>Write</h3><p><a href="mailto:budhahalwai@yahoo.com">budhahalwai@yahoo.com</a></p></div>
+  </div>
+  <a class="btn" href="tel:+912532509091">Call the counter</a>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="cols">
+    <div><h3>Address</h3><ul><li>Behind Bhadrakali Mandir Road</li><li>Naikwadi Pura, Tivandha Chowk</li><li>Nashik, Maharashtra 422001</li></ul></div>
+    <div><h3>Page</h3><ul><li><a href="#top">Back to top</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="tel:+912532509091">+91 253 250 9091</a></li><li><a href="mailto:budhahalwai@yahoo.com">budhahalwai@yahoo.com</a></li></ul></div>
+    <div><h3>Known for</h3><ul><li>Jalebi</li><li>Pakka Pedha</li><li>Raghavdas Ladoo</li></ul></div>
+  </div>
+  <div></div>
+  <div>
+    <div class="word" aria-hidden="true">Budha Halwai</div>
+    <p class="legal">&#169; 2026 Budha Halwai, Nashik. Photographs from the shop&#8217;s own Google Business profile.</p>
+  </div>
+</footer>
+
+</body>
+</html>

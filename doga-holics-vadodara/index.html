@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOGa-holics The Premium Pet Store, Gotri, Vadodara</title>
+<meta name="description" content="DOGa-holics The Premium Pet Store at Gotri, Vadodara stocks food, treats, toys and grooming essentials for dogs, cats and small animals. Call +91 73833 59999.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eeecea; --panel:#e1dedb; --ink:#333231; --muted:#5f5b57;
+  --accent:#5c6b54; --accent-ink:#ffffff; --radius:4px;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Schibsted Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--ink);font-size:var(--step-body);line-height:1.5;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:16px;padding:14px 22px;border-radius:var(--radius);transition:background .25s ease}
+.btn:hover{background:#4c5946}
+section{padding:120px 20px 100px}
+h2{font-weight:600;letter-spacing:-0.03em;line-height:1.05}
+@supports (animation-timeline: view()){
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+  @keyframes rise{from{transform:translateY(26px)}to{transform:none}}
+}
+
+/* ---------- hero: lit strip, four corners ---------- */
+.hero{position:relative;min-height:100svh;background:var(--ink);color:#eeecea;display:flex;flex-direction:column;justify-content:space-between;padding:44px 72px}
+.hero .corner{font-size:15px;font-weight:500;letter-spacing:0.01em}
+.hero .top{display:flex;justify-content:space-between;align-items:baseline}
+.hero .top a{text-decoration:none;border-bottom:2px solid transparent}
+.hero .top a:hover{border-bottom-color:#eeecea}
+.hero .strip-wrap{position:relative;margin:0 -72px}
+.hero .strip{display:flex;gap:10px;height:34vh;padding:0}
+.hero .strip::-webkit-scrollbar{display:none}
+.hero .strip figure{flex:1 1 0;min-width:0;height:100%;overflow:hidden}
+.hero .strip img{height:100%;width:100%;object-fit:cover;filter:brightness(.55);transition:filter .5s ease}
+.hero .strip figure:hover img{filter:brightness(1)}
+.hero .strip figcaption{position:absolute;visibility:hidden}
+.hero .bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.hero .what{max-width:36ch;font-size:18px;line-height:1.45}
+.hero .act{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+
+/* ---------- gallery: dense masonry sheet ---------- */
+.gallery .statement{font-size:22px;line-height:1.35;max-width:30ch;margin-left:60%;margin-bottom:64px}
+.gallery .masonry{columns:6;column-gap:4px}
+.gallery figure{break-inside:avoid;margin-bottom:4px}
+.gallery figure img{width:100%}
+.gallery figcaption{font-size:13px;color:var(--muted);margin:6px 0 14px}
+.gallery .feature-tile{width:33%;margin-bottom:4px}
+
+/* ---------- features: name columns ---------- */
+.features{background:var(--panel)}
+.features h2{font-size:var(--step-head);margin-bottom:72px}
+.features .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.features .col h3{font-size:16px;font-weight:600;margin-bottom:10px}
+.features .col p{font-size:16px;color:var(--muted);max-width:24ch}
+
+/* ---------- intro ---------- */
+.intro .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.intro h2{font-size:var(--step-head);grid-column:1/8}
+.intro .body{grid-column:8/13;align-self:end;font-size:var(--step-lead);line-height:1.45}
+.intro .facts{display:flex;gap:56px;flex-wrap:wrap;margin-top:96px}
+.intro .fact{font-size:clamp(26px,2.6vw,40px);letter-spacing:-0.02em}
+.intro .fact small{display:block;font-size:13px;color:var(--muted);margin-top:8px}
+
+/* ---------- rating band ---------- */
+.rating{background:var(--panel)}
+.rating{text-align:center}
+.rating blockquote{font-size:clamp(26px,2.6vw,34px);font-weight:600;letter-spacing:-0.02em;line-height:1.2;max-width:30ch;margin:0 auto}
+.rating .who{margin-top:28px;font-size:16px;color:var(--muted)}
+
+/* ---------- cta ---------- */
+.cta .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.cta h2{font-size:clamp(44px,7vw,110px);letter-spacing:-0.04em;line-height:0.95;grid-column:1/8}
+.cta .row{grid-column:8/13;display:flex;flex-direction:column;align-items:flex-start;gap:28px}
+.cta .row p{font-size:20px;max-width:34ch}
+
+/* ---------- footer ---------- */
+.footer{background:var(--ink);color:#eeecea;padding:64px 20px 24px}
+.footer .cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.footer .cols h3{font-size:16px;font-weight:600;margin-bottom:12px}
+.footer .cols ul{list-style:none;font-size:16px;line-height:1.7;color:#b9b6b2;overflow-wrap:anywhere}
+.footer .cols a{color:#b9b6b2;text-decoration:none}
+.footer .cols a:hover{color:#fff}
+.footer .word{font-weight:600;letter-spacing:-0.05em;line-height:0.9;font-size:12.5vw;text-align:center;margin:80px 0 24px;white-space:nowrap}
+.footer .legal{font-size:13px;color:#a9a5a0;text-align:center;max-width:60ch;margin:0 auto}
+
+@media (max-width:860px){
+  section{padding:80px 16px 64px}
+  .hero{padding:24px 20px 32px}
+  .hero .strip-wrap{margin:0 -20px}
+  .hero .strip{height:46vh}
+  .hero .strip figure:nth-child(n+5){display:none}
+  .hero .bottom{flex-direction:column;align-items:flex-start;gap:12px}
+  .gallery .statement{margin-left:0;font-size:19px;margin-bottom:40px}
+  .gallery .masonry{columns:3}
+  .gallery .feature-tile{width:100%}
+  .features .cols{grid-template-columns:1fr 1fr;gap:32px}
+  .intro h2,.intro .body{grid-column:1/13}
+  .cta h2,.cta .row{grid-column:1/13}
+  .cta .row{margin-top:24px}
+  .intro .body{margin-top:24px}
+  .intro .facts{gap:32px;margin-top:64px}
+  .cta .row{flex-direction:column;align-items:flex-start}
+  .cta .row .btn{width:100%;text-align:center;padding:18px 22px}
+  .footer .cols{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+}
+@media (prefers-reduced-motion: reduce){
+  .reveal{animation:none !important}
+  .hero .strip img{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="top">
+    <h1 class="corner" style="font-size:clamp(40px,5vw,68px);font-weight:600;letter-spacing:-0.03em;line-height:1">DOGa-holics</h1>
+    <p class="corner"><a href="#visit">The Premium Pet Store</a></p>
+  </div>
+  <div class="strip-wrap">
+    <div class="strip" id="strip">
+      <figure><img src="assets/storefront.jpg" alt="The DOGa-holics storefront at Gotri, Vadodara" width="1600" height="1200"></figure>
+      <figure><img src="assets/pup-paws.jpg" alt="A golden retriever puppy" width="1600" height="2000" loading="lazy"></figure>
+      <figure><img src="assets/cat-yellow.jpg" alt="A ginger cat sitting against a yellow wall" width="1600" height="1600" loading="lazy"></figure>
+      <figure><img src="assets/shelves.jpg" alt="Shelves of pet food inside the shop" width="1600" height="1200" loading="lazy"></figure>
+      <figure><img src="assets/golden-grass.jpg" alt="A smiling golden retriever on grass" width="1600" height="2400" loading="lazy"></figure>
+      <figure><img src="assets/pup-flower.jpg" alt="A golden puppy with a flower" width="1600" height="2565" loading="lazy"></figure>
+      <figure><img src="assets/cat-tabby.jpg" alt="A tabby cat looking at the camera" width="1600" height="1227" loading="lazy"></figure>
+    </div>
+  </div>
+  <div class="bottom">
+    <p class="corner what">A premium pet store for dogs and cats at Gotri, Vadodara.</p>
+    <p class="corner"><a class="btn" href="tel:+917383359999">Call +91 73833 59999</a></p>
+  </div>
+</header>
+
+<main>
+<section class="gallery">
+  <h2 style="font-size:22px;font-weight:600;margin-bottom:24px">The shop and its regulars</h2>
+  <p class="statement reveal">Dogs, cats and the people who spoil them. Everything they need, one shop at Gotri.</p>
+  <div class="feature-tile"><figure><video autoplay muted loop playsinline poster="assets/storefront2.jpg" aria-label="A slow pan across the DOGa-holics shop front" style="width:100%;display:block"><source src="assets/store.mp4" type="video/mp4"></video><figcaption>DOGa-holics, storefront</figcaption></figure></div>
+  <div class="masonry">
+    <figure><img src="assets/golden-flower.jpg" alt="A golden retriever holding a pink flower" width="1600" height="2844" loading="lazy"><figcaption>Blossom, retriever</figcaption></figure>
+    <figure><img src="assets/cat-orange.jpg" alt="An orange and white cat" width="1600" height="2400" loading="lazy"><figcaption>Simba, cat</figcaption></figure>
+    <figure><img src="assets/shelves.jpg" alt="Stocked shelves inside the shop" width="1600" height="1200" loading="lazy"><figcaption>The shop, shelves</figcaption></figure>
+    <figure><img src="assets/golden-sea.jpg" alt="A retriever running through shallow sea" width="1600" height="2397" loading="lazy"></figure>
+    <figure><img src="assets/pup-paws.jpg" alt="A golden puppy lying with its paws forward" width="1600" height="2000" loading="lazy"><figcaption>Bruno, puppy</figcaption></figure>
+    <figure><img src="assets/cat-tabby.jpg" alt="A tabby cat in close up" width="1600" height="1227" loading="lazy"></figure>
+    <figure><img src="assets/golden-grass.jpg" alt="A golden retriever smiling in a garden" width="1600" height="2400" loading="lazy"></figure>
+    <figure><img src="assets/cat-yellow.jpg" alt="A ginger cat against a yellow backdrop" width="1600" height="1600" loading="lazy"></figure>
+    <figure><img src="assets/pup-flower.jpg" alt="A golden puppy holding a flower in its mouth" width="1600" height="2565" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="features" id="visit">
+  <h2 class="reveal">On the shelves</h2>
+  <div class="cols">
+    <div class="col reveal"><h3>Food</h3><p>Dog and cat food across life stages and sizes.</p></div>
+    <div class="col reveal"><h3>Treats</h3><p>Treats and chews for training and rewarding.</p></div>
+    <div class="col reveal"><h3>Toys</h3><p>Cat toys and playthings for small animals.</p></div>
+    <div class="col reveal"><h3>Walking</h3><p>Collars, leashes, belts and chains.</p></div>
+    <div class="col reveal"><h3>Grooming</h3><p>Shampoos, conditioners and bath tubs.</p></div>
+    <div class="col reveal"><h3>Home</h3><p>Cages, bowls and feeders.</p></div>
+    <div class="col reveal"><h3>Small animals</h3><p>Care and supplies for little companions.</p></div>
+    <div class="col reveal"><h3>Advice</h3><p>A trained team that knows animal welfare.</p></div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="grid">
+    <h2 class="reveal">The shop at Gotri Lake</h2>
+    <p class="body reveal">DOGa-holics The Premium Pet Store sits on the ground floor of Rukmani Complex near Gotri Lake in Vadodara. The team is trained in animal welfare and pet store management, and the shelves run from daily food to the small things that make pets happy.</p>
+  </div>
+  <div class="facts reveal">
+    <div class="fact">4.6<small>Google rating</small></div>
+    <div class="fact">430+<small>Google reviews</small></div>
+    <div class="fact">Gotri<small>Vadodara, Gujarat</small></div>
+  </div>
+</section>
+
+<section class="rating">
+  <blockquote class="reveal">&#8220;4.6 out of 5, from more than 430 Google reviews.&#8221;</blockquote>
+  <p class="who">What pet parents say about the shop</p>
+</section>
+
+<section class="cta">
+  <div class="grid">
+  <h2 class="reveal">Visit the shop</h2>
+  <div class="row">
+    <p>GF 9, Rukmani Complex, near Gotri Lake, Gotri, Vadodara 390021. Call +91 73833 59999 or write to dogaholicsthepetshop@gmail.com.</p>
+    <a class="btn" href="tel:+917383359999">Call the shop</a>
+  </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="cols">
+    <div><h3>Address</h3><ul><li>GF 9, Rukmani Complex</li><li>Near Gotri Lake, Gotri</li><li>Vadodara, Gujarat 390021</li></ul></div>
+    <div><h3>Page</h3><ul><li><a href="#visit">On the shelves</a></li><li><a href="#top">Back to top</a></li></ul></div>
+    <div><h3>Contact</h3><ul><li><a href="tel:+917383359999">+91 73833 59999</a></li><li><a href="mailto:dogaholicsthepetshop@gmail.com">dogaholicsthepetshop@gmail.com</a></li></ul></div>
+    <div><h3>For</h3><ul><li>Dogs and cats</li><li>Small animals</li></ul></div>
+  </div>
+  <div class="word" aria-hidden="true">DOGa-holics</div>
+  <p class="legal">&#169; 2026 DOGa-holics The Premium Pet Store.<br>Shop photos from the store&#8217;s Google profile. Pets from Unsplash.</p>
+</footer>
+
+</body>
+</html>
