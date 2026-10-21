@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ritu's Hair &amp; Beauty Salon - Waterfield Road, Bandra West</title>
+<meta name="description" content="Ritu's Hair & Beauty Salon, Bandra West. Twenty years of ladies' hair, skin, makeup and nails on Waterfield Road - in the salon or at your doorstep.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#0f1f10; --moss:#162a17; --snow:#ffffff; --mist:#bcc5bc; --lime:#c6f19d; --deep:#081008;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--forest);color:var(--snow);font-family:'General Sans',sans-serif;font-size:var(--step-body);line-height:1.55;overflow-x:hidden}
+img{display:block}
+a{color:inherit}
+h1,h2{font-family:'Gambarino',serif;font-weight:400;letter-spacing:-0.02em;line-height:0.92}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.rl{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease}
+.rl.on{opacity:1;transform:none}
+.w{display:inline-block;white-space:nowrap}
+
+/* ---- hero: two photographs, one rail crossing the middle ---- */
+.hero-wrap{position:relative;height:200svh;padding-top:.1px}
+.hshot{position:absolute;left:0;width:100%;height:100svh;overflow:hidden}
+.hshot.a{top:0}.hshot.b{top:100svh}
+.hshot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease,transform 12s ease-in-out;transform:scale(1.02)}
+.hshot img.on{opacity:1;transform:scale(1.09)}
+.rail{position:sticky;top:0;z-index:40;height:64px;margin-top:calc(50svh - 32px);
+  display:flex;align-items:center;gap:2.4vw;
+  background:rgba(8,16,8,.72);padding:0 24px}
+.rail h1{font-size:clamp(32px,2.6vw,40px);font-weight:400;letter-spacing:-0.02em;line-height:1.02;white-space:nowrap;margin-left:0}
+.rail .line{font-size:1.125rem;color:var(--mist);max-width:44ch;margin-left:auto;line-height:1.4}
+.rail nav{display:flex;gap:26px;font-size:var(--step-small)}
+.rail nav a{text-decoration:none;opacity:.85;transition:opacity .3s}
+.rail nav a:hover{opacity:1}
+.rail .book{flex:none;display:inline-flex;align-items:center;gap:10px;background:var(--snow);color:var(--forest);
+  font-size:var(--step-small);font-weight:500;text-decoration:none;padding:11px 20px;transition:background .3s}
+.rail .book i{width:8px;height:8px;background:var(--lime);transition:transform .3s}
+.rail .book:hover i{transform:translateX(4px)}
+.hero-note{position:absolute;left:20px;right:20px;top:66svh;z-index:30;
+  font-size:1.0625rem;line-height:1.5;color:var(--snow);background:rgba(8,16,8,.72);padding:14px 16px;display:none}
+.hero-note .nb{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:12px;height:52px;background:var(--snow);color:var(--forest);font-weight:500;text-decoration:none}
+.hero-note .nb i{width:8px;height:8px;background:var(--lime)}
+
+/* ---- intro: headline crossing onto a photograph ---- */
+.intro{position:relative;background:var(--snow);color:var(--forest);padding:0 0 12svh;overflow:hidden}
+.intro h2{font-size:clamp(2.9rem,5.6vw,5.5rem);line-height:1.04;padding-top:34svh;position:relative;z-index:5;
+  margin-left:32px;max-width:60vw}
+.intro h2 .l2{display:block;padding-left:6vw}
+.intro .lead{margin:6svh 0 0 32px;max-width:34ch;font-size:1.375rem;line-height:1.4;position:relative;z-index:5}
+.intro .big{position:absolute;top:42%;right:0;width:min(720px,44vw);height:96svh;object-fit:cover;object-position:top}
+.intro .small{margin:10svh 0 0 32px;width:360px;max-width:70vw;height:400px;object-fit:cover}
+
+/* ---- gallery: drag row of mixed modules ---- */
+.gallery{background:var(--snow);color:var(--forest);padding:16svh 0 14svh;overflow:hidden}
+.gallery .bar{display:flex;align-items:baseline;justify-content:space-between;margin:0 32px 32px}
+.gallery h2{font-size:clamp(1.75rem,2.4vw,2.25rem)}
+.gallery .cnt{font-size:var(--step-small);color:var(--moss);opacity:.6}
+.drow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x proximity;padding-left:6vw;height:68svh;
+  scrollbar-width:none;cursor:grab}
+.drow::-webkit-scrollbar{display:none}
+.drow.dragging{cursor:grabbing;scroll-snap-type:none}
+.drow>*{flex:none;scroll-snap-align:start;height:100%}
+.drow img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.drow .tall{aspect-ratio:3/4}
+.drow .stack{display:flex;flex-direction:column;gap:12px;aspect-ratio:3/4}
+.drow .stack>div{flex:1;overflow:hidden}
+.drow .wide{aspect-ratio:16/10}
+
+/* ---- features: rows with margin photographs ---- */
+.features{background:var(--moss);padding:18svh 32px}
+.features .stmt{font-family:'Gambarino',serif;font-size:clamp(1.5rem,2.6vw,2.25rem);line-height:1.15;letter-spacing:-0.01em;
+  margin:0 0 16svh 35%;max-width:22ch}
+.frow{display:flex;justify-content:space-between;align-items:flex-start;gap:4vw;margin:0 0 110px 35%}
+.frow:last-child{margin-bottom:0}
+.frow .txt{max-width:34ch}
+.frow h3{font-family:'Gambarino',serif;font-weight:400;font-size:clamp(1.75rem,3vw,3rem);letter-spacing:-0.02em;line-height:1;margin-bottom:18px}
+.frow p{font-size:1rem;color:var(--mist);line-height:1.6}
+.frow img{object-fit:cover;flex:none}
+.frow img.s1{width:240px;aspect-ratio:4/5}
+.frow img.s2{width:320px;aspect-ratio:3/2}
+.frow img.s3{width:180px;aspect-ratio:1/1}
+
+/* ---- list: statement, table pushed right ---- */
+.list{background:var(--snow);color:var(--forest);padding:18svh 32px 16svh;position:relative}
+.list h2{font-size:clamp(2.5rem,4.5vw,4.25rem);line-height:0.98;margin-left:3vw}
+.list h2 .l2{display:block}
+.list .grid{display:flex;gap:3vw;margin-top:96px;align-items:flex-end}
+.list .tag{flex:none;width:8%;font-size:var(--step-small);color:var(--moss);opacity:.6;padding-top:6px;align-self:flex-start}
+.list table{flex:none;width:46%;margin-left:auto;border-collapse:collapse;align-self:flex-start}
+.list td{font-size:1rem;padding:0 0 26px;vertical-align:baseline}
+.list tr.gap td{padding-top:44px}
+.list .k{color:var(--moss);opacity:.65;width:26%}
+.list .p{width:38%}
+.list .v{text-align:right}
+.list .v a{color:var(--forest);text-decoration:none;transition:opacity .3s}
+.list .v a:hover{opacity:.55}
+.list .arr{display:inline-block;width:9px;height:9px;background:var(--lime);margin-left:8px;vertical-align:1px}
+.list .side{width:22vw;max-width:420px;aspect-ratio:4/5;object-fit:cover;flex:none}
+
+/* ---- contact: visit card on a photograph ---- */
+.contact{position:relative;height:135svh}
+.contact .bg{position:absolute;inset:0;width:100%;height:100svh;object-fit:cover}
+.card{position:sticky;top:60px;z-index:10;float:right;margin:60px 60px 0 0;width:380px;max-width:calc(100vw - 32px);
+  background:var(--snow);color:var(--forest);border-radius:8px;padding:32px;clear:both}
+.card h2{font-size:1.75rem;margin-bottom:20px}
+.card address{font-style:normal;font-size:1rem;line-height:1.55;margin-bottom:18px}
+.card .note{font-size:1rem;margin-bottom:18px;color:var(--moss)}
+.card .tel{display:block;font-size:1.125rem;font-weight:500;text-decoration:none;margin-bottom:6px}
+.card .wa{display:inline-block;font-size:1rem;text-decoration:none;opacity:.75;margin-bottom:26px;transition:opacity .3s}
+.card .cta{display:flex;align-items:center;justify-content:center;gap:12px;height:52px;background:var(--forest);color:var(--snow);
+  font-weight:500;text-decoration:none;transition:background .3s}
+.card .cta i{width:9px;height:9px;background:var(--lime);transition:transform .3s}
+.card .cta:hover{background:var(--moss)}
+.card .cta:hover i{transform:translateX(4px)}
+
+/* ---- footer: the back of the card ---- */
+.foot{background:var(--forest);padding:12svh 4vw 8svh}
+.foot .mark{font-family:'Gambarino',serif;color:var(--lime);font-size:clamp(2.2rem,4vw,3.4rem);text-align:center;margin-bottom:7svh;letter-spacing:-0.02em}
+.panel{position:relative;background:var(--snow);color:var(--forest);margin:0 4vw;padding:64px 48px 40px;min-height:420px;
+  clip-path:polygon(0 24px,4.16% 0,8.33% 24px,12.5% 0,16.66% 24px,20.83% 0,25% 24px,29.16% 0,33.33% 24px,37.5% 0,41.66% 24px,45.83% 0,50% 24px,54.16% 0,58.33% 24px,62.5% 0,66.66% 24px,70.83% 0,75% 24px,79.16% 0,83.33% 24px,87.5% 0,91.66% 24px,95.83% 0,100% 24px,100% 100%,0 100%)}
+.panel .cols{display:flex;justify-content:space-between;gap:5vw}
+.panel .sign{font-family:'Gambarino',serif;font-size:2rem;line-height:1.1;margin-bottom:18px}
+.panel .msg{font-size:1rem;line-height:1.55;max-width:30ch;color:var(--moss)}
+.panel .addr{position:relative;padding-top:8px}
+.panel .addr a{display:block;font-size:1.125rem;text-decoration:none;margin-bottom:12px;transition:opacity .3s}
+.panel .addr a:hover{opacity:.55}
+.stamp{position:absolute;top:-28px;right:0;width:88px;aspect-ratio:3/4;object-fit:cover;outline:6px solid var(--snow)}
+.imprint{margin-top:56px;text-align:center;font-size:0.8125rem;color:var(--moss)}
+
+/* ---- tablet ---- */
+@media (max-width:1023px){
+  .rail .line{display:none}
+  .rail nav{margin-left:auto}
+  .intro h2{max-width:74vw}
+  .intro .big{width:52vw}
+  .features .stmt,.frow{margin-left:26%}
+  .list table{width:58%}
+  .list .side{display:none}
+}
+
+/* ---- phone ---- */
+@media (max-width:767px){
+  .hero-wrap{height:190svh}
+  .rail{height:auto;min-height:56px;padding:10px 20px;gap:16px;margin-top:calc(50svh - 46px)}
+  .rail h1{font-size:1.75rem;white-space:normal;max-width:60vw}
+  .rail nav{display:none}
+  .rail .book{padding:9px 16px}
+  .hero-note{display:block}
+  .intro h2{font-size:10vw;padding-top:16svh;margin-left:20px;max-width:88vw}
+  .intro h2 .l2{padding-left:0}
+  .intro .lead{font-size:1.0625rem;margin:7svh 0 0 20px;max-width:82vw}
+  .intro .big{position:relative;top:auto;margin:8svh 0 0 auto;width:75%;height:64svh}
+  .intro .small{margin:9svh 0 0 20px;width:55%;height:auto;aspect-ratio:9/10}
+  .gallery{padding:14svh 0}
+  .gallery .bar{margin:0 20px 24px}
+  .drow{padding-left:20px;gap:8px;height:62svh}
+  .drow .tall{width:72vw}
+  .drow .stack{width:64vw}
+  .drow .wide{width:88vw;height:78%;margin-top:6svh}
+  .features{padding:16svh 20px}
+  .features .stmt{margin:0 0 12svh;font-size:1.5rem;max-width:20ch}
+  .frow{margin:0 0 64px;flex-direction:column;gap:26px}
+  .frow h3{font-size:1.625rem}
+  .frow img.s1{width:100%;aspect-ratio:4/5}
+  .frow img.s2{width:70%;aspect-ratio:3/2;align-self:flex-end}
+  .frow img.s3{width:55%;aspect-ratio:1/1}
+  .list{padding:16svh 20px}
+  .list h2{margin-left:0;font-size:9.5vw}
+  .list .grid{display:block;margin-top:56px}
+  .list .tag{display:none}
+  .list table{width:100%}
+  .list td{font-size:1rem;display:block;padding:0}
+  .list tr.gap td{padding-top:0}
+  .list tr{display:block;padding-bottom:26px}
+  .list tr.gap{padding-top:18px}
+  .list .k{opacity:.6}
+  .list .v{text-align:left;margin-top:-24px}
+  .list .side{display:block;width:60%;margin:32px 0 0 auto}
+  .contact{height:auto;padding-bottom:0}
+  .contact .bg{position:relative;height:70svh}
+  .card{position:relative;top:auto;float:none;margin:-80px 16px 0;width:auto}
+  .card .cta{height:56px}
+  .foot{padding:14svh 0 10svh}
+  .foot .panel{margin:0;padding:56px 22px 32px;min-height:0}
+  .panel .cols{flex-direction:column;gap:40px}
+  .stamp{width:64px;top:-20px}
+  .imprint{margin-top:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none!important;scroll-behavior:auto}
+  .hshot img{transform:none!important}
+  .rl{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="hero-wrap">
+  <div class="hshot a" id="shotA">
+    <img src="assets/chairs.jpg" alt="Styling chairs and mirrors at Ritu's Hair and Beauty Salon, Bandra" class="on">
+    <img src="assets/poster-wall.jpg" alt="Salon interior with product shelves and styling stations">
+    <img src="assets/treatment-room.jpg" alt="A treatment room inside Ritu's salon">
+  </div>
+  <div class="hshot b" id="shotB">
+    <img src="assets/steamer-corner.jpg" alt="Steamers and colour bar in a quiet corner of the salon" class="on">
+    <img src="assets/queen-client.jpg" alt="A client with fresh colour, photographed inside the salon">
+  </div>
+  <div class="rail">
+    <h1><span class="w">Ritu's</span> <span class="w">Hair</span> <span class="w">&amp;</span> <span class="w">Beauty</span></h1>
+    <p class="line">Ladies' hair, skin, makeup &amp; nails in Bandra West.</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="book" href="tel:+919833241114">Book<i></i></a>
+  </div>
+  <div class="hero-note"><p>Ladies' hair, skin, makeup &amp; nails in Bandra West.</p><a class="nb" href="tel:+919833241114">Call to book<i></i></a></div>
+</div>
+
+<section class="intro">
+  <h2 class="rl"><span class="w">Beauty</span> <span class="w">redefined,</span><span class="l2"><span class="w">naturally.</span></span></h2>
+  <p class="lead rl">Twenty years of hair, skin and makeup on Waterfield Road - at the salon, or brought to your doorstep.</p>
+  <img class="big" src="assets/queen-client.jpg" alt="A happy client after a colour appointment at Ritu's" loading="lazy" width="541" height="935">
+  <img class="small" src="assets/storefront.jpg" alt="The Ritu's Hair and Beauty Salon board on Waterfield Road" loading="lazy" width="1200" height="900">
+</section>
+
+<section class="gallery">
+  <div class="bar">
+    <h2 class="rl">Inside the salon</h2>
+    <span class="cnt">Six photographs</span>
+  </div>
+  <div class="drow" id="drow">
+    <div class="tall rl"><img src="assets/chairs.jpg" alt="Styling chairs facing tall mirrors" loading="lazy" width="900" height="1200"></div>
+    <div class="stack rl">
+      <div><img src="assets/treatment-room.jpg" alt="A treatment room for skin and spa services" loading="lazy" width="1200" height="900"></div>
+      <div><img src="assets/steamer-corner.jpg" alt="The colour and steamer corner" loading="lazy" width="900" height="1200"></div>
+    </div>
+    <div class="wide rl"><img src="assets/poster-wall.jpg" alt="The salon floor with its poster wall" loading="lazy" width="1200" height="900"></div>
+    <div class="tall rl"><img src="assets/queen-client.jpg" alt="Fresh colour under the salon's neon Queen sign" loading="lazy" width="541" height="935"></div>
+    <div class="stack rl">
+      <div><img src="assets/storefront.jpg" alt="The salon storefront, marked Only For Ladies" loading="lazy" width="1200" height="900"></div>
+      <div><img src="assets/chairs.jpg" alt="Mirrors and product shelves at each station" loading="lazy" width="900" height="1200"></div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="services">
+  <p class="stmt rl">Everything for hair, skin and nails, under one roof.</p>
+  <div class="frow">
+    <div class="txt rl">
+      <h3>Hair</h3>
+      <p>Cuts, colour and treatments, plus mehndi and henna - for a trim between meetings or a full change before a wedding.</p>
+    </div>
+    <img class="s1 rl" src="assets/chairs.jpg" alt="A styling chair ready for the next appointment" loading="lazy" width="900" height="1200">
+  </div>
+  <div class="frow">
+    <div class="txt rl">
+      <h3>Skin</h3>
+      <p>Facials and skin therapies in a quiet treatment room, including advanced clean-ups and aromatherapy sessions.</p>
+    </div>
+    <img class="s2 rl" src="assets/treatment-room.jpg" alt="The skin treatment room" loading="lazy" width="1200" height="900" style="object-position:50% 75%">
+  </div>
+  <div class="frow">
+    <div class="txt rl">
+      <h3>Makeup</h3>
+      <p>Party, engagement and bridal makeup, done at the salon or at your home - the doorstep service travels across the area.</p>
+    </div>
+    <img class="s3 rl" src="assets/queen-client.jpg" alt="A client smiling after her appointment" loading="lazy" width="541" height="935">
+  </div>
+  <div class="frow">
+    <div class="txt rl">
+      <h3>Nails &amp; grooming</h3>
+      <p>Nail extensions and everyday grooming, finished without the rush of a bigger high-street floor.</p>
+    </div>
+    <img class="s1 rl" src="assets/steamer-corner.jpg" alt="Steamers and colour bowls at the back bar" loading="lazy" width="900" height="1200" style="object-position:50% 70%">
+  </div>
+</section>
+
+<section class="list" id="rates">
+  <h2 class="rl"><span class="w">Find</span> <span class="w">us</span> <span class="w">on</span><span class="l2"><span class="w">Waterfield</span> <span class="w">Road.</span></span></h2>
+  <div class="grid">
+    <span class="tag">Visits</span>
+    <img class="side" src="assets/storefront.jpg" alt="The salon's green board on Waterfield Road" loading="lazy" width="1200" height="900">
+    <table>
+      <tr><td class="k">Visit</td><td class="p">Ritu's Hair &amp; Beauty Salon</td><td class="v"><a href="https://www.google.com/maps/search/?api=1&amp;query=Ritu%27s+Hair+%26+Beauty+Salon+Waterfield+Road+Bandra+West" target="_blank" rel="noopener">Shop 4, Rizvi Mahal, Waterfield Rd<span class="arr"></span></a></td></tr>
+      <tr><td class="k">Call</td><td class="p">Appointments &amp; doorstep</td><td class="v"><a href="tel:+919833241114">+91 98332 41114<span class="arr"></span></a></td></tr>
+      <tr><td class="k">Chat</td><td class="p">WhatsApp bookings</td><td class="v"><a href="https://wa.me/919833241114" target="_blank" rel="noopener">wa.me/919833241114<span class="arr"></span></a></td></tr>
+      <tr class="gap"><td class="k">Write</td><td class="p">Questions &amp; quotes</td><td class="v"><a href="mailto:info@ritushairandbeautysalon.in">info@ritushairandbeautysalon.in<span class="arr"></span></a></td></tr>
+      <tr><td class="k">Follow</td><td class="p">Recent work</td><td class="v"><a href="https://www.instagram.com/ritugupta446" target="_blank" rel="noopener">@ritugupta446<span class="arr"></span></a></td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="contact" id="visit">
+  <h2 class="sr">Visit the salon</h2>
+  <img class="bg" src="assets/storefront.jpg" alt="Ritu's Hair and Beauty Salon, opposite Bhabha Hospital on Waterfield Road" width="1200" height="900">
+  <div class="card">
+    <h2>Visit Ritu's</h2>
+    <address>Shop no. 4, Ground Floor, Rizvi Mahal,<br>Waterfield Road, Bandra West, Mumbai 400050</address>
+    <p class="note">A ladies-only salon, opposite Bhabha Hospital. In-salon and doorstep appointments.</p>
+    <a class="tel" href="tel:+919833241114">+91 98332 41114</a>
+    <a class="wa" href="https://wa.me/919833241114" target="_blank" rel="noopener">WhatsApp the salon</a>
+    <a class="cta" href="tel:+919833241114">Call to book<i></i></a>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="mark rl">Ritu's</div>
+  <div class="panel">
+    <div class="cols">
+      <div>
+        <p class="sign">With love,<br>from Bandra</p>
+        <p class="msg">Twenty years of hair, skin and makeup on Waterfield Road. Walk in, call ahead, or have the salon come to you.</p>
+      </div>
+      <div class="addr">
+        <img class="stamp" src="assets/queen-client.jpg" alt="A salon client after fresh colour" loading="lazy" width="541" height="935">
+        <a href="mailto:info@ritushairandbeautysalon.in">info@ritushairandbeautysalon.in</a>
+        <a href="tel:+919833241114">+91 98332 41114</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Ritu%27s+Hair+%26+Beauty+Salon+Waterfield+Road+Bandra+West" target="_blank" rel="noopener">Shop 4, Rizvi Mahal, Waterfield Rd, Bandra West</a>
+        <a href="https://www.instagram.com/ritugupta446" target="_blank" rel="noopener">@ritugupta446</a>
+      </div>
+    </div>
+    <p class="imprint">© 2026 Ritu's Hair &amp; Beauty Salon, Mumbai · Photographs: ritushairandbeautysalon.in</p>
+  </div>
+</footer>
+
+<script>
+/* slow crossfade in each hero photograph */
+function crossfade(id){
+  var box=document.getElementById(id),imgs=box.querySelectorAll('img'),i=0;
+  if(imgs.length<2)return;
+  setInterval(function(){
+    if(document.hidden)return;
+    imgs[i].classList.remove('on');
+    i=(i+1)%imgs.length;
+    imgs[i].classList.add('on');
+  },5600);
+}
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  crossfade('shotA');crossfade('shotB');
+}
+/* entrances */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}
+})},{threshold:0.15});
+document.querySelectorAll('.rl').forEach(function(el){io.observe(el)});
+/* drag the gallery row */
+var row=document.getElementById('drow'),down=false,sx=0,sl=0;
+row.addEventListener('pointerdown',function(e){down=true;sx=e.clientX;sl=row.scrollLeft;row.classList.add('dragging');row.setPointerCapture(e.pointerId);});
+row.addEventListener('pointermove',function(e){if(down)row.scrollLeft=sl-(e.clientX-sx);});
+['pointerup','pointercancel'].forEach(function(ev){row.addEventListener(ev,function(){down=false;row.classList.remove('dragging');});});
+</script>
+</body>
+</html>
