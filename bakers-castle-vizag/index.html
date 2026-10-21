@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bakers Castle, Bakery &amp; cake shop in Siripuram, Visakhapatnam</title>
+<meta name="description" content="Bakers Castle is a bakery and cake shop in Siripuram, Visakhapatnam. Cakes for birthdays and occasions, fresh bakes and a cafe counter. Open 9:30 am to 10 pm, every day.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,100..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e5e1d8;
+  --surface:#dad5ca;
+  --ink:#2a1d17;
+  --muted:#6b5b51;
+  --accent:#456f3a;
+  --accent-ink:#ffffff;
+  --step-small:clamp(0.9375rem,0.9rem + 0.15vw,1rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.2rem + 3.4vw,3.9rem);
+  --pad:clamp(20px,4vw,56px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Archivo',Arial,sans-serif;font-weight:400;font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2{font-weight:800;font-stretch:62%;letter-spacing:-0.01em;text-transform:uppercase;line-height:.92}
+
+/* ---------- hero: one photograph, name on a green band along the bottom edge ---------- */
+.hero{position:relative;min-height:100svh;overflow:hidden}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero-photo.back{opacity:0;animation:crossfade 14s ease-in-out infinite alternate}
+@keyframes crossfade{0%,55%{opacity:0}85%,100%{opacity:1}}
+.hero-band{position:absolute;left:0;right:0;bottom:0;background:var(--accent);color:var(--accent-ink);padding:26px var(--pad) 14px}
+.hero-top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:26px var(--pad);font-size:var(--step-small);font-weight:500}
+.hero-top p,.hero-top a{background:rgba(229,225,216,.88);padding:7px 13px}
+.hero-top a{text-decoration:underline;text-underline-offset:4px}
+.hero-desc{max-width:36ch;font-size:var(--step-lead);font-weight:400}
+.hero-row{display:flex;align-items:center;gap:26px;margin-top:20px;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:var(--step-body);padding:15px 30px;text-decoration:none;white-space:nowrap}
+.btn.on-accent{background:var(--accent-ink);color:var(--accent)}
+.hero-name{font-size:clamp(64px,13vw,230px);color:var(--accent-ink);margin:0 0 18px -0.03em;white-space:nowrap}
+
+/* ---------- sections ---------- */
+section{padding:130px var(--pad) 110px}
+h2{font-size:var(--step-head);margin-bottom:34px}
+.narrow{max-width:56ch;margin:0 auto}
+.intro p{font-size:var(--step-body)}
+.intro p + p{margin-top:18px}
+.intro .facts{margin-top:44px;font-size:var(--step-small);color:var(--muted);display:flex;gap:44px;flex-wrap:wrap}
+.intro .facts b{display:block;font-weight:700;color:var(--ink);margin-bottom:2px}
+
+.full{position:relative;padding:0}
+.full img{width:100%;height:92svh;object-fit:cover}
+.full figcaption{position:absolute;left:var(--pad);bottom:26px;font-size:var(--step-small);color:var(--accent-ink);background:var(--accent);padding:8px 14px}
+
+.pair{display:grid;grid-template-columns:5fr 7fr;gap:clamp(16px,3vw,44px);align-items:end}
+.pair figure:first-child{margin-bottom:clamp(24px,6vh,80px)}
+.pair img{width:100%;height:auto}
+figcaption{font-size:var(--step-small);color:var(--muted);margin-top:10px}
+
+.offset{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start}
+.offset figure{grid-column:7/13}
+.offset img{width:100%;height:auto}
+.offset .aside{grid-column:1/6;align-self:center}
+.offset .aside p{max-width:36ch}
+
+.trio{display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(14px,2.5vw,36px);align-items:start}
+.trio figure:nth-child(2){margin-top:clamp(20px,5vh,64px)}
+.trio img{width:100%;height:auto}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,90px);max-width:1100px}
+.visit-grid h3{font-weight:700;font-size:var(--step-body);margin-bottom:12px}
+.visit-grid p{font-size:var(--step-lead);line-height:1.45}
+.visit-grid .act{margin-top:26px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.textlink{font-size:var(--step-small);font-weight:500;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+
+/* ---------- footer ---------- */
+footer{padding:110px var(--pad) 60px;text-align:center}
+.foot-mark{font-weight:800;font-stretch:62%;letter-spacing:-0.01em;text-transform:uppercase;font-size:clamp(44px,9.5vw,150px);line-height:.95;color:var(--ink)}
+footer .meta{margin-top:36px;font-size:var(--step-small);color:var(--muted);max-width:68ch;margin-left:auto;margin-right:auto}
+
+/* ---------- reveals: each part enters on its own ---------- */
+.rise{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rise.in{opacity:1;transform:none}
+.stagger > *{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.stagger.in > *{opacity:1;transform:none}
+.stagger.in > *:nth-child(2){transition-delay:.09s}
+.stagger.in > *:nth-child(3){transition-delay:.18s}
+.stagger.in > *:nth-child(4){transition-delay:.27s}
+
+/* ---------- tablet/phone ---------- */
+@media (max-width:1000px){
+  .hero-name{font-size:clamp(50px,12vw,120px)}
+  .pair{grid-template-columns:1fr 1fr}
+  .offset figure{grid-column:5/13}
+  .offset .aside{grid-column:1/5}
+}
+@media (max-width:760px){
+  section{padding:84px 16px 72px}
+  .hero-name{white-space:normal;font-size:clamp(46px,15vw,84px)}
+  .hero-row{gap:16px}
+  .pair{grid-template-columns:1fr}
+  .pair figure:first-child{margin-bottom:0}
+  .offset figure{grid-column:1/13}
+  .offset .aside{grid-column:1/13;margin-bottom:28px}
+  .trio{grid-template-columns:1fr}
+  .trio figure:nth-child(2){margin-top:0}
+  .visit-grid{grid-template-columns:1fr}
+  .full img{height:64svh}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .hero-photo.back{animation:none;opacity:0}
+  .rise,.stagger > *{opacity:1!important;transform:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="hero-photo" src="assets/storefront.jpg" alt="The Bakers Castle shopfront in Siripuram, Visakhapatnam, its sign in English and Telugu over the entrance" width="2200" height="1643">
+  <img class="hero-photo back" src="assets/inside-room.jpg" alt="" aria-hidden="true" width="2200" height="1643">
+  <div class="hero-top">
+    <p>Bakery &amp; cake shop · Siripuram</p>
+    <a href="#visit">Find the shop</a>
+  </div>
+  <div class="hero-band">
+    <h1 class="hero-name">Bakers Castle</h1>
+    <p class="hero-desc">Cakes for birthdays and occasions, fresh bakes and a cafe counter in Visakhapatnam.</p>
+    <div class="hero-row">
+      <a class="btn on-accent" href="tel:+919000008889">Call the counter</a>
+      <span>9:30 am to 10 pm, every day</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="intro">
+  <div class="narrow stagger">
+    <h2>A neighbourhood bakery</h2>
+    <p>Bakers Castle sits on the ground floor of Siripuram Towers, in the middle of Visakhapatnam's shopping mile. The counter runs on cakes made to order for birthdays and occasions, with fresh bakes through the day and a few tables for anyone staying for a coffee.</p>
+    <p>The board outside lists the range: pizzas, burgers, sandwiches, breads, pastries, desserts, chocolates, brownies and milk shakes. Most cakes are built to order, so call a day ahead and tell the counter what the occasion is.</p>
+    <div class="facts">
+      <span><b>Where</b> Siripuram, Vizag</span>
+      <span><b>Open</b> 9:30 am to 10 pm, daily</span>
+      <span><b>Rated</b> 4.5 / 5 on Zomato</span>
+    </div>
+  </div>
+</section>
+
+<figure class="full rise">
+  <img src="assets/inside-room.jpg" alt="Guests at the tables inside Bakers Castle, Visakhapatnam" width="2200" height="1643" loading="lazy">
+  <figcaption>The room, mid-service</figcaption>
+</figure>
+
+<section>
+  <h2>From the counter</h2>
+  <div class="pair stagger">
+    <figure>
+      <img src="assets/log-chocolate.jpg" alt="A chocolate yule log from Bakers Castle, decorated with mushrooms and pine" width="1100" height="1146" loading="lazy">
+      <figcaption>Chocolate log, made to order</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/log-white.jpg" alt="A white-chocolate yule log with red mushroom decorations from Bakers Castle" width="1100" height="1225" loading="lazy">
+      <figcaption>White log with mushrooms</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <div class="offset">
+    <div class="aside stagger">
+      <h2>Cakes to order</h2>
+      <p>Birthdays, anniversaries, festival tables: most cakes here are built to order, so call a day ahead and tell the counter what the occasion is.</p>
+    </div>
+    <figure class="rise">
+      <img src="assets/inside-corner.jpg" alt="A quiet corner table inside Bakers Castle, Visakhapatnam" width="1200" height="1606" loading="lazy">
+      <figcaption>A corner table, off Siripuram's rush</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section>
+  <h2>Recent cakes</h2>
+  <div class="trio stagger">
+    <figure>
+      <img src="assets/cake-flower.jpg" alt="A cream cake topped with chocolate flowers from Bakers Castle" width="675" height="675" loading="lazy">
+      <figcaption>Chocolate flower cake</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/cake-cross.jpg" alt="A cross-shaped cream cake with red accents from Bakers Castle" width="1200" height="1211" loading="lazy">
+      <figcaption>For a christening table</figcaption>
+    </figure>
+    <figure>
+      <img src="assets/cake-red.jpg" alt="A red-glazed cake with chocolate petals from Bakers Castle" width="768" height="787" loading="lazy">
+      <figcaption>Red glaze, chocolate petals</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <h2>Visit</h2>
+  <div class="visit-grid stagger">
+    <div>
+      <h3>Find us</h3>
+      <p>Ground Floor, Siripuram Towers,<br>Plot No. 1, opposite the HSBC Call Center,<br>Siripuram, Visakhapatnam 530003</p>
+    </div>
+    <div>
+      <h3>Hours and contact</h3>
+      <p>9:30 am to 10 pm, every day<br>+91 90000 08889</p>
+      <div class="act">
+        <a class="btn" href="tel:+919000008889">Call the counter</a>
+        <a class="textlink" href="https://www.google.com/maps/place/Bakers+Castle/@17.7223145,83.3166545,17z">Open in Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p class="foot-mark">Bakers Castle</p>
+  <p class="meta">A bakery and cake shop in Siripuram, Visakhapatnam. Photographs from the bakery's public album on Zomato. Hours from the bakery's current listings.</p>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, {threshold: .12});
+  document.querySelectorAll('.rise,.stagger').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
