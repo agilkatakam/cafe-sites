@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FloFitBox — Be Fit. Live More. | Gym in Bandra West, Mumbai</title>
+<meta name="description" content="FloFitBox is a multifunctional gym inside an old villa off Carter Road, Bandra West. Boxing, Gravity Pilates, weight lifting, mobility and personal training. Book a free trial session.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@300&family=Stack+Sans+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e6dbc7; --surface:#ddd0b9; --ink:#062b8a; --muted:#3a5aa8; --accent:#062b8a; --accent-ink:#e6dbc7;
+  --tint1:#1c419c; --tint2:#3a5aa8; --tint3:#7d93c6;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --mx:8vw;
+  --arch:50% 50% 0 0 / 38% 38% 0 0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Stack Sans Text",system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+h1,h2,h3{font-family:"Stack Sans Headline",sans-serif;font-weight:300;letter-spacing:-0.022em;line-height:1.05}
+.wrap{padding-left:var(--mx);padding-right:var(--mx)}
+button{font-family:inherit;cursor:pointer;border:0}
+a{color:inherit;text-decoration:none}
+
+/* ---------- header ---------- */
+header{position:absolute;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:28px var(--mx)}
+.wordmark{font-family:"Stack Sans Headline",sans-serif;font-size:32px;letter-spacing:-0.02em;font-weight:300}
+.wordmark b{font-weight:300;color:var(--muted)}
+nav{display:flex;gap:34px;font-size:0.9375rem;font-weight:500;color:var(--accent-ink)}
+nav a{border-bottom:2px solid transparent;padding-bottom:3px}
+nav a:hover{border-color:var(--ink)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;overflow:hidden;display:flex;align-items:center}
+.hero-arch{position:absolute;left:52%;top:-6vh;width:64vh;height:118vh;background:var(--accent);border-radius:32vh 32vh 0 0;z-index:1;overflow:hidden}
+.hero-arch video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-inner{position:relative;z-index:2;padding:0 var(--mx)}
+.hero h1{font-size:clamp(64px,6.4vw,100px);letter-spacing:-0.03em}
+.hero h1 span{display:block}
+.hero p{margin-top:26px;max-width:34ch;font-size:1.1875rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--accent-ink);font-size:1.0625rem;font-weight:500;padding:22px 34px 18px;border-radius:999px 999px 6px 6px;letter-spacing:0.01em;transition:transform .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.hero .btn{margin-top:40px}
+.hero-tag{position:absolute;z-index:2;right:var(--mx);bottom:34px;font-size:0.9375rem;color:var(--ink);background:var(--bg);padding:10px 16px 8px;border-radius:16px 16px 4px 4px;max-width:26ch}
+
+/* ---------- statement ---------- */
+.statement{padding:22vh var(--mx)}
+.statement p{font-family:"Stack Sans Headline",sans-serif;font-weight:300;letter-spacing:-0.022em;line-height:1.12;font-size:clamp(24px,2.5vw,36px);max-width:66%;margin:0 auto;text-align:center}
+.thumb{display:inline-block;height:0.85em;width:0.95em;vertical-align:-0.1em;margin:0 0.12em;border-radius:0.48em 0.48em 0 0;overflow:hidden}
+.thumb img{border-radius:0.48em 0.48em 0 0}
+
+/* ---------- features ---------- */
+.features{padding:14vh var(--mx);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.features-head{grid-column:1/4}
+.features-head h2{font-size:clamp(2.5rem,3.4vw,3.25rem)}
+.features-head p{margin-top:18px;max-width:30ch;color:var(--muted)}
+.tiles{grid-column:4/13;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.tile{display:block}
+.tile .ph{aspect-ratio:4/5;padding:14%;display:flex;align-items:center;justify-content:center}
+.tile.wide{grid-column:span 2}
+.tile.wide .ph{aspect-ratio:8/5}
+.tile .ph .mask{width:100%;height:100%;border-radius:var(--arch);overflow:hidden}
+.t-sand{background:var(--surface)}
+.t-cobalt{background:var(--accent)}
+.t-blue{background:var(--muted)}
+.tile h3{font-family:"Stack Sans Text",sans-serif;font-weight:500;font-size:1.25rem;letter-spacing:0;margin-top:16px}
+.tile p{font-size:1rem;color:var(--muted);margin-top:4px}
+
+/* ---------- video band ---------- */
+.band{position:relative;height:78vh;background:var(--accent);border-radius:50% 50% 0 0 / 22vh 22vh 0 0;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:10vh}
+.band .vid{width:min(44vh,84vw);height:60vh;border-radius:22vh 22vh 0 0;overflow:hidden;position:relative;z-index:2}
+.band video{width:100%;height:100%;object-fit:cover;display:block}
+.band .line{position:absolute;left:0;right:0;bottom:5vh;text-align:center;color:var(--accent-ink);font-family:"Stack Sans Headline",sans-serif;font-size:clamp(20px,2.2vw,30px);letter-spacing:-0.02em;z-index:2}
+
+/* ---------- how it works ---------- */
+.how{padding:16vh var(--mx)}
+.how-intro{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:start;margin-bottom:64px}
+.how-intro h2{grid-column:1/6;font-size:var(--step-head)}
+.how-intro p{grid-column:7/12;font-size:1.125rem;max-width:40ch}
+.acc{display:flex;height:520px}
+.panel{position:relative;flex:1 1 0;overflow:hidden;cursor:pointer;transition:flex-basis .45s ease,flex-grow .45s ease;color:var(--accent-ink);display:flex}
+.panel .sliver{position:absolute;left:0;bottom:0;top:0;width:100%;display:flex;align-items:flex-end;padding:22px}
+.panel .sliver span{writing-mode:vertical-rl;transform:rotate(180deg);font-weight:500;font-size:1.25rem;letter-spacing:0.02em;white-space:nowrap}
+.panel .stage{display:none;width:100%;padding:44px;position:relative}
+.panel.open{flex-grow:7;cursor:default}
+.panel.open .sliver{display:none}
+.panel.open .stage{display:block}
+.stage h3{font-size:2.5rem;color:inherit}
+.stage p{position:absolute;left:44px;bottom:44px;max-width:36ch;font-size:1.125rem}
+.stage .ph{position:absolute;right:44px;top:44px;bottom:44px;width:34%;border-radius:var(--arch);overflow:hidden}
+.p1{background:var(--accent)} .p2{background:var(--tint1)} .p3{background:var(--tint2)} .p4{background:var(--tint3)}
+.p4,.p4 .stage p{color:var(--ink)}
+
+/* ---------- testimonial ---------- */
+.testi{padding:16vh var(--mx);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.testi .portrait{grid-column:2/6;aspect-ratio:3/4;border-radius:var(--arch);overflow:hidden}
+.testi .body{grid-column:7/13;padding-top:120px}
+.testi blockquote{font-family:"Stack Sans Headline",sans-serif;font-weight:300;letter-spacing:-0.022em;font-size:clamp(26px,2.6vw,40px);line-height:1.2;max-width:26ch}
+.testi .who{margin-top:32px;font-size:1rem;color:var(--muted)}
+.testi .small{width:26%;aspect-ratio:1/1;border-radius:999px 999px 0 0;overflow:hidden;margin-left:auto;margin-top:96px}
+
+/* ---------- faq ---------- */
+.faq{padding:14vh var(--mx);display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.faq h2{grid-column:1/5;font-size:var(--step-head);position:sticky;top:96px;align-self:start}
+.faq .list{grid-column:5/13;display:flex;flex-direction:column;gap:8px}
+details{background:var(--surface);border-radius:18px 18px 6px 6px;overflow:hidden}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;min-height:72px;padding:0 24px;cursor:pointer;font-weight:500;font-size:1.25rem;gap:16px}
+summary::-webkit-details-marker{display:none}
+.plus{position:relative;width:16px;height:16px;flex:none}
+.plus::before,.plus::after{content:"";position:absolute;background:currentColor;left:0;top:6.5px;width:16px;height:3px}
+.plus::after{transform:rotate(90deg);transition:transform .3s ease}
+details[open]{background:var(--accent);color:var(--accent-ink)}
+details[open] .plus::after{transform:rotate(0)}
+details .ans{padding:2px 24px 24px;font-size:1.0625rem;max-width:52ch}
+details .ans em{color:inherit;opacity:.75;font-style:normal}
+
+/* ---------- cta ---------- */
+.cta{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;height:90svh;overflow:hidden;margin-top:6vh;padding:0 var(--mx)}
+.cta .obj{grid-column:1/9;height:118%;align-self:end;border-radius:50% 50% 0 0 / 20% 20% 0 0;overflow:hidden}
+.cta .txt{grid-column:9/13;align-self:center}
+.cta h2{font-size:clamp(32px,3vw,40px)}
+.cta p{margin-top:16px;font-size:1.0625rem}
+.cta .fact{margin-top:22px;font-size:1.375rem;font-weight:500}
+.cta .btn{margin-top:26px}
+
+/* ---------- footer ---------- */
+footer{background:var(--accent);color:var(--accent-ink);margin-top:0;padding:64px var(--mx) 40px}
+.mark{display:flex;align-items:flex-end;gap:4px;height:26svh;margin-bottom:40px}
+.mark div{flex:1;display:flex;align-items:flex-end;justify-content:center;line-height:1;padding-bottom:0.05em;background:var(--bg);color:var(--accent);font-family:"Stack Sans Headline",sans-serif;font-size:clamp(28px,6vw,84px);letter-spacing:-0.02em}
+.fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;font-size:0.9375rem}
+.fcols .col{grid-column:span 2}
+.fcols .col h4{font-size:0.9375rem;margin-bottom:12px;opacity:.75;font-weight:500;font-family:"Stack Sans Text",sans-serif}
+.fcols .col a{display:block;margin-bottom:8px;opacity:.92}
+.fcols .col a:hover{opacity:1;text-decoration:underline}
+.fcols .addr{grid-column:9/13}
+.fcols .addr p{margin-bottom:10px;opacity:.92}
+.fbot{display:flex;justify-content:space-between;align-items:center;margin-top:64px;font-size:0.9375rem;opacity:.85}
+.fbot .btn{padding:12px 22px 10px;font-size:0.9375rem;background:var(--bg);color:var(--accent)}
+
+/* ---------- shutter reveal ---------- */
+.shutter{position:relative}
+.shutter .slats{position:absolute;inset:0;z-index:5;pointer-events:none;display:flex;flex-direction:column}
+.shutter .slats i{flex:1;background:var(--bg);transform-origin:top;transition:transform .5s cubic-bezier(.7,0,.2,1)}
+.shutter .slats i:nth-child(2){transition-delay:.08s;transform-origin:bottom}
+.shutter .slats i:nth-child(3){transition-delay:.16s;transform-origin:top}
+.shutter .slats i:nth-child(4){transition-delay:.24s;transform-origin:bottom}
+.shutter .slats i:nth-child(5){transition-delay:.32s;transform-origin:top}
+.shutter.in .slats i{transform:scaleY(0)}
+
+/* ---------- phone ---------- */
+@media (max-width:900px){
+  .cta{display:block;height:auto;padding:12vh var(--mx) 0}
+  .cta .obj{height:44svh;margin-top:40px}
+}
+@media (max-width:720px){
+  :root{--mx:16px}
+  nav{color:var(--ink)}
+  header{padding:18px 16px}
+  .wordmark{font-size:22px}
+  nav a:not(:last-child){display:none}
+  .hero{min-height:100svh;display:block}
+  .hero-arch{left:50%;transform:translateX(-50%);top:50svh;width:150vw;height:66svh;border-radius:50% 50% 0 0 / 30vh 30vh 0 0}
+  .hero-inner{padding:0 16px;padding-top:15svh}
+  .hero h1{font-size:11.5vw;letter-spacing:-0.03em}
+  .hero p{font-size:1rem;margin-top:16px}
+  .hero .btn{margin-top:24px}
+  .hero-tag{left:16px;right:16px;bottom:26px;text-align:center;max-width:none}
+  .statement{padding:96px 20px}
+  .statement p{font-size:24px;line-height:1.15;max-width:100%;text-align:left}
+  .features{display:block;padding:12vh 16px}
+  .features-head p{margin-bottom:36px}
+  .tiles{grid-template-columns:1fr 1fr;gap:8px}
+  .tile.wide{grid-column:span 2;order:-1}
+  .tile h3{font-size:1.0625rem}
+  .tile p{font-size:0.9375rem}
+  .band{height:64vh}
+  .band .vid{height:44vh}
+  .how{padding:12vh 16px}
+  .how-intro{display:block;margin-bottom:32px}
+  .how-intro p{margin-top:16px}
+  .acc{flex-direction:column;height:auto}
+  .panel{min-height:64px}
+  .panel .sliver{align-items:center;padding:0 20px}
+  .panel .sliver span{writing-mode:horizontal-tb;transform:none;font-size:1.125rem}
+  .panel .stage{padding:24px;display:none}
+  .panel.open .stage{display:block;min-height:280px;padding-bottom:120px}
+  .stage h3{font-size:1.75rem}
+  .stage p{left:24px;bottom:24px;right:24px;position:absolute;font-size:1.0625rem;max-width:none}
+  .stage .ph{display:none}
+  .testi{display:block;padding:12vh 16px}
+  .testi .portrait{width:72%;margin-left:16px}
+  .testi .body{padding-top:32px}
+  .testi blockquote{font-size:24px}
+  .testi .small{width:44%;margin-top:48px}
+  .faq{display:block;padding:12vh 16px}
+  .faq h2{position:static;font-size:9vw;margin-bottom:28px}
+  summary{min-height:64px;font-size:1.125rem;padding:0 20px}
+  details .ans{padding:2px 20px 20px;font-size:1rem}
+  .cta{display:block;padding:12vh 16px 0;height:auto}
+  .cta .obj{width:130%;margin-left:-15%;height:55svh;margin-top:48px}
+  .cta .txt{padding-right:0}
+  .cta h2{font-size:28px}
+  .cta .btn{width:100%}
+  footer{padding:64px 16px 32px}
+  .mark{height:14svh;margin-bottom:40px}
+  .mark div{font-size:clamp(16px,5.4vw,28px)}
+  .fcols{grid-template-columns:1fr 1fr}
+  .fcols .col{grid-column:span 1}
+  .fcols .addr{grid-column:span 2;margin-top:16px}
+  .fbot{flex-direction:column;gap:16px;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wordmark">FloFit<b>Box</b></div>
+  <nav>
+    <a href="#training">Training</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-arch"><video src="assets/gym-loop.mp4" poster="assets/gym-poster.jpg" autoplay muted loop playsinline aria-label="Inside the FloFitBox training floor"></video></div>
+  <div class="hero-inner">
+    <h1><span>Be fit.</span><span>Live more.</span></h1>
+    <p>A multifunctional gym inside an old villa off Carter Road, Bandra West. Boxing, Pilates, lifting, mobility and one-on-one coaching under one roof.</p>
+    <button class="btn" data-go="https://wa.me/919819969000">Book a free trial session</button>
+  </div>
+  <div class="hero-tag">33 Antoine Villa, Sherly Mala Road, off Carter Rd, Bandra West</div>
+</section>
+
+<!-- INTRO STATEMENT -->
+<section class="statement">
+  <p>An old Bandra villa <span class="thumb"><img src="assets/entrance.jpg" width="800" height="550" alt="FloFitBox entrance, an old villa with arched doorways"></span> rebuilt as a gym where boxing <span class="thumb"><img src="assets/boxing.jpg" width="685" height="900" alt="Boxing training with a FloFitBox coach"></span>, Pilates, lifting <span class="thumb"><img src="assets/weights-wall.jpg" width="1600" height="900" alt="The weight room at FloFitBox, Bandra"></span> and mobility train side by side.</p>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="training">
+  <div class="features-head">
+    <h2>Ways to train</h2>
+    <p>Every discipline is coached on the same floor, so your programme can mix them week to week.</p>
+  </div>
+  <div class="tiles">
+    <div class="tile">
+      <div class="ph t-sand"><div class="mask shutter"><img src="assets/boxing.jpg" width="685" height="900" alt="Boxing coaching session at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>Boxing</h3><p>Rounds with a FloFitBox coach</p>
+    </div>
+    <div class="tile wide">
+      <div class="ph t-cobalt"><div class="mask shutter"><img src="assets/mural-green.jpg" width="1600" height="1067" alt="The training floor and rig at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>FloFit Turf</h3><p>The green floor at the heart of the box</p>
+    </div>
+    <div class="tile">
+      <div class="ph t-blue"><div class="mask shutter"><img src="assets/pilates.jpg" width="700" height="920" alt="Gravity Pilates session at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>Gravity Pilates</h3><p>Machine-based strength and control</p>
+    </div>
+    <div class="tile">
+      <div class="ph t-blue"><div class="mask shutter"><img src="assets/weightlifting.jpg" width="685" height="900" alt="Coached deadlift at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>Weight Lifting</h3><p>Barbell work, coached rep by rep</p>
+    </div>
+    <div class="tile">
+      <div class="ph t-sand"><div class="mask shutter"><img src="assets/mobility.jpg" width="685" height="900" alt="Mobility and stretch work with a coach" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>Mobility</h3><p>Move better, hurt less</p>
+    </div>
+    <div class="tile">
+      <div class="ph t-cobalt"><div class="mask shutter"><img src="assets/pt.jpg" width="685" height="900" alt="One-on-one personal training at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>Personal Training</h3><p>One-on-one, on your goals</p>
+    </div>
+    <div class="tile">
+      <div class="ph t-sand"><div class="mask shutter"><img src="assets/kids.jpg" width="685" height="900" alt="FloFit Kids session at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+      <h3>FloFit Kids</h3><p>For the youngest members</p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO BAND -->
+<section class="band">
+  <div class="vid shutter"><img src="assets/floor-wide.jpg" width="1600" height="1067" alt="The full FloFitBox training floor, cardio and weights" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+  <div class="line">The floor, off Carter Road.</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how">
+  <div class="how-intro">
+    <h2>Your first visit</h2>
+    <p>No memberships sold over the phone, no pressure. Come in, try a session, and decide after you have trained.</p>
+  </div>
+  <div class="acc" id="acc">
+    <div class="panel p1 open">
+      <div class="sliver"><span>Book a free trial</span></div>
+      <div class="stage">
+        <h3>Book a free trial</h3>
+        <p>Call or WhatsApp +91 98199 69000 and make an appointment for a free, non-binding trial session.</p>
+        <div class="ph shutter"><img src="assets/entrance2.jpg" width="800" height="550" alt="Arriving at the FloFitBox villa" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+    </div>
+    <div class="panel p2">
+      <div class="sliver"><span>Train with a coach</span></div>
+      <div class="stage">
+        <h3>Train with a coach</h3>
+        <p>Take your trial with or without one of our personal trainers. Either way, someone shows you the floor.</p>
+        <div class="ph shutter"><img src="assets/pt.jpg" width="685" height="900" alt="A FloFitBox coach guiding a member" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+    </div>
+    <div class="panel p3">
+      <div class="sliver"><span>Find your mix</span></div>
+      <div class="stage">
+        <h3>Find your mix</h3>
+        <p>Group classes, lifting, Pilates, boxing and mobility all live on one floor, so your week never looks the same twice.</p>
+        <div class="ph shutter"><img src="assets/floor-wide.jpg" width="1600" height="1067" alt="The full training floor at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+    </div>
+    <div class="panel p4">
+      <div class="sliver"><span>Make it a habit</span></div>
+      <div class="stage">
+        <h3>Make it a habit</h3>
+        <p>Settle into the sessions that fit your life, with coaches who know your name and your numbers.</p>
+        <div class="ph shutter"><img src="assets/weights-wall.jpg" width="1600" height="900" alt="The weight room mural at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testi">
+  <div class="portrait shutter"><img src="assets/mobility.jpg" width="685" height="900" alt="A coached mobility session at FloFitBox" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+  <div class="body">
+    <blockquote>4.7 stars, from 239 people who train here.</blockquote>
+    <p class="who">Rated on Google by FloFitBox members, Bandra West</p>
+    <div class="small shutter"><img src="assets/gym-poster.jpg" width="900" height="900" alt="The FloFitBox training floor" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="visit">
+  <h2>Good to know</h2>
+  <div class="list">
+    <details name="faq" open>
+      <summary>Is the first session really free?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">Yes. FloFitBox offers a free, non-binding trial session, with or without one of our personal trainers. Call or WhatsApp +91 98199 69000 to book yours.</div>
+    </details>
+    <details name="faq">
+      <summary>Do I need to be fit already?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">No. Programmes scale to the person in front of the coach, from first-timers to experienced lifters. The trial session is the easiest way to see where you would start.</div>
+    </details>
+    <details name="faq">
+      <summary>What can I train here?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">Group classes, personal training, Gravity Pilates, weight lifting, mobility, boxing and FloFit Kids, plus open work on the turf floor.</div>
+    </details>
+    <details name="faq">
+      <summary>Is there coaching, or do I train alone?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">Both. You can book one-on-one personal training, join coached group sessions, or take your trial session with a trainer and decide from there.</div>
+    </details>
+    <details name="faq">
+      <summary>Where exactly is FloFitBox?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">33 Antoine Villa, ground floor, Sherly Mala Road, off Carter Road, Bandra West, Mumbai 400050.</div>
+    </details>
+    <details name="faq">
+      <summary>What are your timings?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">Class and floor timings change with the schedule, so call or WhatsApp +91 98199 69000 for this week's hours before you drop in.</div>
+    </details>
+    <details name="faq">
+      <summary>How do I book?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="ans">The fastest way is WhatsApp or a call to +91 98199 69000. You can also email info@flofitbox.com.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="obj shutter"><img src="assets/entrance.jpg" width="800" height="550" alt="The FloFitBox villa in Bandra West" loading="lazy"><span class="slats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></div>
+  <div class="txt">
+    <h2>Come try a session.</h2>
+    <p>Walk the floor, meet the coaches and train once before you decide anything.</p>
+    <p class="fact">First trial session free.</p>
+    <button class="btn" data-go="https://wa.me/919819969000">WhatsApp FloFitBox</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="mark">
+    <div style="height:82%">F</div><div style="height:100%">L</div><div style="height:70%">O</div><div style="height:94%">F</div><div style="height:64%">I</div><div style="height:88%">T</div><div style="height:76%">B</div><div style="height:96%">O</div><div style="height:68%">X</div>
+  </div>
+  <div class="fcols">
+    <div class="col">
+      <h4>Train</h4>
+      <a href="#training">Group classes</a>
+      <a href="#training">Personal training</a>
+      <a href="#training">Gravity Pilates</a>
+      <a href="#training">Boxing</a>
+    </div>
+    <div class="col">
+      <h4>More</h4>
+      <a href="#training">Weight lifting</a>
+      <a href="#training">Mobility</a>
+      <a href="#training">FloFit Kids</a>
+    </div>
+    <div class="col">
+      <h4>Contact</h4>
+      <a href="tel:+919819969000">+91 98199 69000</a>
+      <a href="https://wa.me/919819969000">WhatsApp</a>
+      <a href="mailto:info@flofitbox.com">info@flofitbox.com</a>
+    </div>
+    <div class="col">
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/flofitboxmumbai/">@flofitboxmumbai</a>
+      <a href="https://www.facebook.com/flofitbox/">Facebook</a>
+    </div>
+    <div class="addr">
+      <h4>Visit</h4>
+      <p>33 Antoine Villa, Ground Floor,<br>Sherly Mala Road, Off Carter Rd,<br>Bandra West, Mumbai 400050</p>
+      <p>Photography &amp; video: FloFitBox</p>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© FloFitBox, Bandra West, Mumbai</span>
+    <button class="btn" data-go="https://wa.me/919819969000">Book a free trial</button>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('[data-go]').forEach(function(b){
+  b.addEventListener('click',function(){window.open(b.getAttribute('data-go'),'_blank','noopener')});
+});
+// how-it-works accordion
+var panels=document.querySelectorAll('#acc .panel');
+panels.forEach(function(p){
+  p.addEventListener('click',function(){
+    panels.forEach(function(q){q.classList.remove('open')});
+    p.classList.add('open');
+  });
+});
+// shutter reveal
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:0.15});
+setTimeout(function(){document.querySelectorAll('.shutter').forEach(function(s){s.classList.add('in')})},1400);
+document.querySelectorAll('.shutter').forEach(function(s){io.observe(s)});
+</script>
+</body>
+</html>
