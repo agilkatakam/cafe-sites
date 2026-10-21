@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triveni Terrace Cafe &ndash; Triveni Kala Sangam, Mandi House, New Delhi</title>
+<meta name="description" content="Triveni Terrace Cafe: the open-air courtyard cafe inside Triveni Kala Sangam, Mandi House, New Delhi. Chai in kulhars, the revived heritage menu, and sixty years of adda. Open daily 10 am to 8 pm.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,401,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e9e9e4; --surface:#fafafa; --ink:#1f2a24; --muted:#424c42;
+  --accent:#17796f; --accent-ink:#ffffff; --field:#14332c; --field-ink:#e9e9e4;
+  --paper:#fafafa;
+  --mx:clamp(20px,4vw,56px);
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Boska',Georgia,serif;font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-weight:400;line-height:0.95;letter-spacing:-0.02em;text-wrap:balance}
+p{text-wrap:pretty}
+
+/* ---------- hero ---------- */
+.hero-wrap{height:100svh}
+.hero-stage{position:relative;height:100svh;overflow:hidden;background:var(--bg)}
+.hero-photo{position:absolute;top:8svh;bottom:8svh;left:29vw;right:29vw;overflow:hidden}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:22px var(--mx);z-index:3}
+.wordmark{font-weight:500;font-size:18px;text-decoration:none}
+.nav-links{display:flex;gap:32px}
+.nav-links a{font-size:16px;text-decoration:none}
+.nav-links a:hover{text-decoration:underline}
+.nav-mobile{display:none}
+.hero-h1{position:absolute;left:var(--mx);bottom:8svh;font-size:clamp(44px,4.4vw,64px);z-index:2}
+.hero-side{position:absolute;right:var(--mx);bottom:8svh;width:min(320px,26vw);z-index:2;display:flex;flex-direction:column;gap:22px}
+.hero-side p{font-size:18px;line-height:1.5;max-width:33ch}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-size:17px;line-height:1;padding:19px 30px;text-align:center;border:none;cursor:pointer;transition:background-color .25s ease,transform .15s ease}
+.btn:hover{background:#0f5f57;color:var(--accent-ink)}
+.btn:active{transform:scale(.97)}
+.hero-side .btn{align-self:flex-start}
+
+@supports (animation-timeline: scroll()){
+  .hero-wrap{height:200svh;view-timeline-name:--hero;view-timeline-axis:block}
+  .hero-stage{position:sticky;top:0}
+  .hero-photo{animation:hero-open linear both;animation-timeline:--hero;animation-range:contain 0% contain 100%}
+  .hero-nav,.hero-h1,.hero-side{animation:hero-copy linear both;animation-timeline:--hero;animation-range:contain 0% contain 100%}
+}
+@keyframes hero-open{
+  0%{top:8svh;bottom:8svh;left:29vw;right:29vw}
+  55%{top:0;bottom:0;left:0;right:0}
+  100%{top:0;bottom:0;left:0;right:0}
+}
+@keyframes hero-copy{
+  0%{opacity:1;translate:0 0}
+  26%{opacity:0;translate:0 -36px}
+  100%{opacity:0;translate:0 -36px}
+}
+@media (max-width:900px){
+  .hero-photo{top:30svh;bottom:26svh;left:11vw;right:11vw}
+  @keyframes hero-open{
+    0%{top:30svh;bottom:26svh;left:11vw;right:11vw}
+    62%{top:0;bottom:0;left:0;right:0}
+  100%{top:0;bottom:0;left:0;right:0}
+  }
+  .hero-h1{top:calc(var(--mx) + 48px);bottom:auto;left:var(--mx);right:var(--mx);font-size:10.5vw}
+  .hero-side{left:var(--mx);right:var(--mx);bottom:3svh;width:auto;gap:14px}
+  .hero-side p{font-size:18px;max-width:34ch}
+  .hero-side .btn{align-self:stretch}
+  .nav-links{display:none}
+  .nav-mobile{display:block;position:relative}
+  .nav-mobile summary{list-style:none;font-size:16px;cursor:pointer;padding:8px 2px}
+  .nav-mobile summary::-webkit-details-marker{display:none}
+  .nav-mobile .nav-panel{position:absolute;right:0;top:calc(100% + 6px);background:var(--paper);padding:14px 22px;display:flex;flex-direction:column;gap:12px;box-shadow:0 12px 32px rgba(20,26,22,.18)/* taste-skill-ignore: floating dropdown menu */;min-width:160px;z-index:5}
+  .nav-panel a{font-size:16px;text-decoration:none}
+}
+
+/* ---------- intro ---------- */
+.intro{padding:calc(11svh) 0 0}
+.intro-head{margin:0 auto;font-size:clamp(48px,6.5vw,96px);max-width:14ch;text-align:center;padding:0 var(--mx)}
+.intro-caps{margin:28px var(--mx) 0;display:flex;gap:48px;justify-content:center}
+.intro-caps p{font-size:16px;color:var(--muted);max-width:190px;line-height:1.5}
+.pano{margin-top:40px;height:64svh;overflow:hidden}
+.pano img{width:100%;height:118%;object-fit:cover;object-position:center 30%;animation:kb 26s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1) translateY(0)}to{transform:scale(1.07) translateY(-4%)}}
+@media (max-width:700px){
+  .intro-head{font-size:12vw}
+  .intro-caps{flex-direction:column;gap:10px}
+  .intro-caps p{max-width:none}
+  .pano{height:52svh}
+}
+
+/* ---------- about ---------- */
+.about{margin:160px var(--mx) 0}
+.about h2{font-size:var(--step-head)}
+.about-lead{margin-top:24px;font-size:var(--step-lead);line-height:1.45;max-width:34ch}
+.tiles{margin-top:72px;display:grid;grid-template-columns:2fr 1fr;gap:16px;align-items:start}
+.tile-photo{position:relative}
+.tile-photo .ph{width:100%;aspect-ratio:16/10;object-fit:cover}
+.tile-note{position:absolute;top:0;right:0;width:min(320px,48%);background:var(--paper);padding:20px;font-size:17px;line-height:1.5}
+.tile-map{background:var(--field);color:var(--field-ink);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;padding:24px}
+.tile-map svg{width:70%;height:auto}
+.facts{grid-column:2;display:grid;grid-template-columns:1fr 1fr;gap:18px 16px;margin-top:8px}
+.facts div span{display:block}
+.facts .fl{font-size:16px;color:var(--muted)}
+.facts .fv{font-size:17px}
+@media (max-width:900px){
+  .tiles{grid-template-columns:1fr}
+  .tile-note{position:static;width:auto;padding:20px 0 0;background:transparent}
+  .tile-map{aspect-ratio:3/2;margin-top:16px}
+  .facts{grid-column:1;margin-top:24px}
+}
+
+/* ---------- showcase ---------- */
+.showcase{height:300vh;margin-top:160px;position:relative}
+.show-stage{position:sticky;top:0;height:100svh;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.show-h2{position:relative;z-index:2;text-align:center}
+.show-h2 .half{display:block;font-size:clamp(52px,7.5vw,120px)}
+.show-h2 .half-a{margin-bottom:24px}
+.show-h2 .half-b{margin-top:24px;z-index:3;position:relative}
+.frame{width:30vw;aspect-ratio:4/5;overflow:hidden;position:relative;z-index:1}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease}
+.show-stage[data-stage="1"] .frame img.z1{opacity:1}
+.show-stage[data-stage="2"] .frame img.z2{opacity:1}
+.show-stage[data-stage="3"] .frame img.z3{opacity:1}
+html.js .half-b{opacity:0;translate:0 20px;transition:opacity .6s ease,translate .6s ease}
+html.js .show-stage[data-stage="2"] .half-b,
+html.js .show-stage[data-stage="3"] .half-b{opacity:1;translate:0 0}
+.show-cap{position:absolute;left:calc(50% + 15vw + 40px);top:50%;translate:0 -50%;width:26ch;font-size:17px;line-height:1.5;color:var(--ink)}
+html.js .show-cap{opacity:0;transition:opacity .6s ease .1s}
+html.js .show-stage[data-stage="3"] .show-cap{opacity:1}
+.show-marker{position:absolute;left:0;width:100%;height:100svh;pointer-events:none}
+@media (max-width:900px){
+  .frame{width:70vw}
+  .show-h2 .half{font-size:12vw}
+  .show-cap{position:static;translate:none;width:auto;max-width:34ch;text-align:center;margin-top:26px;font-size:16px}
+}
+
+/* ---------- testimonial ---------- */
+.testi{margin:160px var(--mx) 0;display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.testi h2{grid-column:1/13;font-size:var(--step-head);margin-bottom:64px}
+.testi-portrait{grid-column:2/6}
+.testi-portrait img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.testi-body{grid-column:7/13;margin-top:110px}
+.testi-body blockquote p{font-size:clamp(24px,2.4vw,32px);line-height:1.25;max-width:30ch}
+.testi-who{margin-top:32px;font-size:16px}
+.testi-who span{display:block;color:var(--muted);font-size:16px;margin-top:4px}
+.testi-small{width:44%;margin:96px 0 0 auto;aspect-ratio:1/1;object-fit:cover}
+@media (max-width:900px){
+  .testi{display:block}
+  .testi-portrait{width:72%}
+  .testi-body{margin-top:32px}
+  .testi-small{margin-top:48px}
+}
+
+/* ---------- menu ---------- */
+.menu{margin-top:160px;background:var(--field);padding:140px var(--mx)}
+.sheet{max-width:640px;margin:0 auto;background:var(--paper);padding:64px 56px}
+.sheet h2{font-size:clamp(36px,3.4vw,48px);text-align:center}
+.sheet-note{margin-top:14px;font-size:16px;color:var(--muted);text-align:center;line-height:1.5}
+.sheet h3{font-size:21px;text-align:center;margin-top:56px;font-weight:500}
+.sheet ul{list-style:none;max-width:430px;margin:24px auto 0;text-align:left}
+.sheet li{margin-top:16px}
+.sheet li .dish{font-size:17px}
+.sheet li .desc{display:block;font-size:16px;color:var(--muted);margin-top:2px}
+.sheet-end{margin-top:64px;text-align:center;font-size:17px;line-height:1.6}
+.sheet-price-note{margin-top:40px;text-align:center;font-size:14px;color:var(--muted)}
+@media (max-width:700px){
+  .menu{padding:96px 10px}
+  .sheet{padding:44px 28px}
+}
+
+/* ---------- contact ---------- */
+.contact{position:relative;height:100svh;margin-top:160px}
+.contact-photo{position:absolute;inset:0}
+.contact-photo img{width:100%;height:100%;object-fit:cover}
+.contact-h{position:absolute;top:60px;right:calc(var(--mx) - 32px);width:min(380px,calc(100vw - 2*var(--mx)));background:var(--paper);border-radius:8px 8px 0 0;padding:32px 32px 0;z-index:2;font-size:32px}
+.visit-card{position:absolute;top:60px;right:calc(var(--mx) - 32px);width:min(380px,calc(100vw - 2*var(--mx)));background:var(--paper);border-radius:8px;padding:112px 32px 32px}
+.vc-addr{margin-top:18px;font-size:17px;line-height:1.5}
+.vc-hours{margin-top:18px}
+.vc-hours .row{display:flex;justify-content:space-between;font-size:17px;font-variant-numeric:tabular-nums}
+.vc-open{margin-top:14px;font-size:16px;color:var(--accent);font-weight:500}
+.vc-phone{margin-top:14px;font-size:17px}
+.vc-actions{margin-top:26px;display:flex;flex-direction:column;gap:14px}
+.vc-actions .btn{display:block;padding:18px 0;font-size:17px}
+.vc-order{font-size:15px;text-align:center}
+@media (max-width:900px){
+  .contact{height:auto}
+  .contact-h{position:relative;top:auto;right:auto;width:auto;background:transparent;padding:0 var(--mx);margin-bottom:24px;border-radius:0}
+  .contact-photo{position:relative;height:70svh}
+  .visit-card{position:relative;top:auto;right:auto;width:auto;margin:-80px 16px 0;padding:32px}
+}
+
+/* ---------- footer ---------- */
+footer{margin-top:140px;padding:0 var(--mx) 56px}
+.foot-name{font-size:clamp(48px,6.5vw,96px);line-height:0.95;letter-spacing:-0.02em;text-align:center}
+.foot-credits{margin:64px auto 0;max-width:60ch;font-size:16px;color:var(--muted);line-height:1.7;text-align:center}
+.foot-credits a{color:var(--muted)}
+
+/* ---------- reveal ---------- */
+html.js [data-reveal]{opacity:0;translate:0 26px;transition:opacity .7s ease var(--d,0s),translate .7s ease var(--d,0s)}
+html.js [data-reveal].in{opacity:1;translate:0 0}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  html.js [data-reveal]{opacity:1;translate:none}
+  html.js .half-b,html.js .show-cap{opacity:1;translate:none}
+  .hero-wrap{height:100svh !important}
+  .hero-stage{position:relative}
+  .showcase{height:auto;padding:80px 0}
+  .show-stage{position:relative;height:auto;padding:40px 0;gap:20px}
+  .show-marker{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="hero-wrap">
+  <div class="hero-stage">
+    <div class="hero-photo"><img src="assets/triveni-main-banner.jpg" alt="The open-air terrace of Triveni Terrace Cafe: white tables and turquoise chairs under a bamboo pergola, plants hanging overhead" width="1440" height="953"></div>
+    <nav class="hero-nav" aria-label="Page">
+      <a class="wordmark" href="#top">Triveni Terrace Cafe</a>
+      <div class="nav-links">
+        <a href="#about">The cafe</a>
+        <a href="#menu">The menu</a>
+        <a href="#visit">Visit</a>
+      </div>
+      <details class="nav-mobile">
+        <summary>Menu</summary>
+        <div class="nav-panel">
+          <a href="#about">The cafe</a>
+          <a href="#menu">The menu</a>
+          <a href="#visit">Visit</a>
+        </div>
+      </details>
+    </nav>
+    <h1 class="hero-h1" id="top">Triveni<br>Terrace Cafe</h1>
+    <div class="hero-side">
+      <p>An open-air cafe inside Triveni Kala Sangam, Mandi House, Delhi&rsquo;s house of the arts.</p>
+      <a class="btn" href="#visit">Plan a visit</a>
+    </div>
+  </div>
+</div>
+
+<section class="intro" aria-labelledby="intro-h">
+  <h2 class="intro-head" id="intro-h" data-reveal>Music seeps into your meal</h2>
+  <div class="intro-caps">
+    <p data-reveal style="--d:.08s">The courtyard canteen of Triveni Kala Sangam, Mandi House</p>
+    <p data-reveal style="--d:.16s">Galleries and theatres share the courtyard</p>
+  </div>
+  <div class="pano" data-reveal style="--d:.2s"><img src="assets/triveni-about-2.jpg" alt="The cafe's indoor room: wooden tables, warm lamps and windows looking out to the planted terrace" width="1440" height="960" loading="lazy"></div>
+</section>
+
+<section class="about" id="about" aria-labelledby="about-h">
+  <h2 id="about-h" data-reveal>An adda since 1963</h2>
+  <p class="about-lead" data-reveal style="--d:.08s">What began as a stove and a table for dancers after rehearsal is now Delhi&rsquo;s beloved courtyard canteen: chai in kulhars, kebabs on the griddle, conversations that outlast the cups.</p>
+  <div class="tiles">
+    <div class="tile-photo" data-reveal style="--d:.12s">
+      <img class="ph" src="assets/triveni-building.jpg" alt="Triveni Kala Sangam on Tansen Marg: Joseph Allen Stein's concrete jali screens above the gallery entrances" width="1600" height="1200" loading="lazy">
+      <p class="tile-note">Joseph Allen Stein planned Triveni around its courtyard like a village square. You cannot cross it without passing a rehearsal, an exhibition or a performance.</p>
+    </div>
+    <div class="tile-map" data-reveal style="--d:.16s">
+      <svg viewBox="0 0 200 200" role="img" aria-label="Schematic plan: the building wraps a central courtyard; a dot marks the cafe">
+        <path fill="#f5f2ea" fill-rule="evenodd" d="M30 30h140v140H30zM62 62h76v76H62z"/>
+        <circle cx="138" cy="66" r="9" fill="#17796f"/>
+      </svg>
+    </div>
+    <div class="facts" data-reveal style="--d:.2s">
+      <div><span class="fl">On Tansen Marg</span><span class="fv">since 1963</span></div>
+      <div><span class="fl">Designed by</span><span class="fv">Joseph Allen Stein</span></div>
+      <div><span class="fl">Google reviews</span><span class="fv">4.4 from 6,684</span></div>
+      <div><span class="fl">Open</span><span class="fv">every day, 10&ndash;8</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase" aria-labelledby="show-h">
+  <div class="show-stage" data-stage="1" id="showStage">
+    <h2 class="show-h2" id="show-h"><span class="half half-a">Sit under</span></h2>
+    <div class="frame">
+      <img class="z1" src="assets/terrace-z1.jpg" alt="The terrace: turquoise chairs and white tables, a bamboo door and hanging plants" width="720" height="1080" loading="lazy">
+      <img class="z2" src="assets/terrace-z2.jpg" alt="Closer: the cafe's turquoise chairs around a white table" width="720" height="1080" loading="lazy">
+      <img class="z3" src="assets/terrace-z3.jpg" alt="Closest: the bamboo-slatted door of the terrace" width="720" height="1080" loading="lazy">
+    </div>
+    <h2 class="show-h2" aria-hidden="true"><span class="half half-b">the bamboo sky</span></h2>
+    <p class="show-cap">The terrace, set with the cafe&rsquo;s own turquoise chairs.</p>
+  </div>
+  <div class="show-marker" style="top:0"></div>
+  <div class="show-marker" style="top:100svh"></div>
+  <div class="show-marker" style="top:200svh"></div>
+</section>
+
+<section class="testi" aria-labelledby="testi-h">
+  <h2 id="testi-h" data-reveal>What guests say</h2>
+  <div class="testi-portrait" data-reveal style="--d:.08s"><img src="assets/triveni-chairs-detail.jpg" alt="The cafe's turquoise terrace chairs and a white table on the stone floor" width="800" height="800" loading="lazy"></div>
+  <div class="testi-body" data-reveal style="--d:.16s">
+    <blockquote><p>&ldquo;This is one of the gems of Delhi! It is beautiful and the food is good. &hellip; Brownie points for ragi bread!&rdquo;</p></blockquote>
+    <p class="testi-who">Tanya Gupta<span>From the cafe&rsquo;s published reviews</span></p>
+    <img class="testi-small" src="assets/triveni-room-detail.jpg" alt="Windows of the cafe's indoor room, greenery outside" width="800" height="800" loading="lazy">
+  </div>
+</section>
+
+<section class="menu" id="menu" aria-labelledby="menu-h">
+  <div class="sheet">
+    <h2 id="menu-h">The menu</h2>
+    <p class="sheet-note">The heritage menu, revived from the canteen&rsquo;s own recipes. No aerated sodas, by house rule.</p>
+    <h3>From the heritage menu</h3>
+    <ul>
+      <li><span class="dish">Husain&rsquo;s samosa</span><span class="desc">A nod to the painter&rsquo;s preferred snack</span></li>
+      <li><span class="dish">Shammi kebab</span><span class="desc">Affordable even to penniless students</span></li>
+      <li><span class="dish">Keema paratha</span><span class="desc">Served with boondi raita</span></li>
+      <li><span class="dish">Kebab-paratha</span><span class="desc">Legendary across Delhi</span></li>
+      <li><span class="dish">Vegetable cutlets</span><span class="desc">Mrs Puran Acharya&rsquo;s recipe</span></li>
+      <li><span class="dish">Tasty toasts</span><span class="desc">Back from the old canteen</span></li>
+    </ul>
+    <h3>The canteen table</h3>
+    <ul>
+      <li><span class="dish">Chicken curry</span><span class="desc">Done as it was half a century ago</span></li>
+      <li><span class="dish">Dal, rajma and roti</span><span class="desc">Kept affordable so students can eat here</span></li>
+      <li><span class="dish">Palak patta chaat</span><span class="desc">A regulars&rsquo; favourite</span></li>
+      <li><span class="dish">Ragi idli</span><span class="desc">A regulars&rsquo; favourite</span></li>
+      <li><span class="dish">Ragi bread</span><span class="desc">Worth the brownie points</span></li>
+    </ul>
+    <h3>To drink</h3>
+    <ul>
+      <li><span class="dish">Masala chai</span><span class="desc">In kulhars, unhurried</span></li>
+      <li><span class="dish">Cold coffee</span><span class="desc">Simpler than today&rsquo;s frothy kind</span></li>
+      <li><span class="dish">Nimbu pani</span><span class="desc">From the very first menu</span></li>
+    </ul>
+    <p class="sheet-end">Open every day<br>10 am &ndash; 8 pm</p>
+    <p class="sheet-price-note">Prices deliberately left off this page. They are gentle; ask at the counter.</p>
+  </div>
+</section>
+
+<section class="contact" id="visit" aria-labelledby="visit-h">
+  <h2 class="contact-h" id="visit-h">Visit</h2>
+  <div class="contact-photo"><img src="assets/triveni-main-banner.jpg" alt="The terrace of Triveni Terrace Cafe, looking across the white tables and turquoise chairs" width="1440" height="953" loading="lazy"></div>
+  <div class="visit-card">
+    <p class="vc-addr">205, Tansen Marg, opp. FICCI Auditorium<br>Mandi House, New Delhi 110001</p>
+    <div class="vc-hours"><div class="row"><span>Monday &ndash; Sunday</span><span>10 am &ndash; 8 pm</span></div></div>
+    <p class="vc-open" id="openState">Open every day, 10 am &ndash; 8 pm.</p>
+    <p class="vc-phone"><a href="tel:+919971566904">+91 99715 66904</a></p>
+    <div class="vc-actions">
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Triveni+Terrace+Cafe&amp;query_place_id=ChIJgYWp8Cz9DDkRHGRazZ5BlZg" target="_blank" rel="noopener">Get directions</a>
+      <p class="vc-order"><a href="https://redcedarhospitality.com/order" target="_blank" rel="noopener">Order online</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-name" aria-hidden="true">Triveni Terrace Cafe</div>
+  <div class="foot-credits">
+    <p>Cafe photographs from the cafe&rsquo;s own site, Red Cedar Hospitality. Building photograph: &ldquo;Triveni Kala Sangam, New Delhi&rdquo; by Ekabhishek, CC BY-SA 3.0, via Wikimedia Commons.</p>
+    <p>Menu and history from the cafe&rsquo;s site and The Times of India, March 2026. A redesign concept made for the cafe.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.08});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){ io.observe(el); });
+
+  var stage = document.getElementById('showStage');
+  var markers = document.querySelectorAll('.show-marker');
+  if(stage && markers.length){
+    var mio = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          var i = Array.prototype.indexOf.call(markers, e.target);
+          stage.setAttribute('data-stage', String(i+1));
+        }
+      });
+    },{rootMargin:'-49% 0px -49% 0px',threshold:0});
+    markers.forEach(function(m){ mio.observe(m); });
+  }
+
+  var os = document.getElementById('openState');
+  if(os){
+    try{
+      var fmt = new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',hour:'numeric',minute:'2-digit',hour12:true});
+      var parts = new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',hour:'numeric',minute:'2-digit',hour12:false});
+      var now = new Date();
+      var hm = parts.format(now);
+      var bits = hm.split(':');
+      var mins = parseInt(bits[0],10)*60 + parseInt(bits[1],10);
+      var pretty = fmt.format(now).replace(' ',' ').toLowerCase();
+      if(mins >= 600 && mins < 1200){
+        os.textContent = 'It is ' + pretty + ' in Delhi. Open now, closes 8 pm.';
+      } else {
+        os.textContent = 'It is ' + pretty + ' in Delhi. Closed now, opens 10 am.';
+      }
+    }catch(e){}
+  }
+})();
+</script>
+</body>
+</html>
