@@ -1,0 +1,550 @@
+{
+ "version": 1,
+ "at": "2026-10-21T10:22:22.469Z",
+ "seed": 538391774,
+ "redraws": 0,
+ "input": {
+  "brief": "Moody Rajasthan-modern cafe-lounge in Koramangala: birdcage seating, brass lattice jaali, gold on charcoal, late-night shisha lounge",
+  "sector": "restaurant",
+  "tone": "luxury",
+  "have": [
+   "photography"
+  ],
+  "keep": [
+   "palette"
+  ],
+  "avoid": [],
+  "sections": [
+   "intro",
+   "list",
+   "gallery",
+   "contact",
+   "footer"
+  ],
+  "direction": null
+ },
+ "imagery": "own",
+ "allow": [],
+ "direction": {
+  "id": "uneven-photographs",
+  "name": "Photographs at uneven sizes",
+  "sectors": [
+   "hospitality",
+   "real-estate",
+   "architecture",
+   "fashion",
+   "restaurant",
+   "culture",
+   "health",
+   "nonprofit",
+   "studio-portfolio",
+   "physical-product"
+  ],
+  "tones": [
+   "quiet",
+   "luxury",
+   "warm",
+   "editorial"
+  ],
+  "needs": [],
+  "idea": "A calm page where the pictures are placed like prints on a gallery wall: each at its own size and position, with text set small and light between them. Nothing lines up in the obvious way, yet everything sits on a grid you can feel. The unevenness is what makes it read as art-directed by a person: a small portrait far left, a wide landscape running off the right edge, a square that overlaps the next section. It lets photographs lead without ever becoming a slideshow.",
+  "composition": "A 12-column grid with wide margins (5–7vw). The hero is a single line of large light type (6–9vw) across the top third, and below it one photograph placed off-centre (columns 6–12, 16:10), its top edge overlapping the baseline zone of the headline by a few pixels of deliberate tension. Each following section places two or three photographs with different spans and vertical offsets: for example a 3:4 portrait in columns 2–5 starting 120px lower than a 16:10 landscape in columns 7–12; then a single small 1:1 in columns 9–11 beside a paragraph in columns 2–6. Paragraphs are short (max 40ch) and sit in the gaps. No two consecutive sections use the same arrangement. Vertical spacing is large and irregular on purpose (120–260px).",
+  "typography": "A light or regular weight at large size for the few headings; small, quiet text. Serif or a slender sans. Everything left-aligned to grid lines.",
+  "typeClasses": [
+   "serif-light-large",
+   "serif-text",
+   "grotesk-light"
+  ],
+  "colour": "A pale neutral ground with one deep ink taken from the photographs. No accent beyond a quiet link colour.",
+  "paletteTags": [
+   "light-neutral",
+   "earth",
+   "photographic-neutral"
+  ],
+  "imagery": "Six to nine photographs from one set, in a deliberate mix of ratios (3:4, 4:5, 1:1, 16:10, 21:9). Square corners. Captions, if any, are one short line under an image in the soft ink.",
+  "sectionTags": [
+   "photo-led",
+   "quiet"
+  ],
+  "motion": "shutter-image",
+  "richness": "Placement. The differing sizes and offsets create movement on a still page.",
+  "pitfalls": "Uneven is not random: every image edge lands on a column line, and offsets come from a small set of values. On a phone, keep the unevenness with alternating widths (100%, 72% left, 60% right) rather than stacking everything full width.",
+  "seenIn": [
+   "aww-tengile-malamala-collection",
+   "aww-sobha-privy-collection",
+   "aww-kononenko-architectural-bureau",
+   "opl-zara-webb"
+  ],
+  "allow": [],
+  "needsPictures": true
+ },
+ "hero": {
+  "id": "small-name-open-sky",
+  "name": "Small name, open sky",
+  "archetype": "fullbleed-media",
+  "directions": [
+   "place-carries-it",
+   "uneven-photographs"
+  ],
+  "needs": [],
+  "blueprint": "A single photograph fills the viewport edge to edge with no frame: choose one whose upper 45% is sky, wall or water with nothing in it and whose subject sits low and off-centre. All type is white and stays out of that empty zone. Top-left at a 24px margin, the name is stacked on two or three lines at 14px, like a letterhead. Top-right, three or four text links run in one line at 14px separated by commas, the current one marked by a 2px underline. Bottom-left, 32px from the left and bottom edges, the name repeats as the only larger type: two tight lines at clamp(44px, 4.2vw, 64px), line-height 1.0, regular weight, on columns 1–5. On the same baseline at the bottom-right margin sits the single action as an underlined text link with an arrow, and above it one supporting sentence at 15px, right-aligned, max 32ch. If a lower corner is too bright for white type, darken that corner alone with a neutral scrim. The page below opens on plain paper with one narrow paragraph and wide empty margins.",
+  "mobile": "The photograph is cropped to portrait around its subject and fills 100svh, its upper half still empty. The small stacked name stays top-left at 13px and the links collapse to one word top-right. The larger name sits bottom-left at 9.5vw on two lines, 20px in. The supporting sentence and the underlined action stack beneath it at 15px, left-aligned, 24px above the bottom edge.",
+  "headline": "The name set small on two lines of up to about 16 characters each at 4.2vw; the photograph does the work of a headline.",
+  "motion": "slow-crossfade",
+  "seenIn": [
+   "aww-kononenko-architectural-bureau",
+   "aww-julien-calot",
+   "aww-depo-luxe"
+  ]
+ },
+ "type": {
+  "id": "young-source",
+  "name": "Young Serif / Source Serif 4",
+  "class": "serif-text",
+  "display": {
+   "family": "Young Serif",
+   "source": "google",
+   "weights": [
+    400
+   ],
+   "italic": false,
+   "settings": "weight 400 (single heavy cut) · tracking -0.02em · leading 0.95 · sentence case",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap\" rel=\"stylesheet\">"
+  },
+  "text": {
+   "family": "Source Serif 4",
+   "source": "google",
+   "weights": [
+    400,
+    600
+   ],
+   "italic": true,
+   "settings": "400 for body, 600 for emphasis, italic for quotations · leading 1.55 · tracking 0",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap\" rel=\"stylesheet\">"
+  },
+  "standsInFor": [
+   "FS Kim",
+   "Recoleta",
+   "Gelica"
+  ],
+  "note": "A heavy, round old-style headline face with soft bracketed serifs over a clear transitional text serif. Suits essays, food, independent publishers and personal sites that want warmth with weight.",
+  "seenIn": [
+   "opl-applied-imagination",
+   "opl-flowjam-2",
+   "opl-marina-rachello"
+  ],
+  "links": [
+   "https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+  ],
+  "scale": {
+   "step-small": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)",
+   "step-body": "clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem)",
+   "step-lead": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)",
+   "step-head": "clamp(2rem, 1.3rem + 3.2vw, 4rem)"
+  }
+ },
+ "palette": null,
+ "photos": {
+  "set": "city-night",
+  "title": "City at night",
+  "note": "night streets, lights and long exposures",
+  "treatment": null,
+  "others": [
+   "interior-and-table",
+   "field-and-farm",
+   "sky-and-space",
+   "architecture"
+  ],
+  "photos": [
+   {
+    "id": 122,
+    "alt": "Domed cathedral and city lights reflected in a river at night",
+    "tone": "dark",
+    "colours": [
+     "dark teal",
+     "pale gold"
+    ],
+    "mono": false,
+    "calm": "bottom",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Vadim Sherbakov",
+    "page": "https://unsplash.com/photos/xS_RzdD5CFE"
+   },
+   {
+    "id": 579,
+    "alt": "Blurred night street with glowing traffic and building lights",
+    "tone": "dark",
+    "colours": [
+     "navy",
+     "amber",
+     "teal"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Israel Sundseth",
+    "page": "https://unsplash.com/photos/BYu8ITUWMfc"
+   },
+   {
+    "id": 43,
+    "alt": "Suspension bridge and city skyline at night in black and white",
+    "tone": "dark",
+    "colours": [
+     "black",
+     "silver grey"
+    ],
+    "mono": true,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.54,
+    "by": "Oleg Chursin",
+    "page": "https://unsplash.com/photos/IoCWq07GaG4"
+   },
+   {
+    "id": 797,
+    "alt": "Red umbrella on a rainy street at night with blurred lights",
+    "tone": "dark",
+    "colours": [
+     "deep red",
+     "dark teal",
+     "black"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Gabriel Santiago",
+    "page": "https://unsplash.com/photos/1vYkQVDWXl0"
+   },
+   {
+    "id": 1078,
+    "alt": "Grid of lit office windows on a tower at night",
+    "tone": "dark",
+    "colours": [
+     "dark navy",
+     "warm yellow",
+     "black"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Vladimir Kudinov",
+    "page": "https://unsplash.com/photos/KBX9XHk266s"
+   },
+   {
+    "id": 171,
+    "alt": "Raindrops on a window with blurred traffic lights at night",
+    "tone": "dark",
+    "colours": [
+     "charcoal",
+     "dark teal",
+     "amber"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.33,
+    "by": "Riley Briggs",
+    "page": "https://unsplash.com/photos/cSe3oKQ03OQ"
+   },
+   {
+    "id": 220,
+    "alt": "Tram tracks leading into fog under glowing street lamps at night",
+    "tone": "dark",
+    "colours": [
+     "muted purple",
+     "amber"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.6,
+    "by": "Robin Röcker",
+    "page": "https://unsplash.com/photos/qUToqliACNA"
+   },
+   {
+    "id": 195,
+    "alt": "Narrow alley lit by strings of hanging lights at night",
+    "tone": "dark",
+    "colours": [
+     "warm amber",
+     "dark brown",
+     "black"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 0.75,
+    "by": "Matthew Skinner",
+    "page": "https://unsplash.com/photos/t05kfHeygbE"
+   }
+  ]
+ },
+ "motion": {
+  "id": "slow-crossfade",
+  "name": "Slow crossfade",
+  "description": "The principal photograph quietly changes: three or four images of the same framing crossfade over about 1.6 seconds, holding five to six seconds each, or the fixed image changes when its matching section arrives. It should feel like light shifting in a room. Pause when the tab is hidden; under reduced motion show only the first image."
+ },
+ "sections": [
+  {
+   "id": "intro-right-half-paragraph",
+   "role": "intro",
+   "name": "Right-half paragraph, lone photo",
+   "shape": "split",
+   "tags": [
+    "type-led",
+    "quiet"
+   ],
+   "directions": [
+    "uneven-photographs",
+    "dark-room",
+    "place-carries-it",
+    "editorial-report",
+    "name-as-monument"
+   ],
+   "needs": [],
+   "blueprint": "No heading. On a 12-column grid with 5vw margins, one statement paragraph of 45–70 words occupies columns 7–12 only, set at clamp(24px, 2.2vw, 34px) with leading 1.25 and a first-line indent of 3em. Its top edge sits 18vh below the section top. Columns 1–6 stay empty except for a single square photograph, 20vw wide, in columns 1–3, placed so its top aligns with the paragraph's last line and it hangs below the text by most of its height. A five-line note at 14px, 180px wide, sits in columns 1–2, 96px beneath the photograph. Section padding is 160px top and bottom. Nothing is centred: the paragraph's left edge is the midpoint of the page, and later text blocks on the page may reuse that line. Holds one paragraph, one photograph and one note.",
+   "mobile": "The paragraph comes first at 22px, full width with 20px margins and no indent. The photograph follows at 62% width, pushed to the right margin, in a 4:5 crop instead of square. The small note sits to its left, bottom-aligned with the photograph, in the remaining 30% of the width.",
+   "seenIn": [
+    "aww-tengile-malamala-collection",
+    "aww-normal-is-boring",
+    "aww-px-push",
+    "aww-monolog"
+   ]
+  },
+  {
+   "id": "list-statement-table-pushed-right",
+   "role": "list",
+   "name": "Statement, table pushed right",
+   "shape": "table",
+   "tags": [
+    "type-led",
+    "quiet",
+    "photo-led"
+   ],
+   "directions": [
+    "sentence-as-layout",
+    "uneven-photographs",
+    "editorial-report",
+    "place-carries-it",
+    "name-as-monument"
+   ],
+   "needs": [],
+   "blueprint": "A heading of four to six words spans the full width on two lines at clamp(40px, 4.5vw, 68px), left-aligned with its first line indented 3vw and leading 0.98. 96px below, the table is pushed into the right-hand five columns (8–12) and the left stays open. One plain word naming the table (offices, hours, rates) hangs at 14px in column 7, top-aligned with the first row. Each row is a three-part line at 15–16px with 26px between rows: the kind or day in the soft ink at the left of the measure, the place or service at 30%, and the address, time or price right-aligned, with a small arrow where the row links. Rows are separated by space only; every fourth row has 44px above it to form groups. In columns 1–4, bottom-aligned with the last row, one 4:5 photograph 22vw wide may sit alone. Holds 5–14 rows.",
+   "mobile": "Heading at 9.5vw without the indent. The table takes the full width at 16px; each row stacks the kind above the place, with the value right-aligned on the first line. The naming word is dropped because the heading already says it. The photograph follows at 60% width on the right margin.",
+   "seenIn": [
+    "aww-kononenko-architectural-bureau",
+    "opl-monte"
+   ]
+  },
+  {
+   "id": "gallery-staggered-pairs",
+   "role": "gallery",
+   "name": "Staggered pairs in empty ground",
+   "shape": "stack",
+   "tags": [
+    "photo-led",
+    "quiet"
+   ],
+   "directions": [
+    "uneven-photographs",
+    "dark-room",
+    "place-carries-it",
+    "name-as-monument"
+   ],
+   "needs": [],
+   "blueprint": "No heading. Photographs are placed one or two per screen so that more than half of every screen stays empty ground. Screen one: a 3:4 portrait in columns 1–4 against the left margin, and a near-square 5:4 image in columns 7–12 against the right margin whose top edge starts 30vh lower than the portrait's. Screen two: a 3:2 landscape in columns 6–11 and, 24vh lower, a small 4:5 image in columns 2–4. Repeat the two arrangements, mirrored on the second pass, for six to ten photographs. Under each image's left corner, a one-line caption at 13px in the soft ink, 10px below the image. Vertical gaps between pairs are 22–28vh. Every edge sits on a column line and offsets come from only two values. Square corners. If motion is used, images enter with a short `clip-path` wipe from the bottom edge.",
+   "mobile": "A single column in which widths and sides alternate: 70% against the left margin, 84% against the right, 56% left, then 100% full-bleed, with 64px between images. Captions sit under each image's left corner at 13px. Portrait crops are preferred so each image fills most of the screen height.",
+   "seenIn": [
+    "opl-kereliott",
+    "opl-the-deep-end",
+    "aww-tengile-malamala-collection"
+   ]
+  },
+  {
+   "id": "contact-sentence-portrait-links",
+   "role": "contact",
+   "name": "Sentence, portrait, two links",
+   "shape": "band",
+   "tags": [
+    "type-led",
+    "quiet",
+    "photo-led"
+   ],
+   "directions": [
+    "sentence-as-layout",
+    "uneven-photographs",
+    "contact-sheet",
+    "editorial-report",
+    "quiet-instrument"
+   ],
+   "needs": [],
+   "blueprint": "One closing row of three elements hanging from the same top line, with open ground between them, on a 12-column grid. Columns 1–5: a sentence of 12–18 words at clamp(26px, 3vw, 44px), four lines, leading 1.1, saying what kind of enquiries are welcome; it is set as a paragraph and there is no separate heading. Columns 8–9: one small square portrait or photograph of the place, 150–170px, with square corners. Columns 10–12: a short question at 18px in medium weight, then 20px below it two underlined links stacked at 18px (the email address and one booking or social link), and beneath them a line at 14px in the soft ink with the city and the usual reply time. Columns 6–7 stay empty. The row has 160px of space above and 120px below. No form. On a dark ground the photograph is the only bright thing in the row.",
+   "mobile": "The sentence comes first at 7.4vw. Below it the portrait at 96px square sits at the left margin with the question and the two links to its right, top-aligned, in the remaining width. The city and reply-time line spans the full width beneath.",
+   "seenIn": [
+    "opl-artem-taradash",
+    "aww-bleibtgleich26",
+    "opl-kereliott"
+   ]
+  },
+  {
+   "id": "footer-wordmark-on-last-photograph",
+   "role": "footer",
+   "name": "Name across the last photograph",
+   "shape": "full-bleed",
+   "tags": [
+    "photo-led",
+    "poster"
+   ],
+   "directions": [
+    "place-carries-it",
+    "uneven-photographs",
+    "dark-room",
+    "hero-object",
+    "split-stage"
+   ],
+   "needs": [],
+   "blueprint": "The footer is the page's last photograph, full-bleed at 100vw by 100svh, darkened evenly with `filter: brightness(0.62)` so paper-coloured type reads everywhere on it. Three layers of text sit on the image. Top row, 32px from the edge: a short link list at 16px at the left margin and contact details at the right margin, each no wider than three columns. Mid-height is left to the photograph. Along the bottom, the wordmark runs the full width in the paper colour, letters about 12–20vw tall depending on the name's length, baseline 56px above the edge; under it one line of legal text at 13px. Choose an image whose interest is in its middle band, since the top and bottom carry text. No panel, no box and no colour block separates the footer from the image: the photograph is the footer.",
+   "mobile": "The photograph is 100vw by 88svh, cropped to its strongest vertical slice. Links stack at the top-left at 16px, contact beneath them. The wordmark is fitted to the width along the bottom, with the legal line under it at 12px.",
+   "seenIn": [
+    "aww-seasats",
+    "aww-alethia",
+    "opl-vestris"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "id": "aww-tengile-malamala-collection",
+   "name": "Tengile Malamala Collection",
+   "url": "https://tengilemalamala.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "hospitality",
+   "score": 7.6,
+   "idea": "Let the land and animals carry everything: one staggered hairline-serif headline over aerial footage, then cream pages of olive-green serif text with photographs placed at uneven sizes.",
+   "mood": [
+    "serene",
+    "luxurious",
+    "earthy",
+    "editorial"
+   ],
+   "archetype": "fullbleed-media-overlay",
+   "hero": "Aerial river footage fills the viewport, slightly darkened. Three small white caps items sit on the top edge: an enquiry link hard left, a stacked three-line wordmark centred, 'menu' hard right. The headline is two words on two lines in thin serif capitals about 8.3vw tall: the first line starts 10% from the left, the second is indented to 40% and ends near 90%, so the pair steps diagonally across the middle third. Below, starting at the 50% line, a three-line serif sentence at about 20px and a small white square-cornered button with a separate arrow square beside it. The lower third is left to the water.",
+   "type": "PP Fragment at hairline weight (220): capitals for the 120px headline, sentence case for 28-36px olive statements. Inter at 11-16px for labels, nav and small paragraphs. Three serif sizes, two sans sizes; the serif never goes bold.",
+   "colour": "#f5eee9 #5c6e21 #181608 #e3e1d4 #ffffff — Warm cream page with every word, large or small, in one olive green; the footer inverts to a solid olive field with cream text. Photography supplies all other colour.",
+   "imagery": "Wildlife and lodge photography, natural and saturated, square corners, no overlays. Mixed aspect ratios placed at different widths and vertical offsets; lodge listings use equal landscape triplets; hero and closing band are full-bleed aerials.",
+   "layout": "Narrow 16px outer margins and a twelve-column grid used asymmetrically: label and small paragraph in the left columns, the large statement starting at the midpoint. Sections alternate between loosely scattered image pairs and tidy three-up rows.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "Cream field. A tiny sans caps label top-left. A 28px olive serif paragraph of eight lines occupies only the right half, starting at the midpoint. Far below on the left, a five-line 12px sans paragraph about 180px wide. Images are placed loose: a landscape elephant photo under the right text, a tall leopard portrait lower at the left margin, a wide crop of elephant legs upper right of the next screen. No two share a top edge or width."
+    },
+    {
+     "role": "showcase",
+     "description": "A tiny caps label, then an olive serif statement at about 36px running the full width for four lines. Beneath: a sub-label, a 12px paragraph held to a third of the width, then three equal landscape photos with 8px gutters spanning margin to margin, each captioned below in small serif. The same block repeats for a second category; one tile is dimmed with a short caps line laid over it to mark it as not yet open."
+    },
+    {
+     "role": "cta",
+     "description": "A full-bleed aerial of an elephant crossing a sandbank with a short serif statement, a small sans paragraph and the white button-plus-arrow pair set in the right half only. It butts directly against a solid olive footer: five columns of small cream links under tiny caps headings in the top third, a large empty green area beneath, and a legal line along the bottom edge."
+    }
+   ],
+   "steal": [
+    "Stagger a two-line headline: first line from the left margin, second indented by 30% so the pair steps diagonally across the image.",
+    "Set every piece of text in a single brand colour on cream and make the footer that same colour as a solid field.",
+    "Split the button into two adjacent squares, label and arrow, with a 4px gap, small and square-cornered, instead of one pill."
+   ],
+   "media": "A 10s muted aerial montage covers the whole first screen with type set on it and no visible scrim. Below: a split with an image and paragraph in the right half from the centre line, staggered image pairs with uneven heights and offsets, a three-up card row with captions, an inset full-width slider, a constellation of thumbnails round a centred heading, a slow portrait marquee, and a sticky full-bleed landscape with the closing call scrolling over it; 33 images, pictures oversized about 110% in their masks for drift.",
+   "motion": "There is no preloader and only the montage cuts after 400ms, but under Lenis content stays hidden until each reveal fires: blocks rise and sharpen from a blur over 1.6s cubic-bezier(0.19,1,0.22,1), others fade with a filter over 1s cubic-bezier(0.165,0.84,0.44,1), pictures drift inside their masks, and the closing landscape holds on a sticky root. The ground steps from cream to sage-beige to olive, and the marquee loops on 120s."
+  },
+  {
+   "id": "aww-sobha-privy-collection",
+   "name": "Sobha Privy Collection",
+   "url": "https://sobha-privy-collection.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "real-estate",
+   "score": 7.1,
+   "idea": "Luxury homes sold by restraint: a black sculptural render and a script-over-capitals title, then white pages where interior images grow and overlap huge serif capitals as you scroll.",
+   "mood": [
+    "opulent",
+    "hushed",
+    "formal",
+    "cinematic"
+   ],
+   "archetype": "fullbleed-media-overlay",
+   "hero": "Full-bleed near-black video of a glossy black sculptural form, wide curved bands catching thin highlights, filling the frame at very low contrast. A centred two-line title about 46% of the width: a formal script phrase at about 6.9vw, then a line of light roman serif capitals at about 6vw directly beneath, wider than the script. Nothing else in the middle. Corners only: a two-line hamburger with a menu label top-left, a small serif wordmark with a micro subtitle top-centre, a text link top-right, a circled down-arrow bottom-left, and bottom-right a greyscale 3D-map thumbnail about 17% wide with a numeral and a two-line label.",
+   "type": "TT Ramillas in light uppercase for display (up to 7.9vw) paired with the formal script Altesse for two- or three-word accent phrases that overlap the capitals; TT Commons Pro at 13px for nav, eyebrows and body. A very large jump from 100px display to 13px text.",
+   "colour": "#010101 #ffffff #d8cdbd #8a7862 #1a1919 — Black hero, then pure white pages with near-black type. Warmth comes only from the beige, cream and bronze interiors in the renders. No accent colour anywhere.",
+   "imagery": "Architectural interior renders in cream and bronze (double-height dining halls, lounges, marble pool rooms) in tall portrait and near-square crops, square corners, arranged in groups of different sizes that scale with scroll. The hero is an abstract black sculptural render.",
+   "layout": "Centred, symmetrical compositions (heading over a three-image group) alternate with asymmetric ones (large left-aligned capitals with images offset right and lower-left). A very long scroll-driven page of about 48 screens, with pinned image scaling between text moments.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "White section, centred. A two-line micro eyebrow in tracked capitals, then a two-line heading in light serif capitals at about 2.6vw. Below it a triptych: a tall centre image about 23vw wide at 3:4, flanked by two shorter images set lower, their tops about 30% down the centre image and their outer edges touching the viewport sides. On scroll the centre image scales up and the side images rise toward its top."
+    },
+    {
+     "role": "gallery",
+     "description": "Pinned scaling group: the same three renders rearranged so the centre image is about 26vw wide and roughly 30% taller than its neighbours, which hang from a common line a little below its top and are cropped by the left and right viewport edges. Gaps are under 1vw. The fixed header stays above, its logo sitting on top of the image."
+    },
+    {
+     "role": "intro",
+     "description": "Statement with overlap: five lines of light serif capitals at about 5.5vw, flush left on a 1% margin, filling the left 55%. A grey script phrase overlaps the end of the last line and runs into a tall image occupying the right 25% from mid-height to the bottom. A second, small image about 12vw wide sits lower left under the text. Mid-transition frames show the capitals rising letter by letter from behind a baseline mask."
+    }
+   ],
+   "steal": [
+    "Pair one short phrase in formal script with a line of light serif capitals beneath it, letting the script overlap the capitals or run into an adjacent image.",
+    "Arrange three images as a tall centre flanked by two lower ones cropped by the viewport edges, then scale the centre up on scroll.",
+    "Keep the hero to a near-black, low-contrast render with all controls pushed to the four corners so the centred title is the only bright thing."
+   ],
+   "media": "A WebGL black ribbon covers the whole first screen behind the centred slogan, with a 240x140 map clip docked bottom-right (about 2.6%). Later: a centre portrait that grows from about 620 to 760px wide as it rises, a triptych with the flanking pictures cropped by the viewport edges, a picture sliding under the last lines of a statement, full-bleed night-skyline video interludes, a curved WebGL carousel pinned under a title and long pinned horizontal galleries; 28 images and 9 muted loops, square corners.",
+   "motion": "After a preloader of about 1s the title drifts up a few pixels and settles by 2.5s, and Locomotive smooth scroll then scrubs nearly everything by transform as a continuous lerp: pictures move faster than text, each section slides over the previous one, and the three-worlds chapter pins a curved carousel and horizontal tracks for about 23,000px. 187 spans rise over 1.4s cubic-bezier(0.29,0.52,0.5,1) and 114 fade over 1s cubic-bezier(0.7,0,0.3,1), the stylesheet's main curve (32 uses)."
+  },
+  {
+   "id": "opl-madie",
+   "name": "Madie",
+   "url": "https://madie.es",
+   "source": "One Page Love",
+   "kind": "restaurant",
+   "score": 7.2,
+   "idea": "A burgundy-and-cream bakery brand in which the madeleines themselves, cut out like specimens, become the menu.",
+   "mood": [
+    "warm",
+    "indulgent",
+    "friendly",
+    "polished"
+   ],
+   "archetype": "fullbleed-media-overlay",
+   "hero": "A dark, warm photograph (iced coffee with a logo sticker and a glazed madeleine on a wooden counter, burgundy tiles behind) fills a rounded-corner frame inset 20px from every edge on a cream page; the subject sits right of centre. In the left column, starting 42% down: a small star-rating line, then a three-line uppercase headline at 5vw in a heavy geometric sans, the first two lines outline-only and the third solid cream, a three-line paragraph, and a row with a pink pill button and an underlined text link. Top-left: menu icon and script logo. Top-right: a three-language pill toggle. Bottom-right: a circular text badge.",
+   "type": "Dazzle, a heavy geometric uppercase, for headlines at 72px, used both solid and as an outline stroke; Cottorway, a slightly wide geometric sans, for 14px body and for a light italic accent word. A brush-script logo. Tracked capitals near 10px for labels.",
+   "colour": "#f6efe6 #3d0012 #5c0a23 #ff99d3 #160b0a #e8a530 — Cream and deep burgundy alternate by section across wavy boundaries. Bubblegum pink is reserved for buttons, the active filter pill and carousel arrows; the product cut-outs supply every other colour.",
+   "imagery": "A moody warm-graded hero photo; individual madeleines shot from above and cut out with soft shadows as small menu thumbnails; white line drawings (dog in beret, cafe table); rounded photo cards stacked at a tilt; a map redrawn in burgundy.",
+   "layout": "Centred intro, a left-anchored story block on burgundy, then a two-column menu inside a container about 60% of the width. Section edges are curved waves rather than straight lines. Rounded frames and a sticky header with filter pills recur throughout.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "Cream field, everything centred. A tiny tracked-capitals label flanked by two short rules, then a two-line heading: the first line outlined uppercase in burgundy at about 4.5vw, the second a lowercase light italic of the body sans, solid. Three short paragraphs at 13px follow in a column about 45% wide. The section ends in a burgundy wave rising from the bottom, with a white line-drawn dog perched on the curve."
+    },
+    {
+     "role": "about",
+     "description": "Burgundy field patterned with a faint tone-on-tone repeat of the logo. Left: a white line illustration, a three-line paragraph with bold phrases, two round pink arrow buttons and a slide counter. Right: a stack of portrait photo cards with rounded corners, the top one tilted a few degrees and the others fanned behind it. The bottom edge curves back to cream."
+    },
+    {
+     "role": "list",
+     "description": "A sticky row of three pill filters beside the logo, the active one filled pink. Each category has an outlined uppercase label at left, an item count at far right and a hairline beneath. Items run in two columns: a 60px cut-out madeleine at left, then a bold uppercase name and a two-to-three-line italic description; some carry a tiny best-seller note or a pink allergen tag. No prices and no boxes."
+    },
+    {
+     "role": "contact",
+     "description": "Deep burgundy. The left two-thirds is an interactive map restyled entirely in burgundy and pink with rounded corners, the script logo as its pin and a small address card overlaid bottom-left. The right third is a rounded outlined panel listing opening hours, phone and email under tiny capital labels, plus two social icons. The script logo, large and white, is centred below, followed by a tracked-capitals legal line."
+    }
+   ],
+   "steal": [
+    "Set a headline with its first lines as outline strokes and the last line solid, so emphasis falls on the final phrase without a size change.",
+    "Replace the stock map with one restyled in the brand's two colours and use the logo as the pin.",
+    "Build the menu from small cut-out product photos beside bold names and italic notes in two columns, with no cards."
+   ]
+  }
+ ],
+ "scenes": []
+}
