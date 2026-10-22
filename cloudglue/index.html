@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloudglue: video context engine for AI (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Cloudglue with a live video search demo. Made by Axlios Media.">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--surface:#f2f2f2;--ink:#0a0a0a;--muted:#3a3a3a;--accent:#d92b21;--accent-ink:#fff;--m:clamp(20px,3vw,44px);--r:10px;
+--step-small:1rem;--step-body:1.1875rem;--step-lead:clamp(1.25rem,1.1rem + .7vw,1.5rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem);--step-big:clamp(2.2rem,6vw,5.4rem);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Switzer,"Helvetica Neue",Arial,sans-serif;font-size:var(--step-body);line-height:1.5;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{height:auto}
+h1,h2,h3{font-weight:600;letter-spacing:-.04em;line-height:.98}
+.wrap{padding:0 var(--m)}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 26px;border-radius:var(--r);background:var(--accent);color:var(--accent-ink);font:500 var(--step-body)/1 Switzer,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease),background .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.97)}
+.btn.dark{background:var(--ink)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.on-red :focus-visible,.black :focus-visible{outline-color:#fff}
+/* bar */
+.bar{display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 var(--m)}
+.logo{font-weight:600;font-size:var(--step-lead);letter-spacing:-.04em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;border-radius:50%;background:var(--accent);display:block;position:relative}
+.logo i:after{content:"";position:absolute;left:8px;top:7px;border-left:11px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.bar nav{display:flex;gap:30px;align-items:center;font-size:var(--step-small);font-weight:500}
+.bar nav a:not(.btn){text-decoration:none;transition:color .2s}.bar nav a:not(.btn):hover{color:var(--accent)}
+.bar .btn{height:42px;padding:0 18px;font-size:var(--step-small)}
+/* hero */
+.hero{padding:clamp(28px,6vw,90px) var(--m) 28px;display:grid;grid-template-columns:repeat(12,1fr);column-gap:20px}
+.hero h1{grid-column:1/-1}.hero .col{grid-column:1/8}
+.hero h1{font-size:var(--step-big);margin-bottom:28px;white-space:nowrap}
+.hero p{font-size:var(--step-lead);color:var(--ink);max-width:34ch;line-height:1.3;margin-bottom:28px}
+.hero .acts{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.hero .acts a.t{font-weight:500;text-underline-offset:5px}
+.hero .side{grid-column:9/13;align-self:end;margin-bottom:6px;font-size:var(--step-body);color:var(--muted);max-width:30ch}
+/* demo */
+.stage{margin:34px var(--m) 0;background:var(--surface);border-radius:14px;padding:clamp(14px,2vw,28px);display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(14px,2vw,28px)}
+.player{position:relative;border-radius:var(--r);overflow:hidden;background:#3a2a20;aspect-ratio:7/5}
+.player img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.player img.on{opacity:1}
+.tc{position:absolute;left:14px;bottom:14px;background:var(--ink);color:#fff;border-radius:6px;padding:6px 10px;font-size:var(--step-small);font-weight:500;font-variant-numeric:tabular-nums}
+.pp{position:absolute;right:14px;bottom:10px;height:40px;padding:0 14px;border-radius:6px;border:0;background:#fff;color:var(--ink);font:500 var(--step-small)/1 Switzer,sans-serif;cursor:pointer;transition:transform .2s}
+.pp:hover{transform:translateY(-2px)}
+.strip{grid-column:1/2;align-self:start;grid-auto-rows:min-content;display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.strip button{position:relative;border:0;padding:4px;display:block;border-radius:7px;background:#e4e4e4;cursor:pointer;transition:background .25s,transform .25s var(--ease)}
+.strip button:hover{transform:translateY(-3px)}
+.strip button{aspect-ratio:7/5;overflow:hidden}.strip button img{width:100%;height:100%;object-fit:cover;display:block;border-radius:4px;filter:grayscale(.4) brightness(.92);transition:filter .3s}
+.strip button.hit{background:var(--accent)}.strip button.hit img{filter:none}
+.strip button.cur{background:var(--ink)}.strip button.cur.hit{background:var(--accent)}
+.strip.dim button:not(.hit) img{filter:grayscale(1) brightness(.7);opacity:.6}
+.q{grid-column:2/3;grid-row:1/3;display:flex;flex-direction:column;gap:14px;min-width:0}
+.q label{font-weight:600;font-size:var(--step-lead);letter-spacing:-.03em;line-height:1.1}
+.q input{height:58px;border:0;border-radius:var(--r);background:#fff;padding:0 18px;font:400 var(--step-lead)/1 Switzer,sans-serif;color:var(--ink);width:100%}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:0;background:#fff;border-radius:999px;padding:9px 15px;font:500 var(--step-small)/1 Switzer,sans-serif;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.chip:hover{background:var(--ink);color:#fff;transform:translateY(-2px)}
+pre{background:var(--ink);color:#f4f4f4;border-radius:var(--r);padding:16px;max-height:340px;font:15px/1.55 ui-monospace,Menlo,Consolas,monospace;overflow:auto;white-space:pre-wrap;word-break:break-word;flex:1;min-height:200px}
+pre b{color:#ff8a80;font-weight:400}
+.ans{font-size:var(--step-body);line-height:1.4}
+.ans button{border:0;background:var(--accent);color:#fff;border-radius:6px;padding:2px 8px;font:500 var(--step-small)/1.6 Switzer,sans-serif;cursor:pointer;margin:0 2px}
+.cap{color:var(--muted);font-size:var(--step-small)}
+/* features */
+.sec{padding:clamp(80px,11vw,170px) var(--m) 0}
+.feat h2{display:none}
+.cmd{background:var(--surface);border-radius:14px;padding:clamp(14px,2vw,28px)}
+.cmd input{width:100%;height:56px;border:0;border-radius:var(--r);background:#fff;padding:0 .7em;font:400 var(--step-lead)/1 Switzer,sans-serif;letter-spacing:-.03em;color:var(--ink);margin-bottom:12px}
+.cmd ul{list-style:none}
+.cmd li{border-radius:var(--r);transition:background .3s var(--ease),color .3s}
+.cmd li button{display:flex;justify-content:space-between;gap:20px;width:100%;text-align:left;background:none;border:0;padding:.28em .6em;font:600 clamp(1.6rem,3.7vw,3.4rem)/1.02 Switzer,sans-serif;letter-spacing:-.04em;color:inherit;cursor:pointer}
+.cmd li button span{font:500 var(--step-small)/1 Switzer,sans-serif;background:#fff;color:var(--ink);padding:7px 10px;border-radius:6px;align-self:center;white-space:nowrap}
+.cmd li p{display:none;padding:0 .9em 1em;font-size:var(--step-lead);line-height:1.3;max-width:56ch}
+.cmd li.sel{background:var(--accent);color:#fff}.cmd li.sel p{display:block;animation:in .5s var(--ease)}
+.cmd li:not(.sel):hover{background:#fff}
+.cmd .none{padding:.5em;color:var(--muted)}
+.cmd.d{margin-top:0}
+.pics{display:grid;grid-template-columns:2fr 1fr;gap:12px;margin-top:12px}
+.pics figure{position:relative;border-radius:14px;overflow:hidden;min-height:280px}
+.pics img,.pics video{width:100%;height:100%;object-fit:cover;display:block;position:absolute;inset:0;transition:transform 1.2s var(--ease)}
+.pics figure:hover img,.pics figure:hover video{transform:scale(1.04)}
+.pics figcaption{position:absolute;left:12px;bottom:12px;background:var(--ink);color:#fff;font-size:var(--step-small);padding:6px 10px;border-radius:6px}
+/* showcase */
+.show{margin-top:clamp(80px,11vw,170px);background:var(--accent);color:#fff;min-height:min(92svh,860px);padding:var(--m);display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto 1fr;gap:24px;position:relative;overflow:hidden}
+.show h2{font-size:var(--step-head);max-width:none;grid-column:1/3}
+.show .sub{grid-column:1/3;align-self:start;font-size:var(--step-lead);line-height:1.3;max-width:40ch}
+.ctl{grid-column:1/3;align-self:end;font-size:clamp(14px,2.6vw,40px)}
+.read{display:flex;justify-content:space-between;gap:20px;font-weight:600;letter-spacing:-.04em;font-size:var(--step-big);line-height:.95;margin-bottom:.3em;flex-wrap:wrap}
+.read small{display:block;font:500 var(--step-body)/1.3 Switzer,sans-serif;letter-spacing:0;margin-top:.5em}
+.read em{font-style:normal;font-variant-numeric:tabular-nums}
+.rng{width:100%;-webkit-appearance:none;appearance:none;background:transparent;height:4.5em;display:block;cursor:grab}
+.rng::-webkit-slider-runnable-track{height:3em;background:#a81d15;border-radius:2em}
+.rng::-moz-range-track{height:3em;background:#a81d15;border-radius:2em}
+.rng::-webkit-slider-thumb{-webkit-appearance:none;width:4.4em;height:4.4em;margin-top:-.7em;border-radius:50%;background:#fff;border:0;transition:transform .2s}
+.rng::-moz-range-thumb{width:4.4em;height:4.4em;border-radius:50%;background:#fff;border:0}
+.rng:active::-webkit-slider-thumb{transform:scale(.94)}
+.show .note{font-size:var(--step-small);margin-top:6px;max-width:60ch}
+.reel{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-bottom:28px}.reel img{width:100%;aspect-ratio:7/5;object-fit:cover;border-radius:6px;display:block;opacity:.18;transition:opacity .35s,transform .35s var(--ease)}.reel img.on{opacity:1;transform:translateY(-6px)}
+/* how */
+.how{display:grid;grid-template-columns:1fr 1fr;min-height:min(88svh,820px);margin-top:0}
+.how .l{background:var(--surface);padding:var(--m);display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.how .l h2{font-size:var(--step-head);max-width:14ch;transition:opacity .3s}
+.how .l p{font-size:var(--step-lead);line-height:1.3;max-width:30ch}
+.how .r{background:var(--ink);color:#fff;padding:var(--m);display:flex;flex-direction:column;gap:18px;justify-content:center;min-width:0}
+.fr{display:none}.fr.on{display:block;animation:in .6s var(--ease)}
+@keyframes in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.fr video{background:#222 url(assets/traffic-on-slovenska-street-2-poster.jpg) center/cover;width:100%;border-radius:var(--r);display:block;aspect-ratio:16/10;object-fit:cover}
+.fr .tags{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.fr .tags span{background:#fff;color:var(--ink);border-radius:6px;padding:5px 10px;font-size:var(--step-small);font-weight:500}
+.mini{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+.mini img{width:100%;aspect-ratio:7/5;object-fit:cover;border-radius:5px;display:block}
+.mini .hit img{outline:4px solid var(--accent);outline-offset:-4px}
+.bub{background:#1c1c1c;border-radius:var(--r);padding:16px;margin-bottom:10px;font-size:var(--step-body);line-height:1.4}
+.bub.me{background:var(--accent);margin-left:18%}
+.bub img{width:46%;border-radius:6px;display:block;margin-top:10px}
+.tbl{width:100%;border-collapse:collapse;font-size:var(--step-small);background:#1c1c1c;border-radius:var(--r);overflow:hidden}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;font-weight:500}.tbl th{background:#2a2a2a}
+.tbl td img{width:64px;border-radius:4px;display:block}
+.stages{display:flex;flex-direction:column;gap:14px}
+.stages .rng{height:3em;font-size:16px}
+.stages .rng::-webkit-slider-runnable-track{background:#cfcfcf;height:10px;border-radius:5px}
+.stages .rng::-moz-range-track{background:#cfcfcf;height:10px;border-radius:5px}
+.stages .rng::-webkit-slider-thumb{background:var(--accent);margin-top:-15px;width:40px;height:40px}
+.stages .rng::-moz-range-thumb{background:var(--accent);width:40px;height:40px}
+.names{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.names button{background:none;border:0;text-align:left;font:500 var(--step-small)/1.3 Switzer,sans-serif;color:var(--muted);cursor:pointer;padding:4px 0;transition:color .2s}
+.names button.on{color:var(--ink)}
+/* cta */
+.cta h2{font-size:var(--step-big);line-height:1.02;display:flex;flex-wrap:wrap;align-items:center;gap:.15em .3em;max-width:100%}
+.cta input{flex:1;min-width:8ch;height:1.2em;border:0;border-radius:.2em;background:var(--surface);padding:0 .25em;font:600 1em/1 Switzer,sans-serif;letter-spacing:-.04em;color:var(--ink)}
+.cta input::placeholder{color:#9a9a9a}
+.cta .go{font:600 1em/1 Switzer,sans-serif;letter-spacing:-.04em;background:var(--accent);color:#fff;border-radius:.2em;height:1.2em;padding:0 .35em;border:0;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;transition:transform .25s var(--ease)}
+.cta .go:hover{transform:translateY(-4px)}
+.cta p{margin-top:24px;color:var(--muted);max-width:56ch}
+/* footer */
+footer{padding:clamp(70px,9vw,140px) 10px 10px}
+.tiles{display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+.tile{background:var(--surface);border-radius:var(--r);padding:20px;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .3s var(--ease)}
+.tile:hover{transform:translateY(-3px)}
+.tile.a{background:var(--accent);color:#fff}.tile.k{background:var(--ink);color:#fff}
+.t1{grid-column:1/5}.t2{grid-column:5/8}.t3{grid-column:8/11}.t4{grid-column:11/13}
+.t5{grid-column:1/7;min-height:160px}.t6{grid-column:7/10;min-height:160px}.t7{grid-column:10/13;min-height:160px}
+.tile p{overflow-wrap:anywhere;font-size:1.5rem;line-height:1.2;letter-spacing:-.02em}
+.tile small{font-size:var(--step-small);line-height:1.4;display:block}
+.tile ul{list-style:none;font-size:var(--step-body);line-height:1.9}.tile ul a{text-decoration:none}.tile ul a:hover{text-decoration:underline}
+.word{font-size:var(--step-big);font-weight:600;letter-spacing:-.05em;line-height:1}
+[data-r]{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--d,0)*70ms)}
+[data-r].in{opacity:1;transform:none}
+.nojs [data-r]{opacity:1;transform:none}
+@media (max-width:860px){
+ .bar nav a:not(.btn){display:none}
+ .hero .col{grid-column:1/-1}.hero h1{white-space:normal}.hero .side{grid-column:1/-1;margin-top:24px}
+ .stage{grid-template-columns:1fr}.strip{grid-column:1;grid-row:auto}.q{grid-column:1;grid-row:auto}
+ .pics{grid-template-columns:1fr}.pics figure{min-height:220px}
+ .cmd li button{font-size:5.6vw}.cmd li p{font-size:1.125rem}.cmd li button span{display:none}
+ .show{grid-template-columns:1fr;min-height:min(86svh,760px)}.show h2,.show .sub{grid-column:1;justify-self:start}.show .ctl{grid-column:1}
+ .how{grid-template-columns:1fr}.how .r{order:-1;min-height:min(46svh,420px)}.how .l h2{font-size:9vw}
+ .names{grid-template-columns:1fr 1fr}
+ .cta h2{font-size:10vw}
+ .tiles{grid-template-columns:1fr 1fr;gap:6px}.tile{grid-column:auto!important;min-height:160px}.t1{grid-column:1/-1!important;min-height:160px}.t3{grid-column:1/-1!important}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-r]{opacity:1;transform:none}.player img:not(.first){display:none}}
+</style>
+</head>
+<body class="nojs">
+<header class="bar">
+ <a class="logo" href="#top"><i></i>Cloudglue</a>
+ <nav aria-label="Main"><a href="#use">Use cases</a><a href="#speed">Speed</a><a href="#how">How it works</a><a class="btn" href="https://cloudglue.dev">Try the playground</a></nav>
+</header>
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+ <h1 id="h1" data-r>Video context engine for AI</h1>
+ <div class="col">
+  <p data-r style="--d:1">The API to structure, search, and reason over video context for developers.</p>
+  <div class="acts" data-r style="--d:2"><a class="btn" href="https://cloudglue.dev">Try the playground</a><a class="t" href="#demo">Or search the video below</a></div>
+ </div>
+ <p class="side" data-r style="--d:3">The sample is the first moving picture ever shot, twelve frames of a horse from 1878. Ask it a question.</p>
+</section>
+
+<section id="demo" class="stage" aria-label="Search a video demo" data-r>
+ <div class="player" id="player" aria-live="polite">
+  <img class="first on" src="assets/f01.webp" alt="Muybridge frame 1: a galloping horse and rider, 1878" width="420" height="300">
+  <img src="assets/f05.webp" alt="Muybridge frame 5: horse with legs stretched" width="420" height="300" loading="lazy">
+  <img src="assets/f09.webp" alt="Muybridge frame 9: horse mid stride" width="420" height="300" loading="lazy">
+  <img src="assets/f12.webp" alt="Muybridge frame 12: horse standing still" width="420" height="300" loading="lazy">
+  <span class="tc" id="tc">00:00.00</span>
+  <button class="pp" id="pp" type="button">Pause</button>
+ </div>
+ <div class="q">
+  <label for="qin">Search across this video</label>
+  <input id="qin" type="search" autocomplete="off" placeholder="Try: horse standing still" aria-describedby="hint">
+  <div class="chips" role="group" aria-label="Example searches">
+   <button class="chip" type="button">horse standing still</button>
+   <button class="chip" type="button">legs bunched under the horse</button>
+   <button class="chip" type="button">legs stretched front and back</button>
+   <button class="chip" type="button">rider</button>
+  </div>
+  <p class="ans" id="ans">Pick a search, or type one.</p>
+  <pre id="out" aria-label="Response sketch">{ "segments": [] }</pre>
+  <p class="cap" id="hint">Frames, labels and the response shape are a sketch made for this concept. Not Cloudglue output.</p>
+ </div>
+ <div class="strip" id="strip" role="group" aria-label="Twelve frames of the video"></div>
+</section>
+
+<section id="use" class="sec feat" aria-labelledby="fh">
+ <h2 id="fh">What you can do with video</h2>
+ <div class="cmd" id="cmd" data-r>
+  <input id="cf" type="search" placeholder="Find a use case" aria-label="Find a use case">
+  <ul id="cl"></ul>
+ </div>
+ <div class="pics">
+  <figure data-r><img src="assets/sallie-gardner-at-a-gallop.jpg" width="1920" height="1197" loading="lazy" alt="The 1878 Horse in Motion card with twelve numbered photographs of a galloping horse"><figcaption>The Horse in Motion, Muybridge, 1878</figcaption></figure>
+  <figure data-r style="--d:1"><img src="assets/negative-35mm-film-strip.webp" width="1024" height="683" loading="lazy" alt="A strip of 35mm negative film"><figcaption>35mm negative strip</figcaption></figure>
+ </div>
+</section>
+
+<section id="speed" class="show on-red" aria-labelledby="sh">
+ <h2 id="sh" data-r>2 hours of video in 3 minutes.</h2>
+ <p class="sub" data-r style="--d:1">Fast indexing and responses, no matter the collection size.</p>
+ <div class="ctl">
+  <div class="reel" id="reel" aria-hidden="true"></div>
+  <div class="read"><div><em id="lenv">1h 00m</em><small>of video</small></div><div style="text-align:right"><em id="timv">1m 30s</em><small>to process</small></div></div>
+  <input class="rng" id="len" type="range" min="0" max="120" value="60" step="1" aria-label="Minutes of video">
+  <p class="note">Drag from 0 to 2 hours. Uses the rate on their site: 2 hours of video in just 3 minutes, scaled in a straight line.</p>
+ </div>
+</section>
+
+<section id="how" class="how" aria-labelledby="hh">
+ <div class="l">
+  <div>
+   <h2 id="hh">First, turn videos into context</h2>
+  </div>
+  <div class="stages">
+   <p id="hp">Turn your organization's video libraries into rich, queryable context, whether it's screen recordings, footage, or sales calls.</p>
+   <input class="rng" id="st" type="range" min="0" max="3" value="0" step="1" aria-label="Stage">
+   <div class="names" id="names"></div>
+  </div>
+ </div>
+ <div class="r" id="fr">
+  <div class="fr on" data-i="0"><video src="assets/traffic-on-slovenska-street-2.webm" poster="assets/traffic-on-slovenska-street-2-poster.jpg" muted loop playsinline autoplay></video><p class="cap" style="color:#d0d0d0;margin-top:8px">Segments the engine could mark in this clip: a bus pulling in, a man waiting at the stop. Example tags written for this concept, on a CC BY clip.</p></div>
+  <div class="fr" data-i="1"><div class="mini" id="mini"></div><p class="bub" style="margin-top:14px">Search anything across videos: find and retrieve relevant videos and segments at scale.</p></div>
+  <div class="fr" data-i="2"><div class="bub me">Which frame shows the horse standing still?</div><div class="bub">Frame 12, at 00:00.44. The horse has stopped and the rider sits upright.<img src="assets/f12.webp" alt="Frame 12, horse standing still" width="420" height="300" loading="lazy"></div></div>
+  <div class="fr" data-i="3"><table class="tbl"><tr><th>frame</th><th>time</th><th>horse</th><th>rider visible</th></tr><tbody id="tb"></tbody></table></div>
+ </div>
+</section>
+
+<section class="sec cta" aria-labelledby="ch">
+ <h2 id="ch" data-r>Turn <input id="vid" type="text" placeholder="your video" aria-label="Your video link"> into context. <a class="go" id="go" href="https://cloudglue.dev">Start</a></h2>
+ <p data-r style="--d:1">Ready to build? Turn your videos into LLM-ready context. No credit card necessary, says their site. The button opens cloudglue.dev.</p>
+</section>
+</main>
+
+<footer>
+ <div class="tiles">
+  <div class="tile t1" data-r><p>Cloudglue is the first API that makes extracting data and reasoning over video as simple as writing a few lines of code.</p><small>Unofficial concept by Axlios Media, not affiliated with Cloudglue. Wording credited to cloudglue.dev.</small></div>
+  <div class="tile t2" data-r style="--d:1"><ul><li><a href="https://cloudglue.dev">Use cases</a></li><li><a href="https://cloudglue.dev">Playground</a></li><li><a href="https://cloudglue.dev">Docs</a></li><li><a href="https://cloudglue.dev">Pricing</a></li></ul></div>
+  <div class="tile t3 k" data-r style="--d:2"><p>Backed by Y Combinator</p><small><a href="https://www.ycombinator.com/companies/cloudglue">ycombinator.com/companies/cloudglue</a></small></div>
+  <div class="tile t4 a" data-r style="--d:3"><p><a href="mailto:hello@cloudglue.dev" style="text-decoration:none">hello@cloudglue.dev</a></p></div>
+  <div class="tile t5" data-r><div class="word">Cloudglue</div><small>Concept homepage, made in a day by Axlios Media (axliosmedia.com).</small></div>
+  <div class="tile t6" data-r style="--d:1"><small>Pictures: The Horse in Motion, Eadweard Muybridge, 1878, public domain, via Wikimedia Commons. Negative 35mm film strip, Markus Spiske, CC0, via rawpixel. Traffic on Slovenska street 2, Sounds of Changes, CC BY 3.0, via Wikimedia Commons.</small></div>
+  <div class="tile t7 a" data-r style="--d:2"><p>Video context engine for AI.</p></div>
+ </div>
+</footer>
+<script>
+document.body.classList.remove('nojs');
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const F=[
+ ["00:00.00","galloping horse, legs reaching, rider crouched",["horse","rider","gallop","legs","reach"]],
+ ["00:00.04","legs bunched under the horse, rider crouched",["horse","rider","legs","bunched","tucked","under"]],
+ ["00:00.08","legs bunched under the horse, tail streaming",["horse","legs","bunched","tucked","under","tail","rider"]],
+ ["00:00.12","legs stretched front and back, rider upright",["horse","legs","stretched","front","back","rider"]],
+ ["00:00.16","horse mid stride, tail high",["horse","stride","tail","rider"]],
+ ["00:00.20","horse mid stride, front leg forward",["horse","stride","front","rider"]],
+ ["00:00.24","legs stretched front and back",["horse","legs","stretched","front","back","rider"]],
+ ["00:00.28","legs stretched front and back, tail streaming",["horse","legs","stretched","front","back","tail","rider"]],
+ ["00:00.32","back legs kicking out behind",["horse","legs","back","rider"]],
+ ["00:00.36","front legs reaching forward",["horse","legs","front","reach","rider"]],
+ ["00:00.40","legs bunched under the horse, tail streaming",["horse","legs","bunched","tucked","under","tail","rider"]],
+ ["00:00.44","horse standing still, rider sitting upright",["horse","standing","still","stopped","rider","upright"]]
+];
+const strip=$('#strip');
+F.forEach((f,i)=>{const b=document.createElement('button');b.type='button';b.dataset.i=i;b.setAttribute('aria-label','Frame '+(i+1)+' at '+f[0]);b.innerHTML='<img src="assets/f'+String(i+1).padStart(2,'0')+'.webp" alt="" width="420" height="300" loading="lazy">';strip.appendChild(b)});
+const player=$('#player'),tc=$('#tc'),imgs=[...player.querySelectorAll('img')];
+let cur=0,playing=true,timer;
+function show(i,hold){cur=i;tc.textContent=F[i][0];$$('#strip button').forEach((b,k)=>b.classList.toggle('cur',k==i));
+ const n=String(i+1).padStart(2,'0');let m=imgs.find(x=>x.src.endsWith('f'+n+'.webp'));
+ if(!m){m=imgs[imgs.length-1];m.src='assets/f'+n+'.webp';m.alt='Frame '+(i+1)}
+ imgs.forEach(x=>x.classList.toggle('on',x===m));}
+const loop=[0,4,8,11];let li=0;
+function tick(){if(!playing)return;li=(li+1)%loop.length;show(loop[li])}
+timer=setInterval(tick,5500);
+if(matchMedia('(prefers-reduced-motion:reduce)').matches){playing=false;$('#pp').textContent='Play'}
+$('#pp').onclick=()=>{playing=!playing;$('#pp').textContent=playing?'Pause':'Play'};
+document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(timer);else timer=setInterval(tick,5500)});
+strip.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;playing=false;$('#pp').textContent='Play';show(+b.dataset.i)});
+const ans=$('#ans'),out=$('#out');
+function search(q){q=q.toLowerCase().trim();
+ const hits=[];
+ if(q){const w=q.split(/\s+/).filter(x=>x.length>2&&!['the','and','for','under'].includes(x));
+  F.forEach((f,i)=>{const hay=f[1]+' '+f[2].join(' ');let s=0;w.forEach(x=>{if(hay.includes(x))s++});if(w.length&&s===w.length)hits.push(i)})}
+ $$('#strip button').forEach((b,k)=>b.classList.toggle('hit',hits.includes(k)));
+ strip.classList.toggle('dim',hits.length>0&&hits.length<12);
+ if(!q){ans.textContent='Pick a search, or type one.';out.textContent='{ "segments": [] }';return}
+ if(!hits.length){ans.textContent='No segment matches that. Try "standing still" or "legs stretched".';out.textContent='{ "query": "'+q.replace(/"/g,"'")+'",\n  "segments": [] }';return}
+ const segs=hits.map(i=>'    { "frame": '+(i+1)+', "start": "'+F[i][0]+'", "text": "'+F[i][1]+'" }');
+ out.innerHTML='{ "query": "'+q.replace(/[<"&]/g,"'")+'",\n  "segments": [\n'+segs.join(',\n')+'\n  ] }';
+ ans.innerHTML=hits.length+' segment'+(hits.length>1?'s':'')+' found. First match: '+F[hits[0]][1]+' '+hits.slice(0,4).map(i=>'<button type="button" data-f="'+i+'">'+F[i][0]+'</button>').join('')+' (play the citation)';
+ playing=false;$('#pp').textContent='Play';show(hits[0]);}
+$('#qin').addEventListener('input',e=>search(e.target.value));
+$$('.chip').forEach(c=>c.onclick=()=>{$('#qin').value=c.textContent;search(c.textContent)});
+ans.addEventListener('click',e=>{const b=e.target.closest('button');if(b)show(+b.dataset.f)});
+// features
+const U=[["Chatbot and RAG across videos","Enable your chatbot to answer questions across video content, complete with playable citations.","answer"],["Analyze thousands of hours of video, fast","Run aggregate analysis across videos, and generate reports.","report"],["Extract structured data consistently","Define schemas and extract entities consistently across videos.","schema"],["Search anything across videos","Find and retrieve relevant videos and segments at scale.","find"]];
+const cl=$('#cl');
+U.forEach((u,i)=>{const li=document.createElement('li');li.innerHTML='<button type="button" aria-expanded="false">'+u[0]+'<span>'+u[2]+'</span></button><p>'+u[1]+'</p>';cl.appendChild(li)});
+cl.addEventListener('click',e=>{const li=e.target.closest('li');if(!li)return;$$('#cl li').forEach(x=>{x.classList.toggle('sel',x===li&&!li.classList.contains('sel'));x.querySelector('button').setAttribute('aria-expanded',x.classList.contains('sel'))})});
+$('#cf').addEventListener('input',e=>{const q=e.target.value.toLowerCase();let n=0;$$('#cl li').forEach((li,i)=>{const ok=!q||(U[i][0]+U[i][1]+U[i][2]).toLowerCase().includes(q);li.style.display=ok?'':'none';n+=ok});let no=$('.cmd .none');if(!n&&!no){no=document.createElement('p');no.className='none';no.textContent='No use case with that word.';$('#cmd').appendChild(no)}else if(n&&no)no.remove()});
+cl.firstChild.classList.add('sel');cl.firstChild.querySelector('button').setAttribute('aria-expanded','true');
+// speed
+const len=$('#len');function sp(){const m=+len.value,s=Math.round(m*1.5);$('#lenv').textContent=Math.floor(m/60)+'h '+String(m%60).padStart(2,'0')+'m';$('#timv').textContent=Math.floor(s/60)+'m '+String(s%60).padStart(2,'0')+'s'}
+$('#reel').innerHTML=F.map((f,i)=>'<img src="assets/f'+String(i+1).padStart(2,'0')+'.webp" alt="" width="420" height="300" loading="lazy">').join('');
+function rl(){const n=Math.ceil(+len.value/10);$$('#reel img').forEach((im,i)=>im.classList.toggle('on',i<n))}
+len.addEventListener('input',()=>{sp();rl()});sp();rl();
+// how
+const S=[["First, turn videos into context","Turn your organization's video libraries into rich, queryable context, whether it's screen recordings, footage, or sales calls.","Turn into context"],["Then search anything across videos","Find and retrieve relevant videos and segments at scale.","Search"],["Then ask, with playable citations","Enable your chatbot to answer questions across video content, complete with playable citations.","Chat"],["Then extract structured data","Define schemas and extract entities consistently across videos.","Extract"]];
+const names=$('#names'),st=$('#st');
+S.forEach((s,i)=>{const b=document.createElement('button');b.type='button';b.textContent=s[2];b.onclick=()=>{st.value=i;stage()};names.appendChild(b)});
+$('#mini').innerHTML=[1,3,5,7,9,12].map((n,i)=>'<div class="'+([3,5].includes(i)?'hit':'')+'"><img src="assets/f'+String(n).padStart(2,'0')+'.webp" alt="" width="420" height="300" loading="lazy"></div>').join('');
+$('#tb').innerHTML=[2,7,12].map(n=>'<tr><td><img src="assets/f'+String(n).padStart(2,'0')+'.webp" alt="Frame '+n+'" width="420" height="300" loading="lazy"></td><td>'+F[n-1][0]+'</td><td>'+(n==12?'standing':'galloping')+'</td><td>yes</td></tr>').join('');
+function stage(){const i=+st.value;$('#hh').textContent=S[i][0];$('#hp').textContent=S[i][1];$$('#fr .fr').forEach(f=>f.classList.toggle('on',+f.dataset.i===i));$$('#names button').forEach((b,k)=>b.classList.toggle('on',k===i));const v=$('#fr video');if(i===0)v.play().catch(()=>{});}
+st.addEventListener('input',stage);stage();
+$('#vid').addEventListener('input',()=>{});
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('[data-r]').forEach(el=>io.observe(el));
+setTimeout(()=>$$('[data-r]').slice(0,4).forEach(e=>e.classList.add('in')),100);
+</script>
+</body>
+</html>

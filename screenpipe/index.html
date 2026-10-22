@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>screenpipe: your computer history, open to any AI (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for screenpipe, built from the wording on screenpipe.com. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--surface:#f2f2f2;--ink:#0a0a0a;--muted:#454545;--accent:#d92b21;--accent-ink:#fff;--black:#000;--m:clamp(16px,2.2vw,32px);--r:999px;--rr:20px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem);--step-hero:clamp(2.75rem,1.2rem + 6.4vw,7.5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Albert Sans",system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+h1,h2,h3{font-weight:600;letter-spacing:-.035em;line-height:1}
+.wrap{padding-inline:var(--m);max-width:1680px;margin-inline:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 28px;border-radius:var(--r);background:var(--ink);color:#fff;font:500 var(--step-body)/1 "Albert Sans",sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--accent)}.btn:active{transform:scale(.97)}
+.btn.red{background:var(--accent)}.btn.red:hover{background:var(--ink)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.dark :focus-visible,.hero :focus-visible{outline-color:var(--ink)}
+.dot{display:inline-block;width:.6em;height:.6em;border-radius:50%;background:var(--accent);flex:none;vertical-align:baseline}
+/* nav */
+nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:20px var(--m)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:1.25rem;letter-spacing:-.03em;text-decoration:none}
+.logo .dot{width:18px;height:18px;animation:rec 2.4s ease-in-out infinite}
+@keyframes rec{50%{transform:scale(.6);opacity:.55}}
+nav ul{display:flex;gap:28px;list-style:none;font-size:var(--step-small);font-weight:500}
+nav ul a{text-decoration:none;padding:10px 0}
+nav ul a:hover{color:var(--accent)}
+/* hero */
+.hero{position:relative;min-height:100svh;overflow:hidden;display:grid;align-items:center}
+.disc{position:absolute;right:-18vh;top:50%;width:120vh;height:120vh;max-width:none;border-radius:50%;background:var(--accent);transform:translateY(-50%);animation:breathe 7s ease-in-out infinite}
+@keyframes breathe{50%{transform:translateY(-50%) scale(1.03)}}
+.hero .wrap{position:relative;width:100%;padding-block:120px 80px}
+.hero h1{font-size:var(--step-hero);max-width:6ch;margin-bottom:40px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:var(--step-lead);max-width:34ch;line-height:1.4;margin-bottom:32px}
+.hero .row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero .row a.t{font-weight:500}
+.ask{position:absolute;z-index:2;right:var(--m);top:50%;transform:translateY(-50%);width:min(480px,36vw);background:#fff;color:var(--ink);border-radius:var(--rr);padding:22px;font-size:15px;line-height:1.45}
+.ask .bar{display:flex;gap:10px;align-items:center;font-weight:500;margin-bottom:16px;font-size:14px;color:var(--muted)}
+.ask .q{background:var(--surface);border-radius:14px;padding:14px 16px;font-weight:500;margin-bottom:14px}
+.ask .steps{display:grid;gap:6px;margin:12px 0 14px;counter-reset:s}
+.ask .steps div{display:flex;gap:10px;align-items:center;padding:8px 12px;border-radius:10px;background:var(--surface)}
+.ask .steps b{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;font-weight:500;flex:none}
+.ask .steps div.on{background:var(--accent);color:#fff}
+.ask .steps div.on b{background:#fff;color:var(--accent)}
+.ask .auto{background:var(--ink);color:#fff;border-radius:14px;padding:12px 14px;font-size:14px}
+.ask .src{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;font-size:13px}
+.ask .src span{background:var(--surface);border-radius:var(--r);padding:5px 12px;font-weight:500}
+/* switches */
+.sw{border:0;width:100%;display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;text-align:left;background:var(--bg);color:#8a8a8a;padding:0 var(--m);min-height:20vh;cursor:pointer;font:inherit;transition:background .35s,color .35s}
+.sw .txt{display:grid;gap:10px;max-width:60ch;padding-block:28px}
+.sw h2{font-size:clamp(1.75rem,1.2rem + 1.9vw,2.75rem);letter-spacing:-.035em}
+.sw .more{font-size:17px;line-height:1.45;max-height:0;opacity:0;overflow:hidden;transition:max-height .4s,opacity .4s;color:var(--ink);max-width:56ch}
+.sw[aria-pressed=true]{color:var(--ink)}
+.sw[aria-pressed=true] .more{max-height:140px;opacity:1}
+.sw:nth-of-type(1)[aria-pressed=true]{background:var(--accent);color:#fff}.sw:nth-of-type(1) .more{color:#fff}
+.sw:nth-of-type(2)[aria-pressed=true]{background:#f2f2f2}
+.sw:nth-of-type(3)[aria-pressed=true]{background:#ffb8b1}
+.sw:nth-of-type(4)[aria-pressed=true]{background:#e4e4e4}
+.sw:nth-of-type(5)[aria-pressed=true]{background:#ff8a80}
+.sw:nth-of-type(6)[aria-pressed=true]{background:#0a0a0a;color:#fff}.sw:nth-of-type(6) .more{color:#fff}
+.tog{width:4.2rem;height:2.3rem;border-radius:var(--r);background:#cfcfcf;position:relative;flex:none;transition:background .3s}
+.tog::after{content:"";position:absolute;top:.25rem;left:.25rem;width:1.8rem;height:1.8rem;border-radius:50%;background:#fff;transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.sw[aria-pressed=true] .tog{background:var(--ink)}
+.sw:nth-of-type(1)[aria-pressed=true] .tog,.sw:nth-of-type(6)[aria-pressed=true] .tog{background:#fff}
+.sw:nth-of-type(1)[aria-pressed=true] .tog::after{background:var(--accent)}
+.sw:nth-of-type(6)[aria-pressed=true] .tog::after{background:var(--ink)}
+.sw[aria-pressed=true] .tog::after{transform:translateX(1.9rem)}
+.sw:hover .tog{transform:scale(1.04)}
+.feat-head{padding:clamp(80px,10vw,160px) var(--m) 40px}
+.feat-head{display:grid;grid-template-columns:1fr 1fr;gap:var(--m);align-items:end}.feat-head h2{font-size:var(--step-head);max-width:14ch}.feat-head p{max-width:40ch;justify-self:end}
+/* workflow live */
+.flow{padding:clamp(80px,10vw,160px) 0;background:var(--surface)}
+.flow-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:start}
+.flow h2{font-size:var(--step-head);margin-bottom:24px;max-width:12ch}
+.flow p.s{max-width:36ch;margin-bottom:32px}
+.chips{display:grid;gap:8px}
+.chip{display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;padding:18px 22px;border-radius:var(--rr);background:#fff;border:0;font:inherit;text-align:left;cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.chip:hover{transform:translateX(6px)}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff}
+.chip .d{width:14px;height:14px;border-radius:50%;background:#b9b9b9}
+.chip[aria-pressed=true] .d{background:var(--accent)}
+.chip.rev .d{background:var(--accent)}
+.chip .t{font-weight:500}.chip small{font-size:var(--step-small);opacity:.8}
+.card{background:#fff;border-radius:var(--rr);padding:clamp(22px,3vw,44px);min-height:520px}
+.card .top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px;color:var(--muted);margin-bottom:28px;font-weight:500}
+.card h3{font-size:clamp(2rem,1.4rem + 2.4vw,3.5rem);margin-bottom:6px}
+.card .co{font-size:var(--step-lead);margin-bottom:28px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}
+.cell{background:var(--surface);border-radius:14px;padding:16px 18px}
+.cell small{display:block;font-size:var(--step-small);color:var(--muted);margin-bottom:4px}
+.cell b{font-size:var(--step-lead);font-weight:600;letter-spacing:-.02em}
+.verdict{border-radius:14px;padding:18px 20px;font-weight:500;background:var(--ink);color:#fff;transition:background .3s}
+.verdict.bad{background:var(--accent)}
+.path{display:flex;gap:6px;flex-wrap:wrap;margin-top:20px;font-size:15px;font-weight:500}
+.path span{padding:8px 14px;border-radius:var(--r);background:var(--surface)}
+.path span.hit{background:var(--ink);color:#fff}
+.path span.bad{background:var(--accent);color:#fff}
+.note{margin-top:20px;font-size:var(--step-small);color:var(--muted)}
+/* strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr)}
+.fld{min-height:84svh;padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.fld:nth-child(1){background:#f2f2f2}.fld:nth-child(2){background:#ffc2bc}.fld:nth-child(3){background:#d92b21;color:#fff}.fld:nth-child(4){background:#000;color:#fff}
+.fld h2{font-size:clamp(1.375rem,1.1rem + .9vw,2rem);margin-bottom:12px;position:absolute;left:28px;top:28px}
+.fld .tk{margin:38vh auto 0;width:260px;background:#fff;color:var(--ink);border-radius:14px;padding:18px;font-size:15px;transition:transform .15s}
+.fld:hover .tk{transform:translateY(-6px)}
+.tk b{display:block;font-size:20px;letter-spacing:-.02em;margin-bottom:2px}
+.tk .l{display:flex;justify-content:space-between;padding:7px 0;color:var(--muted);font-size:14px}
+.tk .l i{font-style:normal;color:var(--ink);font-weight:500}
+.tk .ck{display:flex;gap:8px;align-items:center;margin-top:6px;font-size:14px}
+.tk .ck u{width:14px;height:14px;border-radius:50%;border:2px solid var(--ink);display:inline-block}
+.tk .ck u.f{background:var(--ink)}
+.tk .res{margin-top:10px;padding:10px 12px;border-radius:10px;background:var(--accent);color:#fff;font-weight:500;font-size:14px}
+.fld p{font-size:clamp(1.375rem,1.1rem + .9vw,2rem);font-weight:500;letter-spacing:-.02em;line-height:1.15;max-width:14ch}
+/* quiet band w/ photos */
+.pics{padding:clamp(80px,10vw,160px) 0}
+.pics-grid{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,64px);align-items:center}
+.pics h2{font-size:var(--step-head);margin-bottom:24px;max-width:13ch}
+.pics p{max-width:40ch;margin-bottom:12px}
+.circ{display:grid;grid-template-columns:1fr 1fr;gap:var(--m)}
+.circ img{width:100%;height:auto;align-self:start;aspect-ratio:1;object-fit:cover;border-radius:50%;transition:transform .5s}
+.circ img:hover{transform:scale(1.04)}
+.circ img.w{grid-column:1/-1;aspect-ratio:2/1;border-radius:999px}
+.fade{position:relative;aspect-ratio:1;border-radius:50%;overflow:hidden;background:var(--surface)}
+.fade img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s}
+.fade img.on{opacity:1}
+/* faq */
+.faq{padding:clamp(80px,10vw,160px) 0}
+.faq-grid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(24px,4vw,64px)}
+.faq h2{font-size:clamp(2rem,1.2rem + 3.2vw,4rem);position:sticky;top:96px;align-self:start;max-width:8ch}
+.faq details{background:var(--surface);border-radius:var(--rr);margin-bottom:8px;transition:background .25s,color .25s}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:72px;padding:20px 24px;font-size:20px;font-weight:500;cursor:pointer}
+.faq summary::-webkit-details-marker{display:none}
+.pl{position:relative;width:16px;height:16px;flex:none}
+.pl::before,.pl::after{content:"";position:absolute;left:0;right:0;top:6.5px;height:3px;background:currentColor;transition:transform .25s}
+.pl::after{transform:rotate(90deg)}
+details[open]{background:var(--accent);color:#fff}
+details[open] .pl::after{transform:rotate(0)}
+.faq details p{padding:0 24px 24px;font-size:17px;max-width:52ch}
+.faq summary:hover{opacity:.8}
+/* cta */
+.cta{padding:clamp(80px,10vw,160px) 0;background:var(--bg)}
+.cta form{font-size:clamp(2.25rem,1rem + 5vw,6rem);max-width:none;letter-spacing:-.04em;font-weight:600;line-height:1.15;max-width:15em}
+.cta input{font:inherit;letter-spacing:-.03em;height:1.2em;width:7em;max-width:100%;border:0;background:var(--surface);border-radius:.25em;padding:0 .3em;vertical-align:baseline;color:var(--ink)}
+.cta input::placeholder{color:#757575}
+.cta button{font:inherit;letter-spacing:-.04em;height:1.2em;border:0;background:var(--accent);color:#fff;border-radius:.25em;padding:0 .3em;cursor:pointer;transition:transform .2s,background .2s}
+.cta button:hover{background:var(--ink);transform:translateY(-3px)}
+.cta .after{font-size:16px;color:var(--muted);margin-top:28px;max-width:50ch;letter-spacing:0;font-weight:400}
+/* footer */
+footer{background:var(--black);color:#fff;padding:clamp(48px,6vw,96px) 0 28px}
+.mark{display:flex;gap:4px;align-items:flex-end;height:34svh;min-height:200px}
+.mark>*{flex:1;display:grid;place-items:center;font-weight:600;color:#000;font-size:clamp(2rem,9vw,11rem);letter-spacing:-.05em;line-height:1;transition:height .4s}
+.mark .b1{background:#fff;height:78%}.mark .b2{background:#fff;height:100%}.mark .b3{background:#fff;height:64%}.mark .b4{background:#fff;height:90%}.mark .b5{background:#fff;height:72%}.mark .b6{background:#fff;height:100%}.mark .b7{background:#fff;height:60%}.mark .b8{background:#fff;height:86%}.mark .b9{background:var(--accent);height:100%;color:#fff;border-radius:50% 50% 0 0}
+.mark>*:hover{height:100%}
+.fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:56px;font-size:15px}
+.fcols div{grid-column:span 2;display:grid;gap:10px;align-content:start}
+.fcols div.c{grid-column:span 4}
+.fcols h3{font-size:15px;letter-spacing:0;margin-bottom:6px;color:#bdbdbd;font-weight:500}
+.fcols a{text-decoration:none;padding:3px 0}.fcols a:hover{color:var(--accent)}
+.fine{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;margin-top:48px;font-size:14px;color:#cfcfcf}
+.fine .btn{height:40px;padding:0 20px;font-size:15px;background:#fff;color:#000}.fine .btn:hover{background:var(--accent);color:#fff}
+.fine a{color:#fff}
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.nojs .rv{opacity:1;transform:none}
+@media(max-width:1000px){
+ nav ul{display:none}
+ .hero{align-items:start}
+ .disc{width:150vw;height:150vw;right:-60vw;top:auto;bottom:-70vw;transform:none;animation:none}
+ .hero .wrap{padding-top:96px;padding-bottom:0}
+ .hero h1{font-size:19vw;max-width:none}
+ .ask{position:relative;right:auto;top:auto;transform:none;width:auto;margin:48px var(--m) 56px}
+ .hero{display:block}
+ .flow-grid,.pics-grid,.faq-grid,.feat-head{grid-template-columns:1fr}.feat-head p{justify-self:start}
+ .faq h2{position:static;font-size:9vw}
+ .strip{grid-template-columns:1fr}
+ .fld{min-height:0;padding:20px 20px 40px}
+ .fld h2{position:static;margin-bottom:12px}
+ .fld p{order:-1;max-width:none;margin-bottom:24px}.fld h2{order:-2}
+ .fld{justify-content:flex-start}
+ .fld .tk{margin:0}
+ .sw{min-height:132px}
+ .sw h2{font-size:6.4vw}
+ .grid2{grid-template-columns:1fr}
+ .fcols div{grid-column:span 6}.fcols div.c{grid-column:span 12}
+ .mark{height:22svh}
+ .cta form{font-size:10vw}
+ .cta input{display:block;width:100%;margin:.15em 0}
+ .tog{width:3.6rem;height:2rem}.tog::after{width:1.5rem;height:1.5rem}.sw[aria-pressed=true] .tog::after{transform:translateX(1.6rem)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="nojs">
+<header class="hero" id="top">
+ <div class="disc" aria-hidden="true"></div>
+ <nav aria-label="Main"><a class="logo" href="#top"><span class="dot"></span>screenpipe</a><ul><li><a href="#switches">What it keeps</a></li><li><a href="#flows">Workflows</a></li><li><a href="#steps">How it works</a></li><li><a href="#faq">Questions</a></li></ul></nav>
+ <div class="wrap">
+  <h1 class="rv"><em>Open</em> to any AI.</h1>
+  <p class="lead rv">Your computer history. Search what you've seen or heard. Raw history stays local by default.</p>
+  <div class="row rv"><a class="btn red" href="#flows">See a workflow found</a><a class="t" href="#switches">What it keeps</a></div>
+ </div>
+ <div class="ask" data-ui>
+  <div class="bar"><span class="dot"></span> screenpipe connected</div>
+  <div class="q">Map how I processed invoices this week. Show the steps and what I could automate.</div>
+  <div class="bar">Searched screenpipe</div>
+  <div class="steps" id="askSteps"><div><b>1</b>Invoice email</div><div><b>2</b>Match order</div><div><b>3</b>Check amounts</div><div><b>4</b>Request approval</div><div><b>5</b>Update tracker</div></div>
+  <div class="auto">You copied the same invoice details into the accounting app and tracker. Automation to review: draft tracker entries and flag mismatches. Keep payment approval with you.</div>
+  <div class="src"><span>Gmail</span><span>Accounting app</span><span>Spreadsheet</span></div>
+ </div>
+</header>
+
+<main>
+<section id="switches" aria-labelledby="fh">
+ <div class="feat-head"><h2 id="fh" class="rv">What your history keeps for you.</h2><p class="rv">Capture screen, audio and app history on your own machine, then let the agents you approve search it. Switch each one on to read what it does.</p></div>
+ <button class="sw" aria-pressed="true"><span class="txt"><h2>Keep your history portable</h2><span class="more">Use your computer history across models and operating systems. Capture work locally, keep the data accessible, and give your agents the context they need.</span></span><span class="tog" aria-hidden="true"></span></button>
+ <button class="sw" aria-pressed="false"><span class="txt"><h2>Keep screen and audio context</h2><span class="more">Combine accessibility data, screen frames with OCR fallback, and audio transcripts when text events are not enough.</span></span><span class="tog" aria-hidden="true"></span></button>
+ <button class="sw" aria-pressed="true"><span class="txt"><h2>Find that thing you saw earlier</h2><span class="more">Scrub back through your day to the exact screen, document, or conversation. Pick up where you left off.</span></span><span class="tog" aria-hidden="true"></span></button>
+ <button class="sw" aria-pressed="false"><span class="txt"><h2>Use the apps you already have</h2><span class="more">Connect your tools once, then make them available to the workflows you approve.</span></span><span class="tog" aria-hidden="true"></span></button>
+ <button class="sw" aria-pressed="false"><span class="txt"><h2>Keep sensitive work out</h2><span class="more">Exclude apps, windows, and URLs, then redact sensitive fields on your device.</span></span><span class="tog" aria-hidden="true"></span></button>
+ <button class="sw" aria-pressed="false"><span class="txt"><h2>Roll it out across the company</h2><span class="more">Manage devices, identity, policies, storage, and audit trails from one enterprise workspace.</span></span><span class="tog" aria-hidden="true"></span></button>
+</section>
+
+<section class="flow" id="flows" aria-labelledby="flh">
+ <div class="wrap flow-grid">
+  <div>
+   <h2 id="flh" class="rv">Find your next automation.</h2>
+   <p class="s rv">See recurring work across your apps. Review the steps and exceptions, then decide what to improve. Pick a run to see its evidence.</p>
+   <div class="chips rv" role="group" aria-label="Example runs">
+    <button class="chip" data-i="0" aria-pressed="false"><span class="d"></span><span class="t">Mon 09:14 &middot; INV-1840</span><small>Matched</small></button>
+    <button class="chip rev" data-i="1" aria-pressed="true"><span class="d"></span><span class="t">Tue 11:26 &middot; INV-1842</span><small>Needs review</small></button>
+    <button class="chip" data-i="2" aria-pressed="false"><span class="d"></span><span class="t">Wed 14:03 &middot; INV-1845</span><small>Matched</small></button>
+   </div>
+  </div>
+  <div class="card rv" data-ui aria-live="polite" id="card">
+   <div class="top"><span id="cWhen">Tue 11:26 &middot; ERP</span><span>Source evidence</span></div>
+   <h3 id="cId">INV-1842</h3>
+   <p class="co" id="cCo">Northstar Operations</p>
+   <div class="grid2"><div class="cell"><small>Vendor</small><b id="cVen">Alder Packaging</b></div><div class="cell"><small>Purchase order</small><b id="cPo">PO-1048</b></div></div>
+   <div class="grid2"><div class="cell"><small>Invoice total</small><b id="cInv">$4,900.00</b></div><div class="cell"><small>PO total</small><b id="cPot">$4,800.00</b></div></div>
+   <div class="verdict bad" id="cV">Needs review. $100 difference. Handling charge added to invoice.</div>
+   <div class="path" id="cPath"><span>Receive invoice</span><span>Find purchase order</span><span class="bad">Compare totals</span><span>Request finance review</span><span>Update tracker</span></div>
+   <p class="note">Every step has a source to check. Run list and INV-1842 figures are from screenpipe.com's example. For the two matched runs the site shows only their status, so the rest reads Not shown.</p>
+  </div>
+ </div>
+</section>
+
+<section id="steps" aria-labelledby="sh">
+ <div class="strip">
+  <div class="fld"><h2 id="sh">Four steps, one invoice.</h2><div class="tk" data-ui><b>INV-1842</b><div class="l">Source<i>Gmail</i></div><div class="l">Status<i>Received</i></div></div><p>First it lands in your email.</p></div>
+  <div class="fld"><div class="tk" data-ui><b>INV-1842</b><div class="l">Match<i>PO-1048</i></div><div class="l">Vendor<i>Alder Packaging</i></div></div><p>Then it's matched to its order.</p></div>
+  <div class="fld"><div class="tk" data-ui><b>INV-1842</b><div class="l">Invoice<i>$4,900.00</i></div><div class="l">PO<i>$4,800.00</i></div><div class="ck"><u class="f"></u>Compare totals</div><div class="ck"><u></u>Finance review</div></div><p>Then the totals are checked.</p></div>
+  <div class="fld"><div class="tk" data-ui><b>INV-1842</b><div class="ck"><u class="f"></u>Compare totals</div><div class="ck"><u class="f"></u>Finance review</div><div class="ck"><u class="f"></u>Update tracker</div><div class="res">Needs review: $100 difference</div></div><p>Last, a person decides.</p></div>
+ </div>
+</section>
+
+<section class="pics" aria-labelledby="ph">
+ <div class="wrap pics-grid">
+  <div class="circ rv">
+   <img class="w" src="img/b.jpg" width="1600" height="1000" alt="A small sailboat on a calm grey sea" loading="lazy">
+   <img src="img/a.jpg" width="1600" height="1000" alt="A dark rocky peak rising from thick white cloud" loading="lazy">
+   <img src="img/c.jpg" width="1600" height="1000" alt="A long-exposure sea under an orange sunset sky" loading="lazy">
+  </div>
+  <div>
+   <h2 id="ph" class="rv">Your work already has the context.</h2>
+   <p class="rv">Turn what people know into what computers can scale.</p>
+   <p class="rv">It runs on macOS, Windows, and Linux, with a local API and MCP server for connecting your agents.</p>
+  </div>
+ </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="qh">
+ <div class="wrap faq-grid">
+  <h2 id="qh">Questions.</h2>
+  <div>
+   <details name="q" open><summary>What is screenpipe?<span class="pl" aria-hidden="true"></span></summary><p>screenpipe records screen activity and audio so your AI can use your work history as context. It runs on macOS, Windows, and Linux, with a local API and MCP server for connecting your agents.</p></details>
+   <details name="q"><summary>Does my history leave my computer?<span class="pl" aria-hidden="true"></span></summary><p>Raw history stays local by default.</p></details>
+   <details name="q"><summary>Can a company roll it out?<span class="pl" aria-hidden="true"></span></summary><p>Manage devices, identity, policies, storage, and audit trails from one enterprise workspace.</p></details>
+   <details name="q"><summary>How do I keep sensitive work out?<span class="pl" aria-hidden="true"></span></summary><p>Exclude apps, windows, and URLs, then redact sensitive fields on your device.</p></details>
+   <details name="q"><summary>Which tools can it connect to?<span class="pl" aria-hidden="true"></span></summary><p>Connect your tools once, then make them available to the workflows you approve.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="cta" aria-label="Contact">
+ <div class="wrap">
+  <form id="f" action="mailto:support@screenpi.pe" method="post" enctype="text/plain">
+   Questions? <label for="em" style="position:absolute;left:-9999px">Your email</label><input id="em" name="email" type="email" placeholder="your email" autocomplete="email"> <button type="submit">ask.</button>
+  </form>
+  <p class="after">Still have questions? Email us at support@screenpi.pe</p>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="mark" aria-label="screenpipe"><span class="b1">s</span><span class="b2">c</span><span class="b3">r</span><span class="b4">e</span><span class="b5">e</span><span class="b6">n</span><span class="b7">p</span><span class="b8">i</span><span class="b9">pe</span></div>
+  <div class="fcols">
+   <div><h3>Page</h3><a href="#switches">What it keeps</a><a href="#flows">Workflows</a></div>
+   <div><h3>Learn</h3><a href="#steps">How it works</a><a href="#faq">Questions</a></div>
+   <div><h3>Original</h3><a href="https://screenpipe.com">screenpipe.com</a><a href="https://www.ycombinator.com/companies/screenpipe">On YC</a></div>
+   <div class="c"><h3>Contact (from screenpipe.com)</h3><a href="mailto:support@screenpi.pe">support@screenpi.pe</a></div>
+  </div>
+  <div class="fine"><span>Unofficial concept by Axlios Media, not affiliated with screenpipe. Wording from screenpipe.com. Photos via Unsplash (picsum.photos).</span><a class="btn" href="#top">Back to top</a></div>
+ </div>
+</footer>
+<script>
+document.body.classList.remove('nojs');
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var el=e.target;el.style.transitionDelay=(el.dataset.d||0)+'ms';el.classList.add('in');io.unobserve(el)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el,i){el.dataset.d=(i%3)*80;io.observe(el)});
+document.querySelectorAll('.sw').forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true')})});
+var runs=[
+ {w:'Mon 09:14 \u00b7 ERP',id:'INV-1840',co:'Northstar Operations',vendor:'Not shown',po:'Not shown',inv:'Not shown',pot:'Not shown',v:'Matched. The screenpipe.com example lists this run as matched and shows no further detail.',bad:0},
+ {w:'Tue 11:26 \u00b7 ERP',id:'INV-1842',co:'Northstar Operations',po:'PO-1048',inv:'$4,900.00',pot:'$4,800.00',v:'Needs review. $100 difference. Handling charge added to invoice.',bad:1},
+ {w:'Wed 14:03 \u00b7 ERP',id:'INV-1845',co:'Northstar Operations',vendor:'Not shown',po:'Not shown',inv:'Not shown',pot:'Not shown',v:'Matched. The screenpipe.com example lists this run as matched and shows no further detail.',bad:0}];
+function show(i){var r=runs[i];
+ document.getElementById('cWhen').textContent=r.w;document.getElementById('cId').textContent=r.id;document.getElementById('cCo').textContent=r.co;document.getElementById('cPo').textContent=r.po;document.getElementById('cVen').textContent=r.vendor||'Alder Packaging';document.getElementById('cInv').textContent=r.inv;document.getElementById('cPot').textContent=r.pot;
+ var v=document.getElementById('cV');v.textContent=r.v;v.className='verdict'+(r.bad?' bad':'');
+ var sp=document.querySelectorAll('#cPath span');sp.forEach(function(s){s.className=''});sp[2].className=r.bad?'bad':'hit';if(r.bad)sp[3].className='';else sp[3].style.opacity=.4;if(r.bad)sp[3].style.opacity=1;
+ document.querySelectorAll('.chip').forEach(function(c){c.setAttribute('aria-pressed',c.dataset.i==i?'true':'false')})}
+document.querySelectorAll('.chip').forEach(function(c){c.addEventListener('click',function(){show(+c.dataset.i)})});
+show(1);
+var st=document.querySelectorAll('#askSteps div'),k=0;
+if(!rm)setInterval(function(){if(document.hidden)return;st.forEach(function(s){s.classList.remove('on')});st[k%st.length].classList.add('on');k++},1400);
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Floot: build apps in your chat (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Floot with a working chat-to-live-app demo. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0a08;--surface:#181512;--surface2:#221e19;--ink:#fff;--muted:#a39d96;--accent:#c9a45a;--accent-ink:#0c0a08;--paper:#eeeae6;--paper-ink:#0c0a08;--m:clamp(18px,2.6vw,40px);--r:6px;
+--step-small:1rem;--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
+--disp:"Barlow Condensed",Impact,sans-serif;--ease:cubic-bezier(.16,1,.3,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}button,input{font:inherit;color:inherit}button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2{font-family:var(--disp);font-weight:700;text-transform:uppercase;letter-spacing:-.02em;line-height:.9}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:12px 22px;text-decoration:none;font-weight:500;border:0;border-radius:0;transition:transform .2s var(--ease),filter .2s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-2px)}.btn:active{transform:scale(.97)}
+/* hero */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:var(--bg)}
+.hero .up{position:absolute;left:0;right:0;top:0;height:50%;background:var(--paper)}
+.hl{color:#fff;mix-blend-mode:difference;z-index:2;position:absolute;left:0;right:0;top:50%;transform:translateY(-72%);text-align:center;font-size:min(14.5vw,215px);padding:0 var(--m)}
+.hl .ln{display:block;overflow:hidden;padding:.04em 0;white-space:nowrap}
+.hl .ln>span{display:block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.hl .ln:nth-child(2)>span{animation-delay:.11s}
+@keyframes rise{to{transform:none}}@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.mark{position:absolute;left:28px;top:24px;z-index:3;font-family:var(--disp);font-weight:700;font-size:1.9rem;text-transform:uppercase;color:var(--paper-ink);text-decoration:none;letter-spacing:-.01em}
+.hero .btn{position:absolute;right:28px;top:24px;z-index:3;background:var(--paper-ink);color:#fff}
+.sub{position:absolute;left:var(--m);right:var(--m);bottom:40px;text-align:center;font-size:1.25rem;color:#fff;max-width:36em;margin:0 auto;z-index:3;opacity:0;animation:fade .8s .6s var(--ease) forwards}
+/* builder */
+section{padding:clamp(100px,13vw,220px) var(--m) 0}
+h2{font-size:clamp(3rem,7vw,7rem)}
+.build h2{max-width:11em}
+.lede{font-size:var(--step-lead);color:var(--ink);max-width:30em;margin-top:24px;line-height:1.35}
+.demo{margin-top:56px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:8px}
+.chat,.prev{background:var(--surface);border-radius:var(--r);min-height:540px;display:flex;flex-direction:column}
+.chat{padding:16px;font-size:1.0625rem}
+.msgs{flex:1;display:flex;flex-direction:column;gap:10px;overflow:hidden;padding-bottom:12px}
+.b{font-size:1.0625rem;padding:10px 14px;border-radius:var(--r);max-width:92%;animation:fade .5s var(--ease)}
+.b.u{align-self:flex-end;background:var(--surface2)}
+.b.a{align-self:flex-start;background:transparent;padding-left:0}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.chips span{background:var(--surface2);padding:4px 12px;border-radius:99px;font-size:1rem}
+.steps{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.steps button{background:var(--surface2);border:0;border-radius:var(--r);padding:10px 14px;font-weight:500;font-size:1rem;transition:background .2s,transform .2s var(--ease)}
+.steps button:hover{background:#2f2922;transform:translateY(-2px)}
+.steps button.on{background:var(--accent);color:var(--accent-ink)}
+.send{display:flex;gap:8px}
+.send input{flex:1;min-width:0;background:var(--surface2);border:0;border-radius:var(--r);padding:12px 14px;font-size:1.0625rem}
+.send input::placeholder{color:#a39d96}
+.send button{background:var(--accent);color:var(--accent-ink);border:0;border-radius:var(--r);padding:0 18px;font-weight:500}
+.prev{padding:16px;background:var(--surface)}
+.pbar{display:flex;justify-content:space-between;align-items:center;background:var(--surface2);border-radius:var(--r);padding:8px 14px;font-size:1rem;color:var(--muted)}
+.pbar b{color:#fff;font-weight:500}
+.live{background:#3a3326;color:var(--muted);padding:2px 12px;border-radius:99px;transition:background .4s,color .4s}
+.live.on{background:var(--accent);color:var(--accent-ink);font-weight:500}
+.site{flex:1;margin-top:8px;border-radius:var(--r);background:var(--paper);color:var(--paper-ink);padding:clamp(20px,3vw,40px);display:flex;flex-direction:column;justify-content:center;gap:20px;overflow:hidden}
+.site.empty{background:var(--surface2);color:var(--muted);align-items:center;text-align:center}
+.site h3{font-family:var(--disp);text-transform:uppercase;font-weight:700;line-height:.92;letter-spacing:-.02em;font-size:clamp(2.6rem,5vw,4.6rem);transition:font-size .6s var(--ease)}
+.site.big h3{font-size:clamp(3.4rem,7.4vw,6.6rem)}
+.site .o{align-self:flex-start;background:var(--paper-ink);color:#fff;padding:10px 20px;border:0;border-radius:0;font-weight:500}
+.site small{font-size:1.0625rem;opacity:1;color:#4a4036}
+.site>*{animation:fade .6s var(--ease)}
+/* commands */
+.cmd input{display:block;width:100%;background:var(--surface);border:0;border-radius:var(--r);padding:0 24px;height:1.9em;font-size:clamp(1.75rem,3vw,2.75rem);margin:48px 0 24px}
+.cmd input::placeholder{color:#a39d96}
+.cmd ul{list-style:none}
+.cmd li button{display:block;width:100%;text-align:left;background:transparent;border:0;border-radius:var(--r);padding:8px 24px;font-family:var(--disp);font-weight:700;text-transform:none;letter-spacing:-.015em;line-height:1.1;font-size:clamp(2.25rem,5.2vw,5rem);transition:background .25s,color .25s}
+.cmd li button:hover{background:var(--surface)}
+.cmd li.sel button{background:var(--accent);color:var(--accent-ink)}
+.cmd li p{display:none;font-family:Barlow,sans-serif;font-weight:400;font-size:1.0625rem;line-height:1.45;letter-spacing:0;max-width:44ch;margin-top:6px}
+.cmd li.sel p{display:block;animation:fade .4s var(--ease)}
+.cmd li.hide{display:none}
+/* why */
+.why .tbl{margin-top:48px;width:100%;border-collapse:collapse;font-size:var(--step-body)}
+.why th,.why td{text-align:left;padding:22px 24px;vertical-align:top}
+.why thead th{font-family:var(--disp);font-size:clamp(1.8rem,3vw,2.8rem);text-transform:uppercase;font-weight:700;letter-spacing:-.01em;line-height:1}
+.why tbody tr:nth-child(odd){background:var(--surface)}
+.why tbody th{font-weight:500;width:26%}
+.why td:nth-child(3){color:var(--ink)}
+.why td:nth-child(2){color:var(--accent-ink);background:var(--accent)}
+.fn{margin-top:20px;color:var(--muted);font-size:var(--step-small)}
+/* video */
+.vid{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;align-items:stretch}
+.vid h2{grid-column:1/13;margin-bottom:40px}
+.vid a.v{grid-column:1/9;position:relative;display:block;overflow:hidden;border-radius:var(--r);aspect-ratio:16/9;background:#000}
+.vid a.v img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ease)}
+.vid a.v:hover img{transform:scale(1.04)}
+.vid a.v span{position:absolute;left:20px;bottom:20px;background:var(--accent);color:var(--accent-ink);padding:12px 20px;font-weight:500}
+.vid .side{grid-column:9/13;display:flex;flex-direction:column;gap:8px}
+.vid .side div{flex:1;overflow:hidden;border-radius:var(--r);min-height:160px}
+.vid .side img{width:100%;height:100%;object-fit:cover;display:block}
+.drift{animation:drift 22s ease-in-out infinite alternate}@keyframes drift{from{transform:scale(1.1) translateX(-3%)}to{transform:scale(1.1) translateX(3%)}}
+.vid p.cp{grid-column:1/13;margin-top:16px;color:var(--muted);font-size:var(--step-small)}
+/* cta */
+.cta h2{font-size:clamp(3.5rem,10vw,10rem)}
+.cta h2 a{color:var(--accent-ink);background:var(--accent);padding:0 .12em;text-decoration:none;display:inline-block;transition:transform .25s var(--ease)}
+.cta h2 a:hover{transform:translateY(-4px)}
+.cta{display:grid;grid-template-columns:7fr 5fr;gap:var(--m);align-items:end}.cta .ph{grid-row:1/3;grid-column:2;height:100%;min-height:360px;overflow:hidden;border-radius:var(--r)}.cta .ph img{width:100%;height:100%;object-fit:cover;display:block}.cta p{margin-top:28px;color:var(--muted);max-width:34em;align-self:start}
+footer{margin-top:clamp(100px,13vw,220px);background:var(--paper);color:var(--paper-ink);min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px var(--m) 20px}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;font-size:1.0625rem}
+.cols ul{list-style:none}.cols li:first-child{font-weight:500}.cols li{color:#4a4036}.cols li:first-child{color:var(--paper-ink)}
+.cols a{color:var(--paper-ink)}
+.wm{font-family:var(--disp);font-weight:700;text-transform:uppercase;line-height:.8;font-size:34vw;letter-spacing:-.03em;align-self:end;margin-left:-.02em;white-space:nowrap}
+.legal{font-size:1rem;color:#4a4036;padding-top:12px}
+.rv{opacity:1}.js .rv{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.js .rv.in{opacity:1;transform:none}
+@media(max-width:900px){
+ .hero{min-height:520px}.cta{display:block}.cta .ph{margin-top:40px;min-height:240px}.hl{font-size:17vw;transform:translateY(-72%)}.hl .ln{padding:.03em 0}
+ .mark{left:16px}.hero .btn{right:16px;padding:9px 14px}.sub{text-align:left;font-size:1.0625rem;bottom:24px}
+ .demo{grid-template-columns:1fr}.chat,.prev{min-height:0}.site{min-height:300px}
+ .cmd li button{font-size:2.4rem;padding:8px 16px}.cmd li p{font-size:1rem}
+ .why th,.why td{padding:14px 12px;font-size:1rem}.why tbody th{width:30%}
+ .vid a.v{grid-column:1/13}.vid .side{grid-column:1/13;flex-direction:row}.vid .side div{min-height:120px}
+ .cols{grid-template-columns:1fr 1fr;gap:32px 16px}.wm{font-size:31vw}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.hl .ln>span{transform:none}.js .rv{opacity:1;transform:none}.drift{animation:none}.sub{opacity:1}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="up"></div>
+ <a class="mark" href="#top">Floot</a>
+ <a class="btn" href="https://floot.com">Get Floot</a>
+ <h1 class="hl" id="top"><span class="ln"><span>Build it</span></span><span class="ln"><span>in your chat</span></span></h1>
+ <p class="sub">Add Floot to your AI and describe what you want. Floot builds the whole thing: backend, database, and hosting included.</p>
+</header>
+
+<main>
+<section class="build" id="build">
+ <h2 class="rv">From chat to live app</h2>
+ <p class="lede rv">One conversation with your AI. A real app with a database, live at its own link. Try the four steps.</p>
+ <div class="demo rv" data-ui>
+  <div class="chat">
+   <div class="msgs" id="msgs" aria-live="polite"></div>
+   <div class="steps" id="steps">
+    <button type="button" data-s="1">Connect Floot</button><button type="button" data-s="2">Build my project</button><button type="button" data-s="3">Refine it</button><button type="button" data-s="4">Publish</button>
+   </div>
+   <form class="send" id="form"><input id="q" type="text" placeholder="Describe what you want" aria-label="Describe the app you want" maxlength="28"><button>Build</button></form>
+  </div>
+  <div class="prev">
+   <div class="pbar"><b id="url">yourapp.floot.app</b><span class="live" id="live">Draft</span></div>
+   <div class="site empty" id="site"><p>Your app appears here.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="cmd" id="features">
+ <h2 class="rv">Everything you need, built in</h2>
+ <input id="filter" type="search" placeholder="Find a command" aria-label="Filter capabilities">
+ <ul id="list">
+  <li class="sel"><button type="button"><span>Publish on web and mobile</span><p>One click, and your app is live on the web and in the app stores.</p></button></li>
+  <li><button type="button"><span>Backend, data and logins</span><p>Your app can save information, let users create accounts and run recurring tasks automatically. Floot handles the technical setup for you.</p></button></li>
+  <li><button type="button"><span>Emails and notifications</span><p>Send emails, receipts, updates, and notifications from your app, without setting up extra tools.</p></button></li>
+  <li><button type="button"><span>Built to be found</span><p>Floot makes your app easy for search engines like Google to understand and discover, with SEO essentials built in automatically.</p></button></li>
+  <li><button type="button"><span>Integrate your tools</span><p>Stripe payments, Google login, Zapier, and thousands of other services. Floot guides you through the setup step by step.</p></button></li>
+  <li><button type="button"><span>Works in Claude, ChatGPT, Cursor</span><p>Add Floot to your AI chat as a connector, over MCP. No git, no terminal, no build credits.</p></button></li>
+ </ul>
+</section>
+
+<section class="why" id="why">
+ <h2 class="rv">Why Floot?</h2>
+ <p class="lede rv">See how Floot stacks up against other AI app builders across the features that matter most.</p>
+ <table class="tbl rv"><thead><tr><th scope="col"></th><th scope="col">Floot</th><th scope="col">Others</th></tr></thead><tbody>
+  <tr><th scope="row">Token cost</th><td>Flat plans, not per-token*</td><td>Pay-per-token, adds up fast</td></tr>
+  <tr><th scope="row">Ease of use</th><td>No technical background needed</td><td>Headache for non-coders</td></tr>
+  <tr><th scope="row">Everything in one place</th><td>Everything built-in</td><td>Requires many external services</td></tr>
+  <tr><th scope="row">Hosting</th><td>Scales with you</td><td>Limited</td></tr></tbody></table>
+ <p class="fn">*Credits apply only to the optional Floot agent and AI image generation. Comparison is Floot's own claim, from floot.com.</p>
+</section>
+
+<section class="vid" id="video">
+ <h2 class="rv">See it done in a chat</h2>
+ <a class="v rv" href="https://www.youtube.com/watch?v=tYJlp2QhIV8"><img src="img/yt.jpg" alt="Title card of Floot's video: How to use Floot MCP" loading="lazy" width="1280" height="720"><span>Watch the walkthrough</span></a>
+ <div class="side rv"><div><img class="drift" src="img/canoe.jpg" alt="Two people paddling a canoe across a misty green lake" loading="lazy" width="1600" height="1000"></div><div><img class="drift" src="img/boat.jpg" alt="Small red boat floating on clear turquoise water, seen from above" loading="lazy" width="1600" height="1000"></div></div>
+ <p class="cp">Video title card from floot.com's walkthrough of building and publishing a real app from a chat. Photos: Matthew Clark, Anton Sulsky, Paul E. Harrer (Unsplash).</p>
+</section>
+
+<section class="cta" id="start">
+ <h2 class="rv">Describe it.<br>Get it <a href="https://floot.com">live.</a></h2>
+ <p>Add Floot to Claude, ChatGPT or Cursor as a connector. No git, no terminal, no build credits.</p>
+ <div class="ph rv"><img class="drift" src="img/pier.jpg" alt="Silhouetted pier on a hazy blue lake below faint mountains" loading="lazy" width="1600" height="1000"></div>
+</section>
+</main>
+
+<footer>
+ <div class="cols">
+  <ul><li>Unofficial concept</li><li>Made by Axlios Media</li><li>Not affiliated with Floot</li></ul>
+  <ul><li>Floot</li><li><a href="https://floot.com">floot.com</a></li><li><a href="https://www.youtube.com/watch?v=tYJlp2QhIV8">Walkthrough video</a></li></ul>
+  <ul><li>Contact</li><li><a href="mailto:hello@floot.com">hello@floot.com</a></li></ul>
+  <ul><li>Credits</li><li>Wording from floot.com</li><li>Photos: Matthew Clark, Anton Sulsky, Paul E. Harrer</li></ul>
+ </div>
+ <div></div>
+ <div><div class="wm" aria-hidden="true">Floot</div><div class="legal">Unofficial concept by Axlios Media, not affiliated with Floot.</div></div>
+</footer>
+<script>
+document.documentElement.classList.add('js');
+const msgs=document.getElementById('msgs'),site=document.getElementById('site'),url=document.getElementById('url'),live=document.getElementById('live'),q=document.getElementById('q');
+let title='Fresh bread, daily',slug='orderbook',st=0;
+function add(c,h){const d=document.createElement('div');d.className='b '+c;d.innerHTML=h;msgs.appendChild(d);while(msgs.children.length>5)msgs.firstChild.remove()}
+function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function mark(n){[...document.querySelectorAll('#steps button')].forEach(b=>b.classList.toggle('on',+b.dataset.s===n))}
+function go(n){
+ if(n===1){add('a','Floot is connected.<div class="chips"><span>Claude</span><span>ChatGPT</span><span>Cursor</span></div>');st=Math.max(st,1)}
+ if(n===2){add('u',esc(q.value.trim()||'Build me an order page for my bakery'));add('a','Building the app. Backend, database and hosting are included.');
+  site.className='site';site.innerHTML=`<h3>${esc(title)}</h3><small>Order from the menu below.</small><button class="o" type="button">Order now</button>`;url.textContent=slug+'.floot.app';live.className='live';live.textContent='Draft';st=2}
+ if(n===3){if(st<2)return go(2);add('u','Make the headline bigger');add('a','Done. The headline is bigger.');site.classList.add('big');st=3}
+ if(n===4){if(st<2)go(2);add('a','Published on web and mobile.');live.className='live on';live.textContent='Live';st=4}
+ mark(n)}
+document.getElementById('steps').addEventListener('click',e=>{const b=e.target.closest('button');if(b)go(+b.dataset.s)});
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();const v=q.value.trim();if(v){title=v.charAt(0).toUpperCase()+v.slice(1);slug=v.toLowerCase().replace(/[^a-z0-9]+/g,'').slice(0,14)||'yourapp'}else{title='Fresh bread, daily';slug='orderbook'}go(2);q.value=''});
+add('a','Add Floot to your AI, then describe what you want. Press a step, or type your own idea.');
+// commands
+const lis=[...document.querySelectorAll('#list li')],f=document.getElementById('filter');
+lis.forEach(li=>{li.addEventListener('mouseenter',()=>sel(li));li.querySelector('button').addEventListener('click',()=>sel(li))});
+function sel(li){lis.forEach(x=>x.classList.toggle('sel',x===li))}
+f.addEventListener('input',()=>{const v=f.value.toLowerCase();let first=null;lis.forEach(li=>{const m=li.textContent.toLowerCase().includes(v);li.classList.toggle('hide',!m);if(m&&!first)first=li});if(first)sel(first)});
+f.addEventListener('keydown',e=>{const vis=lis.filter(l=>!l.classList.contains('hide'));let i=vis.findIndex(l=>l.classList.contains('sel'));if(e.key==='ArrowDown'){e.preventDefault();sel(vis[Math.min(vis.length-1,i+1)])}if(e.key==='ArrowUp'){e.preventDefault();sel(vis[Math.max(0,i-1)])}});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
