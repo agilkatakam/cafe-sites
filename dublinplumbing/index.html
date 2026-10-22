@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dublin Plumbing Group - Plumbing in Dublin, Ireland</title>
+<meta name="description" content="Dublin Plumbing Group is a plumbing business listed in Dublin, Ireland. Call (01) 617 7805 or email dublinplumbergroup@gmail.com for a quote.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f7;
+  --surface:#ebebeb;
+  --ink:#0d2a1c;
+  --muted:#5f6b64;
+  --accent:#f6e016;
+  --accent-ink:#0d2a1c;
+  --marg:32px;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Switzer',sans-serif;
+  font-size:var(--step-body);line-height:1.5;letter-spacing:-0.005em;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+h1,h2,h3{font-weight:600;letter-spacing:-0.04em;line-height:.95}
+.btn{
+  display:inline-block;background:var(--ink);color:var(--bg);
+  font-weight:500;font-size:var(--step-body);text-decoration:none;
+  padding:16px 28px;
+  transition:background .2s ease, transform .15s ease;
+}
+.btn:hover{background:#1d4a34}
+.btn:active{transform:translateY(2px)}
+.tlink{font-weight:500;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.tlink:hover{color:var(--muted)}
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .5s ease, transform .5s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.js .reveal{opacity:1;transform:none;transition:none}}
+.caption{font-size:var(--step-small);color:var(--muted);margin-top:10px}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:grid;grid-template-columns:repeat(12,1fr);gap:0 20px;padding:0 var(--marg);position:relative;overflow:hidden}
+.hero-left{grid-column:1/5;display:flex;flex-direction:column;padding-top:28px}
+.wm{font-weight:600;font-size:16px}
+.hero-left .talk{margin-top:26vh;font-size:22px;line-height:1.35;max-width:24ch}
+.hero-left .btn{margin-top:32px;align-self:flex-start}
+.hero-right{grid-column:5/13;display:flex;flex-direction:column;padding-top:28px}
+.hero-nav{display:flex;gap:36px;font-size:15px}
+.hero-nav a{text-decoration:none;font-weight:500}
+.hero-nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero h1{
+  font-size:clamp(88px, 9.8vw, 150px);line-height:.82;letter-spacing:-0.04em;
+  margin-top:64px;
+}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line>span{display:block}
+.js .hero h1 .line>span{transform:translateY(112%);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .hero h1 .line>span.in{transform:none}
+.hero-shot{position:relative;margin-top:auto}
+.hero-shot img{width:100%;height:32svh;object-fit:cover;object-position:50% 60%}
+@media (prefers-reduced-motion: no-preference){
+  .hero-shot img{animation:drift 30s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:scale(1)}to{transform:scale(1.07)}}
+}
+.hero-shot .imgwrap{overflow:hidden}
+.fact-block{
+  position:absolute;left:0;top:-70px;width:260px;background:var(--accent);color:var(--accent-ink);
+  padding:22px 24px;z-index:3;
+}
+.fact-block .num{font-size:30px;font-weight:600;letter-spacing:-0.03em;white-space:nowrap}
+.fact-block .lbl{font-size:var(--step-small);margin-top:6px}
+.hero-cap{position:absolute;right:0;bottom:8px;font-size:var(--step-small);color:var(--muted);background:var(--bg);padding:2px 8px}
+
+/* ---------- statement tiles ---------- */
+.tiles{padding:120px 8px 0}
+.board{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:38svh 38svh;gap:8px}
+.tile-a{grid-column:1/9;grid-row:1/3;background:var(--ink);color:var(--bg);display:flex;flex-direction:column;justify-content:space-between;padding:20px}
+.tile-a .tag{font-size:var(--step-small);color:#9fb4a8}
+.tile-a h2{font-size:clamp(56px, 8vw, 120px);line-height:.86;font-weight:600}
+.tile-b{grid-column:9/13;grid-row:1/2;background:var(--surface);display:flex;align-items:flex-end;padding:20px;overflow:hidden}
+.tile-b p{font-size:clamp(56px, 8vw, 120px);line-height:.86;font-weight:600;letter-spacing:-0.04em;white-space:nowrap}
+.tile-c{grid-column:9/13;grid-row:2/3;overflow:hidden}
+.tile-c img{width:100%;height:100%;object-fit:cover}
+.under-tile{display:grid;grid-template-columns:repeat(12,1fr);gap:0 20px;padding:0}
+.under-tile p{grid-column:7/13;font-size:clamp(20px, 1.6vw, 24px);line-height:1.35;padding:40px;max-width:75ch}
+
+/* ---------- pinned cards ---------- */
+.calls{padding-top:140px}
+.calls-h{font-size:clamp(40px, 4.4vw, 64px);margin:0 var(--marg)}
+.calls-wrap{height:260svh;position:relative;margin-top:64px}
+.calls-stage{position:sticky;top:0;height:100svh;overflow:hidden;padding:110px var(--marg) 0}
+.deck{position:relative;height:380px}
+.deck .card{padding:32px;display:flex;flex-direction:column;color:var(--ink)}
+.card h3{font-size:28px;line-height:1.1;font-weight:600;letter-spacing:-0.03em}
+.card .vt{display:none}
+.card .x{margin-top:18px;font-size:16px;max-width:46ch}
+.card .foot{margin-top:auto;display:flex;justify-content:space-between;gap:16px;font-size:16px;align-items:baseline}
+.card .foot a{font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.card.c1{background:#e4e4e4}
+.card.c2{background:#dcdcdc}
+.card.c3{background:#d4d4d4}
+.js .deck .card{position:absolute;top:0;bottom:0;left:0;width:100%;will-change:transform;overflow:hidden}
+.js .deck .card.slivered h3.h0,.js .deck .card.slivered .x,.js .deck .card.slivered .foot{visibility:hidden}
+.js .deck .card.slivered .vt{display:block;position:absolute;top:28px;left:50%;transform:translateX(-50%);writing-mode:vertical-rl;font-weight:600;font-size:20px;letter-spacing:-0.02em;white-space:nowrap}
+.deck:not(.jsd){display:flex;gap:12px;overflow-x:auto}
+.deck:not(.jsd) .card{min-width:300px;flex:1}
+.calls-note{margin-top:48px;font-size:16px;max-width:60ch}
+
+/* ---------- filmstrip ---------- */
+.stripsec{padding-top:140px}
+.stripsec>h2{font-size:clamp(40px, 4vw, 60px);margin:0 var(--marg) 56px}
+.plates{display:grid;grid-template-columns:1fr 1fr;gap:64px 20px;padding:0 var(--marg)}
+.plate{margin:0}
+.plate img{width:100%;aspect-ratio:1046/600;object-fit:cover}
+.plate figcaption{margin-top:14px;display:flex;gap:12px;align-items:baseline;font-size:16px}
+.plate .nm{font-weight:600}
+.plate .cat{color:var(--muted)}
+.strip-link{margin:32px var(--marg) 0;display:inline-block}
+
+/* ---------- faq ---------- */
+.faq{padding:140px var(--marg) 0;max-width:1400px}
+.qa-row{display:grid;grid-template-columns:repeat(12,1fr);gap:0 20px;margin-bottom:80px}
+.qa-row .q{grid-column:1/7;font-size:clamp(26px, 2.6vw, 40px);font-weight:500;line-height:1.1;letter-spacing:-0.03em}
+.qa-row .a{grid-column:8/13;font-size:17px;line-height:1.55;max-width:40ch}
+.qa-row.head .q{color:var(--muted)}
+.qa-row{margin-bottom:88px}
+
+/* ---------- contact ---------- */
+.contact{padding:140px var(--marg) 72px}
+.contact-row{display:grid;grid-template-columns:repeat(12,1fr);gap:0 20px;align-items:start}
+.contact-row .sentence{grid-column:1/6;font-size:clamp(24px, 2.2vw, 36px);line-height:1.1;letter-spacing:-0.03em;font-weight:500}
+.contact-row figure{grid-column:8/10;width:170px}
+.contact-row figure img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.contact-row .links{grid-column:10/13}
+.contact-row .links .q{font-size:18px;font-weight:500}
+.contact-row .links ul{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:10px;font-size:18px}
+.contact-row .links a{overflow-wrap:anywhere;font-weight:500;text-decoration:underline;text-underline-offset:4px}
+.contact-row .links .city{margin-top:20px;font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- footer ---------- */
+.footer{background:var(--ink);color:var(--bg);padding:96px var(--marg) 60px;margin-top:72px}
+.footer .cols{display:grid;grid-template-columns:repeat(12,1fr);gap:0 20px;font-size:17px}
+.footer .cols>div{grid-column:span 3}
+.footer .cols h3{font-size:var(--step-small);font-weight:500;color:#9fb4a8;letter-spacing:0;margin-bottom:10px}
+.footer .cols a{overflow-wrap:anywhere;text-decoration:underline;text-underline-offset:4px}
+.footer .wm-big{
+  margin-top:100px;font-weight:600;letter-spacing:-0.04em;line-height:.9;
+  font-size:clamp(48px, 7.6vw, 130px);
+}
+.footer .imprint{margin-top:56px;font-size:13px;color:#9fb4a8;line-height:1.6;max-width:72ch}
+.footer .imprint a{color:var(--bg);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- 900px ---------- */
+@media (max-width:900px){
+  :root{--marg:24px}
+  .hero{display:flex;flex-direction:column;min-height:auto;padding:20px var(--marg) 40px}
+  .hero-left,.hero-right{display:contents}
+  .wm{order:1}
+  .hero .hero-nav{order:2}
+  .hero h1{order:3}
+  .hero-left .talk{order:4}
+  .hero-left .btn{order:5}
+  .hero-shot{order:6}
+  .hero .hero-nav{margin-top:14px;gap:24px;flex-wrap:wrap}
+  .hero h1{font-size:15vw;line-height:.85;margin-top:40px}
+  .hero-left .talk{margin-top:26px;font-size:18px;max-width:none}
+  .hero-left .btn{margin-top:24px;width:100%;text-align:center}
+  .hero-shot{margin-top:40px}
+  .tiles{padding-top:72px}
+  .contact{padding:96px var(--marg) 60px}
+  .footer{margin-top:64px;padding-top:64px}
+  .hero-shot img{height:auto;aspect-ratio:4/3}
+  .fact-block{width:60%;top:-50px;padding:16px 18px}
+  .fact-block .num{font-size:22px}
+  .board{grid-template-rows:auto;grid-template-columns:1fr 1fr;gap:6px}
+  .tile-a{grid-column:1/3;grid-row:auto;min-height:46svh}
+  .tile-a h2{font-size:17vw}
+  .tile-b{grid-column:1/2;grid-row:auto;aspect-ratio:1/1}
+  .tile-b p{font-size:17vw}
+  .tile-c{grid-column:2/3;grid-row:auto;aspect-ratio:1/1}
+  .under-tile p{grid-column:1/13;padding:32px 20px;font-size:18px}
+  .calls-wrap{height:auto}
+  .calls-stage{position:static;height:auto;overflow:visible;padding:0 var(--marg) 80px}
+  .deck,.js .deck{height:auto;margin-top:44px;display:flex;flex-direction:column;gap:12px;overflow:visible}
+  .js .deck .card,.deck .card{position:static;width:100%;min-height:230px}
+  .card h3{font-size:24px}
+  .calls-note{margin-top:32px}
+  .plates{grid-template-columns:1fr;gap:48px}
+  .plate img{aspect-ratio:4/5}
+  .qa-row .q{grid-column:1/13;font-size:24px}
+  .qa-row .a{grid-column:1/13;margin-top:12px;font-size:17px;max-width:none}
+  .qa-row{margin-bottom:56px}
+  .contact-row .sentence{grid-column:1/13;font-size:22px;line-height:1.25}
+  .contact-row figure{grid-column:1/4;width:auto;margin-top:40px}
+  .contact-row .links{grid-column:4/13;margin-top:40px}
+  .footer .cols{grid-template-columns:1fr 1fr;gap:32px 20px}
+}
+@media (max-width:480px){
+  :root{--marg:20px}
+  .footer .cols{grid-template-columns:1fr}
+  .contact-row figure{grid-column:1/6}
+  .contact-row .links{grid-column:6/13}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="hero-left">
+    <p class="wm">Dublin Plumbing Group</p>
+    <p class="talk">Plumbing repairs and installations across Dublin.</p>
+    <a class="btn" href="tel:+35316177805">Call for a quote</a>
+  </div>
+  <div class="hero-right">
+    <nav class="hero-nav" aria-label="Sections">
+      <a href="#jobs">Jobs</a>
+      <a href="#work">The work</a>
+      <a href="#questions">Questions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1><span class="line"><span>Pipes</span></span><span class="line"><span>sorted.</span></span></h1>
+    <div class="hero-shot">
+      <div class="fact-block">
+        <p class="num">(01) 617 7805</p>
+        <p class="lbl">The number to call</p>
+      </div>
+      <div class="imgwrap"><img src="img/dublin-street.jpg" alt="Stock photo of a Georgian terraced street in Dublin with coloured doors"></div>
+      <p class="hero-cap">Stock photo: a Dublin street.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="tiles" id="jobs" aria-label="Introduction">
+  <div class="board">
+    <div class="tile-a reveal"><p class="tag">The everyday calls, one page</p><h2>Taps, pipes, drains.</h2></div>
+    <div class="tile-b reveal" style="transition-delay:.08s"><p>Dublin</p></div>
+    <div class="tile-c reveal" style="transition-delay:.16s"><img src="img/copper-pipes.jpg" alt="Stock photo of copper plumbing pipes against a dark background"></div>
+  </div>
+  <div class="under-tile">
+    <p class="reveal">Dublin Plumbing Group is a plumbing business listed in Dublin. The jobs are the everyday kind: taps that drip, toilets that run, tanks and cylinders that give up, drains that block at the worst moment. This page keeps things simple on purpose. There is no price list here, because every job is different. There is a phone number and an inbox instead. Describe the job and ask for a quote, and you will know where you stand before any work starts. Call <a class="tlink" href="tel:+35316177805">(01) 617 7805</a> or email <a class="tlink" href="mailto:dublinplumbergroup@gmail.com">dublinplumbergroup@gmail.com</a>.</p>
+  </div>
+</section>
+
+<section class="calls" id="calls">
+  <h2 class="calls-h reveal">What people call about</h2>
+  <div class="calls-wrap" id="callsWrap">
+    <div class="calls-stage">
+      <div class="deck" id="deck">
+        <article class="card c1">
+          <h3 class="h0">Repairs and leaks</h3><h3 class="vt" aria-hidden="true">Repairs and leaks</h3>
+          <p class="x">Dripping taps, running toilets, leaking traps, bursts and drips. The small faults that waste water and nerves.</p>
+          <div class="foot"><span>Jobs people usually call for</span><a href="tel:+35316177805">Call for a quote</a></div>
+        </article>
+        <article class="card c2">
+          <h3 class="h0">Tanks, cylinders and radiators</h3><h3 class="vt" aria-hidden="true">Tanks and radiators</h3>
+          <p class="x">Hot water back on, radiators sorted, tanks and valves replaced. The heating side of plumbing.</p>
+          <div class="foot"><span>Jobs people usually call for</span><a href="tel:+35316177805">Call for a quote</a></div>
+        </article>
+        <article class="card c3">
+          <h3 class="h0">Bathrooms and kitchens</h3><h3 class="vt" aria-hidden="true">Bathrooms and kitchens</h3>
+          <p class="x">New taps, sinks, wastes and supply lines. The plumbing side of the two busiest rooms in the house.</p>
+          <div class="foot"><span>Jobs people usually call for</span><a href="tel:+35316177805">Call for a quote</a></div>
+        </article>
+      </div>
+      <p class="calls-note reveal">Every job starts with a conversation and a quote. Call <a class="tlink" href="tel:+35316177805">(01) 617 7805</a> or email <a class="tlink" href="mailto:dublinplumbergroup@gmail.com">dublinplumbergroup@gmail.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="stripsec" id="work">
+  <h2 class="reveal">The everyday jobs</h2>
+  <div class="plates">
+    <figure class="plate reveal"><img src="img/bathroom.jpg" alt="Stock photo of a white basin on a dark tiled bathroom wall"><figcaption><span class="nm">Bathrooms</span><span class="cat">sinks, taps and fittings - stock photo</span></figcaption></figure>
+    <figure class="plate reveal"><img src="img/radiator.jpg" alt="Stock photo of an old radiator under a window"><figcaption><span class="nm">Heating</span><span class="cat">radiators, tanks and cylinders - stock photo</span></figcaption></figure>
+    <figure class="plate reveal"><img src="img/tap.jpg" alt="Stock photo of a modern kitchen tap"><figcaption><span class="nm">Taps and sinks</span><span class="cat">repairs and replacements - stock photo</span></figcaption></figure>
+    <figure class="plate reveal"><img src="img/drain.jpg" alt="Stock photo of a round metal drain cover"><figcaption><span class="nm">Drains</span><span class="cat">blockages cleared - stock photo</span></figcaption></figure>
+  </div>
+  <a class="tlink strip-link" href="tel:+35316177805">Call for a quote</a>
+</section>
+
+<section class="faq" id="questions">
+  <div class="qa-row head reveal"><h2 class="q">Fair questions</h2><p class="a"></p></div>
+  <div class="qa-row reveal">
+    <h3 class="q">What kinds of jobs do you take?</h3>
+    <p class="a">The everyday plumbing jobs: leaks, drips, blockages, tanks, cylinders, radiators, taps, sinks and toilets. The list above covers the usual calls.</p>
+  </div>
+  <div class="qa-row reveal">
+    <h3 class="q">Where do you work?</h3>
+    <p class="a">The business is listed in Dublin. Call or email with your address and the job you have in mind.</p>
+  </div>
+  <div class="qa-row reveal">
+    <h3 class="q">How much will my job cost?</h3>
+    <p class="a">There is no price list here, because every job is different. Call or email for a quote before any work starts.</p>
+  </div>
+  <div class="qa-row reveal">
+    <h3 class="q">How do I get hold of you?</h3>
+    <p class="a">Call <a class="tlink" href="tel:+35316177805">(01) 617 7805</a> or email <a class="tlink" href="mailto:dublinplumbergroup@gmail.com">dublinplumbergroup@gmail.com</a>. Describe the job and ask for a quote.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-row">
+    <p class="sentence reveal">For any plumbing job, from a dripping tap to a full bathroom, call or email for a quote.</p>
+    <figure class="reveal" style="transition-delay:.08s">
+      <img src="img/red-door.jpg" alt="Stock photo of a red Georgian door in Dublin">
+      <figcaption class="caption">Stock photo: a Dublin door.</figcaption>
+    </figure>
+    <div class="links reveal" style="transition-delay:.16s">
+      <p class="q">Have a job in mind?</p>
+      <ul>
+        <li><a href="mailto:dublinplumbergroup@gmail.com">dublinplumbergroup@gmail.com</a></li>
+        <li><a href="tel:+35316177805">(01) 617 7805</a></li>
+      </ul>
+      <p class="city">Dublin, Ireland</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="cols">
+    <div><h3>Call</h3><a href="tel:+35316177805">(01) 617 7805</a></div>
+    <div><h3>Email</h3><a href="mailto:dublinplumbergroup@gmail.com">dublinplumbergroup@gmail.com</a></div>
+    <div><h3>Listed in</h3><p>Dublin, Ireland</p></div>
+  </div>
+  <p class="wm-big">Dublin Plumbing Group</p>
+  <p class="imprint">This is an unofficial preview concept made by <a href="https://axliosmedia.com">Axlios Media</a> (axliosmedia.com). It is not an official site and the business has not approved it. Photos are stock images from <a href="https://www.pexels.com">Pexels</a> and are not the business's own work.</p>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* masked headline + reveals */
+(function(){
+  var spans=document.querySelectorAll('.hero h1 .line>span');
+  requestAnimationFrame(function(){spans.forEach(function(s,i){setTimeout(function(){s.classList.add('in')},150+i*140)});});
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -10% 0px',threshold:0});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+/* pinned deck */
+(function(){
+  var wrap=document.getElementById('callsWrap');
+  var deck=document.getElementById('deck');
+  if(!wrap||!deck)return;
+  var cards=Array.prototype.slice.call(deck.querySelectorAll('.card'));
+  var n=cards.length;
+  var mq=window.matchMedia('(max-width: 900px)');
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)');
+  var SLIVER=120;
+  function layout(){
+    if(mq.matches||rm.matches){deck.classList.remove('jsd');cards.forEach(function(c){c.style.transform='';c.style.width='';c.classList.remove('slivered')});return;}
+    deck.classList.add('jsd');
+    var rect=wrap.getBoundingClientRect();
+    var total=rect.height-window.innerHeight;
+    var p=Math.min(1,Math.max(0,-rect.top/total))*(n-1);
+    var deckW=deck.clientWidth;
+    var slivers=Math.ceil(p);
+    cards.forEach(function(c,i){
+      var pos=i-p;var x,w;
+      if(pos<0){x=i*SLIVER;w=SLIVER+2;c.classList.add('slivered');}
+      else{c.classList.remove('slivered');var avail=deckW-slivers*SLIVER;x=slivers*SLIVER+Math.min(pos,1.6)*avail;w=avail;}
+      c.style.transform='translateX('+x+'px)';
+      c.style.width=w+'px';
+    });
+  }
+  cards.forEach(function(c,i){
+    c.addEventListener('click',function(){
+      var rect=wrap.getBoundingClientRect();
+      var total=rect.height-window.innerHeight;
+      var p=Math.min(1,Math.max(0,-rect.top/total))*(n-1);
+      if(i-p<0){
+        var y=window.scrollY+rect.top+(i/(n-1))*total+2;
+        window.scrollTo({top:y,behavior:'smooth'});
+      }
+    });
+  });
+  window.addEventListener('scroll',layout,{passive:true});
+  window.addEventListener('resize',layout);
+  layout();
+})();
+
+;setTimeout(function(){document.querySelectorAll('.reveal:not(.in)').forEach(function(e){e.classList.add('in')});var sp=document.querySelectorAll('.hero h1 .line>span:not(.in)');sp.forEach(function(e){e.classList.add('in')})},1400);
+</script>
+</body>
+</html>
