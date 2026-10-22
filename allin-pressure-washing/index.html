@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All-In Pressure Washing &amp; Roof Cleaning LLC - Fort Myers FL</title>
+<meta name="description" content="All-In Pressure Washing and Roof Cleaning LLC washes houses, driveways, walkways, patios and roofs in Fort Myers, Florida. Email to ask for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@800&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e6dbc7; --surface:#ddd0b9; --ink:#062b8a; --muted:#2c4486;
+  --step-small: clamp(1rem, 0.95rem + 0.2vw, 1.0625rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --margin: 18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Onest',sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+p{max-width:60ch}
+a{color:inherit}
+.display{font-family:'Unbounded',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.9}
+.button{display:inline-block;background:var(--ink);color:var(--bg);text-decoration:none;font-weight:500;font-size:var(--step-body);padding:14px 22px;border:0;cursor:pointer;transition:transform .15s ease,background .25s ease}
+.button:hover{background:#0a3ab0}
+.button:active{transform:scale(.97)}
+.button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+
+/* hero: the name as a monument */
+.hero{min-height:100svh;position:relative;display:flex;flex-direction:column}
+.hero-top{display:flex;justify-content:space-between;gap:24px;padding-top:22px}
+.hero-top .intro-line{font-size:clamp(1.125rem, 1rem + 0.4vw, 1.25rem);max-width:32ch;line-height:1.4}
+.hero-top .intro-line .button{margin-top:16px}
+.hero-nav{display:flex;gap:20px;align-items:flex-start}
+.hero-nav a{font-size:var(--step-small);font-weight:500;text-decoration:none}
+.hero-nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero-name{margin:auto 0;transform-origin:center;font-size:clamp(64px, 21vw, 300px);text-align:center}
+.hero-foot{display:flex;justify-content:space-between;gap:24px;padding-bottom:24px;font-size:1rem}
+.hero-foot .links{display:flex;gap:20px}
+.hero-foot a{text-decoration:none}
+.hero-foot a:hover{text-decoration:underline;text-underline-offset:4px}
+
+/* intro: right-half paragraph + lone photo (the wash demo) */
+.intro{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-top:90px;position:relative;padding-bottom:60px}
+.intro-text{grid-column:7/13;margin-top:6vh}
+.intro-text p{font-size:clamp(21px, 2.2vw, 32px);line-height:1.3;text-indent:3em;max-width:34ch}
+.intro-text .button{margin-top:34px;margin-left:3em}
+.wash{grid-column:1/6;position:relative;margin-top:6vh}
+.wash-frame{position:relative;overflow:hidden;aspect-ratio:1;width:100%;max-width:520px;cursor:ew-resize;touch-action:pan-y}
+.wash-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.wash-frame .dirty{filter:brightness(.52) sepia(.55) saturate(.7)}
+.wash-frame .clean{clip-path:inset(0 calc(100% - var(--wipe,35%)) 0 0)}
+.wash-line{position:absolute;top:0;bottom:0;left:var(--wipe,35%);width:4px;background:var(--bg);transform:translateX(-2px);pointer-events:none}
+.wash-note{margin-top:18px;font-size:var(--step-small);max-width:24ch;color:var(--muted)}
+
+/* services: line-up at one type size */
+.services{margin-top:150px}
+.services h2{font-size:clamp(20px, 2.6vw, 34px);margin-bottom:60px}
+.service-row{display:grid;grid-template-columns:1fr 1fr auto;gap:24px;width:100%;background:none;border:0;text-align:left;font:inherit;color:inherit;padding:0.55em 0;cursor:pointer;align-items:baseline;font-size:clamp(20px, 2.6vw, 34px)}
+.service-row .what{font-weight:500;transition:transform .25s ease}
+.service-row:hover .what,.service-row:focus-visible .what{transform:translateX(12px)}
+.service-row.picked .what{text-decoration:underline;text-underline-offset:6px}
+.service-row .where{color:var(--muted);font-size:var(--step-small)}
+.service-row .go{justify-self:end;font-size:var(--step-small);color:var(--muted)}
+.service-row:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+
+.quote-strip{display:flex;align-items:stretch;gap:24px}
+.quote-strip img{flex:1;min-width:0;height:180px;object-fit:cover}
+/* photo band */
+.band{margin-top:150px;height:56vh;overflow:hidden;display:flex;background:var(--surface)}
+.band img{width:50%;height:100%;object-fit:cover}
+
+/* proof */
+.proof{margin-top:150px}
+.proof h2{font-size:clamp(20px, 2.6vw, 34px);margin-bottom:60px}
+.proof-row{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;padding:18px 0;align-items:baseline}
+.proof-row .what{grid-column:1/4;font-weight:500}
+.proof-row .detail{grid-column:4/9}
+.proof-row .source{grid-column:9/13;text-align:right;color:var(--muted);font-size:var(--step-small)}
+.proof-row .source a{color:var(--muted)}
+
+/* contact: address in display rows */
+.contact{margin-top:150px}
+.contact h2{font-size:clamp(20px, 2.6vw, 34px);margin-bottom:60px}
+.contact-rows .row{display:flex;align-items:flex-end;gap:24px;padding:26px 20px;text-decoration:none;font-size:clamp(30px, 4.6vw, 72px);line-height:1;font-weight:500;letter-spacing:-0.02em}
+.contact-rows .row:nth-child(odd){background:var(--surface)}
+.contact-rows .row small{font-size:1.0625rem;color:var(--muted);margin-left:auto;font-family:'Onest';letter-spacing:0;white-space:nowrap}
+.contact-rows a.row:hover{background:var(--ink);color:var(--bg)}
+.contact-rows a.row:hover small{color:var(--bg)}
+.contact-photo{position:absolute;right:24px;top:-40px;width:120px;height:120px;border-radius:50%;overflow:hidden}
+.contact-photo img{width:100%;height:100%;object-fit:cover}
+
+/* footer: inverted, wordmark below */
+.footer{margin-top:150px;background:var(--ink);color:var(--bg);min-height:96svh;display:grid;grid-template-rows:auto 1fr auto}
+.footer-cols{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;padding-top:44px}
+.footer-col{grid-column:span 3}
+.footer-col p:first-child{font-weight:500;margin-bottom:12px}
+.footer-col ul{list-style:none}
+.footer-col li,.footer-col p{color:#b9c6ea;font-size:var(--step-small);line-height:1.7}
+.footer-col a{color:#b9c6ea;text-decoration:none}
+.footer-col a:hover{text-decoration:underline;text-underline-offset:4px}
+.footer-name{font-size:clamp(56px, 17.5vw, 260px);text-align:center;line-height:0.95}
+.footer-legal{display:flex;gap:20px;flex-wrap:wrap;font-size:var(--step-small);color:#b9c6ea;padding:16px 20px 22px}
+.footer-legal span{max-width:60ch}
+.footer-legal .credits{margin:0 auto}
+.footer-legal a{color:#b9c6ea}
+
+/* reveals */
+.js [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .5s ease,transform .5s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js [data-reveal]{opacity:1;transform:none}
+}
+
+@media (max-width: 720px){
+  .hero-top{flex-direction:column}
+  .hero-name{margin-top:2vh}
+  .hero-foot{flex-direction:column;gap:14px}
+  .intro{display:block;margin-top:110px;padding-bottom:0}
+  .intro-text p{text-indent:0}
+  .intro-text .button{margin-left:0}
+  .wash{margin-top:44px}
+  .services{margin-top:110px}
+  .service-row{grid-template-columns:1fr;gap:2px 0;padding:0.7em 0}
+  .service-row .go{display:none}
+  .proof-row{grid-template-columns:1fr;gap:4px 0}
+  .proof-row .what,.proof-row .detail,.proof-row .source{grid-column:1/-1;text-align:left}
+  .contact-rows .row{flex-wrap:wrap}
+  .contact-rows .row small{flex-basis:100%;margin-left:0;white-space:normal}
+  .contact-photo{position:static;margin:0 20px 20px auto}
+  .footer-col{grid-column:span 6;margin-bottom:26px}
+  .band{height:40vh}
+  .quote-strip{flex-direction:column}
+  .quote-strip img{height:160px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="hero wrap" id="top">
+  <div class="hero-top">
+    <p class="intro-line">Pressure washing and roof cleaning for homes in Fort Myers, Florida.<br><a class="button" href="mailto:allinproclean@gmail.com?subject=Quote%20request">Ask for a quote</a></p>
+    <nav class="hero-nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <h1 class="hero-name display" id="hero-name">ALL-IN</h1>
+  <div class="hero-foot">
+    <span>Fort Myers, Florida</span>
+    <div class="links">
+      <a href="mailto:allinproclean@gmail.com">allinproclean@gmail.com</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="intro wrap" aria-labelledby="intro-h">
+  <h2 id="intro-h" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">About All-In</h2>
+  <div class="intro-text" data-reveal>
+    <p>All-In washes houses, driveways, patios and roofs in Fort Myers. One email gets you a quote.</p>
+  </div>
+  <div class="wash">
+    <div class="wash-frame" id="wash" data-reveal role="slider" aria-label="Drag to see the surface cleaned" aria-valuemin="0" aria-valuemax="100" aria-valuenow="35" tabindex="0">
+      <img class="dirty" src="assets/wash-building.jpg" alt="A worker pressure washing a building exterior">
+      <img class="clean" src="assets/wash-building.jpg" alt="" aria-hidden="true">
+      <div class="wash-line"></div>
+    </div>
+    <p class="wash-note" data-reveal>Drag across the photo: the same wall, washed.</p>
+  </div>
+</section>
+
+<section class="services wrap" id="services" aria-labelledby="services-h">
+  <h2 class="display" id="services-h" data-reveal>What gets washed</h2>
+  <button class="service-row" data-reveal type="button" data-service="House washing"><span class="what">House washing</span><span class="where">siding and walls</span><span class="go">ask for a quote</span></button>
+  <button class="service-row" data-reveal type="button" data-service="Driveway washing"><span class="what">Driveways and walkways</span><span class="where">concrete and pavers</span><span class="go">ask for a quote</span></button>
+  <button class="service-row" data-reveal type="button" data-service="Roof cleaning"><span class="what">Roof cleaning</span><span class="where">tile and shingle</span><span class="go">ask for a quote</span></button>
+  <button class="service-row" data-reveal type="button" data-service="Patio washing"><span class="what">Patios and decks</span><span class="where">outdoor areas</span><span class="go">ask for a quote</span></button>
+  <div class="quote-strip" data-reveal style="margin-top:44px"><a class="button" id="quote-button" href="mailto:allinproclean@gmail.com?subject=Quote%20request">Email to ask for a quote</a><img src="assets/wash-hose.jpg" alt="A pressure washer hose spraying water across a wet surface"></div>
+</section>
+
+<div class="band" data-reveal><img src="assets/surf-rocks.jpg" alt="White surf washing over a dark rocky shore"><img src="assets/surf-sand.jpg" alt="Turquoise surf washing over pale sand"></div>
+
+<section class="proof wrap" id="proof" aria-labelledby="proof-h">
+  <h2 class="display" id="proof-h" data-reveal>On the record</h2>
+  <div class="proof-row" data-reveal>
+    <span class="what">Florida LLC</span>
+    <span class="detail">Registered with the state in 2025</span>
+    <span class="source"><a href="https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults/EntityName/ALL-IN%20PRESSURE%20WASHING%20%26%20ROOF%20CLEANING%20LLC/Page1" rel="noopener">sunbiz record L25000142025</a></span>
+  </div>
+  <div class="proof-row" data-reveal>
+    <span class="what">Nextdoor</span>
+    <span class="detail">Runs a business page where neighbours post and review</span>
+    <span class="source"><a href="https://nextdoor.com/pages/all-in-pressure-washing-roof-cleaning-fort-myers-fl/" rel="noopener">nextdoor.com</a></span>
+  </div>
+  <div class="proof-row" data-reveal>
+    <span class="what">Local</span>
+    <span class="detail">Based in Fort Myers, Lee County</span>
+    <span class="source">est. 2025</span>
+  </div>
+</section>
+
+<section class="contact wrap" id="contact" aria-labelledby="contact-h" style="position:relative">
+  <h2 class="display" id="contact-h" data-reveal>Say what needs washing.</h2>
+  <div class="contact-photo" data-reveal><img src="assets/wash-worker.jpg" alt="A worker in protective gear holding a pressure washer lance"></div>
+  <div class="contact-rows">
+    <div class="row" data-reveal><span>All-In Pressure Washing</span><small>the company</small></div>
+    <div class="row" data-reveal><span>Fort Myers, Florida</span><small>the area</small></div>
+    <a class="row" data-reveal href="mailto:allinproclean@gmail.com"><span>allinproclean@gmail.com</span><small>the way to ask</small></a>
+    <a class="row" data-reveal href="mailto:allinproclean@gmail.com?subject=Quote%20request"><span>Ask for a quote</span><small>one email does it</small></a>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-cols wrap">
+    <div class="footer-col">
+      <p>Contact</p>
+      <ul><li><a href="mailto:allinproclean@gmail.com">allinproclean@gmail.com</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Pages</p>
+      <ul><li><a href="#services">Services</a></li><li><a href="#proof">Proof</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Area</p>
+      <ul><li>Fort Myers</li><li>Lee County, Florida</li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Company</p>
+      <ul><li>All-In Pressure Washing &amp; Roof Cleaning LLC</li><li>Florida LLC, 2025</li></ul>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <div class="footer-name display wrap">ALL-IN</div>
+    <div class="footer-legal wrap">
+      <span>A free preview site made for All-In Pressure Washing &amp; Roof Cleaning LLC by <a href="https://axliosmedia.com" rel="noopener">Axlios Media</a>. Not the business's official website.</span>
+      <span class="credits">Photos: Pexels; Josefa Holland-Merten via Unsplash</span>
+      <span>Fort Myers, Florida, 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:0});
+    document.querySelectorAll('[data-reveal]').forEach(function(el, i){
+      el.style.transitionDelay = (i % 3) * 70 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(function(el){ el.classList.add('in'); });
+  }
+  // signature: the monument name scales a touch with scroll
+  var name = document.getElementById('hero-name');
+  if(!reduce && name){
+    var ticking = false;
+    window.addEventListener('scroll', function(){
+      if(ticking) return; ticking = true;
+      requestAnimationFrame(function(){
+        var y = Math.min(window.scrollY, window.innerHeight);
+        var s = 1 - (y / window.innerHeight) * 0.07;
+        name.style.transform = 'scale(' + s + ')';
+        ticking = false;
+      });
+    }, {passive:true});
+  }
+  // the live thing: drag to wash
+  var wash = document.getElementById('wash');
+  function setWipe(clientX){
+    var r = wash.getBoundingClientRect();
+    var pct = Math.max(2, Math.min(98, (clientX - r.left) / r.width * 100));
+    wash.style.setProperty('--wipe', pct + '%');
+    wash.setAttribute('aria-valuenow', Math.round(pct));
+  }
+  var dragging = false;
+  wash.addEventListener('pointerdown', function(e){ dragging = true; wash.setPointerCapture(e.pointerId); setWipe(e.clientX); });
+  wash.addEventListener('pointermove', function(e){ if(dragging) setWipe(e.clientX); });
+  wash.addEventListener('pointerup', function(){ dragging = false; });
+  wash.addEventListener('keydown', function(e){
+    var now = parseFloat(wash.getAttribute('aria-valuenow'));
+    if(e.key === 'ArrowRight'){ now = Math.min(98, now + 6); }
+    else if(e.key === 'ArrowLeft'){ now = Math.max(2, now - 6); }
+    else return;
+    wash.style.setProperty('--wipe', now + '%');
+    wash.setAttribute('aria-valuenow', now);
+    e.preventDefault();
+  });
+  var quote = document.getElementById('quote-button');
+  document.querySelectorAll('.service-row').forEach(function(row){
+    row.addEventListener('click', function(){
+      document.querySelectorAll('.service-row').forEach(function(r){ r.classList.remove('picked'); });
+      row.classList.add('picked');
+      var s = row.getAttribute('data-service');
+      quote.href = 'mailto:allinproclean@gmail.com?subject=' + encodeURIComponent('Quote: ' + s);
+      quote.textContent = 'Ask for a quote: ' + s.toLowerCase();
+    });
+  });
+})();
+</script>
+</body>
+</html>
