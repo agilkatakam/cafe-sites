@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hale's Painting LLC - Residential Painting, North Fort Myers FL</title>
+<meta name="description" content="Hale's Painting LLC paints home interiors and exteriors across North Fort Myers and Lee County, Florida. Call or email to ask for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0a08; --surface:#181512; --ink:#ffffff; --muted:#b3aea7; --accent:#c9a45a; --accent-ink:#0c0a08;
+  --wall:#c9a45a; --wall-ink:#0c0a08;
+  --step-small: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+  --margin: clamp(16px, 2vw, 24px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Chivo',sans-serif;font-size:var(--step-body);line-height:1.35;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.display{font-weight:900;text-transform:uppercase;letter-spacing:-0.05em;line-height:0.88}
+.button{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:700;font-size:var(--step-body);padding:13px 22px;border:0;cursor:pointer;transition:background .25s ease,transform .15s ease;text-transform:uppercase;letter-spacing:-0.01em}
+.button:hover{background:#e0bd74}
+.button:active{transform:scale(.97)}
+.button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+
+/* nav */
+.nav{display:flex;align-items:center;gap:26px;padding-top:20px;position:relative;z-index:3}
+.wordmark{font-weight:900;text-transform:uppercase;font-size:1.1rem;letter-spacing:-0.03em;text-decoration:none}
+.nav-links{display:flex;gap:22px;margin:0 auto}
+.nav-links a{text-decoration:none;font-size:var(--step-small);font-weight:700;color:var(--muted);transition:color .2s ease;text-transform:uppercase}
+.nav-links a:hover{color:var(--ink)}
+.nav .button{padding:9px 16px;font-size:var(--step-small)}
+
+/* hero: shouted headline, rising photograph */
+.hero{min-height:96svh;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.hero h1{margin-top:7vh;text-align:center;font-size:clamp(76px, 11.4vw, 176px)}
+.hero h1 .line{display:block}
+.hero-photo{width:27vw;min-width:300px;aspect-ratio:3/4;margin:-1.2vw auto 0;overflow:hidden;align-self:center}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-foot{margin-top:auto;display:flex;align-items:flex-end;gap:28px;padding-bottom:30px;position:relative;z-index:2}
+.hero-foot p{font-size:1.125rem;max-width:34ch;color:var(--ink)}
+.hero-foot .fact{margin-left:auto;font-size:1.0625rem;color:var(--muted);text-align:right}
+.js .hero h1 .line{display:block;clip-path:inset(0 0 100% 0)}
+.js .hero h1 .line.in{clip-path:inset(0 0 -8% 0);transition:clip-path .9s cubic-bezier(.6,.05,.2,1)}
+.js .hero-photo{clip-path:inset(100% 0 0 0)}
+.js .hero-photo.in{clip-path:inset(0 0 0 0);transition:clip-path .9s cubic-bezier(.6,.05,.2,1) .15s}
+
+/* swatch picker: the live thing */
+.swatches{display:flex;align-items:center;gap:18px;flex-wrap:wrap;padding-top:34px;padding-bottom:34px;background:var(--bg)}
+.swatches p{font-size:var(--step-body);font-weight:700;text-transform:uppercase}
+.swatch{width:52px;height:52px;border:0;cursor:pointer;padding:0;transition:transform .2s ease}
+.swatch:hover{transform:scale(1.12)}
+.swatch:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.swatch.picked{outline:3px solid var(--ink);outline-offset:2px}
+
+/* intro: the wall (heavy paragraph field that gets repainted) */
+.intro{background:var(--wall);color:var(--wall-ink);min-height:72svh;display:flex;align-items:center;position:relative;transition:background .6s ease,color .6s ease}
+.intro p.big{font-weight:900;text-transform:uppercase;letter-spacing:-0.04em;line-height:0.98;font-size:clamp(26px, 3.4vw, 36px);padding:12vh var(--margin);position:relative;z-index:1}
+.intro .chip{position:absolute;width:9vw;min-width:110px;aspect-ratio:4/5;overflow:hidden;top:8%;right:12%;transform:rotate(4deg);z-index:2}
+.intro .chip img{width:100%;height:100%;object-fit:cover}
+
+/* services: one item per poster line */
+.services{padding-top:100px;padding-bottom:100px}
+.services h2{font-size:clamp(40px, 4.5vw, 68px);margin-bottom:70px}
+.service-row{display:flex;align-items:baseline;gap:20px;width:100%;background:none;border:0;text-align:left;font:inherit;color:inherit;padding:6px 0;cursor:pointer;text-decoration:none}
+.service-row .name{font-weight:900;text-transform:uppercase;letter-spacing:-0.05em;line-height:0.92;font-size:clamp(46px, 7.2vw, 110px);transition:color .2s ease}
+.service-row:hover .name,.service-row:focus-visible .name,.service-row.picked .name{color:var(--accent)}
+.service-row .fact{margin-left:auto;font-size:1.125rem;color:var(--muted);text-align:right;white-space:nowrap}
+.service-row:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.quote-cta{margin-top:60px}
+
+/* photo band */
+.band{height:62vh;overflow:hidden}
+.band img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+
+/* proof */
+.proof{padding-top:100px;padding-bottom:100px;background:var(--surface)}
+.proof h2{font-size:clamp(40px, 4.5vw, 68px)}
+.proof h2 .indented{display:block;padding-left:12%}
+.proof-rows{margin-top:70px}
+.proof-row{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;padding:18px 0;align-items:baseline}
+.proof-row + .proof-row{margin-top:14px}
+.proof-row .what{grid-column:1/4;font-weight:700;text-transform:uppercase}
+.proof-row .detail{grid-column:4/9}
+.proof-row .source{grid-column:9/13;text-align:right;color:var(--muted);font-size:1rem}
+.proof-row .source a{color:var(--muted)}
+
+/* contact: the coupon */
+.contact{padding-top:120px;padding-bottom:120px}
+.contact h2{font-size:clamp(40px, 4.5vw, 68px);margin-bottom:70px}
+.coupon{border:3px dashed var(--accent);padding:clamp(28px, 4vw, 60px);display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:center}
+.coupon .offer{grid-column:1/7}
+.coupon .photo{grid-column:7/10;aspect-ratio:3/4;overflow:hidden}
+.coupon .photo img{width:100%;height:100%;object-fit:cover}
+.coupon .offer .big{font-weight:900;text-transform:uppercase;letter-spacing:-0.05em;line-height:0.92;font-size:clamp(44px, 5.4vw, 92px);color:var(--accent)}
+.coupon .offer p{margin-top:18px;font-size:var(--step-lead);max-width:30ch}
+.coupon .how{grid-column:10/13}
+.coupon .how .q{font-weight:700;text-transform:uppercase}
+.coupon .how ul{list-style:none;margin-top:18px}
+.coupon .how li + li{margin-top:10px}
+.coupon .how ul a{font-size:1.125rem;text-decoration:underline;text-underline-offset:4px;transition:color .2s ease;overflow-wrap:anywhere}
+.coupon .how ul a:hover{color:var(--accent)}
+.coupon .how .meta{margin-top:20px;color:var(--muted);font-size:var(--step-small)}
+
+/* footer: the mark, built large */
+.footer{background:var(--surface);padding-top:70px;overflow:hidden}
+.footer .mark{font-weight:900;text-transform:uppercase;letter-spacing:-0.05em;line-height:0.85;font-size:clamp(90px, 17.5vw, 300px);white-space:nowrap;color:var(--accent)}
+.footer-meta{display:flex;gap:24px;padding:34px 0 34px;font-size:var(--step-small);color:var(--muted);flex-wrap:wrap}
+.footer-meta .credits{margin:0 auto;text-align:center}
+.footer-meta .right{margin-left:auto}
+.footer-meta a{color:var(--muted)}
+.footer-links{display:flex;gap:26px;padding-top:26px}
+.footer-links a{color:var(--ink);font-weight:700;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px;font-size:1.0625rem}
+
+/* reveals */
+.js [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .5s ease,transform .5s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+.js .hero-photo img{transform:scale(1.08)}
+.js .hero-photo.in img{transform:scale(1);transition:transform 1.4s cubic-bezier(.6,.05,.2,1)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .js .hero h1 .line,.js .hero-photo{clip-path:none}
+  .js .hero-photo img{transform:none}
+}
+
+@media (min-width: 721px) and (max-width: 1000px){
+  .intro{min-height:auto}
+  .hero-photo{width:40vw}
+}
+@media (max-width: 720px){
+  .nav-links{display:none}
+  .hero h1{font-size:16.5vw;margin-top:6vh}
+  .hero-photo{width:64%;min-width:0}
+  .hero-foot{flex-direction:column;align-items:stretch;gap:18px;padding-bottom:24px}
+  .hero-foot .fact{margin-left:0;text-align:left}
+  .intro{min-height:auto}
+  .intro{display:block}
+  .intro p.big{font-size:7.4vw;padding:12vh var(--margin) 40px}
+  .intro .chip{position:relative;width:34vw;top:auto;right:auto;margin:0 var(--margin) 40px auto}
+  .swatch{width:46px;height:46px}
+  .services h2{font-size:10.5vw}
+  .service-row{flex-wrap:wrap}
+  .service-row .name{font-size:14vw}
+  .service-row .fact{margin-left:0;white-space:normal;flex-basis:100%}
+  .proof h2{font-size:10.5vw}
+  .proof h2 .indented{padding-left:0}
+  .proof-row{grid-template-columns:1fr;gap:4px 0;padding:14px 0}
+  .proof-row .what,.proof-row .detail,.proof-row .source{grid-column:1/-1;text-align:left}
+  .coupon{display:block}
+  .coupon .photo{margin:26px 0;width:62%}
+  .coupon .how{margin-top:34px}
+  .footer .mark{font-size:23vw}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="hero wrap" id="top">
+  <nav class="nav" aria-label="Main">
+    <a class="wordmark" href="#top">Hale's Painting</a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Quote</a>
+    </div>
+    <a class="button" href="tel:+12392657023">239-265-7023</a>
+  </nav>
+  <h1 class="display" id="hero-h"><span class="line">A fresh coat.</span></h1>
+  <div class="hero-photo" data-hero><img src="assets/painter-wall.jpg" alt="A painter rolling a warm colour onto an interior wall"></div>
+  <div class="hero-foot">
+    <p data-reveal>Hale's Painting LLC paints home interiors and exteriors across North Fort Myers and Lee County, Florida.</p>
+    <p class="fact" data-reveal>A Florida company since 2020</p>
+  </div>
+</header>
+
+<main>
+<div class="swatches wrap" aria-label="Try a colour">
+  <p>Try a colour on the wall below</p>
+  <button class="swatch picked" type="button" data-wall="#c9a45a" data-ink="#0c0a08" style="background:#c9a45a" aria-label="Gold"></button>
+  <button class="swatch" type="button" data-wall="#7a9b76" data-ink="#0c0a08" style="background:#7a9b76" aria-label="Sage green"></button>
+  <button class="swatch" type="button" data-wall="#b0563a" data-ink="#ffffff" style="background:#b0563a" aria-label="Terracotta"></button>
+  <button class="swatch" type="button" data-wall="#4d6b8a" data-ink="#ffffff" style="background:#4d6b8a" aria-label="Coastal blue"></button>
+  <button class="swatch" type="button" data-wall="#e8e2d6" data-ink="#0c0a08" style="background:#e8e2d6" aria-label="Warm white"></button>
+</div>
+
+<section class="intro" id="wall" aria-labelledby="intro-h">
+  <h2 id="intro-h" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">About Hale's Painting</h2>
+  <p class="big" data-reveal>Hale's Painting is a painting company in North Fort Myers. Interiors, exteriors, cabinets and trim. Registered in Florida since 2020 and reviewed by neighbours on Nextdoor. Ask for a quote by phone or email.</p>
+  <div class="chip"><img src="assets/paint-roller.jpg" alt="A paint roller loaded with fresh paint" loading="lazy"></div>
+</section>
+
+<section class="services wrap" id="services" aria-labelledby="services-h">
+  <h2 class="display" id="services-h" data-reveal>What we paint</h2>
+  <button class="service-row" data-reveal type="button" data-service="Interior painting"><span class="name">Interior</span><span class="fact">rooms, walls, ceilings</span></button>
+  <button class="service-row" data-reveal type="button" data-service="Exterior painting"><span class="name">Exterior</span><span class="fact">siding and stucco</span></button>
+  <button class="service-row" data-reveal type="button" data-service="Trim and doors"><span class="name">Trim</span><span class="fact">baseboards and doors</span></button>
+  <button class="service-row" data-reveal type="button" data-service="Cabinet painting"><span class="name">Cabinets</span><span class="fact">kitchens</span></button>
+  <div class="quote-cta" data-reveal><a class="button" id="quote-button" href="mailto:Clhfastball08@aol.com?subject=Quote%20request">Ask for a quote</a></div>
+</section>
+
+<div class="band" data-reveal><img src="assets/painter-house.jpg" alt="A painter at work on the exterior wall of a house" loading="lazy"></div>
+
+<section class="proof" id="proof" aria-labelledby="proof-h">
+  <div class="wrap">
+    <h2 class="display" id="proof-h" data-reveal>On <span class="indented">the record.</span></h2>
+    <div class="proof-rows">
+      <div class="proof-row" data-reveal>
+        <span class="what">Florida LLC</span>
+        <span class="detail">Registered with the state since 2020</span>
+        <span class="source"><a href="https://bisprofiles.com/fl/hale-s-painting-l20000196784" rel="noopener">sunbiz record L20000196784</a></span>
+      </div>
+      <div class="proof-row" data-reveal>
+        <span class="what">Reviews</span>
+        <span class="detail">Reviewed by neighbours on Nextdoor in 2026</span>
+        <span class="source"><a href="https://nextdoor.com/pages/hales-painting-llc-north-fort-myers-fl/" rel="noopener">nextdoor.com</a></span>
+      </div>
+      <div class="proof-row" data-reveal>
+        <span class="what">Local</span>
+        <span class="detail">Based in North Fort Myers, working across Lee County</span>
+        <span class="source">est. 2020</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact wrap" id="contact" aria-labelledby="contact-h">
+  <h2 class="display" id="contact-h" data-reveal>Clip this out.</h2>
+  <div class="coupon" data-reveal>
+    <div class="offer">
+      <p class="big">Ask for a quote</p>
+      <p>Tell us what you want painted, and we will come back to you with a price. No obligation.</p>
+    </div>
+    <div class="photo"><img src="assets/painter-ladder.jpg" alt="A painter on a ladder cutting in a clean line on a wall" loading="lazy"></div>
+    <div class="how">
+      <p class="q">Two ways to reach us</p>
+      <ul>
+        <li><a href="tel:+12392657023">239-265-7023</a></li>
+        <li><a href="mailto:Clhfastball08@aol.com">Clhfastball08@aol.com</a></li>
+      </ul>
+      <p class="meta">North Fort Myers, Florida</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="mark" aria-hidden="true">Hale's</div>
+    <div class="footer-links">
+      <a href="tel:+12392657023">239-265-7023</a>
+      <a href="mailto:Clhfastball08@aol.com">Clhfastball08@aol.com</a>
+    </div>
+    <div class="footer-meta">
+      <span>A free preview site made for Hale's Painting LLC by <a href="https://axliosmedia.com" rel="noopener">Axlios Media</a>. Not the business's official website.</span>
+      <span class="credits">Photos: Pexels</span>
+      <span class="right">North Fort Myers, Florida, 2026</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var lines = document.querySelectorAll('.hero h1 .line, .hero-photo');
+  if(reduce){ lines.forEach(function(el){ el.classList.add('in'); }); }
+  else{
+    setTimeout(function(){ lines.forEach(function(el){ el.classList.add('in'); }); }, 150);
+    if('IntersectionObserver' in window){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, {rootMargin:'0px 0px -12% 0px', threshold:0});
+      document.querySelectorAll('[data-reveal]').forEach(function(el, i){
+        el.style.transitionDelay = (i % 3) * 70 + 'ms';
+        io.observe(el);
+      });
+    } else {
+      document.querySelectorAll('[data-reveal]').forEach(function(el){ el.classList.add('in'); });
+    }
+  }
+  var wall = document.getElementById('wall');
+  document.querySelectorAll('.swatch').forEach(function(sw){
+    sw.addEventListener('click', function(){
+      document.querySelectorAll('.swatch').forEach(function(x){ x.classList.remove('picked'); });
+      sw.classList.add('picked');
+      wall.style.setProperty('--wall', sw.getAttribute('data-wall'));
+      wall.style.setProperty('--wall-ink', sw.getAttribute('data-ink'));
+    });
+  });
+  var quote = document.getElementById('quote-button');
+  document.querySelectorAll('.service-row').forEach(function(row){
+    row.addEventListener('click', function(){
+      document.querySelectorAll('.service-row').forEach(function(r){ r.classList.remove('picked'); });
+      row.classList.add('picked');
+      var s = row.getAttribute('data-service');
+      quote.href = 'mailto:Clhfastball08@aol.com?subject=' + encodeURIComponent('Quote: ' + s);
+      quote.textContent = 'Ask for a quote: ' + s.toLowerCase();
+    });
+  });
+})();
+</script>
+</body>
+</html>
