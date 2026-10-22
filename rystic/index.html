@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rystic: realistic API simulators for training and testing (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Rystic with a working simulator and a 3D view of its published agreement numbers. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--surface:#f2f2f2;--ink:#0a0a0a;--muted:#6b6b6b;--accent:#d92b21;--accent-ink:#fff;--axis:24px;--r:8px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Archivo,system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;letter-spacing:0;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:var(--r);background:var(--ink);color:#fff;font:600 var(--step-body)/1 Archivo,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,opacity .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.98)}.btn.red{background:var(--accent)}.btn[disabled]{opacity:.35;cursor:default;transform:none}
+.btn:focus-visible,.seg button:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:24px 24px 0 24px}
+.hdr a.s{font-size:var(--step-small);text-decoration:none;margin-right:0}
+.mark{display:flex;gap:10px;align-items:center;font-weight:600;font-size:var(--step-body);text-decoration:none}
+.mark i{width:28px;height:28px;background:var(--ink);border-radius:var(--r);display:block;position:relative}
+.mark i:after{content:"";position:absolute;left:7px;top:7px;width:14px;height:14px;background:var(--accent);border-radius:3px}
+.hero{padding:72px 24px 0 24px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px;align-items:stretch}.hero .col{grid-column:1/7;display:flex;flex-direction:column;justify-content:center;max-width:none;padding-right:24px}.hero .hf{grid-column:7/13;position:relative;background:var(--surface);border-radius:var(--r);min-height:68svh;overflow:hidden}.hero .hf canvas{position:absolute;inset:0;width:100%;height:100%;display:block}.hero .hf .tag{font-size:var(--step-lead)}
+.col{max-width:520px}
+.hero h1{font-size:clamp(1.75rem,1rem + 3vw,3.75rem);font-weight:400;line-height:1.02;letter-spacing:-.03em;max-width:24ch}
+.hero p{margin-top:20px;color:var(--ink);max-width:36ch}
+.acts{display:flex;gap:20px;align-items:center;margin-top:28px;flex-wrap:wrap}
+.acts a.l{font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.peek{margin-top:40px;max-width:560px}
+.sec{padding:140px 24px 0 24px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px}.sec>h2,.sec>.intro{grid-column:1/6}.sec>.xch{grid-column:6/13}.sec>.intro{grid-row:2;align-self:start}.sec>.xch{grid-row:1/span 3;margin-top:0}
+.sec h2{font-size:var(--step-head);font-weight:400;letter-spacing:-.02em;line-height:1;max-width:14ch}
+.sec .intro{margin-top:18px;max-width:46ch}
+.xch{max-width:720px;display:flex;flex-direction:column;gap:88px}
+.xch h3{font-size:var(--step-lead);font-weight:600;line-height:1.25}
+/* console fragment */
+.panel{background:var(--surface);border-radius:var(--r);padding:20px}
+.call{font:400 14px/1.7 Archivo,sans-serif;margin-top:16px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;/* taste-skill-ignore */}
+.call code{font:400 14px/1.7 ui-monospace,Menlo,monospace;/* taste-skill-ignore */overflow:auto;max-width:100%;white-space:pre}
+.call .btn{height:40px;padding:0 18px;font-size:15px}
+.call input{font:inherit;border:0;background:#fff;border-radius:6px;padding:4px 8px;width:11ch;color:var(--ink)}
+.resp{margin-top:16px;margin-left:56px;border-radius:var(--r);padding:20px;min-height:84px;font:400 14px/1.7 ui-monospace,Menlo,monospace;/* taste-skill-ignore */background:#0a0a0a;color:#fff;transition:opacity .4s;overflow:auto}.resp code{font:inherit}
+.resp .k{color:#9aa0a6}.resp .ok{color:#ff8a82}
+.resp.idle{opacity:.45}
+.reset{margin-top:28px;font-size:var(--step-small);background:none;border:0;font-weight:600;text-decoration:underline;cursor:pointer;color:var(--ink);font-family:inherit}
+/* pinned verified */
+.pin{display:grid;grid-template-columns:repeat(12,1fr);margin-top:140px;align-items:start}
+.field{grid-column:1/7;position:sticky;top:0;height:100svh;background:var(--surface);overflow:hidden}
+.field canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.tag{position:absolute;left:24px;bottom:24px;right:24px;font-size:var(--step-lead);font-weight:600;line-height:1.2;pointer-events:none}
+.tag small{display:block;font-size:var(--step-body);font-weight:400;color:var(--ink);margin-top:4px}
+.blocks{grid-column:7/13;padding:72px 24px 24vh 24px;max-width:56ch}
+.blocks h2{font-size:clamp(2rem,1.5rem + 2vw,2.75rem)}
+.blk{margin-top:calc(50vh - 120px)}
+.blk:first-of-type{margin-top:48px}
+.blk h3{font-size:clamp(1.375rem,1.1rem + 1vw,1.875rem);font-weight:400;line-height:1.15;letter-spacing:-.01em}
+.blk p{margin-top:14px;font-size:1.0625rem}
+.seg{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.seg button{min-height:44px;padding:0 16px;border-radius:var(--r);border:0;background:var(--surface);font:400 15px/1 Archivo,sans-serif;cursor:pointer;transition:background .2s,color .2s,transform .2s;color:var(--ink)}
+.seg button:hover{transform:translateY(-1px)}
+.seg button[aria-pressed=true]{background:var(--ink);color:#fff}
+.read{margin-top:20px;font-size:var(--step-lead);font-weight:600;line-height:1.2;min-height:2.6em}
+.read span{color:var(--accent)}
+/* cta */
+.cta{padding:160px 24px 0 24px}
+.cta p.big{font-size:clamp(1.75rem,1.2rem + 2.2vw,2.25rem);line-height:1.15;max-width:30ch;letter-spacing:-.01em}
+.foot{margin-top:12svh;padding:0 24px 30px 24px;display:grid;grid-template-columns:1fr auto 1fr;gap:16px;font-size:var(--step-small);color:var(--muted)}
+.foot nav{display:flex;gap:24px}.foot nav a{color:var(--ink);text-decoration:none}.foot div:last-child{text-align:right}
+.fine{padding:40px 24px 40px 24px;font-size:var(--step-small);color:var(--ink);max-width:62ch}
+.e{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease;transition-delay:calc(var(--i,0)*80ms)}.e.in{opacity:1;transform:none}
+@media(max-width:900px){
+ :root{--axis:24px}
+ .hdr{padding:32px 24px 0}.hero{display:block;padding:40px 24px 0 24px}.hero .col{padding:0}.hero .hf{margin-top:28px;min-height:0;height:min(100vw,460px)}.hero h1{font-size:2.25rem}.sec{display:block;padding:96px 24px 0 24px}.sec>.xch{margin-top:40px}
+ .sec{padding:96px 24px 0 24px}.xch{gap:64px}.resp{margin-left:0;margin-top:12px}
+ .pin{display:block;margin-top:96px}
+ .field{position:relative;height:min(92vw,440px)}
+ .blocks{padding:32px 24px 10svh 24px;max-width:none}.blk{margin-top:72px}.blk:first-of-type{margin-top:24px}
+ .cta{padding:120px 24px 0 24px}.foot{grid-template-columns:1fr;gap:8px;margin-top:20svh}.foot div:last-child{text-align:left}.foot nav{flex-wrap:wrap}
+ .fine{padding:0 24px 32px 24px}
+ .tag{left:20px;bottom:16px;font-size:1.125rem}.tag small{font-size:.9375rem}
+}
+@media(max-width:480px){.hero h1{font-size:1.75rem}}
+@media(prefers-reduced-motion:reduce){.e{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hdr"><a class="mark" href="#top" id="top"><i></i>Rystic</a><a class="s" href="https://rystic.ai" target="_blank" rel="noopener">rystic.ai</a></header>
+
+<main>
+<section class="hero">
+ <div class="col e">
+  <h1>Slack, GitHub, Kalshi, Stripe on localhost.</h1>
+  <p>Test against a simulator, not the live API. Every call sees the ones before it.</p>
+  <div class="acts"><a class="btn red" href="#how">Try the simulator</a><a class="l" href="https://rystic.ai" target="_blank" rel="noopener">Go to rystic.ai</a></div>
+ </div>
+ <div class="hf e" data-ui style="--i:1"><canvas id="c0" role="img" aria-label="Eight 3D columns showing published agreement figures"></canvas><div class="tag" id="tag0">Slack<small>96.7% agreement, 538 probes</small></div></div>
+</section>
+
+<section class="sec" id="how">
+ <h2 class="e">Call it. See it stay.</h2>
+ <p class="intro e" style="--i:1">Add a customer, list your customers and they are there. Remove the customer and they are gone. Run the four calls below against a simulator that lives in this page.</p>
+ <div class="xch">
+  <div class="e" data-ui><h3>First, add a customer.</h3>
+   <div class="panel call" data-ui><code>POST /v1/customers name="<input id="nm" value="Ada Lovelace" aria-label="customer name" maxlength="24">"</code><button class="btn" data-step="0">Send</button></div>
+   <pre class="resp idle" data-ui id="r0"><code><span class="k">waiting for the call</span></code></pre></div>
+  <div class="e" data-ui><h3>Then, list your customers.</h3>
+   <div class="panel call" data-ui><code>GET /v1/customers</code><button class="btn" data-step="1" disabled>Send</button></div>
+   <pre class="resp idle" data-ui id="r1"><code><span class="k">waiting for the call</span></code></pre></div>
+  <div class="e" data-ui><h3>Now remove the customer.</h3>
+   <div class="panel call" data-ui><code id="delc">DELETE /v1/customers/cus_...</code><button class="btn" data-step="2" disabled>Send</button></div>
+   <pre class="resp idle" data-ui id="r2"><code><span class="k">waiting for the call</span></code></pre></div>
+  <div class="e" data-ui><h3>Last, list them again.</h3>
+   <div class="panel call" data-ui><code>GET /v1/customers</code><button class="btn" data-step="3" disabled>Send</button></div>
+   <pre class="resp idle" data-ui id="r3"><code><span class="k">waiting for the call</span></code></pre>
+   <button class="reset" id="reset">Start over</button></div>
+ </div>
+</section>
+
+<section class="pin" id="verified">
+ <div class="field" data-ui><canvas id="c" role="img" aria-label="Eight 3D columns, one per service, each as tall as the published agreement percentage between the simulator and the live API."></canvas>
+  <div class="tag" id="tag">Slack<small>96.7% agreement, 538 probes</small></div></div>
+ <div class="blocks">
+  <h2 class="e">Checked against the real thing.</h2>
+  <div class="blk e"><h3>Same requests, live API and simulator.</h3>
+   <p>Before every release, the same requests go to both. This is how often they agree. Pick a service and the column rises out of the field.</p>
+   <div class="seg" data-ui id="seg" role="group" aria-label="Service"></div>
+   <div class="read" id="read" aria-live="polite"></div></div>
+  <div class="blk e"><h3>Turn the field to compare.</h3>
+   <p>Sort the columns by how often they agree, or by how many probes were run.</p>
+   <div class="seg" data-ui id="sort" role="group" aria-label="Order"><button aria-pressed="true" data-s="agree">By agreement</button><button aria-pressed="false" data-s="probes">By probes</button><button aria-pressed="false" data-s="name">A to Z</button></div></div>
+  <div class="blk e"><h3>Your laptop or a CI runner, with no rate limits.</h3>
+   <p>Free and Pro need an account and a network connection for billing. Enterprise runs offline.</p></div>
+ </div>
+</section>
+
+<section class="cta">
+ <p class="big e">Test against a simulator, not the live API.</p>
+ <div class="acts e" style="--i:1"><a class="btn red" href="https://rystic.ai" target="_blank" rel="noopener">Go to rystic.ai</a></div>
+</section>
+<p class="fine">An unofficial concept homepage by <a href="https://axliosmedia.com" target="_blank" rel="noopener">Axlios Media</a>, not affiliated with Rystic. Wording and agreement figures are from rystic.ai. The simulator on this page is a small stand-in written for this sketch.</p>
+</main>
+<footer class="foot"><div>Concept for Rystic</div><nav aria-label="Footer"><a href="#how">The simulator</a><a href="#verified">Checked</a><a href="https://rystic.ai" target="_blank" rel="noopener">rystic.ai</a></nav><div>2026 Axlios Media</div></footer>
+
+<script type="importmap">{"imports":{"three":"./js/three.module.min.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+/* ---------- stateful simulator ---------- */
+const store=[];let cur=null,done=0;
+const btns=[...document.querySelectorAll('[data-step]')];
+const out=i=>document.getElementById('r'+i);
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const steps=[
+ ()=>{const name=(document.getElementById('nm').value||'Ada Lovelace').trim()||'Ada Lovelace';const id='cus_'+Math.random().toString(36).slice(2,6);cur={id,name};store.push(cur);document.getElementById('delc').textContent='DELETE /v1/customers/'+id;return `<span class="k">name:</span> "${esc(name)}" <span class="ok">added</span>`},
+ ()=>`<span class="k">data:</span> [${store.map(c=>`{ name: "${esc(c.name)}" }`).join(', ')}] <span class="ok">there in the list</span>`,
+ ()=>{const i=store.indexOf(cur);if(i>-1)store.splice(i,1);return `<span class="k">deleted:</span> true <span class="ok">removed</span>`},
+ ()=>`<span class="k">data:</span> [${store.map(c=>`{ name: "${esc(c.name)}" }`).join(', ')}] <span class="ok">gone from the list</span>`];
+function sync(){btns.forEach((b,i)=>b.disabled=i!==done)}
+btns.forEach((b,i)=>b.addEventListener('click',()=>{if(i!==done)return;const r=out(i);r.innerHTML='<code>'+steps[i]()+'</code>';r.classList.remove('idle');done++;sync()}));
+document.getElementById('reset').addEventListener('click',()=>{store.length=0;cur=null;done=0;[0,1,2,3].forEach(i=>{out(i).innerHTML='<code><span class="k">waiting for the call</span></code>';out(i).classList.add('idle')});document.getElementById('delc').textContent='DELETE /v1/customers/cus_...';sync()});
+sync();
+/* ---------- 3D columns from published figures ---------- */
+const D=[['Slack',96.7,538],['GitHub',92.1,468],['Kalshi',91.7,361],['PayPal',98.2,110],['Lob',100.0,32],['Okta',98.6,208],['Linear',98.9,89],['Resend',100.0,64]];
+const BLACK=new THREE.Color(0x0a0a0a),RED=new THREE.Color(0xd92b21);
+const GRID=[];D.forEach((_,i)=>GRID.push(new THREE.Vector3((i%4-1.5)*1.5,0,(Math.floor(i/4)-.5)*1.5)));
+function mk(cv,onSel,spin){const host=cv.parentElement;
+ const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+ const S=new THREE.Scene();const cam=new THREE.PerspectiveCamera(38,1,.1,100);
+ S.add(new THREE.AmbientLight(0xffffff,.75));const dl=new THREE.DirectionalLight(0xffffff,.9);dl.position.set(4,8,6);S.add(dl);
+ const G=new THREE.Group();S.add(G);
+ const bars=D.map((d,i)=>{const m=new THREE.Mesh(new THREE.BoxGeometry(.9,1,.9),new THREE.MeshLambertMaterial({color:BLACK}));m.userData={i,d,target:GRID[i]};m.scale.y=.001;m.position.copy(GRID[i]);G.add(m);return m});
+ let order=D.map((_,i)=>i),sel=0,rot=-.5,drag=false,lx=0,grow=0,vis=false,tick=0;
+ const api={sortBy(k){order=D.map((_,i)=>i);if(k==='agree')order.sort((a,b)=>D[b][1]-D[a][1]);else if(k==='probes')order.sort((a,b)=>D[b][2]-D[a][2]);else order.sort((a,b)=>D[a][0].localeCompare(D[b][0]));order.forEach((di,slot)=>bars[di].userData.target=GRID[slot])},
+  select(i){sel=i;if(onSel)onSel(i)}};
+ api.sortBy('agree');
+ function size(){const w=host.clientWidth,h=host.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;const far=w/h<1?15:11.5;cam.position.set(0,6.2,far);cam.lookAt(0,1.1,0);cam.updateProjectionMatrix()}
+ size();addEventListener('resize',size);
+ cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;cv.setPointerCapture(e.pointerId)});
+ cv.addEventListener('pointermove',e=>{if(drag){rot+=(e.clientX-lx)*.008;lx=e.clientX}});
+ cv.addEventListener('pointerup',()=>drag=false);
+ new IntersectionObserver(es=>vis=es[0].isIntersecting).observe(host);
+ const clock=new THREE.Clock();
+ (function frame(){requestAnimationFrame(frame);if(!vis)return;const dt=Math.min(clock.getDelta(),.05);
+  if(!drag&&!reduce)rot+=dt*.12;G.rotation.y=rot;grow=Math.min(1,grow+dt*(reduce?9:.9));
+  if(spin&&!reduce){tick+=dt;if(tick>2.4){tick=0;api.select((sel+1)%D.length)}}
+  bars.forEach((m,i)=>{const u=m.userData;const th=D[i][1]/100*3.4*(1-Math.pow(1-grow,3));m.scale.y+=(Math.max(.001,th)-m.scale.y)*Math.min(1,dt*8);m.position.y=m.scale.y/2;m.position.x+=(u.target.x-m.position.x)*Math.min(1,dt*6);m.position.z+=(u.target.z-m.position.z)*Math.min(1,dt*6);m.material.color.lerp(i===sel?RED:BLACK,Math.min(1,dt*10))});
+  R.render(S,cam)})();
+ return api}
+const fmt=d=>`${d[0]}<small>${d[1].toFixed(1)}% agreement, ${d[2]} probes</small>`;
+const tag0=document.getElementById('tag0');
+mk(document.getElementById('c0'),i=>{tag0.innerHTML=fmt(D[i])},true);
+const tag=document.getElementById('tag'),read=document.getElementById('read'),seg=document.getElementById('seg');
+const big=mk(document.getElementById('c'),i=>{[...seg.children].forEach((b,j)=>b.setAttribute('aria-pressed',String(j===i)));const d=D[i];tag.innerHTML=fmt(d);read.innerHTML=`${d[0]}: <span>${d[1].toFixed(1)}%</span> across ${d[2]} probes.`},false);
+D.forEach((d,i)=>{const b=document.createElement('button');b.textContent=d[0];b.setAttribute('aria-pressed','false');b.onclick=()=>big.select(i);seg.appendChild(b)});
+document.querySelectorAll('#sort button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#sort button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));big.sortBy(b.dataset.s)});
+big.select(0);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.e').forEach(el=>io.observe(el));
+</script>
+</body></html>
