@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tokenless: flaws in RL environments and evals (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Tokenless with a toy reward-hacking demo. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e5e1d8;--surface:#dad5ca;--ink:#2a1d17;--muted:#5a4a40;--accent:#456f3a;--accent-ink:#fff;--r:8px;--m:24px;--col:600px;
+--small:clamp(.9375rem,.9rem + .1vw,1rem);--body:clamp(1.125rem,1.05rem + .3vw,1.3125rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.5rem);--head:clamp(1.9rem,1.5rem + 1.4vw,2.5rem);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Literata,Georgia,serif;font-size:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-weight:500;letter-spacing:-.02em;line-height:1.1}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;height:44px;padding:0 20px;background:var(--accent);color:var(--accent-ink);border-radius:var(--r);font:500 var(--small)/1 Literata,serif;text-decoration:none;border:0;cursor:pointer;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.97)}
+/* hero */
+.hero{position:relative;height:min(100svh,900px);min-height:560px;overflow:hidden;background:#33291f}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero .ph img.on{opacity:1}
+.rail{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);height:72px;background:rgba(32,22,16,.78);color:#fff;display:flex;align-items:center;gap:clamp(20px,4vw,60px);padding:0 var(--m)}
+.rail h1{font-size:clamp(2rem,3.4vw,3rem);white-space:nowrap}
+.rail p{font-size:1.125rem;line-height:1.4;flex:1}
+.rail nav{display:flex;gap:22px;align-items:center;font-size:var(--small)}
+.rail nav a:not(.btn){text-decoration:none}.rail nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:4px}
+.rail .btn{height:40px;padding:0 16px}
+.cap{position:absolute;left:var(--m);bottom:14px;color:#fff;font-size:var(--small);background:rgba(32,22,16,.7);padding:4px 10px;border-radius:var(--r)}
+/* generic section */
+.sec{padding:clamp(100px,16vh,170px) var(--m) 0}
+.col{max-width:var(--col);margin:0 auto}
+.sec h2{font-size:var(--head);margin-bottom:14px}
+.sec .lead{font-size:var(--body);max-width:56ch;margin-bottom:44px}
+/* demo */
+.panel{max-width:760px;margin:0 auto;background:var(--surface);border-radius:12px;display:grid;grid-template-columns:62fr 38fr;min-height:420px;overflow:hidden}
+.panel .vis{background:#cfc9bb;padding:18px;display:flex;flex-direction:column;gap:12px}
+.panel .vis svg{width:100%;height:auto;display:block;background:#e9e7e1;border-radius:var(--r)}
+.panel .ctl{padding:18px;display:flex;flex-direction:column;gap:6px;background:var(--surface)}
+.row{display:flex;flex-direction:column;gap:6px;padding:10px 0;font-size:var(--small)}
+.row label,.row .nm{font-weight:600}
+.rng{-webkit-appearance:none;appearance:none;width:100%;height:32px;background:transparent;cursor:pointer}
+.rng::-webkit-slider-runnable-track{height:6px;background:#b9b1a2;border-radius:3px}
+.rng::-moz-range-track{height:6px;background:#b9b1a2;border-radius:3px}
+.rng::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;margin-top:-9px;border-radius:50%;background:var(--accent);border:0}
+.rng::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--accent);border:0}
+.tog{display:flex;gap:4px;background:#cfc9bb;border-radius:var(--r);padding:4px}
+.tog button{flex:1;border:0;background:transparent;border-radius:6px;padding:10px 8px;font:500 var(--small)/1.25 Literata,serif;color:var(--ink);cursor:pointer;transition:background .2s,color .2s}
+.tog button.on{background:var(--accent);color:#fff}
+.bar{height:14px;background:#cfc9bb;border-radius:7px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .35s var(--ease)}
+.bar.b i{background:var(--ink)}
+.val{display:flex;justify-content:space-between;font-variant-numeric:tabular-nums}
+.panel .lnk{margin-top:auto;font-size:var(--small);color:var(--muted)}
+.note{font-size:var(--small);color:var(--muted);max-width:760px;margin:16px auto 0}
+/* why */
+.why{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,64px);max-width:1100px;margin:0 auto;align-items:start}
+.why figure{position:relative;overflow:hidden;border-radius:12px;aspect-ratio:4/5}
+.why figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:drift 24s ease-in-out infinite alternate}
+.why figcaption{position:absolute;left:10px;bottom:10px;background:rgba(32,22,16,.75);color:#fff;font-size:var(--small);padding:4px 10px;border-radius:var(--r)}
+.why p{margin-bottom:1.1em;max-width:56ch}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.06)}}
+/* list */
+.lst{max-width:var(--col);margin:0 auto}
+.lst ul{list-style:none}
+.lst li{display:flex;justify-content:space-between;gap:20px;align-items:baseline;min-height:44px;padding:6px 0;font-size:var(--small);transition:transform .3s var(--ease)}
+.lst li:hover{transform:translateX(6px)}
+.lst li span:last-child{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lst .g{color:var(--muted);margin-top:34px;font-size:var(--small)}
+.lst li b{font-weight:600}
+.dot{display:inline-block;width:16px;height:16px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:-2px}
+.dot.k{background:var(--ink)}.dot.s{background:#a89f8e}
+/* cta */
+.cta{padding:clamp(110px,18vh,180px) var(--m) 0}
+.cta p{font-size:var(--lead);max-width:34ch;margin:0 auto 24px;max-width:var(--col)}
+.cta .col>*{}
+.foot{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;padding:clamp(70px,10vh,110px) var(--m) 30px;font-size:var(--small);color:var(--muted)}
+.foot nav{display:flex;gap:24px;color:var(--ink)}.foot nav a{color:var(--ink)}
+.foot span:last-child{text-align:right}
+.credits{columns:2 420px;column-gap:48px;padding:0 var(--m) 30px;font-size:var(--small);color:var(--muted);max-width:1100px;margin:0 auto}
+[data-r]{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--d,0)*70ms)}
+[data-r].in{opacity:1;transform:none}
+.nojs [data-r]{opacity:1;transform:none}
+@media (max-width:800px){
+ .hero{min-height:560px}
+ .rail{height:auto;min-height:72px;padding:12px var(--m);flex-wrap:wrap;gap:6px 16px}
+ .rail h1{font-size:2rem;white-space:normal;flex:1}.rail p{display:none}.rail nav a:not(.btn){display:none}
+ .hero .sub{display:block}
+ .panel{grid-template-columns:1fr}
+ .why{grid-template-columns:1fr}
+ .foot{grid-template-columns:1fr;gap:8px}.foot span:last-child{text-align:left}.foot nav{flex-wrap:wrap}
+}
+.sub{display:none;position:absolute;left:var(--m);right:var(--m);bottom:56px;color:#fff;background:rgba(32,22,16,.78);padding:14px 16px;border-radius:var(--r);font-size:1.125rem;line-height:1.45}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-r]{opacity:1;transform:none}.hero .ph img:not(:first-child){display:none}}
+</style>
+</head>
+<body class="nojs">
+<main>
+<section class="hero" aria-label="Tokenless">
+ <div class="ph" id="ph">
+  <img class="on" src="assets/desire-paths-across-the-grass-ludwell-valley.jpg" width="1600" height="1200" alt="Paths worn across a grass field, Ludwell Valley Park, Exeter">
+  <img src="assets/desire-triangle.jpg" width="1920" height="1490" alt="A worn dirt shortcut cutting the corner across a lawn beside a paved path" loading="lazy">
+  <img src="assets/dulmen-trampelpfad-2017-9412.jpg" width="1920" height="1280" alt="A trampled footpath along a hedge in Dülmen" loading="lazy">
+ </div>
+ <div class="rail">
+  <h1>Tokenless</h1>
+  <p>We find flaws in RL environments and evals and help you fix them.</p>
+  <nav aria-label="Main"><a href="#demo">Demo</a><a href="#why">Why</a><a class="btn" href="mailto:founders@usetokenless.com">Contact</a></nav>
+ </div>
+ <p class="sub">We find flaws in RL environments and evals and help you fix them.</p>
+ <span class="cap" id="cap">Worn paths across a field. Ludwell Valley Park, Exeter</span>
+</section>
+
+<section id="demo" class="sec" aria-labelledby="dh">
+ <div class="col" style="max-width:760px">
+  <h2 id="dh" data-r>A grader with one flaw</h2>
+  <p class="lead" data-r style="--d:1">Training can amplify small flaws in an environment as models learn to exploit them. Move the slider and watch twenty runs.</p>
+ </div>
+ <div class="panel" data-ui data-r style="--d:2">
+  <div class="vis">
+   <svg id="svg" viewBox="0 0 300 180" role="img" aria-label="Twenty runs through a maze with a gap in the wall"></svg>
+   <p class="note" style="margin:0;max-width:60ch">Twenty runs. Green reached the goal by the long way round. Brown cut through the gap in the wall. Grey did not finish.</p>
+  </div>
+  <div class="ctl">
+   <div class="row"><label for="s">Training steps</label><input class="rng" id="s" type="range" min="0" max="100" value="0" step="1"><div class="val"><span id="sv">0</span><span>of 100</span></div></div>
+   <div class="row"><span class="nm">Grader</span><div class="tog" role="group" aria-label="Grader"><button type="button" id="g1" class="on">Counts reaching the goal</button><button type="button" id="g2">Also checks the route</button></div></div>
+   <div class="row"><div class="val"><span class="nm">Reward</span><span id="rv">0%</span></div><div class="bar"><i id="rb"></i></div></div>
+   <div class="row"><div class="val"><span class="nm">Rules followed</span><span id="fv">0%</span></div><div class="bar b"><i id="fb"></i></div></div>
+   <span class="lnk">Toy environment drawn for this page. Not Tokenless data.</span>
+  </div>
+ </div>
+</section>
+
+<section id="why" class="sec" aria-labelledby="wh">
+ <div class="why">
+  <div>
+   <h2 id="wh" data-r>Why it matters</h2>
+   <p data-r style="--d:1">As models become more capable, training and evaluating them requires increasingly complex tasks and longer interactions. This creates more opportunities for unexpected behavior and exploits in tasks and graders.</p>
+   <p data-r style="--d:2">These flaws can also make it difficult to distinguish real capability gains from better exploitation. Correcting them makes training more effective, makes model performance easier to interpret, and is crucial to solving the AI alignment problem.</p>
+   <p data-r style="--d:3">Our goal is to end reward hacking.</p>
+  </div>
+  <figure data-r style="--d:2"><img src="assets/country-desire-vehicle-route-for-woodland-trust.jpg" width="1920" height="1012" loading="lazy" alt="A worn track cutting through a wood edge, Theydon Bois, Essex"><figcaption>A shortcut nobody planned</figcaption></figure>
+ </div>
+</section>
+
+<section class="sec" aria-labelledby="lh">
+ <div class="lst">
+  <h2 id="lh" data-r>Who it is for</h2>
+  <p class="lead" data-r style="--d:1">If you want more confidence in your environments, contact us.</p>
+  <p class="g">You are</p>
+  <ul>
+   <li data-r><span><i class="dot"></i><b>Training models with RL</b></span><span>founders@usetokenless.com</span></li>
+   <li data-r style="--d:1"><span><i class="dot k"></i><b>Building environments</b></span><span>founders@usetokenless.com</span></li>
+   <li data-r style="--d:2"><span><i class="dot s"></i><b>Running agent evals</b></span><span>founders@usetokenless.com</span></li>
+  </ul>
+ </div>
+</section>
+
+<section class="cta" aria-labelledby="ch">
+ <div class="col">
+  <h2 id="ch" style="font-size:var(--lead);font-weight:400;letter-spacing:0;line-height:1.5;max-width:34ch;margin-bottom:24px" data-r>Tell them what you are training, building or evaluating.</h2>
+  <div data-r style="--d:1"><a class="btn" href="mailto:founders@usetokenless.com">Email the founders</a></div>
+ </div>
+</section>
+</main>
+<p class="credits" style="margin-top:60px">Pictures, all CC BY-SA: "Desire paths across the grass, Ludwell Valley Park, Exeter" (geograph.org.uk, 2020); "Desire Triangle" (2010); "Dülmen, Trampelpfad" (2017); "Country desire vehicle route for Woodland Trust wood, Theydon Bois" (2015), via Wikimedia Commons. Wording credited to usetokenless.com.</p>
+<footer class="foot"><span>Unofficial concept by Axlios Media, not affiliated with Tokenless</span><nav><a href="#demo">Demo</a><a href="#why">Why</a><a href="mailto:founders@usetokenless.com">founders@usetokenless.com</a></nav><span>2026</span></footer>
+<script>
+document.body.classList.remove('nojs');
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+// crossfade
+const imgs=$$('#ph img'),caps=["Worn paths across a field. Ludwell Valley Park, Exeter","A worn shortcut across a lawn corner","A trampled path along a hedge, Dülmen"];
+let k=0,hid=false;
+setInterval(()=>{if(document.hidden)return;imgs[k].classList.remove('on');k=(k+1)%imgs.length;imgs[k].classList.add('on');$('#cap').textContent=caps[k]},6000);
+// toy
+const svg=$('#svg');let flaw=true;
+const NS='http://www.w3.org/2000/svg';
+function hash(i){let x=Math.sin(i*127.1+311.7)*43758.5453;return x-Math.floor(x)}
+function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e}
+function draw(){
+ const s=+$('#s').value/100,r=.3+.7*s,p=flaw?.9*s:0;
+ svg.innerHTML='';
+ el('rect',{x:0,y:0,width:300,height:180,fill:'#e9e7e1'});
+ el('rect',{x:140,y:0,width:14,height:70,fill:'#2a1d17'});
+ el('rect',{x:140,y:100,width:14,height:80,fill:'#2a1d17'});
+ el('rect',{x:20,y:80,width:22,height:22,fill:'#2a1d17',rx:4});
+ el('circle',{cx:262,cy:90,r:13,fill:'#456f3a'});
+ const t1=el('text',{x:31,y:96,'text-anchor':'middle','font-size':11,fill:'#fff','font-family':'Literata,serif'});t1.textContent='S';
+ const t2=el('text',{x:262,y:94,'text-anchor':'middle','font-size':11,fill:'#fff','font-family':'Literata,serif'});t2.textContent='G';
+ let ok=0,rules=0;
+ for(let i=0;i<20;i++){
+  const j=(hash(i)-.5)*10,j2=(hash(i+50)-.5)*8;
+  const cut=hash(i+7)<p;
+  const reach=cut?true:hash(i+99)<r;
+  let d,col;
+  if(cut){d='M42 91 L140 '+(86+j2)+' L154 '+(86+j2)+' L262 '+(90+j);col='#8a4b2a';ok++}
+  else if(reach){d='M42 91 L70 '+(40+j)+' L225 '+(30+j2)+' L262 90';col='#456f3a';ok++;rules++}
+  else{d='M42 91 L70 '+(130+j)+' L'+(100+hash(i+3)*50)+' '+(150+j2);col='#9b9384'}
+  el('path',{d,fill:'none',stroke:col,'stroke-width':2,'stroke-linejoin':'round','stroke-linecap':'round',opacity:.8,'stroke-dasharray':'600','stroke-dashoffset':'600'}).animate([{strokeDashoffset:600},{strokeDashoffset:0}],{duration:700,fill:'forwards',delay:i*18});
+ }
+ let reward=ok/20;
+ if(!flaw){reward=rules/20}
+ $('#sv').textContent=$('#s').value;$('#rv').textContent=Math.round(reward*100)+'%';$('#fv').textContent=Math.round(rules/20*100)+'%';
+ $('#rb').style.width=reward*100+'%';$('#fb').style.width=rules/20*100+'%';
+}
+$('#s').addEventListener('input',draw);
+$('#g1').onclick=()=>{flaw=true;$('#g1').classList.add('on');$('#g2').classList.remove('on');draw()};
+$('#g2').onclick=()=>{flaw=false;$('#g2').classList.add('on');$('#g1').classList.remove('on');draw()};
+draw();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('[data-r]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
