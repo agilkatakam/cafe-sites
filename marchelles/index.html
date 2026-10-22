@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marchelles Hair | Hair salon in Erdington, Birmingham</title>
+<meta name="description" content="Marchelles Hair is a family run hair salon on York Road in Erdington, Birmingham, known for natural, textured and Afro Caribbean hair. Ring 0121 572 7829 or email to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eeecea;
+  --surface:#e4e1dd;
+  --ink:#333231;
+  --muted:#454341;
+  --accent:#5c6b54;
+  --accent-ink:#ffffff;
+  --field-1:#cdc3b6;
+  --field-1-ink:#333231;
+  --step-small:0.9375rem;
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --margin:56px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Bricolage Grotesque",sans-serif;font-weight:400;
+  font-size:var(--step-body);line-height:1.55;color:var(--ink);background:var(--bg);
+}
+img,video{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:300;letter-spacing:-0.035em;line-height:1.0}
+::selection{background:var(--accent);color:var(--accent-ink)}
+
+/* ============ SPLIT STAGE ============ */
+.stage{display:grid;grid-template-columns:1fr 1fr;position:relative;z-index:1;background:var(--bg)}
+.visual{position:sticky;top:0;height:100svh;overflow:hidden;align-self:start}
+.visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.4s ease}
+.visual img.b{opacity:0}
+.visual.swap img.b{opacity:1}
+.col{min-width:0}
+.col section{padding:104px var(--margin)}
+
+/* ============ INTRO ============ */
+.intro{padding-top:64px}
+.topline{display:flex;justify-content:space-between;align-items:center;font-size:var(--step-small);margin-bottom:88px}
+.topline .wordmark{font-weight:500}
+.topline nav{display:flex;gap:28px}
+.topline nav a{text-decoration:none}
+.topline nav a:hover{color:var(--accent)}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--accent-ink);
+  text-decoration:none;padding:14px 24px;font-size:16px;font-weight:500;
+  transition:background .3s ease;
+}
+.btn:hover{background:var(--ink)}
+.card{
+  position:relative;background:var(--surface);padding:64px 48px 56px;
+  text-align:center;overflow:hidden;
+}
+.card .cn{position:absolute;width:56px;height:56px;border-radius:50%;background:var(--bg)}
+.card .cn.tl{top:-28px;left:-28px}
+.card .cn.tr{top:-28px;right:-28px}
+.card .cn.bl{bottom:-28px;left:-28px}
+.card .cn.br{bottom:-28px;right:-28px}
+.card .mono{font-size:var(--step-small);margin-bottom:32px;color:var(--muted)}
+.card h1{font-size:clamp(52px,4.6vw,84px)}
+.card .sub{font-size:var(--step-lead);font-weight:300;margin-top:18px}
+.card .meta{display:flex;justify-content:center;align-items:center;gap:18px;flex-wrap:wrap;margin-top:36px;font-size:16px}
+.card .meta .dia{width:10px;height:10px;background:var(--ink);transform:rotate(45deg);flex:none}
+.facts{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;margin-top:96px}
+.fact .big{font-weight:300;font-size:clamp(26px,2.2vw,38px);letter-spacing:-0.03em;line-height:1.05}
+.fact .small{font-size:16px;color:var(--muted);margin-top:8px;max-width:22ch}
+
+/* ============ GALLERY ============ */
+.gallery h2, .menu-sec h2, .contact h2{font-size:32px;margin-bottom:48px}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:28px 12px}
+.tile .ph{position:relative;overflow:hidden;aspect-ratio:4/5}
+.tile .ph.wide{aspect-ratio:1/1}
+.tile .ph img,.tile .ph video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.strip{
+  min-height:88px;padding:14px;font-size:16px;line-height:1.45;
+  display:flex;flex-direction:column;justify-content:space-between;gap:6px;
+}
+.strip .r1{display:flex;justify-content:space-between;gap:10px}
+.strip .r2{display:flex;justify-content:space-between;gap:10px}
+.strip.s0{background:var(--field-1);color:var(--field-1-ink)}
+.strip.s1{background:var(--ink);color:var(--bg)}
+.strip.s2{background:var(--surface);color:var(--ink)}
+.strip.s3{background:var(--accent);color:var(--accent-ink)}
+
+/* ============ SERVICES MENU ============ */
+.menu-sec{background:var(--surface)}
+.sheet{
+  background:var(--bg);padding:64px 44px;max-width:520px;
+  clip-path:polygon(0 12px,5% 0,10% 12px,15% 0,20% 12px,25% 0,30% 12px,35% 0,40% 12px,45% 0,50% 12px,55% 0,60% 12px,65% 0,70% 12px,75% 0,80% 12px,85% 0,90% 12px,95% 0,100% 12px,100% calc(100% - 12px),95% 100%,90% calc(100% - 12px),85% 100%,80% calc(100% - 12px),75% 100%,70% calc(100% - 12px),65% 100%,60% calc(100% - 12px),55% 100%,50% calc(100% - 12px),45% 100%,40% calc(100% - 12px),35% 100%,30% calc(100% - 12px),25% 100%,20% calc(100% - 12px),15% 100%,10% calc(100% - 12px),5% 100%,0 calc(100% - 12px));
+}
+.sheet h2{text-align:center;font-size:44px;margin-bottom:56px}
+.sheet .group{margin-bottom:44px}
+.sheet .group:last-child{margin-bottom:0}
+.sheet .gname{font-size:var(--step-body);font-weight:500;margin-bottom:20px}
+.mi{display:flex;align-items:baseline;gap:12px;margin-bottom:18px}
+.mi:last-child{margin-bottom:0}
+.mi .n{font-size:var(--step-body)}
+.mi .dots{flex:1;border-bottom:4px dotted var(--muted);transform:translateY(-5px)}
+.mi .v{font-size:16px;color:var(--muted);white-space:nowrap}
+.mi .d{font-size:var(--step-small);color:var(--muted);margin:-10px 0 18px;max-width:34ch}
+.sheet .note{font-size:16px;text-align:center;margin-top:48px}
+.sheet .note a{text-decoration:underline}
+.sheet .note a:hover{color:var(--accent)}
+
+/* ============ HOURS ============ */
+.hours-sec{container-type:inline-size}
+.giant{
+  font-weight:300;text-transform:uppercase;letter-spacing:-0.04em;line-height:.8;
+  font-size:24cqw;margin-bottom:32px;
+}
+.bars details{margin-bottom:6px}
+.bars summary{
+  list-style:none;cursor:pointer;background:var(--surface);
+  min-height:56px;display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;font-size:16px;font-weight:500;
+  transition:background .3s ease;
+}
+.bars summary::-webkit-details-marker{display:none}
+.bars summary:hover{background:var(--field-1)}
+.bars summary .plus{font-weight:300;font-size:26px;transition:transform .3s ease}
+.bars details[open] summary .plus{transform:rotate(45deg)}
+.bars .panel{padding:20px 18px;font-size:16px}
+.bars .panel .prow{display:flex;justify-content:space-between;padding:7px 0}
+.bars .panel .prow span:last-child{font-variant-numeric:tabular-nums;color:var(--muted)}
+
+/* ============ CONTACT ============ */
+.contact .email{
+  display:inline-block;font-weight:300;letter-spacing:-0.035em;line-height:1.05;
+  font-size:clamp(30px,3.4vw,52px);word-break:break-all;text-decoration:none;
+}
+.contact .email:hover{color:var(--accent)}
+.contact .phone{
+  display:inline-block;font-weight:300;letter-spacing:-0.035em;
+  font-size:26px;text-decoration:none;margin-top:24px;
+}
+.contact .phone:hover{color:var(--accent)}
+.contact .addr{font-size:var(--step-body);margin-top:32px;line-height:1.6}
+.contact .btn{margin-top:40px}
+.contact .hours-note{font-size:16px;color:var(--muted);margin-top:20px}
+
+/* ============ FOOTER (curtain) ============ */
+footer{
+  position:relative;height:100svh;overflow:hidden;
+  background:var(--ink);
+}
+footer img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+footer .fname{
+  position:absolute;left:var(--margin);right:var(--margin);top:50%;transform:translateY(-58%);
+  font-weight:300;letter-spacing:-0.04em;line-height:1;
+  font-size:clamp(64px,10.5vw,180px);
+}
+footer .fname span{background:var(--field-1);color:var(--ink);padding:.04em .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+footer .flines{
+  position:absolute;left:var(--margin);right:var(--margin);bottom:36px;
+  display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  font-size:16px;color:var(--ink);
+}
+footer .flines span{background:var(--bg);padding:6px 10px;max-width:60ch}
+
+/* ============ MOTION ============ */
+.rev{opacity:0;transition:opacity 1.2s ease}
+.rev.in{opacity:1}
+
+.m-hero{display:none;width:100%;aspect-ratio:3/2;object-fit:cover;margin-top:56px}
+
+/* ============ PHONE ============ */
+@media (max-width:860px){
+  :root{--margin:20px}
+  .stage{display:block}
+  .visual{display:none}
+  .m-hero{display:block}
+  .col section{padding:72px var(--margin)}
+  .intro{padding-top:0}
+  .topline nav{display:none}
+  .card{padding:48px 24px 40px}
+  .card h1{font-size:13vw}
+  .facts{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;row-gap:32px;padding:32px var(--margin) 0}
+  .tiles{grid-template-columns:1fr 1fr;gap:20px 8px}
+  .strip{min-height:76px;padding:12px}
+  .card .meta .dia{display:none}
+  .card .meta{flex-direction:column;gap:10px}
+  .m-hero{object-position:50% 35%}
+  .sheet{padding:56px 20px;max-width:none}
+  .sheet h2{font-size:34px}
+  .giant{font-size:23cqw}
+  footer .fname{font-size:16vw}
+  footer .flines{bottom:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rev{opacity:1;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="stage">
+  <div class="visual" id="visual" aria-hidden="true">
+    <img class="a" src="img/hero.jpg" alt="" width="1920" height="1253">
+    <img class="b" src="img/chair-mirror.jpg" alt="" width="1400" height="2100" loading="lazy">
+  </div>
+
+  <main class="col">
+    <!-- INTRO -->
+    <section class="intro" id="top">
+      <div class="topline">
+        <span class="wordmark">Marchelles Hair</span>
+        <nav>
+          <a href="#work">The work</a>
+          <a href="#book">What people book</a>
+          <a href="#hours">Hours</a>
+        </nav>
+        <a class="btn" href="tel:+441215727829">Call 0121 572 7829</a>
+      </div>
+
+      <div class="card rev">
+        <i class="cn tl"></i><i class="cn tr"></i><i class="cn bl"></i><i class="cn br"></i>
+        <h1>Marchelles</h1>
+        <p class="sub">A family run hair salon on York Road in Erdington, Birmingham.</p>
+        <div class="meta">
+          <span>Natural and textured hair</span>
+          <span class="dia"></span>
+          <span>Afro Caribbean hair</span>
+          <span class="dia"></span>
+          <span>Thursday to Saturday</span>
+        </div>
+      </div>
+
+      <img class="m-hero" src="img/hero.jpg" alt="A stock photo of a bright hair salon interior with round mirrors" width="1920" height="1253">
+      <div class="facts">
+        <div class="fact rev"><div class="big">4.2 out of 5</div><div class="small">from 17 reviews on Cylex</div></div>
+        <div class="fact rev"><div class="big">York Road</div><div class="small">Erdington, Birmingham B23 6TE</div></div>
+        <div class="fact rev"><div class="big">Thu to Sat</div><div class="small">open three days a week</div></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="work">
+      <h2 class="rev">The work, up close</h2>
+      <div class="tiles">
+        <div class="tile rev">
+          <div class="ph"><img src="img/braid-hands.jpg" alt="A stock photo of hands braiding hair" width="1200" height="800" loading="lazy"></div>
+          <div class="strip s0"><div class="r1"><span>Braids and twists</span><span>protective</span></div><div class="r2"><span>stock photo</span></div></div>
+        </div>
+        <div class="tile rev">
+          <div class="ph"><img src="img/braid-detail.jpg" alt="A stock photo of hair being parted and braided, seen from above" width="1200" height="1800" loading="lazy"></div>
+          <div class="strip s1"><div class="r1"><span>Natural hair, up close</span></div><div class="r2"><span>stock photo</span></div></div>
+        </div>
+        <div class="tile rev">
+          <div class="ph"><video src="img/cut.webm" poster="img/cut-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div>
+          <div class="strip s2"><div class="r1"><span>Short cuts</span><span>clippers</span></div><div class="r2"><span>stock clip, CC0</span></div></div>
+        </div>
+        <div class="tile rev">
+          <div class="ph"><img src="img/chair-mirror.jpg" alt="A stock photo of a barber chair in front of a lit mirror" width="1400" height="2100" loading="lazy"></div>
+          <div class="strip s3"><div class="r1"><span>The chair and mirrors</span></div><div class="r2"><span>stock photo</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="menu-sec" id="book">
+      <div class="sheet rev" data-ui>
+        <h2>What people book</h2>
+        <div class="group">
+          <div class="gname">Hair</div>
+          <div class="mi"><span class="n">Cuts and restyles</span><span class="dots"></span><span class="v">all lengths</span></div>
+          <div class="mi"><span class="n">Braids and twists</span><span class="dots"></span><span class="v">protective</span></div>
+          <div class="mi"><span class="n">Natural and textured hair care</span><span class="dots"></span><span class="v">a speciality</span></div>
+          <div class="mi"><span class="n">Wash and blow dry</span><span class="dots"></span><span class="v">styled</span></div>
+        </div>
+        <div class="group">
+          <div class="gname">Short cuts</div>
+          <div class="mi"><span class="n">Barbering</span><span class="dots"></span><span class="v">clippers and scissors</span></div>
+          <div class="mi"><span class="n">Shape ups</span><span class="dots"></span><span class="v">edges</span></div>
+        </div>
+        <p class="note">No price list here on purpose: every head of hair is different. <a href="tel:+441215727829">Ring</a> or <a href="mailto:marchelleshair@gmail.com">email</a>, say what your hair needs, and they will talk it through.</p>
+      </div>
+    </section>
+
+    <!-- HOURS -->
+    <section class="hours-sec" id="hours">
+      <h2 class="giant rev">Hours</h2>
+      <div class="bars rev">
+        <details open>
+          <summary>Thursday<span class="plus">+</span></summary>
+          <div class="panel"><div class="prow"><span>Open</span><span>10:00 to 19:00</span></div><div class="prow"><span>Book</span><span>0121 572 7829</span></div></div>
+        </details>
+        <details>
+          <summary>Friday<span class="plus">+</span></summary>
+          <div class="panel"><div class="prow"><span>Open</span><span>10:00 to 19:00</span></div><div class="prow"><span>Book</span><span>0121 572 7829</span></div></div>
+        </details>
+        <details>
+          <summary>Saturday<span class="plus">+</span></summary>
+          <div class="panel"><div class="prow"><span>Open</span><span>09:00 to 18:00</span></div><div class="prow"><span>Book</span><span>0121 572 7829</span></div></div>
+        </details>
+        <details>
+          <summary>Sunday to Wednesday<span class="plus">+</span></summary>
+          <div class="panel"><div class="prow"><span>Closed</span><span>email anytime, they answer when the chairs open</span></div></div>
+        </details>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2 class="rev">Book a chair</h2>
+      <p class="rev"><a class="email" href="mailto:marchelleshair@gmail.com">marchelleshair@gmail.com</a></p>
+      <p class="rev"><a class="phone" href="tel:+441215727829">0121 572 7829</a></p>
+      <p class="addr rev">5 York Road, Erdington<br>Birmingham B23 6TE</p>
+      <p class="rev"><a class="btn" href="tel:+441215727829">Call 0121 572 7829</a></p>
+      <p class="hours-note rev">Hours from the salon's Cylex listing, June 2026. Ring before you set off.</p>
+    </section>
+  </main>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <img class="bg" src="img/salon-2.jpg" alt="A stock photo of a bright hair salon interior" width="1600" height="1068" loading="lazy">
+  <div class="fname"><span>Marchelles</span></div>
+  <div class="flines">
+    <span>Marchelles Hair · York Road, Erdington</span>
+    <span>Free preview by Axlios Media</span>
+    <span>Not the live site · stock photos: Pexels · clip: CC0</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rev');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+    },{threshold:0.12});
+    els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i%5,4)*90)+'ms';io.observe(e)});
+  }else{els.forEach(function(e){e.classList.add('in')})}
+
+  var visual=document.getElementById('visual');
+  var work=document.getElementById('work');
+  var hours=document.getElementById('hours');
+  function onScroll(){
+    var mid=window.innerHeight*0.5;
+    var w=work.getBoundingClientRect();
+    var h=hours.getBoundingClientRect();
+    if(w.top<mid && h.top>mid){visual.classList.add('swap')}
+    else{visual.classList.remove('swap')}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    document.querySelectorAll('video').forEach(function(v){v.pause();v.removeAttribute('autoplay')});
+  }
+})();
+</script>
+</body>
+</html>
