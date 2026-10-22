@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>General Tree and Lawn Service of Collier | Tree service and lawn care in Naples, Florida</title>
+<meta name="description" content="General Tree and Lawn Service of Collier is a family company in Naples, Florida, caring for the trees and lawns of Collier County since 1985. Call or email for a free estimate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f0f0f;
+  --surface:#1a1a1a;
+  --ink:#ffffff;
+  --muted:#8f8f8f;
+  --accent:#dafa9c;
+  --accent-ink:#0f0f0f;
+  --paper:#ffffff;
+  --paper-ink:#0f0f0f;
+  --paper-soft:#3d3d3d;
+  --paper-mute:#5c5c5c;
+  --paper-row:#f4f4f4;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --margin:32px;
+  --col-left:22vw;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Albert Sans",system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:var(--step-body);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;transition:color .18s ease}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* reveal */
+.rev{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+.rev.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rev{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ============ HERO ============ */
+.hero{
+  position:relative;
+  min-height:100svh;
+  background:var(--bg);
+  padding:0 var(--margin);
+}
+.hero-top{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding-top:26px;
+  font-size:16px;
+}
+.wordmark{font-weight:600;letter-spacing:-0.01em}
+.hero-phone{color:var(--muted);text-decoration:none}
+.hero-phone:hover{color:var(--ink)}
+h1{
+  text-align:center;
+  font-size:clamp(40px,6vw,88px);
+  font-weight:600;
+  letter-spacing:-0.035em;
+  line-height:1.05;
+  margin-top:56px;
+}
+.doors{
+  display:flex;justify-content:center;gap:80px;
+  margin-top:56px;
+  padding-bottom:150px;
+}
+.hero-cta{
+  position:absolute;right:var(--margin);bottom:40px;
+}
+.door{display:block;text-decoration:none;width:280px}
+.door img{width:280px;height:373px;object-fit:cover;transition:opacity .18s ease}
+.door-name{font-size:22px;font-weight:500;margin-top:18px}
+.door-line{font-size:16px;color:var(--muted);margin-top:2px}
+.doors:has(.door:hover) .door:not(:hover) img,
+.doors:has(.door:focus-visible) .door:not(:focus-visible) img{opacity:.5}
+
+/* ============ LIGHT SECTIONS ============ */
+.light{background:var(--paper);color:var(--paper-ink)}
+.col{margin-left:var(--col-left)}
+
+.intro{padding:120px 0 100px}
+.intro-col{width:320px;font-size:16px;line-height:1.5}
+.intro-col p{margin-bottom:1em}
+.intro-col p:first-child{font-weight:500;color:var(--paper-ink)}
+.intro-col p{color:var(--paper-soft)}
+.intro-col a{color:var(--paper-ink)}
+.intro-col a:hover{color:var(--paper-mute)}
+
+.services{padding:20px 0 40px}
+.services h2{font-size:22px;font-weight:500;letter-spacing:-0.01em;margin-bottom:32px}
+.svc-col{width:520px;max-width:calc(100vw - 2*var(--margin))}
+.svc-group{margin-bottom:40px;scroll-margin-top:40px}
+.svc-group>p{color:var(--paper-mute);font-size:16px;margin-bottom:14px}
+.svc-row{display:flex;align-items:center;min-height:36px}
+.svc-row .dot{width:16px;height:16px;border-radius:50%;background-size:cover;background-position:center;flex:none;margin-right:8px}
+.svc-row .name{font-size:16px;color:var(--paper-ink)}
+.svc-row .val{margin-left:auto;font-size:13px;color:var(--paper-mute);font-variant-numeric:tabular-nums;padding-left:16px;text-align:right}
+.svc-photo{margin:8px 0 64px}
+.svc-photo img{width:520px;max-width:100%;height:auto}
+
+ .clip{padding:0 0 120px}
+.clip .col{width:520px;max-width:calc(100vw - 2*var(--margin))}
+.clip video{width:520px;max-width:100%;height:auto;display:block}
+.clip figcaption{font-size:13px;color:var(--paper-mute);margin-top:10px}
+
+.about{padding:40px 0 120px}
+.about-col{width:520px;max-width:calc(100vw - 2*var(--margin))}
+.about-col .face{width:44px;height:44px;border-radius:50%;object-fit:cover;margin-bottom:28px}
+.about-col p{font-size:16px;line-height:1.55;color:var(--paper-ink);margin-bottom:1.1em}
+.about-col mark{background:var(--accent);color:var(--accent-ink);padding:0 3px}
+.signoff{font-style:italic;font-size:22px;font-weight:500;margin-top:1.6em}
+.signoff-role{font-size:14px;color:var(--paper-mute);margin-top:4px}
+
+.record{padding:40px var(--margin) 140px}
+.record h2{
+  font-size:clamp(2.4rem,5vw,4.5rem);
+  font-weight:600;letter-spacing:-0.035em;line-height:1.02;
+  margin-bottom:72px;
+}
+.record h2 .l2{display:block;margin-left:16.6%}
+.rec-table{width:100%;border-collapse:collapse;border:none}
+.rec-table td{padding:14px 8px 14px 0;font-size:16px;vertical-align:top}
+.rec-table tr:nth-child(even) td{background:var(--paper-row)}
+.rec-table .yr{width:12%;color:var(--paper-mute);font-variant-numeric:tabular-nums}
+.rec-table .what{width:34%;color:var(--paper-ink)}
+.rec-table .who{width:34%;color:var(--paper-soft)}
+.rec-table .mark{width:20%;text-align:right;color:var(--paper-ink);font-variant-numeric:tabular-nums}
+
+/* ============ CONTACT ============ */
+.contact{background:var(--bg);padding:160px var(--margin) 120px}
+.contact-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.contact-sentence{
+  grid-column:1/6;
+  font-size:clamp(26px,3vw,36px);
+  font-weight:500;letter-spacing:-0.02em;line-height:1.15;
+}
+.contact-photo{grid-column:8/10}
+.contact-photo img{width:160px;height:160px;object-fit:cover}
+.contact-links{grid-column:10/13}
+.contact-q{font-size:18px;font-weight:500;margin-bottom:20px}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--accent-ink);
+  font-size:16px;font-weight:500;text-decoration:none;
+  padding:13px 22px;border:none;cursor:pointer;
+  transition:filter .18s ease,transform .14s ease;
+}
+.btn:hover{filter:brightness(1.06)}
+.btn:active{transform:scale(.98)}
+.contact-mail{display:inline-block;font-size:18px;margin-top:20px;overflow-wrap:anywhere}
+.contact-mail:hover{color:var(--accent)}
+.contact-city{font-size:14px;color:var(--muted);margin-top:22px}
+
+/* ============ FOOTER ============ */
+.footer{
+  background:var(--bg);
+  padding:30svh var(--margin) 30px;
+}
+.footer-line{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;
+  font-size:14px;color:var(--muted);
+}
+.footer-line .c{justify-self:center}
+.footer-line .r{justify-self:end}
+.footer-line a{color:var(--ink);text-decoration:none}
+.footer-line a:hover{color:var(--accent)}
+
+/* ============ PHONE ============ */
+@media (max-width:720px){
+  :root{--margin:20px;--col-left:20px}
+  .hero{padding:0 var(--margin)}
+  h1{font-size:8vw;margin-top:40px}
+  .doors{gap:14px;margin-top:44px;padding-bottom:96px}
+  .door{width:168px}
+  .door img{width:168px;height:224px}
+  .door-name{font-size:17px;margin-top:12px}
+  .door-line{font-size:16px}
+  .intro{padding:72px 0 64px}
+  .intro-col{width:78%}
+  .svc-row{min-height:44px;align-items:flex-start;padding-top:10px}
+  .svc-row .dot{margin-top:3px}
+  .svc-row .val{padding-top:1px}
+  .record h2{font-size:11vw;margin-bottom:48px}
+  .rec-table,.rec-table tbody,.rec-table tr,.rec-table td{display:block;width:100%}
+  .rec-table .yr,.rec-table .what,.rec-table .who,.rec-table .mark{width:100%}
+  .rec-table td{padding:0}
+  .rec-table tr{padding:14px 10px}
+  .rec-table tr:nth-child(even){background:var(--paper-row)}
+  .rec-table tr:nth-child(even) td{box-shadow:none}
+  .rec-table .yr{font-size:22px;color:var(--paper-ink);padding-bottom:6px}
+  .rec-table .yr:empty{display:none}
+  .rec-table .what{font-size:16px}
+  .rec-table .who,.rec-table .mark{display:inline;width:auto;font-size:14px;color:var(--paper-mute);text-align:left}
+  .rec-table .mark::before{content:" · "}
+  .contact{padding:96px var(--margin) 96px}
+  .contact-grid{display:block}
+  .contact-sentence{font-size:24px;line-height:1.2;max-width:90%}
+  .contact-photo{float:left;margin:48px 20px 0 0}
+  .contact-photo img{width:96px;height:96px}
+  .contact-links{margin-top:48px;overflow:hidden}
+  .contact-city{margin-top:24px}
+  .contact::after{content:"";display:block;clear:both}
+  .footer{padding:20svh var(--margin) 24px}
+  .footer-line{display:block;font-size:14px}
+  .footer-line div{margin-bottom:8px}
+  .footer-line .c,.footer-line .r{justify-self:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-top">
+    <span class="wordmark">General Tree &amp; Lawn</span>
+    <a class="hero-phone" href="tel:+12394556930">239-455-6930</a>
+  </div>
+  <h1>One crew for the trees,<br>and the lawn.</h1>
+  <div class="doors">
+    <a class="door" href="#trees">
+      <img src="img/door-trees.jpg" alt="A stock photo of an arborist at work in a palm against a sunset sky" width="280" height="373">
+      <span class="door-name">Trees</span><br>
+      <span class="door-line">Trimming, removal, stumps</span>
+    </a>
+    <a class="door" href="#lawns">
+      <img src="img/door-lawns.jpg" alt="A stock photo of a gardener mowing a wide green lawn" width="280" height="373" loading="lazy">
+      <span class="door-name">Lawns</span><br>
+      <span class="door-line">Care and landscape</span>
+    </a>
+  </div>
+  <a class="btn hero-cta" href="tel:+12394556930">Call for a free estimate</a>
+</header>
+
+<main class="light">
+
+  <!-- ================= INTRO ================= -->
+  <section class="intro">
+    <div class="col intro-col">
+      <p class="rev">General Tree and Lawn Service of Collier is a family company in Naples, Florida. It has cared for the trees and lawns of Collier County since 1985.</p>
+      <p class="rev">A certified arborist is on staff. The crew trims and removes trees of every size, from a palm over the driveway to an old oak over the roof.</p>
+      <p class="rev">The lawn side keeps grass cut, beds planted and whole landscapes maintained, for homes and for businesses.</p>
+      <p class="rev">No job is too big or too small. Call or email and ask for a <a href="#contact">free estimate</a>.</p>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services">
+    <div class="col svc-col">
+      <h2 class="rev">What the crew does</h2>
+
+      <div class="svc-group" id="trees">
+        <p class="rev">Trees</p>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Tree trimming and pruning</span><span class="val">oaks and palms</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Tree removal</span><span class="val">any size</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Palm trimming</span><span class="val">seed pods too</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Stump grinding</span><span class="val">below grade</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Mangrove care</span><span class="val">specialist work</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Exotic removal</span><span class="val">invasive species</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/square-canopy.jpg')"></span><span class="name">Storm debris</span><span class="val">after the blow</span></div>
+      </div>
+      <figure class="svc-photo rev">
+        <img src="img/work-chainsaw.jpg" alt="A stock photo of an arborist in safety gear cutting a trunk, sawdust in the air" width="1200" height="800" loading="lazy">
+      </figure>
+
+      <div class="svc-group" id="lawns">
+        <p class="rev">Lawns</p>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/lawn-wide.jpg')"></span><span class="name">Lawn care</span><span class="val">homes and businesses</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/lawn-wide.jpg')"></span><span class="name">Landscape design</span><span class="val">beds and borders</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/lawn-wide.jpg')"></span><span class="name">Landscape installation</span><span class="val">new plantings</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/lawn-wide.jpg')"></span><span class="name">Landscape maintenance</span><span class="val">all year</span></div>
+        <div class="svc-row rev"><span class="dot" style="background-image:url('img/lawn-wide.jpg')"></span><span class="name">Tree planting</span><span class="val">the right spot</span></div>
+      </div>
+      <figure class="svc-photo rev">
+        <img src="img/lawn-wide.jpg" alt="A stock photo of a gardener mowing a large lawn from behind" width="1200" height="800" loading="lazy">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= CLIP ================= -->
+  <section class="clip">
+    <div class="col">
+      <figure class="rev">
+        <video src="img/wind-tree.webm" poster="img/wind-tree-poster.jpg" width="854" height="480" autoplay muted loop playsinline></video>
+        <figcaption>Wind in the canopy. Stock clip: Oakley413, CC BY-SA 4.0, via Wikimedia Commons.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about">
+    <div class="col about-col">
+      <img class="face rev" src="img/square-canopy.jpg" alt="A stock photo looking up into a palm canopy" width="44" height="44" loading="lazy">
+      <p class="rev">We are a family company. General Tree and Lawn Service of Collier has worked in Naples since 1985, and it is still owned and run by the same family.</p>
+      <p class="rev">We know these trees. Live oaks and sabal palms, mangroves along the water. A certified arborist is on staff, and mangrove work is a specialty.</p>
+      <p class="rev">We take the small jobs as willingly as the large ones, one palm to trim or a whole lot to clear before building.</p>
+      <p class="rev">Call or write and tell us what you need. <mark>Estimates are free.</mark></p>
+      <p class="signoff rev">General Tree and Lawn Service of Collier</p>
+      <p class="signoff-role rev">Naples, Florida, since 1985</p>
+    </div>
+  </section>
+
+  <!-- ================= RECORD ================= -->
+  <section class="record">
+    <h2 class="rev">On the <span class="l2">record.</span></h2>
+    <table class="rec-table rev">
+      <tbody>
+        <tr><td class="yr">1985</td><td class="what">Company founded in Naples</td><td class="who">the same family since</td><td class="mark">family owned</td></tr>
+        <tr><td class="yr">1999</td><td class="what">Incorporated</td><td class="who">State of Florida</td><td class="mark">corporation</td></tr>
+        <tr><td class="yr"></td><td class="what">Certified arborist on staff</td><td class="who">International Society of Arboriculture</td><td class="mark">registered</td></tr>
+        <tr><td class="yr"></td><td class="what">Tree contractor licence</td><td class="who">Collier County Construction License Board</td><td class="mark">C13003</td></tr>
+        <tr><td class="yr"></td><td class="what">Public Google reviews</td><td class="who">nine reviews on record</td><td class="mark">4.4 of 5</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <p class="contact-sentence rev">One call takes care of the trees and the lawn.</p>
+    <div class="contact-photo rev">
+      <img src="img/sabal-square.jpg" alt="A stock photo of sabal palms against a bright sky" width="160" height="160" loading="lazy">
+    </div>
+    <div class="contact-links rev">
+      <p class="contact-q">What needs doing?</p>
+      <a class="btn" href="tel:+12394556930">Call 239-455-6930</a><br>
+      <a class="contact-mail" href="mailto:generaltreeandlandscape@gmail.com">generaltreeandlandscape@gmail.com</a>
+      <p class="contact-city">Naples, Florida, serving Collier County.<br>Ask for a free estimate.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-line">
+    <div>Free preview by <a href="https://axliosmedia.com">Axlios Media</a></div>
+    <div class="c"><a href="https://axliosmedia.com">axliosmedia.com</a></div>
+    <div class="r">Not the live site · Stock photos: Pexels · 2026</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rev');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}
+    });
+  },{threshold:0.15});
+  els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i%6,5)*40)+'ms';io.observe(e)});
+})();
+</script>
+</body>
+</html>
