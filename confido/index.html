@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Confido Health: your AI partner for patient access and revenue cycle workflows (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Confido Health where every call, text, fax and email finds its workflow in 3D. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#191919;--surface:#242424;--ink:#fff;--muted:#b4b4b4;--accent:#0c7866;--accent-ink:#fff;--r:10px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(1.75rem,1rem + 3.2vw,4.25rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.d{font-weight:700;letter-spacing:-.03em;line-height:.9;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:var(--r);background:var(--accent);color:#fff;font:500 var(--step-body)/1 Jost,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.98)}.btn.g{background:var(--surface)}
+a:focus-visible,button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:24px 24px 0}
+.mark{font-weight:700;font-size:1.375rem;text-decoration:none;letter-spacing:-.02em}.mark b{color:#3fd1b8;font-weight:700}
+.hdr a.s{font-size:var(--step-small);text-decoration:none}
+.hero{padding:clamp(40px,8vh,96px) 24px 0}
+.hero h1{font-size:clamp(1.6rem,.7rem + 5.2vw,6.5rem);max-width:none}
+.hero p{margin-top:24px;max-width:46ch}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:center}
+.demo{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;margin:56px 24px 0}
+.stage{grid-column:1/9;position:relative;height:min(70vh,620px);background:var(--surface);border-radius:var(--r);overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.stage .tag{position:absolute;left:24px;right:24px;bottom:20px;font-size:var(--step-lead);font-weight:500;line-height:1.2;pointer-events:none}
+.stage .tag small{display:block;font-size:var(--step-body);font-weight:400;color:var(--muted);margin-top:4px}
+.side{grid-column:9/13;background:var(--surface);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px}
+.side h2{font-size:var(--step-lead);font-weight:500;line-height:1.15;letter-spacing:-.01em}
+.side p{color:var(--muted)}
+.opts{display:flex;flex-direction:column;gap:6px}
+.opts button{min-height:48px;padding:0 16px;border-radius:var(--r);border:0;background:#2f2f2f;color:#fff;text-align:left;font:500 var(--step-body)/1 Jost,sans-serif;cursor:pointer;transition:background .2s}
+.opts button:hover{background:#3a3a3a}
+.opts button[aria-pressed=true]{background:var(--accent)}
+.band{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:200px 24px 0}.band figure{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4}.band img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1)}.band figcaption{position:absolute;left:12px;bottom:12px;right:12px;font-size:var(--step-small);color:#fff;background:rgba(25,25,25,.85);padding:6px 10px;border-radius:6px;width:fit-content}@media(max-width:900px){.band{grid-template-columns:1fr 1fr;margin-top:120px}}
+.chap{padding:120px 24px 0}
+.chap h2{font-size:var(--step-head);max-width:none}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:48px}
+.tiles div{border-radius:var(--r);padding:28px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.tiles div:nth-child(1){background:#0c7866}.tiles div:nth-child(2){background:#2f6fb5}.tiles div:nth-child(3){background:#b5473a}.tiles div:nth-child(4){background:#8a6d12}
+.tiles em{font-style:normal;font-weight:700;font-size:clamp(3rem,1.5rem + 4vw,6rem);letter-spacing:-.03em;line-height:.9}
+.tiles p{font-size:var(--step-lead);line-height:1.15}
+.how{padding:200px 24px 0}
+.how h2{font-size:var(--step-head);max-width:none}
+.pan{margin-top:48px;display:flex;flex-direction:column;gap:8px}
+.pan div{border-radius:var(--r);padding:24px 28px;background:var(--surface)}
+.pan h3{font-size:var(--step-lead);font-weight:500;line-height:1.15}
+.pan p{margin-top:8px;color:var(--muted);max-width:56ch}
+.cta{padding:200px 24px 0}.cta p.big{font-size:var(--step-head);max-width:none}
+.foot{margin-top:12svh;padding:0 24px 30px;font-size:var(--step-small);color:var(--muted)}
+.fine{padding:40px 24px;font-size:1rem;max-width:66ch;color:var(--muted)}.fine a{color:var(--ink)}
+.e{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease;transition-delay:calc(var(--i,0)*80ms)}.e.in{opacity:1;transform:none}
+@media(max-width:900px){.demo{display:block;margin-top:36px}.stage{height:min(100vw,430px)}.side{margin-top:8px}.chap,.how{padding-top:120px}.tiles{grid-template-columns:1fr 1fr}.tiles div{min-height:180px}.cta{padding-top:130px}}
+@media(max-width:480px){.tiles{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.e{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hdr"><a class="mark" href="#top" id="top">Confido<b>.</b></a><a class="s" href="https://www.confido.health" target="_blank" rel="noopener">confido.health</a></header>
+<main>
+<section class="hero">
+ <h1 class="d e">Your AI partner for patient access</h1>
+ <p class="e" style="--i:1">Reduce administrative load, find more time for care, and make missed calls a thing of the past.</p>
+ <div class="acts e" style="--i:2"><a class="btn" href="#demo">Route a workflow</a><a class="btn g" href="https://www.confido.health" target="_blank" rel="noopener">Go to confido.health</a></div>
+</section>
+<section class="demo e" id="demo" aria-label="Every channel, every workflow">
+ <div class="stage" data-ui><canvas id="c" role="img" aria-label="A 3D map: call, email inquiry, fax and text flow into one hub, then out to the workflow you pick and back to the EHR."></canvas><div class="tag" id="tag">Every channel, every workflow<small>A call, a text, or an email gets the same care, in any of 20+ languages.</small></div></div>
+ <div class="side" data-ui>
+  <h2>Pick what needs doing.</h2>
+  <div class="opts" id="opts" role="group" aria-label="Workflow"></div>
+  <p id="note">Every finished task is written back to your EHR, so your records are always up to date.</p>
+ </div>
+</section>
+<section class="band" aria-label="Pictures">
+ <figure><img src="assets/photograph-of-women-working-at-a-bell.jpg" width="1920" height="1525" alt="Women working at a telephone switchboard" loading="lazy"><figcaption>Every call finds its place</figcaption></figure>
+ <figure><img src="assets/wac-telephone-operators-operate-the-victory-switchboard.jpg" width="1920" height="2459" alt="Telephone operators at a switchboard" loading="lazy"><figcaption>Calls in</figcaption></figure>
+ <figure><img src="assets/reception-desk-for-clinical-physiology-nal-hospital.jpg" width="1920" height="1440" alt="A hospital reception desk" loading="lazy"><figcaption>The front desk</figcaption></figure>
+ <figure><img src="assets/reception-desk-arrowe-park-hospital.jpg" width="1920" height="1280" alt="A hospital entrance reception desk" loading="lazy"><figcaption>Patients arrive</figcaption></figure>
+</section>
+<section class="chap">
+ <h2 class="d e">Take a look at the numbers.</h2>
+ <div class="tiles">
+  <div class="e"><em>4+</em><p>FTEs equivalent work</p></div>
+  <div class="e" style="--i:1"><em>+15%</em><p>monthly revenue uplift</p></div>
+  <div class="e" style="--i:2"><em>95%</em><p>AI handle rate</p></div>
+  <div class="e" style="--i:3"><em>50%</em><p>Reduction of no-shows</p></div>
+ </div>
+</section>
+<section class="how">
+ <h2 class="d e">Turn records into action.</h2>
+ <div class="pan">
+  <div class="e"><h3>50+ integrations</h3><p>Across all major systems.</p></div>
+  <div class="e" style="--i:1"><h3>API + legacy</h3><p>Compatible with both system types.</p></div>
+  <div class="e" style="--i:2"><h3>4-6 weeks</h3><p>Kickoff to go-live.</p></div>
+ </div>
+</section>
+<section class="cta"><p class="big d e">Make missed calls a thing of the past.</p><div class="acts e"><a class="btn" href="https://www.confido.health" target="_blank" rel="noopener">Go to confido.health</a></div></section>
+<p class="fine">An unofficial concept homepage by <a href="https://axliosmedia.com" target="_blank" rel="noopener">Axlios Media</a>, not affiliated with Confido Health. All wording and figures are from confido.health. The 3D map and buttons are a sketch made for this page.</p>
+</main>
+<p class="fine">Pictures: <a href="https://commons.wikimedia.org/wiki/File:Photograph_of_Women_Working_at_a_Bell_System_Telephone_Switchboard_(3660047829).jpg">“Photograph of Women Working at a Bell System Telephone Switchboard (3660047829)”</a> by The U.S. National Archives, <a href="https://www.flickr.com/commons/usage/">no known copyright restrictions</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:WAC_telephone_operators_operate_the_Victory_switchboard_during_the_Potsdam_Conference_in_their_headquarters_in..._-_NARA_-_199007.jpg">“WAC telephone operators operate the Victory switchboard during the Potsdam Conference in…”</a>, <a href="https://creativecommons.org/publicdomain/mark/1.0/">public domain</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Reception_desk_for_Clinical_Physiology_-_N%C3%84L_hospital_1.jpg">“Reception desk for Clinical Physiology - NÄL hospital 1”</a> by W.carter, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Reception_Desk,_Arrowe_Park_Hospital.jpg">“Reception Desk, Arrowe Park Hospital”</a> by Rodhullandemu, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+<footer class="foot">Concept for Confido Health, 2026 Axlios Media</footer>
+<script type="importmap">{"imports":{"three":"./js/three.module.min.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const CH=['Call','Email inquiry','Fax','Text'];
+const AC=[['Forward to clinic','Forward to clinic'],['Review form','Review form'],['Confirm provider','Confirm provider'],['Forward to billing','Forward to billing'],['Verify insurance','Verify insurance']];
+const cv=document.getElementById('c'),host=cv.parentElement,tag=document.getElementById('tag'),opts=document.getElementById('opts');
+const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(34,1,.1,100);
+S.add(new THREE.AmbientLight(0xffffff,.8));const dl=new THREE.DirectionalLight(0xffffff,.8);dl.position.set(3,9,8);S.add(dl);
+const G=new THREE.Group();S.add(G);
+const WH=new THREE.Color(0xf2f2f2),DIM=new THREE.Color(0x5a5a5a),TEAL=new THREE.Color(0x3fd1b8),HUB=new THREE.Color(0x0c7866);
+const mkBox=(x,y,z,w,h,d,c)=>{const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshLambertMaterial({color:c}));m.position.set(x,y,z);G.add(m);return m};
+const chn=CH.map((_,i)=>mkBox(-5,.4,(i-1.5)*1.7,1.2,.8,1.2,WH));
+const hub=mkBox(0,.7,0,1.8,1.4,1.8,HUB);
+const act=AC.map((_,i)=>mkBox(5,.4,(i-2)*1.45,1.2,.8,1.1,DIM));
+const ehr=mkBox(8.2,1,0,1.4,2,2.2,DIM);
+function pipe(a,b){const dx=b.x-a.x,dz=b.z-a.z,l=Math.hypot(dx,dz);const m=new THREE.Mesh(new THREE.BoxGeometry(l,.1,.1),new THREE.MeshLambertMaterial({color:DIM}));m.position.set((a.x+b.x)/2,.15,(a.z+b.z)/2);m.rotation.y=-Math.atan2(dz,dx);G.add(m);return m}
+const pin=chn.map(c=>pipe(c.position,hub.position)),pout=act.map(a=>pipe(hub.position,a.position)),pe=act.map(a=>pipe(a.position,ehr.position));
+const pk=[];for(let i=0;i<4;i++){const m=new THREE.Mesh(new THREE.BoxGeometry(.3,.3,.3),new THREE.MeshLambertMaterial({color:TEAL}));G.add(m);pk.push({m,i,t:i*.25})}
+let sel=-1,rot=-.35,drag=false,lx=0,vis=false;
+function size(){const w=host.clientWidth,h=host.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.position.set(0,9.5,w/h<1?31:21);cam.lookAt(1.5,0,0);cam.updateProjectionMatrix()}
+size();addEventListener('resize',size);
+cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag){rot=Math.max(-1,Math.min(.6,rot+(e.clientX-lx)*.006));lx=e.clientX}});
+cv.addEventListener('pointerup',()=>drag=false);
+new IntersectionObserver(es=>vis=es[0].isIntersecting).observe(host);
+AC.forEach((a,i)=>{const b=document.createElement('button');b.type='button';b.textContent=a[0];b.setAttribute('aria-pressed','false');b.onclick=()=>{sel=i;[...opts.children].forEach((x,j)=>x.setAttribute('aria-pressed',String(j===i)));tag.innerHTML=a[0]+'<small>Every channel feeds one hub. The finished task is written back to your EHR.</small>'};opts.appendChild(b)});
+const clock=new THREE.Clock();let t0=0;
+function pos(p,i,t){const a=new THREE.Vector3();if(t<.4){const k=t/.4;a.lerpVectors(chn[i].position,hub.position,k)}else if(t<.8&&sel>=0){const k=(t-.4)/.4;a.lerpVectors(hub.position,act[sel].position,k)}else if(sel>=0){const k=(t-.8)/.2;a.lerpVectors(act[sel].position,ehr.position,k)}else a.copy(hub.position);return a}
+(function frame(){requestAnimationFrame(frame);if(!vis)return;const dt=Math.min(clock.getDelta(),.05);t0+=dt;const k=Math.min(1,dt*8);
+ G.rotation.y+=(rot-G.rotation.y)*.1;if(!drag&&!reduce&&sel<0)rot=-.35+Math.sin(t0*.3)*.25;
+ pin.forEach(p=>p.material.color.lerp(sel>=0?TEAL:DIM,k));
+ pout.forEach((p,i)=>p.material.color.lerp(i===sel?TEAL:DIM,k));pe.forEach((p,i)=>p.material.color.lerp(i===sel?TEAL:DIM,k));
+ act.forEach((a,i)=>a.material.color.lerp(i===sel?TEAL:DIM,k));ehr.material.color.lerp(sel>=0?TEAL:DIM,k);
+ pk.forEach(o=>{o.t=(o.t+dt*(reduce?0:.22))%1;const p=pos(o.m,o.i,o.t);o.m.position.copy(p).setY(.7);o.m.visible=sel>=0||o.t<.4});
+ R.render(S,cam)})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.e').forEach(el=>io.observe(el));
+</script>
+</body></html>
