@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AuxoAI, an unofficial sketch by Axlios Media</title>
+<meta name="description" content="Making AI work where the work happens. An unofficial sketch of AuxoAI by Axlios Media.">
+<style>
+@font-face{font-family:'Hanken Grotesk';font-weight:400;font-style:normal;font-display:swap;src:url(assets/HankenGrotesk-400.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-weight:500;font-style:normal;font-display:swap;src:url(assets/HankenGrotesk-500.woff2) format('woff2')}
+:root{--bg:#ecebe7;--surface:#e1dfd9;--ink:#38450f;--muted:#33400e;--accent:#38450f;--accent-ink:#ecebe7;--m:clamp(20px,3.4vw,48px);--axis:42%;--r:0px;
+--small:clamp(1rem,.95rem + .15vw,1.0625rem);--body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--head:clamp(2rem,1.3rem + 3.2vw,4rem)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 var(--body)/1.45 "Hanken Grotesk","Segoe UI",system-ui,sans-serif;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,svg{display:block;max-width:100%;height:auto}
+a{color:inherit}:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+h1,h2{font-weight:500;letter-spacing:-.05em;line-height:.95}
+.btn{display:inline-flex;align-items:center;height:56px;padding:0 28px;background:var(--accent);color:var(--accent-ink);font:500 var(--body)/1 "Hanken Grotesk",sans-serif;text-decoration:none;border:0;border-radius:var(--r);cursor:pointer}
+.btn:hover{background:#4a5a17}
+.btn.inv{background:var(--bg);color:var(--ink)}
+nav.top{position:absolute;z-index:5;left:var(--m);right:var(--m);top:18px;display:flex;justify-content:space-between;font-weight:500;font-size:var(--small)}
+nav.top a{text-decoration:none;background:var(--bg);padding:6px 12px}
+nav.top div{display:flex;gap:10px}
+/* masthead */
+.mast{display:grid;grid-template-columns:1.1fr .9fr 1fr 1.2fr;height:min(46svh,460px);min-height:260px}
+.mast figure{position:relative;overflow:hidden}
+.mast img{width:100%;height:100%;object-fit:cover}
+.mast figcaption{position:absolute;left:0;bottom:0;background:var(--bg);color:var(--ink);font-size:var(--small);padding:4px 10px}
+.title{padding:48px var(--m) 56px;display:grid;grid-template-columns:var(--axis) 1fr}
+.title .side{font-size:var(--small);color:var(--muted);padding-right:24px;align-self:end}
+.title h1{font-size:clamp(2.2rem,5.1vw,6rem)}
+.title p{font-size:var(--lead);max-width:36ch;margin-top:28px;line-height:1.35}
+.title .row{margin-top:32px}
+@media (max-width:800px){.mast{grid-template-columns:1fr 1fr;height:auto}.mast figure{height:150px}.title{grid-template-columns:1fr}.title .side{padding:0 0 20px}.title h1{font-size:9.4vw}.live h2{font-size:8.2vw!important}.stages h2{font-size:7vw!important}}
+/* live */
+.live{padding:clamp(70px,12vh,130px) var(--m);display:grid;grid-template-columns:var(--axis) 1fr;gap:0}
+.live .lh{padding-right:24px}
+.live h2{font-size:clamp(2.2rem,4.6vw,5rem);margin-bottom:24px}
+.lead{font-size:var(--lead);max-width:34ch;line-height:1.35;margin-bottom:28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{height:44px;padding:0 18px;border:2px solid var(--ink);background:transparent;color:var(--ink);font:500 var(--small)/1 "Hanken Grotesk",sans-serif;cursor:pointer;border-radius:var(--r)}
+.chip[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.board{display:grid;gap:4px}
+.rowb{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:20px;min-height:84px;padding:12px 22px;background:var(--surface)}
+.rowb h3{font:500 clamp(1.4rem,2.4vw,2.2rem)/1.1 "Hanken Grotesk",sans-serif;letter-spacing:-.03em}
+.st{padding:10px 16px;font-weight:500;font-size:var(--small);background:#c9c6bb;color:var(--ink);white-space:nowrap;min-width:12.5em;text-align:center}
+.rowb.on .st{background:var(--ink);color:var(--bg)}
+.rowb .btn{height:44px;font-size:var(--small);padding:0 18px}
+.rowb.on .btn{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.gwrap{background:var(--ink);color:var(--bg);margin-top:4px;padding:clamp(18px,3vw,32px)}
+.gwrap svg{width:100%}
+.gwrap text{font:500 26px "Hanken Grotesk",sans-serif;fill:var(--bg)}
+.gn circle{fill:var(--ink);stroke:var(--bg);stroke-width:3;transition:fill .4s}
+.gn.on circle{fill:var(--bg)}
+.gn text{fill:var(--bg)}.gn.on text{fill:var(--ink)}
+.ge{stroke:var(--bg);stroke-width:3;fill:none;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset .8s}
+.ge.on{stroke-dashoffset:0}
+.gcap{font-size:var(--small);margin-top:12px;min-height:1.5em}
+.note{font-size:var(--small);color:var(--muted);margin-top:16px;max-width:70ch}
+@media (max-width:900px){.live{grid-template-columns:minmax(0,1fr)}.live .lh{padding:0 0 24px}.rowb{grid-template-columns:minmax(0,1fr) auto;row-gap:10px}.st{grid-column:1/2;min-width:0;text-align:left}.rowb .btn{grid-column:2;grid-row:1/3}}
+/* quote colour page */
+.quote{background:var(--ink);color:var(--bg);padding:clamp(70px,12vh,130px) var(--m);display:grid;grid-template-columns:var(--axis) 1fr}
+.quote .side{font-size:var(--small);padding-right:24px;align-self:start}
+.quote blockquote{font:500 clamp(1.6rem,3vw,2.9rem)/1.15 "Hanken Grotesk",sans-serif;letter-spacing:-.03em;max-width:30ch}
+.quote cite{display:block;font-style:normal;font-size:var(--small);margin-top:24px}
+@media (max-width:800px){.quote{grid-template-columns:1fr}.quote .side{padding:0 0 20px}}
+/* stages */
+.stages{padding:clamp(70px,12vh,130px) var(--m)}
+.stages h2{font-size:clamp(2.2rem,5.6vw,6rem);margin-bottom:36px}
+.bar{display:flex;gap:6px;height:min(40svh,320px);min-height:220px}
+.seg{flex:1 1 0;border:0;text-align:left;padding:20px;cursor:pointer;font:500 var(--lead)/1.1 "Hanken Grotesk",sans-serif;letter-spacing:-.03em;color:var(--ink);transition:flex-grow .5s;background:#c9c6bb;border-radius:0}
+.seg:nth-child(2){background:#a9b07f}.seg:nth-child(3){background:var(--ink);color:var(--bg)}
+.seg[aria-pressed=true]{flex-grow:2.2}
+.seg span{display:block;font-weight:400;font-size:var(--body);letter-spacing:0;margin-top:14px;max-width:30ch;line-height:1.35}
+.seg span{opacity:0;max-height:0;overflow:hidden;transition:opacity .4s,max-height .4s}
+.seg[aria-pressed=true] span{opacity:1;max-height:200px}
+@media (max-width:800px){.bar{flex-direction:column;height:auto}.seg{min-height:96px}}
+/* facts */
+.facts{padding:0 var(--m) clamp(50px,8vh,90px)}
+.facts .g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+.fact{background:var(--surface);padding:clamp(20px,3vw,36px);min-height:260px;display:flex;flex-direction:column}
+.fact b{font:500 clamp(3.4rem,8vw,8rem)/.9 "Hanken Grotesk",sans-serif;letter-spacing:-.05em;margin-bottom:auto;padding-bottom:30px}
+.fact p{font-size:var(--body);max-width:26ch}
+.fact small{font-size:var(--small);color:var(--muted)}
+.fact:nth-child(2){background:#a9b07f}
+@media (max-width:800px){.facts .g{grid-template-columns:1fr}.fact{min-height:200px}}
+.press{margin-top:30px;display:grid;grid-template-columns:var(--axis) 1fr}
+.press div:last-child p{max-width:46ch;margin-bottom:14px}
+@media (max-width:800px){.press{grid-template-columns:1fr}.press>div:first-child{margin-bottom:14px}}
+/* cta */
+.cta{background:var(--ink);color:var(--bg);min-height:min(90svh,780px);padding:clamp(60px,10vh,110px) var(--m) 40px;display:flex;flex-direction:column;justify-content:space-between}
+.cta h2{font-size:clamp(3.4rem,10.5vw,11rem);line-height:.92}
+.cta .bot{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,4fr) minmax(0,3fr);gap:24px;align-items:end}
+.cta .bot p{font-size:var(--lead);line-height:1.3}
+.cta .bot .btn{justify-self:end}
+@media (max-width:800px){.cta .bot{grid-template-columns:1fr;display:flex;flex-direction:column-reverse;gap:28px;align-items:stretch}.cta .bot .btn{justify-self:stretch;justify-content:center}.cta .bot div:nth-child(2){display:none}}
+/* footer */
+.fo{background:var(--ink);color:var(--bg);padding:96px var(--m) 28px;border-top:2px solid #5a6a22}
+.fo .wm{font:500 clamp(4rem,19vw,19rem)/1 "Hanken Grotesk",sans-serif;letter-spacing:-.06em;margin-bottom:30px;white-space:nowrap}
+.fo .cols{display:grid;grid-template-columns:var(--axis) 1fr;gap:0}
+.fo ul{list-style:none;padding:0;font-size:clamp(1.3rem,2.4vw,2.2rem);line-height:1.25;letter-spacing:-.02em}
+.fo .r{display:grid;grid-template-columns:1fr 1fr;gap:20px;font-size:var(--small)}
+.fo .r p+p{margin-top:8px}
+.fo .legal{margin-top:36px;font-size:var(--small);max-width:70ch}
+@media (max-width:800px){.fo .cols{grid-template-columns:1fr;gap:24px}.fo .r{grid-template-columns:1fr}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media (max-width:700px){.gwrap text{font-size:25px!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style></head><body>
+<nav class="top" aria-label="Main"><a href="#">AuxoAI</a><div><a href="#live">Context</a><a href="#how">How</a><a href="mailto:info@auxoai.com">Get in touch</a></div></nav>
+<header>
+ <div class="mast" aria-label="Places AuxoAI works from">
+  <figure><img src="assets/mumbai-skyline-during-monsoon-cropped.jpg" alt="Mumbai skyline during the monsoon" width="1400" height="590"></figure>
+  <figure><img src="assets/vidhana-soudha-le.jpg" alt="Vidhana Soudha in Bengaluru at night" width="1400" height="934"></figure>
+  <figure><img src="assets/iconic-charminar-in-hyderabad-india.jpg" alt="Charminar in Hyderabad" width="1400" height="1050"></figure>
+  <figure><img src="assets/pano-of-golden-gate-bridge-and-san.jpg" alt="San Francisco Bay seen from Twin Peaks" width="1400" height="456"></figure>
+ </div>
+ <div class="title">
+  <div class="side">San Francisco Bay Area, with hubs in Mumbai, Bengaluru and Hyderabad.</div>
+  <div><h1>Making AI work where the work happens</h1>
+  <p>AuxoAI pairs forward deployed engineers with agentic AI to deploy production grade systems for G2000 enterprises. Strategy to production in weeks.</p>
+  <div class="row"><a class="btn" href="#live">See how the knowledge gets captured</a></div></div>
+ </div>
+</header>
+
+<section class="live" id="live">
+ <div class="lh"><h2>Where does it live?</h2>
+  <p class="lead">The knowledge that matters most rarely lives in a system. Pick a function, then capture each piece.</p>
+  <div class="chips" id="chips"><button class="chip" aria-pressed="true">Sales</button><button class="chip" aria-pressed="false">Finance</button><button class="chip" aria-pressed="false">HR</button><button class="chip" aria-pressed="false">Operations</button><button class="chip" aria-pressed="false">IT</button></div></div>
+ <div>
+  <div class="board" id="board" data-ui>
+   <div class="rowb" data-k="0"><h3>How decisions get made</h3><span class="st">Not in any system</span><button class="btn">Capture</button></div>
+   <div class="rowb" data-k="1"><h3>Exceptions handled</h3><span class="st">Not in any system</span><button class="btn">Capture</button></div>
+   <div class="rowb" data-k="2"><h3>Functions connected</h3><span class="st">Not in any system</span><button class="btn">Capture</button></div>
+  </div>
+  <div class="gwrap" data-ui>
+   <svg viewBox="0 0 800 460" role="img" aria-label="Context graph being built from three pieces of knowledge">
+    <path class="ge" id="ge0" pathLength="1" d="M400 215 L140 110"/><path class="ge" id="ge1" pathLength="1" d="M400 215 L660 110"/><path class="ge" id="ge2" pathLength="1" d="M400 215 L400 375"/>
+    <g class="gn on" id="gc"><circle cx="400" cy="215" r="80"/><text id="gct" x="400" y="223" text-anchor="middle" style="fill:var(--ink)">Sales</text></g>
+    <g class="gn" id="g0"><circle cx="140" cy="110" r="74"/><text x="140" y="118" text-anchor="middle">Decisions</text></g>
+    <g class="gn" id="g1"><circle cx="660" cy="110" r="74"/><text x="660" y="118" text-anchor="middle">Exceptions</text></g>
+    <g class="gn" id="g2"><circle cx="400" cy="375" r="68"/><text x="400" y="383" text-anchor="middle">Functions</text></g>
+   </svg>
+   <p class="gcap" id="gcap" aria-live="polite">Nothing captured yet.</p>
+  </div>
+  <p class="note">A sketch made for this concept from the wording on auxoai.com. It is not AuxoAI output or the Damia product.</p>
+ </div>
+</section>
+
+<section class="quote">
+ <div class="side">From the Damia page</div>
+ <div><blockquote>The knowledge that matters most rarely lives in a system.</blockquote><cite>auxoai.com/damia, wording credited to AuxoAI</cite></div>
+</section>
+
+<section class="stages" id="how">
+ <h2>Strategy and engineering are one motion</h2>
+ <div class="bar" id="bar" data-ui>
+  <button class="seg" aria-pressed="true">Discovery<span>Discovery informs architecture.</span></button>
+  <button class="seg" aria-pressed="false">Architecture<span>Architecture informs engineering.</span></button>
+  <button class="seg" aria-pressed="false">Production<span>Production telemetry informs iteration.</span></button>
+ </div>
+ <p class="note">Segments are equal because AuxoAI does not publish stage durations. Wording from auxoai.com/company.</p>
+</section>
+
+<section class="facts">
+ <div class="g">
+  <div class="fact"><b>$20.7M</b><p>Series A, led by NTTVC (Inc42, 21 October 2026).</p></div>
+  <div class="fact"><b>40+</b><p>Clients over three years, across manufacturing, healthcare, consumer goods and telecom, as the company says (Inc42, 21 October 2026).</p></div>
+  <div class="fact"><b>~70%</b><p>Faster time to value, as stated on the Damia page (auxoai.com/damia).</p></div>
+ </div>
+ <div class="press"><div class="side" style="font-size:var(--small);color:var(--muted)">In the news</div>
+  <div><p>Founded in 2023, AuxoAI plans to use the new money to deepen ecosystem partnerships, grow its team of forward deployed engineers, and invest in its technology, including Damia, its &ldquo;AI workbench for enterprise delivery&rdquo;.</p>
+  <p><a href="https://inc42.com/buzz/enterprise-ai-startup-auxoai-nets-20-7m-to-strengthen-its-fde-team/">Read the Inc42 report</a></p></div></div>
+</section>
+
+<section class="cta">
+ <h2>AI made real.</h2>
+ <div class="bot"><p>Make AI real for enterprises, not by accumulating pilots, but by redesigning how decisions are made and how work flows.</p><div></div><a class="btn inv" href="mailto:info@auxoai.com">Email the team at info@auxoai.com</a></div>
+</section>
+
+<footer class="fo">
+ <div class="wm" aria-label="AuxoAI">AuxoAI</div>
+ <div class="cols">
+  <ul><li><a href="mailto:info@auxoai.com">info@auxoai.com</a></li><li>Milpitas, California</li><li>Mumbai, Bengaluru, Hyderabad, Gurgaon</li></ul>
+  <div class="r"><div><p>680 N. McCarthy Boulevard, Suite 220, Milpitas, CA</p><p><a href="https://auxoai.com">auxoai.com</a></p></div>
+  <div><p>Unofficial sketch by Axlios Media, not the company&rsquo;s official site.</p><p>Wording credited to auxoai.com and Inc42.</p></div></div>
+ </div>
+ <p class="legal">Pictures via Wikimedia Commons, all CC BY SA 4.0: &ldquo;Mumbai Skyline during monsoon (cropped)&rdquo; by Aj777x; &ldquo;Vidhana Soudha LE&rdquo; by DeepanjanGhosh; &ldquo;Iconic Charminar in Hyderabad, India&rdquo; by Ravi Dwivedi; &ldquo;Pano of Golden Gate Bridge and San Francisco from Twin Peaks&rdquo; by Brocken Inaglory.</p>
+</footer>
+<script>
+const $=s=>document.querySelector(s);let cur=0;
+const fn=['Sales','Finance','HR','Operations','IT'];const D=fn.map(()=>[0,0,0]);
+function render(){const d=D[cur],n=d[0]+d[1]+d[2];$('#gct').textContent=fn[cur];
+ document.querySelectorAll('.rowb').forEach(r=>{const k=+r.dataset.k,on=!!d[k];r.classList.toggle('on',on);r.querySelector('.st').textContent=on?'In the context graph':'Not in any system';r.querySelector('.btn').textContent=on?'Undo':'Capture';$('#g'+k).classList.toggle('on',on);$('#ge'+k).classList.toggle('on',on)});
+ $('#gcap').textContent=n?(n+' of 3 captured into the '+fn[cur]+' context graph.'+(n===3?' Structured, governed, ready to reuse.':'')):'Nothing captured yet for '+fn[cur]+'.'}
+document.querySelectorAll('#chips .chip').forEach((b,i)=>b.onclick=()=>{cur=i;document.querySelectorAll('#chips .chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render()});
+document.querySelectorAll('.rowb').forEach(r=>r.querySelector('.btn').onclick=()=>{const k=+r.dataset.k;D[cur][k]=D[cur][k]?0:1;render()});
+document.querySelectorAll('.seg').forEach(s=>s.onclick=()=>document.querySelectorAll('.seg').forEach(x=>x.setAttribute('aria-pressed',x===s)));
+setTimeout(()=>{if(!D[0][0]){D[0][0]=1;render()}},900);
+if(!/still/.test(location.search)){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.live h2,.board,.gwrap,.quote blockquote,.stages h2,.bar,.fact,.cta h2').forEach(el=>{el.classList.add('rv');io.observe(el)})}
+</script></body></html>
