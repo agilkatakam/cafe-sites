@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clueso: agentic video creation (unofficial concept)</title>
+<meta name="description" content="Unofficial concept homepage for Clueso using wording from clueso.io. By Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f0e8;--ink:#0e1230;--muted:#4a4f6b;--blue:#2326d8;--accent:#ffd23f;--accent-ink:#0e1230;--m:clamp(16px,2.4vw,32px);
+--f:'STIX Two Text',Georgia,serif;--small:clamp(.875rem,.85rem + .1vw,.9375rem);--body:clamp(1.125rem,1.05rem + .3vw,1.3125rem);--lead:clamp(1.375rem,1.1rem + .9vw,1.875rem);--head:clamp(2.25rem,1.3rem + 3.6vw,4.5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:400 var(--body)/1.45 var(--f);overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-weight:400;letter-spacing:-.026em;line-height:1.05}
+h1{font-size:clamp(2.5rem,1.2rem + 5.4vw,6.25rem)}h2{font-size:var(--head)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;height:52px;padding:0 26px;background:var(--accent);color:var(--accent-ink);font:600 1.125rem/1 var(--f);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:#fff}.btn:active{transform:scale(.97)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:20px var(--m);background:var(--blue);color:#fff}
+.nav a.wm{text-decoration:none;font-size:1.75rem;font-style:italic;letter-spacing:-.03em}
+.mast{position:relative;height:clamp(180px,26vw,360px);overflow:hidden;background:var(--blue)}
+.mast img{width:100%;height:100%;object-fit:cover;animation:fade 9s ease-in-out infinite alternate}
+@keyframes fade{from{opacity:.55}to{opacity:1}}
+.ax{display:grid;grid-template-columns:42% 1fr;column-gap:0;padding:0 var(--m)}
+.ax>.side{padding:clamp(24px,4vw,56px) clamp(16px,3vw,48px) 0 0;color:var(--muted);font-size:var(--small);font-style:italic}
+.ax>.main{padding:clamp(24px,4vw,56px) 0}
+.hero h1{margin-bottom:28px}.hero p.l{font-size:var(--lead);max-width:30ch;margin-bottom:32px}
+.cards{display:flex;gap:12px;margin:0 0 -56px;position:relative;z-index:2;justify-content:flex-end;padding:0 var(--m)}
+.card{background:var(--accent);color:var(--accent-ink);padding:20px 24px;width:min(300px,44%);font-size:1.0625rem}
+.card.b{background:#fff}.card b{display:block;font-weight:600;margin-bottom:6px}
+section{padding:clamp(64px,8vw,120px) 0}
+.blk{background:var(--blue);color:#fff}.blk .side{color:#d7d9ff}
+.rows{border:0}
+.row{display:grid;grid-template-columns:1fr;padding:22px 0;transition:padding-left .3s}
+.row:hover{padding-left:12px}
+.row h3{font-size:var(--lead);font-weight:600;letter-spacing:-.01em}.row p{max-width:44ch}
+.pin{position:sticky;top:24px;align-self:start}
+.lab{display:grid;gap:28px}
+.cat{background:#fff;color:var(--ink);padding:20px 24px}
+.cat h3{font-size:1.125rem;font-weight:600;font-style:italic;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips button{font:400 1.0625rem/1 var(--f);padding:12px 18px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.chips button:hover{transform:translateY(-2px)}
+.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.out{background:var(--accent);color:var(--accent-ink);padding:24px;transition:background .3s}
+.out h3{font-size:var(--lead);font-weight:600;margin-bottom:10px}
+.out .st{font-style:italic}
+.strip{display:flex;height:44px;margin-top:16px;background:#fff;gap:3px}
+.strip i{flex:1;background:var(--blue);transform-origin:left;animation:grow .5s both}
+@keyframes grow{from{transform:scaleX(0)}}
+.call{display:grid;gap:0}.call .q{font-size:var(--lead);font-style:italic;margin-top:36px}.call .a{max-width:46ch;margin-top:6px}
+.faq details{padding:22px 0}
+.faq summary{list-style:none;cursor:pointer;font-size:var(--lead);display:flex;justify-content:space-between;gap:16px;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}.faq summary i{font-style:normal;color:var(--blue);transition:transform .25s}
+.faq details[open] summary i{transform:rotate(45deg)}.faq details p{margin-top:10px;max-width:46ch}
+.inv{background:var(--accent);color:var(--accent-ink);text-align:left}
+.inv h2{max-width:14ch}
+.inv .btn{background:var(--ink);color:#fff}.inv .btn:hover{background:var(--blue)}
+footer{background:var(--ink);color:#fff;padding:clamp(48px,6vw,96px) var(--m) 32px}
+footer .name{font-size:clamp(4rem,16vw,14rem);font-style:italic;letter-spacing:-.04em;line-height:.9}
+footer .pl{display:flex;gap:24px;flex-wrap:wrap;margin-top:24px}
+footer .fine{margin-top:40px;font-size:var(--small);color:#c8cae6;max-width:70ch}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.ax{grid-template-columns:1fr}.ax>.side{padding:24px 0 0}.pin{position:static}.cards{margin-bottom:-40px}.ax>.side img,.hs{display:none}.card{width:48%;font-size:1rem;padding:14px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<div class="nav"><a class="wm" href="#top">Clueso</a><a class="btn" href="https://www.clueso.io">Visit clueso.io</a></div>
+<div class="mast" id="top"><img src="img/c1.jpg" alt="Open sky at dusk" fetchpriority="high"></div>
+<section class="hero" style="padding-top:24px"><div class="ax"><div class="side hs"><img src="img/c3.jpg" alt="Soft evening sky" style="aspect-ratio:3/4;object-fit:cover;width:70%;margin-bottom:12px">Wording on this page is from clueso.io.</div><div class="main"><h1>Agentic video creation</h1><p class="l">A platform for every team. Clueso plans, creates, edits, and keeps every video up to date.</p><a class="btn" href="#lab">Make your best videos repeatable</a></div></div></section>
+
+<div class="cards"><div class="card"><b>Your best video</b>Product launch</div><div class="card b"><b>Product launch clueprint</b>Story, visuals, motion, sound</div></div>
+<section class="blk" id="lab" aria-labelledby="lh"><div class="ax"><div class="side pin"><p>Every great video is a set of decisions. Clueprints capture how it tells its story, how it looks, how it moves, and how it sounds, then make those decisions reusable.</p></div>
+<div class="main"><h2 id="lh" class="rv" style="margin-bottom:32px">Define the standard once.</h2>
+<div class="lab"><div class="cat"><h3>Story</h3><div class="chips" data-g="Story"><button aria-pressed="true">Bold hook</button><button aria-pressed="true">3 benefits</button><button aria-pressed="true">Product CTA</button></div></div>
+<div class="cat"><h3>Visuals</h3><div class="chips" data-g="Visuals"><button aria-pressed="true">Black canvas</button><button aria-pressed="true">SF Pro</button><button aria-pressed="true">Close-ups</button></div></div>
+<div class="cat"><h3>Motion</h3><div class="chips" data-g="Motion"><button aria-pressed="true">Fast pacing</button><button aria-pressed="true">Hard cuts</button><button aria-pressed="true">Smooth zooms</button></div></div>
+<div class="cat"><h3>Sound</h3><div class="chips" data-g="Sound"><button aria-pressed="true">Confident voice</button><button aria-pressed="true">Calm music</button><button aria-pressed="true">Subtle SFX</button></div></div>
+<div class="out" aria-live="polite"><h3>Product launch clueprint</h3><div class="st" id="sum"></div><div class="strip" id="strip"></div></div></div></div></div></section>
+
+<section aria-labelledby="fh"><div class="ax"><div class="side pin">Create marketing videos, product demos, how-tos, training, explainers, and more. No editing or design experience required.</div><div class="main rows"><h2 id="fh" class="rv" style="margin-bottom:24px">Start however you like.</h2>
+<div class="row rv"><h3>Upload what you already have</h3><p>Start with a rough recording, slide deck, document or screenshots. Clueso automatically applies the right workflow to turn them into a finished video.</p></div>
+<div class="row rv"><h3>Record the screen yourself</h3><p>Walk through your product with the Clueso browser extension. Speak naturally and leave the script, voiceover, and polish to Clueso.</p></div>
+<div class="row rv"><h3>Let the agent record for you</h3><p>Tell the browser agent what to demonstrate. It navigates your product and captures a clean walkthrough for you.</p></div>
+<div class="row rv"><h3>Prompt your ideas to make videos</h3><p>Describe your vision. Add optional reference images, videos or documents. Clueso asks about the audience, goal and style, then creates your first draft.</p></div></div></div></section>
+
+<section class="blk" aria-labelledby="ch"><div class="ax"><div class="side">Connect Clueso to Claude, ChatGPT, Cursor, or any other AI client to create and edit videos.</div><div class="main call"><h2 id="ch" class="rv">Your video is ready. So is your documentation.</h2><p class="q">Prompt</p><p class="a">Clueso turns the same content into a step by step guide with screenshots and instructions, ready to review and publish.</p><img class="rv" src="img/c2.jpg" alt="Clouds above a quiet horizon" loading="lazy" style="margin-top:36px;aspect-ratio:16/9;object-fit:cover;width:100%"></div></div></section>
+
+<section class="faq" aria-labelledby="qh"><div class="ax"><div class="side"><img src="img/c4.jpg" alt="Pale clouds over water" loading="lazy" style="aspect-ratio:3/4;object-fit:cover;width:70%;margin-bottom:12px">Questions, answered with the words on clueso.io.</div><div class="main"><h2 id="qh" class="rv" style="margin-bottom:16px">Let the agent edit. Take control if you want.</h2>
+<details class="rv" open><summary>What can I edit? <i aria-hidden="true">+</i></summary><p>Everything you need to edit like a pro. Ask the agent to make changes for you, or fine-tune every detail yourself.</p></details>
+<details class="rv"><summary>Which languages? <i aria-hidden="true">+</i></summary><p>Translate voiceovers, on-screen text, and captions into 150+ languages.</p></details>
+<details class="rv"><summary>What about voice and presenters? <i aria-hidden="true">+</i></summary><p>Generate natural sounding voiceovers that sync precisely with your video. Add realistic AI presenters with customizable looks, styles, and voices.</p></details>
+<details class="rv"><summary>Where does review happen? <i aria-hidden="true">+</i></summary><p>Comment on the canvas or timeline, share feedback, and manage reviews and approvals in one place.</p></details></div></div></section>
+
+<section class="inv"><div class="ax"><div class="side" style="color:#4a3b00">Agentic video creation platform for every team.</div><div class="main"><h2 class="rv">Define the standard once.</h2><p style="margin:20px 0 28px;max-width:34ch">Define the standard once. Apply it to every video that needs to be consistent.</p><a class="btn" href="https://www.clueso.io">Go to clueso.io</a></div></div></section>
+
+<footer><div class="name">Clueso</div><div class="pl"><a href="https://www.clueso.io">clueso.io</a><a href="https://inc42.com/buzz/clueso-bags-10-mn-to-automate-enterprise-video-creation-with-ai-agents/">Inc42 on the Series A</a></div><p class="fine">Unofficial concept by Axlios Media, not affiliated with Clueso. Wording from clueso.io. Photos via Unsplash.</p></footer>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+function upd(){var on=[],sm=[];document.querySelectorAll('.chips').forEach(function(g){var a=[];g.querySelectorAll('button').forEach(function(b){if(b.getAttribute('aria-pressed')==='true'){a.push(b.textContent)}});if(a.length)sm.push(g.dataset.g+': '+a.join(', '));on=on.concat(a)});
+document.getElementById('sum').textContent=sm.join('. ')||'Nothing captured yet.';
+var s=document.getElementById('strip');s.innerHTML='';on.forEach(function(){s.appendChild(document.createElement('i'))})}
+document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');upd()})});upd();
+</script></body></html>

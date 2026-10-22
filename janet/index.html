@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Janet AI: more hands to make it happen (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Janet AI, with a ticket that plans, iterates and edits itself. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e5e1d8;--surface:#dad5ca;--ink:#2a1d17;--muted:#3f322a;--accent:#456f3a;--accent-ink:#fff;--m:20px;
+--step-small:clamp(1rem,.95rem + .1vw,1.0625rem);--step-body:clamp(1.125rem,1.05rem + .3vw,1.3125rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'EB Garamond',Georgia,serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-underline-offset:4px}
+h1,h2{font-weight:400;letter-spacing:-.01em;line-height:1.08}
+h1{font-size:clamp(2.4rem,6.4vw,6rem);max-width:14ch}
+h2{font-size:clamp(1.9rem,2.4vw + 1rem,2.6rem)}
+.col{margin:0 auto;width:min(600px,calc(100vw - 2*var(--m)))}
+.wide{width:min(740px,calc(100vw - 2*var(--m)))}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:4px;background:var(--accent);color:var(--accent-ink);font:500 1.125rem/1 'EB Garamond',serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn:active{transform:scale(.98)}
+.btn.q{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+nav{display:flex;align-items:center;justify-content:space-between;height:76px;width:min(740px,calc(100vw - 2*var(--m)));margin:0 auto;font-size:var(--step-small)}
+nav .mark{font-size:1.625rem;font-style:italic;text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;font-size:1rem}
+nav ul a{text-decoration:none}
+@media(max-width:700px){nav ul{display:none}}
+.hero{padding-top:clamp(64px,10vw,150px)}
+.hero p{margin-top:28px;max-width:32ch;font-size:var(--step-lead);line-height:1.3}
+.hero .act{margin-top:28px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.sec{margin-top:clamp(96px,11vw,150px)}
+.sec p{margin-top:20px}
+.sec figure{margin-top:36px}
+figure img{display:block;width:100%;height:auto;filter:sepia(.35) contrast(.95)}
+figcaption{font-size:var(--step-small);color:#4a3b32;margin-top:10px;line-height:1.4}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .8s,transform .8s}.rv.v{opacity:1;transform:none}
+.nojs .rv{opacity:1;transform:none}
+/* demo */
+.field{background:var(--accent);padding:28px;color:#fff}
+.field>p.say{margin:0 0 20px;color:#fff;font-size:var(--step-lead);line-height:1.25}
+.tk{background:#ebe9e4;color:var(--ink);padding:22px;font-size:1.0625rem;line-height:1.45}
+.tk h3{font-weight:500;font-size:1.375rem;line-height:1.2}
+.tk .meta{color:#4a3b32;margin-top:4px}
+.modes{display:flex;gap:8px;margin:18px 0 14px;flex-wrap:wrap}
+.modes button{font:500 1.0625rem/1 'EB Garamond',serif;padding:12px 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;min-height:44px}
+.modes button[aria-selected=true]{background:var(--ink);color:#ebe9e4}
+.stage{min-height:210px}
+.stage p{margin:0 0 10px}
+.stage .def{font-style:italic;color:#4a3b32}
+.plan li{margin-left:20px;margin-bottom:6px}
+.ask{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.ask button,.pr button{font:500 1.0625rem/1 'EB Garamond',serif;padding:12px 16px;border:1px solid var(--ink);background:#ebe9e4;color:var(--ink);cursor:pointer;min-height:44px}
+.ask button:hover,.ask button[aria-pressed=true]{background:var(--ink);color:#ebe9e4}
+.pr{background:var(--surface);padding:14px 16px;margin-top:6px}
+.pr b{font-weight:500}
+.pr button{margin-top:12px;background:var(--ink);color:#ebe9e4}
+.runrow{display:flex;gap:14px;align-items:center;margin-top:16px;flex-wrap:wrap}
+.runrow .btn{background:var(--ink)}
+.runrow span{color:#4a3b32;font-size:var(--step-small)}
+.note{margin-top:14px;font-size:var(--step-small);color:#fff;line-height:1.4}
+/* steps */
+.steps{list-style:none;margin-top:36px}
+.steps li{display:flex;gap:24px;padding:14px 0}
+.steps b{font-weight:500;min-width:9.5ch}
+.steps div strong{font-weight:500;display:block}
+blockquote{margin-top:24px;font-size:var(--step-lead);line-height:1.3}
+.cta{margin-top:12vw;margin-bottom:10vw}
+.cta p{font-size:1.375rem;max-width:34ch;margin:0}
+.cta .act{margin-top:24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+footer{width:min(740px,calc(100vw - 2*var(--m)));margin:0 auto;padding:0 0 40px;font-size:var(--step-small);line-height:1.5;color:#4a3b32}
+footer .line{max-width:70ch}
+footer .cr{margin-top:18px;max-width:90ch}
+@media(max-width:700px){.cta{margin-top:20vw;margin-bottom:16vw}.field{padding:18px}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="nojs">
+<nav>
+  <a class="mark" href="#top">Janet</a>
+  <ul><li><a href="#run">Code Runs</a></li><li><a href="#context">Context</a></li><li><a href="#start">First 46 days</a></li></ul>
+  <a class="btn q" href="mailto:support@janet.ai" style="min-height:44px">Book a call</a>
+</nav>
+<main id="top">
+<section class="hero col">
+  <h1>More hands to make it happen.</h1>
+  <p class="lead">More ways to grow. We build and deploy custom agents tailored to your team’s workflows and business outcomes.</p>
+  <div class="act"><a class="btn" href="#run">Watch a ticket close itself</a><a href="mailto:support@janet.ai">support@janet.ai</a></div>
+</section>
+
+<section class="sec" id="run" aria-labelledby="h-run">
+  <div class="col"><h2 id="h-run" class="rv">Now your tickets can close themselves.</h2></div>
+  <div class="col wide rv" style="margin-top:36px">
+    <div class="field">
+      <p class="say">Code Runs has three modes. Press run and take the second one yourself.</p>
+      <div class="tk" data-ui>
+        <h3>Retry failed exports</h3>
+        <div class="meta">Example ticket for this demo. Not a real customer's work.</div>
+        <div class="modes" role="tablist" aria-label="Code Runs modes">
+          <button role="tab" aria-selected="true" data-m="0">1. Plan</button>
+          <button role="tab" aria-selected="false" data-m="1">2. Iterate</button>
+          <button role="tab" aria-selected="false" data-m="2">3. Edit</button>
+        </div>
+        <div class="stage" id="stage" aria-live="polite"></div>
+        <div class="runrow"><button class="btn" id="run-btn" type="button">Run</button><span id="status">Waiting to start</span></div>
+      </div>
+      <p class="note">The three modes and their descriptions are Janet's, from their Code Runs post of June 22, 2026. The ticket, the plan and the question are invented for this demo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec col" id="context" aria-labelledby="h-ctx">
+  <h2 id="h-ctx" class="rv">Good work starts with context.</h2>
+  <p class="rv">The conversation. The customer history. The detail in a document. Janet connects what your company knows and carries it into the next workflow.</p>
+  <figure class="rv"><img src="assets/wac-telephone-switchboard-operators.jpg" width="1920" height="1476" alt="Women in headsets seated at a long telephone switchboard" loading="lazy"><figcaption>Switchboard operators, 1940s. A picture of the idea, not Janet.</figcaption></figure>
+</section>
+
+<section class="sec col" aria-labelledby="h-call">
+  <h2 id="h-call" class="rv">More momentum. Still your call.</h2>
+  <p class="rv">Let routine work run. Stay close to the decisions that need you. Your custom dashboard puts progress, results, and approvals in one place.</p>
+  <figure class="rv"><img src="assets/telephone-operators-at-weiss-collection.jpg" width="1552" height="1000" alt="Five operators in a row at a telephone exchange" loading="lazy"><figcaption>A row of operators at an exchange. Many hands, one board.</figcaption></figure>
+</section>
+
+<section class="sec col" id="start" aria-labelledby="h-start">
+  <h2 id="h-start" class="rv">Your next chapter starts with a conversation.</h2>
+  <ol class="steps rv">
+    <li><b>Day 0</b><div><strong>Start with your goals</strong>We choose the workflows that matter to your business.</div></li>
+    <li><b>Days 1–7</b><div><strong>Meet your Janet</strong>We connect your tools and build your agent and dashboard.</div></li>
+    <li><b>Days 8–45</b><div><strong>Make it your own</strong>Weekly check-ins help us refine the work with your team.</div></li>
+    <li><b>Day 46 onwards</b><div><strong>Keep moving forward</strong>Janet works around the clock. Our team stays close.</div></li>
+  </ol>
+  <figure class="rv"><img src="assets/women-take-over-the-operation-of-some.jpg" width="1920" height="1546" alt="Workers around a huge hydraulic press in a factory hall" loading="lazy"><figcaption>Day and night shifts at a press, 1942. Janet's version runs around the clock too.</figcaption></figure>
+</section>
+
+<section class="sec col" aria-labelledby="h-no">
+  <h2 id="h-no" class="rv">No more checking in about details you already discussed.</h2>
+  <blockquote class="rv">Janet's own words for what Code Runs gives you: 24/7 autonomous context capture, automatic planning of ticket resolutions, and your JanetClaw understanding your preferences and judgement before handling coding tasks on its own.</blockquote>
+  <figure class="rv"><img src="assets/wisconsin-bell-telephone-company-switchboard.jpg" width="1920" height="1118" alt="A man seated at a large switchboard console with dials and jacks" loading="lazy"><figcaption>One console, one person watching it. Not Janet.</figcaption></figure>
+</section>
+
+<section class="cta col">
+  <p>Tell us the workflow you wish ran itself, and we will start from there.</p>
+  <div class="act"><a class="btn" href="mailto:support@janet.ai">Book a call</a><a href="https://janet.ai">janet.ai</a></div>
+</section>
+</main>
+<footer>
+  <p class="line">An unofficial concept by Axlios Media, not affiliated with Janet AI. Wording credited to janet.ai and to Janet AI's Code Runs post (June 22, 2026). Built as a pitch. Nothing here is Janet's own site, product or claim.</p>
+  <p class="cr">Pictures, none of them Janet's: “WAC telephone switchboard operators” by PhotosNormandie, CC BY-SA 2.0, via <a href="https://commons.wikimedia.org/w/index.php?curid=131249837">Wikimedia Commons</a>; “Telephone operators at Weiss Collection” by Anamosa Library and Learning Center, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/w/index.php?curid=101987184">Wikimedia Commons</a>; “Wisconsin Bell Telephone Company Switchboard” by Gary Langebartels / FortepanIowa, CC BY-SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Wisconsin_Bell_Telephone_Company_Switchboard.jpg">Wikimedia Commons</a>; “Women take over the operation of some of the heaviest machine tools at the Inglewood, Calif., plant of North American Aviation” (NARA 195490), public domain, via <a href="https://commons.wikimedia.org/wiki/File:Women_take_over_the_operation_of_some_of_the_heaviest_machine_tools_at_the_Inglewood,_Calif.,_plant_of_North_American..._-_NARA_-_195490.jpg">Wikimedia Commons</a>. Pictures are warmed with a sepia filter. <a href="https://axliosmedia.com">axliosmedia.com</a></p>
+</footer>
+<script>
+document.body.classList.remove('nojs');
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){if(rm)el.classList.add('v');else io.observe(el)});
+var stage=document.getElementById('stage'),stat=document.getElementById('status'),tabs=document.querySelectorAll('.modes button'),rb=document.getElementById('run-btn');
+var cur=0,choice=null,merged=false,timers=[];
+var defs=['Exploration and a codebase-aware plan created.','Back and forth about the codebase and plan when your input is needed.','Make the changes and open a draft PR for you. You review and merge.'];
+function show(m){
+ cur=m;tabs.forEach(function(t,i){t.setAttribute('aria-selected',i===m?'true':'false')});
+ var h='<p class="def">'+defs[m]+'</p>';
+ if(m===0)h+='<ol class="plan"><li>Find where exports are queued and where failures are logged.</li><li>Read the last failure notes in the ticket thread.</li><li>Propose a retry with a limit and a clear error after the last try.</li></ol>';
+ if(m===1){h+='<p>Question from Janet: the retry limit is not in the ticket. How many tries before it gives up?</p><div class="ask"><button type="button" data-c="3">3 tries</button><button type="button" data-c="5">5 tries</button></div>';
+  if(choice)h+='<p style="margin-top:12px">Got it, '+choice+' tries. Updating the plan.</p>'}
+ if(m===2){if(!choice)h+='<p>Waiting on your answer in Iterate before it edits.</p>';
+  else h+='<div class="pr"><b>Draft PR</b>: Retry failed exports, up to '+choice+' times<br>Changes the export worker and adds a test for the last try.'+(merged?'<p style="margin:12px 0 0">Merged. You made the call.</p>':'<br><button type="button" id="merge">Review and merge</button>')+'</div>'}
+ stage.innerHTML=h;
+ stage.querySelectorAll('.ask button').forEach(function(b){b.addEventListener('click',function(){choice=b.dataset.c;stat.textContent='You answered. Janet can edit now.';show(1)})});
+ var mg=document.getElementById('merge');if(mg)mg.addEventListener('click',function(){merged=true;stat.textContent='Closed. Plan, iterate, edit, your merge.';show(2)});
+}
+tabs.forEach(function(t){t.addEventListener('click',function(){show(+t.dataset.m)})});
+rb.addEventListener('click',function(){
+ timers.forEach(clearTimeout);timers=[];choice=null;merged=false;show(0);stat.textContent='Planning';
+ var d=rm?0:1;
+ timers.push(setTimeout(function(){show(1);stat.textContent='Needs your input. Pick an answer.'},1800*d));
+});
+show(0);
+if(location.hash==='#shot'){document.querySelectorAll('.rv').forEach(function(e){e.classList.add('v')});document.querySelectorAll('img').forEach(function(i){i.loading='eager'});choice='5';show(2)}
+</script>
+</body>
+</html>
