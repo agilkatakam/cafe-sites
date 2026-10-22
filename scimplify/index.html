@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scimplify: R&amp;D-driven manufacturing (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Scimplify: a 3D sketch of design, manufacture and global reach. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0e10;--surface:#1b1b1f;--ink:#f5f5f5;--muted:#b9b5ab;--accent:#ff5a1f;--r:10px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(1.75rem,1rem + 3.2vw,4.25rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.d{font-weight:700;letter-spacing:-.03em;line-height:.95;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:var(--r);background:var(--accent);color:#0e0e10;font:700 var(--step-body)/1 'Space Grotesk',sans-serif;text-decoration:none;border:0;cursor:pointer}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:24px 24px 0}
+.mark{font-weight:700;letter-spacing:-.02em;text-decoration:none;font-size:var(--step-lead)}
+.hdr .s{font-size:var(--step-small);color:var(--muted)}
+.hero{padding:clamp(40px,8vh,96px) 24px 0}
+.hero h1{font-size:clamp(1.35rem,.6rem + 4.8vw,6rem);max-width:none}
+.hero p{max-width:46ch;margin-top:24px;color:var(--muted)}
+.acts{margin-top:28px}
+.demo{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;margin:56px 24px 0}
+.stage{grid-column:1/9;position:relative;height:min(70vh,620px);background:var(--surface);border-radius:var(--r);overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.stage .tag{position:absolute;left:24px;right:24px;bottom:20px;font-size:var(--step-lead);font-weight:500;line-height:1.2;pointer-events:none}
+.stage .tag small{display:block;font-size:var(--step-body);font-weight:400;color:var(--muted);margin-top:4px}
+.side{grid-column:9/13;background:var(--surface);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:12px}
+.side h2{font-size:var(--step-lead);font-weight:500;line-height:1.15}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opts button{min-height:48px;padding:0 16px;border-radius:var(--r);border:0;background:#2c2c32;color:#fff;text-align:left;font:500 var(--step-body)/1 'Space Grotesk',sans-serif;cursor:pointer}
+.opts button:hover{background:#3a3a42}
+.opts button[aria-pressed=true]{background:var(--accent);color:#0e0e10}
+.side p{color:var(--muted);font-size:var(--step-small)}
+.chap{padding:200px 24px 0}
+.chap h2,.pics h2{font-size:var(--step-head);max-width:none}
+.pics{padding:200px 24px 0}
+.grid{display:grid;grid-template-columns:7fr 5fr;gap:8px;margin-top:40px}
+.grid figure{position:relative;border-radius:var(--r);overflow:hidden;min-height:420px}
+.grid img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1)}
+.grid figcaption{position:absolute;left:12px;bottom:12px;background:rgba(14,14,16,.88);padding:6px 10px;border-radius:6px;font-size:var(--step-small)}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:40px}
+.offers div{background:var(--surface);border-radius:var(--r);padding:24px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between}
+.offers div:nth-child(2){background:var(--accent);color:#0e0e10}.offers b{font-weight:700;font-size:var(--step-lead)}
+.offers h3{font-size:var(--step-lead);font-weight:500;line-height:1.15}
+.offers p{font-size:var(--step-small);opacity:.85}
+.cta{padding:200px 24px 0}.cta p.big{font-size:var(--step-head);max-width:none}
+.cta .acts{margin-top:32px}
+.fine{padding:40px 24px 0;font-size:1rem;max-width:66ch;color:var(--muted)}.fine a{color:var(--ink)}
+.foot{margin-top:60px;padding:0 24px 30px;font-size:var(--step-small);color:var(--muted)}
+.e{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.e.in{opacity:1;transform:none}
+@media(max-width:900px){.demo{display:block;margin-top:36px}.stage{height:min(100vw,430px)}.side{margin-top:8px}.chap,.pics{padding-top:120px}.cta{padding-top:120px}.grid{grid-template-columns:1fr}.grid figure{min-height:300px}.offers{grid-template-columns:1fr 1fr}.offers div{min-height:180px}}
+@media(prefers-reduced-motion:reduce){.e{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hdr"><a class="mark" href="#top" id="top">Scimplify</a><a class="s" href="https://www.scimplify.com" target="_blank" rel="noopener">scimplify.com</a></header>
+<section class="hero">
+ <h1 class="d e">R&amp;D-driven manufacturing</h1>
+ <p class="e"><b>Making speciality chemistry predictable, end to end.</b> We combine deep scientific expertise with world class manufacturing infrastructure to deliver globally resilient supply chains.</p>
+ <div class="acts e"><a class="btn" href="#demo">Step through the three stages</a></div>
+</section>
+<section class="demo e" id="demo">
+ <div class="stage" data-ui><canvas id="c" role="img" aria-label="A 3D sketch with three stages. A molecule for design, a ring of factories around it for manufacture, and a globe with office markers for global reach."></canvas><div class="tag" id="tag">Design Chemistry<small>Engineer molecules with manufacturing constraints from day one-so scale-up is seamless.</small></div></div>
+ <div class="side" data-ui>
+  <h2>Making speciality chemistry predictable</h2>
+  <div class="opts" id="opts">
+   <button type="button" aria-pressed="true" data-i="0">Design Chemistry</button>
+   <button type="button" aria-pressed="false" data-i="1">Manufacture with confidence</button>
+   <button type="button" aria-pressed="false" data-i="2">Global Reach</button>
+  </div>
+  <p>The three stages and their words are Scimplify's. The molecule, the factories and the globe are a sketch made for this page, not drawn to their numbers.</p>
+ </div>
+</section>
+<section class="chap">
+ <h2 class="d e">End to end.</h2>
+ <div class="offers">
+  <div class="e"><h3>Design Chemistry</h3><p>Engineer molecules with manufacturing constraints from day one-so scale-up is seamless.</p><b>200+ partners</b></div>
+  <div class="e"><h3>Manufacture with confidence</h3><p>Identify the right factory, de-risk scale-up, and execute repeatable production.</p><b>500+ partners</b></div>
+  <div class="e"><h3>Global Reach</h3><p>Compliance-led logistics, quality governance, and regulatory readiness across markets.</p><b>30+ countries, 5 offices</b></div>
+ </div>
+</section>
+<section class="pics">
+ <h2 class="d e">Global supply chains.</h2>
+ <div class="grid">
+  <figure class="e"><img src="assets/verrerie-p1030896.jpg" width="1920" height="1440" alt="Laboratory glassware and flasks" loading="lazy" decoding="async"><figcaption>Laboratory glassware</figcaption></figure>
+  <figure class="e"><img src="assets/grangemouth-chemical-plant-geograph-org-uk-5621703.jpg" width="1920" height="1280" alt="A chemical plant at Grangemouth" loading="lazy" decoding="async"><figcaption>A chemical plant</figcaption></figure>
+  <figure class="e"><img src="assets/bayway-refinery-td-2022-01-18-04.jpg" width="1920" height="1280" alt="Pipes and tanks at the Bayway refinery" loading="lazy" decoding="async"><figcaption>Pipes and tanks</figcaption></figure>
+  <figure class="e"><img src="assets/maersk-hanoi-container-ship-port-koper-sikop.jpg" width="1920" height="1439" alt="A container ship at the port of Koper" loading="lazy" decoding="async"><figcaption>A container ship</figcaption></figure>
+ </div>
+</section>
+<section class="cta">
+ <p class="big d e">Start your project.</p>
+ <div class="acts e"><a class="btn" href="https://www.scimplify.com" target="_blank" rel="noopener">scimplify.com</a></div>
+</section>
+<p class="fine">An unofficial concept homepage by <a href="https://axliosmedia.com" target="_blank" rel="noopener">Axlios Media</a>, not affiliated with Scimplify. All words are Scimplify's, taken from scimplify.com. Only the design is ours.</p>
+<p class="fine">Pictures: <a href="https://commons.wikimedia.org/wiki/File:Verrerie-p1030896.jpg">“Verrerie-p1030896”</a> by Rama, <a href="https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en">CC BY-SA 2.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Grangemouth_Chemical_Plant_-_geograph.org.uk_-_5621703.jpg">“Grangemouth Chemical Plant - geograph.org.uk - 5621703”</a> by Graeme Yuill, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:MAERSK_HANOI_Container_Ship_(Port_Koper_SIKOP,_2023).jpg">“MAERSK HANOI Container Ship (Port Koper SIKOP, 2023)”</a> by Petar Milošević, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Bayway_Refinery_td_(2022-01-18)_04.jpg">“Bayway Refinery td (2022-01-18) 04”</a> by Tdorante10, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons.</p>
+<footer class="foot">Concept for Scimplify, 2026 Axlios Media</footer>
+<script type="importmap">{"imports":{"three":"./js/three.module.min.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+document.querySelectorAll('.e').forEach(el=>new IntersectionObserver((es,o)=>{es.forEach(x=>{if(x.isIntersecting){el.classList.add('in');o.disconnect()}})},{threshold:.1}).observe(el));
+const cv=document.getElementById('c');
+const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene();S.background=new THREE.Color(0x1b1b1f);
+const cam=new THREE.PerspectiveCamera(40,1,.1,100);
+S.add(new THREE.HemisphereLight(0xffffff,0x303038,1.1));
+const sun=new THREE.DirectionalLight(0xffffff,1.6);sun.position.set(-6,5,4);S.add(sun);
+const M=c=>new THREE.MeshStandardMaterial({color:c,roughness:.9,metalness:0,flatShading:true});
+const W=0xe9e6df,K=0x2c2c32,O=0xff5a1f;
+const rod=(a,b,c=W,r=.05)=>{const d=b.clone().sub(a);const m=new THREE.Mesh(new THREE.CylinderGeometry(r,r,d.length(),8),M(c));m.position.copy(a).add(b).multiplyScalar(.5);m.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),d.normalize());return m};
+// stage 0: molecule
+const mol=new THREE.Group();S.add(mol);
+const at=[[0,0,0,.5,O],[1.3,.7,0,.38,W],[-1.3,.7,.2,.38,W],[0,-1.4,.3,.38,W],[.4,1.6,-.9,.28,W],[-1.9,1.7,.5,.28,W],[1.2,-2,.6,.28,W],[-.9,-2,-.2,.28,W],[2.4,.2,.6,.28,W]];
+const P=at.map(a=>new THREE.Vector3(a[0],a[1],a[2]));
+at.forEach((a,i)=>{const m=new THREE.Mesh(new THREE.SphereGeometry(a[3],20,14),M(a[4]));m.position.copy(P[i]);mol.add(m)});
+[[0,1],[0,2],[0,3],[1,4],[2,5],[3,6],[3,7],[1,8]].forEach(([a,b])=>mol.add(rod(P[a],P[b])));
+// stage 1: factories ring
+const fac=new THREE.Group();S.add(fac);
+const ring=(n,rad,y,c)=>{for(let i=0;i<n;i++){const a=i/n*Math.PI*2;const h=.5+((i*7)%5)*.18;const b=new THREE.Mesh(new THREE.BoxGeometry(.5,h,.5),M(i%7===0?O:c));b.position.set(Math.cos(a)*rad,h/2-.1,Math.sin(a)*rad);fac.add(b);if(i%2===0)fac.add(rod(new THREE.Vector3(0,.3,0),new THREE.Vector3(Math.cos(a)*rad,.3,Math.sin(a)*rad),0x55555e,.025))}};
+ring(18,3.2,0,W);ring(12,2.1,0,0x8b867c);
+const slab=new THREE.Mesh(new THREE.CylinderGeometry(4.2,4.2,.15,48),M(K));slab.position.y=-.2;fac.add(slab);
+const core=new THREE.Mesh(new THREE.SphereGeometry(.4,20,14),M(O));core.position.y=.3;fac.add(core);
+// stage 2: globe
+const glo=new THREE.Group();S.add(glo);
+glo.add(new THREE.Mesh(new THREE.SphereGeometry(2.4,32,20),M(0x34343c)));
+const wire=new THREE.LineSegments(new THREE.WireframeGeometry(new THREE.SphereGeometry(2.43,16,10)),new THREE.LineBasicMaterial({color:0x6a6a74}));glo.add(wire);
+const ll=(la,lo,r=2.45)=>{la*=Math.PI/180;lo*=Math.PI/180;return new THREE.Vector3(r*Math.cos(la)*Math.cos(lo),r*Math.sin(la),-r*Math.cos(la)*Math.sin(lo))};
+const off=[[20,78],[40,-74],[51,0],[1,104],[35,139]];
+const op=off.map(([a,b])=>ll(a,b));
+op.forEach(p=>{const m=new THREE.Mesh(new THREE.SphereGeometry(.14,14,10),M(O));m.position.copy(p);glo.add(m)});
+for(let i=0;i<op.length;i++)for(let j=i+1;j<op.length;j++){const pts=[];for(let t=0;t<=20;t++){const v=op[i].clone().lerp(op[j],t/20);v.setLength(2.45+Math.sin(t/20*Math.PI)*.5);pts.push(v)}glo.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(pts),new THREE.LineBasicMaterial({color:0xe9e6df})))}
+const COPY=[['Design Chemistry','Engineer molecules with manufacturing constraints from day one-so scale-up is seamless.'],['Manufacture with confidence','Identify the right factory, de-risk scale-up, and execute repeatable production.'],['Global Reach','Compliance-led logistics, quality governance, and regulatory readiness across markets.']];
+const G=[mol,fac,glo];let sel=0,tt=0;const cur=[1,0,0];
+const tag=document.getElementById('tag'),btns=[...document.querySelectorAll('#opts button')];
+btns.forEach(b=>b.addEventListener('click',()=>{sel=+b.dataset.i;btns.forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));tag.innerHTML=COPY[sel][0]+'<small>'+COPY[sel][1]+'</small>'}));
+function size(){const w=cv.clientWidth,h=cv.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+addEventListener('resize',size);size();
+function frame(){tt+=rm?0:.006;
+ G.forEach((g,i)=>{cur[i]+=((i===sel?1:0)-cur[i])*.1;const s=Math.max(.001,cur[i]);g.scale.setScalar(s);g.visible=cur[i]>.01;g.rotation.y=tt*(i===2?.8:.5)});
+ const mob=cam.aspect<1.1;const dist=(mob?15:11)*(sel===1?1.15:1);
+ const a=.5+Math.sin(tt*.4)*.2;
+ cam.position.set(Math.sin(a)*dist*.5,sel===1?5.5:2.2,Math.cos(a)*dist);cam.lookAt(0,sel===1?0:-.2,0);
+ R.render(S,cam);requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
