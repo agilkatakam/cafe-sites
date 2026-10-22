@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blue Line Home Services LLC | Punta Gorda, FL</title>
+<meta name="description" content="Home and property services in Punta Gorda, Florida. Call or email for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Imbue:opsz,wght@10..100,300..700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef0f3;--surface:#e2e5ea;--ink:#0b0c0e;--muted:#5d6470;--accent:#1f2de6;--accent-ink:#fff;--pad:clamp(20px,5vw,72px);
+--small:clamp(1rem,.98rem + .1vw,1.0625rem);--body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--head:clamp(2.6rem,1.3rem + 4.4vw,5.5rem)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{overflow-x:clip;background:var(--bg);color:var(--ink);font-family:"Albert Sans",system-ui,sans-serif;font-size:var(--body);line-height:1.5}
+a{color:inherit}img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3,.disp{font-family:Imbue,"Times New Roman",serif;font-weight:500;line-height:.86;letter-spacing:-.01em;text-transform:uppercase}
+.wrap{padding-inline:var(--pad)}
+.btn{overflow-wrap:anywhere;display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:1em 1.6em;border-radius:0;border:2px solid var(--accent);font-size:var(--body);transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--accent)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px var(--pad)}
+.mark{font-family:Imbue,serif;text-transform:uppercase;font-size:1.7rem;text-decoration:none;letter-spacing:.01em}
+nav .links{display:flex;gap:2rem;align-items:center}
+nav .links a:not(.btn){text-decoration:none}nav .links a:not(.btn):hover{text-decoration:underline;text-underline-offset:6px}
+.hero{padding:0 var(--pad) clamp(72px,8vw,120px)}
+.hero h1{font-size:clamp(5rem,0rem + 17vw,18rem);letter-spacing:-.02em;color:var(--accent);margin:0 0 clamp(20px,3vw,40px);overflow:hidden}
+.hero h1 span{display:block;animation:rise 1.1s cubic-bezier(.2,.8,.2,1) both}
+.hero h1 span:nth-child(2){animation-delay:.12s}
+@keyframes rise{from{translate:0 100%}to{translate:0}}
+.hero .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:var(--pad);align-items:stretch}
+.hero h1 .sm{font-size:.2em;letter-spacing:.04em;margin-top:.5em;color:var(--ink)}
+.hero .pic{min-height:560px;position:relative}
+.hero .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero p{font-size:var(--lead);max-width:26ch;margin-bottom:1.6rem}
+.acts{display:flex;gap:14px;flex-wrap:wrap}
+section{padding-block:clamp(88px,11vw,170px)}
+.cols4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.cols4 figure img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover}
+.cols4 h3{font-size:clamp(2.2rem,1.4rem + 1.6vw,3.2rem);margin:1rem 0 .4rem}
+.cols4 p{font-size:var(--body);max-width:24ch}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:end;margin-bottom:3rem}
+.head h2{font-size:var(--head)}
+.head p{font-size:var(--lead);max-width:28ch}
+.cobalt{background:var(--accent);color:#fff}
+.cobalt .btn{background:#fff;color:var(--accent);border-color:#fff}.cobalt .btn:hover{background:transparent;color:#fff}
+.cobalt .btn.ghost{background:transparent;color:#fff;border-color:#fff}.cobalt .btn.ghost:hover{background:#fff;color:var(--accent)}
+.panels{display:grid;grid-template-columns:2fr 1fr 1.4fr;gap:20px;align-items:stretch}
+.panels div{min-height:440px;overflow:hidden}
+.panels img{width:100%;height:100%;object-fit:cover}
+.big{font-size:clamp(3.2rem,1rem + 9vw,11rem);margin-bottom:2rem}
+footer{padding:56px var(--pad)}
+footer .name{font-size:clamp(3.4rem,1rem + 13vw,15rem);color:var(--accent);margin-bottom:2rem;line-height:.85}
+footer p{font-size:var(--small);max-width:74ch;margin-bottom:.6rem}
+[data-r]{opacity:0;translate:0 22px;transition:opacity .8s,translate .8s}[data-r].in{opacity:1;translate:0}
+@media (prefers-reduced-motion:reduce){[data-r]{opacity:1;translate:0;transition:none}.hero h1 span{animation:none}html{scroll-behavior:auto}}
+@media (max-width:860px){
+ nav .links a:not(.btn){display:none}
+ .hero .grid,.head{grid-template-columns:1fr}
+ .hero h1{font-size:clamp(5.6rem,34vw,9rem)}
+ .hero .pic{min-height:0;aspect-ratio:4/3}
+ .cols4{grid-template-columns:1fr 1fr}
+ .panels{grid-template-columns:1fr 1fr}.panels div{min-height:300px}.panels div:first-child{grid-column:1/-1}
+ section{padding-block:80px}
+ .head{gap:1rem}
+}
+</style></head><body>
+<nav><a class="mark" href="#top">Blue Line</a><div class="links"><a href="#services">Services</a><a href="#area">Area</a><a class="btn" href="tel:+19413680899">Call 941-368-0899</a></div></nav>
+<header class="hero" id="top">
+ <div class="grid">
+  <div class="l"><h1><span>Blue</span><span>Line</span><span class="sm">Home Services</span></h1>
+  <p>Home and property services in Punta Gorda, Florida.</p>
+  <div class="acts"><a class="btn" href="tel:+19413680899">Call for a quote</a><a class="btn ghost" href="mailto:424blueline@gmail.com?subject=Quote%20request">Email for a quote</a></div></div>
+  <div class="pic"><img src="img/b.jpg" width="1200" height="1800" alt="White modern house with a palm tree against a blue sky"></div>
+ </div>
+</header>
+
+<section id="services"><div class="wrap">
+ <div class="head"><h2 data-r>Jobs people usually call for.</h2><p data-r>Blue Line Home Services is listed for home and property services. Ask about yours.</p></div>
+ <div class="cols4">
+  <figure data-r><img src="img/b.jpg" width="1200" height="1800" alt="White modern house with a palm tree" loading="lazy"><h3>Homes</h3><p>Repairs and upkeep for the house.</p></figure>
+  <figure data-r><img src="img/e.jpg" width="1200" height="1800" alt="Aluminium step ladder against a white wall" loading="lazy"><h3>Fix-ups</h3><p>Jobs that need a ladder.</p></figure>
+  <figure data-r><img src="img/c.jpg" width="1200" height="1800" alt="Black and white photo of a house with a ladder against it" loading="lazy"><h3>Exteriors</h3><p>Outside the house as well as in.</p></figure>
+  <figure data-r><img src="img/d.jpg" width="1200" height="1800" alt="Black and white photo of a block of flats" loading="lazy"><h3>Properties</h3><p>Rentals and second homes.</p></figure>
+ </div>
+</div></section>
+
+<section class="cobalt" id="area"><div class="wrap">
+ <h2 class="big" data-r>Punta Gorda, Florida.</h2>
+ <div class="head" style="margin-bottom:0"><p data-r>Ask about your address when you call. Your own job photos will go on this page once you have them.</p>
+ <div class="acts" data-r><a class="btn" href="tel:+19413680899">Call 941-368-0899</a><a class="btn ghost" href="mailto:424blueline@gmail.com?subject=Quote%20request">Email for a quote</a></div></div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="panels">
+  <div data-r><img src="img/f.jpg" width="1600" height="1067" alt="Stone house with a worker on a ladder at the front" loading="lazy"></div>
+  <div data-r><img src="img/b.jpg" width="1200" height="1800" alt="White house and palm" loading="lazy"></div>
+  <div data-r><img src="img/a.jpg" width="1600" height="1067" alt="Row of houses among palm trees" loading="lazy"></div>
+ </div>
+</div></section>
+
+<footer><div class="disp name">Blue Line</div>
+<p>Blue Line Home Services LLC, Punta Gorda, FL. 941-368-0899. 424blueline@gmail.com</p>
+<p>This page is an unofficial preview concept made by Axlios Media (axliosmedia.com). It is not an official site and the business has not approved it. Photos are stock images from Pexels and are not the business's own work.</p></footer>
+<script>
+(function(){var els=document.querySelectorAll('[data-r]');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px'});
+els.forEach(function(e){io.observe(e)})})();
+</script></body></html>

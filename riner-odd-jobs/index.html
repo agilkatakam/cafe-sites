@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Riner Family Odd Jobs LLC | Port Charlotte, FL</title>
+<meta name="description" content="Odd jobs and home repairs in Port Charlotte, Florida. Call or email for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif:wght@400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--surface:#f2f2f2;--ink:#0a0a0a;--muted:#555;--accent:#d92b21;--accent-ink:#fff;--pad:clamp(20px,5vw,80px);
+--small:clamp(1rem,.98rem + .1vw,1.0625rem);--body:clamp(1.125rem,1.05rem + .3vw,1.3125rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--head:clamp(2.25rem,1.3rem + 3.2vw,4rem)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{overflow-x:clip;background:var(--bg);color:var(--ink);font-family:"Source Serif 4",Georgia,serif;font-size:var(--body);line-height:1.55}
+a{color:inherit}img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:"Young Serif",Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:.98}
+.wrap{padding-inline:var(--pad)}
+.btn{overflow-wrap:anywhere;display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;padding:1em 1.7em;font-size:var(--body);border:2px solid var(--accent);transition:background .2s,color .2s}
+.btn:hover{background:var(--bg);color:var(--accent)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px var(--pad)}
+.mark{font-family:"Young Serif",serif;font-size:1.4rem;text-decoration:none;letter-spacing:-.02em}
+nav .mid{display:flex;gap:2.2rem}
+nav a{text-decoration:none}
+nav .mid a:hover{text-decoration:underline;text-underline-offset:6px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);padding:clamp(20px,4vw,56px) var(--pad) clamp(80px,9vw,140px);align-items:stretch;min-height:calc(100svh - 80px)}
+.hero h1{font-size:clamp(3rem,1rem + 6.3vw,7.2rem);margin-bottom:1.6rem}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .l{display:flex;flex-direction:column;justify-content:center}
+.hero p{font-size:var(--lead);max-width:27ch;margin-bottom:2rem}
+.hero .acts{display:flex;gap:14px;flex-wrap:wrap}
+.xf{position:relative;min-height:540px;background:var(--surface);overflow:hidden}
+.xf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:xf 15s infinite}
+.xf img:nth-child(1){animation-delay:0s}.xf img:nth-child(2){animation-delay:5s}.xf img:nth-child(3){animation-delay:10s}
+@keyframes xf{0%{opacity:0}8%{opacity:1}33%{opacity:1}41%{opacity:0}100%{opacity:0}}
+.band{background:var(--ink);color:#fff}
+section{padding-block:clamp(88px,11vw,170px)}
+.sectionhead{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:end;margin-bottom:3.5rem}
+.sectionhead h2{font-size:var(--head)}
+.sectionhead p{font-size:var(--lead);max-width:30ch}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--pad)}
+.col h3{font-size:clamp(1.6rem,1.2rem + 1.2vw,2.2rem);margin:1.2rem 0 .7rem}
+.col img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}
+.col p{max-width:26ch;font-size:var(--body)}
+.name{font-size:clamp(2.6rem,1rem + 6vw,7rem);max-width:12ch}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:center}
+.about img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.about h2{font-size:var(--head);margin-bottom:1.2rem}
+.about p{font-size:var(--lead);max-width:34ch}
+.quiet{text-align:left}
+.quiet h2{font-size:clamp(2.6rem,1rem + 6vw,6.6rem);max-width:14ch;margin-bottom:2rem}
+.quiet .row{display:flex;flex-wrap:wrap;gap:14px}
+
+.cta .grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--pad);align-items:end}
+.cta img{width:100%;aspect-ratio:3/2;object-fit:cover}
+.cta h2{font-size:clamp(2.6rem,1rem + 6vw,6.6rem);margin-bottom:2rem}
+footer{padding:48px var(--pad)}
+footer p{font-size:var(--small);max-width:72ch;margin-bottom:.6rem}
+[data-r]{opacity:0;translate:0 22px;transition:opacity .8s,translate .8s}[data-r].in{opacity:1;translate:0}
+@media (prefers-reduced-motion:reduce){[data-r]{opacity:1;translate:0;transition:none}.xf img{animation:none}.xf img:first-child{opacity:1}html{scroll-behavior:auto}}
+@media (max-width:860px){
+ nav .mid{display:none}
+ .hero,.sectionhead,.about,.cta .grid{grid-template-columns:1fr}
+ .hero{min-height:0;gap:2rem;padding-bottom:72px}
+ .xf{min-height:0;aspect-ratio:4/3.4}
+ .hero h1{font-size:clamp(3rem,15.5vw,5rem)}
+ .cols{grid-template-columns:1fr 1fr;gap:28px 20px}
+ section{padding-block:80px}
+ .sectionhead{gap:1.2rem}
+}
+</style></head><body>
+<nav><a class="mark" href="#top">Riner Family Odd Jobs</a><div class="mid"><a href="#jobs">Jobs</a><a href="#about">About</a><a href="#area">Area</a></div><a class="btn" href="tel:+19412507105">Call</a></nav>
+<header class="hero" id="top">
+ <div class="l"><h1>Odd jobs, <em>handled.</em></h1>
+ <p>Odd jobs in Port Charlotte, Florida.</p>
+ <div class="acts"><a class="btn" href="tel:+19412507105">Call for a quote</a><a class="btn ghost" href="mailto:rinerfamilyoddjobsllc@gmail.com?subject=Quote%20request">Email for a quote</a></div></div>
+ <div class="xf" role="img" aria-label="Rotating photos of hand tools, a drill and carpentry work">
+  <img src="img/a.jpg" width="1600" height="1067" alt="">
+  <img src="img/b.jpg" width="1600" height="1067" alt="" loading="lazy">
+  <img src="img/d.jpg" width="1600" height="1067" alt="" loading="lazy">
+ </div>
+</header>
+
+<section id="jobs" class="band"><div class="wrap">
+ <div class="sectionhead"><h2 data-r>Odd jobs.</h2><p data-r>Call or email to ask about your job.</p></div>
+ <div class="cols">
+  <div class="col" data-r><img src="img/c.jpg" width="1200" height="1500" alt="Tools in a mechanic's tray" loading="lazy"><p>Stock photo. Your own job photos will go here.</p></div>
+  <div class="col" data-r><img src="img/a.jpg" width="1600" height="1067" alt="Carpentry measuring tools and wood shavings" loading="lazy"><p>Stock photo.</p></div>
+  <div class="col" data-r><img src="img/f.jpg" width="1600" height="1067" alt="Shovelling soil into a wheelbarrow" loading="lazy"><p>Stock photo.</p></div>
+  <div class="col" data-r><img src="img/e.jpg" width="1594" height="1062" alt="Person watering plants beside a doorway" loading="lazy"><p>Stock photo.</p></div>
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap about">
+ <img class="" src="img/d.jpg" width="1600" height="1067" alt="Worker on a ladder at the front of a house" loading="lazy" data-r>
+ <div data-r><h2>Riner Family Odd Jobs.</h2><p>Riner Family Odd Jobs LLC, Port Charlotte, Florida.</p></div>
+</div></section>
+
+<section id="area" class="band"><div class="wrap sectionhead" style="margin-bottom:0">
+ <h2 class="name" data-r>Port Charlotte, Florida.</h2>
+ <p data-r>Ask about your address when you call. Your own job photos will go in this section once you have them.</p>
+</div></section>
+
+<section class="cta"><div class="wrap grid">
+ <div data-r><h2>Got an odd job?</h2>
+ <div class="quiet"><div class="row"><a class="btn" href="tel:+19412507105">Call 941-250-7105</a><a class="btn ghost" href="mailto:rinerfamilyoddjobsllc@gmail.com?subject=Quote%20request">Email for a quote</a></div></div></div>
+ <img src="img/b.jpg" width="1600" height="1067" alt="Cordless drills on a workbench" loading="lazy" data-r>
+</div></section>
+
+<footer><p>Riner Family Odd Jobs LLC, Port Charlotte, FL. 941-250-7105. rinerfamilyoddjobsllc@gmail.com</p>
+<p>This page is an unofficial preview concept made by Axlios Media (axliosmedia.com). It is not an official site and the business has not approved it. Photos are stock images from Pexels and are not the business's own work.</p></footer>
+<script>
+(function(){var els=document.querySelectorAll('[data-r]');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px'});
+els.forEach(function(e){io.observe(e)})})();
+</script></body></html>

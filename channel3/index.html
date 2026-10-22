@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Channel3: where agents find products (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Channel3 with a 3D product graph. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--surface:#161616;--ink:#f5f5f5;--muted:#c4c4c4;--accent:#b81f35;--accent-ink:#fff;--r:10px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2.25rem,1.3rem + 4vw,5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}h1,h2,h3{font-family:'Young Serif',Georgia,serif;font-weight:400}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:var(--r);background:var(--accent);color:#fff;font:600 var(--step-body)/1 'Source Serif 4',serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.98)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:24px 24px 0}
+.mark{font-family:'Young Serif',serif;font-size:1.25rem;text-decoration:none}.mark b{color:var(--accent);font-weight:400}
+.hdr a.s{font-size:var(--step-small);text-decoration:none}
+.hero{padding:clamp(48px,10vh,120px) 24px 0;display:grid;grid-template-columns:repeat(12,1fr);gap:8px;align-items:center}
+.hero .t{grid-column:1/7}
+.hero h1{font-size:clamp(2.25rem,1rem + 4.2vw,5.5rem);line-height:.98;letter-spacing:-.02em;max-width:none}
+.hero p{margin-top:24px;max-width:36ch}
+.hero .st{grid-column:7/13;position:relative;height:min(70vh,640px);border-radius:var(--r);overflow:hidden;background:var(--surface)}
+.st canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.doors{display:flex;gap:8px;margin-top:32px;flex-wrap:wrap}
+.door{display:flex;flex-direction:column;justify-content:flex-end;min-height:120px;min-width:200px;flex:1;padding:18px 20px;border-radius:var(--r);background:var(--surface);color:var(--ink);text-decoration:none;border:0;text-align:left;cursor:pointer;font:inherit;transition:background .25s,transform .2s}
+.door:hover{transform:translateY(-2px)}
+.door[aria-pressed=true]{background:var(--accent);color:#fff}
+.door b{font-family:'Young Serif',serif;font-weight:400;font-size:var(--step-lead)}.door span{font-size:var(--step-small);color:inherit}
+.pick{grid-column:1/13;margin-top:8px;max-width:64ch;min-height:5.5em}
+.pick h2{font-size:var(--step-lead)}.pick p{margin-top:8px}
+.shift{padding:200px 24px 0}
+.shift h2{font-size:clamp(2rem,1rem + 4vw,4.5rem);max-width:none;line-height:1}
+.shift .intro{margin-top:20px;max-width:40ch}
+.fig{display:flex;gap:8px;margin-top:56px;flex-wrap:wrap;align-items:flex-end}
+.fig>div{flex:1;min-width:220px;border-radius:var(--r);padding:28px;display:flex;flex-direction:column;justify-content:space-between}
+.fig>div:nth-child(1){background:#2a2a2a;height:300px}.fig>div:nth-child(2){background:#6b1220;height:400px}.fig>div:nth-child(3){background:var(--accent);height:500px}
+.fig em{font-style:normal;font-family:'Young Serif',serif;font-size:clamp(3rem,2rem + 4vw,5.5rem);line-height:1}
+.fig p{font-size:var(--step-body)}.fig small{display:block;margin-top:6px;font-size:var(--step-small)}
+.cta{padding:200px 24px 0}.cta p.big{font-family:'Young Serif',serif;font-size:clamp(2rem,1rem + 4vw,4.5rem);max-width:none;line-height:1}
+.cta .acts{margin-top:32px}
+.foot{margin-top:12svh;padding:0 24px 30px;font-size:var(--step-small);color:var(--muted)}
+.fine{padding:40px 24px;font-size:var(--step-small);max-width:64ch}
+.e{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease;transition-delay:calc(var(--i,0)*80ms)}.e.in{opacity:1;transform:none}
+@media(max-width:900px){.hero{display:block;padding-top:40px}.hero .st{margin-top:32px;height:min(100vw,420px)}.doors{margin-top:24px}.door{min-height:96px}.shift{padding-top:120px}.fig{margin-top:40px}.fig>div{height:auto!important;min-height:200px}.cta{padding-top:130px}}
+@media(prefers-reduced-motion:reduce){.e{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hdr"><a class="mark" href="#top" id="top">Channel<b>3</b></a><a class="s" href="https://trychannel3.com" target="_blank" rel="noopener">trychannel3.com</a></header>
+<main>
+<section class="hero">
+ <div class="t"><h1 class="e">Where agents find products</h1>
+ <p class="e" style="--i:1">We're building the world's highest quality product graph, so AI agents can reliably search, recommend, and purchase products.</p>
+ <div class="acts e" style="--i:1;margin-top:28px"><a class="btn" href="https://trychannel3.com" target="_blank" rel="noopener">Go to trychannel3.com</a></div>
+ <div class="doors e" style="--i:2" id="doors" role="group" aria-label="Choose who you are">
+  <button class="door" type="button" aria-pressed="true" data-k="0"><b>For Developers</b><span>Build any agentic shopping experience</span></button>
+  <button class="door" type="button" aria-pressed="false" data-k="1"><b>For Brands</b><span>Sell on net-new AI platforms</span></button>
+  <button class="door" type="button" aria-pressed="false" data-k="2"><b>For Enterprises</b><span>Launch shopping without building the infrastructure</span></button>
+ </div></div>
+ <div class="st e" data-ui style="--i:3"><canvas id="c" role="img" aria-label="A 3D graph of points. Choosing a door lights a different cluster."></canvas></div>
+ <div class="pick" id="pick" aria-live="polite"></div>
+</section>
+<section class="shift" id="shift">
+ <h2 class="e">Shopping is moving into AI.</h2>
+ <p class="intro e" style="--i:1">Discovery is happening inside AI apps and agents. Channel3 provides the infrastructure to make it happen.</p>
+ <div class="fig">
+  <div class="e"><em>58%</em><p>of consumers have used AI to shop<small>Stripe</small></p></div>
+  <div class="e" style="--i:1"><em>4,700%</em><p>YoY increase in AI-driven retail traffic<small>Adobe</small></p></div>
+  <div class="e" style="--i:2"><em>$3-5T</em><p>projected agentic commerce revenue by 2030<small>McKinsey</small></p></div>
+ </div>
+</section>
+<section class="cta"><p class="big e">Search, recommend, earn.</p><div class="acts e"><a class="btn" href="https://trychannel3.com" target="_blank" rel="noopener">Go to trychannel3.com</a></div></section>
+<p class="fine">An unofficial concept homepage by <a href="https://axliosmedia.com" target="_blank" rel="noopener">Axlios Media</a>, not affiliated with Channel3. All wording and figures are from trychannel3.com, with the sources it prints. The 3D graph is a sketch made for this page and is not Channel3 data.</p>
+</main>
+<footer class="foot">Concept for Channel3, 2026 Axlios Media</footer>
+<script type="importmap">{"imports":{"three":"./js/three.module.min.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const P=[['For Developers','One API for 100M+ products: search, recommend, and earn on sales.'],['For Brands','AI shopping won\u2019t live in one destination. Channel3 powers the largest network of new AI shopping applications. Join 5,000+ brands.'],['For Enterprises','Everything you need to add AI shopping to your product: a conversational agent, search, commissions, and (soon) checkout.']];
+const pick=document.getElementById('pick');
+function say(k){pick.innerHTML='<h2>'+P[k][0]+'</h2><p>'+P[k][1]+'</p>'}
+const cv=document.getElementById('c'),host=cv.parentElement;
+const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(40,1,.1,100);
+const N=900,pos=new Float32Array(N*3),col=new Float32Array(N*3),cl=new Uint8Array(N);
+let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+const C=[new THREE.Vector3(-2.2,.8,0),new THREE.Vector3(2.0,1.2,.6),new THREE.Vector3(.1,-1.8,-.4)];
+for(let i=0;i<N;i++){const k=i%3;cl[i]=k;const u=rnd()*Math.PI*2,v=Math.acos(2*rnd()-1),r=Math.pow(rnd(),.6)*1.7;pos[i*3]=C[k].x+r*Math.sin(v)*Math.cos(u);pos[i*3+1]=C[k].y+r*Math.cos(v)*.9;pos[i*3+2]=C[k].z+r*Math.sin(v)*Math.sin(u)}
+const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('color',new THREE.BufferAttribute(col,3));
+const pts=new THREE.Points(g,new THREE.PointsMaterial({size:.07,vertexColors:true,sizeAttenuation:true}));
+const G=new THREE.Group();G.add(pts);S.add(G);
+// edges between near points in the same cluster
+const E=[];for(let i=0;i<N;i++){let c=0;for(let j=i+3;j<N&&c<2;j+=3){const dx=pos[i*3]-pos[j*3],dy=pos[i*3+1]-pos[j*3+1],dz=pos[i*3+2]-pos[j*3+2];if(dx*dx+dy*dy+dz*dz<.22){E.push(i,j);c++}}}
+const lp=new Float32Array(E.length*3),lc=new Float32Array(E.length*3);
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.BufferAttribute(lp,3));lg.setAttribute('color',new THREE.BufferAttribute(lc,3));
+const lines=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({vertexColors:true}));G.add(lines);
+const DIM=new THREE.Color(0x4a4a4a),HOT=new THREE.Color(0xe0344b),WH=new THREE.Color(0xf4f1ee);
+let sel=0,tgt=[1,0,0],cur=[1,0,0],rot=.3,drag=false,lx=0,vis=false;
+function size(){const w=host.clientWidth,h=host.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;cam.position.set(0,.2,w/h<1?13:10.5);cam.lookAt(0,0,0);cam.updateProjectionMatrix()}
+size();addEventListener('resize',size);
+cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag){rot+=(e.clientX-lx)*.008;lx=e.clientX}});
+cv.addEventListener('pointerup',()=>drag=false);
+new IntersectionObserver(es=>vis=es[0].isIntersecting).observe(host);
+const doors=[...document.querySelectorAll('.door')];
+function choose(k){sel=k;tgt=[0,0,0];tgt[k]=1;doors.forEach((d,i)=>d.setAttribute('aria-pressed',String(i===k)));say(k)}
+doors.forEach((d,i)=>d.addEventListener('click',()=>{auto=false;choose(i)}));
+choose(0);let auto=!reduce,tick=0;
+const clock=new THREE.Clock();
+(function frame(){requestAnimationFrame(frame);if(!vis)return;const dt=Math.min(clock.getDelta(),.05);
+ if(auto){tick+=dt;if(tick>4){tick=0;choose((sel+1)%3)}}
+ if(!drag&&!reduce)rot+=dt*.15;G.rotation.y=rot;
+ for(let k=0;k<3;k++)cur[k]+=(tgt[k]-cur[k])*Math.min(1,dt*4);
+ for(let i=0;i<N;i++){const a=cur[cl[i]];const c=DIM.clone().lerp(i%7===0?WH:HOT,a);col[i*3]=c.r;col[i*3+1]=c.g;col[i*3+2]=c.b}
+ g.attributes.color.needsUpdate=true;
+ for(let e=0;e<E.length;e+=2){const a=cur[cl[E[e]]];for(let s=0;s<2;s++){const i=E[e+s];lp[(e+s)*3]=pos[i*3];lp[(e+s)*3+1]=pos[i*3+1];lp[(e+s)*3+2]=pos[i*3+2];const v=.08+a*.75;lc[(e+s)*3]=HOT.r*v;lc[(e+s)*3+1]=HOT.g*v;lc[(e+s)*3+2]=HOT.b*v}}
+ lg.attributes.position.needsUpdate=true;lg.attributes.color.needsUpdate=true;
+ R.render(S,cam)})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.e').forEach(el=>io.observe(el));
+</script>
+</body></html>
