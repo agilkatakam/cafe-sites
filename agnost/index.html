@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agnost AI: your logs are training data (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Agnost AI, which turns agent traces into specialist models, with a live cost and latency comparison. Made by Axlios Media.">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--surface:#151515;--surface2:#1f1f1f;--ink:#efefef;--muted:#9a9a9a;--accent:#b11226;--accent-ink:#fff;--m:16px;--gap:8px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem);--step-hero:clamp(2.6rem,10.5vw,6.4rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Switzer,system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;letter-spacing:-.005em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+h1,h2,h3{font-weight:600;letter-spacing:-.04em;line-height:.95}
+h1{font-size:var(--step-hero)}h2{font-size:var(--step-head)}h3{font-size:var(--step-lead);line-height:1.05}
+.wrap{padding:0 var(--m);max-width:1600px;margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font:500 1rem/1 Switzer,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-3px);background:#c8182d}.btn:active{transform:scale(.97)}
+.btn.lt{background:var(--ink);color:var(--bg)}.btn.lt:hover{background:#fff}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.sec{padding-top:clamp(96px,12vw,200px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px;position:relative;z-index:3}
+nav .mark{font-weight:600;font-size:1.5rem;letter-spacing:-.04em;text-decoration:none}
+nav ul{display:flex;gap:28px;list-style:none;font-size:var(--step-small);font-weight:500}
+nav ul a{text-decoration:none;color:var(--muted);transition:color .2s}nav ul a:hover{color:var(--ink)}
+@media(max-width:700px){nav ul{display:none}}
+/* hero */
+.hero{position:relative;min-height:min(92svh,860px);overflow:hidden}
+.c1{position:absolute;width:120vh;height:120vh;border-radius:50%;background:var(--accent);left:calc(78% - 60vh);top:calc(55% - 60vh);transition:transform .2s linear}
+.c2{position:absolute;width:30vh;height:30vh;border-radius:50%;background:var(--ink);left:calc(78% - 56vh);top:calc(55% + 6vh);mix-blend-mode:multiply}
+.hero .txt{position:relative;z-index:2;padding-top:clamp(48px,12vh,140px);max-width:1600px;margin:0 auto;padding-left:var(--m);padding-right:var(--m)}
+.hero h1{max-width:15ch}
+.hero p{margin-top:28px;max-width:34ch;font-size:var(--step-lead);line-height:1.3}
+.hero .btn{margin-top:28px}
+.shape{position:absolute;inset:0;z-index:1}.shape .lab{position:absolute;right:var(--m);bottom:var(--m);max-width:30ch;color:#fff;font-size:1.125rem;line-height:1.3;z-index:3;margin:0}
+@media(max-width:800px){.hero{min-height:0;display:flex;flex-direction:column}.shape{order:2;position:relative;inset:auto;height:70vw;margin-top:40px;overflow:hidden}.c1{width:130vw;height:130vw;left:-15vw;top:14vw}.c2{width:36vw;height:36vw;left:12vw;top:60vw}.hero h1{font-size:11.5vw}.hero .txt{padding-top:6svh}.shape .lab{left:var(--m);right:auto;bottom:auto;top:var(--m)}.shape{height:64vw}.c1{top:26vw;width:110vw;height:110vw;left:-5vw}.c2{top:48vw;width:30vw;height:30vw;left:14vw}.hero .txt{padding-bottom:0}}
+/* board */
+.board{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);margin-top:48px;grid-auto-rows:104px}
+.tile{background:var(--surface);position:relative;overflow:hidden;padding:20px;display:flex;flex-direction:column;justify-content:flex-end;min-width:0;transition:background .3s}
+.tile:hover{background:var(--surface2)}
+.tile h3{font-size:1.125rem;font-weight:500;letter-spacing:-.01em;line-height:1.2;margin-bottom:6px}
+.tile p{font-size:1rem;line-height:1.4;max-width:30ch;color:#d4d4d4}
+.tile.hd{grid-column:1/7;grid-row:span 2;justify-content:flex-start;background:var(--bg);padding:0}
+.tile.hd h2{font-size:clamp(2.25rem,4vw,3.75rem)}
+.tile .ring{position:absolute;border-radius:50%;overflow:hidden}
+.tile .ring img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1);transform:scale(1.25);transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.tile:hover .ring img{transform:scale(1.4)}
+.t1{grid-column:7/13;grid-row:span 4;background:var(--accent)}.t1:hover{background:#c8182d}.t1 p{color:#fff}
+.t1 .ring{width:330px;height:330px;right:-60px;top:-40px}
+.t2{grid-column:1/4;grid-row:span 2}.t3{grid-column:4/7;grid-row:span 2}
+.t4{grid-column:1/7;grid-row:span 2;background:var(--ink);color:var(--bg)}.t4 p{color:#333}
+.t4 .ring{width:260px;height:260px;right:-50px;top:-30px}
+.t5{grid-column:7/13;grid-row:span 2}
+.t5 .ring{width:200px;height:200px;right:24px;top:20px}
+.disc{position:absolute;border-radius:50%;background:var(--accent)}
+.t2 .disc{width:150px;height:150px;right:-30px;top:-30px}.t3 .disc{width:110px;height:110px;right:24px;top:20px;background:var(--ink)}
+@media(max-width:900px){.board{grid-template-columns:1fr 1fr;grid-auto-rows:28vw;gap:6px}.tile.hd{grid-column:1/-1;grid-row:span 2}.t1,.t4,.t5{grid-column:1/-1;grid-row:span 3}.t2,.t3{grid-column:span 1;grid-row:span 2}.tile.hd h2{font-size:9vw}.t1 .ring{width:60vw;height:60vw}.t4 .ring{width:50vw;height:50vw}.t5 .ring{width:36vw;height:36vw}.t2 .disc{width:30vw;height:30vw}.t3 .disc{width:22vw;height:22vw}}
+/* bar */
+.bar{margin-top:64px}
+.bar h2{max-width:14ch}
+.seg{display:flex;gap:6px;height:22vh;min-height:150px;margin-top:64px}
+.seg>div{padding:20px;font-size:clamp(1.125rem,1.7vw,1.875rem);font-weight:600;letter-spacing:-.03em;line-height:1.05;flex:1;transition:flex .5s cubic-bezier(.2,.7,.2,1)}
+.seg>div:hover{flex:1.6}
+.seg .s1{background:var(--accent)}.seg .s2{background:var(--surface2)}.seg .s3{background:var(--ink);color:var(--bg)}.seg .s4{background:var(--accent)}.seg .s5{background:var(--surface2)}
+.cl{display:flex;gap:6px;margin-top:12px}
+.cl p{flex:1;font-size:1.0625rem;max-width:26ch;line-height:1.35}
+@media(max-width:900px){.seg{flex-direction:column;height:auto;min-height:0;gap:6px}.seg>div{flex:none;min-height:72px;padding:20px}.seg>div:hover{flex:none}.cl{display:none}.segm{display:block!important}}
+.segm{display:none}
+/* race */
+.race{background:var(--ink);color:var(--bg);margin-top:clamp(96px,12vw,200px);padding:clamp(48px,6vw,96px) var(--m);min-height:min(88svh,800px)}
+.race .in{max-width:1600px;margin:0 auto}
+.race h2{max-width:16ch}
+.rui{margin-top:40px;max-width:1000px;font-size:1rem}
+.rui .opts{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.rui .opts button{font:500 1rem/1 Switzer,sans-serif;min-height:48px;padding:0 22px;border-radius:99px;border:2px solid var(--bg);background:transparent;color:var(--bg);cursor:pointer;transition:background .2s,color .2s}
+.rui .opts button[aria-pressed=true]{background:var(--bg);color:var(--ink)}
+.lane{margin-bottom:16px}
+.lane .nm{display:flex;justify-content:space-between;font-weight:500;margin-bottom:6px;font-size:1rem}
+.track{height:56px;background:#d8d8d8;position:relative;overflow:hidden;border-radius:99px}
+.fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--bg);border-radius:99px}
+.fill.sp{background:var(--accent)}
+.rui .go{margin-top:8px}
+.rsub{margin-top:16px;max-width:60ch;font-size:1rem;color:#333}
+/* stats */
+.stat{min-height:88svh;padding:clamp(48px,6vw,96px) var(--m) var(--m);display:flex;flex-direction:column;justify-content:space-between;gap:48px;max-width:1600px;margin:0 auto}
+.stat h2{font-size:clamp(2.25rem,3.4vw,2.75rem)}
+.ctl{margin-top:28px;max-width:420px;font-size:1rem}
+.ctl label{display:flex;justify-content:space-between;margin-bottom:12px;font-weight:500}
+input[type=range]{width:100%;height:44px;background:transparent;accent-color:var(--accent);cursor:pointer}
+.res{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.fig{font-weight:600;font-size:clamp(5.5rem,19vw,19rem);line-height:.8;letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.fig small{font-size:.22em;letter-spacing:-.02em;margin-left:.15em;font-weight:500}
+.how{max-width:30ch;font-size:1.0625rem;color:#d0d0d0}
+@media(max-width:900px){.fig{font-size:27vw}.res{flex-direction:column;align-items:flex-start}.fig small{display:block;margin:12px 0 0;font-size:20px}.stat{min-height:0;gap:64px}}
+/* faq */
+.faq{display:grid;grid-template-columns:4fr 8fr;gap:var(--gap)}
+.faq h2{position:sticky;top:96px;align-self:start}
+details{background:var(--surface);margin-bottom:var(--gap);border-radius:0;transition:background .25s}
+details[open]{background:var(--accent)}
+summary{list-style:none;cursor:pointer;min-height:72px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;font-size:1.25rem;font-weight:500;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.8rem;transition:transform .3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 24px 24px;max-width:52ch}
+@media(max-width:900px){.faq{grid-template-columns:1fr}.faq h2{position:static;font-size:9vw;margin-bottom:12px}summary{min-height:64px;font-size:1.125rem}}
+/* cta */
+.ctar{display:grid;grid-template-columns:2fr 8fr 2fr;gap:12px;margin:clamp(96px,12vw,200px) 0 0;height:360px}
+.ctar>div{border-radius:20px;overflow:hidden;position:relative}
+.ctar .mid{background:var(--accent);padding:40px;display:flex;flex-direction:column;justify-content:center;gap:16px}
+.ctar .mid h2{font-size:clamp(1.75rem,2.6vw,2.5rem);max-width:20ch}
+.ctar .mid p{max-width:46ch}
+.ctar .mid .btn{align-self:flex-start}
+.ctar .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1)}
+.ctar .fl{background:var(--surface2)}
+@media(max-width:900px){.ctar{grid-template-columns:1fr 1fr;height:auto;margin:96px 0 0}.ctar .mid{grid-column:1/-1;min-height:300px;padding:24px}.ctar>div:not(.mid){height:120px}}
+/* footer */
+footer{padding:var(--m);max-width:1600px;margin:clamp(96px,12vw,160px) auto 0}
+.mk{display:flex;gap:4px;align-items:flex-end;height:34svh;min-height:200px}
+.mk span{flex:1;background:var(--surface2);color:var(--bg);display:flex;align-items:flex-start;justify-content:center;font-weight:600;font-size:clamp(5rem,15vw,15rem);line-height:.8;letter-spacing:-.05em;overflow:hidden;padding-top:.03em}
+.mk span:nth-child(1){height:70%;background:var(--ink)}.mk span:nth-child(2){height:100%;background:var(--accent);color:var(--bg)}.mk span:nth-child(3){height:80%;background:var(--ink)}.mk span:nth-child(4){height:92%;background:var(--surface2);color:var(--ink)}.mk span:nth-child(5){height:62%;background:var(--accent)}.mk span:nth-child(6){height:86%;background:var(--ink)}.mk span:nth-child(7){height:74%;background:var(--surface2);color:var(--ink)}
+.fl2{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);margin-top:56px;font-size:1rem}
+.fl2 .a{grid-column:1/6;font-size:1.0625rem;line-height:1.4}.fl2 .a small{display:block;color:var(--muted);margin-top:12px;font-size:1rem}
+.fl2 ul{grid-column:6/9;list-style:none;display:grid;gap:6px;align-content:start}
+.fl2 .t{grid-column:9/13;display:grid;gap:4px;align-content:start}
+.cr{font-size:1rem;color:var(--muted);max-width:70ch;margin-top:32px;padding-bottom:16px}
+@media(max-width:900px){.fl2 .a,.fl2 ul,.fl2 .t{grid-column:1/-1}.mk{height:22svh}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:calc(var(--d,0)*70ms)}
+.rv.v{opacity:1;transform:none}
+.nojs .rv{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.tile .ring img{transition:none}}
+</style>
+</head>
+<body class="nojs">
+<div class="wrap">
+<nav>
+  <a class="mark" href="#top" aria-label="Agnost AI, unofficial concept">agnost</a>
+  <ul><li><a href="#jobs">Narrow jobs</a></li><li><a href="#how">How</a></li><li><a href="#race">The numbers</a></li><li><a href="#faq">Questions</a></li></ul>
+  <a class="btn lt" href="#race">Run the race</a>
+</nav>
+</div>
+<header class="hero" id="top">
+  <div class="shape"><div class="c1" id="c1" aria-hidden="true"></div><div class="c2" aria-hidden="true"></div><p class="lab">The big circle is a frontier model. The small one is the specialist that learns the narrow job from your traces.</p></div>
+  <div class="txt">
+    <h1 class="rv">your logs are training data</h1>
+    <p class="rv" style="--d:1">Agnost AI uses your agent's production traces to train a model specialized for your exact workload.</p>
+    <a class="btn lt rv" style="--d:2" href="#race">See the numbers</a>
+  </div>
+</header>
+
+<div class="wrap">
+<section class="sec" id="jobs" aria-labelledby="j-h">
+  <div class="board">
+    <div class="tile hd"><h2 id="j-h" class="rv">most agents do four narrow jobs</h2></div>
+    <div class="tile t1 rv"><div class="ring"><img src="assets/mail-sorting-room-u-s-post-office.jpg" width="1400" height="1127" alt="A post office mail sorting room with pigeonhole shelves, early twentieth century" loading="lazy"></div><h3>Route a request to the correct tool</h3><p>Frontier prices for every request, for a job that repeats.</p></div>
+    <div class="tile t2 rv" style="--d:1"><div class="disc" aria-hidden="true"></div><h3>Narrow system prompt</h3><p>Fixed instructions, given inputs.</p></div>
+    <div class="tile t3 rv" style="--d:2"><div class="disc" aria-hidden="true"></div><h3>Parse and format</h3><p>The final response, every time.</p></div>
+    <div class="tile t4 rv"><div class="ring"><img src="assets/copyright-card-catalog-files.jpg" width="1400" height="1050" alt="Rows of card catalog files" loading="lazy"></div><h3>Retrieve the relevant data from internal tool calls</h3><p>The same lookups, over and over.</p></div>
+    <div class="tile t5 rv" style="--d:1"><div class="ring"><img src="assets/inside-a-card-catalog-at-the-indiana.jpg" width="1400" height="1050" alt="Inside a card catalog with cards in drawers" loading="lazy"></div><h3>A small, repeatable slice</h3><p>The underlying frontier model can write code, solve advanced mathematics and understand biology. Your agent uses a slice of that.</p></div>
+  </div>
+</section>
+
+<section class="sec bar" id="how" aria-labelledby="h-h">
+  <h2 id="h-h" class="rv">how traces become a model</h2>
+  <div class="seg rv" data-ui>
+    <div class="s1">Send your traces</div><div class="s2">Find the recurring workflows</div><div class="s3">Build an eval set</div><div class="s4">Train a specialist</div><div class="s5">Benchmark it</div>
+  </div>
+  <div class="cl"><p>Send your existing traces through OpenTelemetry or the SDK.</p><p>Agnost identifies the recurring workflows your agent performs.</p><p>Held-out production traces become the eval set.</p><p>A specialist model is trained on the historical workload.</p><p>It is benchmarked against your current model on success, latency and cost.</p></div>
+  <p class="segm" style="margin-top:16px">Send traces through OpenTelemetry or the SDK. Agnost finds recurring workflows, builds an eval set from held-out traces, trains a specialist and benchmarks it against your current model on success, latency and cost.</p>
+</section>
+</div>
+
+<section class="race" id="race" aria-labelledby="r-h">
+  <div class="in">
+    <h2 id="r-h" class="rv">same request, two models</h2>
+    <div class="rui" data-ui>
+      <div class="opts" role="group" aria-label="Which latency">
+        <button type="button" data-k="med" aria-pressed="true">Median request</button>
+        <button type="button" data-k="tail" aria-pressed="false">Slowest requests</button>
+      </div>
+      <div class="lane"><div class="nm"><span>Opus 4.8, the frontier model</span><span id="t1">4.80s</span></div><div class="track"><div class="fill" id="f1"></div></div></div>
+      <div class="lane"><div class="nm"><span>agnost-0.1, the specialist</span><span id="t2">0.47s</span></div><div class="track"><div class="fill sp" id="f2"></div></div></div>
+      <button class="btn go" id="go" type="button">Send the request</button>
+    </div>
+    <p class="rsub">Figures are from Agnost's Launch YC post (Aug 20, 2026): one custom model for one customer workload, an Identifier Extraction Agent, tested on 780 held-out traces. Median 4.80s vs 0.47s, tail 11.20s vs 1.35s. Bars run at real relative speed, slowed down so you can watch.</p>
+  </div>
+</section>
+
+<section class="stat" aria-labelledby="s-h">
+  <div>
+    <h2 id="s-h" class="rv">how many completed tasks?</h2>
+    <div class="ctl" data-ui><label for="n"><span>Tasks</span><output id="nv">100,000</output></label><input id="n" type="range" min="1000" max="1000000" step="1000" value="100000"></div>
+  </div>
+  <div class="res">
+    <p class="fig" id="fig" aria-live="polite">$3,970<small>saved</small></p>
+    <p class="how">Worked out from $42.00 vs $2.30 per 1,000 completed tasks, Agnost's numbers for that one workload. Your own will differ.</p>
+  </div>
+</section>
+
+<div class="wrap">
+<section class="sec" id="faq" aria-labelledby="q-h">
+  <div class="faq">
+    <h2 id="q-h" class="rv">fair questions</h2>
+    <div>
+      <details name="f" open><summary>Should a specialist replace frontier models?</summary><p>Not everywhere. Agnost says this is one model for one workload. Frontier models stay the right choice for open-ended work.</p></details>
+      <details name="f"><summary>How do I send traces?</summary><p>Through OpenTelemetry or the Agnost SDK.</p></details>
+      <details name="f"><summary>When would I switch models?</summary><p>Only when the specialist wins on your own workload, measured on success, latency and cost.</p></details>
+      <details name="f"><summary>What does Agnost need from me?</summary><p>If you have meaningful daily traffic, an anonymized trace export. Agnost builds a held-out evaluation set and tells you whether a specialist is worth training.</p></details>
+    </div>
+  </div>
+</section>
+
+<div class="ctar">
+  <div class="fl" aria-hidden="true"></div>
+  <div class="mid"><h2 class="rv">send a trace export</h2><p>Agnost will analyze the workload and say whether a specialist model is worth training.</p><a class="btn lt" href="https://call.agnost.ai">Book a call with Agnost</a></div>
+  <div class="ph"><img src="assets/mail-receiving-sorting-room-u-s.jpg" width="1400" height="1120" alt="A mail receiving and sorting room with wheeled bins, early twentieth century" loading="lazy"></div>
+</div>
+
+<footer>
+  <div class="mk" aria-hidden="true"><span>a</span><span>g</span><span>n</span><span>o</span><span>s</span><span>t</span><span>.</span></div>
+  <div class="fl2">
+    <div class="a"><p>An unofficial concept by Axlios Media, not affiliated with Agnost AI. Wording credited to agnost.ai and Agnost's Launch YC post.</p><small>Built as a pitch. Nothing here is Agnost's own site, product or claim.</small></div>
+    <ul><li><a href="https://agnost.ai">agnost.ai</a></li><li><a href="https://www.ycombinator.com/companies/agnost-ai">Agnost AI at Y Combinator</a></li><li><a href="https://axliosmedia.com">axliosmedia.com</a></li></ul>
+    <div class="t"><span>Local time at Axlios Media</span><span id="clock" style="font-size:1.5rem;font-weight:600">--:--</span></div>
+  </div>
+  <p class="cr">Pictures, all shown in grayscale and not Agnost's: “Mail sorting room, U.S. Post Office, Washington, D.C.” by National Photo Company Collection, public domain, via <a href="https://commons.wikimedia.org/wiki/File:Mail_sorting_room,_U.S._Post_Office,_Washington,_D.C.)_-_National_Photo_Co.,_Washington,_D.C_LCCN90709842.jpg">Wikimedia Commons</a>; “Mail receiving sorting room, U.S.” by Library of Congress, CC0, via <a href="https://www.rawpixel.com/image/7006615/photo-image-vintage-factory-public-domain">rawpixel</a>; “Copyright Card Catalog Files” by Michael Holley Swtpc6800, public domain, via <a href="https://commons.wikimedia.org/wiki/File:Copyright_Card_Catalog_Files.jpg">Wikimedia Commons</a>; “Inside a card catalog at the Indiana State Library” by TBurmeister (WMF), <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/w/index.php?curid=153582891">Wikimedia Commons</a>.</p>
+</footer>
+</div>
+
+<script>
+document.body.classList.remove('nojs');
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){if(rm)el.classList.add('v');else io.observe(el)});
+/* hero circle drift */
+var c1=document.getElementById('c1');
+addEventListener('scroll',function(){if(rm)return;c1.style.transform='translateY('+(scrollY*-.12)+'px) scale('+(1+scrollY/5000)+')'},{passive:true});
+/* race */
+var mode='med',D={med:[4.80,0.47],tail:[11.20,1.35]},f1=document.getElementById('f1'),f2=document.getElementById('f2'),tm=[];
+function setT(){document.getElementById('t1').textContent=D[mode][0].toFixed(2)+'s';document.getElementById('t2').textContent=D[mode][1].toFixed(2)+'s'}
+function race(){
+ tm.forEach(clearTimeout);tm=[];
+ var slow=rm?0:1;
+ [f1,f2].forEach(function(f,i){f.style.transition='none';f.style.width='0%';void f.offsetWidth;
+  var secs=D[mode][i]*(mode==='tail'?.8:1.4)*slow;
+  f.style.transition='width '+secs+'s linear';f.style.width='100%'});
+}
+document.querySelectorAll('.opts button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.opts button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');mode=b.dataset.k;setT();race()})});
+document.getElementById('go').addEventListener('click',race);
+var rio=new IntersectionObserver(function(es){if(es[0].isIntersecting){race();rio.disconnect()}},{threshold:.4});rio.observe(document.querySelector('.rui'));
+/* slider */
+var n=document.getElementById('n'),nv=document.getElementById('nv'),fig=document.getElementById('fig');
+function calc(){var v=+n.value,s=(42.00-2.30)*v/1000;nv.textContent=v.toLocaleString('en-US');fig.innerHTML='$'+Math.round(s).toLocaleString('en-US')+'<small>saved</small>'}
+n.addEventListener('input',calc);calc();
+/* clock */
+function tick(){try{document.getElementById('clock').textContent=new Intl.DateTimeFormat('en-US',{hour:'numeric',minute:'2-digit',timeZone:'Asia/Kolkata'}).format(new Date())+' IST'}catch(e){}}
+tick();setInterval(tick,30000);
+if(location.hash==='#shot'){document.querySelectorAll('.rv').forEach(function(e){e.classList.add('v')});document.querySelectorAll('img').forEach(function(i){i.loading='eager'});var st=document.createElement('style');var dsk=innerWidth>800;st.textContent='.hero{min-height:'+(dsk?'860px':'0')+'!important}.race{min-height:700px!important}.stat{min-height:700px!important}.c1{'+(dsk?'width:1000px;height:1000px;left:calc(78% - 500px);top:calc(55% - 500px)':'')+'}.c2{'+(dsk?'width:260px;height:260px;left:calc(78% - 470px);top:calc(55% + 50px)':'')+'}'+(dsk?'.seg{height:190px}':'')+'.mk{height:300px}';document.head.appendChild(st)}
+</script>
+</body>
+</html>
