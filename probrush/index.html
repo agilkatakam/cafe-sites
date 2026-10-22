@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Probrush Painters - Painter in Christchurch</title>
+<meta name="description" content="Probrush Painters is a painting business listed in Christchurch, New Zealand. Call 03-352 4075 or email probrushpainters@hotmail.co.nz for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --tile:#f3f3f3; --ink:#232323; --muted:#6e6e6e;
+  --mint:#a1ffcb; --gap:8px; --marg:8px; --r:8px;
+  --small:13px; --body:17px; --stat:clamp(22px,3vw,44px); --name:clamp(84px,11vw,168px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Hanken Grotesk",Arial,sans-serif;font-size:var(--body);line-height:1.45;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+img{display:block}
+a{color:var(--ink)}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.js .reveal{opacity:1;transform:none;transition:none}}
+
+.board{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:90px;gap:var(--gap);padding:var(--marg)}
+.tile{background:var(--tile);border-radius:var(--r);overflow:hidden;position:relative;display:flex;flex-direction:column;justify-content:flex-start;padding:22px 24px}
+.tile.bottom{justify-content:flex-end}
+.tile.ink{background:var(--ink);color:#ffffff}
+.tile.ink a{color:#ffffff}
+.tile.mint{background:var(--mint);color:var(--ink)}
+.tile.photo{padding:0}
+.tile.photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(1);transform:scale(1.06);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.tile.photo.in img,.js .tile.photo img.seen{transform:scale(1)}
+@media (prefers-reduced-motion: no-preference){
+  .t-show img{animation:pan 24s ease-in-out infinite alternate}
+  @keyframes pan{from{object-position:50% 35%}to{object-position:50% 65%}}
+}
+.tile .cap{position:absolute;right:12px;top:10px;background:var(--bg);color:var(--muted);font-size:var(--small);padding:2px 8px;border-radius:4px}
+
+/* top row */
+.t-logo{grid-column:1/2;grid-row:1/2;align-items:center;justify-content:center}
+.t-logo span{font-weight:500;font-size:26px;letter-spacing:-0.05em}
+.t-links{grid-column:2/9;grid-row:1/2;flex-direction:row;align-items:center;justify-content:center;gap:34px;font-size:var(--body)}
+.t-links a{text-decoration:none;font-weight:500}
+.t-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.t-action{grid-column:9/13;grid-row:1/2;align-items:center;justify-content:center}
+.btn-light{background:#ffffff;color:var(--ink);margin-top:0}
+.btn-light:hover{background:var(--mint)}
+.btn{display:inline-block;background:var(--ink);color:#ffffff;text-decoration:none;padding:14px 24px;border-radius:6px;font-weight:500;margin-top:16px}
+.btn:hover{background:#3a3a3a}
+.btn:active{transform:translateY(2px)}
+
+
+/* first screen board */
+.t-name{grid-column:1/8;grid-row:2/6}
+.t-name h1{font-weight:500;font-size:var(--name);letter-spacing:-0.05em;line-height:.9}
+.name-sub{margin-top:14px;font-size:clamp(18px,1.5vw,22px);color:var(--muted)}
+.t-photo-a{grid-column:8/13;grid-row:2/6}
+.t-photo-b{grid-column:1/6;grid-row:6/10}
+.t-dark{grid-column:6/10;grid-row:6/10}
+.t-mint{grid-column:10/13;grid-row:6/10}
+.stat{font-size:var(--stat);font-weight:500;line-height:1.1;letter-spacing:-0.03em}
+.small{font-size:var(--small);color:var(--muted)}
+.ink .small{color:#9a9a9a}
+
+/* intro statement tiles */
+.t-h{grid-column:1/13;grid-row:span 2}
+.t-h h2{font-size:var(--stat);font-weight:500;letter-spacing:-0.03em;line-height:1.1}
+.t-intro{grid-column:1/7;grid-row:span 3}
+.t-intro2{grid-column:7/13;grid-row:span 3}
+.lead{font-size:clamp(19px,1.6vw,24px);line-height:1.4}
+.bodyl{font-size:var(--body);line-height:1.5;max-width:52ch}
+
+/* feature rows (dark) */
+.t-row{grid-column:1/13;grid-row:span 2;flex-direction:row;align-items:center;gap:48px}
+.t-row .ph{margin-left:auto;font-weight:500;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.t-row .what{font-size:var(--stat);margin:0;font-weight:500;letter-spacing:-0.03em;line-height:1.1;}font-weight:500;letter-spacing:-0.02em}
+.t-row .how{font-size:var(--body);color:#cfcfcf;max-width:56ch}
+
+/* showcase */
+.t-show{grid-column:1/13;grid-row:span 5}
+
+/* number + contact tiles */
+.t-num{grid-column:1/8;grid-row:span 3}
+.t-num .n{font-size:clamp(40px,5.4vw,84px);font-weight:500;letter-spacing:-0.04em;line-height:1}
+.t-mail{grid-column:8/13;grid-row:span 3}
+.t-mail .m{font-size:clamp(19px,1.6vw,23px);font-weight:500;overflow-wrap:anywhere}
+.t-city{grid-column:1/5;grid-row:span 3}
+.t-quote{grid-column:5/9;grid-row:span 3;text-decoration:none}
+.t-quote:hover{background:#8ff0bd}
+.t-photo-c{grid-column:9/13;grid-row:span 3}
+
+/* footer */
+.t-mark{grid-column:1/5;grid-row:span 4;align-items:center;justify-content:center}
+.t-mark span{font-size:clamp(120px,11vw,168px);font-weight:500;line-height:.8;letter-spacing:-0.06em;color:var(--mint)}
+.t-note{grid-column:5/13;grid-row:span 4}
+.t-note p{font-size:var(--small);color:#9a9a9a;line-height:1.6;max-width:72ch}
+.t-note a{color:#ffffff}
+
+@media (max-width:900px){
+  .board{grid-auto-rows:76px;gap:6px;padding:6px}
+  .t-logo{grid-column:1/3}
+  .t-links{grid-column:3/9;gap:18px;justify-content:flex-start;padding:0 14px;overflow:hidden}
+  .t-links a:nth-child(n+3){display:none}
+  .t-action{grid-column:1/13;grid-row:6/7}
+  .t-name{grid-column:1/13;grid-row:2/6}
+  .t-name h1{font-size:21vw}
+  .t-photo-a{grid-column:1/13;grid-row:7/11}
+  .t-photo-b{grid-column:1/13;grid-row:11/15}
+  .t-dark{grid-column:1/7;grid-row:15/19}
+  .t-mint{grid-column:7/13;grid-row:15/19}
+  .t-intro,.t-intro2{grid-column:1/13;grid-row:span 3}
+  .t-row{grid-row:span 2}
+  .t-num{grid-column:1/13}
+  .t-mail{grid-column:1/13}
+  .t-city{grid-column:1/7}
+  .t-quote{grid-column:7/13}
+  .t-photo-c{grid-column:1/13;grid-row:span 3}
+  .t-mark{grid-column:1/5;grid-row:span 3}
+  .t-mark span{font-size:26vw}
+  .t-note{grid-column:5/13;grid-row:span 3}
+}
+@media (max-width:900px){
+  .t-row{flex-direction:column;align-items:flex-start;gap:10px;grid-row:span 3}
+  .t-row .ph{margin-left:0}
+}
+@media (max-width:480px){
+  .t-mark{grid-column:1/13;grid-row:span 2}
+  .t-note{grid-column:1/13;grid-row:span 3}
+}
+</style>
+</head>
+<body>
+
+<div class="board">
+
+  <div class="tile ink t-logo"><span>P.</span></div>
+  <nav class="tile t-links" aria-label="Sections">
+    <a href="#jobs">The jobs</a>
+    <a href="#work">The work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="tile ink t-action"><a class="btn btn-light" href="tel:+6433524075">Call for a quote</a></div>
+
+  <div class="tile bottom t-name"><h1>Probrush</h1><p class="name-sub">Painters in Christchurch, New Zealand.</p></div>
+  <figure class="tile photo reveal t-photo-a"><img src="img/p7218002.jpg" alt="Stock photo of a painter rolling a wall"><figcaption class="cap">Stock photo</figcaption></figure>
+  <figure class="tile photo reveal t-photo-b"><img src="img/p6474496.jpg" alt="Stock photo of a painter at work indoors"><figcaption class="cap">Stock photo</figcaption></figure>
+  <div class="tile ink t-dark"><p class="stat">Painters in Christchurch.</p></div>
+  <div class="tile mint t-mint"><p class="stat">Quotes by phone or email.</p><a class="btn" href="tel:+6433524075">Call for a quote</a></div>
+
+  <div class="tile t-h" id="jobs"><h2>The jobs people usually call a painter for.</h2></div>
+  <div class="tile t-intro reveal"><h2 class="stat" style="margin-bottom:16px">How a job starts</h2><p class="lead">No price list lives on this board. Every room, wall and roofline is different, so every job is quoted on its own facts. Call or email, describe the job, and the number comes back before any work starts.</p></div>
+  <div class="tile t-intro2 reveal"><h2 class="stat" style="margin-bottom:16px">The firm</h2><p class="bodyl">Probrush Painters is a painting business listed in Christchurch. One phone number, one inbox. The jobs are the usual kind: interiors that need a fresh coat, exteriors that have had enough of the weather, and the prep that makes paint stay put.</p></div>
+
+  <div class="tile ink t-row reveal"><h3 class="what">Interiors</h3><p class="how">Walls, ceilings, trims and doors. Rooms emptied, covered, painted and put back.</p><a class="ph" href="tel:+6433524075">03-352 4075</a></div>
+  <div class="tile ink t-row reveal"><h3 class="what">Exteriors</h3><p class="how">Weatherboards, render and fences, washed down, prepped and painted for the Canterbury weather.</p><a class="ph" href="tel:+6433524075">03-352 4075</a></div>
+  <div class="tile ink t-row reveal"><h3 class="what">Prep and repair</h3><p class="how">Scraping, sanding, filling and sealing. The unglamorous half of a paint job that decides how long it lasts.</p><a class="ph" href="tel:+6433524075">03-352 4075</a></div>
+
+  <figure class="tile photo reveal t-show" id="work"><img src="img/p5493653.jpg" alt="Stock photo of a painter in overalls rolling an interior wall"><figcaption class="cap">Stock photo</figcaption></figure>
+
+  <div class="tile t-num" id="contact"><p class="n">03-352 4075</p></div>
+  <div class="tile t-mail"><span class="small">The inbox</span><p class="m"><a href="mailto:probrushpainters@hotmail.co.nz">probrushpainters@hotmail.co.nz</a></p></div>
+
+  <div class="tile t-city"><p class="stat">Christchurch</p><p class="small" style="margin-top:10px">Canterbury, New Zealand</p></div>
+  <a class="tile mint t-quote" href="tel:+6433524075"><p class="stat">Call for a quote.</p><p class="small" style="margin-top:10px;color:var(--ink)">Or email for a quote</p></a>
+  <figure class="tile photo reveal t-photo-c"><img src="img/p6474471.jpg" alt="Stock photo of a roller applying paint to a wall"><figcaption class="cap">Stock photo</figcaption></figure>
+
+  <div class="tile ink t-mark"><span>P.</span></div>
+  <div class="tile ink t-note bottom"><p>This is an unofficial preview concept made by <a href="https://axliosmedia.com">Axlios Media</a> (axliosmedia.com). It is not an official site and the business has not approved it. All photos are stock images from <a href="https://www.pexels.com">Pexels</a>, shown in black and white, and are not the business's own work. Probrush Painters is listed in Christchurch, New Zealand: 03-352 4075, probrushpainters@hotmail.co.nz.</p></div>
+
+</div>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -10% 0px',threshold:0});
+  els.forEach(function(e,i){e.style.transitionDelay=((i%5)*60)+'ms';io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},1400);
+})();
+</script>
+</body>
+</html>
