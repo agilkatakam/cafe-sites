@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Metorial: put AI to work across your company, safely (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Metorial, built from the wording on metorial.com. Made by Axlios Media.">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#dfdedb;--surface:#d3d2ce;--ink:#26251e;--muted:#46443c;--accent:#2456d6;--dark:#1b1a15;--soft:#b9b7ae;--m:clamp(16px,2.2vw,32px);--ff:Sentient,Georgia,serif;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.125rem,1.05rem + .3vw,1.3125rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--ff);font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}
+h1,h2,h3{font-weight:400;letter-spacing:-.015em;line-height:1.02}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 26px;background:var(--accent);color:#fff;font:500 1.0625rem/1 var(--ff);text-decoration:none;border:0;cursor:pointer;border-radius:4px;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--ink)}.btn:active{transform:scale(.97)}
+.btn.sm{height:40px;padding:0 18px;font-size:15px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.dk :focus-visible{outline-color:#fff}
+.hero{position:relative;min-height:100svh;overflow:hidden;display:block}
+.top{position:absolute;z-index:3;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:22px var(--m);font-size:15px}
+.wm{font-size:1.5rem;letter-spacing:-.02em;text-decoration:none;font-weight:500}
+.top nav{display:flex;gap:26px;align-items:center}
+.top nav a:not(.btn){text-decoration:none;padding:8px 0}
+.top nav a:not(.btn):hover{color:var(--accent)}
+.stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;padding:0 var(--m)}
+.half{font-size:clamp(2.5rem,3.6vw,3.75rem);font-weight:500;letter-spacing:-.025em;line-height:1;white-space:nowrap;position:relative;z-index:2}
+.reel{position:absolute;left:50%;top:0;width:35vw;min-width:420px;transform:translateX(-50%);height:100%;overflow:hidden}
+.track{position:absolute;left:0;right:0;top:50%;transition:transform 1s cubic-bezier(.6,.05,.2,1);display:grid;gap:24px}
+.fr{aspect-ratio:16/9;border-radius:4px;overflow:hidden;background:var(--dark);color:#e8e6dd;padding:20px 22px;font-size:14px;line-height:1.5;font-family:var(--ff)}
+.fr.paper{background:#f1f0ec;color:var(--ink);font-family:var(--ff);font-size:16px}
+.fr .h{display:flex;justify-content:space-between;gap:12px;font-family:var(--ff);font-size:14px;color:var(--soft);margin-bottom:10px}
+.fr.paper .h{color:var(--muted)}
+.fr .ln{display:grid;grid-template-columns:auto 1fr auto;gap:10px;padding:3px 0}
+.fr .ln b{font-weight:400;color:#8fb0ff}
+.fr .ln i{font-style:normal;color:#9fd9a6}
+.fr .ln i.x{color:#ffb4a4}
+.fr.paper .bg{font-size:clamp(1.25rem,1.6vw,1.75rem);letter-spacing:-.015em;line-height:1.15;margin:8px 0 12px}
+.fr.paper .url{font-size:13px;background:var(--surface);padding:10px 12px;border-radius:4px;word-break:break-all}
+.fr.paper .pill{display:inline-block;margin:10px 8px 0 0;background:var(--surface);padding:5px 12px;border-radius:99px;font-size:14px}
+.sup{position:absolute;z-index:3;left:var(--m);bottom:32px;width:min(34ch,30vw);font-size:1.125rem;line-height:1.45}
+.sup .btn{margin-top:20px}
+.ax{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;padding:0 var(--m)}
+.ax>*{grid-column:3/13}
+.pre{min-height:56svh;display:flex;flex-direction:column;justify-content:center;gap:24px}.pre p{max-width:34ch;font-size:var(--step-lead);line-height:1.4}
+.pre h2{font-size:clamp(2.5rem,5vw,5rem);max-width:12ch}
+.row{display:grid;grid-template-columns:5fr 4fr;gap:24px;padding-bottom:clamp(64px,6vw,96px);align-items:start}
+.row h3{font-size:clamp(1.75rem,3vw,3rem);margin-bottom:14px;font-weight:500;letter-spacing:-.02em}
+.row p{max-width:34ch;font-size:1.0625rem}.row>div{padding-top:1vw}
+.row .n{font-size:15px;color:var(--muted);margin-bottom:10px}
+.row img{width:100%;height:auto;border-radius:4px;aspect-ratio:4/5;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .5s,transform .5s}
+.row:hover img{filter:none;transform:scale(1.02)}
+.row:nth-of-type(2) img{aspect-ratio:3/2;width:112%;margin-left:-12%}
+.row:nth-of-type(3) img{aspect-ratio:1;width:70%}
+.gate{background:var(--surface);padding:clamp(80px,10vw,160px) var(--m)}
+.gate-grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);max-width:1680px;margin:0 auto;align-items:start}
+.gate h2{font-size:clamp(2.25rem,1.2rem + 4vw,5rem);margin-bottom:24px;max-width:10ch}
+.gate p.s{max-width:36ch;margin-bottom:28px}
+.who{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.who button{font:inherit;font-weight:500;border:2px solid var(--ink);background:transparent;color:var(--ink);border-radius:4px;padding:12px 18px;cursor:pointer;text-align:left;transition:background .2s,color .2s,transform .2s;line-height:1.2}
+.who button small{display:block;font-weight:400;font-size:14px}
+.who button:hover{transform:translateY(-2px)}
+.who button[aria-pressed=true]{background:var(--ink);color:#fff}
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tools button{font:500 16px/1.2 var(--ff);padding:16px;border:0;border-radius:4px;background:#f1f0ec;color:var(--ink);cursor:pointer;text-align:left;transition:transform .2s,background .2s}
+.tools button:hover{transform:translateY(-2px);background:#fff}
+.tools button:active{transform:scale(.98)}
+.led{background:var(--dark);color:#e8e6dd;border-radius:4px;padding:clamp(18px,2.4vw,32px);font:16px/1.6 var(--ff);min-height:520px;display:flex;flex-direction:column}
+.led .t{display:flex;justify-content:space-between;gap:12px;color:var(--soft);font:15px var(--ff);margin-bottom:16px}
+.led ol{list-style:none;display:grid;gap:6px;flex:1;align-content:start}
+.led li{display:grid;grid-template-columns:auto 1fr auto;gap:12px;padding:10px 12px;border-radius:4px;background:#26251e;animation:in .4s both}
+@keyframes in{from{opacity:0;transform:translateY(10px)}}
+.led li .w{color:#8fb0ff}.led li .ok{color:#9fd9a6}.led li .no{color:#ffb4a4}
+.led .note{margin-top:16px;color:var(--soft);font:15px var(--ff)}
+.stages{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:minmax(72svh,auto) auto;position:relative}
+.sL{background:var(--bg);padding:clamp(24px,4vw,56px) var(--m) 40px;display:flex;align-items:flex-start}
+.sL h2{font-size:clamp(2.5rem,4.6vw,4.75rem);max-width:12ch;transition:opacity .25s}
+.sR{background:var(--accent);display:grid;place-items:center;padding:24px var(--m) 40px}
+.sR .fr{width:min(440px,100%);aspect-ratio:auto;min-height:250px;transition:opacity .25s}
+.rng{grid-column:1/-1;background:var(--bg);padding:28px var(--m) 28px}
+.track2{position:relative;height:8px;background:var(--soft)}
+.fill{position:absolute;left:0;top:0;bottom:0;background:var(--ink);width:0;transition:width .3s}
+.rng input{position:absolute;left:0;right:0;top:-12px;width:100%;height:32px;-webkit-appearance:none;appearance:none;background:transparent;margin:0;cursor:pointer}
+.rng input::-webkit-slider-runnable-track{background:transparent;height:32px}
+.rng input::-webkit-slider-thumb{-webkit-appearance:none;width:32px;height:32px;background:var(--accent);border:3px solid #fff;border-radius:0;cursor:grab}
+.rng input::-moz-range-track{background:transparent;height:32px}
+.rng input::-moz-range-thumb{width:26px;height:26px;background:var(--accent);border:3px solid #fff;border-radius:0}
+.names{display:flex;justify-content:space-between;margin-top:26px;font-size:16px;color:#4d4b43}
+.names button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:6px 0;text-align:left}
+.names .cur{color:var(--ink);font-weight:500}
+.faq{padding:clamp(80px,10vw,160px) var(--m)}
+.fq{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px;margin-bottom:clamp(56px,6vw,88px);align-items:start}
+.fq h3{grid-column:1/7;font-size:clamp(1.625rem,2.6vw,2.5rem);font-weight:500;line-height:1.1;max-width:20ch}
+.fq p{grid-column:8/13;font-size:1.0625rem;max-width:42ch;padding-top:.55em}
+.fq.hd h3{color:var(--muted);font-weight:400}
+.cta{background:var(--dark);color:#fff;min-height:72svh;display:grid;grid-template-rows:auto 1fr auto;justify-items:center;padding:32px var(--m) 24px;text-align:center}
+.cta h2{font-size:clamp(5rem,11vw,10.5rem);letter-spacing:-.03em;line-height:1;max-width:6.5em;font-weight:300}
+.cta .mid{align-self:center;display:grid;justify-items:center;gap:16px;padding:48px 0}
+.cta .ch{display:flex;gap:clamp(24px,8vw,120px);align-items:center}
+.cta .ch .btn{height:64px;font-size:1.25rem;width:240px;background:#fff;color:var(--ink)}
+.cta .ch .btn.p{background:var(--accent);color:#fff}
+.cta .ch .btn:hover{background:var(--soft);color:var(--ink)}
+.cta .or{color:var(--soft);font-size:1.125rem}
+.cta .after{color:var(--soft);font-size:1rem}
+footer{background:var(--dark);color:#fff;position:relative;overflow:hidden;min-height:90svh;padding:clamp(48px,6vw,96px) var(--m) 0}
+.fi{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.fi h2{font-size:clamp(2.25rem,5vw,4.75rem);margin-bottom:28px;font-weight:300}
+.fi .inv{grid-column:1/8}
+.fl{grid-column:10/13;display:grid;gap:8px;font-size:1rem;align-content:start}
+.fl a{text-decoration:none}.fl a:hover{color:#8fb0ff}
+.fine{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--soft);margin-top:clamp(48px,8vw,120px)}
+.bigname{display:block;font-size:30vw;line-height:.8;font-weight:500;letter-spacing:-.05em;white-space:nowrap;transform:translateY(24%);margin-top:20px;margin-left:-.04em;color:#f1f0ec}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.nojs .rv{opacity:1;transform:none}
+@media(max-width:1000px){
+ .top nav a:not(.btn){display:none}
+ .hero{min-height:0}
+ .stage{position:relative;display:block;padding:96px var(--m) 0}
+ .half{font-size:10vw;white-space:normal;display:block}
+ .half.r{text-align:right}
+ .reel{position:relative;left:auto;transform:none;width:auto;min-width:0;height:auto;overflow:hidden;margin:20px 0}
+ .track{position:relative;top:auto;transform:none!important}
+ .reel .fr{aspect-ratio:auto;overflow:hidden;padding:20px 22px 26px}
+ .reel .fr:not(:first-child){display:none}
+ .sup{position:relative;left:auto;bottom:auto;width:auto;padding:24px var(--m) 56px;font-size:1.0625rem}
+ .ax>*{grid-column:1/-1}
+ .pre{min-height:50svh}.pre h2{font-size:9vw}
+ .row{grid-template-columns:1fr}
+ .row img,.row:nth-of-type(2) img,.row:nth-of-type(3) img{aspect-ratio:3/2;width:100%;margin:0}
+ .row:nth-of-type(2) img{width:70%;margin-left:30%}.row:nth-of-type(3) img{width:55%}
+ .gate-grid{grid-template-columns:1fr}.tools{grid-template-columns:1fr}
+ .stages{display:flex;flex-direction:column;min-height:0}
+ .sR{order:-1;min-height:46svh;padding-bottom:56px}.sL{padding-bottom:40px;min-height:40svh}
+ .sL h2{font-size:9vw}
+ .rng{order:3}
+ .fq{grid-template-columns:1fr}.fq h3,.fq p{grid-column:1/-1}.fq p{padding-top:0}.fq h3{font-size:24px;margin-bottom:12px}
+ .cta h2{font-size:18vw}.cta .ch{flex-direction:column;gap:12px;width:72%}.cta .ch .btn{width:100%}
+ .fi h2{font-size:11vw}.fi .inv,.fl{grid-column:1/-1}.fl{margin-top:16px}
+ .bigname{font-size:34vw}
+ footer{min-height:80svh}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="nojs">
+<header class="hero" id="top">
+ <div class="top"><a class="wm" href="#top">Metorial</a><nav aria-label="Main"><a href="#stall">The problem</a><a href="#gate">Try the gate</a><a href="#how">How it works</a><a href="#faq">Questions</a><a class="btn sm" href="https://metorial.com">Book a demo</a></nav></div>
+ <div class="stage">
+  <h1 class="half">Put AI to work</h1>
+  <div class="reel" aria-hidden="true"><div class="track" id="track">
+   <div class="fr paper" data-ui><div class="h"><span>Portal</span><span>Signed in with company SSO</span></div><div class="bg">Alex, here are the tools and skills you're allowed to use.</div><span class="pill">GitHub</span><span class="pill">Slack</span><span class="pill">Notion</span></div>
+   <div class="fr" data-ui><div class="h"><span>Every call, in the record</span><span>sample</span></div><div class="ln"><b>Alex Rivera</b><span>linear.create_issue</span><i>allowed</i></div><div class="ln"><b>Alex Rivera</b><span>stripe.create_refund</span><i>allowed</i></div><div class="ln"><b>Jamie Lee</b><span>postgres.run_query</span><i>allowed</i></div><div class="ln"><b>Jamie Lee</b><span>stripe.create_refund</span><i class="x">blocked</i></div></div>
+   <div class="fr paper" data-ui><div class="h"><span>Magic MCP URL</span><span>one link, any client</span></div><div class="bg">Paste one URL into any client.</div><div class="url">lumon-industries.metorial.com/connect/portal</div></div>
+  </div></div>
+  <span class="half r">safely.</span>
+ </div>
+ <div class="sup"><p>Every agent gets approved MCP tools and skills, tied to the person behind it. One MCP gateway, governed by role and recorded call by call.</p><a class="btn" href="https://metorial.com">Book a demo</a></div>
+</header>
+
+<main>
+<section id="stall" aria-labelledby="sh">
+ <div class="ax"><div class="pre"><h2 id="sh" class="rv">What stalls rollouts.</h2><p class="rv">The moment a second team wants agents connected to real apps, the workarounds start. These are the three that stall most rollouts.</p></div></div>
+ <div class="ax">
+  <div class="row rv"><div><h3>Shadow MCP</h3><p>People install MCP servers on their own laptops to get work done, and nobody knows which tools reach company data.</p></div><img src="img/a.jpg" width="1000" height="1250" alt="A carved wooden double door set in an old stone facade" loading="lazy"></div><!-- taste-skill-ignore -->
+  <div class="row rv"><div><h3>API keys in config files</h3><p>A personal token pasted into a local config works, so a teammate copies it. Months later it still works, with no owner and no expiry.</p></div><img src="img/b.jpg" width="1200" height="800" alt="A narrow opening in a white wall with a white staircase" loading="lazy"></div>
+  <div class="row rv"><div><h3>No record of what ran</h3><p>When an agent changes the wrong record, the first question is whose access it used. A shared credential has no answer.</p></div><img src="img/c.jpg" width="900" height="900" alt="A white spiral atrium seen from below" loading="lazy"></div>
+ </div>
+</section>
+
+<section class="gate" id="gate" aria-labelledby="gh">
+ <div class="gate-grid">
+  <div>
+   <h2 id="gh" class="rv">Try the gate.</h2>
+   <p class="s rv">Every tool call is checked against policy and recorded with the person behind it. Pick who is asking, then make the agent call a tool.</p>
+   <div class="who rv" role="group" aria-label="Who is asking"><button aria-pressed="true" data-p="0">Alex Rivera<small>Customer Support</small></button><button aria-pressed="false" data-p="1">Jamie Lee<small>Engineering</small></button></div>
+   <div class="tools rv" role="group" aria-label="Tool calls"><button data-t="linear.create_issue">linear.create_issue</button><button data-t="stripe.create_refund">stripe.create_refund</button><button data-t="slack.post_message">slack.post_message</button><button data-t="gmail.send_email">gmail.send_email</button><button data-t="postgres.run_query">postgres.run_query</button><button data-t="datadog.create_monitor">datadog.create_monitor</button></div>
+  </div>
+  <div class="led rv" data-ui aria-live="polite"><div class="t"><span>Call record</span><span>every call, with identity</span></div><ol id="led"></ol><p class="note">Sample policy for this concept. Tool names come from the support-agent demo on metorial.com. Who may call what is made up here to show the idea, not Metorial's rules.</p></div>
+ </div>
+</section>
+
+<section id="how" aria-labelledby="hh">
+ <div class="stages" id="stg">
+  <div class="sL"><h2 id="hh">First, sign in once.</h2></div>
+  <div class="sR"><div class="fr paper" data-ui id="frag"></div></div>
+  <div class="rng">
+   <div class="track2"><div class="fill" id="fill"></div><input type="range" id="rg" min="0" max="2" step="1" value="0" aria-label="Stage of how Metorial works"></div>
+   <div class="names" id="nm"><button data-i="0" class="cur">Sign in</button><button data-i="1">Paste a URL</button><button data-i="2">Checked and logged</button></div>
+  </div>
+ </div>
+</section>
+
+<section class="faq" id="faq" aria-label="Questions">
+ <div class="fq hd"><h3>Questions</h3><span></span></div>
+ <div class="fq rv"><h3>What is shadow MCP?</h3><p>People install MCP servers on their own laptops to get work done, and nobody knows which tools reach company data.</p></div><!-- taste-skill-ignore -->
+ <div class="fq rv"><h3>What checks each call?</h3><p>Protoguard checks every message and tool call against your policies before it reaches your systems.</p></div>
+ <div class="fq rv"><h3>Who sees which tools?</h3><p>People sign in, find the integrations and skills they're allowed to use, and connect their agent with one link. You control who gets access to what.</p></div>
+ <div class="fq rv"><h3>Is our data safe?</h3><p>Everything's encrypted, every integration is isolated, and you can run Metorial in your own cloud.</p></div>
+ <div class="fq rv"><h3>Which tools can agents reach?</h3><p>Give agents access to 1,100+ MCP servers and 20,000+ tools, all from one place. Connect internal systems and private APIs as your own providers.</p></div>
+</section>
+
+<section class="cta dk" aria-label="Next step">
+ <h2>Ready to</h2>
+ <div class="mid"><div class="ch"><a class="btn" href="https://metorial.com">Book a demo</a><span class="or">or</span><a class="btn p" href="https://metorial.com">Start with Metorial</a></div></div>
+ <h2>govern it?</h2>
+</section>
+</main>
+
+<footer class="dk">
+ <div class="fi"><div class="inv"><h2>Put AI to work, safely.</h2><a class="btn" href="https://metorial.com">Book a demo</a></div>
+  <div class="fl"><a href="https://metorial.com">metorial.com</a><a href="https://www.ycombinator.com/companies/metorial">Metorial on YC</a><a href="mailto:hey@metorial.com">hey@metorial.com</a></div></div>
+ <div class="fine"><span>Unofficial concept by Axlios Media, not affiliated with Metorial. Wording from metorial.com. Photos via Unsplash (picsum.photos).</span><span>Contact printed on metorial.com</span></div>
+ <span class="bigname" aria-hidden="true">Metorial</span>
+</footer>
+
+<script>
+document.body.classList.remove('nojs');
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=((i%3)*80)+'ms';io.observe(el)});
+var tr=document.getElementById('track'),k=0;
+function place(){if(innerWidth<=1000)return;var f=tr.children[0].offsetHeight+24;tr.style.transform='translateY('+(-(f*k+f/2))+'px)'}
+place();addEventListener('resize',place);
+if(!rm)setInterval(function(){if(document.hidden||innerWidth<=1000)return;k=(k+1)%tr.children.length;place()},3200);
+var people=[
+ {n:'Alex Rivera',allow:['linear.create_issue','stripe.create_refund','slack.post_message','gmail.send_email']},
+ {n:'Jamie Lee',allow:['linear.create_issue','slack.post_message','postgres.run_query','datadog.create_monitor']}];
+var p=0,led=document.getElementById('led'),n=0;
+function now(){var d=new Date(Date.now()+n*1000);n++;return d.toTimeString().slice(0,8)}
+function add(who,tool,ok){var li=document.createElement('li');li.innerHTML='<span class="w"></span><span></span><span class="'+(ok?'ok':'no')+'">'+(ok?'allowed':'blocked by policy')+'</span>';li.children[0].textContent=who;li.children[1].textContent=tool+'  '+now();led.insertBefore(li,led.firstChild);while(led.children.length>7)led.removeChild(led.lastChild)}
+document.querySelectorAll('.who button').forEach(function(b){b.addEventListener('click',function(){p=+b.dataset.p;document.querySelectorAll('.who button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')})})});
+document.querySelectorAll('.tools button').forEach(function(b){b.addEventListener('click',function(){add(people[p].n,b.dataset.t,people[p].allow.indexOf(b.dataset.t)>-1)})});
+add('Alex Rivera','linear.create_issue',true);add('Jamie Lee','stripe.create_refund',false);
+var st=[
+ {h:'First, sign in once.',f:'<div class="h"><span>Portal</span><span>Signed in with company SSO</span></div><div class="bg">Jamie Lee, Engineering</div><p>Their groups decide which integrations and skills they see.</p><span class="pill">GitHub</span><span class="pill">Slack</span><span class="pill">Notion</span>'},
+ {h:'Then paste one URL.',f:'<div class="h"><span>Magic MCP URL</span><span>Claude, ChatGPT, Cursor, Codex</span></div><div class="bg">The same approved tools show up everywhere.</div><div class="url">lumon-industries.metorial.com/connect/portal</div>'},
+ {h:'Last, every call logged.',f:'<div class="h"><span>Tool call</span><span>checked against policy</span></div><div class="bg">Runs on that person\u2019s own connected account.</div><p>Recorded with their identity.</p><span class="pill">checked</span><span class="pill">logged</span>'}];
+var rg=document.getElementById('rg'),h2=document.getElementById('hh'),fr=document.getElementById('frag'),nm=document.querySelectorAll('#nm button'),fill=document.getElementById('fill');
+function paint(i){h2.textContent=st[i].h;fr.innerHTML=st[i].f;h2.style.opacity=1;fr.style.opacity=1;nm.forEach(function(b,j){b.className=j==i?'cur':''});fill.style.width=(i*50)+'%'}
+function setS(i){h2.style.opacity=0;fr.style.opacity=0;setTimeout(function(){paint(i)},rm?0:200)}
+rg.addEventListener('input',function(){setS(+rg.value)});
+nm.forEach(function(b){b.addEventListener('click',function(){rg.value=b.dataset.i;setS(+b.dataset.i)})});
+paint(0);
+</script>
+</body>
+</html>
