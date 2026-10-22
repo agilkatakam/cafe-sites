@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Living Room · Restaurant and Cafe on VIP Road, Raipur</title>
+<meta name="description" content="The Living Room is an open-air restaurant, cafe and caterer on VIP Road, Purena, Raipur, serving since 2017.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#101511; --panel:#171d18; --ink:#ece7dc; --muted:#a8a294; --accent:#c98f4e; --accent-ink:#101511;
+  --line:#2a332b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-weight:400;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-0.01em;line-height:1.05}
+h2{font-size:clamp(30px,3.4vw,46px);margin-bottom:36px}
+.kicker{font-family:'Inter',sans-serif;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.muted{color:var(--muted)}
+
+nav{position:absolute;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:20px 28px}
+nav .n{font-family:'Fraunces',serif;font-weight:600;font-size:20px;text-decoration:none}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:500;font-size:16px;text-decoration:none;padding:13px 30px;border:2px solid var(--accent);border-radius:3px}
+.btn:hover{background:transparent;color:var(--accent)}
+
+.hero{position:relative;height:min(88svh,760px);min-height:520px;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .scrim{position:absolute;inset:0;background:rgba(16,21,17,.44)}
+.hero .in{position:absolute;left:0;right:0;bottom:0;padding:0 28px 44px;max-width:1180px;margin:0 auto}
+.hero h1{font-size:clamp(46px,7vw,104px);color:#fff}
+.hero .tag{font-size:clamp(16px,1.6vw,21px);color:#f3efe6;margin-top:14px;font-weight:500}
+.hero .row{display:flex;align-items:center;gap:28px;margin-top:26px;flex-wrap:wrap}
+.hero .note{color:#e6e0d2;font-size:15px}
+
+section{padding:84px 0;border-top:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.two p{margin-bottom:1em}
+.two .big{font-size:clamp(19px,1.6vw,23px);line-height:1.45;font-weight:500}
+.two figure img{width:100%;height:auto}
+.fact{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px}
+.fact div{border:1px solid var(--line);border-radius:6px;padding:14px 18px;font-size:15px;flex:1 1 170px}
+.fact b{display:block;font-family:'Fraunces',serif;font-size:21px;color:var(--accent);font-weight:600;margin-bottom:2px}
+
+.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.menu-grid .w{grid-column:span 2}
+.menu-grid figure{position:relative;background:var(--panel);display:flex;flex-direction:column}
+.menu-grid img{width:100%;object-fit:cover;aspect-ratio:1;flex:none}
+.menu-grid .w img{aspect-ratio:2/1}
+.menu-grid figcaption{padding:10px 2px 26px;font-size:15px;color:var(--muted)}
+
+.space{position:relative}
+.space .grid{display:grid;grid-template-columns:5fr 7fr;gap:56px;align-items:center}
+
+.visit ul{list-style:none;font-size:18px;line-height:2}
+.visit .lbl{display:inline-block;width:86px;color:var(--muted);font-size:14px;letter-spacing:.08em;text-transform:uppercase;padding-top:4px;vertical-align:top}
+.visit a{text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+
+footer{border-top:1px solid var(--line);padding:40px 0 48px;font-size:14px;color:var(--muted)}
+footer .flogo{width:150px;margin-bottom:18px;border-radius:4px}
+footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .wrap{padding:0 20px}
+  section{padding:64px 0}
+  .two,.space .grid{grid-template-columns:1fr;gap:32px}
+  .menu-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .menu-grid .w{grid-column:span 2}
+  .hero{height:min(78svh,620px);min-height:480px}
+  .hero .in{padding:0 20px 32px}
+  nav{padding:16px 20px}
+  .visit ul{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <img src="img/hero.jpg" alt="The open-air dining room at The Living Room, with a glass canopy and hanging plants">
+  <div class="scrim"></div>
+  <nav aria-label="Main"><a class="n" href="#top">The Living Room</a><a class="btn" href="tel:+919285555002">Call us</a></nav>
+  <div class="in">
+    <h1>The Living Room</h1>
+    <p class="tag">Restaurant · Cafe · Caterers, on VIP Road, Raipur. Serving since 2017.</p>
+    <div class="row">
+      <a class="btn" href="tel:+919285555002">Call +91 92855 55002</a>
+      <span class="note">VIP Road, Purena, Raipur</span>
+    </div>
+  </div>
+</header>
+
+<section id="room">
+  <div class="wrap two">
+    <div>
+      <p class="kicker">The room</p>
+      <h2>A garden room<br>for long meals</h2>
+      <p class="big">We are an open-air cafe and restaurant under a glass canopy on VIP Road in Purena, Raipur, with plants overhead and green on every side.</p>
+      <p class="muted">The kitchen runs across cafe food, Continental, Chinese, North Indian, Italian and desserts, and we cater events off site too. Most plates sit in the Rs 600 for two range.</p>
+      <div class="fact">
+        <div><b>2017</b>Estab.</div>
+        <div><b>4.1</b>on Zomato, 106 dining ratings</div>
+        <div><b>86%</b>recommend on Facebook, 242 reviews</div>
+      </div>
+    </div>
+    <figure><img src="img/room.jpg" alt="Tables and wicker chairs under the canopy at The Living Room"></figure>
+  </div>
+</section>
+
+<section id="menu">
+  <div class="wrap">
+    <p class="kicker">On the menu</p>
+    <h2>Food from our kitchen</h2>
+    <div class="menu-grid">
+      <figure class="w"><img src="img/wings.jpg" alt="Glazed wings from The Living Room's kitchen"><figcaption>Starters and small plates</figcaption></figure>
+      <figure><img src="img/platter1.jpg" alt="A tandoori platter with dal and breads"><figcaption>Tandoori platters</figcaption></figure>
+      <figure><img src="img/pasta.jpg" alt="A bowl of pasta"><figcaption>Italian</figcaption></figure>
+      <figure><img src="img/biryani.jpg" alt="A handi of biryani"><figcaption>North Indian</figcaption></figure>
+      <figure><img src="img/platter2.jpg" alt="A platter with curry, breads and rice"><figcaption>North Indian</figcaption></figure>
+      <figure class="w"><img src="img/flatlay.jpg" alt="Noodles with garlic bread, from The Living Room's kitchen"><figcaption>Cafe plates and breads</figcaption></figure>
+    </div>
+    <p class="muted" style="margin-top:34px">Cuisines: Cafe, Continental, Chinese, North Indian, Italian, Desserts. Call ahead for the day's menu and hours.</p>
+  </div>
+</section>
+
+<section id="space" class="space">
+  <div class="wrap grid">
+    <figure><img src="img/space.jpg" alt="The canopy roof and hanging plants above the seating"></figure>
+    <div>
+      <p class="kicker">The space</p>
+      <h2>Sit under the glass</h2>
+      <p class="big">The dining room is a glasshouse: a canopy roof, hanging plants, wicker chairs and garden air. It works as well for a slow coffee as for a family dinner.</p>
+      <p class="muted">Find us on VIP Road towards Phunder Chowk, on the way to the airport.</p>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <p class="kicker">Visit</p>
+    <h2>Come by, or call first</h2>
+    <ul>
+      <li><span class="lbl">Address</span> VIP Road (Airport Road), towards Phunder Chowk, Purena, Raipur, Chhattisgarh 492001</li>
+      <li><span class="lbl">Call</span> <a href="tel:+919285555002">+91 92855 55002</a></li>
+      <li><span class="lbl">Email</span> <a href="mailto:thelivingroomcaferaipur1@gmail.com">thelivingroomcaferaipur1@gmail.com</a></li>
+      <li><span class="lbl">Hours</span> Call ahead for the day's hours and the day's menu</li>
+      <li><span class="lbl">Online</span> <a href="https://www.facebook.com/tlrcaferaipur/" rel="noopener">Facebook</a> · <a href="https://www.zomato.com/raipur/the-living-room-cafe-purena" rel="noopener">Zomato</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Living+Room+Cafe+%26+Lounge&amp;query_place_id=ChIJOz2-2ivdKDoRnPHjTF8PXsI" rel="noopener">Map</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap top">
+    <div>
+      <img class="flogo" src="img/logo.png" alt="The Living Room logo, established 2017">
+      <p>© 2026 The Living Room, Raipur. Photographs from the cafe's own Facebook page and Zomato listing. Website concept for The Living Room.</p>
+    </div>
+    <p><a href="#top">Back to top</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
