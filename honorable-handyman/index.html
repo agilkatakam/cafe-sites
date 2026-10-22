@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Honorable Handyman LLC | Estero, Florida</title>
+<meta name="description" content="Handyman repairs and installs in Estero, Florida. Call 239-315-8090 or email for a quote.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#dedad3;--surface:#d3cec6;--ink:#0a0a0a;--muted:#34312d;--teal:#256f82;--white:#fff;
+--small:clamp(.875rem,.85rem + .1vw,.9375rem);--body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--head:clamp(2.2rem,1.3rem + 3.6vw,4.4rem);--m:clamp(16px,2.8vw,40px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 var(--body)/1.4 "Schibsted Grotesk",system-ui,sans-serif;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:800;letter-spacing:-.05em;line-height:.88;text-wrap:balance}
+a{color:inherit}
+img{display:block;width:100%;height:100%;object-fit:cover}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--ink);color:var(--white);font:600 var(--body)/1 inherit;text-decoration:none;border:0;cursor:pointer;transition:background .2s,color .2s}
+.btn:hover,.btn:focus-visible{background:var(--white);color:var(--ink)}
+.btn.on-teal:hover{background:var(--bg)}
+.tl{font-weight:600;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+/* hero */
+.hero{background:var(--teal);color:var(--white);min-height:100svh;padding:var(--m);position:relative;display:grid;grid-template-rows:auto 1fr auto}
+.top{display:flex;justify-content:space-between;gap:16px;font-weight:600;font-size:var(--small);padding-top:8px}
+.top nav{display:flex;gap:24px;flex-wrap:wrap;justify-content:flex-end}
+.top a{text-decoration:none}.top a:hover{text-decoration:underline;text-underline-offset:5px}
+.name{align-self:center;padding:8vh 0 4vh}
+.name h1{font-size:clamp(5rem,15.5vw,16rem);line-height:.82;font-weight:800;letter-spacing:-.05em}
+.name h1 span{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.name h1 span i{display:block;font-style:normal;animation:up 1s cubic-bezier(.2,.7,.2,1) both}
+.name h1 span:first-child{color:var(--white)}
+.name h1 span:last-child{color:var(--ink)}
+.name h1 span:last-child i{animation-delay:.12s}
+@keyframes up{from{transform:translateY(105%)}to{transform:none}}
+.bottom{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.bottom p{max-width:26ch;font-size:var(--lead);line-height:1.15;letter-spacing:-.03em;font-weight:600;margin-left:auto;text-align:right}
+.bottom .act{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.hero .btn{background:var(--ink)}
+.hero .tl{color:var(--white)}
+/* index */
+.sec{padding:clamp(80px,11vw,170px) var(--m)}
+.sec h2{font-size:var(--head);margin-bottom:clamp(36px,5vw,72px);max-width:14ch}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,5vw,80px)}
+.cols h3{font-size:var(--lead);letter-spacing:-.03em;line-height:1;margin-bottom:18px}
+.cols ul{list-style:none;padding:0;font-size:var(--lead);line-height:1.35;font-weight:600;letter-spacing:-.025em}
+.cols li{padding:5px 0}
+.cols p{margin-top:20px;font-size:var(--body);font-weight:400;max-width:28ch}
+/* photos */
+.photos{display:grid;grid-template-columns:5fr 4fr 3fr;grid-auto-rows:minmax(0,1fr);gap:var(--m);padding:0 var(--m) clamp(80px,11vw,170px);align-items:end}
+.photos figure{position:relative;overflow:hidden;background:var(--surface)}
+.photos .p1{aspect-ratio:4/3}.photos .p2{aspect-ratio:3/4}.photos .p3{aspect-ratio:3/5}
+.photos figcaption{position:absolute;left:0;bottom:0;background:var(--bg);padding:8px 14px;font-size:var(--small);font-weight:600}
+.photos figure img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.photos figure:hover img{transform:scale(1.04)}
+/* pledge */
+.how{background:var(--ink);color:var(--bg);padding:clamp(80px,11vw,170px) var(--m)}
+.how .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(32px,6vw,100px);align-items:start}
+.how h2{font-size:clamp(3.4rem,10vw,10rem);line-height:.82;max-width:7ch;position:sticky;top:var(--m)}
+.how ol{list-style:none;padding:0;display:grid;gap:clamp(36px,5vw,64px)}
+.how li{font-size:var(--lead);line-height:1.25;letter-spacing:-.025em;font-weight:600}
+.how li b{display:block;font-size:var(--head);font-weight:800;letter-spacing:-.05em;line-height:.9;color:#fff;margin-bottom:10px}
+.how li span{display:block;font-weight:400;font-size:var(--body);color:#d3cec6;margin-top:8px;max-width:38ch}
+.how .pic{margin-top:clamp(40px,6vw,80px);aspect-ratio:16/9;overflow:hidden}
+/* contact */
+.contact{background:var(--bg);padding:clamp(80px,11vw,170px) var(--m);min-height:90svh;display:grid;grid-template-rows:auto 1fr auto;gap:40px}
+.contact .s{font-size:var(--lead);max-width:26ch;line-height:1.15;font-weight:600;letter-spacing:-.03em}
+.contact .mail{align-self:center;font-weight:800;letter-spacing:-.055em;line-height:.9;font-size:clamp(1.9rem,7.4vw,7.4rem);text-decoration:none;overflow-wrap:anywhere}
+.contact .mail:hover{color:var(--teal)}
+.contact .mail em{display:block;font-style:normal;color:var(--teal)}
+.contact .foot{display:grid;grid-template-columns:1fr 1fr;gap:var(--m);align-items:end}
+.contact .foot ul{list-style:none;padding:0;font-size:var(--lead);font-weight:600;letter-spacing:-.025em;line-height:1.3}
+/* form */
+.fm{background:var(--surface);padding:clamp(22px,3vw,36px);display:grid;gap:14px}
+.fm legend,.fm label.l{font-weight:600;font-size:var(--body)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;border:0;padding:0}
+.chips label{cursor:pointer}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:12px 18px;background:var(--bg);font-weight:600;min-height:46px;transition:background .15s,color .15s}
+.chips input:checked+span{background:var(--ink);color:#fff}
+.chips input:focus-visible+span{outline:3px solid var(--ink);outline-offset:3px}
+.fm textarea{width:100%;min-height:96px;border:2px solid var(--ink);background:var(--bg);padding:12px 14px;font:400 var(--body)/1.4 inherit;resize:vertical}
+footer{background:var(--ink);color:#d3cec6;padding:clamp(40px,6vw,80px) var(--m)}
+footer .w{font-size:clamp(3rem,13vw,12rem);font-weight:800;letter-spacing:-.06em;line-height:.85;color:#fff;white-space:nowrap;overflow:hidden}
+footer .w span{color:var(--teal)}
+footer .rows{display:grid;grid-template-columns:1fr 1fr;gap:var(--m);margin-top:36px}
+footer p{max-width:46ch;margin-bottom:.7em}
+footer a{color:#fff}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:1000px){.cols{grid-template-columns:1fr 1fr}.cols>div:last-child{grid-column:1/3}}
+@media(max-width:820px){
+ .name h1{font-size:clamp(3.4rem,17.4vw,7rem)}
+ .name{padding-top:14svh}
+ .bottom{flex-direction:column-reverse;align-items:flex-start}.bottom p{margin-left:0;text-align:left;max-width:30ch}
+ .cols{grid-template-columns:1fr}.cols>div:last-child{grid-column:auto}
+ .photos{grid-template-columns:1fr 1fr}.photos .p1{grid-column:1/3}
+ .how .wrap{grid-template-columns:1fr}.how h2{position:static}
+ .contact .foot{grid-template-columns:1fr}
+ .contact .mail{font-size:clamp(1.5rem,8vw,3rem)}
+ footer .rows{grid-template-columns:1fr}
+ .top nav a:not(:last-child){display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.name h1 span i{animation:none}.rv{opacity:1;transform:none}}
+</style></head>
+<body>
+<header class="hero" id="top">
+ <div class="top"><span>Honorable Handyman LLC</span><nav><a href="#services">Jobs</a><a href="#how">How it works</a><a href="#contact">Call or email</a></nav></div>
+ <div class="name"><h1><span><i>Honorable</i></span><span><i>Handyman</i></span></h1></div>
+ <div class="bottom">
+  <div class="act"><a class="btn" href="#contact">Call or email for a quote</a><a class="tl" href="tel:+12393158090">239-315-8090</a></div>
+  <p>Home repairs and installs in Estero, Florida.</p>
+ </div>
+</header>
+
+<main>
+<section class="sec" id="services" aria-labelledby="s-h">
+ <h2 id="s-h" class="rv">Common jobs</h2>
+ <div class="cols">
+  <div class="rv"><h3>Inside</h3><ul><li>Drywall patches</li><li>Door and window fixes</li><li>Light fixtures</li><li>Shelves and mounting</li><li>Caulk and trim</li></ul></div>
+  <div class="rv"><h3>Outside</h3><ul><li>Fence and gate repairs</li><li>Screens and lanai fixes</li><li>Mailbox and house numbers</li><li>Hose bibs and fixtures</li><li>Small wood repairs</li></ul></div>
+  <div class="rv"><h3>The long list</h3><ul><li>Furniture assembly</li><li>TV mounting</li><li>Smart doorbells</li><li>Move-in fixes</li><li>Odd jobs</li></ul><p>Jobs people usually call a handyman for. Not here? Ask.</p></div>
+ </div>
+</section>
+
+<div class="photos">
+ <figure class="p1 rv"><img src="img/b.jpg" alt="A man in work clothes opening a tall door in a bright room" loading="lazy"><figcaption>Doors and trim</figcaption></figure>
+ <figure class="p2 rv"><img src="img/a.jpg" alt="A handyman in overalls reaching up to work on a window frame" loading="lazy"><figcaption>Windows and frames</figcaption></figure>
+ <figure class="p3 rv"><img src="img/d.jpg" alt="A room under renovation with a lamp on the floor" loading="lazy"><figcaption>Room refresh</figcaption></figure>
+</div>
+
+<section class="how" id="how" aria-labelledby="h-h"><div class="wrap">
+ <h2 id="h-h">Plain and simple</h2>
+ <div>
+  <ol>
+   <li><b>Call or email.</b>Say what is broken and where you are in Estero. 239-315-8090 or HonorableHandyman@gmail.com.</li>
+   <li><b>Ask for a quote.</b>Know the number before any work starts.</li>
+   <li><b>Get it fixed.</b>One list, one visit if it fits.</li>
+  </ol>
+  <div class="pic rv"><img src="img/c.jpg" alt="A man fitting a window with a drill, seen from behind" loading="lazy"></div>
+ </div>
+</div></section>
+
+<section class="contact" id="contact" aria-labelledby="c-h">
+ <p class="s" id="c-h">Tell Honorable what needs fixing.</p>
+ <a class="mail" href="mailto:HonorableHandyman@gmail.com">HonorableHandyman<em>@gmail.com</em></a>
+ <div class="foot">
+  <ul><li><a href="tel:+12393158090">239-315-8090</a></li><li>Estero, Florida</li></ul>
+  <form class="fm" id="fm" aria-label="Write your request">
+   <fieldset class="chips" style="border:0;padding:0"><legend>Where is it?</legend>
+    <label><input type="radio" name="room" value="Kitchen"><span>Kitchen</span></label>
+    <label><input type="radio" name="room" value="Bath"><span>Bath</span></label>
+    <label><input type="radio" name="room" value="Bedroom or living room"><span>Bedroom</span></label>
+    <label><input type="radio" name="room" value="Outside"><span>Outside</span></label>
+    <label><input type="radio" name="room" value="Garage"><span>Garage</span></label>
+   </fieldset>
+   <label class="l" for="what">What needs fixing?</label>
+   <textarea id="what" placeholder="A door that sticks, a TV to mount, a hole in the wall"></textarea>
+   <a class="btn" id="go" href="mailto:HonorableHandyman@gmail.com?subject=Quote%20request">Email Honorable</a>
+  </form>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="w">Honorable<span>.</span></div>
+ <div class="rows">
+  <div><p>Honorable Handyman LLC<br>Estero, Florida<br>239-315-8090<br><a href="mailto:HonorableHandyman@gmail.com">HonorableHandyman@gmail.com</a></p></div>
+  <div><p>This is a free preview of a website, made by Akhil at Axlios Media (axliosmedia.com) for Honorable Handyman. It is not live for customers yet.</p><p>Photos from Pexels, used under its free licence. They are stock pictures and not jobs by this business.</p></div>
+ </div>
+</footer>
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+ [].forEach.call(document.querySelectorAll('.rv'),function(el){io.observe(el)});
+ var go=document.getElementById('go'),what=document.getElementById('what'),radios=[].slice.call(document.querySelectorAll('input[name=room]'));
+ function upd(){var r=radios.filter(function(x){return x.checked})[0];
+  var body='Hi,\n\nI would like a quote.\nWhere: '+(r?r.value:'')+'\nWhat needs fixing: '+what.value+'\n\nMy address in Estero:\nBest time to call:\n';
+  go.href='mailto:HonorableHandyman@gmail.com?subject='+encodeURIComponent('Quote request')+'&body='+encodeURIComponent(body);}
+ what.addEventListener('input',upd);radios.forEach(function(x){x.addEventListener('change',upd)});
+})();
+</script>
+</body></html>
