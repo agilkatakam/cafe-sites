@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Greentec Builders ltd - Builders in Dublin</title>
+<meta name="description" content="Greentec Builders ltd is a building firm listed in Dublin. Extensions, renovations, roofing and brickwork. Call 086 238 2163 or email greentecbuilder@gmail.com for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f4; --ink:#111111; --muted:#6b6b6b;
+  --accent:#1a4be0; --accent-ink:#ffffff; --marg:20px;
+  --step-small:13px; --step-body:17px; --step-lead:clamp(19px,1.5vw,21px);
+  --step-head:clamp(30px,4vw,56px); --step-display:clamp(44px,8.5vw,128px);
+  --serif:"Source Serif 4",Georgia,serif; --grot:"Libre Franklin",Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block}
+a{color:var(--accent)}
+.js .reveal{opacity:0;transform:translateY(20px);transition:opacity .5s ease,transform .5s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.js .reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- first screen ---------- */
+.top{padding:28px var(--marg) 0}
+h1.name{
+  font-family:var(--grot);font-weight:700;text-transform:uppercase;
+  font-size:var(--step-display);line-height:.92;letter-spacing:-0.035em;
+}
+.subl{margin-top:14px;font-family:var(--grot);font-weight:700;font-size:var(--step-lead);letter-spacing:-0.02em;color:var(--muted);text-transform:uppercase}
+.facts{display:grid;grid-template-columns:repeat(12,1fr);gap:12px 20px;margin-top:36px}
+.facts div{font-size:var(--step-body);line-height:1.5}
+.facts .f1{grid-column:1/4}.facts .f2{grid-column:4/7}.facts .f3{grid-column:7/10}.facts .f4{grid-column:10/13}
+.facts .k{display:block;font-family:var(--grot);font-weight:700;font-size:var(--step-small);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+.facts a{text-decoration:underline;text-underline-offset:3px}
+
+.sh{font-family:var(--grot);font-weight:700;font-size:var(--step-head);letter-spacing:-0.035em;line-height:1;margin:0 var(--marg) 40px}
+/* ---------- the sheet ---------- */
+.sheet{margin-top:56px}
+.run{margin:0 var(--marg) 72px}
+.run .rl{display:flex;gap:14px;align-items:baseline;margin-bottom:14px}
+.run .ri{margin-left:auto;font-family:var(--grot);font-weight:700;font-size:var(--step-small);letter-spacing:.04em;color:var(--muted)}
+.run .rn{font-family:var(--grot);font-weight:700;font-size:var(--step-small);text-transform:uppercase;letter-spacing:.04em}
+.run .rd{font-size:var(--step-small);color:var(--muted)}
+.frames{display:flex;flex-wrap:wrap;gap:8px}
+.fr{height:120px;width:auto}
+.fr.big{height:360px}
+@media (prefers-reduced-motion: no-preference){
+  .fr.big{object-fit:cover;animation:pan 26s ease-in-out infinite alternate}
+  .contact .strip3 img{animation:pan 22s ease-in-out infinite alternate}
+  @keyframes pan{from{object-position:50% 35%}to{object-position:50% 65%}}
+}
+.run:hover .fr{opacity:.4;transition:opacity .25s ease}
+.run:hover .fr:hover{opacity:1}
+.stock-line{margin:-40px var(--marg) 0;font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- intro ---------- */
+.intro .sh{grid-column:1/13;margin:0 0 16px}
+.intro{margin:120px var(--marg) 0;display:grid;grid-template-columns:repeat(12,1fr);gap:24px 20px}
+.intro .lead{grid-column:1/9;font-size:var(--step-lead);line-height:1.5;font-weight:600}
+.intro .col{font-size:var(--step-body);line-height:1.55}
+.intro .c1{grid-column:1/4}.intro .c2{grid-column:4/7}.intro .c3{grid-column:7/10}.intro .c4{grid-column:10/13}
+.intro .col .k{display:block;font-family:var(--grot);font-weight:700;font-size:var(--step-small);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+
+/* ---------- about ---------- */
+.about .sh{grid-column:1/13;margin:0 0 16px}
+.about{margin:120px var(--marg) 0;display:grid;grid-template-columns:repeat(12,1fr);gap:0 20px}
+.about .txt{grid-column:3/11;font-size:var(--step-lead);line-height:1.6}
+.about .txt::first-letter{
+  font-family:var(--grot);font-weight:700;font-size:3.4em;line-height:.8;
+  float:left;margin:6px 14px 0 0;color:var(--ink);
+}
+.about .txt em{font-style:italic}
+.about .txt a{text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- contact ---------- */
+.contact .sh{margin:0 0 40px}
+.contact{margin:120px var(--marg) 0}
+.contact .strip3{display:flex;gap:8px}
+.contact .strip3 img{height:200px;width:33%;flex:1 1 0;object-fit:cover;min-width:0}
+.bar{display:grid;grid-template-columns:repeat(12,1fr);gap:24px 20px;margin-top:56px;align-items:start}
+.bar .cell{grid-column:span 4}
+.bar .k{display:block;font-family:var(--grot);font-weight:700;font-size:var(--step-small);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-bottom:6px}
+.bar .v{font-size:var(--step-lead);font-weight:600}
+.bar .v a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.btn-top{margin-top:12px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-family:var(--grot);font-weight:700;font-size:var(--step-body);text-decoration:none;padding:16px 28px;margin-top:14px}
+.btn:hover{background:#123dbb}
+.btn:active{transform:translateY(2px)}
+
+/* ---------- footer tiles ---------- */
+.footer{margin-top:120px;background:var(--ink);color:#ffffff;padding:96px var(--marg) 48px}
+.tiles4{display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+.tiles4 .t{background:#1e1e1e;padding:20px;min-height:130px;display:flex;flex-direction:column;justify-content:space-between}
+.tiles4 .t1{grid-column:1/5}.tiles4 .t2{grid-column:5/8}.tiles4 .t3{grid-column:8/11}.tiles4 .t4{grid-column:11/13}
+.tiles4 .k{font-family:var(--grot);font-weight:700;font-size:var(--step-small);text-transform:uppercase;letter-spacing:.04em;color:#8a8a8a}
+.tiles4 .v{font-size:var(--step-body);margin-top:24px}
+.tiles4 a{color:#ffffff;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.footer .fin{margin-top:56px;font-size:var(--step-small);color:#8a8a8a;line-height:1.6;max-width:72ch}
+.footer .fin a{color:#ffffff}
+
+/* ---------- 900px ---------- */
+@media (max-width:900px){
+  .facts .f1,.facts .f2{grid-column:1/7}
+  .facts .f3,.facts .f4{grid-column:7/13}
+  .fr{height:100px}
+  .fr.big{height:260px}
+  .intro .lead{grid-column:1/13}
+  .intro .c1,.intro .c2{grid-column:1/7}
+  .intro .c3,.intro .c4{grid-column:7/13}
+  .about .txt{grid-column:1/12}
+  .bar .cell{grid-column:span 6}
+  .tiles4 .t1{grid-column:1/13}.tiles4 .t2{grid-column:1/7}.tiles4 .t3{grid-column:7/13}.tiles4 .t4{grid-column:1/13}
+}
+@media (max-width:480px){
+  .facts .f1,.facts .f2,.facts .f3,.facts .f4{grid-column:1/13}
+  .fr{height:84px}
+  .fr.big{height:220px}
+  .intro .c1,.intro .c2,.intro .c3,.intro .c4{grid-column:1/13}
+  .about .txt{grid-column:1/13}
+  .contact .strip3 img{height:140px}
+  .bar .cell{grid-column:span 12}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <h1 class="name">Greentec Builders</h1>
+  <p class="subl">ltd - a building firm listed in Dublin, Ireland</p>
+  <div class="facts">
+    <div class="f1"><span class="k">Who</span>A building firm listed in Dublin, Ireland.</div>
+    <div class="f2"><span class="k">The jobs</span>Extensions, renovations, roofing and brickwork. The jobs people usually call a builder for.</div>
+    <div class="f3"><span class="k">Call</span><a href="tel:+353862382163">086 238 2163</a><br><a class="btn btn-top" href="tel:+353862382163">Call for a quote</a></div>
+    <div class="f4"><span class="k">Email</span><a href="mailto:greentecbuilder@gmail.com">greentecbuilder@gmail.com</a></div>
+  </div>
+</header>
+
+<main>
+
+<section class="sheet" aria-label="The work">
+  <h2 class="sh reveal">The work</h2>
+  <div class="run reveal">
+    <p class="rl"><span class="rn">Extensions and renovations</span><span class="rd">houses opened up, rooms added, old work made new</span><span class="ri">Stock photos</span></p>
+    <div class="frames">
+      <img class="fr" src="img/r1a.jpg" alt="Stock photo of a brick house being renovated in Dublin">
+      <img class="fr" src="img/r1b.jpg" alt="Stock photo of renovation work on a brick facade">
+      <img class="fr" src="img/r1c.jpg" alt="Stock photo of a suburban house under renovation">
+      <img class="fr" src="img/r1d.jpg" alt="Stock photo of scaffolding on a house renovation">
+      <img class="fr" src="img/r1e.jpg" alt="Stock photo of roof repairs on a family house">
+      <img class="fr" src="img/r1f.jpg" alt="Stock photo of construction workers on scaffolding in Dublin">
+    </div>
+  </div>
+
+  <div class="run reveal">
+    <p class="rl"><span class="rn">Roofing and exteriors</span><span class="rd">roofs, walls and everything the weather meets</span><span class="ri">Stock photos</span></p>
+    <div class="frames">
+      <img class="fr" src="img/r2a.jpg" alt="Stock photo of a house under construction seen from above">
+      <img class="fr" src="img/r2b.jpg" alt="Stock photo of workers on a Dublin construction site">
+      <img class="fr" src="img/r2c.jpg" alt="Stock photo of roofing works in progress">
+      <img class="fr big" src="img/r2big.jpg" alt="Stock photo of workers fixing a roof on a detached house">
+      <img class="fr" src="img/r2d.jpg" alt="Stock photo of roof timbers on a new build">
+      <img class="fr" src="img/r2e.jpg" alt="Stock photo of building materials at a renovation site">
+    </div>
+  </div>
+
+  <div class="run reveal">
+    <p class="rl"><span class="rn">Brickwork and blockwork</span><span class="rd">walls built straight, repairs pointed and finished</span><span class="ri">Stock photos</span></p>
+    <div class="frames">
+      <img class="fr" src="img/r3a.jpg" alt="Stock photo of hands laying bricks with mortar">
+      <img class="fr" src="img/r3b.jpg" alt="Stock photo of a bricklayer working on a scaffold">
+      <img class="fr" src="img/r3c.jpg" alt="Stock photo of brick courses close up">
+      <img class="fr" src="img/r3d.jpg" alt="Stock photo of a bricklayer on a sunny site">
+      <img class="fr" src="img/r3e.jpg" alt="Stock photo of a brick wall being renovated in Dublin">
+      <img class="fr" src="img/r3f.jpg" alt="Stock photo of fresh brickwork">
+    </div>
+  </div>
+
+  <div class="run reveal">
+    <p class="rl"><span class="rn">Dublin</span><span class="rd">the city the work is listed in</span><span class="ri">Stock photos</span></p>
+    <div class="frames">
+      <img class="fr" src="img/r4a.jpg" alt="Stock photo of coloured Georgian doors in Dublin">
+      <img class="fr" src="img/r4b.jpg" alt="Stock photo of a construction site in Dublin">
+      <img class="fr" src="img/r4c.jpg" alt="Stock photo of a Dublin doorway">
+      <img class="fr" src="img/r4d.jpg" alt="Stock photo of an Irish house under construction">
+      <img class="fr" src="img/r4e.jpg" alt="Stock photo of painted doors on a Dublin terrace">
+      <img class="fr" src="img/r4f.jpg" alt="Stock photo of bricklaying in sunlight">
+    </div>
+  </div>
+  <p class="stock-line">Every frame above is a stock photo from Pexels, not the firm's own work.</p>
+</section>
+
+<section class="intro" aria-label="Introduction">
+  <h2 class="sh reveal">How a job starts</h2>
+  <p class="lead reveal">No price list lives on this page, because no two building jobs are the same. A conversation comes first, a quote follows, and the number is agreed before any work starts.</p>
+  <div class="col c1 reveal"><span class="k">The firm</span>Greentec Builders ltd is a building firm listed in Dublin. One phone number, one inbox.</div>
+  <div class="col c2 reveal"><span class="k">The jobs</span>Extensions, renovations, roofing, brickwork and the repairs in between. The list people usually call a builder for.</div>
+  <div class="col c3 reveal"><span class="k">How it starts</span>Call or email and describe the job. You will know where you stand before work begins.</div>
+  <div class="col c4 reveal"><span class="k">The quote</span>Every job is quoted on its own facts. Ask for a quote by phone or email.</div>
+</section>
+
+<section class="about" aria-label="About">
+  <h2 class="sh reveal">The firm</h2>
+  <p class="txt reveal">Greentec Builders ltd is listed in Dublin and takes on the building work that homes need over a lifetime: the extension when the family grows, the roof before the winter, the wall that has to come down and the one that has to go up. <em>Big jobs and small repairs get the same treatment.</em> Describe yours and ask for a quote: call <a href="tel:+353862382163">086 238 2163</a> or email <a href="mailto:greentecbuilder@gmail.com">greentecbuilder@gmail.com</a>.</p>
+</section>
+
+<section class="contact" id="contact" aria-label="Contact">
+  <h2 class="sh reveal">Contact</h2>
+  <div class="strip3">
+    <img src="img/c1.jpg" alt="Stock photo of a house under renovation">
+    <img src="img/c2.jpg" alt="Stock photo of bricklaying close up">
+    <img src="img/c3.jpg" alt="Stock photo of coloured doors on a Dublin street">
+  </div>
+  <div class="bar">
+    <div class="cell"><span class="k">Call</span><span class="v"><a href="tel:+353862382163">086 238 2163</a></span><br><a class="btn" href="tel:+353862382163">Call for a quote</a></div>
+    <div class="cell"><span class="k">Email</span><span class="v"><a href="mailto:greentecbuilder@gmail.com">greentecbuilder@gmail.com</a></span></div>
+    <div class="cell"><span class="k">Listed in</span><span class="v">Dublin, Ireland</span></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="tiles4">
+    <div class="t t1"><span class="k">Greentec Builders ltd</span><span class="v">Builders, listed in Dublin, Ireland.</span></div>
+    <div class="t t2"><span class="k">Call</span><span class="v"><a href="tel:+353862382163">086 238 2163</a></span></div>
+    <div class="t t3"><span class="k">Email</span><span class="v"><a href="mailto:greentecbuilder@gmail.com">greentecbuilder@gmail.com</a></span></div>
+    <div class="t t4"><span class="k">Hours</span><span class="v">Call or email any time; quotes by arrangement.</span></div>
+  </div>
+  <p class="fin">This is an unofficial preview concept made by <a href="https://axliosmedia.com">Axlios Media</a> (axliosmedia.com). It is not an official site and the business has not approved it. All photos are stock images from <a href="https://www.pexels.com">Pexels</a> and show Dublin, building work and materials in general, not the firm's own projects.</p>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -10% 0px',threshold:0});
+  els.forEach(function(e){io.observe(e)});
+  setTimeout(function(){els.forEach(function(e){e.classList.add('in')})},1400);
+})();
+</script>
+</body>
+</html>
