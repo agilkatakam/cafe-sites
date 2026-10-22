@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAVAS Tattoo &amp; Art · Vani Vilas Mohalla, Mysore</title>
+<meta name="description" content="TAVAS Tattoo & Art is a tattoo and piercing studio on Adipampa Road, Vani Vilas Mohalla, Mysore. Call +91 96322 22280.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d0d0f; --coal:#17171b; --gold:#c9a24b; --gold2:#e3c06d; --bone:#ece5d8; --bone2:#cfc5b0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--bone);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+.eyebrow{font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1,h2,h3{font-family:Cinzel,serif;line-height:1.1;font-weight:700}
+
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(13,13,15,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.25)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:Cinzel,serif;font-weight:700;font-size:1.05rem;letter-spacing:.08em}
+.brand .dot{width:30px;height:30px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font-size:.85rem;color:var(--gold2);font-family:Cinzel,serif}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.78rem 1.35rem;border-radius:2px;font-weight:600;font-size:.92rem;letter-spacing:.04em;transition:transform .15s ease,background .15s ease}
+.btn:active{transform:scale(.97)}
+.btn.gold{background:var(--gold);color:#241a06}
+.btn.gold:hover{background:var(--gold2)}
+.btn.ghost{border:1px solid rgba(236,229,216,.4);color:var(--bone)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.btn.sm{padding:.5rem 1rem;font-size:.85rem}
+.callbtn .short{display:none}
+
+.hero{position:relative;min-height:min(88svh,760px);display:flex;align-items:flex-end}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 40%/cover no-repeat}
+.hero .scrim{position:absolute;inset:0;background:rgba(10,10,12,.55)}
+.hero .panel{position:relative;width:100%;padding:7.5rem 0 3.6rem}
+.hero h1{font-size:clamp(2.6rem,6.6vw,5rem);color:var(--bone);max-width:16ch;text-shadow:0 2px 24px rgba(0,0,0,.6)}
+.hero h1 .amp{color:var(--gold2)}
+.hero p.lede{margin:1.1rem 0 1.6rem;max-width:46ch;font-size:1.05rem;color:#e6ddca;text-shadow:0 1px 10px rgba(0,0,0,.65)}
+.cta-row{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero .loc{margin-top:1.3rem;font-size:.84rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
+
+.band{background:var(--coal);border-block:1px solid rgba(201,162,75,.4)}
+.band .row{display:flex;gap:2.4rem;justify-content:center;flex-wrap:wrap;padding:.95rem 1rem;font-family:Cinzel,serif;font-weight:700;letter-spacing:.2em;font-size:.78rem;text-transform:uppercase;color:var(--gold2)}
+.band .row i{font-style:normal;color:rgba(236,229,216,.45)}
+
+.about{padding:5.2rem 0}
+.about .wrap{display:grid;grid-template-columns:280px 1fr;gap:3.2rem;align-items:center}
+.mark{width:min(260px,64vw);aspect-ratio:1;border-radius:50%;overflow:hidden;border:2px solid var(--gold);justify-self:center;background:#000}
+.mark img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 1rem}
+.about p{color:var(--bone2);max-width:56ch}
+.about p+p{margin-top:.9rem}
+.stats{display:flex;gap:2.2rem;margin-top:1.6rem;flex-wrap:wrap}
+.stats b{display:block;font-family:Cinzel,serif;font-size:1.2rem;color:var(--gold2);font-weight:700}
+.stats span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#a99f89}
+
+.work{background:var(--coal);padding:5.2rem 0;border-block:1px solid rgba(201,162,75,.22)}
+.work h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 2.2rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{border:1px solid rgba(201,162,75,.3);overflow:hidden;background:#000}
+.card .ph{aspect-ratio:1/1.15;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover .ph img{transform:scale(1.06)}
+
+.studio{padding:5.2rem 0}
+.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.studio .ph{overflow:hidden;border:1px solid rgba(201,162,75,.35)}
+.studio .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.studio h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 1rem}
+.studio p{color:var(--bone2);max-width:52ch}
+
+.visit{background:#0a0a0c;border-top:1px solid rgba(201,162,75,.35);padding:5rem 0}
+.visit h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 2rem}
+.visit .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:2.6rem}
+.vcard{background:rgba(23,23,27,.7);border:1px solid rgba(201,162,75,.32);padding:1.6rem 1.7rem}
+.vcard h3{font-size:1rem;font-family:Inter,sans-serif;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gold2);margin-bottom:.7rem}
+.vcard p,.vcard a{font-size:1.02rem;color:#e9e1cf}
+.vcard a:hover{color:var(--gold2)}
+.vcard+.vcard{margin-top:1.1rem}
+.big-call{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1.1rem;background:rgba(23,23,27,.7);border:1px solid rgba(201,162,75,.32);padding:2rem 1.8rem}
+.big-call .num{font-family:Cinzel,serif;font-size:clamp(1.6rem,2.8vw,2.2rem);font-weight:700;color:var(--bone)}
+.note{font-size:.88rem;color:#bdb29b}
+
+footer{padding:2.2rem 0 2.6rem;text-align:center;color:#8f8774;font-size:.82rem}
+footer .f-brand{font-family:Cinzel,serif;color:var(--gold2);font-size:.95rem;letter-spacing:.1em;margin-bottom:.4rem}
+
+@media (max-width:860px){
+  .topbar .wrap{height:58px}
+  .brand{font-size:.95rem}
+  .callbtn .long{display:none}
+  .callbtn .short{display:inline}
+  .hero .loc{letter-spacing:.08em;line-height:1.7;margin-top:1.1rem}
+  .hero .panel{padding-bottom:4.2rem}
+  .about .wrap{grid-template-columns:1fr;gap:1.8rem;text-align:center}
+  .about p{margin-inline:auto}
+  .stats{justify-content:center}
+  .cards{grid-template-columns:1fr 1fr;gap:.8rem}
+  .studio .wrap{grid-template-columns:1fr;gap:1.8rem}
+  .visit .grid{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(2.2rem,11vw,3rem)}
+}
+@media (max-width:520px){
+  .cards{grid-template-columns:1fr;max-width:400px;margin:0 auto}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot">T</span> TAVAS Tattoo &amp; Art</a>
+    <a class="btn gold sm callbtn" href="tel:+919632222280"><span class="long">Call +91 96322 22280</span><span class="short">Call</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg" role="img" aria-label="A cheetah tattoo by TAVAS on a client's forearm"></div>
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="wrap">
+      <div class="eyebrow">Tattoo · Piercing · Mysore</div>
+      <h1>TAVAS Tattoo <span class="amp">&amp;</span> Art</h1>
+      <p class="lede">A tattoo and piercing studio on Adipampa Road in Vani Vilas Mohalla, Mysore, working from a quiet first floor space above the street.</p>
+      <div class="cta-row">
+        <a class="btn gold" href="tel:+919632222280">Call the studio</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=TAVAS+Tattoo+Adipampa+Road+Mysore" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="loc">6th cross, Adipampa Road · Vani Vilas Mohalla · Mysore</div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true">
+  <div class="row">
+    <span>Tattoo <i>·</i></span><span>Piercing <i>·</i></span><span>Conceptual design <i>·</i></span><span>Vani Vilas Mohalla <i>·</i></span><span>Mysore</span>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <div class="mark"><img src="img/logo.jpg" alt="The TAVAS Tattoo emblem in gold"></div>
+    <div>
+      <div class="eyebrow">About TAVAS</div>
+      <h2>Ink, art and a steady hand</h2>
+      <p>TAVAS Tattoo &amp; Art is a tattoo and piercing shop on the first floor at 2790/2, 6th cross, Adipampa Road, in Mysore's Vani Vilas Mohalla. The studio's work runs from fine line pieces and symbolic designs to full Japanese style sleeves.</p>
+      <p>Call ahead to plan yours.</p>
+      <div class="stats">
+        <div><b>Tattoo</b><span>and piercing</span></div>
+        <div><b>$$$</b><span>price range</span></div>
+        <div><b>Studio</b><span>first floor</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work">
+  <div class="wrap">
+    <div class="eyebrow">From the studio</div>
+    <h2>Recent work</h2>
+    <div class="cards">
+      <article class="card"><div class="ph"><img src="img/yinyang.jpg" alt="A tree and wave forearm tattoo" loading="lazy"></div></article>
+      <article class="card"><div class="ph"><img src="img/cheetah-tile.jpg" alt="A cheetah forearm tattoo" loading="lazy"></div></article>
+      <article class="card"><div class="ph"><img src="img/hannya.jpg" alt="A Japanese style sleeve tattoo" loading="lazy"></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="studio">
+  <div class="wrap">
+    <div class="ph"><img src="img/studio.jpg" alt="Inside the TAVAS studio: plants, artwork and a design desk" loading="lazy"></div>
+    <div>
+      <div class="eyebrow">The space</div>
+      <h2>A quiet first floor studio</h2>
+      <p>The studio sits one floor above Adipampa Road: plants, framed artwork and a design desk.</p>
+      <p>Call ahead for appointments and timings.</p>
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap">
+    <div class="eyebrow">Plan a visit</div>
+    <h2>Find the studio</h2>
+    <div class="grid">
+      <div>
+        <div class="vcard">
+          <h3>Address</h3>
+          <p>TAVAS Tattoo &amp; Art<br>2790/2, first floor, 6th cross, Adipampa Road<br>Vani Vilas Mohalla, Mysuru, Karnataka 570002</p>
+        </div>
+        <div class="vcard">
+          <h3>Hours</h3>
+          <p>Call ahead to fix an appointment and confirm timings.</p>
+        </div>
+        <div class="vcard">
+          <h3>Online</h3>
+          <p><a href="https://www.facebook.com/TAVAS91" target="_blank" rel="noopener">TAVAS Tattoo &amp; Art on Facebook</a><br>
+          <a href="mailto:tavas91artloft@gmail.com">tavas91artloft@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="big-call">
+        <div class="eyebrow">Call us</div>
+        <a class="num" href="tel:+919632222280">+91 96322 22280</a>
+        <p class="note">Design discussions, appointments and directions all start with one call.</p>
+        <a class="btn gold" href="tel:+919632222280">Call now</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=TAVAS+Tattoo+Adipampa+Road+Mysore" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Website concept for TAVAS Tattoo &amp; Art</div>
+    <div>All photos from the studio's own Facebook page.</div>
+  </div>
+</footer>
+
+</body>
+</html>
