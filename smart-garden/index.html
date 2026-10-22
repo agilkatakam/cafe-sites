@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Garden — Gardeners in Ellerslie, Auckland</title>
+<meta name="description" content="Smart Garden is a gardening service on Marua Road in Ellerslie, Auckland. Ring 09-575 0040 or 021 165 2424, Monday to Friday, and ask for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@300&family=Stack+Sans+Text:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f7; --surface:#ebebeb; --ink:#0d2a1c; --muted:#44504a; --accent:#f6e016; --accent-ink:#0d2a1c;
+  --margin:8px; --gap:8px; --radius:8px;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Stack Sans Text',Arial,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.disp{font-family:'Stack Sans Headline',Arial,sans-serif;font-weight:300;letter-spacing:-0.022em;line-height:1.05}
+.board{padding:var(--margin)}
+.tile{border-radius:var(--radius);overflow:hidden;position:relative}
+.tile .pad{padding:22px}
+
+/* ---------- hero : two-by-two board ---------- */
+.hero{height:100svh;display:flex;flex-direction:column;gap:var(--gap)}
+.toprow{display:grid;grid-template-columns:60px 1fr auto;gap:var(--gap);height:60px}
+.logo-tile{background:var(--ink);display:flex;align-items:center;justify-content:center}
+.logo-tile svg{width:30px;height:30px}
+.nav-tile{background:var(--surface);display:flex;align-items:center;justify-content:center;gap:clamp(16px,3vw,44px)}
+.nav-tile a{font-size:16px;color:var(--muted);text-decoration:none}
+.nav-tile a:hover{color:var(--ink)}
+.action-tile{background:var(--ink);display:flex;align-items:center;padding:0 26px}
+.action-tile a{color:var(--accent);text-decoration:none;font-size:16px;font-weight:500;white-space:nowrap;display:flex;align-items:center;height:100%}
+.action-tile:hover{background:var(--accent)}
+.action-tile:hover a{color:var(--accent-ink)}
+.hero-grid{flex:1;min-height:0;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.15fr 1fr;gap:var(--gap)}
+.hero-grid>*{min-height:0;min-width:0}
+.name-tile{background:#fff;display:flex;align-items:flex-end}
+.name-tile .namepad{padding:24px}
+.name-tile h1{font-size:clamp(64px,9.4vw,140px);line-height:0.98}
+.name-tile .sub{font-size:18px;margin-top:12px;color:var(--muted)}
+.ph-tile img{filter:grayscale(1)}
+.split-tile{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap)}
+.dark-tile{background:var(--ink);color:#fff}
+.dark-tile p{font-size:24px;line-height:1.25;padding:22px}
+.accent-tile{background:var(--accent);color:var(--accent-ink)}
+.accent-tile p{font-size:24px;line-height:1.25;padding:22px 22px 0 22px}
+.btn-ink{background:var(--ink);color:var(--accent);margin:18px 22px 22px 22px}
+.btn-ink:hover{background:#000}
+.ph-shutter{clip-path:inset(0 0 0 0)}
+.hero.loaded .ph-shutter{animation:shutter 1.1s cubic-bezier(.2,.7,.2,1) both}
+.hero.loaded .ph-shutter img{animation:settle 1.1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes shutter{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes settle{from{transform:scale(1.12)}to{transform:scale(1)}}
+@media(max-width:760px){
+  .hero{height:auto}
+  .hero-grid{display:flex;flex-direction:column;gap:6px}
+  .hero-grid .split-tile{order:3}
+  .hero-grid .ph-tile.second{order:4}
+  .name-tile{min-height:30svh}
+  .name-tile h1{font-size:19vw}
+  .ph-tile{aspect-ratio:4/3}
+  .split-tile{display:grid;grid-template-columns:1fr 1fr}
+  .dark-tile p{font-size:18px;padding:16px}
+  .accent-tile p{font-size:18px;padding:16px 16px 0 16px}
+  .btn-ink{margin:12px 16px 16px 16px;font-size:14px;padding:10px 14px}
+  .split-tile>*{aspect-ratio:1}
+  .toprow{grid-template-columns:52px 1fr;height:52px}
+  .action-tile{display:none}
+  .nav-tile{justify-content:flex-end;padding-right:16px}
+}
+
+/* ---------- intro : lead + four columns ---------- */
+.intro{padding:96px 20px}
+.intro .lead{font-size:clamp(22px,2.2vw,32px);line-height:1.2;max-width:36ch;font-weight:400}
+.intro .lead b{font-weight:500;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:72px}
+.cols p{font-size:16px;line-height:1.45;color:var(--muted)}
+.cols p b{color:var(--ink);font-weight:500}
+@media(max-width:760px){
+  .intro{padding:64px 20px}
+  .intro .lead{font-size:20px}
+  .cols{grid-template-columns:1fr 1fr;gap:40px 20px;margin-top:48px}
+}
+
+/* ---------- reach : zigzag cell + dark rows ---------- */
+.reach{display:grid;grid-template-columns:1fr 1fr;min-height:90svh}
+.reach-left{background:var(--surface);display:flex;flex-direction:column;padding:28px}
+.reach-left h2{font-size:clamp(36px,4.2vw,68px);line-height:1.06;flex:0 0 auto}
+.reach-left h2 .r{display:block;text-align:right}
+.reach-left .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.reach-left .foot p{font-size:17px;max-width:30ch;color:#3d4a43}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-size:16px;font-weight:500;padding:14px 24px;text-decoration:none;border-radius:6px;white-space:nowrap}
+.btn:hover{background:var(--ink);color:var(--accent)}
+.reach-right{display:flex;flex-direction:column}
+.rrow{flex:1;display:grid;grid-template-columns:5fr 4fr 3fr;gap:16px;padding:24px 28px;align-items:start}
+.rrow:nth-child(odd){background:var(--ink);color:#fff}
+.rrow:nth-child(even){background:#143325;color:#fff}
+.rrow h3{font-size:24px;font-weight:400}
+.rrow p{font-size:16px;color:#c9d4ce}
+.rrow ul{list-style:none}
+.rrow li{font-size:16px;color:#c9d4ce;line-height:1.6}
+.rrow a{text-decoration:none;color:#fff;font-weight:500}
+.rrow a:hover{color:var(--accent)}
+@media(max-width:760px){
+  .reach{grid-template-columns:1fr}
+  .reach-left{min-height:64svh}
+  .reach-left h2{font-size:11vw}
+  .rrow{display:block;padding:22px 20px}
+  .rrow h3{font-size:24px}
+  .rrow p{margin-top:8px}
+  .rrow li{display:inline}
+  .rrow li+li:before{content:", "}
+}
+
+/* ---------- mosaic : one image across tiles ---------- */
+.mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:var(--gap);padding:var(--margin)}
+.mosaic .mtile{aspect-ratio:1;border-radius:var(--radius);overflow:hidden;background-image:url('assets/auckland-the-domain-winter-garden-pergolato.jpg');background-size:600% 400%;position:relative}
+.mosaic .mtile:hover{background-size:648% 432%}
+.mosaic .flat{background-image:none;display:flex;flex-direction:column;justify-content:flex-start}
+.mosaic .flat .pad{padding:16px}
+.mosaic .head-tile{background:var(--ink);color:#fff;aspect-ratio:auto}
+.mosaic .head-tile h2{font-size:2.6vw;line-height:1.1}
+.mosaic .fact-tile{background:var(--surface)}
+.mosaic .fact-tile p{font-size:18px;line-height:1.35}
+.mosaic .fact-tile p b{font-weight:500}
+.mosaic .go-tile{background:var(--accent)}
+.mosaic .go-tile a{display:block;width:100%;height:100%;text-decoration:none;font-size:20px;font-weight:500}
+.mosaic .go-tile:hover{background:var(--ink)}
+.mosaic .go-tile:hover a{color:var(--accent)}
+@media(max-width:760px){
+  .mosaic{grid-template-columns:repeat(3,1fr);gap:6px}
+  .mosaic .mtile{background-size:cover;background-position:center !important}
+  .mosaic .mtile:nth-of-type(3n){background-position:left center !important}
+  .mosaic .mtile:nth-of-type(3n+2){background-position:right center !important}
+  .mosaic .head-tile{grid-column:span 3}
+  .mosaic .head-tile h2{font-size:6vw}
+  .mosaic .fact-tile p{font-size:15px}
+}
+
+/* ---------- cta : the action tile ---------- */
+.ctarow{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;padding:var(--margin);padding-top:56px;align-items:stretch}
+.cta-mid{grid-column:3/11;background:var(--accent);color:var(--accent-ink);min-height:360px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:32px;padding:40px;border-radius:var(--radius)}
+.cta-mid h2{font-size:40px}
+.cta-mid p{font-size:17px;max-width:44ch;margin-top:14px}
+.cta-mid .btn{background:var(--ink);color:var(--accent)}
+.cta-mid .btn:hover{background:#000}
+.cta-left{grid-column:1/3;margin-left:-8px;border-radius:0 var(--radius) var(--radius) 0}
+.cta-right{grid-column:11/13;background:var(--surface);margin-right:-8px;border-radius:var(--radius) 0 0 var(--radius)}
+@media(max-width:1300px){.cta-mid{flex-direction:column;align-items:flex-start;justify-content:center}}
+@media(max-width:760px){
+  .ctarow{display:flex;flex-wrap:wrap;gap:8px}
+  .cta-mid{flex:1 1 100%;min-height:300px;padding:28px;flex-direction:column;align-items:flex-start;justify-content:center}
+  .cta-mid h2{font-size:28px}
+  .cta-left{flex:1 1 40%;height:120px;margin-left:0;border-radius:var(--radius)}
+  .cta-right{flex:1 1 40%;height:120px;margin-right:0;border-radius:var(--radius)}
+}
+
+/* ---------- footer : the mark, built large ---------- */
+footer{background:var(--surface);padding:64px 20px 24px 20px}
+.markrow{display:flex;gap:4px;align-items:flex-end;height:24vw;max-height:300px;min-height:120px}
+.mletter{background:var(--ink);color:var(--bg);flex:1;display:flex;align-items:flex-end;justify-content:center;border-radius:4px}
+.mletter span{font-family:'Stack Sans Headline',Arial,sans-serif;font-size:clamp(24px,6vw,80px);line-height:1;padding-bottom:6%}
+.mletter:nth-child(3n+1){height:100%}
+.mletter:nth-child(3n+2){height:72%}
+.mletter:nth-child(3n){height:88%}
+.mletter.gap{background:transparent;flex:0.4}
+.fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;margin-top:56px}
+.fcols .links{grid-column:1/9;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.fcols .links a{font-size:16px;text-decoration:none;color:var(--muted)}
+.fcols .links a:hover{color:var(--ink)}
+.fcols .who{grid-column:9/13}
+.fcols .who a,.fcols .who span{display:block;font-size:16px;line-height:1.5;text-decoration:none}
+.fcols .who a:hover{text-decoration:underline}
+.fbottom{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:40px}
+.fbottom .note{font-size:13px;color:var(--muted);max-width:60ch;line-height:1.6}
+.fbottom .btn{font-size:14px;padding:10px 18px}
+.cred{font-size:13px;color:var(--muted);margin-top:12px;line-height:1.6;max-width:60ch}
+@media(max-width:760px){
+  footer{padding:48px 20px 20px 20px}
+  .fcols .links{grid-column:1/-1;grid-template-columns:1fr 1fr}
+  .fcols .who{grid-column:1/-1;margin-top:8px}
+  .fbottom{flex-direction:column;align-items:flex-start}
+}
+
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease}
+[data-reveal].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .hero.loaded .ph-shutter,.hero.loaded .ph-shutter img{animation:none}
+  [data-reveal]{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body id="top">
+
+<!-- hero board -->
+<header class="hero board" id="heroEl">
+  <div class="toprow">
+    <div class="tile logo-tile"><svg viewBox="0 0 30 30"><rect x="2" y="14" width="12" height="14" fill="#f6e016"/><rect x="16" y="2" width="12" height="26" fill="#f6e016"/></svg></div>
+    <nav class="tile nav-tile">
+      <a href="#about">About</a>
+      <a href="#reach">Reach us</a>
+      <a href="#photos">Photos</a>
+    </nav>
+    <div class="tile action-tile"><a href="tel:+6495750040">Ring 09-575 0040</a></div>
+  </div>
+  <div class="hero-grid">
+    <div class="tile name-tile"><div class="namepad"><h1 class="disp">Smart<br>Garden</h1><p class="sub">A gardening service in Ellerslie, Auckland.</p></div></div>
+    <div class="tile ph-tile ph-shutter"><img src="assets/auckland-the-domain-winter-garden-cortile-05.jpg" alt="The courtyard of the Auckland Domain Wintergardens" width="1920" height="1339"></div>
+    <div class="tile ph-tile second"><img src="assets/auckland-domain-winter-garden-auckland-nz-dsc08681.jpg" alt="Inside the glasshouse at the Auckland Domain Wintergardens" width="1920" height="2880" loading="lazy"></div>
+    <div class="split-tile">
+      <div class="tile dark-tile"><p>A gardening service on Marua Road in Ellerslie, Auckland.</p></div>
+      <div class="tile accent-tile"><p>Ring or email and ask for a quote.</p><a class="btn btn-ink" href="tel:+6495750040">Ring now</a></div>
+    </div>
+  </div>
+</header>
+
+<!-- intro -->
+<section class="intro" id="about">
+  <p class="lead" data-reveal>Smart Garden is a gardening service working out of Ellerslie, Auckland - <b>the outfit you ring when the garden has got ahead of you.</b></p>
+  <div class="cols">
+    <p data-reveal><b>Who they are.</b> A gardening business listed at 3/193 Marua Road, on the Ellerslie side of Auckland, reached on a landline, a mobile, or plain email.</p>
+    <p data-reveal><b>What they do.</b> Gardening, listed under gardeners in the local directories - ring and describe the garden, and they will tell you how they can help.</p>
+    <p data-reveal><b>Where they work.</b> From their base in Ellerslie, Auckland 1051, beside Mt Wellington and the surrounding central suburbs.</p>
+    <p data-reveal><b>When to ring.</b> Monday to Friday, 8am to 5pm. Weekends closed. Email any time and they can ring you back.</p>
+  </div>
+</section>
+
+<!-- reach -->
+<section class="reach" id="reach">
+  <div class="reach-left">
+    <h2 class="disp">Easy to reach,<span class="r">easy to book</span></h2>
+    <div class="foot">
+      <p>Two phone numbers and one email - pick whichever suits.</p>
+      <a class="btn" href="tel:+6495750040">Ask for a quote</a>
+    </div>
+  </div>
+  <div class="reach-right">
+    <div class="rrow" data-reveal>
+      <h3>Shop phone</h3>
+      <p>The landline, Monday to Friday, 8am to 5pm.</p>
+      <ul><li><a href="tel:+6495750040">09-575 0040</a></li></ul>
+    </div>
+    <div class="rrow" data-reveal>
+      <h3>Mobile</h3>
+      <p>The second number on the listing.</p>
+      <ul><li><a href="tel:+64211652424">021 165 2424</a></li></ul>
+    </div>
+    <div class="rrow" data-reveal>
+      <h3>Email</h3>
+      <p>Write with a line about the garden.</p>
+      <ul><li><a href="mailto:smartgardennz@gmail.com">smartgardennz@gmail.com</a></li></ul>
+    </div>
+    <div class="rrow" data-reveal>
+      <h3>Hours</h3>
+      <p>Weekdays only.</p>
+      <ul><li>Mon-Fri 8am-5pm</li><li>Sat-Sun closed</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- mosaic -->
+<section class="mosaic" id="photos" aria-label="The Wintergardens at the Auckland Domain">
+  <div class="mtile head-tile flat" style="grid-column:span 2"><div class="pad"><h2 class="disp">Gardens are the job</h2></div></div>
+  <div class="mtile" data-reveal style="background-position:40% 0%"></div>
+  <div class="mtile" data-reveal style="background-position:60% 0%"></div>
+  <div class="mtile" data-reveal style="background-position:80% 0%"></div>
+  <div class="mtile" data-reveal style="background-position:100% 0%"></div>
+  <div class="mtile" data-reveal style="background-position:0% 33.33%"></div>
+  <div class="mtile" data-reveal style="background-position:20% 33.33%"></div>
+  <div class="mtile fact-tile flat"><div class="pad"><p><b>Ellerslie, Auckland.</b> Based on Marua Road, 1051.</p></div></div>
+  <div class="mtile" data-reveal style="background-position:60% 33.33%"></div>
+  <div class="mtile" data-reveal style="background-position:80% 33.33%"></div>
+  <div class="mtile" data-reveal style="background-position:100% 33.33%"></div>
+  <div class="mtile" data-reveal style="background-position:0% 66.66%"></div>
+  <div class="mtile fact-tile flat"><div class="pad"><p><b>Weekdays.</b> Monday to Friday, 8am to 5pm.</p></div></div>
+  <div class="mtile" data-reveal style="background-position:40% 66.66%"></div>
+  <div class="mtile" data-reveal style="background-position:60% 66.66%"></div>
+  <div class="mtile fact-tile flat"><div class="pad"><p><b>Two phones.</b> Landline and mobile, one email.</p></div></div>
+  <div class="mtile" data-reveal style="background-position:100% 66.66%"></div>
+  <div class="mtile" data-reveal style="background-position:0% 100%"></div>
+  <div class="mtile" data-reveal style="background-position:20% 100%"></div>
+  <div class="mtile" data-reveal style="background-position:40% 100%"></div>
+  <div class="mtile" data-reveal style="background-position:60% 100%"></div>
+  <div class="mtile" data-reveal style="background-position:80% 100%"></div>
+  <div class="mtile go-tile flat"><a href="tel:+6495750040"><span class="pad">Ring now &rarr;</span></a></div>
+</section>
+
+<!-- cta -->
+<section class="ctarow" id="contact">
+  <div class="tile cta-left"><img src="assets/tamaki-makaurau-auckland-part-iv-auckland9607.jpg" alt="The Auckland Domain Wintergardens glasshouse and fountain court" width="1920" height="1280" loading="lazy"></div>
+  <div class="cta-mid" data-reveal>
+    <h2 class="disp">Ask for a quote</h2>
+    <p>Ring the shop on 09-575 0040, the mobile on 021 165 2424, or email smartgardennz@gmail.com.</p>
+    <a class="btn" href="tel:+6495750040">Ring 09-575 0040</a>
+  </div>
+  <div class="tile cta-right"></div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="markrow" aria-hidden="true">
+    <div class="mletter" data-reveal><span>S</span></div><div class="mletter" data-reveal><span>M</span></div><div class="mletter" data-reveal><span>A</span></div><div class="mletter" data-reveal><span>R</span></div><div class="mletter" data-reveal><span>T</span></div><div class="mletter gap"></div><div class="mletter" data-reveal><span>G</span></div><div class="mletter" data-reveal><span>A</span></div><div class="mletter" data-reveal><span>R</span></div><div class="mletter" data-reveal><span>D</span></div><div class="mletter" data-reveal><span>E</span></div><div class="mletter" data-reveal><span>N</span></div>
+  </div>
+  <div class="fcols">
+    <nav class="links">
+      <a href="#top">Top</a>
+      <a href="#about">About</a>
+      <a href="#reach">Reach us</a>
+      <a href="#photos">Photos</a>
+    </nav>
+    <div class="who">
+      <a href="tel:+6495750040">09-575 0040</a>
+      <a href="tel:+64211652424">021 165 2424</a>
+      <a href="mailto:smartgardennz@gmail.com">smartgardennz@gmail.com</a>
+      <span>3/193 Marua Road, Ellerslie, Auckland 1051</span>
+    </div>
+  </div>
+  <div class="fbottom">
+    <p class="note">A free preview site made for Smart Garden by Axlios Media (axliosmedia.com) - not the business's official website.</p>
+    <a class="btn" href="tel:+6495750040">Ring now</a>
+  </div>
+  <p class="cred">Photographs of the Auckland Domain Wintergardens, via Wikimedia Commons: Francesco Bini (CC BY-SA 4.0), Daderot (CC0), lumoplank (CC0).</p>
+</footer>
+
+<script>
+window.addEventListener('load',()=>document.getElementById('heroEl').classList.add('loaded'));
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:0.15});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
