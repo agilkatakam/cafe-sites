@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RapidCanvas: designed by you (unofficial concept)</title>
+<meta name="description" content="Unofficial concept homepage for RapidCanvas using wording from rapidcanvas.ai. By Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#1a2039;--surface:#212846;--ink:#f9a3c0;--cream:#fff1ea;--muted:#d9a6ba;--accent:#f9a3c0;--accent-ink:#1a2039;--m:clamp(16px,3vw,44px);
+--fd:'Bodoni Moda',Georgia,serif;--ft:Jost,system-ui,sans-serif;--small:.875rem;--body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--lead:clamp(1.375rem,1.1rem + 1vw,2.125rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:400 var(--body)/1.6 var(--ft);letter-spacing:.01em;overflow-x:hidden}
+img{display:block;max-width:100%}a{color:inherit}
+h1,h2,h3{font-family:var(--fd);font-weight:500;letter-spacing:-.02em;line-height:.95}
+:focus-visible{outline:3px solid var(--cream);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;height:52px;padding:0 28px;background:var(--accent);color:var(--accent-ink);font:500 1.0625rem/1 var(--ft);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--cream)}.btn:active{transform:scale(.97)}
+.hero{background:var(--ink);color:var(--accent-ink);min-height:100svh;padding:20px var(--m) 32px;display:grid;grid-template-rows:auto 1fr auto;animation:chap 1s both}
+@keyframes chap{from{background:var(--bg)}}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:var(--small);font-weight:500}
+.top .btn{background:var(--accent-ink);color:var(--cream)}.top .btn:hover{background:var(--cream);color:var(--accent-ink)}
+.hero h1{font-size:clamp(4.5rem,14vw,13rem);line-height:.84;letter-spacing:-.03em;padding-top:8vh}
+.hero h1 span{display:block}.hero h1 .a{color:#5b1038}.hero h1 .b{font-style:italic}
+.hero p{justify-self:end;max-width:24vw;min-width:260px;font-size:1.0625rem}
+section{padding:clamp(72px,9vw,140px) var(--m)}
+.sw h2{font-size:clamp(2.25rem,1.3rem + 3.6vw,4.75rem);max-width:none;margin-bottom:40px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.tabs button{font:500 1.0625rem/1 var(--ft);padding:14px 22px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .25s,color .25s,transform .2s}
+.tabs button:hover{transform:translateY(-2px)}
+.tabs button[aria-pressed=true]{background:var(--ink);color:var(--accent-ink)}
+.stage{background:var(--surface);padding:clamp(24px,4vw,56px);transition:background .5s}
+.stage h3{font-size:var(--lead);font-style:italic;margin-bottom:16px;max-width:22ch}
+.stage p{max-width:42ch;color:var(--cream)}
+.two{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,64px);align-items:end}
+.two img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.slip{background:var(--cream);color:var(--accent-ink);padding:clamp(28px,5vw,72px);max-width:760px}
+.slip h2{font-size:clamp(2rem,1.3rem + 3vw,4rem);margin-bottom:28px}
+.slip li{list-style:none;padding:14px 0;font-size:var(--lead);font-family:var(--fd);letter-spacing:-.01em;line-height:1.15;transition:padding-left .3s}
+.slip li:hover{padding-left:14px}
+.faq h2{font-size:clamp(2.5rem,1.3rem + 5vw,6rem);margin-bottom:32px}
+.faq .qs{margin-left:clamp(0px,12vw,200px)}
+.faq details{padding:20px 0}.faq summary{cursor:pointer;list-style:none;font-family:var(--fd);font-size:var(--lead);display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}.faq summary i{font-style:normal;transition:transform .25s}.faq details[open] summary i{transform:rotate(45deg)}
+.faq details p{margin-top:10px;max-width:50ch;color:var(--cream)}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:var(--surface)}
+.cta h2{font-size:clamp(2rem,1.2rem + 3.6vw,4.5rem);font-style:italic;max-width:12ch}
+.cta h2:last-of-type{text-align:right}
+footer{padding:clamp(48px,6vw,96px) var(--m) 24px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.cols a{display:block;text-decoration:none;padding:4px 0}.cols a:hover{color:var(--cream)}
+.fine{margin-top:32px;max-width:70ch;color:var(--muted);font-size:var(--small)}
+.big{font-family:var(--fd);font-size:clamp(3.5rem,15vw,15rem);letter-spacing:-.04em;line-height:.85;margin-top:32px;color:var(--ink)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(max-width:900px){.two{grid-template-columns:1fr}.cols{grid-template-columns:1fr}.hero h1{font-size:21vw}.hero p{max-width:none;justify-self:start;padding-top:24px}.cta h2:last-of-type{text-align:left}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}.rv{opacity:1;transform:none}}
+</style></head><body>
+<header class="hero"><div class="top"><span>RapidCanvas</span><a class="btn" href="https://www.rapidcanvas.ai">Visit rapidcanvas.ai</a></div>
+<h1><span class="a">Designed</span><span class="b">by you.</span></h1>
+<p>Our Hybrid Approach™ pairs an agentic AI platform with advanced human business expertise, yours and ours.</p></header>
+
+<main>
+<section class="sw" aria-labelledby="sh"><h2 id="sh" class="rv">Owned by you.</h2>
+<div class="tabs" role="group" aria-label="Hybrid Approach"><button aria-pressed="true" data-i="0">Process</button><button aria-pressed="false" data-i="1">People</button><button aria-pressed="false" data-i="2">Platform</button><button aria-pressed="false" data-i="3">Possibility</button></div>
+<div class="stage" aria-live="polite" id="st"></div></section>
+
+<section><div class="two"><div class="slip rv"><h2>Human-led. Agent-executed.</h2><p style="font-family:var(--fd);font-style:italic;font-size:var(--lead);margin:-8px 0 20px">Outcome-first.</p><ul><li>Start with a high-impact challenge that delivers quick ROI</li><li>Unify your data and map your business processes</li><li>Build a foundation you understand, own, and build on</li><li>Not a black box; transparent, explainable, auditable at every step</li></ul></div><img class="rv" src="img/r1.jpg" alt="Quiet fog over a hillside" loading="lazy"></div></section>
+
+<section class="faq" aria-labelledby="fh"><h2 id="fh" class="rv">The same problems. Every time.</h2><div class="qs">
+<details class="rv" open><summary>Stuck in pilot purgatory <i aria-hidden="true">+</i></summary><p>Your pilot works. Production is a different job.</p></details>
+<details class="rv"><summary>Intelligence without context is just noise <i aria-hidden="true">+</i></summary><p>Everyone has the same models. Context is the difference.</p></details>
+<details class="rv"><summary>No one accountable for outcomes <i aria-hidden="true">+</i></summary><p>Success gets measured as shipped, not adopted.</p></details></div></section>
+
+<section class="two" style="padding-top:0;grid-template-columns:1fr 1fr"><img class="rv" src="img/r2.jpg" alt="Misty valley at first light" loading="lazy" style="aspect-ratio:4/3"><img class="rv" src="img/r3.jpg" alt="Still water under pale sky" loading="lazy" style="aspect-ratio:4/3"><img class="rv" src="img/r4.jpg" alt="Grey hills in haze" loading="lazy" style="aspect-ratio:4/3"><img class="rv" src="img/r5.jpg" alt="Empty shore in mist" loading="lazy" style="aspect-ratio:4/3"></section>
+
+<section class="cta rv"><h2>Real AI transformation.</h2><a class="btn" href="https://www.rapidcanvas.ai">Lead with Enterprise AI</a><h2>Accelerated.</h2></section>
+</main>
+<footer><div class="cols"><div><a href="https://www.rapidcanvas.ai">rapidcanvas.ai</a><a href="https://inc42.com/buzz/enterprise-ai-startup-rapidcanvas-nets-29-mn-to-expand-gtm-teams/">Inc42 on the Series B</a></div><div><a href="mailto:contact@rapidcanvas.ai">contact@rapidcanvas.ai</a></div><div><span>Enterprise Context Engine™, Visual Development Canvas, Operational Harness</span></div></div>
+<p class="fine">Unofficial concept by Axlios Media, not affiliated with RapidCanvas. Wording from rapidcanvas.ai. Photos via Unsplash.</p><div class="big" aria-hidden="true">RapidCanvas</div></footer>
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var d=[['The right process','Human-led decisions. AI-executed workflows. Expert governance at every step.'],['The right people','Your team and ours, co\u2011embedded. Domain expertise meets technical depth.'],['A powerful platform','Your own Enterprise Context Engine\u2122, built around your business, not a generic stack.'],['Limitless possibility','The more you build, the smarter it gets. That\u2019s compounding intelligence at work.']];
+var bg=['#212846','#2b2347','#1f3047','#2d2a3f'];
+function set(i){var s=document.getElementById('st');s.style.background=bg[i];s.innerHTML='<h3></h3><p></p>';s.firstChild.textContent=d[i][0];s.lastChild.textContent=d[i][1];document.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.i==i?'true':'false')})}
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){set(+b.dataset.i)})});set(0);
+</script></body></html>

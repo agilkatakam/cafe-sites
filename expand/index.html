@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expand: let your agent see the web (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Expand with a working page-reading demo. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#3d0012;--surface:#4d0519;--ink:#ff99d3;--muted:#c77aa0;--accent:#ff99d3;--accent-ink:#3d0012;--m:32px;--r:0px;--ease:cubic-bezier(.16,1,.3,1);
+--head:"Libre Franklin","Helvetica Neue",Arial,sans-serif;--text:"Source Serif 4",Georgia,serif;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--text);font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+h1,h2,h3{font-family:var(--head);font-weight:700;letter-spacing:-.035em;line-height:.98}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);border:0;padding:13px 22px;border-radius:var(--r);text-decoration:none;font-family:var(--head);font-weight:700;font-size:1rem;cursor:pointer;transition:transform .2s var(--ease),filter .2s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn:active{transform:scale(.97)}
+/* hero */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;background:#240009}
+.hero .ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 50%;opacity:0;transition:opacity 1.6s ease;filter:saturate(.55) contrast(1.05)}
+.hero .ph.on{opacity:1;animation:kb 14s linear forwards}@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08)}}.strip img{transition:transform 1.2s var(--ease)}.strip{overflow:hidden}.strip img:hover{transform:scale(1.05)}
+.hero::after{content:"";position:absolute;inset:0;background:rgba(61,0,18,.5)}
+.top{position:absolute;top:0;left:0;right:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--m);z-index:5}
+.top .w{font-family:var(--head);font-size:1.4rem;letter-spacing:.02em;text-decoration:none;display:flex;align-items:center;gap:10px}
+.top .w i{display:inline-block;width:18px;height:18px;border:3px solid var(--ink);border-right-color:transparent;border-radius:50%}
+.top .r{display:flex;gap:22px;align-items:center}.top .r a.t{font-size:1.0625rem}
+.hl{position:absolute;z-index:3;left:var(--m);top:50%;transform:translateY(-50%);width:min(58vw,820px)}
+.hero h1{font-size:clamp(2.75rem,5vw,4.75rem);line-height:1.02;text-transform:uppercase}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.06em}
+.hero h1 .ln>span{display:block;transform:translateY(105%);animation:rise 1s var(--ease) forwards}
+.hero h1 .ln:nth-child(2)>span{animation-delay:.12s}
+.hero p.sub{margin-top:20px;font-size:var(--step-lead);max-width:34ch;line-height:1.35;opacity:0;animation:fade .9s .6s var(--ease) forwards}
+@keyframes rise{to{transform:none}}@keyframes fade{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.cards{position:absolute;z-index:4;right:var(--m);bottom:var(--m);display:flex;gap:16px}
+.card{width:240px;aspect-ratio:3/2;position:relative;overflow:hidden;background:#000;text-decoration:none;color:var(--ink);transition:transform .3s var(--ease)}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card b{position:absolute;left:0;right:0;bottom:0;background:var(--accent);color:var(--accent-ink);font-family:var(--head);font-size:.9375rem;letter-spacing:-.01em;padding:7px 10px;line-height:1.15}
+/* features */
+.feat{display:grid;grid-template-columns:repeat(12,1fr);position:relative}
+.field{grid-column:1/7;background:var(--ink);position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;padding:24px;align-self:start;overflow:hidden}
+.reads{grid-column:8/13;padding:20vh var(--m) 24vh 0;max-width:44ch}
+.blk{min-height:68vh;display:flex;flex-direction:column;gap:18px;justify-content:flex-start}
+.blk h2{font-size:clamp(1.75rem,1.4rem + 1.3vw,2rem);line-height:1.1;letter-spacing:-.03em;text-transform:none}
+.blk p{font-size:1.0625rem;max-width:40ch}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.seg{display:inline-flex;border:2px solid var(--ink)}
+.seg button{background:transparent;border:0;padding:11px 18px;min-height:44px;cursor:pointer;font-family:var(--head);font-weight:700;font-size:1rem;letter-spacing:-.01em;transition:background .25s,color .25s}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--accent-ink)}
+.tg{display:inline-flex;align-items:center;gap:12px;min-height:44px;cursor:pointer;font-family:var(--head);font-weight:700;font-size:1rem}
+.tg input{position:absolute;opacity:0}
+.tg .sw{width:52px;height:28px;border:2px solid var(--ink);position:relative;transition:background .25s}
+.tg .sw::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;background:var(--ink);transition:transform .3s var(--ease),background .25s}
+.tg input:checked+.sw{background:var(--ink)}.tg input:checked+.sw::after{transform:translateX(24px);background:var(--accent-ink)}
+.tg input:focus-visible+.sw{outline:3px solid var(--ink);outline-offset:3px}
+.q{background:var(--surface);border:2px solid var(--ink);padding:11px 14px;min-height:44px;width:100%;max-width:300px;font-size:1.0625rem}
+.q::placeholder{color:var(--muted)}
+.cnt{font-size:var(--step-small);color:var(--muted);font-family:var(--head)}
+/* exhibit */
+.ex{width:min(440px,100%);background:var(--bg);color:var(--ink);overflow:hidden}
+.pg{background:#f6e7ee;color:var(--bg);padding:14px 16px}
+.pg .url{font-family:var(--head);font-size:.875rem;opacity:.75;margin-bottom:8px}
+.pg table{width:100%;border-collapse:collapse;font-size:1rem;font-family:var(--head)}
+.pg th,.pg td{padding:5px 6px;text-align:left;font-weight:700}
+.pg tr:nth-child(odd) td{background:rgba(61,0,18,.07)}
+.pg td.n{font-weight:400}
+.pg tr.cite td{outline:3px solid var(--bg);outline-offset:-3px;background:#ff99d3}
+.pg .x{opacity:.45}
+.out{padding:14px 16px;font-family:var(--text);font-size:.9375rem;line-height:1.5;white-space:pre-wrap;min-height:210px}
+.out span{display:block;transition:opacity .3s}
+.out span.dim{opacity:.18}.out span.hit{background:var(--ink);color:var(--accent-ink)}
+.out span.pr{color:var(--muted)}
+.ans{padding:12px 16px 16px;background:var(--surface);font-size:1rem;line-height:1.4}
+.ans b{font-family:var(--head);letter-spacing:-.01em}
+.ans .bad{color:var(--ink);text-decoration:line-through;text-decoration-thickness:2px}
+/* proof */
+.proof{padding:clamp(100px,12vw,180px) var(--m) 0;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.proof h2{grid-column:1/4;font-size:clamp(1.75rem,1.4rem + 1.3vw,2rem);line-height:1.1;align-self:start}
+.cols{grid-column:5/13;columns:4;column-gap:32px;font-size:clamp(1.0625rem,1rem + .5vw,1.375rem);line-height:1.5}
+.cols div{break-inside:avoid;margin-bottom:32px}
+.cols div b{display:block;font-weight:400;color:var(--muted)}
+/* showcase */
+.show{margin-top:clamp(100px,12vw,180px);background:var(--surface);padding:clamp(56px,7vw,110px) var(--m);min-height:90svh}
+.show .hd{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.show h2{grid-column:1/6;font-size:clamp(1.75rem,1.4rem + 1.6vw,2.25rem);line-height:1.1}
+.show .hd p{grid-column:7/13;max-width:60ch}
+.spec{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:12vh}
+.spec>div{overflow:hidden;padding:0 0 .08em}
+.spec .a{grid-column:1/7}.spec .b{grid-column:7/13;background:var(--ink);color:var(--accent-ink);padding:0 24px .08em}
+.num{font-family:var(--head);font-size:clamp(7rem,21vw,22rem);line-height:.84;letter-spacing:-.06em;white-space:nowrap;display:block}
+.spec p{font-size:1.0625rem;margin-top:12px;max-width:34ch}
+.spec .b p{padding-bottom:20px}
+.spec .a p{padding-bottom:20px}
+/* cta */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);height:40svh;min-height:260px}
+.strip img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.05) sepia(.4) hue-rotate(290deg) saturate(1.6)}
+.cta{background:var(--ink);color:var(--accent-ink);min-height:44svh;padding:48px var(--m);display:grid;grid-template-columns:repeat(12,1fr);gap:24px;position:relative}
+.cta .c1{grid-column:1/8}
+.cta h2{font-size:clamp(1.625rem,1.2rem + 1.2vw,1.875rem);line-height:1.15;letter-spacing:-.025em;max-width:30ch}
+.cta h2 a{color:var(--accent-ink);text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px}
+.cta p{margin-top:24px;font-size:1rem;max-width:52ch}
+.cta .c2{grid-column:8/13;align-self:end}
+.cta form{display:flex;gap:8px;flex-wrap:wrap}
+.cta .q{background:#fff0f7;border-color:var(--accent-ink);color:var(--accent-ink);max-width:none;flex:1 1 220px}
+.cta .btn{background:var(--accent-ink);color:var(--ink)}
+.cta .msg{font-size:1rem;margin-top:12px;min-height:1.5em}
+.cta .pt{position:absolute;right:var(--m);top:-48px;width:96px;height:96px;object-fit:cover}
+/* footer */
+.mark{position:relative;background:var(--bg);padding:48px var(--m) 0;overflow:hidden;height:calc((100vw - 2*var(--m)) / 4.75 + 48px)}
+.mark .wm{font-family:var(--head);font-size:calc((100vw - 2*var(--m)) / 3.95);line-height:.8;display:inline-block;letter-spacing:-.06em;text-transform:uppercase;display:block;white-space:nowrap}
+.foot{background:var(--surface);padding:56px var(--m) 32px;display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.foot .pl{grid-column:1/6;display:flex;flex-direction:column;gap:6px}
+.foot .pl a{font-family:var(--head);font-size:clamp(1.625rem,1.2rem + 1.4vw,2.125rem);letter-spacing:-.03em;line-height:1.15;text-decoration:none;width:max-content;max-width:100%;overflow-wrap:anywhere}
+.foot .pl a:hover{text-decoration:underline;text-decoration-thickness:3px}
+.foot .lk{grid-column:7/13;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;font-size:1rem}
+.foot .lk a{display:block;margin-bottom:8px}
+.foot .lg{grid-column:1/13;margin-top:40px;display:flex;justify-content:space-between;gap:24px;font-size:var(--step-small);color:var(--muted);line-height:1.5}
+.foot .lg a{color:var(--muted)}
+.rv{opacity:1}.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}.js .rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.hero .ph,.hero .ph.on{transition:none;animation:none}.hero h1 .ln>span,.hero p.sub{animation:none;transform:none;opacity:1}.js .rv{opacity:1;transform:none;transition:none}}
+@media (max-width:820px){
+ :root{--m:16px}
+ .hero{min-height:620px}
+ .hero .ph{object-position:60% 30%}
+ .hero::after{background:rgba(61,0,18,.7)}
+ .hl{width:auto;right:var(--m);top:44%}
+ .hero h1{font-size:9vw}
+ .hero p.sub{font-size:1rem;max-width:30ch}
+ .cards{left:var(--m);right:var(--m);bottom:16px;gap:12px}.card{flex:1;width:auto}
+ .top .r a.t{display:none}
+ .feat{display:block}
+ .field{position:sticky;top:0;height:42svh;padding:12px;z-index:3;align-items:flex-start}
+ .out{min-height:0;padding:10px 12px;font-size:.8125rem}
+ .pg{padding:10px 12px}
+ .pg th,.pg td{padding:2px 6px;font-size:.875rem}
+ .ans{padding:8px 12px 10px;font-size:.9375rem}
+ .reads{padding:40px var(--m) 60px;max-width:none}
+ .blk{min-height:60svh}
+ .blk h2{font-size:1.375rem}.blk p{font-size:1rem}
+ .proof{display:block;padding-top:80px}
+ .proof h2{font-size:1.625rem;margin-bottom:28px}
+ .cols{columns:2;column-gap:20px;font-size:1.0625rem}
+ .show{min-height:0}
+ .show .hd{display:block}.show .hd p{margin-top:20px}
+ .show h2{font-size:1.75rem}
+ .spec{display:block;margin-top:40px}
+ .spec>div{height:38svh;margin-bottom:16px}
+ .num{font-size:33vw}
+ .spec p{font-size:1rem}
+ .strip{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;min-height:0}
+ .strip img{height:auto;aspect-ratio:4/3}
+ .strip img:first-child{grid-column:1/3}
+ .cta{display:block;padding:36px var(--m) 140px;min-height:0}
+ .cta h2{font-size:1.375rem}
+ .cta .c2{margin-top:28px}
+ .cta .pt{top:auto;bottom:24px;width:80px;height:80px}
+ .mark{height:calc((100vw - 2*var(--m)) / 4.75 + 24px);padding-top:16px}
+ .foot{display:block}
+ .foot .pl a{font-size:1.625rem}
+ .foot .lk{margin-top:32px;grid-template-columns:1fr 1fr}
+ .foot .lg{flex-direction:column;margin-top:32px}
+}
+</style>
+</head>
+<body>
+<header class="hero" id="top">
+ <img class="ph on" src="img/h1044.jpg" alt="A person stands beside a fast river in a misty forest valley">
+ <img class="ph" src="img/h1018.jpg" alt="Green cliffs under low cloud above a winding road">
+ <img class="ph" src="img/h1057.jpg" alt="Hazy coastal hills over a calm sea at dusk">
+ <div class="top"><a class="w" href="#top"><i></i>EXPAND</a><div class="r"><a class="t" href="#read">Read a page</a><a class="btn" href="#cta">Fetch a page</a></div></div>
+ <div class="hl">
+  <h1><span class="ln"><span>Let your agent</span></span><span class="ln"><span>see the web.</span></span></h1>
+  <p class="sub">Fetch and crawl with frontier System One models.</p>
+ </div>
+ <div class="cards">
+  <a class="card" href="#read"><img src="img/debug.jpg" alt="A captured page with one cited line outlined in orange"><b>The snapshot, with the cited line outlined</b></a>
+  <a class="card" href="#cta"><img src="img/og.jpg" alt="Expand's dark eclipse card reading Let your agent see the web"><b>The card Expand shares</b></a>
+ </div>
+</header>
+
+<main>
+<section class="feat" id="read">
+ <div class="field"><div class="ex" data-ui id="ex">
+  <div class="pg"><div class="url">meridian.com/pricing</div>
+   <table><tr><th></th><th>Free</th><th>Plus</th><th>Business</th></tr>
+   <tr><td class="n">Price</td><td>$0</td><td>$12</td><td>Custom</td></tr>
+   <tr><td class="n">SAML SSO</td><td class="x">No</td><td>Yes</td><td>Yes</td></tr>
+   <tr id="sla"><td class="n">Uptime SLA</td><td class="x">No</td><td class="x">No</td><td>Yes</td></tr>
+   <tr><td class="n">Audit log</td><td class="x">No</td><td>Yes</td><td>Yes</td></tr></table></div>
+  <pre class="out" id="out" aria-live="polite"></pre>
+  <div class="ans" id="ans"></div>
+ </div></div>
+ <div class="reads">
+  <div class="blk rv"><h2>Models can't answer basic web questions.</h2>
+   <p>Which plan has uptime SLAs? The page shows ticks and crosses. Ordinary Markdown drops them. Flip the reader and watch what the agent is handed.</p>
+   <div class="ctl"><div class="seg" role="group" aria-label="Reader"><button type="button" data-mode="plain" aria-pressed="true">Ordinary Markdown</button><button type="button" data-mode="iris" aria-pressed="false">Iris</button></div></div></div>
+  <div class="blk rv"><h2>The hidden data, without a browser.</h2>
+   <p>Coordinates, flight gates and diagrams often live in JSON the page loads, not in its HTML. X-Ray finds the parts that matter and drops the rest.</p>
+   <div class="ctl"><label class="tg"><input type="checkbox" id="xr"><span class="sw"></span>X-Ray</label></div></div>
+  <div class="blk rv"><h2>Every fetch becomes an asset you own.</h2>
+   <p>Every line links back to the element on the page it came from, even after the site changes. Hover to debug. Share to cite.</p>
+   <div class="ctl"><button class="btn" type="button" id="cite">Cite the answer</button></div></div>
+  <div class="blk rv"><h2>Let your agent focus on what matters.</h2>
+   <p>If your agent already knows what it's looking for, pass a query and get back only the passages that answer it.</p>
+   <div class="ctl"><input class="q" id="hq" type="text" placeholder="Try: SLA, Business, JSON" aria-label="Highlights query" autocomplete="off"><span class="cnt" id="cnt"></span></div></div>
+ </div>
+</section>
+
+<section class="proof">
+ <h2 class="rv">Plain names</h2>
+ <div class="cols rv">
+  <div><b>Trusted by engineers at</b>OpenAI<br>Flume<br>Mixedbread<br>Amazon Science<br>The Prompting Company</div>
+  <div><b>Models</b>Iris<br>X-Ray<br>Highlights<br>WebSync</div>
+  <div><b>Calls</b>Fetch<br>Crawl<br>Subscribe</div>
+  <div><b>Comes back</b>Markdown from Iris<br>State JSON from X-Ray<br>A snapshot you can cite</div>
+ </div>
+</section>
+
+<section class="show">
+ <div class="hd"><h2 class="rv">Questions answered correctly</h2>
+  <p class="rv">MDBench Hard v1 is a set of hard web extraction cases curated with Expand's customers: 1,094 questions on 326 hard pages. An agent gets only the Markdown each API returns and answers a question about the page. Tested on October 8, 2026.</p></div>
+ <div class="spec">
+  <div class="a rv"><span class="num">74.1</span><p>Percent answered correctly by Expand. 95% confidence interval 70.4 to 77.6.</p></div>
+  <div class="b rv"><span class="num">27.2</span><p>Percent answered correctly by Firecrawl on the same questions. 95% confidence interval 24.2 to 30.5.</p></div>
+ </div>
+</section>
+
+<section id="cta">
+ <div class="strip"><img src="img/s1052.jpg" alt="Wide cloud sky reflected over flat water"><img src="img/s1051.jpg" alt="A wooden pier reaching into a misty mountain lake"><img src="img/s1050.jpg" alt="Sea stacks and turquoise water seen from a cliff"></div>
+ <div class="cta">
+  <div class="c1"><h2>Send a URL. Get <a href="https://expand.ai">a snapshot you can cite</a>.</h2>
+   <p>You also get accurate Markdown and the hidden JSON. Crawling costs no extra: each page is one credit, the same as a Fetch.</p></div>
+  <div class="c2"><form id="f"><input class="q" id="u" type="text" placeholder="Paste a URL" aria-label="URL to fetch"><button class="btn" type="submit">Fetch</button></form><div class="msg" id="msg"></div></div>
+  <img class="pt" src="img/s1051.jpg" alt="Misty lake and mountains, detail">
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="mark" aria-hidden="true"><span class="wm">Expand</span></div>
+ <div class="foot">
+  <div class="pl"><a href="mailto:founder@expand.ai">founder@expand.ai</a><a href="mailto:support@expand.ai">support@expand.ai</a><a href="https://expand.ai">expand.ai</a></div>
+  <div class="lk"><div><a href="https://expand.ai">Fetch</a><a href="https://expand.ai">Crawl</a></div><div><a href="https://expand.ai">Iris</a><a href="https://expand.ai">X-Ray</a></div><div><a href="https://expand.ai">WebSync</a><a href="https://expand.ai">Highlights</a></div></div>
+  <div class="lg"><span>Unofficial concept by Axlios Media, not affiliated with Expand. Wording and benchmark figures from expand.ai.</span><span>Photos via Unsplash: Steve Carter, Andrew Ridley, Stefan Kunze, Annie Spratt, Ales Krivec, Joseph Barrientos. <a href="#top">Back to top</a></span></div>
+ </div>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+(function(){
+ var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+ document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+ var ph=[].slice.call(document.querySelectorAll('.hero .ph')),k=0,rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ if(!rm)setInterval(function(){if(document.hidden)return;ph[k].classList.remove('on');k=(k+1)%ph.length;ph[k].classList.add('on')},6500);
+ var mode='plain',xr=false,cite=false,q='';
+ var out=document.getElementById('out'),ans=document.getElementById('ans'),sla=document.getElementById('sla'),cnt=document.getElementById('cnt');
+ var plain=['Plans and pricing','Free Plus Business','Price $0 $12 Custom','SAML SSO','Uptime SLA','Audit log'];
+ var iris=['## Plans and pricing','| | Free | Plus | Business |','| Price | $0 | $12 | Custom |','| SAML SSO | No | Yes | Yes |','| Uptime SLA | No | No | Yes |','| Audit log | No | Yes | Yes |','~ nav and footer go to appendix.md','~ promo and cookie banners pruned'];
+ var json=['~ state.json, 17,374 tokens the page never shows','$[2].customers[7].intro','"…Commure has logged over 80,000 requests across 1000s of its healthcare customers…"'];
+ function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+ function render(){
+  var lines=(mode==='iris'?iris:plain).slice();
+  if(xr)lines=lines.concat(json);
+  if(cite&&mode==='iris')lines.push('← cited: meridian.com/pricing, row "Uptime SLA"');
+  var hits=0,low=q.toLowerCase();
+  out.innerHTML=lines.map(function(l){
+   var c=l.charAt(0)==='~'?'pr':'';
+   if(low){if(l.toLowerCase().indexOf(low)>-1){hits++;c+=' hit'}else c+=' dim'}
+   return '<span class="'+c+'">'+esc(l.replace(/^~ /,''))+'</span>';
+  }).join('');
+  cnt.textContent=low?hits+' of '+lines.length+' lines kept':'';
+  sla.className=(cite?'cite':'');
+  ans.innerHTML=mode==='plain'
+   ?'<b>Which plan has uptime SLAs?</b><br><span class="bad">Free, Plus and Business each list one.</span> Icons dropped, confidently wrong.'
+   :'<b>Which plan has uptime SLAs?</b><br>Only Business. The row reads no, no, yes.';
+ }
+ document.querySelectorAll('[data-mode]').forEach(function(b){b.addEventListener('click',function(){mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',x===b)});if(mode==='plain')cite=false;render()})});
+ document.getElementById('xr').addEventListener('change',function(e){xr=e.target.checked;render()});
+ document.getElementById('cite').addEventListener('click',function(){mode='iris';document.querySelectorAll('[data-mode]').forEach(function(x){x.setAttribute('aria-pressed',x.dataset.mode==='iris')});cite=!cite;render()});
+ document.getElementById('hq').addEventListener('input',function(e){q=e.target.value.trim();render()});
+ document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var u=document.getElementById('u').value.trim();document.getElementById('msg').innerHTML='Nothing was sent. This is a concept page'+(u?' and “'+esc(u)+'” stayed in your browser':'')+'. The real thing is at <a href="https://expand.ai" style="color:inherit">expand.ai</a>.'});
+ render();
+})();
+</script>
+</body>
+</html>
