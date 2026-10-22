@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>T Kup Projects, LLC - General Contracting and Remodeling in Port Charlotte, Florida</title>
+<meta name="description" content="T Kup Projects, LLC is a general contracting and remodeling business listed in Port Charlotte, Florida. Call 941-759-0940 or email tkupprojects@gmail.com for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e6dbc7;
+  --surface:#ddd0b9;
+  --sand-deep:#cfc2a6;
+  
+  --ink:#062b8a;
+  --muted:#3a5aa8;
+  --accent:#062b8a;
+  --accent-ink:#e6dbc7;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+  --marg: 32px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--bg); color:var(--ink);
+  font-family:'Work Sans', sans-serif;
+  font-size:var(--step-body); line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--muted);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--accent-ink)}
+h1,h2,h3{font-family:Anton, sans-serif;font-weight:400;text-transform:uppercase;line-height:.92;letter-spacing:-0.01em}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--accent-ink);
+  font-weight:600;font-size:var(--step-body);text-decoration:none;
+  padding:16px 28px;
+  clip-path:polygon(0 100%, 0 14px, 14px 0, calc(100% - 14px) 0, 100% 14px, 100% 100%);
+  transition:background .2s ease, transform .15s ease;
+}
+.btn:hover{background:var(--muted)}
+.btn:active{transform:translateY(2px)}
+.tlink{font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.tlink:hover{color:var(--muted)}
+.dark .tlink:hover{color:#fff}
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .5s ease, transform .5s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+.caption{font-size:var(--step-small);color:var(--muted);margin-top:10px}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:100svh;background:var(--ink);color:var(--accent-ink);
+  overflow:hidden;
+}
+.hero-top{
+  position:relative;z-index:20;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  padding:24px var(--marg) 0;
+}
+.hero-top .wm{grid-column:2;font-weight:600;font-size:15px;text-align:center}
+.hero-top .q{grid-column:3;justify-self:end;font-size:15px;text-decoration:underline;text-underline-offset:4px}
+.hero-top .q:hover{color:#fff}
+.hero h1{
+  position:relative;z-index:10;color:var(--accent-ink);text-align:center;
+  font-size:clamp(64px, 10.5vw, 150px);
+  margin:78px auto 0;white-space:nowrap;
+}
+.hero .sub{
+  position:relative;z-index:10;text-align:center;font-size:20px;margin:26px auto 0;max-width:46ch;
+}
+.stack{position:absolute;z-index:5;left:50%;transform:translateX(-50%);width:86%;top:51%;bottom:0}
+.folder{
+  position:absolute;left:0;right:0;display:block;text-decoration:none;
+  border-radius:0;color:var(--ink);
+  transition:transform .25s ease;
+}
+.folder .tab{
+  position:absolute;top:-40px;height:40px;width:220px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:600;
+  clip-path:polygon(10% 0, 90% 0, 100% 100%, 0 100%);
+}
+.folder.f1{top:0;bottom:-220px;z-index:1;background:var(--muted);color:var(--accent-ink)}
+.folder.f1 .tab{left:6%;background:var(--muted);color:var(--accent-ink)}
+.folder.f2{top:64px;bottom:-284px;z-index:2;background:var(--sand-deep)}
+.folder.f2 .tab{left:31%;background:var(--sand-deep)}
+.folder.f3{top:128px;bottom:-348px;z-index:3;background:var(--surface)}
+.folder.f3 .tab{left:56%;background:var(--surface)}
+.folder.f4{top:192px;bottom:-412px;z-index:4;background:var(--bg)}
+.folder.f4 .tab{left:78%;background:var(--bg);color:var(--ink)}
+.folder.f1:hover,.folder.f2:hover,.folder.f3:hover{transform:translateY(-8px)}
+.folder .inner{padding:34px 32px}
+.folder.f4 .inner{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.folder.f4 .orline{font-size:16px}
+.folder.f4 .orline a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.mob-br{display:none}
+
+/* ---------- about ---------- */
+.about{background:var(--bg);padding:140px var(--marg) 120px}
+.about-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end}
+.about h2{
+  grid-column:1/7;font-family:'Work Sans',sans-serif;font-weight:400;text-transform:none;letter-spacing:0;
+  font-size:clamp(40px, 4.4vw, 64px);line-height:1.04;
+}
+.about .note{grid-column:10/13;width:100%;max-width:260px;font-size:16px;justify-self:end}
+.facts{
+  margin-top:120px;display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;
+}
+.fact{min-width:200px}
+.fact .f{font-size:clamp(24px, 2.8vw, 40px);line-height:1.1;font-weight:400}
+.fact .e{font-size:var(--step-small);color:var(--muted);margin-top:8px}
+.about-photo{margin-top:96px;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.about-photo figure.wide{grid-column:1/8}
+.about-photo figure.tall{grid-column:9/13}
+.about-photo figure.wide img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-photo figure.tall img{width:100%;aspect-ratio:4/5;object-fit:cover}
+
+/* ---------- work / spines ---------- */
+.work{background:var(--ink);color:var(--accent-ink);padding:140px var(--marg) 96px}
+.work-head{display:flex;align-items:baseline;gap:28px;flex-wrap:wrap}
+.work-head h2{font-size:28px}
+.work-head p{font-size:15px;color:var(--surface);max-width:60ch}
+.shelf{display:flex;gap:6px;height:430px;margin-top:72px}
+.spine{
+  flex:1 1 0;min-width:0;writing-mode:vertical-rl;
+  padding:16px 0;color:var(--accent-ink);text-decoration:none;
+  font-size:18px;line-height:1;display:flex;align-items:flex-start;gap:14px;
+  transition:background .2s ease, color .2s ease;
+}
+.spine .g{
+  font-size:13px;padding:3px 5px;writing-mode:vertical-rl;
+}
+.spine[data-grp="kb"] .g{background:var(--muted);color:var(--accent-ink)}
+.spine[data-grp="in"] .g{background:var(--sand-deep);color:var(--ink)}
+.spine[data-grp="ex"] .g{background:var(--surface);color:var(--ink)}
+.spine[data-grp="big"] .g{background:var(--bg);color:var(--ink)}
+.spine:hover,.spine:focus-visible{background:var(--accent-ink);color:var(--ink)}
+.shelf-note{margin-top:26px;font-size:15px;color:var(--surface);max-width:60ch}
+.spine-preview{
+  position:fixed;right:5vw;bottom:8vh;width:min(300px,30vw);aspect-ratio:4/5;z-index:60;
+  opacity:0;pointer-events:none;transition:opacity .24s ease;background:var(--surface);
+}
+.spine-preview.on{opacity:1}
+.spine-preview img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .24s ease}
+.spine-preview img.on{opacity:1}
+.mobile-shelf-photo{display:none}
+
+/* ---------- jobs (pinned cards) ---------- */
+.jobs{background:var(--bg);padding-top:120px}
+.jobs-h{font-size:clamp(40px, 4.4vw, 64px);margin:0 var(--marg)}
+.jobs-pinwrap{height:260svh;position:relative;margin-top:64px}
+.jobs-stage{position:sticky;top:0;height:100svh;overflow:hidden;padding:110px var(--marg) 0}
+
+.deck{position:relative;height:380px}
+.deck .card{
+  padding:32px;display:flex;flex-direction:column;
+  color:var(--ink);
+}
+.card .vt{display:none}
+.card h3{font-family:'Work Sans',sans-serif;font-weight:600;text-transform:none;font-size:28px;line-height:1.1;letter-spacing:0}
+.card .x{margin-top:18px;font-size:16px;max-width:46ch}
+.card .foot{margin-top:auto;display:flex;justify-content:space-between;gap:16px;font-size:16px;align-items:baseline}
+.card .foot a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.card.c1{background:var(--surface)}
+.card.c2{background:var(--sand-deep)}
+.card.c3{background:var(--bg)}
+.js .deck{ }
+.js .deck .card{position:absolute;top:0;bottom:0;left:0;width:100%;will-change:transform;overflow:hidden}
+.js .deck .card.slivered h3.h0,.js .deck .card.slivered .x,.js .deck .card.slivered .foot{visibility:hidden}
+.js .deck .card.slivered .vt{display:block;position:absolute;top:28px;left:50%;transform:translateX(-50%);writing-mode:vertical-rl;font-family:'Work Sans',sans-serif;font-weight:600;font-size:20px;text-transform:none;letter-spacing:0;white-space:nowrap}
+.deck:not(.jsd){display:flex;gap:12px;overflow-x:auto}
+.deck:not(.jsd) .card{min-width:300px;flex:1}
+.jobs-note{margin-top:48px;font-size:16px;max-width:60ch}
+
+/* ---------- contact ---------- */
+.contact{position:relative;height:100svh;overflow:hidden;background:var(--ink)}
+.contact .ph{position:absolute;inset:0;overflow:hidden}
+.contact .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+@media (prefers-reduced-motion: no-preference){
+  .contact .ph img{animation:drift 26s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:scale(1)}to{transform:scale(1.08)}}
+}
+.vcard{
+  position:absolute;top:60px;right:60px;width:380px;background:var(--bg);color:var(--ink);
+  padding:32px 32px 0;display:flex;flex-direction:column;
+}
+.vcard h2{font-family:'Work Sans',sans-serif;font-weight:400;text-transform:none;font-size:28px;letter-spacing:0}
+.vcard .who{margin-top:18px;font-size:16px;line-height:1.55}
+.vcard .how{margin-top:14px;font-size:16px;line-height:1.55}
+.vcard .rows{margin-top:18px;font-size:16px;display:flex;flex-direction:column;gap:8px}
+.vcard .rows a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.vcard .rows a:hover{color:var(--muted)}
+.vcard .btn{margin:26px -32px 0;text-align:center;padding:16px 0;font-size:18px}
+.vcard .cap{font-size:13px;color:var(--muted);padding:14px 0}
+
+/* ---------- footer ---------- */
+.footer{background:var(--ink);padding:120px var(--marg) 60px;color:var(--ink)}
+.backcard{position:relative;max-width:1160px;margin:30px auto 0;background:var(--bg)}
+.backcard svg.scallops{position:absolute;left:0;top:-29px;width:100%;height:30px;display:block}
+.backcard .in{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:56px 56px 80px}
+.backcard h2{font-size:28px}
+.backcard .msg{margin-top:18px;font-size:16px;max-width:38ch;line-height:1.55}
+.backcard .addr{font-size:18px;line-height:1.5;display:flex;flex-direction:column;gap:12px;position:relative}
+.backcard .addr a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.backcard .addr a:hover{color:var(--muted)}
+.stamp{position:absolute;top:0;right:0;width:88px;background:#fff;padding:6px}
+.stamp img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.imprint{
+  text-align:center;font-size:13px;color:var(--surface);margin:44px auto 0;line-height:1.6;max-width:72ch;
+}
+.imprint a{color:var(--accent-ink);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- 900px ---------- */
+@media (max-width:900px){
+  :root{--marg:24px}
+  .about{padding:100px var(--marg) 90px}
+  .work{padding:60px var(--marg) 80px}
+  .shelf{margin-top:40px}
+  .about-grid{display:block}
+  .about .note{max-width:none;margin-top:26px}
+  .facts{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:32px 24px}
+  .about-photo{margin-top:48px;display:block}
+  .about-photo figure.tall{margin-top:24px}
+  .about-photo figure.tall img{aspect-ratio:4/3}
+  .shelf{height:auto;display:block}
+  .spine{writing-mode:horizontal-tb;display:inline-block;width:auto;padding:8px 12px;margin:0 6px 14px 0;font-size:17px}
+  .spine .g{writing-mode:horizontal-tb;font-size:13px;margin-left:8px;display:inline-block;white-space:nowrap}
+  .spine-preview{display:none}
+  .mobile-shelf-photo{display:block;margin-top:8px}
+  .mobile-shelf-photo img{width:100%;aspect-ratio:3/2;object-fit:cover}
+  .jobs-pinwrap{height:auto}
+  .jobs-stage{position:static;height:auto;overflow:visible;padding:0 var(--marg) 80px}
+  .jobs-h{margin-top:0}
+  .deck,.js .deck{height:auto;margin-top:44px;display:flex;flex-direction:column;gap:12px;overflow:visible}
+  .js .deck .card,.deck .card{position:static;width:100%;min-height:230px}
+  .jobs-note{margin-top:32px}
+  .vcard{top:auto;bottom:-1px;left:16px;right:16px;width:auto;padding:28px 24px 0}
+  .vcard .btn{margin:24px -24px 0}
+  .contact{height:auto;min-height:70svh;padding-bottom:0}
+  .contact .ph{position:relative;height:70svh}
+  .backcard .in{grid-template-columns:1fr;padding:44px 28px 64px}
+  .stamp{position:absolute;top:-60px;right:20px;width:64px}
+}
+
+/* ---------- 480px ---------- */
+@media (max-width:480px){
+  :root{--marg:20px}
+  .hero-top{padding:18px var(--marg) 0}
+  .hero h1{font-size:20vw;white-space:normal;margin-top:64px;line-height:.95}
+  .mob-br{display:block}
+  .hero .sub{font-size:18px;padding:0 12px}
+  .stack{width:100%;top:48%}
+  .folder .tab{height:32px;top:-32px;width:170px;font-size:15px}
+  .folder.f2{top:52px;bottom:-272px}
+  .folder.f3{top:104px;bottom:-324px}
+  .folder.f4{top:156px;bottom:-376px}
+  .folder.f1 .tab{left:4%}
+  .folder.f2 .tab{left:34%}
+  .folder.f3 .tab{left:20%}
+  .folder.f4 .tab{left:52%}
+  .folder .inner{padding:22px 20px}
+  .folder.f4 .inner{gap:12px}
+  .folder.f4 .btn{width:100%;text-align:center}
+  .facts{grid-template-columns:1fr}
+  .facts .f{font-size:26px;white-space:nowrap}
+  .fact{min-width:0}
+  .about h2{font-size:11vw}
+  .jobs-h{font-size:10vw}
+  .card h3{font-size:24px}
+  .footer{padding:90px var(--marg) 44px}
+  .backcard .in{padding:40px 22px 56px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero dark" id="top">
+  <div class="hero-top">
+    <span class="wm">T Kup Projects</span>
+    <a class="q" href="#contact">Get a quote</a>
+  </div>
+  <h1>T Kup<br class="mob-br"> Projects</h1>
+  <p class="sub">General contracting and remodeling in Port Charlotte, Florida.</p>
+  <nav class="stack" aria-label="Sections">
+    <a class="folder f1" href="#about"><span class="tab">The company</span></a>
+    <a class="folder f2" href="#work"><span class="tab">The work</span></a>
+    <a class="folder f3" href="#jobs"><span class="tab">Jobs people call for</span></a>
+    <div class="folder f4">
+      <span class="tab">Get a quote</span>
+      <div class="inner">
+        <a class="btn" href="tel:+19417590940">Call for a quote</a>
+        <p class="orline">Or email <a href="mailto:tkupprojects@gmail.com">tkupprojects@gmail.com</a></p>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="about" id="about">
+  <div class="about-grid">
+    <h2 class="reveal">A local contractor</h2>
+    <p class="note reveal" style="transition-delay:.08s">T Kup Projects, LLC is a general contracting and remodeling business listed in Port Charlotte, Florida.</p>
+  </div>
+  <div class="facts">
+    <div class="fact reveal"><p class="f">Port Charlotte, Florida</p><p class="e">Where the business is listed</p></div>
+    <div class="fact reveal" style="transition-delay:.08s"><p class="f">General and remodeling</p><p class="e">The kind of work</p></div>
+    <div class="fact reveal" style="transition-delay:.16s"><p class="f">941-759-0940</p><p class="e">The number to call</p></div>
+  </div>
+  <div class="about-photo">
+    <figure class="reveal wide">
+      <img src="img/reno-room.jpg" alt="Stock photo of a room partway through a remodel, with a ladder and drop cloths" loading="lazy">
+      <figcaption class="caption">Stock photo: a room partway through a remodel.</figcaption>
+    </figure>
+    <figure class="reveal tall" style="transition-delay:.12s">
+      <img src="img/kitchen-reno.jpg" alt="Stock photo of a kitchen mid-remodel, with cabinets being fitted" loading="lazy">
+      <figcaption class="caption">Stock photo: a kitchen mid-remodel.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="work dark" id="work">
+  <div class="work-head">
+    <h2 class="reveal">The work</h2>
+    <p class="reveal" style="transition-delay:.08s">Jobs people usually call for, grouped by kind.</p>
+  </div>
+  <div class="shelf" id="shelf">
+    <a class="spine reveal" data-grp="kb" href="#contact">Kitchen remodels <span class="g">Kitchen and bath</span></a>
+    <a class="spine reveal" data-grp="kb" href="#contact">Bathroom remodels <span class="g">Kitchen and bath</span></a>
+    <a class="spine reveal" data-grp="kb" href="#contact">Tile and backsplashes <span class="g">Kitchen and bath</span></a>
+    <a class="spine reveal" data-grp="kb" href="#contact">Cabinet installation <span class="g">Kitchen and bath</span></a>
+    <a class="spine reveal" data-grp="kb" href="#contact">Countertop replacement <span class="g">Kitchen and bath</span></a>
+    <a class="spine reveal" data-grp="kb" href="#contact">Fixture replacement <span class="g">Kitchen and bath</span></a>
+    <a class="spine reveal" data-grp="in" href="#contact">Drywall and painting <span class="g">Interior</span></a>
+    <a class="spine reveal" data-grp="in" href="#contact">Flooring <span class="g">Interior</span></a>
+    <a class="spine reveal" data-grp="in" href="#contact">Trim and carpentry <span class="g">Interior</span></a>
+    <a class="spine reveal" data-grp="in" href="#contact">Doors and windows <span class="g">Interior</span></a>
+    <a class="spine reveal" data-grp="ex" href="#contact">Siding repair <span class="g">Exterior</span></a>
+    <a class="spine reveal" data-grp="ex" href="#contact">Soffit and fascia <span class="g">Exterior</span></a>
+    <a class="spine reveal" data-grp="ex" href="#contact">Decks and patios <span class="g">Exterior</span></a>
+    <a class="spine reveal" data-grp="ex" href="#contact">Fence installation <span class="g">Exterior</span></a>
+    <a class="spine reveal" data-grp="big" href="#contact">Room additions <span class="g">Bigger projects</span></a>
+    <a class="spine reveal" data-grp="big" href="#contact">Garage conversions <span class="g">Bigger projects</span></a>
+    <a class="spine reveal" data-grp="big" href="#contact">Lanai enclosures <span class="g">Bigger projects</span></a>
+    <a class="spine reveal" data-grp="big" href="#contact">Whole-room remodels <span class="g">Bigger projects</span></a>
+  </div>
+  <p class="shelf-note reveal">Point at a spine to see the kind of job. Every job starts with a quote.</p>
+  <div class="mobile-shelf-photo">
+    <img src="img/wall-repair.jpg" alt="Stock photo of a wall being repaired" loading="lazy">
+    <p class="caption" style="color:var(--surface)">Stock photo: a wall being repaired.</p>
+  </div>
+</section>
+
+<div class="spine-preview" id="spinePreview" aria-hidden="true">
+  <img data-grp="kb" src="img/kitchen-reno.jpg" alt="">
+  <img data-grp="in" src="img/wall-repair.jpg" alt="">
+  <img data-grp="ex" src="img/house.jpg" alt="">
+  <img data-grp="big" src="img/bath-sink.jpg" alt="">
+</div>
+
+<section class="jobs" id="jobs">
+  <h2 class="jobs-h reveal">Three kinds of calls</h2>
+  <div class="jobs-pinwrap" id="jobsWrap">
+    <div class="jobs-stage">
+      <div class="deck" id="deck">
+        <article class="card c1">
+          <h3 class="h0">Remodeling</h3><h3 class="vt" aria-hidden="true">Remodeling</h3>
+          <p class="x">Kitchens, bathrooms and whole rooms, taken apart and put back together the way you want them.</p>
+          <div class="foot"><span>Jobs people usually call for</span><a href="tel:+19417590940">Call for a quote</a></div>
+        </article>
+        <article class="card c2">
+          <h3 class="h0">Repairs and improvements</h3><h3 class="vt" aria-hidden="true">Repairs and improvements</h3>
+          <p class="x">Drywall, flooring, trim, doors and windows. The everyday fixes that keep a house in shape.</p>
+          <div class="foot"><span>Jobs people usually call for</span><a href="tel:+19417590940">Call for a quote</a></div>
+        </article>
+        <article class="card c3">
+          <h3 class="h0">Additions and build-outs</h3><h3 class="vt" aria-hidden="true">Additions and build-outs</h3>
+          <p class="x">More space, inside and out: room additions, garage conversions, lanais, decks and patios.</p>
+          <div class="foot"><span>Jobs people usually call for</span><a href="tel:+19417590940">Call for a quote</a></div>
+        </article>
+      </div>
+      <p class="jobs-note reveal">Every job starts with a conversation and a quote. Call <a class="tlink" href="tel:+19417590940">941-759-0940</a> or email <a class="tlink" href="mailto:tkupprojects@gmail.com">tkupprojects@gmail.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact dark" id="contact">
+  <div class="ph"><img src="img/house.jpg" alt="Stock photo of a single-story Florida house with a palm tree in the yard"></div>
+  <div class="vcard reveal">
+    <h2>Get a quote</h2>
+    <p class="who">T Kup Projects, LLC<br>Listed in Port Charlotte, Florida</p>
+    <p class="how">Call or email to talk through your project. Every job starts with a quote.</p>
+    <div class="rows">
+      <a href="tel:+19417590940">941-759-0940</a>
+      <a href="mailto:tkupprojects@gmail.com">tkupprojects@gmail.com</a>
+    </div>
+    <a class="btn" href="tel:+19417590940">Call for a quote</a>
+    <p class="cap">Stock photo: a Florida home.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer dark">
+  <div class="backcard">
+    <svg class="scallops" viewBox="0 0 1200 30" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="#e6dbc7" d="M0 30 A50 30 0 0 1 100 30 A50 30 0 0 1 200 30 A50 30 0 0 1 300 30 A50 30 0 0 1 400 30 A50 30 0 0 1 500 30 A50 30 0 0 1 600 30 A50 30 0 0 1 700 30 A50 30 0 0 1 800 30 A50 30 0 0 1 900 30 A50 30 0 0 1 1000 30 A50 30 0 0 1 1100 30 A50 30 0 0 1 1200 30 L1200 30 L0 30 Z"/>
+    </svg>
+    <div class="in">
+      <div>
+        <h2>T Kup Projects</h2>
+        <p class="msg">General contracting and remodeling in Port Charlotte, Florida. Call or email for a quote on your project.</p>
+      </div>
+      <div class="addr">
+        <div class="stamp"><img src="img/bath-tile.jpg" alt="Stock photo of a remodeled bathroom with patterned tile" loading="lazy"></div>
+        <a href="mailto:tkupprojects@gmail.com">tkupprojects@gmail.com</a>
+        <a href="tel:+19417590940">941-759-0940</a>
+        <span>Port Charlotte, Florida</span>
+      </div>
+    </div>
+  </div>
+  <p class="imprint">This is an unofficial preview concept made by <a href="https://axliosmedia.com">Axlios Media</a> (axliosmedia.com). It is not an official site and the business has not approved it. Photos are stock images from <a href="https://www.pexels.com">Pexels</a> and are not the business's own work.</p>
+</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* reveal entrances */
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{rootMargin:'0px 0px -30% 0px',threshold:0});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+/* spine index with preview */
+(function(){
+  var prev=document.getElementById('spinePreview');
+  if(!prev)return;
+  var imgs=prev.querySelectorAll('img');
+  var spines=document.querySelectorAll('.spine');
+  spines.forEach(function(s){
+    function show(){
+      var g=s.getAttribute('data-grp');
+      imgs.forEach(function(im){im.classList.toggle('on',im.getAttribute('data-grp')===g)});
+      prev.classList.add('on');
+    }
+    s.addEventListener('mouseenter',show);
+    s.addEventListener('focus',show);
+    s.addEventListener('mouseleave',function(){prev.classList.remove('on')});
+    s.addEventListener('blur',function(){prev.classList.remove('on')});
+  });
+})();
+
+/* pinned deck of cards */
+(function(){
+  var wrap=document.getElementById('jobsWrap');
+  var deck=document.getElementById('deck');
+  if(!wrap||!deck)return;
+  var cards=Array.prototype.slice.call(deck.querySelectorAll('.card'));
+  var n=cards.length;
+  var mq=window.matchMedia('(max-width: 900px)');
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)');
+  var SLIVER=120;
+
+  function layout(){
+    if(mq.matches||rm.matches){deck.classList.remove('jsd');cards.forEach(function(c){c.style.transform='';c.style.width='';});return;}
+    deck.classList.add('jsd');
+    var rect=wrap.getBoundingClientRect();
+    var total=rect.height-window.innerHeight;
+    var p=Math.min(1,Math.max(0,-rect.top/total))*(n-1);
+    var deckW=deck.clientWidth;
+    var slivers=Math.ceil(p);
+    cards.forEach(function(c,i){
+      var pos=i-p;
+      var x,w;
+      if(pos<0){
+        x=i*SLIVER;w=SLIVER+2;
+        c.classList.add('slivered');
+      }else{
+        c.classList.remove('slivered');
+        var avail=deckW-slivers*SLIVER;
+        x=slivers*SLIVER+Math.min(pos,1.6)*avail;
+        w=avail;
+      }
+      c.style.transform='translateX('+x+'px)';
+      c.style.width=w+'px';
+    });
+  }
+  cards.forEach(function(c,i){
+    c.addEventListener('click',function(){
+      var pos=i-(Math.min(1,Math.max(0,-wrap.getBoundingClientRect().top/(wrap.getBoundingClientRect().height-window.innerHeight)))*(n-1));
+      if(pos<0){
+        var rect=wrap.getBoundingClientRect();
+        var total=rect.height-window.innerHeight;
+        var y=window.scrollY+rect.top+(i/(n-1))*total+2;
+        window.scrollTo({top:y,behavior:'smooth'});
+      }
+    });
+  });
+  window.addEventListener('scroll',layout,{passive:true});
+  window.addEventListener('resize',layout);
+  layout();
+})();
+</script>
+</body>
+</html>
