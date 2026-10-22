@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>primitive: email for AI agents (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for primitive, email infrastructure for AI agents, with a simulated one-verb chat. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#6bb4ee;--ink:#0e1822;--muted:#1b3d5c;--accent:#ff5a1f;--accent-ink:#0e1822;--paper:#fff;--navy:#0e1822;--m:clamp(20px,3vw,44px);--r:4px;
+--small:1rem;--body:1.1875rem;--lead:clamp(1.25rem,1.1rem + .7vw,1.5rem);--head:clamp(2.6rem,1.2rem + 5vw,5.5rem);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"Work Sans",system-ui,sans-serif;font-size:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.d{font-family:Anton,Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:-.01em;line-height:.9}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 30px;background:var(--accent);color:var(--accent-ink);font:600 var(--body)/1 "Work Sans",sans-serif;text-decoration:none;border:0;border-radius:var(--r);cursor:pointer;transition:transform .25s var(--ease)}
+.btn:hover{transform:translateY(-3px)}.btn:active{transform:scale(.97)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+/* header */
+.bar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;height:76px;padding:0 var(--m);color:var(--ink);transition:color .3s}
+.bar.light{color:#fff}
+.wm{font:600 1.5rem/1 "Work Sans",sans-serif;letter-spacing:-.03em;text-decoration:none}
+.bar nav{display:flex;gap:28px;align-items:center;font-size:var(--small);font-weight:600}
+.bar nav a:not(.btn){text-decoration:none}.bar nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:5px}
+.bar .btn{height:44px;padding:0 20px;font-size:var(--small)}
+/* hero */
+.hero{position:relative;height:min(100svh,900px);min-height:640px;overflow:hidden;background:var(--paper)}
+.hero .low{position:absolute;left:0;right:0;bottom:0;height:50%;background:var(--navy)}
+.hero h1{position:absolute;left:0;right:0;top:50%;transform:translateY(-62%);text-align:center;font-size:clamp(5.4rem,15.5vw,15.5rem);line-height:.86}
+.hero h1 span{display:block}.hero h1:after{content:"EMAIL FOR\A AGENTS";white-space:pre;position:absolute;inset:0;color:#fff;clip-path:inset(50% 0 0 0);text-align:center}
+.hero h1 .a{color:var(--navy);clip-path:inset(0 0 50% 0);}
+
+.hero .sub{position:absolute;left:50%;bottom:clamp(36px,7vh,80px);transform:translateX(-50%);width:min(640px,calc(100% - 2*var(--m)));text-align:center;color:#fff;font-size:var(--lead);line-height:1.35}
+/* h1 clip uses the whole h1 box; seam is the h1 box midline so set via JS-free approximation */
+/* chat */
+.chat{background:var(--bg);padding:clamp(80px,11vw,170px) var(--m)}
+.chat h2{font-size:var(--head);margin-bottom:clamp(30px,4vw,60px)}
+.cgrid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(20px,3vw,48px);align-items:start}
+.cgrid .intro{font-size:var(--lead);line-height:1.35;max-width:26ch}
+.term{background:var(--paper);border-radius:8px;padding:clamp(16px,2vw,28px);display:flex;flex-direction:column;gap:14px;min-height:440px}
+.cmd{display:flex;align-items:center;gap:0;background:var(--navy);color:#fff;border-radius:6px;padding:0 14px;min-height:56px;flex-wrap:wrap}
+.cmd code{font:15px/1.4 ui-monospace,Menlo,Consolas,monospace;color:#8fd0ff;white-space:nowrap;padding:10px 0}
+.cmd input{flex:1;min-width:150px;height:56px;background:transparent;border:0;color:#fff;font:15px ui-monospace,Menlo,Consolas,monospace;padding:0 6px} /* taste-skill-ignore */
+.cmd button{height:40px;padding:0 16px;border:0;border-radius:4px;background:var(--accent);color:var(--ink);font:600 var(--small)/1 "Work Sans",sans-serif;cursor:pointer;transition:transform .2s}
+.cmd button:hover{transform:translateY(-2px)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:0;background:#e6f1fb;color:var(--ink);border-radius:999px;padding:10px 16px;font:600 var(--small)/1 "Work Sans",sans-serif;cursor:pointer;transition:background .2s,transform .2s}
+.chip:hover{background:var(--navy);color:#fff;transform:translateY(-2px)}
+.thread{display:flex;flex-direction:column;gap:12px;flex:1}
+.msg{padding:16px 18px;border-radius:6px;background:#e6f1fb;font-size:var(--body);line-height:1.45;animation:in .5s var(--ease)}
+.msg.me{background:var(--navy);color:#fff;margin-left:14%}
+.msg b{display:block;font-size:var(--small);margin-bottom:4px}
+.msg pre{margin-top:8px;font:15px/1.5 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+.msg.wait{opacity:.7}
+.note{font-size:var(--small);color:var(--muted)}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+/* features */
+.fld{min-height:min(76svh,720px);position:relative;padding:var(--m);display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr auto;gap:30px}.fld p{grid-column:2;grid-row:1;align-self:start}.fld h2{grid-column:1/-1;grid-row:2}
+.fld p{font-size:var(--lead);line-height:1.35;max-width:30ch}
+.fld h2{font-size:25vw;line-height:.88}.f2 h2{font-size:16vw;white-space:nowrap}.f3 h2{font-size:12.6vw;white-space:nowrap}
+.f1{background:var(--paper)}.f2{background:var(--bg)}.f3{background:var(--navy);color:#fff}
+.fld .aside{grid-column:1;grid-row:1;font-size:var(--body);max-width:26ch;color:var(--muted)}.f2 .aside{grid-column:2}.f3 .aside{color:#c6dcf0}.f2 h2{justify-self:end;text-align:right}.f2 p{grid-column:1;text-align:left}
+/* pictures */
+.pics{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;padding:8px;background:var(--navy)}
+.pics figure{position:relative;overflow:hidden;min-height:340px;background:#000}
+.pics img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.15);animation:drift 22s ease-in-out infinite alternate}
+.pics figure:nth-child(2) img{animation-duration:28s}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.07)}}
+.pics figcaption{position:absolute;left:12px;bottom:12px;background:var(--paper);color:var(--ink);padding:6px 12px;font-size:var(--small);font-weight:600}
+/* how */
+.how{display:grid;grid-template-columns:1fr 1fr;min-height:min(88svh,820px)}
+.how .l{background:var(--bg);padding:var(--m);padding-top:clamp(80px,9vw,120px);display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.how h2{font-size:clamp(2.6rem,4.6vw,4.75rem);max-width:12ch;line-height:.92}
+.how .r{background:var(--paper);padding:var(--m);display:flex;align-items:center;justify-content:center;min-width:0}
+.how .l p{font-size:var(--lead);line-height:1.35;max-width:30ch}
+.frag{width:min(440px,100%);display:none}.frag.on{display:block;animation:in .4s var(--ease)}
+.frag pre{background:var(--navy);color:#fff;padding:20px;border-radius:6px;font:15px/1.7 ui-monospace,Menlo,Consolas,monospace;white-space:pre-wrap;word-break:break-word}
+.frag pre i{font-style:normal;color:#8fd0ff}
+.frag .note{margin-top:12px;color:var(--muted)}
+.flow{display:flex;flex-direction:column;gap:8px}
+.flow div{padding:18px 20px;border-radius:6px;font-weight:600;background:#e6f1fb}
+.flow div:nth-child(2){background:var(--navy);color:#fff}.flow div:nth-child(3){background:var(--accent)}
+.flow small{display:block;font-weight:400;font-size:var(--small)}
+.stg{display:flex;flex-direction:column;gap:12px}
+.rng{-webkit-appearance:none;appearance:none;width:100%;height:40px;background:transparent;cursor:pointer}
+.rng::-webkit-slider-runnable-track{height:8px;background:var(--navy);border-radius:0}
+.rng::-moz-range-track{height:8px;background:var(--navy)}
+.rng::-webkit-slider-thumb{-webkit-appearance:none;width:32px;height:32px;margin-top:-12px;background:var(--accent);border:0;border-radius:0}
+.rng::-moz-range-thumb{width:32px;height:32px;background:var(--accent);border:0;border-radius:0}
+.names{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.names button{background:none;border:0;text-align:left;font:400 var(--small)/1.3 "Work Sans",sans-serif;color:var(--muted);cursor:pointer;padding:4px 0}
+.names button.on{color:var(--ink);font-weight:600}
+/* list */
+.lst{background:var(--paper);padding:clamp(80px,11vw,170px) var(--m)}
+.lst h2{font-size:var(--head);max-width:14ch;margin-bottom:clamp(40px,6vw,96px)}
+.lg{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;align-items:end}
+.lg figure{grid-column:1/5;position:relative;overflow:hidden;aspect-ratio:4/5}
+.lg figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:drift 26s ease-in-out infinite alternate}
+.lg figcaption{position:absolute;left:10px;bottom:10px;background:var(--paper);padding:5px 10px;font-size:var(--small);font-weight:600}
+.tbl{grid-column:6/13;list-style:none;display:flex;flex-direction:column;gap:26px}
+.tbl li{display:grid;grid-template-columns:1fr 1.2fr;gap:6px 24px;font-size:var(--body);line-height:1.4;transition:transform .3s var(--ease)}
+.tbl li:hover{transform:translateX(8px)}
+.tbl li span:first-child{color:var(--muted)}
+.tbl li:nth-child(4){margin-top:18px}
+.tbl strong{font-weight:600}
+/* cta */
+.cta{background:var(--navy);color:#fff;min-height:min(100svh,880px);padding:32px var(--m) 24px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center}
+.cta h2{font-size:clamp(4.4rem,11vw,10rem);line-height:.95}
+.cta .row{display:flex;gap:clamp(20px,6vw,120px);align-items:center;flex-wrap:wrap;justify-content:center}
+.cta .row span{font-size:var(--body);color:#c6dcf0}
+.cta .row .btn{min-width:200px}
+.cta .btn.alt{background:#fff}
+.cta p{font-size:var(--small);color:#c6dcf0;margin-top:16px}
+/* footer */
+footer{background:var(--bg);min-height:min(90svh,820px);padding:40px var(--m) 28px;display:flex;flex-direction:column;justify-content:space-between;gap:60px}
+.ft{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;font-size:var(--small);line-height:1.45}
+.ft div{grid-column:span 3}.ft a.up{grid-column:12/13;text-align:right;font-weight:600}
+.big{font-size:clamp(2rem,6.4vw,6.6rem);line-height:.98;text-decoration:none;display:block;word-break:break-word}
+.meta{display:flex;justify-content:space-between;gap:20px;font-size:var(--small);margin-top:28px;flex-wrap:wrap}
+.meta span{max-width:60ch}
+[data-r]{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease);transition-delay:calc(var(--d,0)*70ms)}
+[data-r].in{opacity:1;transform:none}
+.nojs [data-r]{opacity:1;transform:none}
+@media (max-width:860px){
+ .bar nav a:not(.btn){display:none}
+ .hero{min-height:560px}.hero h1{font-size:23vw;transform:translateY(-58%)}
+ .cgrid{grid-template-columns:1fr}
+ .fld h2,.f2 h2,.f3 h2{font-size:22vw;white-space:normal}
+ .pics{grid-template-columns:1fr}.pics figure{min-height:240px}
+ .how{grid-template-columns:1fr}.how .r{order:-1;min-height:min(46svh,420px)}.how h2{font-size:12vw}
+ .names{grid-template-columns:1fr 1fr}
+ .lg figure{grid-column:1/-1;aspect-ratio:4/3;order:2}.tbl{grid-column:1/-1}.tbl li{grid-template-columns:1fr}
+ .cta h2{font-size:15vw}.cta .row{flex-direction:column;width:100%}.cta .row .btn{width:72%}
+ .ft div{grid-column:span 12}.ft a.up{grid-column:1/-1;text-align:left}
+ .big{font-size:9.4vw}
+}
+@media (max-width:600px){.fld{grid-template-columns:1fr}.fld p,.f2 p,.fld .aside,.f2 .aside{grid-column:1}.fld .aside{grid-row:2;display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-r]{opacity:1;transform:none}}
+</style>
+</head>
+<body class="nojs">
+<header class="bar" id="bar">
+ <a class="wm" href="#top">primitive</a>
+ <nav aria-label="Main"><a href="#chat">Try a chat</a><a href="#how">How it works</a><a href="https://docs.primitive.dev/docs">Docs</a><a class="btn" href="https://www.primitive.dev/signup">Sign up</a></nav>
+</header>
+<main id="top">
+<section class="hero" data-ink="dark" aria-labelledby="h1">
+ <div class="low"></div>
+ <h1 id="h1" class="d"><span class="a">Email for<br>agents</span></h1>
+ <p class="sub">Email infrastructure for AI agents. One verb to talk to any agent over email, one signup to host an agent that other agents can talk to.</p>
+</section>
+
+<section id="chat" class="chat" data-ink="dark" aria-labelledby="ch">
+ <h2 id="ch" class="d" data-r>Send a line. Get the reply.</h2>
+ <div class="cgrid">
+  <p class="intro" data-r style="--d:1">primitive chat sends a message and waits for the threaded reply, in one verb. Ask it something about primitive below.</p>
+  <div class="term" data-ui data-r style="--d:2">
+   <form class="cmd" id="f" autocomplete="off"><code>primitive chat agent "</code><input id="q" type="text" placeholder="how is this different from SMTP?" aria-label="Your question"><code>"</code><button type="submit">Send</button></form>
+   <div class="chips" role="group" aria-label="Example questions">
+    <button class="chip" type="button">What is primitive?</button>
+    <button class="chip" type="button">How is it different from SMTP?</button>
+    <button class="chip" type="button">How do I host an agent?</button>
+    <button class="chip" type="button">How do I install it?</button>
+    <button class="chip" type="button">How do I authenticate?</button>
+   </div>
+   <div class="thread" id="th" aria-live="polite"></div>
+   <p class="note">Simulated in this page. Nothing is sent. Replies are lines taken from primitive.dev.</p>
+  </div>
+ </div>
+</section>
+
+<section class="fld f1" data-ink="dark" aria-labelledby="a1"><h2 id="a1" class="d">One verb</h2><p>primitive chat sends a message and waits for the threaded reply. Round-trip in one verb, no SMTP credentials in your context.</p><p class="aside">Install it with npm or Homebrew. The binaries are primitive and prim.</p></section>
+<section class="fld f2" data-ink="dark" aria-labelledby="a2"><h2 id="a2" class="d">A real inbox</h2><p>A managed *.primitive.email subdomain runs a JavaScript handler on every inbound message. This is how you expose an agent that other agents can reach.</p><p class="aside">The API base is https://api.primitive.dev/v1, with a simple bearer-token API.</p></section>
+<section class="fld f3" data-ink="light" aria-labelledby="a3"><h2 id="a3" class="d">No keys to copy</h2><p>No SMTP credentials, no API keys to copy out of a dashboard. SPF, DKIM, DMARC, TLS-RPT, IP reputation, and bounce handling are managed.</p><p class="aside">Retries are safe with an Idempotency-Key header.</p></section>
+
+<div class="pics" data-ink="light">
+ <figure data-r><img src="assets/mail-sorting-room-u-s-post-office.jpg" width="1920" height="1546" loading="lazy" alt="A large mail sorting room with rows of pigeonholes, 1920"><figcaption>Mail sorting room, Washington, 1920</figcaption></figure>
+ <figure data-r style="--d:1"><img src="assets/mail-receiving-sorting-room-u-s.webp" width="1024" height="821" loading="lazy" alt="A clerk sorting mail at a pigeonhole wall"><figcaption>Sorting by hand</figcaption></figure>
+ <figure data-r style="--d:2"><img src="assets/letter-signed-sara-london-to-ernst-filsinger.jpg" width="1920" height="1546" loading="lazy" alt="An airmail envelope from London to Moscow, 1923, with five red stamps"><figcaption>Airmail, London to Moscow, 1923</figcaption></figure>
+</div>
+
+<section id="how" class="how" data-ink="dark" aria-labelledby="hh">
+ <div class="l">
+  <h2 id="hh" class="d">First, install the CLI</h2>
+  <div class="stg">
+   <p id="hp">Published on npm and Homebrew. The binaries are primitive and prim.</p>
+   <input class="rng" id="st" type="range" min="0" max="3" value="0" step="1" aria-label="Stage">
+   <div class="names" id="names"></div>
+  </div>
+ </div>
+ <div class="r">
+  <div class="frag on" data-i="0"><pre><i>$</i> npm i -g @primitivedotdev/cli
+<i>$</i> brew install primitivedotdev/tap/primitive</pre><p class="note">From primitive.dev's install section.</p></div>
+  <div class="frag" data-i="1"><pre><i>$</i> primitive chat dev_help@agent.primitive.dev "&lt;question&gt;"</pre><p class="note">The example primitive.dev gives for its own docs agent. Send a message, wait for the threaded reply.</p></div>
+  <div class="frag" data-i="2"><div class="flow"><div>Inbound email<small>to your *.primitive.email subdomain</small></div><div>JavaScript handler<small>runs on every inbound message</small></div><div>Your agent<small>reachable by other agents</small></div></div></div>
+  <div class="frag" data-i="3"><pre>API base
+https://api.primitive.dev/v1
+
+Authorization: Bearer prim_&lt;api_key&gt;
+Idempotency-Key: &lt;your key&gt;</pre><p class="note">Auth header and safe retries as described on primitive.dev.</p></div>
+ </div>
+</section>
+
+<section class="lst" data-ink="dark" aria-labelledby="lh">
+ <h2 id="lh" class="d" data-r>What it replaces</h2>
+ <div class="lg">
+  <figure data-r><img src="assets/telegraph-operators-in-tokyo-central-telegraph-office.jpg" width="1165" height="802" loading="lazy" alt="Telegraph operators at typewriters in the Tokyo Central Telegraph Office, 1963"></figure>
+  <ul class="tbl">
+   <li data-r><span>A mailto: link opened from an agent</span><strong>primitive chat, one verb</strong></li>
+   <li data-r style="--d:1"><span>SMTP credentials, app passwords, Gmail OAuth tokens</span><strong>No credentials in the agent's context</strong></li>
+   <li data-r style="--d:2"><span>Your own inbound MX, SPF, DKIM and DMARC</span><strong>Primitive is the MX</strong></li>
+   <li data-r style="--d:3"><span>Port-25 firewall battles, DNS setup</span><strong>One HTTP call</strong></li>
+   <li data-r style="--d:4"><span>Resend, SendGrid or Mailgun for two-way talk</span><strong>Every account receives mail with a JavaScript handler</strong></li>
+  </ul>
+ </div>
+</section>
+
+<section class="cta" data-ink="light" aria-labelledby="ct">
+ <h2 id="ct" class="d" data-r>Talk to agents or host one?</h2>
+ <div>
+  <div class="row"><a class="btn alt" href="https://docs.primitive.dev/docs/quickstart">Quickstart</a><span>or</span><a class="btn" href="https://www.primitive.dev/signup">Sign up</a></div>
+  <p>Both live on primitive.dev. Backed by Y Combinator.</p>
+ </div>
+ <span></span>
+</section>
+</main>
+<footer data-ink="dark">
+ <div class="ft">
+  <div>Unofficial concept by Axlios Media, not affiliated with primitive. Wording credited to primitive.dev.</div>
+  <div>Email infrastructure for AI agents.</div>
+  <div>Backed by <a href="https://www.ycombinator.com/companies/primitive">Y Combinator</a>. API base https://api.primitive.dev/v1</div>
+  <a class="up" href="#top">Back to top</a>
+ </div>
+ <div>
+  <a class="big d" href="mailto:dev_help@agent.primitive.dev">dev_help<br>@agent.primitive.dev</a>
+  <div class="meta"><span>Pictures: Mail sorting room, National Photo Co., 1920, public domain, Wikimedia Commons. Mail receiving sorting room, public domain (CC0), rawpixel. Letter signed Sara, 1923, public domain, DPLA via Wikimedia Commons. Telegraph operators in Tokyo Central Telegraph Office, 1963, public domain, Wikimedia Commons.</span><span>Concept by Axlios Media, October 2026</span></div>
+ </div>
+</footer>
+<script>
+document.body.classList.remove('nojs');
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const A=[
+ [["smtp","port","dns","credential"],"No credentials, no DNS setup, no port-25 firewall battles. One HTTP call."],
+ [["host","inbox","subdomain","handler","receive"],"A managed *.primitive.email subdomain runs a JavaScript handler on every inbound message. This is how you expose an agent that other agents can reach."],
+ [["install","npm","brew","cli","homebrew"],"npm i -g @primitivedotdev/cli\nbrew install primitivedotdev/tap/primitive"],
+ [["auth","key","bearer","token","retry","retries","idempotency"],"Authorization: Bearer prim_<api_key>. Retries are safe with an Idempotency-Key header."],
+ [["resend","sendgrid","mailgun","transactional","vendor"],"Primitive is built for two-way agent conversations, not just outbound transactional sends."],
+ [["what","primitive","is","about"],"Primitive is email infrastructure for AI agents. One verb to talk to any agent over email, one signup to host an agent that other agents can talk to. No SMTP credentials, no API keys to copy out of a dashboard."]
+];
+const th=$('#th');let busy=false;
+function ask(q){q=q.trim();if(!q||busy)return;busy=true;
+ const me=document.createElement('div');me.className='msg me';me.innerHTML='<b>You</b>';me.appendChild(document.createTextNode(q));th.appendChild(me);
+ const w=document.createElement('div');w.className='msg wait';w.textContent='Waiting for the threaded reply...';th.appendChild(w);
+ const l=q.toLowerCase();let r=null;for(const a of A){if(a[0].some(k=>new RegExp('\\b'+k.replace(/[-.*]/g,'')+'\\b|'+k).test(l))){r=a[1];break}}
+ setTimeout(()=>{w.className='msg';w.innerHTML='<b>Reply (simulated)</b>';const p=document.createElement(r&&r.indexOf('\n')>-1?'pre':'span');p.textContent=r||"I only answer from what is on primitive.dev. Try one of the questions above.";w.appendChild(p);busy=false;while(th.children.length>4)th.removeChild(th.firstChild)},650)}
+$('#f').addEventListener('submit',e=>{e.preventDefault();ask($('#q').value);$('#q').value=''});
+$$('.chip').forEach(c=>c.onclick=()=>ask(c.textContent));
+const S=[["First, install the CLI","Published on npm and Homebrew. The binaries are primitive and prim.","Install"],["Then, chat with any agent","Send a message and wait for the threaded reply.","Chat"],["Then, host your own","A managed subdomain runs a JavaScript handler on every inbound message.","Host"],["Last, call the API","A simple bearer-token API. Retries are safe.","API"]];
+const st=$('#st');
+S.forEach((s,i)=>{const b=document.createElement('button');b.type='button';b.textContent=s[2];b.onclick=()=>{st.value=i;stage()};$('#names').appendChild(b)});
+function stage(){const i=+st.value;$('#hh').textContent=S[i][0];$('#hp').textContent=S[i][1];$$('.frag').forEach(f=>f.classList.toggle('on',+f.dataset.i===i));$$('#names button').forEach((b,k)=>b.classList.toggle('on',k===i))}
+st.addEventListener('input',stage);stage();
+// header ink by chapter
+const bar=$('#bar');
+const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)bar.classList.toggle('light',e.target.dataset.ink==='light')}),{rootMargin:'-30px 0px -92% 0px'});
+$$('[data-ink]').forEach(s=>io2.observe(s));
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('[data-r]').forEach(el=>io.observe(el));
+// first chat answer
+ask('What is primitive?');
+</script>
+</body>
+</html>
