@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Even Healthcare, unofficial sketch by Axlios Media</title>
+<meta name="description" content="Unofficial sketch. Health insurance should not be messy. Wording from even.in.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#edccbe;--surface:#e8c2b2;--ink:#351a2b;--muted:#6c4857;--accent:#351a2b;--accent-ink:#edccbe;--r:10px;--m:clamp(16px,4vw,56px);
+--small:1rem;--body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--lead:clamp(1.25rem,1.1rem + .7vw,1.625rem)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Work Sans',system-ui,sans-serif;font-size:var(--body);line-height:1.5;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}a{color:inherit}
+h1,h2,h3{font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:-.01em;line-height:.9}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);padding:14px 26px;border-radius:var(--r);font-weight:600;text-decoration:none;font-size:var(--small);border:0;cursor:pointer;font-family:inherit;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--muted)}
+:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px var(--m);gap:16px}
+nav .wm{font-family:'Anton';font-size:1.75rem;text-transform:uppercase;text-decoration:none}
+nav .l{display:flex;gap:28px;font-weight:600;font-size:var(--small)}nav .l a{text-decoration:none}
+.hero{text-align:center;padding:2vw var(--m) 0;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,6.6vw,6.4rem);max-width:15em;margin:0 auto}
+.hero p{max-width:46ch;margin:20px auto 0;color:var(--muted)}
+.hero .ph{height:auto;width:58%;margin:32px auto -9vw;aspect-ratio:2/1;object-fit:cover;object-position:50% 80%;border-radius:var(--r);position:relative}
+.field{background:var(--ink);color:var(--bg)}
+.field .btn{background:var(--bg);color:var(--ink)}.field .btn:hover{background:var(--surface)}
+.explore{padding:calc(9vw + 56px) var(--m) 80px}
+.explore h2{font-size:clamp(2rem,4.2vw,3.75rem);max-width:16em}
+.fig{display:grid;grid-template-columns:1fr 1fr;gap:var(--m);margin-top:40px}
+.fig .b{display:block;font-family:'Anton';font-weight:400;font-size:clamp(2rem,3.4vw,3.25rem);line-height:.95;display:block;text-transform:uppercase}
+.bar{height:22px;background:var(--bg);border-radius:var(--r);margin:14px 0 10px;overflow:hidden}.bar i{display:block;height:100%;background:var(--surface);opacity:.55;border-radius:var(--r)}
+.bar.s i{opacity:1;width:10%}
+.fig span{color:var(--surface);font-size:var(--small)}
+.tool{margin-top:56px;display:grid;grid-template-columns:7fr 5fr;gap:var(--m);align-items:start}
+.tool h3{font-size:1.5rem;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.chip{font:inherit;font-size:var(--small);font-weight:600;padding:12px 18px;border-radius:var(--r);background:var(--muted);color:var(--bg);border:0;cursor:pointer;text-align:left;transition:background .2s,color .2s}
+.chip[aria-pressed=true]{background:var(--bg);color:var(--ink)}
+.chip:hover{background:var(--surface);color:var(--ink)}
+.list{background:var(--bg);color:var(--ink);border-radius:var(--r);padding:28px;min-height:320px}
+.list h3{font-size:1.75rem}.list .n{color:var(--muted);font-size:var(--small);margin:6px 0 18px}
+.list ul{list-style:none;padding:0;display:grid;gap:16px}.list li b{display:block;font-weight:600}.list li span{color:var(--muted);font-size:var(--small)}
+.list .empty{color:var(--muted)}
+.fam{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.fam em{font-style:normal;font-weight:600;background:var(--ink);color:var(--bg);padding:6px 12px;border-radius:var(--r);font-size:var(--small)}
+.disc{margin-top:28px;color:var(--surface);font-size:var(--small);max-width:64ch}
+.how{padding:100px var(--m);display:grid;grid-template-columns:5fr 7fr;gap:var(--m);align-items:center}
+.how img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px var(--r) var(--r)}
+.how h2{font-size:clamp(2.25rem,4.5vw,4.25rem);margin-bottom:36px}
+.steps{display:grid;grid-template-columns:1fr 1fr;gap:36px var(--m);counter-reset:s}
+.steps div{counter-increment:s}.steps h3{font-size:1.75rem;margin-bottom:8px}.steps h3::before{content:counter(s) ". ";color:var(--muted)}
+.steps p{color:var(--muted);max-width:30ch}
+.ben{background:var(--surface);padding:100px var(--m)}
+.ben h2{font-size:clamp(2.25rem,4.5vw,4.25rem);margin-bottom:44px}
+.bg{display:grid;grid-template-columns:5fr 7fr;gap:var(--m);align-items:center}
+.bg img{width:112%;margin-left:-12%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.pts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:44px 36px}
+.pts p{font-weight:600}.pts span{display:block;font-weight:400;color:var(--muted);font-size:var(--small);margin-top:6px}
+.cta{padding:110px var(--m);display:grid;grid-template-columns:7fr 5fr;gap:var(--m);align-items:center}
+.cta h2{font-size:clamp(2rem,4.2vw,4rem);margin-bottom:28px}
+.cta img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.cta .c{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+footer{padding:44px var(--m);font-size:var(--small);display:grid;gap:12px}footer a{text-decoration:underline}footer .big{font-family:'Anton';font-size:clamp(3rem,16vw,14rem);text-transform:uppercase;line-height:.85;color:var(--surface);opacity:.9}
+@media(max-width:900px){nav .l{display:none}.hero h1{font-size:10.4vw}.hero .ph{width:78%;aspect-ratio:4/5;object-position:60% 100%;margin-bottom:-18vw}.explore{padding-top:calc(18vw + 48px)}.fig,.tool,.how,.bg,.cta{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.pts{grid-template-columns:1fr}.bg img{width:100%;margin:0}.how,.ben,.cta{padding:72px var(--m)}.how img{max-width:82vw}.explore h2{font-size:9.6vw}.fig .b{font-size:6.2vw}.how h2,.ben h2{font-size:9.6vw}.cta h2{font-size:8.4vw}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<header>
+<nav aria-label="Main"><a class="wm" href="#">Even</a><div class="l"><a href="#cover">Cover</a><a href="#how">How it works</a><a href="#contact">Contact us</a></div><a class="btn" href="#cover">Explore cover</a></nav>
+<section class="hero"><h1>Health insurance should not be messy.</h1><p>From comparing policies to choosing the right one, we make health insurance easy, transparent, and stress-free.</p>
+<img class="ph" src="img/e3.jpg" width="1280" height="854" alt="A doctor listening to a young patient's back with a stethoscope"></section>
+</header>
+<main>
+<section class="field explore" id="cover" aria-labelledby="eh"><h2 id="eh" class="rv">Benefits</h2>
+<div class="fig rv"><div><p class="b">Up to ₹1 crore hospitalisation cover</p><div class="bar" aria-hidden="true"><i style="width:100%"></i></div></div>
+<div><p class="b">₹10 lakh outpatient (OPD) cover included</p><div class="bar s" aria-hidden="true"><i></i></div></div></div>
+<div class="tool"><div class="rv">
+<h3>Family floater plans for spouse, kids &amp; parents</h3>
+<div class="chips" id="fam" role="group" aria-label="Family floater members"><button class="chip" aria-pressed="false" data-v="Spouse">Spouse</button><button class="chip" aria-pressed="false" data-v="Kids">Kids</button><button class="chip" aria-pressed="false" data-v="Parents">Parents</button></div>
+<h3>Pick covers to add to your list</h3>
+<div class="chips" id="cv" role="group" aria-label="Covers">
+<button class="chip" aria-pressed="false" data-t="Personal accident cover" data-d="Financial protection for your family in case of accidental death or severe mishap.">Personal accident cover</button>
+<button class="chip" aria-pressed="false" data-t="Advanced treatment cover" data-d="Coverage for modern procedures like robotic surgeries and other cutting-edge treatments.">Advanced treatment cover</button>
+<button class="chip" aria-pressed="false" data-t="Home (Domiciliary) expenses" data-d="Medical expenses at home are covered when hospitalisation isn’t possible.">Home (Domiciliary) expenses</button>
+<button class="chip" aria-pressed="false" data-t="Maternity &amp; newborn cover (add-on)" data-d="Care for delivery, complications, and your baby’s initial medical needs, including vaccinations.">Maternity &amp; newborn cover (add-on)</button>
+<button class="chip" aria-pressed="false" data-t="AYUSH treatment cover" data-d="Inpatient treatment under Ayurveda, Yoga, Unani, Siddha, and Homoeopathy at recognised hospitals.">AYUSH treatment cover</button>
+<button class="chip" aria-pressed="false" data-t="Sum Insured backup" data-d="100% restoration of your cover if your base sum insured is used up.">Sum Insured backup</button></div></div>
+<aside class="list rv" aria-live="polite"><h3>Your list</h3><p class="n" id="cnt">0 of 6 covers added</p>
+<ul id="out"><li class="empty">Nothing yet. Tap a cover to read what Even says about it.</li></ul><div class="fam" id="fout"></div></aside></div>
+<p class="disc">A sketch to explore Even's own published lines. Not a quote, not medical or insurance advice. Both bars are drawn to scale against each other. Every line is quoted from even.in.</p></section>
+
+<section class="how" id="how" aria-labelledby="hh"><img class="rv" src="img/e2.jpg" width="1280" height="960" alt="Visitors and staff walking along a hospital building in Bengaluru" loading="lazy">
+<div><h2 id="hh" class="rv">How it works</h2><div class="steps rv">
+<div><h3>We listen</h3><p>Tell us your needs, your worries, and your budget.</p></div>
+<div><h3>We explain</h3><p>No legal gibberish, so you actually understand what you are buying.</p></div>
+<div><h3>We recommend</h3><p>Our advisors, not salespeople, suggest the right plan for you.</p></div>
+<div><h3>We stay with you</h3><p>From enrolment to claims, we are by your side from Day 1.</p></div></div></div></section>
+
+<section class="ben" aria-labelledby="bh"><h2 id="bh" class="rv">Good to know</h2><div class="bg"><img src="img/e4.jpg" width="1280" height="721" alt="A hospital building with a brick facade in the evening light" loading="lazy">
+<div class="pts rv"><p>Tax savings under Section 80D</p><p>10,000+ hospitals network</p><p>30-day free look period</p>
+<p>Transparent exclusions, listed upfront<span>No hidden surprises, know exactly what’s covered.</span></p>
+<p>Friendly advisors, not commission-chasing agents.<span>Get honest guidance that puts your health first.</span></p>
+<p>Dedicated claims support team<span>Help at every step, so claims feel effortless.</span></p></div></div></section>
+
+<section class="cta" id="contact" aria-labelledby="ch"><div><h2 id="ch" class="rv">Tell us your needs, your worries, and your budget.</h2>
+<div class="c rv"><a class="btn" href="mailto:hello@even.in">hello@even.in</a><span>080 4749 5555</span></div></div>
+<img src="img/e5.jpg" width="1280" height="720" alt="A hospital entrance with red tiled roofs in Bengaluru" loading="lazy" class="rv"></section>
+</main>
+<footer class="field"><div class="big" aria-hidden="true">Even</div>
+<p>Unofficial sketch by Axlios Media, not the company's official site and not affiliated with Even Healthcare. Wording and figures from even.in. Photos from Wikimedia Commons: Female doctor listens to the patient using a stethoscope closeup (CC BY 2.0), Vydehi Hospital (CC BY-SA 4.0), CMC Hospital building (CC BY-SA 4.0), Narayana Institute of Cardiac Sciences, Bangalore (CC BY-SA 4.0).</p><p><a href="https://www.even.in">even.in</a></p></footer>
+<script>
+const out=document.getElementById('out'),cnt=document.getElementById('cnt'),fout=document.getElementById('fout');
+function render(){const on=[...document.querySelectorAll('#cv .chip[aria-pressed=true]')];
+cnt.textContent=on.length+' of 6 covers added';
+out.innerHTML=on.length?'':'<li class="empty">Nothing yet. Tap a cover to read what Even says about it.</li>';
+on.forEach(b=>{const li=document.createElement('li');li.innerHTML='<b>'+b.dataset.t+'</b><span>'+b.dataset.d+'</span>';out.appendChild(li)});
+const f=[...document.querySelectorAll('#fam .chip[aria-pressed=true]')].map(b=>b.dataset.v);
+fout.innerHTML=f.map(v=>'<em>'+v+'</em>').join('')}
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');render()}));
+document.querySelector('#cv .chip').click();document.querySelectorAll('#cv .chip')[5].click();
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.15});document.querySelectorAll(".rv").forEach(n=>io.observe(n));
+</script></body></html>
