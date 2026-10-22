@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Codag: cut the tool-output tax your coding agents pay (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Codag where 4,212 lines of test output are a 3D wall you can reduce. Made by Axlios Media.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f1f10;--surface:#162a17;--ink:#fff;--muted:#a9b2a9;--accent:#c6f19d;--accent-ink:#0f1f10;--r:10px;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2.25rem,1.3rem + 4vw,5rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:inherit}h1,h2,h3{font-family:'League Spartan',sans-serif;font-weight:700;letter-spacing:-.04em;line-height:.9}
+.btn{display:inline-flex;align-items:center;height:48px;padding:0 24px;border-radius:var(--r);background:var(--accent);color:var(--accent-ink);font:600 var(--step-body)/1 Figtree,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.98)}.btn.ghost{background:var(--surface);color:var(--ink)}
+.btn[disabled]{opacity:.45;cursor:default;transform:none}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.hdr{display:flex;justify-content:space-between;align-items:center;padding:24px 24px 0}
+.mark{font-family:'League Spartan',sans-serif;font-weight:700;font-size:1.5rem;letter-spacing:-.04em;text-decoration:none}.mark b{color:var(--accent)}
+.hdr a.s{font-size:var(--step-small);text-decoration:none}
+.hero{padding:clamp(40px,8vh,96px) 24px 0}
+.hero h1{font-size:clamp(2.5rem,1rem + 6.6vw,7.5rem);max-width:none}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{margin-top:24px;max-width:46ch}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;align-items:center}
+.demo{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;margin:56px 24px 0}
+.wall{grid-column:1/8;position:relative;height:min(72vh,640px);background:var(--surface);border-radius:var(--r);overflow:hidden}
+.wall canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.wall .tag{position:absolute;left:24px;bottom:22px;right:24px;font-family:'League Spartan',sans-serif;font-size:clamp(1.75rem,1.2rem + 2vw,3rem);letter-spacing:-.04em;line-height:.95;pointer-events:none}
+.wall .tag small{display:block;font:400 var(--step-body)/1.4 Figtree,sans-serif;letter-spacing:0;margin-top:8px;color:var(--muted)}
+.side{grid-column:8/13;background:var(--surface);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;gap:20px}
+.side h2{font-size:var(--step-lead);letter-spacing:-.02em;line-height:1.05}
+pre.term{font:400 14px/1.7 ui-monospace,Menlo,monospace;/* taste-skill-ignore */background:#0a150b;border-radius:var(--r);padding:16px;overflow:auto;min-height:12.5em;white-space:pre-wrap;word-break:break-word;color:var(--ink)}
+pre.term .f{color:var(--accent)}pre.term .m{color:var(--muted)}
+.ctl{display:flex;gap:8px;flex-wrap:wrap}
+.read{font-size:var(--step-small);color:var(--muted);min-height:2.8em}
+.why{padding:200px 24px 0;display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+.why h2{grid-column:1/8;font-size:var(--step-head)}
+.why .c{grid-column:1/13;display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:48px}
+.why .c div{background:var(--surface);border-radius:var(--r);padding:28px}
+.why .c h3{font-size:var(--step-lead);letter-spacing:-.02em;line-height:1.05}
+.why .c p{margin-top:12px;color:var(--ink)}
+.steps{padding:200px 24px 0}.steps h2{font-size:var(--step-head);max-width:12ch}
+.bar{display:flex;gap:8px;margin-top:48px}
+.bar div{flex:1;border-radius:var(--r);padding:24px 24px 28px;min-height:230px;display:flex;flex-direction:column;justify-content:flex-end}
+.bar div:nth-child(1){background:#1f3a21}.bar div:nth-child(2){background:#2f5a32}.bar div:nth-child(3){background:var(--accent);color:var(--accent-ink)}
+.bar h3{font-size:var(--step-lead);letter-spacing:-.02em;line-height:1.05}.bar p{margin-top:10px}
+.cta{padding:200px 24px 0}.cta p.big{font-family:'League Spartan',sans-serif;font-weight:700;letter-spacing:-.04em;line-height:.9;font-size:var(--step-head);max-width:none}
+.cta p.big em{font-style:normal;color:var(--accent)}
+.foot{margin-top:12svh;padding:0 24px 30px;font-size:var(--step-small);color:var(--muted)}
+.fine{padding:40px 24px;font-size:var(--step-small);max-width:64ch;color:var(--muted)}
+.fine a{color:var(--ink)}
+.e{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease;transition-delay:calc(var(--i,0)*80ms)}.e.in{opacity:1;transform:none}
+@media(max-width:900px){.demo{display:block;margin-top:36px}.wall{height:min(100vw,420px)}.side{margin-top:8px}.why{display:block;padding-top:120px}.why .c{grid-template-columns:1fr}.steps{padding-top:120px}.bar{flex-direction:column}.bar div{min-height:150px}.cta{padding-top:130px}}
+@media(prefers-reduced-motion:reduce){.e{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hdr"><a class="mark" href="#top" id="top">cod<b>ag</b></a><a class="s" href="https://codag.ai" target="_blank" rel="noopener">codag.ai</a></header>
+<main>
+<section class="hero">
+ <h1 class="e">Cut the tool-output tax</h1>
+ <p class="e" style="--i:1">All tool output (tests, search, logs, file trees) in. What matters out: the failure, not the noise.</p>
+ <div class="acts e" style="--i:2"><a class="btn" href="#demo">Reduce the wall</a><a class="btn ghost" href="https://codag.ai" target="_blank" rel="noopener">Go to codag.ai</a></div>
+</section>
+<section class="demo e" id="demo" aria-label="Reduce npm test output">
+ <div class="wall" data-ui><canvas id="c" role="img" aria-label="4,212 lines of test output drawn as a wall of bars. Reducing it leaves the one failing line."></canvas><div class="tag" id="tag">4,212 lines<small>npm test printed this</small></div></div>
+ <div class="side" data-ui>
+  <h2>codag npm test printed 4,212 lines. Your agent reads this instead.</h2>
+  <pre class="term" id="term" aria-live="polite"></pre>
+  <div class="ctl"><button class="btn" id="red" type="button">Reduce it</button><button class="btn ghost" id="ret" type="button" disabled>Retrieve the other lines</button></div>
+  <p class="read" id="read">The other 4,180 lines were passing suites. Skipped, and your agent can pull any of them back word for word.</p>
+ </div>
+</section>
+<section class="why">
+ <h2 class="e">Great at reasoning. Bad at reading.</h2>
+ <div class="c">
+  <div class="e"><h3>Tool output floods the window</h3><p>Test runs, search results, file trees, logs. One big result can push out everything the agent already learned and force another expensive lap.</p></div>
+  <div class="e" style="--i:1"><h3>You pay for every byte it reads</h3><p>A session makes hundreds of tool calls, and a handful carry the answer. The rest is billed input the model reads once and throws away.</p></div>
+  <div class="e" style="--i:2"><h3>Same agent, same prompts, same model</h3><p>Your provider account, your credentials, your gateways. Codag only changes how large tool results reach the agent.</p></div>
+ </div>
+</section>
+<section class="steps">
+ <h2 class="e">Observe. Reduce. Retrieve.</h2>
+ <div class="bar">
+  <div class="e"><h3>Observe and classify</h3><p>Every result is classified by kind. Unrecognized passes through untouched.</p></div>
+  <div class="e" style="--i:1"><h3>Reduce what is large</h3><p>Large results shrink to the failures, matches, and signal lines.</p></div>
+  <div class="e" style="--i:2"><h3>Retrieve exactly, locally</h3><p>Omitted bytes stay encrypted on your machine, pulled back exactly on demand.</p></div>
+ </div>
+</section>
+<section class="cta"><p class="big e">Use your agents normally.</p><div class="acts e"><a class="btn" href="https://codag.ai" target="_blank" rel="noopener">Go to codag.ai</a></div></section>
+<p class="fine">An unofficial concept homepage by <a href="https://axliosmedia.com" target="_blank" rel="noopener">Axlios Media</a>, not affiliated with Codag. Wording and the example test output are from codag.ai. The 3D wall and buttons are a sketch made for this page.</p>
+</main>
+<footer class="foot">Concept for Codag, 2026 Axlios Media</footer>
+<script type="importmap">{"imports":{"three":"./js/three.module.min.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const term=document.getElementById('term'),tag=document.getElementById('tag'),bred=document.getElementById('red'),bret=document.getElementById('ret'),read=document.getElementById('read');
+const RAW=`<span class="m">$ npm test</span>
+PASS src/auth.test.ts (42 tests)
+PASS src/cart.test.ts (38 tests)
+PASS src/api/orders.test.ts (57 tests)
+PASS src/api/refunds.test.ts (31 tests)
+PASS src/shared/money.test.ts (64 tests)
+<span class="f">FAIL src/checkout.test.ts &gt; applies discount codes</span>
+PASS src/shipping.test.ts (22 tests)
+<span class="m">+ thousands more lines ...</span>`;
+const RED=`<span class="f">FAIL src/checkout.test.ts
+  &gt; applies discount codes
+  AssertionError:
+    expected 500 to equal 502
+  at src/checkout.test.ts:118</span>
+<span class="m">omitted, retrievable locally:
+s1 lines 1-4180 passing suites</span>`;
+const SEG=`<span class="m">s1 lines 1-4180 passing suites</span>
+PASS src/auth.test.ts (42 tests)
+PASS src/cart.test.ts (38 tests)
+PASS src/api/orders.test.ts (57 tests)
+<span class="m">... the exact lines, word for word</span>`;
+term.innerHTML=RAW;
+const N=4212,FAIL=1980,cols=84,rows=Math.ceil(N/cols);
+const cv=document.getElementById('c'),host=cv.parentElement;
+const R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene(),cam=new THREE.PerspectiveCamera(36,1,.1,200);
+S.add(new THREE.AmbientLight(0xffffff,.85));const dl=new THREE.DirectionalLight(0xffffff,.7);dl.position.set(6,10,12);S.add(dl);
+const geo=new THREE.BoxGeometry(.1,.1,.1),mat=new THREE.MeshLambertMaterial({color:0xffffff});
+const im=new THREE.InstancedMesh(geo,mat,N);S.add(im);
+const base=[],rr=(()=>{let s=11;return()=>(s=(s*16807)%2147483647)/2147483647})(),len=[];
+for(let i=0;i<N;i++){const cx=i%cols,cy=Math.floor(i/cols);base.push(new THREE.Vector3((cx-cols/2)*.14,(rows/2-cy)*.14,0));len.push(.3+rr()*1.6)}
+const GREEN=new THREE.Color(0x4f8a54),LIME=new THREE.Color(0xc6f19d),M=new THREE.Matrix4(),Q=new THREE.Quaternion(),V=new THREE.Vector3(),Sc=new THREE.Vector3();
+let k=0,kt=0,rot=0,drag=false,lx=0,vis=false;
+function size(){const w=host.clientWidth,h=host.clientHeight;R.setSize(w,h,false);cam.aspect=w/h;const f=w/h<1?22:13.5;cam.position.set(0,0,f);cam.lookAt(0,0,0);cam.updateProjectionMatrix()}
+size();addEventListener('resize',size);
+cv.addEventListener('pointerdown',e=>{drag=true;lx=e.clientX;cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(drag)rot=Math.max(-.9,Math.min(.9,rot+(e.clientX-lx)*.006));if(drag)lx=e.clientX});
+cv.addEventListener('pointerup',()=>drag=false);
+new IntersectionObserver(es=>vis=es[0].isIntersecting).observe(host);
+const clock=new THREE.Clock();let t=0;
+(function frame(){requestAnimationFrame(frame);if(!vis)return;const dt=Math.min(clock.getDelta(),.05);t+=dt;
+ k+=(kt-k)*Math.min(1,dt*(reduce?30:2.2));
+ if(!drag&&!reduce)rot+=(Math.sin(t*.25)*.35-rot)*.02;
+ im.rotation.y=rot;
+ for(let i=0;i<N;i++){const b=base[i];const isF=i===FAIL;
+  const keep=isF||i%1000===3?1:0;const delay=((i*37)%N)/N*.6;const kk=Math.max(0,Math.min(1,(k-delay)/.4));
+  const shrink=isF?1:1-kk;const lx2=isF?3.4+k*3:len[i];
+  Sc.set(Math.max(.001,lx2*(isF?1:shrink)*(isF&&k>.5?1:1)),isF?(1+k*4):Math.max(.001,shrink),isF?(1+k*3):Math.max(.001,shrink));
+  V.set(b.x+Sc.x*.05-.05+(isF?k*.0:0),b.y,isF?k*1.2:b.z+(1-shrink)*-2);
+  M.compose(V,Q,Sc);im.setMatrixAt(i,M);
+  im.setColorAt(i,isF?LIME:GREEN)}
+ im.instanceMatrix.needsUpdate=true;if(im.instanceColor)im.instanceColor.needsUpdate=true;
+ R.render(S,cam)})();
+bred.onclick=()=>{kt=1;term.innerHTML=RED;tag.innerHTML='1 failure<small>the other 4,180 lines were passing suites</small>';bred.disabled=true;bret.disabled=false};
+bret.onclick=()=>{kt=0;term.innerHTML=RAW;tag.innerHTML='4,212 lines<small>pulled back exactly, locally</small>';bred.disabled=false;bret.disabled=true};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.e').forEach(el=>io.observe(el));
+</script>
+</body></html>
