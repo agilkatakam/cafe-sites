@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jones Handyman Services — North Fort Myers, Florida</title>
+<meta name="description" content="JHS - The Joneses Handyman Services. Repairs, installs and odd jobs in North Fort Myers and across Lee County, Florida. Call or text 239-270-4752, ask for Dave or Ashley.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f4; --ink:#111111; --muted:#6b6b6b; --accent:#1a4be0; --accent-ink:#ffffff;
+  --margin:clamp(16px,3.4vw,56px);
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Zilla Slab',Georgia,serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:var(--accent)}
+main{position:relative;z-index:1;background:var(--bg)}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+
+/* ---------- hero : the invitation card ---------- */
+.hero{min-height:100svh;background:var(--surface);position:relative;overflow:hidden}
+.hero-top{position:absolute;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:28px var(--margin);z-index:3}
+.monogram{font-weight:600;font-size:var(--step-body);letter-spacing:0.04em;color:var(--ink);text-decoration:none}
+.hero-links{display:flex;gap:clamp(18px,3vw,44px);position:absolute;left:50%;transform:translateX(-50%)}
+.hero-links a{font-size:15px;color:var(--muted);text-decoration:none}
+.hero-links a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:#fff;font-size:15px;padding:12px 22px;text-decoration:none}
+.btn:hover{background:var(--accent)}
+.card{position:absolute;top:190px;bottom:0;left:50%;transform:translateX(-50%);width:min(62vw,calc((100svh - 190px)*5/7 + 34vh));max-width:640px;background:#fff;text-align:center;padding:56px;display:flex;flex-direction:column;justify-content:flex-start}
+.card .cut{position:absolute;width:40px;height:40px;border-radius:50%;background:var(--surface)}
+.cut.tl{top:-20px;left:-20px}.cut.tr{top:-20px;right:-20px}.cut.bl{bottom:-20px;left:-20px}.cut.br{bottom:-20px;right:-20px}
+.card h1{font-size:clamp(56px,5.6vw,88px);font-weight:600;font-style:italic;letter-spacing:-0.025em;line-height:1.0;margin-top:3.5vh}
+.card h1 .l1{display:block;transform:translateX(-0.55em)}
+.card h1 .l2{display:block;transform:translateX(0.55em)}
+.card .rule{margin:4vh auto 0}
+.card .rule .diamond{width:10px;height:10px;background:var(--ink);transform:rotate(45deg);margin:0 auto}
+.card .detail{font-size:1rem;color:var(--ink);line-height:2;margin-top:3vh}
+.card .detail .what{font-size:1.25rem;color:var(--ink);display:block;margin-bottom:6px}
+.card .detail .sep{display:inline-block;width:10px;height:10px;background:var(--ink);transform:rotate(45deg);margin:0 14px;vertical-align:baseline}
+.card .stamp-word{margin-top:4vh;font-size:1rem;color:var(--muted);font-style:italic}
+@media(max-width:760px){
+  .hero-top{padding:20px var(--margin)}
+  .hero-links{display:none}
+  .card{top:96px;width:calc(100% - 24px);padding:28px 20px}
+  .card h1{font-size:12vw;margin-top:4vh}
+  .card h1 .l1,.card h1 .l2{transform:none}
+  .card .rule{margin-top:4vh}
+  .card .detail{margin-top:3vh}
+}
+
+.field-note{position:absolute;bottom:28px;left:var(--margin);font-size:15px;color:var(--muted);font-style:italic;max-width:20ch;z-index:2}
+.field-note.right{left:auto;right:var(--margin);text-align:right}
+@media(max-width:760px){.field-note{display:none}}
+
+/* ---------- intro ---------- */
+.intro{padding-top:140px;padding-bottom:120px}
+.intro-row{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end}
+.intro-row h2{grid-column:1/7;font-size:clamp(44px,5vw,76px);font-weight:400;letter-spacing:-0.02em;line-height:1.05}
+.intro-row .note{grid-column:10/13;font-size:1rem;line-height:1.55;max-width:260px}
+.facts{display:flex;justify-content:space-between;gap:24px;margin-top:120px}
+.facts>div{min-width:0}
+.fact{font-size:clamp(28px,3vw,44px);font-weight:400;letter-spacing:-0.02em;line-height:1.1;white-space:nowrap}
+.fact-sub{font-size:15px;color:var(--muted);margin-top:8px;max-width:200px}
+.intro-photo{margin-top:80px;margin-left:auto;width:min(46%,560px);aspect-ratio:4/3;overflow:hidden}
+@media(max-width:760px){
+  .intro{padding-top:88px;padding-bottom:72px}
+  .intro-row h2{grid-column:1/-1;font-size:11vw}
+  .intro-row .note{grid-column:1/-1;max-width:none;margin-top:16px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;row-gap:32px;margin-top:64px}
+  .fact{font-size:26px;white-space:normal}
+  .intro-photo{width:100%;margin-top:56px}
+}
+
+/* ---------- the menu ---------- */
+.menu{background:var(--surface);padding:120px var(--margin)}
+.sheet{background:#fff;width:min(600px,100%);margin:0 auto;padding:64px 56px 72px;
+clip-path:polygon(0% 12px,2.5% 0,5% 12px,7.5% 0,10% 12px,12.5% 0,15% 12px,17.5% 0,20% 12px,22.5% 0,25% 12px,27.5% 0,30% 12px,32.5% 0,35% 12px,37.5% 0,40% 12px,42.5% 0,45% 12px,47.5% 0,50% 12px,52.5% 0,55% 12px,57.5% 0,60% 12px,62.5% 0,65% 12px,67.5% 0,70% 12px,72.5% 0,75% 12px,77.5% 0,80% 12px,82.5% 0,85% 12px,87.5% 0,90% 12px,92.5% 0,95% 12px,97.5% 0,100% 12px,100% calc(100% - 12px),97.5% 100%,95% calc(100% - 12px),92.5% 100%,90% calc(100% - 12px),87.5% 100%,85% calc(100% - 12px),82.5% 100%,80% calc(100% - 12px),77.5% 100%,75% calc(100% - 12px),72.5% 100%,70% calc(100% - 12px),67.5% 100%,65% calc(100% - 12px),62.5% 100%,60% calc(100% - 12px),57.5% 100%,55% calc(100% - 12px),52.5% 100%,50% calc(100% - 12px),47.5% 100%,45% calc(100% - 12px),42.5% 100%,40% calc(100% - 12px),37.5% 100%,35% calc(100% - 12px),32.5% 100%,30% calc(100% - 12px),27.5% 100%,25% calc(100% - 12px),22.5% 100%,20% calc(100% - 12px),17.5% 100%,15% calc(100% - 12px),12.5% 100%,10% calc(100% - 12px),7.5% 100%,5% calc(100% - 12px),2.5% 100%,0% calc(100% - 12px));}
+.sheet h2{font-size:clamp(44px,4vw,56px);font-weight:600;letter-spacing:-0.02em;text-align:center;margin-bottom:56px}
+.group h3{font-size:20px;font-weight:600;margin-bottom:20px}
+.group+.group{margin-top:44px}
+.item{display:flex;align-items:baseline;gap:10px;padding:9px 0}
+.item .name{font-size:18px;white-space:nowrap}
+.item .leader{flex:1;border-bottom:4px dotted #d8d8d8;transform:translateY(-5px);min-width:24px}
+.item .val{font-size:15px;color:var(--muted);white-space:nowrap}
+.item .desc{display:block;font-size:1rem;color:var(--muted);margin-top:2px;max-width:34ch}
+.menu-cap{text-align:center;font-size:15px;color:var(--muted);margin:36px auto 0 auto;max-width:60ch}
+@media(max-width:760px){
+  .menu{padding:72px 12px}
+  .sheet{padding:44px 20px 48px}
+  .item .name{font-size:17px;white-space:normal}
+  .group h3{font-size:18px}
+}
+
+/* ---------- band ---------- */
+.band{height:62svh;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+@media(max-width:760px){.band{height:34svh}}
+
+/* ---------- showcase ---------- */
+.show{display:grid;grid-template-columns:1fr 1fr;min-height:88svh;background:var(--ink);color:#fff}
+.show-photo{display:flex;align-items:center;justify-content:center;padding:40px}
+.show-photo .frame{width:100%;max-width:calc(88svh - 80px);aspect-ratio:1/1;overflow:hidden}
+.show-photo img{filter:saturate(0.9)}
+.show-text{display:flex;flex-direction:column;justify-content:space-between;padding:56px var(--margin) 0 56px;min-width:0}
+.tabs{display:flex;gap:32px}
+.tabs button{background:none;border:0;font:inherit;font-size:18px;color:#a3a3a3;cursor:pointer;padding:0}
+.tabs button.on{color:#fff;font-weight:600}
+.show-mid{padding:48px 0}
+.show-mid h2{font-size:clamp(32px,3vw,40px);font-weight:600;letter-spacing:-0.02em;margin-bottom:48px}
+.show-mid p{font-size:var(--step-body);color:#d9d9d9;max-width:34ch}
+.show-actions{display:flex;margin-left:-56px;margin-right:calc(-1 * var(--margin))}
+.show-actions a{flex:1;height:72px;display:flex;align-items:center;justify-content:center;font-size:1rem;text-decoration:none}
+.show-actions a.call{background:#fff;color:var(--ink)}
+.show-actions a.call:hover{background:var(--accent);color:#fff}
+.show-actions a.mail{background:#2b2b2b;color:#fff}
+.show-actions a.mail:hover{background:var(--accent)}
+@media(max-width:760px){
+  .show{grid-template-columns:1fr;min-height:0}
+  .show-photo{padding:16px}
+  .show-photo .frame{max-width:100%}
+  .show-text{padding:32px var(--margin) 0 var(--margin)}
+  .tabs button{font-size:17px}
+  .show-mid{padding:32px 0 48px}
+  .show-mid h2{font-size:28px;margin-bottom:24px}
+  .show-actions{flex-direction:column;margin-left:calc(-1 * var(--margin))}
+  .show-actions a{height:60px}
+}
+
+/* ---------- reply card ---------- */
+.cta{background:var(--surface);min-height:80svh;position:relative;overflow:hidden;display:grid;grid-template-columns:repeat(12,1fr);gap:24px;padding:96px var(--margin) 0 var(--margin)}
+.cta-para{grid-column:1/5;align-self:end;font-size:var(--step-lead);color:var(--ink);padding-bottom:64px;max-width:20ch}
+.reply{grid-column:6/13;background:#fff;width:min(100%,44vw);aspect-ratio:7/5;justify-self:end;transform:rotate(2deg) translateY(60px);padding:48px;display:flex;flex-direction:column;justify-content:center;text-align:center}
+.reply h2{font-size:32px;font-weight:600;letter-spacing:-0.02em;margin-bottom:20px}
+.reply p{font-size:17px;line-height:1.6;max-width:34ch;margin:0 auto}
+.reply .bar{margin-top:32px;display:block;background:var(--ink);color:#fff;height:56px;line-height:56px;text-decoration:none;font-size:var(--step-body)}
+.reply .bar:hover{background:var(--accent)}
+@media(max-width:900px){
+  .cta{display:block;min-height:0;padding:64px var(--margin) 0 var(--margin)}
+  .cta-para{font-size:20px;padding-bottom:40px;max-width:none}
+  .reply{width:90%;margin:0 auto;transform:rotate(-1deg) translateY(40px);padding:32px 24px;aspect-ratio:auto}
+  .reply h2{font-size:24px}
+  .reply p{font-size:16px}
+  .reply .bar{height:52px;line-height:52px}
+}
+
+/* ---------- footer : back of the card ---------- */
+footer{background:var(--surface);padding:80px var(--margin) 0 var(--margin)}
+.backcard{background:#fff;max-width:1080px;margin:0 auto;padding:72px 64px 0 64px;
+  -webkit-mask-image:/* taste-skill-ignore scalloped top edge per dealt direction */radial-gradient(circle 50px at 50px 0,transparent 48px,#000 50px);
+  -webkit-mask-size:100px 100%;-webkit-mask-repeat:repeat-x;-webkit-mask-position:top;
+  mask-image:/* taste-skill-ignore */radial-gradient(circle 50px at 50px 0,transparent 48px,#000 50px);
+  mask-size:100px 100%;mask-repeat:repeat-x;mask-position:top;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;position:relative}
+.signoff h2{font-size:32px;font-weight:600;letter-spacing:-0.02em;margin-bottom:20px}
+.signoff p{font-size:16px;line-height:1.7;color:var(--ink);max-width:32ch}
+.addr{align-self:start}
+.addr a,.addr span{display:block;font-size:18px;line-height:1.4;margin-bottom:12px;color:var(--ink);text-decoration:none;overflow-wrap:anywhere}
+.addr a:hover{color:var(--accent)}
+.stamp{position:absolute;top:24px;right:24px;width:88px;aspect-ratio:3/4;padding:6px;background:#fff;transform:rotate(3deg)}
+.stamp img{width:100%;height:100%;object-fit:cover}
+.imprint{grid-column:1/-1;text-align:center;font-size:15px;color:var(--muted);padding:48px 0 20px 0;line-height:1.7;max-width:70ch;margin:0 auto}
+.imprint .credits{display:block;font-size:13px;color:var(--muted);max-width:60ch;margin:4px auto 0}
+@media(max-width:760px){
+  footer{padding:56px 12px 0 12px}
+  .backcard{grid-template-columns:1fr;padding:56px 24px 0 24px}
+  .stamp{position:relative;top:auto;right:auto;justify-self:end;margin-bottom:8px}
+  .imprint{padding-top:36px}
+  .menu-cap{padding-left:10px;padding-right:10px}
+}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity 0.8s ease,transform 0.8s ease}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<main>
+  <!-- hero -->
+  <section class="hero">
+    <div class="hero-top">
+      <a class="monogram" href="#top">JHS</a>
+      <nav class="hero-links">
+        <a href="#list">The list</a>
+        <a href="#patch">The patch</a>
+        <a href="#reply">Reply</a>
+      </nav>
+      <a class="btn" href="tel:+12392704752">Ask for a quote</a>
+    </div>
+    <p class="field-note">The invitation above is the site. The list is below.</p>
+    <p class="field-note right">JHS - Dave &amp; Ashley Jones, North Fort Myers.</p>
+    <div class="card" id="top">
+      <i class="cut tl"></i><i class="cut tr"></i><i class="cut bl"></i><i class="cut br"></i>
+      <h1><span class="l1">Jones</span><span class="l2">Handyman</span></h1>
+      <p class="detail">
+        <span class="what">Repairs, installs and odd jobs</span><br>
+        North Fort Myers<span class="sep"></span>Lee County, Florida<br>
+        239-270-4752<span class="sep"></span>thejoneseshandymanservices@gmail.com
+      </p>
+      <div class="rule"><div class="diamond"></div></div>
+      <p class="stamp-word">The Joneses Handyman Services - JHS</p>
+    </div>
+  </section>
+
+  <!-- intro -->
+  <section class="intro wrap" id="list">
+    <div class="intro-row">
+      <h2 data-reveal>The Joneses&rsquo; list</h2>
+      <p class="note" data-reveal>JHS is Dave and Ashley Jones&rsquo;s handyman service, working out of North Fort Myers for homes across Lee County.</p>
+    </div>
+    <div class="facts" data-reveal>
+      <div data-reveal><p class="fact">239-270-4752</p><p class="fact-sub">call or text, and ask for Dave or Ashley</p></div>
+      <div data-reveal><p class="fact">N. Fort Myers</p><p class="fact-sub">based there, working Lee County wide</p></div>
+      <div data-reveal><p class="fact">15+ years</p><p class="fact-sub">of carpentry, electrical and general construction - the Joneses&rsquo; own words</p></div>
+      <div data-reveal><p class="fact">On Nextdoor</p><p class="fact-sub">reviewed and recommended by neighbours</p></div>
+    </div>
+    <div class="intro-photo" data-reveal><img src="assets/edisons-home.jpg" alt="Thomas Edison's winter home on the Caloosahatchee in Fort Myers" width="1025" height="653" loading="lazy"></div>
+  </section>
+
+  <!-- menu -->
+  <section class="menu">
+    <div class="sheet" data-reveal>
+      <h2>What&rsquo;s on the list</h2>
+      <div class="group" data-reveal>
+        <h3>Inside the house</h3>
+        <div class="item"><span class="name">Door installation &amp; repair</span><span class="leader"></span><span class="val">doors</span></div>
+        <div class="item"><span class="name">Drywall repair</span><span class="leader"></span><span class="val">walls</span></div>
+        <div class="item"><span class="name">Ceiling fans &amp; fixtures</span><span class="leader"></span><span class="val">overhead</span></div>
+        <div class="item"><span class="name">Furniture assembly</span><span class="leader"></span><span class="val">flat-pack</span></div>
+        <div class="item"><span class="name">Light plumbing</span><span class="leader"></span><span class="val">taps</span></div>
+        <div class="item"><span class="name">Trim &amp; interior painting</span><span class="leader"></span><span class="val">paint</span></div>
+      </div>
+      <div class="group" data-reveal>
+        <h3>Outside the house</h3>
+        <div class="item"><span class="name">Pressure washing</span><span class="leader"></span><span class="val">driveways</span></div>
+        <div class="item"><span class="name">Storm shutter installation</span><span class="leader"></span><span class="val">season prep</span></div>
+        <div class="item"><span class="name">Gutters, soffit &amp; fascia</span><span class="leader"></span><span class="val">roofline</span></div>
+        <div class="item"><span class="name">Patio repair &amp; pavers</span><span class="leader"></span><span class="val">hardscape</span></div>
+        <div class="item"><span class="name">Landscaping</span><span class="leader"></span><span class="val">yard</span></div>
+        <div class="item"><span class="name">Exterior painting</span><span class="leader"></span><span class="val">paint</span></div>
+      </div>
+      <div class="group" data-reveal>
+        <h3>The odd ends</h3>
+        <div class="item"><span class="name">Move-out clean-outs</span><span class="leader"></span><span class="val">clear-outs</span></div>
+        <div class="item"><span class="name">Post-construction cleanup</span><span class="leader"></span><span class="val">after the work</span></div>
+        <div class="item"><span class="name">Small demolition</span><span class="leader"></span><span class="val">demo</span></div>
+        <div class="item"><span class="name">Mural painting</span><span class="leader"></span><span class="val">the fun one</span></div>
+      </div>
+    </div>
+    <p class="menu-cap" data-reveal>Everything above comes from the Joneses&rsquo; own posts. If it&rsquo;s not on the list, ask anyway.</p>
+  </section>
+
+  <!-- band -->
+  <div class="band"><img src="assets/caloosahatchee.jpg" alt="The Caloosahatchee River between Fort Myers and North Fort Myers" width="1920" height="1440" loading="lazy"><img src="assets/edisons-pier.jpg" alt="Thomas Edison's pier on the Caloosahatchee River in Fort Myers" width="1000" height="663" loading="lazy"></div>
+
+  <!-- showcase -->
+  <section class="show" id="patch">
+    <div class="show-photo" data-reveal>
+      <div class="frame">
+        <img id="patchImg" src="assets/edison-bridge.jpg" alt="The Edison Bridge over the Caloosahatchee between Fort Myers and North Fort Myers" width="1920" height="1440" loading="lazy">
+      </div>
+    </div>
+    <div class="show-text">
+      <div class="tabs" id="tabs">
+        <button class="on" data-tab="0">The bridge</button>
+        <button data-tab="1">The river</button>
+        <button data-tab="2">The pier</button>
+      </div>
+      <div class="show-mid">
+        <h2 id="patchTitle">A local patch</h2>
+        <p id="patchText">The Joneses live and work in North Fort Myers - over the Edison Bridge from Fort Myers, out along the Caloosahatchee, and across Lee County.</p>
+      </div>
+      <div class="show-actions">
+        <a class="call" href="tel:+12392704752">Call 239-270-4752</a>
+        <a class="mail" href="mailto:thejoneseshandymanservices@gmail.com">Email the Joneses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- reply card -->
+  <section class="cta" id="reply">
+    <p class="cta-para" data-reveal>Every job starts with a phone call - and the Joneses answer their own phone.</p>
+    <div class="reply" data-reveal>
+      <h2>Ask for a quote</h2>
+      <p>Call or text 239-270-4752 and ask for Dave or Ashley. Or write to thejoneseshandymanservices@gmail.com.</p>
+      <a class="bar" href="tel:+12392704752">Call 239-270-4752</a>
+    </div>
+  </section>
+</main>
+
+<!-- footer : the back of the card -->
+<footer>
+  <div class="backcard">
+    <div class="stamp"><img src="assets/edisons-pier.jpg" alt="Thomas Edison's pier on the Caloosahatchee River" width="1000" height="663" loading="lazy"></div>
+    <div class="signoff" data-reveal>
+      <h2>See you at the house,</h2>
+      <p>Dave &amp; Ashley Jones. One call covers the whole list - inside, outside, and the odd ends in between.</p>
+    </div>
+    <div class="addr" data-reveal>
+      <a href="tel:+12392704752">239-270-4752</a>
+      <a href="mailto:thejoneseshandymanservices@gmail.com">thejoneseshandymanservices@gmail.com</a>
+      <span>North Fort Myers, Florida</span>
+      <a href="https://nextdoor.com/pages/jhs-north-fort-myers-fl/" rel="noopener">The Joneses on Nextdoor</a>
+    </div>
+    <div class="imprint">
+      A free preview site made for The Joneses Handyman Services by Axlios Media (axliosmedia.com). Not the business&rsquo;s official website.
+      <span class="credits">Photographs via Wikimedia Commons: &ldquo;Fort Myers FL US 41 Edison Bridge west01&rdquo; by Ebyabe, CC BY-SA 3.0; &ldquo;Caloosahatchee River 2&rdquo; by Fredlyfish4, CC BY-SA 4.0; &ldquo;Fort Myers - Thomas Edison&rsquo;s Pier&rdquo; by Roger W, CC BY-SA 2.0; &ldquo;Fort Myers - Thomas Edison&rsquo;s Winter Home&rdquo; by Roger W, CC BY-SA 2.0.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// showcase tabs
+const TABS=[
+ {img:'assets/edison-bridge.jpg',alt:'The Edison Bridge over the Caloosahatchee between Fort Myers and North Fort Myers',t:'A local patch',p:'The Joneses live and work in North Fort Myers - over the Edison Bridge from Fort Myers, out along the Caloosahatchee, and across Lee County.'},
+ {img:'assets/caloosahatchee.jpg',alt:'The Caloosahatchee River',t:'One call, whole list',p:'From a sticking door to a full repaint, the Joneses work through the list in one visit - inside the house, outside it, and the odd ends in between.'},
+ {img:'assets/edisons-pier.jpg',alt:'Thomas Edison\u2019s pier on the Caloosahatchee',t:'Ask the neighbours',p:'The Joneses post their work and collect their reviews on Nextdoor, where North Fort Myers does its recommending.'}
+];
+const img=document.getElementById('patchImg'),tt=document.getElementById('patchTitle'),tx=document.getElementById('patchText');
+document.getElementById('tabs').addEventListener('click',e=>{
+  const b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  const d=TABS[+b.dataset.tab];
+  img.src=d.img;img.alt=d.alt;tt.textContent=d.t;tx.textContent=d.p;
+});
+// reveals
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:0.15});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
