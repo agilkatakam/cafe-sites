@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tornado Tree Removal LLC - Fort Myers FL</title>
+<meta name="description" content="Tornado Tree Removal LLC removes and trims trees, grinds stumps and clears storm damage in Fort Myers, Florida. Call 239-308-7662 to ask for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1a2039; --surface:#212846; --surface2:#252d52; --surface3:#1e2544;
+  --ink:#f9a3c0; --muted:#b9879c; --accent:#f9a3c0; --accent-ink:#1a2039;
+  --step-small: clamp(1rem, 0.95rem + 0.2vw, 1.0625rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --margin: 20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Source Serif 4',serif;font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,.display{font-family:'Libre Franklin',sans-serif;font-weight:700;letter-spacing:-0.035em;line-height:0.92}
+.button{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:var(--step-body);padding:14px 24px;border:0;cursor:pointer;border-radius:18px 18px 0 0;transition:transform .15s ease,background .25s ease,color .25s ease}
+.button:hover{background:var(--bg);color:var(--ink)}
+.button:active{transform:scale(.97)}
+.button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+.dot{display:inline-block;width:0.7em;height:0.7em;border-radius:50%;background:var(--accent);margin-right:0.45em;vertical-align:baseline}
+.dot.m{background:var(--muted)}
+
+/* hero: tabbed folder stack */
+.hero{min-height:100svh;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.hero-top{position:relative;height:56px;display:flex;align-items:center;justify-content:center;z-index:3}
+.hero-top .mark{font-family:'Libre Franklin',sans-serif;font-weight:700;letter-spacing:-0.02em;font-size:1rem;text-transform:uppercase}
+.hero-top .tel{position:absolute;right:var(--margin);top:50%;transform:translateY(-50%);font-size:var(--step-small);text-decoration:none}
+.hero-top .tel:hover{text-decoration:underline;text-underline-offset:4px}
+.hero h1{position:relative;z-index:3;text-align:center;text-transform:uppercase;font-size:clamp(64px, 10vw, 160px);margin-top:54px}
+.hero .sub{position:relative;z-index:3;text-align:center;font-size:clamp(1.125rem, 1rem + 0.5vw, 1.25rem);max-width:46ch;margin:22px auto 0;color:var(--ink)}
+.folders{position:absolute;left:0;right:0;top:51%;bottom:0;z-index:2}
+.folder{position:absolute;left:7%;width:86%;height:100%;text-decoration:none;display:block}
+.folder .tab{position:absolute;top:-34px;height:44px;width:150px;border-radius:44px 44px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:1rem;color:var(--ink);text-transform:none;letter-spacing:0}
+.folder .body{position:absolute;inset:0;border-radius:26px 26px 0 0}
+.f1{top:0}.f1 .tab{left:6%;background:#1a2039}.f1 .body{background:#2c3760}
+.f2{top:64px}.f2 .tab{left:30%;background:#1a2039}.f2 .body{background:#333f6c}
+.f3{top:128px}.f3 .tab{left:54%;background:#1a2039}.f3 .body{background:#3a4778}
+.f4{top:192px}.f4 .tab{left:76%;background:#1a2039}.f4 .body{background:#414f84}
+.f5{top:256px;z-index:2}
+.f5 .body{background:var(--accent);border-radius:26px 26px 0 0;padding:36px var(--margin)}
+.f5 .button{background:var(--bg);color:var(--ink)}
+.f5 .button:hover{background:var(--surface2)}
+.f5 .phone{position:absolute;right:var(--margin);top:40px;color:var(--accent-ink);font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:var(--step-lead);text-decoration:none}
+.folder .tab-label{position:relative;z-index:1}
+
+/* intro: statement with inline round frames */
+.intro{padding:20vh 0}
+.intro p{font-family:'Libre Franklin',sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.12;font-size:clamp(24px, 3vw, 36px);text-align:center;max-width:26ch;margin:0 auto}
+.intro p .frame{display:inline-block;width:1.3em;height:0.85em;border-radius:999px;overflow:hidden;vertical-align:-0.08em;margin:0 0.12em}
+.intro p .frame img{width:100%;height:100%;object-fit:cover}
+
+/* features: big circle photo + points */
+.features{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start;margin-top:110px}
+.features .photo{grid-column:1/6;margin-left:-12%;aspect-ratio:0.78;max-height:78svh;border-radius:0 999px 999px 0;overflow:hidden}
+.features .photo img{width:100%;height:100%;object-fit:cover}
+.features .points{grid-column:7/13}
+.features h2{font-size:var(--step-head);margin-bottom:52px}
+.points-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 40px}
+.point h3{font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:1rem;letter-spacing:-0.01em;margin-bottom:6px}
+.point p{font-size:1rem;color:var(--ink);line-height:1.5}
+
+/* showcase: object on a ring disc */
+.showcase{position:relative;min-height:100svh;margin-top:130px;overflow:hidden}
+.disc{position:absolute;left:58%;top:46%;transform:translate(-50%,-50%);width:64vh;height:64vh;border-radius:50%;transition:background .3s ease;background:var(--surface2)}
+.disc svg{position:absolute;inset:0;width:100%;height:100%}
+.disc-photo{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);width:76%;height:76%;border-radius:50%;overflow:hidden;z-index:2}
+.disc-photo img{width:100%;height:100%;object-fit:cover;transition:opacity .3s ease}
+.showcase-list{position:absolute;left:var(--margin);bottom:8vh;z-index:3}
+.showcase-list h2{font-size:clamp(28px, 2.9vw, 44px);color:var(--muted);margin-bottom:14px}
+.work-item{display:block;background:none;border:0;text-align:left;font-family:'Libre Franklin',sans-serif;font-weight:700;letter-spacing:-0.02em;font-size:clamp(28px, 2.9vw, 44px);line-height:1.15;color:var(--muted);cursor:pointer;padding:2px 0;transition:color .2s ease}
+.work-item.active{color:var(--ink)}
+.work-item:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.work-fact{position:absolute;left:calc(58% + 33vh);top:52%;width:24ch;font-size:var(--step-body);color:var(--ink);z-index:3}
+
+/* proof: two sourced facts */
+.proof{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-top:130px}
+.proof h2{grid-column:1/13;font-size:var(--step-head);margin-bottom:52px}
+.proof-item{grid-column:span 6}
+.proof-item h3{font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:1.25rem;margin-bottom:8px}
+.proof-item p{color:var(--ink);font-size:var(--step-body);max-width:44ch}
+.proof-item a{color:var(--muted)}
+
+.band{margin-top:130px;height:54vh;overflow:hidden;background:var(--surface)}
+.band img{width:100%;height:100%;object-fit:cover}
+.proof-photo{width:220px;height:220px;border-radius:50%;overflow:hidden;margin-bottom:22px}
+.proof-photo img{width:100%;height:100%;object-fit:cover}
+/* cta band: one word is the button */
+.cta{display:block;position:relative;margin-top:130px;background:var(--accent);color:var(--accent-ink);text-decoration:none;border-radius:110px 110px 0 0;min-height:60svh;overflow:hidden;transition:background .2s ease,color .2s ease}
+.cta .word{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-family:'Libre Franklin',sans-serif;font-weight:700;letter-spacing:-0.04em;line-height:0.8;font-size:clamp(120px, 30vw, 460px);text-transform:uppercase}
+.cta .note{position:absolute;left:var(--margin);top:26px;font-size:var(--step-body);max-width:30ch}
+.cta .arrow{position:absolute;right:var(--margin);top:26px;width:48px;height:48px}
+.cta:hover,.cta:focus-visible{background:var(--ink);color:var(--accent-ink)}
+.cta:focus-visible{outline:3px solid var(--bg);outline-offset:-3px}
+
+/* footer: the mark, built large */
+.footer{background:#131830;padding:60px 0 26px}
+.rings{display:block;width:100%;height:auto;margin-bottom:56px}
+.footer-cols{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.footer-col{grid-column:span 2}
+.footer-col.wide{grid-column:span 4}
+.footer-col p:first-child{font-family:'Libre Franklin',sans-serif;font-weight:700;font-size:1rem;margin-bottom:12px}
+.footer-col ul{list-style:none}
+.footer-col li,.footer-col p{color:var(--muted);font-size:1rem;line-height:1.7;overflow-wrap:anywhere}
+.footer-col a{color:var(--muted);text-decoration:none}
+.footer-col a:hover{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.footer-legal{display:flex;gap:20px;flex-wrap:wrap;align-items:center;font-size:var(--step-small);color:var(--muted);padding-top:40px;padding-bottom:4px}
+.footer-legal span{max-width:60ch}
+.footer-legal a{color:var(--muted)}
+.footer-legal a.button{color:var(--accent-ink)}
+.footer-legal .button{margin-left:auto;font-size:1rem;padding:10px 18px}
+
+/* reveals */
+.js [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js [data-reveal]{opacity:1;transform:none}
+}
+
+@media (max-width: 720px){
+  .hero h1{font-size:17vw;margin-top:28px}
+  .hero-top{justify-content:flex-start}
+  .hero-top .tel{display:none}
+  .hero .sub{font-size:1.125rem;padding:0 var(--margin)}
+  .folders{top:44%}
+  .folder{left:0;width:100%}
+  .folder .tab{width:112px;height:36px;top:-28px;padding-top:8px;font-size:1rem}
+  .f2{top:52px}.f3{top:104px}.f4{top:156px}.f5{top:208px}
+  .f4 .tab{left:auto;right:20px}
+  .f5 .body{padding:28px var(--margin)}
+  .f5 .phone{position:static;display:block;margin-top:16px}
+  .intro{padding:96px 0}
+  .intro p{text-align:left;font-size:24px;line-height:1.2;max-width:none;padding:0 var(--margin)}
+  .features{display:block;margin-top:96px}
+  .features .photo{margin-left:-18%;width:100%;max-height:56svh}
+  .features .points{margin-top:44px}
+  .points-grid{grid-template-columns:1fr;gap:28px}
+  .showcase{min-height:0;padding:60px 0 40px;margin-top:96px}
+  .disc{position:relative;left:50%;top:auto;transform:translateX(-50%);width:86vw;height:86vw}
+  .disc-photo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:76%;height:76%;margin:0}
+  .showcase-list{position:static;margin-top:24px;padding:0 var(--margin);display:flex;gap:24px;overflow-x:auto}
+  .showcase-list h2{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+  .work-item{font-size:26px;white-space:nowrap}
+  .work-fact{position:static;width:auto;margin:18px var(--margin) 0}
+  .proof{display:block;margin-top:96px}
+  .proof h2{margin-bottom:36px}
+  .proof-item{margin-bottom:28px}
+  .band{height:36vh;margin-top:96px}
+  .cta{min-height:46svh;border-radius:70px 70px 0 0;margin-top:96px}
+  .cta .note{font-size:1.125rem}
+  .cta .arrow{width:32px;height:32px}
+  .footer-col{grid-column:span 6;margin-bottom:26px}
+  .footer-col.wide{grid-column:span 12}
+  .footer-col.write{grid-column:span 12}
+  .footer-legal .button{margin-left:0}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="hero" id="top">
+  <div class="hero-top wrap">
+    <span class="mark">Tornado Tree Removal</span>
+    <a class="tel" href="tel:+12393087662">239-308-7662</a>
+  </div>
+  <h1>Tornado</h1>
+  <p class="sub">Tree removal and trimming in Fort Myers, Florida.</p>
+  <div class="folders" aria-hidden="false">
+    <a class="folder f1" href="#about"><span class="tab">About</span><span class="body"></span></a>
+    <a class="folder f2" href="#services"><span class="tab">Services</span><span class="body"></span></a>
+    <a class="folder f3" href="#work"><span class="tab">The work</span><span class="body"></span></a>
+    <a class="folder f4" href="#proof"><span class="tab">Proof</span><span class="body"></span></a>
+    <div class="folder f5">
+      <div class="body">
+        <a class="button" href="tel:+12393087662">Ask for a quote</a>
+        <a class="phone" href="tel:+12393087662">239-308-7662</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="intro wrap" id="about" aria-labelledby="about-h">
+  <h2 id="about-h" style="position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)">About Tornado</h2>
+  <p data-reveal>Tornado takes down the <span class="frame"><img src="assets/fog-treeline.jpg" alt="A dark treeline dissolving into fog"></span> trees storms shake loose, <span class="frame"><img src="assets/fog-road.jpg" alt="A road lined with tall trees in thick fog"></span> trims what hangs low, grinds the <span class="frame"><img src="assets/forest-hills.jpg" alt="Low cloud over forested hills"></span> stumps.</p>
+</section>
+
+<section class="features wrap" id="services" aria-labelledby="services-h">
+  <div class="photo" data-reveal><img src="assets/fog-road.jpg" alt="Tall trees lining a road that fades into thick fog" loading="lazy"></div>
+  <div class="points">
+    <h2 id="services-h" data-reveal>What we handle</h2>
+    <div class="points-grid">
+      <div class="point" data-reveal><h3><span class="dot"></span>Tree removal</h3><p>Whole trees, brought down in sections.</p></div>
+      <div class="point" data-reveal><h3><span class="dot m"></span>Trimming and pruning</h3><p>Weight taken off over roofs, pools and lines.</p></div>
+      <div class="point" data-reveal><h3><span class="dot"></span>Stump grinding</h3><p>Stumps ground out below grade.</p></div>
+      <div class="point" data-reveal><h3><span class="dot m"></span>Storm cleanup</h3><p>Fallen limbs and hanging branches cleared.</p></div>
+      <div class="point" data-reveal><h3><span class="dot"></span>Debris hauling</h3><p>Cut wood and brush taken away.</p></div>
+      <div class="point" data-reveal><h3><span class="dot m"></span>Palm work</h3><p>Palms trimmed and skinned.</p></div>
+      <div class="point" data-reveal><h3><span class="dot"></span>Lot clearing</h3><p>Overgrowth cut back for building or sale.</p></div>
+      <div class="point" data-reveal><h3><span class="dot m"></span>Storm-season calls</h3><p>Tree trouble that cannot wait a week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="showcase" id="work" aria-labelledby="work-h">
+  <div class="disc" id="disc" aria-hidden="true">
+    <svg viewBox="0 0 100 100" fill="none" stroke="#1a2039" stroke-width="1.1" opacity="0.55">
+      <circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="38"/><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="22"/><circle cx="50" cy="50" r="14"/>
+    </svg>
+    <div class="disc-photo"><img id="disc-img" src="assets/forest-hills.jpg" alt="Low cloud drifting over dark forested hills"></div>
+  </div>
+  <div class="showcase-list" data-reveal>
+    <h2 id="work-h">The work</h2>
+    <button class="work-item active" type="button" data-img="assets/forest-hills.jpg" data-alt="Low cloud drifting over dark forested hills" data-fact="Whole trees come down in sections, piece by piece." data-col="#252d52">Tree removal</button>
+    <button class="work-item" type="button" data-img="assets/fog-treeline.jpg" data-alt="A dark treeline dissolving into fog, black and white" data-fact="Weight comes off over roofs, pools and lines." data-col="#2c3760">Trimming</button>
+    <button class="work-item" type="button" data-img="assets/beige-ridges.jpg" data-alt="Layered hill ridges fading into warm mist" data-fact="The stump goes below grade, ready for fill." data-col="#333f6c">Stump grinding</button>
+    <button class="work-item" type="button" data-img="assets/lakeshore.jpg" data-alt="Low cloud covering a forested lakeshore" data-fact="Fallen limbs and hangers cleared after the blow." data-col="#3a4778">Storm cleanup</button>
+  </div>
+  <p class="work-fact" id="work-fact" data-reveal>Whole trees come down in sections, piece by piece.</p>
+</section>
+
+<div class="band" data-reveal><img src="assets/lakeshore.jpg" alt="Low cloud covering a forested lakeshore under a pale sky" loading="lazy"></div>
+
+<section class="proof wrap" id="proof" aria-labelledby="proof-h">
+  <h2 id="proof-h" data-reveal>On the record</h2>
+  <div class="proof-item" data-reveal>
+    <h3><span class="dot"></span>Registered in Florida</h3>
+    <p>Tornado Tree Removal LLC is a Florida limited company, registered with the state in 2025. <a href="https://search.sunbiz.org/Inquiry/CorporationSearch/SearchResults/EntityName/TORNADO%20TREE%20REMOVAL%20LLC/Page1" rel="noopener">Sunbiz record L25000268091</a>.</p>
+  </div>
+  <div class="proof-item" data-reveal>
+    <div class="proof-photo"><img src="assets/beige-ridges.jpg" alt="Layered hill ridges fading into warm mist" loading="lazy"></div>
+    <h3><span class="dot m"></span>Reviewed on Nextdoor</h3>
+    <p>Neighbours in Fort Myers posted reviews of Tornado's tree work in October 2025 and again in early 2026. <a href="https://nextdoor.com/pages/tornado-tree-removal-fort-myers-fl/" rel="noopener">Read them on Nextdoor</a>.</p>
+  </div>
+</section>
+
+<a class="cta" id="contact" href="tel:+12393087662" data-reveal>
+  <span class="note">Ask for a quote: one call does it. Email works too, at posavage0@gmail.com.</span>
+  <svg class="arrow" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M8 40 L40 8 M16 8 h24 v24"/></svg>
+  <span class="word">Call</span>
+</a>
+</main>
+
+<footer class="footer">
+  <svg class="rings wrap" viewBox="0 0 1200 300" role="img" aria-label="Tornado ring mark">
+    <g fill="none" stroke-width="10">
+      <path d="M 90 260 A 190 190 0 0 1 470 260" stroke="#f9a3c0"/>
+      <path d="M 130 260 A 150 150 0 0 1 430 260" stroke="#b9879c"/>
+      <path d="M 170 260 A 110 110 0 0 1 390 260" stroke="#3a4778"/>
+      <path d="M 210 260 A 70 70 0 0 1 350 260" stroke="#f9a3c0"/>
+      <path d="M 560 260 A 190 190 0 0 1 940 260" stroke="#3a4778" transform="translate(40,0)"/>
+      <path d="M 610 260 A 150 150 0 0 1 910 260" stroke="#f9a3c0" transform="translate(20,0)"/>
+      <path d="M 660 260 A 110 110 0 0 1 870 260" stroke="#b9879c"/>
+      <path d="M 710 260 A 70 70 0 0 1 830 260" stroke="#f9a3c0"/>
+    </g>
+  </svg>
+  <div class="footer-cols wrap">
+    <div class="footer-col">
+      <p>Call</p>
+      <ul><li><a href="tel:+12393087662">239-308-7662</a></li></ul>
+    </div>
+    <div class="footer-col write">
+      <p>Write</p>
+      <ul><li><a href="mailto:posavage0@gmail.com">posavage0@gmail.com</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Pages</p>
+      <ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#work">The work</a></li><li><a href="#proof">Proof</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Area</p>
+      <ul><li>Fort Myers</li><li>Lee County, Florida</li></ul>
+    </div>
+    <div class="footer-col wide">
+      <p>Company</p>
+      <ul><li>Tornado Tree Removal LLC</li><li>Florida LLC, registered 2025</li><li>Sunbiz L25000268091</li></ul>
+    </div>
+  </div>
+  <div class="footer-legal wrap">
+    <span>A free preview site made for Tornado Tree Removal LLC by <a href="https://axliosmedia.com" rel="noopener">Axlios Media</a>. Not the business's official website.</span>
+    <span>Photos: Patrick Hendry, Forrest Cavale, Dorothy Lin, Francesco Gallarotti, Paul Jarvis via Unsplash</span>
+    <a class="button" href="tel:+12393087662">Call 239-308-7662</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:0});
+    document.querySelectorAll('[data-reveal]').forEach(function(el, i){
+      el.style.transitionDelay = (i % 3) * 70 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(function(el){ el.classList.add('in'); });
+  }
+  // showcase: names swap the object, the fact and the disc colour
+  var img = document.getElementById('disc-img');
+  var fact = document.getElementById('work-fact');
+  var disc = document.getElementById('disc');
+  document.querySelectorAll('.work-item').forEach(function(btn){
+    function pick(){
+      document.querySelectorAll('.work-item').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var swap = function(){
+        img.src = btn.getAttribute('data-img');
+        img.alt = btn.getAttribute('data-alt');
+        fact.textContent = btn.getAttribute('data-fact');
+        disc.style.background = btn.getAttribute('data-col');
+      };
+      if(reduce){ swap(); return; }
+      img.style.opacity = '0';
+      setTimeout(function(){ swap(); img.style.opacity = '1'; }, 300);
+    }
+    btn.addEventListener('click', pick);
+    btn.addEventListener('mouseenter', pick);
+  });
+})();
+</script>
+</body>
+</html>
