@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake WALK · Bakery in Hinoo, Ranchi</title>
+<meta name="description" content="Cake WALK is a small bakery on Hinoo Main Road, Ranchi. Cakes made to order for birthdays and celebrations, and fresh pastries at the counter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#3d0012;
+  --surface:#4d0519;
+  --ink:#ff99d3;
+  --muted:#c77aa0;
+  --paper:#ff99d3;
+  --paper-ink:#3d0012;
+  --paper-soft:#7a2c50;
+  --step-small:clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body:clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead:clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head:clamp(2rem, 1.3rem + 3.2vw, 4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  font-family:'Archivo',sans-serif;
+  font-weight:400;
+  background:var(--bg);
+  color:var(--ink);
+  font-size:var(--step-body);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2{font-weight:400;letter-spacing:-0.02em;line-height:1.0}
+.display{font-size:var(--step-head);letter-spacing:-0.02em;line-height:1.0}
+.small{font-size:var(--step-small)}
+.muted{color:var(--muted)}
+
+/* ---------- hero: striped card beside the room ---------- */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  padding:12px;
+  min-height:100svh;
+}
+.hero-card{
+  background:var(--paper);
+  color:var(--paper-ink);
+  border-radius:16px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.stripe-band{
+  height:56px;
+  flex:0 0 56px;
+  display:flex;
+  overflow:hidden;
+}
+.stripe-band i{flex:0 0 28px;height:100%;background:var(--paper-ink)}
+.stripe-band i:nth-child(even){background:var(--paper)}
+.hero-card-inner{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:32px 48px 96px;
+  gap:28px;
+}
+.wordmark{width:min(300px,72%);height:auto;border-radius:12px}
+.hero-card h1{
+  font-size:clamp(32px, 3.6vw, 56px);
+  max-width:20ch;
+}
+.hero-sub{font-size:1.0625rem;max-width:36ch;color:var(--paper-soft)}
+.btn{
+  display:inline-block;
+  background:var(--paper-ink);
+  color:var(--paper);
+  font-weight:600;
+  font-size:1.0625rem;
+  text-decoration:none;
+  padding:14px 38px;
+  border:2px solid var(--paper-ink);
+  border-radius:8px;
+  transition:background .18s ease,color .18s ease;
+}
+.btn:hover{background:transparent;color:var(--paper-ink)}
+.hero-links{
+  position:absolute;
+  left:0;right:0;bottom:28px;
+  display:flex;
+  justify-content:center;
+  gap:36px;
+}
+.hero-links a{color:var(--paper-ink);font-size:0.875rem;text-decoration:underline;text-underline-offset:3px}
+.hero-photo{
+  position:sticky;
+  top:12px;
+  height:calc(100svh - 24px);
+  border-radius:16px;
+  overflow:hidden;
+  background:var(--surface);
+}
+.hero-photo img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity 1.6s ease;
+}
+.hero-photo img.on{opacity:1}
+@media (prefers-reduced-motion: reduce){
+  .hero-photo img{transition:none;opacity:0}
+  .hero-photo img:first-child{opacity:1}
+}
+
+/* ---------- intro: narrow column ---------- */
+.intro{
+  padding:120px 0 110px 15%;
+}
+.intro-col{width:330px;max-width:78vw}
+.intro-col p{font-size:1rem;line-height:1.55;color:var(--muted)}
+.intro-col p + p{margin-top:1em}
+.intro-col p:first-child{font-weight:600;color:var(--ink)}
+.intro-col a{color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- menu sheet ---------- */
+.menu-section{padding:16px 0 96px}
+.sheet{
+  width:640px;max-width:calc(100vw - 20px);
+  margin:0 auto;
+  background:var(--paper);
+  color:var(--paper-ink);
+  padding:72px 64px 64px;
+  clip-path:polygon(0 14px,3% 0,6% 14px,9% 0,12% 14px,15% 0,18% 14px,21% 0,24% 14px,27% 0,30% 14px,33% 0,36% 14px,39% 0,42% 14px,45% 0,48% 14px,51% 0,54% 14px,57% 0,60% 14px,63% 0,66% 14px,69% 0,72% 14px,75% 0,78% 14px,81% 0,84% 14px,87% 0,90% 14px,93% 0,96% 14px,99% 0,100% 14px,100% calc(100% - 14px),99% 100%,96% calc(100% - 14px),93% 100%,90% calc(100% - 14px),87% 100%,84% calc(100% - 14px),81% 100%,78% calc(100% - 14px),75% 100%,72% calc(100% - 14px),69% 100%,66% calc(100% - 14px),63% 100%,60% calc(100% - 14px),57% 100%,54% calc(100% - 14px),51% 100%,48% calc(100% - 14px),45% 100%,42% calc(100% - 14px),39% 100%,36% calc(100% - 14px),33% 100%,30% calc(100% - 14px),27% 100%,24% calc(100% - 14px),21% 100%,18% calc(100% - 14px),15% 100%,12% calc(100% - 14px),9% 100%,6% calc(100% - 14px),3% 100%,0 calc(100% - 14px));
+  text-align:center;
+}
+.sheet h2{font-size:clamp(40px, 3.4vw, 48px);margin-bottom:10px}
+.sheet .note{font-size:0.875rem;color:var(--paper-soft);margin-bottom:56px}
+.sheet .group{margin-bottom:56px}
+.sheet .group h3{font-weight:400;font-size:1.375rem;margin-bottom:24px}
+.sheet .item{max-width:420px;margin:0 auto 16px;text-align:left}
+.sheet .item .row{display:flex;justify-content:space-between;align-items:baseline;font-size:1.0625rem}
+.sheet .item .tag{font-size:0.875rem;color:var(--paper-soft);white-space:nowrap;margin-left:24px}
+.sheet .item .desc{font-size:0.875rem;color:var(--paper-soft);margin-top:2px}
+.sheet .hours{margin-top:8px;font-size:1.0625rem;line-height:1.6}
+
+/* ---------- gallery drag row ---------- */
+.gallery{padding:24px 0 110px;overflow:hidden}
+.gallery-head{
+  display:flex;justify-content:flex-start;align-items:baseline;gap:28px;
+  margin:0 48px 32px 6vw;
+}
+.gallery-head h2{font-size:clamp(28px, 2.4vw, 36px)}
+.gallery-head .count{font-size:var(--step-small);color:var(--muted)}
+.g-row{
+  display:flex;gap:12px;
+  height:68svh;
+  padding-left:6vw;
+  overflow-x:auto;
+  scroll-snap-type:x proximity;
+  scrollbar-width:none;
+  cursor:grab;
+}
+.g-row::-webkit-scrollbar{display:none}
+.g-row.dragging{cursor:grabbing;scroll-snap-type:none}
+.g-row > *{flex:0 0 auto;scroll-snap-align:start;border-radius:12px;overflow:hidden}
+.g-tall{aspect-ratio:3/4;height:100%}
+.g-wide{aspect-ratio:16/10;height:100%}
+.g-stack{display:flex;flex-direction:column;gap:12px;height:100%;aspect-ratio:auto}
+.g-stack > div{flex:1;overflow:hidden;border-radius:12px}
+.g-row img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.g-stack img{height:100%}
+.g-own{display:flex;flex-direction:column;gap:12px;height:100%}
+.g-own > div{width:206px;height:206px;overflow:hidden;border-radius:12px}
+.g-own-note{flex:1;display:flex;align-items:flex-end;font-size:var(--step-small);color:var(--muted);max-width:206px;line-height:1.4}
+
+/* ---------- contact ---------- */
+.contact{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:24px;
+  padding:120px 48px 96px;
+}
+.contact-sentence{
+  grid-column:1/6;
+  font-size:clamp(26px, 3vw, 44px);
+  line-height:1.1;
+  letter-spacing:-0.02em;
+}
+.contact-portrait{
+  grid-column:8/10;
+  width:160px;height:160px;
+  border-radius:0;
+  overflow:hidden;
+  align-self:start;
+}
+.contact-portrait img{width:100%;height:100%;object-fit:cover}
+.contact-links{grid-column:10/13;align-self:start}
+.contact-links .q{font-weight:600;font-size:1.125rem;margin-bottom:20px}
+.contact-links a{
+  display:block;font-size:1.125rem;text-decoration:underline;text-underline-offset:3px;
+  margin-bottom:12px;word-break:break-all;
+}
+.contact-links .city{font-size:0.875rem;color:var(--muted);margin-top:16px}
+
+/* ---------- footer ---------- */
+.foot-stripe{height:8px;display:flex;overflow:hidden}
+.foot-stripe i{flex:0 0 28px;height:100%;background:var(--ink)}
+.foot-stripe i:nth-child(even){background:var(--bg)}
+.footer{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:100svh;
+}
+.footer-photo{position:relative;overflow:hidden}
+.footer-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.footer-menu{
+  padding:80px 48px 32px;
+  display:flex;flex-direction:column;
+}
+.footer-menu .fmark{width:120px;border-radius:8px;margin-bottom:56px}
+.f-links{display:flex;flex-direction:column;gap:28px;margin-bottom:64px}
+.f-links a{
+  font-size:clamp(1.6rem, 2.6vw, 2.4rem);
+  font-weight:600;letter-spacing:-0.02em;line-height:1.05;
+  text-decoration:none;
+  transition:transform .18s ease,color .18s ease;
+}
+.f-links:hover a{color:var(--muted)}
+.f-links a:hover{color:var(--ink);transform:translateX(12px)}
+.f-cols{display:flex;gap:48px;font-size:0.9375rem;line-height:1.55}
+.f-cols h4{font-weight:600;font-size:0.9375rem;margin-bottom:8px}
+.f-cols a{text-decoration:underline;text-underline-offset:3px}
+.f-cols .muted{font-size:0.9375rem}
+.legal{
+  margin-top:auto;padding-top:40px;
+  font-size:0.8125rem;color:var(--muted);line-height:1.5;
+}
+
+/* ---------- reveal ---------- */
+[data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+[data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- mobile ---------- */
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;padding:20px;min-height:0}
+  .hero-photo{position:relative;height:60svh;order:2}
+  .hero-card{min-height:calc(100svh - 40px)}
+  .hero-card h1{font-size:clamp(36px, 7vw, 56px)}
+  .hero-card-inner{padding:40px 28px 110px}
+  .hero-links{gap:24px;flex-wrap:wrap}
+  .intro{padding:72px 20px 96px}
+  .intro-col{width:78%}
+  .sheet{padding:56px 28px 48px}
+  .gallery{padding:32px 0 96px}
+  .gallery-head{margin:0 20px 32px}
+  .g-row{height:62svh;gap:8px;padding-left:20px}
+  .g-tall{width:72vw;aspect-ratio:auto}
+  .g-wide{width:88vw;aspect-ratio:auto;height:80%;align-self:center}
+  .g-stack{width:64vw}
+  .g-own > div{width:160px;height:160px}
+  .g-own-note{display:none}
+  .contact{display:block;padding:120px 20px 96px}
+  .contact-sentence{font-size:7.4vw;margin-bottom:48px}
+  .contact-row{display:flex;gap:24px;align-items:flex-start}
+  .contact-portrait{width:96px;height:96px;flex:0 0 96px}
+  .contact-links .city{margin-top:20px}
+  .footer{grid-template-columns:1fr}
+  .footer-photo{height:50svh}
+  .footer-menu{padding:56px 20px 28px}
+  .f-links a{font-size:8vw}
+  .f-cols{flex-direction:column;gap:32px}
+}
+</style>
+</head>
+<body>
+
+<!-- hero -->
+<header class="hero" id="top">
+  <div class="hero-card">
+    <div class="stripe-band" aria-hidden="true"></div>
+    <div class="hero-card-inner">
+      <img class="wordmark" src="assets/logo.png" alt="Cake WALK, The Baker's Shop">
+      <h1>Made to order cakes in Ranchi</h1>
+      <p class="hero-sub">A neighbourhood bakery on Hinoo Main Road, baking to order and filling the counter every morning.</p>
+      <a class="btn" href="tel:+919958016905">Call the shop</a>
+    </div>
+    <nav class="hero-links" aria-label="Sections">
+      <a href="#menu">What we bake</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+  </div>
+  <div class="hero-photo" id="heroPhoto">
+    <img src="assets/hero-1.jpg" alt="Cakes and pastries in the display counter" class="on">
+    <img src="assets/hero-2.jpg" alt="Slices of cake in a pastry case">
+    <img src="assets/hero-3.jpg" alt="A cake being served from the counter">
+    <img src="assets/hero-4.jpg" alt="The bakery counter at work">
+  </div>
+</header>
+
+<!-- intro -->
+<section class="intro" id="shop">
+  <h2 class="sr-only">The shop</h2>
+  <div class="intro-col" data-reveal>
+    <p>Cake WALK is a small bakery in Hinoo, Ranchi, known around the neighbourhood for its made to order cakes.</p>
+    <p>Birthdays, anniversaries and small family celebrations get cakes built to the occasion, from red velvet to chocolate drip, number cakes and doll cakes for kids.</p>
+    <p>The counter carries fresh pastries and slices through the day, and the shop is rated 4.6 out of 5 on Google.</p>
+    <p>You will find us on Hinoo Main Road, near Eyelex. Call ahead and we will set something aside for you. <a href="https://www.google.com/maps/search/?api=1&amp;query=Cake+WALK+%E0%A4%95%E0%A5%87%E0%A4%95+%E0%A4%B5%E0%A4%BE%E0%A4%95&amp;query_place_id=ChIJGy-5vMvh9DkRa_qhPaS-3yI" id="visit">See us on the map</a>.</p>
+  </div>
+</section>
+
+<!-- menu sheet -->
+<section class="menu-section" id="menu">
+  <div class="sheet" data-reveal>
+    <h2>From the bakery</h2>
+    <p class="note">No fixed menu, everything is baked fresh and cakes are made to order.</p>
+    <div class="group">
+      <h3>Made to order</h3>
+      <div class="item">
+        <div class="row"><span>Red velvet cake</span><span class="tag">by order</span></div>
+        <div class="desc">The shop favourite, soft layers and cream.</div>
+      </div>
+      <div class="item">
+        <div class="row"><span>Chocolate drip cake</span><span class="tag">by order</span></div>
+        <div class="desc">Finished with a ganache drip and toppings.</div>
+      </div>
+      <div class="item">
+        <div class="row"><span>Number and letter cakes</span><span class="tag">by order</span></div>
+        <div class="desc">For birthdays and anniversaries, shaped to the day.</div>
+      </div>
+      <div class="item">
+        <div class="row"><span>Doll cake</span><span class="tag">by order</span></div>
+        <div class="desc">A kids' party classic, dressed in piped cream.</div>
+      </div>
+    </div>
+    <div class="group">
+      <h3>At the counter</h3>
+      <div class="item">
+        <div class="row"><span>Pastries and slices</span><span class="tag">fresh daily</span></div>
+        <div class="desc">Chocolate cake and assorted pastries through the day.</div>
+      </div>
+      <div class="item">
+        <div class="row"><span>Bakes of the day</span><span class="tag">fresh daily</span></div>
+        <div class="desc">Ask at the counter what came out of the oven.</div>
+      </div>
+    </div>
+    <p class="hours">The counter changes through the day<br>Call ahead to check what is fresh</p>
+  </div>
+</section>
+
+<!-- gallery -->
+<section class="gallery" id="photos">
+  <div class="gallery-head" data-reveal>
+    <h2>In the case</h2>
+    <span class="count">12 photographs</span>
+  </div>
+  <div class="g-row" id="grow">
+    <div class="g-tall" data-reveal><img src="assets/g-lemon.jpg" alt="Cakes and pastries on display"></div>
+    <div class="g-own" data-reveal>
+      <div><img src="assets/own-redvelvet.jpg" alt="Red velvet pastry from Cake WALK"></div>
+      <div><img src="assets/own-drip.jpg" alt="Chocolate drip cake from Cake WALK"></div>
+      <div class="g-own-note">Cakes from the shop's own counter.</div>
+    </div>
+    <div class="g-wide" data-reveal><img src="assets/g-berry.jpg" alt="Berry pastries in a display case"></div>
+    <div class="g-own" data-reveal>
+      <div><img src="assets/own-25.jpg" alt="A number cake made by Cake WALK"></div>
+      <div><img src="assets/own-doll.jpg" alt="A doll cake made by Cake WALK"></div>
+      <div class="g-own-note">Made to order for birthdays and anniversaries.</div>
+    </div>
+    <div class="g-tall" data-reveal><img src="assets/g-case.jpg" alt="Fresh bakes behind the counter glass"></div>
+    <div class="g-wide" data-reveal><img src="assets/g-pink.jpg" alt="Cakes on a marble counter"></div>
+  </div>
+</section>
+
+<!-- contact -->
+<section class="contact" id="contact">
+  <p class="contact-sentence" data-reveal>Tell us the occasion, we bake the cake.</p>
+  <div class="contact-row" style="display:contents">
+    <div class="contact-portrait" data-reveal><img src="assets/own-drip.jpg" alt="A chocolate drip cake from the shop"></div>
+    <div class="contact-links" data-reveal>
+      <p class="q">Planning a celebration?</p>
+      <a href="mailto:quasimahmad@gmail.com">quasimahmad@gmail.com</a>
+      <a href="https://www.facebook.com/itscakewalk" rel="noopener">facebook.com/itscakewalk</a>
+      <p class="city">Hinoo, Ranchi · call ahead for the day's hours</p>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<div class="foot-stripe" aria-hidden="true"></div>
+<footer class="footer">
+  <div class="footer-photo"><img src="assets/footer.jpg" alt="Slices of cake ready at the counter"></div>
+  <div class="footer-menu">
+    <img class="fmark" data-reveal src="assets/logo.png" alt="Cake WALK">
+    <nav class="f-links" aria-label="Footer" data-reveal>
+      <a href="#shop">The shop</a>
+      <a href="#menu">What we bake</a>
+      <a href="#photos">Photos</a>
+      <a href="#visit">Visit us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="f-cols" data-reveal>
+      <div>
+        <h4>Contact</h4>
+        <a href="tel:+919958016905">+91 99580 16905</a><br>
+        <a href="mailto:quasimahmad@gmail.com">quasimahmad@gmail.com</a><br>
+        <span class="muted">Hinoo Main Road, near Eyelex,<br>Shukla Colony, Ranchi 834002</span>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <a href="https://www.facebook.com/itscakewalk" rel="noopener">Facebook</a><br>
+        <span class="muted">Call ahead<br>for the day's hours</span>
+      </div>
+    </div>
+    <p class="legal">© 2026 Cake WALK, Ranchi · Display and counter photographs from Pexels · Cake photographs are the shop's own · Concept website made for the bakery</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // build stripe bands as rows of filled blocks
+  document.querySelectorAll('.stripe-band,.foot-stripe').forEach(function(b){
+    for(var k=0;k<90;k++){b.appendChild(document.createElement('i'));}
+  });
+  var imgs=document.querySelectorAll('#heroPhoto img');
+  if(imgs.length<2) return;
+  if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var i=0, timer=null;
+  function step(){
+    imgs[i].classList.remove('on');
+    i=(i+1)%imgs.length;
+    imgs[i].classList.add('on');
+  }
+  function start(){ if(!timer) timer=setInterval(step,5600); }
+  function stop(){ if(timer){clearInterval(timer);timer=null;} }
+  document.addEventListener('visibilitychange',function(){
+    if(document.hidden) stop(); else start();
+  });
+  start();
+  // reveal on scroll
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in'); io.unobserve(e.target);} });
+  },{rootMargin:'0px 0px -30% 0px'});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el)});
+  // drag to scroll gallery
+  var row=document.getElementById('grow'), down=false, sx=0, sl=0;
+  row.addEventListener('pointerdown',function(e){down=true;sx=e.clientX;sl=row.scrollLeft;row.classList.add('dragging');});
+  window.addEventListener('pointermove',function(e){if(!down)return;row.scrollLeft=sl-(e.clientX-sx);});
+  window.addEventListener('pointerup',function(){down=false;row.classList.remove('dragging');});
+})();
+</script>
+</body>
+</html>

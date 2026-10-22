@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goswami Kennel, Guwahati · Pet Store and Clinic</title>
+<meta name="description" content="Goswami Kennel is a pet store, kennel and clinic on Rajgarh Road, Sarania Hills, Guwahati. Puppies and kittens with breed authenticity papers, plus a clinic for pets.">
+<link href="https://api.fontshare.com/v2/css?f[]=chillax@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f7f7; --surface:#ebebeb; --ink:#0d2a1c; --soft:#3d4f45; --accent:#f6e016;
+  --step-small:clamp(.8125rem,.79rem + .1vw,.875rem);
+  --step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Chillax',sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1360px;margin:0 auto;padding:0 clamp(18px,4vw,60px)}
+h1,h2,h3{font-weight:600;letter-spacing:-.03em;line-height:1.0}
+.btn{display:inline-flex;align-items:center;background:var(--accent);color:var(--ink);font-weight:600;font-size:1rem;padding:.95em 1.5em;border-radius:999px;text-decoration:none;transition:transform .25s ease}
+.btn:hover{transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:50;background:var(--bg)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:16px;padding-bottom:16px}
+.brand{font-weight:600;letter-spacing:-.03em;font-size:1.2rem}
+nav{display:flex;gap:28px}
+nav a{font-weight:500;font-size:1rem;text-decoration:none}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero{padding:0}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:92vh;align-items:stretch}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;gap:26px;padding:clamp(28px,4vw,60px);padding-left:max(clamp(18px,4vw,60px),calc((100vw - 1360px)/2 + clamp(18px,4vw,60px)))}
+.hero-copy h1{font-size:clamp(3rem,7.5vw,7rem)}
+.hero-sub{font-size:var(--step-lead);max-width:32ch;color:var(--soft)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-ctas .ghost{background:transparent;text-decoration:underline;text-underline-offset:4px;font-weight:500}
+.hero-lead{position:relative;overflow:hidden}
+.hero-lead img{width:100%;height:100%;object-fit:cover;object-position:50% 35%;animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.07)}}
+.strip{background:var(--ink);padding:18px 24px;text-align:center}
+.strip-inner{display:block}
+.strip span{font-weight:600;letter-spacing:-.02em;font-size:clamp(1rem,1.6vw,1.35rem);color:var(--bg)}
+section{padding:clamp(56px,8vw,110px) 0}
+section.alt{background:var(--surface)}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(26px,4vw,52px)}
+.sec-head h2{font-size:var(--step-head)}
+.sec-head .note{font-size:var(--step-small);color:var(--soft)}
+.pups-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px)}
+.pup{background:var(--bg)}
+.pup img{width:100%;height:clamp(280px,30vw,420px);object-fit:cover;border-radius:18px}
+.pup .pup-body{padding:18px 6px 0;display:flex;flex-direction:column;gap:8px}
+.pup h3{font-size:clamp(1.3rem,2vw,1.8rem)}
+.pup p{font-size:var(--step-body);color:var(--soft)}
+section.alt .pup{background:transparent}
+.care-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(28px,4vw,60px);align-items:center}
+.care-pic img{width:100%;height:auto;aspect-ratio:672/860;object-fit:cover;border-radius:22px}
+.care-copy{display:flex;flex-direction:column;gap:20px}
+.care-copy p{font-size:var(--step-body)}
+.care-copy p strong{font-weight:500}
+.care-list{display:flex;flex-direction:column;gap:12px;margin-top:8px}
+.care-item{background:var(--bg);border-radius:16px;padding:clamp(14px,2vw,22px) clamp(16px,2.4vw,26px);display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.care-item b{font-weight:600;font-size:clamp(1.1rem,1.8vw,1.5rem);letter-spacing:-.02em}
+.care-item span{color:var(--soft);font-size:.95rem}
+.quote-block{padding:clamp(60px,9vw,130px) 0;text-align:center;background:var(--accent)}
+.quote-block blockquote{font-weight:600;letter-spacing:-.03em;line-height:1.05;font-size:clamp(1.7rem,3.6vw,3.2rem);max-width:26ch;margin:0 auto 20px;color:var(--ink)}
+.quote-block cite{font-style:normal;font-size:.95rem;color:var(--ink);opacity:.75}
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,60px);align-items:start}
+.visit-facts{display:flex;flex-direction:column;gap:12px}
+.fact{background:var(--surface);border-radius:16px;padding:clamp(16px,2.2vw,26px) clamp(16px,2.4vw,28px)}
+.fact b{display:block;font-weight:600;font-size:.95rem;color:var(--soft);margin-bottom:6px}
+.fact p{font-size:var(--step-lead);font-weight:500}
+.fact a{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.visit-note{font-size:var(--step-body);color:var(--soft);margin-top:10px;max-width:44ch}
+.visit-pic img{width:100%;height:auto;border-radius:22px}
+footer{padding:clamp(40px,5vw,70px) 0;background:var(--ink);color:var(--bg)}
+footer .wrap{display:flex;flex-direction:column;gap:16px}
+footer .f-brand{font-weight:600;letter-spacing:-.03em;font-size:1.35rem}
+footer .f-brand span{color:var(--accent)}
+footer p{font-size:var(--step-small);color:#c9cfcb;max-width:72ch}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:960px){
+  .strip-inner{display:block}
+    .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-copy{padding:40px clamp(18px,4vw,60px)}
+  .hero-lead{height:min(70vw,440px)}
+  .pups-grid,.care-grid,.visit-grid{grid-template-columns:1fr}
+  nav{display:none}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Goswami Kennel</div>
+    <nav>
+      <a href="#puppies">Puppies and kittens</a>
+      <a href="#care">Care and clinic</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a class="btn" href="tel:+919085408482">Call the kennel</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <h1>Goswami Kennel</h1>
+      <p class="hero-sub">A pet store, kennel and clinic in Sarania Hills, Guwahati. Every puppy goes home with breed authenticity papers.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="tel:+919085408482">Call +91 90854 08482</a>
+        <a class="ghost" href="#visit">Find the shop</a>
+      </div>
+    </div>
+    <div class="hero-lead">
+      <img src="./assets/golden-sea-lead.jpg" alt="A golden retriever looking at the camera" fetchpriority="high">
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+<section id="puppies" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Puppies and kittens</h2>
+      <span class="note">Breed authenticity, in writing</span>
+    </div>
+    <div class="pups-grid">
+      <div class="pup reveal">
+        <img src="./assets/pup-flower.jpg" alt="A puppy sitting among flowers">
+        <div class="pup-body">
+          <h3>Dogs</h3>
+          <p>Golden retrievers, Labradors, pugs and cocker spaniels, each with documents that prove the breed.</p>
+        </div>
+      </div>
+      <div class="pup reveal">
+        <img src="./assets/cat-tabby.jpg" alt="A tabby cat resting">
+        <div class="pup-body">
+          <h3>Cats</h3>
+          <p>Healthy, playful kittens raised with the same care, ready for a new home.</p>
+        </div>
+      </div>
+      <div class="pup reveal">
+        <img src="./assets/pup-paws.jpg" alt="A golden retriever puppy with its paws on a table">
+        <div class="pup-body">
+          <h3>Guidance</h3>
+          <p>New owners leave with feeding, training and care advice, not just a receipt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="care">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Care and clinic</h2>
+      <span class="note">Store, kennel and vet care under one roof</span>
+    </div>
+    <div class="care-grid">
+      <figure class="care-pic reveal">
+        <img src="./assets/clinic-dog-dogonly.jpg" alt="A dog being examined at a clinic" width="672" height="860">
+      </figure>
+      <div class="care-copy reveal">
+        <p><strong>A pet store, kennel and clinic in one place.</strong> Reviewers mention golden retrievers, Labradors, pugs, cocker spaniels and kittens, and say their puppies came with breed authenticity documents.</p>
+        <div class="care-list">
+          <div class="care-item"><b>Pet store</b><span>Food and essentials</span></div>
+          <div class="care-item"><b>Kennel</b><span>Authentic breeds</span></div>
+          <div class="care-item"><b>Clinic</b><span>Care for your pet</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="quote-block">
+  <div class="wrap reveal">
+    <blockquote>&ldquo;The most authentic kennel in the North East.&rdquo;</blockquote>
+    <cite>From a customer review on Google</cite>
+  </div>
+</div>
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Visit</h2>
+      <span class="note">Rajgarh Road, Guwahati</span>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-facts reveal">
+        <div class="fact">
+          <b>Address</b>
+          <p>Rajgarh Road, opposite Bye Lane Number 5,<br>near Icon Academy, Sarania Hills,<br>Guwahati, Assam 781003</p>
+        </div>
+        <div class="fact">
+          <b>Phone</b>
+          <p><a href="tel:+919085408482">+91 90854 08482</a></p>
+        </div>
+        <p class="visit-note">Call before you visit to ask which puppies and kittens are available right now. The litters change often.</p>
+      </div>
+      <figure class="visit-pic reveal">
+        <img src="./assets/golden-sea-lead.jpg" alt="A golden retriever outdoors" width="800" height="839">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Goswami <span>Kennel</span></div>
+    <p>Goswami Kennel, pet store and clinic, Rajgarh Road, Sarania Hills, Guwahati, Assam. Phone +91 90854 08482.</p>
+    <p>All photographs are generic pet imagery from Unsplash and are not of the kennel's own animals.</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.05});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
