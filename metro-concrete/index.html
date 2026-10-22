@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metro Concrete Construction — Lehigh Acres, Florida</title>
+<meta name="description" content="Metro Concrete Construction Inc pours driveways, slabs, foundations and flatwork across Lee County, Florida. Call 239-771-2267 or write to mcciconstruction@aol.com and ask for a quote.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#e6e0d2; --surface:#dcd5c5; --ink:#1a1a1a; --muted:#5f5b52; --accent:#18bc42; --accent-ink:#1a1a1a;
+  --coral:#ed4b44; --coral-ink:#0f0f0f; --black:#1a1a1a; --black-ink:#e6e0d2; --yellow:#f2c21a; --yellow-ink:#1a1a1a;
+  --margin:clamp(20px,2.6vw,40px); --axis:42%;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Boska',Georgia,serif;font-size:var(--step-body);line-height:1.5;letter-spacing:0.005em;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:var(--ink)}
+main{position:relative;z-index:1;background:var(--bg)}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+
+/* ---------- hero : narrow talk, wide headline ---------- */
+.hero{min-height:100svh;position:relative;overflow:hidden}
+.hero-toprow{position:absolute;top:28px;left:var(--margin);right:var(--margin);display:flex;justify-content:space-between;align-items:baseline;z-index:3}
+.hero-word{font-weight:500;font-size:var(--step-body);text-decoration:none;color:var(--ink)}
+.hero-call{display:none;font-size:1rem;color:var(--ink)}
+.hero-nav{position:absolute;top:28px;left:var(--axis);right:var(--margin);display:flex;gap:clamp(16px,2.4vw,40px);z-index:3}
+.hero-nav a{font-size:15px;color:var(--muted);text-decoration:none}
+.hero-nav a:hover{color:var(--ink)}
+.hero-left{position:absolute;left:var(--margin);top:30%;width:calc(var(--axis) - var(--margin) - 32px)}
+.hero-left p{font-size:22px;line-height:1.35;max-width:24ch}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font-size:1rem;padding:16px 26px;text-decoration:none;margin-top:28px}
+.btn:hover{background:var(--accent);color:var(--accent-ink)}
+.hero h1{position:absolute;left:var(--axis);top:24%;right:var(--margin);font-weight:500;font-size:clamp(88px,9.8vw,150px);line-height:0.82;letter-spacing:-0.04em;text-transform:uppercase}
+.hero h1 .ital{text-transform:none;font-style:italic;font-weight:400}
+.hero h1 .mask{display:block;overflow:hidden}
+.hero h1 .mask>span{display:block;transform:translateY(112%)}
+.hero.loaded h1 .mask>span{transform:none;transition:transform 0.9s cubic-bezier(0.19,1,0.22,1)}
+.hero.loaded h1 .mask.m2>span{transition-delay:0.11s}
+.hero-left p,.hero-left .btn{opacity:0;transform:translateY(18px)}
+.hero.loaded .hero-left p,.hero.loaded .hero-left .btn{opacity:1;transform:none;transition:opacity 0.7s ease 0.55s,transform 0.7s ease 0.55s}
+.hero-photo{position:absolute;left:var(--axis);right:0;top:68%;bottom:0;overflow:hidden}
+.hero-photo img{animation:drift 26s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.02) translateX(0)}to{transform:scale(1.1) translateX(-2%)}}
+.hero-fig{position:absolute;left:calc(var(--axis) - 130px);top:calc(68% - 56px);width:260px;background:var(--accent);color:var(--accent-ink);padding:22px 24px;z-index:2}
+.hero-fig .num{font-size:40px;font-weight:500;line-height:1}
+.hero-fig .cap{font-size:15px;line-height:1.4;margin-top:8px}
+@media(max-width:760px){
+  .hero{min-height:0;padding-bottom:0;display:flex;flex-direction:column}
+  .hero-toprow{position:static;margin:32px var(--margin) 0 var(--margin);order:2}
+  .hero-call{display:inline;text-decoration:none}
+  .hero-nav{display:none}
+  .hero h1{position:static;margin:28px var(--margin) 0 var(--margin);font-size:14vw;line-height:0.85;order:1}
+  .hero-left{position:static;width:auto;margin:24px var(--margin) 0 var(--margin);order:3}
+  .hero-left p{font-size:18px;max-width:none}
+  .hero-left .btn{display:block;text-align:center;margin:24px 0 0 0}
+  .hero-photo{position:relative;left:0;top:0;height:75vw;margin-top:40px;order:4}
+  .hero-fig{left:var(--margin);top:auto;bottom:auto;margin:-56px 0 0 var(--margin);position:relative;width:60%;order:5}
+}
+
+/* ---------- intro : lead over four columns ---------- */
+.intro{padding-top:96px;padding-bottom:96px}
+.lead{font-size:clamp(22px,2.2vw,32px);line-height:1.2;max-width:60ch}
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:72px;margin-left:var(--axis)}
+.cols p{font-size:16px;line-height:1.45;color:#45413a;overflow-wrap:anywhere}
+.cols p b{color:var(--ink);font-weight:500}
+.cols a{color:var(--ink);overflow-wrap:anywhere}
+@media(max-width:760px){
+  .intro{padding-top:64px;padding-bottom:64px}
+  .lead{font-size:20px}
+  .cols{margin-left:0;grid-template-columns:1fr 1fr;gap:40px 20px;margin-top:48px}
+  .cols p{font-size:16px}
+}
+
+/* ---------- features : mosaic of unlike tiles ---------- */
+.mosaic{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:96px;gap:8px;padding:0 var(--margin)}
+.tile{padding:24px;position:relative;overflow:hidden}
+.tile h2{font-size:clamp(28px,3.4vw,48px);font-weight:500;letter-spacing:-0.02em;line-height:1}
+.tile.pad-bottom{padding-bottom:0}
+.t-head{grid-column:1/4;grid-row:1/4;background:var(--surface)}
+.t-photo1{grid-column:4/10;grid-row:1/6;padding:0}
+.t-fig{grid-column:10/13;grid-row:1/4;background:var(--yellow);color:var(--yellow-ink)}
+.t-fig .num{font-size:clamp(56px,6vw,96px);font-weight:500;line-height:1}
+.t-fig .cap{font-size:15px;line-height:1.4;margin-top:12px;max-width:16ch}
+.t-list{grid-column:1/4;grid-row:4/6;background:var(--coral);color:var(--coral-ink)}
+.t-list ul{list-style:none;font-size:20px;line-height:1.7}
+.t-s1{grid-column:10/13;grid-row:4/6;background:var(--surface)}
+.t-s2{grid-column:1/7;grid-row:6/9;background:var(--surface)}
+.t-photo2{grid-column:7/10;grid-row:6/9;padding:0}
+.t-s3{grid-column:10/13;grid-row:6/9;background:var(--surface)}
+.tile .sent{font-size:clamp(24px,2.2vw,32px);line-height:1.25;font-weight:400;max-width:18ch}
+@media(max-width:760px){
+  .mosaic{grid-template-columns:1fr 1fr;grid-auto-rows:auto;gap:6px;padding:0 20px}
+  .tile{grid-column:auto!important;grid-row:auto!important;min-height:120px}
+  .t-head,.t-photo1,.t-s1,.t-s2,.t-s3,.t-photo2{grid-column:1/-1!important}
+  .t-photo1,.t-photo2{aspect-ratio:4/3}
+  .t-fig,.t-list{aspect-ratio:1/1;min-height:0}
+  .t-head{min-height:0}
+}
+
+/* ---------- showcase : band of unequal panels ---------- */
+.showcase{padding-top:120px}
+.showcase h2{font-size:clamp(36px,3.4vw,44px);font-weight:500;letter-spacing:-0.02em;margin-left:var(--axis);margin-bottom:64px}
+.band{display:flex;height:68svh;width:100%}
+.panel{position:relative;overflow:hidden;flex-grow:1;flex-basis:0;transition:flex-grow 0.5s ease}
+.panel:nth-child(1){flex-grow:5}
+.panel:nth-child(2){flex-grow:2}
+.panel:nth-child(3){flex-grow:3}
+.panel:nth-child(4){flex-grow:2}
+.panel:hover{flex-grow:6}
+.panel .ptitle{position:absolute;top:24px;left:24px;color:#fff;font-size:28px;line-height:1.15;max-width:10ch;background:rgba(26,26,26,0.55);padding:10px 14px}
+.band-cap{font-size:16px;color:var(--muted);margin:16px var(--margin) 0 var(--margin);max-width:70ch}
+@media(max-width:760px){
+  .showcase{padding-top:72px}
+  .showcase h2{margin-left:20px;font-size:28px;margin-bottom:32px}
+  .band{display:grid;grid-template-rows:64fr 36fr;height:84svh}
+  .panel{transition:none}
+  .band{display:grid;grid-template-rows:64fr 36fr;grid-template-columns:64fr 36fr}
+  .panel:nth-child(1){grid-column:1;grid-row:1}
+  .panel:nth-child(2){grid-column:2;grid-row:1}
+  .panel:nth-child(3){grid-column:1;grid-row:2}
+  .panel:nth-child(4){grid-column:2;grid-row:2}
+  .panel .ptitle{font-size:20px;top:16px;left:16px}
+  .band-cap{margin:12px 20px 0 20px}
+}
+
+/* ---------- cta : inverted ---------- */
+.cta{background:var(--black);color:var(--black-ink);min-height:92svh;display:flex;flex-direction:column;justify-content:space-between;padding:120px var(--margin) 40px var(--margin);margin-top:120px}
+.cta h2{font-size:clamp(56px,9vw,140px);line-height:0.9;letter-spacing:-0.03em;font-weight:500}
+.cta h2 .ital{font-style:italic;font-weight:400}
+.cta-row{display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+.cta-row p{font-size:20px;max-width:34ch;color:var(--black-ink)}
+.cta-row p a{color:var(--black-ink)}
+.cta-row .btn{background:var(--accent);color:var(--accent-ink);margin:0;padding:16px 34px;font-size:var(--step-body);white-space:nowrap}
+.cta-row .btn:hover{background:var(--black-ink);color:var(--ink)}
+@media(max-width:760px){
+  .cta{min-height:80svh;padding:64px 20px 20px 20px;margin-top:72px}
+  .cta h2{font-size:15vw}
+  .cta-row{flex-direction:column;align-items:stretch}
+  .cta-row p{font-size:17px}
+  .cta-row .btn{text-align:center;padding:16px}
+}
+
+/* ---------- footer ---------- */
+footer{position:sticky;bottom:0;z-index:0;background:var(--black);color:var(--black-ink);min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:160px var(--margin) 24px var(--margin)}
+.f-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.f-cols h3{font-size:16px;font-weight:500;margin-bottom:12px}
+.f-cols ul{list-style:none}
+.f-cols li,.f-cols a{font-size:15px;line-height:1.8;color:#8f8a7d;text-decoration:none;overflow-wrap:anywhere}
+.f-cols a:hover{color:var(--black-ink)}
+.wordmark svg{display:block;width:100%;height:auto}
+.wordmark text{font-family:'Boska',Georgia,serif;font-weight:500;letter-spacing:-0.02em;fill:var(--black-ink)}
+.legal{font-size:13px;color:#8f8a7d;text-align:center;line-height:1.7;margin:12px auto 0 auto;max-width:75ch}
+@media(max-width:760px){
+  footer{padding:64px 20px 20px 20px}
+  .f-cols{grid-template-columns:1fr 1fr;gap:32px 20px}
+}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity 0.8s ease,transform 0.8s ease}
+[data-reveal].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .hero h1 .mask>span,.hero.loaded h1 .mask>span{transform:none;transition:none}
+  .hero-left p,.hero-left .btn,.hero.loaded .hero-left p,.hero.loaded .hero-left .btn{opacity:1;transform:none;transition:none}
+  .hero-photo img{animation:none}
+  [data-reveal]{opacity:1;transform:none;transition:none}
+  .panel{transition:none}
+}
+</style>
+</head>
+<body>
+<main>
+  <!-- hero -->
+  <section class="hero" id="heroEl">
+    <div class="hero-toprow"><a class="hero-word" href="#top">Metro Concrete</a><a class="hero-call" href="tel:+12397712267">239-771-2267</a></div>
+    <nav class="hero-nav">
+      <a href="#record">The record</a>
+      <a href="#work">The work</a>
+      <a href="#views">The views</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero-left">
+      <p>Driveways, slabs, foundations and flatwork, poured across Lee County, Florida.</p>
+      <a class="btn" href="tel:+12397712267">Ask for a quote</a>
+    </div>
+    <h1><span class="mask m1"><span>Concrete</span></span><span class="mask m2"><span>flatwork</span></span></h1>
+    <div class="hero-photo"><img src="assets/gunnery-aerial.jpg" alt="Aerial view of Gunnery Road in Lehigh Acres, Florida" width="1920" height="1280"></div>
+    <div class="hero-fig">
+      <p class="num">104</p>
+      <p class="cap">BuildZoom score - top 9% of Florida contractors</p>
+    </div>
+  </section>
+
+  <!-- intro -->
+  <section class="intro wrap" id="record">
+    <p class="lead" data-reveal>Metro Concrete Construction Inc is a Lehigh Acres concrete contractor pouring driveways, slabs, foundations and flatwork across Lee County - its Florida license verified active on BuildZoom.</p>
+    <div class="cols">
+      <p data-reveal><b>The company.</b> Metro Concrete Construction Inc works out of Lehigh Acres, Florida. BuildZoom verifies its Florida license as active and scores the company 104, in the top 9% of the contractors it tracks.</p>
+      <p data-reveal><b>The work.</b> Mostly flatwork, mostly driveways: the slabs a house stands on and the concrete it stands in. Poured, levelled and finished across the county.</p>
+      <p data-reveal><b>The patch.</b> Based in Lehigh Acres and working across Lee County - Fort Myers, Cape Coral, Estero and the towns between them.</p>
+      <p data-reveal><b>The phone.</b> Call <a href="tel:+12397712267">239-771-2267</a> or write to <a href="mailto:mcciconstruction@aol.com">mcciconstruction@aol.com</a>. Describe the slab - where, how big, and when.</p>
+    </div>
+  </section>
+
+  <!-- mosaic -->
+  <section class="wrap" id="work">
+    <div class="mosaic">
+      <div class="tile t-head" data-reveal><h2>What gets poured</h2></div>
+      <div class="tile t-photo1"><img src="assets/rebar-lattice.jpg" alt="Rebar lattice tied and raised before a concrete driveway pour" width="1920" height="1275" loading="lazy"></div>
+      <div class="tile t-fig" data-reveal><p class="num">104</p><p class="cap">BuildZoom score - top 9% in Florida</p></div>
+      <div class="tile t-list" data-reveal><ul><li>Driveways</li><li>Slabs</li><li>Foundations</li><li>Flatwork</li></ul></div>
+      <div class="tile t-s1" data-reveal><p class="sent">Every pour starts with the ground under it.</p></div>
+      <div class="tile t-s2" data-reveal><p class="sent">A driveway is the first thing a house says.</p></div>
+      <div class="tile t-photo2"><img src="assets/concrete-raking.jpg" alt="Fresh concrete being raked level on a driveway" width="1479" height="1246" loading="lazy"></div>
+      <div class="tile t-s3" data-reveal><p class="sent">Level, edged, finished - then it cures.</p></div>
+    </div>
+  </section>
+
+  <!-- showcase band -->
+  <section class="showcase" id="views">
+    <h2 data-reveal>One trade, four views</h2>
+    <div class="band" data-reveal>
+      <div class="panel"><img src="assets/new-driveway.jpg" alt="A freshly poured and finished concrete driveway" width="1920" height="1440" loading="lazy"><p class="ptitle">From the ground up</p></div>
+      <div class="panel"><img src="assets/reinforcement.jpg" alt="Steel reinforcement grid before the concrete is poured" width="1920" height="1440" loading="lazy"></div>
+      <div class="panel"><img src="assets/concrete-raking.jpg" alt="Concrete raked level during a driveway pour" width="1479" height="1246" loading="lazy"></div>
+      <div class="panel"><img src="assets/gunnery-aerial.jpg" alt="Lehigh Acres streets from the air" width="1920" height="1280" loading="lazy"></div>
+    </div>
+    <p class="band-cap">The work, the groundwork and the town - Lehigh Acres from above. Photographs via Wikimedia Commons, credited below.</p>
+  </section>
+
+  <!-- cta -->
+  <section class="cta" id="contact">
+    <h2 data-reveal><span style="display:block">Say where</span><span style="display:block">to pour.</span></h2>
+    <div class="cta-row">
+      <p data-reveal>Call <a href="tel:+12397712267">239-771-2267</a> or write to <a href="mailto:mcciconstruction@aol.com">mcciconstruction@aol.com</a> - describe the slab and ask for a quote.</p>
+      <a class="btn" href="tel:+12397712267">Call 239-771-2267</a>
+    </div>
+  </section>
+</main>
+
+<!-- footer -->
+<footer>
+  <div class="f-cols">
+    <div><h3>Contact</h3><ul><li><a href="tel:+12397712267">239-771-2267</a></li><li><a href="mailto:mcciconstruction@aol.com">mcciconstruction@aol.com</a></li></ul></div>
+    <div><h3>Company</h3><ul><li>Metro Concrete Construction Inc</li><li>Lehigh Acres, Florida</li></ul></div>
+    <div><h3>Pages</h3><ul><li><a href="#record">The record</a></li><li><a href="#work">The work</a></li><li><a href="#contact">Contact</a></li></ul></div>
+    <div><h3>On the record</h3><ul><li><a href="https://www.buildzoom.com/contractor/metro-concrete-construction-inc" rel="noopener">BuildZoom profile</a></li><li>License verified active</li></ul></div>
+  </div>
+  <div></div>
+  <div>
+    <div class="wordmark"><svg viewBox="0 0 1200 130" preserveAspectRatio="xMidYMid meet" aria-label="Metro Concrete"><text x="600" y="105" text-anchor="middle" font-size="118">Metro Concrete</text></svg></div>
+    <p class="legal">A free preview site made for Metro Concrete Construction Inc by Axlios Media (axliosmedia.com). Not the business&rsquo;s official website.<br>Photographs via Wikimedia Commons: &ldquo;Gunnery Road Aerial in Lehigh Acres&rdquo; by formulanone, CC BY-SA 2.0; &ldquo;Rebar lattice prior to the pouring of a concrete driveway&rdquo; by Dig deeper, CC BY-SA 4.0; &ldquo;Concrete raking&rdquo; and &ldquo;Driveway concrete reinforcement&rdquo; by Panamitsu, CC BY-SA 4.0; &ldquo;New concrete driveway&rdquo; by Humphrey Bolton, CC BY-SA 2.0.</p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('load',()=>document.getElementById('heroEl').classList.add('loaded'));
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:0.15});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
