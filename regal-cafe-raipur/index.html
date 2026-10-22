@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Regal Cafe &amp; Restro · Nahar Road, Raipur</title>
+<meta name="description" content="The Regal Cafe & Restro is a colourful cafe and restaurant on Nahar Road, Bhatagaon, Raipur. Dine in or get delivery. Call +91 97551 23434.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#151312; --coal:#1e1a17; --maroon:#7a1e1e; --maroon2:#5e1414;
+  --gold:#c9a24b; --gold2:#e0bd6d; --cream:#f4ede1; --cream2:#eaddc8;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+.eyebrow{font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:600}
+h1,h2,h3{font-family:Fraunces,serif;line-height:1.04;font-weight:900}
+
+/* topbar */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(21,19,18,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(201,162,75,.22)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:Fraunces,serif;font-weight:700;font-size:1.05rem;letter-spacing:.04em}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:var(--maroon);border:2px solid var(--gold);display:grid;place-items:center;font-size:.8rem;color:var(--gold2);font-family:Fraunces,serif;font-weight:900}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.78rem 1.35rem;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .15s ease,background .15s ease}
+.btn:active{transform:scale(.97)}
+.btn.gold{background:var(--gold);color:#241a06}
+.btn.gold:hover{background:var(--gold2)}
+.btn.ghost{border:1px solid rgba(244,237,225,.4);color:var(--cream)}
+.btn.ghost:hover{border-color:var(--gold);color:var(--gold2)}
+.btn.sm{padding:.5rem 1rem;font-size:.85rem}
+.callbtn .short{display:none}
+
+/* hero */
+.hero{position:relative;min-height:min(88svh,760px);display:flex;align-items:flex-end}
+.hero .bg{position:absolute;inset:0;background:url(img/hero.jpg) center 38%/cover no-repeat}
+.hero .scrim{position:absolute;inset:0;background:rgba(15,12,10,.52)}
+.hero .panel{position:relative;width:100%;padding:7.5rem 0 3.4rem}
+.hero h1{font-size:clamp(2.5rem,6.2vw,4.6rem);color:var(--cream);max-width:14ch;text-shadow:0 2px 22px rgba(0,0,0,.5)}
+.hero h1 .amp{color:var(--gold2)}
+.hero p.lede{margin:1.1rem 0 1.6rem;max-width:46ch;font-size:1.06rem;color:#efe6d6;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.cta-row{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero .loc{margin-top:1.4rem;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2)}
+
+/* marquee */
+.band{background:var(--maroon);border-block:1px solid rgba(201,162,75,.5);overflow:hidden}
+.band .row{display:flex;gap:2.6rem;justify-content:center;flex-wrap:wrap;padding:.95rem 1rem;font-family:Fraunces,serif;font-weight:700;letter-spacing:.16em;font-size:.8rem;text-transform:uppercase;color:var(--gold2)}
+.band .row span{display:flex;align-items:center;gap:2.6rem}
+.band .row i{font-style:normal;color:rgba(244,237,225,.55)}
+
+/* about */
+.about{padding:5.2rem 0}
+.about .wrap{display:grid;grid-template-columns:300px 1fr;gap:3.2rem;align-items:center}
+.lion{width:min(280px,70vw);aspect-ratio:1;border-radius:50%;overflow:hidden;border:3px solid var(--gold);background:#fff;justify-self:center}
+.lion img{width:100%;height:100%;object-fit:cover;transform:scale(1.28) translateY(-3%)}
+.about h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 1rem}
+.about p{color:#d9cfbd;max-width:56ch}
+.about p+p{margin-top:.9rem}
+.stats{display:flex;gap:2.2rem;margin-top:1.6rem;flex-wrap:wrap}
+.stats b{display:block;font-family:Fraunces,serif;font-size:1.25rem;color:var(--gold2);font-weight:700}
+.stats span{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#b7ab94}
+
+/* kitchen */
+.kitchen{background:var(--coal);padding:5.2rem 0;border-block:1px solid rgba(201,162,75,.18)}
+.kitchen h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 2.2rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:#241f1a;border:1px solid rgba(201,162,75,.22);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/4.6;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover .ph img{transform:scale(1.05)}
+.card .tx{padding:1.15rem 1.2rem 1.35rem}
+.card h3{font-size:1.28rem;font-weight:700;color:var(--gold2);margin-bottom:.35rem}
+.card p{font-size:.92rem;color:#cfc4b0}
+
+/* inside */
+.inside{padding:5.2rem 0}
+.inside .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.inside .ph{border-radius:18px;overflow:hidden;border:1px solid rgba(201,162,75,.3)}
+.inside .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/4.7}
+.inside h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 1rem}
+.inside p{color:#d9cfbd;max-width:52ch}
+.tick{display:flex;gap:.7rem;align-items:flex-start;margin-top:1rem;color:#e6dcc8;font-size:.96rem}
+.tick b{color:var(--gold);font-family:Fraunces,serif}
+
+/* visit */
+.visit{background:var(--maroon2);border-top:1px solid rgba(201,162,75,.4);padding:5rem 0}
+.visit h2{font-size:clamp(1.9rem,3.4vw,2.7rem);margin:.55rem 0 2rem}
+.visit .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:2.6rem}
+.vcard{background:rgba(21,19,18,.55);border:1px solid rgba(201,162,75,.35);border-radius:16px;padding:1.6rem 1.7rem}
+.vcard h3{font-size:1.05rem;font-family:Inter,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:.7rem}
+.vcard p,.vcard a{font-size:1.02rem;color:#f0e7d6}
+.vcard a:hover{color:var(--gold2)}
+.vcard+.vcard{margin-top:1.1rem}
+.big-call{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1.1rem;background:rgba(21,19,18,.55);border:1px solid rgba(201,162,75,.35);border-radius:16px;padding:2rem 1.8rem}
+.big-call .num{font-family:Fraunces,serif;font-size:clamp(1.7rem,3vw,2.3rem);font-weight:900;color:var(--cream)}
+.note{font-size:.86rem;color:#cbbfa8}
+
+/* footer */
+footer{padding:2.2rem 0 2.6rem;text-align:center;color:#a2947d;font-size:.82rem}
+footer .f-brand{font-family:Fraunces,serif;color:var(--gold2);font-size:.95rem;letter-spacing:.08em;margin-bottom:.4rem}
+
+@media (max-width:860px){
+  .topbar .wrap{height:58px}
+  .brand{font-size:.92rem}
+  .brand .dot{width:26px;height:26px}
+  .callbtn .long{display:none}
+  .callbtn .short{display:inline}
+  .hero .loc{letter-spacing:.08em;line-height:1.7;margin-top:1.1rem}
+  .hero .panel{padding-bottom:4.2rem}
+
+  .about .wrap{grid-template-columns:1fr;gap:1.8rem;text-align:center}
+  .about p{margin-inline:auto}
+  .stats{justify-content:center}
+  .cards{grid-template-columns:1fr;max-width:430px;margin:0 auto}
+  .inside .wrap{grid-template-columns:1fr;gap:1.8rem}
+  .visit .grid{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(2.2rem,11vw,3rem)}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot">R</span> The Regal Cafe &amp; Restro</a>
+    <a class="btn gold sm callbtn" href="tel:+919755123434"><span class="long">Call +91 97551 23434</span><span class="short">Call</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg" role="img" aria-label="The mural wall and seating inside The Regal Cafe & Restro"></div>
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="wrap">
+      <div class="eyebrow">Cafe · Restaurant · Bhatagaon, Raipur</div>
+      <h1>The Regal Cafe <span class="amp">&amp;</span> Restro</h1>
+      <p class="lede">A colourful corner on Nahar Road where breakfast combos, thalis, dosas and burgers all share one menu. Dine in under the murals or get it delivered.</p>
+      <div class="cta-row">
+        <a class="btn gold" href="tel:+919755123434">Call to order or book</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Regal+Cafe+and+Restro+Nahar+Road+Bhatagaon+Raipur" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="loc">In front of Urmila Hospital · Nahar Road · Bhatagaon</div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true">
+  <div class="row">
+    <span>Dine in <i>·</i></span><span>Delivery <i>·</i></span><span>Breakfast combos <i>·</i></span><span>Thalis <i>·</i></span><span>Dosas <i>·</i></span><span>Burgers</span>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <div class="lion"><img src="img/lion.jpg" alt="The Regal lion emblem"></div>
+    <div>
+      <div class="eyebrow">About Regal</div>
+      <h2>Bold walls, big plates, one regal appetite</h2>
+      <p>The Regal Cafe &amp; Restro is a cafe and restaurant on Nahar Road in Bhatagaon, right in front of Urmila Hospital, with a mural painted dining room.</p>
+      <p>The menu covers breakfast combos, thalis, dosas and burgers. Dine in, or get your order delivered.</p>
+      <div class="stats">
+        <div><b>Dine in</b><span>or takeaway</span></div>
+        <div><b>Delivery</b><span>to your door</span></div>
+        <div><b>All day</b><span>call ahead for timings</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="kitchen">
+  <div class="wrap">
+    <div class="eyebrow">From the kitchen</div>
+    <h2>On the menu</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/dosa.jpg" alt="A crisp golden dosa with chutney and sambar" loading="lazy"></div>
+        <div class="tx"><h3>Masala dosa</h3></div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/thali.jpg" alt="An Indian thali with assorted bowls and breads" loading="lazy"></div>
+        <div class="tx"><h3>Thali</h3></div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/burger.jpg" alt="A crispy chicken burger" loading="lazy"></div>
+        <div class="tx"><h3>Chicken burger</h3></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="inside">
+  <div class="wrap">
+    <div class="ph"><img src="img/mural.jpg" alt="The gorilla mural wall and booth seating inside the cafe" loading="lazy"></div>
+    <div>
+      <div class="eyebrow">Inside the space</div>
+      <h2>The mural room</h2>
+      <p>The dining room at Regal: a hand painted mural wall with a gorilla in headphones, golden foliage overhead, and booth seating along the wall.</p>
+      <div class="tick"><b>01</b> Dine in</div>
+      <div class="tick"><b>02</b> Delivery</div>
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap">
+    <div class="eyebrow">Plan a visit</div>
+    <h2>Find us on Nahar Road</h2>
+    <div class="grid">
+      <div>
+        <div class="vcard">
+          <h3>Address</h3>
+          <p>The Regal Cafe &amp; Restro<br>In front of Urmila Hospital, Nahar Road<br>Bhatagaon, Raipur, Chhattisgarh</p>
+        </div>
+        <div class="vcard">
+          <h3>Hours</h3>
+          <p>Open every day. Timings can change on festival days, so call ahead before you head out.</p>
+        </div>
+        <div class="vcard">
+          <h3>Online</h3>
+          <p><a href="https://www.instagram.com/regalcafe_raipur" target="_blank" rel="noopener">@regalcafe_raipur on Instagram</a><br>
+          <a href="mailto:regal9755123434@gmail.com">regal9755123434@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="big-call">
+        <div class="eyebrow">Call us</div>
+        <a class="num" href="tel:+919755123434">+91 97551 23434</a>
+        <p class="note">Call for dine-in, delivery, or directions to the cafe.</p>
+        <a class="btn gold" href="tel:+919755123434">Call now</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Regal+Cafe+and+Restro+Nahar+Road+Bhatagaon+Raipur" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Website concept for The Regal Cafe &amp; Restro</div>
+    <div>Interior photos and lion emblem from the cafe. Food photos from Pexels (pexels.com).</div>
+  </div>
+</footer>
+
+</body>
+</html>
