@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jessy Handyman &amp; Remodeling — Sandy, Utah</title>
+<meta name="description" content="Jessy Handyman and Remodeling - plumbing, electrical, drywall, floors, kitchens and bathrooms in Sandy and Salt Lake County, Utah, since 2009. Call (385) 335-4019 and ask for a quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f0f0f; --surface:#1a1a1a; --ink:#ffffff; --muted:#8f8f8f; --accent:#dafa9c; --accent-ink:#0f0f0f;
+  --margin:clamp(20px,2.6vw,40px);
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2.5rem,1.2rem + 5vw,5.5rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Barlow',Arial,sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.disp{font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:0.9;text-transform:uppercase}
+
+/* ---------- hero : flush-left shout, seam photograph ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;overflow:hidden}
+.hero-field{background:var(--bg);flex:82;position:relative;padding:0 var(--margin)}
+.hero-word{position:absolute;top:20px;left:var(--margin);font-size:20px;font-weight:500;text-decoration:none}
+.hero-nav{position:absolute;top:22px;right:var(--margin);display:flex;gap:clamp(16px,2.4vw,36px)}
+.hero-nav a{font-size:16px;color:var(--muted);text-decoration:none}
+.hero-nav a:hover{color:var(--ink)}
+.hero h1{position:absolute;top:16%;left:var(--margin);font-size:clamp(96px,15.5vw,240px);line-height:0.84;color:var(--ink)}
+.hero-photo{position:absolute;right:6vw;top:60px;bottom:-6vh;width:28vw;transform:rotate(5deg);border-radius:999px 999px 0 0;overflow:hidden;z-index:2}
+.hero.loaded .hero-photo{animation:shutter 1s steps(8) both}
+@keyframes shutter{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+.hero-band{background:#fff;color:var(--accent-ink);flex:18;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 var(--margin)}
+.hero-band p{font-size:20px;max-width:40ch}
+.hero-band .btn{display:inline-block;background:var(--bg);color:var(--ink);font-size:1rem;padding:16px 28px;text-decoration:none;font-weight:500;white-space:nowrap}
+.hero-band .btn:hover{background:var(--accent);color:var(--accent-ink)}
+@media(max-width:760px){
+  .hero-field{flex:78}
+  .hero-nav{display:none}
+  .hero h1{font-size:22vw;top:12%}
+  .hero-photo{width:58vw;right:-6vw;top:auto;bottom:-14%;height:46vh}
+  .hero-band{flex:22;flex-direction:column;align-items:stretch;justify-content:center;gap:14px;padding-top:18px;padding-bottom:18px}
+  .hero-band p{font-size:18px}
+  .hero-band .btn{text-align:center}
+}
+
+/* ---------- intro : the statement ---------- */
+.statement{background:#fff;color:var(--accent-ink);padding-top:18vh;padding-bottom:14vh;padding-left:var(--margin);padding-right:var(--margin)}
+.statement p{font-size:clamp(24px,2.6vw,36px);line-height:1.15;font-weight:500;max-width:48ch;text-wrap:pretty}
+.statement p b{font-weight:500;color:#5a5a5a}
+@media(max-width:760px){
+  .statement{padding-top:14vh;padding-bottom:10vh}
+  .statement p{font-size:24px}
+}
+
+/* ---------- moving band : the place ---------- */
+.movingband{background:#fff;line-height:0}
+.movingband img{width:100%;height:46svh;object-fit:cover;display:block}
+@media(max-width:760px){.movingband img{height:38svh}}
+
+/* ---------- features : poster-scale list ---------- */
+.cap{background:#fff;color:var(--accent-ink);padding-top:10vh;padding-bottom:18vh;padding-left:var(--margin);padding-right:var(--margin)}
+.row{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;align-items:end;padding:0.35em 12px;text-decoration:none;color:inherit}
+.row .name{grid-column:1/9;font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;letter-spacing:-0.02em;line-height:1.0;font-size:clamp(48px,6.8vw,110px);text-transform:uppercase;white-space:nowrap}
+.row .desc{grid-column:9/13;font-size:17px;color:#333;max-width:30ch}
+.row.head .name{color:#6a6a6a}
+.row:hover{background:var(--accent-ink)}
+.row:hover .name{color:var(--accent)}
+.row:hover .desc{color:#fff}
+@media(max-width:760px){
+  .cap{padding-top:6vh;padding-bottom:12vh}
+  .row{display:block;padding:52px 8px;border-top:2px solid #0f0f0f}
+  .row.head{border-top:none}
+  .row .name{display:block;font-size:11vw;white-space:normal}
+  .row .desc{margin:12px 0 0 20px;font-size:17px}
+}
+
+/* ---------- showcase : two objects, two fields ---------- */
+.duo{display:grid;grid-template-columns:1fr 1fr}
+.panel{position:relative;height:92svh;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end}
+.panel.p1{background:#fff;color:var(--accent-ink)}
+.panel.p2{background:var(--accent);color:var(--accent-ink)}
+.panel .obj{position:absolute;top:-6%;left:50%;transform:translateX(-50%);width:140%;height:88%}
+.panel .obj img{mix-blend-mode:multiply}
+.panel h2{position:absolute;top:32px;left:28px;font-size:36px;z-index:2;max-width:9ch}
+.panel .foot{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:28px}
+.panel .who .n{font-size:20px;font-weight:500}
+.panel .who .f{font-size:17px;color:#333;margin-top:4px;max-width:34ch}
+.panel.p2 .who .f{color:#2c2c2c}
+.panel .acts{display:flex;gap:10px}
+.panel .acts a{font-size:16px;padding:12px 18px;text-decoration:none;white-space:nowrap}
+.panel .acts .a1{background:var(--accent-ink);color:#fff}
+.panel .acts .a1:hover{background:#000}
+.panel .acts .a2{background:#fff;color:var(--accent-ink)}
+.panel .acts .a2:hover{background:var(--accent-ink);color:#fff}
+@media(max-width:760px){
+  .duo{grid-template-columns:1fr}
+  .panel{height:78svh}
+  .panel .obj{height:58%;width:115%}
+  .panel h2{font-size:28px}
+  .panel .foot{flex-direction:column;align-items:stretch}
+  .panel .acts{display:flex}
+  .panel .acts a{flex:1;text-align:center}
+}
+
+/* ---------- cta : one word is the button ---------- */
+.callband{display:block;background:var(--accent);color:var(--accent-ink);text-decoration:none;min-height:60svh;position:relative;overflow:hidden}
+.callband .word{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);font-family:'Barlow Condensed',Arial,sans-serif;font-weight:700;letter-spacing:-0.02em;font-size:clamp(110px,24vw,340px);line-height:0.8;text-transform:uppercase;white-space:nowrap}
+.callband .note{position:absolute;top:24px;left:var(--margin);font-size:20px;max-width:30ch}
+.callband .arr{position:absolute;top:24px;right:var(--margin);width:48px;height:48px}
+.callband:hover{background:var(--accent-ink);color:var(--accent)}
+.callband:hover .arr path{stroke:var(--accent)}
+@media(max-width:760px){
+  .callband{min-height:46svh}
+  .callband .note{font-size:18px;max-width:22ch}
+  .callband .arr{width:32px;height:32px}
+  .callband .word{font-size:26vw}
+}
+
+/* ---------- footer : the back of the card ---------- */
+footer{background:var(--bg);padding:96px var(--margin) 0 var(--margin)}
+.backcard{background:#fff;color:var(--accent-ink);max-width:1080px;margin:0 auto;padding:72px 64px 0 64px;
+  -webkit-mask-image:/* taste-skill-ignore scalloped top edge per dealt direction */radial-gradient(circle 50px at 50px 0,transparent 48px,#000 50px);
+  -webkit-mask-size:100px 100%;-webkit-mask-repeat:repeat-x;-webkit-mask-position:top;
+  mask-image:/* taste-skill-ignore */radial-gradient(circle 50px at 50px 0,transparent 48px,#000 50px);
+  mask-size:100px 100%;mask-repeat:repeat-x;mask-position:top;
+  display:grid;grid-template-columns:1fr 1fr;gap:48px;position:relative}
+.signoff h2{font-size:36px;font-weight:500;margin-bottom:20px}
+.signoff p{font-size:16px;line-height:1.7;max-width:32ch;color:#333}
+.addr{align-self:start}
+.addr a,.addr span{display:block;font-size:18px;line-height:1.4;margin-bottom:12px;color:var(--accent-ink);text-decoration:none;overflow-wrap:anywhere}
+.addr a:hover{color:#000;text-decoration:underline}
+.stamp{position:absolute;top:24px;right:24px;width:88px;aspect-ratio:3/4;padding:6px;background:#fff;transform:rotate(3deg)}
+.stamp img{width:100%;height:100%;object-fit:cover}
+.imprint .cred{font-size:13px;color:#777}
+.imprint{grid-column:1/-1;text-align:center;font-size:14px;color:#555;padding:48px 0 20px 0;line-height:1.7;max-width:70ch;margin:0 auto}
+@media(max-width:760px){
+  footer{padding:64px 12px 0 12px}
+  .backcard{grid-template-columns:1fr;padding:56px 24px 0 24px}
+  .stamp{position:relative;top:auto;right:auto;justify-self:end;margin-bottom:8px}
+  .imprint{padding-top:36px}
+}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity 0.8s ease,transform 0.8s ease}
+[data-reveal].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .hero.loaded .hero-photo{animation:none}
+  [data-reveal]{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- hero -->
+<section class="hero" id="heroEl">
+  <div class="hero-field">
+    <a class="hero-word" href="#top">Jessy Handyman</a>
+    <nav class="hero-nav">
+      <a href="#services">Services</a>
+      <a href="#work">The work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1 class="disp">The house,<br>fixed.</h1>
+    <div class="hero-photo"><img src="assets/slc-wasatch.jpg" alt="Salt Lake City under the Wasatch Mountains" width="1920" height="1440"></div>
+  </div>
+  <div class="hero-band" id="top">
+    <p>Handyman and remodeling work in Sandy and Salt Lake County, Utah.</p>
+    <a class="btn" href="tel:+13853354019">Ask for a quote</a>
+  </div>
+</section>
+
+<!-- statement -->
+<section class="statement">
+  <p data-reveal>Serving Sandy and Salt Lake County homes, listed since 2009: <b>plumbing, electrical, drywall, floors, kitchens, bathrooms and basements</b> - from a cracked wall to a full remodel.</p>
+</section>
+
+<!-- moving band : the place -->
+<section class="movingband" aria-label="The Wasatch country around Sandy">
+  <img src="assets/wasatch-air.jpg" alt="The Wasatch Range above the Salt Lake valley" width="1920" height="2560" loading="lazy" style="height:46svh;object-position:center 30%">
+</section>
+
+<!-- capabilities -->
+<section class="cap" id="services">
+  <div class="row head"><span class="name">What gets fixed</span><span class="desc">Seven lines of work, one phone call.</span></div>
+  <div class="row" data-reveal><span class="name">Plumbing</span><span class="desc">Toilets, faucets, disposals and the pipes between them.</span></div>
+  <div class="row" data-reveal><span class="name">Electrical</span><span class="desc">Small electrical work, fixtures and swaps.</span></div>
+  <div class="row" data-reveal><span class="name">Drywall</span><span class="desc">From cracks and patches to full basement finishing.</span></div>
+  <div class="row" data-reveal><span class="name">Flooring</span><span class="desc">Wood floor installation, room by room.</span></div>
+  <div class="row" data-reveal><span class="name">Kitchens</span><span class="desc">Kitchen remodeling, cabinets to tile.</span></div>
+  <div class="row" data-reveal><span class="name">Bathrooms</span><span class="desc">Bathroom remodels, start to finish.</span></div>
+  <div class="row" data-reveal><span class="name">Basements</span><span class="desc">Office, gym or lounge space downstairs.</span></div>
+</section>
+
+<!-- two objects, two fields -->
+<section class="duo" id="work">
+  <div class="panel p1">
+    <h2 class="disp">Two kinds of work</h2>
+    <div class="obj"><img src="assets/wasatch-air.jpg" alt="The Wasatch Range above Salt Lake City" width="1920" height="2560" loading="lazy"></div>
+    <div class="foot" data-reveal>
+      <div class="who"><p class="n">Remodeling</p><p class="f">Kitchens, bathrooms and basements, rebuilt the way you want them.</p></div>
+      <div class="acts"><a class="a1" href="tel:+13853354019">Call</a><a class="a2" href="mailto:handymanmiguel72@gmail.com">Write</a></div>
+    </div>
+  </div>
+  <div class="panel p2">
+    <div class="obj"><img src="assets/slc-1868-arch.jpg" alt="Salt Lake City and the Wasatch Mountains, a stereoscopic view from 1868" width="768" height="820" loading="lazy"></div>
+    <div class="foot" data-reveal>
+      <div class="who"><p class="n">Repairs</p><p class="f">Plumbing, electrical and drywall - the same valley, the same houses.</p></div>
+      <div class="acts"><a class="a1" href="tel:+13853354019">Call</a><a class="a2" href="mailto:handymanmiguel72@gmail.com">Write</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- cta -->
+<a class="callband" href="tel:+13853354019" id="contact">
+  <span class="note">One tap, and you are talking to Jessy&rsquo;s. Ask for a quote.</span>
+  <svg class="arr" viewBox="0 0 48 48" fill="none"><path d="M10 38 L38 10 M14 10 h24 v24" stroke="#0f0f0f" stroke-width="4"/></svg>
+  <span class="word" data-reveal>Call</span>
+</a>
+
+<!-- footer -->
+<footer>
+  <div class="backcard">
+    <div class="stamp"><img src="assets/slc-wasatch.jpg" alt="The Wasatch Mountains over Salt Lake City" width="1920" height="1440" loading="lazy"></div>
+    <div class="signoff">
+      <h2>See you at the house,</h2>
+      <p>Jessy Handyman and Remodeling. Rooted in Sandy, working across the south valley.</p>
+    </div>
+    <div class="addr">
+      <a href="tel:+13853354019">(385) 335-4019</a>
+      <a href="mailto:handymanmiguel72@gmail.com">handymanmiguel72@gmail.com</a>
+      <a href="https://maps.google.com/?q=1509+E+8600+S,+Sandy,+UT+84093" rel="noopener">1509 E 8600 S, Sandy, UT 84093</a>
+      <span>Monday to Saturday, 8 am to 6 pm</span>
+    </div>
+    <p class="imprint">A free preview site made for Jessy Handyman and Remodeling by Axlios Media (axliosmedia.com) - not the business&rsquo;s official website.<br><span class="cred">Media: Wikimedia Commons - GoingsOn-YT (CC0), A. Doine (CC0), 1868 view (public domain).</span></p>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('load',()=>document.getElementById('heroEl').classList.add('loaded'));
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:0.15});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
