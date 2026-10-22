@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drywall Plus Construction Inc - Drywall and Interior Plaster, Lee County FL</title>
+<meta name="description" content="Drywall installation, repair, taping, finishing and interior plaster across Lee County, Florida. Florida Certified Building Contractor CBC1258315. Call or email for a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#dfdedb; --surface:#d3d2ce; --ink:#26251e; --muted:#55534a; --accent:#2456d6; --accent-ink:#ffffff;
+  --step-small: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+  --margin: clamp(20px, 2.2vw, 32px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Archivo',sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.display{font-stretch:62%;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;line-height:0.86}
+.button{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:var(--step-body);padding:14px 22px;border:0;cursor:pointer;transition:background .25s ease, transform .15s ease}
+.button:hover{background:#1c46b4}
+.button:active{transform:scale(.97)}
+.button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+
+/* ---------- nav ---------- */
+.nav{display:flex;align-items:center;gap:28px;padding-top:22px}
+.wordmark{font-stretch:62%;font-weight:800;text-transform:uppercase;font-size:1.15rem;text-decoration:none;letter-spacing:-0.01em}
+.nav-links{display:flex;gap:22px;margin-left:auto}
+.nav-links a{text-decoration:none;font-size:var(--step-small);font-weight:500;color:var(--muted);transition:color .2s ease}
+.nav-links a:hover{color:var(--ink)}
+.nav .button{padding:10px 16px;font-size:var(--step-small)}
+
+/* ---------- hero: the sentence is the layout ---------- */
+.hero{display:flex;flex-direction:column;padding-bottom:8vh}
+.hero-sentence{margin-top:11vh}
+.hero-sentence h1{font-size:clamp(52px, 11.2vw, 190px);white-space:nowrap}
+.hero-sentence .strip{display:inline-block;height:0.78em;width:2.2em;overflow:hidden;vertical-align:baseline;transform:translateY(0.1em)}
+.hero-sentence .strip img{width:100%;height:100%;object-fit:cover;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.12) translateX(-4%)}to{transform:scale(1.12) translateX(4%)}}
+.hero-foot{margin-top:44px;display:flex;align-items:flex-end;gap:32px}
+.hero-foot p{font-size:var(--step-lead);max-width:34ch;line-height:1.4}
+.hero-foot .call{margin-left:auto}
+
+/* ---------- intro: headline crossing onto a photograph ---------- */
+.intro{position:relative;margin-top:150px;min-height:100svh;background:var(--surface)}
+.intro-photo-large{position:absolute;right:0;top:12%;width:min(720px,50vw);height:88vh;overflow:hidden}
+.intro-photo-large img{width:100%;height:100%;object-fit:cover}
+.intro-photo-small{position:absolute;left:var(--margin);bottom:0;width:min(360px,26vw);aspect-ratio:9/10;overflow:hidden}
+.intro-photo-small img{width:100%;height:100%;object-fit:cover}
+.intro-inner{position:relative;padding-top:9vh;padding-bottom:58vh}
+.intro h2{font-size:clamp(48px, 5.6vw, 88px);line-height:1.04}
+.intro h2 .line{display:block}
+.intro h2 .line2{position:relative}
+.intro h2 .line2 span{display:block}
+.intro p{margin-top:34px;font-size:1.375rem;line-height:1.4;max-width:25ch}
+
+/* ---------- list: statement, table pushed right ---------- */
+.services{margin-top:170px}
+.services h2{font-size:clamp(40px, 4.5vw, 68px);line-height:0.98}
+.services h2 .line{display:block}.services h2 .indented{display:block;padding-left:3vw}
+.services-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-top:96px;align-items:end}
+.services-photo{grid-column:1/5;aspect-ratio:4/5;overflow:hidden}
+.services-photo img{width:100%;height:100%;object-fit:cover}
+.services-right{grid-column:7/13;position:relative}
+.services-word{position:absolute;left:-8.333%;top:2px;transform:translateX(-100%);font-size:var(--step-small);color:var(--muted)}
+.service-row{display:grid;grid-template-columns:1fr 1.6fr 1fr;gap:16px;width:100%;background:none;border:0;text-align:left;font:inherit;color:inherit;padding:13px 0;cursor:pointer;align-items:baseline;text-decoration:none}
+.service-row + .service-row{margin-top:26px}
+.service-row .kind{color:var(--muted)}
+.service-row .name{font-weight:500}
+.service-row .note{text-align:right;color:var(--muted);font-size:1rem}
+.service-row .name::after{content:"→";margin-left:10px;opacity:0;transition:opacity .2s ease, transform .2s ease;display:inline-block;transform:translateX(-4px)}
+.service-row:hover .name::after,.service-row:focus-visible .name::after,.service-row.picked .name::after{opacity:1;transform:translateX(0)}
+.service-row.picked .name{color:var(--accent)}
+.service-row:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.quote-cta{margin-top:44px}
+
+/* ---------- proof: recognition as a table ---------- */
+.proof{margin-top:170px}
+.proof h2{font-size:clamp(40px, 4.5vw, 68px);line-height:0.98}
+.proof h2 .indented{display:block;padding-left:16.666%}
+.proof-rows{margin-top:80px}
+.proof-row{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;padding:20px 0;align-items:baseline}
+.proof-row + .proof-row{margin-top:18px}
+.proof-row .what{grid-column:1/4;font-weight:500}
+.proof-row .detail{grid-column:4/9;color:var(--ink)}
+.proof-row .source{grid-column:9/13;text-align:right;color:var(--muted);font-size:1rem}
+.proof-row .source a{color:var(--muted)}
+
+/* ---------- contact: sentence, portrait, two links ---------- */
+.contact{margin-top:170px;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}.contact > h2{grid-column:1/13}
+.contact > h2{font-size:clamp(40px, 4.5vw, 68px);line-height:0.98;margin-bottom:80px}.contact-sentence{grid-column:1/6;font-size:clamp(21px, 3vw, 34px);line-height:1.15;font-weight:500;max-width:22ch;margin-top:0}
+.contact-photo{grid-column:8/10;width:164px;aspect-ratio:1;overflow:hidden}
+.contact-photo img{width:100%;height:100%;object-fit:cover}
+.contact-links{grid-column:10/13}
+.contact-links .q{font-weight:500;font-size:1.125rem}
+.contact-links ul{list-style:none;margin-top:20px}
+.contact-links li + li{margin-top:10px}
+.contact-links ul a{font-size:1.125rem;text-decoration:underline;text-underline-offset:4px;transition:color .2s ease;overflow-wrap:anywhere}
+.contact-links ul a:hover{color:var(--accent)}
+.contact-links .meta{margin-top:22px;font-size:var(--step-small);color:var(--muted)}
+
+/* ---------- footer: contact as the headline ---------- */
+.footer{margin-top:170px;background:var(--accent);color:var(--accent-ink);min-height:68svh;display:flex;flex-direction:column}
+.footer-top{display:flex;gap:40px;padding-top:40px;font-size:0.9375rem}
+.footer-top .notes{display:flex;gap:34px;flex-wrap:wrap}
+.footer-top a{color:var(--accent-ink)}
+.footer-top .top-link{margin-left:auto;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
+.footer-call{margin-top:auto}
+.footer-call a{display:block;font-stretch:62%;font-weight:800;text-transform:uppercase;letter-spacing:-0.01em;line-height:0.9;font-size:clamp(56px, 8.6vw, 150px);color:var(--accent-ink);text-decoration:none;white-space:nowrap}
+.footer-call a:hover{text-decoration:underline;text-underline-offset:8px}
+.footer-meta{display:flex;gap:24px;padding:26px 0 30px;font-size:var(--step-small);flex-wrap:wrap}
+.footer-meta .credits{margin:0 auto;text-align:center;opacity:.85}
+.footer-meta .right{margin-left:auto;opacity:.85}
+.footer-meta a{color:var(--accent-ink)}
+
+/* ---------- reveals ---------- */
+.js [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity .5s ease,transform .5s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+.js .shutter{clip-path:inset(0 100% 0 0)}
+.js .shutter.in{clip-path:inset(0 0 0 0);transition:clip-path .8s cubic-bezier(.6,.05,.2,1)}
+.js .shutter img{transform:scale(1.12)}
+.js .shutter.in img{transform:scale(1);transition:transform .8s cubic-bezier(.6,.05,.2,1)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .js .shutter{clip-path:none}
+  .js .shutter img{transform:none}
+}
+
+/* ---------- phone ---------- */
+@media (min-width: 721px) and (max-width: 1000px){
+  .contact-sentence{grid-column:1/7}
+  .contact-photo{grid-column:7/9;width:130px}
+  .contact-links{grid-column:9/13}
+  .contact-links ul a{font-size:0.9375rem}
+  .hero-sentence h1{font-size:clamp(52px, 10.4vw, 190px)}
+}
+@media (max-width: 720px){
+  .nav{gap:16px}
+  .nav-links{display:none}
+  .hero-sentence{margin-top:12vh}
+  .hero-sentence h1{font-size:17.5vw;white-space:normal}
+  .hero-sentence .strip{display:block;width:62vw;height:0.86em;margin:0.14em 0;transform:none}
+  .hero-foot{flex-direction:column;align-items:stretch;gap:22px;padding-bottom:24px}
+  .hero-foot .call{margin-left:0}
+  .hero-foot .button{display:block;text-align:center}
+  .intro{margin-top:110px}
+  .intro-inner{padding-top:10vh;padding-bottom:0}
+  .intro h2{font-size:11vw}
+  .intro p{font-size:1.0625rem;max-width:30ch}
+  .intro-photo-large{position:relative;top:auto;width:75%;height:52vh;margin-left:25%;margin-top:34px}
+  .intro-photo-small{position:relative;left:auto;bottom:auto;width:52%;margin-left:var(--margin);margin-top:26px;margin-bottom:0}
+  .intro{padding-bottom:34px}
+  .services{margin-top:110px}
+  .services h2{font-size:10vw}
+  .services h2 .indented{padding-left:0}
+  .services-grid{display:block;margin-top:60px}
+  .services-word{display:none}
+  .service-row{grid-template-columns:1fr auto;padding:14px 0}
+  .service-row .kind{display:none}
+  .service-row .note{text-align:right}
+  .services-photo{width:64%;margin-left:36%;margin-top:44px}
+  .quote-cta .button{display:block;text-align:center}
+  .proof{margin-top:110px}
+  .proof h2{font-size:10vw}
+  .proof h2 .indented{padding-left:0}
+  .proof-row{grid-template-columns:1fr;gap:4px 0;padding:16px 0}
+  .proof-row .what,.proof-row .detail,.proof-row .source{grid-column:1/-1}
+  .proof-row .source{text-align:left}
+  .contact{margin-top:110px;display:block}
+  .contact > h2{font-size:10vw;margin-bottom:50px}
+  .contact-sentence{font-size:6vw;max-width:none}
+  .contact-photo{width:96px;margin-top:30px;float:left;margin-right:20px}
+  .contact-links{margin-top:30px}
+  .contact-links .meta{clear:both;padding-top:22px}
+  .contact-links ul a{font-size:0.9375rem}
+  .footer{margin-top:110px;min-height:0;padding-bottom:10px}
+  .footer-call{margin-top:80px}
+  .footer-call a{font-size:13.5vw}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="hero wrap">
+  <nav class="nav" aria-label="Main">
+    <a class="wordmark" href="#top">Drywall Plus</a>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#proof">Proof</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="button" href="tel:+12397700929">239-770-0929</a>
+  </nav>
+  <div class="hero-sentence" id="top">
+    <h1 class="display">Drywall <span class="strip"><img src="assets/drywall-install.jpg" alt="A worker installing a sheet of drywall inside a home"></span> Plus.</h1>
+  </div>
+  <div class="hero-foot">
+    <p data-reveal>Drywall and interior plaster for homes across Lee County, Florida. Florida Certified Building Contractor, license CBC1258315.</p>
+    <a class="button call" data-reveal href="mailto:drywallplusconst@gmail.com?subject=Free%20quote%20request">Get a free quote</a>
+  </div>
+</header>
+
+<main>
+<section class="intro" aria-labelledby="intro-h">
+  <div class="intro-inner wrap">
+    <h2 class="display" id="intro-h"><span class="line">Hung straight,</span><span class="line2">finished smooth.</span></h2>
+    <p data-reveal>Drywall Plus Construction hangs, tapes and finishes drywall and interior plaster across Lee County, from one repaired wall to a whole house.</p>
+  </div>
+  <div class="intro-photo-large shutter" data-shutter><img src="assets/interior-work.jpg" alt="A worker finishing drywall inside a home under renovation"></div>
+  <div class="intro-photo-small" data-reveal><img src="assets/workers.jpg" alt="Construction workers at work inside a house, in black and white" loading="lazy"></div>
+</section>
+
+<section class="services wrap" id="services" aria-labelledby="services-h">
+  <h2 class="display" id="services-h" data-reveal><span class="line">From studs</span> <span class="indented">to a smooth finish.</span></h2>
+  <div class="services-grid">
+    <div class="services-photo" data-reveal><img src="assets/facade.jpg" alt="A white apartment facade with a regular grid of balconies" loading="lazy"></div>
+    <div class="services-right">
+            <button class="service-row" data-reveal type="button" data-service="Drywall installation"><span class="kind">Hang</span><span class="name">Drywall installation</span><span class="note">Walls and ceilings</span></button>
+      <button class="service-row" data-reveal type="button" data-service="Drywall repair"><span class="kind">Fix</span><span class="name">Drywall repair</span><span class="note">Holes, cracks, water damage</span></button>
+      <button class="service-row" data-reveal type="button" data-service="Taping and finishing"><span class="kind">Tape</span><span class="name">Taping and finishing</span><span class="note">Smooth and paint-ready</span></button>
+      <button class="service-row" data-reveal type="button" data-service="Interior plaster"><span class="kind">Skim</span><span class="name">Interior plaster</span><span class="note">As listed on BuildZoom</span></button>
+      <div class="quote-cta" data-reveal><a class="button" id="quote-button" href="mailto:drywallplusconst@gmail.com?subject=Free%20quote%20request">Email for a free quote</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="proof wrap" id="proof" aria-labelledby="proof-h">
+  <h2 class="display" id="proof-h" data-reveal>Proof, <span class="indented">on record.</span></h2>
+  <div class="proof-rows">
+    <div class="proof-row" data-reveal>
+      <span class="what">State license</span>
+      <span class="detail">Florida Certified Building Contractor, CBC1258315</span>
+      <span class="source"><a href="https://www.myfloridalicense.com/portalsearches/VerifyLicensee/LicenseDetail?ID=78817C867FF091DCE1889663E0CCC4B9" rel="noopener">myfloridalicense.com</a></span>
+    </div>
+    <div class="proof-row" data-reveal>
+      <span class="what">BuildZoom</span>
+      <span class="detail">Score 108, top 5% of Florida licensed contractors</span>
+      <span class="source"><a href="https://www.buildzoom.com/contractor/drywall-plus-construction-incorporated" rel="noopener">buildzoom.com</a></span>
+    </div>
+  </div>
+</section>
+
+<section class="contact wrap" id="contact" aria-labelledby="contact-h">
+  <h2 class="display" id="contact-h" data-reveal>Say what the wall needs.</h2>
+  <p class="contact-sentence" data-reveal>Call or email for a free quote on any drywall or plaster job, big or small.</p>
+  <div class="contact-photo" data-reveal><img src="assets/wall-opening.jpg" alt="A narrow opening in a smooth white wall revealing a staircase" loading="lazy"></div>
+  <div class="contact-links" data-reveal>
+    <p class="q">Want a quote?</p>
+    <ul>
+      <li><a href="tel:+12397700929">239-770-0929</a></li>
+      <li><a href="mailto:drywallplusconst@gmail.com">drywallplusconst@gmail.com</a></li>
+    </ul>
+    <p class="meta">North Fort Myers, Florida</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer wrap">
+  <div class="footer-top">
+    <div class="notes">
+      <span>Drywall Plus Construction Inc</span>
+      <span>North Fort Myers, Lee County</span>
+      <span>Drywall and interior plaster</span>
+    </div>
+    <a class="top-link" href="#top">Back to top</a>
+  </div>
+  <div class="footer-call">
+    <a href="tel:+12397700929">239 770 0929</a>
+  </div>
+  <div class="footer-meta">
+    <span>A free preview site made for Drywall Plus Construction by <a href="https://axliosmedia.com" rel="noopener">Axlios Media</a>. Not the business's official website.</span>
+    <span class="credits">Photos: Pexels; Julien Moreau, Todd Quackenbush and Roman Kraft via Unsplash</span>
+    <span class="right">Lee County, Florida, 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:0});
+    document.querySelectorAll('[data-reveal],[data-shutter]').forEach(function(el, i){
+      if(!el.hasAttribute('data-shutter')){ el.style.transitionDelay = (i % 3) * 70 + 'ms'; }
+      io.observe(el);
+    });
+  } else {
+    document.querySelectorAll('[data-reveal],[data-shutter]').forEach(function(el){ el.classList.add('in'); });
+  }
+  var quote = document.getElementById('quote-button');
+  document.querySelectorAll('.service-row').forEach(function(row){
+    row.addEventListener('click', function(){
+      document.querySelectorAll('.service-row').forEach(function(r){ r.classList.remove('picked'); });
+      row.classList.add('picked');
+      var s = row.getAttribute('data-service');
+      quote.href = 'mailto:drywallplusconst@gmail.com?subject=' + encodeURIComponent('Free quote: ' + s);
+      quote.textContent = 'Email for a free quote: ' + s.toLowerCase();
+    });
+  });
+})();
+</script>
+</body>
+</html>
