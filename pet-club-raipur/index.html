@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Club · Pet shop in Shankar Nagar, Raipur</title>
+<meta name="description" content="Pet Club is a pet shop, grooming and spa on Shankar Nagar Road, Raipur. Dog and cat food, treats and accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0d14; --surface:#131824; --ink:#e9edf3; --muted:#8891a1; --accent:#5a9bfc; --accent-ink:#0a0d14;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --m:5vw;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{font-family:'Bricolage Grotesque',sans-serif;font-weight:400;background:var(--bg);color:var(--ink);font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.muted{color:var(--muted)}
+
+/* hero: title above one portrait, crossfading */
+.hero{position:relative;padding:96px 24px 32px;display:flex;flex-direction:column;align-items:center}
+.bar{position:absolute;top:24px;left:24px;right:24px;display:flex;justify-content:space-between;font-size:0.9375rem;font-weight:600}
+.bar a{text-decoration:none}
+.hero h1{font-weight:600;letter-spacing:-0.04em;line-height:0.92;text-transform:uppercase;font-size:19.5vw;color:var(--accent);white-space:nowrap;text-align:center;margin-bottom:28px}
+.portraits{position:relative;height:min(44svh,400px);aspect-ratio:2/3;flex:none}
+.portraits img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.portraits img.on{opacity:1}
+.hero .below{display:flex;justify-content:space-between;align-items:flex-end;width:100%;margin-top:28px;gap:24px}
+.hero .line{font-weight:500;font-size:1.0625rem;max-width:26ch;line-height:1.35}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:1.0625rem;text-decoration:none;padding:16px 36px;border:2px solid var(--accent);transition:background .15s,color .15s}
+.btn:hover{background:transparent;color:var(--accent)}
+@media (prefers-reduced-motion:reduce){.portraits img{transition:none}.portraits img:not(:first-child){display:none}}
+
+/* intro */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.intro{padding:56px var(--m) 56px;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.intro .ph{grid-column:1/6;grid-row:1}
+.intro .ph img{width:100%;aspect-ratio:1;object-fit:cover}
+.intro .txt{grid-column:7/13;grid-row:1}
+.intro .statement{font-weight:500;font-size:clamp(24px,2.2vw,34px);line-height:1.25;letter-spacing:-0.01em}
+.intro .note{margin-top:32px;font-size:1.0625rem;color:var(--muted);line-height:1.5;max-width:34ch}
+
+/* features */
+.features{padding:48px var(--m) 64px}
+.features h2{font-weight:500;font-size:1.75rem;letter-spacing:-0.02em;margin-bottom:32px}
+.cols{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.col{font-size:1.0625rem;line-height:1.3;color:var(--muted)}
+.col:nth-child(1){grid-column:1/4}.col:nth-child(2){grid-column:4/7}.col:nth-child(3){grid-column:7/10}.col:nth-child(4){grid-column:10/13}
+.col h3{font-weight:500;font-size:1.0625rem;color:var(--ink);margin-bottom:1.3em}
+.col li{list-style:none;padding:2px 0}
+.col li:hover{color:var(--ink)}
+.col .sum{display:none}
+.hover-note{grid-column:1/13;margin-top:32px;font-size:1.0625rem;color:var(--ink);min-height:3em}
+
+/* showcase */
+.show{display:grid;grid-template-columns:1fr 1fr;min-height:88svh;background:var(--surface)}
+.sq{display:flex;align-items:center;padding:40px}
+.sq .box{position:relative;width:100%;aspect-ratio:1}
+.sq img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .5s ease}
+.sq img.on{opacity:1}
+.sq .ring{position:absolute;left:7%;top:7%;width:86%;height:86%;border:6px solid var(--ink);border-radius:50%;pointer-events:none}
+.sq .dot{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--ink)}
+.side{display:flex;flex-direction:column;justify-content:space-between;padding:40px 40px 0 24px}
+.tabs{display:flex;gap:32px;font-size:1.125rem}
+.tabs button{font:inherit;background:none;border:0;color:var(--ink);opacity:.4;cursor:pointer;padding:6px 0}
+.tabs button.on{opacity:1}
+.mid h2{font-weight:600;font-size:clamp(32px,2.8vw,40px);letter-spacing:-0.03em;line-height:1.05}
+.mid p{margin-top:48px;max-width:34ch;color:var(--muted)}
+.cells{display:flex;margin:0 -40px 0 0}
+.cells a{flex:1;height:72px;display:flex;align-items:center;justify-content:center;font-weight:600;text-decoration:none;font-size:1.0625rem}
+.cells a:first-child{background:var(--ink);color:var(--bg)}
+.cells a:last-child{background:#1c2434;color:var(--ink)}
+
+/* cta */
+.cta{display:block;position:relative;margin-top:96px;margin-bottom:0;background:var(--accent);color:var(--accent-ink);text-decoration:none;height:60svh;overflow:hidden;clip-path:inset(0 round 48px 48px 0 0)}
+.cta .t{position:absolute;top:20px;left:24px;font-size:1.25rem;font-weight:500;max-width:34ch;line-height:1.3}
+.cta svg{position:absolute;top:20px;right:24px;width:48px;height:48px}
+.cta .w{position:absolute;left:0;right:0;bottom:12px;text-align:center;font-weight:600;letter-spacing:-0.05em;line-height:.8;font-size:38vw;text-transform:uppercase}
+.cta:hover,.cta:focus-visible{background:var(--accent-ink);color:var(--accent)}
+
+/* footer */
+.foot{background:var(--ink);color:var(--bg);min-height:90svh;padding:96px var(--m) 40px;overflow:hidden;position:relative}
+.foot .bigname{display:block;font-weight:600;letter-spacing:-0.05em;text-transform:uppercase;line-height:.8;font-size:19.5vw;margin-top:0;white-space:nowrap}
+.foot .row{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;margin-top:72px}
+.places{grid-column:1/6;display:flex;flex-direction:column;gap:8px}
+.places a{font-size:clamp(26px,2.4vw,36px);font-weight:500;letter-spacing:-0.02em;color:#1f5fc9;line-height:1.15}
+.links{grid-column:7/13;font-size:1rem;line-height:1.5}
+.links p{margin-bottom:10px;color:#2a3140}
+.last{display:flex;justify-content:space-between;margin-top:96px;font-size:1rem;color:#2a3140}
+
+[data-reveal]{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
+[data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+
+@media (max-width:900px){
+  :root{--m:20px}
+  .hero{padding:80px 20px 28px}
+  .hero h1{margin-bottom:20px}
+  .portraits{height:min(52svh,74vw * 1.5);}
+  .hero .below{flex-direction:column;align-items:flex-start;margin-top:20px}
+  .hero .line{font-size:1rem}
+  .btn{padding:14px 32px}
+  .bar{left:20px;right:20px}
+  .intro{display:block;padding:48px 20px}
+  .intro .statement{font-size:22px}
+  .intro .ph{width:62%;margin:32px 0 0 auto}
+  .intro .ph img{aspect-ratio:4/5}
+  .intro .note{margin-top:24px;max-width:none}
+  .features{padding:48px 20px 56px}
+  .features h2{font-size:1.5rem;margin-bottom:48px}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+  .col{font-size:1.125rem;line-height:1.4;margin-bottom:40px}
+  .col .sum{display:block;margin-top:12px;color:var(--muted);font-size:1rem}
+  .hover-note{display:none}
+  .show{display:flex;flex-direction:column}
+  .sq{padding:16px}
+  .side{padding:20px 16px 0}
+  .tabs{font-size:1.0625rem;gap:20px}
+  .mid{padding:24px 0 32px}
+  .mid h2{font-size:28px}
+  .mid p{margin-top:20px}
+  .cells{flex-direction:column;margin:0 -16px}
+  .cells a{height:60px;flex:none}
+  .cta{height:46svh}
+  .cta .t{font-size:1.0625rem;max-width:min(34ch,78vw)}
+  .cta svg{width:32px;height:32px}
+  .cta .w{font-size:40vw}
+  .foot .bigname{font-size:20.5vw}
+  .foot .row{display:block;margin-top:48px}
+  .places a{font-size:26px}
+  .links{margin-top:40px}
+  .last{margin-top:56px;font-size:0.9375rem;flex-direction:column;gap:12px}
+}
+@media (max-width:600px){.cols{display:block}}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <nav class="bar" aria-label="Main"><a href="#top">Pet Club</a><a href="#footer">Menu</a></nav>
+  <h1>Pet Club</h1>
+  <div class="portraits" id="portraits">
+    <img src="assets/p1.jpg" alt="A golden retriever looking up" class="on">
+    <img src="assets/p2.jpg" alt="A golden retriever with its tongue out">
+    <img src="assets/p3.jpg" alt="Close portrait of a brown dog">
+    <img src="assets/p4.jpg" alt="A small black and white kitten">
+  </div>
+  <div class="below">
+    <p class="line">Food, treats and accessories for dogs and cats, plus grooming and spa. On Shankar Nagar Road, Raipur.</p>
+    <a class="btn" href="tel:+917000511080">Call the shop</a>
+  </div>
+</header>
+
+<section class="intro" id="shop">
+  <h2 class="sr-only">The shop</h2>
+  <div class="ph" data-reveal><img src="assets/intro.jpg" alt="A tabby kitten looking up"></div>
+  <div class="txt" data-reveal>
+    <p class="statement">Pet Club is a pet shop in Shankar Nagar, Raipur. Come in for food your dog or cat will eat, treats for good behaviour and the accessories that go with them, and book grooming or a spa visit when they need freshening up.</p>
+    <p class="note">Lodhi Chowk, Jeevan Plaza, Shankar Nagar Road, Govind Nagar, Raipur 492004.</p>
+  </div>
+</section>
+
+<section class="features" id="stock">
+  <h2 data-reveal>What we do</h2>
+  <div class="cols">
+    <div class="col" data-reveal data-note="Food and treats for dogs and cats.">
+      <h3>Shop</h3>
+      <ul><li>Dog food</li><li>Cat food</li><li>Treats</li><li>Accessories</li></ul>
+      <p class="sum">Dog and cat food, treats and accessories in one stop.</p>
+    </div>
+    <div class="col" data-reveal data-note="Listed on the shop's own page as Grooming and Spa.">
+      <h3>Care</h3>
+      <ul><li>Grooming</li><li>Spa</li></ul>
+      <p class="sum">Grooming and spa, as listed on the shop's own page.</p>
+    </div>
+    <div class="col" data-reveal data-note="Call to ask what is in or to plan a visit.">
+      <h3>Visit</h3>
+      <ul><li>Shankar Nagar</li><li>Raipur</li><li>Chhattisgarh</li></ul>
+      <p class="sum">Call ahead to ask what is in stock or when to come.</p>
+    </div>
+    <div class="col" data-reveal data-note="Phone, Instagram and email are in the footer.">
+      <h3>Contact</h3>
+      <ul><li>70005 11080</li><li>@petclubraipur</li><li>petclubraipur@gmail.com</li></ul>
+      <p class="sum">Call, message on Instagram or email the shop.</p>
+    </div>
+    <p class="hover-note" id="hn" aria-live="polite">Call the shop for what is in today.</p>
+  </div>
+</section>
+
+<section class="show" id="care" data-reveal>
+  <div class="sq"><div class="box" id="box">
+    <img src="assets/sq-dog.jpg" alt="A golden retriever in profile" class="on">
+    <img src="assets/sq-cat.jpg" alt="A grey kitten among leaves">
+    <img src="assets/sq-groom.jpg" alt="A dog being groomed on a table">
+    <span class="ring"></span><span class="dot"></span>
+  </div></div>
+  <div class="side">
+    <div class="tabs" data-reveal role="tablist"><button class="on" data-i="0">Dogs</button><button data-i="1">Cats</button><button data-i="2">Grooming</button></div>
+    <div class="mid" data-reveal><h2 id="st">For dogs</h2><p id="sd">Dog food, treats and accessories, so a daily walk is easy to plan for.</p></div>
+    <div class="cells" data-reveal><a href="tel:+917000511080">Call 70005 11080</a><a href="https://www.instagram.com/petclubraipur" rel="noopener">Instagram</a></div>
+  </div>
+</section>
+
+<a class="cta" href="tel:+917000511080" aria-label="Call Pet Club on 70005 11080">
+  <span class="w">Call</span>
+  <span class="t" data-reveal>Ask about food, grooming or a visit. We pick up the phone.</span>
+  <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M12 36 36 12M16 12h20v20"/></svg>
+</a>
+
+<footer class="foot" id="footer">
+  <span class="bigname" aria-hidden="true">Pet Club</span>
+  <div class="row" data-reveal>
+    <div class="places" data-reveal>
+      <a href="tel:+917000511080">+91 70005 11080</a>
+      <a href="https://www.instagram.com/petclubraipur" rel="noopener">@petclubraipur</a>
+      <a href="mailto:petclubraipur@gmail.com">petclubraipur@gmail.com</a>
+    </div>
+    <div class="links" data-reveal>
+      <p>Jeevan Plaza, Lodhi Chowk,<br>Shankar Nagar Road, Raipur 492004</p>
+      <p><a href="#shop">The shop</a> · <a href="#stock">What we do</a> · <a href="#care">Care</a></p>
+      <p><a href="https://www.facebook.com/profile.php?id=100087791510227" rel="noopener">Facebook</a> · <a href="https://www.google.com/maps/search/?api=1&amp;query=Pet+club+Raipur&amp;query_place_id=ChIJkV00vzLdKDoRTUV3jqxUeno" rel="noopener">Map</a></p>
+    </div>
+  </div>
+  <div class="last" data-reveal><span>© 2026 Pet Club, Raipur · Animal photographs from Pexels · Concept website made for the shop</span><a href="#top">Back to top</a></div>
+</footer>
+
+<script>
+(function(){
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pi=document.querySelectorAll('#portraits img'),k=0,tm=null;
+  function step(){pi[k].classList.remove('on');k=(k+1)%pi.length;pi[k].classList.add('on');}
+  function go(){if(!tm&&!reduce)tm=setInterval(step,5600)}
+  document.addEventListener('visibilitychange',function(){if(document.hidden){clearInterval(tm);tm=null}else go()});
+  go();
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -30% 0px'});
+  document.querySelectorAll('[data-reveal]').forEach(function(el){io.observe(el)});
+  var hn=document.getElementById('hn'),def=hn.textContent;
+  document.querySelectorAll('.col').forEach(function(c){c.addEventListener('mouseenter',function(){hn.textContent=c.getAttribute('data-note')});c.addEventListener('mouseleave',function(){hn.textContent=def})});
+  var T=[['For dogs','Dog food, treats and accessories for your dog.'],['For cats','Cat food, treats and accessories for your cat.'],['Grooming and spa','Listed on the shop\'s own page. Call to ask what your pet needs and when to book.']];
+  var tb=document.querySelectorAll('.tabs button'),bi=document.querySelectorAll('#box img');
+  tb.forEach(function(b){b.addEventListener('click',function(){
+    var i=+b.getAttribute('data-i');
+    tb.forEach(function(x,k){x.classList.toggle('on',k===i)});
+    bi.forEach(function(x,k){x.classList.toggle('on',k===i)});
+    document.getElementById('st').textContent=T[i][0];document.getElementById('sd').textContent=T[i][1];
+  })});
+})();
+</script>
+</body>
+</html>
