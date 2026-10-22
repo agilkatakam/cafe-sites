@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chakra House Cafe · Gokulam, Mysore</title>
+<meta name="description" content="Chakra House Cafe is a tea room and vegetarian cafe in Gokulam, Mysore, serving healthy yogic food since 2002. Call +91 98801 22712.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14161f; --indigo:#232a4a; --teal:#5bb8ad; --teal2:#7fd0c6;
+  --sand:#f0e9db; --sand2:#e2d7c1; --saffron:#e08a3c;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;background:var(--ink);color:var(--sand);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92vw);margin:0 auto}
+.eyebrow{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--teal);font-weight:600}
+h1,h2,h3{font-family:Marcellus,serif;line-height:1.08;font-weight:400}
+
+.topbar{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(20,22,31,.82);backdrop-filter:blur(10px);border-bottom:1px solid rgba(91,184,173,.25)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:.6rem;font-family:Marcellus,serif;font-size:1.1rem;letter-spacing:.05em}
+.brand .dot{width:30px;height:30px;border-radius:50%;background:var(--indigo);border:2px solid var(--teal);display:grid;place-items:center;font-size:.95rem;color:var(--teal2)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.78rem 1.35rem;border-radius:999px;font-weight:600;font-size:.95rem;transition:transform .15s ease,background .15s ease}
+.btn:active{transform:scale(.97)}
+.btn.teal{background:var(--teal);color:#0d2422}
+.btn.teal:hover{background:var(--teal2)}
+.btn.ghost{border:1px solid rgba(240,233,219,.4);color:var(--sand)}
+.btn.ghost:hover{border-color:var(--teal);color:var(--teal2)}
+.btn.sm{padding:.5rem 1rem;font-size:.85rem}
+.callbtn .short{display:none}
+
+.hero{position:relative;min-height:min(88svh,760px);display:flex;align-items:flex-end}
+.hero .bg{position:absolute;inset:0;background:url(img/mural.jpg) center 30%/cover no-repeat}
+.hero .scrim{position:absolute;inset:0;background:rgba(12,13,20,.5)}
+.hero .panel{position:relative;width:100%;padding:7.5rem 0 3.6rem}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.8rem);color:var(--sand);max-width:15ch;text-shadow:0 2px 22px rgba(0,0,0,.55)}
+.hero h1 .accent{color:var(--teal2)}
+.hero p.lede{margin:1.1rem 0 1.6rem;max-width:46ch;font-size:1.06rem;color:#e9e1cf;text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.cta-row{display:flex;gap:.8rem;flex-wrap:wrap}
+.hero .loc{margin-top:1.3rem;font-size:.86rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal2)}
+
+.band{background:var(--indigo);border-block:1px solid rgba(91,184,173,.45)}
+.band .row{display:flex;gap:2.4rem;justify-content:center;flex-wrap:wrap;padding:.95rem 1rem;font-family:Marcellus,serif;letter-spacing:.18em;font-size:.82rem;text-transform:uppercase;color:var(--teal2)}
+.band .row i{font-style:normal;color:rgba(240,233,219,.5)}
+
+.about{padding:5.2rem 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3.2rem;align-items:center}
+.board{border-radius:18px;overflow:hidden;border:1px solid rgba(91,184,173,.35)}
+.board img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1.05}
+.about h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:.55rem 0 1rem}
+.about p{color:#d8d0bd;max-width:54ch}
+.about p+p{margin-top:.9rem}
+.reco{display:inline-flex;align-items:center;gap:.6rem;margin-top:1.5rem;padding:.6rem 1.1rem;border:1px solid rgba(224,138,60,.5);border-radius:999px;color:var(--saffron);font-size:.9rem;font-weight:600}
+.stats{display:flex;gap:2.2rem;margin-top:1.6rem;flex-wrap:wrap}
+.stats b{display:block;font-family:Marcellus,serif;font-size:1.3rem;color:var(--teal2);font-weight:400}
+.stats span{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#b0a892}
+
+.kitchen{background:var(--indigo);padding:5.2rem 0;border-block:1px solid rgba(91,184,173,.25)}
+.kitchen h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:.55rem 0 2.2rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{background:#1a2038;border:1px solid rgba(91,184,173,.28);border-radius:16px;overflow:hidden}
+.card .ph{aspect-ratio:4/4.4;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.card:hover .ph img{transform:scale(1.05)}
+.card .tx{padding:1.05rem 1.2rem 1.3rem}
+.card h3{font-size:1.3rem;color:var(--teal2)}
+
+.inside{padding:5.2rem 0}
+.inside .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center}
+.inside .ph{border-radius:18px;overflow:hidden;border:1px solid rgba(91,184,173,.35)}
+.inside .ph img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/4.3}
+.inside h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:.55rem 0 1rem}
+.inside p{color:#d8d0bd;max-width:52ch}
+
+.visit{background:#101320;border-top:1px solid rgba(91,184,173,.35);padding:5rem 0}
+.visit h2{font-size:clamp(2rem,3.6vw,2.9rem);margin:.55rem 0 2rem}
+.visit .grid{display:grid;grid-template-columns:1.15fr 1fr;gap:2.6rem}
+.vcard{background:rgba(35,42,74,.5);border:1px solid rgba(91,184,173,.3);border-radius:16px;padding:1.6rem 1.7rem}
+.vcard h3{font-size:1.02rem;font-family:Inter,sans-serif;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:.7rem}
+.vcard p,.vcard a{font-size:1.02rem;color:#ece4d2}
+.vcard a:hover{color:var(--teal2)}
+.vcard+.vcard{margin-top:1.1rem}
+.big-call{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:1.1rem;background:rgba(35,42,74,.5);border:1px solid rgba(91,184,173,.3);border-radius:16px;padding:2rem 1.8rem}
+.big-call .num{font-family:Marcellus,serif;font-size:clamp(1.7rem,3vw,2.3rem);color:var(--sand)}
+.note{font-size:.88rem;color:#c9c0aa}
+
+footer{padding:2.2rem 0 2.6rem;text-align:center;color:#9c9480;font-size:.82rem}
+footer .f-brand{font-family:Marcellus,serif;color:var(--teal2);font-size:1rem;letter-spacing:.08em;margin-bottom:.4rem}
+
+@media (max-width:860px){
+  .topbar .wrap{height:58px}
+  .brand{font-size:.98rem}
+  .callbtn .long{display:none}
+  .callbtn .short{display:inline}
+  .hero .loc{letter-spacing:.08em;line-height:1.7;margin-top:1.1rem}
+  .hero .panel{padding-bottom:4.2rem}
+  .about .wrap{grid-template-columns:1fr;gap:1.8rem}
+  .cards{grid-template-columns:1fr;max-width:430px;margin:0 auto}
+  .inside .wrap{grid-template-columns:1fr;gap:1.8rem}
+  .visit .grid{grid-template-columns:1fr}
+  .hero h1{font-size:clamp(2.3rem,11vw,3.1rem)}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot">&#x6A4;</span> Chakra House Cafe</a>
+    <a class="btn teal sm callbtn" href="tel:+919880122712"><span class="long">Call +91 98801 22712</span><span class="short">Call</span></a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="bg" role="img" aria-label="The Shiva mural painted inside Chakra House Cafe"></div>
+  <div class="scrim"></div>
+  <div class="panel">
+    <div class="wrap">
+      <div class="eyebrow">Tea room · Vegetarian cafe · Gokulam</div>
+      <h1>Chakra House <span class="accent">Cafe</span></h1>
+      <p class="lede">A tea room and vegetarian cafe in Gokulam, Mysore, serving healthy yogic food since 2002.</p>
+      <div class="cta-row">
+        <a class="btn teal" href="tel:+919880122712">Call the cafe</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Chakra+House+Cafe+Gokulam+Mysore" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="loc">#829, 1st A Main Road · 3rd Stage, Gokulam · Mysore</div>
+    </div>
+  </div>
+</section>
+
+<div class="band" aria-hidden="true">
+  <div class="row">
+    <span>Since 2002 <i>·</i></span><span>Tea room <i>·</i></span><span>Vegetarian <i>·</i></span><span>Healthy yogic food <i>·</i></span><span>Gokulam, Mysore</span>
+  </div>
+</div>
+
+<section class="about">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">About Chakra House</div>
+      <h2>Yogic food in the heart of Gokulam</h2>
+      <p>Chakra House Cafe sits on 1st A Main Road in Gokulam, Mysore. It has served healthy yogic food since 2002, with a hand painted Shiva mural on the wall and a chalkboard of the seven chakras by the door.</p>
+      <p>The kitchen is vegetarian, with Indian plates, teas and light cafe fare on the menu.</p>
+      <div class="reco">96% recommend on Facebook · 23 reviews</div>
+      <div class="stats">
+        <div><b>2002</b><span>serving since</span></div>
+        <div><b>Tea room</b><span>and cafe</span></div>
+        <div><b>$$</b><span>price range</span></div>
+      </div>
+    </div>
+    <div class="board"><img src="img/chakraboard.jpg" alt="A chalkboard painted with the seven chakra symbols" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="kitchen">
+  <div class="wrap">
+    <div class="eyebrow">From the kitchen</div>
+    <h2>On the menu</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="ph"><img src="img/chai.jpg" alt="A cup of chai with cinnamon and star anise" loading="lazy"></div>
+        <div class="tx"><h3>Chai and teas</h3></div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/bowl.jpg" alt="A breakfast bowl with fruit and juice" loading="lazy"></div>
+        <div class="tx"><h3>Healthy breakfasts</h3></div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/curry.jpg" alt="An Indian vegetarian curry with rice" loading="lazy"></div>
+        <div class="tx"><h3>Indian vegetarian plates</h3></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="inside">
+  <div class="wrap">
+    <div class="ph"><img src="img/mural.jpg" alt="The Shiva mural wall inside the cafe" loading="lazy"></div>
+    <div>
+      <div class="eyebrow">Inside the space</div>
+      <h2>The mural wall</h2>
+      <p>The dining room at Chakra House is watched over by a large mural of Shiva in meditation, painted in deep blues and reds, with a chakra chalkboard at the entrance.</p>
+      <p>Call ahead to check timings.</p>
+    </div>
+  </div>
+</section>
+
+<section class="visit">
+  <div class="wrap">
+    <div class="eyebrow">Plan a visit</div>
+    <h2>Find us in Gokulam</h2>
+    <div class="grid">
+      <div>
+        <div class="vcard">
+          <h3>Address</h3>
+          <p>Chakra House Cafe<br>#829, 1st A Main Road, 3rd Stage<br>Gokulam, Mysore, Karnataka 570002</p>
+        </div>
+        <div class="vcard">
+          <h3>Hours</h3>
+          <p>Open every day. Call ahead to confirm timings before you visit.</p>
+        </div>
+        <div class="vcard">
+          <h3>Online</h3>
+          <p><a href="https://www.instagram.com/chakrahouse_cafe" target="_blank" rel="noopener">@chakrahouse_cafe on Instagram</a><br>
+          <a href="mailto:chakrahouse18@gmail.com">chakrahouse18@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="big-call">
+        <div class="eyebrow">Call us</div>
+        <a class="num" href="tel:+919880122712">+91 98801 22712</a>
+        <p class="note">Call for timings, directions, or anything on the menu.</p>
+        <a class="btn teal" href="tel:+919880122712">Call now</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Chakra+House+Cafe+Gokulam+Mysore" target="_blank" rel="noopener">Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">Website concept for Chakra House Cafe</div>
+    <div>Mural and chalkboard photos from the cafe. Food photos from Pexels (pexels.com).</div>
+  </div>
+</footer>
+
+</body>
+</html>
