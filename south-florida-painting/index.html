@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>South Florida Painting &amp; Waterproofing Co - Naples FL</title>
+<meta name="description" content="South Florida Painting and Waterproofing Co paints and waterproofs homes and buildings in Naples, Florida, since 1977. Call 239-643-7788 to ask for a quote.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f6f6f6; --ink:#000000; --muted:#5f5f5f;
+  --accent:#fe7141; --accent-ink:#000000;
+  --field-sage:#d1ddd3; --field-acid:#f0ff1c; --field-black:#000000;
+  --step-small: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --margin: 40px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Switzer',sans-serif;font-size:var(--step-body);line-height:1.5;letter-spacing:-0.005em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,.display{font-weight:600;letter-spacing:-0.04em;line-height:0.95}
+.button{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:600;font-size:var(--step-body);padding:13px 22px;min-height:44px;border:0;cursor:pointer;transition:transform .15s ease,background .25s ease}
+.button:hover{background:#ff8a5f}
+.button:active{transform:scale(.97)}
+.button:focus-visible{outline:3px solid currentColor;outline-offset:2px}
+.wrap{padding-left:var(--margin);padding-right:var(--margin)}
+.small{font-size:var(--step-small)}
+
+/* hero: stacked name, two inks, on black */
+.hero{min-height:100svh;background:var(--field-black);color:#f4f4f4;position:relative;display:flex;flex-direction:column}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;padding-top:22px;font-size:0.9375rem}
+.hero-top .mono{font-weight:600;letter-spacing:0.02em}
+.hero-top nav{display:flex;gap:22px;align-items:center}
+.hero-top nav a{color:#f4f4f4;text-decoration:none}
+.hero-top nav a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero-top nav .button{color:var(--accent-ink);padding:10px 18px;min-height:44px}
+.hero-mid{display:grid;grid-template-columns:auto 1fr;align-items:end;gap:40px;flex:1;align-content:center}
+.hero h1{font-size:clamp(90px, 14.5vw, 230px);line-height:0.82;text-transform:none}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line span{display:block}
+.hero h1 .l1{color:var(--accent)}
+.hero h1 .l2{color:#f4f4f4}
+.hero-foot{display:flex;justify-content:flex-end;padding-bottom:32px}
+.hero-mid .sub{font-size:clamp(1.125rem, 1rem + 0.5vw, 1.375rem);max-width:26ch;text-align:right;color:#f4f4f4;justify-self:end;padding-bottom:6px}
+/* masked headline */
+.js .hero h1 .line span{transform:translateY(110%);animation:rise .9s cubic-bezier(.16,1,.3,1) forwards}
+.js .hero h1 .l2 span{animation-delay:.11s}
+.js .hero-mid .sub{opacity:0;animation:fadeup .7s ease .45s forwards}
+@keyframes rise{to{transform:translateY(0)}}
+@keyframes fadeup{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* intro: title, note, facts row */
+.intro{padding:130px var(--margin) 110px}
+.intro-top{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.intro h2{grid-column:1/7;font-weight:400;font-size:clamp(44px, 5vw, 76px);letter-spacing:-0.03em}
+.intro .note{grid-column:10/13;font-size:1rem;width:260px;max-width:100%;align-self:end;justify-self:end}
+.facts{display:flex;justify-content:space-between;gap:32px;margin-top:110px;flex-wrap:wrap}
+.fact .big{font-weight:400;font-size:clamp(28px, 3vw, 44px);letter-spacing:-0.03em;line-height:1.1}
+.fact .under{font-size:var(--step-small);color:var(--muted);margin-top:8px}
+
+/* photo interludes */
+.photo-full{height:78svh;overflow:hidden}
+.photo-full img{width:100%;height:100%;object-fit:cover}
+.photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.photo-pair img{width:100%;height:56svh;object-fit:cover}
+
+/* features: statements on colour fields */
+.fields .field{min-height:60svh;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-content:space-between;padding:36px var(--margin) 28px}
+.fields .field p{font-size:var(--step-body);max-width:30ch;grid-column:8/13;grid-row:1}
+.fields .field h3{font-size:clamp(52px, 8.5vw, 140px);line-height:0.9;letter-spacing:-0.04em;font-weight:600;max-width:9ch;grid-column:1/9;grid-row:2;align-self:end}
+.fields .f-orange{background:var(--accent);color:#000}
+.fields .f-sage{background:var(--field-sage);color:#000}
+.fields .f-sage p{grid-column:1/6;grid-row:1}
+.fields .f-sage h3{grid-column:5/13;grid-row:2;justify-self:end;text-align:right}
+.fields .f-acid{background:var(--field-acid);color:#000}
+.fields .f-black{background:var(--field-black);color:#f4f4f4}
+.fields .f-black p{grid-column:1/6;grid-row:1}
+.fields .f-black h3{grid-column:5/13;grid-row:2;justify-self:end;text-align:right}
+
+/* showcase: two giant words compared */
+.showcase{padding:120px var(--margin) 0;overflow:hidden}
+.showcase-top{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;margin-bottom:10vh}
+.showcase-top h2{grid-column:1/6;font-size:clamp(28px, 2.6vw, 36px);font-weight:600}
+.showcase-top p{grid-column:7/13;font-size:1.0625rem;max-width:60ch}
+.specimens{display:grid;grid-template-columns:1fr 1fr;max-height:66svh;overflow:hidden}
+.specimen{padding:0 var(--margin)}
+.specimen .cap{font-size:1rem;margin-bottom:6px;color:var(--muted)}
+.specimen .word{font-size:clamp(96px, 11.5vw, 165px);font-weight:600;letter-spacing:-0.05em;line-height:0.8;white-space:nowrap}
+
+/* cta band */
+.cta{display:block;position:relative;margin-top:0;background:var(--accent);color:#000;text-decoration:none;min-height:60svh;overflow:hidden;transition:background .2s ease,color .2s ease}
+.cta .word{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font-weight:600;letter-spacing:-0.04em;line-height:0.8;font-size:clamp(120px, 30vw, 460px)}
+.cta .note{position:absolute;left:var(--margin);top:26px;font-size:var(--step-body);max-width:30ch}
+.cta .arrow{position:absolute;right:var(--margin);top:26px;width:48px;height:48px}
+.cta:hover,.cta:focus-visible{background:#ff8a5f}
+.cta:focus-visible{outline:3px solid #000;outline-offset:-3px}
+
+/* footer: columns above, wordmark below, sticky reveal */
+.footer-wrap{position:relative}
+.footer{position:sticky;bottom:0;z-index:0;background:var(--field-black);color:#f4f4f4;min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px var(--margin) 20px}
+.footer-cols{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.footer-col{grid-column:span 3}
+.footer-col p:first-child{font-weight:600;font-size:1rem;margin-bottom:12px}
+.footer-col ul{list-style:none}
+.footer-col li,.footer-col p{color:#9a9a9a;font-size:1rem;line-height:1.7;overflow-wrap:anywhere}
+.footer-col a{color:#9a9a9a;text-decoration:none}
+.footer-col a:hover{color:#f4f4f4;text-decoration:underline;text-underline-offset:4px}
+.footer-mark svg{display:block;width:100%;height:auto}
+.footer-mark svg text{font-family:'Switzer',sans-serif;font-weight:600;letter-spacing:-0.04em;fill:#f4f4f4}
+.footer-legal{display:flex;gap:20px;flex-wrap:wrap;font-size:var(--step-small);color:#9a9a9a;padding:8px 0 0}
+.footer-legal span{max-width:60ch}
+.footer-legal a{color:#9a9a9a}
+main{position:relative;z-index:1;background:var(--bg)}
+
+/* reveals */
+.js [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .5s ease,transform .5s ease}
+.js [data-reveal].in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none !important;transition:none !important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .js .hero h1 .line span{transform:none;animation:none}
+  .js .hero-mid .sub{opacity:1;animation:none}
+}
+
+@media (max-width: 720px){
+  :root{--margin:16px}
+  .hero-top nav a:not(.button):not(:last-child){display:none}
+  .hero h1{font-size:21vw}
+  .hero-mid{grid-template-columns:1fr;margin-top:12vh}
+  .hero-mid .sub{text-align:left;justify-self:start;margin-top:20px}
+  .hero-foot{justify-content:flex-start}
+  .hero-foot .sub{text-align:left;font-size:1.0625rem}
+  .intro{padding:96px var(--margin)}
+  .intro h2{grid-column:1/-1;font-size:11vw}
+  .intro .note{grid-column:1/-1;justify-self:start;width:auto;margin-top:24px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:64px}
+  .fact .big{font-size:26px}
+  .fields .field{min-height:64svh}
+  .fields .field p,.fields .f-sage p,.fields .f-black p{grid-column:1/-1;grid-row:1}
+  .fields .field h3,.fields .f-sage h3,.fields .f-black h3{grid-column:1/-1;grid-row:2;justify-self:start;text-align:left;margin-top:40px}
+  .fields .field h3{font-size:13vw;max-width:11ch}
+  .specimens{grid-template-columns:1fr;max-height:none}
+  .specimen{margin-bottom:40px}
+  .specimen .word{font-size:21vw}
+  .photo-pair{grid-template-columns:1fr}
+  .photo-pair img{height:44svh}
+  .cta .word{font-size:30vw}
+  .footer-col{grid-column:span 6;margin-bottom:30px}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="hero wrap" id="top">
+  <div class="hero-top">
+    <span class="mono">SFP</span>
+    <nav aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#record">On the record</a>
+      <a class="button" href="tel:+12396437788">Ask for a quote</a>
+    </nav>
+  </div>
+  <div class="hero-mid">
+    <h1><span class="line l1"><span>South</span></span><span class="line l2"><span>Florida</span></span></h1>
+    <p class="sub">Painting and waterproofing for homes and buildings in Naples, since 1977.</p>
+  </div>
+  <div class="hero-foot"></div>
+</header>
+
+<main>
+<section class="intro wrap" aria-labelledby="intro-h">
+  <div class="intro-top">
+    <h2 id="intro-h" data-reveal>Painting and waterproofing</h2>
+    <p class="note" data-reveal>South Florida Painting &amp; Waterproofing Co works out of 3973 Arnold Ave in Naples, on houses, condos and commercial buildings across Collier County.</p>
+  </div>
+  <div class="facts" data-reveal>
+    <div class="fact"><div class="big">1977</div><div class="under">established in Naples</div></div>
+    <div class="fact"><div class="big">Naples</div><div class="under">3973 Arnold Ave</div></div>
+    <div class="fact"><div class="big">239-643-7788</div><div class="under">the phone, ask for a quote</div></div>
+    <div class="fact"><div class="big">Procore</div><div class="under">listed specialty contractor</div></div>
+  </div>
+</section>
+
+<div class="photo-full" data-reveal><img src="assets/florida-naples-the-naples-municipal-beach-fishing.jpg" alt="The Naples Municipal Beach and Fishing Pier reaching into the Gulf" width="1920" height="1280"></div>
+
+<section class="fields" id="services" aria-label="Services">
+  <div class="field f-orange" data-reveal>
+    <p>Walls, ceilings, trim and doors inside the house, from one room to the whole place.</p>
+    <h3>Interior painting</h3>
+  </div>
+  <div class="field f-sage" data-reveal>
+    <p>Stucco, siding and exteriors that stand in Florida sun and rain all year.</p>
+    <h3>Exterior painting</h3>
+  </div>
+  <div class="field f-acid" data-reveal>
+    <p>Sealing and coatings that keep water out of walls, decks and below-grade spaces.</p>
+    <h3>Waterproofing</h3>
+  </div>
+  <div class="field f-black" data-reveal>
+    <p>Offices, condos and commercial buildings, painted around your schedule.</p>
+    <h3>Commercial work</h3>
+  </div>
+</section>
+
+<div class="photo-pair" data-reveal>
+  <img src="assets/end-of-the-naples-pier.jpg" alt="The end of the Naples Pier over calm Gulf water" width="1920" height="1440" loading="lazy">
+  <img src="assets/naples-florida-fishing-pier-florida-s-gulf.jpg" alt="The Naples fishing pier on Florida's Gulf coast" width="1920" height="1280" loading="lazy">
+</div>
+
+<section class="showcase wrap" id="record" aria-labelledby="record-h">
+  <div class="showcase-top">
+    <h2 data-reveal>On the record</h2>
+    <p data-reveal>The company has painted in Naples since 1977. It appears on the Fort Myers Beach registered contractor list and keeps a profile on Procore's contractor network. The same phone number, 239-643-7788, has stayed on its listings for years.</p>
+  </div>
+  <div class="photo-full" style="height:54svh;margin-bottom:90px" data-reveal><img src="assets/naplespierflorida.jpg" alt="A wide panorama of the Naples Pier at the waterline" width="1920" height="408" loading="lazy"></div>
+  <div class="specimens">
+    <div class="specimen" data-reveal><div class="word">Inside</div></div>
+    <div class="specimen" data-reveal><div class="word">Outside</div></div>
+  </div>
+</section>
+
+<a class="cta" id="contact" href="tel:+12396437788" data-reveal>
+  <span class="note">Ask for a quote: call 239-643-7788. Email works too, at sfpandwp@embarqmail.com.</span>
+  <svg class="arrow" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M8 40 L40 8 M16 8 h24 v24"/></svg>
+  <span class="word">Call</span>
+</a>
+</main>
+
+<div class="footer-wrap">
+<footer class="footer wrap">
+  <div class="footer-cols">
+    <div class="footer-col">
+      <p>Call</p>
+      <ul><li><a href="tel:+12396437788">239-643-7788</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Write</p>
+      <ul><li><a href="mailto:sfpandwp@embarqmail.com">sfpandwp@embarqmail.com</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Pages</p>
+      <ul><li><a href="#services">Services</a></li><li><a href="#record">On the record</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <p>Company</p>
+      <ul><li>South Florida Painting &amp; Waterproofing Co</li><li>3973 Arnold Ave, Naples, FL</li><li>Est. 1977</li></ul>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <div class="footer-mark">
+      <svg viewBox="0 0 1200 150" role="img" aria-label="South Florida"><text x="0" y="118" font-size="128">South Florida</text></svg>
+    </div>
+    <div class="footer-legal">
+      <span>A free preview site made for South Florida Painting &amp; Waterproofing Co by <a href="https://axliosmedia.com" rel="noopener">Axlios Media</a>. Not the business's official website.</span>
+      <span>Pictures: "NaplesPierFlorida" Massimo Catarinella CC BY 3.0; "End of the Naples Pier" Quadell CC BY-SA 3.0; two pier photos Reinhard Link CC BY-SA 2.0, all via Wikimedia Commons</span>
+      <span>Naples, Florida, 2026</span>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -12% 0px', threshold:0});
+    document.querySelectorAll('[data-reveal]').forEach(function(el, i){
+      el.style.transitionDelay = (i % 3) * 70 + 'ms';
+      io.observe(el);
+    });
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>
