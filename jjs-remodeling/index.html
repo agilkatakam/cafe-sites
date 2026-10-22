@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JJ's Remodeling Services — San Antonio, Texas</title>
+<meta name="description" content="JJ's Remodeling Services - family owned remodeling and handyman work in San Antonio, Texas. Bathrooms, floors, painting, drywall, tile, doors, windows, roofing and fences. Call or text (830) 624-3795.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f2; --ink:#1f2b4d; --muted:#6a7186; --accent:#f7941d; --accent-ink:#1f2b4d;
+  --margin:clamp(20px,2.6vw,40px); --col:min(560px,100%); --colx:max(var(--margin),22vw);
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.3vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'STIX Two Text',Georgia,serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:var(--ink)}
+
+/* ---------- hero : navigation on the midline ---------- */
+.photo1{height:100svh;position:relative;overflow:hidden;background:#05070a}
+.photo1 .slide{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.photo1 .slide.on{opacity:1}
+.rail{position:sticky;top:0;z-index:5;height:64px;margin-top:calc(-50svh - 32px);display:flex;align-items:center;gap:clamp(16px,2.4vw,40px);padding:0 var(--margin);background:rgba(5,7,10,0.35);color:#fff;transition:background 0.5s ease,color 0.5s ease}
+.rail h1{font-size:clamp(28px,2.6vw,40px);font-weight:600;letter-spacing:-0.026em;white-space:nowrap;line-height:1.1}
+.rail .sent{font-size:18px;line-height:1.35;max-width:44ch;flex:1}
+.rail nav{display:flex;gap:24px}
+.rail nav a{font-size:15px;color:inherit;text-decoration:none;opacity:0.85}
+.rail nav a:hover{opacity:1;text-decoration:underline}
+.rail .btn{background:var(--accent);color:var(--accent-ink);font-size:15px;padding:10px 18px;text-decoration:none;white-space:nowrap}
+.rail .btn:hover{background:#fff}
+.rail.docked{background:#fff;color:var(--ink)}
+.rail.docked nav a{opacity:1;color:var(--muted)}
+.rail.docked nav a:hover{color:var(--ink)}
+.rail.docked .btn{background:var(--accent);color:var(--accent-ink)}
+.bleed{height:88svh;overflow:hidden;margin-top:calc(50svh - 32px);position:relative;z-index:1}
+.hero-sub{display:none}
+@media(max-width:860px){
+  .rail{height:auto;min-height:56px;margin-top:calc(-50svh - 28px);padding:10px 20px;justify-content:space-between}
+  .rail .sent,.rail nav{display:none}
+  .rail h1{font-size:28px;white-space:normal}
+  .bleed{margin-top:calc(50svh - 28px)}
+  .hero-sub{display:block;position:absolute;left:0;right:0;bottom:0;z-index:2;padding:16px 20px 20px 20px;background:rgba(5,7,10,0.45);color:#fff}
+  .hero-sub p{font-size:18px;line-height:1.4;max-width:44ch}
+  .hero-sub .btn{display:block;text-align:center;background:var(--ink);color:#fff;padding:13px;margin-top:14px;text-decoration:none;font-size:17px}
+}
+
+/* ---------- intro ---------- */
+.intro{padding:120px var(--margin) 96px var(--margin)}
+.intro .inner{margin-left:calc(var(--colx) - var(--margin));max-width:none}
+.qa{max-width:var(--col)}
+.lead{font-size:clamp(22px,2.2vw,32px);line-height:1.2;letter-spacing:-0.01em;max-width:56ch}
+.qa{margin-top:64px}
+.qa p{font-size:16px;line-height:1.45;color:#454c66;max-width:56ch}
+.qa p+p{margin-top:32px}
+.qa b{color:var(--ink);font-weight:600}
+.qa a{color:var(--ink)}
+@media(max-width:860px){
+  .intro{padding:72px 20px}
+  .intro .inner{margin-left:0}
+  .lead{font-size:20px}
+}
+
+/* ---------- the list (menu sheet) ---------- */
+.list{padding:0 var(--margin) 120px var(--margin)}
+.sheet{margin-left:calc(var(--colx) - var(--margin));width:min(600px,100%);background:var(--surface);padding:64px 56px 72px;
+$ZZ}
+.sheet h2{font-size:clamp(36px,3.4vw,52px);font-weight:400;letter-spacing:-0.02em;text-align:center;margin-bottom:48px}
+.group h3{font-size:20px;font-weight:600;margin-bottom:18px}
+.group+.group{margin-top:44px}
+.item{display:flex;align-items:baseline;gap:10px;padding:9px 0}
+.item .name{font-size:18px;white-space:nowrap}
+.item .leader{flex:1;border-bottom:4px dotted #d6d4cf;transform:translateY(-5px);min-width:24px}
+.item .val{font-size:15px;color:#565d73;white-space:nowrap}
+@media(max-width:860px){
+  .list{padding:0 12px 72px 12px}
+  .sheet{margin-left:0;padding:44px 20px 48px}
+  .item .name{font-size:16px;white-space:normal}
+  .group h3{font-size:18px}
+}
+
+/* ---------- showcase : frame run ---------- */
+.frames{padding:0 0 120px 0;overflow:clip}
+.frames-head{margin-left:var(--colx);margin-bottom:56px}
+.frames-head h2{font-size:clamp(24px,2.2vw,28px);font-weight:600;letter-spacing:-0.01em}
+.frames-head a{font-size:15px;color:var(--muted)}
+.run{display:flex;align-items:flex-end;gap:6px;padding-left:var(--colx);overflow:visible}
+.run-rest{display:contents}
+.frame{flex:0 0 auto;height:30vh}
+.frame img{width:auto;height:100%}
+.frame.lift{height:66vh}
+.frame figcaption{display:flex;justify-content:space-between;gap:16px;font-size:15px;margin-top:10px;color:var(--muted)}
+.frame figcaption .n{color:var(--ink)}
+.frame-wrap{display:flex;flex-direction:column}
+.frames-note{margin:40px 0 0 var(--colx);font-size:15px;color:var(--muted);max-width:44ch}
+@media(max-width:860px){
+  .frames{padding-bottom:72px}
+  .frames-head{margin-left:20px;margin-bottom:32px}
+  .run{display:block;padding-left:0;overflow:visible}
+  .frame.lift{height:auto;width:calc(100% - 40px);margin:0 20px 16px 20px}
+  .frame.lift img{width:100%;height:auto}
+  .run-rest{display:flex;gap:4px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px;scroll-padding:0 20px}
+  .run-rest .frame{height:34vw;scroll-snap-align:start}
+  .run-rest .frame .f{display:none}
+  .run-rest .frame figcaption{padding:0}
+  .frame figcaption{font-size:13px}
+  .frames-note{margin:24px 20px 0 20px}
+}
+
+/* ---------- cta : a plain sentence ---------- */
+.cta{padding:30svh var(--margin) 20svh var(--margin)}
+.cta .inner{margin-left:calc(var(--colx) - var(--margin));max-width:34ch}
+.cta p{font-size:clamp(18px,1.6vw,22px);line-height:1.45}
+.cta .row{display:flex;align-items:baseline;gap:24px;margin-top:24px;flex-wrap:wrap}
+.cta .btn{background:var(--ink);color:#fff;font-size:16px;padding:11px 18px;text-decoration:none}
+.cta .btn:hover{background:var(--accent);color:var(--accent-ink)}
+.cta .mail{font-size:16px}
+@media(max-width:860px){
+  .cta{padding:20svh 20px 14svh 20px}
+  .cta .inner{margin-left:0;max-width:none}
+  .cta p{font-size:18px}
+}
+
+/* ---------- footer : a single quiet line ---------- */
+footer{display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;padding:0 var(--margin) 30px var(--margin);font-size:15px}
+footer .what{color:var(--muted)}
+footer .fl{display:flex;gap:24px;justify-content:center}
+footer .fl a{color:var(--ink);text-decoration:none}
+footer .fl a:hover{text-decoration:underline}
+footer .yr{text-align:right;color:var(--muted)}
+.legal{grid-column:1/-1;margin-top:14px;font-size:13px;line-height:1.7;color:var(--muted);max-width:75ch}
+@media(max-width:860px){
+  footer{display:block;padding:0 20px 24px 20px;font-size:14px}
+  footer .what,footer .fl,footer .yr{display:block;text-align:left;margin-top:8px;justify-content:flex-start}
+  footer .fl{display:flex;flex-wrap:wrap;gap:8px 16px}
+}
+
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity 0.9s ease,transform 0.9s ease}
+[data-reveal].in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .photo1 .slide{transition:none}
+  [data-reveal]{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- hero -->
+<div class="photo1" id="stage">
+  <div class="slide on"><img src="assets/skyline-day.jpg" alt="The San Antonio skyline in daylight" width="1920" height="884"></div>
+  <div class="slide"><img src="assets/river-tower.jpg" alt="The Tower of the Americas seen from the River Walk" width="1920" height="1280" loading="lazy"></div>
+  <div class="slide"><img src="assets/skyline-night.jpg" alt="The San Antonio skyline at night" width="1920" height="1280" loading="lazy"></div>
+  <div class="hero-sub">
+    <p>Remodeling and handyman work across San Antonio, Texas - family owned and operated.</p>
+    <a class="btn" href="tel:+18306243795">Ask for a quote</a>
+  </div>
+</div>
+<div class="rail" id="rail">
+  <h1>JJ&rsquo;s Remodeling Services</h1>
+  <p class="sent">Remodeling and handyman work across San Antonio, Texas - family owned and operated.</p>
+  <nav>
+    <a href="#list">The list</a>
+    <a href="#city">The city</a>
+  </nav>
+  <a class="btn" href="tel:+18306243795">Ask for a quote</a>
+</div>
+
+<!-- second full-bleed : a closer detail -->
+<div class="bleed" data-reveal><img src="assets/river-reflections.jpg" alt="Reflections on the San Antonio River Walk" width="1920" height="1280" loading="lazy"></div>
+
+<!-- intro -->
+<section class="intro">
+  <div class="inner">
+    <p class="lead" data-reveal>JJ&rsquo;s Remodeling Services is a family-run remodeling contractor in San Antonio, Texas - bathrooms, floors, painting, roofing and fences, and the small jobs between them.</p>
+    <div class="qa">
+      <p data-reveal><b>The company.</b> JJ&rsquo;s Remodeling Services is family owned and operated, working out of San Antonio and Live Oak, Texas. Its own words to neighbours: &ldquo;No job is too big or too small.&rdquo;</p>
+      <p data-reveal><b>The work.</b> Remodeling first - one Nextdoor neighbour hired JJ&rsquo;s for a full bathroom demo and remodel, a wood fence, and floors for an entire home - then painting, drywall, tile, doors, windows and roofing.</p>
+      <p data-reveal><b>The patch.</b> San Antonio and the towns around Bexar County - Live Oak, La Vernia and Geronimo among them.</p>
+      <p data-reveal><b>The phone.</b> Call or text <a href="tel:+18306243795">(830) 624-3795</a>, or write to <a href="mailto:jjhandymanservice210@gmail.com">jjhandymanservice210@gmail.com</a>. Describe the room, the floor or the fence, and ask for a quote.</p>
+    </div>
+  </div>
+</section>
+
+<!-- the list -->
+<section class="list" id="list">
+  <div class="sheet" data-reveal>
+    <h2>The whole house</h2>
+    <div class="group" data-reveal>
+      <h3>Inside</h3>
+      <div class="item"><span class="name">Bathroom remodel</span><span class="leader"></span><span class="val">demo to done</span></div>
+      <div class="item"><span class="name">Flooring installation</span><span class="leader"></span><span class="val">whole homes</span></div>
+      <div class="item"><span class="name">Painting</span><span class="leader"></span><span class="val">walls</span></div>
+      <div class="item"><span class="name">Drywall installation</span><span class="leader"></span><span class="val">walls</span></div>
+      <div class="item"><span class="name">Tile work</span><span class="leader"></span><span class="val">floors &amp; walls</span></div>
+      <div class="item"><span class="name">Doors &amp; windows</span><span class="leader"></span><span class="val">installed</span></div>
+    </div>
+    <div class="group" data-reveal>
+      <h3>Outside</h3>
+      <div class="item"><span class="name">Roofing</span><span class="leader"></span><span class="val">overhead</span></div>
+      <div class="item"><span class="name">Fence installation</span><span class="leader"></span><span class="val">wood</span></div>
+    </div>
+    <div class="group" data-reveal>
+      <h3>And the rest</h3>
+      <div class="item"><span class="name">Handyman services</span><span class="leader"></span><span class="val">the small jobs</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- the city : frame run -->
+<section class="frames" id="city">
+  <div class="frames-head" data-reveal>
+    <h2>One city, kept up</h2>
+    <a href="https://nextdoor.com/pages/jjs-remodeling-services-llc-free-quotes-830-624-3795-san-antonio-tx/" rel="noopener">JJ&rsquo;s on Nextdoor</a>
+  </div>
+  <div class="run" data-reveal>
+    <figure class="frame lift"><img src="assets/mission-passage.jpg" alt="Passageway at Mission San José" width="1920" height="2880" loading="lazy"><figcaption><span class="n">Mission San José</span><span class="f">passageway</span></figcaption></figure>
+    <div class="run-rest">
+    <figure class="frame"><img src="assets/skyline-day.jpg" alt="San Antonio skyline" width="1920" height="884" loading="lazy"><figcaption><span class="n">The skyline</span><span class="f">the patch</span></figcaption></figure>
+    <figure class="frame"><img src="assets/river-tower.jpg" alt="Tower of the Americas from the River Walk" width="1920" height="1280" loading="lazy"><figcaption><span class="n">The Tower</span><span class="f">from the River Walk</span></figcaption></figure>
+    <figure class="frame"><img src="assets/skyline-night.jpg" alt="San Antonio skyline at night" width="1920" height="1280" loading="lazy"><figcaption><span class="n">At night</span><span class="f">downtown</span></figcaption></figure>
+    <figure class="frame"><img src="assets/riverwalk.jpg" alt="The San Antonio River Walk" width="1920" height="1446" loading="lazy"><figcaption><span class="n">The River Walk</span><span class="f">below the streets</span></figcaption></figure>
+    <figure class="frame"><img src="assets/mission-arches.jpg" alt="Arches at Mission San José" width="1920" height="1280" loading="lazy"><figcaption><span class="n">Mission San José</span><span class="f">arches</span></figcaption></figure>
+    </div>
+  </div>
+  <p class="frames-note" data-reveal>San Antonio, where JJ&rsquo;s works. All photographs via Wikimedia Commons, credited below.</p>
+</section>
+
+<!-- cta -->
+<section class="cta">
+  <div class="inner" data-reveal>
+    <p>Tell JJ&rsquo;s what the house needs, and ask for a quote.</p>
+    <div class="row">
+      <a class="btn" href="tel:+18306243795">Call (830) 624-3795</a>
+      <a class="mail" href="mailto:jjhandymanservice210@gmail.com">or write to jjhandymanservice210@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <span class="what">A free preview site</span>
+  <div class="fl">
+    <a href="https://nextdoor.com/pages/jjs-remodeling-services-llc-free-quotes-830-624-3795-san-antonio-tx/" rel="noopener">Nextdoor</a>
+    <a href="https://www.facebook.com/JJremodelingservices" rel="noopener">Facebook</a>
+    <a href="tel:+18306243795">(830) 624-3795</a>
+    <a href="mailto:jjhandymanservice210@gmail.com">Email</a>
+  </div>
+  <span class="yr">2026 &middot; San Antonio, Texas</span>
+  <p class="legal">A free preview site made for JJ&rsquo;s Remodeling Services by Axlios Media (axliosmedia.com). Not the business&rsquo;s official website. Photographs via Wikimedia Commons: &ldquo;San Antonio Skyline 2026&rdquo; by Medialecent, CC BY 4.0; &ldquo;San Antonio Skyline at Night&rdquo; by Jonathan Cutrer, CC BY 2.0; &ldquo;River walk with tower&rdquo; by Larry D. Moore, CC BY 4.0; &ldquo;River Walk Reflections&rdquo; by Corey Leopold, CC BY 2.0; &ldquo;San Antonio riverwalk&rdquo; by 3steph14, CC BY-SA 4.0; &ldquo;Mission San Jos&eacute; arches&rdquo; and &ldquo;Passageway at Mission San Jos&eacute;&rdquo; by Ashland Thomas, CC BY-SA 4.0.</p>
+</footer>
+
+<script>
+// slow crossfade
+const slides=[...document.querySelectorAll('#stage .slide')];let cur=0,timer=null;
+function tick(){slides[cur].classList.remove('on');cur=(cur+1)%slides.length;slides[cur].classList.add('on');}
+function start(){if(!timer&&slides.length>1)timer=setInterval(tick,5600);}
+function stop(){clearInterval(timer);timer=null;}
+const rm=matchMedia('(prefers-reduced-motion: reduce)');
+if(!rm.matches)start();
+document.addEventListener('visibilitychange',()=>{if(rm.matches)return;document.hidden?stop():start();});
+// rail docking: dock once the bleed photo has passed
+const rail=document.getElementById('rail'),bleed=document.querySelector('.bleed');
+const ro=new IntersectionObserver(es=>{es.forEach(en=>{rail.classList.toggle('docked',!en.isIntersecting&&en.boundingClientRect.top<0);});},{threshold:0});
+ro.observe(bleed);
+// reveals
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}}),{threshold:0.15});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
