@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steve Myers Handyman Services, LLC | Handyman in Punta Gorda, Florida</title>
+<meta name="description" content="Steve Myers Handyman Services, LLC is a one man handyman service in Punta Gorda, Florida, with thirty six years in carpentry and the building industry. Call or email and ask for a quote.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=gambarino@400&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff;
+  --ink:#000000;
+  --muted:#5f5f5f;
+  --soft:#3a3a3a;
+  --accent:#fe7141;
+  --sage:#d1ddd3;
+  --sage-lt:#e6ede6;
+  --sage-dk:#bccfbc;
+  --step-small:0.8125rem;
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --margin:48px;
+  --axis:42vw;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"General Sans",system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);
+  font-size:var(--step-body);line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit;transition:color .18s ease}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,.serif{font-family:"Gambarino",serif;font-weight:400;letter-spacing:-0.02em}
+
+.rev{opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease}
+.rev.in{opacity:1;transform:none}
+
+.mask{overflow:hidden;display:block}
+.mask>span{display:block;transform:translateY(110%);animation:rise .9s cubic-bezier(.16,.7,.2,1) forwards}
+.mask.m2>span{animation-delay:.11s}
+@keyframes rise{to{transform:none}}
+.fadeup{opacity:0;animation:fadeup .7s ease .55s forwards}
+@keyframes fadeup{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .rev{opacity:1;transform:none;transition:none}
+  .mask>span{transform:none;animation:none}
+  .fadeup{opacity:1;animation:none}
+  html{scroll-behavior:auto}
+}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100svh;padding:0 var(--margin)}
+.hero-top{display:flex;align-items:center;padding-top:44px;font-size:16px}
+.wordmark{font-weight:500;letter-spacing:-0.01em}
+.hero-nav{position:absolute;left:var(--axis);top:44px;display:flex;gap:32px}
+.hero-nav a{text-decoration:none}
+.hero-nav a:hover{color:var(--accent)}
+.hero-cta{margin-left:auto}
+.btn{
+  display:inline-block;background:var(--accent);color:var(--ink);
+  font-size:16px;font-weight:500;text-decoration:none;
+  padding:14px 22px;min-height:44px;border:none;cursor:pointer;
+  transition:filter .18s ease,transform .14s ease;
+}
+.btn:hover{filter:brightness(1.06)}
+.btn:active{transform:scale(.98)}
+.masthead{
+  position:absolute;left:var(--margin);right:var(--margin);
+  top:110px;height:34svh;overflow:hidden;
+}
+.masthead img{width:100%;height:100%;object-fit:cover}
+.hero-statement{position:absolute;left:var(--axis);right:var(--margin);bottom:72px}
+.hero-statement h1{font-size:clamp(56px,6.6vw,104px);letter-spacing:-0.04em;line-height:.95}
+.stmt-sub{display:none}
+.hero-side{
+  position:absolute;left:var(--margin);bottom:72px;
+  width:calc(var(--axis) - var(--margin) - 48px);
+  font-size:16px;color:#3d3d3d;max-width:34ch;
+}
+.menu-word{display:none}
+
+/* ============ INTRO ============ */
+.intro{padding:140px var(--margin) 120px}
+.intro-row{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:end}
+.intro-row h2{grid-column:1/7;font-size:clamp(44px,5vw,72px);line-height:.98}
+.intro-note{grid-column:10/13;font-size:16px;color:#3d3d3d}
+.intro-note a{color:var(--ink)}
+.intro-note a:hover{color:var(--accent)}
+.facts{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:120px}
+.fact .big{font-family:"Gambarino",serif;font-size:36px;line-height:1.05;letter-spacing:-0.02em}
+.fact .small{font-size:13px;color:var(--muted);margin-top:6px}
+.intro-photo{margin-top:64px;margin-left:calc(7/12*100%);width:calc(5/12*100%)}
+.intro-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
+/* ============ JOBS (pinned cards) ============ */
+#jobs-wrap{position:relative}
+.stage{position:relative;padding:120px var(--margin)}
+.stage-head{padding-top:110px}
+.stage-head h2{font-size:clamp(44px,5vw,72px);line-height:1}
+.stage-head p{font-size:16px;color:var(--muted);margin-top:10px}
+.deck{position:relative;height:360px;margin-top:48px;overflow:hidden}
+.card{
+  position:absolute;top:0;height:100%;width:25%;
+  overflow:hidden;cursor:pointer;
+  transition:left .6s cubic-bezier(.2,.7,.2,1),width .6s cubic-bezier(.2,.7,.2,1);
+}
+.card-inner{
+  width:100%;max-width:620px;
+  height:100%;padding:32px;display:flex;flex-direction:column;
+}
+.card.spine{width:120px;cursor:pointer}
+.card.spine .card-inner{display:none}
+.spine-title{
+  display:none;height:100%;padding:20px 0;
+  writing-mode:vertical-rl;font-size:16px;color:var(--ink);
+  align-items:center;justify-content:flex-start;
+}
+.card.spine .spine-title{display:flex}
+.card h3{font-size:28px;line-height:1.1;letter-spacing:-0.01em}
+.card p{font-size:16px;margin-top:14px;max-width:44ch}
+.card-foot{margin-top:auto;display:flex;justify-content:space-between;flex-wrap:wrap;row-gap:6px;font-size:16px;padding-top:20px}
+.card-foot .where{color:var(--soft)}
+.card-foot a{text-decoration:underline}
+.card.t0{background:var(--sage)}
+.card.t1{background:var(--sage-lt)}
+.card.t2{background:var(--sage-dk)}
+.card.t3{background:var(--sage)}
+.deck-note{margin-top:48px;font-size:16px}
+.deck-note a{text-decoration:underline}
+.deck-note a:hover{color:var(--accent)}
+
+/* ============ MOSAIC ============ */
+.mosaic{padding:120px 0 0}
+.mosaic-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.mosaic-grid>.cell{position:relative;min-height:320px}
+.cell img,.cell video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cell.tile{display:flex;flex-direction:column;justify-content:center;padding:32px}
+.tile.quote{background:var(--sage)}
+.tile.quote q{font-family:"Gambarino",serif;font-size:28px;line-height:1.15;quotes:"\201C" "\201D"}
+.tile.quote .who{font-size:13px;color:var(--muted);margin-top:16px}
+.tile.figure{background:var(--ink);color:#f4f4f4}
+.tile.figure .num{font-family:"Gambarino",serif;font-size:72px;line-height:1}
+.tile.figure .cap{font-size:13px;margin-top:10px;color:#bdbdbd}
+.mosaic-credit{padding:14px var(--margin);font-size:13px;color:var(--muted)}
+
+/* ============ ABOUT ============ */
+.about{padding:140px var(--margin);display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.about-facts{grid-column:1/3;font-size:13px;color:var(--muted)}
+.about-facts div{margin-bottom:14px}
+.about-body{grid-column:3/13}
+.about-body .lede{
+  font-family:"Gambarino",serif;
+  font-size:clamp(24px,2.5vw,36px);line-height:1.2;letter-spacing:-0.015em;
+}
+.about-body .lede img{float:left;width:3.6em;height:3.6em;object-fit:cover;margin:0 .5em .2em 0}
+.about-body .more{font-size:19px;line-height:1.5;color:var(--soft);margin-top:1.4em;max-width:62ch}
+
+/* ============ RECORD ============ */
+.record{padding:40px var(--margin) 120px;display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px}
+.record h2{grid-column:1/5;font-size:28px;line-height:1.1}
+.record-cols{grid-column:6/13;columns:3;column-gap:32px}
+.record-cols .kind{color:var(--muted);font-size:19px;line-height:1.5;break-after:avoid}
+.record-cols p{font-size:19px;line-height:1.5;break-inside:avoid}
+.record-cols .gap{height:32px}
+.record-src{grid-column:6/13;font-size:13px;color:var(--muted);margin-top:40px}
+
+/* ============ CONTACT ============ */
+.contact{padding:40px var(--margin) 120px}
+.contact-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 24px;align-items:start}
+.contact-sentence{
+  grid-column:1/6;font-family:"Gambarino",serif;
+  font-size:clamp(26px,3vw,36px);line-height:1.15;letter-spacing:-0.015em;
+}
+.contact-photo{grid-column:8/10}
+.contact-photo img{width:160px;height:160px;object-fit:cover}
+.contact-links{grid-column:10/13;font-size:16px}
+.contact-q{font-weight:500;margin-bottom:20px}
+.contact-links a{text-decoration:underline}
+.contact-links a:hover{color:var(--accent)}
+.contact-links .stack{display:block;margin-bottom:10px}
+.contact-city{font-size:13px;color:var(--muted);margin-top:22px}
+
+/* ============ FOOTER ============ */
+.footer{
+  background:var(--accent);color:var(--ink);
+  min-height:62svh;padding:40px var(--margin) 30px;
+  display:flex;flex-direction:column;
+}
+.footer-top{display:flex;gap:32px;font-size:16px;flex-wrap:wrap}
+.footer-top .top-link{margin-left:auto;text-decoration:underline}
+.footer-mid{flex:1}
+.footer-phone{
+  font-family:"Gambarino",serif;
+  font-size:clamp(48px,9vw,150px);
+  letter-spacing:-0.03em;line-height:1;
+  text-decoration:none;display:inline-block;
+}
+.footer-phone:hover{color:#7a2c0e}
+.footer-meta{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;font-size:13px;margin-top:48px}
+.footer-meta .c{text-align:center}
+.footer-meta .r{text-align:right}
+.footer-meta a{text-decoration:underline}
+
+/* ============ PHONE ============ */
+@media (max-width:820px){
+  :root{--margin:20px;--axis:20px}
+  .hero-nav{display:none}
+  .hero-nav.open{display:flex;position:absolute;left:20px;top:126px;gap:24px}
+  .menu-word{display:block;position:absolute;left:20px;top:100px;font-size:16px;text-decoration:underline;cursor:pointer}
+  .hero-top{padding-top:32px}
+  .hero-cta{font-size:14px;padding:12px 16px;white-space:nowrap}
+  .hero-side{display:none}
+  .masthead{top:180px;height:30svh}
+  .hero-statement{left:20px;right:20px;bottom:96px}
+  .hero-statement h1{font-size:12.5vw}
+  .stmt-sub{
+    display:block;font-family:"General Sans",sans-serif;font-size:17px;
+    letter-spacing:0;color:var(--muted);margin-top:14px;
+  }
+  .intro{padding:72px var(--margin)}
+  .intro-row{display:block}
+  .intro-row h2{font-size:11vw}
+  .intro-note{margin-top:20px}
+  .facts{margin-top:56px;display:grid;grid-template-columns:1fr 1fr;row-gap:32px}
+  .fact .big{font-size:28px}
+  .intro-photo{margin:48px 0 0;width:100%}
+  #jobs-wrap{height:auto}
+  .stage{padding:72px var(--margin)}
+  .stage-head{padding-top:0}
+  .stage-head h2{font-size:11vw}
+  .deck{height:auto;margin-top:32px;overflow:visible}
+  .card{position:static;width:100%;margin-bottom:12px}
+  .card-inner{width:100%;min-height:240px;padding:24px}
+  .card h3{font-size:28px}
+  .spine-title{display:none !important}
+  .deck-note{margin-top:24px}
+  .mosaic{padding-top:40px}
+  .mosaic-grid{grid-template-columns:1fr 1fr}
+  .mosaic-grid>.cell{min-height:220px}
+  .about{display:block;padding:72px var(--margin)}
+  .about-body .lede{font-size:22px;line-height:1.25}
+  .tile.quote q{font-size:20px}
+  .about-body .lede img{width:110px;height:110px}
+  .about-facts{display:flex;gap:24px;font-size:13px;margin-top:32px}
+  .record{display:block;padding:0 var(--margin) 72px}
+  .record h2{font-size:28px;margin-bottom:24px}
+  .record-cols{columns:2;column-gap:20px}
+  .record-cols .kind,.record-cols p{font-size:17px}
+  .contact{padding:0 var(--margin) 72px}
+  .contact-grid{display:block}
+  .contact-sentence{font-size:28px;line-height:1.2}
+  .contact-photo{float:left;margin:40px 20px 10px 0}
+  .contact-photo img{width:96px;height:96px}
+  .contact-links{margin-top:40px;overflow:hidden}
+  .contact-city{margin-top:64px;clear:both}
+  .footer{min-height:62svh;padding:32px var(--margin) 24px}
+  .footer-top{flex-direction:column;gap:10px;font-size:16px}
+  .footer-top .top-link{margin-left:0}
+  .footer-phone{font-size:12.5vw}
+  .footer-meta{display:block;font-size:13px}
+  .footer-meta div{margin-top:8px}
+  .footer-meta .c,.footer-meta .r{text-align:left}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="top">
+  <div class="hero-top">
+    <span class="wordmark">Steve Myers Handyman Services</span>
+    <nav class="hero-nav" id="nav">
+      <a href="#jobs-wrap">The jobs</a>
+      <a href="#record">The record</a>
+    </nav>
+    <span class="menu-word" id="menuword">Menu</span>
+    <a class="btn hero-cta fadeup" href="tel:+17178733590">Call 717-873-3590</a>
+  </div>
+  <div class="masthead">
+    <img src="img/masthead.jpg" alt="A stock photo of a canal front home with palms under a Florida sky" width="2400" height="900">
+  </div>
+  <div class="hero-side fadeup">A handyman for Punta Gorda and Charlotte County, Florida.</div>
+  <div class="hero-statement">
+    <h1>
+      <span class="mask"><span>Thirty six years</span></span>
+      <span class="mask m2"><span>of building work.</span></span>
+    </h1>
+    <span class="stmt-sub fadeup">A handyman for Punta Gorda and Charlotte County, Florida.</span>
+  </div>
+</header>
+
+<main>
+<!-- ================= INTRO ================= -->
+<section class="intro">
+  <div class="intro-row">
+    <h2 class="rev">The short version</h2>
+    <p class="intro-note rev">Steve Myers runs a one man handyman service in Punta Gorda, Florida. Call or email and <a href="#contact">ask for a quote</a>.</p>
+  </div>
+  <div class="facts">
+    <div class="fact rev"><div class="big">York PA</div><div class="small">where he ran his remodeling company</div></div>
+    <div class="fact rev"><div class="big">35+</div><div class="small">years in carpentry and building</div></div>
+    <div class="fact rev"><div class="big">2023</div><div class="small">Nextdoor Neighborhood Favorite</div></div>
+    <div class="fact rev"><div class="big">Punta Gorda</div><div class="small">serving Charlotte County</div></div>
+  </div>
+  <figure class="intro-photo rev">
+    <img src="img/canal-43.jpg" alt="A stock photo of a canal front home with palms under a Florida sky" width="1200" height="900" loading="lazy">
+  </figure>
+</section>
+
+<!-- ================= JOBS ================= -->
+<div id="jobs-wrap">
+<section class="stage">
+  <div class="stage-head">
+    <h2>Jobs people call about</h2>
+    <p>The kinds of jobs Punta Gorda neighbors usually call a handyman for.</p>
+  </div>
+  <div class="deck">
+    <article class="card t0"><div class="card-inner">
+      <h3>Fixtures and fittings</h3>
+      <p>Light fixtures, ceiling fans, door frames and hardware, swapped out and set right.</p>
+      <div class="card-foot"><span class="where">Punta Gorda FL</span><a href="tel:+17178733590">Call 717-873-3590</a></div>
+    </div><span class="spine-title">Fixtures and fittings</span></article>
+    <article class="card t1"><div class="card-inner">
+      <h3>Small repairs</h3>
+      <p>Soffit and trim, patching and caulking. The list that never gets shorter finally gets done.</p>
+      <div class="card-foot"><span class="where">Punta Gorda FL</span><a href="tel:+17178733590">Call 717-873-3590</a></div>
+    </div><span class="spine-title">Small repairs</span></article>
+    <article class="card t2"><div class="card-inner">
+      <h3>Carpentry</h3>
+      <p>Shelving, casing, doors and small built work, from thirty five years on the tools.</p>
+      <div class="card-foot"><span class="where">Punta Gorda FL</span><a href="tel:+17178733590">Call 717-873-3590</a></div>
+    </div><span class="spine-title">Carpentry</span></article>
+    <article class="card t3"><div class="card-inner">
+      <h3>Home watch</h3>
+      <p>Head north for the summer and he will check on your place on a schedule you set.</p>
+      <div class="card-foot"><span class="where">Punta Gorda FL</span><a href="tel:+17178733590">Call 717-873-3590</a></div>
+    </div><span class="spine-title">Home watch</span></article>
+  </div>
+  <p class="deck-note">Four kinds of jobs, one phone call. <a href="#contact">Ask for a quote</a>.</p>
+</section>
+</div>
+
+<!-- ================= MOSAIC ================= -->
+<section class="mosaic">
+  <div class="mosaic-grid">
+    <div class="cell rev"><img src="img/planer-cell.jpg" alt="A stock photo of hands guiding a plane across a board" width="840" height="1050" loading="lazy"></div>
+    <div class="cell tile quote rev"><q>Went through several hurricanes, with no issues.</q><div class="who">A Nextdoor neighbor, on the mailbox he set</div></div>
+    <div class="cell rev"><video src="img/sawing.webm" poster="img/sawing-poster.jpg" autoplay muted loop playsinline></video></div>
+    <div class="cell rev"><img src="img/house-cell.jpg" alt="A stock photo of white coastal homes behind palms" width="1000" height="760" loading="lazy"></div>
+    <div class="cell tile figure rev"><div class="num">35+</div><div class="cap">years in carpentry and the building industry</div></div>
+    <div class="cell rev"><img src="img/workbench-wide.jpg" alt="A stock photo of a tape measure and chisel on a workbench with wood shavings" width="1000" height="760" loading="lazy"></div>
+  </div>
+  <p class="mosaic-credit">Photos: Pexels stock. Clip: sawing a board, CC0, via Wikimedia Commons.</p>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about">
+  <div class="about-facts">
+    <div class="rev">Punta Gorda, Florida</div>
+    <div class="rev">In the trade since the late 1980s</div>
+    <div class="rev">717-873-3590</div>
+  </div>
+  <div class="about-body">
+    <p class="lede rev"><img src="img/workbench-square.jpg" alt="A stock photo of a ruler, clamp and wood shavings on a workbench" width="800" height="800">Steve Myers has spent thirty six years in carpentry and the building industry.</p>
+    <p class="more rev">Most of those years he ran a remodeling company in York, Pennsylvania. Then he brought the tools south to Punta Gorda. These days the work is closer to home: a light fixture, a door frame, a soffit repair, or the custom piece a neighbor sketched on a photo. Same hands, smaller jobs.</p>
+  </div>
+</section>
+
+<!-- ================= RECORD ================= -->
+<section class="record" id="record">
+  <h2 class="rev">The record</h2>
+  <div class="record-cols rev">
+    <p class="kind">Grand Awards, local Builders Association</p>
+    <p>1998, Outdoor Living</p>
+    <p>2002, Residential Remodeling under $70k</p>
+    <div class="gap"></div>
+    <p class="kind">Honorable mentions</p>
+    <p>1993, Outdoor Living</p>
+    <p>1995 and 1996, Small Volume Contractor</p>
+    <p>2003 and 2005, Remodeling</p>
+    <div class="gap"></div>
+    <p class="kind">Along the way</p>
+    <p>2002, president of the local Builders Association</p>
+    <p>2016, voted Best of York remodeling contractor</p>
+    <p>2023, Nextdoor Neighborhood Favorite</p>
+    <p>County license certificate, listed on Nextdoor</p>
+  </div>
+  <p class="record-src rev">Awards from his years as a Pennsylvania remodeling contractor, from his own Nextdoor bio.</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <p class="contact-sentence rev">Call or email about the job on your list, and ask for a quote.</p>
+    <div class="contact-photo rev"><img src="img/contact-square.jpg" alt="A stock photo of a Florida canal home with a boat lift" width="480" height="480" loading="lazy"></div>
+    <div class="contact-links rev">
+      <p class="contact-q">What is on the list?</p>
+      <a class="stack" href="mailto:groovey863@gmail.com">groovey863@gmail.com</a>
+      <a class="stack" href="tel:+19413030250">941-303-0250, local</a>
+      <p class="contact-city">Punta Gorda, Florida.<br>Main line 717-873-3590.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-top">
+    <span>Steve Myers Handyman Services, LLC</span>
+    <span>Punta Gorda and Charlotte County, Florida</span>
+    <span>groovey863@gmail.com</span>
+    <a class="top-link" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a>
+  </div>
+  <div class="footer-mid"></div>
+  <a class="footer-phone rev" href="tel:+17178733590">717-873-3590</a>
+  <div class="footer-meta">
+    <div><a href="mailto:groovey863@gmail.com">Email</a> · <a href="https://nextdoor.com/pages/steve-myers-handyman-services-llc-punta-gorda-fl/">Nextdoor</a></div>
+    <div class="c">Free preview by <a href="https://axliosmedia.com">Axlios Media</a> · Stock photos: Pexels</div>
+    <div class="r">Not the live site · 2026</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rev');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}});
+    },{threshold:0.15});
+    els.forEach(function(e,i){e.style.transitionDelay=(Math.min(i%6,5)*40)+'ms';io.observe(e)});
+  }else{els.forEach(function(e){e.classList.add('in')})}
+
+  var mq=window.matchMedia('(min-width:821px)');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var n=cards.length;
+  var active=-1;
+  function layout(){
+    if(!mq.matches){cards.forEach(function(c){c.classList.remove('spine');c.style.left='';c.style.width=''});return}
+    var deck=document.querySelector('.deck');
+    var W=deck.clientWidth;
+    if(active<0){
+      var qw=W/n;
+      cards.forEach(function(c,j){c.classList.remove('spine');c.style.left=(j*qw)+'px';c.style.width=qw+'px'});
+      return;
+    }
+    var openW=W-(n-1)*120;
+    cards.forEach(function(c,j){
+      if(j===active){c.classList.remove('spine');c.style.left=(j*120)+'px';c.style.width=openW+'px'}
+      else if(j<active){c.classList.add('spine');c.style.left=(j*120)+'px';c.style.width='120px'}
+      else{c.classList.add('spine');c.style.left=(active*120+openW+(j-active-1)*120)+'px';c.style.width='120px'}
+    });
+  }
+  cards.forEach(function(c,j){
+    c.addEventListener('click',function(){
+      if(!mq.matches)return;
+      active=(active===j)?-1:j;
+      layout();
+    });
+  });
+  window.addEventListener('resize',layout);
+  layout();
+
+  document.getElementById('menuword').addEventListener('click',function(){
+    document.getElementById('nav').classList.toggle('open');
+  });
+})();
+</script>
+</body>
+</html>
