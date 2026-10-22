@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Graphide - any codebase, explained as a map (concept)</title>
+<meta name="description" content="A concept redesign of the Graphide homepage with a live 3D code map. Unofficial, by Axlios Media.">
+<style>
+:root{--bg:#06070d;--ink:#eef1ff;--mute:#8d93b3;--a:#7c5cff;--b:#22d3ee;--c:#ff6bd6;--line:rgba(255,255,255,.09)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+#stage{position:fixed;inset:0;z-index:0}
+canvas{display:block}
+.grain{position:fixed;inset:0;z-index:1;pointer-events:none;background:radial-gradient(1200px 700px at 70% 10%,rgba(124,92,255,.18),transparent 60%),radial-gradient(900px 600px at 10% 90%,rgba(34,211,238,.12),transparent 60%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:20px 5vw;backdrop-filter:blur(10px);background:linear-gradient(#06070dcc,transparent)}
+.logo{font-weight:700;letter-spacing:.02em;display:flex;gap:10px;align-items:center}
+.logo i{width:22px;height:22px;border-radius:7px;background:conic-gradient(from 200deg,var(--a),var(--b),var(--c),var(--a));box-shadow:0 0 24px var(--a)}
+nav a.btn{font-size:14px}
+.btn{color:var(--ink);text-decoration:none;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);transition:.25s}
+.btn:hover{background:rgba(255,255,255,.12);transform:translateY(-1px)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));border:0;color:#04050a;font-weight:600;box-shadow:0 10px 40px -10px var(--a)}
+section{position:relative;z-index:5;min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:14vh 5vw}
+.hero h1{font-size:clamp(44px,9vw,128px);line-height:.95;letter-spacing:-.045em;font-weight:800;max-width:11ch}
+.hero h1 span{background:linear-gradient(90deg,var(--b),var(--a),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200%;animation:sh 7s linear infinite}
+@keyframes sh{to{background-position:200% 0}}
+.hero p{margin:28px 0;max-width:46ch;color:var(--mute);font-size:clamp(16px,1.6vw,21px);line-height:1.5}
+.form{display:flex;gap:10px;flex-wrap:wrap;max-width:620px;padding:8px;border-radius:999px;border:1px solid var(--line);background:rgba(10,12,24,.7);backdrop-filter:blur(14px)}
+.form input{flex:1;min-width:200px;background:transparent;border:0;outline:0;color:var(--ink);padding:0 16px;font-size:15px;font-family:ui-monospace,Menlo,monospace}
+.hint{margin-top:14px;color:var(--mute);font-size:13px;font-family:ui-monospace,Menlo,monospace}
+.hud{position:fixed;right:5vw;bottom:24px;z-index:15;font:12px ui-monospace,Menlo,monospace;color:var(--mute);text-align:right;pointer-events:none}
+.hud b{color:var(--b);font-weight:500}
+h2{font-size:clamp(32px,5.4vw,72px);letter-spacing:-.035em;line-height:1;max-width:16ch;font-weight:750}
+.lead{color:var(--mute);margin-top:20px;max-width:50ch;font-size:18px;line-height:1.55}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:48px;max-width:1100px}
+.card{padding:26px;border-radius:22px;border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02));backdrop-filter:blur(12px);transform-style:preserve-3d;transition:transform .2s,border-color .3s}
+.card:hover{border-color:rgba(124,92,255,.6)}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:var(--mute);line-height:1.5;font-size:15px}
+.card .n{font:12px ui-monospace,monospace;color:var(--b);margin-bottom:18px;display:block}
+.diff{margin-top:48px;display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;max-width:1000px}
+pre{font:13px/1.7 ui-monospace,Menlo,monospace;padding:22px;border-radius:18px;background:rgba(8,10,20,.8);border:1px solid var(--line);overflow:auto;color:#b8bfe0}
+.add{color:#5ef0a6}.del{color:#ff7a90;text-decoration:line-through;opacity:.7}
+.arrow{font-size:34px;color:var(--a)}
+.parts{display:flex;flex-direction:column;gap:10px}
+.part{padding:14px 18px;border-radius:14px;border:1px solid var(--line);background:rgba(124,92,255,.12);font-size:14px;position:relative;overflow:hidden}
+.part:nth-child(2){background:rgba(34,211,238,.12)}.part:nth-child(3){background:rgba(255,107,214,.12)}
+.part small{display:block;color:var(--mute);margin-top:3px;font-family:ui-monospace,monospace;font-size:11px}
+.rv{opacity:0;transform:translateY(40px) scale(.98);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.cta{align-items:center;text-align:center}
+.cta h2{max-width:14ch;margin:0 auto}
+footer{position:relative;z-index:5;padding:40px 5vw 60px;color:var(--mute);font-size:13px;line-height:1.6;border-top:1px solid var(--line);background:#06070d}
+footer a{color:var(--b)}
+@media(max-width:760px){.diff{grid-template-columns:1fr}.arrow{transform:rotate(90deg);justify-self:center}.hud{display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="stage"></div><div class="grain"></div>
+<nav><div class="logo"><i></i>Graphide</div><a class="btn" href="https://graphide.com" target="_blank" rel="noopener">Open the real app</a></nav>
+
+<section class="hero">
+  <h1>Any codebase, <span>explained as a map.</span></h1>
+  <p>Paste a GitHub link, get a map of the code, and ask it anything. Drag the map behind this page, it is alive.</p>
+  <div class="form"><input value="github.com/expressjs/express" aria-label="repository link" readonly><a class="btn p" href="https://graphide.com" target="_blank" rel="noopener">Map it</a></div>
+  <div class="hint">tip: hover a node, click to light up what it touches</div>
+</section>
+
+<section>
+  <h2 class="rv">Answers come back as maps.</h2>
+  <p class="lead rv">Ask how a request reaches a view. The parts involved glow, everything else steps back.</p>
+  <div class="grid">
+    <div class="card rv"><span class="n">01</span><h3>Explain any codebase</h3><p>See how the code fits together, then ask it anything.</p></div>
+    <div class="card rv"><span class="n">02</span><h3>Diffs as maps</h3><p>Open a pull request and see what it changed, part by part.</p></div>
+    <div class="card rv"><span class="n">03</span><h3>A library that follows you</h3><p>Saved maps on every device.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="rv">Two thousand lines of diff, three parts.</h2>
+  <div class="diff rv">
+<pre><span class="add">+ def refresh(session):</span>
+<span class="del">- if expired: raise Error</span>
+<span class="add">+ if expired: return renew()</span>
+<span class="add">+ class Invoice(Model):</span>
+<span class="add">+ total = price(items, tax)</span></pre>
+    <div class="arrow">&rarr;</div>
+    <div class="parts"><div class="part">Sessions<small>edited</small></div><div class="part">Billing<small>added</small></div><div class="part">Routing<small>untouched</small></div></div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2 class="rv">Like this? Get it on your own code.</h2>
+  <p class="lead rv">A free account lets you map any public repository, ask questions, draw pull requests and keep a library of maps.</p>
+  <p class="rv" style="margin-top:34px"><a class="btn p" href="https://graphide.com" target="_blank" rel="noopener">Go to graphide.com</a></p>
+</section>
+
+<footer>An unofficial concept homepage with a live 3D map, made by <a href="https://axliosmedia.com" target="_blank" rel="noopener">Axlios Media</a> as a design sketch. Not affiliated with Graphide. Product wording is taken from graphide.com. The 3D map is generated sample data, not a real repository.</footer>
+
+<div class="hud">nodes <b id="hn">0</b> / links <b id="hl">0</b><br><span id="hs">hover a node</span></div>
+
+<script type="importmap">{"imports":{"three":"./js/three.module.min.js"}}</script>
+<script type="module">
+import * as THREE from 'three';
+const stage=document.getElementById('stage');
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const R=new THREE.WebGLRenderer({antialias:true,alpha:true});
+R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(innerWidth,innerHeight);stage.appendChild(R.domElement);
+const S=new THREE.Scene();S.fog=new THREE.FogExp2(0x06070d,.032);
+const cam=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,200);cam.position.set(0,0,22);
+// seeded rng
+let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+const clusterCols=[0x7c5cff,0x22d3ee,0xff6bd6,0x5ef0a6,0xffc857,0x6aa8ff];
+const names=['routing','views','templates','sessions','billing','models','auth','cache','queue','cli','tests','config'];
+const nodes=[],links=[];const G=new THREE.Group();S.add(G);
+const K=names.length;
+const centers=[];for(let k=0;k<K;k++){const u=rnd()*2-1,t=rnd()*Math.PI*2,r=Math.sqrt(1-u*u);const d=7+rnd()*4;centers.push(new THREE.Vector3(r*Math.cos(t)*d,u*d*.8,r*Math.sin(t)*d))}
+for(let k=0;k<K;k++){const cnt=14+Math.floor(rnd()*14);for(let i=0;i<cnt;i++){const p=centers[k].clone().add(new THREE.Vector3((rnd()-.5)*5,(rnd()-.5)*5,(rnd()-.5)*5));nodes.push({p,k,adj:[],s:i===0?.34:.1+rnd()*.12,hub:i===0,name:names[k]+(i?('/'+['init','utils','base','handler','core','types'][i%6]+i):'')})}}
+const byK=k=>nodes.filter(n=>n.k===k);
+nodes.forEach((a,i)=>{const same=byK(a.k).filter(b=>b!==a).sort((x,y)=>x.p.distanceTo(a.p)-y.p.distanceTo(a.p)).slice(0,2);same.forEach(b=>{if(!a.adj.includes(b)){a.adj.push(b);b.adj.push(a);links.push([a,b])}})});
+for(let k=0;k<K;k++){const a=byK(k)[0];for(let j=0;j<2;j++){const b=byK(Math.floor(rnd()*K))[0];if(b!==a&&!a.adj.includes(b)){a.adj.push(b);b.adj.push(a);links.push([a,b])}}}
+document.getElementById('hn').textContent=nodes.length;document.getElementById('hl').textContent=links.length;
+// node points
+const geo=new THREE.BufferGeometry();const pos=new Float32Array(nodes.length*3),col=new Float32Array(nodes.length*3),siz=new Float32Array(nodes.length);
+nodes.forEach((n,i)=>{pos.set([n.p.x,n.p.y,n.p.z],i*3);const c=new THREE.Color(clusterCols[n.k%clusterCols.length]);col.set([c.r,c.g,c.b],i*3);siz[i]=n.s*70});
+geo.setAttribute('position',new THREE.BufferAttribute(pos,3));geo.setAttribute('color',new THREE.BufferAttribute(col,3));geo.setAttribute('size',new THREE.BufferAttribute(siz,1));
+const baseCol=col.slice(),baseSiz=siz.slice();
+const mat=new THREE.ShaderMaterial({transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,uniforms:{px:{value:R.getPixelRatio()}},
+vertexShader:`attribute float size;attribute vec3 color;varying vec3 vc;uniform float px;void main(){vc=color;vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=size*px*(8./-mv.z);gl_Position=projectionMatrix*mv;}`,
+fragmentShader:`varying vec3 vc;void main(){float d=length(gl_PointCoord-.5);float a=smoothstep(.5,.0,d);a=pow(a,1.6);gl_FragColor=vec4(vc*(1.+a),a);}`});
+const pts=new THREE.Points(geo,mat);G.add(pts);
+// lines
+const lp=new Float32Array(links.length*6),lc=new Float32Array(links.length*6);
+links.forEach(([a,b],i)=>{lp.set([a.p.x,a.p.y,a.p.z,b.p.x,b.p.y,b.p.z],i*6)});
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.BufferAttribute(lp,3));lg.setAttribute('color',new THREE.BufferAttribute(lc,3));
+function paintLines(active){links.forEach(([a,b],i)=>{const on=active&&(a===active||b===active);const ca=new THREE.Color(clusterCols[a.k%6]),cb=new THREE.Color(clusterCols[b.k%6]);const f=on?1:(active?.05:.28);lc.set([ca.r*f,ca.g*f,ca.b*f,cb.r*f,cb.g*f,cb.b*f],i*6)});lg.attributes.color.needsUpdate=true}
+paintLines(null);
+const lines=new THREE.LineSegments(lg,new THREE.LineBasicMaterial({vertexColors:true,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));G.add(lines);
+// pulses travelling on links
+const NP=60;const pg=new THREE.BufferGeometry();const pp=new Float32Array(NP*3);pg.setAttribute('position',new THREE.BufferAttribute(pp,3));
+const pulses=Array.from({length:NP},()=>({l:Math.floor(rnd()*links.length),t:rnd(),v:.2+rnd()*.5}));
+const pm=new THREE.Points(pg,new THREE.PointsMaterial({size:.16,color:0xffffff,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false}));G.add(pm);
+// dust
+const dg=new THREE.BufferGeometry();const dp=new Float32Array(900*3);for(let i=0;i<dp.length;i++)dp[i]=(rnd()-.5)*70;dg.setAttribute('position',new THREE.BufferAttribute(dp,3));
+S.add(new THREE.Points(dg,new THREE.PointsMaterial({size:.05,color:0x8d93b3,transparent:true,opacity:.5})));
+// interaction
+const mouse=new THREE.Vector2(9,9),target=new THREE.Vector2();let active=null,locked=null,drag=false,lx=0,rotY=0,rotX=0,vy=.0016;
+const ray=new THREE.Raycaster();ray.params.Points.threshold=.5;
+addEventListener('pointermove',e=>{mouse.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight)*2+1);target.set(mouse.x,mouse.y);if(drag){rotY+=(e.clientX-lx)*.005;lx=e.clientX}});
+addEventListener('pointerdown',e=>{if(e.target.closest('a,input,.card,pre'))return;drag=true;lx=e.clientX;if(active)locked=locked===active?null:active});
+addEventListener('pointerup',()=>drag=false);
+function setActive(n){if(n===active)return;active=n;const set=n?new Set([n,...n.adj]):null;nodes.forEach((m,i)=>{const on=!set||set.has(m);const f=on?1:.12;const c=new THREE.Color(clusterCols[m.k%6]);col.set([c.r*f,c.g*f,c.b*f],i*3);siz[i]=baseSiz[i]*(m===n?2.2:on?1.2:.7)});geo.attributes.color.needsUpdate=true;geo.attributes.size.needsUpdate=true;paintLines(n);document.getElementById('hs').textContent=n?`${n.name} · ${n.adj.length} links`:'hover a node'}
+let scrollY0=0;addEventListener('scroll',()=>scrollY0=scrollY/Math.max(1,document.body.scrollHeight-innerHeight));
+const clock=new THREE.Clock();
+function frame(){const dt=clock.getDelta(),t=clock.elapsedTime;
+ if(!reduce){if(!drag)rotY+=vy;G.rotation.y=rotY;G.rotation.x=Math.sin(t*.2)*.1+target.y*.12}
+ const sp=scrollY0;cam.position.z=22-sp*10+(innerWidth<760?10:0);cam.position.x=target.x*1.6+Math.sin(sp*Math.PI*2)*5;cam.position.y=target.y*1.0-sp*4;cam.lookAt(0,0,0);
+ // pick
+ ray.setFromCamera(mouse,cam);const q=ray.intersectObject(pts);if(locked){setActive(locked)}else if(q.length){setActive(nodes[q[0].index])}else setActive(null);
+ for(let i=0;i<NP;i++){const p=pulses[i];p.t+=p.v*dt;if(p.t>1){p.t=0;p.l=Math.floor(Math.random()*links.length)}const [a,b]=links[p.l];pp[i*3]=a.p.x+(b.p.x-a.p.x)*p.t;pp[i*3+1]=a.p.y+(b.p.y-a.p.y)*p.t;pp[i*3+2]=a.p.z+(b.p.z-a.p.z)*p.t}
+ pg.attributes.position.needsUpdate=true;
+ R.render(S,cam);requestAnimationFrame(frame)}
+frame();
+addEventListener('resize',()=>{cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix();R.setSize(innerWidth,innerHeight)});
+// reveal + card tilt
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.2});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.card').forEach(c=>{c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(700px) rotateY(${x*10}deg) rotateX(${-y*10}deg) translateZ(6px)`});c.addEventListener('pointerleave',()=>c.style.transform='')});
+</script>
+</body></html>
