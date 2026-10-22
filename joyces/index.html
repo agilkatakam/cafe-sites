@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joyce's Garden Centre, Mallow</title>
+<meta name="description" content="Joyce's Garden Centre on Navigation Road, Mallow, Co. Cork. Plants, pots, compost and free advice, Tuesday to Sunday. Call 022 42997.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=sentient@300,400,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#1c1c1c; --surface:#262626; --ink:#f1f1ef; --muted:#9a9b96;
+  --accent:#8fa68e; --accent-ink:#1c1c1c; --field-1:#c8c5ba; --field-1-ink:#1c1c1c;
+  --small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --body:clamp(1.125rem,1.05rem + 0.3vw,1.3125rem);
+  --lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --marg:24px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Sentient',serif;font-weight:400;font-size:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img,video{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+.ph{filter:brightness(0.9) contrast(1.05)}
+
+/* ---------- hero ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;padding:20px var(--marg) 0}
+.band{display:grid;grid-template-columns:repeat(7,1fr);gap:14px;font-size:16px;line-height:1.4}
+.band .what{grid-column:1/2}
+.band .avail{grid-column:2/3;color:var(--muted)}
+.band .svc{grid-column:3/5;color:var(--muted)}
+.band .svc span{display:block}
+.band .rev{grid-column:5/7;color:var(--muted)}
+.band .rev span{display:block}
+.band .act{grid-column:7/8;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-weight:500;font-size:17px;min-height:48px;padding:12px 22px;transition:background .2s}
+.btn:hover{background:#a3baA2;background:#a5bba4}
+.band .act a.lnk{font-size:16px;color:var(--ink);text-decoration:underline;text-decoration-color:var(--muted);text-underline-offset:3px}
+.band .act a.lnk:hover{text-decoration-color:var(--ink)}
+.hero .exhibit{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 0 24px}
+.hero .exhibit img{width:auto;max-width:44vw;height:min(52svh,560px)}
+.hero .name{margin:0 calc(-1*var(--marg));padding:0 var(--marg)}
+.hero h1{font-weight:300;letter-spacing:-0.015em;line-height:1.0;font-size:clamp(2.6rem,8.6vw,9.5rem);white-space:nowrap;padding-bottom:8px}
+.hero .tagline{font-size:17px;color:var(--muted);padding-bottom:18px}
+.hero h1 .ln{display:block;overflow:hidden}
+.hero h1 .ln span{display:block;transform:translateY(105%);animation:rise 1s cubic-bezier(.16,1,.3,1) 0.15s forwards}
+@keyframes rise{to{transform:translateY(0)}}
+.hero .exhibit img{opacity:0;animation:fadein 1.2s ease 0.3s forwards}
+@keyframes fadein{to{opacity:1}}
+
+/* ---------- intro: staircase statement ---------- */
+.intro{min-height:100svh;display:flex;flex-direction:column;justify-content:center;position:relative;padding:96px var(--marg)}
+.stair{font-weight:300;letter-spacing:-0.015em;line-height:1.02;font-size:clamp(36px,4.4vw,64px);max-width:75%}
+.stair .sl{display:block}
+.stair .sl:nth-child(1){padding-left:0}
+.stair .sl:nth-child(2){padding-left:6vw;color:var(--muted)}
+.stair .sl:nth-child(3){padding-left:12vw}
+.stair .sl:nth-child(4){padding-left:18vw;color:var(--accent)}
+.stair .sl:nth-child(5){padding-left:24vw}
+.intro .pair{position:absolute;top:50%;right:var(--marg);transform:translateY(-50%);width:20vw;display:flex;flex-direction:column;gap:16px}
+.intro .pair img{aspect-ratio:3/2;height:auto}
+.intro .note{position:absolute;left:var(--marg);bottom:40px;font-size:16px;color:var(--muted);max-width:52ch}
+.intro .note b{color:var(--ink);font-weight:500}
+
+/* ---------- gallery: staggered pairs ---------- */
+.gallery{padding:8vh var(--marg) 10vh}
+.gallery h2{font-weight:300;font-size:28px;letter-spacing:-0.015em;margin-bottom:8vh;color:var(--ink)}
+.g-item{margin-bottom:10vh}
+.g-item img{height:auto}
+.g-item .cap{font-size:14px;color:var(--muted);margin-top:10px}
+.g-a{width:41.66%;margin-left:0}
+.g-b{width:58.33%;margin-left:41.66%;margin-top:-4vh}
+.g-c{width:50%;margin-left:50%}
+.g-d{width:33.33%;margin-left:8.33%;margin-top:-3vh}
+.g-e{width:50%;margin-left:8.33%}
+.g-f{width:41.66%;margin-left:58.33%;margin-top:-4vh}
+.g-g{width:58.33%;margin-left:20.83%}
+.wipe{clip-path:inset(100% 0 0 0);transition:clip-path .9s cubic-bezier(.16,1,.3,1)}
+.wipe.in{clip-path:inset(0 0 0 0)}
+
+/* ---------- features: name columns with preview ---------- */
+.features{position:relative;padding:12vh var(--marg)}
+.features h2{font-weight:300;font-size:28px;letter-spacing:-0.015em;margin-bottom:14px}
+.features .sub{font-size:16px;color:var(--muted);margin-bottom:96px;max-width:44ch}
+.fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.fcol{grid-column:span 3}
+.fcol:nth-child(1){grid-column:1/4}
+.fcol:nth-child(2){grid-column:4/7}
+.fcol:nth-child(3){grid-column:7/10}
+.fcol h3{font-weight:500;font-size:17px;margin-bottom:14px}
+.fcol ul{list-style:none}
+.fcol li{font-size:17px;line-height:1.35;color:var(--muted);padding:2px 0;cursor:default;transition:color .24s,opacity .24s}
+.fcol li:hover,.fcol li.on{color:var(--ink)}
+.fcols.dim li:not(.on){opacity:.45}
+.fcol .sum{display:none;font-size:16px;color:var(--muted);margin-top:14px;line-height:1.5}
+.preview{grid-column:10/13;grid-row:1;position:relative}
+.preview .frame-holder{position:sticky;top:12vh;aspect-ratio:4/5;overflow:hidden}
+.preview img{position:absolute;inset:0;opacity:0;transition:opacity .24s ease}
+.preview img.show{opacity:1}
+.preview .pcap{font-size:14px;color:var(--muted);margin-top:10px;min-height:18px;position:sticky;top:calc(12vh + 100%)}
+
+/* ---------- list: the week at one size ---------- */
+.week{padding:10vh var(--marg)}
+.week .day-head{color:var(--accent);font-size:clamp(20px,3vw,42px);font-weight:300;letter-spacing:-0.015em;margin-bottom:20px}
+.wrow{display:flex;align-items:baseline;font-size:clamp(20px,3vw,42px);font-weight:300;letter-spacing:-0.015em;line-height:1.5}
+.wrow .d{flex:0 0 33%}
+.wrow .s{flex:0 0 33%;color:var(--muted)}
+.wrow .t{flex:1;text-align:right}
+.wrow.closed .s{color:var(--muted)}
+.week .wnote{margin-top:64px;font-size:16px;color:var(--muted);letter-spacing:0.04em}
+
+/* ---------- contact: email as display type ---------- */
+.contact{background:var(--field-1);color:var(--field-1-ink);min-height:82svh;position:relative;display:flex;flex-direction:column;padding:40px var(--marg) 12vh}
+.contact .say{font-size:clamp(18px,1.5vw,22px);max-width:26ch}
+.contact .mailing{margin-top:auto}
+.contact a.mail{display:block;font-weight:300;letter-spacing:-0.02em;line-height:1;font-size:clamp(2.4rem,7.6vw,8.4rem);white-space:nowrap;text-decoration:none;transition:color .2s}
+.contact a.mail:hover{color:#3f513f}
+.contact .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:24px;font-size:16px;color:#3c3c38}
+.contact .foot a{color:#3c3c38;text-decoration:underline;text-underline-offset:3px}
+.contact .foot a:hover{color:var(--field-1-ink)}
+
+/* ---------- footer ---------- */
+footer{background:#d8d5ca;color:var(--field-1-ink);min-height:82svh;display:grid;grid-template-rows:auto 1fr auto;padding:40px var(--marg) 24px}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.fgrid h4{font-weight:500;font-size:16px;margin-bottom:10px}
+.fgrid ul{list-style:none;font-size:16px;line-height:1.5;color:#3c3c38}
+.fgrid a{color:#3c3c38;text-decoration:underline;text-decoration-color:rgba(28,28,28,.3);text-underline-offset:3px}
+.fgrid a:hover{color:var(--field-1-ink)}
+.wordmark{font-weight:300;letter-spacing:-0.02em;line-height:.9;font-size:26vw;white-space:nowrap;text-align:center}
+.legal{text-align:center;font-size:16px;color:#3c3c38;margin-top:12px;max-width:72ch;margin-left:auto;margin-right:auto}
+.legal span{display:block;margin-top:4px}
+
+/* ---------- entrance motion ---------- */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.16,1,.3,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv,.wipe{opacity:1;transform:none;clip-path:none;transition:none}
+  .hero h1 .ln span{animation:none;transform:none}
+  .hero .exhibit img{animation:none;opacity:1}
+}
+
+/* ---------- mobile ---------- */
+@media (max-width:760px){
+  .hero{min-height:0}
+  .band{display:grid;grid-template-columns:1fr 1fr;gap:12px;font-size:15px}
+  .band .what{grid-column:1/3;grid-row:1}
+  .band .act{grid-column:1/3;grid-row:2;flex-direction:row;align-items:center;justify-content:flex-start;gap:18px}
+  .band .avail{grid-column:1/3;grid-row:3}
+  .band .svc{grid-column:1/2;grid-row:4}
+  .band .rev{grid-column:2/3;grid-row:4}
+  .hero .exhibit{padding:28px 0 16px}
+  .hero .exhibit img{width:auto;max-width:60vw;height:30svh}
+  .hero h1{font-size:8.2vw;padding-bottom:6px}
+  .intro{padding:64px var(--marg);min-height:0}
+  .stair{font-size:9vw;max-width:100%}
+  .stair .sl:nth-child(1){padding-left:0}
+  .stair .sl:nth-child(2){padding-left:5vw}
+  .stair .sl:nth-child(3){padding-left:10vw}
+  .stair .sl:nth-child(4){padding-left:15vw}
+  .stair .sl:nth-child(5){padding-left:20vw}
+  .intro .pair{position:static;transform:none;width:100%;flex-direction:row;margin-top:48px}
+  .intro .pair img{width:calc(50% - 8px)}
+  .intro .note{position:static;margin-top:40px}
+  .g-item{margin-bottom:64px !important;margin-left:0 !important;margin-top:0 !important;width:100%}
+  .g-a{width:70%}.g-b{width:84%;margin-left:16% !important}.g-c{width:56%}
+  .g-d{width:100%}.g-e{width:70%}.g-f{width:84%;margin-left:16% !important}.g-g{width:100%}
+  .features{padding:10vh var(--marg)}
+  .features .sub{margin-bottom:48px}
+  .fcols{display:block}
+  .fcol{margin-bottom:40px}
+  .fcol li{font-size:18px;line-height:1.4;padding:4px 0}
+  .fcol .sum{display:block}
+  .preview{display:none}
+  .week{padding:10vh var(--marg)}
+  .wrow{flex-wrap:wrap;line-height:1.3;margin-bottom:18px}
+  .wrow .d{flex:0 0 100%;font-size:22px}
+  .wrow .s{flex:1;font-size:16px;color:var(--muted)}
+  .wrow .t{flex:0 0 auto;font-size:16px;color:var(--muted);text-align:right}
+  .week .wnote{margin-top:40px}
+  .contact{padding:32px var(--marg) 10vh;min-height:86svh}
+  .contact a.mail{font-size:11.5vw;white-space:normal}
+  .contact a.mail span{display:block}
+  .contact .foot{flex-direction:column;gap:12px;font-size:15px}
+  footer{min-height:0;padding-bottom:32px}
+  .fgrid{grid-template-columns:1fr 1fr;gap:32px}
+  .wordmark{font-size:25vw;margin-top:12svh}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO: text band, one exhibit, full-width name ============ -->
+<header class="hero">
+  <div class="band">
+    <div class="what">A garden centre in Mallow, Co. Cork.</div>
+    <div class="avail">Open Tuesday to Sunday, 10 to 5.</div>
+    <div class="svc"><span>Plants and shrubs</span><span>Pots and containers</span><span>Compost and feed</span><span>Tools and seeds</span><span>Advice, free</span></div>
+    <div class="rev"><span>Rated 4.9 of 5 on Google,</span><span>from 69 reviews.</span></div>
+    <div class="act">
+      <a class="btn" href="tel:+3532242997">Call 022 42997</a>
+      <a class="lnk" href="#hours">Hours</a>
+    </div>
+  </div>
+  <div class="exhibit"><img class="ph" src="img/calla.jpg" alt="Stock photo: a single white calla lily against a near black background" width="1400" height="1750"></div>
+  <div class="name"><h1><span class="ln"><span>Joyce's Garden Centre</span></span></h1>
+  <p class="tagline">Plants, pots and free advice in Mallow, Co. Cork.</p></div>
+</header>
+
+<!-- ============ INTRO: staircase statement ============ -->
+<section class="intro">
+  <div class="stair rv">
+    <p class="sl">A garden centre</p>
+    <p class="sl">on Navigation Road,</p>
+    <p class="sl">in Mallow, where</p>
+    <p class="sl">the advice comes free</p>
+    <p class="sl">with the plants.</p>
+  </div>
+  <div class="pair">
+    <img class="ph rv" src="img/petunia.jpg" alt="Stock photo: purple petunias with dark green leaves" width="1200" height="1500" loading="lazy">
+    <img class="ph rv" src="img/droplet.jpg" alt="Stock photo: a water droplet at the centre of a green leaf" width="1600" height="1000" loading="lazy">
+  </div>
+  <p class="note rv"><b>From the Google reviews:</b> "Ken is an absolute gentleman with oceans of knowledge and always gives good advice."<br>Five stars, February 2026.</p>
+</section>
+
+<!-- ============ GALLERY: staggered pairs in empty ground ============ -->
+<section class="gallery">
+  <h2 class="rv">Plants, up close</h2>
+  <div class="g-item g-a rv"><img class="ph" src="img/dandelion.jpg" alt="Stock photo: a hand holding a dandelion seed head against a dark background" width="1200" height="1500" loading="lazy"><div class="cap">Seed heads · stock photo</div></div>
+  <div class="g-item g-b rv"><img class="ph" src="img/lily.jpg" alt="Stock photo: a white water lily among dark lily pads" width="1600" height="1000" loading="lazy"><div class="cap">Water lily · stock photo</div></div>
+  <div class="g-item g-c rv"><img class="ph" src="img/buds.jpg" alt="Stock photo: tight green flower buds against a dark teal background" width="1600" height="1000" loading="lazy"><div class="cap">Buds · stock photo</div></div>
+  <div class="g-item g-d rv"><video class="ph" src="img/rain.webm" poster="img/rain-poster.jpg" autoplay muted loop playsinline width="1280" height="720" aria-label="Stock clip: raindrops running down a window at night"></video><div class="cap">Rain on glass · stock clip, CC0</div></div>
+  <div class="g-item g-e rv"><img class="ph" src="img/petunia.jpg" alt="Stock photo: petunia flowers, close" width="1200" height="1500" loading="lazy"><div class="cap">Petunias · stock photo</div></div>
+  <div class="g-item g-f rv"><img class="ph" src="img/rose-plate.jpg" alt="Botanical plate: a China rose, painted by Redouté in the nineteenth century" width="1920" height="2598" loading="lazy"><div class="cap">A China rose, painted by Redouté · public domain plate</div></div>
+  <div class="g-item g-g rv"><img class="ph" src="img/calla.jpg" alt="Stock photo: a calla lily, wide crop" width="1400" height="1750" loading="lazy"><div class="cap">Calla lily · stock photo</div></div>
+</section>
+
+<!-- ============ FEATURES: name columns with preview ============ -->
+<section class="features" id="stock">
+  <h2 class="rv">What you will find</h2>
+  <p class="sub rv">Stock turns with the season, so ring ahead if you are after something particular.</p>
+  <div class="fcols" id="fcols">
+    <div class="fcol">
+      <h3>Growing</h3>
+      <ul>
+        <li data-img="buds" data-cap="Buds · stock photo">Trees and shrubs</li>
+        <li data-img="petunia" data-cap="Petunias · stock photo">Seasonal bedding</li>
+        <li data-img="lily" data-cap="Water lily · stock photo">Perennials</li>
+        <li data-img="droplet" data-cap="Leaf and droplet · stock photo">Herbs</li>
+        <li data-img="calla" data-cap="Calla lily · stock photo">Climbers</li>
+        <li data-img="buds" data-cap="Buds · stock photo">Hedging</li>
+      </ul>
+      <p class="sum">The benches change with the season.</p>
+    </div>
+    <div class="fcol">
+      <h3>The shop</h3>
+      <ul>
+        <li data-img="rose-plate" data-cap="A China rose by Redouté · public domain plate">Pots and containers</li>
+        <li data-img="droplet" data-cap="Leaf and droplet · stock photo">Compost and feed</li>
+        <li data-img="dandelion" data-cap="Seed heads · stock photo">Garden tools</li>
+        <li data-img="dandelion" data-cap="Seed heads · stock photo">Seeds</li>
+      </ul>
+      <p class="sum">The everyday kit, next to the plants.</p>
+    </div>
+    <div class="fcol">
+      <h3>Bring your questions</h3>
+      <ul>
+        <li data-img="lily" data-cap="Water lily · stock photo">What to plant where</li>
+        <li data-img="buds" data-cap="Buds · stock photo">When to prune</li>
+        <li data-img="droplet" data-cap="Leaf and droplet · stock photo">Why it is struggling</li>
+        <li data-img="petunia" data-cap="Petunias · stock photo">What to feed it</li>
+        <li data-img="calla" data-cap="Calla lily · stock photo">How much water</li>
+      </ul>
+      <p class="sum">Ask at the counter; reviewers single out the advice.</p>
+    </div>
+    <div class="preview" aria-hidden="true">
+      <div class="frame-holder">
+        <img class="ph show" data-key="calla" src="img/calla.jpg" alt="" width="1400" height="1750" loading="lazy">
+        <img class="ph" data-key="lily" src="img/lily.jpg" alt="" width="1600" height="1000" loading="lazy">
+        <img class="ph" data-key="petunia" src="img/petunia.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <img class="ph" data-key="buds" src="img/buds.jpg" alt="" width="1600" height="1000" loading="lazy">
+        <img class="ph" data-key="droplet" src="img/droplet.jpg" alt="" width="1600" height="1000" loading="lazy">
+        <img class="ph" data-key="dandelion" src="img/dandelion.jpg" alt="" width="1200" height="1500" loading="lazy">
+        <img class="ph" data-key="rose-plate" src="img/rose-plate.jpg" alt="" width="1920" height="2598" loading="lazy">
+      </div>
+      <div class="pcap" id="pcap">Calla lily · stock photo</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIST: the week at one type size ============ -->
+<section class="week" id="hours">
+  <div class="day-head rv">Opening hours</div>
+  <div class="wrow rv"><span class="d">Tuesday</span><span class="s">open</span><span class="t">10:00 to 17:00</span></div>
+  <div class="wrow rv"><span class="d">Wednesday</span><span class="s">open</span><span class="t">10:00 to 17:00</span></div>
+  <div class="wrow rv"><span class="d">Thursday</span><span class="s">open</span><span class="t">10:00 to 17:00</span></div>
+  <div class="wrow rv"><span class="d">Friday</span><span class="s">open</span><span class="t">10:00 to 17:00</span></div>
+  <div class="wrow rv"><span class="d">Saturday</span><span class="s">open</span><span class="t">10:00 to 17:00</span></div>
+  <div class="wrow rv"><span class="d">Sunday</span><span class="s">afternoons</span><span class="t">14:00 to 17:00</span></div>
+  <div class="wrow closed rv"><span class="d">Monday</span><span class="s">closed</span><span class="t"></span></div>
+  <p class="wnote rv">RING BEFORE YOU SET OFF · HOURS FROM THE CENTRE'S GOOGLE LISTING, AUTUMN 2026</p>
+</section>
+
+<!-- ============ CONTACT: the email as display type ============ -->
+<section class="contact">
+  <p class="say rv">Write about your garden, or what you want it to do.</p>
+  <div class="mailing rv">
+    <a class="mail" href="mailto:joyceken@eircom.net"><span>joyceken@</span><span>eircom.net</span></a>
+    <div class="foot">
+      <span>022 42997 · Mallow, Co. Cork</span>
+      <a href="https://facebook.com/joycesgardencentre" target="_blank" rel="noopener">facebook.com/joycesgardencentre</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER: columns above, wordmark below ============ -->
+<footer>
+  <div class="fgrid">
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li>Joyce's Garden Centre</li>
+        <li>Navigation Road</li>
+        <li>Mallow, Co. Cork</li>
+        <li>P51 RR76</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Talk to us</h4>
+      <ul>
+        <li><a href="tel:+3532242997">022 42997</a></li>
+        <li><a href="mailto:joyceken@eircom.net">joyceken@eircom.net</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul>
+        <li><a href="https://facebook.com/joycesgardencentre" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="https://www.google.com/maps/search/?api=1&query=Joyces+Garden+Centre+Navigation+Road+Mallow" target="_blank" rel="noopener">Google Maps</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Tue to Sat · 10:00 to 17:00</li>
+        <li>Sunday · 14:00 to 17:00</li>
+        <li>Monday · closed</li>
+      </ul>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <div class="wordmark" aria-hidden="true">Joyce's</div>
+    <p class="legal">Free preview by Axlios Media · axliosmedia.com · not the live site
+      <span>Photos: Unsplash (Marta Pawlik, Schicka, Steven Spassov, Coley Christine, John French, 贝莉儿 NG) · rose plate: Henry Joseph Redouté, CC0, Cleveland Museum of Art via Wikimedia Commons · clip: slavikfi, CC0, via Wikimedia Commons</span></p>
+  </div>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:0.15});
+document.querySelectorAll('.rv,.wipe').forEach(function(el){io.observe(el);});
+
+var fcols=document.getElementById('fcols');
+var pcap=document.getElementById('pcap');
+var pimgs={};
+document.querySelectorAll('.preview img').forEach(function(im){pimgs[im.dataset.key]=im;});
+function showPreview(key,cap){
+  for(var k in pimgs){pimgs[k].classList.toggle('show',k===key);}
+  pcap.textContent=cap;
+}
+document.querySelectorAll('.fcol li').forEach(function(li){
+  li.addEventListener('mouseenter',function(){
+    document.querySelectorAll('.fcol li').forEach(function(x){x.classList.remove('on');});
+    li.classList.add('on');
+    fcols.classList.add('dim');
+    showPreview(li.dataset.img,li.dataset.cap);
+  });
+});
+fcols.addEventListener('mouseleave',function(){
+  fcols.classList.remove('dim');
+  document.querySelectorAll('.fcol li').forEach(function(x){x.classList.remove('on');});
+  showPreview('calla','Calla lily · stock photo');
+});
+</script>
+</body>
+</html>
