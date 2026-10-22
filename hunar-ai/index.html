@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hunar.AI: turn conversations into better workforce outcomes (unofficial sketch)</title>
+<meta name="description" content="An unofficial sketch of a homepage for Hunar.AI, with a typed conversation that turns into a hiring outcome. Made by Axlios Media.">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d060b;--surface:#1b0e17;--ink:#fff;--muted:#cfc6cc;--accent:#ff488b;--accent-ink:#0d060b;--plum:#470c35;--m:clamp(20px,4vw,64px);
+--step-small:clamp(1rem,.96rem + .1vw,1.0625rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Boska,Georgia,serif;font-size:var(--step-body);line-height:1.5;letter-spacing:.005em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-underline-offset:4px}
+h1,h2{font-weight:500;letter-spacing:-.02em;line-height:.98}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;background:var(--accent);color:var(--accent-ink);font:500 1.125rem/1 Boska,serif;text-decoration:none;border:0;border-radius:2px;cursor:pointer;transition:transform .2s,filter .2s}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.07)}.btn:active{transform:scale(.97)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.light{background:#fff;color:#101421}.light a:focus-visible,.light button:focus-visible{outline-color:#101421}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px var(--m);font-size:var(--step-small)}
+nav .mark{font-size:1.5rem;font-weight:500;text-decoration:none;letter-spacing:-.02em}
+nav ul{display:flex;gap:clamp(16px,3vw,40px);list-style:none}
+nav ul a{text-decoration:none}
+@media(max-width:700px){nav ul li:nth-child(n+2){display:none}}
+/* hero */
+.hero{padding:clamp(24px,4vh,60px) var(--m) 56px}
+.hero h1{font-size:clamp(2.7rem,6vw,6.4rem);letter-spacing:-.03em;margin-top:clamp(24px,7vh,100px)}
+.hero h1 .in{display:inline-block;width:2.1em;height:.8em;vertical-align:baseline;margin-left:.12em;overflow:hidden;position:relative;top:.02em}
+.hero h1 .in img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.1)}
+.shut{clip-path:inset(0 100% 0 0);animation:shut 1.1s .3s cubic-bezier(.2,.7,.2,1) forwards}
+.shut img{animation:settle 1.4s .3s ease-out both}
+@keyframes shut{to{clip-path:inset(0)}}@keyframes settle{from{transform:scale(1.14)}to{transform:scale(1)}}
+.hero .bot{margin-top:clamp(32px,6vh,80px);display:flex;gap:32px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap}
+.hero .bot p{max-width:42ch;font-size:var(--step-lead);line-height:1.3;color:var(--muted)}
+/* try it */
+.try{padding:clamp(80px,9vw,140px) var(--m);display:grid;grid-template-columns:7fr 4fr;gap:clamp(24px,5vw,80px);align-items:start}
+.try .lab{font-size:var(--step-lead);max-width:34ch;color:var(--muted);line-height:1.3}
+.line{display:block;margin-top:28px;width:100%;background:none;border:0;color:var(--ink);font:500 clamp(1.75rem,3.6vw,3.6rem)/1.1 Boska,serif;letter-spacing:-.025em;caret-color:var(--accent);resize:none;overflow:hidden;padding:8px 0;border-bottom:3px solid transparent}
+.line:focus-visible{outline:none;border-bottom-color:var(--accent)}
+.ans{margin-top:44px;max-width:560px;background:var(--surface)}
+.ans .row{display:grid;grid-template-columns:9.5rem 1fr;gap:16px;padding:16px 22px;font-size:1.125rem}
+.ans .row:nth-child(even){background:#241320}
+.ans .row span:first-child{color:var(--muted)}
+.ans .row b{font-weight:500}
+.ans .row.nx{background:var(--plum)}
+.ex{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap}
+.ex button{font:500 1.0625rem/1.2 Boska,serif;min-height:48px;padding:10px 18px;background:var(--surface);color:var(--ink);border:0;cursor:pointer;text-align:left}
+.ex button:hover,.ex button[aria-pressed=true]{background:var(--plum)}
+.fine{margin-top:22px;max-width:62ch;font-size:var(--step-small);color:var(--muted)}
+/* stages */
+.stage{padding:clamp(96px,12vw,180px) var(--m);display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,5vw,80px);align-items:start;background:var(--plum)}
+.stage h2{font-size:clamp(1.8rem,3.4vw,3.4rem)}
+.sw{list-style:none;margin-top:36px;display:flex;gap:8px;flex-wrap:wrap}
+.sw button{font:500 1.125rem/1 Boska,serif;min-height:48px;padding:0 20px;background:transparent;color:#fff;border:2px solid #fff;cursor:pointer}
+.sw button[aria-pressed=true]{background:#fff;color:#470c35}
+.sw+p{margin-top:28px;font-size:var(--step-lead);line-height:1.3;max-width:34ch;min-height:6.5em}
+.pic{aspect-ratio:4/5;overflow:hidden;background:#000}
+.pic img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.05)}
+.pc{margin-top:10px;font-size:var(--step-small);color:var(--muted)}
+/* numbers */
+.num{padding:clamp(96px,12vw,180px) var(--m)}
+.num h2{font-size:clamp(1.7rem,3.6vw,3.6rem)}
+.grid{margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(24px,3vw,48px)}
+.grid .big{font-size:clamp(3.4rem,7vw,7rem);font-weight:500;letter-spacing:-.04em;line-height:.9}
+.grid p{margin-top:12px;max-width:22ch;font-size:1.125rem;line-height:1.3}
+.src{margin-top:48px;font-size:var(--step-small);max-width:70ch;color:#4a4f5c}
+/* news */
+.news{padding:clamp(96px,12vw,180px) var(--m);display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,5vw,80px)}
+.news h2{font-size:clamp(1.8rem,3.4vw,3.4rem)}
+.news .big{font-size:clamp(4rem,9vw,9rem);font-weight:500;letter-spacing:-.04em;line-height:.9;color:var(--accent)}
+.news ul{list-style:none;margin-top:36px;max-width:46ch}
+.news li{padding:10px 0;font-size:var(--step-lead);line-height:1.3}
+/* cta */
+.cta{padding:clamp(96px,12vw,180px) var(--m);display:grid;grid-template-columns:7fr 4fr;gap:clamp(24px,5vw,80px);align-items:end}
+.cta h2{font-size:clamp(1.8rem,4.2vw,4.2rem)}
+.cta .act{margin-top:40px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+footer{padding:48px var(--m);font-size:var(--step-small);color:var(--muted);background:var(--surface)}
+footer .nm{font-size:clamp(2.4rem,6vw,5rem);color:#fff;font-weight:500;letter-spacing:-.03em;line-height:1}
+footer .line2{margin-top:24px;color:#fff;max-width:72ch}
+footer .cr{margin-top:16px;max-width:100ch;line-height:1.55}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .8s,transform .8s}.rv.v{opacity:1;transform:none}
+.nojs .rv{opacity:1;transform:none}
+@media(max-width:900px){
+.stage,.news,.try,.cta{grid-template-columns:1fr}
+.grid{grid-template-columns:1fr 1fr}
+.hero h1{font-size:7.6vw}.stage h2,.news h2{font-size:7vw}.num h2,.cta h2{font-size:6.4vw}
+.ans .row{grid-template-columns:1fr;gap:2px}
+.line{font-size:7.4vw}
+}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.shut{clip-path:none;animation:none}.shut img{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="nojs">
+<header class="hero">
+  <nav><a class="mark" href="#top">Hunar.AI</a><ul><li><a href="#try">Try a conversation</a></li><li><a href="#stages">Stages</a></li><li><a href="#numbers">Outcomes</a></li></ul></nav>
+  <h1 id="top">Turn conversations into <span class="in shut"><img src="assets/rider-crop.jpg" width="1200" height="800" alt="Two wheelers and an auto rickshaw in Bengaluru traffic"></span> better workforce outcomes.</h1>
+  <div class="bot"><p>Voice AI and autonomous HR operations for sourcing, onboarding, engagement, retention, and everything in between.</p><a class="btn" href="#try">Type a conversation</a></div>
+</header>
+
+<main>
+<section class="try" id="try" aria-labelledby="h-try">
+  <div>
+  <p class="lab rv" id="h-try">A candidate says one line. See what the line becomes.</p>
+  <div data-ui class="rv">
+    <label for="cand" class="fine" style="display:block;margin-top:24px">Edit the line below or pick an example.</label>
+    <textarea id="cand" class="line" rows="2" autocomplete="off" spellcheck="false" aria-describedby="out">I can start Monday and I have a bike</textarea>
+    <div class="ans" id="out" aria-live="polite"></div>
+    <div class="ex" role="group" aria-label="Examples">
+      <button type="button" aria-pressed="true">I can start Monday and I have a bike</button>
+      <button type="button" aria-pressed="false">Free after 6, is the store in Whitefield?</button>
+      <button type="button" aria-pressed="false">Night shift works for me, I have a scooter</button>
+    </div>
+  </div>
+  <p class="fine rv">A sketch of the idea by Axlios Media. The fields and the next step are made up for this demo and are not Hunar's screening. Hunar's own product calls every applicant in their language and screens for role fit.</p>
+  </div>
+  <figure class="rv"><div class="pic"><img src="assets/paan-at-church-street-bengaluru-2026-01.jpg" width="1920" height="1440" alt="Rows of folded betel leaf parcels in clear wrap at a Bengaluru stall" loading="lazy"></div><figcaption class="pc">A stall on Church Street, Bengaluru. A picture of the idea, not Hunar.</figcaption></figure>
+</section>
+
+<section class="stage" id="stages" aria-labelledby="h-st">
+  <div>
+    <h2 id="h-st" class="rv">Hiring, onboarding, training.</h2>
+    <div class="sw rv" role="group" aria-label="Stage"><button type="button" aria-pressed="true" data-i="0">Hiring</button><button type="button" aria-pressed="false" data-i="1">Onboarding</button><button type="button" aria-pressed="false" data-i="2">Training and engaging</button></div>
+    <p id="st-p" aria-live="polite"></p>
+  </div>
+  <figure class="rv"><div class="pic"><img id="st-img" src="assets/india-koyambedu-market-faces-30-3987092094.jpg" width="1920" height="1440" alt="Workers unloading coconuts from a truck at a market" loading="lazy"></div><figcaption class="pc" id="st-cap">Market workers at Koyambedu. A picture of the idea, not Hunar.</figcaption></figure>
+</section>
+
+<section class="num light" id="numbers" aria-labelledby="h-num">
+  <h2 id="h-num" class="rv">Real workforce challenges. Real business outcomes.</h2>
+  <div class="grid rv">
+    <div><div class="big">2.4x</div><p>conversion improvement for a quick commerce platform's partner acquisition</p></div>
+    <div><div class="big">13 lakh</div><p>candidates screened by a diagnostics and healthcare customer</p></div>
+    <div><div class="big">570+</div><p>stores in a retail screening programme, across 200+ cities</p></div>
+    <div><div class="big">7.5 lakh</div><p>stale records reactivated into a live talent engine</p></div>
+  </div>
+  <p class="src rv">All four are customer stories as printed on hunar.ai. Hunar also says AI HRs bring a 2.5X increase in hiring speed. These are Hunar's own figures, shown as published and not checked by Axlios Media.</p>
+</section>
+
+<section class="news" aria-labelledby="h-news">
+  <div>
+    <h2 id="h-news" class="rv">Frontline hiring, in more than 20 languages.</h2>
+    <ul class="rv"><li>A ₹40 Cr Series A led by Blume Ventures, announced October 19, 2026.</li><li>More than 1.5 Cr conversations handled until September 2026, a figure Hunar gave to Inc42.</li><li>Voice AI that includes Tamil, Telugu and Kannada.</li></ul>
+  </div>
+  <div class="rv"><div class="big">₹40 Cr</div><figure style="margin-top:28px"><div class="pic" style="aspect-ratio:3/2"><img src="assets/india-koyambedu-market-faces-30-3987092094.jpg" width="1920" height="1440" alt="Workers unloading coconuts from a truck at a market" loading="lazy"></div><figcaption class="pc">Market workers at Koyambedu. A picture of the idea, not Hunar.</figcaption></figure></div>
+</section>
+
+<section class="cta" aria-labelledby="h-cta">
+  <div>
+  <h2 id="h-cta" class="rv">Turn conversations into better workforce outcomes.</h2>
+  <div class="act rv"><a class="btn" href="mailto:contact@hunar.ai">Request a demo</a><a href="https://hunar.ai">hunar.ai</a></div>
+  </div>
+  <div class="pic rv" style="aspect-ratio:4/5"><img src="assets/goa-india-a-vegetable-vendor-in-the.jpg" width="1920" height="1440" alt="A woman selling vegetables at a market stall" loading="lazy"></div>
+</section>
+</main>
+<footer>
+  <div class="nm">Hunar.AI</div>
+  <p class="line2">An unofficial sketch by Axlios Media, not the company's official site and not affiliated with Hunar.AI. Wording credited to hunar.ai and to Inc42's report of October 19, 2026. Built as a pitch. Nothing here is Hunar's own product or claim.</p>
+  <p class="cr">Pictures, none of them Hunar's, shown in grayscale and cropped: “Bangalore India traffic” by Eirik Refsdal, CC BY 2.0, via <a href="https://commons.wikimedia.org/wiki/File:Bangalore_India_traffic.jpg">Wikimedia Commons</a>; “Paan at Church street, Bengaluru (2026) 01” by Gpkp, CC BY SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Paan_at_Church_street,_Bengaluru_(2026)_01.jpg">Wikimedia Commons</a>; “Goa, India. A vegetable vendor in the market 01” by Fredericknoronha, CC BY SA 4.0, via <a href="https://commons.wikimedia.org/wiki/File:Goa,_India._A_vegetable_vendor_in_the_market_01.jpg">Wikimedia Commons</a>; “India, Koyambedu Market, Faces 30” by McKay Savage, CC BY 2.0, via <a href="https://commons.wikimedia.org/wiki/File:India_-_Koyambedu_Market_-_Faces_30_(3987092094).jpg">Wikimedia Commons</a>. <a href="https://axliosmedia.com">axliosmedia.com</a></p>
+</footer>
+<script>
+document.body.classList.remove('nojs');
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll('.rv').forEach(function(el){if(rm)el.classList.add('v');else io.observe(el)});
+var inp=document.getElementById('cand'),out=document.getElementById('out');
+function parse(t){
+ var s=t.toLowerCase(),r=[];
+ var day=(s.match(/monday|tuesday|wednesday|thursday|friday|saturday|sunday|tomorrow|today/)||[])[0];
+ var veh=/bike|scooter|motorcycle|two wheeler/.test(s)?'Yes, '+((s.match(/bike|scooter|motorcycle|two wheeler/)||[''])[0]):(/no (bike|vehicle)|walk/.test(s)?'No':'Not mentioned');
+ var shift=/night/.test(s)?'Night':/after (\d+|work)|evening/.test(s)?'Evening':/morning/.test(s)?'Morning':'Not mentioned';
+ var loc=(s.match(/whitefield|koramangala|indiranagar|hsr|jayanagar|electronic city|marathahalli|yelahanka/)||[])[0];
+ var ask=/\?/.test(t);
+ var next=ask?'Answer the question, then confirm':(day?'Book onboarding for '+cap(day):'Ask for a start date');
+ r.push(['Can start',day?cap(day):'Not mentioned']);
+ r.push(['Vehicle',veh==='Not mentioned'||veh==='No'?veh:cap(veh)]);
+ r.push(['Shift',shift]);
+ r.push(['Location',loc?cap(loc):'Not mentioned']);
+ r.push(['Next step',next,1]);
+ return r;
+}
+function cap(x){return x.charAt(0).toUpperCase()+x.slice(1)}
+function esc(x){return x.replace(/[&<>]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;'}[c]})}
+function draw(){out.innerHTML=parse(inp.value).map(function(p){return '<div class="row'+(p[2]?' nx':'')+'"><span>'+p[0]+'</span><b>'+esc(p[1])+'</b></div>'}).join('')}
+inp.addEventListener('input',function(){document.querySelectorAll('.ex button').forEach(function(b){b.setAttribute('aria-pressed',b.textContent===inp.value?'true':'false')});draw()});
+document.querySelectorAll('.ex button').forEach(function(b){b.addEventListener('click',function(){inp.value=b.textContent;document.querySelectorAll('.ex button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');draw()})});
+draw();
+var ST=[['Voice AI calls every applicant in their language and screens for role fit.','assets/india-koyambedu-market-faces-30-3987092094.jpg','Market workers at Koyambedu. A picture of the idea, not Hunar.','Workers unloading coconuts from a truck at a market'],
+['Voice AI guides new hires through documentation and compliance checks.','assets/rider-crop.jpg','Bengaluru traffic. A picture of the idea, not Hunar.','Two wheelers and an auto rickshaw in Bengaluru traffic'],
+['Runs voice based training and skill checks in workers\u2019 own language.','assets/paan-at-church-street-bengaluru-2026-01.jpg','A stall on Church Street, Bengaluru. A picture of the idea, not Hunar.','Rows of folded betel leaf parcels in clear wrap']];
+var sp=document.getElementById('st-p');
+function setS(i){sp.textContent=ST[i][0];var im=document.getElementById('st-img');im.src=ST[i][1];im.alt=ST[i][3];document.getElementById('st-cap').textContent=ST[i][2];document.querySelectorAll('.sw button').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i?'true':'false')})}
+document.querySelectorAll('.sw button').forEach(function(b){b.addEventListener('click',function(){setS(+b.dataset.i)})});
+setS(0);
+if(location.hash==='#shot'){document.querySelectorAll('.rv').forEach(function(e){e.classList.add('v')});document.querySelectorAll('img').forEach(function(i){i.loading='eager'});document.querySelectorAll('.shut').forEach(function(e){e.style.animation='none';e.style.clipPath='none'});document.querySelector('.shut img').style.animation='none'}
+</script>
+</body>
+</html>
