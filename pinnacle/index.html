@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pinnacle: the messaging API for developers (unofficial concept)</title>
+<meta name="description" content="An unofficial concept homepage for Pinnacle, built from the wording on pinnacle.sh. Made by Axlios Media.">
+<link rel="preconnect" href="https://api.fontshare.com"><link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=panchang@700&f[]=switzer@400,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#18191b;--surface:#222427;--ink:#eff0f1;--muted:#b4b6bb;--accent:#ff4a1f;--accent-ink:#18191b;--field:#eff0f1;--m:clamp(16px,2vw,24px);--fd:Panchang,Impact,sans-serif;--ft:Switzer,system-ui,sans-serif;
+--step-small:clamp(.8125rem,.79rem + .1vw,.875rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--ft);font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--fd);font-weight:700;letter-spacing:-.02em;line-height:1;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;background:var(--accent);color:var(--accent-ink);font:500 1.0625rem/1 var(--ft);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s}
+.btn:hover{transform:translateY(-2px);background:var(--ink)}.btn:active{transform:scale(.97)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:20px var(--m);font-size:15px;position:relative;z-index:3}
+.wm{font-family:var(--fd);font-weight:700;text-transform:uppercase;text-decoration:none;font-size:1.125rem}
+.nav ul{display:flex;gap:28px;list-style:none}.nav ul a{text-decoration:none;padding:8px 0}.nav ul a:hover{color:var(--accent)}
+.nav .r{justify-self:end;white-space:nowrap}@media(max-width:600px){.nav .r{padding:0 14px;font-size:15px}}
+.hero{position:relative;min-height:100svh;overflow:hidden;padding-bottom:140px}
+.hero h1{font-size:clamp(3.5rem,8.4vw,8.5rem);text-align:center;line-height:.9;max-width:12em;margin:2vh auto 0;position:relative;z-index:1}
+.hbg{position:absolute;left:0;right:0;margin:0 auto;bottom:0;width:min(44vw,720px);min-width:340px;height:62%;object-fit:cover;z-index:0}
+.phone{position:relative;z-index:2;width:min(27vw,480px);min-width:340px;margin:-1.2vw auto 0;background:var(--surface);border-radius:0;padding:22px;color:var(--ink)}
+.hero .l,.hero .rt{position:absolute;bottom:32px;font-size:1.0625rem;z-index:3;max-width:280px}
+.hero .l{left:var(--m)}.hero .rt{right:var(--m);text-align:right}
+.bub{background:var(--field);color:#18191b;padding:14px 16px;font-size:16px;max-width:92%;margin-bottom:8px}
+.bub.q{background:transparent;border:2px solid var(--accent);color:var(--accent);display:inline-block;padding:10px 16px;font-weight:500}
+.meta{font-size:14px;color:var(--muted);margin-bottom:12px;display:flex;justify-content:space-between}
+.bub img{width:100%;height:120px;object-fit:cover;margin-bottom:8px}
+section{padding:clamp(80px,9vw,140px) var(--m)}
+.sec h2{font-size:clamp(2rem,4.4vw,4.5rem);margin-bottom:40px;max-width:14em}
+.try{display:grid;grid-template-columns:5fr 7fr;gap:clamp(24px,4vw,64px);align-items:start;background:var(--surface)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tabs button{font:500 1rem/1 var(--ft);padding:14px 20px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.tabs button:hover{transform:translateY(-2px)}
+.tabs button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.try h2{font-size:clamp(2rem,4vw,4rem);margin-bottom:24px}
+.try p.s{max-width:36ch;margin-bottom:24px}
+.try .stage{background:var(--bg);padding:24px}
+.code{background:var(--bg);color:var(--ink);padding:22px;margin-top:8px;font:15px/1.6 var(--ft);white-space:pre-wrap;overflow-x:auto;font-weight:500}
+.cmd{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;padding:clamp(24px,3vw,40px) 0;border-top:0;background:var(--bg)}
+.cmds{padding:0}
+.cmds .cmd{background:var(--surface);margin-bottom:8px;padding:clamp(24px,3vw,40px) var(--m);transition:background .3s,color .3s}
+.cmds .cmd:hover{background:var(--accent);color:var(--accent-ink)}
+.cmd h3{font-size:clamp(1.5rem,5vw,6rem);overflow-wrap:anywhere}
+.cmd p{max-width:40ch;font-size:1.0625rem;text-align:right}
+.acc details{background:var(--surface);margin-bottom:8px}
+.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px;font-family:var(--fd);text-transform:uppercase;font-size:clamp(1.25rem,2.4vw,2.25rem);letter-spacing:-.02em}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary i{font-style:normal;color:var(--accent);font-size:1.5em;transition:transform .25s}
+.acc details[open] summary i{transform:rotate(45deg)}
+.acc details[open]{background:var(--field);color:#18191b}
+.acc details p{padding:0 24px 24px;max-width:52ch}
+.faq .tabs{margin-bottom:0}
+.faq .card{background:var(--field);color:#18191b;padding:clamp(24px,3vw,48px);min-height:240px;max-width:900px;margin-top:8px}
+.faq .card h3{font-size:clamp(1.5rem,3vw,2.5rem);margin-bottom:16px}
+.faq .card p{max-width:52ch}
+.two{display:grid;grid-template-columns:7fr 5fr;gap:clamp(24px,4vw,64px);align-items:start}.ph{width:100%;aspect-ratio:3/4;object-fit:cover}.sec.acc h2,.faq h2{max-width:none}
+.cta{text-align:center;overflow:hidden;padding-block:clamp(100px,14vw,200px)}
+.cta a{font-family:var(--fd);font-weight:700;text-transform:uppercase;font-size:clamp(4rem,19vw,20rem);letter-spacing:-.03em;line-height:.9;text-decoration:none;color:var(--accent);display:inline-block;transition:transform .3s,color .3s}
+.cta a:hover{color:var(--ink);transform:scale(1.03)}
+.cta p{margin-top:24px;color:var(--muted)}
+footer{background:var(--field);color:#18191b;overflow:hidden;position:relative;min-height:90svh;padding:clamp(48px,6vw,96px) var(--m) 0}
+.fi{display:grid;grid-template-columns:repeat(12,1fr);column-gap:24px}
+.fi .inv{grid-column:1/8}.fi h2{font-size:clamp(1.5rem,3.2vw,3.25rem);margin-bottom:24px}
+.fl{grid-column:10/13;display:grid;gap:8px;align-content:start}.fl a{text-decoration:none}.fl a:hover{color:var(--accent)}
+.fine{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;margin-top:clamp(40px,6vw,100px);color:#3f4045}
+.bign{display:block;font-family:var(--fd);font-weight:700;text-transform:uppercase;font-size:21vw;line-height:.8;letter-spacing:-.04em;white-space:nowrap;transform:translateY(22%);margin-top:24px;color:#18191b}
+@keyframes up{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:none}}
+.hero h1{animation:up .9s cubic-bezier(.2,.7,.2,1) both}.hbg{animation:up 1.1s .15s cubic-bezier(.2,.7,.2,1) both}.hero .bub{animation:pop .5s .7s both}.hero .bub.q{animation-delay:1.2s}.hero .meta{animation:pop .4s .5s both}.hero .l,.hero .rt{animation:up .8s .5s both}.nav{animation:up .6s both}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}.nojs .rv{opacity:1;transform:none}
+@media(max-width:1000px){.hbg{opacity:.4;height:48%}.two{grid-template-columns:1fr}.cmds .cmd{padding-inline:16px}.hero h1{font-size:11.5vw}
+ .nav{grid-template-columns:1fr auto}.nav ul{display:none}
+ .hero{padding-bottom:0}
+ .hero h1{max-width:none}
+ .phone{width:calc(100% - 2*var(--m));min-width:0;margin:16px var(--m) 0}
+ .hero .l,.hero .rt{position:relative;left:auto;right:auto;bottom:auto;display:block;max-width:none;text-align:left;padding:20px var(--m) 0}
+ .hero .rt{padding-bottom:48px}
+ .try{grid-template-columns:1fr}
+ .cmd{grid-template-columns:1fr}.cmd p{text-align:left}
+ .fi .inv,.fl{grid-column:1/-1}.fl{margin-top:16px}
+ .bign{font-size:20vw}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body class="nojs">
+<header class="hero" id="top">
+ <div class="nav"><a class="wm" href="#top">Pinnacle</a><ul><li><a href="#try">Try it</a></li><li><a href="#cmds">Build</a></li><li><a href="#faq">Questions</a></li></ul><a class="btn r" href="https://pinnacle.sh">Send your first message</a></div>
+ <h1>The API to scale</h1>
+ <img class="hbg" src="img/p3.jpg" alt="Soft clouds over a dark horizon" fetchpriority="high">
+ <div class="phone" data-ui id="ph0"><div class="meta"><span>agent_pinnacle</span><span>RCS</span></div><div class="bub">Check out our website for more information!</div><span class="bub q">Open Url</span></div>
+ <p class="l">Marketing campaigns, transactional alerts, and delightful conversations, built with a developer-first SDK.</p>
+ <p class="rt">Send your first message in minutes.</p>
+</header>
+
+<main>
+<section class="try sec" id="try" aria-labelledby="th">
+ <div>
+  <h2 id="th" class="rv">Send it. See it.</h2>
+  <p class="s">RCS, iMessage, MMS, and SMS, rendered natively on every device. Pick a channel and see the message and the call that sends it.</p>
+  <div class="tabs" role="group" aria-label="Channel"><button aria-pressed="true" data-c="rcs">RCS</button><button aria-pressed="false" data-c="imsg">iMessage</button><button aria-pressed="false" data-c="mms">MMS</button><button aria-pressed="false" data-c="sms">SMS</button></div>
+ </div>
+ <div class="stage" aria-live="polite"><div class="phone" style="margin:0;width:100%;max-width:480px" data-ui id="ph"></div><pre class="code" id="code"></pre></div>
+</section>
+
+<section class="sec" id="cmds" aria-labelledby="ch">
+ <h2 id="ch" class="rv">Four verbs, one SDK.</h2>
+ <div class="cmds-wrap">
+  <div class="cmds">
+   <div class="cmd rv"><h3>Develop</h3><p>Python, TypeScript, Ruby, and an MCP server. Pick your stack.</p></div>
+   <div class="cmd rv"><h3>Deploy</h3><p>Compliance, agent registration, and webhooks for live traffic.</p></div>
+   <div class="cmd rv"><h3>Manage</h3><p>Logs, webhooks, conversations, and analytics in one dashboard.</p></div>
+   <div class="cmd rv"><h3>Experience</h3><p>RCS, iMessage, MMS, and SMS, rendered natively on every device.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec acc" id="how" aria-labelledby="hh"><div class="two"><div>
+ <h2 id="hh" class="rv">Three steps to live.</h2>
+ <details class="rv" name="s" open><summary>First, pick your stack <i aria-hidden="true">+</i></summary><p>Develop in Python, TypeScript, or Ruby, or use the MCP server so any AI agent gets messaging tools.</p></details>
+ <details class="rv" name="s"><summary>Then register and deploy <i aria-hidden="true">+</i></summary><p>Compliance, agent registration, and webhooks are handled for live traffic.</p></details>
+ <details class="rv" name="s"><summary>Last, watch it run <i aria-hidden="true">+</i></summary><p>Logs, webhooks, conversations, and analytics sit in one dashboard.</p></details>
+</div><img class="ph rv" src="img/p1.jpg" alt="Hazy city skyline at dusk" loading="lazy"></div></section>
+
+<section class="sec faq" id="faq" aria-labelledby="fh">
+ <div class="two"><div><h2 id="fh" class="rv">Questions.</h2>
+ <div class="tabs" role="tablist" aria-label="Questions" id="qt"><button aria-pressed="true" data-q="0">What can I send?</button><button aria-pressed="false" data-q="1">Which stacks?</button><button aria-pressed="false" data-q="2">What about iMessage?</button><button aria-pressed="false" data-q="3">Where are my logs?</button></div>
+ <div class="card rv" id="qc" aria-live="polite"></div></div><img class="ph rv" src="img/p2.jpg" alt="Quiet mountain ridge in morning light" loading="lazy"></div>
+</section>
+
+<section class="cta rv" aria-label="Start"><a href="https://docs.pinnacle.sh/quickstart/rcs/python/send">Send.</a><p>Opens the RCS quickstart on docs.pinnacle.sh</p></section>
+</main>
+
+<footer>
+ <div class="fi rv"><div class="inv"><h2>Send your first message</h2><a class="btn" href="https://pinnacle.sh">Go to pinnacle.sh</a></div>
+  <div class="fl"><a href="https://pinnacle.sh">pinnacle.sh</a><a href="https://docs.pinnacle.sh/quickstart/rcs/python/send">Docs</a><a href="https://www.ycombinator.com/companies/pinnacle">Pinnacle on YC</a><a href="mailto:founders@pinnacle.sh">founders@pinnacle.sh</a></div></div>
+ <div class="fine"><span>Unofficial concept by Axlios Media, not affiliated with Pinnacle. Wording and code samples from pinnacle.sh. Phone numbers in the snippets (+14155550100, +14155550199) are placeholders added by us. Photos via Unsplash.</span><span>Contact printed on pinnacle.sh</span></div>
+ <span class="bign" aria-hidden="true">Pinnacle</span>
+</footer>
+
+<script>
+document.body.classList.remove('nojs');
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=((i%3)*80)+'ms';io.observe(el)});
+var ch={
+ rcs:{meta:'agent_pinnacle \u00b7 RCS',html:'<div class="bub">Check out our website for more information!</div><span class="bub q">Open Url</span>',code:'client.messages.rcs.send(\n  request=RichTextMessage(\n    from_="agent_pinnacle",\n    to="+14155550199",\n    text="Check out our website for more information!",\n    quick_replies=[RichButton_OpenUrl(title="Open Url", payload="https://www.pinnacle.sh/")]\n  )\n)'},
+ imsg:{meta:'+14155550100 \u00b7 iMessage',html:'<div class="bub">Hey! \ud83d\udc4b A note from Pinnacle.</div>',code:'# iMessage access is onboarded per-account.\n# Email founders@pinnacle.sh first.\n# Once enabled, iMessage is delivered via send_mms.\nclient.messages.mms.send(\n  from_="+14155550100",\n  to="+14155550199",\n  text="Hey! \ud83d\udc4b A note from Pinnacle.",\n  media_urls=["https://pinnacle.sh/og-image.png"]\n)'},
+ mms:{meta:'+14155550100 \u00b7 MMS',html:'<div class="bub">Hey! \ud83d\udc4b A note from Pinnacle.</div>',code:'client.messages.mms.send(\n  from_="+14155550100",\n  to="+14155550199",\n  text="Hey! \ud83d\udc4b A note from Pinnacle.",\n  media_urls=["https://pinnacle.sh/og-image.png"]\n)'},
+ sms:{meta:'+14155550100 \u00b7 SMS',html:'<div class="bub">Hello, world!</div>',code:'client.messages.sms.send(\n  from_="+14155550100",\n  to="+14155550199",\n  text="Hello, world!"\n)'}};
+function setC(k){var c=ch[k];document.getElementById('ph').innerHTML='<div class="meta"><span>'+c.meta+'</span></div>'+c.html;document.getElementById('code').textContent=c.code;document.querySelectorAll('.try .tabs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.c===k?'true':'false')})}
+document.querySelectorAll('.try .tabs button').forEach(function(b){b.addEventListener('click',function(){setC(b.dataset.c)})});setC('rcs');
+var qs=[['What can I send?','Marketing campaigns, transactional alerts, and delightful conversations.'],['Which stacks?','Python, TypeScript, Ruby, and an MCP server. Pick your stack.'],['What about iMessage?','iMessage access is onboarded per account. Email founders@pinnacle.sh first. Once enabled, iMessage is delivered via the send_mms endpoint.'],['Where are my logs?','Logs, webhooks, conversations, and analytics in one dashboard.']];
+function setQ(i){document.getElementById('qc').innerHTML='<h3></h3><p></p>';var c=document.getElementById('qc');c.firstChild.textContent=qs[i][0];c.lastChild.textContent=qs[i][1];document.querySelectorAll('#qt button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.q==i?'true':'false')})}
+document.querySelectorAll('#qt button').forEach(function(b){b.addEventListener('click',function(){setQ(+b.dataset.q)})});setQ(0);
+</script>
+</body>
+</html>
