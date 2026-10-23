@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velvet Patisserie — Dessert shop on H B Road, Ranchi</title>
+<meta name="description" content="Velvet Patisserie is a dessert shop on H B Road, Ranchi. Cakes, pastries and bakes. Call or WhatsApp the counter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f6f3ee; --paper-2:#ebe7e0; --ink:#4f1028; --muted:#8a5a66;
+  --accent:#7b1231; --accent-ink:#faf4e8;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.3vw,1.25rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --margin:clamp(16px,3vw,32px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper-2);color:var(--ink);font-family:"EB Garamond",Georgia,serif;font-size:var(--step-body);line-height:1.5}
+img{display:block;max-width:100%}
+a{color:var(--accent)}
+h1,h2,h3{font-weight:400;line-height:1.1;letter-spacing:-0.01em}
+.wrap{max-width:1320px;margin:0 auto;padding-left:var(--margin);padding-right:var(--margin)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* hero: striped card beside the room */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px;min-height:100svh}
+.hero-photo{position:relative;border-radius:16px;overflow:hidden;min-height:60svh}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease}
+.hero-photo img.on{opacity:1}
+.hero-cap{position:absolute;left:12px;bottom:12px;z-index:3;background:rgba(255,255,255,.92);color:#222;font:500 12px/1.3 system-ui,sans-serif;padding:6px 10px;border-radius:999px;max-width:calc(100% - 24px)}
+.card{background:var(--paper);border-radius:16px;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 32px 28px;position:relative}
+.stripe{display:flex;width:100%;height:56px;border-radius:16px 16px 0 0;overflow:hidden;margin-bottom:40px}
+.stripe i{flex:1 0 0;background:var(--accent)}
+.stripe i:nth-child(even){background:var(--paper)}
+.wordmark{font-size:var(--step-lead);font-style:italic;margin-bottom:20px}
+.hero h1{font-size:clamp(2.9rem,4.4vw,4.4rem);max-width:12ch}
+.hero .sub{font-size:var(--step-body);max-width:36ch;margin:20px auto 28px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:14px 30px;font-size:var(--step-body);border:none;cursor:pointer;position:relative;overflow:hidden;transition:transform .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn::after{content:"";position:absolute;left:0;bottom:0;height:8px;width:100%;background:var(--paper);opacity:0;transition:opacity .25s ease}
+.btn:hover::after{opacity:1}
+.hero .links{margin-top:auto;padding-top:36px;display:flex;gap:28px;font-size:var(--step-small)}
+.hero .links a{color:var(--ink);text-decoration:none}
+.hero .links a:hover{color:var(--accent)}
+
+/* intro: title, note, facts row */
+.intro{padding:140px 0 120px;background:var(--paper)}
+.intro .row1{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;align-items:end;margin-bottom:110px}
+.intro h2{grid-column:1/7;font-size:clamp(2.75rem,5vw,4.75rem)}
+.intro .note{grid-column:10/13;font-size:var(--step-body);width:100%;max-width:260px;justify-self:end}
+.facts{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.fact{font-size:clamp(1.75rem,3vw,2.75rem);line-height:1.1}
+.fact small{display:block;font-size:var(--step-small);color:var(--muted);margin-top:8px}
+
+/* showcase: order slips along the edge */
+.showcase{position:relative;min-height:96svh;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.showcase .bg{position:absolute;inset:0}
+.showcase .bg img{width:100%;height:100%;object-fit:cover}
+.showcase .lead{position:absolute;top:8%;left:18%;max-width:34ch;background:rgba(79,16,40,.55);padding:24px 28px}
+.showcase .lead p{color:var(--paper);font-size:clamp(1.3rem,2vw,1.9rem);line-height:1.35}
+.showcase .lead p+p{margin-top:14px}
+.slips{position:relative;display:flex;gap:12px;align-items:flex-end;padding:0 24px}
+.slip{flex:1;background:var(--paper);padding:18px 16px 96px;font-size:var(--step-small);min-width:0}
+.slip b{display:block;font-weight:500;font-size:var(--step-body);margin-bottom:8px}
+.slip .rule{letter-spacing:2px;color:var(--muted);margin:6px 0 10px;white-space:nowrap;overflow:hidden}
+.slip:nth-child(2){transform:rotate(-1.4deg)}
+.slip:nth-child(5){transform:rotate(1.2deg)}
+.slip:nth-child(1){height:30svh}.slip:nth-child(2){height:40svh}.slip:nth-child(3){height:34svh}
+.slip:nth-child(4){height:44svh}.slip:nth-child(5){height:32svh}.slip:nth-child(6){height:38svh}
+.slip form{margin-top:4px;display:grid;gap:8px}
+.slip input,.slip select{font:inherit;font-size:var(--step-small);padding:6px 8px;border:none;background:var(--paper-2);color:var(--ink);width:100%}
+.slip input:focus,.slip select:focus{outline:2px solid var(--accent)}
+.slip .typed{display:block;min-height:5.6em;margin-top:6px;font-style:italic}
+
+/* list: cards that fold into spines (simplified deck) */
+.bakes{padding:140px 0;background:var(--paper-2)}
+.bakes h2{font-size:clamp(2.4rem,4.2vw,4rem);margin-bottom:64px}
+.deck{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.bake{padding:32px;min-height:340px;display:flex;flex-direction:column}
+.bake h3{font-size:2rem;line-height:1.1;margin-bottom:16px}
+.bake p{font-size:var(--step-body);max-width:30ch}
+.bake .tag{margin-top:auto;padding-top:28px;font-size:var(--step-small);color:inherit;opacity:.75}
+.bake:nth-child(1){background:#571228;color:var(--paper)}
+.bake:nth-child(2){background:#7b1231;color:var(--paper)}
+.bake:nth-child(3){background:#a53d54;color:var(--paper)}
+.bake:nth-child(4){background:var(--paper);color:var(--ink)}
+.bake{transition:transform .25s ease}
+.bake:nth-child(even){margin-top:56px}
+@media (max-width:820px){.bake:nth-child(even){margin-top:0}}
+.bake:hover{transform:translateY(-6px)}
+
+/* gallery: photo tiles with label strips */
+.gallery{padding:140px 0;background:var(--paper)}
+.gallery h2{font-size:var(--step-head);margin-bottom:40px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.strip{padding:12px;font-size:var(--step-small);line-height:1.45}
+.strip .r1{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.strip .r2{margin-top:6px;opacity:.8}
+.tile:nth-child(4n+1) .strip{background:var(--accent);color:var(--accent-ink)}
+.tile:nth-child(4n+2) .strip{background:var(--paper-2);color:var(--ink)}
+.tile:nth-child(4n+3) .strip{background:var(--ink);color:var(--paper)}
+.tile:nth-child(4n+4) .strip{background:#e8d9bd;color:var(--ink)}
+
+/* contact: visit card on a photograph */
+.visit{position:relative;min-height:100svh;display:flex;align-items:flex-start;justify-content:flex-end;padding:60px}
+.visit .bg{position:absolute;inset:0}
+.visit .bg img{width:100%;height:100%;object-fit:cover}
+.vcard{position:relative;background:var(--paper);border-radius:8px;padding:32px;width:380px;max-width:calc(100vw - 32px)}
+.vcard h2{font-size:2rem;margin-bottom:18px}
+.vcard p{font-size:var(--step-body);margin-bottom:12px}
+.vcard .big{font-size:var(--step-lead)}
+.vcard .btn{display:block;text-align:center;margin:20px -32px -32px;padding:16px 0;border-radius:0 0 8px 8px}
+
+/* footer: the back of the card */
+footer{padding:120px 0 90px;background:var(--paper-2)}
+.backcard{position:relative;background:var(--paper);max-width:1180px;margin:0 auto;padding:70px 48px 40px;display:grid;grid-template-columns:1fr 1fr;gap:48px;clip-path:polygon(0 24px,4.16% 0,8.33% 24px,12.5% 0,16.66% 24px,20.83% 0,25% 24px,29.16% 0,33.33% 24px,37.5% 0,41.66% 24px,45.83% 0,50% 24px,54.16% 0,58.33% 24px,62.5% 0,66.66% 24px,70.83% 0,75% 24px,79.16% 0,83.33% 24px,87.5% 0,91.66% 24px,95.83% 0,100% 24px,100% 100%,0 100%)}
+.signoff h2{font-size:2rem;margin-bottom:16px}
+.signoff p{font-size:var(--step-body);max-width:36ch}
+.addr{align-self:start;font-size:var(--step-body);line-height:1.5}
+.addr a{display:block;color:var(--ink);text-decoration:none;margin-bottom:12px}
+.addr a:hover{color:var(--accent)}
+.stamp{position:absolute;top:36px;right:48px;width:88px;padding:6px;background:#fff;transform:rotate(3deg)}
+.stamp img{width:100%;aspect-ratio:3/4;object-fit:cover}
+.imprint{grid-column:1/-1;text-align:center;font-size:var(--step-small);color:var(--muted);margin-top:28px}
+.credits{grid-column:1/-1;font-size:var(--step-small);color:var(--muted);text-align:center;max-width:80ch;margin:8px auto 0}
+.credits a{color:var(--muted)}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-photo{min-height:48svh;order:-1}
+  .card{margin:-24px 12px 0;padding-bottom:36px}
+  .stripe{height:40px}
+  .hero h1{font-size:8vw}
+  .intro .row1{display:block;margin-bottom:56px}
+  .intro h2{font-size:11vw;margin-bottom:20px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;row-gap:32px}
+  @media (max-width:480px){.facts{grid-template-columns:1fr}.fact{font-size:1.5rem}}
+  .fact{font-size:1.6rem}
+  .showcase .lead{left:12px;right:12px;top:6%}
+  .slips{overflow-x:auto;padding:0 20px 20px}
+  .slip{flex:0 0 74vw;height:auto!important;padding-bottom:40px}
+  .deck{grid-template-columns:1fr}
+  .bake{min-height:0}
+  .tiles{grid-template-columns:1fr 1fr;gap:8px}
+  .visit{padding:0;display:block;min-height:0}
+  .visit .bg{position:relative;height:60svh}
+  .vcard{margin:-80px auto 60px;width:calc(100% - 32px)}
+  .backcard{grid-template-columns:1fr;padding:56px 24px 32px;gap:32px;margin:0 8px}
+  .stamp{width:64px;top:20px;right:20px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="card">
+    <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="wordmark reveal">Velvet Patisserie</p>
+    <h1 class="reveal">Bake right. Share delight.</h1>
+    <p class="sub reveal">A dessert shop on H B Road, Ranchi. Cakes, pastries and bakes, at the counter or on WhatsApp.</p>
+    <a class="btn reveal" href="tel:+919901689432">Call the counter</a>
+    <nav class="links reveal" aria-label="Page">
+      <a href="#bakes">What we bake</a>
+      <a href="#order">Order a cake</a>
+      <a href="#visit">Find the shop</a>
+    </nav>
+  </div>
+  <div class="hero-photo" aria-hidden="false">
+    <img id="heroA" class="on" src="img/red-velvet-blossom-cafe-bar-2024-07.jpg" alt="A plated slice of dark layered cake with cream (illustrative photograph, not this shop)" width="1920" height="1440">
+    <img id="heroB" src="img/red-velvet-cake-slice.jpg" alt="A slice of layered red velvet cake on a plate" width="1920" height="1404" loading="lazy">
+    <span class="hero-cap">Illustrative photograph, not the shop's product</span>
+  </div>
+</header>
+
+<main>
+<section class="intro">
+  <div class="wrap">
+    <div class="row1">
+      <h2 class="reveal">The counter on H B Road</h2>
+      <p class="note reveal">Velvet Patisserie sits at the Amogh Complex, beside the petrol pump on H B Road. Walk in for a pastry, or phone ahead for a whole cake.</p>
+    </div>
+    <div class="facts">
+      <p class="fact reveal">Dessert shop<small>what it is</small></p>
+      <p class="fact reveal">Ranchi, Jharkhand<small>where it is</small></p>
+      <p class="fact reveal">99016 89432<small>call or WhatsApp</small></p>
+      <p class="fact reveal">Open today<small>walk in, or phone ahead</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="showcase" id="order" aria-label="Ordering a cake">
+  <div class="bg"><img src="img/red-velvet-blossom-cafe-bar-2024-07.jpg" alt="A plated slice of cake (illustrative photograph, not this shop)" width="1920" height="1440" loading="lazy"></div>
+  <div class="lead">
+    <p class="reveal">Order a cake the old way.</p>
+    <p class="reveal">Write your slip below, then call or WhatsApp it in.</p>
+    <p class="reveal" style="font-size:var(--step-body);margin-top:14px">The slips below are samples, for illustration.</p>
+  </div>
+  <div class="slips">
+    <div class="slip"><b>Truffle cake</b><div class="rule">- - - - - - - - - - - -</div>1 kg, chocolate truffle<br>“Happy birthday, Aisha”<br>Pick up Saturday, 5 pm<br>Eggless, please</div>
+    <div class="slip"><b>Red velvet</b><div class="rule">- - - - - - - - - - - -</div>Half kg, cream cheese frosting<br>No message on top<br>For this evening</div>
+    <div class="slip"><b>Your slip</b><div class="rule">- - - - - - - - - - - -</div>
+      <form id="slipform">
+        <select id="flavour" aria-label="Flavour">
+          <option>Chocolate truffle</option><option>Red velvet</option><option>Pineapple</option><option>Butterscotch</option><option>Black forest</option>
+        </select>
+        <input id="occasion" type="text" placeholder="Occasion (birthday, anniversary…)" maxlength="40">
+        <input id="oname" type="text" placeholder="Name on the cake" maxlength="24">
+      </form>
+      <span class="typed" id="typed">Your slip appears here as you write.</span>
+    </div>
+    <div class="slip"><b>Pastry box</b><div class="rule">- - - - - - - - - - - -</div>Six assorted pastries<br>Two red velvet, two truffle<br>Two pineapple</div>
+    <div class="slip"><b>Anniversary</b><div class="rule">- - - - - - - - - - - -</div>2 kg, two tiers<br>“25 years together”<br>Deliver to Kanke Road</div>
+    <div class="slip"><b>Just bread</b><div class="rule">- - - - - - - - - - - -</div>One loaf, sliced<br>And a packet of cookies<br>For the road</div>
+  </div>
+</section>
+
+<section class="bakes" id="bakes">
+  <div class="wrap">
+    <h2 class="reveal">What we bake</h2>
+    <p class="sample-note reveal" style="font-size:var(--step-body);color:var(--muted);margin:-48px 0 48px">A sample list for this preview - the counter's real menu is what the shop says it is.</p>
+    <div class="deck">
+      <div class="bake reveal"><h3>Celebration cakes</h3><p>Whole cakes by the half kilo and kilo, frosted and finished to order.</p><span class="tag">by the kilo</span></div>
+      <div class="bake reveal"><h3>Pastries &amp; slices</h3><p>Single pieces from the counter case, for one person with ten minutes.</p><span class="tag">by the piece</span></div>
+      <div class="bake reveal"><h3>Tea-time bakes</h3><p>Cookies, loaves and small things that travel well in a paper bag.</p><span class="tag">to take away</span></div>
+      <div class="bake reveal"><h3>Made to order</h3><p>Phone the counter with the occasion and the name; collect from H B Road.</p><span class="tag">call ahead</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <h2 class="reveal">From the case</h2>
+    <div class="tiles">
+      <figure class="tile reveal"><img src="img/red-velvet-cake-slice.jpg" alt="A slice of layered red velvet cake with cream frosting" width="1920" height="1404" loading="lazy"><figcaption class="strip"><span class="r1"><span>Red velvet</span><span>slice</span></span><span class="r2">archive photograph</span></figcaption></figure>
+      <figure class="tile reveal"><img src="img/raspberries.jpg" alt="Fresh raspberries on a white ledge" width="1200" height="900" loading="lazy"><figcaption class="strip"><span class="r1"><span>Raspberries</span><span>fruit</span></span><span class="r2">archive photograph</span></figcaption></figure>
+      <figure class="tile reveal"><img src="img/red-velvet-blossom-cafe-bar-2024-07.jpg" alt="A plated slice of dark layered cake with cream" width="1920" height="1440" loading="lazy"><figcaption class="strip"><span class="r1"><span>Layered cake</span><span>plated</span></span><span class="r2">archive photograph</span></figcaption></figure>
+      <figure class="tile reveal"><img src="img/ingredients.jpg" alt="A bowl with fresh slices on a pale surface (illustrative photograph)" width="1200" height="1500" loading="lazy"><figcaption class="strip"><span class="r1"><span>Ingredients</span><span>fresh</span></span><span class="r2">archive photograph</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-label="Visit the shop">
+  <div class="bg"><img src="img/raspberries.jpg" alt="Fresh raspberries (illustrative photograph, not this shop)" width="1200" height="900" loading="lazy"></div>
+  <div class="vcard reveal">
+    <h2>Find the shop</h2>
+    <p class="big">Ground Floor, Amogh Complex,<br>Beside Petrol Pump, H B Road,<br>Ranchi 834001</p>
+    <p>Phone and WhatsApp<br><a class="big" href="tel:+919901689432">+91 99016 89432</a></p>
+    <p>Email<br><a href="mailto:khator.niftem@gmail.com">khator.niftem@gmail.com</a></p>
+    <a class="btn" href="tel:+919901689432">Call to order</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="backcard">
+    <div class="stamp" aria-hidden="true"><img src="img/raspberries.jpg" alt=""></div>
+    <div class="signoff">
+      <h2>Bake right,<br>share delight</h2>
+      <p>That is the whole idea at Velvet Patisserie. Come by the counter on H B Road, or send a message before you set out.</p>
+    </div>
+    <div class="addr">
+      <a href="mailto:khator.niftem@gmail.com">khator.niftem@gmail.com</a>
+      <a href="tel:+919901689432">+91 99016 89432</a>
+      <a href="https://www.facebook.com/velvetpatisserie.in">Velvet Patisserie on Facebook</a>
+      <a href="https://maps.google.com/?q=Amogh+Complex+H+B+Road+Ranchi">Amogh Complex, H B Road, Ranchi</a>
+    </div>
+    <p class="imprint">Unofficial preview by Axlios Media - not the shop's official website, and not commissioned or approved by Velvet Patisserie.</p>
+    <p class="credits">Archive pictures on this page: <a href="https://commons.wikimedia.org/w/index.php?curid=6827008">“Red velvet cake slice”</a> by ~Twon~, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Red_velvet_-_Blossom_Cafe_Bar_2024-07-15.jpg">“Red velvet”</a> by Andy Li, CC0, via Wikimedia Commons; cafe and table photographs from Unsplash (Dominik Martin, Breather, Luke Chesser, Ben Moore). They show the world of a patisserie, not this shop’s own case.</p>
+  </div>
+</footer>
+
+<script>
+// entrance reveals
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+// hero crossfade
+const a=document.getElementById('heroA'),b=document.getElementById('heroB');let flip=false;
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+  setInterval(()=>{if(document.hidden)return;flip=!flip;a.classList.toggle('on',!flip);b.classList.toggle('on',flip)},6000);
+}
+// order slip writer
+const f=document.getElementById('flavour'),o=document.getElementById('occasion'),n=document.getElementById('oname'),t=document.getElementById('typed');
+function type_(){
+  const parts=[];
+  parts.push('1 kg, '+f.value.toLowerCase());
+  if(o.value) parts.push('for '+o.value);
+  if(n.value) parts.push('“'+n.value+'” on top');
+  t.textContent = parts.length>1||o.value||n.value ? parts.join(', ')+'.' : 'Your slip appears here as you write.';
+}
+[f,o,n].forEach(el=>el.addEventListener('input',type_));
+</script>
+</body>
+</html>
