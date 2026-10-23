@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raj Unisex Salon · Jeetu and Lalit · Kanadia Road, Indore</title>
+<meta name="description" content="Raj unisex salon on Kanadia Road, Indore, run by Jeetu and Lalit. Haircuts, hair spa, facials, makeup, bridal and waxing for men and women.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--surface:#f2f2f2;--ink:#0a0a0a;--muted:#555;--accent:#d92b21;--accent-ink:#fff;
+--step-small:clamp(.875rem,.85rem + .1vw,.9375rem);--step-body:clamp(1.0625rem,1rem + .25vw,1.1875rem);--step-lead:clamp(1.25rem,1.1rem + .7vw,1.625rem);--step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+--m:clamp(20px,5vw,72px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Jost,system-ui,sans-serif;font-size:var(--step-body);line-height:1.6;letter-spacing:.01em;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:500;letter-spacing:-.02em;line-height:.98}
+.top{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:22px var(--m);z-index:3;font-size:var(--step-small)}
+.top b{font-weight:500;font-size:1.0625rem}
+.top nav{display:flex;gap:28px}
+.top a{text-decoration:none}
+.top a:hover{color:var(--accent)}
+/* hero */
+.hero{position:relative;height:clamp(560px,58vw,860px);overflow:hidden;background:var(--bg)}
+.hero .sup{position:absolute;left:var(--m);top:clamp(96px,14vh,150px);max-width:34ch;z-index:4}
+.hero .sup p{font-size:var(--step-lead);line-height:1.35;margin-bottom:28px}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:18px 34px;font-weight:500;font-size:var(--step-body);letter-spacing:.04em;border:0;cursor:pointer;font-family:inherit;transition:transform .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.k{background:var(--ink)}
+.word{position:absolute;z-index:2;mix-blend-mode:multiply;left:-1.5vw;right:0;bottom:-5.5vw;font-family:"Bodoni Moda",Didot,Georgia,serif;font-weight:500;font-size:clamp(220px,44vw,760px);line-height:.8;letter-spacing:-.06em;white-space:nowrap;color:var(--ink);user-select:none}
+.word{pointer-events:none}.word span{display:inline-block;animation:rise .6s cubic-bezier(.2,.7,.2,1) both}
+.word span:nth-child(2){animation-delay:.06s}.word span:nth-child(3){animation-delay:.12s;color:var(--accent)}
+@keyframes rise{from{transform:translateY(14%)}}
+.hero .pic{position:absolute;right:var(--m);top:clamp(80px,9vw,130px);width:26vw;aspect-ratio:4/4.6;overflow:hidden;z-index:1}
+.hero .pic img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.05)}
+.hero .tag{position:absolute;right:var(--m);top:clamp(96px,14vh,150px);text-align:right;font-size:var(--step-body);z-index:2}
+/* two names */
+.names{background:var(--ink);color:#fff;display:grid;grid-template-columns:1fr 1fr}
+.names div{padding:clamp(48px,8vw,120px) var(--m);display:flex;flex-direction:column;gap:12px}
+.names div+div{background:#1b1b1b;align-items:flex-end;text-align:right}
+.names h2{font-size:clamp(3rem,9vw,8rem);font-style:italic}
+.names p{font-size:var(--step-body);color:#e4e4e4}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,100px);padding:clamp(90px,12vw,180px) var(--m);align-items:center}
+.about h2{font-size:var(--step-head);margin-bottom:28px;max-width:14ch}
+.about p{max-width:52ch;margin-bottom:18px}
+.frame{background:var(--surface);position:relative}
+.frame img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/5;filter:grayscale(1) contrast(1.05);transition:transform 1.2s}
+.frame{overflow:hidden}.frame:hover img{transform:scale(1.04)}
+.cap{font-size:var(--step-small);color:var(--muted);margin-top:12px}
+/* services */
+.svc{padding:clamp(80px,10vw,150px) var(--m);background:var(--surface)}
+.svc h2{font-size:var(--step-head);margin-bottom:48px}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,28px)}
+.list li{list-style:none;display:grid;grid-template-columns:20px 1fr;gap:16px;padding:32px;background:#fff;transition:transform .3s}
+.list li:hover{transform:translateY(-5px)}
+.list b{width:14px;height:14px;border-radius:50%;background:var(--accent);margin-top:12px}
+.list h3{font-size:clamp(1.6rem,1.2rem + 1.2vw,2.25rem);margin-bottom:6px}
+.note{font-size:var(--step-small);color:var(--muted);margin-top:24px}
+/* planner */
+.plan{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,100px);padding:clamp(90px,12vw,170px) var(--m);align-items:start}
+.plan h2{font-size:var(--step-head);margin-bottom:24px;max-width:12ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips button{font:inherit;font-weight:500;background:var(--surface);color:var(--ink);border:0;padding:13px 22px;cursor:pointer;min-height:48px}
+.chips button[aria-pressed=true]{background:var(--ink);color:#fff}
+.card{background:var(--ink);color:#fff;padding:clamp(28px,4vw,56px);min-height:340px;display:flex;flex-direction:column;gap:18px}
+
+.say{font-family:"Bodoni Moda",Didot,Georgia,serif;font-size:clamp(1.6rem,1.3rem + 1vw,2.25rem);font-style:italic;line-height:1.15}
+.card .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto}
+.card .btn.w{background:#fff;color:var(--ink)}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,28px);padding:0 var(--m) clamp(80px,10vw,150px)}
+.gal figure:nth-child(2){margin-top:clamp(30px,6vw,96px)}
+.gal figure:nth-child(3){margin-top:clamp(10px,2vw,40px)}
+/* contact */
+.contact{background:var(--accent);color:#fff;padding:clamp(80px,10vw,150px) var(--m);display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,6vw,100px);align-items:end}
+.contact h2{font-size:var(--step-head);max-width:12ch}
+.contact dl{display:grid;gap:22px}
+.contact dt{font-size:var(--step-body)}
+.contact dd{font-family:"Bodoni Moda",serif;font-size:var(--step-lead);line-height:1.2}
+.contact a{text-decoration:none;border-bottom:2px solid #fff}
+footer{padding:36px var(--m);background:var(--ink);color:#e8e8e8;font-size:var(--step-small)}
+footer p{max-width:70ch;margin-bottom:10px}
+footer a{color:#fff}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.word span{animation:none}}
+@media (max-width:820px){
+ .top nav{display:none}
+ .about,.plan,.contact{grid-template-columns:1fr}
+ .list{grid-template-columns:1fr}
+ .names h2{font-size:clamp(2.4rem,13vw,4rem)}
+ .contact h2{max-width:none}
+ .gal{grid-template-columns:1fr 1fr}
+ .gal figure:nth-child(3){grid-column:1/-1;margin-top:0}
+ .hero{height:auto;display:flex;flex-direction:column;padding-top:76px;overflow:hidden}
+ .hero .pic{display:none}
+ .hero .pic{position:absolute;right:var(--m);top:clamp(80px,9vw,130px);width:26vw;aspect-ratio:4/4.6;overflow:hidden;z-index:1}
+.hero .pic img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1) contrast(1.05)}
+.hero .tag{display:none}
+ .hero .sup{max-width:30ch}
+ .word{position:relative;order:1;font-size:50vw;bottom:auto;right:auto;left:0;margin:0 0 0 var(--m);height:44vw;overflow:hidden;line-height:.8;z-index:0}
+ .hero .sup{position:static;order:2;padding:28px var(--m) 56px;max-width:none}
+ .btn{text-align:center}
+}
+</style>
+</head>
+<body>
+<header class="hero" aria-label="Raj Unisex Salon">
+ <div class="top"><b>raj unisex salon</b><nav aria-label="Sections"><a href="#services">services</a><a href="#visit">plan a visit</a><a href="#contact">find us</a></nav></div>
+ <div class="pic"><img src="assets/rajwada-palace-indore-madhya-pradesh.jpg" width="600" height="690" alt="The Rajwada Palace in Indore" fetchpriority="high"></div>
+ <h1 class="word" aria-label="Raj Unisex Salon, Indore"><span aria-hidden="true">R</span><span aria-hidden="true">A</span><span aria-hidden="true">J</span></h1>
+ <div class="sup rv"><p>Hair, skin and makeup for men and women, on Kanadia Road, Indore. Run by Jeetu and Lalit.</p><a class="btn" href="tel:+917314975999">call 0731 497 5999</a></div>
+</header>
+
+<main>
+<section class="names" aria-label="Jeetu and Lalit">
+ <div class="rv"><h2>Jeetu</h2><p>&amp;</p></div>
+ <div class="rv" style="--d:120ms"><h2>Lalit</h2><p>behind the chairs</p></div>
+</section>
+
+<section class="about" id="about">
+ <div>
+  <h2 class="rv">named Raj, in the city of the Rajwada</h2>
+  <p class="rv" style="--d:80ms">Indore's seven-storey Rajwada has stood at the middle of the city for generations. The salon on Kanadia Road shares the first three letters of its name, and aims at the same thing: people leaving looking their best.</p>
+  <p class="rv" style="--d:160ms">It is a unisex salon, so the same door works for the whole family: a haircut for him, a facial for her, makeup for the wedding.</p>
+  <a class="btn k rv" style="--d:240ms" href="#visit">plan your visit</a>
+ </div>
+ <figure class="rv" style="--d:120ms"><div class="frame"><img src="assets/rajwada-palace-indore-madhya-pradesh.jpg" width="900" height="1100" alt="The Rajwada Palace in Indore against a blue sky" loading="lazy"></div><figcaption class="cap">The Rajwada Palace, Indore.</figcaption></figure>
+</section>
+
+<section class="svc" id="services">
+ <h2 class="rv">what you can book</h2>
+ <ul class="list">
+  <li class="rv"><b></b><div><h3>Haircuts &amp; styling</h3><p>Cuts and styling for men and women, plus grooming and shaves.</p></div></li>
+  <li class="rv" style="--d:70ms"><b></b><div><h3>Hair spa</h3><p>Hair spa treatments for dry, tired or damaged hair.</p></div></li>
+  <li class="rv"><b></b><div><h3>Facials &amp; skin</h3><p>Facials and skin care at the beauty parlour side of the salon.</p></div></li>
+  <li class="rv" style="--d:70ms"><b></b><div><h3>Makeup</h3><p>Party and occasion makeup.</p></div></li>
+  <li class="rv"><b></b><div><h3>Bridal</h3><p>Bridal makeup and hair. Ask about dates well in advance of the wedding.</p></div></li>
+  <li class="rv" style="--d:70ms"><b></b><div><h3>Waxing &amp; hair removal</h3><p>Waxing and other hair removal.</p></div></li>
+ </ul>
+ <p class="note">Services as listed for the salon on public directories. Call for what is on offer today and for rates.</p>
+</section>
+
+<section class="plan" id="visit">
+ <div>
+  <h2 class="rv">build your visit</h2>
+  <p class="rv" style="--d:80ms">Tap what you want. The card on the right becomes a note you can read out when you call.</p>
+  <div class="chips rv" role="group" aria-label="Services" style="--d:150ms">
+   <button type="button" aria-pressed="true" data-s="a haircut">haircut</button>
+   <button type="button" aria-pressed="false" data-s="a shave or beard trim">shave &amp; beard</button>
+   <button type="button" aria-pressed="false" data-s="a hair spa">hair spa</button>
+   <button type="button" aria-pressed="false" data-s="a facial">facial</button>
+   <button type="button" aria-pressed="false" data-s="makeup">makeup</button>
+   <button type="button" aria-pressed="false" data-s="bridal makeup">bridal</button>
+   <button type="button" aria-pressed="false" data-s="waxing">waxing</button>
+  </div>
+ </div>
+ <div class="card rv" style="--d:120ms" aria-live="polite">
+  <p class="say" id="note">I'd like to book a haircut.</p>
+  <p>Read this out when you call, then ask for today's timings and give a preferred time and your name.</p>
+  <div class="row"><a class="btn w" href="tel:+917314975999">call 0731 497 5999</a><button class="btn" type="button" id="copy">copy note</button></div>
+ </div>
+</section>
+
+<section aria-label="Pictures">
+ <div class="gal">
+  <figure class="rv"><div class="frame"><img src="assets/leather-belt-bag-with-various-tools-of.jpg" width="700" height="880" alt="A hairdresser's belt holding scissors and combs" loading="lazy"></div><figcaption class="cap">Scissors, combs, clips.</figcaption></figure>
+  <figure class="rv" style="--d:100ms"><div class="frame"><img src="assets/a-french-hair-dresser-running-through-the.jpg" width="700" height="880" alt="Eighteenth-century print of a hairdresser hurrying to a customer" loading="lazy"></div><figcaption class="cap">A hairdresser on his rounds, 1771 print.</figcaption></figure>
+  <figure class="rv" style="--d:200ms"><div class="frame"><img src="assets/woman-combing-her-hair-la-coiffure-plate.jpg" width="700" height="880" alt="Toulouse-Lautrec print of a woman combing her hair" loading="lazy"></div><figcaption class="cap">La Coiffure, Toulouse-Lautrec, 1896.</figcaption></figure>
+ </div>
+</section>
+
+<section class="contact" id="contact">
+ <h2 class="rv">find us on Kanadia Road</h2>
+ <dl class="rv" style="--d:100ms">
+  <div><dt>Salon</dt><dd>Raj unisex salon, Jeetu and Lalit</dd></div>
+  <div><dt>Where</dt><dd>Kanadia Road, Indore</dd></div>
+  <div><dt>Phone</dt><dd><a href="tel:+917314975999">+91 731 497 5999</a></dd></div>
+  <div><dt>Facebook</dt><dd><a href="https://www.facebook.com/Rajsalonindore/" rel="noopener">Rajsalonindore</a></dd></div>
+ </dl>
+</section>
+</main>
+
+<footer>
+ <p>Unofficial website preview made by Axlios Media (axliosmedia.com) as a sample. It is not the official website of Raj Unisex Salon and the business has not commissioned or approved it. Details come from public directory listings and may be wrong or out of date. The pictures are archive and open-licence images and do not show the salon.</p>
+ <p>Pictures: <a href="https://commons.wikimedia.org/wiki/File:Rajwada_Palace,_Indore,_Madhya_Pradesh.jpg">“Rajwada Palace, Indore”</a> by Annni07, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons; <a href="https://commons.wikimedia.org/wiki/File:Leather_belt_bag_with_various_tools_of_a_hairdresser_for_quick_access.jpg">“Leather belt bag with various tools of a hairdresser”</a> by Lisa Risager, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY-SA 2.0</a>, via Wikimedia Commons; “A French Hair Dresser Running through the Streets to his Customers”, 1771, public domain, via Wikimedia Commons; <a href="https://www.artic.edu/artworks/36009">“La Coiffure”</a> by Henri de Toulouse-Lautrec, 1896, public domain, via Art Institute of Chicago.</p>
+</footer>
+<script>
+(function(){
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+ document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+ var bs=[].slice.call(document.querySelectorAll('.chips button')),note=document.getElementById('note');
+ function upd(){var s=bs.filter(function(b){return b.getAttribute('aria-pressed')==='true'}).map(function(b){return b.dataset.s});
+  var t=s.length?s.length>1?s.slice(0,-1).join(', ')+' and '+s[s.length-1]:s[0]:'an appointment';
+  note.textContent="I'd like to book "+t+"."}
+ bs.forEach(function(b){b.addEventListener('click',function(){b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');upd()})});
+ document.getElementById('copy').addEventListener('click',function(){var el=this;try{navigator.clipboard.writeText(note.textContent).then(function(){el.textContent='copied'})}catch(e){el.textContent='select the text above'}});
+})();
+</script>
+</body>
+</html>
