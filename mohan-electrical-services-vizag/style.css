@@ -44,7 +44,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   border-radius: 2px;
 }
 h1, h2, h3, .brand-name { font-family: 'Archivo', 'Hanken Grotesk', system-ui, sans-serif; }
-main { display: block; }
+main { display: block; position: relative; }
 
 /* ---------- nav ---------- */
 .nav {
@@ -103,7 +103,7 @@ html[data-theme="night"] .button:not(.ghost) { box-shadow: 0 0 26px rgba(255, 18
   overflow: hidden;
 }
 .circuit {
-  position: absolute; inset: auto -40px -30px auto; width: min(640px, 80vw); height: auto;
+  position: absolute; inset: 0 -40px auto auto; width: min(640px, 80vw); height: auto;
   color: var(--ink); pointer-events: none;
 }
 .trace { stroke: currentColor; stroke-width: 1.5; opacity: 0.16; stroke-dasharray: 620; stroke-dashoffset: 0; }
@@ -215,7 +215,7 @@ footer { border-top: 1px solid var(--hairline); padding: clamp(48px, 7vw, 84px) 
 .footer-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(24px, 3.4vw, 48px); margin-bottom: 40px; }
 .footer-details h2 { font-size: 1.3rem; margin-bottom: 10px; }
 .footer-details p, .footer-details a { color: var(--ink-soft); font-size: 15px; }
-.footer-details a { display: inline-block; margin-bottom: 6px; border-bottom: 1px solid var(--hairline); transition: color 0.25s ease, border-color 0.25s ease; }
+.footer-details a { display: block; width: max-content; max-width: 100%; margin-bottom: 6px; border-bottom: 1px solid var(--hairline); transition: color 0.25s ease, border-color 0.25s ease; }
 .footer-details a:hover { color: var(--glow); border-color: var(--glow); }
 .credits { margin-bottom: 26px; }
 .credits summary { cursor: pointer; font-size: 13.5px; color: var(--ink-soft); }
@@ -235,7 +235,7 @@ footer { border-top: 1px solid var(--hairline); padding: clamp(48px, 7vw, 84px) 
 /* ---------- responsive ---------- */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; min-height: 0; gap: 54px; padding-top: 84px; }
-  .circuit { inset: auto -70px -50px auto; width: 92vw; }
+  .circuit { inset: 30px -70px auto auto; width: 92vw; }
   .steps, .area-grid, .footer-details { grid-template-columns: 1fr; }
   .enquiry { grid-template-columns: 1fr; }
 }
