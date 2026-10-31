@@ -44,7 +44,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   border-radius: 2px;
 }
 h1, h2, h3, .brand-name { font-family: 'Archivo', 'Hanken Grotesk', system-ui, sans-serif; }
-main { display: block; position: relative; }
+main { display: block; position: relative; overflow: hidden; }
 
 /* ---------- nav ---------- */
 .nav {
