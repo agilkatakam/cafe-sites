@@ -113,7 +113,7 @@ Ready leads live in `nowebsite_ready`.
   Mohan Electrical Services V12 (taste-skill rebuild, commit 3fc515e),
   Doon Computer V4 (taste-skill rebuild, commit adca387),
   Nagal Refrigeration / AC Service Center V23 (commit 64fecd7),
-  Krishna Computech V45 (precision-instrument catalogue, commit 259345b).
+  Krishna Computech V45 (precision-instrument catalogue, commit 58dc7a5; corrections pass adds the concept-preview disclaimer, illustrative-photo labels and softened claims).
 - Build queue: V38 Hardev Mobile →
   V39 Divya Mobile Care → garages V6/V14/V28/V37/V41 → electricians V15/V22/V24/V33/V35 →
   V48/V55 plumbing → V61/V43 carpentry → V56 sports → V58 print → V3/V67 book depots.
