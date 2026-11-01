@@ -111,9 +111,11 @@ Ready leads live in `nowebsite_ready`.
 
 - Live, verified, unsent (send-held): Klayz Studio (commit 1d36dc1),
   Mohan Electrical Services V12 (taste-skill rebuild, commit 3fc515e),
-  Doon Computer V4 (taste-skill rebuild, commit adca387).
-- Build queue: V23 Nagal Refrigeration/AC Bikaner → V45 Krishna Computech Bikaner
-  (kcebkn) → V38 Hardev Mobile → V39 Divya Mobile Care → garages V6/V14/V28/V37/V41 →
-  electricians V15/V22/V24/V33/V35 → V48/V55 plumbing → V61/V43 carpentry →
-  V56 sports → V58 print → V3/V67 book depots. Visual-proof categories held.
+  Doon Computer V4 (taste-skill rebuild, commit adca387),
+  Nagal Refrigeration / AC Service Center V23 (commit 64fecd7).
+- Build queue: V45 Krishna Computech Bikaner (kcebkn) → V38 Hardev Mobile →
+  V39 Divya Mobile Care → garages V6/V14/V28/V37/V41 → electricians V15/V22/V24/V33/V35 →
+  V48/V55 plumbing → V61/V43 carpentry → V56 sports → V58 print → V3/V67 book depots.
+  Visual-proof categories held. A Nov 1 wide harvest (set11) added new candidates
+  V68+ to the ledger; fold qualified ones into the queue after the listed builds.
 - Ledger next free row: check the sheet's last row before appending.
