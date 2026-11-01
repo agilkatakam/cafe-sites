@@ -1,0 +1,174 @@
+/* Nagal Refrigeration: one motif — the vent grille's louvres run the page.
+   Blush and aubergine, Schibsted Grotesk. */
+
+@property --tilt { syntax:'<number>'; inherits:false; initial-value:0.12; }
+
+:root{
+  --bg:#edccbe;
+  --surface:#e8c2b2;
+  --ink:#351a2b;
+  --muted:#6c4857;
+  --accent:#351a2b;
+  --accent-ink:#edccbe;
+  --font:"Schibsted Grotesk",system-ui,sans-serif;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --pad:clamp(20px,5vw,64px);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);font-size:var(--step-body);line-height:1.4;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+
+/* slow crossfade entrances */
+.reveal{opacity:.001;transform:translateY(8px);transition:opacity .95s ease,transform .95s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- top bar ---------- */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px var(--pad)}
+.wordmark{font-weight:800;letter-spacing:-0.05em;font-size:1.35rem}
+.navlinks{display:flex;gap:clamp(18px,3vw,36px)}
+.navlinks a{font-weight:600;text-decoration:none;font-size:var(--step-body);padding:10px 2px}
+.navlinks a:hover{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.topbtn,.btn{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;
+  padding:12px 26px;background:var(--ink);color:var(--accent-ink);
+  font-weight:600;font-size:var(--step-body);text-decoration:none;border:0;cursor:pointer;
+  transition:background .25s ease,color .25s ease;
+}
+.btn-light{background:var(--accent-ink);color:var(--ink)}
+.topbtn:hover,.btn:hover{background:var(--muted);color:var(--accent-ink)}
+
+/* ---------- hero ---------- */
+.hero{min-height:100vh /* taste-skill-ignore: fallback for browsers without svh */;min-height:100svh;display:flex;flex-direction:column}
+.hero-grid{
+  flex:1;display:grid;grid-template-columns:repeat(12,1fr);gap:0 clamp(20px,3vw,44px);
+  max-width:1360px;width:100%;margin:0 auto;padding:clamp(8px,3vh,32px) var(--pad) clamp(40px,6vh,72px);
+  align-items:center;
+}
+.hero-room{grid-column:1/7;min-width:0}
+.hero-title{font-weight:800;letter-spacing:-0.05em;line-height:.88;font-size:clamp(3rem,7.4vw,7.2rem)}
+.hero-sub{margin-top:26px;font-size:var(--step-lead);line-height:1.4;max-width:34ch}
+.hero-cta{margin-top:30px}
+.hero-card{grid-column:8/13;min-width:0;display:flex;flex-direction:column;gap:14px}
+
+/* the louvre card */
+.louvres{
+  position:relative;height:clamp(380px,62vh,560px);overflow:hidden;
+  background:var(--ink);perspective:900px;cursor:grab;touch-action:pan-y;
+}
+.louvres.dragging{cursor:grabbing}
+.louvres-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.slats{position:absolute;inset:0;display:flex;flex-direction:column}
+.slats i{
+  display:block;flex:1 1 0;background:var(--ink);
+  transform-origin:50% 0;transform:rotateX(calc(var(--tilt,0.12)*74deg));
+  transition:transform .18s linear;
+}
+.ventbtn{
+  align-self:flex-start;min-height:48px;padding:12px 22px;cursor:pointer;
+  background:transparent;color:var(--ink);border:2px solid var(--ink);
+  font-family:var(--font);font-weight:600;font-size:var(--step-body);
+  transition:background .25s ease,color .25s ease;
+}
+.ventbtn:hover{background:var(--ink);color:var(--accent-ink)}
+
+/* ---------- intro : statement with inline thumbnails ---------- */
+.intro{background:var(--ink);color:var(--accent-ink);padding:clamp(72px,11vh,120px) var(--pad)}
+.statement{
+  max-width:1080px;margin:0 auto;
+  font-weight:800;letter-spacing:-0.04em;line-height:1.18;
+  font-size:clamp(1.5rem,2.5vw,2.25rem);
+}
+.thumb{display:inline-block;width:2.3em;height:1.25em;vertical-align:-0.22em;position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.thumb::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(180deg,transparent 0 34%,var(--ink) 34% 50%); /* taste-skill-ignore: louvre-slats mask over the photo, not a colour fill */
+}
+
+/* ---------- features : specimens on colour tiles ---------- */
+.features{padding:clamp(72px,11vh,120px) var(--pad);max-width:1360px;margin:0 auto}
+.section-title{font-weight:800;letter-spacing:-0.05em;line-height:.95;font-size:var(--step-head);margin-bottom:clamp(28px,4vh,48px)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tile{background:var(--surface);padding:clamp(22px,2.6vw,36px);min-height:190px;display:flex;flex-direction:column;gap:12px}
+.tile-dark{background:var(--ink);color:var(--accent-ink)}
+.tile h3{font-weight:800;letter-spacing:-0.03em;font-size:clamp(1.25rem,1.5vw,1.6rem);line-height:1.05}
+.tile-img{display:block;position:relative;overflow:hidden;margin:calc(-1*clamp(22px,2.6vw,36px)) calc(-1*clamp(22px,2.6vw,36px)) 8px}
+.tile-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tile-img::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 76%,var(--surface) 76% 100%) /* taste-skill-ignore: louvre-slats mask over the photo, not a colour fill */}
+.tile-dark .tile-img::after{background:repeating-linear-gradient(180deg,transparent 0 76%,var(--ink) 76% 100%) /* taste-skill-ignore: louvre-slats mask over the photo, not a colour fill */}
+.tile p{font-size:var(--step-body);line-height:1.4}
+.tile-dark p{color:rgba(237,204,190,.85)}
+.slatmark{display:block;width:34px;height:16px;position:relative}
+.slatmark::before,.slatmark::after,.slatmark i{content:"";position:absolute;left:0;right:0;height:4px;background:currentColor}
+.slatmark::before{top:0}
+.slatmark::after{top:12px}
+.slatmark{ border-top:0; }
+.slatmark::before{box-shadow:0 6px 0 currentColor} /* taste-skill-ignore: solid slat echo, not a soft shadow */
+
+/* ---------- the full-width louvre band ---------- */
+.band{display:flex;flex-direction:column;justify-content:space-between;height:110px;padding:0}
+.band i{display:block;height:16px;background:var(--ink)}
+
+/* ---------- showcase : object on a disc ---------- */
+.showcase{background:var(--ink);color:var(--accent-ink);padding:clamp(72px,11vh,130px) var(--pad)}
+.disc-wrap{position:relative;max-width:1080px;margin:0 auto;text-align:center}
+.disc{border-radius:50%;object-fit:cover}
+.disc-main{width:min(66vw,620px);aspect-ratio:1;margin:0 auto;position:relative;z-index:1}
+.disc-small{position:absolute;width:min(30vw,240px);aspect-ratio:1;left:6%;bottom:6%;z-index:2}
+.disc-cap{margin-top:26px;font-size:var(--step-lead)}
+
+/* ---------- cta : the action tile ---------- */
+.cta{padding:clamp(72px,11vh,120px) var(--pad);max-width:1360px;margin:0 auto}
+.action-tile{background:var(--ink);color:var(--accent-ink);padding:clamp(30px,5vw,64px)}
+.action-title{font-weight:800;letter-spacing:-0.05em;line-height:.95;font-size:var(--step-head)}
+.action-line{margin-top:16px;font-size:var(--step-lead);color:rgba(237,204,190,.85);max-width:44ch}
+.action-phone{margin-top:22px}
+.action-phone a{font-weight:800;letter-spacing:-0.04em;font-size:clamp(2rem,4.4vw,3.6rem);text-decoration:none;line-height:1}
+.action-phone a:hover{text-decoration:underline;text-underline-offset:8px;text-decoration-thickness:3px}
+.action-addr{margin-top:16px;font-size:var(--step-body);color:rgba(237,204,190,.75);max-width:60ch}
+.action-form{margin-top:30px;display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:760px}
+.afield label{display:block;font-size:var(--step-small);font-weight:600;color:rgba(237,204,190,.75);margin-bottom:8px}
+.afield input{
+  width:100%;min-height:48px;padding:10px 12px;font-family:var(--font);font-size:var(--step-body);
+  color:var(--accent-ink);background:transparent;border:2px solid rgba(237,204,190,.45);
+}
+.afield input:focus{border-color:var(--accent-ink);outline:none}
+.afield input::placeholder{color:rgba(237,204,190,.45)}
+.action-form .btn{grid-column:1/-1;justify-self:start}
+.anote{grid-column:1/-1;font-size:var(--step-small);color:rgba(237,204,190,.6)}
+
+/* ---------- footer : the mark, built large ---------- */
+.foot{background:var(--ink);color:var(--accent-ink);padding:clamp(40px,7vh,80px) var(--pad) 34px;border-top:110px solid var(--bg)}
+.foot-mark{
+  font-weight:800;letter-spacing:-0.05em;line-height:.8;
+  font-size:clamp(4.5rem,19vw,19rem);text-align:center;
+  margin-bottom:clamp(28px,5vh,56px);
+}
+.foot-lines{max-width:1080px;margin:0 auto;text-align:center}
+.foot-lines p{max-width:68ch;margin-left:auto;margin-right:auto}
+.foot-lines a:hover{text-decoration:underline;text-underline-offset:4px}
+.foot-email{overflow-wrap:anywhere}
+.foot-small{margin-top:14px;font-size:var(--step-small);line-height:1.55;color:rgba(237,204,190,.55)}
+
+/* ---------- small screens ---------- */
+@media (max-width:960px){
+  .hero-room{grid-column:1/13}
+  .hero-card{grid-column:1/13;margin-top:34px}
+  .louvres{height:clamp(300px,44vh,440px)}
+  .tiles{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .navlinks{display:none}
+  .tiles{grid-template-columns:1fr}
+  .action-form{grid-template-columns:1fr}
+  .disc-small{left:0}
+}
