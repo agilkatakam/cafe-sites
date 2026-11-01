@@ -113,9 +113,10 @@ Ready leads live in `nowebsite_ready`.
   Mohan Electrical Services V12 (taste-skill rebuild, commit 3fc515e),
   Doon Computer V4 (taste-skill rebuild, commit adca387),
   Nagal Refrigeration / AC Service Center V23 (commit 64fecd7),
-  Krishna Computech V45 (precision-instrument catalogue, commit 58dc7a5; corrections pass adds the concept-preview disclaimer, illustrative-photo labels and softened claims).
-- Build queue: V38 Hardev Mobile →
-  V39 Divya Mobile Care → garages V6/V14/V28/V37/V41 → electricians V15/V22/V24/V33/V35 →
+  Krishna Computech V45 (precision-instrument catalogue, commit 58dc7a5; corrections pass adds the concept-preview disclaimer, illustrative-photo labels and softened claims),
+  Hardev Mobile Communication V38 (one motif: the SIM chamfer; Bricolage, greys + mint; commit 648d366; this push also added the missing noindex meta to V45).
+- Live URLs follow the pattern https://agilkatakam.github.io/cafe-sites/<folder>/ .
+- Build queue: V39 Divya Mobile Care (Tirupati) → garages V6/V14/V28/V37/V41 → electricians V15/V22/V24/V33/V35 →
   V48/V55 plumbing → V61/V43 carpentry → V56 sports → V58 print → V3/V67 book depots.
   Visual-proof categories held. A Nov 1 wide harvest (set11) added new candidates
   V68+ to the ledger; fold qualified ones into the queue after the listed builds.
