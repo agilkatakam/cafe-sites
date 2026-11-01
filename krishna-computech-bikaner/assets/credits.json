@@ -1,6 +1,6 @@
 [
  {
-  "file": "assets/us-navy-070129-n-3038w-073-electronics.jpg",
+  "file": "assets/bench-soldering-hands.jpg",
   "media": "image",
   "ref": "commons:8190847",
   "title": "US Navy 070129-N-3038W-073 Electronics Technician 3rd Class Christopher Ralph makes repairs with a soldering iron on a circuit board in the micro-miniature electronics repair shop",
@@ -17,7 +17,7 @@
   "width": 1920,
   "height": 2868,
   "bytes": 836292,
-  "credit": "\"US Navy 070129-N-3038W-073 Electronics Technician 3rd Class Christopher Ralph makes repai…\" by U.S. Navy photo by Mass Communication Specialist Seaman Joh…, public domain, via Wikimedia Commons",
+  "credit": "\"US Navy 070129-N-3038W-073 Electronics Technician 3rd Class Christopher Ralph makes repai\u2026\" by U.S. Navy photo by Mass Communication Specialist Seaman Joh\u2026, public domain, via Wikimedia Commons",
   "notes": [],
   "saved": "2026-11-01T07:18:57.144Z"
  },
@@ -86,30 +86,6 @@
   "credit": "\"Framework Laptop 13 - 2023 AMD Ryzen - Internal motherboard and component view\" by Ogidya, CC BY 4.0, via Wikimedia Commons",
   "notes": [],
   "saved": "2026-11-01T07:18:59.426Z"
- },
- {
-  "file": "assets/laptop-hard-drive-exposed.jpg",
-  "media": "image",
-  "ref": "commons:27940250",
-  "title": "Laptop-hard-drive-exposed",
-  "creator": "Evan-Amos",
-  "creatorUrl": null,
-  "date": "2013-08-29",
-  "license": "CC BY-SA 3.0",
-  "licenseCode": "by-sa",
-  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "creditRequired": true,
-  "page": "https://commons.wikimedia.org/wiki/File:Laptop-hard-drive-exposed.jpg",
-  "via": "Wikimedia Commons",
-  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Laptop-hard-drive-exposed.jpg/1920px-Laptop-hard-drive-exposed.jpg",
-  "width": 1920,
-  "height": 1469,
-  "bytes": 241289,
-  "credit": "\"Laptop-hard-drive-exposed\" by Evan-Amos, CC BY-SA 3.0, via Wikimedia Commons",
-  "notes": [
-   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
-  ],
-  "saved": "2026-11-01T07:18:59.576Z"
  },
  {
   "file": "assets/lenovo-g500s-laptop-2903.jpg",

@@ -1,6 +1,6 @@
 {
  "url": "http://localhost:8641",
- "at": "2026-11-01T07:29:02.439Z",
+ "at": "2026-11-01T07:37:24.781Z",
  "allow": [],
  "viewports": [
   {
@@ -10,14 +10,14 @@
    "screens": 9,
    "filled": [
     0.62,
-    0.5,
+    0.51,
     0.74,
     0.96,
     0.96,
     0.96,
+    0.67,
     0.69,
-    0.69,
-    0.78
+    0.82
    ],
    "motion": {
     "elements": 28,
@@ -33,9 +33,9 @@
      "h": 900
     },
     "page": {
-     "height": 7963,
-     "screens": 8.8,
-     "words": 342,
+     "height": 7999,
+     "screens": 8.9,
+     "words": 378,
      "img": 6,
      "video": 1,
      "canvas": 0,
@@ -49,10 +49,10 @@
      "videoCount": 1,
      "uiPictures": 0,
      "pictureSamples": [
-      "us-navy-070129-n-3038w-073-electronics.jpg",
+      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
       "hp-pavilion-computer-laptop-keyboard-closeup.jpg",
       "laptop-fan.jpg",
-      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
+      "bench-soldering-hands.jpg",
       "lenovo-g500s-laptop-2903.jpg",
       "lenovo-thinkpad-x220-motherboard-fru-04w3286-wit"
      ],
@@ -155,9 +155,9 @@
       "kind": "statement"
      },
      {
-      "text": "THIS BENCH SENDS THEM BACK WORKING.",
+      "text": "THE WORKSHOP SENDS THEM BACK WORKING.",
       "words": 6,
-      "chars": 35,
+      "chars": 37,
       "lines": 2,
       "size": 40,
       "vw": 2.8,
@@ -197,9 +197,9 @@
       "kind": "heading"
      },
      {
-      "text": "ON THE BENCH",
-      "words": 3,
-      "chars": 12,
+      "text": "UP CLOSE",
+      "words": 2,
+      "chars": 8,
       "lines": 1,
       "size": 64,
       "vw": 4.4,
@@ -255,7 +255,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 7719,
+      "top": 7695,
       "tag": "div",
       "kind": "heading"
      }
@@ -273,12 +273,12 @@
      "families": [
       {
        "family": "Switzer",
-       "share": 0.88,
+       "share": 0.89,
        "mono": false
       },
       {
        "family": "Panchang",
-       "share": 0.12,
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -307,7 +307,7 @@
       "tracking": 0,
       "contrast": 15.4
      },
-     "measureChars": 41,
+     "measureChars": 83,
      "max": {
       "size": 194.4,
       "vw": 13.5,
@@ -321,8 +321,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.13,
-     "centerShare": 0.08,
+     "upperShare": 0.12,
+     "centerShare": 0.15,
      "smallText": 0
     },
     "eyebrows": [],
@@ -367,15 +367,15 @@
      "textColors": [
       {
        "color": "#eff0f1",
-       "share": 0.53
+       "share": 0.47
       },
       {
        "color": "#b0b4b9",
-       "share": 0.39
+       "share": 0.45
       },
       {
        "color": "#18191b",
-       "share": 0.05
+       "share": 0.04
       },
       {
        "color": "#ff4a1f",
@@ -455,7 +455,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 7963,
+    "pageH": 7999,
     "margins": {
      "left": 58,
      "right": 58
@@ -466,7 +466,7 @@
       "tag": "section",
       "top": 85,
       "height": 1015,
-      "words": 33,
+      "words": 38,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -491,7 +491,7 @@
       "height": 1162,
       "words": 77,
       "media": 0,
-      "middle": 32,
+      "middle": 83,
       "heading": {
        "text": "Laptops come in tired.",
        "size": 40,
@@ -558,7 +558,7 @@
       "tag": "article",
       "top": 4168,
       "height": 774,
-      "words": 36,
+      "words": 45,
       "media": 1,
       "middle": 265,
       "heading": {
@@ -569,7 +569,7 @@
       "left": 58,
       "right": 58,
       "textLeft": 58,
-      "textRight": 973,
+      "textRight": 393,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -604,11 +604,11 @@
       "tag": "section",
       "top": 5716,
       "height": 1089,
-      "words": 23,
+      "words": 27,
       "media": 2,
       "middle": 0,
       "heading": {
-       "text": "On the bench",
+       "text": "Up close",
        "size": 64,
        "tag": "h2"
       },
@@ -649,8 +649,8 @@
       "sel": "footer#visit.site-foot",
       "tag": "footer",
       "top": 7362,
-      "height": 601,
-      "words": 79,
+      "height": 637,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -659,9 +659,9 @@
        "tag": "div"
       },
       "left": 58,
-      "right": 61,
+      "right": 58,
       "textLeft": 58,
-      "textRight": 61,
+      "textRight": 58,
       "fullBleed": false,
       "footer": true,
       "hero": false,
@@ -716,14 +716,14 @@
    "screens": 9,
    "filled": [
     0.76,
-    0.76,
+    0.75,
     0.72,
     0.99,
     0.99,
     0.79,
     0.99,
     0.73,
-    0.79
+    0.86
    ],
    "motion": {
     "elements": 28,
@@ -739,9 +739,9 @@
      "h": 1024
     },
     "page": {
-     "height": 8428,
-     "screens": 8.2,
-     "words": 342,
+     "height": 8465,
+     "screens": 8.3,
+     "words": 378,
      "img": 6,
      "video": 1,
      "canvas": 0,
@@ -755,10 +755,10 @@
      "videoCount": 1,
      "uiPictures": 0,
      "pictureSamples": [
-      "us-navy-070129-n-3038w-073-electronics.jpg",
+      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
       "hp-pavilion-computer-laptop-keyboard-closeup.jpg",
       "laptop-fan.jpg",
-      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
+      "bench-soldering-hands.jpg",
       "lenovo-g500s-laptop-2903.jpg",
       "lenovo-thinkpad-x220-motherboard-fru-04w3286-wit"
      ],
@@ -819,9 +819,9 @@
       "kind": "heading"
      },
      {
-      "text": "ON THE BENCH",
-      "words": 3,
-      "chars": 12,
+      "text": "UP CLOSE",
+      "words": 2,
+      "chars": 8,
       "lines": 1,
       "size": 38.4,
       "vw": 5,
@@ -877,7 +877,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 8267,
+      "top": 8243,
       "tag": "div",
       "kind": "heading"
      }
@@ -895,12 +895,12 @@
      "families": [
       {
        "family": "Switzer",
-       "share": 0.88,
+       "share": 0.89,
        "mono": false
       },
       {
        "family": "Panchang",
-       "share": 0.12,
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -928,7 +928,7 @@
       "tracking": 0,
       "contrast": 15.4
      },
-     "measureChars": 29,
+     "measureChars": 83,
      "max": {
       "size": 103.7,
       "vw": 13.5,
@@ -942,8 +942,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.13,
-     "centerShare": 0.08,
+     "upperShare": 0.12,
+     "centerShare": 0.15,
      "smallText": 0
     },
     "eyebrows": [],
@@ -997,15 +997,15 @@
      "textColors": [
       {
        "color": "#eff0f1",
-       "share": 0.53
+       "share": 0.47
       },
       {
        "color": "#b0b4b9",
-       "share": 0.39
+       "share": 0.45
       },
       {
        "color": "#18191b",
-       "share": 0.05
+       "share": 0.04
       },
       {
        "color": "#ff4a1f",
@@ -1085,7 +1085,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 8428,
+    "pageH": 8465,
     "margins": {
      "left": 31,
      "right": 31
@@ -1096,7 +1096,7 @@
       "tag": "section",
       "top": 85,
       "height": 965,
-      "words": 33,
+      "words": 38,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1128,9 +1128,9 @@
        "tag": "h2"
       },
       "left": 31,
-      "right": 60,
+      "right": 83,
       "textLeft": 31,
-      "textRight": 60,
+      "textRight": 83,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1188,7 +1188,7 @@
       "tag": "article",
       "top": 4212,
       "height": 881,
-      "words": 36,
+      "words": 45,
       "media": 1,
       "middle": 87,
       "heading": {
@@ -1199,7 +1199,7 @@
       "left": 31,
       "right": 31,
       "textLeft": 31,
-      "textRight": 459,
+      "textRight": 57,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1234,11 +1234,11 @@
       "tag": "section",
       "top": 5974,
       "height": 1186,
-      "words": 23,
+      "words": 27,
       "media": 2,
       "middle": 0,
       "heading": {
-       "text": "On the bench",
+       "text": "Up close",
        "size": 38,
        "tag": "h2"
       },
@@ -1279,8 +1279,8 @@
       "sel": "footer#visit.site-foot",
       "tag": "footer",
       "top": 7677,
-      "height": 751,
-      "words": 79,
+      "height": 787,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1341,16 +1341,16 @@
    "screens": 11,
    "filled": [
     0.59,
-    0.6,
+    0.61,
     0.83,
     0.71,
     0.95,
     0.95,
     0.95,
-    0.76,
+    0.74,
     0.72,
     0.9,
-    0.9
+    0.93
    ],
    "motion": {
     "elements": 28,
@@ -1366,9 +1366,9 @@
      "h": 844
     },
     "page": {
-     "height": 8558,
-     "screens": 10.1,
-     "words": 337,
+     "height": 8614,
+     "screens": 10.2,
+     "words": 373,
      "img": 6,
      "video": 1,
      "canvas": 0,
@@ -1382,10 +1382,10 @@
      "videoCount": 1,
      "uiPictures": 0,
      "pictureSamples": [
-      "us-navy-070129-n-3038w-073-electronics.jpg",
+      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
       "hp-pavilion-computer-laptop-keyboard-closeup.jpg",
       "laptop-fan.jpg",
-      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
+      "bench-soldering-hands.jpg",
       "lenovo-g500s-laptop-2903.jpg",
       "lenovo-thinkpad-x220-motherboard-fru-04w3286-wit"
      ],
@@ -1488,9 +1488,9 @@
       "kind": "statement"
      },
      {
-      "text": "THIS BENCH SENDS THEM BACK WORKING.",
+      "text": "THE WORKSHOP SENDS THEM BACK WORKING.",
       "words": 6,
-      "chars": 35,
+      "chars": 37,
       "lines": 3,
       "size": 22,
       "vw": 5.6,
@@ -1530,9 +1530,9 @@
       "kind": "heading"
      },
      {
-      "text": "ON THE BENCH",
-      "words": 3,
-      "chars": 12,
+      "text": "UP CLOSE",
+      "words": 2,
+      "chars": 8,
       "lines": 1,
       "size": 28,
       "vw": 7.2,
@@ -1588,7 +1588,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 8429,
+      "top": 8405,
       "tag": "div",
       "kind": "heading"
      }
@@ -1606,12 +1606,12 @@
      "families": [
       {
        "family": "Switzer",
-       "share": 0.87,
+       "share": 0.89,
        "mono": false
       },
       {
        "family": "Panchang",
-       "share": 0.13,
+       "share": 0.11,
        "mono": false
       }
      ],
@@ -1638,7 +1638,7 @@
       "tracking": 0,
       "contrast": 15.4
      },
-     "measureChars": 47,
+     "measureChars": 54,
      "max": {
       "size": 64,
       "vw": 16.4,
@@ -1652,8 +1652,8 @@
      "microLabels": 0,
      "microLabelShare": 0,
      "microSamples": [],
-     "upperShare": 0.13,
-     "centerShare": 0.08,
+     "upperShare": 0.12,
+     "centerShare": 0.15,
      "smallText": 0
     },
     "eyebrows": [],
@@ -1707,15 +1707,15 @@
      "textColors": [
       {
        "color": "#eff0f1",
-       "share": 0.54
+       "share": 0.48
       },
       {
        "color": "#b0b4b9",
-       "share": 0.38
+       "share": 0.45
       },
       {
        "color": "#18191b",
-       "share": 0.05
+       "share": 0.04
       },
       {
        "color": "#ff4a1f",
@@ -1795,7 +1795,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 8558,
+    "pageH": 8614,
     "margins": {
      "left": 20,
      "right": 20
@@ -1806,7 +1806,7 @@
       "tag": "section",
       "top": 109,
       "height": 932,
-      "words": 33,
+      "words": 38,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1834,9 +1834,9 @@
       "middle": 0,
       "heading": null,
       "left": 20,
-      "right": 53,
+      "right": 44,
       "textLeft": 20,
-      "textRight": 53,
+      "textRight": 44,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1917,7 +1917,7 @@
       "tag": "article",
       "top": 4428,
       "height": 743,
-      "words": 36,
+      "words": 45,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1963,11 +1963,11 @@
       "tag": "section",
       "top": 5914,
       "height": 1377,
-      "words": 23,
+      "words": 27,
       "media": 2,
-      "middle": 0,
+      "middle": 53,
       "heading": {
-       "text": "On the bench",
+       "text": "Up close",
        "size": 28,
        "tag": "h2"
       },
@@ -2008,8 +2008,8 @@
       "sel": "footer#visit.site-foot",
       "tag": "footer",
       "top": 7736,
-      "height": 822,
-      "words": 79,
+      "height": 879,
+      "words": 105,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -2018,9 +2018,9 @@
        "tag": "h2"
       },
       "left": 20,
-      "right": 33,
+      "right": 26,
       "textLeft": 20,
-      "textRight": 33,
+      "textRight": 26,
       "fullBleed": false,
       "footer": true,
       "hero": false,
