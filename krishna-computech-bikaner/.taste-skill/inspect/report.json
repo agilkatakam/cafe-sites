@@ -1,0 +1,2109 @@
+{
+ "url": "http://localhost:8641",
+ "at": "2026-11-01T07:29:02.439Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.62,
+    0.5,
+    0.74,
+    0.96,
+    0.96,
+    0.96,
+    0.69,
+    0.69,
+    0.78
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 0,
+    "transitions": 28,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7963,
+     "screens": 8.8,
+     "words": 342,
+     "img": 6,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "us-navy-070129-n-3038w-073-electronics.jpg",
+      "hp-pavilion-computer-laptop-keyboard-closeup.jpg",
+      "laptop-fan.jpg",
+      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
+      "lenovo-g500s-laptop-2903.jpg",
+      "lenovo-thinkpad-x220-motherboard-fru-04w3286-wit"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "EVERY PART REPAIRED.",
+     "words": 3,
+     "chars": 20,
+     "lines": 2,
+     "size": 129.6,
+     "vw": 9,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.92,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 166,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "EVERY PART REPAIRED.",
+     "words": 3,
+     "lines": 2,
+     "size": 129.6,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "EVERY PART REPAIRED.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 129.6,
+      "vw": 9,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 166,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "LAPTOPS COME IN TIRED.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 1226,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "SCREENS CRACK. BOARDS SHORT.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.68,
+      "top": 1271,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "THIS BENCH SENDS THEM BACK WORKING.",
+      "words": 6,
+      "chars": 35,
+      "lines": 2,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.6,
+      "top": 1361,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "POINT AT WHAT’S BROKEN",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 34,
+      "vw": 2.4,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0.02,
+      "leading": 1.55,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 1596,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ON THE BENCH",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 5842,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "REPAIR.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 187.2,
+      "vw": 13,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 6967,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "KRISHNA",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 194.4,
+      "vw": 13.5,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 7719,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 2,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0.12,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      26,
+      34,
+      40,
+      64,
+      130,
+      187,
+      194
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.4
+     },
+     "measureChars": 41,
+     "max": {
+      "size": 194.4,
+      "vw": 13.5,
+      "font": "Panchang",
+      "text": "Krishna"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.13,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#18191b",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.06,
+      "l": 0.1
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#222427",
+       "top": 1540,
+       "hsl": {
+        "h": 216,
+        "s": 0.07,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#1d1f21",
+       "top": 2343,
+       "hsl": {
+        "h": 210,
+        "s": 0.06,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#eff0f1",
+       "top": 5977,
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#eff0f1",
+       "share": 0.53
+      },
+      {
+       "color": "#b0b4b9",
+       "share": 0.39
+      },
+      {
+       "color": "#18191b",
+       "share": 0.05
+      },
+      {
+       "color": "#ff4a1f",
+       "share": 0.03
+      },
+      {
+       "color": "#222427",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#2a2c2f",
+      "hsl": {
+       "h": 216,
+       "s": 0.06,
+       "l": 0.17
+      },
+      "fg": "#eff0f1"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 97836 38063",
+      "Call the workshop"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.33
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 75,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7963,
+    "margins": {
+     "left": 58,
+     "right": 58
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 85,
+      "height": 1015,
+      "words": 33,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Every part",
+       "size": 130,
+       "tag": "h1"
+      },
+      "left": 58,
+      "right": 58,
+      "textLeft": 58,
+      "textRight": 149,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.intro",
+      "tag": "section",
+      "top": 1100,
+      "height": 1162,
+      "words": 77,
+      "media": 0,
+      "middle": 32,
+      "heading": {
+       "text": "Laptops come in tired.",
+       "size": 40,
+       "tag": "p"
+      },
+      "left": 58,
+      "right": 235,
+      "textLeft": 58,
+      "textRight": 235,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 2343,
+      "height": 774,
+      "words": 27,
+      "media": 1,
+      "middle": 260,
+      "heading": {
+       "text": "The screen side",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 58,
+      "right": 58,
+      "textLeft": 58,
+      "textRight": 968,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 3117,
+      "height": 1051,
+      "words": 30,
+      "media": 1,
+      "middle": 273,
+      "heading": {
+       "text": "Power and heat",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 58,
+      "right": 58,
+      "textLeft": 58,
+      "textRight": 981,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 4168,
+      "height": 774,
+      "words": 36,
+      "media": 1,
+      "middle": 265,
+      "heading": {
+       "text": "The board",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 58,
+      "right": 58,
+      "textLeft": 58,
+      "textRight": 973,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 4942,
+      "height": 774,
+      "words": 30,
+      "media": 1,
+      "middle": 304,
+      "heading": {
+       "text": "Data and beyond",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 58,
+      "right": 58,
+      "textLeft": 58,
+      "textRight": 1012,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#bench.showcase",
+      "tag": "section",
+      "top": 5716,
+      "height": 1089,
+      "words": 23,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "On the bench",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 58,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 6805,
+      "height": 556,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Repair.",
+       "size": 187,
+       "tag": "a"
+      },
+      "left": 191,
+      "right": 191,
+      "textLeft": 191,
+      "textRight": 191,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#visit.site-foot",
+      "tag": "footer",
+      "top": 7362,
+      "height": 601,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Krishna",
+       "size": 194,
+       "tag": "div"
+      },
+      "left": 58,
+      "right": 61,
+      "textLeft": 58,
+      "textRight": 61,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "EVERY PART REPAIRED.",
+      "size": 130,
+      "top": 166,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 58,
+      "n": 13
+     },
+     {
+      "x": 114,
+      "n": 2
+     },
+     {
+      "x": 778,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 16,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.07,
+    "voidBox": {
+     "x": 720,
+     "y": 420,
+     "w": 720,
+     "h": 120
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.76,
+    0.76,
+    0.72,
+    0.99,
+    0.99,
+    0.79,
+    0.99,
+    0.73,
+    0.79
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 0,
+    "transitions": 28,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8428,
+     "screens": 8.2,
+     "words": 342,
+     "img": 6,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "us-navy-070129-n-3038w-073-electronics.jpg",
+      "hp-pavilion-computer-laptop-keyboard-closeup.jpg",
+      "laptop-fan.jpg",
+      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
+      "lenovo-g500s-laptop-2903.jpg",
+      "lenovo-thinkpad-x220-motherboard-fru-04w3286-wit"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "EVERY PART REPAIRED.",
+     "words": 3,
+     "chars": 20,
+     "lines": 2,
+     "size": 69.1,
+     "vw": 9,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.92,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.92,
+     "top": 177,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "EVERY PART REPAIRED.",
+     "words": 3,
+     "lines": 2,
+     "size": 69.1,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "EVERY PART REPAIRED.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 69.1,
+      "vw": 9,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 177,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "ON THE BENCH",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 5,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6117,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "REPAIR.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 7344,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "KRISHNA",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 103.7,
+      "vw": 13.5,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 8267,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.88,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0.12,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      38,
+      69,
+      100,
+      104
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.4
+     },
+     "measureChars": 29,
+     "max": {
+      "size": 103.7,
+      "vw": 13.5,
+      "font": "Panchang",
+      "text": "Krishna"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.13,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#18191b",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.06,
+      "l": 0.1
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#222427",
+       "top": 1400,
+       "hsl": {
+        "h": 216,
+        "s": 0.07,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#2e3033",
+       "top": 1621,
+       "hsl": {
+        "h": 216,
+        "s": 0.05,
+        "l": 0.19
+       }
+      },
+      {
+       "color": "#1d1f21",
+       "top": 2451,
+       "hsl": {
+        "h": 210,
+        "s": 0.06,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#eff0f1",
+       "top": 6218,
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#eff0f1",
+       "share": 0.53
+      },
+      {
+       "color": "#b0b4b9",
+       "share": 0.39
+      },
+      {
+       "color": "#18191b",
+       "share": 0.05
+      },
+      {
+       "color": "#ff4a1f",
+       "share": 0.03
+      },
+      {
+       "color": "#222427",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#2a2c2f",
+      "hsl": {
+       "h": 216,
+       "s": 0.06,
+       "l": 0.17
+      },
+      "fg": "#eff0f1"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 97836 38063",
+      "Call the workshop"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.48
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 75,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8428,
+    "margins": {
+     "left": 31,
+     "right": 31
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 85,
+      "height": 965,
+      "words": 33,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Every part",
+       "size": 69,
+       "tag": "h1"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 75,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.intro",
+      "tag": "section",
+      "top": 1051,
+      "height": 1308,
+      "words": 77,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Point at what’s broken",
+       "size": 22,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 60,
+      "textLeft": 31,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 2451,
+      "height": 881,
+      "words": 27,
+      "media": 1,
+      "middle": 96,
+      "heading": {
+       "text": "The screen side",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 468,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 3332,
+      "height": 881,
+      "words": 30,
+      "media": 1,
+      "middle": 87,
+      "heading": {
+       "text": "Power and heat",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 459,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 4212,
+      "height": 881,
+      "words": 36,
+      "media": 1,
+      "middle": 87,
+      "heading": {
+       "text": "The board",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 459,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 5093,
+      "height": 881,
+      "words": 30,
+      "media": 1,
+      "middle": 97,
+      "heading": {
+       "text": "Data and beyond",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 469,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#bench.showcase",
+      "tag": "section",
+      "top": 5974,
+      "height": 1186,
+      "words": 23,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "On the bench",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 7160,
+      "height": 518,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Repair.",
+       "size": 100,
+       "tag": "a"
+      },
+      "left": 102,
+      "right": 102,
+      "textLeft": 102,
+      "textRight": 102,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#visit.site-foot",
+      "tag": "footer",
+      "top": 7677,
+      "height": 751,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Visit",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 37,
+      "textLeft": 31,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "EVERY PART REPAIRED.",
+      "size": 69,
+      "top": 177,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 13
+     },
+     {
+      "x": 61,
+      "n": 2
+     },
+     {
+      "x": 415,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 16,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "filled": [
+    0.59,
+    0.6,
+    0.83,
+    0.71,
+    0.95,
+    0.95,
+    0.95,
+    0.76,
+    0.72,
+    0.9,
+    0.9
+   ],
+   "motion": {
+    "elements": 28,
+    "css": 0,
+    "transitions": 28,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8558,
+     "screens": 10.1,
+     "words": 337,
+     "img": 6,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 7,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "us-navy-070129-n-3038w-073-electronics.jpg",
+      "hp-pavilion-computer-laptop-keyboard-closeup.jpg",
+      "laptop-fan.jpg",
+      "framework-laptop-13-2023-amd-ryzen-internal.jpg",
+      "lenovo-g500s-laptop-2903.jpg",
+      "lenovo-thinkpad-x220-motherboard-fru-04w3286-wit"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "EVERY PART REPAIRED.",
+     "words": 3,
+     "chars": 20,
+     "lines": 2,
+     "size": 35.1,
+     "vw": 9,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.02,
+     "leading": 0.92,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 184,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "EVERY PART REPAIRED.",
+     "words": 3,
+     "lines": 2,
+     "size": 35.1,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "EVERY PART REPAIRED.",
+      "words": 3,
+      "chars": 20,
+      "lines": 2,
+      "size": 35.1,
+      "vw": 9,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 184,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "LAPTOPS COME IN TIRED.",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 1159,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "SCREENS CRACK. BOARDS SHORT.",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.84,
+      "top": 1208,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "THIS BENCH SENDS THEM BACK WORKING.",
+      "words": 6,
+      "chars": 35,
+      "lines": 3,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.12,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 1257,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "POINT AT WHAT’S BROKEN",
+      "words": 4,
+      "chars": 22,
+      "lines": 2,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0.02,
+      "leading": 1.55,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 1444,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "ON THE BENCH",
+      "words": 3,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": 0,
+      "leading": 1.55,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6032,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "REPAIR.",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 64,
+      "vw": 16.4,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.93,
+      "top": 7442,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "KRISHNA",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 44.9,
+      "vw": 11.5,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8429,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 3,
+     "centered": 2,
+     "medianWords": 4,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.87,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0.13,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      22,
+      28,
+      35,
+      45,
+      64
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 18,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.4
+     },
+     "measureChars": 47,
+     "max": {
+      "size": 64,
+      "vw": 16.4,
+      "font": "Panchang",
+      "text": "Repair."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.13,
+     "centerShare": 0.08,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#18191b",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.06,
+      "l": 0.1
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#222427",
+       "top": 1416,
+       "hsl": {
+        "h": 216,
+        "s": 0.07,
+        "l": 0.14
+       }
+      },
+      {
+       "color": "#2e3033",
+       "top": 1723,
+       "hsl": {
+        "h": 216,
+        "s": 0.05,
+        "l": 0.19
+       }
+      },
+      {
+       "color": "#1d1f21",
+       "top": 2943,
+       "hsl": {
+        "h": 210,
+        "s": 0.06,
+        "l": 0.12
+       }
+      },
+      {
+       "color": "#eff0f1",
+       "top": 6109,
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#eff0f1",
+       "share": 0.54
+      },
+      {
+       "color": "#b0b4b9",
+       "share": 0.38
+      },
+      {
+       "color": "#18191b",
+       "share": 0.05
+      },
+      {
+       "color": "#ff4a1f",
+       "share": 0.03
+      },
+      {
+       "color": "#222427",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#2a2c2f",
+      "hsl": {
+       "h": 216,
+       "s": 0.06,
+       "l": 0.17
+      },
+      "fg": "#eff0f1"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 8,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "+91 97836 38063",
+      "Call the workshop"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 7,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 99,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8558,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 109,
+      "height": 932,
+      "words": 33,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Every part",
+       "size": 35,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.stair",
+      "tag": "div",
+      "top": 1159,
+      "height": 172,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 53,
+      "textLeft": 20,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.diag.reveal",
+      "tag": "div",
+      "top": 1416,
+      "height": 1333,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Point at what’s broken",
+       "size": 22,
+       "tag": "h2"
+      },
+      "left": 48,
+      "right": 53,
+      "textLeft": 48,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 2943,
+      "height": 743,
+      "words": 27,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The screen side",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 3685,
+      "height": 743,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Power and heat",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 4428,
+      "height": 743,
+      "words": 36,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "The board",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "article.sheet",
+      "tag": "article",
+      "top": 5171,
+      "height": 743,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Data and beyond",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#bench.showcase",
+      "tag": "section",
+      "top": 5914,
+      "height": 1377,
+      "words": 23,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "On the bench",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 7290,
+      "height": 445,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Repair.",
+       "size": 64,
+       "tag": "a"
+      },
+      "left": 20,
+      "right": 8,
+      "textLeft": 20,
+      "textRight": 8,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#visit.site-foot",
+      "tag": "footer",
+      "top": 7736,
+      "height": 822,
+      "words": 79,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Visit",
+       "size": 16,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 33,
+      "textLeft": 20,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "EVERY PART REPAIRED.",
+      "size": 35,
+      "top": 184,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 14
+     },
+     {
+      "x": 48,
+      "n": 2
+     }
+    ],
+    "leftBlocks": 16,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (13, 15, 16, 17, 18, 26, 34, 40, 64, 130, 187, 194).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/desktop-page-02.jpg",
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/mobile-page-01.jpg",
+    "/tmp/cafe-sites/krishna-computech-bikaner/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
