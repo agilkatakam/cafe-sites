@@ -1,0 +1,554 @@
+{
+ "version": 1,
+ "at": "2026-11-02T13:11:48.139Z",
+ "seed": 84440080,
+ "redraws": 0,
+ "input": {
+  "brief": "Ganesh Garage, Siliguri: motorcycle repair on Champasari Main Road — engine repair and service, oil change, vehicle diagnostics, charging and battery checkup, spark plugs, chain lubrication; genuine parts; same-day back on the road when possible; open seven days",
+  "sector": "other",
+  "tone": null,
+  "have": [],
+  "keep": [],
+  "avoid": [],
+  "sections": [
+   "intro",
+   "features",
+   "showcase",
+   "cta",
+   "footer"
+  ],
+  "direction": null
+ },
+ "imagery": "atmosphere",
+ "allow": [],
+ "direction": {
+  "id": "quiet-instrument",
+  "name": "The quiet instrument",
+  "sectors": [
+   "saas",
+   "dev-tool",
+   "ai-product",
+   "personal-portfolio",
+   "consumer-app",
+   "finance",
+   "other"
+  ],
+  "tones": [
+   "quiet",
+   "technical"
+  ],
+  "needs": [],
+  "idea": "Radical understatement. Where every competitor shouts, this page almost whispers: a headline barely larger than body text, a narrow column, small exact demonstrations, and a great deal of untouched space. The restraint is the claim. It says the thing is simple, finished and sure of itself. This only works when it is carried through completely; one loud element breaks it. In the study, a tool for simple lists sold itself with a 27px headline and 12–14px copy and was one of the most confident pages in the set.",
+  "composition": "A single column 440–560px wide, placed left of centre (starting at about 22% of the viewport width) or dead centre, running the whole page. The headline is the one large thing on the first screen: two lines at display size (5–7vw), medium weight, starting on the column's left edge and allowed to run wider than the column. The supporting paragraph follows at body size (17–19px) in the full ink. One small primary button and one text link. Below, each point is a short paragraph followed by a compact demonstration or image no wider than the column. Sections are separated only by space (96–140px). Nothing spans the full width until the footer, which is a single quiet line. The first screen is mostly empty and that emptiness is composed: the column's top edge sits at about 30% of the viewport height.",
+  "typography": "One family, two weights. A display size for the headline (5–7vw), one heading size for section titles (about 32–40px), body at 17–19px, a small size for captions (14–15px). Leading 1.5 for text. Letter-spacing near zero. The typeface must be handsome at small sizes.",
+  "typeClasses": [
+   "grotesk-light",
+   "serif-text",
+   "geometric"
+  ],
+  "colour": "Paper and two inks (full and soft). One accent used on exactly one element per screen.",
+  "paletteTags": [
+   "light-neutral",
+   "mono-accent"
+  ],
+  "imagery": "Precise rather than loud: cropped interface details at true size, and real photographs of the customer's world held to the column width, each doing one job. One short looping clip can sit at column width too. Never a large stock hero image.",
+  "sectionTags": [
+   "quiet",
+   "ui-led",
+   "type-led"
+  ],
+  "motion": "stillness",
+  "richness": "Precision. With so little on the page, alignment, spacing and the exact size relationships are the design. Every element shares the column's left edge.",
+  "pitfalls": "This is the one direction where a small headline is right; the inspector will not object, but do not mix it with a large display line. Emptiness must look decided: keep the column edges exact and the vertical rhythm even. Not suitable when the subject needs emotion or photography to sell. Quiet is not thin: the column must still deliver every piece of content the brief asks for, in full, at 16px or more in the full ink. In blind tests the quiet version lost every time it was quiet everywhere: a small headline beside an empty panel read as unfinished. Quiet means few things, not small things: the headline and the demonstration are large, and every screen holds content.",
+  "seenIn": [
+   "opl-rows",
+   "opl-compile",
+   "opl-plastic",
+   "opl-bueno-fyi",
+   "aww-gil-huybrecht"
+  ],
+  "allow": []
+ },
+ "hero": {
+  "id": "navigation-on-the-midline",
+  "name": "Navigation on the midline",
+  "archetype": "fullbleed-media",
+  "directions": [
+   "place-carries-it",
+   "quiet-instrument",
+   "dark-room"
+  ],
+  "needs": [],
+  "blueprint": "One photograph or muted film fills the viewport at 100vw by 100svh, `object-fit: cover`, framed so the middle of the screen cuts the subject: a face or a skyline in the upper half, hands or ground in the lower. There is no headline block and nothing in the top or bottom bands. One rail 64px tall runs across the exact vertical centre (its top at 418px) and carries everything on one baseline in the paper colour: the `h1` on the 24px left margin, the name with what it is in two to five words at clamp(32px, 2.6vw, 40px) in medium weight, doing the job of the wordmark; from column 6, one supporting sentence at 18px, max 44ch; at the right margin, two text links at 15px and the single action as a small solid button in the paper colour. If the frame is light behind the rail, give the rail alone a neutral dark scrim at 35%. The rail is `position: sticky; top: 0` in the hero's flow, so as the page scrolls it rises with the content and docks as the header bar without changing size or layout, taking the page ground once the pictures have passed. A second full-bleed photograph, a closer detail of the same subject, follows directly beneath, so the rail is seen crossing two pictures before it reaches the top. On a black ground with one photographed object instead of a film, stand the object on the rail at about 17% of the width, between the sentence and the links, so the line seems to pass behind it.",
+  "mobile": "A portrait crop keeps the subject's middle on the screen's middle. The rail stays on the vertical centre, as tall as the `h1` needs at 28px on up to two lines, with the `h1` on the left and Menu on the right. The sentence leaves the rail and sits at 17px in the bottom-left on a 20px margin with the action as a full-width button under it, over a neutral scrim limited to that corner. The rail docks at the top as on desktop.",
+  "headline": "The `h1` on the rail: the name with what it is, two to five words at 32–40px on one line, and one sentence of up to 50 characters beside it; the picture does the rest.",
+  "motion": "slow-crossfade",
+  "seenIn": [
+   "aww-odyssee",
+   "aww-milledollars",
+   "aww-twks-1"
+  ]
+ },
+ "type": {
+  "id": "stack-sans-light",
+  "name": "Stack Sans Headline / Stack Sans Text",
+  "class": "geometric",
+  "display": {
+   "family": "Stack Sans Headline",
+   "source": "google",
+   "weights": [
+    300
+   ],
+   "italic": false,
+   "settings": "weight 300 · tracking -0.022em · leading 1.05 · sentence case; a heading may be two-tone, grey then full ink",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@300&family=Stack+Sans+Text:wght@400;500&display=swap\" rel=\"stylesheet\">"
+  },
+  "text": {
+   "family": "Stack Sans Text",
+   "source": "google",
+   "weights": [
+    400,
+    500
+   ],
+   "italic": false,
+   "settings": "400 for body, 500 for emphasis · leading 1.5 · tracking 0",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@300&family=Stack+Sans+Text:wght@400;500&display=swap\" rel=\"stylesheet\">"
+  },
+  "standsInFor": [
+   "Mluvka",
+   "Roobert"
+  ],
+  "note": "A geometric sans in a light weight at large size, soft and exact at once, with its text cut underneath. Suits consumer apps, utilities and developer tools that want to feel calm and modern.",
+  "seenIn": [
+   "opl-screentune",
+   "opl-dialkit",
+   "opl-typewave"
+  ],
+  "links": [
+   "https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@300&family=Stack+Sans+Text:wght@400;500&display=swap"
+  ],
+  "scale": {
+   "step-small": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)",
+   "step-body": "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)",
+   "step-lead": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)",
+   "step-head": "clamp(2rem, 1.3rem + 3.2vw, 4rem)"
+  }
+ },
+ "palette": {
+  "id": "white-link-blue",
+  "name": "Sheet and biro",
+  "tags": [
+   "light-neutral",
+   "mono-accent"
+  ],
+  "bg": "#ffffff",
+  "surface": "#f4f4f4",
+  "ink": "#111111",
+  "muted": "#6b6b6b",
+  "accent": "#1a4be0",
+  "accentInk": "#ffffff",
+  "fields": [
+   {
+    "bg": "#111111",
+    "ink": "#ffffff"
+   }
+  ],
+  "note": "White holds the whole page with black type, one grey for secondary lines and a pale grey step for tiles and inputs; the footer may invert to black. Blue is the colour of text links and the one button, and nothing else is tinted.",
+  "seenIn": [
+   "opl-shawn-golden",
+   "opl-lovably",
+   "aww-bleibtgleich26"
+  ]
+ },
+ "photos": {
+  "set": "plants-and-flowers",
+  "title": "Plants and flowers",
+  "note": "botanical close-ups, leaves and flowers",
+  "treatment": null,
+  "others": [
+   "desert-and-road",
+   "transport",
+   "architecture",
+   "people"
+  ],
+  "photos": [
+   {
+    "id": 798,
+    "alt": "White daisy with a yellow and green centre on a white background",
+    "tone": "light",
+    "colours": [
+     "white",
+     "yellow",
+     "green"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 5,
+    "ratio": 1.33,
+    "by": "Aaron Burden",
+    "page": "https://unsplash.com/photos/UvRMcIeXq9Y"
+   },
+   {
+    "id": 940,
+    "alt": "Blue-green succulent rosettes filling the frame from above",
+    "tone": "mid",
+    "colours": [
+     "teal green",
+     "dark green",
+     "dusty purple"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 5,
+    "ratio": 0.66,
+    "by": "Annie Spratt",
+    "page": "https://unsplash.com/photos/8mqOw4DBBSg"
+   },
+   {
+    "id": 738,
+    "alt": "Single white calla lily against a dark, almost black background",
+    "tone": "dark",
+    "colours": [
+     "near black",
+     "cream white",
+     "soft green"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 5,
+    "ratio": 0.67,
+    "by": "Marta Pawlik",
+    "page": "https://unsplash.com/photos/yqmlajPxR3Y"
+   },
+   {
+    "id": 306,
+    "alt": "White water lily with yellow centre among dark lily pads",
+    "tone": "dark",
+    "colours": [
+     "white",
+     "dark green",
+     "yellow"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 5,
+    "ratio": 1.33,
+    "by": "Schicka",
+    "page": "https://unsplash.com/photos/6T7kfc3VitU"
+   },
+   {
+    "id": 977,
+    "alt": "Small mushroom growing in moss with soft golden bokeh",
+    "tone": "mid",
+    "colours": [
+     "moss green",
+     "golden yellow",
+     "cream"
+    ],
+    "mono": false,
+    "calm": "right",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Manuel Barroso Parejo",
+    "page": "https://unsplash.com/photos/M9F8VR0jEPM"
+   },
+   {
+    "id": 189,
+    "alt": "Water droplets on a broad green leaf with fine veins",
+    "tone": "mid",
+    "colours": [
+     "bright green",
+     "lime green"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.33,
+    "by": "Buzo Jesús",
+    "page": "https://unsplash.com/photos/pHM4a_RZSLE"
+   },
+   {
+    "id": 248,
+    "alt": "Round cactus in a pot seen from above, softly blurred",
+    "tone": "mid",
+    "colours": [
+     "sage green",
+     "warm tan",
+     "soft pink"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.49,
+    "by": "Oliver Pacas",
+    "page": "https://unsplash.com/photos/tZrrWkQT9MM"
+   },
+   {
+    "id": 631,
+    "alt": "Water droplet resting at the centre of a vivid green leaf",
+    "tone": "dark",
+    "colours": [
+     "vivid green",
+     "black"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "贝莉儿 NG",
+    "page": "https://unsplash.com/photos/C_-DQF-x-N0"
+   }
+  ]
+ },
+ "motion": {
+  "id": "slow-crossfade",
+  "name": "Slow crossfade",
+  "description": "The principal photograph quietly changes: three or four images of the same framing crossfade over about 1.6 seconds, holding five to six seconds each, or the fixed image changes when its matching section arrives. It should feel like light shifting in a room. Pause when the tab is hidden; under reduced motion show only the first image."
+ },
+ "sections": [
+  {
+   "id": "intro-lead-over-four-columns",
+   "role": "intro",
+   "name": "Lead line over four columns",
+   "shape": "grid",
+   "tags": [
+    "type-led",
+    "dense",
+    "quiet"
+   ],
+   "directions": [
+    "contact-sheet",
+    "quiet-instrument",
+    "editorial-report",
+    "type-only-statement",
+    "product-performs",
+    "dense-tiles"
+   ],
+   "needs": [],
+   "blueprint": "Two parts on one 12-column grid with 20px margins. First, a lead paragraph of 30–40 words spans all 12 columns at clamp(22px, 2.2vw, 32px), regular weight, leading 1.2: three lines that read as the opening of a text, with no heading before it. 72px below, four equal columns (three grid columns each, 24px gutters) carry small text at 14–15px with leading 1.45. Each column is one paragraph of 40–70 words that opens with a bold run-in phrase of two or three words in full ink, the rest continuing on the same line in the soft ink. Columns top-align and end ragged at different depths. No cards, icons or dividers; the bold run-ins are the only markers. The four columns answer four plain questions: who, what, where, how to reach them. Padding is modest, 96px top and bottom, so a sheet of images can start straight after.",
+   "mobile": "The lead paragraph at 20px, full width. The four columns become a two-by-two grid with a 20px gutter and 40px row gap at 14px; if any paragraph exceeds 60 words, switch to one column with 32px between paragraphs. Run-in phrases stay bold.",
+   "seenIn": [
+    "opl-april-leihuanani-evangelista",
+    "aww-2xa-studio",
+    "opl-wild-as"
+   ]
+  },
+  {
+   "id": "features-capabilities-as-a-menu",
+   "role": "features",
+   "name": "Capabilities as a menu",
+   "shape": "table",
+   "tags": [
+    "object-led",
+    "type-led"
+   ],
+   "directions": [
+    "page-is-the-object",
+    "split-stage",
+    "borrowed-category",
+    "type-only-statement",
+    "quiet-instrument"
+   ],
+   "needs": [],
+   "blueprint": "The capabilities are set as a printed menu or price list. One paper-coloured sheet, 520–600px wide and taller than it is wide, sits on a contrasting flat ground, centred or starting at column 2; its top and bottom edges are cut into shallow scallops or a zigzag with clip-path, its sides straight. On it, centred at the top, the heading: two or three words at 44–56px, then 40px of space. Below, items in two or three groups; each group opens with its name at 20px bold. Each item is a row: the name at 19px on the left, a short value on the right (a price, a time, a quantity, 'included'), and between them a leader of round 4px dots (border-bottom: 4px dotted, sitting on the baseline). A description at 15px in the soft ink sits under the name, at most 34ch. 18px between items, 44px between groups.",
+   "mobile": "The sheet fills the width minus 12px margins and keeps its cut top and bottom edges. Names stay left and values right on one line with the dot leader between; descriptions wrap beneath at 15px. Group names drop to 18px. Padding inside the sheet is 20px.",
+   "seenIn": [
+    "opl-the-content-architecture",
+    "aww-pensatori-irrazionali"
+   ]
+  },
+  {
+   "id": "showcase-frame-run-one-lifted",
+   "role": "showcase",
+   "name": "Frame run, one lifted",
+   "shape": "strip",
+   "tags": [
+    "photo-led",
+    "quiet"
+   ],
+   "directions": [
+    "contact-sheet",
+    "uneven-photographs",
+    "specimen-catalogue",
+    "quiet-instrument"
+   ],
+   "needs": [],
+   "blueprint": "Columns 1–3 are a nearly empty column: the heading (two to four words at 24–28px) at the top, a link under it, and one or two short notes at 15px much further down, each level with the frame it describes. Columns 4–12 hold a run of six to eight frames of the same subject at one fixed height of 30vh, with natural widths and 6px gaps: the whole view, a tight crop of the same thing, a detail, the reverse side. The run is allowed to leave the right edge. One frame is lifted out of the row: shown at 2.2 times the row height with its bottom aligned to the row's bottom (flex row, align-items: end), so it stands above the others. Under each frame, at 15px: a name on the left and a single fact on the right. Square corners, no captions on the images.",
+   "mobile": "The heading and link sit on top. The lifted frame comes first at full width. The rest of the run scrolls sideways beneath it at a fixed height of 34vw with 4px gaps and scroll-snap, bleeding off the right edge. Notes are listed under the run at 15px.",
+   "seenIn": [
+    "aww-serotoninn",
+    "aww-butter",
+    "aww-no-art"
+   ]
+  },
+  {
+   "id": "cta-plain-sentence-one-action",
+   "role": "cta",
+   "name": "A plain sentence, one action",
+   "shape": "stack",
+   "tags": [
+    "quiet"
+   ],
+   "directions": [
+    "quiet-instrument",
+    "product-performs",
+    "contact-sheet",
+    "uneven-photographs",
+    "split-stage",
+    "dark-room"
+   ],
+   "needs": [],
+   "blueprint": "The page ends on an almost empty screen. On the page ground, with no band and no panel, one sentence of eight to fourteen words is set at 18–22px in the regular weight, in the full ink, no wider than 34ch, on the same left edge as the page's text column (or centred only if the whole page is centred). 24px beneath it sits one small filled button, about 40px tall with 18px side padding, and optionally one text link beside it on the same baseline. That is all. Above the sentence leave at least 30svh of empty ground and below it at least 20svh before the footer line, so the emptiness reads as decided. The sentence is written as something a person would say, and it names the action plainly. No headline-sized type appears anywhere in this section.",
+   "mobile": "Identical in spirit: the sentence at 18px with 20px margins, the button beneath at its natural width (not full width), 44px tall. Keep 20svh of empty ground above the sentence and 14svh below the button, before the footer line.",
+   "seenIn": [
+    "opl-compile",
+    "opl-rows"
+   ]
+  },
+  {
+   "id": "footer-single-quiet-line",
+   "role": "footer",
+   "name": "A single quiet line",
+   "shape": "strip",
+   "tags": [
+    "quiet"
+   ],
+   "directions": [
+    "quiet-instrument",
+    "contact-sheet",
+    "product-performs",
+    "split-stage",
+    "dark-room",
+    "pinned-poster"
+   ],
+   "needs": [],
+   "blueprint": "No footer block at all. After at least 30svh of empty page ground, one baseline 30px above the bottom edge carries three items in the page's ordinary small text size (14–16px), the same size and weight as the navigation: at the left margin, what this is in three or four words; centred, two to five links separated by 24px of space; at the right margin, the year and a privacy link. Use a three-column grid (1fr auto 1fr) so the centre group is truly centred whatever the side lengths. No logo, no background change, no line above it, no columns. Links are in the full ink; the rest in the softer ink. If the page has a narrow text column, the three items may instead sit on that column's left edge as one wrapped line. The restraint only works if the page above has already made its invitation.",
+   "mobile": "Three short lines at 14px on the left margin with 8px between them: the description, the links on one wrapped line, then year and privacy. Links stay in the full ink. Leave 20svh of empty ground above and 24px below.",
+   "seenIn": [
+    "aww-studio-k95-3",
+    "aww-gil-huybrecht",
+    "opl-rows",
+    "opl-compile",
+    "opl-tiny-computer-co"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "id": "aww-gil-huybrecht",
+   "name": "Gil Huybrecht",
+   "url": "https://gilhuybrecht.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "personal-portfolio",
+   "score": 7.6,
+   "idea": "A portfolio as a contact sheet: every project is a numbered run of miniature page screenshots on black, and all text is set at one small size.",
+   "mood": [
+    "austere",
+    "archival",
+    "confident",
+    "dense"
+   ],
+   "archetype": "grid-index",
+   "hero": "Black field on a seven-column grid with 14px margins. The top band is plain white text at one size, about 16px: name in column one, availability in column two, a services list from column three, a longer awards list from column five, then 'Profile' and 'Email me' at the right. List items are indented one step under their label. Below the lists roughly 300px of black is left empty. At mid-height the thumbnail grid begins: one small website screenshot per column, about 190px wide, each topped by a number at its right corner, with the project name over the first of each run. Two tiny toggle chips sit in the bottom corners.",
+   "type": "One neo-grotesk at a single size, about 16px (1.1vw), medium-bold with tight tracking, white on black, for everything: name, lists, labels, numbers, footer. There is no headline; hierarchy comes only from column position and indentation.",
+   "colour": "#000000 #fcfcfc #272727 #8a8a8a — Pure black with white text; the only colour is whatever appears inside the screenshot thumbnails. Inactive toggle words drop to mid-grey on a dark grey chip.",
+   "imagery": "Miniature full-page captures of the designer's client sites, uncropped at natural aspect ratios, square corners, no frames or shadows, about 190px wide, sitting directly on black.",
+   "layout": "Seven equal columns with 14px gutters and margins for the whole page. Thumbnails align to columns but not to rows: each hangs from its own label at its own height, so bottoms are ragged. Projects flow continuously and wrap across rows.",
+   "sections": [
+    {
+     "role": "work",
+     "description": "A seven-column field of screenshot thumbnails on black. Each project is a consecutive run of four to six thumbnails; the project name sits above the first, and every thumbnail carries its sequence number right-aligned above it in the same 16px white. Thumbnails keep their real proportions, so a row mixes 100px-tall and 280px-tall items with ragged bottoms and about 90px of black between rows. Runs break mid-row and continue on the next line with no divider."
+    },
+    {
+     "role": "other",
+     "description": "View toggles. Two fixed chip pairs sit in the viewport's bottom corners: the left switches between a grid and a gallery view, the right between a normal and a novelty perspective mode. Each pair is a small dark-grey rounded rectangle containing two words, the active one white and the inactive grey, at the same 16px as all other text."
+    },
+    {
+     "role": "footer",
+     "description": "After about a screen of empty black, one band of text on the same seven columns: year and privacy link stacked at the left, then two columns of stacked social links, then two single links toward the right edge. Same size and weight as the header, no rule, no logo."
+    }
+   ],
+   "steal": [
+    "Set every piece of text on the page at one size and weight and build hierarchy only from column position and a one-step indent under labels.",
+    "Show projects as numbered runs of uncropped page screenshots at natural heights on a strict column grid, leaving the bottoms ragged.",
+    "Leave a deliberate 300px void between the text header and the first row of work so the lists read as a letterhead."
+   ],
+   "media": "A contact-sheet wall: one fixed WebGL canvas draws about 84 full-page screenshots of client sites at a single 190px width and their native ratios, every page of each project in reading order. Once scrolled, every screen is about three rows, roughly 48% picture and 52% black, with text under 1% and the labels above each frame, never on it; there is no video.",
+   "motion": "The preloader counts at about 13% a second for some 7-8s while the screenshot textures load, although the document loaded in 1.66s; then the first-row thumbnails rise into their slots in random order and a dark veil lifts. Lenis over a 4440px scroll proxy redraws the fixed wall with no pins or reveals; panel and hover moves use transform .75s cubic-bezier(.19,1,.22,1), and pictures fade over 1s ease-out on the phone."
+  },
+  {
+   "id": "opl-rows",
+   "name": "Rows",
+   "url": "https://rows.gg/",
+   "source": "One Page Love",
+   "kind": "saas",
+   "score": 7.5,
+   "idea": "Radical understatement: a product about simple lists is sold with a 27px headline, 12px copy and a column of small live demos, each proving one interaction.",
+   "mood": [
+    "quiet",
+    "dry",
+    "precise",
+    "warm",
+    "confident"
+   ],
+   "archetype": "left-statement-quiet",
+   "hero": "Warm off-white page, almost empty. Everything hangs on one vertical line 27% in from the left. A small striped-letter logo mark sits there near the top; 220px lower comes a two-line headline at only 27px (under 2vw), then three lines of 13px body about 370px wide, then a near-black rectangular button with 4px corners beside a text link with an arrow. A single grey sign-in link sits in the top-right corner; there is no navigation bar. More than 80% of the viewport is blank. At the bottom edge the first feature module peeks in: grey demo panel left, short text column right.",
+   "type": "Suisse Intl only, weight 450–500, tracking −0.04em. Headline 27px, feature headings about 16px on two lines, body 12px. Three sizes in total, no uppercase and no display moment; hierarchy comes from weight and empty space alone.",
+   "colour": "#f5f6f1 #e6e7e1 #1a191d #ffffff #c7372f #3aa56a — Warm paper off-white with slightly darker grey-green demo panels and near-black type; colour appears only inside the UI as priority dots, outlined status pills and one green or red action button.",
+   "imagery": "No pictures: small live-rendered fragments of the app (two or three white list rows with dots, status pills, avatars and a visible cursor) sit in flat grey panels of fixed 368px width with barely rounded corners.",
+   "layout": "One content block about 650px wide, offset left of centre, repeated down the page: 368px demo panel plus a 245px text column, top-aligned, separated by 200px or more of empty space. The logo mark sticks to the top-left corner on scroll. Footer is one line.",
+   "sections": [
+    {
+     "role": "features",
+     "description": "The repeating module: a flat grey panel roughly 368px wide and 120–190px tall holding a tiny mock list (white rows with 6px radius, a coloured numbered dot at left, task title, an outlined status pill, an avatar, a chevron) and often a cursor mid-action. To its right, 20px away and top-aligned, a medium-weight heading of one or two lines and two short paragraphs at 11–12px in a column only 245px wide. Modules never alternate sides; they stack with large gaps."
+    },
+    {
+     "role": "cta",
+     "description": "The closing block keeps the same narrow measure: a three-line paragraph at 13px, then the identical button and arrow-link pair from the hero, left-aligned on the text column's axis. After a long gap a single hairline spans the 650px block and under it sits one row of tiny footer text: brand line at left, six links and a copyright strung along the right."
+    }
+   ],
+   "steal": [
+    "Set the headline at near-body size (under 2vw) and let empty space, not scale, give it importance.",
+    "Explain each feature with a tiny cropped fragment of real UI in a fixed-width flat panel, one interaction per panel, with the cursor left visible.",
+    "Hang the whole page on one off-centre left edge and never break it, logo and footer included."
+   ]
+  },
+  {
+   "id": "opl-beige-force",
+   "name": "BEIGE FORCE",
+   "url": "https://beigeforce.com/",
+   "source": "One Page Love",
+   "kind": "other",
+   "score": 7.2,
+   "idea": "A game's cast presented as a bitmap type specimen: black pixel glyphs in a ruled grid on a mustard field, each given a blandly fashionable first name.",
+   "mood": [
+    "satirical",
+    "retro",
+    "loud",
+    "deadpan"
+   ],
+   "archetype": "grid-index",
+   "hero": "Flat mustard yellow with fine grain fills the viewport. A one-line mono header spans the width with 28px margins: credit left, title flanked by lightning glyphs centre, a quote and a help link right, with a black hairline under it. Two 14px mono text columns start at the second of four grid columns; a pixel-font PLAY! button with a white-and-black double border sits in the fourth. From one third down, a four-column grid of square hairline-bordered cells fills the width, each holding one large black pixel glyph and a small centred name. A narrow strip on the right edge shows the game's blue and magenta screen.",
+   "type": "Monaspace Neon mono at 14px for every word of text, regular and bold only; Kongtext bitmap face at 36px for the button and the mobile lock-out heading. The real display type is the grid of hand-built pixel glyphs roughly 190px tall.",
+   "colour": "#e1ac10 #0b0b0b #2c3e9e #e6157f #4a97db — One warm mustard field with black ink only. A sliver of royal blue and hot magenta at the right edge hints at the game, and the mobile lock-out screen flips to flat sky blue.",
+   "imagery": "Pixel-art icons and letters (sailboat, saucer, insect, building, capitals, punctuation) drawn as black squares with visible gaps between pixels, one per cell, centred. No photographs.",
+   "layout": "A fixed frame: header rule, intro band, then a strict four-column grid of equal square cells that scrolls inside the frame while header and copyright stay put. Text obeys the same four columns; outer margins are 28px.",
+   "sections": [
+    {
+     "role": "gallery",
+     "description": "The roster grid: four columns by many rows of identical square cells separated by 1px black lines, no gutters. Each cell centres a single glyph about 55% of the cell width, assembled from small black squares with hairline yellow gaps so the pixel grid shows, and a one-word caption in 14px mono centred near the bottom edge. Letters, symbols and tiny pictograms alternate without hierarchy, like a bitmap font specimen sheet."
+    },
+    {
+     "role": "other",
+     "description": "Narrow screens get a full-bleed sky-blue lock-out card instead of the site: a two-line bitmap heading in near-black, centred slightly above the middle, with a seven-line centred mono paragraph beneath written in mock-military voice asking the visitor to return on a keyboard device. No navigation, no links, the same grain texture."
+    }
+   ],
+   "steal": [
+    "Draw icons as pixels with visible gaps on the page's background colour, so the artwork and the ruled layout grid look like one system.",
+    "Set every word in one monospaced size and let weight and underlines carry the hierarchy, saving the bitmap face for a single button.",
+    "Let a strip of the next screen's contrasting colours peek in at one viewport edge to promise something behind the page."
+   ]
+  }
+ ],
+ "scenes": []
+}

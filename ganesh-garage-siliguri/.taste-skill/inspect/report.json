@@ -1,0 +1,1684 @@
+{
+ "url": "index.html",
+ "at": "2026-11-02T13:33:18.729Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    0.75,
+    0.75,
+    0.76,
+    0.34,
+    0.38,
+    0.24
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 20,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5659,
+     "screens": 6.3,
+     "words": 440,
+     "img": 10,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg",
+      "roue-et-jante-moto-dans-un-atelier.jpg",
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "brembo-motorcycle-brake.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ganesh Garage, motorcycle repair",
+     "words": 4,
+     "chars": 32,
+     "lines": 1,
+     "size": 40,
+     "vw": 2.8,
+     "font": "Stack Sans Text",
+     "weight": 500,
+     "tracking": -0.022,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.45,
+     "top": 429,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ganesh Garage, motorcycle repair",
+     "words": 4,
+     "lines": 1,
+     "size": 40,
+     "font": "Stack Sans Text"
+    },
+    "headings": [
+     {
+      "text": "Ganesh Garage, motorcycle repair",
+      "words": 4,
+      "chars": 32,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Stack Sans Text",
+      "weight": 500,
+      "tracking": -0.022,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 429,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Ganesh Garage is a motorcycle repair shop on Champasari Main Road in Siliguri. Engine work, diagnostics and electrics, with genuine parts.",
+      "words": 21,
+      "chars": 138,
+      "lines": 2,
+      "size": 32,
+      "vw": 2.2,
+      "font": "Stack Sans Text",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1478,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The service menu",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 56,
+      "vw": 3.9,
+      "font": "Stack Sans Headline",
+      "weight": 300,
+      "tracking": -0.022,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.34,
+      "top": 2046,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 3,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 1,
+     "medianWords": 21,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Stack Sans Text",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Stack Sans Headline",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      18,
+      19,
+      22,
+      26,
+      32,
+      40,
+      56
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Stack Sans Text",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 18.9
+     },
+     "measureChars": 39,
+     "max": {
+      "size": 56,
+      "vw": 3.9,
+      "font": "Stack Sans Headline",
+      "text": "The service menu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111111",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#f4f4f4",
+       "top": 1886,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 1982,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.56
+      },
+      {
+       "color": "#6b6b6b",
+       "share": 0.39
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      },
+      {
+       "color": "#1a4be0",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#1a4be0",
+      "hsl": {
+       "h": 225,
+       "s": 0.79,
+       "l": 0.49
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 4,
+     "height": 41,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call the garage"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 11,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "stack sans headline",
+     "stack sans text"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5659,
+    "margins": {
+     "left": 32,
+     "right": 60
+    },
+    "sections": [
+     {
+      "sel": "div#top.xf",
+      "tag": "div",
+      "top": 0,
+      "height": 900,
+      "words": 10,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 32,
+      "right": 1092,
+      "textLeft": 32,
+      "textRight": 1092,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "figure.detail",
+      "tag": "figure",
+      "top": 482,
+      "height": 900,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 1382,
+      "height": 504,
+      "words": 142,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ganesh Garage is a motorcycle repair shop on Champ",
+       "size": 32,
+       "tag": "p"
+      },
+      "left": 60,
+      "right": 60,
+      "textLeft": 60,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#menu.menuband",
+      "tag": "section",
+      "top": 1886,
+      "height": 1636,
+      "words": 147,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The service menu",
+       "size": 56,
+       "tag": "h2"
+      },
+      "left": 430,
+      "right": 460,
+      "textLeft": 430,
+      "textRight": 460,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 3522,
+      "height": 688,
+      "words": 21,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 430,
+      "right": 430,
+      "textLeft": 430,
+      "textRight": 442,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.frames",
+      "tag": "section",
+      "top": 4210,
+      "height": 815,
+      "words": 54,
+      "media": 6,
+      "middle": 1069,
+      "heading": {
+       "text": "A service, up close",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 60,
+      "right": 0,
+      "textLeft": 60,
+      "textRight": 70,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#hours.cta",
+      "tag": "section",
+      "top": 5025,
+      "height": 583,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Call the garage; they will try to have you back on",
+       "size": 22,
+       "tag": "p"
+      },
+      "left": 60,
+      "right": 615,
+      "textLeft": 60,
+      "textRight": 615,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ganesh Garage, motorcycle repair",
+      "size": 40,
+      "top": 429,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 60,
+      "n": 5
+     },
+     {
+      "x": 474,
+      "n": 3
+     },
+     {
+      "x": 24,
+      "n": 2
+     },
+     {
+      "x": 396,
+      "n": 1
+     },
+     {
+      "x": 430,
+      "n": 1
+     },
+     {
+      "x": 732,
+      "n": 1
+     },
+     {
+      "x": 1068,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 14,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    1,
+    0.81,
+    0.53,
+    0.6,
+    0.33,
+    0.43,
+    0.28
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 20,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6424,
+     "screens": 6.3,
+     "words": 434,
+     "img": 10,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg",
+      "roue-et-jante-moto-dans-un-atelier.jpg",
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "brembo-motorcycle-brake.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ganesh Garage, motorcycle repair",
+     "words": 4,
+     "chars": 32,
+     "lines": 1,
+     "size": 25.6,
+     "vw": 3.3,
+     "font": "Stack Sans Text",
+     "weight": 500,
+     "tracking": -0.022,
+     "leading": 1.05,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.54,
+     "top": 499,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ganesh Garage, motorcycle repair",
+     "words": 4,
+     "lines": 1,
+     "size": 25.6,
+     "font": "Stack Sans Text"
+    },
+    "headings": [
+     {
+      "text": "Ganesh Garage is a motorcycle repair shop on Champasari Main Road in Siliguri. Engine work, diagnostics and electrics, with genuine parts.",
+      "words": 21,
+      "chars": 138,
+      "lines": 3,
+      "size": 26.8,
+      "vw": 3.5,
+      "font": "Stack Sans Text",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 1664,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The service menu",
+      "words": 3,
+      "chars": 16,
+      "lines": 1,
+      "size": 48.8,
+      "vw": 6.4,
+      "font": "Stack Sans Headline",
+      "weight": 300,
+      "tracking": -0.022,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.64,
+      "top": 2345,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 2,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 1,
+     "medianWords": 21,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Stack Sans Text",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Stack Sans Headline",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      19,
+      21,
+      23,
+      26,
+      27,
+      49
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Stack Sans Text",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 18.9
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 48.8,
+      "vw": 6.4,
+      "font": "Stack Sans Headline",
+      "text": "The service menu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111111",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#f4f4f4",
+       "top": 2185,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 2281,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.56
+      },
+      {
+       "color": "#6b6b6b",
+       "share": 0.39
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      },
+      {
+       "color": "#1a4be0",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#1a4be0",
+      "hsl": {
+       "h": 225,
+       "s": 0.79,
+       "l": 0.49
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 4,
+     "height": 41,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call the garage"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 11,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 0.47
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 64,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "stack sans headline",
+     "stack sans text"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6424,
+    "margins": {
+     "left": 24,
+     "right": 28
+    },
+    "sections": [
+     {
+      "sel": "div#top.xf",
+      "tag": "div",
+      "top": 0,
+      "height": 1024,
+      "words": 10,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 32,
+      "right": 434,
+      "textLeft": 32,
+      "textRight": 434,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "figure.detail",
+      "tag": "figure",
+      "top": 544,
+      "height": 1024,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 1568,
+      "height": 617,
+      "words": 142,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ganesh Garage is a motorcycle repair shop on Champ",
+       "size": 27,
+       "tag": "p"
+      },
+      "left": 24,
+      "right": 27,
+      "textLeft": 24,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#menu.menuband",
+      "tag": "section",
+      "top": 2185,
+      "height": 1629,
+      "words": 147,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The service menu",
+       "size": 49,
+       "tag": "h2"
+      },
+      "left": 94,
+      "right": 124,
+      "textLeft": 94,
+      "textRight": 124,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 3814,
+      "height": 685,
+      "words": 21,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 94,
+      "right": 94,
+      "textLeft": 94,
+      "textRight": 108,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.frames",
+      "tag": "section",
+      "top": 4499,
+      "height": 1202,
+      "words": 50,
+      "media": 6,
+      "middle": 1656,
+      "heading": {
+       "text": "A service, up close",
+       "size": 23,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": 153,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#hours.cta",
+      "tag": "section",
+      "top": 5701,
+      "height": 650,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 28,
+      "textLeft": 24,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ganesh Garage, motorcycle repair",
+      "size": 26,
+      "top": 499,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 7
+     },
+     {
+      "x": 138,
+      "n": 3
+     },
+     {
+      "x": 396,
+      "n": 2
+     },
+     {
+      "x": 94,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    1,
+    0.72,
+    0.46,
+    0.35,
+    0.61,
+    0.57,
+    0.83,
+    0.54,
+    0.36
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 20,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7116,
+     "screens": 8.4,
+     "words": 449,
+     "img": 10,
+     "video": 1,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 11,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg",
+      "roue-et-jante-moto-dans-un-atelier.jpg",
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "brembo-motorcycle-brake.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ganesh Garage, motorcycle repair",
+     "words": 4,
+     "chars": 32,
+     "lines": 2,
+     "size": 21.6,
+     "vw": 5.5,
+     "font": "Stack Sans Text",
+     "weight": 500,
+     "tracking": -0.022,
+     "leading": 1.1,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.7,
+     "top": 392,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ganesh Garage, motorcycle repair",
+     "words": 4,
+     "lines": 2,
+     "size": 21.6,
+     "font": "Stack Sans Text"
+    },
+    "headings": [
+     {
+      "text": "The service menu",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "Stack Sans Headline",
+      "weight": 300,
+      "tracking": -0.022,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2239,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 1,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 1,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Stack Sans Text",
+       "share": 0.99,
+       "mono": false
+      },
+      {
+       "family": "Stack Sans Headline",
+       "share": 0.01,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      40
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Stack Sans Text",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 18.9
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 40,
+      "vw": 10.3,
+      "font": "Stack Sans Headline",
+      "text": "The service menu"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ffffff",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 1
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#111111",
+       "top": 0,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.07
+       }
+      },
+      {
+       "color": "#f4f4f4",
+       "top": 2123,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.96
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 2195,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.53
+      },
+      {
+       "color": "#6b6b6b",
+       "share": 0.38
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.07
+      },
+      {
+       "color": "#1a4be0",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#1a4be0",
+      "hsl": {
+       "h": 225,
+       "s": 0.79,
+       "l": 0.49
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 4,
+     "height": 50,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call the garage"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 6,
+     "squareMedia": 11,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 1
+     },
+     {
+      "type": "img",
+      "ratio": 0.47
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": true,
+     "height": 68,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "stack sans headline",
+     "stack sans text"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7116,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "div#top.xf",
+      "tag": "div",
+      "top": 0,
+      "height": 844,
+      "words": 27,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 42,
+      "textLeft": 24,
+      "textRight": 42,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "figure.detail",
+      "tag": "figure",
+      "top": 450,
+      "height": 844,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 1294,
+      "height": 829,
+      "words": 142,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 25,
+      "textLeft": 20,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#menu.menuband",
+      "tag": "section",
+      "top": 2123,
+      "height": 1723,
+      "words": 147,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The service menu",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 40,
+      "textLeft": 20,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section",
+      "tag": "section",
+      "top": 3846,
+      "height": 483,
+      "words": 21,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.frames",
+      "tag": "section",
+      "top": 4329,
+      "height": 2216,
+      "words": 70,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "A service, up close",
+       "size": 20,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#hours.cta",
+      "tag": "section",
+      "top": 6545,
+      "height": 447,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 53,
+      "textLeft": 20,
+      "textRight": 53,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.fin",
+      "tag": "footer",
+      "top": 6992,
+      "height": 124,
+      "words": 18,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 42,
+      "textLeft": 20,
+      "textRight": 42,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Ganesh Garage, motorcycle repair",
+      "size": 22,
+      "top": 392,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 10
+     },
+     {
+      "x": 32,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 14,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "10 different font sizes (14, 15, 16, 18, 19, 22, 26, 32, 40, 56).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 32px on the left, 60px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 1069px of nothing between: \"A service, up close\"",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"Ganesh Garage, motorcycle repair\" (screen 1, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it."
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 7 screens in a row: \"Ganesh Garage, motorcycle repair\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "small-title",
+   "width": 768,
+   "message": "The h1 is 26px (\"Ganesh Garage, motorcycle repair\").",
+   "fix": "Set the title at display size, or make the large text of the first screen the h1.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/mobile-page-01.jpg",
+    "/tmp/cafe-sites/ganesh-garage-siliguri/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
