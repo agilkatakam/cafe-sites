@@ -116,9 +116,10 @@ Ready leads live in `nowebsite_ready`.
   Krishna Computech V45 (precision-instrument catalogue, commit 58dc7a5; corrections pass adds the concept-preview disclaimer, illustrative-photo labels and softened claims),
   Hardev Mobile Communication V38 (one motif: the SIM chamfer; Bricolage, greys + mint; commit 648d366; this push also added the missing noindex meta to V45),
   Divya Mobile Care V39 (the page is the object: a repair job card; Zilla Slab, bone/green/chocolate; sticky job-book sheets, reply-card job-card picker, curtain footer; commit 34dcff1),
-  Kargil Vijay Auto Service V6 (the printed annual: signal-red magazine; Switzer; hero crossfade + corner cards, mosaic with pickup-builder, unequal photo band, inverted close, sliced ghost wordmark; commit 7166c7b).
+  Kargil Vijay Auto Service V6 (the printed annual: signal-red magazine; Switzer; hero crossfade + corner cards, mosaic with pickup-builder, unequal photo band, inverted close, sliced ghost wordmark; commit 7166c7b),
+  Md. Mosin Bike Point V14 (the wheel: bottle green and gold; built by recovery agent after stream failures; commits d6ead0a + 5393481 label fix).
 - Live URLs follow the pattern https://agilkatakam.github.io/cafe-sites/<folder>/ .
-- Build queue: garages V14/V28/V37/V41 (V6 Kargil done) → garages V6/V14/V28/V37/V41 → electricians V15/V22/V24/V33/V35 →
+- Build queue: garages V28/V37/V41 (V6 Kargil and V14 Mosin done) → electricians V15/V22/V24/V33/V35 →
   V48/V55 plumbing → V61/V43 carpentry → V56 sports → V58 print → V3/V67 book depots.
   Visual-proof categories held. A Nov 1 wide harvest (set11) added new candidates
   V68+ to the ledger; fold qualified ones into the queue after the listed builds.
