@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Mahadev Auto Services — two-wheeler workshop, Rajkot</title>
+<meta name="description" content="Mahadev Auto Services is a two-wheeler workshop in Shantinagar, Rajkot. Servicing, repairs, tyres, insurance and annual maintenance contracts with pick-up and drop.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#111111; --surface:#1c1c1c; --ink:#f2f2f2; --muted:#8f8f8f;
+  --accent:#a08672; --accent-ink:#111111; --paper:#f2f2f2; --paper-ink:#111111;
+  --r:8px;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+}
+*{margin:0;box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:var(--step-body);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block}
+h1,h2,h3{font-family:'Libre Franklin',sans-serif;font-weight:700;letter-spacing:-0.035em;line-height:0.92}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tile{background:var(--surface);border-radius:var(--r);overflow:hidden;position:relative}
+.tag{position:absolute;left:10px;top:10px;z-index:3;font-family:'Source Serif 4';font-size:0.8125rem;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:4px}
+
+/* hero: name band and rails */
+.hero{height:100svh;display:grid;grid-template-rows:170px 64px 1fr;gap:8px;padding:8px}
+.nameband{display:flex;align-items:center;justify-content:center}
+.nameband h1{font-family:'Libre Franklin';font-weight:700;text-transform:uppercase;font-size:clamp(140px,14.4vw,220px);letter-spacing:-0.04em;line-height:0.9;white-space:nowrap}
+.stand{margin:10px 12px 0;font-size:1.25rem;color:var(--dim)}
+.links4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.links4 a{display:flex;align-items:flex-start;padding:12px 16px;font-family:'Libre Franklin';font-size:1rem;text-decoration:none}
+.links4 a:hover{background:#262626}
+.rails{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;min-height:0}
+.lrail{grid-column:1/3;display:grid;grid-template-rows:1.15fr 1fr;gap:8px;min-height:0}
+.vid-tile video{width:100%;height:100%;object-fit:cover}
+.facts{padding:14px 16px;font-size:0.9375rem;color:var(--muted);display:flex;flex-direction:column;justify-content:space-evenly}
+.facts p b{color:var(--ink);font-weight:600}
+.centre{grid-column:3/11;min-height:0}
+.centre img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.centre .stmt{position:absolute;left:0;right:0;bottom:0;background:rgba(28,28,28,.92);padding:22px 24px;font-family:'Libre Franklin';font-weight:700;font-size:clamp(1.375rem,1rem + 1.6vw,2.25rem);letter-spacing:-0.02em;line-height:1.05}
+.rrail{grid-column:11/13;display:grid;grid-template-rows:repeat(5,1fr);gap:8px;min-height:0}
+.rrail .rt{padding:12px 14px;font-family:'Source Serif 4';font-size:0.9375rem;color:var(--ink)}
+.rrail .rt:nth-child(1){background:#565049}
+.rrail .rt:nth-child(2){background:#443e38}
+.rrail .rt:nth-child(3){background:#332e29}
+.rrail .rt:nth-child(4){background:#241f1c}
+.rrail .act{background:var(--accent);color:var(--accent-ink);display:flex;align-items:center;font-family:'Libre Franklin';font-weight:700;font-size:1.0625rem;text-decoration:none;letter-spacing:-0.01em}
+.rrail .act:hover{filter:brightness(1.07)}
+
+/* intro: statement tiles */
+.board{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:repeat(2,1fr);gap:8px;padding:8px;height:calc(76svh + 16px);margin-top:28px}
+.tileA{grid-column:1/9;grid-row:1/3;background:#0a0a0a;padding:20px;display:flex;align-items:flex-end}
+.tileA h2{text-transform:uppercase;font-size:clamp(52px,8vw,116px);line-height:0.86}
+.tileB{grid-column:9/13;grid-row:2;background:var(--paper);color:var(--paper-ink);padding:20px;display:flex;align-items:flex-end}
+.tileB span{font-family:'Libre Franklin';font-weight:700;font-size:clamp(64px,9vw,132px);line-height:0.86;letter-spacing:-0.035em}
+.tileC{grid-column:9/13;grid-row:1}
+.tileC img{width:100%;height:100%;object-fit:cover}
+.longtext{padding:48px 8px 56px}
+.longtext p{margin-left:50%;width:calc(50% - 40px);font-size:clamp(1.125rem,1rem + 0.6vw,1.5rem);line-height:1.35;color:var(--ink)}
+.longtext p b{font-weight:600}
+
+/* features: statement cell, dark rows */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:92svh}
+.lcell{background:var(--paper);color:var(--paper-ink);padding:40px;display:flex;flex-direction:column;gap:24px}
+.lcell h2{font-size:clamp(36px,4.2vw,68px);text-transform:none}
+.lcell h2 .l1{display:block;text-align:left}
+.lcell h2 .l2{display:block;text-align:right}
+.lcell h2 .l3{display:block;text-align:left}
+.lcell .foot{margin-top:auto;display:flex;align-items:baseline;justify-content:space-between;gap:20px}
+.lcell .foot p{max-width:30ch;font-size:1.0625rem}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-family:'Libre Franklin';font-weight:700;font-size:1rem;padding:12px 20px;border-radius:var(--r);text-decoration:none;letter-spacing:-0.01em;white-space:nowrap}
+.btn:hover{filter:brightness(1.07)}
+.lcell .btn{background:var(--paper-ink);color:var(--paper)}
+.drows{display:grid;grid-template-rows:repeat(4,1fr)}
+.drow{display:grid;grid-template-columns:5fr 4fr 3fr;gap:20px;align-items:start;padding:28px;border:0;background:#141414;color:inherit;font:inherit;text-align:left;cursor:pointer;width:100%}
+.drow:nth-child(even){background:#1a1a1a}
+.drow:hover{background:#202020}
+.drow h3{font-size:1.75rem;letter-spacing:-0.02em}
+.drow p{font-size:1rem;color:var(--muted)}
+.drow ul{font-size:0.9375rem;color:var(--muted);list-style:none;padding:0}
+.drow.pick h3{color:var(--accent)}
+.drow.pick h3::before{content:'';display:inline-block;width:.45em;height:.45em;background:var(--accent);border-radius:2px;margin-right:.4em;vertical-align:baseline}
+
+/* showcase: one image across tiles */
+.cut{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:64px 12px}
+.cut-m{display:none}
+.cut .t{aspect-ratio:1;border-radius:var(--r);overflow:hidden;position:relative;background:var(--surface)}
+.cut .t .p{position:absolute;inset:0;background-image:url('assets/brembo-motorcycle-brake.jpg');background-size:600% 400%;transition:transform .45s ease;display:block}
+.cut .t:hover .p{transform:scale(1.08)}
+.cut .ct{display:flex;align-items:flex-start;padding:16px}
+.cut .head-t{background:#0a0a0a}
+.cut .head-t h3{font-size:2.6vw;letter-spacing:-0.02em;line-height:1}
+.cut .fact-t{background:#241f1c}
+.cut .fact-t p{font-size:1.125rem;color:var(--ink)}
+.cut .act-t{background:var(--accent);text-decoration:none}
+.cut .act-t p{font-family:'Libre Franklin';font-weight:700;font-size:1.125rem;color:var(--accent-ink)}
+.cut .act-t:hover{filter:brightness(1.07)}
+
+/* marquee */
+.marq{overflow:hidden;padding:34px 0}
+.marq .in{display:flex;gap:0.6em;white-space:nowrap;font-family:'Libre Franklin';font-weight:700;text-transform:uppercase;font-size:clamp(72px,11vw,168px);letter-spacing:-0.03em;line-height:0.92;color:#787878;animation:slide 36s linear infinite;width:max-content}
+.marq:hover .in{animation-play-state:paused}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* cta: the action tile */
+.ctarow{display:grid;grid-template-columns:repeat(12,1fr);gap:10px;height:360px;padding:8px 0}
+.cta-l{grid-column:1/3;margin-left:-64px;border-radius:0 var(--r) var(--r) 0}
+.cta-l img{width:100%;height:100%;object-fit:cover}
+.cta-c{grid-column:3/11;background:var(--accent);color:var(--accent-ink);border-radius:var(--r);padding:40px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.cta-c h2{font-size:2.5rem;letter-spacing:-0.02em;color:var(--accent-ink)}
+.cta-c p{font-size:1.0625rem;max-width:46ch}
+.cta-c .btn{background:var(--accent-ink);color:var(--ink);align-self:flex-start}
+.cta-c .wl{color:var(--accent-ink);font-size:1rem;margin-left:6px}
+.cta-r{grid-column:11/13;margin-right:-64px;background:#241f1c;border-radius:var(--r) 0 0 var(--r)}
+
+/* footer: the mark, built large */
+footer{padding:64px 8px 24px}
+.fcols{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;padding:0 12px;font-size:0.9375rem;color:var(--muted)}
+.fcols .fc{grid-column:span 2}
+.fcols .fc h4{font-family:'Libre Franklin';font-size:0.9375rem;color:var(--ink);margin-bottom:10px;letter-spacing:-0.01em}
+.fcols .fc p,.fcols .fc a{color:var(--muted);margin-bottom:6px;display:block;text-decoration:none}
+.fcols .fc a:hover{color:var(--ink)}
+.fcols .contact{grid-column:9/13}
+.flast{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:32px 12px 0;font-size:var(--step-small);color:var(--muted)}
+.flast .btn{padding:8px 14px;font-size:0.875rem}
+
+/* entrances */
+.rv{transform:translateY(16px);transition:transform .65s cubic-bezier(.2,.6,.2,1)}
+.rv.in{transform:none}
+
+@media (max-width:900px){
+  .hero{grid-template-rows:110px auto 1fr;height:auto;min-height:100svh}
+  .nameband h1{font-size:26vw}
+  .stand{margin:10px 12px 0;font-size:1.25rem;color:var(--dim)}
+.links4{grid-template-columns:repeat(2,1fr)}
+  .rails{grid-template-columns:repeat(2,1fr)}
+  .lrail{grid-column:1/-1;grid-template-rows:180px auto}
+  .centre{grid-column:1/-1;min-height:60svh}
+  .rrail{grid-column:1/-1;grid-template-rows:none;grid-auto-rows:64px;grid-template-columns:repeat(5,1fr)}
+  .rrail .rt{font-size:0.8125rem}
+  .rrail .act{grid-column:span 2}
+  .board{grid-template-columns:repeat(2,1fr);grid-template-rows:auto;height:auto}
+  .tileA{grid-column:1/-1;grid-row:auto;min-height:46svh}
+  .tileA h2{font-size:13vw}
+  .tileB,.tileC{grid-column:auto;grid-row:auto;aspect-ratio:1}
+  .tileB span{font-size:15vw}
+  .longtext p{margin-left:0;width:auto;padding:0 20px;font-size:1.125rem}
+  .split{grid-template-columns:1fr;min-height:0}
+  .lcell{min-height:0}
+  .lcell .foot{margin-top:56px}
+  .lcell h2{font-size:10vw}
+  .drow{grid-template-columns:1fr;gap:8px;padding:22px}
+  .drow ul li{display:inline}
+  .drow ul li+li::before{content:', '}
+  .cut-d{display:none}
+  .cut-m{display:grid;grid-template-columns:repeat(3,1fr);padding:40px 12px;gap:6px}
+  .cut .t .p{background-size:300% 600%}
+  .cut .head-t{grid-column:span 2}
+  .cut .head-t h3{font-size:6vw}
+  .cut .fact-t p{font-size:0.9375rem}
+  .ctarow{grid-template-columns:1fr 1fr;height:auto;gap:8px;padding:8px}
+  .cta-c{grid-column:1/-1;min-height:300px;order:-1}
+  .cta-c h2{font-size:1.75rem}
+  .cta-l,.cta-r{margin:0;border-radius:var(--r);height:120px;grid-column:auto}
+    .fcols .fc{grid-column:span 6}
+  .fcols .contact{grid-column:1/-1}
+}
+@media (prefers-reduced-motion: reduce){
+  .marq .in{animation:none}
+  .rv{transform:none;transition:none}
+  .cut .t .p{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="tile nameband"><h1>Mahadev</h1>
+</div>
+<p class="stand">A two-wheeler workshop in Shantinagar 2, Rajkot, on the job since 2019.</p>
+  <nav class="links4">
+    <a class="tile" href="#board">Two-wheeler workshop</a>
+    <a class="tile" href="#services">The services</a>
+    <a class="tile" href="#visit">Hours &amp; visit</a>
+    <a class="tile wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">Write to the workshop</a>
+  </nav>
+  <div class="rails">
+    <div class="lrail">
+      <div class="tile vid-tile"><video src="assets/transporting-goods-using-motorcycle.webm" poster="assets/transporting-goods-using-motorcycle-poster.jpg" width="854" height="480" autoplay muted loop playsinline preload="metadata"></video><span class="tag">illustrative clip</span></div>
+      <div class="tile facts">
+        <p><b>Since 2019</b></p>
+        <p>all makes and models</p>
+        <p>original spare parts</p>
+        <p>insurance &amp; AMC</p>
+        <p>pick-up &amp; drop</p>
+      </div>
+    </div>
+    <div class="tile centre">
+      <img src="assets/motorcycle-repair-shop-bangkok-8270996736.jpg" width="1920" height="1280" alt="A small open-front motorcycle workshop with bikes along the bench">
+      <p class="stmt">King of Bike Services — the workshop's own words.</p>
+      <span class="tag">illustrative photo, not this workshop</span>
+    </div>
+    <div class="rrail">
+      <div class="rt tile">3,000+ happy customers</div>
+      <div class="rt tile">on the job since 2019</div>
+      <div class="rt tile">door-to-door contracts</div>
+      <div class="rt tile">closed on Sundays</div>
+      <a class="rt tile act" href="tel:+919512375050">Call 95123 75050</a>
+    </div>
+  </div>
+</header>
+
+<section class="board" id="board">
+  <div class="tile tileA rv"><h2>King of bike<br>services</h2></div>
+  <div class="tile tileB rv"><span>2019</span></div>
+  <div class="tile tileC rv"><img src="assets/mekanik-motor-motorcycle-mechanic.jpg" width="1920" height="1152" alt="A mechanic leaning over a motorcycle engine" loading="lazy"><span class="tag">illustrative photo</span></div>
+</section>
+
+<div class="longtext">
+  <p class="rv">Mahadev Auto Services is a two-wheeler workshop at Sapphire Elegance, Shantinagar 2, opposite the water tank in Rajkot. The team handles <b>minor and major servicing, engine, brake and electrical repairs, wheel alignment, batteries and tyres</b>, for all makes and models. The shop also arranges <b>two-wheeler insurance and annual maintenance contracts, door to door</b>, with pick-up and drop available. More than 3,000 happy customers so far — and a workshop that closes on Sundays.</p>
+</div>
+
+<section class="split" id="services">
+  <div class="lcell">
+    <h2 class="rv"><span class="l1">Minor service,</span><span class="l2">major repairs.</span></h2>
+    <div class="foot">
+      <p>One counter for all of it. Pick a row and the write button carries your list into a ready email. Or just call — the phone is answered Monday to Saturday, 9am to 8pm.</p>
+      <a class="btn wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">Write</a>
+    </div>
+  </div>
+  <div class="drows">
+    <button class="drow rv" type="button" data-item="servicing"><h3>Servicing</h3><p>Minor and major servicing for all makes and models, with oil changes and a general check-up.</p><ul><li>oil change</li><li>check-up</li><li>bike servicing</li></ul></button>
+    <button class="drow rv" type="button" data-item="repairs"><h3>Repairs</h3><p>Engine, brake and electrical repairs handled under one roof, with original spare parts.</p><ul><li>engine</li><li>brakes</li><li>electrical</li></ul></button>
+    <button class="drow rv" type="button" data-item="tyres and alignment"><h3>Tyres &amp; alignment</h3><p>Battery services, tyre replacement and wheel alignment to keep the ride straight.</p><ul><li>battery</li><li>tyres</li><li>alignment</li></ul></button>
+    <button class="drow rv" type="button" data-item="insurance and AMC"><h3>Cover &amp; contracts</h3><p>Two-wheeler insurance and annual maintenance contracts, arranged door to door.</p><ul><li>insurance</li><li>AMC</li><li>door-to-door</li></ul></button>
+  </div>
+</section>
+
+<section class="cut cut-m" aria-hidden="true">
+      <div class="t ct head-t"><h3>The daily work</h3></div>
+      <div class="t"><span class="p" style="background-position:100% 0%"></i></div>
+      <div class="t"><span class="p" style="background-position:0% 20%"></i></div>
+      <div class="t"><span class="p" style="background-position:50% 20%"></i></div>
+      <div class="t ct fact-t"><p>original spare parts</p></div>
+      <div class="t"><span class="p" style="background-position:0% 40%"></i></div>
+      <div class="t"><span class="p" style="background-position:50% 40%"></i></div>
+      <div class="t"><span class="p" style="background-position:100% 40%"></i></div>
+      <div class="t ct fact-t"><p>experienced mechanics</p></div>
+      <div class="t"><span class="p" style="background-position:50% 60%"></i></div>
+      <div class="t"><span class="p" style="background-position:100% 60%"></i></div>
+      <div class="t"><span class="p" style="background-position:0% 80%"></i></div>
+      <div class="t"><span class="p" style="background-position:50% 80%"></i></div>
+      <div class="t"><span class="p" style="background-position:100% 80%"></i></div>
+      <div class="t"><span class="p" style="background-position:0% 100%"></i></div>
+      <a class="t ct act-t" href="tel:+919512375050"><p>call the workshop</p></a>
+      <div class="t"><span class="p" style="background-position:100% 100%"></i></div>
+</section>
+<section class="cut cut-d" aria-label="The daily work, one photograph cut across tiles">
+      <div class="t ct head-t"><h3>The daily work</h3></div>
+      <div class="t"><span class="p" style="background-position:20% 0.0%"></i></div>
+      <div class="t"><span class="p" style="background-position:40% 0.0%"></i></div>
+      <div class="t"><span class="p" style="background-position:60% 0.0%"></i></div>
+      <a class="t ct act-t" href="tel:+919512375050"><p>call the workshop</p></a>
+      <div class="t"><span class="p" style="background-position:100% 0.0%"></i></div>
+      <div class="t"><span class="p" style="background-position:0% 33.3333%"></i></div>
+      <div class="t"><span class="p" style="background-position:20% 33.3333%"></i></div>
+      <div class="t"><span class="p" style="background-position:40% 33.3333%"></i></div>
+      <div class="t ct fact-t"><p>original spare parts</p></div>
+      <div class="t"><span class="p" style="background-position:80% 33.3333%"></i></div>
+      <div class="t"><span class="p" style="background-position:100% 33.3333%"></i></div>
+      <div class="t"><span class="p" style="background-position:0% 66.6666%"></i></div>
+      <div class="t"><span class="p" style="background-position:20% 66.6666%"></i></div>
+      <div class="t"><span class="p" style="background-position:40% 66.6666%"></i></div>
+      <div class="t"><span class="p" style="background-position:60% 66.6666%"></i></div>
+      <div class="t"><span class="p" style="background-position:80% 66.6666%"></i></div>
+      <div class="t ct fact-t"><p>modern tools</p></div>
+      <div class="t"><span class="p" style="background-position:0% 99.9999%"></i></div>
+      <div class="t"><span class="p" style="background-position:20% 99.9999%"></i></div>
+      <div class="t ct fact-t"><p>experienced mechanics</p></div>
+      <div class="t"><span class="p" style="background-position:60% 99.9999%"></i></div>
+      <div class="t"><span class="p" style="background-position:80% 99.9999%"></i></div>
+      <div class="t"><span class="p" style="background-position:100% 99.9999%"></i></div>
+</section>
+
+<div class="marq" aria-hidden="true"><div class="in" id="marq">King of Bike Services · Rajkot · King of Bike Services · Rajkot ·&nbsp;</div></div>
+
+<section class="ctarow" id="visit">
+  <div class="tile cta-l"><img src="assets/dfc-4703-a-mechanic-works-on-a.jpg" width="1600" height="1067" alt="A mechanic repairing a motorcycle engine amid tools and parts" loading="lazy"><span class="tag">illustrative photo</span></div>
+  <div class="cta-c">
+    <h2 class="rv">Bring the bike in.</h2>
+    <p class="rv">Sapphire Elegance, Shantinagar 2, opposite the water tank, Rajkot 360007. Monday to Saturday, 9am to 8pm. Sundays closed. Call, or write and ask about pick-up and drop.</p>
+    <div class="rv"><a class="btn" href="tel:+919512375050">Call 95123 75050</a><a class="wl wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">or write</a></div>
+  </div>
+  <div class="tile cta-r"></div>
+</section>
+
+<footer>
+  <svg class="mark" viewBox="0 0 770 120" preserveAspectRatio="none" aria-hidden="true" style="height:34svh;width:100%;margin-bottom:56px;display:block"><rect x="0" y="34" width="106" height="86" rx="6" fill="#a08672"/><text x="53" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">M</text><rect x="110" y="0" width="106" height="120" rx="6" fill="#1c1c1c"/><text x="163" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#a08672">A</text><rect x="220" y="24" width="106" height="96" rx="6" fill="#a08672"/><text x="273" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">H</text><rect x="330" y="7" width="106" height="113" rx="6" fill="#1c1c1c"/><text x="383" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#a08672">A</text><rect x="440" y="43" width="106" height="77" rx="6" fill="#a08672"/><text x="493" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">D</text><rect x="550" y="14" width="106" height="106" rx="6" fill="#1c1c1c"/><text x="603" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#a08672">E</text><rect x="660" y="26" width="106" height="94" rx="6" fill="#a08672"/><text x="713" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">V</text></svg>
+  <div class="fcols">
+    <div class="fc"><h4>Services</h4><p>servicing</p><p>repairs</p><p>tyres &amp; alignment</p><p>insurance &amp; AMC</p></div>
+    <div class="fc"><h4>The workshop</h4><p>since 2019</p><p>3,000+ customers</p><p>pick-up &amp; drop</p></div>
+    <div class="fc"><h4>Talk</h4><a href="tel:+919512375050">95123 75050</a><a class="wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">mahadevsf19@gmail.com</a></div>
+    <div class="fc"><h4>Find</h4><a href="#board">the board</a><a href="#services">services</a><a href="#visit">visit</a></div>
+    <div class="contact"><h4>Visit</h4><p>Sapphire Elegance, Shantinagar 2, opposite the water tank, Rajkot, Gujarat 360007.</p><p>Monday to Saturday, 9am to 8pm. Sundays closed.</p></div>
+  </div>
+  <div class="flast">
+    <p>A concept preview. Enquiries only, not a booking service. © 2026 · Source: <a href="https://threebestrated.in/motorcycle-repair-shops-in-rajkot-gj" rel="nofollow">threebestrated.in</a> · Photographs and clip: Wikimedia Commons — Ian Gratton (CC BY 2.0); madmalaysia, PattayaPatrol, RahimMngwaya (CC BY-SA 4.0); Hu Nhu (CC0). All illustrative.</p>
+    <a class="btn" href="tel:+919512375050">Call</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* marquee: duplicate for a seamless loop */
+  var m = document.getElementById('marq');
+  if(m){ m.innerHTML += m.innerHTML; }
+
+  /* the dark rows build the enquiry */
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.drow'));
+  var wlinks = document.querySelectorAll('.wlink');
+  function sync(){
+    var picks = rows.filter(function(r){ return r.classList.contains('pick'); })
+                    .map(function(r){ return r.getAttribute('data-item'); });
+    var body = picks.length
+      ? 'Hello Mahadev Auto Services, I would like to ask about: ' + picks.join(', ') + '. My bike is: '
+      : 'Hello Mahadev Auto Services, I would like to ask about a service. My bike is: ';
+    var href = 'mailto:mahadevsf19@gmail.com?subject=' + encodeURIComponent('Service enquiry') + '&body=' + encodeURIComponent(body);
+    wlinks.forEach(function(a){ a.setAttribute('href', href); });
+  }
+  rows.forEach(function(r){ r.addEventListener('click', function(){ r.classList.toggle('pick'); sync(); }); });
+  sync();
+
+  /* entrances */
+  var rv = document.querySelectorAll('.rv');
+  if(reduced || !('IntersectionObserver' in window)){
+    rv.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.12});
+    rv.forEach(function(el){ io.observe(el); });
+    setTimeout(function(){ rv.forEach(function(el){ el.classList.add('in'); }); }, 1400);
+  }
+
+  /* pause the clip when the tab is hidden */
+  var v = document.querySelector('.vid-tile video');
+  document.addEventListener('visibilitychange', function(){
+    if(!v) return;
+    if(document.hidden){ v.pause(); } else { v.play().catch(function(){}); }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,2476 @@
+{
+ "url": "index.html",
+ "at": "2026-11-02T16:19:52.120Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.99,
+    0.83,
+    0.84,
+    0.93,
+    0.87,
+    0.61
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 1,
+    "transitions": 12,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5223,
+     "screens": 5.8,
+     "words": 421,
+     "img": 3,
+     "video": 1,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 23,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MAHADEV",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 207.4,
+     "vw": 14.4,
+     "font": "Libre Franklin",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.73,
+     "top": 0,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "MAHADEV",
+     "words": 1,
+     "lines": 1,
+     "size": 207.4,
+     "font": "Libre Franklin"
+    },
+    "headings": [
+     {
+      "text": "MAHADEV",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 207.4,
+      "vw": 14.4,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 0,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "King of Bike Services — the workshop's own words.",
+      "words": 9,
+      "chars": 49,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.66,
+      "top": 810,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "2019",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 129.6,
+      "vw": 9,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.33,
+      "top": 980,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "KING OF BIKE SERVICES",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 115.2,
+      "vw": 8,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.86,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 1446,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Servicing",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.18,
+      "top": 2096,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Minor service, major repairs.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 2108,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.18,
+      "top": 2303,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Tyres & alignment",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.18,
+      "top": 2510,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cover & contracts",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.18,
+      "top": 2717,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The daily work",
+      "words": 3,
+      "chars": 14,
+      "lines": 2,
+      "size": 37.4,
+      "vw": 2.6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 2976,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT ·",
+      "words": 28,
+      "chars": 131,
+      "lines": 1,
+      "size": 158.4,
+      "vw": 11,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 3965,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring the bike in.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 40,
+      "vw": 2.8,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 4249,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Source Serif 4",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "Libre Franklin",
+       "share": 0.19,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      28,
+      36,
+      37,
+      40,
+      61,
+      115,
+      130,
+      158,
+      207
+     ],
+     "sizeCount": 16,
+     "notLoaded": [],
+     "body": {
+      "font": "Source Serif 4",
+      "size": 24,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.9
+     },
+     "measureChars": 56,
+     "max": {
+      "size": 207.4,
+      "vw": 14.4,
+      "font": "Libre Franklin",
+      "text": "Mahadev"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.06,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [
+     {
+      "text": "Call 95123 75050",
+      "above": "2019",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 17,
+      "top": 772
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#111111",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.07
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1c1c1c",
+       "top": 258,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#0a0a0a",
+       "top": 980,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#f2f2f2",
+       "top": 2068,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#8f8f8f",
+       "share": 0.4
+      },
+      {
+       "color": "#f2f2f2",
+       "share": 0.34
+      },
+      {
+       "color": "#111111",
+       "share": 0.17
+      },
+      {
+       "color": "#787878",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#1c1c1c",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.11
+      },
+      "fg": "#f2f2f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 6,
+     "inHero": 4,
+     "radius": 8,
+     "height": 64,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Two-wheeler workshop",
+      "The services",
+      "Hours & visit",
+      "Write to the workshop"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 38,
+     "boxRadius": 8,
+     "squareMedia": 1,
+     "roundedMedia": 22,
+     "mediaRadius": 8,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 5,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 258
+      },
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 2068
+      },
+      {
+       "count": 5,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 2960
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "libre franklin",
+     "source serif 4"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5223,
+    "margins": {
+     "left": 20,
+     "right": 0
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 900,
+      "words": 59,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Mahadev",
+       "size": 207,
+       "tag": "h1"
+      },
+      "left": 8,
+      "right": 54,
+      "textLeft": 24,
+      "textRight": 54,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#board.board",
+      "tag": "section",
+      "top": 972,
+      "height": 700,
+      "words": 7,
+      "media": 1,
+      "middle": 197,
+      "heading": {
+       "text": "2019",
+       "size": 130,
+       "tag": "span"
+      },
+      "left": 28,
+      "right": 8,
+      "textLeft": 28,
+      "textRight": 146,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.longtext",
+      "tag": "div",
+      "top": 1672,
+      "height": 396,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 720,
+      "right": 61,
+      "textLeft": 720,
+      "textRight": 61,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.split",
+      "tag": "section",
+      "top": 2068,
+      "height": 828,
+      "words": 110,
+      "media": 0,
+      "middle": 40,
+      "heading": {
+       "text": "Minor service,",
+       "size": 60,
+       "tag": "h2"
+      },
+      "left": 40,
+      "right": 0,
+      "textLeft": 40,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.cut.cut-d",
+      "tag": "section",
+      "top": 2896,
+      "height": 1069,
+      "words": 13,
+      "media": 0,
+      "middle": 319,
+      "heading": {
+       "text": "The daily work",
+       "size": 37,
+       "tag": "h3"
+      },
+      "left": 28,
+      "right": 112,
+      "textLeft": 28,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.marq",
+      "tag": "div",
+      "top": 3965,
+      "height": 214,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "King of Bike Services · Rajkot · King of Bike Serv",
+       "size": 158,
+       "tag": "div"
+      },
+      "left": null,
+      "right": null,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.ctarow",
+      "tag": "section",
+      "top": 4179,
+      "height": 360,
+      "words": 38,
+      "media": 1,
+      "middle": 50,
+      "heading": {
+       "text": "Bring the bike in.",
+       "size": 40,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 752,
+      "textLeft": -46,
+      "textRight": 752,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 4539,
+      "height": 685,
+      "words": 90,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Services",
+       "size": 15,
+       "tag": "h4"
+      },
+      "left": 20,
+      "right": 34,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": true,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "MAHADEV",
+      "size": 207,
+      "top": 0,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 720,
+      "n": 4
+     },
+     {
+      "x": 748,
+      "n": 4
+     },
+     {
+      "x": 1028,
+      "n": 4
+     },
+     {
+      "x": 28,
+      "n": 3
+     },
+     {
+      "x": 40,
+      "n": 2
+     },
+     {
+      "x": 282,
+      "n": 2
+     },
+     {
+      "x": 191,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 20,
+    "bodySize": 24,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.03,
+    "voidBox": {
+     "x": 1380,
+     "y": 300,
+     "w": 60,
+     "h": 600
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.93,
+    0.81,
+    0.85,
+    0.91,
+    1,
+    0.8,
+    0.54
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 1,
+    "transitions": 12,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6928,
+     "screens": 6.8,
+     "words": 411,
+     "img": 3,
+     "video": 1,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 17,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MAHADEV",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 199.7,
+     "vw": 26,
+     "font": "Libre Franklin",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1.33,
+     "top": -27,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "MAHADEV",
+     "words": 1,
+     "lines": 1,
+     "size": 199.7,
+     "font": "Libre Franklin"
+    },
+    "headings": [
+     {
+      "text": "MAHADEV",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 199.7,
+      "vw": 26,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1.33,
+      "top": -27,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "King of Bike Services — the workshop's own words.",
+      "words": 9,
+      "chars": 49,
+      "lines": 1,
+      "size": 28.3,
+      "vw": 3.7,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.98,
+      "top": 1121,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "KING OF BIKE SERVICES",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.86,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 1706,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "2019",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 15,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 1905,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Minor service, major repairs.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 76.8,
+      "vw": 10,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2599,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Servicing",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3024,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3158,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Tyres & alignment",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3292,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cover & contracts",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 3426,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The daily work",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 46.1,
+      "vw": 6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 3594,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT ·",
+      "words": 28,
+      "chars": 131,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 5362,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring the bike in.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 5561,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Source Serif 4",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "Libre Franklin",
+       "share": 0.19,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      28,
+      46,
+      77,
+      85,
+      100,
+      115,
+      200
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Source Serif 4",
+      "size": 18,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.9
+     },
+     "measureChars": 84,
+     "max": {
+      "size": 199.7,
+      "vw": 26,
+      "font": "Libre Franklin",
+      "text": "Mahadev"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.06,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#111111",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.07
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1c1c1c",
+       "top": 580,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#0a0a0a",
+       "top": 1426,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#f2f2f2",
+       "top": 2559,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.95
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#8f8f8f",
+       "share": 0.41
+      },
+      {
+       "color": "#f2f2f2",
+       "share": 0.34
+      },
+      {
+       "color": "#111111",
+       "share": 0.17
+      },
+      {
+       "color": "#787878",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#1c1c1c",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.11
+      },
+      "fg": "#f2f2f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 4,
+     "radius": 8,
+     "height": 49,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Two-wheeler workshop",
+      "The services",
+      "Hours & visit",
+      "Write to the workshop"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 27,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 16,
+     "mediaRadius": 8,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.42
+     },
+     {
+      "type": "video",
+      "ratio": 0.17
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 1346,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "libre franklin",
+     "source serif 4"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6928,
+    "margins": {
+     "left": 20,
+     "right": 33
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 1346,
+      "words": 59,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Mahadev",
+       "size": 200,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 75,
+      "textLeft": 8,
+      "textRight": 8,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#board.board",
+      "tag": "section",
+      "top": 1418,
+      "height": 867,
+      "words": 7,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "King of bike",
+       "size": 100,
+       "tag": "h2"
+      },
+      "left": 28,
+      "right": 8,
+      "textLeft": 28,
+      "textRight": 101,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.longtext",
+      "tag": "div",
+      "top": 2285,
+      "height": 274,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 28,
+      "right": 32,
+      "textLeft": 28,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.split",
+      "tag": "section",
+      "top": 2559,
+      "height": 978,
+      "words": 110,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Minor service,",
+       "size": 77,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 33,
+      "textLeft": 22,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.cut.cut-m",
+      "tag": "section",
+      "top": 3538,
+      "height": 1824,
+      "words": 11,
+      "media": 0,
+      "middle": 99,
+      "heading": {
+       "text": "The daily work",
+       "size": 46,
+       "tag": "h3"
+      },
+      "left": 28,
+      "right": 101,
+      "textLeft": 28,
+      "textRight": 101,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.marq",
+      "tag": "div",
+      "top": 5362,
+      "height": 146,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "King of Bike Services · Rajkot · King of Bike Serv",
+       "size": 84,
+       "tag": "div"
+      },
+      "left": null,
+      "right": null,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.ctarow",
+      "tag": "section",
+      "top": 5507,
+      "height": 444,
+      "words": 38,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Bring the bike in.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 314,
+      "textLeft": 26,
+      "textRight": 314,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 5951,
+      "height": 976,
+      "words": 90,
+      "media": 1,
+      "middle": 59,
+      "heading": {
+       "text": "Services",
+       "size": 15,
+       "tag": "h4"
+      },
+      "left": 20,
+      "right": 34,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": true,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1316,
+      "height": 368
+     },
+     {
+      "top": 3648,
+      "height": 444
+     },
+     {
+      "top": 4116,
+      "height": 476
+     },
+     {
+      "top": 4616,
+      "height": 480
+     }
+    ],
+    "h1s": [
+     {
+      "text": "MAHADEV",
+      "size": 200,
+      "top": -27,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 15
+     },
+     {
+      "x": 40,
+      "n": 4
+     },
+     {
+      "x": 8,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 20,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.99,
+    0.84,
+    0.83,
+    0.99,
+    0.77,
+    0.88,
+    0.5,
+    0.49
+   ],
+   "motion": {
+    "elements": 13,
+    "css": 1,
+    "transitions": 12,
+    "scripted": 0,
+    "videos": 1,
+    "playingVideos": 1
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6135,
+     "screens": 7.3,
+     "words": 411,
+     "img": 3,
+     "video": 1,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 1,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "motorcycle-repair-shop-bangkok-8270996736.jpg",
+      "mekanik-motor-motorcycle-mechanic.jpg",
+      "dfc-4703-a-mechanic-works-on-a.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MAHADEV",
+     "words": 1,
+     "chars": 7,
+     "lines": 1,
+     "size": 101.4,
+     "vw": 26,
+     "font": "Libre Franklin",
+     "weight": 700,
+     "tracking": -0.04,
+     "leading": 0.9,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1.33,
+     "top": 17,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "MAHADEV",
+     "words": 1,
+     "lines": 1,
+     "size": 101.4,
+     "font": "Libre Franklin"
+    },
+    "headings": [
+     {
+      "text": "MAHADEV",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 101.4,
+      "vw": 26,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.04,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1.33,
+      "top": 17,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "King of Bike Services — the workshop's own words.",
+      "words": 9,
+      "chars": 49,
+      "lines": 2,
+      "size": 22.2,
+      "vw": 5.7,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1045,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "KING OF BIKE SERVICES",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.86,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 1649,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "2019",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1764,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Minor service, major repairs.",
+      "words": 4,
+      "chars": 29,
+      "lines": 2,
+      "size": 39,
+      "vw": 10,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.79,
+      "top": 2439,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Servicing",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 2847,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3031,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Tyres & alignment",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3214,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Cover & contracts",
+      "words": 3,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.89,
+      "top": 3398,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The daily work",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 23.4,
+      "vw": 6,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.4,
+      "top": 3615,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT · KING OF BIKE SERVICES · RAJKOT ·",
+      "words": 28,
+      "chars": 131,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 4501,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Bring the bike in.",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Libre Franklin",
+      "weight": 700,
+      "tracking": -0.02,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.75,
+      "top": 4683,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Source Serif 4",
+       "share": 0.81,
+       "mono": false
+      },
+      {
+       "family": "Libre Franklin",
+       "share": 0.19,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      28,
+      39,
+      51,
+      59,
+      72,
+      101
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "body": {
+      "font": "Source Serif 4",
+      "size": 18,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 16.9
+     },
+     "measureChars": 42,
+     "max": {
+      "size": 101.4,
+      "vw": 26,
+      "font": "Libre Franklin",
+      "text": "Mahadev"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.06,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#111111",
+     "bodyBgHsl": {
+      "h": 0,
+      "s": 0,
+      "l": 0.07
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1c1c1c",
+       "top": 629,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.11
+       }
+      },
+      {
+       "color": "#0a0a0a",
+       "top": 1368,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#f2f2f2",
+       "top": 2399,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#a08672",
+       "top": 4643,
+       "hsl": {
+        "h": 26,
+        "s": 0.19,
+        "l": 0.54
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#8f8f8f",
+       "share": 0.41
+      },
+      {
+       "color": "#f2f2f2",
+       "share": 0.34
+      },
+      {
+       "color": "#111111",
+       "share": 0.17
+      },
+      {
+       "color": "#787878",
+       "share": 0.05
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#1c1c1c",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.11
+      },
+      "fg": "#f2f2f2"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 7,
+     "inHero": 4,
+     "radius": 8,
+     "height": 74,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Two-wheeler workshop",
+      "The services",
+      "Hours & visit",
+      "Write to the workshop"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 11,
+     "boxRadius": 8,
+     "squareMedia": 0,
+     "roundedMedia": 2,
+     "mediaRadius": 8,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.24
+     },
+     {
+      "type": "video",
+      "ratio": 0.2
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 1288,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "libre franklin",
+     "source serif 4"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6135,
+    "margins": {
+     "left": 8,
+     "right": 8
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 1288,
+      "words": 59,
+      "media": 2,
+      "middle": 0,
+      "heading": {
+       "text": "Mahadev",
+       "size": 101,
+       "tag": "h1"
+      },
+      "left": 8,
+      "right": 8,
+      "textLeft": 8,
+      "textRight": 8,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#board.board",
+      "tag": "section",
+      "top": 1360,
+      "height": 595,
+      "words": 7,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "2019",
+       "size": 59,
+       "tag": "span"
+      },
+      "left": 28,
+      "right": 8,
+      "textLeft": 28,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.longtext",
+      "tag": "div",
+      "top": 1955,
+      "height": 444,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 28,
+      "right": 29,
+      "textLeft": 28,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#services.split",
+      "tag": "section",
+      "top": 2399,
+      "height": 1160,
+      "words": 110,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Minor service,",
+       "size": 39,
+       "tag": "h2"
+      },
+      "left": 22,
+      "right": 25,
+      "textLeft": 22,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.cut.cut-m",
+      "tag": "section",
+      "top": 3559,
+      "height": 942,
+      "words": 11,
+      "media": 0,
+      "middle": 39,
+      "heading": {
+       "text": "The daily work",
+       "size": 23,
+       "tag": "h3"
+      },
+      "left": 28,
+      "right": 35,
+      "textLeft": 28,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.marq",
+      "tag": "div",
+      "top": 4501,
+      "height": 134,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "King of Bike Services · Rajkot · King of Bike Serv",
+       "size": 72,
+       "tag": "div"
+      },
+      "left": null,
+      "right": null,
+      "textLeft": 0,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.ctarow",
+      "tag": "section",
+      "top": 4635,
+      "height": 458,
+      "words": 38,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Bring the bike in.",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 8,
+      "right": 56,
+      "textLeft": 26,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 5093,
+      "height": 1042,
+      "words": 90,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Services",
+       "size": 15,
+       "tag": "h4"
+      },
+      "left": 8,
+      "right": 8,
+      "textLeft": 20,
+      "textRight": 34,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1256,
+      "height": 380
+     }
+    ],
+    "h1s": [
+     {
+      "text": "MAHADEV",
+      "size": 101,
+      "top": 17,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 15
+     },
+     {
+      "x": 40,
+      "n": 4
+     },
+     {
+      "x": 8,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 20,
+    "bodySize": 18,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "FAIL",
+   "id": "eyebrow",
+   "width": 1440,
+   "message": "1 eyebrow/kicker label(s) above headings: \"Call 95123 75050\" above \"2019\"",
+   "fix": "Delete them. If the label carried real information, fold it into the headline or the supporting sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "card-rows",
+   "width": 1440,
+   "message": "3 rows of identical boxed cards.",
+   "fix": "Vary the composition; not every section is a card grid."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "16 different font sizes (13, 14, 15, 16, 17, 18, 24, 28, 36, 37, 40, 61, 115, 130, 158, 207).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 20px on the left, 0px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "A section keeps its content on one side and leaves 752px of the width empty: \"Bring the bike in.\".",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "untitled-section",
+   "width": 1440,
+   "message": "A section carries text but no heading: div.longtext at 1672px.",
+   "fix": "Name it with a short heading unless it is the continuation of the section above.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "FAIL",
+   "id": "blank-gap",
+   "width": 768,
+   "message": "3 stretch(es) of the page hold nothing at all: 444px at 3648px; 476px at 4116px; 480px at 4616px (the screen is 1024px tall).",
+   "fix": "Close the gap: a section gap is 120–240px on desktop and 72–112px on a phone. Look for a min-height: 100vh on a short section, an empty grid row, a hidden element still holding its space, or a reveal that never fired. A deliberate rest is a placed picture or colour field, not nothing."
+  },
+  {
+   "level": "WARN",
+   "id": "name-only-title",
+   "width": 768,
+   "message": "The h1 is a bare name (\"MAHADEV\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 390,
+   "message": "A 380px stretch at 1256px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/mahadev-auto-services-rajkot/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
