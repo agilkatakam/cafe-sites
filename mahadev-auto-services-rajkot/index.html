@@ -29,12 +29,13 @@ a{color:inherit}
 .tag{position:absolute;left:10px;top:10px;z-index:3;font-family:'Source Serif 4';font-size:0.8125rem;color:#fff;background:rgba(0,0,0,.55);padding:3px 8px;border-radius:4px}
 
 /* hero: name band and rails */
-.hero{height:100svh;display:grid;grid-template-rows:170px 64px 1fr;gap:8px;padding:8px}
+.hero{height:100svh;display:grid;grid-template-rows:170px auto auto 1fr;gap:8px;padding:8px}
 .nameband{display:flex;align-items:center;justify-content:center}
 .nameband h1{font-family:'Libre Franklin';font-weight:700;text-transform:uppercase;font-size:clamp(140px,14.4vw,220px);letter-spacing:-0.04em;line-height:0.9;white-space:nowrap}
 .stand{margin:10px 12px 0;font-size:1.25rem;color:var(--dim)}
 .links4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.links4 a{display:flex;align-items:flex-start;padding:12px 16px;font-family:'Libre Franklin';font-size:1rem;text-decoration:none}
+.links4 a{display:flex;flex-direction:column;gap:6px;align-items:flex-start;justify-content:flex-start;padding:14px 16px;font-family:'Libre Franklin';font-size:1rem;text-decoration:none;min-height:0}
+.links4 a small{font-family:'Source Serif 4';font-size:0.875rem;color:var(--dim);line-height:1.35}
 .links4 a:hover{background:#262626}
 .rails{display:grid;grid-template-columns:repeat(12,1fr);gap:8px;min-height:0}
 .lrail{grid-column:1/3;display:grid;grid-template-rows:1.15fr 1fr;gap:8px;min-height:0}
@@ -135,8 +136,8 @@ footer{padding:64px 8px 24px}
 .rv.in{transform:none}
 
 @media (max-width:900px){
-  .hero{grid-template-rows:110px auto 1fr;height:auto;min-height:100svh}
-  .nameband h1{font-size:26vw}
+  .hero{grid-template-rows:110px auto auto 1fr;height:auto;min-height:100svh}
+  .nameband h1{font-size:19vw;letter-spacing:-0.045em}
   .stand{margin:10px 12px 0;font-size:1.25rem;color:var(--dim)}
 .links4{grid-template-columns:repeat(2,1fr)}
   .rails{grid-template-columns:repeat(2,1fr)}
@@ -185,10 +186,10 @@ footer{padding:64px 8px 24px}
 </div>
 <p class="stand">A two-wheeler workshop in Shantinagar 2, Rajkot, on the job since 2019.</p>
   <nav class="links4">
-    <a class="tile" href="#board">Two-wheeler workshop</a>
-    <a class="tile" href="#services">The services</a>
-    <a class="tile" href="#visit">Hours &amp; visit</a>
-    <a class="tile wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">Write to the workshop</a>
+    <a class="tile" href="#board">Two-wheeler workshop<small>what this place is and does</small></a>
+    <a class="tile" href="#services">The services<small>four rows that write your email</small></a>
+    <a class="tile" href="#visit">Hours &amp; visit<small>Mon-Sat 9-8, Sundays closed</small></a>
+    <a class="tile wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">Write to the workshop<small>your list, ready to send</small></a>
   </nav>
   <div class="rails">
     <div class="lrail">
@@ -207,7 +208,7 @@ footer{padding:64px 8px 24px}
       <span class="tag">illustrative photo, not this workshop</span>
     </div>
     <div class="rrail">
-      <div class="rt tile">3,000+ happy customers</div>
+      <div class="rt tile">3,000+ customers per its listing</div>
       <div class="rt tile">on the job since 2019</div>
       <div class="rt tile">door-to-door contracts</div>
       <div class="rt tile">closed on Sundays</div>
@@ -223,7 +224,7 @@ footer{padding:64px 8px 24px}
 </section>
 
 <div class="longtext">
-  <p class="rv">Mahadev Auto Services is a two-wheeler workshop at Sapphire Elegance, Shantinagar 2, opposite the water tank in Rajkot. The team handles <b>minor and major servicing, engine, brake and electrical repairs, wheel alignment, batteries and tyres</b>, for all makes and models. The shop also arranges <b>two-wheeler insurance and annual maintenance contracts, door to door</b>, with pick-up and drop available. More than 3,000 happy customers so far — and a workshop that closes on Sundays.</p>
+  <p class="rv">Mahadev Auto Services is a two-wheeler workshop at Sapphire Elegance, Shantinagar 2, opposite the water tank in Rajkot. The team handles <b>minor and major servicing, engine, brake and electrical repairs, wheel alignment, batteries and tyres</b>, for all makes and models. The shop also arranges <b>two-wheeler insurance and annual maintenance contracts, door to door</b>, with pick-up and drop available. Its listing counts more than 3,000 happy customers so far - and this is a workshop that closes on Sundays.</p>
 </div>
 
 <section class="split" id="services">
@@ -304,7 +305,7 @@ footer{padding:64px 8px 24px}
   <svg class="mark" viewBox="0 0 770 120" preserveAspectRatio="none" aria-hidden="true" style="height:34svh;width:100%;margin-bottom:56px;display:block"><rect x="0" y="34" width="106" height="86" rx="6" fill="#a08672"/><text x="53" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">M</text><rect x="110" y="0" width="106" height="120" rx="6" fill="#1c1c1c"/><text x="163" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#a08672">A</text><rect x="220" y="24" width="106" height="96" rx="6" fill="#a08672"/><text x="273" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">H</text><rect x="330" y="7" width="106" height="113" rx="6" fill="#1c1c1c"/><text x="383" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#a08672">A</text><rect x="440" y="43" width="106" height="77" rx="6" fill="#a08672"/><text x="493" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">D</text><rect x="550" y="14" width="106" height="106" rx="6" fill="#1c1c1c"/><text x="603" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#a08672">E</text><rect x="660" y="26" width="106" height="94" rx="6" fill="#a08672"/><text x="713" y="108" text-anchor="middle" font-family="Libre Franklin,sans-serif" font-weight="700" font-size="72" fill="#111111">V</text></svg>
   <div class="fcols">
     <div class="fc"><h4>Services</h4><p>servicing</p><p>repairs</p><p>tyres &amp; alignment</p><p>insurance &amp; AMC</p></div>
-    <div class="fc"><h4>The workshop</h4><p>since 2019</p><p>3,000+ customers</p><p>pick-up &amp; drop</p></div>
+    <div class="fc"><h4>The workshop</h4><p>since 2019</p><p>3,000+ customers per listing</p><p>pick-up &amp; drop</p></div>
     <div class="fc"><h4>Talk</h4><a href="tel:+919512375050">95123 75050</a><a class="wlink" href="mailto:mahadevsf19@gmail.com?subject=Service%20enquiry">mahadevsf19@gmail.com</a></div>
     <div class="fc"><h4>Find</h4><a href="#board">the board</a><a href="#services">services</a><a href="#visit">visit</a></div>
     <div class="contact"><h4>Visit</h4><p>Sapphire Elegance, Shantinagar 2, opposite the water tank, Rajkot, Gujarat 360007.</p><p>Monday to Saturday, 9am to 8pm. Sundays closed.</p></div>
