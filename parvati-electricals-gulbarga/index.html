@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Parvati Electricals · Gulbarga</title>
+<meta name="description" content="Parvati Electricals, SB Temple Road, Gulbarga. Residential and commercial electrical work, panels, outlets and switches. Concept preview.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ff8126;
+    --sky:#4db3ff;
+    --lime:#c5f53d;
+    --dark:#161615;
+    --ink:#111111;
+    --muted:#5c2a05;
+    --accent:#de194b;
+    --accent-ink:#ffffff;
+    --edge:24px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Epilogue',sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--ink);color:var(--bg)}
+  a{color:inherit}
+
+  /* ---------- hero : two-line statement ---------- */
+  .hero{
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    background:var(--bg);
+    position:relative;
+  }
+  .hero-top{
+    display:flex;
+    justify-content:space-between;
+    padding:24px var(--edge);
+    font-size:15px;
+    font-weight:500;
+  }
+  .hero-top nav a{
+    text-decoration:none;
+    margin-left:22px;
+    transition:color .2s;
+  }
+  .hero-top nav a:hover{color:var(--accent)}
+  .statement{
+    margin-top:9svh;
+    font-weight:900;
+    font-size:clamp(96px,12.5vw,200px);
+    line-height:.86;
+    letter-spacing:-.05em;
+    text-transform:none;
+  }
+  .statement .l1,.statement .l2{display:block;overflow:hidden}
+  .statement .l1{text-align:left;padding-left:var(--edge)}
+  .statement .l2{text-align:right;padding-right:var(--edge)}
+  .statement .l1 span,.statement .l2 span{display:inline-block}
+  .hero-bottom{
+    margin-top:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    padding:0 var(--edge) 28px;
+  }
+  .hero-bottom p{
+    font-size:22px;
+    line-height:1.35;
+    max-width:44ch;
+    font-weight:400;
+  }
+  .hero-cta{
+    display:inline-block;
+    background:var(--ink);
+    color:var(--bg);
+    font-weight:900;
+    font-size:18px;
+    text-decoration:none;
+    padding:18px 30px;
+    min-height:52px;
+    border-radius:0;
+    white-space:nowrap;
+    transition:background .15s,color .15s;
+  }
+  .hero-cta:hover{background:var(--accent);color:var(--accent-ink)}
+
+  /* masked line reveal */
+  .statement .l1 span,.statement .l2 span{transform:translateY(110%);animation:rise .9s cubic-bezier(.16,1,.3,1) forwards}
+  .statement .l2 span{animation-delay:.11s}
+  @keyframes rise{to{transform:translateY(0)}}
+  .fadeup{opacity:0;transform:translateY(18px);animation:fadeup .8s ease .55s forwards}
+  @keyframes fadeup{to{opacity:1;transform:none}}
+
+  /* ---------- intro : heavy paragraph on sky ---------- */
+  .intro{
+    background:var(--sky);
+    min-height:90svh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .intro p{
+    font-weight:900;
+    font-size:clamp(24px,2.6vw,36px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+    padding:0 16px;
+    text-wrap:pretty;
+    position:relative;
+    z-index:1;
+  }
+  .intro .tilt{
+    position:absolute;
+    top:8svh;
+    right:9vw;
+    width:9vw;
+    min-width:120px;
+    aspect-ratio:4/5;
+    object-fit:cover;
+    transform:rotate(4deg);
+    z-index:2;
+  }
+
+  /* ---------- features : capabilities at poster scale ---------- */
+  .caps{
+    background:var(--bg);
+    padding:20svh var(--edge);
+  }
+  .caps ul{list-style:none}
+  .caps li{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    align-items:baseline;
+    margin-bottom:.35em;
+  }
+  .caps .name{
+    grid-column:1/9;
+    font-weight:900;
+    font-size:clamp(40px,5.2vw,84px);
+    line-height:1.0;
+    letter-spacing:-.03em;
+  }
+  .caps .desc{
+    grid-column:9/13;
+    font-size:17px;
+    line-height:1.45;
+    font-weight:400;
+  }
+  .caps li.head .name{color:var(--muted)}
+  .caps ul:hover li .name{color:var(--muted)}
+  .caps ul li:hover .name{color:var(--ink)}
+
+  /* ---------- photo bands ---------- */
+  .band{
+    height:88svh;
+    overflow:hidden;
+    position:relative;
+  }
+  .band img{
+    width:100%;height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .band.drift img{animation:drift 24s ease-in-out infinite alternate}
+  @keyframes drift{from{transform:scale(1)}to{transform:scale(1.07) translateY(-1.5%)}}
+  .band figcaption{
+    position:absolute;
+    left:var(--edge);bottom:20px;
+    font-size:16px;
+    color:#fff;
+    background:rgba(10,10,10,.55);
+    padding:6px 10px;
+    border-radius:4px;
+  }
+
+  /* ---------- showcase : HOME / SHOP on near-black ---------- */
+  .versus{
+    background:var(--dark);
+    color:#f2f2f2;
+    padding:16svh var(--edge) 0;
+    overflow:hidden;
+  }
+  .versus .top{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:24px;
+  }
+  .versus h2{
+    grid-column:1/7;
+    font-size:clamp(28px,2.6vw,36px);
+    font-weight:900;
+    letter-spacing:-.02em;
+  }
+  .versus .top p{
+    grid-column:7/13;
+    font-size:17px;
+    line-height:1.5;
+    color:#cfcfcf;
+  }
+  .versus .pair{
+    margin-top:12vh;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .versus .spec{position:relative}
+  .versus .spec .cap{
+    font-size:16px;
+    color:#cfcfcf;
+    margin-bottom:8px;
+  }
+  .versus .spec .big{
+    font-weight:900;
+    font-size:clamp(180px,34vw,520px);
+    line-height:.8;
+    letter-spacing:-.04em;
+    height:.74em;
+    overflow:hidden;
+  }
+
+  /* ---------- cta : one word ---------- */
+  .cta{
+    display:block;
+    position:relative;
+    min-height:60svh;
+    background:var(--accent);
+    color:var(--accent-ink);
+    text-decoration:none;
+    overflow:hidden;
+    transition:background .12s,color .12s;
+  }
+  .cta .next{
+    position:absolute;top:26px;left:var(--edge);
+    font-size:20px;line-height:1.35;max-width:34ch;
+  }
+  .cta .arrow{position:absolute;top:26px;right:var(--edge);width:48px;height:48px}
+  .cta .verb{
+    position:absolute;left:50%;bottom:24px;
+    transform:translateX(-50%);
+    font-weight:900;
+    font-size:clamp(120px,27vw,430px);
+    line-height:.8;
+    letter-spacing:-.04em;
+    white-space:nowrap;
+  }
+  .cta:hover,.cta:focus-visible{background:var(--accent-ink);color:var(--accent)}
+
+  /* ---------- footer : name first on lime ---------- */
+  .footer{
+    background:var(--lime);
+    min-height:90svh;
+    padding:0 var(--edge) 20px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+  .fmark{
+    font-weight:900;
+    font-size:19.5vw;
+    line-height:.8;
+    letter-spacing:-.04em;
+    white-space:nowrap;
+    text-align:center;
+    margin:6svh calc(-1 * var(--edge)) 0;
+    height:.62em;
+    overflow:hidden;
+  }
+  .fmark span{display:block;transform:translateY(-.06em)}
+  .frow{
+    margin-top:72px;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:24px;
+  }
+  .fplaces{grid-column:1/6}
+  .fplaces a{
+    display:block;
+    font-weight:900;
+    font-size:clamp(28px,2.6vw,36px);
+    line-height:1.25;
+    letter-spacing:-.02em;
+    color:var(--accent);
+    text-decoration:none;
+  }
+  .fplaces a:hover{text-decoration:underline}
+  .flinks{
+    grid-column:7/13;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    font-size:15px;
+    line-height:1.55;
+  }
+  .flinks h3{font-size:15px;font-weight:900;margin-bottom:8px}
+  .flinks ul{list-style:none;font-weight:400}
+  .flegal{
+    margin-top:96px;
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+    font-size:16px;
+    line-height:1.6;
+    color:#3a4a10;
+  }
+  .flegal a{color:#3a4a10}
+  .flegal .top-link{font-weight:700;text-decoration:none}
+  .flegal .top-link:hover{text-decoration:underline}
+
+  /* ---------- reveal ---------- */
+  .rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+  .rv.in{opacity:1;transform:none}
+
+  @media (max-width:820px){
+    :root{--edge:16px}
+    .hero-top{font-size:15px}
+    .hero-top nav a{margin-left:14px}
+    .statement{
+      margin-top:14svh;
+      font-size:17vw;
+      line-height:.9;
+    }
+    .statement .l1,.statement .l2{text-align:left;padding-left:var(--edge);padding-right:0}
+    .hero-bottom{flex-direction:column;align-items:stretch;gap:20px}
+    .hero-bottom p{font-size:17px}
+    .hero-cta{text-align:center}
+    .intro p{font-size:24px;padding:0 16px}
+    .intro .tilt{width:26vw;top:auto;bottom:10svh;right:6vw}
+    .caps li{display:block;margin-bottom:28px}
+    .caps .name{font-size:11vw}
+    .caps .desc{margin-top:6px;margin-left:16px;font-size:16px}
+    .versus .top{display:block}
+    .versus .top p{margin-top:16px}
+    .versus .pair{display:block;margin-top:8vh}
+    .versus .spec{margin-bottom:6svh}
+    .versus .spec .big{font-size:62vw;height:.74em}
+    .versus .spec:last-child{background:#f2f2f2;color:var(--dark);padding:20px 16px 0}
+    .cta{min-height:46svh}
+    .cta .next{font-size:17px;max-width:26ch}
+    .cta .arrow{width:32px;height:32px}
+    .cta .verb{font-size:31vw}
+    .fmark{font-size:18.6vw;margin-top:8svh}
+    .frow{display:block;margin-top:48px}
+    .fplaces a{font-size:26px}
+    .flinks{grid-template-columns:1fr 1fr;margin-top:40px}
+    .flegal{margin-top:56px;font-size:16px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .statement .l1 span,.statement .l2 span{transform:none;animation:none}
+    .fadeup{opacity:1;transform:none;animation:none}
+    .band.drift img{animation:none}
+    .rv{opacity:1;transform:none;transition:none}
+    .hero-cta,.cta{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-top">
+    <span>Parvati Electricals</span>
+    <nav>
+      <a href="tel:+919739720636">Call</a>
+      <a href="mailto:gangadhars@gmail.com">Email</a>
+    </nav>
+  </div>
+  <h1 class="statement">
+    <span class="l1"><span>Ten years</span></span>
+    <span class="l2"><span>of current.</span></span>
+  </h1>
+  <div class="hero-bottom fadeup">
+    <p>Residential and commercial electrical work from SB Temple Road, Halbarga, Gulbarga. Open every day, 9am to 10pm.</p>
+    <a class="hero-cta" href="tel:+919739720636">Call 97397 20636</a>
+  </div>
+</header>
+
+<main>
+
+<section class="intro">
+  <img class="tilt" src="assets/ceiling-fan-mid-spin.jpg" alt="A ceiling fan captured mid-spin" loading="lazy" decoding="async">
+  <p class="rv">Parvati Electricals is a Gulbarga electrical contractor for homes and businesses. Its listing reports ten years in the field, a team for installation and maintenance, and quotations before work begins.</p>
+</section>
+
+<section class="caps">
+  <ul>
+    <li class="head rv"><span class="name">What the team does</span></li>
+    <li class="rv"><span class="name">Residential</span><span class="desc">House wiring, points and fittings for homes across the city.</span></li>
+    <li class="rv"><span class="name">Commercial</span><span class="desc">Electrical service for shops, offices and business premises.</span></li>
+    <li class="rv"><span class="name">Panels</span><span class="desc">Electrical panel work, installation and upkeep.</span></li>
+    <li class="rv"><span class="name">Repairs</span><span class="desc">Faults looked at and repair work quoted before it starts.</span></li>
+    <li class="rv"><span class="name">Outlets</span><span class="desc">New electrical outlets, moved points and replacements.</span></li>
+    <li class="rv"><span class="name">Switches</span><span class="desc">Light switches, dimmers and fittings, fitted and fixed.</span></li>
+  </ul>
+</section>
+
+<figure class="band drift">
+  <img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Close-up of electrical wiring dressed inside a wall" loading="lazy" decoding="async">
+  <figcaption>Illustrative photograph of wiring work, not this shop or its staff.</figcaption>
+</figure>
+
+<section class="versus">
+  <div class="top">
+    <h2 class="rv">Two kinds of work</h2>
+    <p class="rv">The listing names two worlds: residential and commercial electrical service. One team covers both, from house points to business panels, with quotations offered before work begins.</p>
+  </div>
+  <div class="pair">
+    <div class="spec rv">
+      <div class="big" aria-hidden="true">HOME</div>
+    </div>
+    <div class="spec rv">
+      <div class="big" aria-hidden="true">SHOP</div>
+    </div>
+  </div>
+</section>
+
+<figure class="band">
+  <img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="An open electrical breaker panel with rows of switches" loading="lazy" decoding="async">
+  <figcaption>Illustrative photograph of a breaker panel, not this shop or its staff.</figcaption>
+</figure>
+
+<figure class="band">
+  <img src="assets/gulbarga-fort-mosque.jpg" alt="Gulbarga Fort and its mosque, the city's old quarter" loading="lazy" decoding="async">
+  <figcaption>Gulbarga Fort. The city the team works in.</figcaption>
+</figure>
+
+<a class="cta" href="tel:+919739720636">
+  <span class="next">Open Monday to Sunday, 9am to 10pm. Describe the fault or the fitting you need.</span>
+  <svg class="arrow" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true">
+    <path d="M10 38 L38 10 M16 10 h22 v22"/>
+  </svg>
+  <span class="verb">Call</span>
+</a>
+
+</main>
+
+<footer class="footer" id="top">
+  <div class="fmark" aria-hidden="true"><span>Parvati</span></div>
+  <div class="frow">
+    <div class="fplaces rv">
+      <a href="tel:+919739720636">97397 20636</a>
+      <a href="mailto:gangadhars@gmail.com">gangadhars@gmail.com</a>
+    </div>
+    <div class="flinks">
+      <div class="rv">
+        <h3>Address</h3>
+        <ul>
+          <li>SB Temple Road</li>
+          <li>Halbarga, Brhampur</li>
+          <li>Gulbarga, KA 585103</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3>Hours</h3>
+        <ul>
+          <li>Monday – Sunday</li>
+          <li>9:00am – 10:00pm</li>
+        </ul>
+      </div>
+      <div class="rv">
+        <h3>Work</h3>
+        <ul>
+          <li>Residential &amp; commercial</li>
+          <li>Panels, outlets, switches</li>
+          <li>Repairs &amp; installation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flegal">
+    <p>Concept preview. Enquiries only, not a booking service. Business details from its public ThreeBestRated listing; "10 years of experience" is the listing's report. Photographs are illustrative, openly licensed material, not this shop or its staff: wiring by Thayne Tuason, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; breaker panel by BrokenSphere, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; ceiling fan by Noah Wulf, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; Gulbarga Fort by Ramanimenon, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, all via Wikimedia Commons.</p>
+    <a class="top-link" href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduced){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.15});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+</body>
+</html>

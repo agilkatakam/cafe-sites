@@ -1,0 +1,2582 @@
+{
+ "url": "index.html",
+ "at": "2026-11-03T13:34:06.136Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.31,
+    0.87,
+    0.27,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 4,
+    "transitions": 15,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7112,
+     "screens": 7.9,
+     "words": 297,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "gulbarga-fort-mosque.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ten years of current.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 180,
+     "vw": 12.5,
+     "font": "Epilogue",
+     "weight": 900,
+     "tracking": -0.05,
+     "leading": 0.86,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 145,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ten years of current.",
+     "words": 4,
+     "lines": 2,
+     "size": 180,
+     "font": "Epilogue"
+    },
+    "headings": [
+     {
+      "text": "Ten years of current.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 180,
+      "vw": 12.5,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.05,
+      "leading": 0.86,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 145,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Parvati Electricals is a Gulbarga electrical contractor for homes and businesses. Its listing reports ten years in the field, a team for installation and maintenance, and quotations before work begins",
+      "words": 30,
+      "chars": 201,
+      "lines": 3,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 1250,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "What the team does",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 1890,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Residential",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 1970,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Commercial",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 2066,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Panels",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 2162,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 2243,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Outlets",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 2339,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Switches",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 74.9,
+      "vw": 5.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.64,
+      "top": 2434,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Two kinds of work",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 3631,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HOME SHOP",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 489.6,
+      "vw": 34,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 3815,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Call",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 388.8,
+      "vw": 27,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.49,
+      "top": 5967,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Parvati",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 280.8,
+      "vw": 19.5,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6356,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "97397 20636",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6602,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "gangadhars@gmail.com",
+      "words": 1,
+      "chars": 20,
+      "lines": 1,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 6647,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 15,
+     "maxLines": 3,
+     "over2Lines": 0,
+     "statements": 8,
+     "centered": 1,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Epilogue",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      36,
+      75,
+      180,
+      281,
+      389,
+      490
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Epilogue",
+      "size": 16,
+      "leading": 1.2,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 166,
+     "max": {
+      "size": 489.6,
+      "vw": 34,
+      "font": "Epilogue",
+      "text": "HOME"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ff8126",
+     "bodyBgHsl": {
+      "h": 25,
+      "s": 1,
+      "l": 0.57
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ff8126",
+       "top": 0,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.57
+       }
+      },
+      {
+       "color": "#4db3ff",
+       "top": 900,
+       "hsl": {
+        "h": 206,
+        "s": 1,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#161615",
+       "top": 3487,
+       "hsl": {
+        "h": 60,
+        "s": 0.02,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#de194b",
+       "top": 5762,
+       "hsl": {
+        "h": 345,
+        "s": 0.8,
+        "l": 0.48
+       }
+      },
+      {
+       "color": "#c5f53d",
+       "top": 6302,
+       "hsl": {
+        "h": 76,
+        "s": 0.9,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.48
+      },
+      {
+       "color": "#3a4a10",
+       "share": 0.24
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.14
+      },
+      {
+       "color": "#cfcfcf",
+       "share": 0.09
+      },
+      {
+       "color": "#de194b",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ff8126"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 97397 20636"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "epilogue"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7112,
+    "margins": {
+     "left": 24,
+     "right": 24
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 900,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ten years",
+       "size": 180,
+       "tag": "h1"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 900,
+      "height": 810,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Parvati Electricals is a Gulbarga electrical contr",
+       "size": 36,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 77,
+      "textLeft": 16,
+      "textRight": 77,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.caps",
+      "tag": "section",
+      "top": 1710,
+      "height": 985,
+      "words": 63,
+      "media": 0,
+      "middle": 168,
+      "heading": {
+       "text": "What the team does",
+       "size": 75,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 35,
+      "textLeft": 24,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band.drift",
+      "tag": "figure",
+      "top": 2695,
+      "height": 792,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 34,
+      "right": 911,
+      "textLeft": 34,
+      "textRight": 911,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.versus",
+      "tag": "section",
+      "top": 3487,
+      "height": 691,
+      "words": 35,
+      "media": 0,
+      "middle": 382,
+      "heading": {
+       "text": "HOME",
+       "size": 490,
+       "tag": "div"
+      },
+      "left": 24,
+      "right": 26,
+      "textLeft": 24,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band",
+      "tag": "figure",
+      "top": 4178,
+      "height": 792,
+      "words": 12,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 34,
+      "right": 876,
+      "textLeft": 34,
+      "textRight": 876,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band",
+      "tag": "figure",
+      "top": 4970,
+      "height": 792,
+      "words": 8,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 34,
+      "right": 1082,
+      "textLeft": 34,
+      "textRight": 1082,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.cta",
+      "tag": "a",
+      "top": 5762,
+      "height": 540,
+      "words": 16,
+      "media": 0,
+      "middle": 292,
+      "heading": {
+       "text": "Call",
+       "size": 389,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 364,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#top.footer",
+      "tag": "footer",
+      "top": 6302,
+      "height": 810,
+      "words": 111,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Parvati",
+       "size": 281,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 456,
+      "height": 328
+     },
+     {
+      "top": 1360,
+      "height": 528
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Ten years of current.",
+      "size": 180,
+      "top": 145,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 4
+     },
+     {
+      "x": 732,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 5,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.33,
+    "voidBox": {
+     "x": 0,
+     "y": 480,
+     "w": 1440,
+     "h": 300
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.36,
+    0.87,
+    0.47,
+    0.74,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 4,
+    "transitions": 16,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8654,
+     "screens": 8.5,
+     "words": 291,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "gulbarga-fort-mosque.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ten years of current.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 130.6,
+     "vw": 17,
+     "font": "Epilogue",
+     "weight": 900,
+     "tracking": -0.05,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 207,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ten years of current.",
+     "words": 4,
+     "lines": 2,
+     "size": 130.6,
+     "font": "Epilogue"
+    },
+    "headings": [
+     {
+      "text": "Ten years of current.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 130.6,
+      "vw": 17,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 207,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What the team does",
+      "words": 4,
+      "chars": 18,
+      "lines": 2,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2150,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Residential",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 2345,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Commercial",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 2481,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Panels",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2617,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2729,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Outlets",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2865,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Switches",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 3001,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Two kinds of work",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4408,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HOME SHOP",
+      "words": 2,
+      "chars": 9,
+      "lines": 2,
+      "size": 476.2,
+      "vw": 62,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4611,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Call",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 238.1,
+      "vw": 31,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.57,
+      "top": 7518,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Parvati",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 142.8,
+      "vw": 18.6,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 7814,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "97397 20636",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7951,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "gangadhars@gmail.com",
+      "words": 1,
+      "chars": 20,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 7983,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 7,
+     "centered": 1,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Epilogue",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      24,
+      26,
+      28,
+      85,
+      131,
+      143,
+      238,
+      476
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Epilogue",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.6
+     },
+     "measureChars": 84,
+     "max": {
+      "size": 476.2,
+      "vw": 62,
+      "font": "Epilogue",
+      "text": "HOME"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ff8126",
+     "bodyBgHsl": {
+      "h": 25,
+      "s": 1,
+      "l": 0.57
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ff8126",
+       "top": 0,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.57
+       }
+      },
+      {
+       "color": "#4db3ff",
+       "top": 1024,
+       "hsl": {
+        "h": 206,
+        "s": 1,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#161615",
+       "top": 4244,
+       "hsl": {
+        "h": 60,
+        "s": 0.02,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#f2f2f2",
+       "top": 5025,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 0.95
+       }
+      },
+      {
+       "color": "#de194b",
+       "top": 7261,
+       "hsl": {
+        "h": 345,
+        "s": 0.8,
+        "l": 0.48
+       }
+      },
+      {
+       "color": "#c5f53d",
+       "top": 7732,
+       "hsl": {
+        "h": 76,
+        "s": 0.9,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.48
+      },
+      {
+       "color": "#3a4a10",
+       "share": 0.24
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.14
+      },
+      {
+       "color": "#cfcfcf",
+       "share": 0.09
+      },
+      {
+       "color": "#de194b",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ff8126"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 97397 20636"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "epilogue"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8654,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 1024,
+      "words": 28,
+      "media": 0,
+      "middle": 14,
+      "heading": {
+       "text": "Ten years",
+       "size": 131,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 1024,
+      "height": 922,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Parvati Electricals is a Gulbarga electrical contr",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 38,
+      "textLeft": 16,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.caps",
+      "tag": "section",
+      "top": 1946,
+      "height": 1397,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What the team does",
+       "size": 84,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band.drift",
+      "tag": "figure",
+      "top": 3343,
+      "height": 901,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 247,
+      "textLeft": 26,
+      "textRight": 247,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.versus",
+      "tag": "section",
+      "top": 4244,
+      "height": 1215,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "HOME",
+       "size": 476,
+       "tag": "div"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band",
+      "tag": "figure",
+      "top": 5459,
+      "height": 901,
+      "words": 12,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 212,
+      "textLeft": 26,
+      "textRight": 212,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band",
+      "tag": "figure",
+      "top": 6360,
+      "height": 901,
+      "words": 8,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 418,
+      "textLeft": 26,
+      "textRight": 418,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.cta",
+      "tag": "a",
+      "top": 7261,
+      "height": 471,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Call",
+       "size": 238,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 166,
+      "textLeft": 16,
+      "textRight": 166,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#top.footer",
+      "tag": "footer",
+      "top": 7732,
+      "height": 922,
+      "words": 111,
+      "media": 0,
+      "middle": 27,
+      "heading": {
+       "text": "Parvati",
+       "size": 143,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 444,
+      "height": 408
+     },
+     {
+      "top": 980,
+      "height": 452
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Ten years of current.",
+      "size": 131,
+      "top": 207,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 9,
+   "filled": [
+    0.27,
+    0.87,
+    0.41,
+    0.87,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 4,
+    "transitions": 16,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7034,
+     "screens": 8.3,
+     "words": 291,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "gulbarga-fort-mosque.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Ten years of current.",
+     "words": 4,
+     "chars": 21,
+     "lines": 2,
+     "size": 66.3,
+     "vw": 17,
+     "font": "Epilogue",
+     "weight": 900,
+     "tracking": -0.05,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 182,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Ten years of current.",
+     "words": 4,
+     "lines": 2,
+     "size": 66.3,
+     "font": "Epilogue"
+    },
+    "headings": [
+     {
+      "text": "Ten years of current.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 66.3,
+      "vw": 17,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 182,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What the team does",
+      "words": 4,
+      "chars": 18,
+      "lines": 2,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1772,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Residential",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 1885,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Commercial",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 1979,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Panels",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 2097,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2191,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Outlets",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.41,
+      "top": 2285,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Switches",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.5,
+      "top": 2379,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Two kinds of work",
+      "words": 4,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3521,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HOME SHOP",
+      "words": 2,
+      "chars": 9,
+      "lines": 2,
+      "size": 241.8,
+      "vw": 62,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3761,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Call",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 120.9,
+      "vw": 31,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.57,
+      "top": 5993,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Parvati",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 72.5,
+      "vw": 18.6,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.04,
+      "leading": 0.8,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6181,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "97397 20636",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6274,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "gangadhars@gmail.com",
+      "words": 1,
+      "chars": 20,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Epilogue",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 1.25,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 6306,
+      "tag": "a",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 7,
+     "centered": 1,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Epilogue",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      15,
+      16,
+      17,
+      18,
+      24,
+      26,
+      28,
+      43,
+      66,
+      73,
+      121,
+      242
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Epilogue",
+      "size": 16,
+      "leading": 1.45,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 7.6
+     },
+     "measureChars": 37,
+     "max": {
+      "size": 241.8,
+      "vw": 62,
+      "font": "Epilogue",
+      "text": "HOME"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.03,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ff8126",
+     "bodyBgHsl": {
+      "h": 25,
+      "s": 1,
+      "l": 0.57
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ff8126",
+       "top": 0,
+       "hsl": {
+        "h": 25,
+        "s": 1,
+        "l": 0.57
+       }
+      },
+      {
+       "color": "#4db3ff",
+       "top": 844,
+       "hsl": {
+        "h": 206,
+        "s": 1,
+        "l": 0.65
+       }
+      },
+      {
+       "color": "#161615",
+       "top": 3385,
+       "hsl": {
+        "h": 60,
+        "s": 0.02,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#de194b",
+       "top": 5725,
+       "hsl": {
+        "h": 345,
+        "s": 0.8,
+        "l": 0.48
+       }
+      },
+      {
+       "color": "#c5f53d",
+       "top": 6113,
+       "hsl": {
+        "h": 76,
+        "s": 0.9,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#111111",
+       "share": 0.48
+      },
+      {
+       "color": "#3a4a10",
+       "share": 0.24
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.14
+      },
+      {
+       "color": "#cfcfcf",
+       "share": 0.09
+      },
+      {
+       "color": "#de194b",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#111111",
+      "hsl": {
+       "h": 0,
+       "s": 0,
+       "l": 0.07
+      },
+      "fg": "#ff8126"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": 0,
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 97397 20636"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 3,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": false,
+     "height": 844,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "epilogue"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7034,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 844,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ten years",
+       "size": 66,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 844,
+      "height": 760,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Parvati Electricals is a Gulbarga electrical contr",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.caps",
+      "tag": "section",
+      "top": 1604,
+      "height": 1039,
+      "words": 63,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What the team does",
+       "size": 43,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 17,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band.drift",
+      "tag": "figure",
+      "top": 2643,
+      "height": 743,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 37,
+      "textLeft": 26,
+      "textRight": 37,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.versus",
+      "tag": "section",
+      "top": 3385,
+      "height": 854,
+      "words": 36,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "HOME",
+       "size": 242,
+       "tag": "div"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band",
+      "tag": "figure",
+      "top": 4240,
+      "height": 743,
+      "words": 12,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 33,
+      "textLeft": 26,
+      "textRight": 33,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "figure.band",
+      "tag": "figure",
+      "top": 4982,
+      "height": 743,
+      "words": 8,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 26,
+      "right": 40,
+      "textLeft": 26,
+      "textRight": 40,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.cta",
+      "tag": "a",
+      "top": 5725,
+      "height": 388,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Call",
+       "size": 121,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 84,
+      "textLeft": 16,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer#top.footer",
+      "tag": "footer",
+      "top": 6113,
+      "height": 921,
+      "words": 111,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Parvati",
+       "size": 73,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 304,
+      "height": 368
+     },
+     {
+      "top": 800,
+      "height": 312
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Ten years of current.",
+      "size": 66,
+      "top": 182,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 6
+     }
+    ],
+    "leftBlocks": 6,
+    "bodySize": 16,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (15, 16, 17, 18, 20, 22, 36, 75, 180, 281, 389, 490).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 166 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 1440,
+   "message": "A 528px stretch at 1360px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "33% of the first screen is one empty block (1440×300px at 0,480).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/mobile-page-01.jpg",
+    "/tmp/cafe-sites/parvati-electricals-gulbarga/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
