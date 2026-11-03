@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Momai Auto Garage - Bike Service Point, Jamnagar</title>
+<meta name="description" content="Momai Auto Garage and Bike Service Point on the Jamnagar highway (SH-6): two-wheeler service and repair. Call 94289 85637.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#18191b; --surface:#222427; --ink:#eff0f1; --muted:#b9bcc1;
+  --accent:#ff4a1f; --accent-ink:#18191b; --field-1:#eff0f1; --field-1-ink:#18191b;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2.5rem,1.2rem + 5vw,5.5rem);
+  --r:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{transition:background-color .7s ease;background:var(--bg);color:var(--ink);font-family:'Work Sans',sans-serif;font-size:var(--step-body);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:-0.01em;line-height:0.95;text-transform:uppercase}
+a{color:inherit}
+img,video{display:block;max-width:100%}
+.bar{height:10px;background:var(--accent)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;font-size:var(--step-small);color:var(--muted)}
+.nav b{color:var(--ink);font-weight:600}
+.nav a{color:var(--accent-ink);background:var(--accent);text-decoration:none;font-weight:600;padding:10px 18px;border-radius:var(--r)}
+.nav a:hover{filter:brightness(1.08)}
+/* the sentence is the layout */
+.hero{min-height:88svh;display:flex;flex-direction:column;justify-content:center;padding:24px;gap:32px}
+.sentence{font-family:'Anton';font-size:clamp(3rem,11vw,11.5rem);line-height:0.95;letter-spacing:-0.01em;text-transform:uppercase}
+.slot{display:inline-block;vertical-align:baseline;width:2.6em;height:0.82em;border-radius:0.14em;overflow:hidden;transform:translateY(0.1em);position:relative}
+.slot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sub{max-width:34em;color:var(--muted);font-size:var(--step-lead)}
+.tag{position:absolute;left:8px;top:8px;z-index:3;font-size:var(--step-small);color:#fff;background:rgba(0,0,0,.55);padding:2px 8px;border-radius:4px}
+/* features: paragraph with picture words */
+.feat{padding:160px 24px;display:grid;grid-template-columns:6fr 6fr;gap:48px;align-items:start}
+.feat .statement{font-size:clamp(2.2rem,3.6vw,4rem);font-family:'Anton';text-transform:uppercase;line-height:0.98;letter-spacing:-0.01em}
+.feat .statement .chip{display:inline-block;width:1.7em;height:0.78em;border-radius:0.16em;overflow:hidden;transform:translateY(0.08em);vertical-align:baseline;position:relative}
+.feat .statement .chip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pick{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.pick button{border:0;background:var(--surface);color:var(--ink);font:inherit;font-size:var(--step-small);padding:10px 16px;border-radius:999px;cursor:pointer}
+.pick button.on{background:var(--accent);color:var(--accent-ink);font-weight:600}
+.pick button:hover{filter:brightness(1.08)}
+.note{color:var(--muted);font-size:1rem;margin-top:14px}
+/* showcase: one frame, three distances */
+.show{background:var(--field-1);color:var(--field-1-ink);padding:160px 24px}
+.show h2{font-size:var(--step-head);margin-bottom:48px}
+.dist{display:grid;grid-template-columns:5fr 4fr 3fr;gap:8px;align-items:end}
+.dist figure{position:relative;border-radius:var(--r);overflow:hidden}
+.dist img{width:100%;height:100%;object-fit:cover}
+.dist .far{aspect-ratio:16/10}
+.dist .mid{aspect-ratio:1/1}
+.dist .near{aspect-ratio:3/4}
+.dist figcaption{font-size:1rem;color:#4a4c50;padding:8px 2px}
+/* cta: the idea again, inverted */
+.cta{background:var(--accent);color:var(--accent-ink);padding:160px 24px;text-align:left}
+.cta h2{font-size:clamp(3rem,10vw,10rem);line-height:0.95}
+.cta p{max-width:30em;margin-top:24px;font-size:var(--step-lead)}
+.cta .call{display:inline-block;margin-top:36px;background:var(--accent-ink);color:var(--ink);font-weight:600;text-decoration:none;padding:18px 30px;border-radius:var(--r);font-size:var(--step-lead)}
+.cta .call:hover{filter:brightness(1.15)}
+.cta .addr{margin-top:22px;font-size:var(--step-body)}
+/* footer: invitation over a cropped name */
+.foot{position:relative;padding:120px 24px 40px;overflow:hidden}
+.bigwrap{height:15vw;overflow:hidden}
+.foot .big{font-family:'Anton';font-size:24vw;line-height:0.8;text-transform:uppercase;color:#676b73;white-space:nowrap;margin-left:-0.05em;user-select:none}
+.foot .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.foot h4{font-family:'Work Sans';font-weight:600;font-size:var(--step-small);color:var(--muted);text-transform:none;letter-spacing:0;margin-bottom:8px}
+.foot p{font-size:1rem;color:var(--muted)}
+.foot a{color:var(--ink);text-decoration:none;font-weight:600}
+.credits{margin-top:56px;font-size:1rem;color:var(--muted);line-height:1.6;max-width:42em}
+@media (max-width:900px){
+  .feat{grid-template-columns:1fr;padding:96px 24px}
+  .dist{grid-template-columns:1fr 1fr}
+  .dist .far{grid-column:1/-1}
+  .show{padding:96px 24px}
+  .cta{padding:96px 24px}
+  .foot .cols{grid-template-columns:1fr 1fr}
+}
+@media (max-width:600px){
+  .sentence{font-size:10.5vw}
+  .dist{grid-template-columns:1fr}
+  .hero{gap:24px}
+}
+body[data-chapter="show"]{background:#1e2023}
+body[data-chapter="call"]{background:#101112}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}body{transition:none}}
+
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<nav class="nav">
+  <b>Momai Auto Garage &amp; Bike Service Point</b>
+  <a href="tel:+919428985637">Call 94289 85637</a>
+</nav>
+
+<header class="hero">
+  <h1 class="sentence">Fixed,<span class="slot"><video src="assets/transporting-goods-using-motorcycle.webm" poster="assets/transporting-goods-using-motorcycle-poster.jpg" autoplay muted loop playsinline></video></span><br>back on the road.</h1>
+  <p class="sub rv">Momai Auto Garage and Bike Service Point is a two-wheeler workshop on the Jamnagar highway, SH-6 at Komal Nagar. Bring the bike in, or call first - 94289 85637. (The clip in the sentence is illustrative, not this garage.)</p>
+</header>
+
+<section class="feat" id="needs">
+  <h2 class="statement rv">Come with a <span class="chip"><img src="assets/brembo-motorcycle-brake.jpg" alt="Close-up of a motorcycle brake disc"></span> rattle. Leave with it <span class="chip"><img src="assets/dfc-4703-a-mechanic-works-on-a.jpg" alt="A mechanic at work on a motorcycle"></span> fixed.</h2>
+  <div>
+    <p>A rattle, a dead brake, worn tyres, a bike due for service - whatever it is, say it before you dial and the conversation starts halfway done. Tap what your bike needs:</p>
+    <div class="pick">
+      <button type="button" data-need="a service">A service</button>
+      <button type="button" data-need="a repair">A repair</button>
+      <button type="button" data-need="tyres or a battery">Tyres or battery</button>
+      <button type="button" data-need="a general check-up">A check-up</button>
+    </div>
+    <p class="note" id="needline">Nothing picked yet - the call button below stays plain.</p>
+    <p class="note">Photographs are illustrative, not this garage or its staff.</p>
+  </div>
+</section>
+
+<section class="show">
+  <h2>One bench, every distance.</h2>
+  <div class="dist">
+    <figure class="far rv"><span class="tag">Illustrative photo, not this garage</span><img src="assets/motorcycle-repair-shop-bangkok-8270996736.jpg" alt="A busy motorcycle repair workshop with several bikes"></figure>
+    <figure class="mid rv"><span class="tag">Illustrative photo</span><img src="assets/motorcycle-repair-shop-bangkok-8270996736.jpg" alt="The same workshop, closer in" style="object-position:62% 45%"></figure>
+    <figure class="near rv"><span class="tag">Illustrative photo</span><img src="assets/motorcycle-repair-shop-bangkok-8270996736.jpg" alt="The same workshop, close on the bench" style="object-position:30% 80%"></figure>
+  </div>
+  <div class="dist" style="margin-top:8px">
+    <figcaption>the workshop</figcaption><figcaption>the work</figcaption><figcaption>the part</figcaption>
+  </div>
+</section>
+
+<section class="cta" id="call">
+  <h2 class="rv">Back on the road.</h2>
+  <p id="ctatext">Call the garage and say what the bike needs. If it rides in, it rides out fixed.</p>
+  <a class="call" id="callbtn" href="tel:+919428985637">Call 94289 85637</a>
+  <p class="addr">GJ SH 6, Komal Nagar, Mayur Nagar, Jamnagar, Gujarat 361006.</p>
+</section>
+
+<footer class="foot">
+  <div class="bigwrap" aria-hidden="true"><div class="big">Momai</div></div>
+  <div class="cols">
+    <div><h4>The garage</h4><p>Momai Auto Garage &amp; Bike Service Point</p><p>Two-wheeler service and repair</p></div>
+    <div><h4>Visit</h4><p>GJ SH 6, Komal Nagar, Mayur Nagar, Jamnagar, Gujarat 361006</p></div>
+    <div><h4>Talk</h4><p><a href="tel:+919428985637">94289 85637</a></p></div>
+  </div>
+  <p class="credits">A concept preview. Enquiries only, not a booking service. © 2026 · Source: business listings for Momai Auto Garage and Bike Service Point, Jamnagar · Photographs and clip: Wikimedia Commons - Ian Gratton (CC BY 2.0); madmalaysia, PattayaPatrol, RahimMngwaya (CC BY-SA 4.0); Hu Nhu (CC0). All illustrative.</p>
+</footer>
+
+<script>
+const needline=document.getElementById('needline');
+const ctatext=document.getElementById('ctatext');
+const callbtn=document.getElementById('callbtn');
+document.querySelectorAll('.pick button').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.pick button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    const need=b.dataset.need;
+    needline.textContent='Picked: '+need+'. The call button now says so.';
+    ctatext.textContent='Call about '+need+' - the garage knows why you are ringing before you say it twice.';
+    callbtn.textContent='Call 94289 85637 about '+need;
+  });
+});
+
+const chapters=[['needs','feat'],['show','show'],['call','call']];
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){document.body.dataset.chapter=e.target.dataset.ch||'';}});},{threshold:0.4});
+document.querySelectorAll('.feat,.show,.cta').forEach(el=>{el.dataset.ch=el.className.split(' ')[0];io.observe(el);});
+const ri=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');ri.unobserve(e.target);}});},{threshold:0.25});
+document.querySelectorAll('.rv').forEach(el=>ri.observe(el));
+</script>
+</body>
+</html>

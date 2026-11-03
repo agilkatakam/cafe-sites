@@ -1,0 +1,186 @@
+# DIRECTION SHEET — The sentence is the layout
+seed 519557204 · drawn 2026-11-03 · sector other
+
+| | |
+| --- | --- |
+| Direction | The sentence is the layout |
+| Hero | Headline across two fields |
+| Type | Anton / Work Sans |
+| Colour | Graphite and orange |
+| Sections | intro (Headline crossing onto a photograph) → features (Paragraph with picture words) → showcase (One frame, three distances) → cta (The idea again, inverted) → footer (Invitation over a cropped name) |
+| Motion | Colour by chapter |
+| Photographs | the "Mountain" set, as atmosphere |
+
+This is the direction for this build. Adopt it. Do not blend it with the layout you would have made anyway,
+and do not redraw because it is unfamiliar: unfamiliar is the point. Redraw a slot only when it conflicts
+with a stated brand constraint or needs an asset that does not exist, and say why in your report.
+
+The parts of this sheet were written separately and will disagree in small ways. Settle every disagreement in this order:
+**house rules** (including type no smaller than 13px and body text of 16px or more) → **the direction** (the idea, the composition habits, where the
+one accent goes) → **the type system and the palette** (which face does which job, the five size steps, which colour is the ground and where the
+accent goes) → **the hero blueprint** → **the section blueprints**. Under each blueprint below, "Adjusted for this page" lists where it disagrees.
+In practice: take geometry from blueprints (columns, proportions, what sits where) and take everything else from above them. Map every size a
+blueprint names onto one of your five type steps instead of adding a sixth. Use one button shape, one corner radius and one pair of page margins on
+the whole page, whatever individual blueprints say. If a blueprint names a kind of typeface (a light serif, a heavy grotesk), use the dealt face.
+
+## 1. The idea
+One short sentence, set at poster scale, is the composition. The trick that makes it an idea rather than a big headline: something from the subject sits inside the sentence where a word would be. A strip of photograph fills the gap between two words; a small live fragment of the product replaces the noun; the object the sentence names is pictured at the size of a letter. Write the sentence first, find the word that can be shown instead of said, and put the showing in its place. The reader completes the sentence with their eyes.
+
+Before anything else, write one sentence in your notes: "On this page, <the subject's own material> becomes <the device>."
+Fill the first blank from your inventory of what only this client has (its name and what it means, its street, its numbers, its
+constraint), then put the nearest competitor in the sentence: if it still works, the idea is the category's, not the client's.
+Then name the one live thing the visitor can do on the page (SKILL.md step 4).
+
+## 2. Composition
+The sentence is four to seven words and runs as one or two full-width lines at 9–13vw. Inline with the type, on the baseline, sits one media slot: a rounded-rectangle or square frame exactly one line-height tall and two to three ems wide, holding a photograph or a looping crop. Above and below the sentence the screen is empty except for a small navigation line and one supporting sentence set small, both on the same left margin. Later sections repeat the grammar at smaller scale: each is a short statement on the left six columns with its proof (image, figure, list) on the right, so the page reads as a series of sentences with evidence. Generous vertical space (160px or more) between sections.
+
+## 3. Type — Anton / Work Sans
+Compressed heavy capitals stacked tight, with a neutral grotesque kept small beneath. Suits fashion drops, sport, nightlife and any page built as a poster.
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+```
+- Display: **Anton** — weight 400 (single heavy cut) · tracking -0.01em · leading 0.86 · uppercase
+- Text: **Work Sans** — 400 for body, 600 for links and short emphasis · leading 1.5 · tracking 0
+```css
+:root {
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.5rem, 1.2rem + 5vw, 5.5rem);
+}
+```
+Display weight with real presence (medium to bold), tracking -0.03 to -0.05em, leading 0.95–1.0 so two lines sit close. The inline frame aligns to cap height and baseline exactly; set it with em units so it scales with the type.
+The direction decides sizes and how many of them; the type system decides how this face is set. Where the two give different tracking or leading, use the values of the type system: they are tuned to this face.
+The display size itself comes from the hero blueprint below.
+
+## 4. Colour — Graphite and orange
+```css
+:root {
+  --bg: #18191b;
+  --surface: #222427;
+  --ink: #eff0f1;
+  --muted: #9c9ea3;
+  --accent: #ff4a1f;
+  --accent-ink: #18191b;
+  --field-1: #eff0f1;  --field-1-ink: #18191b;
+}
+```
+Graphite and cool light-grey sections alternate, graphite taking about two thirds, and photographs are desaturated so nothing competes. Safety orange marks the buttons, one thick solid bar across the top of the page and the highlighted item in a list or chart.
+A calm ground with ink at full contrast. The only colour comes from the photograph inside the sentence; if the palette has an accent, use it once, on the action.
+
+## 5. Imagery
+**The project has no photographs of its own yet.** First choice: **real pictures of the subject's world from the open collections**: its city and street in old postcards and photographs, an old map of the neighbourhood, its materials up close, its trade in engravings, museum objects of its kind (references/imagery.md §3). Start with `node /tmp/taste-skill/skills/taste-skill/scripts/assets.mjs "<a place, material or object from your inventory>"`. Download what you use into the project with `--get` and credit every one on the page (`--credits` prints the footer line). They show the world around the client, never the client's own room, dish, product, person or team. Second, for what no honest picture exists of: draw the subject's own things in code, large, in one flat graphic language and the palette's real colours (its tiles, its windows, its objects; references/imagery.md §8). Third: the dealt photographs, only where an honestly generic picture fits (the sea, the weather, a material), never one a visitor could take for the thing itself and never an unrelated scene. One treatment for all of them. If this direction is built on photographs, plan the set before building (four to six pictures of one family) and reuse them at different crops and scales instead of finding or drawing a new picture for every slot; keep drawings as `<symbol>` + `<use>` or generate them with a small script so the page stays light. List every found picture (with its source and licence), every dealt photograph and every drawing that stands in for photography in your report.
+
+One strong, simple photograph that reads at small size (a face, an object, a texture, a horizon), cropped to a wide strip inside the sentence. The same image may open to full width in the next section, so the small slot feels like a window onto something larger.
+
+**Floor (the inspector checks it):** at least four real pictures on the page, usually six to twelve; SVG drawings do not count. One moving picture where an honest clip exists: `node <skill>/scripts/assets.mjs --video "<query>"`, used as a muted loop with a poster frame. Whatever this direction says about pictures, it is carried out with real ones.
+
+Photographs dealt for this build, from the "Mountain" set (peaks, alpine valleys, snow and rock)
+Order of preference for imagery: (1) the project's own photographs and product shots; (2) images you generate, if an image tool is
+available; (3) real pictures of the subject's world found in the open collections (assets.mjs, downloaded and credited on the page);
+(4) drawings of the subject in code; (5) these. They are real photographs (Unsplash licence, served by picsum.photos) of places, light and
+texture. They are atmosphere, never a stand-in for a specific product, dish, person or interface. List the ones you use in your report so
+they can be replaced.
+- `https://picsum.photos/id/235/1600/1000` — Snow-covered peak rising above dark forested slopes and a lake · mid tone · slate blue, white, dark green · calm area: top · native landscape · photo: Paul E. Harrer
+- `https://picsum.photos/id/931/1600/1000` — Layered mountain slopes fading into blue haze · mid tone · steel blue, pale blue, dark teal · calm area: top · native landscape · photo: Paul Earle
+- `https://picsum.photos/id/906/1600/1000` — Sunlit snowy pyramid peak against a clear blue sky · mid tone · sky blue, white, dark slate · calm area: top · native landscape · photo: Andras Toth
+- `https://picsum.photos/id/260/1600/1000` — Snowy mountain peak framed by dark pine trees in mist · light tone · white, pale grey, dark green · calm area: centre · native portrait · photo: Sylwia Bartyzel
+- `https://picsum.photos/id/1018/1600/1000` — Green cliffs and a winding road under low mist · mid tone · moss green, mist grey, dark brown · calm area: top · native landscape · photo: Andrew Ridley
+- `https://picsum.photos/id/830/1600/1000` — Layered blue mountain ridges receding into haze · mid tone · cobalt blue, pale blue, navy · calm area: top · native landscape · photo: Luca Zanon
+- `https://picsum.photos/id/296/1600/1000` — Snow-capped mountain range beneath a deep blue sky · mid tone · deep blue, white, dark brown · calm area: top · native landscape · photo: Greg Shield
+- `https://picsum.photos/id/565/1600/1000` — Snowy peak veiled in cloud with birds crossing a white sky · light tone · white, pale grey, dark brown · calm area: top · native landscape · photo: René Reichelt
+The last two path numbers are width and height: request the exact crop you render (`/1200/1500` for a 4:5 portrait, `/2400/1350` for a hero) and
+add `?grayscale` to desaturate. Use three to six of them, not all eight. Always set `width`, `height`, `alt` and `loading="lazy"` (not on the hero image).
+Other sets that fit this brief: fog-and-quiet, coast, forest, water — `node draw.mjs --photos <set>` prints one in full; `--photos list` shows all sets. Taking photographs from another set is your call and is not a redraw; keep them to one light and one treatment.
+
+## 6. Hero — Headline across two fields
+The viewport is two flat fields meeting at exactly half height: paper above, one saturated colour below, with a hard edge and nothing drawn on it. A two-line headline in black-weight capitals at clamp(96px, 9.5vw, 150px), line-height 0.86, is centred across the seam and spans about 70% of the width, so line one stands on the upper field and line two is cut through its upper third by the seam. The type changes ink where it crosses: above the seam it takes the accent ink, below it a deep ink two steps darker than the lower field, as if submerged. Build it as two stacked copies of the same headline, one per ink, the first clipped with `clip-path: inset(0 0 50% 0)` and the second with `inset(50% 0 0 0)`. Wordmark top-left at 28px; up to four text links and the single action, a solid rectangular button, top-right. One supporting sentence at 20px in the paper colour is centred on the lower field, 56px above the bottom edge. The lower field continues for 30svh past the fold before the next colour begins.
+
+On a phone: The same two fields with the seam at 46svh. The headline stays on two lines at 15vw, centred, still cut by the seam and still changing ink. Wordmark top-left and the action button top-right; the links drop into one menu word beside it. The supporting sentence sits on the lower field at 16px, centred, max 28ch, with 40px beneath it.
+Headline: A statement of two to four words on two lines, up to about 10 characters per line, whose meaning the rising field acts out.
+
+Adjusted for this page:
+- It names a kind of typeface: use the dealt faces (display Anton, text Work Sans) and their settings; capitals only where the type system sets them.
+- It names colours (black): map them onto this palette's roles (ground `--bg`, panels `--surface` and the fields, text `--ink`/`--muted`, the accent `--accent` on the primary action only).
+- Its vw sizes assume a face of normal width: with this condensed display face, size the words to fill the measure the blueprint gives them instead of copying the vw value.
+
+## 7. Sections, in order
+Each is a composition to rebuild with this project's content. Keep the geometry; change the subject. Re-order or drop a
+section when the argument of the page needs it (see references/copy.md), never to fall back to a card grid.
+
+### 1. intro — Headline crossing onto a photograph (split)
+A white or pale ground. A photograph taller than it is wide, 720px wide (columns 7–12), sits flush against the right viewport edge with its top at 46% of the section's first screen and runs below the fold. The heading starts on the 32px left margin across columns 1–8: two lines of light-weight serif capitals at clamp(64px, 5.6vw, 88px), leading 1.04, the first line starting 34% down the screen and the second placed so that its right half runs onto the photograph's upper-left corner. Choose a picture whose upper-left quarter is pale enough for the ink, or set the second line twice, in the ink and in the paper colour, each copy clipped to its side of the photograph's left edge. Under the heading on columns 1–5, one paragraph of up to 25 words at 22px, leading 1.4. At the bottom-left a second, smaller photograph of 360×400px enters, cropped by the screen's lower edge, and on the next screen becomes the left half of a staggered pair with the large one. Nothing else is on the screen.
+On a phone: The heading sits at 10vw on two lines on the 20px margin. The photograph becomes 75% of the width, flush right, and starts under the heading's first line so the second line crosses its top-left corner. The paragraph follows at 17px, then the small photograph at 50% of the width on the left margin.
+
+Adjusted for this page:
+- It names a kind of typeface: use the dealt faces (display Anton, text Work Sans) and their settings; capitals only where the type system sets them.
+- It names colours (white): map them onto this palette's roles (ground `--bg`, panels `--surface` and the fields, text `--ink`/`--muted`, the accent `--accent` on the primary action only).
+- Its vw sizes assume a face of normal width: with this condensed display face, size the words to fill the measure the blueprint gives them instead of copying the vw value.
+- It numbers things 01, 02: drop the numbers unless they are real data (a price, a date, a count).
+
+### 2. features — Paragraph with picture words (statement)
+One paragraph does the work of a feature grid. Three or four sentences, 35–50 words in total, set at clamp(30px, 3.6vw, 60px), leading 1.18, medium weight, across columns 1–11, left-aligned. Each sentence names one capability, and directly after that capability's key noun sits an inline slot: an inline-block frame 1em tall and 1.9em wide, radius 0.18em, dropped 0.12em below the baseline, holding a tight photograph crop (object-fit: cover) or a real interface control at readable size. Four slots at most, never two on one line. The nouns keep the weight and colour of the rest; the slots are the only emphasis. Mark it up as a paragraph and give the section a visually hidden heading of two or three words; nothing visible sits above. 72px lower, starting at column 7, one supporting sentence at 18px and the action.
+On a phone: The paragraph drops to 7vw with leading 1.22 and fills the width. Slots stay inline at 1em tall but narrow to 1.5em wide. If a slot lands alone at the start of a line, let it; do not shrink the type. The supporting sentence and the action follow at full width.
+
+Adjusted for this page:
+- It sets a sentence large over several lines: jurors read that as a long headline. Either cut it to a two-line headline at display size, or keep it a statement at 36px or less on three lines (24px, four lines on a phone).
+- Its vw sizes assume a face of normal width: with this condensed display face, size the words to fill the measure the blueprint gives them instead of copying the vw value.
+
+### 3. showcase — One frame, three distances (pinned)
+A wrapper 300vh tall holds a sticky stage of 100svh. On the stage one frame is centred: 30vw wide at 4:5, square corners, overflow hidden. Inside it the same photograph is shown at three distances as the reader scrolls: the whole subject, then scaled to 180% toward one detail, then to 320% on a second detail (transform: scale with a transform-origin per stage, 700ms ease, switched by IntersectionObserver on three invisible markers). The sentence is delivered in halves: its first two or three words sit above the frame at clamp(56px, 8vw, 130px), centred; the last words arrive below the frame at the second stage, overlapping the frame's bottom edge by 0.3em. At the third stage one caption of 28ch at 17px appears to the right of the frame, top-aligned. The two halves together are the heading and stay within two lines.
+On a phone: The frame grows to 70vw at 4:5 and stays sticky at centre. The first half of the sentence sits above it at 13vw, the second half below it at the same size. The third-stage caption appears under the sentence at 16px, centred.
+
+Adjusted for this page:
+- It sets a sentence large over several lines: jurors read that as a long headline. Either cut it to a two-line headline at display size, or keep it a statement at 36px or less on three lines (24px, four lines on a phone).
+- Its vw sizes assume a face of normal width: with this condensed display face, size the words to fill the measure the blueprint gives them instead of copying the vw value.
+
+### 4. cta — The idea again, inverted (statement)
+The close flips the page's colours: ink becomes the ground and the ground becomes the ink, across a full-bleed field at least 90svh tall. The page's opening idea returns as a headline of three to five words at 9–11vw on two lines, leading 0.9, flush left, positioned in the upper two-thirds; it should echo the hero's wording, not repeat it. Along the bottom, on one shared baseline 40px above the edge: one supporting sentence at 20px in columns 1–5 and one rectangular button in the accent colour, right-aligned in columns 10–12, about 56px tall. Nothing else: no image, no second button, no logo. The field's top edge is a hard horizontal line where it meets the section above. If the footer follows on the same inverted field, leave 160px before it so the close still reads as its own screen.
+On a phone: The same inverted field at 80svh. Headline at 15vw on two lines at the top. The sentence sits lower at 17px, and the button spans the full width at the bottom, 56px tall, with 20px margins. Nothing else is added.
+
+Adjusted for this page:
+- Its vw sizes assume a face of normal width: with this condensed display face, size the words to fill the measure the blueprint gives them instead of copying the vw value.
+
+### 5. footer — Invitation over a cropped name (statement)
+Close and footer in one full-viewport field of the inverse colour. Upper third, columns 1–7: a two-line invitation at about 5vw, three to five words, with one filled rectangular button beneath it. At columns 10–12, top-aligned with the invitation, three or four social or contact links stacked at 16px. The wordmark fills the bottom of the screen at 26–30vw on one line, `white-space: nowrap`, heavier and larger than the viewport can hold: it is pushed down with `transform: translateY(30%)` so the bottom edge cuts through the letters, and a long name also runs off the right edge. `overflow: hidden` on the footer does the cropping. One row of credits and legal links at 13px sits directly above the wordmark's cap line, spread left and right. The cropped name must be recognisable from its upper two-thirds alone; test that it is.
+On a phone: Invitation at 11vw on two lines at the top with a full-width button. Links follow as one row of words at 15px. The wordmark sits at 34vw at the bottom, cropped by both the bottom and the right edge, with the legal row above it at 12px.
+
+Adjusted for this page:
+- It sets text at 12px: use your small step (13px or more) instead.
+- Its vw sizes assume a face of normal width: with this condensed display face, size the words to fill the measure the blueprint gives them instead of copying the vw value.
+
+## 8. Motion — Colour by chapter
+Each chapter is its own full-bleed field of one palette colour, so the ground changes exactly at section edges as you scroll, never as a global recolouring of the screen. The only movement: the fixed header (or the one pinned element) takes the ink of the chapter beneath it, switching with a 300ms colour transition as each edge passes under it. Do not drive the page background from an observer: in blind tests a page recoloured mid-section, with a paragraph sitting on two colours, read as broken twice.
+This is the signature move, the one loud moment. Around it the page still needs the rest of the motion layer (SKILL.md step 9): an entrance for the parts of every section, feedback on every control, and one moving picture. The inspector fails a page that barely moves. Recipes: references/motion.md.
+
+## 10. Where the richness comes from
+The collision of big type and one live image inside it. Because there is only one image on the first screen, choose it with care and give it perfect alignment to the letters.
+
+## 11. How this direction goes wrong
+The sentence must be short enough for two lines on a phone, where the inline frame drops to its own line between the two halves. Do not style one word differently to fake the device. Do not use more than one slot per sentence.
+
+## 12. Real references
+Studied sites that work this way. Take the principle, never the specifics: no names, copy, images or signature assets of theirs.
+- **Colonia Zacamil** (Awwwards Site of the Day, studied score 7.2) `aww-colonia-zacamil`
+  Idea: The sentence is the layout: 'FLY TO ___ ZACAMIL' runs as one full-width line, with a strip of drone video filling the gap where a word would sit.
+  Hero: Warm off-white field with no navigation at all. One line of black ultra-condensed capitals about 13vw tall sits on the vertical centre and runs edge to edge with 28px side margins: 'FLY', a wide gap, 'TO', then a rounded-corner strip of aerial video exactly as tall as the letters and half the viewport wide, then 'ZACAMIL'. A tiny mono bracket label sits above the last word. About 150px lower, a small black pill button with a white dot-in-circle at its right end is centred. Two centred lines of 24px serif sit near the bottom edge. The top third is empty.
+  Worth taking: Replace a word in the headline with a media strip cut to the cap height, so the picture is read as part of the sentence.
+- **Midnight** (One Page Love, studied score 7.1) `opl-midnight-2`
+  Idea: The headline's circles are literally pictured: one blurred dark ring, sliced into horizontal bands, becomes the hero, the demo panel, the session cards and the footer.
+  Hero: No navigation at all. A canvas fills the full width and the top 90% of the viewport: a huge out-of-focus dark navy ring on drifting taupe, sage and terracotta, cut into horizontal bands about 78px tall that are slightly offset like blinds. On the vertical centre line, starting 58px from the left, sit a small rounded-square line icon and a one-line headline at 48px in cream. On the same baseline, starting 59% across, a two-line 17px statement whose first sentence is white and bold while the rest drops to half opacity. The cream page background shows as a 90px strip at the bottom. No button.
+  Worth taking: Slice a soft blurred gradient into horizontal bands with small offsets so a familiar glow becomes a recognisable, ownable texture.
+- **BEIGE FORCE** (One Page Love, studied score 7.2) `opl-beige-force`
+  Idea: A game's cast presented as a bitmap type specimen: black pixel glyphs in a ruled grid on a mustard field, each given a blandly fashionable first name.
+  Hero: Flat mustard yellow with fine grain fills the viewport. A one-line mono header spans the width with 28px margins: credit left, title flanked by lightning glyphs centre, a quote and a help link right, with a black hairline under it. Two 14px mono text columns start at the second of four grid columns; a pixel-font PLAY! button with a white-and-black double border sits in the fourth. From one third down, a four-column grid of square hairline-bordered cells fills the width, each holding one large black pixel glyph and a small centred name. A narrow strip on the right edge shows the game's blue and magenta screen.
+  Worth taking: Draw icons as pixels with visible gaps on the page's background colour, so the artwork and the ruled layout grid look like one system.
+Full notes on any of them: `node draw.mjs --site <id>`.
+
+## Always
+Headlines two lines or fewer at every width. No eyebrow labels, no monospace, no 01/02/03, no thin rules, no gradients, no shadows at rest,
+no cream-and-terracotta, no violet. The frame: one h1 on the first screen that says what this is, equal outer margins, no
+section huddled on one side with the other half empty, no blank stretch over half a screen, a heading on every section.
+`inspect.mjs` measures all of it.
+
+Saved to /tmp/cafe-sites/momai-auto-garage-jamnagar/.taste-skill/direction.json · reprint with `node draw.mjs --show`
