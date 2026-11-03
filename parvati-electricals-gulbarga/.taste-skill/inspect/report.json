@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-03T13:34:06.136Z",
+ "at": "2026-11-03T13:38:11.035Z",
  "allow": [],
  "viewports": [
   {
@@ -32,9 +32,9 @@
      "h": 900
     },
     "page": {
-     "height": 7112,
+     "height": 7096,
      "screens": 7.9,
-     "words": 297,
+     "words": 296,
      "img": 4,
      "video": 0,
      "canvas": 0,
@@ -110,9 +110,9 @@
       "kind": "heading"
      },
      {
-      "text": "Parvati Electricals is a Gulbarga electrical contractor for homes and businesses. Its listing reports ten years in the field, a team for installation and maintenance, and quotations before work begins",
-      "words": 30,
-      "chars": 201,
+      "text": "Parvati Electricals is a Gulbarga electrical contractor for homes and businesses. Its listing reports ten years in the field, a team for installation and maintenance, and offers quotations.",
+      "words": 28,
+      "chars": 189,
       "lines": 3,
       "size": 36,
       "vw": 2.5,
@@ -252,7 +252,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.64,
-      "top": 2339,
+      "top": 2323,
       "tag": "span",
       "kind": "statement"
      },
@@ -273,7 +273,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.64,
-      "top": 2434,
+      "top": 2419,
       "tag": "span",
       "kind": "statement"
      },
@@ -294,7 +294,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.48,
-      "top": 3631,
+      "top": 3616,
       "tag": "h2",
       "kind": "heading"
      },
@@ -315,7 +315,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.97,
-      "top": 3815,
+      "top": 3800,
       "tag": "div",
       "kind": "heading"
      },
@@ -336,7 +336,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.49,
-      "top": 5967,
+      "top": 5951,
       "tag": "span",
       "kind": "heading"
      },
@@ -357,7 +357,7 @@
       "align": "center",
       "position": "center",
       "widthRatio": 1,
-      "top": 6356,
+      "top": 6340,
       "tag": "div",
       "kind": "heading"
      },
@@ -378,7 +378,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 6602,
+      "top": 6586,
       "tag": "a",
       "kind": "heading"
      },
@@ -399,7 +399,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.39,
-      "top": 6647,
+      "top": 6631,
       "tag": "a",
       "kind": "heading"
      }
@@ -495,7 +495,7 @@
       },
       {
        "color": "#161615",
-       "top": 3487,
+       "top": 3472,
        "hsl": {
         "h": 60,
         "s": 0.02,
@@ -504,7 +504,7 @@
       },
       {
        "color": "#de194b",
-       "top": 5762,
+       "top": 5746,
        "hsl": {
         "h": 345,
         "s": 0.8,
@@ -513,7 +513,7 @@
       },
       {
        "color": "#c5f53d",
-       "top": 6302,
+       "top": 6286,
        "hsl": {
         "h": 76,
         "s": 0.9,
@@ -605,7 +605,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 7112,
+    "pageH": 7096,
     "margins": {
      "left": 24,
      "right": 24
@@ -639,7 +639,7 @@
       "tag": "section",
       "top": 900,
       "height": 810,
-      "words": 32,
+      "words": 30,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -661,7 +661,7 @@
       "sel": "section.caps",
       "tag": "section",
       "top": 1710,
-      "height": 985,
+      "height": 970,
       "words": 63,
       "media": 0,
       "middle": 168,
@@ -683,7 +683,7 @@
      {
       "sel": "figure.band.drift",
       "tag": "figure",
-      "top": 2695,
+      "top": 2680,
       "height": 792,
       "words": 11,
       "media": 0,
@@ -702,7 +702,7 @@
      {
       "sel": "section.versus",
       "tag": "section",
-      "top": 3487,
+      "top": 3472,
       "height": 691,
       "words": 35,
       "media": 0,
@@ -713,7 +713,7 @@
        "tag": "div"
       },
       "left": 24,
-      "right": 26,
+      "right": 37,
       "textLeft": 24,
       "textRight": 0,
       "fullBleed": false,
@@ -725,7 +725,7 @@
      {
       "sel": "figure.band",
       "tag": "figure",
-      "top": 4178,
+      "top": 4162,
       "height": 792,
       "words": 12,
       "media": 1,
@@ -744,7 +744,7 @@
      {
       "sel": "figure.band",
       "tag": "figure",
-      "top": 4970,
+      "top": 4954,
       "height": 792,
       "words": 8,
       "media": 1,
@@ -763,7 +763,7 @@
      {
       "sel": "a.cta",
       "tag": "a",
-      "top": 5762,
+      "top": 5746,
       "height": 540,
       "words": 16,
       "media": 0,
@@ -786,7 +786,7 @@
      {
       "sel": "footer#top.footer",
       "tag": "footer",
-      "top": 6302,
+      "top": 6286,
       "height": 810,
       "words": 111,
       "media": 0,
@@ -884,7 +884,7 @@
     "page": {
      "height": 8654,
      "screens": 8.5,
-     "words": 291,
+     "words": 290,
      "img": 4,
      "video": 0,
      "canvas": 0,
@@ -1477,7 +1477,7 @@
       "tag": "section",
       "top": 1024,
       "height": 922,
-      "words": 32,
+      "words": 30,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1488,7 +1488,7 @@
       "left": 16,
       "right": 38,
       "textLeft": 16,
-      "textRight": 58,
+      "textRight": 64,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1713,7 +1713,7 @@
     "page": {
      "height": 7034,
      "screens": 8.3,
-     "words": 291,
+     "words": 290,
      "img": 4,
      "video": 0,
      "canvas": 0,
@@ -2297,7 +2297,7 @@
       "tag": "section",
       "top": 844,
       "height": 760,
-      "words": 32,
+      "words": 30,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -2472,7 +2472,7 @@
      },
      {
       "top": 800,
-      "height": 312
+      "height": 324
      }
     ],
     "h1s": [
