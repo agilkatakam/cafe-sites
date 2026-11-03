@@ -119,9 +119,10 @@ Ready leads live in `nowebsite_ready`.
   Kargil Vijay Auto Service V6 (the printed annual: signal-red magazine; Switzer; hero crossfade + corner cards, mosaic with pickup-builder, unequal photo band, inverted close, sliced ghost wordmark; commit 7166c7b),
   Md. Mosin Bike Point V14 (the wheel: bottle green and gold; built by recovery agent after stream failures; commits d6ead0a + 5393481 label fix),
   Ganesh Garage V28 (the quiet instrument: midline rail over a 3-photo crossfade, docking header; zigzag menu order-pad; engine-start clip; frame run, one lifted; commit c515019),
+  Momai Auto Garage V41 (the sentence is the layout: Anton/Work Sans, graphite + safety orange; "FIXED, [road clip] BACK ON THE ROAD." with the clip inline; picture-word chips; one frame three distances; inverted CTA; cropped MOMAI footer; phone-only CTAs - email unconfirmed; commit b63b819),
   Mahadev Auto Services V37 (the well-kept board: lunar + bronze; cropped name band + standfirst, links row, statement tiles, zigzag light cell, picker service rows, one-image-cut-across-tiles board (6x4 desktop / 3x6 mobile), SVG block wordmark footer; commits 77d641e + 096b12b revision (compact hero tiles, readable mobile wordmark, listing-attributed claims); HELD OUT of the no-website batch per parent Nov 2: business already runs mahadev-auto-services.grexa.site, so it is a possible upgrade preview, not an approved upgrade pitch).
 - Live URLs follow the pattern https://agilkatakam.github.io/cafe-sites/<folder>/ .
-- Build queue: garage V41 Momai Auto Garage Jamnagar next (V6 Kargil, V14 Mosin, V28 Ganesh and V37 Mahadev done) → electricians V15/V22/V24/V33/V35 →
+- Build queue: garages done (V6, V14, V28, V37, V41) - next: → electricians V15/V22/V24/V33/V35 →
   V48/V55 plumbing → V61/V43 carpentry → V56 sports → V58 print → V3/V67 book depots.
   Visual-proof categories held. A Nov 1 wide harvest (set11) added new candidates
   V68+ to the ledger; fold qualified ones into the queue after the listed builds.
