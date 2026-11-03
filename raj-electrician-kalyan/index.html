@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Raj Electrician · Kalyan Dombivali</title>
+<meta name="description" content="Raj Electrician, Sonar Pada, Dombivli East, Kalyan Dombivali. Electrical service, repair, fixed and commercial wiring. Concept preview.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=panchang@700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0d14;
+    --surface:#131824;
+    --ink:#e9edf3;
+    --muted:#a7b0bf;
+    --accent:#5a9bfc;
+    --accent-ink:#0a0d14;
+    --edge:24px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Switzer',sans-serif;
+    background:var(--bg);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  a{color:inherit}
+  .panchang{font-family:'Panchang',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:-.02em}
+
+  /* ---------- hero : name across the middle ---------- */
+  .hero{
+    min-height:100svh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+  .corner{position:absolute;font-size:15px;z-index:2}
+  .corner a{text-decoration:none;transition:color .2s}
+  .corner a:hover{color:var(--accent)}
+  .c-tl{top:18px;left:18px;max-width:36ch}
+  .c-tl p{font-size:18px;line-height:1.4;margin-bottom:16px}
+  .c-tl .act{
+    display:inline-block;
+    background:var(--ink);
+    color:var(--bg);
+    font-weight:500;
+    font-size:16px;
+    padding:14px 26px;
+    min-height:48px;
+    text-decoration:none;
+    transition:background .15s,color .15s;
+  }
+  .c-tl .act:hover{background:var(--accent);color:var(--accent-ink)}
+  .c-tr{top:18px;right:18px}
+  .c-tr a{margin-left:18px}
+  .c-bl{bottom:24px;left:18px;font-size:16px;color:var(--muted)}
+  .c-br{bottom:24px;right:18px;color:var(--muted)}
+  .monument{
+    text-align:center;
+    line-height:.84;
+    letter-spacing:-.04em;
+    will-change:transform;
+  }
+  .monument .w1{display:block;font-size:26vw}
+  .monument .w2{display:block;font-size:6.7vw}
+
+  /* ---------- intro : title, note, facts row ---------- */
+  .intro{
+    padding:140px var(--edge) 120px;
+  }
+  .intro .row1{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:24px;
+    align-items:end;
+  }
+  .intro h2{
+    grid-column:1/7;
+    font-weight:400;
+    font-size:clamp(40px,4.4vw,68px);
+    line-height:1.02;
+    letter-spacing:-.02em;
+  }
+  .intro .note{
+    grid-column:10/13;
+    width:260px;
+    font-size:16px;
+    line-height:1.5;
+    color:var(--muted);
+    justify-self:end;
+  }
+  .facts{
+    margin-top:120px;
+    display:flex;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  .fact .f{
+    font-size:clamp(28px,3vw,44px);
+    font-weight:400;
+    letter-spacing:-.02em;
+    line-height:1.05;
+  }
+  .fact .e{
+    margin-top:8px;
+    font-size:14px;
+    color:var(--muted);
+  }
+  .intro .ph{
+    margin-top:96px;
+    margin-left:auto;
+    width:41.666%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    display:block;
+  }
+
+  /* ---------- features : one-size name columns ---------- */
+  .caps{
+    padding:20vh var(--edge);
+  }
+  .caps h2{
+    font-size:28px;
+    font-weight:500;
+    margin-bottom:96px;
+  }
+  .caps .grid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:24px;
+    position:relative;
+  }
+  .cap-col{grid-column:span 3}
+  .cap-col:nth-child(1){grid-column-start:1}
+  .cap-col:nth-child(2){grid-column-start:4}
+  .cap-col:nth-child(3){grid-column-start:7}
+  .cap-col h3{
+    font-size:17px;
+    font-weight:500;
+    margin-bottom:14px;
+  }
+  .cap-col ul{list-style:none}
+  .cap-col li{
+    font-size:17px;
+    line-height:1.35;
+    color:var(--muted);
+    cursor:default;
+    transition:color .15s;
+  }
+  .cap-col li:hover{color:var(--ink)}
+  .cap-desc{
+    grid-column:10/13;
+    font-size:17px;
+    line-height:1.4;
+    color:var(--ink);
+    min-height:3em;
+  }
+  .cap-end{display:none}
+
+  /* ---------- showcase : band of unequal panels ---------- */
+  .showcase{padding:0 0 96px}
+  .showcase h2{
+    font-size:clamp(36px,3.4vw,44px);
+    font-weight:400;
+    letter-spacing:-.02em;
+    margin-left:calc(var(--edge) + 16.666%);
+    margin-bottom:64px;
+  }
+  .strip{
+    display:flex;
+    height:68svh;
+  }
+  .panel{
+    position:relative;
+    overflow:hidden;
+    flex-grow:1;
+    transition:flex-grow .5s ease;
+  }
+  .panel:nth-child(1){flex-grow:5}
+  .panel:nth-child(2){flex-grow:2}
+  .panel:nth-child(3){flex-grow:3}
+  .panel:nth-child(4){flex-grow:2}
+  .strip:hover .panel{flex-grow:1}
+  .strip .panel:hover{flex-grow:6}
+  .panel img{
+    width:100%;height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .panel .ptitle{
+    position:absolute;
+    top:24px;left:24px;
+    font-size:28px;
+    line-height:1.15;
+    color:#fff;
+    background:rgba(10,13,20,.55);
+    padding:8px 12px;
+    border-radius:4px;
+    font-weight:500;
+  }
+  .showcase .cap-line{
+    margin:16px var(--edge) 0;
+    font-size:16px;
+    color:var(--muted);
+  }
+
+  /* ---------- cta : the idea again, inverted ---------- */
+  .cta{
+    background:var(--ink);
+    color:var(--bg);
+    min-height:90svh;
+    display:flex;
+    flex-direction:column;
+    padding:0 var(--edge);
+  }
+  .cta h2{
+    margin-top:16svh;
+    font-size:clamp(56px,9.2vw,148px);
+    line-height:.9;
+    letter-spacing:-.03em;
+  }
+  .cta .bottom{
+    margin-top:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:24px;
+    padding-bottom:40px;
+  }
+  .cta .bottom p{
+    font-size:20px;
+    line-height:1.4;
+    max-width:38ch;
+  }
+  .cta .go{
+    display:inline-block;
+    background:var(--accent);
+    color:var(--accent-ink);
+    font-weight:500;
+    font-size:18px;
+    text-decoration:none;
+    padding:17px 34px;
+    min-height:56px;
+    white-space:nowrap;
+    transition:background .15s,color .15s;
+  }
+  .cta .go:hover{background:var(--bg);color:var(--ink)}
+
+  /* ---------- footer : same inverted field ---------- */
+  .footer{
+    background:var(--ink);
+    color:var(--bg);
+    min-height:100svh;
+    padding:160px var(--edge) 20px;
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+  }
+  .fcols{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:32px 24px;
+    font-size:16px;
+    line-height:1.55;
+  }
+  .fcols h3{font-size:16px;font-weight:500;margin-bottom:10px}
+  .fcols ul{list-style:none;color:#3d4652;overflow-wrap:anywhere}
+  .fcols a{color:#3d4652;text-decoration:none}
+  .fcols a:hover{color:var(--bg);text-decoration:underline}
+  .fword{
+    align-self:end;
+    overflow:hidden;
+    text-align:center;
+    line-height:.84;
+    letter-spacing:-.04em;
+    will-change:transform;
+  }
+  .fword .w1{display:block;font-size:26vw}
+  .fword .w2{display:block;font-size:6.7vw}
+  .legal{
+    margin-top:18px;
+    max-width:75ch;
+    overflow-wrap:anywhere;
+    font-size:16px;
+    line-height:1.6;
+    color:#3d4652;
+  }
+  .legal a{color:#5b6673}
+
+  /* ---------- reveal ---------- */
+  .rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}
+  .rv.in{opacity:1;transform:none}
+
+  @media (max-width:820px){
+    :root{--edge:16px}
+    .c-tl p{font-size:18px;max-width:56vw}
+    .c-bl{font-size:15px}
+    .monument{margin-top:-20svh}
+    .monument .w1{font-size:30vw}
+    .monument .w2{font-size:6.4vw}
+    .hero{align-items:flex-start;padding-top:22svh;flex-direction:column}
+    .hero .mwrap{width:100%}
+    .hero .phone-ph{
+      display:block;
+      width:100%;
+      margin-top:6svh;
+      aspect-ratio:4/5;
+      object-fit:cover;
+      max-height:44svh;
+    }
+    .intro{padding:96px var(--edge) 72px}
+    .intro h2{font-size:11vw;grid-column:1/13}
+    .intro .note{grid-column:1/13;width:auto;justify-self:start;margin-top:20px}
+    .facts{margin-top:64px;display:grid;grid-template-columns:1fr 1fr;gap:32px 20px}
+    .fact .f{font-size:26px}
+    .fact .e{font-size:14px}
+    .intro .ph{width:100%;margin-top:64px}
+    .caps h2{font-size:24px;margin-bottom:48px}
+    .caps .grid{display:block}
+    .cap-col{margin-bottom:40px}
+    .cap-col li{font-size:18px;line-height:1.4}
+    .cap-desc{display:none}
+    .cap-end{display:block;font-size:16px;color:var(--muted);margin-top:12px;line-height:1.4}
+    .showcase h2{margin-left:var(--edge);font-size:28px}
+    .strip{display:grid;grid-template-columns:64% 36%;grid-template-rows:1fr 1fr;height:84svh}
+    .panel:nth-child(1){grid-column:1}
+    .panel:nth-child(3){grid-column:1;grid-row:2}
+    .panel:nth-child(2){grid-column:2;grid-row:1}
+    .panel:nth-child(4){grid-column:2;grid-row:2}
+    .strip:hover .panel,.strip .panel:hover{flex-grow:unset}
+    .cta{min-height:80svh}
+    .cta h2{font-size:8vw;margin-top:10svh}
+    .cta .bottom{flex-direction:column;align-items:stretch;gap:24px}
+    .cta .bottom p{font-size:17px}
+    .cta .go{text-align:center}
+    .footer{padding-top:96px}
+    .fcols{grid-template-columns:1fr 1fr;gap:32px 20px}
+    .fword .w1{font-size:30vw}
+    .fword .w2{font-size:6.4vw}
+    .legal{font-size:16px}
+  }
+  @media (min-width:821px){
+    .hero .phone-ph{display:none}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .rv{opacity:1;transform:none;transition:none}
+    .panel{transition:none}
+    .monument,.fword{transform:none !important}
+    .c-tl .act,.cta .go{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="corner c-tl">
+    <p>Electrical service, repair and wiring for homes and businesses.</p>
+    <a class="act" href="tel:+918652504592">Call 86525 04592</a>
+  </div>
+  <div class="corner c-tr">
+    <a href="tel:+918652504592">Call</a>
+    <a href="mailto:singhrajkumar1995.rs@gmail.com">Email</a>
+  </div>
+  <div class="corner c-bl">Sonar Pada, Dombivli East</div>
+  <div class="corner c-br">Mon–Sun, 8am–10pm</div>
+  <div class="mwrap">
+    <h1 class="monument panchang" id="heroWord">
+      <span class="w1">Raj</span>
+      <span class="w2">Electrician</span>
+    </h1>
+    <img class="phone-ph" src="assets/ceiling-fan-mid-spin.jpg" alt="A ceiling fan captured mid-spin" loading="lazy" decoding="async">
+  </div>
+</header>
+
+<main>
+
+<section class="intro">
+  <div class="row1">
+    <h2 class="rv">Electric work,<br>done locally</h2>
+    <p class="note rv">Raj Electrician is a Kalyan Dombivali electrical team for domestic, commercial and industrial work. Its listing describes fully trained professionals and no-obligation quotes.</p>
+  </div>
+  <div class="facts">
+    <div class="fact rv"><div class="f">Mon–Sun</div><div class="e">open every day of the week</div></div>
+    <div class="fact rv"><div class="f">8am–10pm</div><div class="e">call within working hours</div></div>
+    <div class="fact rv"><div class="f">Sonar Pada</div><div class="e">Dawadi Gaon, Ganesh Nagar, Dombivli East</div></div>
+    <div class="fact rv"><div class="f">Quotes</div><div class="e">no-obligation, per its listing</div></div>
+  </div>
+  <img class="ph rv" src="assets/eaton-circuit-breaker-panel-open.jpg" alt="An open electrical breaker panel with rows of switches" loading="lazy" decoding="async">
+</section>
+
+<section class="caps">
+  <h2 class="rv">What the team covers</h2>
+  <div class="grid">
+    <div class="cap-col rv">
+      <h3>At home</h3>
+      <ul>
+        <li data-d="Domestic maintenance, from its listing.">Domestic maintenance</li>
+        <li data-d="Fixed wiring for homes, run and repaired.">Fixed wiring</li>
+        <li data-d="Sockets moved, added and replaced.">Sockets</li>
+        <li data-d="Faults found and repair work done.">Repairs</li>
+        <li data-d="Points, fittings and fixtures.">Fittings</li>
+      </ul>
+      <p class="cap-end">House wiring, sockets, repairs and day-to-day maintenance.</p>
+    </div>
+    <div class="cap-col rv">
+      <h3>At work</h3>
+      <ul>
+        <li data-d="Commercial wiring for shops and offices.">Commercial wiring</li>
+        <li data-d="Industrial electrical work, from its listing.">Industrial</li>
+        <li data-d="Landlord services, from its listing.">Landlord services</li>
+        <li data-d="Commercial electrical service and repair.">Commercial service</li>
+      </ul>
+      <p class="cap-end">Commercial wiring, industrial work and landlord services.</p>
+    </div>
+    <div class="cap-col rv">
+      <h3>Day to day</h3>
+      <ul>
+        <li data-d="General electrical service, on call.">Electrical service</li>
+        <li data-d="No-obligation quotes, per its listing.">Quotes</li>
+        <li data-d="Emergency services, per its listing.">Emergency call-outs</li>
+      </ul>
+      <p class="cap-end">Service, quotes and emergency call-outs, per its listing.</p>
+    </div>
+    <p class="cap-desc" id="capDesc" aria-live="polite"></p>
+  </div>
+</section>
+
+<section class="showcase">
+  <h2 class="rv">The work and the city</h2>
+  <div class="strip">
+    <div class="panel">
+      <img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Close-up of electrical wiring dressed inside a wall" loading="lazy" decoding="async">
+      <span class="ptitle">The work</span>
+    </div>
+    <div class="panel">
+      <img src="assets/ceiling-fan-mid-spin.jpg" alt="A ceiling fan captured mid-spin" loading="lazy" decoding="async">
+    </div>
+    <div class="panel">
+      <img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="An open breaker panel with rows of switches" loading="lazy" decoding="async">
+    </div>
+    <div class="panel">
+      <img src="assets/kalyan-railway-yard-kalyan-maharashtra-india-panoramio.jpg" alt="Kalyan railway yard, the city's lifeline" loading="lazy" decoding="async">
+    </div>
+  </div>
+  <p class="cap-line">Illustrative photographs of electrical work, plus the Kalyan rail yard. Not this shop or its staff.</p>
+</section>
+
+<section class="cta">
+  <h2 class="panchang rv">One name<br>to call.</h2>
+  <div class="bottom">
+    <p class="rv">Open every day, 8am to 10pm. Ask for a no-obligation quote, or describe the fault.</p>
+    <a class="go rv" href="tel:+918652504592">Call 86525 04592</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="fcols">
+    <div class="rv">
+      <h3>Address</h3>
+      <ul>
+        <li>Dawadi Gaon, Ganesh Nagar</li>
+        <li>Sonar Pada, Dombivli East</li>
+        <li>Kalyan Dombivali, MH 421204</li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+918652504592">86525 04592</a></li>
+        <li><a href="mailto:singhrajkumar1995.rs@gmail.com">singhrajkumar1995.rs@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3>Hours</h3>
+      <ul>
+        <li>Monday – Sunday</li>
+        <li>8:00am – 10:00pm</li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3>Work</h3>
+      <ul>
+        <li>Domestic, commercial, industrial</li>
+        <li>Fixed &amp; commercial wiring</li>
+        <li>Repairs &amp; landlord services</li>
+      </ul>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <div class="fword panchang" id="footWord" aria-hidden="true">
+      <span class="w1">Raj</span>
+      <span class="w2">Electrician</span>
+    </div>
+    <p class="legal">
+      Concept preview. Enquiries only, not a booking service. Business details from its public ThreeBestRated listing; no-obligation quotes and emergency services are the listing's own report. Photographs are illustrative, openly licensed material, not this shop or its staff: wiring by Thayne Tuason, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; breaker panel by BrokenSphere, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; ceiling fan by Noah Wulf, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; Kalyan Railway Yard by Udaykumar PR, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>, all via Wikimedia Commons.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveals */
+  var els = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduced){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.15});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* scaling wordmark: hero shrinks as it leaves, footer grows as it arrives */
+  var hw = document.getElementById('heroWord');
+  var fw = document.getElementById('footWord');
+  function onScroll(){
+    if(reduced) return;
+    var vh = window.innerHeight;
+    var y = window.scrollY;
+    var p1 = Math.min(Math.max(y / vh, 0), 1);
+    if(hw){ hw.style.transform = 'scale(' + (1 - p1 * 0.055) + ')'; }
+    if(fw){
+      var r = fw.getBoundingClientRect();
+      var p2 = Math.min(Math.max((vh - r.top) / vh, 0), 1);
+      fw.style.transform = 'scale(' + (0.94 + p2 * 0.06) + ')';
+    }
+  }
+  if(!reduced){
+    var tick = false;
+    window.addEventListener('scroll', function(){
+      if(!tick){ tick = true; requestAnimationFrame(function(){ onScroll(); tick = false; }); }
+    }, {passive:true});
+    onScroll();
+  }
+
+  /* capability hover descriptions */
+  var desc = document.getElementById('capDesc');
+  document.querySelectorAll('.cap-col li').forEach(function(li){
+    li.addEventListener('mouseenter', function(){ if(desc){ desc.textContent = li.getAttribute('data-d'); } });
+    li.addEventListener('focus', function(){ if(desc){ desc.textContent = li.getAttribute('data-d'); } });
+  });
+})();
+</script>
+</body>
+</html>

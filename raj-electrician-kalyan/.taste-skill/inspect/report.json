@@ -1,0 +1,2083 @@
+{
+ "url": "index.html",
+ "at": "2026-11-03T16:19:13.884Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.45,
+    0.29,
+    0.08,
+    0.69,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 18,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5295,
+     "screens": 5.9,
+     "words": 259,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "eaton-circuit-breaker-panel-open.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "kalyan-railway-yard-kalyan-maharashtra-india-pan"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "RAJ",
+     "words": 1,
+     "chars": 3,
+     "lines": 1,
+     "size": 374.4,
+     "vw": 26,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.003,
+     "leading": 0.84,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 0.77,
+     "top": 252,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "RAJ ELECTRICIAN",
+     "words": 2,
+     "lines": 2,
+     "size": 32,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "RAJ",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 374.4,
+      "vw": 26,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.003,
+      "leading": 0.84,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.77,
+      "top": 252,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Electric work, done locally",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 1055,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Mon–Sun",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 1304,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "8am–10pm",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.15,
+      "top": 1304,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar Pada",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 1304,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Quotes",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 1304,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "What the team covers",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 2207,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work and the city",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.82,
+      "top": 2718,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 2840,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "ONE NAME TO CALL.",
+      "words": 4,
+      "chars": 17,
+      "lines": 2,
+      "size": 132.5,
+      "vw": 9.2,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.97,
+      "top": 3729,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RAJ",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 374.4,
+      "vw": 26,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.002,
+      "leading": 0.84,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.91,
+      "top": 4720,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.97,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0.03,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      28,
+      43,
+      44,
+      63,
+      97,
+      133,
+      374
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.9
+     },
+     "measureChars": 86,
+     "max": {
+      "size": 374.4,
+      "vw": 26,
+      "font": "Panchang",
+      "text": "Raj"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0a0d14",
+     "bodyBgHsl": {
+      "h": 222,
+      "s": 0.33,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#e9edf3",
+       "top": 3585,
+       "hsl": {
+        "h": 216,
+        "s": 0.29,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#3d4652",
+       "share": 0.39
+      },
+      {
+       "color": "#a7b0bf",
+       "share": 0.36
+      },
+      {
+       "color": "#e9edf3",
+       "share": 0.12
+      },
+      {
+       "color": "#0a0d14",
+       "share": 0.1
+      },
+      {
+       "color": "#5b6673",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#e9edf3",
+      "hsl": {
+       "h": 216,
+       "s": 0.29,
+       "l": 0.93
+      },
+      "fg": "#0a0d14"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 49,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 86525 04592"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 5,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 3,
+     "fixed": false,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5295,
+    "margins": {
+     "left": 18,
+     "right": 18
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 900,
+      "words": 23,
+      "media": 0,
+      "middle": 3,
+      "heading": {
+       "text": "Raj",
+       "size": 374,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 18,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 900,
+      "height": 1127,
+      "words": 58,
+      "media": 1,
+      "middle": 187,
+      "heading": {
+       "text": "Electric work,",
+       "size": 63,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 24,
+      "textLeft": 24,
+      "textRight": 24,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.caps",
+      "tag": "section",
+      "top": 2027,
+      "height": 691,
+      "words": 30,
+      "media": 0,
+      "middle": 259,
+      "heading": {
+       "text": "What the team covers",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 616,
+      "textLeft": 24,
+      "textRight": 616,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 2718,
+      "height": 867,
+      "words": 22,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "The work and the city",
+       "size": 44,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 24,
+      "textRight": 768,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 3585,
+      "height": 810,
+      "words": 22,
+      "media": 0,
+      "middle": 151,
+      "heading": {
+       "text": "One name",
+       "size": 132,
+       "tag": "h2"
+      },
+      "left": 24,
+      "right": 58,
+      "textLeft": 24,
+      "textRight": 58,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4395,
+      "height": 900,
+      "words": 122,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Raj",
+       "size": 374,
+       "tag": "span"
+      },
+      "left": 24,
+      "right": 119,
+      "textLeft": 24,
+      "textRight": 119,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1908,
+      "height": 300
+     },
+     {
+      "top": 3992,
+      "height": 304
+     }
+    ],
+    "h1s": [
+     {
+      "text": "RAJ ELECTRICIAN",
+      "size": 32,
+      "top": 252,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 18,
+      "n": 9
+     },
+     {
+      "x": 264,
+      "n": 1
+     },
+     {
+      "x": 384,
+      "n": 1
+     },
+     {
+      "x": 736,
+      "n": 1
+     },
+     {
+      "x": 1156,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 240,
+     "y": 720,
+     "w": 1020,
+     "h": 180
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.77,
+    0.56,
+    0.24,
+    0.62,
+    0.87,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 18,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6340,
+     "screens": 6.2,
+     "words": 281,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "kalyan-railway-yard-kalyan-maharashtra-india-pan"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "RAJ",
+     "words": 1,
+     "chars": 3,
+     "lines": 1,
+     "size": 230.4,
+     "vw": 30,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.006,
+     "leading": 0.84,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 149,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "RAJ ELECTRICIAN",
+     "words": 2,
+     "lines": 2,
+     "size": 32,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "RAJ",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 230.4,
+      "vw": 30,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.006,
+      "leading": 0.84,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 149,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Electric work, done locally",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1120,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Mon–Sun",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1448,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "8am–10pm",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 1448,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar Pada",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 1535,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Quotes",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.47,
+      "top": 1535,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "The work and the city",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.98,
+      "top": 3403,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 3504,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "ONE NAME TO CALL.",
+      "words": 4,
+      "chars": 17,
+      "lines": 2,
+      "size": 61.4,
+      "vw": 8,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4600,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RAJ",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 230.4,
+      "vw": 30,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.003,
+      "leading": 0.84,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5921,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.98,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      26,
+      28,
+      49,
+      61,
+      85,
+      230
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.9
+     },
+     "measureChars": 86,
+     "max": {
+      "size": 230.4,
+      "vw": 30,
+      "font": "Panchang",
+      "text": "Raj"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0a0d14",
+     "bodyBgHsl": {
+      "h": 222,
+      "s": 0.33,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#e9edf3",
+       "top": 4497,
+       "hsl": {
+        "h": 216,
+        "s": 0.29,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a7b0bf",
+       "share": 0.42
+      },
+      {
+       "color": "#3d4652",
+       "share": 0.36
+      },
+      {
+       "color": "#e9edf3",
+       "share": 0.11
+      },
+      {
+       "color": "#0a0d14",
+       "share": 0.09
+      },
+      {
+       "color": "#5b6673",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#e9edf3",
+      "hsl": {
+       "h": 216,
+       "s": 0.29,
+       "l": 0.93
+      },
+      "fg": "#0a0d14"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 49,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 86525 04592"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 6,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.44
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": false,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6340,
+    "margins": {
+     "left": 0,
+     "right": 0
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 1024,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Raj",
+       "size": 230,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 18,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 1024,
+      "height": 1253,
+      "words": 58,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Electric work,",
+       "size": 84,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.caps",
+      "tag": "section",
+      "top": 2277,
+      "height": 1126,
+      "words": 55,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What the team covers",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 321,
+      "textLeft": 16,
+      "textRight": 321,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 3403,
+      "height": 1094,
+      "words": 22,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "The work and the city",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": 104,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 4497,
+      "height": 819,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One name",
+       "size": 61,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 258,
+      "textLeft": 16,
+      "textRight": 258,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5316,
+      "height": 1024,
+      "words": 122,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Address",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 16,
+      "right": 64,
+      "textLeft": 16,
+      "textRight": 64,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 4720,
+      "height": 424
+     }
+    ],
+    "h1s": [
+     {
+      "text": "RAJ ELECTRICIAN",
+      "size": 32,
+      "top": 149,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 13
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.71,
+    0.51,
+    0.24,
+    0.48,
+    0.92,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 18,
+    "scripted": 2,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 5509,
+     "screens": 6.5,
+     "words": 281,
+     "img": 6,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 4,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 6,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "kalyan-railway-yard-kalyan-maharashtra-india-pan"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "RAJ",
+     "words": 1,
+     "chars": 3,
+     "lines": 1,
+     "size": 117,
+     "vw": 30,
+     "font": "Panchang",
+     "weight": 700,
+     "tracking": -0.011,
+     "leading": 0.84,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 160,
+     "tag": "span",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "RAJ ELECTRICIAN",
+     "words": 2,
+     "lines": 2,
+     "size": 32,
+     "font": "Panchang"
+    },
+    "headings": [
+     {
+      "text": "RAJ",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 117,
+      "vw": 30,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.011,
+      "leading": 0.84,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 160,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "Electric work, done locally",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 940,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Mon–Sun",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1232,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "8am–10pm",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 1232,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Sonar Pada",
+      "words": 2,
+      "chars": 10,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1337,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Quotes",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.43,
+      "top": 1337,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "What the team covers",
+      "words": 4,
+      "chars": 20,
+      "lines": 1,
+      "size": 24,
+      "vw": 6.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 1983,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work and the city",
+      "words": 5,
+      "chars": 21,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Switzer",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 2936,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Switzer",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 3037,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "ONE NAME TO CALL.",
+      "words": 4,
+      "chars": 17,
+      "lines": 2,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.03,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 3984,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "RAJ",
+      "words": 1,
+      "chars": 3,
+      "lines": 1,
+      "size": 117,
+      "vw": 30,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.005,
+      "leading": 0.84,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 5074,
+      "tag": "span",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Switzer",
+       "share": 0.98,
+       "mono": false
+      },
+      {
+       "family": "Panchang",
+       "share": 0.02,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      24,
+      25,
+      26,
+      28,
+      31,
+      43,
+      117
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "body": {
+      "font": "Switzer",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8.9
+     },
+     "measureChars": 45,
+     "max": {
+      "size": 117,
+      "vw": 30,
+      "font": "Panchang",
+      "text": "Raj"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.05,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0a0d14",
+     "bodyBgHsl": {
+      "h": 222,
+      "s": 0.33,
+      "l": 0.06
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#e9edf3",
+       "top": 3900,
+       "hsl": {
+        "h": 216,
+        "s": 0.29,
+        "l": 0.93
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a7b0bf",
+       "share": 0.42
+      },
+      {
+       "color": "#3d4652",
+       "share": 0.36
+      },
+      {
+       "color": "#e9edf3",
+       "share": 0.11
+      },
+      {
+       "color": "#0a0d14",
+       "share": 0.09
+      },
+      {
+       "color": "#5b6673",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#e9edf3",
+      "hsl": {
+       "h": 216,
+       "s": 0.29,
+       "l": 0.93
+      },
+      "fg": "#0a0d14"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": 0,
+     "height": 49,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 86525 04592"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.44
+     }
+    ],
+    "nav": {
+     "links": 3,
+     "fixed": false,
+     "height": 844,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "panchang",
+     "switzer"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 5509,
+    "margins": {
+     "left": 0,
+     "right": 0
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 844,
+      "words": 23,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Raj",
+       "size": 117,
+       "tag": "h1"
+      },
+      "left": 18,
+      "right": 18,
+      "textLeft": 18,
+      "textRight": 18,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 844,
+      "height": 971,
+      "words": 58,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Electric work,",
+       "size": 43,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 17,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.caps",
+      "tag": "section",
+      "top": 1815,
+      "height": 1121,
+      "words": 55,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What the team covers",
+       "size": 24,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 29,
+      "textLeft": 16,
+      "textRight": 29,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 2936,
+      "height": 964,
+      "words": 22,
+      "media": 4,
+      "middle": 0,
+      "heading": {
+       "text": "The work and the city",
+       "size": 28,
+       "tag": "h2"
+      },
+      "left": 0,
+      "right": 0,
+      "textLeft": 16,
+      "textRight": 41,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 3900,
+      "height": 675,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "One name",
+       "size": 31,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 45,
+      "textLeft": 16,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4575,
+      "height": 934,
+      "words": 122,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Raj",
+       "size": 117,
+       "tag": "span"
+      },
+      "left": 16,
+      "right": 20,
+      "textLeft": 16,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 4048,
+      "height": 356
+     }
+    ],
+    "h1s": [
+     {
+      "text": "RAJ ELECTRICIAN",
+      "size": 32,
+      "top": 160,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 13
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (14, 15, 16, 17, 18, 20, 28, 43, 44, 63, 97, 133, 374).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 1440,
+   "message": "A section keeps its content on one side and leaves 616px of the width empty: \"What the team covers\".",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence."
+  },
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 390,
+   "message": "A 356px stretch at 4048px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/raj-electrician-kalyan/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
