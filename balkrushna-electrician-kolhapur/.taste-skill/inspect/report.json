@@ -1,0 +1,2048 @@
+{
+ "url": "index.html",
+ "at": "2026-11-03T13:26:11.891Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.44,
+    0.51,
+    0.81,
+    0.18,
+    0.34,
+    1,
+    1
+   ],
+   "motion": {
+    "elements": 17,
+    "css": 1,
+    "transitions": 15,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 5675,
+     "screens": 6.3,
+     "words": 227,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "BALKRUSHNA",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 218.9,
+     "vw": 15.2,
+     "font": "Archivo",
+     "weight": 800,
+     "tracking": -0.01,
+     "leading": 0.82,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 637,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "BALKRUSHNA",
+     "words": 1,
+     "lines": 1,
+     "size": 218.9,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "BALKRUSHNA",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 218.9,
+      "vw": 15.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 637,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "BALKRUSHNA ELECTRICIAN KEEPS KOLHAPUR'S FANS TURNING, ITS LIGHTS ON AND ITS WIRING DRESSED; REPAIRS, FITTINGS AND FRESH RUNS FOR HOMES, SHOPS AND SMALL INDUSTRY, ONE VISIT AT A TIME.",
+      "words": 29,
+      "chars": 182,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Archivo",
+      "weight": 700,
+      "tracking": -0.005,
+      "leading": 1.04,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 1062,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "FANS, FIXED & FITTED.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 151.2,
+      "vw": 10.5,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.43,
+      "top": 1667,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WIRING, NEATLY RUN.",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 151.2,
+      "vw": 10.5,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "right",
+      "position": "right",
+      "widthRatio": 0.46,
+      "top": 2351,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "APPLIANCES LOOKED AT.",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 151.2,
+      "vw": 10.5,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.46,
+      "top": 3035,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HOUSE WIRING",
+      "words": 2,
+      "chars": 12,
+      "lines": 2,
+      "size": 36,
+      "vw": 2.5,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "left",
+      "widthRatio": 0.12,
+      "top": 3577,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CALL",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 388.8,
+      "vw": 27,
+      "font": "Archivo",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.49,
+      "top": 4440,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "BALKRUSHNA",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 218.9,
+      "vw": 15.2,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.96,
+      "top": 4924,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 8,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 3,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      16,
+      17,
+      18,
+      36,
+      151,
+      219,
+      389
+     ],
+     "sizeCount": 7,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 16,
+      "leading": 1.6,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 8
+     },
+     "measureChars": 173,
+     "max": {
+      "size": 388.8,
+      "vw": 27,
+      "font": "Archivo",
+      "text": "Call"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.21,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0034eb",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 1,
+      "l": 0.46
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0034eb",
+       "top": 0,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.46
+       }
+      },
+      {
+       "color": "#002fd6",
+       "top": 900,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.42
+       }
+      },
+      {
+       "color": "#e9e34a",
+       "top": 4235,
+       "hsl": {
+        "h": 58,
+        "s": 0.78,
+        "l": 0.6
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 4775,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.45
+      },
+      {
+       "color": "#3d4c8c",
+       "share": 0.29
+      },
+      {
+       "color": "#5a6db8",
+       "share": 0.16
+      },
+      {
+       "color": "#111111",
+       "share": 0.04
+      },
+      {
+       "color": "#0034eb",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#e9e34a",
+      "hsl": {
+       "h": 58,
+       "s": 0.78,
+       "l": 0.6
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 96571 90339"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 6,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.34
+     },
+     {
+      "type": "img",
+      "ratio": 0.21
+     },
+     {
+      "type": "img",
+      "ratio": 0.19
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 900,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 5675,
+    "margins": {
+     "left": 28,
+     "right": 28
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 900,
+      "words": 27,
+      "media": 1,
+      "middle": 7,
+      "heading": null,
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 900,
+      "height": 383,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Balkrushna Electrician keeps Kolhapur's fans turni",
+       "size": 36,
+       "tag": "p"
+      },
+      "left": 28,
+      "right": 67,
+      "textLeft": 28,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-a",
+      "tag": "section",
+      "top": 1283,
+      "height": 684,
+      "words": 17,
+      "media": 0,
+      "middle": 218,
+      "heading": {
+       "text": "Fans, fixed",
+       "size": 151,
+       "tag": "h2"
+      },
+      "left": 28,
+      "right": 324,
+      "textLeft": 28,
+      "textRight": 324,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-b",
+      "tag": "section",
+      "top": 1967,
+      "height": 684,
+      "words": 18,
+      "media": 0,
+      "middle": 434,
+      "heading": {
+       "text": "Wiring,",
+       "size": 151,
+       "tag": "h2"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-c",
+      "tag": "section",
+      "top": 2651,
+      "height": 684,
+      "words": 16,
+      "media": 0,
+      "middle": 172,
+      "heading": {
+       "text": "Appliances",
+       "size": 151,
+       "tag": "h2"
+      },
+      "left": 28,
+      "right": 282,
+      "textLeft": 28,
+      "textRight": 282,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 3335,
+      "height": 900,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "House wiring",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 167,
+      "right": 1106,
+      "textLeft": 169,
+      "textRight": 1107,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.cta",
+      "tag": "a",
+      "top": 4235,
+      "height": 540,
+      "words": 8,
+      "media": 0,
+      "middle": 291,
+      "heading": {
+       "text": "Call",
+       "size": 389,
+       "tag": "span"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 367,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4775,
+      "height": 900,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Balkrushna",
+       "size": 219,
+       "tag": "div"
+      },
+      "left": 28,
+      "right": 38,
+      "textLeft": 28,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "BALKRUSHNA",
+      "size": 219,
+      "top": 637,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 28,
+      "n": 5
+     },
+     {
+      "x": 868,
+      "n": 2
+     },
+     {
+      "x": 95,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 8,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.16,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 420,
+     "h": 480
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.49,
+    0.47,
+    0.63,
+    0.25,
+    0.94,
+    1
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 1,
+    "transitions": 14,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 5934,
+     "screens": 5.8,
+     "words": 227,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "BALKRUSHNA",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 133.6,
+     "vw": 17.4,
+     "font": "Archivo",
+     "weight": 800,
+     "tracking": -0.01,
+     "leading": 0.82,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 770,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "BALKRUSHNA",
+     "words": 1,
+     "lines": 1,
+     "size": 133.6,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "BALKRUSHNA",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 133.6,
+      "vw": 17.4,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 770,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "FANS, FIXED & FITTED.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 1904,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WIRING, NEATLY RUN.",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 2560,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "APPLIANCES LOOKED AT.",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 99.8,
+      "vw": 13,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 3215,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HOUSE WIRING",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.18,
+      "top": 3990,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CALL",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 238.1,
+      "vw": 31,
+      "font": "Archivo",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.56,
+      "top": 4695,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "BALKRUSHNA",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 72.2,
+      "vw": 9.4,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.86,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.95,
+      "top": 5200,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      16,
+      17,
+      18,
+      24,
+      26,
+      72,
+      100,
+      134,
+      238
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 91,
+     "max": {
+      "size": 238.1,
+      "vw": 31,
+      "font": "Archivo",
+      "text": "Call"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.21,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0034eb",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 1,
+      "l": 0.46
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0034eb",
+       "top": 0,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.46
+       }
+      },
+      {
+       "color": "#002fd6",
+       "top": 1024,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.42
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 3968,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#e9e34a",
+       "top": 4439,
+       "hsl": {
+        "h": 58,
+        "s": 0.78,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.45
+      },
+      {
+       "color": "#3d4c8c",
+       "share": 0.29
+      },
+      {
+       "color": "#5a6db8",
+       "share": 0.16
+      },
+      {
+       "color": "#111111",
+       "share": 0.04
+      },
+      {
+       "color": "#0034eb",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#e9e34a",
+      "hsl": {
+       "h": 58,
+       "s": 0.78,
+       "l": 0.6
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 96571 90339"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.37
+     },
+     {
+      "type": "img",
+      "ratio": 0.31
+     },
+     {
+      "type": "img",
+      "ratio": 0.31
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 1024,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 5934,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 1024,
+      "words": 27,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 54,
+      "textLeft": 20,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 1024,
+      "height": 425,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Balkrushna Electrician keeps Kolhapur's fans turni",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-a",
+      "tag": "section",
+      "top": 1449,
+      "height": 655,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Fans, fixed",
+       "size": 100,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 212,
+      "textLeft": 20,
+      "textRight": 212,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-b",
+      "tag": "section",
+      "top": 2104,
+      "height": 655,
+      "words": 18,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Wiring,",
+       "size": 100,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-c",
+      "tag": "section",
+      "top": 2759,
+      "height": 655,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Appliances",
+       "size": 100,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 177,
+      "textLeft": 20,
+      "textRight": 177,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 3415,
+      "height": 1024,
+      "words": 14,
+      "media": 0,
+      "middle": 201,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 317,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.cta",
+      "tag": "a",
+      "top": 4439,
+      "height": 471,
+      "words": 8,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Call",
+       "size": 238,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 168,
+      "textLeft": 20,
+      "textRight": 168,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4910,
+      "height": 1024,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Address",
+       "size": 16,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1564,
+      "height": 328
+     },
+     {
+      "top": 2872,
+      "height": 332
+     }
+    ],
+    "h1s": [
+     {
+      "text": "BALKRUSHNA",
+      "size": 134,
+      "top": 770,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 10
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 6,
+   "filled": [
+    0.45,
+    0.59,
+    0.78,
+    0.08,
+    0.93,
+    1
+   ],
+   "motion": {
+    "elements": 16,
+    "css": 1,
+    "transitions": 14,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 4979,
+     "screens": 5.9,
+     "words": 227,
+     "img": 7,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins",
+      "san-juan-bautista-tuxtepec-electrical-wiring-ins"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "BALKRUSHNA",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 67.9,
+     "vw": 17.4,
+     "font": "Archivo",
+     "weight": 800,
+     "tracking": -0.01,
+     "leading": 0.82,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "center",
+     "position": "center",
+     "widthRatio": 1,
+     "top": 620,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "BALKRUSHNA",
+     "words": 1,
+     "lines": 1,
+     "size": 67.9,
+     "font": "Archivo"
+    },
+    "headings": [
+     {
+      "text": "BALKRUSHNA",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 67.9,
+      "vw": 17.4,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.82,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 620,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "FANS, FIXED & FITTED.",
+      "words": 4,
+      "chars": 21,
+      "lines": 2,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 1711,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "WIRING, NEATLY RUN.",
+      "words": 3,
+      "chars": 19,
+      "lines": 2,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2251,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "APPLIANCES LOOKED AT.",
+      "words": 3,
+      "chars": 21,
+      "lines": 2,
+      "size": 50.7,
+      "vw": 13,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.9,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.57,
+      "top": 2791,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "HOUSE WIRING",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": 0,
+      "leading": 1,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 3380,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "CALL",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 120.9,
+      "vw": 31,
+      "font": "Archivo",
+      "weight": 900,
+      "tracking": -0.02,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.56,
+      "top": 4014,
+      "tag": "span",
+      "kind": "heading"
+     },
+     {
+      "text": "BALKRUSHNA",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Archivo",
+      "weight": 800,
+      "tracking": -0.01,
+      "leading": 0.86,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4525,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 7,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 2,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Archivo",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      16,
+      17,
+      18,
+      24,
+      26,
+      37,
+      51,
+      68,
+      121
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Archivo",
+      "size": 16,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 120.9,
+      "vw": 31,
+      "font": "Archivo",
+      "text": "Call"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.21,
+     "centerShare": 0.02,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0034eb",
+     "bodyBgHsl": {
+      "h": 227,
+      "s": 1,
+      "l": 0.46
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#0034eb",
+       "top": 0,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.46
+       }
+      },
+      {
+       "color": "#002fd6",
+       "top": 844,
+       "hsl": {
+        "h": 227,
+        "s": 1,
+        "l": 0.42
+       }
+      },
+      {
+       "color": "#ffffff",
+       "top": 3358,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#e9e34a",
+       "top": 3747,
+       "hsl": {
+        "h": 58,
+        "s": 0.78,
+        "l": 0.6
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#ffffff",
+       "share": 0.45
+      },
+      {
+       "color": "#3d4c8c",
+       "share": 0.29
+      },
+      {
+       "color": "#5a6db8",
+       "share": 0.16
+      },
+      {
+       "color": "#111111",
+       "share": 0.04
+      },
+      {
+       "color": "#0034eb",
+       "share": 0.04
+      }
+     ],
+     "button": {
+      "bg": "#e9e34a",
+      "hsl": {
+       "h": 58,
+       "s": 0.78,
+       "l": 0.6
+      },
+      "fg": "#111111"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 1,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call 96571 90339"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 4,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.28
+     },
+     {
+      "type": "img",
+      "ratio": 0.25
+     },
+     {
+      "type": "img",
+      "ratio": 0.23
+     }
+    ],
+    "nav": {
+     "links": 1,
+     "fixed": false,
+     "height": 844,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "archivo"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 4979,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "header.hero",
+      "tag": "header",
+      "top": 0,
+      "height": 844,
+      "words": 27,
+      "media": 2,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 26,
+      "textLeft": 20,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro",
+      "tag": "section",
+      "top": 844,
+      "height": 438,
+      "words": 30,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Balkrushna Electrician keeps Kolhapur's fans turni",
+       "size": 24,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-a",
+      "tag": "section",
+      "top": 1282,
+      "height": 540,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Fans, fixed",
+       "size": 51,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 59,
+      "textLeft": 20,
+      "textRight": 59,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-b",
+      "tag": "section",
+      "top": 1822,
+      "height": 540,
+      "words": 18,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Wiring,",
+       "size": 51,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.field.f-c",
+      "tag": "section",
+      "top": 2363,
+      "height": 540,
+      "words": 16,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Appliances",
+       "size": 51,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 84,
+      "textLeft": 20,
+      "textRight": 84,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 2903,
+      "height": 844,
+      "words": 14,
+      "media": 0,
+      "middle": 12,
+      "heading": {
+       "text": "House wiring",
+       "size": 26,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 128,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "a.cta",
+      "tag": "a",
+      "top": 3747,
+      "height": 388,
+      "words": 8,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Call",
+       "size": 121,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 85,
+      "textLeft": 20,
+      "textRight": 85,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 4135,
+      "height": 844,
+      "words": 116,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Balkrushna",
+       "size": 37,
+       "tag": "div"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 1404,
+      "height": 300
+     },
+     {
+      "top": 1968,
+      "height": 276
+     },
+     {
+      "top": 2484,
+      "height": 300
+     }
+    ],
+    "h1s": [
+     {
+      "text": "BALKRUSHNA",
+      "size": 68,
+      "top": 620,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 10
+     }
+    ],
+    "leftBlocks": 10,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 173 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/balkrushna-electrician-kolhapur/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

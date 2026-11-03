@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Balkrushna Electrician — Kolhapur</title>
+<meta name="description" content="Balkrushna Electrician, Nagalapark, Kolhapur. Ceiling fans, lighting, wiring and appliance repair since 2016. Concept preview.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cobalt:#0034eb;
+    --cobalt-deep:#002fd6;
+    --ink:#ffffff;
+    --muted:#c5d0ff;
+    --accent:#e9e34a;
+    --accent-ink:#111111;
+    --edge:28px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Archivo',sans-serif;
+    background:var(--cobalt);
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  a{color:inherit}
+
+  /* ---------- hero : the counter ---------- */
+  .hero{
+    position:relative;
+    min-height:100svh;
+    display:flex;
+    flex-direction:column;
+    background:var(--cobalt);
+    overflow:hidden;
+  }
+  .hero-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    padding:22px var(--edge);
+    font-size:16px;
+    letter-spacing:.02em;
+    z-index:3;
+  }
+  .hero-top .place{color:var(--ink)}
+  .hero-top a{text-decoration:none;transition:color .2s}
+  .hero-top a:hover{color:var(--accent)}
+  .counter{
+    position:relative;
+    flex:1;
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    padding-top:9svh;
+    z-index:1;
+  }
+  .counter .obj{
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    transition:opacity 1.6s ease;
+  }
+  .counter .obj.on{opacity:1}
+  .cap{
+    position:absolute;
+    top:3.5svh;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:16px;
+    letter-spacing:.04em;
+    transition:opacity .5s ease;
+    color:var(--ink);
+    white-space:nowrap;
+    z-index:2;
+  }
+  .counter img{
+    width:min(62vw,820px);
+    max-height:60svh;
+    object-fit:contain;
+    filter:grayscale(1) brightness(.62) contrast(1.12);
+  }
+  .counter .obj:nth-child(2) img{width:min(38vw,500px)}
+  .counter .obj:nth-child(3) img{width:min(34vw,460px)}
+  .wordmark{
+    position:relative;
+    z-index:3;
+    width:100%;
+    text-align:center;
+    font-weight:800;
+    font-stretch:62%;
+    text-transform:uppercase;
+    font-size:clamp(64px,15.2vw,236px);
+    line-height:.82;
+    letter-spacing:-.01em;
+    padding:0 var(--edge) 10px;
+    white-space:nowrap;
+  }
+  .hero-sub{
+    position:relative;
+    z-index:3;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:16px;
+    padding:0 var(--edge) 26px;
+    font-size:16px;
+    color:var(--ink);
+  }
+  .hero-sub .what{font-size:18px;line-height:1.3;max-width:44ch}
+  .callbtn{
+    display:inline-block;
+    background:var(--accent);
+    color:var(--accent-ink);
+    font-weight:700;
+    font-size:17px;
+    text-decoration:none;
+    padding:14px 26px;
+    min-height:48px;
+    line-height:20px;
+    border-radius:999px;
+    transition:background .2s,color .2s;
+    white-space:nowrap;
+  }
+  .callbtn:hover{background:var(--ink);color:var(--cobalt)}
+
+  /* ---------- intro : heavy paragraph ---------- */
+  .intro{
+    padding:18svh var(--edge) 16svh;
+    background:var(--cobalt-deep);
+  }
+  .intro p{
+    font-weight:700;
+    font-stretch:62%;
+    text-transform:uppercase;
+    font-size:clamp(24px,2.6vw,36px);
+    line-height:1.04;
+    letter-spacing:-.005em;
+    max-width:100%;
+  }
+  .chip{
+    display:inline-block;
+    vertical-align:-.24em;
+    height:.92em;
+    width:1.7em;
+    object-fit:cover;
+    border-radius:999px;
+    margin:0 .08em;
+    filter:saturate(.85);
+  }
+
+  /* ---------- features : colour fields ---------- */
+  .field{
+    min-height:76svh;
+    position:relative;
+    display:block;
+  }
+  .field .note{
+    position:absolute;
+    top:9svh;
+    font-size:17px;
+    line-height:1.5;
+    max-width:30ch;
+    color:var(--ink);
+  }
+  .field .say{
+    position:absolute;
+    bottom:var(--edge);
+    font-weight:800;
+    font-stretch:62%;
+    text-transform:uppercase;
+    font-size:clamp(52px,10.5vw,164px);
+    line-height:.9;
+    letter-spacing:-.01em;
+  }
+  .field.f-a{background:var(--cobalt)}
+  .field.f-b{background:var(--cobalt-deep)}
+  .field.f-c{background:var(--cobalt)}
+  .field .note{left:calc(var(--edge) + 58.333%)}
+  .field .say{left:var(--edge)}
+  .field.f-b .note{left:var(--edge)}
+  .field.f-b .say{left:auto;right:var(--edge);text-align:right}
+
+  /* ---------- showcase : close-up + card ---------- */
+  .showcase{
+    position:relative;
+    min-height:100svh;
+    overflow:hidden;
+  }
+  .showcase .bg{
+    position:absolute;inset:0;
+    width:100%;height:100%;
+    object-fit:cover;
+    filter:brightness(.72);
+    animation:drift 22s ease-in-out infinite alternate;
+  }
+  @keyframes drift{from{transform:scale(1) translateY(0)}to{transform:scale(1.07) translateY(-1.5%)}}
+  .showcase .grid{
+    position:relative;
+    z-index:2;
+    min-height:100svh;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:0 24px;
+    padding:0 var(--edge);
+    align-items:center;
+  }
+  .card{
+    grid-column:2/4;
+    background:var(--ink);
+    color:var(--cobalt);
+    border-radius:6px;
+    min-height:52svh;
+    padding:26px 22px 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .card h2{
+    font-weight:800;
+    font-stretch:62%;
+    text-transform:uppercase;
+    font-size:clamp(26px,2.6vw,36px);
+    line-height:1;
+  }
+  .card .variant{margin-top:10px;font-size:17px;color:#4a5da8}
+  .card .fact{margin-top:4px;font-size:17px;font-weight:600}
+  .card img{
+    margin:22px 0;
+    width:100%;
+    aspect-ratio:3/2;
+    object-fit:cover;
+  }
+  .card .act{
+    margin-top:auto;
+    display:block;
+    width:calc(100% + 44px);
+    margin-left:-22px;margin-right:-22px;
+    background:var(--cobalt);
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:700;
+    font-size:17px;
+    padding:18px 0;
+    border-radius:0 0 6px 6px;
+    transition:background .2s,color .2s;
+  }
+  .card .act:hover{background:var(--accent);color:var(--accent-ink)}
+
+  /* ---------- cta : one word is the button ---------- */
+  .cta{
+    display:block;
+    position:relative;
+    min-height:60svh;
+    background:var(--accent);
+    color:var(--accent-ink);
+    text-decoration:none;
+    overflow:hidden;
+    transition:background .12s,color .12s;
+  }
+  .cta .next{
+    position:absolute;
+    top:26px;left:var(--edge);
+    font-size:18px;
+    max-width:34ch;
+    line-height:1.35;
+  }
+  .cta .arrow{
+    position:absolute;
+    top:26px;right:var(--edge);
+    width:48px;height:48px;
+  }
+  .cta .verb{
+    position:absolute;
+    left:50%;bottom:24px;
+    transform:translateX(-50%);
+    font-weight:900;
+    font-stretch:62%;
+    text-transform:uppercase;
+    font-size:clamp(120px,27vw,430px);
+    line-height:.8;
+    letter-spacing:-.02em;
+    white-space:nowrap;
+  }
+  .cta:hover,.cta:focus-visible{background:var(--accent-ink);color:var(--accent)}
+
+  /* ---------- footer ---------- */
+  .footer{
+    min-height:100svh;
+    background:var(--ink);
+    color:var(--cobalt);
+    display:grid;
+    grid-template-rows:auto 1fr auto;
+    padding:40px var(--edge) 20px;
+  }
+  .fcols{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:32px 24px;
+    font-size:16px;
+    line-height:1.55;
+  }
+  .fcols h3{
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:10px;
+    color:var(--cobalt);
+  }
+  .fcols ul{list-style:none;color:#5a6db8}
+  .fcols a{color:#5a6db8;text-decoration:none}
+  .fcols a:hover{color:var(--cobalt);text-decoration:underline}
+  .fmark{
+    text-align:center;
+    font-weight:800;
+    font-stretch:62%;
+    text-transform:uppercase;
+    font-size:15.2vw;
+    line-height:.82;
+    letter-spacing:-.01em;
+    white-space:nowrap;
+  }
+  .legal{
+    margin-top:18px;
+    padding-top:14px;
+    font-size:16px;
+    color:#3d4c8c;
+    line-height:1.6;
+  }
+  .legal a{color:#3d4c8c}
+
+  /* ---------- reveal ---------- */
+  .rv{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s ease}
+  .rv.in{opacity:1;transform:none}
+
+  @media (max-width:820px){
+    :root{--edge:20px}
+    .hero-top{flex-direction:column;gap:3px;align-items:flex-start}
+    .counter img{width:86vw;max-height:48svh}
+    .counter .obj:nth-child(2) img,
+    .counter .obj:nth-child(3) img{width:64vw}
+    .wordmark{font-size:17.4vw}
+    .hero-sub{flex-direction:column;align-items:flex-start;gap:14px}
+    .cap{font-size:16px}
+    .field{min-height:64svh}
+    .field .note{left:var(--edge);max-width:80%;font-size:16px}
+    .field .say{font-size:13vw;left:var(--edge);right:auto;text-align:left}
+    .field.f-b .note{text-align:right;left:auto;right:var(--edge)}
+    .field.f-b .say{left:var(--edge);text-align:left}
+    .showcase .grid{display:block;padding:0}
+    .showcase .bg{object-position:50% 30%}
+    .card{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      min-height:46svh;
+      border-radius:0;
+      padding:22px 20px 0;
+      text-align:left;
+      align-items:flex-start;
+    }
+    .card img{
+      position:absolute;
+      top:22px;right:20px;
+      width:96px;
+      margin:0;
+      aspect-ratio:3/2;
+    }
+    .card .act{width:calc(100% + 40px);margin-left:-20px;margin-right:-20px;border-radius:0;text-align:center}
+    .cta{min-height:46svh}
+    .cta .next{font-size:17px;max-width:26ch}
+    .cta .arrow{width:32px;height:32px}
+    .cta .verb{font-size:31vw}
+    .fcols{grid-template-columns:1fr 1fr;gap:32px 20px;font-size:16px}
+    .fmark{font-size:9.4vw;white-space:normal;line-height:.86}
+    .legal{font-size:16px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .showcase .bg{animation:none}
+    .counter .obj{transition:none}
+    .rv{opacity:1;transform:none;transition:none}
+    .cta,.card .act,.hero-top a{transition:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-top">
+    <span class="place">Electrician · Nagalapark, Kolhapur</span>
+    <a href="tel:+919657190339">96571 90339</a>
+  </div>
+  <div class="counter" id="counter">
+    <div class="obj on"><img src="assets/ceiling-fan-mid-spin.jpg" alt="A ceiling fan captured mid-spin, presented like an object on a counter" fetchpriority="high"></div>
+    <div class="obj"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="An open circuit-breaker panel with rows of switches" loading="lazy" decoding="async"></div>
+    <div class="obj"><img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Neatly dressed electrical wiring runs inside a wall" loading="lazy" decoding="async"></div>
+    <span class="cap" id="cap">ceiling fan, mid-spin</span>
+  </div>
+  <h1 class="wordmark">Balkrushna</h1>
+  <div class="hero-sub">
+    <span class="what">Electrician for homes, shops and small industry, since 2016. Open Mon–Sun, 8am–10pm.</span>
+    <a class="callbtn" href="tel:+919657190339">Call 96571 90339</a>
+  </div>
+</header>
+
+<main style="background:var(--cobalt)">
+
+<section class="intro">
+  <p class="rv">Balkrushna Electrician keeps Kolhapur's fans turning<img class="chip" src="assets/ceiling-fan-mid-spin.jpg" alt="">, its lights on and its wiring dressed<img class="chip" src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="">; repairs, fittings and fresh runs for homes, shops and small industry, one visit at a time.</p>
+</section>
+
+<section class="field f-a">
+  <p class="note rv">Ceiling fan repair, fitting and new installation, done at your home or premises.</p>
+  <h2 class="say rv">Fans, fixed<br>&amp; fitted.</h2>
+</section>
+
+<section class="field f-b">
+  <p class="note rv">New wiring and rewiring, lighting points and repairs, domestic, commercial and industrial.</p>
+  <h2 class="say rv">Wiring,<br>neatly run.</h2>
+</section>
+
+<section class="field f-c">
+  <p class="note rv">Refrigerator, oven and washing machine repair, alongside the electrical work itself.</p>
+  <h2 class="say rv">Appliances<br>looked at.</h2>
+</section>
+
+<section class="showcase">
+  <img class="bg" src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Close-up of electrical wiring dressed inside a wall" loading="lazy" decoding="async">
+  <div class="grid">
+    <div class="card rv">
+      <h2>House wiring</h2>
+      <p class="variant">homes · shops · small industry</p>
+      <p class="fact">working since 2016</p>
+      <img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="A circuit-breaker panel, the heart of a house's wiring" loading="lazy" decoding="async">
+      <a class="act" href="mailto:balkrushnasale@gmail.com?subject=Wiring%20enquiry%20(Kolhapur)">Ask about wiring</a>
+    </div>
+  </div>
+</section>
+
+<a class="cta" href="tel:+919657190339">
+  <span class="next rv">Mon–Sun, 8am–10pm. Tell us what isn't working.</span>
+  <svg class="arrow" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" aria-hidden="true">
+    <path d="M10 38 L38 10 M16 10 h22 v22"/>
+  </svg>
+  <span class="verb">Call</span>
+</a>
+
+</main>
+
+<footer class="footer">
+  <div class="fcols">
+    <div class="rv">
+      <h3>Address</h3>
+      <ul>
+        <li>Keshar Kasturi Apartment</li>
+        <li>near Swami Vivekananda College Road</li>
+        <li>Nagalapark, Kolhapur 416003</li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3>Contact</h3>
+      <ul>
+        <li><a href="tel:+919657190339">96571 90339</a></li>
+        <li><a href="tel:+919604497943">96044 97943</a></li>
+        <li><a href="mailto:balkrushnasale@gmail.com">balkrushnasale@gmail.com</a></li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3>Hours</h3>
+      <ul>
+        <li>Monday – Sunday</li>
+        <li>8:00am – 10:00pm</li>
+      </ul>
+    </div>
+    <div class="rv">
+      <h3>Work</h3>
+      <ul>
+        <li>Ceiling fan repair &amp; fitting</li>
+        <li>Lighting &amp; wiring</li>
+        <li>Fridge, oven, washer repair</li>
+      </ul>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;justify-content:center">
+    <div class="fmark">Balkrushna</div>
+  </div>
+  <div>
+    <p class="legal">
+      Concept preview. Enquiries only, not a booking service. Business details from its public ThreeBestRated listing.
+      Photographs and footage are illustrative, openly licensed material, not this shop or its staff:
+      "Ceiling Fan Mid-Spin" by Noah Wulf, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>;
+      wiring photograph by Thayne Tuason, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>;
+      "Eaton circuit breaker panel open" by BrokenSphere, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>;
+      footage by Amuzujoe, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, all via Wikimedia Commons.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  /* hero crossfade — light shifting in a room */
+  var objs = Array.prototype.slice.call(document.querySelectorAll('#counter .obj'));
+  var caps = ['ceiling fan, mid-spin', 'the breaker panel', 'wiring, dressed'];
+  var capEl = document.getElementById('cap');
+  var idx = 0, timer = null;
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function step(){
+    objs[idx].classList.remove('on');
+    idx = (idx + 1) % objs.length;
+    if(capEl){ capEl.style.opacity = 0; }
+    setTimeout(function(){
+      objs[idx].classList.add('on');
+      if(capEl){ capEl.textContent = caps[idx]; capEl.style.opacity = 1; }
+    }, 500);
+  }
+  function start(){ if(!reduced && !timer){ timer = setInterval(step, 5600); } }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+  document.addEventListener('visibilitychange', function(){
+    if(document.hidden){ stop(); } else { start(); }
+  });
+  if(reduced){ objs.forEach(function(o,i){ o.classList.toggle('on', i===0); }); }
+  else { start(); }
+
+  /* reveals */
+  var els = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduced){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:.18});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* footage: pause offscreen / hidden; poster only under reduced motion */
+  var v = document.querySelector('.footage video');
+  if(v){
+    if(reduced){ v.pause(); }
+    else if('IntersectionObserver' in window){
+      new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if(e.isIntersecting && !document.hidden){ if(v.preload==='none'){ v.preload='auto'; } v.play().catch(function(){}); }
+          else { v.pause(); }
+        });
+      }, {threshold:.2}).observe(v);
+      document.addEventListener('visibilitychange', function(){
+        if(document.hidden){ v.pause(); }
+      });
+    }
+  }
+})();
+</script>
+</body>
+</html>
