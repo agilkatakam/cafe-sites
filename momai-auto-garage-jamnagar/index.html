@@ -32,7 +32,7 @@ img,video{display:block;max-width:100%}
 .nav a:hover{filter:brightness(1.08)}
 /* the sentence is the layout */
 .hero{min-height:88svh;display:flex;flex-direction:column;justify-content:center;padding:24px;gap:32px}
-.sentence{font-family:'Anton';font-size:clamp(3rem,11vw,11.5rem);line-height:0.95;letter-spacing:-0.01em;text-transform:uppercase}
+.sentence{font-family:'Anton';font-size:clamp(3rem,13vw,13rem);line-height:0.95;letter-spacing:-0.01em;text-transform:uppercase}
 .slot{display:inline-block;vertical-align:baseline;width:2.6em;height:0.82em;border-radius:0.14em;overflow:hidden;transform:translateY(0.1em);position:relative}
 .slot video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .sub{max-width:34em;color:var(--muted);font-size:var(--step-lead)}
@@ -103,14 +103,14 @@ body[data-chapter="call"]{background:#101112}
 </nav>
 
 <header class="hero">
-  <h1 class="sentence">Fixed,<span class="slot"><video src="assets/transporting-goods-using-motorcycle.webm" poster="assets/transporting-goods-using-motorcycle-poster.jpg" autoplay muted loop playsinline></video></span><br>back on the road.</h1>
+  <h1 class="sentence">Bring the<br><span class="slot"><video src="assets/transporting-goods-using-motorcycle.webm" poster="assets/transporting-goods-using-motorcycle-poster.jpg" autoplay muted loop playsinline></video></span> bike in.</h1>
   <p class="sub rv">Momai Auto Garage and Bike Service Point is a two-wheeler workshop on the Jamnagar highway, SH-6 at Komal Nagar. Bring the bike in, or call first - 94289 85637. (The clip in the sentence is illustrative, not this garage.)</p>
 </header>
 
 <section class="feat" id="needs">
-  <h2 class="statement rv">Come with a <span class="chip"><img src="assets/brembo-motorcycle-brake.jpg" alt="Close-up of a motorcycle brake disc"></span> rattle. Leave with it <span class="chip"><img src="assets/dfc-4703-a-mechanic-works-on-a.jpg" alt="A mechanic at work on a motorcycle"></span> fixed.</h2>
+  <h2 class="statement rv">Tell the <span class="chip"><img src="assets/brembo-motorcycle-brake.jpg" alt="Close-up of a motorcycle brake disc"></span> bench what&rsquo;s <span class="chip"><img src="assets/dfc-4703-a-mechanic-works-on-a.jpg" alt="A mechanic at work on a motorcycle"></span> wrong.</h2>
   <div>
-    <p>A rattle, a dead brake, worn tyres, a bike due for service - whatever it is, say it before you dial and the conversation starts halfway done. Tap what your bike needs:</p>
+    <p>A rattle, a dead brake, worn tyres, a bike due for service - whatever it is - tap it here, then say it when you call:</p>
     <div class="pick">
       <button type="button" data-need="a service">A service</button>
       <button type="button" data-need="a repair">A repair</button>
@@ -123,7 +123,7 @@ body[data-chapter="call"]{background:#101112}
 </section>
 
 <section class="show">
-  <h2>One bench, every distance.</h2>
+  <h2>One photograph, three distances.</h2>
   <div class="dist">
     <figure class="far rv"><span class="tag">Illustrative photo, not this garage</span><img src="assets/motorcycle-repair-shop-bangkok-8270996736.jpg" alt="A busy motorcycle repair workshop with several bikes"></figure>
     <figure class="mid rv"><span class="tag">Illustrative photo</span><img src="assets/motorcycle-repair-shop-bangkok-8270996736.jpg" alt="The same workshop, closer in" style="object-position:62% 45%"></figure>
@@ -135,8 +135,8 @@ body[data-chapter="call"]{background:#101112}
 </section>
 
 <section class="cta" id="call">
-  <h2 class="rv">Back on the road.</h2>
-  <p id="ctatext">Call the garage and say what the bike needs. Someone picks up, and you hear what it will take before you ride over.</p>
+  <h2 class="rv">Call the garage.</h2>
+  <p id="ctatext">Say what the bike needs - a service, a repair, tyres, a check-up - and ask when to bring it by.</p>
   <a class="call" id="callbtn" href="tel:+919428985637">Call 94289 85637</a>
   <p class="addr">GJ SH 6, Komal Nagar, Mayur Nagar, Jamnagar, Gujarat 361006.</p>
 </section>
@@ -161,7 +161,7 @@ document.querySelectorAll('.pick button').forEach(b=>{
     b.classList.add('on');
     const need=b.dataset.need;
     needline.textContent='Picked: '+need+'. The call button now says so.';
-    ctatext.textContent='Call about '+need+' - the garage knows why you are ringing before you say it twice.';
+    ctatext.textContent='Call about '+need+', and ask when to bring the bike by.';
     callbtn.textContent='Call 94289 85637 about '+need;
   });
 });
