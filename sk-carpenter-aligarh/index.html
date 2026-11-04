@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sk Carpenter &amp; Furniture - Jamalpur, Aligarh</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Concept preview: furniture making and repair in Jamalpur, Aligarh - chairs, cots, kitchen furniture and woodwork.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=erode@400,401,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#dedad3; --surface:#d3cec6; --ink:#0a0a0a; --muted:#5c5852; --accent:#256f82; --accent-ink:#ffffff;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.35rem,1.15rem + 0.9vw,1.9rem);
+  --step-head:clamp(2rem,1.4rem + 2.6vw,2.75rem);
+  --step-name:clamp(2.6rem,1.8rem + 3.6vw,4rem);
+  --pad:clamp(48px,6vw,72px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Erode",Georgia,serif;font-size:var(--step-body);line-height:1.5;overflow-x:clip}
+h1,h2,h3{font-weight:500;letter-spacing:-0.025em;line-height:0.95}
+a{color:var(--accent)}
+img{display:block}
+
+.stage{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.photo{position:sticky;top:12px;height:calc(100svh - 24px);border-radius:16px;overflow:hidden;background:var(--surface);grid-column:2;grid-row:1}
+.photo figure{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
+.photo figure.on{opacity:1}
+.photo img{width:100%;height:100%;object-fit:cover}
+.photo .tag{position:absolute;left:14px;bottom:12px;z-index:3;font-size:var(--step-small);color:#fff;background:rgba(10,10,10,0.55);padding:4px 10px;border-radius:999px}
+.read{padding:0 var(--pad) 0 40px;grid-column:1;grid-row:1}
+.read>*{max-width:46ch}
+
+header{padding-top:clamp(48px,10vh,110px)}
+h1{font-size:var(--step-name);max-width:12ch}
+.standfirst{margin-top:26px;font-size:var(--step-lead);line-height:1.35;color:var(--ink)}
+.contactline{margin-top:30px;display:flex;flex-direction:column;gap:6px;font-size:var(--step-body)}
+.contactline a{color:var(--ink);text-decoration:none}
+.contactline a:hover{color:var(--accent)}
+
+section{margin-top:clamp(90px,16vh,170px)}
+h2{font-size:var(--step-head);max-width:16ch}
+.copy p+p{margin-top:1em}
+.muted{color:var(--muted)}
+
+.plate{margin-top:28px;background:var(--surface);border-radius:16px;padding:clamp(26px,3.4vw,44px);aspect-ratio:1/1;display:flex;flex-direction:column;justify-content:space-between}
+.plate h3{font-size:var(--step-lead)}
+.plate ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.plate li{font-size:var(--step-body)}
+
+.rows{display:flex;flex-direction:column}
+.row{display:grid;grid-template-columns:1fr;gap:6px;padding:26px 0 26px 0}
+.row h3{font-size:var(--step-lead);letter-spacing:-0.02em}
+.row p{margin-top:6px;color:var(--muted);font-size:var(--step-body)}
+
+.facts dl{display:grid;grid-template-columns:auto 1fr;gap:8px 22px;margin-top:22px}
+.facts dt{color:var(--muted);font-size:var(--step-small);padding-top:3px}
+.facts dd{font-size:var(--step-body)}
+.facts a{color:var(--ink)}
+.inlineph{margin-top:30px}
+.inlineph img{width:100%;height:auto;border-radius:12px}
+.inlineph figcaption{margin-top:8px;font-size:var(--step-small);color:var(--muted)}
+.pricenote{margin-top:22px;font-size:var(--step-small);color:var(--muted)}
+
+.cta .line{font-size:var(--step-lead);line-height:1.4;max-width:24ch}
+.cta .go{display:inline-block;margin-top:26px;background:var(--accent);color:var(--accent-ink);text-decoration:none;font-size:var(--step-body);padding:14px 26px;border-radius:999px}
+.cta .go:hover{background:var(--ink)}
+
+footer{margin-top:clamp(110px,18vh,190px);padding-bottom:56px}
+footer .quiet{font-size:var(--step-body);color:var(--muted)}
+footer .legal{margin-top:34px;font-size:var(--step-small);color:var(--muted);line-height:1.6}
+footer .legal a{color:var(--muted)}
+
+.rv{opacity:0;transform:translateY(14px);transition:opacity .4s ease,transform .4s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .rv,.photo figure{transition:none}
+  .rv{opacity:1;transform:none}
+  .photo figure:first-child{opacity:1}
+}
+
+@media (max-width:1100px){
+  .stage{display:block;padding:0}
+  .photo{position:sticky;top:0;height:60svh;width:100%;border-radius:0;z-index:1}
+  .read{position:relative;z-index:2;background:var(--bg);border-radius:18px 18px 0 0;padding:34px var(--pad) 0}
+  .read>*{max-width:none}
+  header{padding-top:10px}
+  .plate{aspect-ratio:auto;gap:30px}
+  .plate ul{display:grid;grid-template-columns:1fr 1fr;gap:12px 34px}
+  section{margin-top:84px}
+}
+@media (max-width:700px){
+  .read{padding-left:22px;padding-right:22px}
+  .row{grid-template-columns:1fr;gap:6px}
+}
+</style>
+</head>
+<body>
+
+<div class="stage">
+
+  <aside class="photo" aria-label="Atmosphere photographs">
+    <figure class="on" data-ph="intro"><img src="assets/carpentry-materials.jpg" alt="Planks, saws and a hammer laid out for furniture work" fetchpriority="high" decoding="async"></figure>
+    <figure data-ph="work"><img src="assets/a-wooden-furniture-chair.jpg" alt="A carved wooden chair partway through making in a workshop" loading="lazy" decoding="async"></figure>
+    <figure data-ph="detail"><img src="assets/woodcarving-gouges.jpg" alt="A set of woodcarving gouges resting on a workbench" loading="lazy" decoding="async"></figure>
+    <span class="tag">Illustrative photographs - not this business's own work</span>
+  </aside>
+
+  <main class="read">
+
+    <header data-ph="intro">
+      <h1 class="rv">Sk Carpenter &amp; Furniture</h1>
+      <p class="standfirst rv">Chairs and cots, kitchen furniture, varnishing and repairs - one workshop in Jamalpur, Aligarh.</p>
+      <div class="contactline rv">
+        <a href="tel:+919897351236">98973 51236</a>
+        <a href="mailto:skcrazywood@gmail.com">skcrazywood@gmail.com</a>
+      </div>
+    </header>
+
+    <section class="intro copy" data-ph="intro">
+      <p class="rv">The workshop makes and mends wooden furniture: chairs, cots and beds, kitchen units, and the small jobs in between - a sliding window that sticks, a chair that wobbles, a cot that needs taking apart and putting back together in a new room.</p>
+      <p class="rv muted">Its public listing describes a team with years of experience in the carpentry field that prioritises work suited to the customer's budget, from renovating apartment woodwork to modular kitchens and polishing - those are the listing's own words, not ours.</p>
+    </section>
+
+    <section class="showcase" data-ph="work">
+      <h2 class="rv">The workbench list</h2>
+      <div class="plate rv">
+        <h3>What the workshop takes on</h3>
+        <ul>
+          <li>Chair and cot making</li>
+          <li>Bed installation</li>
+          <li>Kitchen furniture</li>
+          <li>Wood varnishing</li>
+          <li>Furniture assembly and disassembly</li>
+          <li>Sliding window repairs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features" data-ph="detail">
+      <h2 class="rv">Measure, make, mend</h2>
+      <div class="rows">
+        <div class="row rv">
+          <div><h3>Made to measure</h3><p>New furniture is built to the room it will live in - the listing notes customised solutions for homes and apartments.</p></div>
+        </div>
+        <div class="row rv">
+          <div><h3>Repaired, not replaced</h3><p>All types of wood repair work, from wobbles and joints to polishing pieces back to life.</p></div>
+        </div>
+        <div class="row rv">
+          <div><h3>Budget spoken first</h3><p>The listing puts budget-suited service at the front of its own description - discuss the piece and the price before work begins.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" data-ph="detail">
+      <h2 class="rv">Jamalpur, Aligarh</h2>
+      <dl class="rv">
+        <dt>Address</dt><dd>Jamalpur, Aligarh, Uttar Pradesh 202001</dd>
+        <dt>Hours</dt><dd>Saturday-Thursday 9am-8pm; Friday 7am-1pm</dd>
+        <dt>Phone</dt><dd><a href="tel:+919897351236">98973 51236</a></dd>
+        <dt>Email</dt><dd><a href="mailto:skcrazywood@gmail.com">skcrazywood@gmail.com</a></dd>
+      </dl>
+      <figure class="inlineph rv">
+        <img src="assets/16-wood-samples.jpg" alt="Sixteen labelled wood samples, pine to tropical hardwoods" loading="lazy" decoding="async">
+        <figcaption>Sixteen woods, one trade. Illustrative photograph.</figcaption>
+      </figure>
+      <p class="pricenote rv">For a sense of scale, the listing shows a folding chair with iron stand at Rs 3,500 and a folding chair with sidi shoes rack at Rs 4,000 - its own published prices.</p>
+    </section>
+
+    <section class="cta" data-ph="intro">
+      <p class="line rv">Describe the piece or the repair, and hear what it would take.</p>
+      <a class="go rv" href="tel:+919897351236">Call 98973 51236</a>
+    </section>
+
+    <footer>
+      <p class="quiet rv">Sk Carpenter &amp; Furniture - Jamalpur, Aligarh.</p>
+      <p class="legal">Concept preview. Enquiries only, not a booking service. Business details from its public ThreeBestRated listing; experience, budget and customisation claims are the listing's own report. Photographs are illustrative, openly licensed material, not this business or its work: <a href="https://commons.wikimedia.org/wiki/File:Carpentry_materials.jpg">carpentry materials</a> by Anasskoko, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:A_Wooden_Furniture_Chair.jpg">wooden chair</a> by Onyebuchi Echezona, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; <a href="https://commons.wikimedia.org/wiki/File:Woodcarving_gouges.jpg">carving gouges</a> by Terasaface, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> ; <a href="https://commons.wikimedia.org/wiki/File:16_wood_samples.jpg">16 wood samples</a> by Anonimski, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0</a> - all via Wikimedia Commons.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script>
+(function(){
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window){
+    var ro=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); ro.unobserve(e.target);} });
+    },{threshold:0.15});
+    document.querySelectorAll('.rv').forEach(function(el){ro.observe(el)});
+    if(!reduced){
+      var figs=document.querySelectorAll('.photo figure');
+      var po=new IntersectionObserver(function(es){
+        es.forEach(function(e){
+          if(!e.isIntersecting)return;
+          var key=e.target.getAttribute('data-ph');
+          figs.forEach(function(f){f.classList.toggle('on',f.getAttribute('data-ph')===key)});
+        });
+      },{rootMargin:'-42% 0px -42% 0px'});
+      document.querySelectorAll('.read [data-ph]').forEach(function(el){po.observe(el)});
+    }
+  }else{
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in')});
+  }
+})();
+</script>
+</body>
+</html>

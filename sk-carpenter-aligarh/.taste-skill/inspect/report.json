@@ -1,0 +1,1659 @@
+{
+ "url": "index.html",
+ "at": "2026-11-04T16:22:50.100Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.64,
+    0.72,
+    0.64,
+    0.74
+   ],
+   "motion": {
+    "elements": 19,
+    "css": 0,
+    "transitions": 19,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 4118,
+     "screens": 4.6,
+     "words": 361,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "carpentry-materials.jpg",
+      "a-wooden-furniture-chair.jpg",
+      "woodcarving-gouges.jpg",
+      "16-wood-samples.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Sk Carpenter & Furniture",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 64,
+     "vw": 4.4,
+     "font": "Erode",
+     "weight": 500,
+     "tracking": -0.025,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.29,
+     "top": 102,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sk Carpenter & Furniture",
+     "words": 4,
+     "lines": 2,
+     "size": 64,
+     "font": "Erode"
+    },
+    "headings": [
+     {
+      "text": "Sk Carpenter & Furniture",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 102,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Chairs and cots made to order, kitchen furniture, varnishing and repairs - one workshop in Jamalpur, Aligarh.",
+      "words": 17,
+      "chars": 109,
+      "lines": 4,
+      "size": 30.4,
+      "vw": 2.1,
+      "font": "Erode",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.35,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 250,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "The workbench list",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 1099,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "What the workshop takes on",
+      "words": 5,
+      "chars": 26,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 2.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 1213,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Measure, make, mend",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 1775,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Made to measure",
+      "words": 3,
+      "chars": 15,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 2.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 1843,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Repaired, not replaced",
+      "words": 3,
+      "chars": 22,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 2.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 1987,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Budget spoken first",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 30.4,
+      "vw": 2.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 2130,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Jamalpur, Aligarh",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 44,
+      "vw": 3.1,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 2421,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Describe the piece or the repair, and hear what it would take.",
+      "words": 12,
+      "chars": 62,
+      "lines": 3,
+      "size": 30.4,
+      "vw": 2.1,
+      "font": "Erode",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.4,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.27,
+      "top": 3459,
+      "tag": "p",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 10,
+     "maxLines": 4,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Erode",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      19,
+      30,
+      44,
+      64
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Erode",
+      "size": 19,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.2
+     },
+     "measureChars": 66,
+     "max": {
+      "size": 64,
+      "vw": 4.4,
+      "font": "Erode",
+      "text": "Sk Carpenter & Furniture"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#dedad3",
+     "bodyBgHsl": {
+      "h": 38,
+      "s": 0.14,
+      "l": 0.85
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#d3cec6",
+       "top": 12,
+       "hsl": {
+        "h": 37,
+        "s": 0.13,
+        "l": 0.8
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5c5852",
+       "share": 0.6
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.37
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#256f82",
+      "hsl": {
+       "h": 192,
+       "s": 0.56,
+       "l": 0.33
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 0,
+     "radius": "pill",
+     "height": 57,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 16,
+     "squareMedia": 0,
+     "roundedMedia": 4,
+     "mediaRadius": 16,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.47
+     },
+     {
+      "type": "img",
+      "ratio": 0.47
+     },
+     {
+      "type": "img",
+      "ratio": 0.47
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 495,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "erode"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 4118,
+    "margins": {
+     "left": 52,
+     "right": 12
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Sk Carpenter & Furniture",
+      "size": 64,
+      "top": 102,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 52,
+      "n": 15
+     },
+     {
+      "x": 96,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 16,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 540,
+     "y": 120,
+     "w": 180,
+     "h": 780
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.72,
+    0.47,
+    0.6,
+    0.35
+   ],
+   "motion": {
+    "elements": 21,
+    "css": 0,
+    "transitions": 21,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 3964,
+     "screens": 3.9,
+     "words": 361,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "carpentry-materials.jpg",
+      "a-wooden-furniture-chair.jpg",
+      "woodcarving-gouges.jpg",
+      "16-wood-samples.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Sk Carpenter & Furniture",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 56.4,
+     "vw": 7.3,
+     "font": "Erode",
+     "weight": 500,
+     "tracking": -0.025,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.48,
+     "top": 658,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sk Carpenter & Furniture",
+     "words": 4,
+     "lines": 2,
+     "size": 56.4,
+     "font": "Erode"
+    },
+    "headings": [
+     {
+      "text": "Sk Carpenter & Furniture",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 56.4,
+      "vw": 7.3,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 658,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The workbench list",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 42.4,
+      "vw": 5.5,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 1297,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Measure, make, mend",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 42.4,
+      "vw": 5.5,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 1660,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Jamalpur, Aligarh",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 42.4,
+      "vw": 5.5,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.48,
+      "top": 2165,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Erode",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      18,
+      25,
+      42,
+      56
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Erode",
+      "size": 17.9,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.2
+     },
+     "measureChars": 100,
+     "max": {
+      "size": 56.4,
+      "vw": 7.3,
+      "font": "Erode",
+      "text": "Sk Carpenter & Furniture"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#dedad3",
+     "bodyBgHsl": {
+      "h": 38,
+      "s": 0.14,
+      "l": 0.85
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#d3cec6",
+       "top": 0,
+       "hsl": {
+        "h": 37,
+        "s": 0.13,
+        "l": 0.8
+       }
+      },
+      {
+       "color": "#dedad3",
+       "top": 614,
+       "hsl": {
+        "h": 38,
+        "s": 0.14,
+        "l": 0.85
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5c5852",
+       "share": 0.6
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.37
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#256f82",
+      "hsl": {
+       "h": 192,
+       "s": 0.56,
+       "l": 0.33
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 0,
+     "radius": "pill",
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 18,
+     "squareMedia": 3,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.6
+     },
+     {
+      "type": "img",
+      "ratio": 0.6
+     },
+     {
+      "type": "img",
+      "ratio": 0.6
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 301,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "erode"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 3964,
+    "margins": {
+     "left": 48,
+     "right": 51
+    },
+    "sections": [
+     {
+      "sel": "aside.photo",
+      "tag": "aside",
+      "top": 0,
+      "height": 614,
+      "words": 8,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 447,
+      "textLeft": 24,
+      "textRight": 447,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "header",
+      "tag": "header",
+      "top": 648,
+      "height": 301,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sk Carpenter & Furniture",
+       "size": 56,
+       "tag": "h1"
+      },
+      "left": 48,
+      "right": 63,
+      "textLeft": 48,
+      "textRight": 63,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro.copy",
+      "tag": "section",
+      "top": 1034,
+      "height": 179,
+      "words": 84,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 48,
+      "right": 51,
+      "textLeft": 48,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 1297,
+      "height": 279,
+      "words": 22,
+      "media": 0,
+      "middle": 40,
+      "heading": {
+       "text": "What the workshop takes on",
+       "size": 25,
+       "tag": "h3"
+      },
+      "left": 74,
+      "right": 199,
+      "textLeft": 74,
+      "textRight": 199,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.features",
+      "tag": "section",
+      "top": 1660,
+      "height": 421,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Made to measure",
+       "size": 25,
+       "tag": "h3"
+      },
+      "left": 48,
+      "right": 66,
+      "textLeft": 48,
+      "textRight": 66,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.facts",
+      "tag": "section",
+      "top": 2165,
+      "height": 1141,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 61,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 3390,
+      "height": 187,
+      "words": 15,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Describe the piece or the repair, and hear what it",
+       "size": 25,
+       "tag": "p"
+      },
+      "left": 48,
+      "right": 411,
+      "textLeft": 48,
+      "textRight": 411,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3761,
+      "height": 203,
+      "words": 85,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 48,
+      "right": 51,
+      "textLeft": 48,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Sk Carpenter & Furniture",
+      "size": 56,
+      "top": 658,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 48,
+      "n": 14
+     },
+     {
+      "x": 74,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 4,
+   "filled": [
+    0.74,
+    0.69,
+    0.42,
+    0.65
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 20,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 3761,
+     "screens": 4.5,
+     "words": 361,
+     "img": 4,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 5,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 4,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "carpentry-materials.jpg",
+      "a-wooden-furniture-chair.jpg",
+      "woodcarving-gouges.jpg",
+      "16-wood-samples.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Sk Carpenter & Furniture",
+     "words": 4,
+     "chars": 24,
+     "lines": 2,
+     "size": 42.8,
+     "vw": 11,
+     "font": "Erode",
+     "weight": 500,
+     "tracking": -0.025,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.72,
+     "top": 550,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sk Carpenter & Furniture",
+     "words": 4,
+     "lines": 2,
+     "size": 42.8,
+     "font": "Erode"
+    },
+    "headings": [
+     {
+      "text": "Sk Carpenter & Furniture",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 42.8,
+      "vw": 11,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 550,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The workbench list",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 1324,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Measure, make, mend",
+      "words": 3,
+      "chars": 19,
+      "lines": 1,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 1747,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Jamalpur, Aligarh",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 32.5,
+      "vw": 8.3,
+      "font": "Erode",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.73,
+      "top": 2302,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 4,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Erode",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      17,
+      22,
+      33,
+      43
+     ],
+     "sizeCount": 5,
+     "notLoaded": [],
+     "body": {
+      "font": "Erode",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 14.2
+     },
+     "measureChars": 53,
+     "max": {
+      "size": 42.8,
+      "vw": 11,
+      "font": "Erode",
+      "text": "Sk Carpenter & Furniture"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.02,
+     "centerShare": 0,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#dedad3",
+     "bodyBgHsl": {
+      "h": 38,
+      "s": 0.14,
+      "l": 0.85
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#d3cec6",
+       "top": 0,
+       "hsl": {
+        "h": 37,
+        "s": 0.13,
+        "l": 0.8
+       }
+      },
+      {
+       "color": "#dedad3",
+       "top": 506,
+       "hsl": {
+        "h": 38,
+        "s": 0.14,
+        "l": 0.85
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#5c5852",
+       "share": 0.6
+      },
+      {
+       "color": "#0a0a0a",
+       "share": 0.37
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "button": {
+      "bg": "#256f82",
+      "hsl": {
+       "h": 192,
+       "s": 0.56,
+       "l": 0.33
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 1,
+     "inHero": 0,
+     "radius": "pill",
+     "height": 54,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 18,
+     "squareMedia": 3,
+     "roundedMedia": 1,
+     "mediaRadius": 12,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.6
+     },
+     {
+      "type": "img",
+      "ratio": 0.6
+     },
+     {
+      "type": "img",
+      "ratio": 0.6
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 293,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "erode"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 3761,
+    "margins": {
+     "left": 22,
+     "right": 25
+    },
+    "sections": [
+     {
+      "sel": "aside.photo",
+      "tag": "aside",
+      "top": 0,
+      "height": 506,
+      "words": 8,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 24,
+      "right": 78,
+      "textLeft": 24,
+      "textRight": 78,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "header",
+      "tag": "header",
+      "top": 540,
+      "height": 293,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sk Carpenter & Furniture",
+       "size": 43,
+       "tag": "h1"
+      },
+      "left": 22,
+      "right": 26,
+      "textLeft": 22,
+      "textRight": 26,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.intro.copy",
+      "tag": "section",
+      "top": 917,
+      "height": 323,
+      "words": 84,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 22,
+      "right": 25,
+      "textLeft": 22,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.showcase",
+      "tag": "section",
+      "top": 1324,
+      "height": 339,
+      "words": 22,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "What the workshop takes on",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 48,
+      "right": 60,
+      "textLeft": 48,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.features",
+      "tag": "section",
+      "top": 1747,
+      "height": 471,
+      "words": 68,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Made to measure",
+       "size": 22,
+       "tag": "h3"
+      },
+      "left": 22,
+      "right": 30,
+      "textLeft": 22,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.facts",
+      "tag": "section",
+      "top": 2302,
+      "height": 768,
+      "words": 52,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 22,
+      "right": 22,
+      "textLeft": 22,
+      "textRight": 31,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.cta",
+      "tag": "section",
+      "top": 3155,
+      "height": 171,
+      "words": 15,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 22,
+      "right": 100,
+      "textLeft": 22,
+      "textRight": 100,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer",
+      "tag": "footer",
+      "top": 3478,
+      "height": 282,
+      "words": 78,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 22,
+      "right": 25,
+      "textLeft": 22,
+      "textRight": 25,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Sk Carpenter & Furniture",
+      "size": 43,
+      "top": 550,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 22,
+      "n": 14
+     },
+     {
+      "x": 48,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "statement-length",
+   "width": 1440,
+   "message": "1 large-set statement(s) run past 3 lines at 1440px: \"Chairs and cots made to order, kitchen f…\" → 4 lines at 30.4px",
+   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
+  },
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 1440,
+   "message": "No visible button in the first screen.",
+   "fix": "Give the one primary action a real button in the first screen (a filled or solid-bordered control, 44px or taller), not only a link in the navigation.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 52px on the left, 12px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 768,
+   "message": "Longest paragraph runs about 100 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch)."
+  },
+  {
+   "level": "WARN",
+   "id": "lopsided",
+   "width": 768,
+   "message": "A section keeps its content on one side and leaves 411px of the width empty: \"Describe the piece or the repair, and hear what it\".",
+   "fix": "Fill the other side with what the section has (its picture, a second column, the figure), or defend the void in one sentence."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/sk-carpenter-aligarh/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/sk-carpenter-aligarh/.taste-skill/inspect/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/sk-carpenter-aligarh/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/sk-carpenter-aligarh/.taste-skill/inspect/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/sk-carpenter-aligarh/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/sk-carpenter-aligarh/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
