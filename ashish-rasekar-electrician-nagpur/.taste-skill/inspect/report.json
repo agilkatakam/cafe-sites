@@ -1,6 +1,6 @@
 {
- "url": "http://localhost:8931/index.html",
- "at": "2026-11-04T04:41:53.184Z",
+ "url": "index.html",
+ "at": "2026-11-04T07:26:03.685Z",
  "allow": [],
  "viewports": [
   {
@@ -9,14 +9,14 @@
    "load": "load",
    "screens": 11,
    "filled": [
-    0.51,
-    0.34,
-    0.31,
-    0.29,
-    0.41,
-    1,
-    1,
-    0.88,
+    0.5,
+    0.81,
+    0.81,
+    0.79,
+    0.61,
+    0.92,
+    0.96,
+    0.85,
     0.69,
     0.86,
     0.92
@@ -37,7 +37,7 @@
     "page": {
      "height": 9244,
      "screens": 10.3,
-     "words": 575,
+     "words": 574,
      "img": 27,
      "video": 0,
      "canvas": 0,
@@ -672,7 +672,7 @@
      }
     ],
     "nav": {
-     "links": 1,
+     "links": 0,
      "fixed": false,
      "height": 78,
      "floatingPill": false,
@@ -690,7 +690,7 @@
     "pageH": 9244,
     "margins": {
      "left": 32,
-     "right": 40
+     "right": 92
     },
     "sections": [
      {
@@ -874,7 +874,7 @@
    "load": "load",
    "screens": 8,
    "filled": [
-    0.24,
+    0.23,
     0.7,
     0.63,
     0.63,
@@ -899,7 +899,7 @@
     "page": {
      "height": 8111,
      "screens": 7.9,
-     "words": 577,
+     "words": 576,
      "img": 27,
      "video": 0,
      "canvas": 0,
@@ -1465,7 +1465,7 @@
     },
     "heroMedia": [],
     "nav": {
-     "links": 1,
+     "links": 0,
      "fixed": false,
      "height": 64,
      "floatingPill": false,
@@ -1483,7 +1483,7 @@
     "pageH": 8111,
     "margins": {
      "left": 20,
-     "right": 32
+     "right": 50
     },
     "sections": [
      {
@@ -1748,7 +1748,7 @@
        "size": 24,
        "tag": "h2"
       },
-      "left": 12,
+      "left": 11,
       "right": 0,
       "textLeft": 20,
       "textRight": 210,
@@ -1843,7 +1843,7 @@
    "load": "load",
    "screens": 10,
    "filled": [
-    0.29,
+    0.28,
     0.64,
     0.64,
     0.65,
@@ -1870,7 +1870,7 @@
     "page": {
      "height": 8129,
      "screens": 9.6,
-     "words": 575,
+     "words": 574,
      "img": 27,
      "video": 0,
      "canvas": 0,
@@ -2531,7 +2531,7 @@
     },
     "heroMedia": [],
     "nav": {
-     "links": 1,
+     "links": 0,
      "fixed": false,
      "height": 62,
      "floatingPill": false,
@@ -2549,7 +2549,7 @@
     "pageH": 8129,
     "margins": {
      "left": 20,
-     "right": 20
+     "right": 23
     },
     "sections": [
      {
@@ -2953,6 +2953,16 @@
   },
   {
    "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 32px on the left, 92px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page.",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
    "id": "empty-middle",
    "width": 1440,
    "message": "1 section(s) have content at both edges and 1031px of nothing between: \"Around Dighori\"",
@@ -2960,6 +2970,13 @@
    "alsoAt": [
     768
    ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"What he covers\"; \"Repairs\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
   },
   {
    "level": "WARN",

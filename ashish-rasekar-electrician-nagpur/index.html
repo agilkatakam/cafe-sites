@@ -21,8 +21,8 @@
   --margin:40px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;overflow-x:hidden}
-body{background:var(--bg);color:var(--ink);font-family:'STIX Two Text',Georgia,serif;font-size:var(--step-body);line-height:1.45;overflow-x:hidden}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:'STIX Two Text',Georgia,serif;font-size:var(--step-body);line-height:1.45;overflow-x:clip}
 img{display:block;max-width:100%}
 a{color:var(--accent)}
 .rv{transform:translateY(26px);transition:transform .7s cubic-bezier(.22,.8,.3,1)}
@@ -197,7 +197,6 @@ a{color:var(--accent)}
 
 <nav class="nav">
   <b>Ashish Rasekar</b>
-  <a href="mailto:ashish.rasekar37@gmail.com?subject=Electrical%20work%20enquiry">Email</a>
 </nav>
 
 <div class="split">
@@ -413,11 +412,12 @@ a{color:var(--accent)}
   var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function layout(p){
     cards.forEach(function(c,i){
-      var start=i*0.22, t=Math.min(1,Math.max(0,(p-start)/0.22));
+      var start=i*0.07, t=Math.min(1,Math.max(0,(p-start)/0.16));
       var e=1-Math.pow(1-t,3);
-      var x=(i-1.5)*250; // fan offsets
-      var rot=[-3,2,-2,3][i];
-      var y=140*(1-e);
+      var breathe=Math.min(1,Math.max(0,(p-0.37)/0.63)); // slow spread once all dealt
+      var x=(i-1.5)*(250+40*breathe); // fan offsets
+      var rot=[-3,2,-2,3][i]*(1+0.35*breathe);
+      var y=140*(1-e) - 2*breathe*((i%2)?1:-1);
       c.style.transform='translate(calc(-50% + '+(x*e)+'px), calc(-50% + '+(y)+'svh)) rotate('+(rot*e)+'deg)';
     });
   }
