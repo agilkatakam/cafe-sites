@@ -80,6 +80,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-0.05em;line-height:0.9}
 .crossstage{position:sticky;top:0;height:100svh;overflow:hidden;background:#101204}
 .crossstage>img.back{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.6)}
 .crossstage .xhead{position:absolute;top:48px;left:var(--margin);color:var(--accent-ink);font-size:var(--step-head);z-index:2}
+.crossstage .xnote{position:absolute;top:calc(48px + var(--step-head)*1.15);left:var(--margin);color:var(--accent-ink);font-size:var(--step-small);z-index:2;max-width:34ch}
 .track{position:absolute;top:50%;left:0;transform:translateY(-50%);display:flex;gap:40px;padding-left:48vw;will-change:transform}
 .xcard{flex:none;width:min(720px,78vw);height:min(560px,70svh);background:var(--bg);display:flex;flex-direction:column}
 .xcard .xp{flex:0 0 68%;overflow:hidden}
@@ -151,6 +152,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-0.05em;line-height:0.9}
   .crossstage{position:static;height:auto;overflow:visible;background:var(--bg)}
   .crossstage>img.back{position:static;height:56svh;filter:none;object-fit:cover}
   .crossstage .xhead{position:static;color:var(--ink);padding:26px var(--margin) 8px}
+  .crossstage .xnote{position:static;color:var(--muted);padding:0 var(--margin) 4px;font-size:var(--step-small);max-width:none}
   .track{position:static;transform:none!important;flex-direction:column;gap:24px;padding:24px 16px 56px}
   .xcard{width:100%;height:auto}
   .xcard .xt{opacity:1}
@@ -233,6 +235,7 @@ h1,h2,h3{font-weight:500;letter-spacing:-0.05em;line-height:0.9}
   <section class="crossstage">
     <img class="back" src="assets/vaibhav-khand-indirapuram-ghaziabad.jpg" alt="Indirapuram, Ghaziabad" loading="lazy" decoding="async">
     <h2 class="xhead rv">The work</h2>
+    <p class="xnote rv">Illustrative photographs, not this business's own work.</p>
     <div class="track" id="track">
       <div class="xcard t1"><div class="xp"><img src="assets/ceiling-fan-mid-spin.jpg" alt="Ceiling fan" loading="lazy" decoding="async"></div><div class="xt"><h3>Fans</h3><p>Ceiling fans fitted, balanced and repaired.</p></div></div>
       <div class="xcard t2"><div class="xp"><img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="LED bulb" loading="lazy" decoding="async"></div><div class="xt"><h3>Lights</h3><p>Fittings and lamps for rooms and shops.</p></div></div>

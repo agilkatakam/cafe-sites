@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-04T13:15:25.750Z",
+ "at": "2026-11-04T13:20:40.413Z",
  "allow": [
   "late-title"
  ],
@@ -25,9 +25,9 @@
     0.93
    ],
    "motion": {
-    "elements": 26,
+    "elements": 27,
     "css": 0,
-    "transitions": 25,
+    "transitions": 26,
     "scripted": 1,
     "videos": 0,
     "playingVideos": 0
@@ -40,7 +40,7 @@
     "page": {
      "height": 11311,
      "screens": 12.6,
-     "words": 345,
+     "words": 352,
      "img": 19,
      "video": 0,
      "canvas": 0,
@@ -438,11 +438,11 @@
      "textColors": [
       {
        "color": "#38450f",
-       "share": 0.37
+       "share": 0.36
       },
       {
        "color": "#c9cdb8",
-       "share": 0.24
+       "share": 0.23
       },
       {
        "color": "#5d683a",
@@ -450,7 +450,7 @@
       },
       {
        "color": "#ecebe7",
-       "share": 0.12
+       "share": 0.14
       },
       {
        "color": "#ffffff",
@@ -647,7 +647,7 @@
       "tag": "div",
       "top": 6901,
       "height": 2700,
-      "words": 9,
+      "words": 17,
       "media": 6,
       "middle": 2291,
       "heading": {
@@ -773,16 +773,16 @@
     1,
     1,
     1,
-    0.94,
+    0.88,
     0.96,
     0.89,
     0.96,
-    0.93
+    0.95
    ],
    "motion": {
-    "elements": 20,
+    "elements": 21,
     "css": 0,
-    "transitions": 20,
+    "transitions": 21,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -793,9 +793,9 @@
      "h": 1024
     },
     "page": {
-     "height": 13329,
+     "height": 13353,
      "screens": 13,
-     "words": 345,
+     "words": 352,
      "img": 19,
      "video": 0,
      "canvas": 0,
@@ -954,7 +954,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.07,
-      "top": 8599,
+      "top": 8622,
       "tag": "h3",
       "kind": "heading"
      },
@@ -975,7 +975,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.08,
-      "top": 9257,
+      "top": 9281,
       "tag": "h3",
       "kind": "heading"
      },
@@ -996,7 +996,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.21,
-      "top": 9916,
+      "top": 9940,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1017,7 +1017,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.11,
-      "top": 10575,
+      "top": 10599,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1038,7 +1038,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 11234,
+      "top": 11257,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1059,7 +1059,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 12086,
+      "top": 12109,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1080,7 +1080,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 12342,
+      "top": 12365,
       "tag": "p",
       "kind": "statement"
      },
@@ -1101,7 +1101,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.92,
-      "top": 13183,
+      "top": 13206,
       "tag": "div",
       "kind": "heading"
      }
@@ -1204,7 +1204,7 @@
       },
       {
        "color": "#38450f",
-       "top": 12305,
+       "top": 12329,
        "hsl": {
         "h": 74,
         "s": 0.64,
@@ -1215,11 +1215,11 @@
      "textColors": [
       {
        "color": "#38450f",
-       "share": 0.38
+       "share": 0.37
       },
       {
        "color": "#c9cdb8",
-       "share": 0.24
+       "share": 0.23
       },
       {
        "color": "#ecebe7",
@@ -1227,7 +1227,7 @@
       },
       {
        "color": "#5d683a",
-       "share": 0.15
+       "share": 0.18
       },
       {
        "color": "#b9bcab",
@@ -1299,7 +1299,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 13329,
+    "pageH": 13353,
     "margins": {
      "left": 16,
      "right": 16
@@ -1431,8 +1431,8 @@
       "sel": "div.crosswrap",
       "tag": "div",
       "top": 7339,
-      "height": 3999,
-      "words": 40,
+      "height": 4022,
+      "words": 48,
       "media": 6,
       "middle": 0,
       "heading": {
@@ -1453,7 +1453,7 @@
      {
       "sel": "section.last",
       "tag": "section",
-      "top": 11337,
+      "top": 11361,
       "height": 968,
       "words": 32,
       "media": 1,
@@ -1472,7 +1472,7 @@
      {
       "sel": "footer#hours.foot",
       "tag": "footer",
-      "top": 12305,
+      "top": 12329,
       "height": 1024,
       "words": 139,
       "media": 0,
@@ -1545,12 +1545,12 @@
     0.82,
     0.86,
     0.91,
-    0.92
+    0.88
    ],
    "motion": {
-    "elements": 18,
+    "elements": 19,
     "css": 0,
-    "transitions": 18,
+    "transitions": 19,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -1561,9 +1561,9 @@
      "h": 844
     },
     "page": {
-     "height": 10438,
+     "height": 10461,
      "screens": 12.4,
-     "words": 345,
+     "words": 352,
      "img": 19,
      "video": 0,
      "canvas": 0,
@@ -1701,7 +1701,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.14,
-      "top": 7118,
+      "top": 7141,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1722,7 +1722,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.17,
-      "top": 7492,
+      "top": 7515,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1743,7 +1743,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.3,
-      "top": 7854,
+      "top": 7877,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1764,7 +1764,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.22,
-      "top": 8253,
+      "top": 8276,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1785,7 +1785,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.31,
-      "top": 8627,
+      "top": 8650,
       "tag": "h3",
       "kind": "heading"
      },
@@ -1806,7 +1806,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 9353,
+      "top": 9376,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1827,7 +1827,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 9618,
+      "top": 9641,
       "tag": "p",
       "kind": "statement"
      },
@@ -1848,7 +1848,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 10364,
+      "top": 10387,
       "tag": "div",
       "kind": "heading"
      }
@@ -1950,7 +1950,7 @@
       },
       {
        "color": "#38450f",
-       "top": 9321,
+       "top": 9344,
        "hsl": {
         "h": 74,
         "s": 0.64,
@@ -1961,11 +1961,11 @@
      "textColors": [
       {
        "color": "#38450f",
-       "share": 0.38
+       "share": 0.37
       },
       {
        "color": "#c9cdb8",
-       "share": 0.24
+       "share": 0.23
       },
       {
        "color": "#ecebe7",
@@ -1973,7 +1973,7 @@
       },
       {
        "color": "#5d683a",
-       "share": 0.15
+       "share": 0.18
       },
       {
        "color": "#b9bcab",
@@ -2045,7 +2045,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 10438,
+    "pageH": 10461,
     "margins": {
      "left": 16,
      "right": 16
@@ -2177,8 +2177,8 @@
       "sel": "div.crosswrap",
       "tag": "div",
       "top": 6254,
-      "height": 2477,
-      "words": 40,
+      "height": 2499,
+      "words": 48,
       "media": 6,
       "middle": 0,
       "heading": {
@@ -2199,7 +2199,7 @@
      {
       "sel": "section.last",
       "tag": "section",
-      "top": 8731,
+      "top": 8753,
       "height": 863,
       "words": 32,
       "media": 1,
@@ -2218,7 +2218,7 @@
      {
       "sel": "footer#hours.foot",
       "tag": "footer",
-      "top": 9594,
+      "top": 9617,
       "height": 844,
       "words": 139,
       "media": 0,
@@ -2347,7 +2347,7 @@
    "level": "WARN",
    "id": "untitled-section",
    "width": 768,
-   "message": "A section carries text but no heading: section.last at 11337px.",
+   "message": "A section carries text but no heading: section.last at 11361px.",
    "fix": "Name it with a short heading unless it is the continuation of the section above.",
    "alsoAt": [
     390
