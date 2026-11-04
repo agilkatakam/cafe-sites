@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mama Electrical and Home Appliances - Indirapuram, Ghaziabad</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Concept preview for Mama Electrical and Home Appliances, Indirapuram, Ghaziabad. Enquiries only, not a booking service.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ecebe7; --surface:#e1dfd9; --ink:#38450f; --muted:#5d683a;
+  --accent:#38450f; --accent-ink:#ecebe7;
+  --field-1:#38450f; --field-1-ink:#ecebe7;
+  --step-small:clamp(0.8125rem,0.79rem + 0.1vw,0.875rem);
+  --step-body:clamp(1.0625rem,1rem + 0.25vw,1.1875rem);
+  --step-lead:clamp(1.25rem,1.1rem + 0.7vw,1.625rem);
+  --step-head:clamp(2rem,1.3rem + 3.2vw,4rem);
+  --margin:clamp(20px,4vw,64px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:'Hanken Grotesk',Arial,sans-serif;font-size:var(--step-body);line-height:1.45;letter-spacing:-0.005em;overflow-x:clip}
+img{display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:500;letter-spacing:-0.05em;line-height:0.9}
+
+/* pinned name halves */
+.namewrap{position:relative}
+.cornerlayer{position:sticky;top:0;height:100svh;pointer-events:none;margin-bottom:-100svh;z-index:5;mix-blend-mode:difference}
+.cornerlayer{transition:opacity .3s ease,visibility 0s linear .3s}
+.cornerlayer.off{opacity:0;visibility:hidden}
+.cornerlayer b,.cornerlayer h1{position:absolute;font-size:clamp(72px,9vw,140px);font-weight:500;letter-spacing:-0.05em;line-height:0.85;color:#fff;white-space:nowrap}
+.cornerlayer .cw1{top:28px;left:28px}
+.cornerlayer .cw2{bottom:28px;right:28px}
+
+/* hero */
+.hero{min-height:100svh;display:grid;grid-template-columns:repeat(12,1fr);position:relative}
+.hero .panel{grid-column:1/10;background:var(--bg);min-height:100svh}
+.hero .ph{grid-column:10/13;position:relative;min-height:100svh}
+.hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .lead{position:absolute;top:44%;left:calc(100%/9*2);max-width:34ch;font-size:var(--step-lead);line-height:1.4}
+.hero .go{position:absolute;top:calc(44% + 7.5em);left:calc(100%/9*2);font-size:var(--step-body);text-decoration:none;border-bottom:2px solid var(--ink)}
+.hero .go:hover{background:var(--ink);color:var(--accent-ink)}
+.hero .sidelinks{position:absolute;right:28px;top:44%;display:flex;flex-direction:column;gap:8px;font-size:var(--step-small)}
+.hero .sidelinks a{text-decoration:none}
+.hero .sidelinks a:hover{text-decoration:underline}
+
+/* passing panels under the pinned name */
+.pass{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:60px var(--margin)}
+.pass figure{width:min(46vw,430px)}
+.pass img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.pass figcaption{margin-top:14px;font-size:var(--step-small);color:var(--muted);text-align:center}
+.pass.alt{background:var(--surface)}
+
+/* reading section */
+.read{padding:120px var(--margin);max-width:860px}
+.read h2{font-size:var(--step-head);margin-bottom:28px}
+.read p{font-size:var(--step-body);line-height:1.55;max-width:62ch;margin-bottom:20px}
+
+/* one scene, stepping statements */
+.stepwrap{position:relative;height:400svh;background:#101204}
+.steps{position:sticky;top:0;height:100svh;overflow:hidden}
+.steps>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.85}
+.steps .scrim{position:absolute;top:0;left:0;right:0;height:38%;background:rgba(16,18,4,0.72)}
+.steps .stack{position:absolute;top:5%;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.steps .stack span{font-size:var(--step-lead);line-height:1.3;color:#b9bcab;transition:color .35s ease}
+.steps .stack span.first{font-weight:500}
+.steps .stack span.on{color:#fff}
+.steps .mini{position:absolute;width:200px;opacity:0;transition:opacity .45s ease,transform .45s ease;transform:translateY(16px)}
+.steps .mini img{width:100%;height:auto}
+.steps .mini.show{opacity:1;transform:none}
+.steps .mini.l{left:9%;top:14%}
+.steps .mini.r{right:9%;top:78%}
+
+/* showcase: cards crossing a held photograph */
+.crosswrap{position:relative;height:300svh;background:#101204}
+.crossstage{position:sticky;top:0;height:100svh;overflow:hidden;background:#101204}
+.crossstage>img.back{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.6)}
+.crossstage .xhead{position:absolute;top:48px;left:var(--margin);color:var(--accent-ink);font-size:var(--step-head);z-index:2}
+.track{position:absolute;top:50%;left:0;transform:translateY(-50%);display:flex;gap:40px;padding-left:48vw;will-change:transform}
+.xcard{flex:none;width:min(720px,78vw);height:min(560px,70svh);background:var(--bg);display:flex;flex-direction:column}
+.xcard .xp{flex:0 0 68%;overflow:hidden}
+.xcard .xp img{width:100%;height:100%;object-fit:cover}
+.xcard .xt{opacity:0;transition:opacity .45s ease;flex:1;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;padding:22px 28px}
+.xcard .xt h3{font-size:clamp(28px,3vw,44px)}
+.xcard .xt p{font-size:var(--step-small);color:var(--muted);max-width:26ch;text-align:right}
+.xcard.entered .xt{opacity:1}
+.xcard.t1 .xt{background:#e4e2d8}
+.xcard.t2 .xt{background:#dcd8c4}
+.xcard.t3 .xt{background:#cfd2b8}
+.xcard.t4 .xt{background:#e0dbc9}
+.xcard.t5 .xt{background:#d5d8c2}
+
+/* cta last photograph */
+.last{position:relative;height:90svh;overflow:hidden}
+.last>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:30% 60%;filter:brightness(0.85)}
+.last .words{position:absolute;top:55%;right:var(--margin);width:min(38vw,460px);color:#fff;display:flex;flex-direction:column;gap:16px}
+.last .words h2{font-size:clamp(28px,3.4vw,52px);font-weight:400;line-height:1.05}
+.last .words p{font-size:var(--step-body);line-height:1.5}
+.last .words .btn{display:inline-block;background:var(--accent-ink);color:var(--ink);text-decoration:none;text-align:center;padding:15px 0;font-size:var(--step-body);width:240px}
+.last .words .btn:hover{background:var(--surface)}
+
+/* footer */
+.foot{position:relative;min-height:100svh;background:var(--field-1);color:var(--field-1-ink);overflow:hidden;display:flex;flex-direction:column;padding:calc(var(--margin)*1.2) var(--margin) 0}
+.foot .invite{display:grid;grid-template-columns:repeat(12,1fr);gap:20px;align-items:start}
+.foot .invite .l{grid-column:1/8}
+.foot .invite .big{font-size:clamp(36px,5vw,72px);font-weight:500;letter-spacing:-0.05em;line-height:1.0}
+.foot .invite .btn{display:inline-block;margin-top:26px;background:var(--accent-ink);color:var(--ink);text-decoration:none;padding:16px 34px;font-size:var(--step-body)}
+.foot .invite .btn:hover{background:var(--surface)}
+.foot .links{grid-column:10/13;display:flex;flex-direction:column;gap:8px;font-size:var(--step-small)}
+.foot .links a{text-decoration:none}
+.foot .links a:hover{text-decoration:underline}
+.foot .hours{padding:40px 0 14px;font-size:var(--step-body);max-width:60ch}
+.foot .legal{font-size:var(--step-small);line-height:1.5;color:#c9cdb8;max-width:110ch;padding-bottom:8px}
+.foot .legal a{color:inherit}
+.foot .mark{margin-top:auto;font-size:28vw;font-weight:500;letter-spacing:-0.05em;line-height:0.8;white-space:nowrap;transform:translateY(30%);user-select:none}
+
+/* reveals */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .15s ease,transform .15s ease}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none;transition:none}
+  .steps .stack span,.steps .mini{transition:none}
+}
+
+@media (max-width:900px){
+  .cornerlayer b{font-size:15vw}
+  .cornerlayer .cw1{top:16px;left:16px}
+  .cornerlayer .cw2{bottom:16px;right:16px}
+  .hero{display:block;min-height:0}
+  .hero .panel{min-height:88svh}
+  .hero .lead{left:var(--margin);right:var(--margin);top:40%}
+  .hero .go{left:var(--margin);top:calc(40% + 8.5em)}
+  .hero .sidelinks{top:auto;bottom:24px;right:16px}
+  .hero .ph{min-height:56svh}
+  .hero .ph img{position:static;height:56svh;width:100%}
+  .pass{min-height:0;padding:56px var(--margin)}
+  .pass figure{width:min(80vw,430px)}
+  .stepwrap{height:380svh}
+  .steps .stack{top:auto;bottom:8%;align-items:flex-start;text-align:left;left:var(--margin);right:var(--margin)}
+  .steps .stack span{font-size:17px}
+  .steps .scrim{top:auto;bottom:0;height:34%}
+  .steps .mini{width:44vw}
+  .steps .mini.l{left:auto;right:16px;top:5%}
+  .steps .mini.r{display:none}
+  .crosswrap{height:auto}
+  .crossstage{position:static;height:auto;overflow:visible;background:var(--bg)}
+  .crossstage>img.back{position:static;height:56svh;filter:none;object-fit:cover}
+  .crossstage .xhead{position:static;color:var(--ink);padding:26px var(--margin) 8px}
+  .track{position:static;transform:none!important;flex-direction:column;gap:24px;padding:24px 16px 56px}
+  .xcard{width:100%;height:auto}
+  .xcard .xt{opacity:1}
+  .xcard .xp{flex:none;height:0;padding-bottom:75%;position:relative}
+  .xcard .xp img{position:absolute;inset:0}
+  .last{height:auto}
+  .last>img{position:static;height:70svh;width:100%;object-position:30% 60%}
+  .last .words{position:static;width:auto;background:var(--field-1);color:var(--field-1-ink);padding:32px var(--margin) 48px}
+  .last .words .btn{width:100%}
+  .foot .invite .l{grid-column:1/13}
+  .foot .invite .big{font-size:11vw}
+  .foot .invite .btn{display:block;text-align:center}
+  .foot .links{grid-column:1/13;flex-direction:row;flex-wrap:wrap;gap:16px;margin-top:26px}
+  .foot .mark{font-size:34vw}
+}
+</style>
+</head>
+<body>
+
+<div class="namewrap">
+  <div class="cornerlayer" aria-hidden="true">
+    <h1 class="cw1">MAMA</h1>
+    <b class="cw2">ELECTRICAL</b>
+  </div>
+
+  <section class="hero">
+    <div class="panel">
+      <p class="lead rv">Fans, lights, switch boards, repairs and installation for homes and shops around Shakti Khand, Indirapuram - from one local electrical team.</p>
+      <a class="go rv" href="tel:+919711702424">Call 97117 02424 &rarr;</a>
+      <nav class="sidelinks rv">
+        <a href="#work">The work</a>
+        <a href="#hours">Hours</a>
+        <a href="mailto:ajay.rajpoot203@gmail.com?subject=Electrical%20work%20enquiry">Write</a>
+      </nav>
+    </div>
+    <div class="ph"><img src="assets/ceiling-fan-mid-spin.jpg" alt="Ceiling fan" fetchpriority="high" decoding="async"></div>
+  </section>
+
+  <section class="pass" id="work">
+    <figure class="rv"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="Light switches mid-installation" loading="lazy" decoding="async"></figure>
+    <figcaption class="rv">Switch boards, fitted and replaced. Illustrative photograph.</figcaption>
+  </section>
+
+  <section class="pass alt">
+    <figure class="rv"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="Open circuit breaker panel" loading="lazy" decoding="async"></figure>
+    <figcaption class="rv">MCBs and panels, opened and made safe. Illustrative photograph.</figcaption>
+  </section>
+
+</div>
+
+<section class="read">
+  <h2 class="rv">The shop on Shakti Khand</h2>
+  <p class="rv">Mama Electrical and Home Appliances handles residential and commercial electrical work: ceiling fans, lights, switch boards, repairs and installation. His listing says the team works at competitive prices and stands behind the quality of the work - its own words, on the public listing.</p>
+  <p class="rv">The shop is at 318 A, Shakti Khand I, Indirapuram, Ghaziabad 201010, and the listing has it open 24 hours, every day, with emergency service and quotations offered. Call 97117 02424, or the second line 98915 11099, or write to ajay.rajpoot203@gmail.com.</p>
+</section>
+
+<div class="stepwrap" id="scene">
+  <section class="steps">
+    <img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="LED bulb" loading="lazy" decoding="async">
+    <div class="scrim"></div>
+    <div class="stack">
+      <span class="first" data-s="0">What he does</span>
+      <span data-s="1">Ceiling fans</span>
+      <span data-s="2">Lights</span>
+      <span data-s="3">Switch boards</span>
+      <span data-s="4">Repair and installation</span>
+    </div>
+    <div class="mini l" data-s="1"><img src="assets/ceiling-fan-mid-spin.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini r" data-s="1"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini l" data-s="2"><img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini r" data-s="2"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini l" data-s="3"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini r" data-s="3"><img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini l" data-s="4"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="" loading="lazy" decoding="async"></div>
+    <div class="mini r" data-s="4"><img src="assets/ceiling-fan-mid-spin.jpg" alt="" loading="lazy" decoding="async"></div>
+  </section>
+</div>
+
+<div class="crosswrap">
+  <section class="crossstage">
+    <img class="back" src="assets/vaibhav-khand-indirapuram-ghaziabad.jpg" alt="Indirapuram, Ghaziabad" loading="lazy" decoding="async">
+    <h2 class="xhead rv">The work</h2>
+    <div class="track" id="track">
+      <div class="xcard t1"><div class="xp"><img src="assets/ceiling-fan-mid-spin.jpg" alt="Ceiling fan" loading="lazy" decoding="async"></div><div class="xt"><h3>Fans</h3><p>Ceiling fans fitted, balanced and repaired.</p></div></div>
+      <div class="xcard t2"><div class="xp"><img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="LED bulb" loading="lazy" decoding="async"></div><div class="xt"><h3>Lights</h3><p>Fittings and lamps for rooms and shops.</p></div></div>
+      <div class="xcard t3"><div class="xp"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="Light switches" loading="lazy" decoding="async"></div><div class="xt"><h3>Switch boards</h3><p>Boards and switches, new or replaced.</p></div></div>
+      <div class="xcard t4"><div class="xp"><img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Electrical wiring" loading="lazy" decoding="async"></div><div class="xt"><h3>Repairs</h3><p>Faults traced and repaired, homes and shops.</p></div></div>
+      <div class="xcard t5"><div class="xp"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="Breaker panel" loading="lazy" decoding="async"></div><div class="xt"><h3>Installation</h3><p>Panels and installation, residential and commercial.</p></div></div>
+    </div>
+  </section>
+</div>
+
+<section class="last">
+  <img src="assets/vaibhav-khand-indirapuram-ghaziabad.jpg" alt="Vaibhav Khand, Indirapuram" loading="lazy" decoding="async">
+  <div class="words rv">
+    <h2>A working switch, a quiet fan.</h2>
+    <a class="btn" href="tel:+919711702424">Call 97117 02424</a>
+    <p>For anything electrical around Shakti Khand and Indirapuram, call the shop any hour - the listing has it open around the clock, every day.</p>
+  </div>
+</section>
+
+<footer class="foot" id="hours">
+  <div class="invite">
+    <div class="l">
+      <p class="big">Something<br>not working?</p>
+      <a class="btn" href="tel:+919711702424">Call 97117 02424</a>
+    </div>
+    <div class="links">
+      <a href="mailto:ajay.rajpoot203@gmail.com?subject=Electrical%20work%20enquiry">ajay.rajpoot203@gmail.com</a>
+      <a href="tel:+919891511099">Second line: 98915 11099</a>
+      <span>318 A, Shakti Khand I, Indirapuram, Ghaziabad 201010</span>
+    </div>
+  </div>
+  <p class="hours">Open 24 hours, every day - the listing's report. Emergency service and quotations are offered, his listing says; ask when you call.</p>
+  <p class="legal">Concept preview. Enquiries only, not a booking service. Business details from its public ThreeBestRated listing; 24-hour opening, emergency service, quotation and quality claims are the listing's own report. Photographs are illustrative, openly licensed material, not this business or its staff: fan by Noah Wulf, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; switches by Paul Cutler, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; panel by BrokenSphere, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; wiring by Thayne Tuason, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; bulb by Loadmaster &amp; Bech, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; Indirapuram by Андрей Коваль, <a href="https://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>.</p>
+  <div class="mark" aria-hidden="true">MAMA</div>
+</footer>
+
+<script>
+// reveals
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('on');io.unobserve(x.target)}})},{threshold:0.2});
+  els.forEach(function(e){io.observe(e)});
+})();
+
+// corner name pin: fade out when the reading section arrives
+(function(){
+  var cl=document.querySelector('.cornerlayer');
+  var read=document.querySelector('.read');
+  if(!cl||!read||!('IntersectionObserver' in window))return;
+  new IntersectionObserver(function(es){
+    es.forEach(function(e){cl.classList.toggle('off',e.isIntersecting)});
+  },{rootMargin:'0px 0px -10% 0px'}).observe(read);
+})();
+
+// stepping statements
+(function(){
+  var wrap=document.querySelector('.stepwrap');
+  if(!wrap)return;
+  var spans=wrap.querySelectorAll('.stack span');
+  var minis=wrap.querySelectorAll('.mini');
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cur=-1;
+  function set(n){
+    if(n===cur)return; cur=n;
+    spans.forEach(function(s){s.classList.toggle('on',+s.dataset.s===n)});
+    minis.forEach(function(m){m.classList.toggle('show',+m.dataset.s===n && !reduced)});
+  }
+  function onScroll(){
+    if(window.innerWidth>0){
+      var r=wrap.getBoundingClientRect();
+      var total=r.height-window.innerHeight;
+      var p=Math.min(1,Math.max(0,-r.top/total));
+      set(Math.min(4,Math.floor(p*5.2)));
+    }
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
+})();
+
+// cards crossing
+(function(){
+  var wrap=document.querySelector('.crosswrap');
+  var track=document.getElementById('track');
+  if(!wrap||!track)return;
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function onScroll(){
+    if(window.innerWidth<=900){track.style.transform='';return}
+    var r=wrap.getBoundingClientRect();
+    var total=r.height-window.innerHeight;
+    var p=reduced?1:Math.min(1,Math.max(0,-r.top/total));
+    var dist=track.scrollWidth-window.innerWidth-40;
+    track.style.transform='translateY(-50%) translateX('+(-dist*p)+'px)';
+    track.querySelectorAll('.xcard').forEach(function(c){
+      var r=c.getBoundingClientRect();
+      c.classList.toggle('entered',(window.innerWidth-r.left)/r.width>0.45);
+    });
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
+})();
+</script>
+</body>
+</html>

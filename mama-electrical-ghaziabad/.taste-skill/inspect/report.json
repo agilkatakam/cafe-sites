@@ -1,0 +1,2390 @@
+{
+ "url": "index.html",
+ "at": "2026-11-04T10:40:50.191Z",
+ "allow": [
+  "late-title"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.39,
+    0.36,
+    1,
+    0.46,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0.93
+   ],
+   "motion": {
+    "elements": 26,
+    "css": 0,
+    "transitions": 25,
+    "scripted": 1,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 11311,
+     "screens": 12.6,
+     "words": 345,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 19,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "three-light-switches-with-exposed-wiring.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "led-e27-light-bulb-1134-cropped.jpg",
+      "ceiling-fan-mid-spin.jpg",
+      "three-light-switches-with-exposed-wiring.jpg",
+      "led-e27-light-bulb-1134-cropped.jpg",
+      "eaton-circuit-breaker-panel-open.jpg"
+     ],
+     "blendText": 2,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MAMA",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 129.6,
+     "vw": 9,
+     "font": "Hanken Grotesk",
+     "weight": 500,
+     "tracking": -0.05,
+     "leading": 0.85,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.25,
+     "top": 28,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "MAMA",
+     "words": 1,
+     "lines": 1,
+     "size": 129.6,
+     "font": "Hanken Grotesk"
+    },
+    "headings": [
+     {
+      "text": "MAMA",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 129.6,
+      "vw": 9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 28,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The shop on Shakti Khand",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.52,
+      "top": 2820,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 64,
+      "vw": 4.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 6949,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Fans",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.06,
+      "top": 7570,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Lights",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.07,
+      "top": 7570,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Switch boards",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 7570,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.09,
+      "top": 7570,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Installation",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.13,
+      "top": 7570,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A working switch, a quiet fan.",
+      "words": 6,
+      "chars": 30,
+      "lines": 2,
+      "size": 49,
+      "vw": 3.4,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": -0.05,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.32,
+      "top": 10047,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Something not working?",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.53,
+      "top": 10480,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MAMA",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 403.2,
+      "vw": 28,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 11085,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      14,
+      19,
+      26,
+      43,
+      49,
+      64,
+      72,
+      130,
+      403
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 19,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": 8.7
+     },
+     "measureChars": 123,
+     "max": {
+      "size": 403.2,
+      "vw": 28,
+      "font": "Hanken Grotesk",
+      "text": "MAMA"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.09,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ecebe7",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.12,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ecebe7",
+       "top": 0,
+       "hsl": {
+        "h": 48,
+        "s": 0.12,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#e1dfd9",
+       "top": 1800,
+       "hsl": {
+        "h": 45,
+        "s": 0.12,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#101204",
+       "top": 3301,
+       "hsl": {
+        "h": 69,
+        "s": 0.64,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#38450f",
+       "top": 10411,
+       "hsl": {
+        "h": 74,
+        "s": 0.64,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#38450f",
+       "share": 0.37
+      },
+      {
+       "color": "#c9cdb8",
+       "share": 0.24
+      },
+      {
+       "color": "#5d683a",
+       "share": 0.15
+      },
+      {
+       "color": "#ecebe7",
+       "share": 0.12
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.09
+      }
+     ],
+     "button": {
+      "bg": "#ecebe7",
+      "hsl": {
+       "h": 48,
+       "s": 0.12,
+       "l": 0.92
+      },
+      "fg": "#38450f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 0,
+     "radius": 0,
+     "height": 58,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 17,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 5,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 7071
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.25
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 77,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 11311,
+    "margins": {
+     "left": 58,
+     "right": 28
+    },
+    "sections": [
+     {
+      "sel": "div.cornerlayer",
+      "tag": "div",
+      "top": 0,
+      "height": 900,
+      "words": 2,
+      "media": 0,
+      "middle": 357,
+      "heading": {
+       "text": "MAMA",
+       "size": 130,
+       "tag": "h1"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 30,
+      "media": 1,
+      "middle": 267,
+      "heading": {
+       "text": "Fans, lights, switch boards, repairs and installat",
+       "size": 26,
+       "tag": "p"
+      },
+      "left": 320,
+      "right": 0,
+      "textLeft": 320,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.pass",
+      "tag": "section",
+      "top": 900,
+      "height": 900,
+      "words": 9,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 505,
+      "right": 505,
+      "textLeft": 539,
+      "textRight": 539,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.pass.alt",
+      "tag": "section",
+      "top": 1800,
+      "height": 900,
+      "words": 10,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 505,
+      "right": 505,
+      "textLeft": 518,
+      "textRight": 518,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div#scene.stepwrap",
+      "tag": "div",
+      "top": 3301,
+      "height": 3600,
+      "words": 11,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "What he does",
+       "size": 26,
+       "tag": "span"
+      },
+      "left": 592,
+      "right": 592,
+      "textLeft": 592,
+      "textRight": 592,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "div.crosswrap",
+      "tag": "div",
+      "top": 6901,
+      "height": 2700,
+      "words": 9,
+      "media": 6,
+      "middle": 2291,
+      "heading": {
+       "text": "The work",
+       "size": 64,
+       "tag": "h2"
+      },
+      "left": 58,
+      "right": 0,
+      "textLeft": 58,
+      "textRight": 57,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section.last",
+      "tag": "section",
+      "top": 9601,
+      "height": 810,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "A working switch, a quiet fan.",
+       "size": 49,
+       "tag": "h2"
+      },
+      "left": 922,
+      "right": 74,
+      "textLeft": 922,
+      "textRight": 74,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#hours.foot",
+      "tag": "footer",
+      "top": 10411,
+      "height": 900,
+      "words": 139,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Something",
+       "size": 72,
+       "tag": "p"
+      },
+      "left": 58,
+      "right": 89,
+      "textLeft": 58,
+      "textRight": 89,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "MAMA",
+      "size": 130,
+      "top": 28,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 58,
+      "n": 4
+     },
+     {
+      "x": 922,
+      "n": 2
+     },
+     {
+      "x": 28,
+      "n": 1
+     },
+     {
+      "x": 320,
+      "n": 1
+     },
+     {
+      "x": 719,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 9,
+    "bodySize": 19,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.17,
+    "voidBox": {
+     "x": 0,
+     "y": 180,
+     "w": 300,
+     "h": 720
+    }
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.2,
+    0.81,
+    0.71,
+    0.81,
+    1,
+    1,
+    1,
+    0.94,
+    0.96,
+    0.89,
+    0.96,
+    0.93
+   ],
+   "motion": {
+    "elements": 20,
+    "css": 0,
+    "transitions": 20,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 13329,
+     "screens": 13,
+     "words": 345,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 15,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "three-light-switches-with-exposed-wiring.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "led-e27-light-bulb-1134-cropped.jpg",
+      "ceiling-fan-mid-spin.jpg",
+      "led-e27-light-bulb-1134-cropped.jpg",
+      "three-light-switches-with-exposed-wiring.jpg",
+      "eaton-circuit-breaker-panel-open.jpg"
+     ],
+     "blendText": 2,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "ELECTRICAL",
+     "words": 1,
+     "chars": 10,
+     "lines": 1,
+     "size": 115.2,
+     "vw": 15,
+     "font": "Hanken Grotesk",
+     "weight": 500,
+     "tracking": -0.05,
+     "leading": 0.85,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "right",
+     "widthRatio": 0.77,
+     "top": 910,
+     "tag": "b",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "MAMA",
+     "words": 1,
+     "lines": 1,
+     "size": 72,
+     "font": "Hanken Grotesk"
+    },
+    "headings": [
+     {
+      "text": "MAMA",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 72,
+      "vw": 9.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 16,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "ELECTRICAL",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 15,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.77,
+      "top": 910,
+      "tag": "b",
+      "kind": "heading"
+     },
+     {
+      "text": "The shop on Shakti Khand",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 45.4,
+      "vw": 5.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2996,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 45.4,
+      "vw": 5.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 7912,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Fans",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 8599,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Lights",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.08,
+      "top": 9257,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Switch boards",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 9916,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 10575,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Installation",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 11234,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A working switch, a quiet fan.",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": -0.05,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12086,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Something not working?",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 84.5,
+      "vw": 11,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 12342,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MAMA",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 261.1,
+      "vw": 34,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 13183,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 12,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      17,
+      18,
+      23,
+      28,
+      45,
+      72,
+      85,
+      115,
+      261
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17.9,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": 8.7
+     },
+     "measureChars": 105,
+     "max": {
+      "size": 261.1,
+      "vw": 34,
+      "font": "Hanken Grotesk",
+      "text": "MAMA"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ecebe7",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.12,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ecebe7",
+       "top": 0,
+       "hsl": {
+        "h": 48,
+        "s": 0.12,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#e1dfd9",
+       "top": 2175,
+       "hsl": {
+        "h": 45,
+        "s": 0.12,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#101204",
+       "top": 3447,
+       "hsl": {
+        "h": 69,
+        "s": 0.64,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#38450f",
+       "top": 12305,
+       "hsl": {
+        "h": 74,
+        "s": 0.64,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#38450f",
+       "share": 0.38
+      },
+      {
+       "color": "#c9cdb8",
+       "share": 0.24
+      },
+      {
+       "color": "#ecebe7",
+       "share": 0.19
+      },
+      {
+       "color": "#5d683a",
+       "share": 0.15
+      },
+      {
+       "color": "#b9bcab",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ecebe7",
+      "hsl": {
+       "h": 48,
+       "s": 0.12,
+       "l": 0.92
+      },
+      "fg": "#38450f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 0,
+     "radius": 0,
+     "height": 56,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 15,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.12
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 74,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 13329,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.cornerlayer",
+      "tag": "div",
+      "top": 0,
+      "height": 1024,
+      "words": 1,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "MAMA",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 551,
+      "textLeft": 16,
+      "textRight": 551,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1475,
+      "words": 30,
+      "media": 1,
+      "middle": 230,
+      "heading": null,
+      "left": 31,
+      "right": 16,
+      "textLeft": 31,
+      "textRight": 16,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.pass",
+      "tag": "section",
+      "top": 1475,
+      "height": 701,
+      "words": 9,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 169,
+      "right": 169,
+      "textLeft": 211,
+      "textRight": 211,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.pass.alt",
+      "tag": "section",
+      "top": 2175,
+      "height": 701,
+      "words": 10,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 169,
+      "right": 169,
+      "textLeft": 190,
+      "textRight": 190,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.read",
+      "tag": "section",
+      "top": 2876,
+      "height": 571,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The shop on Shakti Khand",
+       "size": 45,
+       "tag": "h2"
+      },
+      "left": 31,
+      "right": 116,
+      "textLeft": 31,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div#scene.stepwrap",
+      "tag": "div",
+      "top": 3447,
+      "height": 3891,
+      "words": 11,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 31,
+      "right": 570,
+      "textLeft": 31,
+      "textRight": 570,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "div.crosswrap",
+      "tag": "div",
+      "top": 7339,
+      "height": 3999,
+      "words": 40,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "The work",
+       "size": 45,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 31,
+      "textRight": 44,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.last",
+      "tag": "section",
+      "top": 11337,
+      "height": 968,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 31,
+      "right": 31,
+      "textLeft": 31,
+      "textRight": 31,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#hours.foot",
+      "tag": "footer",
+      "top": 12305,
+      "height": 1024,
+      "words": 139,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Something",
+       "size": 84,
+       "tag": "p"
+      },
+      "left": 31,
+      "right": 9,
+      "textLeft": 31,
+      "textRight": 9,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "MAMA",
+      "size": 72,
+      "top": 16,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 31,
+      "n": 7
+     },
+     {
+      "x": 44,
+      "n": 5
+     },
+     {
+      "x": 16,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.33,
+    0.85,
+    0.79,
+    0.78,
+    1,
+    1,
+    1,
+    1,
+    0.82,
+    0.86,
+    0.91,
+    0.92
+   ],
+   "motion": {
+    "elements": 18,
+    "css": 0,
+    "transitions": 18,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 10438,
+     "screens": 12.4,
+     "words": 345,
+     "img": 19,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 15,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "ceiling-fan-mid-spin.jpg",
+      "three-light-switches-with-exposed-wiring.jpg",
+      "eaton-circuit-breaker-panel-open.jpg",
+      "led-e27-light-bulb-1134-cropped.jpg",
+      "ceiling-fan-mid-spin.jpg",
+      "led-e27-light-bulb-1134-cropped.jpg",
+      "three-light-switches-with-exposed-wiring.jpg",
+      "eaton-circuit-breaker-panel-open.jpg"
+     ],
+     "blendText": 2,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "MAMA",
+     "words": 1,
+     "chars": 4,
+     "lines": 1,
+     "size": 72,
+     "vw": 18.5,
+     "font": "Hanken Grotesk",
+     "weight": 500,
+     "tracking": -0.05,
+     "leading": 0.85,
+     "upper": true,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.51,
+     "top": 16,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "MAMA",
+     "words": 1,
+     "lines": 1,
+     "size": 72,
+     "font": "Hanken Grotesk"
+    },
+    "headings": [
+     {
+      "text": "MAMA",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 72,
+      "vw": 18.5,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.85,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 16,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "The shop on Shakti Khand",
+      "words": 5,
+      "chars": 24,
+      "lines": 1,
+      "size": 33.3,
+      "vw": 8.5,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2460,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "The work",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 33.3,
+      "vw": 8.5,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 6727,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Fans",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.14,
+      "top": 7118,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Lights",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 7492,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Switch boards",
+      "words": 2,
+      "chars": 13,
+      "lines": 2,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 7854,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Repairs",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 8253,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Installation",
+      "words": 1,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 8627,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "A working switch, a quiet fan.",
+      "words": 6,
+      "chars": 30,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "Hanken Grotesk",
+      "weight": 400,
+      "tracking": -0.05,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9353,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Something not working?",
+      "words": 3,
+      "chars": 22,
+      "lines": 2,
+      "size": 42.9,
+      "vw": 11,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 9618,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "MAMA",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 132.6,
+      "vw": 34,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.05,
+      "leading": 0.8,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 10364,
+      "tag": "div",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 11,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 1,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      17,
+      20,
+      28,
+      33,
+      43,
+      59,
+      72,
+      133
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": -0.005,
+      "contrast": 8.7
+     },
+     "measureChars": 54,
+     "max": {
+      "size": 132.6,
+      "vw": 34,
+      "font": "Hanken Grotesk",
+      "text": "MAMA"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.04,
+     "centerShare": 0.07,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ecebe7",
+     "bodyBgHsl": {
+      "h": 48,
+      "s": 0.12,
+      "l": 0.92
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ecebe7",
+       "top": 0,
+       "hsl": {
+        "h": 48,
+        "s": 0.12,
+        "l": 0.92
+       }
+      },
+      {
+       "color": "#e1dfd9",
+       "top": 1768,
+       "hsl": {
+        "h": 45,
+        "s": 0.12,
+        "l": 0.87
+       }
+      },
+      {
+       "color": "#101204",
+       "top": 3047,
+       "hsl": {
+        "h": 69,
+        "s": 0.64,
+        "l": 0.04
+       }
+      },
+      {
+       "color": "#38450f",
+       "top": 9321,
+       "hsl": {
+        "h": 74,
+        "s": 0.64,
+        "l": 0.16
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#38450f",
+       "share": 0.38
+      },
+      {
+       "color": "#c9cdb8",
+       "share": 0.24
+      },
+      {
+       "color": "#ecebe7",
+       "share": 0.19
+      },
+      {
+       "color": "#5d683a",
+       "share": 0.15
+      },
+      {
+       "color": "#b9bcab",
+       "share": 0.02
+      }
+     ],
+     "button": {
+      "bg": "#ecebe7",
+      "hsl": {
+       "h": 48,
+       "s": 0.12,
+       "l": 0.92
+      },
+      "fg": "#38450f"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 0,
+     "radius": 0,
+     "height": 55,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": []
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 11,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.12
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 73,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": [
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 10438,
+    "margins": {
+     "left": 16,
+     "right": 16
+    },
+    "sections": [
+     {
+      "sel": "div.cornerlayer",
+      "tag": "div",
+      "top": 0,
+      "height": 844,
+      "words": 2,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "MAMA",
+       "size": 72,
+       "tag": "h1"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 16,
+      "textRight": 16,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1215,
+      "words": 30,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 16,
+      "textLeft": 20,
+      "textRight": 16,
+      "fullBleed": true,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#work.pass",
+      "tag": "section",
+      "top": 1215,
+      "height": 553,
+      "words": 9,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 27,
+      "right": 27,
+      "textLeft": 27,
+      "textRight": 27,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.pass.alt",
+      "tag": "section",
+      "top": 1768,
+      "height": 572,
+      "words": 10,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 39,
+      "right": 39,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.read",
+      "tag": "section",
+      "top": 2340,
+      "height": 707,
+      "words": 95,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The shop on Shakti Khand",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 21,
+      "textLeft": 20,
+      "textRight": 21,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div#scene.stepwrap",
+      "tag": "div",
+      "top": 3047,
+      "height": 3207,
+      "words": 11,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 203,
+      "textLeft": 20,
+      "textRight": 203,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "div.crosswrap",
+      "tag": "div",
+      "top": 6254,
+      "height": 2477,
+      "words": 40,
+      "media": 6,
+      "middle": 0,
+      "heading": {
+       "text": "The work",
+       "size": 33,
+       "tag": "h2"
+      },
+      "left": 16,
+      "right": 16,
+      "textLeft": 20,
+      "textRight": 44,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.last",
+      "tag": "section",
+      "top": 8731,
+      "height": 863,
+      "words": 32,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 22,
+      "textLeft": 20,
+      "textRight": 22,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "footer#hours.foot",
+      "tag": "footer",
+      "top": 9594,
+      "height": 844,
+      "words": 139,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Something",
+       "size": 43,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 0,
+      "textLeft": 20,
+      "textRight": 0,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "MAMA",
+      "size": 72,
+      "top": 16,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 8
+     },
+     {
+      "x": 44,
+      "n": 5
+     }
+    ],
+    "leftBlocks": 13,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": null,
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "first-action",
+   "width": 1440,
+   "message": "No visible button in the first screen.",
+   "fix": "Give the one primary action a real button in the first screen (a filled or solid-bordered control, 44px or taller), not only a link in the navigation.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "no-footage",
+   "width": 1440,
+   "message": "No video anywhere on the page.",
+   "fix": "Look for one honest clip with scripts/assets.mjs --video (the place, the material, the process) and use it as a muted loop with a poster frame. Defend its absence only if no clip fits the subject."
+  },
+  {
+   "level": "WARN",
+   "id": "blend-text",
+   "width": 1440,
+   "message": "2 text element(s) use mix-blend-mode difference or exclusion.",
+   "fix": "Over anything but black, white or grey, blended text takes random hues (blue on orange, lilac on green) that jurors read as a glitch. Use a solid ink chosen for the ground, or keep the blended text over neutral grounds only.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "measure",
+   "width": 1440,
+   "message": "Longest paragraph runs about 123 characters per line.",
+   "fix": "Cap paragraphs at 45–75 characters (max-width: 60ch).",
+   "alsoAt": [
+    768
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "off-centre",
+   "width": 1440,
+   "message": "The margins differ: 58px on the left, 28px on the right, at 1440px.",
+   "fix": "Put the navigation and the content on one pair of margins; check for padding on one side only, a scrollbar gutter, or a header on another inset than the page."
+  },
+  {
+   "level": "WARN",
+   "id": "pinned-over-picture",
+   "width": 1440,
+   "message": "Pinned large text slides across pictures while the page scrolls: \"The work\" (screen 10, 100% over a picture); \"Fans\" (screen 9, 100% over a picture); \"Lights\" (screen 9, 100% over a picture)",
+   "fix": "Jurors read a pinned title crossing drawings or photographs as a collision. Keep the pictures in the column the title does not occupy, or unpin it.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "long-pin",
+   "width": 1440,
+   "message": "The same large text stays on screen for 3 screens in a row: \"MAMA\"; \"The work\"",
+   "fix": "A pinned element earns two screens, and something must change at each. Shorten the run or give every screen its own content."
+  },
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 768,
+   "message": "10 different font sizes (13, 17, 18, 23, 28, 45, 72, 85, 115, 261).",
+   "fix": "A page needs about five: display, heading, lead, body, small."
+  },
+  {
+   "level": "WARN",
+   "id": "untitled-section",
+   "width": 768,
+   "message": "A section carries text but no heading: section.last at 11337px.",
+   "fix": "Name it with a short heading unless it is the continuation of the section above.",
+   "alsoAt": [
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/desktop-page-02.jpg",
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/mobile-page-01.jpg",
+    "/tmp/cafe-sites/mama-electrical-ghaziabad/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
