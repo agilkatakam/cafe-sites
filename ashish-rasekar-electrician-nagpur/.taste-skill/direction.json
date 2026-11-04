@@ -1,0 +1,578 @@
+{
+ "version": 1,
+ "at": "2026-11-04T04:17:14.348Z",
+ "seed": 1488365198,
+ "redraws": 0,
+ "input": {
+  "brief": "Independent electrician in Nagpur offering the full range of electrical work, wiring, repairs, panel upgrades, CCTV and security systems, 24-hour emergency service (listing-reported)",
+  "sector": "other",
+  "tone": null,
+  "have": [],
+  "keep": [],
+  "avoid": [
+   "one-motif",
+   "page-is-the-object",
+   "dense-tiles",
+   "editorial-report",
+   "wheel",
+   "quiet-instrument",
+   "well-kept-board",
+   "sentence-as-layout",
+   "borrowed-category",
+   "type-only-statement",
+   "name-as-monument"
+  ],
+  "sections": [
+   "intro",
+   "features",
+   "showcase",
+   "cta",
+   "footer"
+  ],
+  "direction": null
+ },
+ "imagery": "atmosphere",
+ "allow": [],
+ "direction": {
+  "id": "specimen-catalogue",
+  "name": "The specimen catalogue",
+  "sectors": [
+   "ecommerce",
+   "physical-product",
+   "restaurant",
+   "fashion",
+   "culture",
+   "education",
+   "health",
+   "other"
+  ],
+  "tones": [
+   "playful",
+   "warm",
+   "editorial"
+  ],
+  "needs": [
+   "product-photo"
+  ],
+  "idea": "Present what is on offer the way a field guide presents birds: each item alone on a flat colour, same scale, same angle, named plainly. A bakery's pastries become specimens and the specimens become the menu. A furniture maker's chairs each get their own colour tile. The format flatters ordinary objects because it treats each as worth looking at, and it replaces both the feature grid and the product-card grid with something that has a point of view.",
+  "composition": "Hero: a left-aligned statement of what this is (5–7vw, upper-left) beside or above a tight cluster of four to seven specimen tiles of different sizes arranged as a loose mosaic that runs off the right edge. Each tile is a flat colour square or 4:5 rectangle with one photograph centred on it, no border, 8–12px gaps. The main section is the catalogue itself: a grid of tiles in which each item has its name and one fact set beneath the tile in the text face, aligned left to the tile edge. Tile colours rotate through three or four fields from the palette. One tile in every six or seven is double size. Supporting sections (about, how to order) are plain text on the ground colour, kept short.",
+  "typography": "Friendly and plain. Item names at 18–22px in medium weight, facts beneath in the soft ink. One big statement in the hero; no other display type.",
+  "typeClasses": [
+   "grotesk-tight",
+   "serif-text",
+   "slab",
+   "rounded-friendly"
+  ],
+  "colour": "The tiles are the colour: three or four flat fields from the palette, repeated in a steady rotation. Ground stays neutral.",
+  "paletteTags": [
+   "pastel-fields",
+   "flat-loud",
+   "light-neutral"
+  ],
+  "imagery": "Photographs of single items on plain backgrounds, all cropped to sit at the same apparent size within their tile. On light tiles, `mix-blend-mode: multiply` removes white studio backgrounds. If the subject's own item photographs are missing, use the dealt set and say so.",
+  "sectionTags": [
+   "object-led",
+   "colour-field",
+   "photo-led"
+  ],
+  "motion": "drag-row",
+  "richness": "Rhythm of colour tiles and the pleasure of comparing like with like.",
+  "pitfalls": "It needs at least six items that can be shown as objects; with three it is a feature row. Keep labels outside the tiles. No shadows under the objects, no hover lift.",
+  "seenIn": [
+   "aww-noho",
+   "opl-madie",
+   "opl-humanoid-index",
+   "opl-smallbits",
+   "aww-butter"
+  ],
+  "allow": []
+ },
+ "hero": {
+  "id": "anchored-text-specimen-half",
+  "name": "Anchored text, specimen half",
+  "archetype": "split",
+  "directions": [
+   "split-stage",
+   "specimen-catalogue",
+   "hero-object"
+  ],
+  "needs": [
+   "product-photo"
+  ],
+  "blueprint": "The viewport is split exactly in half by two flat tones that meet at a clean vertical edge: the ground on the left, a palette colour on the right. Left half: the wordmark sits top-left on a 40px margin; the next two thirds of the height are empty; everything else is anchored bottom-left and ends 40px above the bottom edge: a headline on one or two lines at clamp(28px, 2.6vw, 40px), medium weight; one sentence at 18px in the soft ink, max 38ch; the single action as a solid rectangle. Right half: position: sticky; top: 0; height: 100svh. In its centre sits a square tile in a second palette colour, 450px wide (31vw) with a 24px radius, holding one cut-out item at 70% of the tile, object-fit: contain, mix-blend-mode: multiply on light fills. Under the tile's left corner the item's name and one fact sit at 15px. As the left column scrolls through the catalogue, the tile's item and colour swap to match the entry in view. One text link sits top-right on the colour field.",
+  "mobile": "The colour half comes first as a block 52svh tall holding the square tile at 62vw, centred, and stays sticky while the text slides over its lower edge. The text block follows on the ground: the headline at 7vw on two lines, the sentence at 16px, the action full width. The wordmark and one link sit on the top row over the colour.",
+  "headline": "A modest 3-6 word line at 28-40px, at most 40 characters; the object, not the type, carries the screen.",
+  "motion": "pinned-story",
+  "seenIn": [
+   "opl-dabbit"
+  ]
+ },
+ "type": {
+  "id": "stix-plain-roman",
+  "name": "STIX Two Text",
+  "class": "serif-text",
+  "display": {
+   "family": "STIX Two Text",
+   "source": "google",
+   "weights": [
+    400
+   ],
+   "italic": true,
+   "settings": "weight 400 · tracking -0.026em · leading 1.1 · sentence case at 2.6–3.6vw; one running line may be set in italic capitals",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap\" rel=\"stylesheet\">"
+  },
+  "text": {
+   "family": "STIX Two Text",
+   "source": "google",
+   "weights": [
+    400,
+    600
+   ],
+   "italic": false,
+   "settings": "400 for body, 600 for emphasis · leading 1.45 · tracking 0",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap\" rel=\"stylesheet\">"
+  },
+  "standsInFor": [
+   "Untitled Serif",
+   "Times New Roman",
+   "FK Roman Standard"
+  ],
+  "note": "The plain Times-style roman of a typed document, slightly tightened and never larger than a few vw. Suits vehicles and tools presented dryly, artists' pages, investment memos and anything meant to look undesigned on purpose.",
+  "seenIn": [
+   "opl-transport",
+   "opl-shawn-golden",
+   "aww-dragonfly-redux"
+  ],
+  "links": [
+   "https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+  ],
+  "scale": {
+   "step-small": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)",
+   "step-body": "clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem)",
+   "step-lead": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)",
+   "step-head": "clamp(2rem, 1.3rem + 3.2vw, 4rem)"
+  }
+ },
+ "palette": {
+  "id": "white-link-blue",
+  "name": "Sheet and biro",
+  "tags": [
+   "light-neutral",
+   "mono-accent"
+  ],
+  "bg": "#ffffff",
+  "surface": "#f4f4f4",
+  "ink": "#111111",
+  "muted": "#6b6b6b",
+  "accent": "#1a4be0",
+  "accentInk": "#ffffff",
+  "fields": [
+   {
+    "bg": "#111111",
+    "ink": "#ffffff"
+   }
+  ],
+  "note": "White holds the whole page with black type, one grey for secondary lines and a pale grey step for tiles and inputs; the footer may invert to black. Blue is the colour of text links and the one button, and nothing else is tinted.",
+  "seenIn": [
+   "opl-shawn-golden",
+   "opl-lovably",
+   "aww-bleibtgleich26"
+  ]
+ },
+ "photos": {
+  "set": "interior-and-table",
+  "title": "Interior and table",
+  "note": "rooms, windows, chairs, cups, food and tabletops",
+  "treatment": null,
+  "others": [
+   "mountain",
+   "sky-and-space",
+   "fog-and-quiet",
+   "plants-and-flowers"
+  ],
+  "photos": [
+   {
+    "id": 490,
+    "alt": "Dark overhead arrangement of a cutting board, pan and kitchen tools",
+    "tone": "dark",
+    "colours": [
+     "dark brown",
+     "black",
+     "tan"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.51,
+    "by": "Todd Quackenbush",
+    "page": "https://unsplash.com/photos/x5SRhkFajrA"
+   },
+   {
+    "id": 999,
+    "alt": "Bowls, nuts and a pastry arranged on a dark wooden table from above",
+    "tone": "dark",
+    "colours": [
+     "charcoal",
+     "dark brown",
+     "cream"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Annie Spratt",
+    "page": "https://unsplash.com/photos/R3LcfTvcGWY"
+   },
+   {
+    "id": 326,
+    "alt": "Hand holding a white bowl with yellow slices on a pale surface",
+    "tone": "light",
+    "colours": [
+     "cream",
+     "pale yellow",
+     "warm beige"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 5,
+    "ratio": 1.51,
+    "by": "Dominik Martin",
+    "page": "https://unsplash.com/photos/JYFmYif4n70"
+   },
+   {
+    "id": 625,
+    "alt": "Wooden dining table with white moulded chairs beside large windows",
+    "tone": "light",
+    "colours": [
+     "white",
+     "warm wood",
+     "cream"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 5,
+    "ratio": 1.5,
+    "by": "Breather",
+    "page": "https://unsplash.com/photos/DEdM9Vs6s8w"
+   },
+   {
+    "id": 1068,
+    "alt": "Small plant in a vase on a white table against a blue wall",
+    "tone": "mid",
+    "colours": [
+     "bright blue",
+     "white",
+     "green"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 5,
+    "ratio": 1.74,
+    "by": "Padurariu Alexandru",
+    "page": "https://unsplash.com/photos/iNmouRApXYM"
+   },
+   {
+    "id": 691,
+    "alt": "Green mug on a bedside table beside rumpled white bedding",
+    "tone": "light",
+    "colours": [
+     "white",
+     "teal green",
+     "warm beige"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "David Mao",
+    "page": "https://unsplash.com/photos/m0l5J8Lqnzo"
+   },
+   {
+    "id": 1080,
+    "alt": "Fresh red strawberries packed tightly, filling the frame",
+    "tone": "mid",
+    "colours": [
+     "strawberry red",
+     "green",
+     "pink"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "veeterzy",
+    "page": "https://unsplash.com/photos/OJJIaFZOeX4"
+   },
+   {
+    "id": 311,
+    "alt": "Wooden chair by a curtained window at dusk",
+    "tone": "dark",
+    "colours": [
+     "dark brown",
+     "dusty blue",
+     "cream"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 4,
+    "ratio": 1.78,
+    "by": "Logan Adermatt",
+    "page": "https://unsplash.com/photos/VkF8pVVoFg0"
+   }
+  ]
+ },
+ "motion": {
+  "id": "pinned-story",
+  "name": "Pinned story",
+  "description": "One element holds its place with `position: sticky` (a title, a frame, a product fragment) while the items that belong to it scroll past or swap inside it. The page's ordinary scrolling does the work; nothing is hijacked. Hold it for about one screen per step and three screens at most, two held stages per page at most, with a line of text on every held screen. Recipe: 'Pinned story' in references/motion.md."
+ },
+ "sections": [
+  {
+   "id": "intro-inline-thumbnails",
+   "role": "intro",
+   "name": "Statement with inline thumbnails",
+   "shape": "statement",
+   "tags": [
+    "type-led",
+    "object-led"
+   ],
+   "directions": [
+    "sentence-as-layout",
+    "specimen-catalogue",
+    "one-motif",
+    "product-performs",
+    "hero-object"
+   ],
+   "needs": [],
+   "blueprint": "A centred statement of 18–28 words, four lines at clamp(32px, 4.2vw, 62px), medium or bold weight, leading 1.12, in a block 60–66% of the viewport wide with 22vh of empty ground above and below. Three to five small frames sit inline between words: each is an `inline-block` 0.85em tall and 0.85–1.3em wide, `vertical-align: -0.1em`, radius 0.14em, holding a tightly cropped photograph (or a crop of real interface) of the thing the neighbouring word names. Frames are part of the line, never floating over it, with 0.12em of space either side. No heading above and no paragraph below; the statement is set as a `p`. Directly under the section the page may split into two flat colour halves or begin the first product row, so the thumbnails read as a preview of what follows. On a motif-driven page every frame takes the motif's shape.",
+   "mobile": "Left-aligned instead of centred, at 8vw with leading 1.15, about seven lines inside 20px margins. Keep at most three inline frames, each exactly one cap-height tall, and make sure none lands at the start of a line. Vertical padding drops to 96px.",
+   "seenIn": [
+    "aww-noho",
+    "aww-butter",
+    "opl-sand-studio"
+   ]
+  },
+  {
+   "id": "features-four-cards-dealt-into-a-fan",
+   "role": "features",
+   "name": "Four cards dealt into a fan",
+   "shape": "pinned",
+   "tags": [
+    "colour-field",
+    "poster"
+   ],
+   "directions": [
+    "pinned-poster",
+    "loud-flat-poster",
+    "borrowed-category",
+    "colour-chapters",
+    "specimen-catalogue"
+   ],
+   "needs": [],
+   "blueprint": "Four values, rules or features, each on a card dealt onto the table as the page scrolls. A wrapper about 400svh tall holds a sticky stage of 100svh on the page's darkest flat ground. Each card is a portrait panel of 340×400px with a 20px radius, filled with its own palette colour (four colours that differ clearly in lightness), no border, no shadow. On a card, with 28px padding: its name at 32px in heavy capitals on one or two lines at the top, a photograph or a single picture of the thing at 60% of the card's width in the middle, and one sentence at 16px at the foot. Card one lands alone at the centre; each further quarter of the wrapper deals the next from below the bottom edge, landing 250px to the right of the one before, rotated between -4 and 4 degrees and overlapping only its right 90px, until the four form a fan about 1,090px wide centred on the stage. Keep each card's name, picture and sentence inside its left 240px, so no card ever covers another's words. In the study the cards overlap by two thirds and bury the earlier titles; here nothing lies on top of text. The heading, two to four words at clamp(40px, 4vw, 60px), sits top-left on the stage on the 32px margin with one sentence at 17px under it. The stage releases after the fourth card has settled; under reduced motion the fan is simply there.",
+   "mobile": "No pin. The cards sit in one row that scrolls sideways with scroll-snap, each 82% of the width with the next peeking in at the right edge, all upright. The heading and sentence sit above the row.",
+   "seenIn": [
+    "aww-made-with-gsap-1"
+   ]
+  },
+  {
+   "id": "showcase-frame-run-one-lifted",
+   "role": "showcase",
+   "name": "Frame run, one lifted",
+   "shape": "strip",
+   "tags": [
+    "photo-led",
+    "quiet"
+   ],
+   "directions": [
+    "contact-sheet",
+    "uneven-photographs",
+    "specimen-catalogue",
+    "quiet-instrument"
+   ],
+   "needs": [],
+   "blueprint": "Columns 1–3 are a nearly empty column: the heading (two to four words at 24–28px) at the top, a link under it, and one or two short notes at 15px much further down, each level with the frame it describes. Columns 4–12 hold a run of six to eight frames of the same subject at one fixed height of 30vh, with natural widths and 6px gaps: the whole view, a tight crop of the same thing, a detail, the reverse side. The run is allowed to leave the right edge. One frame is lifted out of the row: shown at 2.2 times the row height with its bottom aligned to the row's bottom (flex row, align-items: end), so it stands above the others. Under each frame, at 15px: a name on the left and a single fact on the right. Square corners, no captions on the images.",
+   "mobile": "The heading and link sit on top. The lifted frame comes first at full width. The rest of the run scrolls sideways beneath it at a fixed height of 34vw with 4px gaps and scroll-snap, bleeding off the right edge. Notes are listed under the run at 15px.",
+   "seenIn": [
+    "aww-serotoninn",
+    "aww-butter",
+    "aww-no-art"
+   ]
+  },
+  {
+   "id": "cta-reply-card",
+   "role": "cta",
+   "name": "The reply card",
+   "shape": "split",
+   "tags": [
+    "object-led"
+   ],
+   "directions": [
+    "page-is-the-object",
+    "borrowed-category",
+    "dark-room",
+    "specimen-catalogue",
+    "place-carries-it"
+   ],
+   "needs": [],
+   "blueprint": "The invitation to act is a printed card lying on the page. On a dark or strongly coloured flat field about 80svh tall, a paper-coloured panel 44vw wide with 7:5 proportions sits in columns 6–12, rotated two degrees, with its lower edge hanging 60px past the section's bottom so the section crops it. On the card, with 48px padding, everything is centred the way stationery is: a heading of two to four words at 32px, one or two lines at 17px, then the action as a solid bar across the card's full inner width, 56px tall, in the ink colour with paper-coloured text. Columns 1–4 hold only a short paragraph at 20–24px in the field's light ink, bottom-aligned 64px above the edge. The card is a plain filled rectangle with square corners and no outline; its rotation and crop make it an object.",
+   "mobile": "The paragraph comes first at 20px. The card follows at 90% width, tilted one degree, centred, its bottom edge still cropped by the section. Heading at 24px, lines at 16px, and the action bar 52px tall across the full inner width of the card.",
+   "seenIn": [
+    "opl-hebbia",
+    "opl-monte",
+    "opl-specia1ne"
+   ]
+  },
+  {
+   "id": "footer-row-of-tiles",
+   "role": "footer",
+   "name": "A footer of tiles",
+   "shape": "grid",
+   "tags": [
+    "dense",
+    "colour-field"
+   ],
+   "directions": [
+    "dense-tiles",
+    "colour-chapters",
+    "product-performs",
+    "contact-sheet",
+    "specimen-catalogue"
+   ],
+   "needs": [],
+   "blueprint": "The footer is the last two rows of a board: filled tiles with 8px gaps and 8–12px outer margins, every cell used. Upper row, each tile 220px tall: a statement tile in columns 1–4 with one sentence at 24px top-left and the legal text at 12px bottom-left; a navigation tile in columns 5–7 with a plain list at 16px; a tile in columns 8–9 giving the city and local time as text; an email tile in columns 10–12 with the address at 20px as a link, bottom-left. Lower row, 320px tall: a tile in the ink colour spanning columns 1–8 with the wordmark set large (about 9vw) and centred, and a tile in the accent colour in columns 9–12 with a two-to-four-word invitation top-left at 28px and an arrow, drawn as inline SVG with 4px strokes, in its bottom-right corner; the whole accent tile is a link.",
+   "mobile": "Two columns of tiles with 6px gaps: the wordmark tile full width first at 160px tall, the accent tile full width next, then navigation and email side by side, then time and statement. Every tile keeps 20px padding and top-left text.",
+   "seenIn": [
+    "aww-aspen-search",
+    "aww-oimachi"
+   ]
+  }
+ ],
+ "references": [
+  {
+   "id": "opl-humanoid-index",
+   "name": "Humanoid Index",
+   "url": "https://humanoid-index.com/",
+   "source": "One Page Love",
+   "kind": "other",
+   "score": 7.2,
+   "idea": "A catalogue of humanoid robots as a single-screen instrument: spin a wheel of names and one specimen appears on a plain card, ready to compare.",
+   "mood": [
+    "clinical",
+    "quiet",
+    "utilitarian",
+    "curious"
+   ],
+   "archetype": "product-object-centre",
+   "hero": "A white, app-like screen with no headline. Top centre: a small segmented pill control with three categories and grey counts. Dead centre: a pale-grey rounded card about 400 by 455px holding one cut-out robot; above its top-left, a tiny maker logo with name, year and company at 13px; below it, a pill toolbar of four line icons. To its right, a paler empty card with a plus button labelled 'Compare'. Left of the card, a vertical wheel of robot names: the selected one black at 20px, the rest shrinking, fading and tilting along an arc. At the far left, mid-height: a logo glyph, a grid toggle and two credit lines.",
+   "type": "Geist Sans Regular only, between 12 and 20px with -0.04em tracking. Hierarchy comes from grey value and opacity rather than size or weight; the selected name at 20px is the largest text on the page. No display type at all.",
+   "colour": "#ffffff #f9f9f9 #1c1c1c #9b9b9b #f1b80e — White page, off-white cards, black and grey text. All colour arrives through the robots themselves, such as one yellow model.",
+   "imagery": "Cut-out product shots and renders of robots, full figure, centred with even padding on identical off-white rounded cards, held at one scale and stance so models compare like specimens. A grey two-blob skeleton shows while loading.",
+   "layout": "One fixed viewport with no sections: centred card, compare slot to its right, name wheel to its left, controls parked at top centre and far left. Roughly 60% of the screen is empty white. Scrolling changes the selection, not the position.",
+   "sections": [
+    {
+     "role": "work",
+     "description": "The index is a wheel picker rather than a grid: about nine names are stacked vertically to the left of the card, right-aligned on a shallow arc. The active name is full black at 20px; neighbours step down in size, fade to light grey and tilt progressively, as if on a drum. Scrolling rotates the drum and swaps the card image, and the line above the card updates with the maker's logo, year and company."
+    },
+    {
+     "role": "other",
+     "description": "On mobile the layout becomes a horizontal card carousel: a white rounded card nearly the full viewport tall holds the robot, the next card peeks about 30px at the right, and a bottom sheet with a drag handle carries a maker icon, the model name at about 28px with the year in grey beside it, the company beneath and a position counter right-aligned."
+    }
+   ],
+   "steal": [
+    "Replace a thumbnail grid with a vertical wheel of names whose items shrink, fade and tilt away from the selection.",
+    "Hold every catalogue item at the same scale and stance on an identical off-white card so differences read instantly.",
+    "Keep all text between 12 and 20px and build hierarchy from grey values, leaving the object as the only large thing on screen."
+   ]
+  },
+  {
+   "id": "aww-butter",
+   "name": "Butter",
+   "url": "https://www.butter.video/",
+   "source": "Awwwards Site of the Day",
+   "kind": "saas",
+   "score": 7.6,
+   "idea": "A video editor presented as a bunch of collectable objects: 3D keychain charms in the hero and squircle effect tiles that behave like app icons everywhere else.",
+   "mood": [
+    "playful",
+    "glossy",
+    "confident",
+    "minimal",
+    "tactile"
+   ],
+   "archetype": "other: hanging-object-above-centred-statement",
+   "hero": "Soft grey vertical gradient, darker at the top, fading to near-white. Two floating light-grey rounded capsules form the nav: the left holds the script logo, five links and a kebab; the right holds Login and a black button. A 3D bunch of keychain charms (orange carabiner, black letter keycap, chrome ring, magenta disc, steel key, green script tag) hangs from the top edge at centre, overlapping the nav and stopping just above the headline. The headline is one centred line at 7.5vw in regular-weight grotesk spanning 75% of the width, with a 24px sub-line and a black rounded-rectangle button beneath. The bottom 35% is empty.",
+   "type": "DieGrotesk regular at 107px for the one-line headline, near-zero tracking, mixed case; the same face at 24px and 16px below, so a 4.5x then 1.5x step. ABC Diatype for tiny labels inside product panels. The logo is brush-script lettering used as an image.",
+   "colour": "#e8e8e8 #f5f5f5 #1e1e1e #0a0909 #ff3fd8 #19e319 — Grey-to-white ground with black type and black product panels. Saturated colour (magenta, green, orange, holographic pastels) appears only on 3D objects, effect tiles and the footer wordmark.",
+   "imagery": "Live 3D charms with chrome and plastic materials; black editor UI panels with 24px radius; many small squircle video tiles showing halftone, glitch and type-poster effects; a full-width extruded script wordmark.",
+   "layout": "96px side margins for the nav capsules, a centred content column and very large vertical gaps between blocks. Light grey throughout, with black product panels sliding in from below; ends on a full-bleed wordmark.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "A single row of seven client logos in black spans the full width, then a long gap, then a centred three-line statement at about 32px, roughly 580px wide, with five small squircle thumbnails (app-icon sized, each a different texture or brand tile) set inline between words like emoji. Words resolve from blurred pale grey to sharp black with scroll, so the last line is still soft and tinted."
+    },
+    {
+     "role": "showcase",
+     "description": "A black rounded panel about 690px wide slides up from below: a timeline with timecode, ruler ticks and a track of squircle clips, each clip a vivid texture (halftone horse, glitch stripes, red type poster). One clip is lifted out of the track, enlarged and rotated a few degrees, overlapping the panel's top edge. A second black panel shows a labelled library grid of the same tiles."
+    },
+    {
+     "role": "footer",
+     "description": "Text link columns sit at the top; below them the script wordmark is blown up to the full width and cropped by the bottom edge, drawn in solid black with a thick extruded underside in a holographic pink, blue and cyan gradient and a registered mark at its top right."
+    }
+   ],
+   "steal": [
+    "Hang a cluster of 3D branded charms from the top edge so it overlaps the nav and points down at a one-line headline.",
+    "Set small squircle thumbnails inline between the words of a statement and resolve the words from blurred to sharp on scroll.",
+    "End on the script wordmark at full width with a holographic extruded underside, cropped by the bottom edge."
+   ],
+   "media": "A 3D keyring about 380x340 hangs from the top edge over the centred headline, about 15% of the fold. After that video is the main medium, 45 muted looping product recordings and client clips in 32px-radius frames: 641px splits alternating sides, a dark app window that pans in from the right in a pinned section, stacked videos swapped by a tab list, and a rail of 9:16 clips bleeding off both edges; no video in the hero.",
+   "motion": "About 2-2.5s of empty grey before the nav, keyring and headline arrive, the headline split into characters that fade and rise. Lenis; one 1800px pinned section slides the statement off left while the app window grows to nearly full width; word spans rise over 0.8s cubic-bezier(0,0,0,1) on 100 elements, four cards stagger in at 0.2-0.5s delays, and the ground steps from #fafafa to #ededed over 1s."
+  },
+  {
+   "id": "opl-the-new-industrials",
+   "name": "The New Industrials",
+   "url": "https://thenewindustrials.com/",
+   "source": "One Page Love",
+   "kind": "other",
+   "score": 8.3,
+   "idea": "A long-read essay laid out inside a visible drafting grid, where colour fields shift as you read and 3D machine parts drift through the margins and finally assemble into the publisher's initials.",
+   "mood": [
+    "bold",
+    "playful",
+    "editorial",
+    "engineered",
+    "saturated"
+   ],
+   "archetype": "editorial-masthead",
+   "hero": "A saturated orange page framed by black hairlines 24px from each edge. Top strip: a monogram logo left, a black pill with orange monospaced title centred, a boxed year right. Under it a row of eight empty outlined cells, 62px tall, like a ruler. A cream panel then fills the remaining width and height. Inside, a WebGL scene of pastel low-poly machine parts with visible wireframes sits behind a two-line uppercase title in a tall condensed slab serif, glyphs about 210px high, spanning 83% of the width. Small monospaced uppercase credits flank it at mid-height; reading time is centred below, with two boxed share links on the bottom edge.",
+   "type": "Title in a tall condensed slab serif at roughly 14vw cap height, black, uppercase. Essay in Albra Book serif: 34px lead paragraph, 18px running text with generous leading. Supply Mono in tiny uppercase for credits and box labels; a narrow typewriter-like face for the pull quote.",
+   "colour": "#ff8126 #f1ead8 #161615 #4db3ff #c5f53d #ff5fc0 — The page background changes as you read: orange, then a gradient through lilac into sky blue, then acid lime at the end. Type and hairlines stay black; the 3D parts carry rainbow gradients.",
+   "imagery": "Real-time 3D machine components (cylinders, gears, polyhedra) in matte pastel with coloured wireframe edges and neon gradient caps; they overlap the title, float into text margins and form letters in the footer.",
+   "layout": "Black hairlines divide the whole page into cells: one wide text cell flanked by narrow empty ones, each chapter tagged with a small numbered box at its corner. The lead paragraph spans the cell, running text is indented into a narrower column, and full-width quote screens interrupt.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "On orange, a ruled cell with a small numbered square at its top-right corner. The opening paragraph is set in serif at about 34px, seven lines, filling the cell with 60px padding. A horizontal hairline closes the cell; the next one indents its text by about 180px and drops to 18px, with a vertical rule marking the indent. The side cells stay empty, so the grid reads as margin furniture."
+    },
+    {
+     "role": "other",
+     "description": "Pull quote: a full-viewport interruption where the grid lines stop. The background becomes a vertical gradient from orange through dusty lilac to sky blue. Centred, five lines of a narrow, widely tracked typewriter-style face at about 48px in dark olive-brown, each letter trailing a soft red vertical smear downward like wet ink. The next cell resumes on the blue that the gradient ended on."
+    },
+    {
+     "role": "other",
+     "description": "Body screens: a single serif column about 960px wide between two vertical hairlines, paragraphs separated by a blank line. One 3D object per screen (a grey-green polyhedron with green edges, an orange hexagonal nut) sits half outside the column, crossing the vertical rule and the page edge at a different height each time, so every screen of text has one sculptural interruption."
+    },
+    {
+     "role": "footer",
+     "description": "Acid-lime field. The publisher's three initials are built as a sculpture from the 3D parts seen earlier, about 60% of the viewport tall and spanning nearly the full width, each letter a different assembly of pipes, gears and blocks in clashing gradients. Below, hairlines form two cells holding monospaced uppercase credits at 10px, aligned to the cells' left padding."
+    }
+   ],
+   "steal": [
+    "Draw the layout grid as visible black hairlines, including a row of empty cells, and tag each text block with a small numbered box.",
+    "Change the page background colour between chapters of a long read so progress is felt as a shift of colour.",
+    "Let one family of 3D objects recur at three scales: behind the title, in the margins, and assembled into a monogram at the end."
+   ]
+  }
+ ],
+ "scenes": []
+}

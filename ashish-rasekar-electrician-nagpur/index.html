@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Ashish Rasekar - Electrician, Dighori, Nagpur</title>
+<meta name="description" content="Ashish Rasekar Electrician Work, Umred Road, Dighori, Nagpur: wiring, repairs, panels, fans, lighting and CCTV. Call 82089 99463.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f4f4f4; --ink:#111111; --muted:#4a4a4a;
+  --accent:#1a4be0; --accent-ink:#ffffff;
+  --field-1:#111111; --field-1-ink:#ffffff;
+  --step-small: 1rem;
+  --step-body: clamp(1.125rem, 1.05rem + 0.3vw, 1.3125rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --margin:40px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:'STIX Two Text',Georgia,serif;font-size:var(--step-body);line-height:1.45;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:var(--accent)}
+.rv{transform:translateY(26px);transition:transform .7s cubic-bezier(.22,.8,.3,1)}
+.rv.in{transform:none}
+@media (prefers-reduced-motion:reduce){.rv{transform:none;transition:none}}
+
+/* nav */
+.nav{display:flex;justify-content:space-between;align-items:baseline;padding:24px var(--margin);font-size:var(--step-body)}
+.nav b{font-weight:600}
+.nav a{text-decoration:none;font-size:var(--step-body)}
+.nav a:hover{text-decoration:underline}
+
+/* hero + catalogue split */
+.split{display:grid;grid-template-columns:1fr 1fr}
+.split .left{padding:0 var(--margin)}
+.viewer{position:sticky;top:0;height:100svh;background:var(--surface);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.viewer .tile{width:47vw;max-width:680px;aspect-ratio:1/1;background:var(--surface);position:relative;transition:background .5s}
+.viewer .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;opacity:0;transition:opacity .45s ease}
+.viewer .tile img.cover{mix-blend-mode:normal;object-fit:cover}
+.viewer .tile img.on{opacity:1}
+.viewer .cap{position:absolute;left:0;bottom:-2.1em;font-size:var(--step-small);color:var(--muted);white-space:nowrap}
+.viewer .cap b{color:var(--ink);font-weight:600;margin-right:.5em}
+.viewer .emaillink{position:absolute;top:24px;right:var(--margin);font-size:var(--step-body);text-decoration:none}
+.viewer .emaillink:hover{text-decoration:underline}
+
+.heroleft{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-bottom:40px}
+.heroleft h1{font-size:clamp(28px,2.6vw,40px);font-weight:600;letter-spacing:-0.026em;line-height:1.1;max-width:14ch}
+.heroleft .sub{margin-top:18px;font-size:var(--step-lead);color:var(--muted);max-width:38ch}
+.heroleft .go{display:inline-block;margin-top:28px;background:var(--accent);color:var(--accent-ink);text-decoration:none;padding:16px 28px;font-size:var(--step-body);width:max-content;transition:transform .18s ease}
+.heroleft .go:hover{transform:translateY(-2px)}
+
+.entry{min-height:0;padding:38px 0;display:grid;grid-template-columns:180px 1fr auto;column-gap:28px;align-content:center;align-items:end}
+.entry:nth-of-type(even){background:var(--surface);margin:0 -40px;padding-left:40px;padding-right:40px}
+.entry .thumb{width:180px;height:180px;background:var(--surface);overflow:hidden;grid-row:1/5;align-self:start}
+.entry .thumb img{width:100%;height:100%;object-fit:cover}
+.entry h2{font-size:var(--step-head);font-weight:600;letter-spacing:-0.026em;line-height:1.1;grid-column:2}
+.entry .fact{font-size:var(--step-body);color:var(--muted);grid-column:3;text-align:right;max-width:22ch}
+.entry .line{margin-top:26px;font-size:var(--step-lead);max-width:44ch;grid-column:2/4}
+.entry .pick{margin-top:20px;font-size:var(--step-body);grid-column:2/4}
+.entry .specs{margin-top:14px;font-size:16px;color:var(--muted);grid-column:2/4}
+.entry .pick a{text-decoration:none}
+.entry .pick a:hover{text-decoration:underline}
+
+/* intro statement */
+.statement{padding:110px var(--margin);text-align:center}
+.statement p{max-width:64%;margin:0 auto;font-size:clamp(24px,2.6vw,36px);font-weight:600;line-height:1.2;letter-spacing:-0.02em}
+.statement .fr{display:inline-block;height:.85em;width:1.25em;vertical-align:-0.1em;overflow:hidden;margin:0 .12em;background:var(--surface)}
+.statement .fr img{width:100%;height:100%;object-fit:cover}
+
+/* features fan */
+.fanwrap{height:300svh;position:relative;background:var(--field-1)}
+.fanstage{position:sticky;top:0;height:100svh;overflow:hidden}
+.fanstage .head{position:absolute;top:40px;left:40px;color:var(--field-1-ink)}
+.fanstage .head h2{font-size:clamp(40px,4vw,60px);font-weight:600;letter-spacing:-0.026em;line-height:1.1}
+.fanstage .head p{margin-top:10px;font-size:var(--step-body);color:#b9b9b9;max-width:40ch}
+.fancards{position:absolute;inset:0}
+.fcard{position:absolute;left:50%;top:50%;width:340px;height:400px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.fcard.c1{transform:translate(calc(-50% - 375px),-50%) rotate(-3deg)}
+.fcard.c2{transform:translate(calc(-50% - 125px),-50%) rotate(2deg)}
+.fcard.c3{transform:translate(calc(-50% + 125px),-50%) rotate(-2deg)}
+.fcard.c4{transform:translate(calc(-50% + 375px),-50%) rotate(3deg)}
+.fcard h3{font-size:32px;font-weight:600;letter-spacing:-0.02em;line-height:1.1}
+.fcard .ph{width:60%;aspect-ratio:1/1;background:var(--surface);overflow:hidden}
+.fcard .ph img{width:100%;height:100%;object-fit:cover}
+.fcard p{font-size:16px;line-height:1.4;margin-top:auto}
+.fcard.c1{background:#f4f4f4;color:var(--ink)}
+.fcard.c2{background:#ffffff;color:var(--ink)}
+.fcard.c3{background:var(--accent);color:var(--accent-ink)}
+.fcard.c3 .ph{background:#dfe6ff}
+.fcard.c4{background:#2a2a2a;color:#ffffff}
+.fcard.c4 .ph{background:#3a3a3a}
+
+/* showcase strip */
+.strip{padding:110px 0 110px var(--margin);display:flex;gap:40px;overflow:hidden}
+.strip .side{flex:0 0 300px;display:flex;flex-direction:column;justify-content:space-between}
+.strip .side h2{font-size:clamp(24px,2vw,28px);font-weight:600;letter-spacing:-0.02em}
+.strip .side a{margin-top:8px;font-size:var(--step-body);text-decoration:none}
+.strip .side a:hover{text-decoration:underline}
+.strip .side .notes{display:flex;flex-direction:column;justify-content:space-between;flex:1;margin-top:40px}
+.strip .side .notes p{font-size:var(--step-small);color:var(--muted);max-width:24ch}
+.run{flex:1;display:flex;align-items:flex-end;gap:6px;overflow:visible;min-width:0}
+.run figure{flex:none}
+.run img{height:30vh;width:auto;display:block}
+.run figure.lift img{height:66vh}
+.run figcaption{display:flex;justify-content:space-between;gap:12px;font-size:var(--step-small);margin-top:8px;max-width:100%}
+.run figcaption .f{color:var(--muted)}
+.drift{animation:drift 22s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.09)}}
+.run figure.lift{overflow:hidden}
+.run figure:not(.lift) figcaption{display:none}
+
+/* cta reply card */
+.cta{position:relative;background:var(--field-1);min-height:80svh;overflow:hidden;display:grid;grid-template-columns:repeat(12,1fr);padding:110px var(--margin) 0}
+.cta .note{grid-column:1/5;align-self:end;padding-bottom:64px;color:#d9d9d9;font-size:var(--step-lead);max-width:26ch}
+.card{grid-column:6/13;width:min(44vw,100%);justify-self:end;background:var(--bg);color:var(--ink);padding:48px;transform:rotate(2deg) translateY(60px);text-align:center}
+.card h2{font-size:32px;font-weight:600;letter-spacing:-0.02em}
+.card .lines{margin-top:14px;font-size:var(--step-body);color:var(--muted)}
+.card .need{margin-top:10px;font-size:var(--step-body);color:var(--ink)}
+.card .bar{display:block;margin-top:26px;background:var(--ink);color:var(--bg);text-decoration:none;padding:18px 0;font-size:var(--step-lead);transition:transform .18s ease}
+.card .bar:hover{transform:translateY(-2px)}
+.card .mail{margin-top:16px;font-size:var(--step-body);overflow-wrap:anywhere}
+
+/* footer tiles */
+.foot{padding:12px;display:grid;grid-template-columns:repeat(12,1fr);gap:8px;background:var(--bg)}
+.tilebox{padding:20px;display:flex;flex-direction:column;font-size:var(--step-body)}
+.t-state{grid-column:1/5;background:var(--surface);min-height:220px}
+.t-state .s{font-size:24px;font-weight:600;letter-spacing:-0.02em;line-height:1.2}
+.t-state .legal{margin-top:auto;font-size:16px;color:var(--muted);line-height:1.5;overflow-wrap:anywhere}
+.t-state .legal a{color:var(--muted)}
+.t-nav{grid-column:5/8;background:var(--surface);min-height:220px}
+.t-nav ul{list-style:none;display:flex;flex-direction:column;gap:8px;font-size:16px}
+.t-nav a{color:var(--ink);text-decoration:none}
+.t-nav a:hover{text-decoration:underline}
+.t-city{grid-column:8/10;background:var(--surface);min-height:220px}
+.t-city .c{font-size:var(--step-body);font-weight:600}
+.t-city .h{margin-top:auto;font-size:var(--step-small);color:var(--muted)}
+.t-mail{grid-column:10/13;background:var(--surface);min-height:220px}
+.t-mail a{margin-top:auto;font-size:20px;overflow-wrap:anywhere;text-decoration:none}
+.t-mail a:hover{text-decoration:underline}
+.t-word{grid-column:1/9;background:var(--field-1);color:var(--field-1-ink);min-height:320px;align-items:center;justify-content:center}
+.t-word .wm{font-size:9vw;font-weight:600;letter-spacing:-0.026em;line-height:1;text-align:center}
+.t-call{grid-column:9/13;background:var(--accent);color:var(--accent-ink);min-height:320px;text-decoration:none;position:relative}
+.t-call .inv{font-size:28px;font-weight:600;letter-spacing:-0.02em}
+.t-call svg{position:absolute;right:20px;bottom:20px;width:44px;height:44px}
+
+@media (max-width:900px){
+  :root{--margin:20px}
+  .nav{padding:18px var(--margin);align-items:flex-start;gap:12px}
+  .split{display:block}
+  .viewer{position:sticky;top:0;height:52svh;z-index:5}
+  .viewer .tile{width:68vw}
+  .viewer .emaillink{top:18px;right:20px}
+  .heroleft{min-height:70svh;padding-bottom:32px;background:var(--bg)}
+  .heroleft h1{font-size:7vw}
+  .heroleft .sub{font-size:16px}
+  .heroleft .go{width:100%;text-align:center}
+  .entry{min-height:0;padding:44px 0;background:var(--bg);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left}
+  .entry .fact{margin-top:10px;text-align:left;max-width:none}
+  .entry .thumb{width:72px;height:72px;grid-row:1/2}
+  .entry .line,.entry .specs,.entry .pick{grid-column:1/4}
+  .entry h2{font-size:8.6vw}
+  .statement{padding:96px var(--margin);text-align:left}
+  .statement p{max-width:100%;font-size:24px;line-height:1.25}
+  .fanwrap{height:auto;background:var(--field-1);padding:32px 0 48px}
+  .fanstage{position:static;height:auto;overflow:visible}
+  .fanstage .head{position:static;padding:0 20px 28px}
+  .fancards{position:static;display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px;-webkit-overflow-scrolling:touch}
+  .fcard{position:static;transform:none!important;flex:0 0 100%;height:380px;scroll-snap-align:start}
+  .strip{display:block;padding:96px 0}
+  .strip .side{padding:0 var(--margin) 32px}
+  .strip .side .notes{margin-top:28px;gap:16px}
+  .run{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 var(--margin)}
+  .run figure:not(.lift) figcaption{display:none}
+  .run img{height:34vw}
+  .run figure.lift img{height:60vw}
+  .run figcaption{max-width:70vw}
+  .cta{display:block;padding:96px var(--margin) 0}
+  .cta .note{padding:0 0 40px;font-size:20px;max-width:100%}
+  .card{width:100%;padding:32px 24px;transform:rotate(1deg) translateY(48px)}
+  .card h2{font-size:24px}
+  .card .bar{padding:16px 0}
+  .foot{grid-template-columns:1fr 1fr;gap:6px;padding:8px}
+  .t-word{grid-column:1/3;min-height:160px}
+  .t-word .wm{font-size:13vw}
+  .t-call{grid-column:1/3;min-height:180px}
+  .t-state{grid-column:1/2}.t-nav{grid-column:2/3}.t-city{grid-column:1/2}.t-mail{grid-column:2/3}
+  .t-state,.t-nav,.t-city,.t-mail{min-height:180px}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <b>Ashish Rasekar</b>
+  <a href="mailto:ashish.rasekar37@gmail.com?subject=Electrical%20work%20enquiry">Email</a>
+</nav>
+
+<div class="split">
+  <div class="left">
+    <header class="heroleft">
+      <h1 class="rv">Electrical work, piece by piece.</h1>
+      <p class="sub rv">All types of electrical work for homes and shops around Dighori, Nagpur - wiring, repairs, panels, fans, lighting and CCTV - from one local electrician.</p>
+      <a class="go rv" href="tel:+918208999463">Call 82089 99463</a>
+    </header>
+
+    <section class="entry" id="catalogue-top" data-i="0">
+      <div class="thumb rv"><img src="assets/ceiling-fan-mid-spin.jpg" alt="Ceiling fan" width="1920" height="1280" decoding="async"></div>
+      <h2 class="rv">The fan</h2>
+      <p class="fact rv">Ceiling fan installation</p>
+      <p class="line rv">Fitted new, balanced, or coaxed back from a wobble.</p>
+      <p class="specs rv">Ceiling fan installation · Appliance circuits · Part of all-types electrical work</p>
+      <p class="pick rv"><a href="#call" data-need="the fan">This one &rarr;</a></p>
+    </section>
+
+    <section class="entry" data-i="1">
+      <div class="thumb rv"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="Breaker panel" width="1525" height="2272" decoding="async"></div>
+      <h2 class="rv">The panel</h2>
+      <p class="fact rv">Panel upgrades and panel wiring</p>
+      <p class="line rv">A board that trips for a reason gets traced, not just reset.</p>
+      <p class="specs rv">Panel upgrades · Electrical panel wiring · Surge protection</p>
+      <p class="pick rv"><a href="#call" data-need="the panel">This one &rarr;</a></p>
+    </section>
+
+    <section class="entry" data-i="2">
+      <div class="thumb rv"><img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Wiring" width="1920" height="2560" decoding="async"></div>
+      <h2 class="rv">The wiring</h2>
+      <p class="fact rv">Wiring, rewiring and remodeling</p>
+      <p class="line rv">From one new point to the whole house, drawn and pulled clean.</p>
+      <p class="specs rv">Electrical wiring · Rewiring and remodeling · Data and communication wiring</p>
+      <p class="pick rv"><a href="#call" data-need="the wiring">This one &rarr;</a></p>
+    </section>
+
+    <section class="entry" data-i="3">
+      <div class="thumb rv"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="Light switches" width="1920" height="1440" decoding="async"></div>
+      <h2 class="rv">The switches</h2>
+      <p class="fact rv">Outlet and switch installation</p>
+      <p class="line rv">Loose, dead or sparking points opened up and set right.</p>
+      <p class="specs rv">Outlet and switch installation · Electrical outlets · Light switches</p>
+      <p class="pick rv"><a href="#call" data-need="a switch">This one &rarr;</a></p>
+    </section>
+
+    <section class="entry" data-i="4">
+      <div class="thumb rv"><img src="assets/uberwachungskamera.jpg" alt="CCTV camera" width="1024" height="768" decoding="async"></div>
+      <h2 class="rv">The camera</h2>
+      <p class="fact rv">CCTV camera and security system installation</p>
+      <p class="line rv">Eyes on the shop, the godown or the gate, recording by night.</p>
+      <p class="specs rv">CCTV camera installation · Security systems · Water tank alarms</p>
+      <p class="pick rv"><a href="#call" data-need="a camera">This one &rarr;</a></p>
+    </section>
+
+    <section class="entry" data-i="5">
+      <div class="thumb rv"><img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="LED bulb" width="1902" height="1728" decoding="async"></div>
+      <h2 class="rv">The light</h2>
+      <p class="fact rv">Lighting installation</p>
+      <p class="line rv">One fitting changed, or the whole room re-lit.</p>
+      <p class="specs rv">Lighting installation · Electrical upgrades · Indoor and outdoor</p>
+      <p class="pick rv"><a href="#call" data-need="the lighting">This one &rarr;</a></p>
+    </section>
+
+    <section class="entry" data-i="6">
+      <div class="thumb rv"><img src="assets/streets-of-nagpur-at-night.jpg" alt="Nagpur street at night" width="1600" height="1042" decoding="async"></div>
+      <h2 class="rv">The hours</h2>
+      <p class="fact rv">Monday to Saturday: open 24 hours. Sunday: 9am - 10pm</p>
+      <p class="line rv">Emergency electrical service is his listing's own report - call and ask.</p>
+      <p class="specs rv">Online and cash payments · On-call support · Fully trained and insured, the listing says</p>
+      <p class="pick rv"><a href="#call" data-need="something urgent">This one &rarr;</a></p>
+    </section>
+  </div>
+
+  <div class="viewer" aria-hidden="true">
+    <a class="emaillink" href="mailto:ashish.rasekar37@gmail.com?subject=Electrical%20work%20enquiry">Email</a>
+    <div class="tile" id="tile">
+      <img src="assets/ceiling-fan-mid-spin.jpg" alt="" class="on">
+      <img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="">
+      <img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="" class="cover">
+      <img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="">
+      <img src="assets/uberwachungskamera.jpg" alt="">
+      <img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="">
+      <img src="assets/streets-of-nagpur-at-night.jpg" alt="" class="cover">
+      <div class="cap" id="cap"><b>Ceiling fan</b><span>fitted and balanced</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="statement">
+  <p class="rv">From the fan <span class="fr"><img src="assets/ceiling-fan-mid-spin.jpg" alt="Ceiling fan" loading="lazy" decoding="async"></span> over your head to the panel <span class="fr"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="Breaker panel" loading="lazy" decoding="async"></span> in the wall, one electrician <span class="fr"><img src="assets/uberwachungskamera.jpg" alt="CCTV camera" loading="lazy" decoding="async"></span> for the whole house.</p>
+</section>
+
+<div class="fanwrap">
+  <section class="fanstage" id="covers">
+    <div class="head">
+      <h2 class="rv">What he covers</h2>
+      <p class="rv">The full list runs from a single light fitting to complete rewiring - his listing's words.</p>
+    </div>
+    <div class="fancards" id="fancards">
+      <div class="fcard c1"><h3>Repairs</h3><div class="ph"><img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Electrical wiring being repaired" loading="lazy" decoding="async"></div><p>Troubleshooting and repairs, from a dead point to a full safety inspection.</p></div>
+      <div class="fcard c2"><h3>Wiring</h3><div class="ph"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="Light switches mid-installation" loading="lazy" decoding="async"></div><p>New wiring, rewiring and remodeling, including data and communication lines.</p></div>
+      <div class="fcard c3"><h3>Panels</h3><div class="ph"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="Open circuit breaker panel" loading="lazy" decoding="async"></div><p>Panel upgrades, surge protection, grounding and code compliance.</p></div>
+      <div class="fcard c4"><h3>CCTV &amp; security</h3><div class="ph"><img src="assets/uberwachungskamera.jpg" alt="Dome CCTV camera" loading="lazy" decoding="async"></div><p>CCTV cameras, security systems and water tank alarms installed.</p></div>
+    </div>
+  </section>
+</div>
+
+<section class="strip" id="around">
+  <div class="side">
+    <h2 class="rv">Around Dighori</h2>
+    <a class="rv" href="#call">See the hours</a>
+    <div class="notes">
+      <p class="rv">Umred Road, Pawanputra Nagar, Dighori, Nagpur 440034.</p>
+      <p class="rv">Online and cash payments, on-call support - his listing's report. Every frame on this page is illustrative stock, credited in the footer.</p>
+    </div>
+  </div>
+  <div class="run">
+    <figure class="lift rv"><img class="drift" src="assets/streets-of-nagpur-at-night.jpg" alt="A Nagpur street at night" width="1600" height="1042" fetchpriority="high" decoding="async"><figcaption><span>Nagpur at night</span><span class="f">illustrative</span></figcaption></figure>
+    <figure class="rv"><img src="assets/san-juan-bautista-tuxtepec-electrical-wiring-inside.jpg" alt="Cabling inside a wall box" width="1920" height="2560" decoding="async"><figcaption><span>Cabling</span><span class="f">illustrative</span></figcaption></figure>
+    <figure class="rv"><img src="assets/three-light-switches-with-exposed-wiring.jpg" alt="Switches being fitted" width="1920" height="1440" decoding="async"><figcaption><span>Switches</span><span class="f">illustrative</span></figcaption></figure>
+    <figure class="rv"><img src="assets/eaton-circuit-breaker-panel-open.jpg" alt="Breaker panel detail" width="1525" height="2272" decoding="async"><figcaption><span>The panel</span><span class="f">illustrative</span></figcaption></figure>
+    <figure class="rv"><img src="assets/ceiling-fan-mid-spin.jpg" alt="Ceiling fan in motion" width="1920" height="1280" decoding="async"><figcaption><span>The fan</span><span class="f">illustrative</span></figcaption></figure>
+    <figure class="rv"><img src="assets/led-e27-light-bulb-1134-cropped.jpg" alt="An LED bulb" width="1902" height="1728" decoding="async"><figcaption><span>The bulb</span><span class="f">illustrative</span></figcaption></figure>
+  </div>
+</section>
+
+<section class="cta" id="call">
+  <p class="note rv">A fan that wobbles, a panel that trips, a camera for the shop - or the whole wiring.</p>
+  <div class="card rv">
+    <h2>Call the electrician.</h2>
+    <p class="lines">Open around the clock Monday to Saturday; 9am to 10pm on Sundays - hours from his listing.</p>
+    <p class="need" id="needline">Tell him what it is when you call.</p>
+    <a class="bar" id="callbar" href="tel:+918208999463">Call 82089 99463</a>
+    <p class="mail"><a id="maillink" href="mailto:ashish.rasekar37@gmail.com?subject=Electrical%20work%20enquiry">ashish.rasekar37@gmail.com</a></p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="tilebox t-state">
+    <p class="s">Electrical work, named plainly and done locally.</p>
+    <p class="legal">Concept preview. Enquiries only, not a booking service. Business details from its public ThreeBestRated listing; emergency service, insurance and payment options are the listing's own report. Photographs are illustrative, openly licensed material, not this business or its staff: ceiling fan by Noah Wulf, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; breaker panel by BrokenSphere, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>; wiring by Thayne Tuason, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>; light switches by Paul Cutler, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; CCTV camera by au&szlig;erirdische sind gesund, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>; LED bulb by Loadmaster &amp; Bech, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>; Nagpur street at night by Ashish Agrawal, Pranav Chaturvedi &amp; Jaimin Gorasia, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a> - all via Wikimedia Commons and Flickr.</p>
+  </div>
+  <div class="tilebox t-nav">
+    <ul>
+      <li><a href="#catalogue-top">The catalogue</a></li>
+      <li><a href="#covers">What he covers</a></li>
+      <li><a href="#around">Around Dighori</a></li>
+      <li><a href="#call">Call</a></li>
+    </ul>
+  </div>
+  <div class="tilebox t-city">
+    <p class="c">Dighori, Nagpur</p>
+    <p class="h">Mon - Sat: open 24 hours<br>Sun: 9am - 10pm</p>
+  </div>
+  <div class="tilebox t-mail">
+    <a href="mailto:ashish.rasekar37@gmail.com?subject=Electrical%20work%20enquiry">ashish.rasekar37@gmail.com</a>
+  </div>
+  <div class="tilebox t-word"><p class="wm">Ashish Rasekar</p></div>
+  <a class="tilebox t-call" href="tel:+918208999463">
+    <span class="inv">Call any hour.</span>
+    <svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square"><path d="M8 36 L36 8"/><path d="M14 8 H36 V30"/></svg>
+  </a>
+</footer>
+
+<script>
+// entrance reveals: transform-only + fallback timer
+(function(){
+  var els=document.querySelectorAll('.rv');
+  function show(e){e.classList.add('in')}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){show(x.target);io.unobserve(x.target)}})},{threshold:.15});
+    els.forEach(function(e){io.observe(e)});
+  } else { els.forEach(show); }
+  setTimeout(function(){els.forEach(show)},1400);
+})();
+
+// specimen viewer swap
+(function(){
+  var imgs=document.querySelectorAll('#tile img');
+  var cap=document.getElementById('cap');
+  var caps=[['Ceiling fan','fitted and balanced'],['Breaker panel','upgraded and traced'],['The wiring','drawn and pulled clean'],['Switches','opened up and set right'],['CCTV camera','recording by night'],['LED light','one fitting or the whole room'],['Nagpur at night','open around the clock Mon - Sat']];
+  var entries=document.querySelectorAll('.entry');
+  var cur=0;
+  function set(i){
+    if(i===cur)return;cur=i;
+    imgs.forEach(function(im,k){im.classList.toggle('on',k===i)});
+    cap.innerHTML='<b>'+caps[i][0]+'</b><span>'+caps[i][1]+'</span>';
+  }
+  var io=new IntersectionObserver(function(en){
+    en.forEach(function(x){ if(x.isIntersecting) set(+x.target.dataset.i); });
+  },{rootMargin:'-45% 0px -45% 0px'});
+  entries.forEach(function(e){io.observe(e)});
+})();
+
+// pick-a-need line on the reply card
+(function(){
+  var need=document.getElementById('needline');
+  var mail=document.getElementById('maillink');
+  document.querySelectorAll('[data-need]').forEach(function(a){
+    a.addEventListener('click',function(){
+      need.textContent='Tell him it is about '+a.dataset.need+'.';
+      mail.href='mailto:ashish.rasekar37@gmail.com?subject='+encodeURIComponent('Electrical work enquiry - '+a.dataset.need);
+    });
+  });
+})();
+
+// fan deal on scroll (desktop)
+(function(){
+  var wrap=document.querySelector('.fanwrap');
+  var cards=document.querySelectorAll('.fcard');
+  if(!wrap)return;
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function layout(p){
+    cards.forEach(function(c,i){
+      var start=i*0.22, t=Math.min(1,Math.max(0,(p-start)/0.22));
+      var e=1-Math.pow(1-t,3);
+      var x=(i-1.5)*250; // fan offsets
+      var rot=[-3,2,-2,3][i];
+      var y=140*(1-e);
+      c.style.transform='translate(calc(-50% + '+(x*e)+'px), calc(-50% + '+(y)+'svh)) rotate('+(rot*e)+'deg)';
+    });
+  }
+  function onScroll(){
+    if(window.innerWidth<=900||reduced){cards.forEach(function(c){c.style.transform=''});return}
+    var r=wrap.getBoundingClientRect();
+    var total=r.height-window.innerHeight;
+    var p=Math.min(1,Math.max(0,-r.top/total));
+    layout(p);
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll);
+  onScroll();
+})();
+</script>
+</body>
+</html>
