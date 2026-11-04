@@ -79,11 +79,11 @@ a{color:var(--accent)}
 .fanstage .head h2{font-size:clamp(40px,4vw,60px);font-weight:600;letter-spacing:-0.026em;line-height:1.1}
 .fanstage .head p{margin-top:10px;font-size:var(--step-body);color:#b9b9b9;max-width:40ch}
 .fancards{position:absolute;inset:0}
-.fcard{position:absolute;left:50%;top:50%;width:340px;height:400px;padding:28px;display:flex;flex-direction:column;gap:14px}
-.fcard.c1{transform:translate(calc(-50% - 375px),-50%) rotate(-3deg)}
-.fcard.c2{transform:translate(calc(-50% - 125px),-50%) rotate(2deg)}
-.fcard.c3{transform:translate(calc(-50% + 125px),-50%) rotate(-2deg)}
-.fcard.c4{transform:translate(calc(-50% + 375px),-50%) rotate(3deg)}
+.fcard{position:absolute;left:50%;top:50%;width:min(330px,23vw);height:400px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.fcard.c1{transform:translate(calc(-50% - 1.5*min(350px,25vw)),-50%) rotate(-3deg)}
+.fcard.c2{transform:translate(calc(-50% - 0.5*min(350px,25vw)),-50%) rotate(2deg)}
+.fcard.c3{transform:translate(calc(-50% + 0.5*min(350px,25vw)),-50%) rotate(-2deg)}
+.fcard.c4{transform:translate(calc(-50% + 1.5*min(350px,25vw)),-50%) rotate(3deg)}
 .fcard h3{font-size:32px;font-weight:600;letter-spacing:-0.02em;line-height:1.1}
 .fcard .ph{width:60%;aspect-ratio:1/1;background:var(--surface);overflow:hidden}
 .fcard .ph img{width:100%;height:100%;object-fit:cover}
@@ -414,9 +414,10 @@ a{color:var(--accent)}
     cards.forEach(function(c,i){
       var start=i*0.07, t=Math.min(1,Math.max(0,(p-start)/0.16));
       var e=1-Math.pow(1-t,3);
-      var breathe=Math.min(1,Math.max(0,(p-0.37)/0.63)); // slow spread once all dealt
-      var x=(i-1.5)*(250+40*breathe); // fan offsets
-      var rot=[-3,2,-2,3][i]*(1+0.35*breathe);
+      var breathe=Math.min(1,Math.max(0,(p-0.37)/0.63)); // gentle sway once all dealt
+      var gap=Math.min(350,window.innerWidth*0.25); // never overlap: gap > card width
+      var x=(i-1.5)*gap;
+      var rot=[-3,2,-2,3][i]*(1+0.3*breathe);
       var y=140*(1-e) - 2*breathe*((i%2)?1:-1);
       c.style.transform='translate(calc(-50% + '+(x*e)+'px), calc(-50% + '+(y)+'svh)) rotate('+(rot*e)+'deg)';
     });

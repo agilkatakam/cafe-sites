@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-04T07:26:03.685Z",
+ "at": "2026-11-04T07:33:25.375Z",
  "allow": [],
  "viewports": [
   {
@@ -14,9 +14,9 @@
     0.81,
     0.79,
     0.61,
-    0.92,
-    0.96,
-    0.85,
+    0.93,
+    0.93,
+    0.82,
     0.69,
     0.86,
     0.92
@@ -321,7 +321,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.2,
+      "widthRatio": 0.19,
       "top": 5779,
       "tag": "h3",
       "kind": "heading"
@@ -342,7 +342,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.2,
+      "widthRatio": 0.19,
       "top": 5779,
       "tag": "h3",
       "kind": "heading"
@@ -363,7 +363,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.2,
+      "widthRatio": 0.19,
       "top": 5779,
       "tag": "h3",
       "kind": "heading"
@@ -384,7 +384,7 @@
       "mono": false,
       "align": "left",
       "position": "center",
-      "widthRatio": 0.2,
+      "widthRatio": 0.19,
       "top": 5779,
       "tag": "h3",
       "kind": "heading"
@@ -746,14 +746,14 @@
       "height": 2700,
       "words": 21,
       "media": 4,
-      "middle": 145,
+      "middle": 150,
       "heading": {
        "text": "What he covers",
        "size": 58,
        "tag": "h2"
       },
       "left": 40,
-      "right": 692,
+      "right": 693,
       "textLeft": 40,
       "textRight": 1007,
       "fullBleed": false,
