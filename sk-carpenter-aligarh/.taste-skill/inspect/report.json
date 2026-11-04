@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-04T16:22:50.100Z",
+ "at": "2026-11-04T16:33:50.257Z",
  "allow": [],
  "viewports": [
   {
@@ -9,15 +9,15 @@
    "load": "load",
    "screens": 4,
    "filled": [
-    0.64,
-    0.72,
-    0.64,
-    0.74
+    0.66,
+    0.69,
+    0.63,
+    0.72
    ],
    "motion": {
-    "elements": 19,
+    "elements": 20,
     "css": 0,
-    "transitions": 19,
+    "transitions": 20,
     "scripted": 0,
     "videos": 0,
     "playingVideos": 0
@@ -28,9 +28,9 @@
      "h": 900
     },
     "page": {
-     "height": 4118,
-     "screens": 4.6,
-     "words": 361,
+     "height": 4077,
+     "screens": 4.5,
+     "words": 358,
      "img": 4,
      "video": 0,
      "canvas": 0,
@@ -106,10 +106,10 @@
       "kind": "heading"
      },
      {
-      "text": "Chairs and cots made to order, kitchen furniture, varnishing and repairs - one workshop in Jamalpur, Aligarh.",
-      "words": 17,
-      "chars": 109,
-      "lines": 4,
+      "text": "Chairs and cots, kitchen furniture, varnishing and repairs - one workshop in Jamalpur, Aligarh.",
+      "words": 14,
+      "chars": 95,
+      "lines": 3,
       "size": 30.4,
       "vw": 2.1,
       "font": "Erode",
@@ -143,7 +143,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 1099,
+      "top": 1058,
       "tag": "h2",
       "kind": "heading"
      },
@@ -164,7 +164,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.26,
-      "top": 1213,
+      "top": 1172,
       "tag": "h3",
       "kind": "heading"
      },
@@ -185,7 +185,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 1775,
+      "top": 1734,
       "tag": "h2",
       "kind": "heading"
      },
@@ -206,7 +206,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 1843,
+      "top": 1802,
       "tag": "h3",
       "kind": "heading"
      },
@@ -227,7 +227,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 1987,
+      "top": 1946,
       "tag": "h3",
       "kind": "heading"
      },
@@ -248,7 +248,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 2130,
+      "top": 2089,
       "tag": "h3",
       "kind": "heading"
      },
@@ -269,7 +269,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 2421,
+      "top": 2380,
       "tag": "h2",
       "kind": "heading"
      },
@@ -290,14 +290,14 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.27,
-      "top": 3459,
+      "top": 3418,
       "tag": "p",
       "kind": "statement"
      }
     ],
     "headingSummary": {
      "count": 10,
-     "maxLines": 4,
+     "maxLines": 3,
      "over2Lines": 0,
      "statements": 2,
      "centered": 0,
@@ -443,7 +443,7 @@
     "nav": {
      "links": 0,
      "fixed": false,
-     "height": 495,
+     "height": 454,
      "floatingPill": false,
      "blur": false
     },
@@ -456,7 +456,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 4118,
+    "pageH": 4077,
     "margins": {
      "left": 52,
      "right": 12
@@ -504,7 +504,7 @@
    "load": "load",
    "screens": 4,
    "filled": [
-    0.72,
+    0.71,
     0.47,
     0.6,
     0.35
@@ -525,7 +525,7 @@
     "page": {
      "height": 3964,
      "screens": 3.9,
-     "words": 361,
+     "words": 358,
      "img": 4,
      "video": 0,
      "canvas": 0,
@@ -864,7 +864,7 @@
       "tag": "header",
       "top": 648,
       "height": 301,
-      "words": 26,
+      "words": 22,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -873,9 +873,9 @@
        "tag": "h1"
       },
       "left": 48,
-      "right": 63,
+      "right": 77,
       "textLeft": 48,
-      "textRight": 63,
+      "textRight": 77,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1067,7 +1067,7 @@
     "page": {
      "height": 3761,
      "screens": 4.5,
-     "words": 361,
+     "words": 358,
      "img": 4,
      "video": 0,
      "canvas": 0,
@@ -1406,7 +1406,7 @@
       "tag": "header",
       "top": 540,
       "height": 293,
-      "words": 26,
+      "words": 22,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1415,9 +1415,9 @@
        "tag": "h1"
       },
       "left": 22,
-      "right": 26,
+      "right": 25,
       "textLeft": 22,
-      "textRight": 26,
+      "textRight": 25,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1580,13 +1580,6 @@
   }
  ],
  "findings": [
-  {
-   "level": "WARN",
-   "id": "statement-length",
-   "width": 1440,
-   "message": "1 large-set statement(s) run past 3 lines at 1440px: \"Chairs and cots made to order, kitchen f…\" → 4 lines at 30.4px",
-   "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
-  },
   {
    "level": "WARN",
    "id": "first-action",

@@ -135,3 +135,6 @@ Ready leads live in `nowebsite_ready`.
   Visual-proof categories held. A Nov 1 wide harvest (set11) added new candidates
   V68+ to the ledger; fold qualified ones into the queue after the listed builds.
 - Ledger next free row: check the sheet's last row before appending.
+
+## Evidence correction Nov 4 2026 (live URL checks)
+Never derive or guess preview slugs. Check only actual deployed folder names (ls -d */ in the repo) or exact previously-delivered URLs. On Nov 4 ~22:00 IST I curled guessed slugs (klayz-design-dehradun, mama-electrical-jaipur etc.), got 404, and wrongly reported a Pages-wide outage; real folders (klayz-studio-chennai, mama-electrical-ghaziabad ...) returned 200. V61 live-verified 200 at 23:21 IST with live CDP screenshots. V61 delivery to prospect stays held for a morning window; sends bounce-held.
