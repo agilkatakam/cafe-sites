@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-04T10:40:50.191Z",
+ "at": "2026-11-04T13:15:25.750Z",
  "allow": [
   "late-title"
  ],
@@ -484,7 +484,7 @@
      "shadowOverlay": 0,
      "shadowSamples": [],
      "gradients": 0,
-     "scrims": 0,
+     "scrims": 1,
      "gradientSamples": [],
      "gradientText": 0,
      "hairlines": 0,
@@ -1261,7 +1261,7 @@
      "shadowOverlay": 0,
      "shadowSamples": [],
      "gradients": 0,
-     "scrims": 0,
+     "scrims": 1,
      "gradientSamples": [],
      "gradientText": 0,
      "hairlines": 0,
@@ -2007,7 +2007,7 @@
      "shadowOverlay": 0,
      "shadowSamples": [],
      "gradients": 0,
-     "scrims": 0,
+     "scrims": 1,
      "gradientSamples": [],
      "gradientText": 0,
      "hairlines": 0,
