@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Ujjain Book Depot - books for every syllabus in Ujjain</title>
+<meta name="description" content="A concept preview for Ujjain Book Depot, the bookshop at Ghas Mandi Chouraha, Ujjain: exam, school and college books, new and old.">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-entrance="focus">
+
+<header class="nav" data-ui>
+  <nav class="nav__pill" aria-label="Main">
+    <a class="nav__mark" href="#top">Ujjain Book Depot</a>
+    <a class="nav__link" href="#shelves">Shelves</a>
+    <a class="nav__link" href="#ways">New &amp; old</a>
+    <a class="nav__link" href="#visit">Visit</a>
+    <button class="nav__menu" type="button" aria-expanded="false">Menu</button>
+    <a class="nav__action btn" href="tel:+917987555717"><span>Call the shop</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO: centred headline over full-screen picture, text at the corners -->
+  <section class="hero" data-hero>
+    <div class="hero__picture" data-e="picture" style="--picture-ground:#9c8b76">
+      <img src="assets/reading-materials-on-a-desk-with-glasses.jpg" alt="A well-worn book on a desk with reading glasses and a pen" fetchpriority="high">
+      <div class="hero__scrim" aria-hidden="true"></div>
+    </div>
+    <h1 class="hero__headline" data-e="headline">Every exam has a shelf.</h1>
+    <div class="hero__corner-l" data-e="lead">
+      <p class="hero__title">Books for every syllabus</p>
+      <a class="btn" href="#tool"><span>Find your book</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+    <p class="hero__corner-r" data-e="action">Open all seven days.</p>
+  </section>
+  <script>
+  (() => {
+    if (!document.body || !document.body.dataset.entrance || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    for (const f of document.querySelectorAll('[data-hero] [data-e="picture"]:not([data-e-wait])')) {
+      const m = f.querySelector(':scope > img, :scope > video, :scope > picture > img');
+      if (!m || (m.tagName === 'VIDEO' ? m.readyState >= 2 : m.complete && m.naturalWidth)) continue;
+      f.setAttribute('data-e-wait', '');
+      let done = false;
+      const land = () => {
+        if (done) return; done = true;
+        if (performance.now() < 700 && document.body.dataset.entrance !== 'already-there') f.removeAttribute('data-e-wait');
+        else f.setAttribute('data-e-wait', 'late');
+      };
+      m.addEventListener(m.tagName === 'VIDEO' ? 'loadeddata' : 'load', land, { once: true });
+      m.addEventListener('error', land, { once: true });
+      setTimeout(land, 3000);
+    }
+  })();
+  </script>
+
+  <!-- 1. intro: edge-split title above wide media -->
+  <section class="intro" id="intro">
+    <p class="photonote">Illustrative photograph above - a reading desk, not the shop itself.</p>
+    <h2 class="intro__title" data-reveal="heading"><span class="intro__l1">Shelves for</span> <span class="intro__l2">every syllabus</span></h2>
+    <figure class="intro__media tile">
+      <img src="assets/macro-of-red-hb-pencil-peeking-through.jpg" alt="A red pencil resting between the pages of a book" loading="lazy" decoding="async">
+      <figcaption class="photonote">Illustrative photograph.</figcaption>
+    </figure>
+    <div class="intro__body">
+      <p class="lead">Ujjain Book Depot keeps books for SSC, RRB, PEB (Vyapam), PSC, UPSC, UGC NET, NEET and JEE, with engineering, medical, nursing, school and college books, as its listing describes.</p>
+    </div>
+  </section>
+
+  <!-- 2. features: statements on colour fields + rolling figures + tool -->
+  <section class="shelves" id="shelves">
+    <h2 class="section-heading" data-reveal="heading">What the shelves hold</h2>
+    <div class="statements">
+      <p class="statement statement--ink"><span class="statement__fig"><span class="figure__num" data-roll>4.9</span> <span class="figure__cap">its ThreeBestRated score</span></span><span class="statement__line">New and old books, side by side.</span></p>
+      <p class="statement statement--surface"><span class="statement__fig"><span class="figure__num" data-roll>8</span> <span class="figure__cap">exam shelves, per its listing</span></span><span class="statement__line">Magazines, novels and medical books on the same racks.</span></p>
+      <p class="statement statement--surface"><span class="statement__fig"><span class="figure__num" data-roll>7</span> <span class="figure__cap">days open each week</span></span><span class="statement__line">Stationery for the term at the same counter.</span></p>
+    </div>
+    <p class="attribution">As its listing describes.</p>
+
+  </section>
+
+  <!-- the interactive piece -->
+  <section class="toolsec" id="tool">
+    <div class="tool">
+      <h3 class="tool__heading">Find your shelf</h3>
+      <div class="tool__chips" role="group" aria-label="Choose a course or exam">
+        <button type="button" class="chip" data-shelf="SSC">SSC</button>
+        <button type="button" class="chip" data-shelf="RRB">RRB</button>
+        <button type="button" class="chip" data-shelf="PEB (Vyapam)">PEB (Vyapam)</button>
+        <button type="button" class="chip" data-shelf="PSC">PSC</button>
+        <button type="button" class="chip" data-shelf="UPSC">UPSC</button>
+        <button type="button" class="chip" data-shelf="UGC NET">UGC NET</button>
+        <button type="button" class="chip" data-shelf="NEET">NEET</button>
+        <button type="button" class="chip" data-shelf="JEE">JEE</button>
+        <button type="button" class="chip" data-shelf="Engineering">Engineering</button>
+        <button type="button" class="chip" data-shelf="Medical">Medical</button>
+        <button type="button" class="chip" data-shelf="Nursing">Nursing</button>
+        <button type="button" class="chip" data-shelf="School">School</button>
+        <button type="button" class="chip" data-shelf="College">College</button>
+      </div>
+      <p class="tool__result" id="tool-result" aria-live="polite">Your match appears here.</p>
+      <noscript><p class="tool__result">The shop stocks SSC, RRB, PEB (Vyapam), PSC, UPSC, UGC NET, NEET, JEE, engineering, medical, nursing, school and college books, per its listing.</p></noscript>
+    </div>
+  </section>
+
+  <!-- 3. how-it-works: photographs down a diagonal -->
+  <section class="visit" id="how">
+    <h2 class="section-heading" data-reveal="heading">A visit, in three moves</h2>
+    <div class="diagonal">
+      <figure class="diagonal__item diagonal__item--1">
+        <img src="assets/pen-writing-notes-studying.jpg" alt="A hand writing notes with a pen" loading="lazy" decoding="async">
+        <figcaption><span class="diagonal__step">1</span> Say the exam or the class.
+          <span class="photonote">Illustrative photograph.</span></figcaption>
+      </figure>
+      <div class="diagonal__item diagonal__item--2 diagonal__panel">
+        <p><span class="diagonal__step">2</span> Take help picking the right book, as the listing says customers get.</p>
+      </div>
+      <figure class="diagonal__item diagonal__item--3">
+        <img src="assets/notebooks-rainbow.jpg" alt="A row of plain colourful notebooks" loading="lazy" decoding="async">
+        <figcaption><span class="diagonal__step">3</span> Leave with the book, new or old.
+          <span class="photonote">Illustrative photograph.</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. pricing: two fields -->
+  <section class="ways" id="ways">
+    <h2 class="section-heading" data-reveal="heading">Two ways to buy</h2>
+    <div class="ways__grid">
+      <div class="way way--surface">
+        <h3>New books</h3>
+        <p>The full stock for the current syllabus, with discounts the listing highlights for 2026.</p>
+        <a class="btn" href="mailto:maheshsharma.ujn@gmail.com?subject=A%20book%20for%20my%20syllabus"><span>Ask about a book</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="way way--ink">
+        <h3>Old books</h3>
+        <p>Second-hand copies and wholesale prices, as its listing describes - ask what is on the shelf this week.</p>
+        <a class="way__link" href="tel:+917987555717">Call the shop &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. cta: a still closing line in a field of words -->
+  <section class="cta" id="visit">
+    <div class="cta__field" aria-hidden="true">
+      <span>SSC</span><span>UPSC</span><span>NEET</span><span>JEE</span><span>novels</span><span>magazines</span><span>stationery</span><span>RRB</span><span>PSC</span><span>nursing</span>
+    </div>
+    <div class="cta__inner">
+      <h2 class="cta__line" data-reveal="heading">Write with the exam or the class.</h2>
+      <a class="btn" href="mailto:maheshsharma.ujn@gmail.com?subject=A%20book%20enquiry"><span>Email the shop</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      <address class="cta__details">
+        Kshapnak Marg, opposite Airen Eye and Dental Hospital,<br>
+        Ghas Mandi Chouraha, Desai Nagar, Ujjain, MP 456010<br>
+        Mon-Sat 10am-9pm, Sun 11am-8pm<br>
+        <a href="tel:+917987555717">+91 79875 55717</a> &middot; <a href="mailto:maheshsharma.ujn@gmail.com">maheshsharma.ujn@gmail.com</a>
+      </address>
+      <p class="cta__note">Details from the shop's public listing. Concept preview - enquiries go to the shop, not to this page.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- 6. footer: three cards -->
+<footer class="foot">
+  <div class="foot__cards">
+    <div class="foot__card">
+      <h3>Ujjain, Madhya Pradesh</h3>
+      <p>Books for exams, school and college - new and old, with magazines, novels and stationery, per its listing.</p>
+    </div>
+    <div class="foot__card">
+      <h3>Contact</h3>
+      <p><span id="foot-email">maheshsharma.ujn@gmail.com</span> <button type="button" class="copybtn" data-copy="maheshsharma.ujn@gmail.com">Copy</button><br>
+      <a href="tel:+917987555717">+91 79875 55717</a></p>
+    </div>
+    <div class="foot__card">
+      <h3>About this page</h3>
+      <p>A concept preview built from the shop's public listing. Concept preview. Enquiries only, not a booking service.</p>
+    </div>
+  </div>
+  <div class="foot__base">
+    <p>&copy; Ujjain Book Depot &middot; Concept preview. Enquiries only, not a booking service.</p>
+    <button type="button" class="credits-link" onclick="document.getElementById('credits').showModal()">Image credits</button>
+  </div>
+</footer>
+
+<dialog id="credits" aria-label="Image credits"><form method="dialog"><button aria-label="Close">Close</button></form>
+  <ul>
+    <li><a href="https://commons.wikimedia.org/wiki/File:Reading_materials_on_a_desk_with_glasses_a_pen_and_an_apple_nearby.jpg">"Reading materials on a desk with glasses a pen and an apple nearby"</a> by Shixart1985, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File:Macro_of_red_HB_pencil_peeking_through_a_book_(4263327323).jpg">"Macro of red HB pencil peeking through a book"</a> by Old Photo Profile, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File:Pen-writing-notes-studying.jpg">"Pen-writing-notes-studying"</a> by Tookapic, CC0, via Wikimedia Commons</li>
+    <li><a href="https://commons.wikimedia.org/wiki/File:Notebooks-rainbow.jpg">"Notebooks-rainbow"</a> by utroja0, CC0, via Wikimedia Commons</li>
+  </ul>
+</dialog>
+
+<script src="base.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
