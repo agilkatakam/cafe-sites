@@ -1,0 +1,173 @@
+{
+  "nav": null,
+  "footer": "three-cards",
+  "cards": "card-matted-portrait-photo",
+  "buttons": "btn-pill-trailing-chip-solid",
+  "corners": {
+    "id": "soft",
+    "radius": "10px",
+    "text": "A 10px radius on cards, panels and pictures alike."
+  },
+  "hero": "words-beside-product",
+  "palette": "gen:deep:teal:mono",
+  "photos_total": {
+    "set": "city-day",
+    "title": "City by day",
+    "note": "streets and buildings in daylight",
+    "treatment": null,
+    "others": [
+      "city-night"
+    ],
+    "photos": [
+      {
+        "id": "d367",
+        "source": "commons",
+        "alt": "Clear umbrella seen from below, covered in raindrops, a soft grey building behind",
+        "tone": "light",
+        "colours": [
+          "silver",
+          "white",
+          "grey"
+        ],
+        "mono": false,
+        "calm": "right",
+        "quality": 8,
+        "ratio": 1.5,
+        "width": 4896,
+        "height": 3264,
+        "by": "freddie marriage fredmarriage",
+        "licence": "CC0",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Clear_Umbrella_Rain_Liverpool_%28Unsplash%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Clear_Umbrella_Rain_Liverpool_(Unsplash).jpg",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 820,
+        "alt": "Row of empty swings in a green park in soft morning light",
+        "tone": "mid",
+        "colours": [
+          "slate blue",
+          "soft green",
+          "earth brown"
+        ],
+        "mono": false,
+        "calm": "top",
+        "quality": 4,
+        "ratio": 1.33,
+        "by": "Aaron Burden",
+        "page": "https://unsplash.com/photos/ob6O_xd67O0",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 308,
+        "alt": "Narrow street of colourful houses with laundry hung between them",
+        "tone": "mid",
+        "colours": [
+          "terracotta red",
+          "pale yellow",
+          "sky blue"
+        ],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Charles L.",
+        "page": "https://unsplash.com/photos/5z8CIELxW1Y",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 1065,
+        "alt": "Narrow alley between old stone buildings opening onto the sea",
+        "tone": "mid",
+        "colours": [
+          "stone beige",
+          "sea blue",
+          "dark brown"
+        ],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 0.67,
+        "by": "Bertrand Zuchuat",
+        "page": "https://unsplash.com/photos/Uax2bg5EizU",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 322,
+        "alt": "Narrow cobbled alley between worn ochre and terracotta walls",
+        "tone": "mid",
+        "colours": [
+          "ochre",
+          "terracotta",
+          "grey"
+        ],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Afroz Nawaf",
+        "page": "https://unsplash.com/photos/dSyWD7oRns8",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 188,
+        "alt": "Snow-dusted rooftops of an old town seen from above",
+        "tone": "mid",
+        "colours": [
+          "steel blue",
+          "white",
+          "dark brown"
+        ],
+        "mono": false,
+        "calm": "top",
+        "quality": 4,
+        "ratio": 1.5,
+        "by": "Wojtek Witkowski",
+        "page": "https://unsplash.com/photos/1fpyA_z2woY",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 826,
+        "alt": "Boat on a canal between tall brick warehouses in hazy light",
+        "tone": "dark",
+        "colours": [
+          "dark brown",
+          "hazy cream",
+          "dark teal"
+        ],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.52,
+        "by": "Nick Scheerbart",
+        "page": "https://unsplash.com/photos/QmemudqzrXQ",
+        "from": "city-day",
+        "kind": "world"
+      },
+      {
+        "id": 212,
+        "alt": "Bicycle with a basket parked on a wet city street",
+        "tone": "mid",
+        "colours": [
+          "warm brown",
+          "amber",
+          "grey"
+        ],
+        "mono": false,
+        "calm": "none",
+        "quality": 4,
+        "ratio": 1.43,
+        "by": "Sylwia Bartyzel",
+        "page": "https://unsplash.com/photos/eDDQRAYKo7k",
+        "from": "city-day",
+        "kind": "world"
+      }
+    ]
+  }
+}

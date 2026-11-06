@@ -1,0 +1,4464 @@
+{
+ "url": "./index.html",
+ "at": "2026-11-06T07:07:52.519Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "pageScreens": 8.8,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 21,
+     "vw": 1.5,
+     "text": "The place",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 47
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 0,
+     "how": [],
+     "colouredShare": 0
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0.05,
+     "words": 176
+    },
+    "labels": [
+     {
+      "text": "Illustrative photograph",
+      "y": 6462
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [],
+    "uiWords": [],
+    "sentences": 5,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 27,
+    "pageWords": {
+     "all": 258,
+     "footer": 47
+    },
+    "wordySections": [
+     {
+      "words": 74,
+      "loose": 74,
+      "items": 0,
+      "over": 0,
+      "head": "The town it serves"
+     }
+    ],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 5,
+     "menu": false,
+     "foot": 0
+    },
+    "giantContact": [],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [
+     {
+      "text": "Photographs on this page are illustrativ",
+      "size": 15,
+      "level": "WARN",
+      "what": "text"
+     },
+     {
+      "text": "Concept preview. Enquiries only, not a b",
+      "size": 15,
+      "level": "WARN",
+      "what": "footer"
+     }
+    ],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [],
+    "loneColumns": [],
+    "splitHero": {
+     "text": "Sports goods since 1947",
+     "size": 72.8,
+     "vw": 5.1,
+     "how": "beside",
+     "kind": "picture",
+     "w": 58,
+     "h": 91
+    },
+    "tileWalls": [],
+    "ground": [
+     13,
+     31,
+     30
+    ],
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [],
+    "loneHeld": []
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.54,
+    0.97,
+    0.96,
+    0.96,
+    0.96,
+    0.31,
+    0.2,
+    0.73,
+    0.74
+   ],
+   "content": [
+    0.62,
+    1,
+    1,
+    1,
+    0.19,
+    0.13,
+    0.47,
+    0.72,
+    0.55
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 39,
+    "css": 1,
+    "transitions": 8,
+    "scripted": 30,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7876,
+     "screens": 8.8,
+     "words": 358,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-dumbbells.jpg",
+      "falgu-1.jpg",
+      "inset-badminton.jpg",
+      "features-bat.jpg",
+      "contact-hoop.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Sports goods since 1947",
+     "words": 4,
+     "chars": 23,
+     "lines": 2,
+     "size": 72.8,
+     "vw": 5.1,
+     "font": "system-ui",
+     "weight": 500,
+     "tracking": -0.037,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.39,
+     "top": 344,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sports goods since 1947",
+     "words": 4,
+     "lines": 2,
+     "size": 72.8,
+     "font": "system-ui",
+     "spacing": -0.04,
+     "pairs": 18
+    },
+    "h2s": [
+     {
+      "text": "The town it serves",
+      "size": 38.3,
+      "top": 3962
+     },
+     {
+      "text": "The goods",
+      "size": 41.8,
+      "top": 4674
+     },
+     {
+      "text": "Clubs, schools and players.",
+      "size": 38.3,
+      "top": 5574
+     },
+     {
+      "text": "Ask for it at the counter",
+      "size": 72,
+      "top": 5787
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#top",
+      "#shop",
+      "#goods",
+      "#visit",
+      "tel:+918083269595",
+      "mailto:satishv.sports007@gmail.com?subject=Enquiry%20for%20Vijoy%20Sports"
+     ],
+     "labels": [
+      "call the shop ↗",
+      "email the shop ↗"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Vijoy Sports",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 35,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Sports goods since 1947",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 72.8,
+      "vw": 5.1,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 344,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "One counter for Gaya's players.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 66.2,
+      "vw": 4.6,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.005,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.6,
+      "top": 2364,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "THE SHOP",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 136.8,
+      "vw": 9.5,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2717,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The town it serves",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 38.3,
+      "vw": 2.7,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 3962,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cricket · Basketball · Tennis · Badminton · Rackets · Gym equipment · Skates · Ropes · Cricket · Basketball · Tennis · Badminton · Rackets · Gym equipment · Skates · Ropes ·",
+      "words": 34,
+      "chars": 173,
+      "lines": 1,
+      "size": 38.3,
+      "vw": 2.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 4505,
+      "tag": "div",
+      "kind": "statement"
+     },
+     {
+      "text": "The goods",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 41.8,
+      "vw": 2.9,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4674,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cricket",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 41.8,
+      "vw": 2.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4749,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Basketball",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 41.8,
+      "vw": 2.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4803,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Rackets",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 41.8,
+      "vw": 2.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4857,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Gym equipment",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 41.8,
+      "vw": 2.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4911,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Skates",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 41.8,
+      "vw": 2.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.38,
+      "top": 4965,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Clubs, schools and players.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 38.3,
+      "vw": 2.7,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.24,
+      "top": 5574,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ask for it at the counter",
+      "words": 6,
+      "chars": 25,
+      "lines": 2,
+      "size": 72,
+      "vw": 5,
+      "font": "system-ui",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.54,
+      "top": 5787,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seventy-nine years",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 5911,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Clubs, schools, players",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 5911,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Fair prices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 6112,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Same-day delivery",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 43.2,
+      "vw": 3,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 6112,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 18,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "system-ui",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      28,
+      38,
+      42,
+      43,
+      66,
+      69,
+      72,
+      73,
+      137
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 136.8,
+      "vw": 9.5,
+      "font": "system-ui",
+      "text": "T"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d1f1e",
+     "bodyBgHsl": {
+      "h": 177,
+      "s": 0.41,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1c2126",
+       "top": 112,
+       "hsl": {
+        "h": 210,
+        "s": 0.15,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#cddce3",
+       "top": 960,
+       "hsl": {
+        "h": 199,
+        "s": 0.28,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#233634",
+       "top": 917,
+       "hsl": {
+        "h": 174,
+        "s": 0.21,
+        "l": 0.17
+       }
+      },
+      {
+       "color": "#0a1420",
+       "top": 2883,
+       "hsl": {
+        "h": 213,
+        "s": 0.52,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#0d1f1e",
+       "top": 5497,
+       "hsl": {
+        "h": 177,
+        "s": 0.41,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a2b4b2",
+       "share": 0.47
+      },
+      {
+       "color": "#0a1420",
+       "share": 0.29
+      },
+      {
+       "color": "#e8fbf9",
+       "share": 0.2
+      },
+      {
+       "color": "#3d4a5c",
+       "share": 0.03
+      },
+      {
+       "color": "#0d1f1e",
+       "share": 0.02
+      }
+     ],
+     "fills": [
+      {
+       "color": "#0d1f1e",
+       "hsl": {
+        "h": 177,
+        "s": 0.41,
+        "l": 0.09
+       },
+       "top": 0
+      },
+      {
+       "color": "#1c2126",
+       "hsl": {
+        "h": 210,
+        "s": 0.15,
+        "l": 0.13
+       },
+       "top": 112
+      },
+      {
+       "color": "#cddce3",
+       "hsl": {
+        "h": 199,
+        "s": 0.28,
+        "l": 0.85
+       },
+       "top": 960
+      },
+      {
+       "color": "#233634",
+       "hsl": {
+        "h": 174,
+        "s": 0.21,
+        "l": 0.17
+       },
+       "top": 917
+      },
+      {
+       "color": "#0a1420",
+       "hsl": {
+        "h": 213,
+        "s": 0.52,
+        "l": 0.08
+       },
+       "top": 2883
+      }
+     ],
+     "button": {
+      "bg": "#e8fbf9",
+      "hsl": {
+       "h": 174,
+       "s": 0.7,
+       "l": 0.95
+      },
+      "fg": "#0d1f1e"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call the shop ↗",
+      "Email the shop ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 6,
+     "boxRadius": 10,
+     "squareMedia": 3,
+     "roundedMedia": 2,
+     "mediaRadius": 10,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7535
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.53
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 112,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": true
+    },
+    "fontsLoaded": [
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7876,
+    "margins": {
+     "left": 43,
+     "right": 43
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 960,
+      "words": 39,
+      "media": 0,
+      "middle": 171,
+      "heading": {
+       "text": "Sports goods since 1947",
+       "size": 73,
+       "tag": "h1"
+      },
+      "left": 43,
+      "right": 359,
+      "textLeft": 43,
+      "textRight": 359,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.scene.seg",
+      "tag": "section",
+      "top": 960,
+      "height": 2925,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 256,
+      "right": 230,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#shop.intro",
+      "tag": "section",
+      "top": 3885,
+      "height": 619,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The town it serves",
+       "size": 38,
+       "tag": "h2"
+      },
+      "left": 259,
+      "right": 849,
+      "textLeft": 259,
+      "textRight": 849,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#goods.goods",
+      "tag": "section",
+      "top": 4597,
+      "height": 900,
+      "words": 17,
+      "media": 0,
+      "middle": 113,
+      "heading": {
+       "text": "The goods",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 467,
+      "textLeft": 43,
+      "textRight": 467,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.why.lifting-sheet",
+      "tag": "section",
+      "top": 5497,
+      "height": 1087,
+      "words": 89,
+      "media": 1,
+      "middle": 64,
+      "heading": {
+       "text": "Seventy-nine years",
+       "size": 43,
+       "tag": "h3"
+      },
+      "left": 43,
+      "right": 214,
+      "textLeft": 43,
+      "textRight": 214,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.scene.is-live",
+      "tag": "section",
+      "top": 5684,
+      "height": 1800,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 7484,
+      "height": 392,
+      "words": 50,
+      "media": 0,
+      "middle": 232,
+      "heading": {
+       "text": "The place",
+       "size": 21,
+       "tag": "h3"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 5096,
+      "height": 480
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Sports goods since 1947",
+      "size": 73,
+      "top": 344,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 8
+     },
+     {
+      "x": 259,
+      "n": 4
+     },
+     {
+      "x": 752,
+      "n": 3
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 0,
+     "y": 120,
+     "w": 600,
+     "h": 180
+    },
+    "halves": {
+     "left": {
+      "void": 0.19,
+      "media": 0.17,
+      "held": 0.5,
+      "upper": 0.6,
+      "lower": 0.39
+     },
+     "right": {
+      "void": 0,
+      "media": 1,
+      "held": 1,
+      "upper": 1,
+      "lower": 1
+     }
+    }
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [
+    {
+     "text": "Illustrative photograph",
+     "size": 14,
+     "need": 4.5,
+     "media": "features-bat.jpg",
+     "p10": 11.7,
+     "p25": 12.43,
+     "p50": 13.31,
+     "under": 0,
+     "segs": 4,
+     "segLow": 0,
+     "segWorst": 12.69,
+     "y": 6302
+    },
+    {
+     "text": "Email the shop",
+     "size": 18,
+     "need": 4.5,
+     "media": "contact-hoop.jpg",
+     "p10": 15.91,
+     "p25": 15.91,
+     "p50": 15.91,
+     "under": 0,
+     "segs": 3,
+     "segLow": 0,
+     "segWorst": 15.91,
+     "y": 6302
+    }
+   ],
+   "letters": [],
+   "tileWalls": [],
+   "hero": {
+    "h1": "Sports goods since 1947",
+    "centred": false,
+    "size": 73,
+    "sub": "Cricket bats to gym racks on Gautam Buddha Road, Gaya - for ",
+    "stack": false
+   },
+   "visits": [],
+   "build": {
+    "framed": [
+     {
+      "head": "The place",
+      "n": 3,
+      "list": true,
+      "y": 7484,
+      "items": [
+       "The place Gautam Buddha Road (filled #233634, 438x239)",
+       "The contact satishv.sports00 (filled #233634, 438x239)",
+       "The source Facts and quotes  (filled #233634, 438x239)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [
+     {
+      "head": "Sports goods since 1947",
+      "kind": "split",
+      "side": "right",
+      "share": 0.65
+     },
+     {
+      "head": "by the school gate",
+      "kind": "scene"
+     },
+     {
+      "head": "The town it serves",
+      "kind": "none"
+     },
+     {
+      "head": "The goods",
+      "kind": "none"
+     },
+     {
+      "head": "Clubs, schools and players.",
+      "kind": "other"
+     },
+     {
+      "head": "Ask for it at the counter",
+      "kind": "scene"
+     }
+    ],
+    "runOn": [],
+    "credits": {
+     "entries": 5,
+     "capacity": 5,
+     "pictures": 5,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog.credits",
+     "shown": [
+      "hero-dumbbells",
+      "falgu-1",
+      "inset-badminton",
+      "features-bat",
+      "contact-hoop"
+     ]
+    },
+    "space": {
+     "blocks": 7,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 960,
+      "fold": 900,
+      "next": {
+       "sel": "section.scene.seg",
+       "head": "by the school gate",
+       "top": 960,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": []
+    },
+    "nav": {
+     "bar": "header.nav",
+     "top": 0,
+     "h": 112,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": [],
+    "grounds": [
+     {
+      "hex": "#0d1f1e",
+      "where": "page",
+      "n": 1,
+      "screens": 2.87,
+      "role": "page",
+      "sections": 5,
+      "tones": [
+       [
+        "#0d1f1e",
+        2.87
+       ]
+      ],
+      "scene": false,
+      "asked": null,
+      "step": null
+     },
+     {
+      "hex": "#cddce3",
+      "where": "div.seg-ground",
+      "n": 1,
+      "screens": 2.04,
+      "role": null,
+      "sections": 2,
+      "tones": [
+       [
+        "#cddce3",
+        2.04
+       ]
+      ],
+      "scene": true,
+      "asked": null
+     },
+     {
+      "hex": "#233634",
+      "where": "div.goods__disc",
+      "n": 1,
+      "screens": 0.33,
+      "role": null,
+      "sections": 0,
+      "tones": [
+       [
+        "#233634",
+        0.33
+       ]
+      ],
+      "scene": false,
+      "asked": null
+     }
+    ],
+    "buttons": [
+     {
+      "key": "pill filled",
+      "n": 2,
+      "labels": [
+       "Email the shop ↗",
+       "Call the shop ↗"
+      ],
+      "h": [
+       48,
+       48
+      ]
+     },
+     {
+      "key": "type",
+      "n": 5,
+      "labels": [
+       "Cricket",
+       "Basketball"
+      ]
+     }
+    ],
+    "navs": {
+     "load": {
+      "phase": "load",
+      "form": "top bar",
+      "band": true,
+      "held": false,
+      "n": 5,
+      "top": 5,
+      "mark": "Vijoy Sports",
+      "items": [
+       "Vijoy Sports",
+       "The shop",
+       "The goods",
+       "Visit",
+       "Call the shop ↗"
+      ]
+     },
+     "down": {
+      "phase": "down",
+      "form": "top bar",
+      "band": true,
+      "held": true,
+      "n": 5,
+      "top": 5,
+      "mark": "Vijoy Sports",
+      "items": [
+       "Vijoy Sports",
+       "The shop",
+       "The goods",
+       "Visit",
+       "Call the shop ↗"
+      ]
+     },
+     "up": {
+      "phase": "up",
+      "form": "top bar",
+      "band": true,
+      "held": true,
+      "n": 5,
+      "top": 5,
+      "mark": "Vijoy Sports",
+      "items": [
+       "Vijoy Sports",
+       "The shop",
+       "The goods",
+       "Visit",
+       "Call the shop ↗"
+      ]
+     },
+     "held": 0,
+     "aside": false,
+     "buttons": [
+      {
+       "key": "pill filled",
+       "n": 1,
+       "labels": [
+        "Call the shop ↗"
+       ],
+       "h": [
+        48,
+        48
+       ]
+      }
+     ],
+     "dealt": null
+    },
+    "places": [],
+    "footLinks": [
+     {
+      "text": "The listing",
+      "host": "threebestrated.in"
+     }
+    ],
+    "structures": [
+     {
+      "head": "Sports goods since 1947",
+      "y": 0,
+      "hero": true,
+      "pos": "beside",
+      "cols": 1,
+      "lead": "picture",
+      "word": "split",
+      "boxed": false
+     },
+     {
+      "head": "THE SHO",
+      "y": 960,
+      "hero": false,
+      "pos": "over",
+      "cols": 1,
+      "lead": "picture",
+      "word": "single-picture",
+      "boxed": false
+     },
+     {
+      "head": "The town it serves",
+      "y": 3885,
+      "hero": false,
+      "pos": "over",
+      "cols": 1,
+      "lead": "text",
+      "word": "statement",
+      "boxed": false
+     },
+     {
+      "head": "The goods",
+      "y": 4597,
+      "hero": false,
+      "pos": "mixed",
+      "cols": 1,
+      "lead": "panel",
+      "word": "panel",
+      "boxed": true
+     },
+     {
+      "head": "Clubs, schools and players.",
+      "y": 5497,
+      "hero": false,
+      "pos": "over",
+      "cols": 3,
+      "lead": "picture",
+      "word": "columns",
+      "boxed": false
+     },
+     {
+      "head": "visit",
+      "y": 5684,
+      "hero": false,
+      "pos": "none",
+      "cols": 1,
+      "lead": "picture",
+      "word": "single-picture",
+      "boxed": false
+     }
+    ],
+    "pictures": {
+     "shown": [],
+     "credits": [],
+     "kind": null
+    }
+   },
+   "dead": {
+    "tested": 0,
+    "unsure": 0,
+    "dead": []
+   },
+   "rest": [
+    {
+     "y": 0,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "hero-dumbbells 0.491 @112"
+     ],
+     "heads": [
+      "h Sports goods since 1947 @344"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [
+      {
+       "id": 4,
+       "what": "a box",
+       "text": "Illustrative photograph - equipment deta",
+       "side": "right",
+       "past": 0,
+       "round": false,
+       "fullH": false,
+       "w": 808,
+       "h": 848,
+       "share": 0.56,
+       "inner": 632,
+       "t": 112,
+       "fl": 632,
+       "fr": 1440,
+       "scene": "",
+       "stage": 0
+      }
+     ],
+     "strands": []
+    },
+    {
+     "y": 900,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "falgu-1 0.933 @60"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1800,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2700,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.328 @346"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2985,
+     "dy": 27,
+     "end": "shaped-edge-ground-change",
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.328 @303"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3600,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.071 @-312"
+     ],
+     "heads": [
+      "h The town it serves @362"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4500,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h The goods @174"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5400,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "features-bat 0.035 @712"
+     ],
+     "heads": [
+      "h Clubs, schools and players. @174",
+      "h Seventy-nine years @511",
+      "h Clubs, schools, players @511",
+      "h Fair prices @712",
+      "h Same-day delivery @712"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6300,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "features-bat 0.017 @-188",
+      "contact-hoop 0.68 @288"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6584,
+     "dy": 27,
+     "end": "page-lifts-off-closing-picture",
+     "clipped": [],
+     "pics": [
+      "contact-hoop 0.68 @288"
+     ],
+     "heads": [
+      "h Ask for it at the counter @103"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6976,
+     "dy": -27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "contact-hoop 0.564 @-104"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ],
+   "scenesAtRest": {
+    "boxedLists": [],
+    "framed": []
+   }
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 9,
+   "pageScreens": 8.1,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 20,
+     "vw": 2.7,
+     "text": "The place",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 47
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 0,
+     "how": [],
+     "colouredShare": 0
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0,
+     "words": 176
+    },
+    "labels": [
+     {
+      "text": "Illustrative photograph",
+      "y": 6502
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [],
+    "uiWords": [],
+    "sentences": 5,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 37,
+    "pageWords": {
+     "all": 258,
+     "footer": 47
+    },
+    "wordySections": [
+     {
+      "words": 74,
+      "loose": 74,
+      "items": 0,
+      "over": 0,
+      "head": "The town it serves"
+     }
+    ],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 5,
+     "menu": false,
+     "foot": 0
+    },
+    "giantContact": [],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [],
+    "loneColumns": [],
+    "splitHero": null,
+    "tileWalls": [],
+    "ground": null,
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [],
+    "loneHeld": []
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.65,
+    0.97,
+    0.97,
+    0.99,
+    0.76,
+    0.22,
+    0.59,
+    0.86,
+    0.79
+   ],
+   "content": [
+    0.71,
+    1,
+    1,
+    0.51,
+    0.19,
+    0.28,
+    0.79,
+    0.71,
+    0.66
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 39,
+    "css": 1,
+    "transitions": 8,
+    "scripted": 30,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 8258,
+     "screens": 8.1,
+     "words": 358,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-dumbbells.jpg",
+      "falgu-1.jpg",
+      "inset-badminton.jpg",
+      "features-bat.jpg",
+      "contact-hoop.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Sports goods since 1947",
+     "words": 4,
+     "chars": 23,
+     "lines": 1,
+     "size": 49.3,
+     "vw": 6.4,
+     "font": "system-ui",
+     "weight": 500,
+     "tracking": -0.037,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.94,
+     "top": 120,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sports goods since 1947",
+     "words": 4,
+     "lines": 1,
+     "size": 49.3,
+     "font": "system-ui",
+     "spacing": -0.04,
+     "pairs": 19
+    },
+    "h2s": [
+     {
+      "text": "The town it serves",
+      "size": 30.2,
+      "top": 3909
+     },
+     {
+      "text": "The goods",
+      "size": 24.2,
+      "top": 5270
+     },
+     {
+      "text": "Clubs, schools and players.",
+      "size": 30.2,
+      "top": 5481
+     },
+     {
+      "text": "Ask for it at the counter",
+      "size": 40,
+      "top": 5856
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#top",
+      "#shop",
+      "#goods",
+      "#visit",
+      "tel:+918083269595",
+      "mailto:satishv.sports007@gmail.com?subject=Enquiry%20for%20Vijoy%20Sports"
+     ],
+     "labels": [
+      "call the shop ↗",
+      "email the shop ↗"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Sports goods since 1947",
+      "words": 4,
+      "chars": 23,
+      "lines": 1,
+      "size": 49.3,
+      "vw": 6.4,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 120,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "One counter for Gaya's players.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 36,
+      "vw": 4.7,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.005,
+      "leading": 1.02,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.61,
+      "top": 2353,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "THE SHOP",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 73,
+      "vw": 9.5,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 2693,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The town it serves",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 30.2,
+      "vw": 3.9,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.44,
+      "top": 3909,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cricket · Basketball · Tennis · Badminton · Rackets · Gym equipment · Skates · Ropes · Cricket · Basketball · Tennis · Badminton · Rackets · Gym equipment · Skates · Ropes ·",
+      "words": 34,
+      "chars": 173,
+      "lines": 1,
+      "size": 30.2,
+      "vw": 3.9,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 4429,
+      "tag": "div",
+      "kind": "statement"
+     },
+     {
+      "text": "Cricket",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.11,
+      "top": 5270,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Basketball",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.16,
+      "top": 5270,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Rackets",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 5270,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Gym equipment",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.24,
+      "top": 5270,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Skates",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.1,
+      "top": 5320,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Clubs, schools and players.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 30.2,
+      "vw": 3.9,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.35,
+      "top": 5481,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seventy-nine years",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 5793,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Ask for it at the counter",
+      "words": 6,
+      "chars": 25,
+      "lines": 1,
+      "size": 40,
+      "vw": 5.2,
+      "font": "system-ui",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.72,
+      "top": 5856,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Clubs, schools, players",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 5972,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Fair prices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 6151,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Same-day delivery",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 3.6,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.58,
+      "top": 6619,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 16,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "system-ui",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      18,
+      20,
+      24,
+      26,
+      28,
+      30,
+      36,
+      37,
+      40,
+      49,
+      73
+     ],
+     "sizeCount": 15,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 40,
+     "max": {
+      "size": 73,
+      "vw": 9.5,
+      "font": "system-ui",
+      "text": "T"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d1f1e",
+     "bodyBgHsl": {
+      "h": 177,
+      "s": 0.41,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1c2126",
+       "top": 445,
+       "hsl": {
+        "h": 210,
+        "s": 0.15,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#cddce3",
+       "top": 1060,
+       "hsl": {
+        "h": 199,
+        "s": 0.28,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#233634",
+       "top": 1010,
+       "hsl": {
+        "h": 174,
+        "s": 0.21,
+        "l": 0.17
+       }
+      },
+      {
+       "color": "#0a1420",
+       "top": 2806,
+       "hsl": {
+        "h": 213,
+        "s": 0.52,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#0d1f1e",
+       "top": 5415,
+       "hsl": {
+        "h": 177,
+        "s": 0.41,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a2b4b2",
+       "share": 0.47
+      },
+      {
+       "color": "#0a1420",
+       "share": 0.29
+      },
+      {
+       "color": "#e8fbf9",
+       "share": 0.2
+      },
+      {
+       "color": "#3d4a5c",
+       "share": 0.03
+      },
+      {
+       "color": "#0d1f1e",
+       "share": 0.02
+      }
+     ],
+     "fills": [
+      {
+       "color": "#0d1f1e",
+       "hsl": {
+        "h": 177,
+        "s": 0.41,
+        "l": 0.09
+       },
+       "top": 0
+      },
+      {
+       "color": "#1c2126",
+       "hsl": {
+        "h": 210,
+        "s": 0.15,
+        "l": 0.13
+       },
+       "top": 445
+      },
+      {
+       "color": "#cddce3",
+       "hsl": {
+        "h": 199,
+        "s": 0.28,
+        "l": 0.85
+       },
+       "top": 1060
+      },
+      {
+       "color": "#233634",
+       "hsl": {
+        "h": 174,
+        "s": 0.21,
+        "l": 0.17
+       },
+       "top": 1010
+      },
+      {
+       "color": "#0a1420",
+       "hsl": {
+        "h": 213,
+        "s": 0.52,
+        "l": 0.08
+       },
+       "top": 2806
+      }
+     ],
+     "button": {
+      "bg": "#e8fbf9",
+      "hsl": {
+       "h": 174,
+       "s": 0.7,
+       "l": 0.95
+      },
+      "fg": "#0d1f1e"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call the shop ↗",
+      "Email the shop ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 10,
+     "squareMedia": 4,
+     "roundedMedia": 1,
+     "mediaRadius": 10,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 7833
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.59
+     }
+    ],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 112,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": true
+    },
+    "fontsLoaded": [
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 8258,
+    "margins": {
+     "left": 23,
+     "right": 23
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 1060,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sports goods since 1947",
+       "size": 49,
+       "tag": "h1"
+      },
+      "left": 23,
+      "right": 180,
+      "textLeft": 23,
+      "textRight": 180,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.scene.seg",
+      "tag": "section",
+      "top": 1060,
+      "height": 2784,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 75,
+      "right": 57,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#shop.intro",
+      "tag": "section",
+      "top": 3844,
+      "height": 585,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The town it serves",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 138,
+      "right": 299,
+      "textLeft": 138,
+      "textRight": 299,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#goods.goods",
+      "tag": "section",
+      "top": 4509,
+      "height": 906,
+      "words": 17,
+      "media": 0,
+      "middle": 24,
+      "heading": null,
+      "left": 23,
+      "right": 40,
+      "textLeft": 23,
+      "textRight": 40,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.why.lifting-sheet",
+      "tag": "section",
+      "top": 5415,
+      "height": 1350,
+      "words": 89,
+      "media": 1,
+      "middle": 105,
+      "heading": {
+       "text": "Clubs, schools and players.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.scene.is-live",
+      "tag": "section",
+      "top": 5741,
+      "height": 2048,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 7789,
+      "height": 469,
+      "words": 50,
+      "media": 0,
+      "middle": 108,
+      "heading": {
+       "text": "The place",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 23,
+      "right": 23,
+      "textLeft": 23,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 4492,
+      "height": 364
+     },
+     {
+      "top": 4948,
+      "height": 320
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Sports goods since 1947",
+      "size": 49,
+      "top": 120,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 23,
+      "n": 11
+     },
+     {
+      "x": 138,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null,
+    "halves": null
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [
+    {
+     "text": "Illustrative photograph",
+     "size": 14,
+     "need": 4.5,
+     "media": "features-bat.jpg",
+     "p10": 11.7,
+     "p25": 12.46,
+     "p50": 13.34,
+     "under": 0,
+     "segs": 4,
+     "segLow": 0,
+     "segWorst": 12.73,
+     "y": 6146
+    },
+    {
+     "text": "Email the shop",
+     "size": 18,
+     "need": 4.5,
+     "media": "contact-hoop.jpg",
+     "p10": 15.91,
+     "p25": 15.91,
+     "p50": 15.91,
+     "under": 0,
+     "segs": 3,
+     "segLow": 0,
+     "segWorst": 15.91,
+     "y": 7170
+    }
+   ],
+   "letters": [],
+   "tileWalls": [],
+   "hero": null,
+   "visits": [],
+   "build": {
+    "framed": [
+     {
+      "head": "The place",
+      "n": 3,
+      "list": true,
+      "y": 7789,
+      "items": [
+       "The place Gautam Buddha Road (filled #233634, 227x284)",
+       "The contact satishv.sports00 (filled #233634, 227x284)",
+       "The source Facts and quotes  (filled #233634, 227x284)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [],
+    "runOn": [],
+    "credits": {
+     "entries": 5,
+     "capacity": 5,
+     "pictures": 5,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog.credits",
+     "shown": [
+      "hero-dumbbells",
+      "falgu-1",
+      "inset-badminton",
+      "features-bat",
+      "contact-hoop"
+     ]
+    },
+    "space": {
+     "blocks": 7,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 1060,
+      "fold": 1024,
+      "next": {
+       "sel": "section.scene.seg",
+       "head": "by the school gate",
+       "top": 1060,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": []
+    },
+    "nav": {
+     "bar": "header.nav",
+     "top": 0,
+     "h": 112,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": []
+   },
+   "dead": null,
+   "rest": [
+    {
+     "y": 0,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "hero-dumbbells 0.565 @445"
+     ],
+     "heads": [
+      "h Sports goods since 1947 @120"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1064,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "falgu-1 1 @0"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2048,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "d One counter for Gaya's players. @460"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2820,
+     "dy": 31,
+     "end": "shaped-edge-ground-change",
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.36 @338"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3072,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.36 @86"
+     ],
+     "heads": [
+      "h The town it serves @837"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4096,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5120,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h The goods @150",
+      "h Clubs, schools and players. @361",
+      "h Seventy-nine years @673",
+      "h Clubs, schools, players @852"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6144,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "features-bat 0.121 @7"
+     ],
+     "heads": [
+      "h Same-day delivery @475"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6765,
+     "dy": 31,
+     "end": "page-lifts-off-closing-picture",
+     "clipped": [],
+     "pics": [
+      "contact-hoop 0.68 @328"
+     ],
+     "heads": [
+      "h Ask for it at the counter @115"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 7168,
+     "dy": 31,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "contact-hoop 0.607 @-75"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ]
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 10,
+   "pageScreens": 9,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 20,
+     "vw": 5.2,
+     "text": "The place",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 47
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 0,
+     "how": [],
+     "colouredShare": 0
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0.05,
+     "words": 176
+    },
+    "labels": [
+     {
+      "text": "Illustrative photograph",
+      "y": 5573
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [],
+    "uiWords": [],
+    "sentences": 5,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 27,
+    "pageWords": {
+     "all": 258,
+     "footer": 47
+    },
+    "wordySections": [
+     {
+      "words": 74,
+      "loose": 74,
+      "items": 0,
+      "over": 0,
+      "head": "The town it serves"
+     }
+    ],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 3,
+     "menu": true,
+     "foot": 0
+    },
+    "giantContact": [],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [],
+    "loneColumns": [],
+    "splitHero": null,
+    "tileWalls": [],
+    "ground": null,
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [],
+    "loneHeld": []
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.73,
+    0.98,
+    0.98,
+    0.99,
+    0.73,
+    0.45,
+    0.56,
+    0.98,
+    0.84,
+    0.66
+   ],
+   "content": [
+    0.71,
+    1,
+    1,
+    0.44,
+    0.38,
+    0.45,
+    0.77,
+    0.64,
+    0.24,
+    0.19
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 38,
+    "css": 1,
+    "transitions": 7,
+    "scripted": 30,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 7615,
+     "screens": 9,
+     "words": 354,
+     "img": 5,
+     "video": 0,
+     "canvas": 0,
+     "svg": 1,
+     "sections": 6,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 5,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "hero-dumbbells.jpg",
+      "falgu-1.jpg",
+      "inset-badminton.jpg",
+      "features-bat.jpg",
+      "contact-hoop.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Sports goods since 1947",
+     "words": 4,
+     "chars": 23,
+     "lines": 2,
+     "size": 40,
+     "vw": 10.3,
+     "font": "system-ui",
+     "weight": 500,
+     "tracking": -0.037,
+     "leading": 0.98,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.9,
+     "top": 120,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Sports goods since 1947",
+     "words": 4,
+     "lines": 2,
+     "size": 40,
+     "font": "system-ui",
+     "spacing": -0.04,
+     "pairs": 18
+    },
+    "h2s": [
+     {
+      "text": "The town it serves",
+      "size": 30.2,
+      "top": 3231
+     },
+     {
+      "text": "The goods",
+      "size": 24.2,
+      "top": 4221
+     },
+     {
+      "text": "Clubs, schools and players.",
+      "size": 30.2,
+      "top": 4435
+     },
+     {
+      "text": "Ask for it at the counter",
+      "size": 35.1,
+      "top": 5090
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#top",
+      "#shop",
+      "#goods",
+      "#visit",
+      "tel:+918083269595",
+      "mailto:satishv.sports007@gmail.com?subject=Enquiry%20for%20Vijoy%20Sports"
+     ],
+     "labels": [
+      "call the shop ↗",
+      "email the shop ↗"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Sports goods since 1947",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 40,
+      "vw": 10.3,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 120,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "One counter for Gaya's players.",
+      "words": 5,
+      "chars": 31,
+      "lines": 2,
+      "size": 27,
+      "vw": 6.9,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.005,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.76,
+      "top": 2000,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "THE SHOP",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.92,
+      "upper": true,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.88,
+      "top": 2253,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "The town it serves",
+      "words": 4,
+      "chars": 18,
+      "lines": 1,
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.87,
+      "top": 3231,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cricket · Basketball · Tennis · Badminton · Rackets · Gym equipment · Skates · Ropes · Cricket · Basketball · Tennis · Badminton · Rackets · Gym equipment · Skates · Ropes ·",
+      "words": 34,
+      "chars": 173,
+      "lines": 1,
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 1,
+      "top": 3760,
+      "tag": "div",
+      "kind": "statement"
+     },
+     {
+      "text": "Cricket",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.22,
+      "top": 4221,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "The goods",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 24.2,
+      "vw": 6.2,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 4221,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Basketball",
+      "words": 1,
+      "chars": 10,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.31,
+      "top": 4272,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Rackets",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.24,
+      "top": 4272,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Gym equipment",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.47,
+      "top": 4309,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Skates",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 26,
+      "vw": 6.7,
+      "font": "Hanken Grotesk",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.15,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.2,
+      "top": 4309,
+      "tag": "button",
+      "kind": "heading"
+     },
+     {
+      "text": "Clubs, schools and players.",
+      "words": 4,
+      "chars": 27,
+      "lines": 2,
+      "size": 30.2,
+      "vw": 7.7,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 4435,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Seventy-nine years",
+      "words": 2,
+      "chars": 18,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4700,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Clubs, schools, players",
+      "words": 3,
+      "chars": 23,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4904,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Fair prices",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5083,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Ask for it at the counter",
+      "words": 6,
+      "chars": 25,
+      "lines": 2,
+      "size": 35.1,
+      "vw": 9,
+      "font": "system-ui",
+      "weight": 600,
+      "tracking": -0.03,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 5090,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Same-day delivery",
+      "words": 2,
+      "chars": 17,
+      "lines": 1,
+      "size": 28,
+      "vw": 7.2,
+      "font": "system-ui",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5690,
+      "tag": "h3",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 17,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 2,
+     "centered": 2,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Hanken Grotesk",
+       "share": 0.8,
+       "mono": false
+      },
+      {
+       "family": "system-ui",
+       "share": 0.2,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      14,
+      15,
+      16,
+      17,
+      20,
+      22,
+      24,
+      26,
+      27,
+      28,
+      30,
+      35,
+      40,
+      59
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Hanken Grotesk",
+      "size": 17,
+      "leading": 1.55,
+      "weight": 500,
+      "tracking": 0,
+      "contrast": 13.2
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 58.5,
+      "vw": 15,
+      "font": "system-ui",
+      "text": "T"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.01,
+     "centerShare": 0.06,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#0d1f1e",
+     "bodyBgHsl": {
+      "h": 177,
+      "s": 0.41,
+      "l": 0.09
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#1c2126",
+       "top": 475,
+       "hsl": {
+        "h": 210,
+        "s": 0.15,
+        "l": 0.13
+       }
+      },
+      {
+       "color": "#cddce3",
+       "top": 982,
+       "hsl": {
+        "h": 199,
+        "s": 0.28,
+        "l": 0.85
+       }
+      },
+      {
+       "color": "#233634",
+       "top": 958,
+       "hsl": {
+        "h": 174,
+        "s": 0.21,
+        "l": 0.17
+       }
+      },
+      {
+       "color": "#0a1420",
+       "top": 2349,
+       "hsl": {
+        "h": 213,
+        "s": 0.52,
+        "l": 0.08
+       }
+      },
+      {
+       "color": "#0d1f1e",
+       "top": 4387,
+       "hsl": {
+        "h": 177,
+        "s": 0.41,
+        "l": 0.09
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#a2b4b2",
+       "share": 0.46
+      },
+      {
+       "color": "#0a1420",
+       "share": 0.29
+      },
+      {
+       "color": "#e8fbf9",
+       "share": 0.21
+      },
+      {
+       "color": "#3d4a5c",
+       "share": 0.03
+      },
+      {
+       "color": "#0d1f1e",
+       "share": 0.02
+      }
+     ],
+     "fills": [
+      {
+       "color": "#0d1f1e",
+       "hsl": {
+        "h": 177,
+        "s": 0.41,
+        "l": 0.09
+       },
+       "top": 0
+      },
+      {
+       "color": "#e8fbf9",
+       "hsl": {
+        "h": 174,
+        "s": 0.7,
+        "l": 0.95
+       },
+       "top": 12
+      },
+      {
+       "color": "#1c2126",
+       "hsl": {
+        "h": 210,
+        "s": 0.15,
+        "l": 0.13
+       },
+       "top": 475
+      },
+      {
+       "color": "#cddce3",
+       "hsl": {
+        "h": 199,
+        "s": 0.28,
+        "l": 0.85
+       },
+       "top": 982
+      },
+      {
+       "color": "#233634",
+       "hsl": {
+        "h": 174,
+        "s": 0.21,
+        "l": 0.17
+       },
+       "top": 958
+      },
+      {
+       "color": "#0a1420",
+       "hsl": {
+        "h": 213,
+        "s": 0.52,
+        "l": 0.08
+       },
+       "top": 2349
+      }
+     ],
+     "button": {
+      "bg": "#e8fbf9",
+      "hsl": {
+       "h": 174,
+       "s": 0.7,
+       "l": 0.95
+      },
+      "fg": "#0d1f1e"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 48,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Call the shop ↗",
+      "Email the shop ↗"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 10,
+     "squareMedia": 4,
+     "roundedMedia": 1,
+     "mediaRadius": 10,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 6721
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.46
+     }
+    ],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": true
+    },
+    "fontsLoaded": [
+     "hanken grotesk"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 7615,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 982,
+      "words": 39,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Sports goods since 1947",
+       "size": 40,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 30,
+      "textLeft": 20,
+      "textRight": 30,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.scene.seg",
+      "tag": "section",
+      "top": 982,
+      "height": 2201,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 30,
+      "right": 19,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "section#shop.intro",
+      "tag": "section",
+      "top": 3183,
+      "height": 577,
+      "words": 76,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The town it serves",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 51,
+      "textLeft": 20,
+      "textRight": 51,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#goods.goods",
+      "tag": "section",
+      "top": 3840,
+      "height": 547,
+      "words": 17,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cricket",
+       "size": 26,
+       "tag": "button"
+      },
+      "left": 20,
+      "right": 83,
+      "textLeft": 20,
+      "textRight": 83,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.why.lifting-sheet",
+      "tag": "section",
+      "top": 4387,
+      "height": 1458,
+      "words": 89,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Clubs, schools and players.",
+       "size": 30,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.scene.is-live",
+      "tag": "section",
+      "top": 5001,
+      "height": 1688,
+      "words": 0,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": false,
+      "pinned": true
+     },
+     {
+      "sel": "footer.foot",
+      "tag": "footer",
+      "top": 6689,
+      "height": 926,
+      "words": 50,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "The place",
+       "size": 20,
+       "tag": "h3"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Sports goods since 1947",
+      "size": 40,
+      "top": 120,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 15
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null,
+    "halves": null
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [
+    {
+     "text": "Illustrative photograph - equipment detail, not the shop's o",
+     "size": 14,
+     "need": 4.5,
+     "media": "hero-dumbbells.jpg",
+     "p10": 14.59,
+     "p25": 15.48,
+     "p50": 15.85,
+     "under": 0,
+     "segs": 11,
+     "segLow": 0,
+     "segWorst": 14.57,
+     "y": 846
+    },
+    {
+     "text": "Illustrative photograph",
+     "size": 14,
+     "need": 4.5,
+     "media": "features-bat.jpg",
+     "p10": 11.8,
+     "p25": 12.5,
+     "p50": 13.35,
+     "under": 0,
+     "segs": 4,
+     "segLow": 0,
+     "segWorst": 12.94,
+     "y": 5066
+    },
+    {
+     "text": "Email the shop",
+     "size": 17,
+     "need": 4.5,
+     "media": "contact-hoop.jpg",
+     "p10": 15.91,
+     "p25": 15.91,
+     "p50": 15.91,
+     "under": 0,
+     "segs": 3,
+     "segLow": 0,
+     "segWorst": 15.91,
+     "y": 5910
+    }
+   ],
+   "letters": [
+    {
+     "text": "The shop",
+     "size": 59,
+     "shows": [
+      "Theshop",
+      "Theshop"
+     ]
+    }
+   ],
+   "tileWalls": [],
+   "hero": null,
+   "visits": [],
+   "build": {
+    "framed": [
+     {
+      "head": "The place",
+      "n": 3,
+      "list": true,
+      "y": 6689,
+      "items": [
+       "The place Gautam Buddha Road (filled #233634, 350x208)",
+       "The contact satishv.sports00 (filled #233634, 350x238)",
+       "The source Facts and quotes  (filled #233634, 350x208)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [],
+    "runOn": [],
+    "credits": {
+     "entries": 5,
+     "capacity": 5,
+     "pictures": 5,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog.credits",
+     "shown": [
+      "hero-dumbbells",
+      "falgu-1",
+      "inset-badminton",
+      "features-bat",
+      "contact-hoop"
+     ]
+    },
+    "space": {
+     "blocks": 7,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 982,
+      "fold": 844,
+      "next": {
+       "sel": "section.scene.seg",
+       "head": "by the school gate",
+       "top": 982,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": []
+    },
+    "nav": {
+     "bar": "header.nav",
+     "top": 0,
+     "h": 72,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": []
+   },
+   "dead": null,
+   "rest": [
+    {
+     "y": 0,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "hero-dumbbells 0.437 @475"
+     ],
+     "heads": [
+      "h Sports goods since 1947 @120"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 844,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "falgu-1 0.837 @138"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1688,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "falgu-1 0.333 @0"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2339,
+     "dy": 25,
+     "end": "shaped-edge-ground-change",
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.326 @281"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2532,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "inset-badminton 0.326 @88"
+     ],
+     "heads": [
+      "h The town it serves @699"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3376,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4220,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Clubs, schools and players. @215",
+      "h Seventy-nine years @480",
+      "h Clubs, schools, players @684"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5064,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "features-bat 0.3 @150"
+     ],
+     "heads": [
+      "h Same-day delivery @626"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5845,
+     "dy": 25,
+     "end": "page-lifts-off-closing-picture",
+     "clipped": [],
+     "pics": [
+      "contact-hoop 0.435 @431"
+     ],
+     "heads": [
+      "h Ask for it at the counter @89"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6752,
+     "dy": -25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ]
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "15 different font sizes (14, 15, 16, 17, 18, 21, 28, 38, 42, 43, 66, 69, 72, 73, 137).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 1440,
+   "message": "A 480px stretch at 5096px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
+  },
+  {
+   "level": "WARN",
+   "id": "wordy-section",
+   "width": 1440,
+   "message": "1 section(s) carry more than 60 words outside their lists and tables: \"The town it serves\" (74 words).",
+   "fix": "A section says one thing in 60 words at most: a heading, one or two short sentences, and the facts as a list or a table. A card says its point in about 25 words. Cut, never shrink the type."
+  },
+  {
+   "level": "WARN",
+   "id": "small-body",
+   "width": 1440,
+   "message": "2 block(s) of running, list or table text at 14-15px: \"Photographs on this page are illustrativ\" 15px; \"Concept preview. Enquiries only, not a b\" 15px (in the footer).",
+   "fix": "Running text, lists and tables 16px or more on desktop and 15px on a phone, on dark grounds as well; under a display heading 18px or more; set it beside the picture it describes, never pushed to the far edge. Only captions and the footer's legal line may be smaller."
+  },
+  {
+   "level": "WARN",
+   "id": "surface-count",
+   "width": 1440,
+   "message": "3 grounds on the page, by the screens they cover: #0d1f1e (the page, 2.87 screens); #cddce3 (div.seg-ground, 2.04 screens); #233634 (div.goods__disc, 0.33 screens).",
+   "fix": "One ground and one surface tone a step from it, and no tint between them. The ink grounds a band at most (the footer and one section), and so do a dealt field and the accent (one section each); a scene's veil or band takes one of these, never a tone sampled from its photograph, unless its own sheet asks for one (then that is the page's band). Every other section, panel and card takes one of these, a sheet in another colour (a white receipt on grey) is set on the section ground, and a piece of work keeps its own colours inside its picture."
+  },
+  {
+   "level": "WARN",
+   "id": "same-structure",
+   "width": 1440,
+   "message": "3 sections are built round one picture: \"THE SHO\" (under its heading); \"Clubs, schools and players.\" (in columns under its heading); \"visit\" (no heading).",
+   "fix": "Give each section the structure its content asks for, and never one structure three times: a list as a list across the width, a split with a picture, cards in a row, a statement alone, a table, a gallery, a working tool. Change what the section holds, the heading's place and the columns from one to the next (critique.md, pass 9)."
+  },
+  {
+   "level": "WARN",
+   "id": "footer-other-sites",
+   "width": 1440,
+   "message": "The footer links to 1 other site, not the client's own: \"The listing\" (threebestrated.in).",
+   "fix": "The footer links to the client's own: its sections and pages, the contact, the map, its own profiles, the legal pages and the Image credits. A product it works with or a reference it follows is named in a line of type where the page needs it, never a link column to another company's site."
+  },
+  {
+   "level": "WARN",
+   "id": "edge-run",
+   "width": 1440,
+   "message": "1 element(s) run into the right side of the screen at rest while the page keeps a 43px margin: a box (\"Illustrative photograph - equipment deta\", 808px wide) touches the right edge, screen 1.",
+   "fix": "A picture or a field flush with one side of the screen reads as running out of the page. Keep it inside the margins, or run it from edge to edge; a split whose picture fills its half to the edge is a choice to defend in one sentence."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/desktop-page-02.jpg",
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 9,
+   "stride": 1,
+   "pageScreens": 8.8,
+   "atFoot": true
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/tablet-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/tablet-page-01.jpg",
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/tablet-page-02.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 9,
+   "stride": 1,
+   "pageScreens": 8.1,
+   "atFoot": true
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/mobile-page-01.jpg",
+    "/tmp/cafe-sites/vijoy-sports-gaya/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 10,
+   "stride": 1,
+   "pageScreens": 9,
+   "atFoot": true
+  }
+ ]
+}
