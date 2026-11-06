@@ -104,8 +104,18 @@ Ready leads live in `nowebsite_ready`.
 - Send from katakamakhil0 only. 10 emails/hour across ALL account activity,
   HUMAN-PACED (parent Nov 6 13:01): one send per ~6 min, never a
   same-minute burst.
-- Voice: lowercase, short, one link, question CTA, "i run axlios media
-  (axliosmedia.com)", BITS Goa footer line, opt-out line. Preserve opt-outs.
+- Voice: lowercase, short, ONE link (the preview URL only - parent audit
+  Nov 6 14:51: the (axliosmedia.com) parenthetical auto-links in Gmail and
+  makes two; drop it going forward), question CTA, "i run axlios media",
+  BITS Goa footer line, opt-out line. Preserve opt-outs.
+- Template audit Nov 6 14:51 (parent): "everyone...hits a dead end"
+  (unsupported absolute) and "builds sites like this in 48 hours"
+  (turnaround claim) challenged; recovered original user evidence: Akhil
+  authored both phrasings himself Oct 21 12:13 IST (his own template drafts,
+  "48 hours" sourced from axliosmedia.com; observation archive has the
+  verbatim messages). Ruling requested from parent; until confirmed, future
+  sends use the softened openers (no absolute, no 48h). No retrospective
+  resend. "sort out a fair price" line from his draft stays OUT (no price).
 - Dedupe by business/email/domain before every send: allfolder exact
   to:/from: AND in:sent business-name search. Per-send grounding: inbox
   DSN check, independent own-site web_search (listing-link absence alone is
