@@ -93,13 +93,23 @@ Ready leads live in `nowebsite_ready`.
 
 ## 5. Send rules
 
-- **Sends are HELD behind the shared bounce-stop decision** (todo
-  todo-01M610JPDDBR1NZ5BR50AQ0292) until Akhil explicitly decides. If lifted:
-  Klayz Studio goes first (existing approval), then new-batch sends.
-- Send from katakamakhil0 only. 10 emails/hour across ALL account activity.
+- **Hold LIFTED for the website-preview batch Nov 6 2026** per Akhil's
+  instruction via parent (12:57 IST; todo todo-01M610JPDDBR1NZ5BR50AQ0292
+  stays the durable safety pointer). Suppression (SunShine Boutique Mysore,
+  Toolsmith - Oct 28 550s), opt-outs, region rules and re-stop-on-bounce
+  remain. Sent Nov 6: batch 1 x10 at 13:00 (Klayz first per standing order;
+  ledger A1600-A1609), batch 2 x7 human-paced ~6 min apart 14:05-14:50
+  (ledger A1610-A1616). Re-stop immediately on any hard bounce/DSN/provider
+  warning and report.
+- Send from katakamakhil0 only. 10 emails/hour across ALL account activity,
+  HUMAN-PACED (parent Nov 6 13:01): one send per ~6 min, never a
+  same-minute burst.
 - Voice: lowercase, short, one link, question CTA, "i run axlios media
   (axliosmedia.com)", BITS Goa footer line, opt-out line. Preserve opt-outs.
-- Dedupe by business/email/domain before every send.
+- Dedupe by business/email/domain before every send: allfolder exact
+  to:/from: AND in:sent business-name search. Per-send grounding: inbox
+  DSN check, independent own-site web_search (listing-link absence alone is
+  not proof), preview curl 200, email re-confirmed on the live listing.
 - No IE/UK/EU/NZ/AU/CA sends without a recipient-specific legal basis.
 - No autonomous replies or follow-ups to inbound mail; report them instead.
 - Gmail RCPT250 is only a rejection screen, not mailbox/delivery proof; conflicts
@@ -114,7 +124,8 @@ Ready leads live in `nowebsite_ready`.
 
 ## 7. Current state (update as it moves)
 
-- Live, verified, unsent (send-held): Klayz Studio (commit 1d36dc1),
+- EMAILED Nov 6 2026 (outreach resumed per Akhil via parent 12:57; batch 1 x10 at 13:00 ledger A1600-A1609, batch 2 x7 paced 14:05-14:50 ledger A1610-A1616; every send grounded: DSN inbox check clean, allfolder exact + in:sent business-name dedupe 0, independent own-site web_search clear, preview curl 200, email re-confirmed on live listing): Klayz Studio, Mohan V12, Doon V4, Nagal V23, Krishna V45, Hardev V38, Divya V39, Kargil Vijay V6, Mosin V14, Ganesh V28, Balkrushna V15, Parvati V22, Raj V24, Ashish Rasekar V33, Mama V35, Sk Carpenter V61, Vijoy Sports V62. Held: V41 Momai (email unconfirmed), V37/V48/V55 (own sites), V43 (existing hold). Suppressed: SunShine, Toolsmith.
+- Older build notes (pre-send): Klayz Studio (commit 1d36dc1),
   Mohan Electrical Services V12 (taste-skill rebuild, commit 3fc515e),
   Doon Computer V4 (taste-skill rebuild, commit adca387),
   Nagal Refrigeration / AC Service Center V23 (commit 64fecd7),
@@ -133,7 +144,7 @@ Ready leads live in `nowebsite_ready`.
   Sk Carpenter & Furniture V61 (the split stage: Erode 400/500/600 Fontshare, putty #dedad3/black/teal #256f82; sticky split - RIGHT half sticky full-height photo radius 16px crossfading between 3 images as sections arrive, LEFT reading column max 46ch; slow 1.6s crossfade; mobile 60svh sticky photo top then stacked; 4 Commons photos with visible contextual illustrative-photograph tag chips; facts section with inline wood-samples figure; listing price points Rs 3,500/4,000 attributed; tel+mailto in header; email skcrazywood@gmail.com TBR-confirmed; commit 3c52408; gates 0 FAIL),
   Mahadev Auto Services V37 (the well-kept board: lunar + bronze; cropped name band + standfirst, links row, statement tiles, zigzag light cell, picker service rows, one-image-cut-across-tiles board (6x4 desktop / 3x6 mobile), SVG block wordmark footer; commits 77d641e + 096b12b revision (compact hero tiles, readable mobile wordmark, listing-attributed claims); HELD OUT of the no-website batch per parent Nov 2: business already runs mahadev-auto-services.grexa.site, so it is a possible upgrade preview, not an approved upgrade pitch).
 - Vijoy Sports Gaya V62 (the clear service: Hanken Grotesk 400/500/600, deep teal ink-only #0d1f1e/#233634/#e8fbf9; words-beside-product hero ~73px display; shrinking nav; edge-to-edge marquee; goods disc showcase (fact text on the disc); 2x2 features grid as the lifting sheet; sky-sampled #cddce3 band via shaped-edge-ground-change; page-lifts-off-closing-picture close carrying contact, --lift-band-ink dark on sampled sky band; both scenes at hold:1 so every scroll screen carries content; three-cards footer 40svh; 5 Commons photos (dumbbells hero recropped x550-1340/y3000-3900 after parent pixel review caught a red/white oval maker mark - ALWAYS re-view final crops for marks; Falgu river Gaya; badminton; bat; hoop); peel-tear-and-drag redrawn once (needs plane+cloud cutouts a sports shop cannot fill honestly); email satishv.sports007@gmail.com TBR-confirmed; commits db0b4a6 + 24ba340 (recrop + dropped unverified "short walk" proximity claim - same-town is the verified fact, never assert distance); ledger A1599; gates 0 FAIL; live-verified Nov 6 12:54),
-- Delivery state: V35 DELIVERED to Akhil Nov 4 18:49 IST by parent via WhatsApp (mobile screenshot + live URL, outreach-held caveat); illustrative-imagery label added near 'The work' gallery per parent (visible contextual note, not footer-only); V15 delivered to Akhil Nov 3; Momai V41 + corrected Parvati V22 + Raj V24 DELIVERED to Akhil Nov 4 09:46 IST via WhatsApp; Ashish Rasekar V33 DELIVERED to Akhil Nov 4 13:07 IST via WhatsApp (live fan screenshot + URL, outreach-held caveat) after parent accepted the fan-occlusion fix (non-overlapping vw-capped card spacing, commit 2cef80c) and the single-Email fix. Consolidated delivery COMPLETE - no pending deliveries. V61 BUILT Nov 4 21:55 IST (commit 3c52408, gates 0 FAIL, eyeballed 1440/768/390), ledger A1598; live verify pending - GitHub Actions/Pages outage Nov 4 has ALL previews 404 incl previously-live ones; report sent to parent, verify-when-recovered wake set. V41 mobile nav wrap fixed (commit 1fc5ec9). Parvati 10-years claim re-verified live Nov 4 (TBR: 'has 10 years of experience in the electrical field'). All sends remain bounce-held (no authorization change Nov 4 09:46).
+- Delivery state: V35 DELIVERED to Akhil Nov 4 18:49 IST by parent via WhatsApp (mobile screenshot + live URL, outreach-held caveat); illustrative-imagery label added near 'The work' gallery per parent (visible contextual note, not footer-only); V15 delivered to Akhil Nov 3; Momai V41 + corrected Parvati V22 + Raj V24 DELIVERED to Akhil Nov 4 09:46 IST via WhatsApp; Ashish Rasekar V33 DELIVERED to Akhil Nov 4 13:07 IST via WhatsApp (live fan screenshot + URL, outreach-held caveat) after parent accepted the fan-occlusion fix (non-overlapping vw-capped card spacing, commit 2cef80c) and the single-Email fix. Consolidated delivery COMPLETE - no pending deliveries. V61 BUILT Nov 4 21:55 IST (commit 3c52408, gates 0 FAIL, eyeballed 1440/768/390), ledger A1598; live verify pending - GitHub Actions/Pages outage Nov 4 has ALL previews 404 incl previously-live ones; report sent to parent, verify-when-recovered wake set. V41 mobile nav wrap fixed (commit 1fc5ec9). Parvati 10-years claim re-verified live Nov 4 (TBR: 'has 10 years of experience in the electrical field'). Sends RESUMED Nov 6 12:57 (see section 5).
 - position:sticky gotcha (V33, Nov 4): overflow-x:hidden on html+body makes body the scroll container and SILENTLY breaks every sticky section on the page (fan stage scrolled away, leaving empty pin screens). Use overflow-x:clip instead - same clipping, no scroll container. Verify sticky pins with a real scrolled screenshot before shipping any pinned design.
 - inspect.mjs gotcha: always run with a FILE target (inspect.mjs index.html), never a directory (.) - the directory mode makes every <img> report broken. A <video> element in the page reproducibly breaks the inspector's image loading too (bisected on V15); use a slow photo drift as the moving picture and defend the no-footage WARN.
 - Live URLs follow the pattern https://agilkatakam.github.io/cafe-sites/<folder>/ .
@@ -143,4 +154,4 @@ Ready leads live in `nowebsite_ready`.
 - Ledger next free row: check the sheet's last row before appending.
 
 ## Evidence correction Nov 4 2026 (live URL checks)
-Never derive or guess preview slugs. Check only actual deployed folder names (ls -d */ in the repo) or exact previously-delivered URLs. On Nov 4 ~22:00 IST I curled guessed slugs (klayz-design-dehradun, mama-electrical-jaipur etc.), got 404, and wrongly reported a Pages-wide outage; real folders (klayz-studio-chennai, mama-electrical-ghaziabad ...) returned 200. V61 live-verified 200 at 23:21 IST with live CDP screenshots. V61 delivery to prospect stays held for a morning window; sends bounce-held.
+Never derive or guess preview slugs. Check only actual deployed folder names (ls -d */ in the repo) or exact previously-delivered URLs. On Nov 4 ~22:00 IST I curled guessed slugs (klayz-design-dehradun, mama-electrical-jaipur etc.), got 404, and wrongly reported a Pages-wide outage; real folders (klayz-studio-chennai, mama-electrical-ghaziabad ...) returned 200. V61 live-verified 200 at 23:21 IST with live CDP screenshots. V61 EMAILED Nov 6 14:44 (batch 2 send 6/7).
