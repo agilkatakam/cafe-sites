@@ -150,28 +150,24 @@ img { display: block; }
 .intro { position: relative; }
 @media (min-width: 1200px) { .intro { min-height: 126svh; } }
 .intro__photo {
-  position: absolute; right: 0; top: 40svh; z-index: 1;
+  position: absolute; right: 0; top: 46svh; z-index: 1;
   width: min(720px, 64%);
 }
 .intro__photo img {
-  width: 100%; height: 78svh; object-fit: cover; object-position: center 30%;
+  width: 100%; height: 74svh; object-fit: cover; object-position: center 30%;
   border-radius: var(--radius);
 }
 .phototag {
   margin-top: 8px; font-size: var(--step-small); color: var(--muted);
 }
 .intro__title {
-  position: relative; z-index: 2; padding-top: 30svh;
+  position: relative; z-index: 2; padding-top: 24svh;
   font-size: var(--step-head); font-weight: 600;
   letter-spacing: -0.026em; line-height: 1.04;
 }
 .intro__l1 { display: block; }
 .intro__l2 { display: block; position: relative; white-space: nowrap; }
-.intro__l2 > i { font-style: normal; }
-.intro__l2 > b {
-  position: absolute; inset: 0; font-weight: inherit; color: var(--bg);
-  clip-path: inset(0 0 0 var(--cx, 100%));
-}
+
 .intro__para {
   position: relative; z-index: 2; margin-top: 40px; max-width: 30ch;
   font-size: var(--step-lead); line-height: 1.4;
@@ -319,7 +315,7 @@ img { display: block; }
   .intro__title { padding-top: 0; font-size: 10vw; }
   .intro__photo {
     position: relative; top: auto; right: auto;
-    width: 75%; margin: -1em 0 0 auto;
+    width: 75%; margin: 32px 0 0 auto;
   }
   .intro__photo img { height: 60svh; }
   .intro__para { margin-top: 32px; }

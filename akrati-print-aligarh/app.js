@@ -90,22 +90,6 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   }
 })();
 
-// Intro crossing line: clip the paper-coloured copy at the photo's left edge
-(() => {
-  const l2 = document.querySelector('.intro__l2');
-  const photo = document.querySelector('.intro__photo');
-  if (!l2 || !photo) return;
-  const set = () => {
-    const a = l2.getBoundingClientRect();
-    const b = photo.getBoundingClientRect();
-    const x = Math.max(0, Math.min(a.width, b.left - a.left));
-    l2.style.setProperty('--cx', x + 'px');
-  };
-  set();
-  addEventListener('resize', set);
-  addEventListener('load', set);
-})();
-
 // Cards: tilt settles straight as the section crosses
 (() => {
   const cards = [...document.querySelectorAll('.card')];
