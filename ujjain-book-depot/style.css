@@ -129,8 +129,8 @@ section { padding-block: calc(var(--section-gap) / 2); padding-inline: var(--mar
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* ---------- statements on colour fields ---------- */
-.statements { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
-.statement--ink { grid-row: span 2; height: 100%; }
+.statements { display: grid; gap: 1rem; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; }
+
 @media (max-width: 760px) { .statements { grid-template-columns: 1fr; } .statement--ink { grid-row: auto; } }
 .statement {
   font-family: "Hubot Sans", sans-serif; font-size: var(--step-sub); line-height: 1.2;

@@ -62,7 +62,7 @@
     const p = Math.min(1, Math.max(0, raw));
     const maxBlur = innerWidth < 760 ? 8 : 10;
     chars.forEach((c, i) => {
-      const local = Math.min(1, Math.max(0, p * (chars.length / 3.5) - i / 3.5));
+      const lag = 2.5; const local = Math.min(1, Math.max(0, p * (1 + lag) - lag * (i / Math.max(1, chars.length - 1))));
       c.style.setProperty('--cb-blur', ((1 - local) * maxBlur).toFixed(1) + 'px');
     });
   };
