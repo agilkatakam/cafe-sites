@@ -1,0 +1,533 @@
+{
+ "direction": {
+  "id": "contact-sheet",
+  "name": "The contact sheet",
+  "sectors": [
+   "personal-portfolio",
+   "studio-portfolio",
+   "agency",
+   "fashion",
+   "culture",
+   "architecture",
+   "music",
+   "ecommerce"
+  ],
+  "tones": [
+   "quiet",
+   "technical",
+   "editorial"
+  ],
+  "needs": [],
+  "pictures": 4,
+  "idea": "Show everything at once, small, in order. The work is laid out like a photographer's contact sheet or an archive drawer: dozens of small frames in strict rows, with all text set at one small size. Nothing is featured, which is the point: the volume and consistency of the body of work is the statement, and the visitor does the choosing. It suits people and studios whose strength is range and output.",
+  "composition": "The name, or one sentence about the work, sits at display size (6–9vw) across the top of the first screen, and the sheet begins directly under it, still inside the first screen. The first screen opens with three or four short blocks of small text across the top on a 12-column grid (who, what, where to reach them), all at 14–16px, and immediately below, the sheet begins: rows of thumbnails at a fixed height (90–140px) with their natural widths, 6–10px gaps, each project forming a run of four to eight frames preceded by its title in the same small text. The sheet fills the whole page width edge to edge with 16–20px margins. Hovering a run dims the others and shows that project's one-line description in a fixed position. A single enlarged frame may interrupt the sheet once per screen at four times the size.",
+  "typography": "One face. The name at display size on the first screen; everything else at one text size and one small size; hierarchy below the name comes from position and from a single brighter ink for titles.",
+  "typeClasses": [
+   "grotesk-light",
+   "grotesk-tight"
+  ],
+  "colour": "Black or white ground, so the thumbnails are the only colour.",
+  "paletteTags": [
+   "dark-neutral",
+   "light-neutral"
+  ],
+  "imagery": "Many images: at least 24 frames to make a sheet. They are the client's own work (stills, title cards, page captures), never stock photographs standing in for it; with fewer pieces, a smaller sheet of the pieces there are. Square corners, no captions on the frames.",
+  "sectionTags": [
+   "dense",
+   "photo-led",
+   "quiet"
+  ],
+  "motion": "index-preview",
+  "richness": "Density and order. The mass of small images forms a texture; the strict rows keep it calm.",
+  "pitfalls": "With fewer than about 20 images it looks unfinished; choose another direction. Do not add a big headline above the sheet. On a phone the frames become two per row at a fixed height and each run scrolls sideways. Rows that run past the right edge read as clipped in screenshots and to most visitors: wrap the frames onto the next line, or end each row inside the grid.",
+  "seenIn": [
+   "aww-gil-huybrecht",
+   "opl-smallbits",
+   "opl-gunes-atakan-peksen",
+   "opl-proooof",
+   "aww-oimachi"
+  ],
+  "allow": [],
+  "needsPictures": true
+ },
+ "hero": {
+  "id": "lit-strip-four-corners",
+  "name": "Lit strip, four corners",
+  "archetype": "index",
+  "directions": [
+   "dark-room",
+   "contact-sheet"
+  ],
+  "needs": [],
+  "blueprint": "One near-black field with a single lit band. Four small pieces of text at 14px, medium weight, sit in the corners on 72px side margins and 44px top and bottom margins: the name top-left, one link top-right, one sentence saying what this is bottom-left (max 36ch), the single action as a text link bottom-right. Across the vertical middle runs one horizontal strip of photographs, 34vh tall (about 300px), each at its natural width with 10px gaps and square corners: eleven or more frames in a flex row wider than the viewport, so the first and last visible frames are cropped by the left and right edges. The frame nearest the centre is at full brightness; the others sit at filter: brightness(0.55) and brighten on hover or as they reach the centre. Under the centred frame, aligned to its left edge, its title is set in the same 14px text. The top quarter and the bottom quarter of the screen stay empty and dark. The strip scrolls sideways with overflow-x: auto and scroll-snap; never hijack vertical scroll.",
+  "mobile": "The strip stays a single sideways-scrolling row but grows to 46vh tall, so one frame and the cropped edges of its neighbours fill the width. The name and the link sit at the top on 20px margins; the sentence and the action stack bottom-left under the strip at 14px. Dark space remains above and below the strip, about 12% of the height each.",
+  "headline": "None at display size: the name at 14px in a corner and one sentence of up to 60 characters.",
+  "motion": "drag-row",
+  "seenIn": [
+   "aww-jesper-landberg-4",
+   "aww-boc-studio",
+   "aww-leo-parpeix-portfolio-2026"
+  ]
+ },
+ "sectionList": {
+  "id": "list-poster-lines",
+  "role": "list",
+  "name": "One item per poster line",
+  "shape": "statement",
+  "structure": "statement",
+  "tags": [
+   "type-led",
+   "poster",
+   "colour-field"
+  ],
+  "directions": [
+   "loud-flat-poster",
+   "type-only-statement",
+   "name-as-monument",
+   "colour-chapters",
+   "borrowed-category"
+  ],
+  "needs": [],
+  "blueprint": "A short list set as a poster. Four to seven items (services, headline acts, courses, opening days) stack one per line at clamp(64px, 10vw, 150px) in the display weight, all capitals or all lowercase, leading 0.92, flush left at a 20px margin on a flat field. Its one detail (a price, a date, a time range) sits at the right margin on the same baseline at 18–20px with tabular figures, so the page has two alignments only: giant words left, small facts right. Items too long for one line at this size are shortened, not shrunk. Between items there is only the tight leading. Hovering an item swaps its ink for the accent. There is no heading: the first item starts 80px below the section top and the last ends 80px above the bottom. The list reuses the hero title's exact type size, so it reads as another poster.",
+  "mobile": "Items at 15vw, one per line, flush left with 16px margins. Each detail moves beneath its item at 15px, left-aligned, with 6px above and 22px below. If any single word is wider than the screen at 15vw, drop the whole list to 12vw rather than breaking a word.",
+  "seenIn": [
+   "opl-city-of-angels"
+  ]
+ },
+ "palette": {
+  "id": "soot-pale-lime",
+  "name": "Soot and lime",
+  "tags": [
+   "mono-accent",
+   "dark-neutral"
+  ],
+  "bg": "#0f0f0f",
+  "surface": "#1a1a1a",
+  "ink": "#ffffff",
+  "muted": "#8f8f8f",
+  "accent": "#dafa9c",
+  "accentInk": "#0f0f0f",
+  "fields": [
+   {
+    "bg": "#ffffff",
+    "ink": "#0f0f0f"
+   },
+   {
+    "bg": "#dafa9c",
+    "ink": "#0f0f0f"
+   }
+  ],
+  "note": "A soot-black opening and close bracket white middle sections, all in black, white and grey. Pale lime is the single action colour: every button, and at most one headline set in it on the dark ground.",
+  "seenIn": [
+   "opl-builders-table",
+   "aww-made-with-gsap-1",
+   "aww-hilden-kaira"
+  ]
+ },
+ "type": {
+  "id": "spartan-figtree",
+  "name": "League Spartan / Figtree",
+  "class": "geometric",
+  "display": {
+   "family": "League Spartan",
+   "source": "google",
+   "weights": [
+    700
+   ],
+   "italic": false,
+   "settings": "weight 700 · tracking -0.04em · leading 0.88 · lowercase or sentence case",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Figtree:wght@400;600&display=swap\" rel=\"stylesheet\">"
+  },
+  "text": {
+   "family": "Figtree",
+   "source": "google",
+   "weights": [
+    400,
+    600
+   ],
+   "italic": false,
+   "settings": "400 for body, 600 for emphasis · leading 1.5 · tracking 0",
+   "css": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Figtree:wght@400;600&display=swap\" rel=\"stylesheet\">"
+  },
+  "standsInFor": [
+   "Degular",
+   "Roobert"
+  ],
+  "note": "A compact bold geometric with a low waist, punchy in short lowercase lines, over a friendly open text sans. Suits newsletters, consumer products, creators and small shops.",
+  "seenIn": [
+   "opl-lennys-newsletter-product-pass",
+   "opl-near",
+   "opl-sand-studio",
+   "aww-aardvark-book-club"
+  ],
+  "links": [
+   "https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Figtree:wght@400;600&display=swap"
+  ],
+  "scale": {
+   "step-small": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)",
+   "step-body": "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)",
+   "step-lead": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)",
+   "step-head": "clamp(2rem, 1.3rem + 3.2vw, 4rem)"
+  }
+ },
+ "motion": {
+  "id": "index-preview",
+  "name": "Index with preview",
+  "description": "Rows of text are the navigation through the work; pointing at a row brings up its image in one fixed frame and dims the other rows. On touch screens each row shows its image inline instead. Fast and exact (about 240ms crossfade), no lag behind the pointer. Recipe: 'Index with preview, anchored to the row' in references/motion.md."
+ },
+ "scenes": [
+  {
+   "id": "line-carries-colour-swap",
+   "name": "One line carries the colour swap",
+   "family": "colour-and-ground",
+   "summary": "A straight-edged photograph that closes one chapter is cropped away from the bottom by a square clip while one very large line of the page's display face climbs under it, already at its final size and the full content width but showing only its first word; the next chapter's picture starts rising under it at once, so the first word is never alone on flat colour; each further word slides in from the right with a short slide that lands it beside the word before, and on the last word the stage's ground and the line's ink swap in one jump (ink to paper, paper to ink, never a blend) while the next chapter's first picture, already rising under the line, settles whole beneath it. It turns a change of chapter or of mood into one precise moment, in any sector.",
+   "place": "Between two sections, as the hand-over from a dark chapter (the opening, the work, the evening) to a light one (the detail, the about, the order), or the other way with direction 'to-ink'. The section before sits on the first ground and ends on the photograph; the section after continues on the second ground straight under the picture, and the line is its heading. Once per page.",
+   "content": "One straight-edged landscape photograph that closes the section before (3:2 or wider, 1920px or more, dark and calm enough to end the ink chapter). One picture that opens the section after: it rests whole under the line, so it must crop well both wide (about 2.2:1 on desktop) and tall (about 2:3 on phones), 2400px or more. One line of 3-5 words, 14-24 characters, in the line's one colour; a full stop only where the page's voice uses them everywhere. Two grounds that contrast 7:1 or better both ways (the page's ink and paper). Nothing else on the stage: no labels, captions or buttons. Without a closing photograph and an opening picture, redraw: the line alone on flat colour reads as an empty screen.",
+   "options": "hold 1 (1-1.5); phoneHold 1 (1-1.5); direction 'to-paper' (ink ground to paper, paper line to ink) | 'to-ink' (the reverse; add class lcs--to-ink to the section too); slide 0.6 (0.3-1) how far a word slides in, as a share of its own width, never more than 1.1 times the type size; min 0.08 (0.05-0.12) share of the stage height under which a one-row line takes two rows; max 0.3 (0.2-0.4) share of the stage height the line's box never passes; drift 0.05 (0-0.1) how far the old photograph keeps rising while it is cropped; nav '', the selector of a fixed header, and navClass 'is-swapped', the class it gets from the swap on (style it to swap the bar's own ground and ink in the same jump); scrub 0.5, true with Lenis and on touch; phone 'same' | 'rest'. Tokens: --lcs-top, --lcs-foot, --lcs-gap, --lcs-size (no script), --lcs-photo-pos, --lcs-next-pos, --lcs-photo-h, --lcs-next-h.",
+   "phone": "The same scene with phone numbers: the line breaks into two rows where they are most even (never three) and is fitted to the full width, the words still landing one by one; the next picture crops tall under it; hold 1. Screens under 480px tall get the finished composition.",
+   "roles": [
+    "intro",
+    "about",
+    "features",
+    "list",
+    "how-it-works",
+    "gallery",
+    "contact"
+   ],
+   "position": "transition",
+   "sectors": [
+    "*"
+   ],
+   "needs": [
+    "pictures:2"
+   ],
+   "hold": 1,
+   "source": "lib-0240",
+   "inkChapter": true
+  },
+  {
+   "id": "dot-becomes-the-full-stop",
+   "name": "The dot becomes the full stop",
+   "family": "type-choreography",
+   "summary": "On the page's own ground one large dot in the ink, the display face's own full stop set very large, drops in from the top edge as the stage arrives and lands in the middle, and the first word of a claim comes out of it before the stage holds; the rest of the claim, four or five words at true display size across nearly the whole width, grows out of it to the left one whole word at a time with a short rise and no blur, the dot stepping right and a step smaller with every word while the phrase stays centred, until it is exactly the size and place of the sentence's own full stop as the last word lands. An optional second beat cuts the ground to ink in one jump, turns the sentence the paper colour and sets one plain supporting line under it, whole. A graphic object promoted into the typography: a middle for pages short of pictures, services above all.",
+   "place": "In the middle of the page, after the hero: the intro, the about or the proof, the one claim the page stands on told as one sentence; never the call to action, which needs its button. With the second beat on, the section after starts on the ink ground and carries it on; with it off, on the page ground. Once per page, with a quiet section before and after it.",
+   "content": "No pictures. One claim of 4-5 words, 16-30 characters, ending on its full stop (the scene's subject), every word under about 11 characters, in the page's display face; a face whose full stop is a true round dot reads best, since the dot is that glyph. One optional supporting sentence of 8-16 words for the last beat. Nothing else on the stage: no labels, buttons, counters or drawn shapes. The page's ink and ground, 7:1 or better both ways; no accent on the line or the dot. Without a claim that ends on a full stop, use a plain heading.",
+   "options": "hold 0.6 (0.5-1.5); phoneHold 0.7 (0.5-1.5); beat true (the hard cut to ink, the sentence in the paper colour and the supporting line whole) | false (add class dfs--plain to the section; the ground stays, and a supporting line, if any, still appears whole once the full stop lands); dot 0.2 (0.1-0.28) the dropped dot's diameter as a share of the stage height, never more than a third of its width; fill 0.95 (0.5-0.97) share of the content width the finished sentence spans; max 0.17 (0.1-0.24) share of the stage height the type never passes; min 0.07 (0.04-0.1) share of the stage height under which one row takes two; rise 0.24 (0.1-0.4) em each word rises into place; nav '', the selector of a fixed header, and navClass 'is-ink', the class it gets from the cut on; scrub 0.5, true with Lenis and on touch; phone 'same' | 'rest'. Tokens: --dfs-paper, --dfs-ink, --dfs-size, --dfs-lh, --dfs-gap, --dfs-pad, --dfs-support-size.",
+   "phone": "The same scene with phone numbers: the claim fitted to the full width on two rows broken where they are most even (one when it fits large, never three); the dot rides the first row, takes a short carriage return down to the last row under the row above, rides it a step smaller with each word and lands on the full stop measured on the last row; hold 0.7. Screens under 480px tall get the finished composition.",
+   "roles": [
+    "intro",
+    "about",
+    "proof"
+   ],
+   "position": "middle",
+   "sectors": [
+    "*"
+   ],
+   "needs": [
+    "pictures:0"
+   ],
+   "hold": 0.6,
+   "source": "lib-0370",
+   "weight": 0.8
+  }
+ ],
+ "entrance": {
+  "id": "line-blocks",
+  "name": "Line blocks",
+  "family": "cover",
+  "summary": "solid blocks slide off each headline line",
+  "energy": "bold",
+  "weight": 0.8,
+  "fits": {
+   "tones": [
+    "bold",
+    "playful",
+    "editorial",
+    "technical"
+   ],
+   "imagery": [
+    "photo",
+    "interface",
+    "type-only"
+   ],
+   "requires": [
+    "headline-of-one-to-three-lines",
+    "display-headline"
+   ]
+  },
+  "sees": "Each line of the headline starts as a solid block of one palette colour, exactly as long as its words, and the blocks slide off toward the line ends one after another. The words never move.",
+  "settled": "1.1 s",
+  "markup": "Wrap each headline line: `<span class=\"line\"><span data-line style=\"--i:0\">…</span></span>`, three at most, with breaks that fit on one line at every width down to 360 px (a smaller display step on phones if they must): a line that wraps gets one block across the whole column, and the inspector fails it.",
+  "byImagery": {
+   "photo": "The picture is in place and still.",
+   "interface": "The fragment is in place and still.",
+   "type-only": "The natural fit: before the words appear, the blocks are the only shapes on the first screen."
+  },
+  "below": {
+   "label": "Rows step in",
+   "rule": "Lists, indexes, tables and price rows (data-reveal=\"rows\" on the list) go from 40% to full opacity in reading order, once: the first four 60 ms apart, the rest together. No travel, nothing else enters, and no blocks below the fold."
+  }
+ },
+ "photoNight": "\\b(?:night\\w*|nightlife|neon|after dark|at dusk|evening)\\b",
+ "pattern:btn-tag-cut-corner-invert": {
+  "id": "btn-tag-cut-corner-invert",
+  "name": "Dark cut-corner tag, invert",
+  "description": "An ink tag with two cut corners: 56px tall at 1440, 28px side padding, a 10px diagonal cut at the top-right and bottom-left corners (clip-path on a solid fill, no stroke), the label at 16px at the type system's button weight in sentence case in the ground colour, an optional 14px chevron at the right. Hover (300ms) inverts it: the fill goes to the accent and the label and chevron to the accent's ink. It gives a technical, hardware or game page an edge without any drawn decoration. Second action: the same cut tag in the surface tone with ink letters. Colour roles: ground = page, ink = tag, ground colour = letters, accent = hover fill. Phone: Tag 52px tall, full column width, the cut kept at 8px; the invert shows on press.",
+  "signature": "A 56px ink tag whose top-right and bottom-left corners are cut 10px on the diagonal (clip-path, no stroke), turning accent on hover.",
+  "fits": {
+   "sectors": [
+    "dev-tool",
+    "consumer-app",
+    "physical-product",
+    "event",
+    "culture",
+    "music"
+   ],
+   "tone": [
+    "technical",
+    "bold",
+    "raw"
+   ],
+   "density": "balanced"
+  },
+  "needs": {
+   "pictures": "0",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "none"
+   ]
+  },
+  "phone": "Tag 52px tall, full column width, the cut kept at 8px; the invert shows on press.",
+  "avoidWith": [
+   "btn-pill-solid-plain"
+  ],
+  "houseRuleCheck": "The pattern's 11-14px wide-tracked capitals (tiny tracked label) become a sentence-case label at 16px and its optional 1px white border is dropped. The cut corners are the shape of the control itself, made with clip-path, not a drawn illustration. The cut-corner invert is the idea and stays, so it is no longer banned.",
+  "basic": false,
+  "quality": 5,
+  "count": 2,
+  "sites": 1
+ },
+ "pattern:mo-parallax-word-slides-into-line": {
+  "id": "mo-parallax-word-slides-into-line",
+  "name": "Late word slides in",
+  "description": "A hero headline of three to five words at the display step over two lines. The last word starts about 96px below its line, fully visible from the first frame, so the sentence already reads whole; across 60svh of scroll, in a hero held that long, it slides up (scrubbed, eased) into its line and closes the gap. Every word shares one face, colour and weight. The hero still fills the first screen alone. On a phone the word starts 64px below and runs over 50svh.",
+  "signature": "In the two-line headline the last word starts about 96px below its line and slides up into it across 60svh of scroll while the other words never move.",
+  "fits": {
+   "sectors": [
+    "*"
+   ],
+   "tone": [
+    "bold",
+    "editorial",
+    "playful"
+   ],
+   "density": "airy"
+  },
+  "needs": {
+   "pictures": "0",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "none"
+   ]
+  },
+  "phone": "Display step on the phone; the word starts 64px below and runs over 50svh.",
+  "avoidWith": [
+   "mo-pin-cards-rise-past-word",
+   "mo-parallax-layered-depth-scene"
+  ],
+  "houseRuleCheck": "The sliding word has exactly the same face, colour, weight and style as the rest (no accent word); it is a real word of the sentence; the hero still fills the first screen alone and reads whole in the first frame.",
+  "basic": false,
+  "quality": 4,
+  "count": 1,
+  "sites": 1
+ },
+ "pattern:mo-scale-rounded-tile-widen": {
+  "id": "mo-scale-rounded-tile-widen",
+  "name": "Rounded tile goes edge",
+  "description": "A picture tile (16:9 or 21:9, 1370px wide at 1440) sits inset by the page margin on each side with the dealt corner as the section arrives. Over the next 650-720px of scroll (while it is sticky, or as its top travels from 90 to 30 percent of the viewport) it widens to the full 1440px: clip-path inset(0 var(--margin) round var(--radius)) to inset(0 0 round 0), the height holding or growing from 80svh to 100svh. The corner eases to 0 so it ends edge to edge. Text for the section sits below the tile and is simply there (the dealt entrance decides whether it arrives); no caption sits on the picture. Phone: inset by the page margin with the dealt corner, widening to the full 390 over 60 percent of the scroll distance.",
+  "fits": {
+   "sectors": [
+    "*"
+   ],
+   "tone": [
+    "calm",
+    "editorial",
+    "luxury",
+    "bold"
+   ],
+   "density": "airy"
+  },
+  "needs": {
+   "pictures": "1",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "photos:1"
+   ]
+  },
+  "phone": "Inset by the page margin, widens to full width over 60 percent of the distance.",
+  "avoidWith": [
+   "mo-scale-full-bleed-shrink-to-frame",
+   "mo-parallax-cover-rise-scale"
+  ],
+  "houseRuleCheck": "Clean. A picture tile in the dealt corner, no outline, no caption box on the photograph; the pin, if any, is under two screens.",
+  "basic": false,
+  "quality": 4,
+  "count": 3,
+  "sites": 2
+ },
+ "pattern:mo-text-mask-roll-swap": {
+  "id": "mo-text-mask-roll-swap",
+  "name": "Mask roll swap",
+  "description": "When a state changes (a slide, a tab, a disc, a list item) the text that describes it, a title, a price, a date or a one-to-three-word value at the lead, sub or head step, rolls out and the new text rolls in. The old text moves up 100 percent out of a mask that is exactly one line tall plus 0.1em at the bottom so descenders survive, in 300-420ms on cubic-bezier 0.77, 0, 0.18, 1; the new text enters from below 60ms later, words staggered 30ms. Labels beside it slide 12-23px. If the new title wraps to two lines the container animates its height in the same 300ms. The roll follows the direction of navigation (next goes up, previous goes down). It plays only after the visitor's own action, never on load or on scroll. Phone: the same, 260ms.",
+  "fits": {
+   "sectors": [
+    "*"
+   ],
+   "tone": [
+    "editorial",
+    "bold",
+    "luxury",
+    "technical",
+    "playful"
+   ],
+   "density": "balanced"
+  },
+  "needs": {
+   "pictures": "0",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "none"
+   ]
+  },
+  "phone": "Same roll, 260ms.",
+  "avoidWith": [
+   "mo-counter-digit-roll"
+  ],
+  "houseRuleCheck": "Clean. The mask only clips the text itself, no outlined box; whole words roll, never single letters; it runs only after the visitor's own action, so it is not an entrance.",
+  "basic": false,
+  "quality": 4,
+  "count": 3,
+  "sites": 3
+ },
+ "pattern:nav-four-corner-hud": {
+  "id": "nav-four-corner-hud",
+  "name": "Four corner tabs",
+  "description": "No bar: four small items fixed at the corners of the screen, each inset by the page margin from its side and 28px from its top or bottom edge. Top left the wordmark (h4 step) and top right a Menu text button (16px), each on a solid tab of the page ground (10-14px padding, the dealt corner); bottom left the one action as the dealt button (two or three words); bottom right a tab with the one word Top that fades in only after a screen of scroll. The items never change, and no hero or section content stands under a corner. Menu opens a full-screen sheet on the ink (the surface tone on a dark page): the section names stacked at the h2 step on the left, the action and the email on the right. Hover: a tab's fill swaps from the ground to the ink and its letters the other way (180ms). On a phone the two top tabs stay at the page margin; the action sits 16px above the bottom edge plus the safe area; the bottom-right item is dropped.",
+  "signature": "No bar anywhere: the wordmark tab top left, the Menu tab top right, the dealt action button bottom left and a Top tab bottom right (after one screen of scroll), all fixed in the four corners with nothing along the top edge.",
+  "fits": {
+   "sectors": [
+    "agency",
+    "studio-portfolio",
+    "personal-portfolio",
+    "fashion",
+    "architecture",
+    "event",
+    "culture",
+    "music"
+   ],
+   "tone": [
+    "editorial",
+    "bold",
+    "raw",
+    "luxury"
+   ],
+   "density": "airy"
+  },
+  "needs": {
+   "pictures": "0",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "none"
+   ]
+  },
+  "phone": "Top-left wordmark tab and top-right Menu tab at the page margin; the action bottom left above the safe area; bottom-right item dropped.",
+  "avoidWith": [
+   "nav:bottom-dock",
+   "hero:corner-controls",
+   "scene:bottom-controls"
+  ],
+  "houseRuleCheck": "Clean. Each corner item is solid (tabs of the ground, the dealt button), so no bare letters run over content; items are one to three words in sentence case at 16px, no tiny uppercase captions, no partner line.",
+  "quality": 5,
+  "count": 3,
+  "sites": 3
+ },
+ "pattern:sec-photo-pair-with-split-caption-below": {
+  "id": "sec-photo-pair-with-split-caption-below",
+  "name": "Photo pair with split captions below",
+  "description": "Two near-square photographs in columns 1 to 6 and 7 to 12 of the content width, a 24px gutter, each about 644x640 in the dealt corner with a 6% inner parallax. Under each photograph, 16px down, a two-column caption: a title at the lead step over two lines starting at the photograph's left edge and a body-step line or two starting at its midline. The photographs arrive with the dealt entrance. Hover: the photograph zooms 1.03 inside its crop. Phone: the photographs stack at 4:5 and each caption becomes a title over its paragraph.",
+  "fits": {
+   "sectors": [
+    "*"
+   ],
+   "tone": [
+    "editorial",
+    "calm",
+    "luxury"
+   ],
+   "density": "airy"
+  },
+  "needs": {
+   "pictures": "2-3",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "photos:2"
+   ]
+  },
+  "phone": "Photographs stack at 4:5, each caption becomes a title over its paragraph.",
+  "avoidWith": [
+   "kind:photo-grid",
+   "sec-landscape-photo-left-copy-right-with-button"
+  ],
+  "houseRuleCheck": "Captions sit under the photographs, never on them. Photographs are art-directed, never documentary.",
+  "quality": 4,
+  "count": 1,
+  "sites": 1
+ },
+ "pattern:type-very-tight-sans-display-ladder": {
+  "id": "type-very-tight-sans-display-ladder",
+  "name": "Very tight sans, graduated ladder",
+  "description": "Faces: one medium (400-500) sans with tracking of -0.04 to -0.06em on every display step, even the 33px one; body stays near -0.01 to -0.02em for reading. Six steps from 10-12vw (144-175px at 1440, leading 0.8-0.95) through 107 / 80 / 53 / 33px, then 17px body, all in mixed case; headlines two lines at most. Ratio 7-13x. The signature is the tracking, and the steps are graduated: hero 144-175px, section titles 80-107px, card titles 33px. Colour: the dealt ground and ink at full contrast; the accent on the primary action and links only, never a card or button fill beyond the dealt button. Motion: headlines arrive with the dealt entrance; link hover changes colour.",
+  "fits": {
+   "sectors": [
+    "*"
+   ],
+   "tone": [
+    "bold",
+    "editorial",
+    "technical"
+   ],
+   "density": "airy"
+  },
+  "needs": {
+   "pictures": "0",
+   "productUi": false,
+   "video": false,
+   "words": "few",
+   "assets": [
+    "none"
+   ]
+  },
+  "phone": "Ladder times 0.4 (60 / 44 / 32 / 24 / 20); tracking held at -0.04em, since more makes letters collide.",
+  "avoidWith": [
+   "type-single-sans-medium-standard",
+   "type-bold-tight-grotesk-large-scale",
+   "type-black-caps-ultra-tight-poster-word"
+  ],
+  "houseRuleCheck": "Clean after the pass: tracking is the one signature; entrance as dealt; card titles at the sub step, not display size.",
+  "quality": 5,
+  "count": 2,
+  "sites": 2
+ }
+}
