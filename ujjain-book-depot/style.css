@@ -83,8 +83,9 @@ address { font-style: normal; }
   color: #fff; font-size: var(--step-body);
 }
 .hero__photonote {
-  position: absolute; z-index: 2; right: var(--margin); top: 88px; max-width: 240px;
-  color: rgba(255,255,255,0.85); font-size: var(--step-small); text-align: right;
+  position: absolute; z-index: 2; right: var(--margin); top: 88px;
+  color: #fff; font-size: 0.9375rem; white-space: nowrap;
+  background: rgba(0, 0, 0, 0.55); padding: 0.2rem 0.55rem; border-radius: 6px;
 }
 @media (max-width: 1000px) {
   .hero__corner-r { display: none; }
