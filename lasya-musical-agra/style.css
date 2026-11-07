@@ -175,7 +175,7 @@ img { background: var(--surface); }
 .lcs__next { position: absolute; left: 0; right: 0; top: 38svh; height: 62svh; clip-path: inset(100% 0 0 0); }
 .lcs__next img { width: 100%; height: 100%; object-fit: cover; }
 .lcs__line {
-  position: absolute; left: var(--margin); right: var(--margin); top: 12svh;
+  position: absolute; left: var(--margin); right: var(--margin); top: 15svh;
   z-index: 2; margin: 0;
   font-size: clamp(44px, 8.5vw, 130px); font-weight: 300; line-height: 1.04;
   letter-spacing: -0.026em; color: var(--accent);
@@ -219,7 +219,7 @@ img { background: var(--surface); }
 }
 .dfs__claim span { display: inline-block; opacity: 0; transform: translateY(0.24em); }
 .dfs__claim span.is-on { opacity: 1; transform: none; transition: opacity 260ms var(--ease-out), transform 420ms var(--ease-out); }
-.dfs__dot { opacity: 1 !important; transform: none !important; font-size: 6em; line-height: 0; }
+.dfs__dot { opacity: 1 !important; transform: none !important; font-size: 6em; line-height: 0; margin-left: -0.24em; }
 .dfs__support {
   max-width: 46ch; margin-top: 2.2rem; text-align: center;
   font-size: var(--step-lead); line-height: 1.5; color: #3d3d3d;
