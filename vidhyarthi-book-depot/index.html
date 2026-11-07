@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vidhyarthi Book Depot - exam, school and college books in Bhopal</title>
+<script>document.documentElement.classList.add('js')</script>
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-entrance="focus">
+
+<nav class="rail" aria-label="Main">
+  <a class="rail__tile rail__brand" href="#top"><span>Vidhyarthi</span><span>Book Depot</span></a>
+  <a class="rail__tile rail__link" href="#shelves">Shelves</a>
+  <a class="rail__tile rail__link" href="#visit">A visit</a>
+  <a class="rail__tile rail__link" href="#hours">Hours</a>
+  <a class="rail__tile rail__action" href="#counter"><span>Email the shop</span></a>
+</nav>
+<div class="topbar">
+  <a class="topbar__brand" href="#top">Vidhyarthi Book Depot</a>
+  <a class="topbar__action" href="#counter">Email</a>
+  <button class="topbar__menu" type="button" aria-expanded="false" aria-controls="sheet">Menu</button>
+</div>
+<div class="sheet" id="sheet" hidden>
+  <a href="#shelves">Shelves</a>
+  <a href="#visit">A visit</a>
+  <a href="#hours">Hours</a>
+</div>
+
+<main id="top">
+
+<header class="hero" data-hero>
+  <div class="hero__frame" data-e="picture" style="--picture-ground:#4a3b28">
+    <img src="assets/stacked-books.jpg" width="1920" height="1282" alt="Close-up of stacked books showing page edges and covers, no readable spines">
+  </div>
+  <div class="hero__words">
+    <h1 class="hero__title" data-e="headline">Chetak Bridge's<br>exam bookshop.</h1>
+    <p class="hero__lead" data-e="lead">Exam, school and college books, as its listing describes.</p>
+    <div class="hero__actions" data-e="action">
+      <a class="btn" href="mailto:vidyarthibookdepo@gmail.com?subject=A%20book%20I%20am%20looking%20for"><span>Ask about a book</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="hero__textlink" href="#shelves">See the shelves</a>
+    </div>
+  </div>
+  <p class="hero__cap">Illustrative photograph - stacked books, not the shop itself.</p>
+</header>
+<script>
+(() => {
+  if (!document.body || !document.body.dataset.entrance || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  for (const f of document.querySelectorAll('[data-hero] [data-e="picture"]:not([data-e-wait])')) {
+    const m = f.querySelector(':scope > img, :scope > video, :scope > picture > img');
+    if (!m || (m.tagName === 'VIDEO' ? m.readyState >= 2 : m.complete && m.naturalWidth)) continue;
+    f.setAttribute('data-e-wait', '');
+    let done = false;
+    const land = () => {
+      if (done) return; done = true;
+      if (performance.now() < 700 && document.body.dataset.entrance !== 'already-there') f.removeAttribute('data-e-wait');
+      else f.setAttribute('data-e-wait', 'late');
+    };
+    m.addEventListener(m.tagName === 'VIDEO' ? 'loadeddata' : 'load', land, { once: true });
+    m.addEventListener('error', land, { once: true });
+    setTimeout(land, 3000);
+  }
+})();
+</script>
+
+<section class="intro">
+  <p class="intro__lead">Exam, school and college books on Chetak Bridge since 2007 - per its listing.</p>
+  <div class="intro__cols">
+    <p><strong>The shop.</strong> A reliable neighbourhood bookstore, the listing says, since 2007.</p>
+    <p><strong>The shelves.</strong> Exam books, CBSE texts, college books, novels, children's books, stationery.</p>
+    <p><strong>The corner.</strong> Crystal Tower, 76-B, Chetak Bridge Chouraha, Kasturba Nagar, Bhopal 462023.</p>
+    <p><strong>The counter.</strong> vidyarthibookdepo@gmail.com or <span class="nb">+91 99930 68211</span>.</p>
+  </div>
+</section>
+
+<section class="fields" aria-label="What the listing highlights">
+  <div class="field field--ink">
+    <p class="field__note">The staff stay updated with new releases, the listing says, so the shelf edition is current.</p>
+    <h2 class="field__phrase">New editions,<br>watched.</h2>
+  </div>
+  <div class="field field--bg">
+    <p class="field__note">Customers describe new and second-hand books at reasonable prices, in reviews on the listing.</p>
+    <h2 class="field__phrase">New and<br>second-hand.</h2>
+  </div>
+  <div class="field field--surface">
+    <p class="field__note">Stationery and educational accessories share the counter, so the term's kit is one stop.</p>
+    <h2 class="field__phrase">Stationery<br>too.</h2>
+  </div>
+</section>
+
+<section class="shelves" id="shelves">
+  <div class="shelves__sticky">
+    <h2 data-reveal="heading">What the shelves hold</h2>
+    <p>Competitive exam books and stationery, per its listing, plus the categories below.</p>
+    <figure class="shelves__figure">
+      <img src="assets/writing-notes.jpg" width="1313" height="875" alt="A person writing in a ring-bound notebook by a window" loading="lazy" decoding="async">
+      <figcaption>Illustrative photograph - study notes, not the shop.</figcaption>
+    </figure>
+  </div>
+  <ul class="shelves__list">
+    <li><strong>Competitive exam books</strong><span>test prep, per the listing</span></li>
+    <li><strong>Children's books</strong><span>for young readers</span></li>
+    <li><strong>CBSE books</strong><span>school texts and guides</span></li>
+    <li><strong>Language &amp; educational</strong><span>study aids and references</span></li>
+    <li><strong>Mechanical engineering</strong><span>college texts</span></li>
+    <li><strong>Chemical &amp; civil</strong><span>college texts</span></li>
+    <li><strong>Management books</strong><span>college and professional</span></li>
+    <li><strong>Health care books</strong><span>medical studies</span></li>
+    <li><strong>Novels</strong><span>reading for pleasure</span></li>
+    <li><strong>Story &amp; fiction</strong><span>more to browse</span></li>
+    <li><strong>History books</strong><span>across the shelf</span></li>
+    <li><strong>Drawing &amp; CS books</strong><span>across the shelf</span></li>
+  </ul>
+</section>
+
+<section class="tool" aria-label="Find your shelf">
+  <h2 data-reveal="heading">Tell the counter what you need</h2>
+  <div class="tool__needs" role="group" aria-label="What are you looking for?">
+    <button type="button" data-need="exam">A competitive exam</button>
+    <button type="button" data-need="school">School or CBSE</button>
+    <button type="button" data-need="college">College books</button>
+    <button type="button" data-need="read">Something to read</button>
+    <button type="button" data-need="child">For a child</button>
+    <button type="button" data-need="kit">Stationery</button>
+  </div>
+  <p class="tool__result" data-tool-result aria-live="polite">Your match appears here.</p>
+</section>
+
+<section class="visit" id="visit">
+  <h2 data-reveal="heading">A visit, in three moves</h2>
+  <p class="visit__addr">Crystal Tower, 76-B, Chetak Bridge Chouraha, Housing Board Colony, Kasturba Nagar, Bhopal, MP 462023 &middot; <a href="https://www.google.com/maps/search/?api=1&amp;query=Crystal%20Tower%2076-B%20Chetak%20Bridge%20Chouraha%20Kasturba%20Nagar%20Bhopal%20462023" rel="nofollow noopener">Directions</a></p>
+  <div class="visit__cards">
+    <div class="vcard">
+      <h3>Say the exam or the class</h3>
+      <p>The listing says the staff are knowledgeable and ready to help you find it.</p>
+    </div>
+    <div class="vcard">
+      <h3>Take the steer</h3>
+      <p>They stay current with newly released titles, the listing says, so ask what changed.</p>
+    </div>
+    <div class="vcard">
+      <h3>New or second-hand</h3>
+      <p>Customers describe both on the shelves at reasonable prices. Stationery sits at the same counter.</p>
+    </div>
+  </div>
+</section>
+
+<section class="inkfill">
+  <p class="inkfill__line" data-inkfill>Say the exam or the class; the staff know their shelves, the listing says.</p>
+</section>
+
+<section class="counter" id="counter">
+  <div class="counter__text">
+    <h2 data-reveal="heading">What the counter offers</h2>
+    <p>The listing mentions discounts on selected books - ask what this week's are.</p>
+    <a class="btn" href="mailto:vidyarthibookdepo@gmail.com?subject=A%20book%20I%20am%20looking%20for"><span>Ask what is in stock</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  </div>
+  <div class="receipt">
+    <p class="receipt__name">Vidhyarthi Book Depot</p>
+    <div class="receipt__row"><span>Competitive exam books</span><span>per listing</span></div>
+    <div class="receipt__row"><span>CBSE and school texts</span><span>per listing</span></div>
+    <div class="receipt__row"><span>College and professional</span><span>per listing</span></div>
+    <div class="receipt__row"><span>Novels and children's</span><span>per listing</span></div>
+    <div class="receipt__row"><span>Stationery and accessories</span><span>per listing</span></div>
+    <div class="receipt__bar" aria-hidden="true"></div>
+    <div class="receipt__total"><span>Selected-title discounts</span><span>ask at the counter</span></div>
+  </div>
+</section>
+
+<div class="underlay">
+  <figure class="underlay__figure">
+    <img src="assets/study-desk.jpg" width="1313" height="875" alt="An open handwritten notebook with two pens and reading glasses on a wooden desk" loading="lazy" decoding="async">
+    <figcaption class="underlay__label">Illustrative photograph - a study desk, not the shop.</figcaption>
+  </figure>
+</div>
+
+<footer class="foot" id="hours">
+  <h2 class="foot__statement">The right book,<br>for the next <span class="foot__cycle" data-cycle="exam.,term.,class.,story.">exam.</span></h2>
+  <a class="btn" href="mailto:vidyarthibookdepo@gmail.com?subject=A%20book%20I%20am%20looking%20for"><span>Write to the shop</span><span class="btn__arrow" aria-hidden="true">&rarr;</span></a>
+  <p class="foot__mark" aria-hidden="true">VBD</p>
+  <nav class="foot__links" aria-label="Footer">
+    <a href="tel:+919993068211">Call +91 99930 68211</a>
+    <a href="https://www.google.com/maps/search/?api=1&amp;query=Crystal%20Tower%2076-B%20Chetak%20Bridge%20Chouraha%20Kasturba%20Nagar%20Bhopal%20462023" rel="nofollow noopener">Directions</a>
+    <button type="button" data-credits-open>Image credits</button>
+    <a href="#top">Back to top</a>
+  </nav>
+  <p class="foot__hours">Mon-Sat 10am-9:30pm, Sun 12pm-6:30pm &middot; Crystal Tower, 76-B, Chetak Bridge Chouraha, Kasturba Nagar, Bhopal, MP 462023</p>
+  <p class="foot__legal">&copy; Vidhyarthi Book Depot &middot; Concept preview. Enquiries only, not a booking service. Details from the shop's public listing.</p>
+</footer>
+
+</main>
+
+<dialog class="credits" data-credits>
+  <h2>Image credits</h2>
+  <p>All photographs are illustrative, not pictures of the shop.</p>
+  <ul>
+    <li>"Close-up of stacked books" by Nenad Stojkovic, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Close-up_of_stacked_books._(51539890528).jpg" rel="nofollow noopener">Wikimedia Commons</a></li>
+    <li>"Woman writes in a notebook while sitting on a chair" by Shixart1985, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Woman_writes_in_a_notebook_while_sitting_on_a_chair.jpg" rel="nofollow noopener">Wikimedia Commons</a></li>
+    <li>"Desk with notebook, pens and glasses" by Shixart1985, <a href="https://creativecommons.org/licenses/by/2.0/" rel="nofollow noopener">CC BY 2.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Desk_with_notebook_pens_and_glasses.jpg" rel="nofollow noopener">Wikimedia Commons</a></li>
+  </ul>
+  <form method="dialog"><button class="btn btn--small" type="submit"><span>Close</span></button></form>
+</dialog>
+
+<script src="base.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
