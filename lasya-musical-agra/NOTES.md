@@ -67,3 +67,8 @@ RUNS: Guitar: neck,headstock,amp,+neck-crop2. Vocal: crossed,crystal,stand,+scor
 - 20:01: PUSHED 1a1477e to origin/main (80b60da..1a1477e), deploy run started - NOT yet observed/verified. inspect6 (post-btn/phone/gap fixes) = 0 FAIL, same 8 defended WARNs. New inspect shots in /tmp/v68inspect6 (mobile fold + dfs claim spacing NOT yet re-eyeballed - do at 21:40 with the live shots).
 - 20:02: deploy run 42382015368 in_progress for 1a1477e - observe at 21:40 wake.
 - 21:46: V68 COMPLETE through preview_live. Runs 42382015368+42390192669 SUCCESS. Live-verified 21:44 (200/noindex/instinct=0/disclaimer/mailto=6/byte-match). Live screenshots eyeballed (fold, gallery, lcs t58, dfs t85, footer, mobile fold). RUNBOOK §7 committed 57368c0 + pushed. Ledger A1621 = preview_live. Inbox: 0 replies/DSNs across all 20 sends. [Batch] report sent 21:47. NEXT: email only after parent pixel clearance; then normal loop (V69 Trishiv Chinese Ahmedabad is next harvest row but I own the pick).
+
+## Send (Nov 7 21:51)
+- Parent pixel clearance 21:48 after footer + six-class-list views. Parent flagged hours lacked AM/PM -> fixed to listing-verbatim (Mon-Fri 8:30am-1pm, 3:30-9:30pm / Sat 9:30am-1pm, 3:30-9:30pm / Sun 9:30am-9:30pm), commit 922209c, run 42390714838 SUCCESS, live re-verified (200, noindex, instinct=0, hours text present).
+- Send-time gates fresh: Gmail allfolder to/from lasyamusical 0; in:sent lasya 0; suppression 0; ledger/repo dedupe clean.
+- Sent 21:51 IST from katakamakhil0, gmail id 1a1b6d107aa2e1e6, subject "your music school has no website, so i made you one", approved soft template, one link. Ledger A1621 -> emailed.
