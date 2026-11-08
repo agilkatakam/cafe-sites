@@ -1,0 +1,72 @@
+[
+  {
+    "file": "assets/faucets-grand-bazaar-istanbul.jpg",
+    "media": "image",
+    "ref": "openverse:05cd0d26-162c-44a5-9932-12818b5ff1df",
+    "title": "Faucets Grand Bazaar Istanbul",
+    "creator": "Alexey Klyukin",
+    "creatorUrl": null,
+    "date": null,
+    "license": "CC BY-SA 2.0",
+    "licenseCode": "by-sa",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/w/index.php?curid=13251806",
+    "via": "Wikimedia Commons",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Faucets_Grand_Bazaar_Istanbul.jpg/1920px-Faucets_Grand_Bazaar_Istanbul.jpg",
+    "width": 1920,
+    "height": 2884,
+    "bytes": 949561,
+    "credit": "\"Faucets Grand Bazaar Istanbul\" by Alexey Klyukin, CC BY-SA 2.0, via Wikimedia Commons",
+    "notes": [
+      "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+    ],
+    "saved": "2026-11-08T13:48:42.361Z"
+  },
+  {
+    "file": "assets/drop-of-water.jpg",
+    "media": "image",
+    "ref": "openverse:58e71af6-613d-4761-afd3-0ca9358a53da",
+    "title": "Drop of water",
+    "creator": "U+20",
+    "creatorUrl": "https://commons.wikimedia.org/w/index.php?title=User:U%2B20B3&action=edit&redlink=1",
+    "date": null,
+    "license": "CC BY-SA 4.0",
+    "licenseCode": "by-sa",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/w/index.php?curid=50451169",
+    "via": "Wikimedia Commons",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Drop_of_water.jpg/1920px-Drop_of_water.jpg",
+    "width": 1920,
+    "height": 1440,
+    "bytes": 756053,
+    "credit": "\"Drop of water\" by U+20, CC BY-SA 4.0, via Wikimedia Commons",
+    "notes": [
+      "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+    ],
+    "saved": "2026-11-08T13:51:26.071Z"
+  },
+  {
+    "file": "assets/bathroom-sink-tap-with-bokeh-background.jpg",
+    "media": "image",
+    "ref": "openverse:3b32b9ab-142f-4f65-9e9b-68aa17fcb89b",
+    "title": "Bathroom sink tap (with bokeh background)",
+    "creator": "Michael Burridge",
+    "creatorUrl": "https://wordpress.org/photos/author/mburridge/",
+    "date": null,
+    "license": "CC0",
+    "licenseCode": "cc0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "creditRequired": false,
+    "page": "https://wordpress.org/photos/photo/501622a378/",
+    "via": "WordPress Photo Directory",
+    "image": "https://pd.w.org/2022/03/501622a378a187099.75265389-2048x1365.jpg",
+    "width": 2048,
+    "height": 1365,
+    "bytes": 119466,
+    "credit": "\"Bathroom sink tap (with bokeh background)\" by Michael Burridge, CC0, via WordPress Photo Directory",
+    "notes": [],
+    "saved": "2026-11-08T13:51:28.266Z"
+  }
+]
