@@ -33,6 +33,11 @@
 ## State
 - 2026-11-08 15:56: qualified + drawn. Build next. Email held for parent pixel clearance when live.
 
+## Inspect defenses (--allow, Nov 8 19:00)
+- focal-point, edge-text, cut-text, clipped-text: dealt hero is "Lit strip, four corners" - blueprint REQUIRES a strip wider than the viewport with first/last frames cropped by the screen edges, and no display-size headline (16px corner text). Generic rules conflict with the dealt geometry.
+- covered-text, text-over-text: dealt sticky-stack cards - the pattern slides the next card over the stuck previous one; cover/overlap mid-scroll is the pattern itself.
+- dead-scroll, empty-screens: the dealt direction "The dark room" (section 10: richness comes from light against dark and slow pacing) + two dealt scene holds + the dealt underlay small move. Words/pictures per screen stay low by design; every screen still carries its content.
+
 ## Photo sourcing (Nov 8 15:57, Commons rate-limited mid-search - resume)
 - KEEP candidate 1: "Computer repair in progress.jpg" (CC BY-SA 4.0, Vintechcomputerservices) - hands on open motherboard, no face, no brand marks; bright background needs dark treatment; candidate for showcase chapter "On the bench."
 - KEEP candidate 2: "Disassembled laptop.jpg" (CC BY-SA 4.0, Tulumnes) - top-down parts layout, no readable brand logos at use size; satellite.
