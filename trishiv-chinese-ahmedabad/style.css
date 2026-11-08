@@ -218,11 +218,16 @@ footer { padding-top: calc(var(--section-gap) / 4); }
   .intro::after { content: ""; display: block; clear: both; }
   .deck__stage { padding: 72px var(--margin) 100px; }
   .statement { padding-top: 24px; padding-bottom: 260px; }
+  @media (max-width: 480px) {
+    .statement { padding-top: 8px; padding-bottom: 340px; }
+    .gallery__frame--full { aspect-ratio: 1 / 1; }
+    .hero__chip { top: 64px; }
+  }
   .scene.deck.is-live .deck__stack { height: 52svh; }
   .menulist__cols, .visit { grid-template-columns: 1fr; gap: 40px; }
   .gallery { display: block; }
   .gallery__frame { margin-bottom: 64px; }
-  .gallery__frame--a { width: 70%; margin-top: 0; }
+  .gallery__frame--a { width: 70%; margin-top: 0; aspect-ratio: 4 / 3; }
   .gallery__frame--b { width: 84%; margin: 0 0 64px auto; }
   .gallery__frame--full { width: 100%; aspect-ratio: 4 / 5; margin-bottom: 0; }
   .gallery { overflow: clip; }

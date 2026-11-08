@@ -97,12 +97,15 @@ if (window.Stage) {
   if (Stage.ready) Stage.ready();
 }
 
-// --- hide the dock while the footer is on screen ---
+// --- hide the dock while the footer or the statement is on screen ---
 (() => {
   const dock = document.querySelector('.dock');
-  const footer = document.querySelector('footer');
-  if (!dock || !footer || !('IntersectionObserver' in window)) return;
-  new IntersectionObserver((es) => {
-    es.forEach(e => dock.classList.toggle('is-hidden', e.isIntersecting));
-  }, { rootMargin: '0px 0px -40px 0px' }).observe(footer);
+  const zones = [...document.querySelectorAll('footer, .statement')];
+  if (!dock || !zones.length || !('IntersectionObserver' in window)) return;
+  const visible = new Set();
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => e.isIntersecting ? visible.add(e.target) : visible.delete(e.target));
+    dock.classList.toggle('is-hidden', visible.size > 0);
+  }, { rootMargin: '0px 0px -40px 0px' });
+  zones.forEach(z => io.observe(z));
 })();

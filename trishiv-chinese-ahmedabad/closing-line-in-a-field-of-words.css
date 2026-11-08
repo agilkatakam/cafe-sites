@@ -185,3 +185,11 @@ html.js .scene.is-live[data-scene="closing-line-in-a-field-of-words"] .clf-last 
 @media (prefers-reduced-motion: reduce) {
   html.js .scene.is-live[data-scene="closing-line-in-a-field-of-words"] .clf-last { opacity: 1; }
 }
+
+@media (max-width: 480px) {
+  .scene[data-scene="closing-line-in-a-field-of-words"] .clf-close {
+    grid-template-columns: 1fr;
+    grid-template-areas: "last" "action" "line";
+    row-gap: 18px;
+  }
+}

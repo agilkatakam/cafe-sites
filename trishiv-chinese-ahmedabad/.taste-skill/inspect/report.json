@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-08T07:30:47.717Z",
+ "at": "2026-11-08T07:36:38.609Z",
  "allow": [],
  "viewports": [
   {
@@ -8,7 +8,7 @@
    "height": 1024,
    "load": "load",
    "screens": 12,
-   "pageScreens": 11.4,
+   "pageScreens": 11.2,
    "stride": 1,
    "extra": {
     "imageInHeadline": [],
@@ -46,15 +46,15 @@
      },
      {
       "text": "Illustrative photograph, not t",
-      "y": 6949
+      "y": 6777
      },
      {
       "text": "Illustrative photograph, not t",
-      "y": 7585
+      "y": 7299
      },
      {
       "text": "Illustrative photographs, not ",
-      "y": 7852
+      "y": 7567
      }
     ],
     "walls": [],
@@ -116,8 +116,8 @@
    },
    "reached": [
     true,
-    true,
-    true,
+    false,
+    false,
     false,
     false,
     true,
@@ -125,8 +125,8 @@
     true,
     false,
     false,
-    true,
-    true
+    false,
+    false
    ],
    "upReach": true,
    "unread": [],
@@ -134,31 +134,31 @@
    "frameErrors": [],
    "filled": [
     0.97,
-    0.56,
-    0.59,
+    0.5,
+    0.53,
     0.54,
     0.54,
     0.16,
-    0.52,
-    0.79,
-    0.13,
-    0.21,
     0.41,
+    0.71,
+    0.12,
+    0.16,
+    0.63,
     0.77
    ],
    "content": [
     1,
-    0.52,
-    0.11,
+    0.5,
+    0.09,
     0.08,
     0.1,
     0.12,
-    0.58,
-    0.82,
-    0.13,
+    0.43,
+    0.68,
+    0.11,
+    0.15,
     0.21,
-    0.21,
-    0.13
+    0.11
    ],
    "filmContent": [],
    "motion": {
@@ -175,8 +175,8 @@
      "h": 1024
     },
     "page": {
-     "height": 11720,
-     "screens": 11.4,
+     "height": 11435,
+     "screens": 11.2,
      "words": 301,
      "img": 6,
      "video": 0,
@@ -248,17 +248,17 @@
      {
       "text": "Hungry?",
       "size": 76.8,
-      "top": 8878
+      "top": 8592
      },
      {
       "text": "Find the corner",
       "size": 30.2,
-      "top": 10479
+      "top": 10193
      },
      {
       "text": "Book or ask",
       "size": 30.2,
-      "top": 10674
+      "top": 10389
      }
     ],
     "reach": {
@@ -497,7 +497,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.17,
-      "top": 8617,
+      "top": 8331,
       "tag": "li",
       "kind": "statement"
      },
@@ -518,7 +518,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.33,
-      "top": 8772,
+      "top": 8487,
       "tag": "li",
       "kind": "statement"
      },
@@ -539,7 +539,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.18,
-      "top": 8878,
+      "top": 8592,
       "tag": "h2",
       "kind": "heading"
      },
@@ -560,7 +560,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.6,
-      "top": 9179,
+      "top": 8894,
       "tag": "p",
       "kind": "statement"
      },
@@ -581,7 +581,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 10479,
+      "top": 10193,
       "tag": "h2",
       "kind": "heading"
      },
@@ -602,7 +602,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 10674,
+      "top": 10389,
       "tag": "h2",
       "kind": "heading"
      },
@@ -623,7 +623,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.34,
-      "top": 11082,
+      "top": 10797,
       "tag": "a",
       "kind": "heading"
      },
@@ -644,7 +644,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 11120,
+      "top": 10835,
       "tag": "a",
       "kind": "heading"
      },
@@ -665,7 +665,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.19,
-      "top": 11158,
+      "top": 10873,
       "tag": "a",
       "kind": "heading"
      },
@@ -686,7 +686,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.13,
-      "top": 11196,
+      "top": 10910,
       "tag": "a",
       "kind": "heading"
      },
@@ -707,7 +707,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.24,
-      "top": 11233,
+      "top": 10948,
       "tag": "a",
       "kind": "heading"
      }
@@ -858,7 +858,7 @@
         "s": 0.45,
         "l": 0.26
        },
-       "top": 956
+       "top": 957
       },
       {
        "color": "#2b1a0c",
@@ -957,7 +957,7 @@
      "w": 768,
      "h": 1024
     },
-    "pageH": 11720,
+    "pageH": 11435,
     "margins": {
      "left": 35,
      "right": 35
@@ -1070,7 +1070,7 @@
       "sel": "section#gallery.gallery",
       "tag": "section",
       "top": 6543,
-      "height": 1816,
+      "height": 1531,
       "words": 15,
       "media": 1,
       "middle": 0,
@@ -1088,7 +1088,7 @@
      {
       "sel": "section#contact.scene.close",
       "tag": "section",
-      "top": 8360,
+      "top": 8074,
       "height": 2048,
       "words": 11,
       "media": 0,
@@ -1111,7 +1111,7 @@
      {
       "sel": "section#visit.visit",
       "tag": "section",
-      "top": 10408,
+      "top": 10122,
       "height": 498,
       "words": 37,
       "media": 0,
@@ -1134,7 +1134,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 10994,
+      "top": 10709,
       "height": 726,
       "words": 28,
       "media": 0,
@@ -1157,12 +1157,8 @@
     ],
     "gaps": [
      {
-      "top": 6472,
-      "height": 340
-     },
-     {
-      "top": 6960,
-      "height": 524
+      "top": 6784,
+      "height": 416
      }
     ],
     "h1s": [
@@ -1292,17 +1288,7 @@
      "sentences": [],
      "above": []
     },
-    "crops": [
-     {
-      "file": "cappuccino-with-leaf-art-in-a-red.jpg",
-      "cut": 0.5,
-      "axis": "width",
-      "from": null,
-      "lettering": false,
-      "work": true,
-      "alt": "A red cup with leaf-patterned foam beside a steel cocoa shaker on a black counte"
-     }
-    ]
+    "crops": []
    },
    "dead": null,
    "rest": [
@@ -1411,7 +1397,9 @@
      "dy": 31,
      "end": null,
      "clipped": [],
-     "pics": [],
+     "pics": [
+      "cappuccino-with-leaf-art-in-a-red 0.249 @399"
+     ],
      "heads": [],
      "veils": [],
      "cutHeads": [],
@@ -1424,7 +1412,8 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "cappuccinos-with-latte-art-water-glasses-and 0.416 @79"
+      "cappuccinos-with-latte-art-water-glasses-and 0.253 @-206",
+      "a-top-down-view-of-a-cup 0.388 @399"
      ],
      "heads": [],
      "veils": [],
@@ -1437,22 +1426,6 @@
      "dy": 31,
      "end": null,
      "clipped": [],
-     "pics": [
-      "a-top-down-view-of-a-cup 0.086 @-340"
-     ],
-     "heads": [
-      "d The table is set, @890"
-     ],
-     "veils": [],
-     "cutHeads": [],
-     "edges": [],
-     "strands": []
-    },
-    {
-     "y": 9216,
-     "dy": 31,
-     "end": null,
-     "clipped": [],
      "pics": [],
      "heads": [],
      "veils": [],
@@ -1461,7 +1434,7 @@
      "strands": []
     },
     {
-     "y": 9384,
+     "y": 9098,
      "dy": 31,
      "end": "closing-line-in-a-field-of-words",
      "clipped": [],
@@ -1481,9 +1454,7 @@
      "clipped": [],
      "pics": [],
      "heads": [
-      "d come hungry. Reserve a table @-134",
-      "h Find the corner @239",
-      "h Book or ask @434"
+      "h Book or ask @149"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1491,7 +1462,7 @@
      "strands": []
     },
     {
-     "y": 10696,
+     "y": 10411,
      "dy": -31,
      "end": null,
      "clipped": [],
@@ -1515,31 +1486,10 @@
   },
   {
    "level": "WARN",
-   "id": "blank-gap",
-   "width": 768,
-   "message": "A 524px stretch at 6960px holds nothing.",
-   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
-  },
-  {
-   "level": "WARN",
    "id": "name-only-title",
    "width": 768,
    "message": "The h1 is a bare name (\"Trishiv Chinese\") and nothing else on the first screen says what this is.",
    "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
-  },
-  {
-   "level": "WARN",
-   "id": "cropped-lettering",
-   "width": 768,
-   "message": "1 picture(s) of the work are cut hard by their crop: cappuccino-with-leaf-art-in-a-red.jpg loses 50% of its width.",
-   "fix": "Look at each of these crops: a name, a word or a title in a picture stays whole or leaves the frame on purpose, never cut to \"Pelik\". Give the frame the picture's own proportions, move the crop (object-position) so the lettering stays inside, or cut a version of the picture for that frame. A piece of work is shown whole, or in a crop that shows a detail on purpose."
-  },
-  {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 768,
-   "message": "Large text lies under another element at some scroll position: \"Visit\" (screen 11, 100% hidden); \"Contact\" (screen 11, 50% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
   },
   {
    "level": "WARN",
@@ -1562,7 +1512,7 @@
    "replay": [],
    "walked": 12,
    "stride": 1,
-   "pageScreens": 11.4,
+   "pageScreens": 11.2,
    "atFoot": true
   }
  ]
