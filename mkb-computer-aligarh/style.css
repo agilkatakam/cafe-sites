@@ -198,8 +198,10 @@ img { background: #150d13; }
   .card, .card:nth-child(2), .card:nth-child(3) { position: static; min-height: 0; }
 }
 @media (max-width: 767px) {
-  .corners__mark { margin: 16px 0 0 16px; }
-  .corners__right { margin: 16px 16px 0 0; }
+  .corners__mark { margin: 16px 0 0 12px; padding: 0 12px; white-space: nowrap; }
+  .corners__right { margin: 16px 12px 0 0; gap: 2px; padding-left: 4px; }
+  .corners__right .btn--small { padding: 0 12px; }
+  .corners__menu { padding: 0 10px; }
   .hero__strip { height: 46vh; padding-inline: 50vw; }
   .hero__caption { bottom: auto; top: calc(50% + 23vh + 14px); font-size: 0.9375rem; }
   .hero__corners { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; padding: 0 20px 24px; gap: 16px; }
