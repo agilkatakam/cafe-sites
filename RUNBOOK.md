@@ -172,3 +172,11 @@ Ready leads live in `nowebsite_ready`.
 
 ## Evidence correction Nov 4 2026 (live URL checks)
 Never derive or guess preview slugs. Check only actual deployed folder names (ls -d */ in the repo) or exact previously-delivered URLs. On Nov 4 ~22:00 IST I curled guessed slugs (klayz-design-dehradun, mama-electrical-jaipur etc.), got 404, and wrongly reported a Pages-wide outage; real folders (klayz-studio-chennai, mama-electrical-ghaziabad ...) returned 200. V61 live-verified 200 at 23:21 IST with live CDP screenshots. V61 EMAILED Nov 6 14:44 (batch 2 send 6/7).
+
+### V71 - Jaiswal Hardware & Plumbing, Allahabad (the-product-performs) - Nov 8 2026
+- Qualified Nov 8 19:16: TBR Allahabad block live (4.7; NH 96 Rasulabad Teliarganj Allahabad 211002; srijanjaiswal786@gmail.com; 93051 24402; Mon-Sun 9am-8pm single source; 6 specialities); no website link in Contact block; independent web_search = directories only; dedupe clean; confidence MEDIUM-LOW (single editorial source, RCPT 250 screened).
+- Direction drawn once (seed 1855382097): Author sans (fontshare), cool grey #eef0f3 + cobalt #1f2de6, big-links nav, newsletter-card footer, tall-text cards, pill buttons, marquee, line-blocks entrance; scenes line-carries-colour-swap (into intro, to-paper) + page-lifts-off-closing-picture (cta, mode ui).
+- Photos (declared substitution - dealt Animals set wrong subject): Istanbul brass taps CC BY-SA 2.0 (hero); Drop of water CC BY-SA 4.0 (opening wide+tall from full-res); bathroom tap CC0 (closing). All re-viewed: no people, brands or maker marks. credits.json behind one Image credits dialog.
+- Build: lint 0 FAIL 0 WARN; inspect 0 FAIL 4 WARN (3 documented --allow defenses + 4 WARN defenses in NOTES.md). Inspector screenshots eyeballed at 1440/768/390.
+- Deploy: commit 39d8db9, pushed 22:07 via vault deploy key; live https://agilkatakam.github.io/cafe-sites/jaiswal-hardware-plumbing-allahabad/ verified 22:08 (200, instinct=0, noindex=1, disclaimer=1, mailto=6, byte-match, 4/4 assets 200). Ledger A1624 = preview_live.
+- Status: NOT emailed - awaiting parent pixel clearance on the review packet; send only after fresh authority/recipient/dedupe/suppression/commercial-mail checks.
