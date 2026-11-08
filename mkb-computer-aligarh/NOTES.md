@@ -32,3 +32,11 @@
 
 ## State
 - 2026-11-08 15:56: qualified + drawn. Build next. Email held for parent pixel clearance when live.
+
+## Photo sourcing (Nov 8 15:57, Commons rate-limited mid-search - resume)
+- KEEP candidate 1: "Computer repair in progress.jpg" (CC BY-SA 4.0, Vintechcomputerservices) - hands on open motherboard, no face, no brand marks; bright background needs dark treatment; candidate for showcase chapter "On the bench."
+- KEEP candidate 2: "Disassembled laptop.jpg" (CC BY-SA 4.0, Tulumnes) - top-down parts layout, no readable brand logos at use size; satellite.
+- REJECTED: "Laptop Repair.jpg" (Augustin Wafflart) - visible HP logos on battery + fan (brand marks).
+- Still to fetch (Commons 429, retry): "Circuit Board (260854457).jpeg" (CC BY-SA 3.0, Tobias Hanf - dark macro, hero candidate), "Electronics workbench.jpg" (CC BY-SA 2.0, James Bastow), "Laptop open servicing.jpg" (CC BY-SA 4.0, Solutionservice21), "Laptop hardware.jpg" (CC BY 3.0, Rider Adil).
+- Need: 1 hero (dark, low-key) + 1 more satellite. Max 4 photos total. All get illustrative chips + credits dialog entries. Final crops re-viewed for marks/people.
+- Local copies in workspace /tmp/v70-photos/ (NOT in repo yet).
