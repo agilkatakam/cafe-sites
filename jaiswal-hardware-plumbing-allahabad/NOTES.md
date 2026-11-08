@@ -52,3 +52,15 @@ index.html, style.css, app.js, base.css, base.js, stage.css, stage.js, line-carr
 - [ ] eyeball real screenshots 1440/768/390 incl hero/nav/menu/contact/footer + scene rest frames
 - [ ] live-verify after deploy: 200, instinct=0, noindex, disclaimer, mailto, byte-match, assets 200
 - [ ] parent pixel clearance BEFORE any email; send gates fresh at send time (allfolder+sent+suppression+ledger/repo)
+
+## V71 inspect closeout (run 5, /tmp/v71-i5)
+RESULT: 0 FAIL, 4 WARN. Lint 0 FAIL 0 WARN.
+Documented --allow defenses:
+- headline-lines: "One shop, for water." measures exactly 2 lines at rest (verified by direct DOM measurement at 1440/768/390). The third line exists only at the dealt rise's pre-scroll start state (gsap scrub progress 0, word four +120px, blueprint beat "word four rises into place"). Settles by 'top 75%'.
+- reduced-hidden: nav-fixed ("Jaiswal/Menu/Call") is scroll-state chrome, revealed by IntersectionObserver when the hero's own bar scrolls away - not a motion-gated entrance. Reduced-motion users get the same behavior.
+- surface-count: the four grounds are exactly the drawn palette: #eef0f3 ground, #d8dbe0 surface, #0b0c0e ink (hero + footer only), #1f2de6 cobalt dealt field (LCS world A + Businesses panel). No tints between; scene bands take the surface, not a photo sample (band: token).
+WARN defenses:
+- size-count: type scale steps plus scene-fit lines (the LCS line and bracket line are fit to width by their scenes).
+- off-centre @1440: hero picture intentionally ends at the page margin (blueprint: picture bleeds top/bottom but ends at the right margin).
+- hollow-box: showcase panels carry one big dealt word mid-panel plus a bottom fact/action row; the empty upper field is the dealt two-fields design.
+- small-body @1440/768: 14px texts are the enquiry caveats (captions beside actions) and the footer's legal lines - the two classes the rule itself exempts; phones get 15px.
