@@ -1,6 +1,6 @@
 {
  "url": "index.html",
- "at": "2026-11-08T04:39:05.946Z",
+ "at": "2026-11-08T07:24:52.089Z",
  "allow": [],
  "viewports": [
   {
@@ -8,7 +8,7 @@
    "height": 900,
    "load": "load",
    "screens": 12,
-   "pageScreens": 11.7,
+   "pageScreens": 11.5,
    "stride": 1,
    "extra": {
     "imageInHeadline": [],
@@ -33,31 +33,35 @@
     "ranges": [],
     "boxed": {
      "share": 0,
-     "words": 224
+     "words": 194
     },
     "labels": [
+     {
+      "text": "Illustrative photograph, not t",
+      "y": 24
+     },
      {
       "text": "Illustrative photograph, not t",
       "y": 1631
      },
      {
       "text": "Illustrative photograph, not t",
-      "y": 6319
+      "y": 6215
      },
      {
       "text": "Illustrative photograph, not t",
-      "y": 6417
+      "y": 6313
      },
      {
       "text": "Illustrative photographs, not ",
-      "y": 6757
+      "y": 6653
      }
     ],
     "walls": [],
     "rightHuddled": [],
     "longTitles": [],
     "uiWords": [],
-    "sentences": 7,
+    "sentences": 6,
     "tinyUi": 0,
     "placeholders": [],
     "builderNotes": [],
@@ -69,9 +73,9 @@
     "switchList": 0,
     "drawings": [],
     "sceneDrawings": [],
-    "firstScreenWords": 15,
+    "firstScreenWords": 14,
     "pageWords": {
-     "all": 306,
+     "all": 264,
      "footer": 20
     },
     "wordySections": [],
@@ -124,91 +128,48 @@
     true,
     true,
     false,
-    true,
+    false,
     true,
     true
    ],
    "upReach": true,
    "unread": [],
-   "overText": [
-    {
-     "a": "Fried, schezwan, hunan, Singapore and mo",
-     "b": "Noodles",
-     "size": 101,
-     "y": 2702
-    },
-    {
-     "a": "Noodles",
-     "b": "Paneer",
-     "size": 101,
-     "y": 2702
-    },
-    {
-     "a": "Eight kinds.",
-     "b": "₹280 to ₹290.",
-     "size": 17,
-     "y": 2702
-    },
-    {
-     "a": "Paneer",
-     "b": "Mocktails",
-     "size": 101,
-     "y": 2702
-    },
-    {
-     "a": "₹280 to ₹290.",
-     "b": "Served in jars.",
-     "size": 17,
-     "y": 2702
-    },
-    {
-     "a": "Mocktails",
-     "b": "And more",
-     "size": 101,
-     "y": 2702
-    },
-    {
-     "a": "The listing counts them in the 250.",
-     "b": "And more",
-     "size": 101,
-     "y": 3602
-    }
-   ],
+   "overText": [],
    "frameErrors": [],
    "filled": [
-    0.85,
-    0.21,
-    0.39,
-    0.77,
-    0.82,
-    0.34,
-    0.15,
-    0.76,
-    0.34,
+    0.89,
     0.22,
-    0.29,
-    0.76
+    0.39,
+    0.6,
+    0.6,
+    0.34,
+    0.33,
+    0.74,
+    0.26,
+    0.19,
+    0.48,
+    0.78
    ],
    "content": [
     1,
-    0.19,
-    0.13,
-    0.16,
-    0.23,
-    0.1,
+    0.2,
     0.12,
-    0.76,
-    0.34,
-    0.22,
+    0.04,
+    0.06,
+    0.09,
     0.29,
-    0.08
+    0.74,
+    0.26,
+    0.19,
+    0.28,
+    0.1
    ],
    "filmContent": [],
    "motion": {
-    "elements": 52,
-    "css": 5,
+    "elements": 63,
+    "css": 4,
     "transitions": 24,
-    "scripted": 23,
+    "scripted": 35,
     "videos": 0,
     "playingVideos": 0
    },
@@ -218,9 +179,9 @@
      "h": 900
     },
     "page": {
-     "height": 10544,
-     "screens": 11.7,
-     "words": 344,
+     "height": 10387,
+     "screens": 11.5,
+     "words": 302,
      "img": 6,
      "video": 0,
      "canvas": 0,
@@ -264,7 +225,7 @@
      "align": "left",
      "position": "center",
      "widthRatio": 0.91,
-     "top": 173,
+     "top": 261,
      "tag": "h1",
      "kind": "heading"
     },
@@ -291,17 +252,17 @@
      {
       "text": "Hungry?",
       "size": 144,
-      "top": 8097
+      "top": 7993
      },
      {
       "text": "Find the corner",
       "size": 38.3,
-      "top": 9493
+      "top": 9388
      },
      {
       "text": "Book or ask",
       "size": 38.3,
-      "top": 9493
+      "top": 9388
      }
     ],
     "reach": {
@@ -330,14 +291,14 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.91,
-      "top": 173,
+      "top": 261,
       "tag": "h1",
       "kind": "heading"
      },
      {
-      "text": "Opposite Yanki Sizzler in the University Area, a new Chinese corner keeps its tables set into the evening. The listing counts more than two hundred and fifty dishes and mocktails, sixteen soups alone,",
-      "words": 39,
-      "chars": 237,
+      "text": "A Chinese kitchen and cafe opposite Yanki Sizzler, in the University Area, keeps its tables set into the evening. The listing counts more than two hundred and fifty dishes and mocktails, sixteen soups",
+      "words": 40,
+      "chars": 244,
       "lines": 6,
       "size": 31.7,
       "vw": 2.2,
@@ -381,12 +342,12 @@
       "words": 1,
       "chars": 5,
       "lines": 1,
-      "size": 100.8,
-      "vw": 7,
+      "size": 64.8,
+      "vw": 4.5,
       "font": "Panchang",
       "weight": 700,
       "tracking": -0.015,
-      "leading": 0.95,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
@@ -398,23 +359,44 @@
       "kind": "heading"
      },
      {
-      "text": "Rice",
-      "words": 1,
-      "chars": 4,
+      "text": "₹130 to ₹180.",
+      "words": 3,
+      "chars": 13,
       "lines": 1,
-      "size": 100.8,
-      "vw": 7,
+      "size": 48,
+      "vw": 3.3,
       "font": "Panchang",
-      "weight": 700,
-      "tracking": -0.015,
-      "leading": 0.95,
+      "weight": 600,
+      "tracking": 0,
+      "leading": 1.1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 3027,
+      "top": 2517,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Rice",
+      "words": 1,
+      "chars": 4,
+      "lines": 1,
+      "size": 64.8,
+      "vw": 4.5,
+      "font": "Panchang",
+      "weight": 700,
+      "tracking": -0.015,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.85,
+      "top": 3340,
       "tag": "h3",
       "kind": "heading"
      },
@@ -423,19 +405,19 @@
       "words": 1,
       "chars": 7,
       "lines": 1,
-      "size": 100.8,
-      "vw": 7,
+      "size": 64.8,
+      "vw": 4.5,
       "font": "Panchang",
       "weight": 700,
       "tracking": -0.015,
-      "leading": 0.95,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 3027,
+      "top": 3340,
       "tag": "h3",
       "kind": "heading"
      },
@@ -444,19 +426,19 @@
       "words": 1,
       "chars": 6,
       "lines": 1,
-      "size": 100.8,
-      "vw": 7,
+      "size": 64.8,
+      "vw": 4.5,
       "font": "Panchang",
       "weight": 700,
       "tracking": -0.015,
-      "leading": 0.95,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 3027,
+      "top": 3340,
       "tag": "h3",
       "kind": "heading"
      },
@@ -465,19 +447,19 @@
       "words": 1,
       "chars": 9,
       "lines": 1,
-      "size": 100.8,
-      "vw": 7,
+      "size": 64.8,
+      "vw": 4.5,
       "font": "Panchang",
       "weight": 700,
       "tracking": -0.015,
-      "leading": 0.95,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 3027,
+      "top": 3340,
       "tag": "h3",
       "kind": "heading"
      },
@@ -486,19 +468,19 @@
       "words": 2,
       "chars": 8,
       "lines": 1,
-      "size": 100.8,
-      "vw": 7,
+      "size": 64.8,
+      "vw": 4.5,
       "font": "Panchang",
       "weight": 700,
       "tracking": -0.015,
-      "leading": 0.95,
+      "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
       "position": "center",
       "widthRatio": 0.85,
-      "top": 3027,
+      "top": 3340,
       "tag": "h3",
       "kind": "heading"
      },
@@ -561,7 +543,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.1,
-      "top": 7812,
+      "top": 7708,
       "tag": "li",
       "kind": "statement"
      },
@@ -582,7 +564,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.23,
-      "top": 7922,
+      "top": 7817,
       "tag": "li",
       "kind": "statement"
      },
@@ -603,7 +585,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.35,
-      "top": 7925,
+      "top": 7821,
       "tag": "li",
       "kind": "statement"
      },
@@ -624,7 +606,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.51,
-      "top": 8097,
+      "top": 7993,
       "tag": "h2",
       "kind": "heading"
      },
@@ -645,7 +627,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.6,
-      "top": 8244,
+      "top": 8139,
       "tag": "p",
       "kind": "statement"
      },
@@ -666,7 +648,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.43,
-      "top": 9493,
+      "top": 9388,
       "tag": "h2",
       "kind": "heading"
      },
@@ -687,7 +669,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.43,
-      "top": 9493,
+      "top": 9388,
       "tag": "h2",
       "kind": "heading"
      },
@@ -708,7 +690,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.23,
-      "top": 10001,
+      "top": 9845,
       "tag": "a",
       "kind": "heading"
      },
@@ -729,7 +711,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.11,
-      "top": 10049,
+      "top": 9893,
       "tag": "a",
       "kind": "heading"
      },
@@ -750,7 +732,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.13,
-      "top": 10097,
+      "top": 9941,
       "tag": "a",
       "kind": "heading"
      },
@@ -771,7 +753,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.09,
-      "top": 10145,
+      "top": 9988,
       "tag": "a",
       "kind": "heading"
      },
@@ -792,16 +774,16 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.16,
-      "top": 10193,
+      "top": 10036,
       "tag": "a",
       "kind": "heading"
      }
     ],
     "headingSummary": {
-     "count": 23,
+     "count": 24,
      "maxLines": 6,
      "over2Lines": 0,
-     "statements": 6,
+     "statements": 7,
      "centered": 0,
      "medianWords": 1,
      "mixedFontHeadings": 0
@@ -810,12 +792,12 @@
      "families": [
       {
        "family": "Funnel Sans",
-       "share": 0.9,
+       "share": 0.88,
        "mono": false
       },
       {
        "family": "Panchang",
-       "share": 0.1,
+       "share": 0.12,
        "mono": false
       }
      ],
@@ -830,13 +812,14 @@
       32,
       36,
       38,
+      48,
+      65,
       79,
-      101,
       115,
       144,
       219
      ],
-     "sizeCount": 14,
+     "sizeCount": 15,
      "notLoaded": [],
      "synthetic": [],
      "body": {
@@ -905,7 +888,7 @@
       },
       {
        "color": "#603c24",
-       "top": 3001,
+       "top": 3314,
        "hsl": {
         "h": 24,
         "s": 0.45,
@@ -916,19 +899,23 @@
      "textColors": [
       {
        "color": "#e4e0cf",
-       "share": 0.63
+       "share": 0.62
       },
       {
        "color": "#c3af93",
-       "share": 0.19
+       "share": 0.22
       },
       {
        "color": "#472913",
-       "share": 0.12
+       "share": 0.09
       },
       {
        "color": "#4a3a26",
-       "share": 0.05
+       "share": 0.06
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.02
       }
      ],
      "fills": [
@@ -1023,7 +1010,7 @@
     "nav": {
      "links": 0,
      "fixed": false,
-     "height": 32,
+     "height": 48,
      "floatingPill": false,
      "blur": false,
      "opaque": false
@@ -1038,7 +1025,7 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 10544,
+    "pageH": 10387,
     "margins": {
      "left": 65,
      "right": 65
@@ -1049,7 +1036,7 @@
       "tag": "section",
       "top": 0,
       "height": 900,
-      "words": 17,
+      "words": 15,
       "media": 1,
       "middle": 0,
       "heading": {
@@ -1058,9 +1045,9 @@
        "tag": "h1"
       },
       "left": 65,
-      "right": 143,
+      "right": 75,
       "textLeft": 65,
-      "textRight": 143,
+      "textRight": 75,
       "fullBleed": true,
       "footer": false,
       "hero": true,
@@ -1077,9 +1064,9 @@
       "middle": 357,
       "heading": null,
       "left": 65,
-      "right": 79,
+      "right": 68,
       "textLeft": 65,
-      "textRight": 79,
+      "textRight": 68,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1110,18 +1097,18 @@
       "tag": "section",
       "top": 2286,
       "height": 2700,
-      "words": 38,
+      "words": 20,
       "media": 0,
       "middle": 0,
       "heading": {
        "text": "Soups",
-       "size": 101,
+       "size": 65,
        "tag": "h3"
       },
       "left": 65,
-      "right": 624,
+      "right": 856,
       "textLeft": 65,
-      "textRight": 624,
+      "textRight": 856,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1155,9 +1142,9 @@
       "sel": "section#gallery.gallery",
       "tag": "section",
       "top": 5864,
-      "height": 1724,
+      "height": 1620,
       "words": 15,
-      "media": 2,
+      "media": 1,
       "middle": 0,
       "heading": null,
       "left": 65,
@@ -1173,9 +1160,9 @@
      {
       "sel": "section#contact.scene.close",
       "tag": "section",
-      "top": 7588,
+      "top": 7484,
       "height": 1800,
-      "words": 11,
+      "words": 12,
       "media": 0,
       "middle": 0,
       "heading": {
@@ -1183,10 +1170,10 @@
        "size": 115,
        "tag": "li"
       },
-      "left": 49,
-      "right": 163,
-      "textLeft": 49,
-      "textRight": 163,
+      "left": 48,
+      "right": 161,
+      "textLeft": 48,
+      "textRight": 161,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -1196,8 +1183,8 @@
      {
       "sel": "section#visit.visit",
       "tag": "section",
-      "top": 9388,
-      "height": 404,
+      "top": 9284,
+      "height": 352,
       "words": 37,
       "media": 0,
       "middle": 274,
@@ -1219,7 +1206,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 9897,
+      "top": 9740,
       "height": 647,
       "words": 28,
       "media": 0,
@@ -1239,22 +1226,18 @@
     "gaps": [
      {
       "top": 5760,
-      "height": 440
+      "height": 336
      },
      {
-      "top": 6428,
+      "top": 6324,
       "height": 316
-     },
-     {
-      "top": 9688,
-      "height": 312
      }
     ],
     "h1s": [
      {
       "text": "Trishiv Chinese",
       "size": 219,
-      "top": 173,
+      "top": 261,
       "firstScreen": true
      }
     ],
@@ -1262,10 +1245,6 @@
     "edges": [
      {
       "x": 65,
-      "n": 7
-     },
-     {
-      "x": 108,
       "n": 6
      },
      {
@@ -1273,14 +1252,18 @@
       "n": 3
      },
      {
+      "x": 108,
+      "n": 1
+     },
+     {
       "x": 733,
       "n": 1
      }
     ],
-    "leftBlocks": 17,
+    "leftBlocks": 11,
     "bodySize": 32,
     "stage": false,
-    "explains": true,
+    "explains": false,
     "slivers": [],
     "voidShare": 0,
     "voidBox": null,
@@ -1307,30 +1290,44 @@
    "photoText": [
     {
      "text": "Trishiv Chinese",
-     "size": 21.3,
+     "size": 218.9,
      "need": 3,
      "media": "hero-table.jpg",
-     "p10": 1.21,
-     "p25": 2.85,
-     "p50": 6.82,
-     "under": 0.28,
+     "p10": 1.94,
+     "p25": 5.1,
+     "p50": 9.92,
+     "under": 0.17,
      "segs": 4,
-     "segLow": 1,
-     "segWorst": 2.86,
+     "segLow": 0,
+     "segWorst": 3.14,
      "y": 0
     },
     {
-     "text": "Chinese kitchen and cafe, University Area, Ahmedabad. Photo ",
-     "size": 21.3,
+     "text": "Illustrative photograph, not the restaurant.",
+     "size": 15,
      "need": 4.5,
      "media": "hero-table.jpg",
-     "p10": 7.85,
-     "p25": 10.61,
-     "p50": 12.97,
+     "p10": 6.3,
+     "p25": 15.46,
+     "p50": 17.74,
      "under": 0,
-     "segs": 17,
+     "segs": 7,
      "segLow": 0,
-     "segWorst": 7.56,
+     "segWorst": 6.09,
+     "y": 0
+    },
+    {
+     "text": "Chinese kitchen and cafe, University Area, Ahmedabad.",
+     "size": 17,
+     "need": 4.5,
+     "media": "hero-table.jpg",
+     "p10": 8.79,
+     "p25": 10.83,
+     "p50": 12.98,
+     "under": 0,
+     "segs": 10,
+     "segLow": 0,
+     "segWorst": 9.57,
      "y": 0
     }
    ],
@@ -1353,7 +1350,7 @@
       "kind": "other"
      },
      {
-      "head": "Opposite Yanki Sizzler in the University Area, a n",
+      "head": "A Chinese kitchen and cafe opposite Yanki Sizzler,",
       "kind": "other"
      },
      {
@@ -1406,7 +1403,7 @@
       "fold": 900,
       "next": {
        "sel": "section#intro.intro",
-       "head": "Opposite Yanki Sizzler in the University Area, a",
+       "head": "A Chinese kitchen and cafe opposite Yanki Sizzle",
        "top": 900,
        "seen": null
       },
@@ -1429,13 +1426,13 @@
       "hex": "#472913",
       "where": "page",
       "n": 1,
-      "screens": 6.59,
+      "screens": 6.66,
       "role": "page",
       "sections": 7,
       "tones": [
        [
         "#472913",
-        6.59
+        6.66
        ]
       ],
       "scene": true,
@@ -1446,13 +1443,13 @@
       "hex": "#e4e0cf",
       "where": "article.deck__card",
       "n": 1,
-      "screens": 1.45,
+      "screens": 1.51,
       "role": "ink",
       "sections": 1,
       "tones": [
        [
         "#e4e0cf",
-        1.45
+        1.51
        ]
       ],
       "scene": true,
@@ -1462,13 +1459,13 @@
       "hex": "#603c24",
       "where": "article.deck__card",
       "n": 1,
-      "screens": 1.31,
+      "screens": 0.98,
       "role": null,
       "sections": 0,
       "tones": [
        [
         "#603c24",
-        1.31
+        0.98
        ]
       ],
       "scene": true,
@@ -1595,16 +1592,6 @@
       "boxed": false
      },
      {
-      "head": "Soups",
-      "y": 2286,
-      "hero": false,
-      "pos": "over",
-      "cols": 1,
-      "lead": "text",
-      "word": "statement",
-      "boxed": false
-     },
-     {
       "head": "Sixteen soups",
       "y": 4986,
       "hero": false,
@@ -1626,7 +1613,7 @@
      },
      {
       "head": "contact",
-      "y": 7588,
+      "y": 7484,
       "hero": false,
       "pos": "none",
       "cols": 2,
@@ -1636,7 +1623,7 @@
      },
      {
       "head": "Find the corner",
-      "y": 9388,
+      "y": 9284,
       "hero": false,
       "pos": "beside",
       "cols": 2,
@@ -1646,7 +1633,7 @@
      },
      {
       "head": "the footer",
-      "y": 9897,
+      "y": 9740,
       "hero": false,
       "foot": true,
       "pos": "none",
@@ -1678,10 +1665,10 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "hero-table 1 @0"
+      "hero-table 0.667 @0"
      ],
      "heads": [
-      "h Trishiv Chinese @173"
+      "h Trishiv Chinese @261"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1697,7 +1684,7 @@
       "small-cup-of-latte-art-on-a 0.075 @410"
      ],
      "heads": [
-      "d Opposite Yanki Sizzler in the University @266"
+      "d A Chinese kitchen and cafe opposite Yank @266"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1711,7 +1698,8 @@
      "clipped": [],
      "pics": [],
      "heads": [
-      "h Soups @653"
+      "h Soups @653",
+      "d ₹130 to ₹180. @717"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1746,71 +1734,12 @@
      "y": 4086,
      "dy": 27,
      "end": "deck-arrival",
-     "clipped": [
-      {
-       "id": 20,
-       "text": "₹280 to ₹290.",
-       "past": 26,
-       "side": "bottom",
-       "by": "article.deck__card",
-       "size": 17,
-       "lines": 1,
-       "cut": 1,
-       "whole": true,
-       "short": false,
-       "figure": false,
-       "top": 161,
-       "op": 0.44
-      },
-      {
-       "id": 21,
-       "text": "Twelve plates, kurkure to peri-peri.",
-       "past": 257,
-       "side": "bottom",
-       "by": "article.deck__card",
-       "size": 21,
-       "lines": 1,
-       "cut": 1,
-       "whole": true,
-       "short": false,
-       "figure": false,
-       "top": 389,
-       "op": 0.55
-      },
-      {
-       "id": 19,
-       "text": "Served in jars.",
-       "past": 20,
-       "side": "bottom",
-       "by": "article.deck__card",
-       "size": 17,
-       "lines": 1,
-       "cut": 1,
-       "whole": true,
-       "short": false,
-       "figure": false,
-       "top": 213,
-       "op": 0.72
-      },
-      {
-       "id": 22,
-       "text": "The listing counts them in the 250.",
-       "past": 290,
-       "side": "bottom",
-       "by": "article.deck__card",
-       "size": 21,
-       "lines": 1,
-       "cut": 1,
-       "whole": true,
-       "short": false,
-       "figure": false,
-       "top": 479,
-       "op": 0.9
-      }
-     ],
+     "clipped": [],
      "pics": [],
      "heads": [
-      "h And more @167"
+      "h Mocktails @69",
+      "h And more @167",
+      "d 250 varieties. @231"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1821,38 +1750,7 @@
      "y": 4500,
      "dy": 27,
      "end": null,
-     "clipped": [
-      {
-       "id": 19,
-       "text": "Served in jars.",
-       "past": 20,
-       "side": "bottom",
-       "by": "article.deck__card",
-       "size": 17,
-       "lines": 1,
-       "cut": 1,
-       "whole": true,
-       "short": false,
-       "figure": false,
-       "top": -201,
-       "op": 0.72
-      },
-      {
-       "id": 22,
-       "text": "The listing counts them in the 250.",
-       "past": 290,
-       "side": "bottom",
-       "by": "article.deck__card",
-       "size": 21,
-       "lines": 1,
-       "cut": 1,
-       "whole": true,
-       "short": false,
-       "figure": false,
-       "top": 65,
-       "op": 0.9
-      }
-     ],
+     "clipped": [],
      "pics": [],
      "heads": [
       "h Sixteen soups @590",
@@ -1881,8 +1779,9 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "cappuccino-with-leaf-art-in-a-red 0.09 @-382",
-      "cappuccinos-with-latte-art-water-glasses-and 0.181 @-251"
+      "cappuccino-with-leaf-art-in-a-red 0.052 @-486",
+      "cappuccinos-with-latte-art-water-glasses-and 0.123 @-356",
+      "close-up-of-rosetta-latte-art-in 0.564 @343"
      ],
      "heads": [],
      "veils": [],
@@ -1896,7 +1795,7 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "a-top-down-view-of-a-cup 0.287 @-453"
+      "close-up-of-rosetta-latte-art-in 0.182 @-557"
      ],
      "heads": [],
      "veils": [],
@@ -1917,7 +1816,7 @@
      "strands": []
     },
     {
-     "y": 8488,
+     "y": 8384,
      "dy": 27,
      "end": "closing-line-in-a-field-of-words",
      "clipped": [],
@@ -1937,9 +1836,9 @@
      "clipped": [],
      "pics": [],
      "heads": [
-      "d Hungry? The table is set, come hungry. R @-14",
-      "h Find the corner @493",
-      "h Book or ask @493"
+      "d The table is set, come hungry. Reserve a @-118",
+      "h Find the corner @388",
+      "h Book or ask @388"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1947,7 +1846,7 @@
      "strands": []
     },
     {
-     "y": 9644,
+     "y": 9487,
      "dy": -27,
      "end": null,
      "clipped": [],
@@ -1976,11 +1875,11 @@
       "list": true,
       "y": 2286,
       "items": [
-       "Soups ₹130 to ₹180. Sixteen  (filled #e4e0cf, 1310x248)",
-       "Rice Ten ways. Fried, schezw (filled #603c24, 1310x248)",
-       "Noodles Eight kinds. Hakka,  (filled #e4e0cf, 1310x248)",
-       "Paneer ₹280 to ₹290. Twelve  (filled #603c24, 1310x248)",
-       "Mocktails Served in jars. Th (filled #e4e0cf, 1310x248)"
+       "Soups ₹130 to ₹180. Sixteen  (filled #e4e0cf, 1310x236)",
+       "Rice Ten ways. Fried, schezw (filled #603c24, 1310x236)",
+       "Noodles Eight kinds. Hakka,  (filled #e4e0cf, 1310x236)",
+       "Paneer ₹280 to ₹290. Twelve  (filled #603c24, 1310x236)",
+       "Mocktails Served in jars. Th (filled #e4e0cf, 1310x236)"
       ],
       "outlined": 0,
       "nested": [],
@@ -1997,64 +1896,36 @@
    "level": "WARN",
    "id": "statement-length",
    "width": 1440,
-   "message": "1 large-set statement(s) run past 3 lines at 1440px: \"Opposite Yanki Sizzler in the University…\" → 6 lines at 31.7px",
+   "message": "1 large-set statement(s) run past 3 lines at 1440px: \"A Chinese kitchen and cafe opposite Yank…\" → 6 lines at 31.7px",
    "fix": "A statement set large is about 30 words. Cut it, or set the rest as ordinary body text."
   },
   {
    "level": "WARN",
    "id": "size-count",
    "width": 1440,
-   "message": "14 different font sizes (13, 15, 16, 17, 18, 21, 32, 36, 38, 79, 101, 115, 144, 219).",
+   "message": "15 different font sizes (13, 15, 16, 17, 18, 21, 32, 36, 38, 48, 65, 79, 115, 144, 219).",
    "fix": "A page needs about five: display, heading, lead, body, small."
   },
   {
    "level": "WARN",
-   "id": "blank-gap",
+   "id": "name-only-title",
    "width": 1440,
-   "message": "A 440px stretch at 5760px holds nothing.",
-   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
-  },
-  {
-   "level": "WARN",
-   "id": "same-structure",
-   "width": 1440,
-   "message": "3 sections are built round text alone: \"Soups\" (under its heading); \"contact\" (no heading); \"Find the corner\" (beside its heading).",
-   "fix": "Give each section the structure its content asks for, and never one structure three times: a list as a list across the width, a split with a picture, cards in a row, a statement alone, a table, a gallery, a working tool. Change what the section holds, the heading's place and the columns from one to the next (critique.md, pass 9)."
-  },
-  {
-   "level": "FAIL",
-   "id": "text-on-photo",
-   "width": 1440,
-   "message": "1 block(s) of text on a photograph cannot be read against the picture under them: \"Trishiv Chinese\" 21.3px on hero-table.jpg: 1 of its 4 words or so under 3:1 against the picture (the worst 2.86:1), 28% of its letters' ground under it, screen 1.",
-   "fix": "Text on a picture sits on its calm part: move the words or the crop (object-position) so the letters fall on sky, wall or shadow of one tone, or set the text beside the picture on the ground. A scrim strong enough to rescue busy detail greys the photograph; never a text shadow. Check it at every width: the crop moves when the screen narrows."
-  },
-  {
-   "level": "FAIL",
-   "id": "clipped-text",
-   "width": 1440,
-   "message": "4 block(s) of text are cut off by a box that clips them once the page rests: \"₹280 to ₹290.\" lies wholly past the bottom of article.deck__card (the end of deck-arrival); \"Twelve plates, kurkure to peri-peri.\" lies wholly past the bottom of article.deck__card (the end of deck-arrival); \"Served in jars.\" lies wholly past the bottom of article.deck__card (the end of deck-arrival); \"The listing counts them in the 250.\" lies wholly past the bottom of article.deck__card (the end of deck-arrival).",
-   "fix": "Nothing a visitor should read is cut off once the page rests. Let the box grow with its words (no fixed height with overflow: hidden round text), set a list that lies over a picture into the flow under the picture on a phone or tablet, or cut what does not fit; never shrink the items that do not fit into screen-reader-only boxes while the rest of the list shows. A mask may hide words on their way in, never once they have arrived; look at the end of each scene at 390 and 768."
-  },
-  {
-   "level": "FAIL",
-   "id": "covered-text",
-   "width": 1440,
-   "message": "Large text lies under another element at some scroll position: \"Noodles\" (screen 5, 100% hidden); \"Paneer\" (screen 4, 100% hidden); \"Mocktails\" (screen 4, 100% hidden)",
-   "fix": "Nothing may sit on top of a headline or statement. Move the picture, shorten the pinned run, or raise the text above it (z-index) and give it a ground."
-  },
-  {
-   "level": "FAIL",
-   "id": "text-over-text",
-   "width": 1440,
-   "message": "Two texts are drawn on top of each other while the page scrolls: \"Fried, schezwan, hunan, Singapore and mo\" over \"Noodles\" (at 2702px); \"Noodles\" over \"Paneer\" (at 2702px); \"Eight kinds.\" over \"₹280 to ₹290.\" (at 2702px)",
-   "fix": "Two text states never share pixels. A swap is out, then in (the incoming line starts when the outgoing one has gone), or a masked wipe; a card or caption that travels never crosses a line of text that is still on screen."
+   "message": "The h1 is a bare name (\"Trishiv Chinese\") and nothing else on the first screen says what this is.",
+   "fix": "Keep the name if it leads, and give the line under it (18px or more) the plain words: what it is, for whom, where or when. In the study of 97 Sites of the Day, first screens that named nothing lost usability and content points."
   },
   {
    "level": "WARN",
    "id": "caption-on-media",
    "width": 1440,
-   "message": "Small text is set on 1 large picture(s): hero-table.jpg under \"Trishiv Chinese\", \"Chinese kitchen and cafe, Univer\"",
+   "message": "Small text is set on 1 large picture(s): hero-table.jpg under \"Trishiv Chinese\", \"Illustrative photograph, not the\", \"Chinese kitchen and cafe, Univer\"",
    "fix": "On a picture put only display text, one short line and one action (references/imagery.md, \"Text over pictures\"). A caption, a label or a description goes in the gutter beside or under the picture, or in a corner it leaves empty; never in a band across a piece of work."
+  },
+  {
+   "level": "WARN",
+   "id": "dead-scroll",
+   "width": 1440,
+   "message": "3 screen(s) show almost no words or pictures while scrolling (under 10% of the screen): around screens 4, 5, 6.",
+   "fix": "Every screen of scroll carries something to read or see. Shorten the scene or pin (one screen per beat), bring the next content in sooner, or cut the atmosphere: a glow, a burst or a lone line over an empty stage is not a section."
   }
  ],
  "images": [
@@ -2071,7 +1942,7 @@
    "replay": [],
    "walked": 12,
    "stride": 1,
-   "pageScreens": 11.7,
+   "pageScreens": 11.5,
    "atFoot": true
   }
  ]

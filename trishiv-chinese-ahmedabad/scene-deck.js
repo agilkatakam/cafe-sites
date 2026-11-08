@@ -12,12 +12,13 @@
     'Mocktails served in jars, counted in the 250.',
     'Two hundred and fifty varieties of dishes and mocktails, the listing says.',
   ];
-  // rung transforms: [scale, xPercent, yPercent, opacity]; back rungs clip to the word strip
+  // rung transforms: [scale, xPercent, yPercent, opacity]; one visible back strip,
+  // deeper rungs hidden. Strip clip is measured in px at build so the full h3 shows.
   const RUNGS = [
-    [1, 0, 0, 1, 'inset(0% 0% 0% 0%)'],
-    [0.84, 4, -7, 0.9, 'inset(0% 0% 70% 0%)'],
-    [0.72, 8, -14, 0.55, 'inset(0% 0% 72% 0%)'],
-    [0.64, 11, -20, 0, 'inset(0% 0% 74% 0%)'],
+    [1, 0, 0, 1],
+    [0.86, 2.5, -18, 0.85],
+    [0.78, 5, -36, 0],
+    [0.72, 7, -54, 0],
   ];
   window.Scenes = window.Scenes || {};
   window.Scenes[ID] = (root, opts = {}) => Stage.scene(root, {
@@ -28,28 +29,32 @@
       if (!cards.length || !line) return Stage.REST;
       const n = cards.length;
       const beat = 1 / n;
-      const shrink = phone ? 0.5 : 1; // shallower depth on phone
+      const shrink = phone ? 0.5 : 1; // shallower x-depth on phone
+      const h3h = cards[0].querySelector('h3').getBoundingClientRect().height;
+      const padT = parseFloat(getComputedStyle(cards[0]).paddingTop) || 20;
+      const stripClip = `inset(0% 0% calc(100% - ${Math.ceil(padT + h3h + 6)}px) 0%)`;
       cards.forEach((c, i) => c.style.zIndex = String(i + 1));
       const setLine = (i) => { line.textContent = LINES[i] || LINES[0]; };
       cards.forEach((card, k) => {
         const t = k * beat;
         if (k > 0) {
           tl.fromTo(card,
-            { yPercent: 110, autoAlpha: 1 },
-            { yPercent: 0, autoAlpha: 1, duration: beat * 0.82, ease: 'power1.out' }, t);
+            { yPercent: 170, autoAlpha: 1 },
+            { yPercent: 0, autoAlpha: 1, duration: beat * 0.38, ease: 'power1.out' }, t);
           tl.fromTo(card.querySelectorAll('p'),
-            { autoAlpha: 0 }, { autoAlpha: 1, duration: beat * 0.25 }, t + beat * 0.6);
+            { autoAlpha: 0 }, { autoAlpha: 1, duration: beat * 0.2 }, t + beat * 0.34);
         }
         cards.forEach((prev, j) => {
           if (j >= k) return;
           const rung = Math.min(k - j, 3);
-          const [s, x, y, o, clip] = RUNGS[rung];
+          const [s, x, y, o] = RUNGS[rung];
+          const clip = rung === 0 ? 'inset(0% 0% 0% 0%)' : stripClip;
           tl.to(prev, {
             scale: 1 - (1 - s) * shrink,
-            xPercent: x * shrink, yPercent: y * shrink,
-            autoAlpha: o, clipPath: clip, duration: beat * 0.82, ease: 'power1.out',
+            xPercent: x * shrink, yPercent: y,
+            autoAlpha: o, clipPath: clip, duration: beat * 0.38, ease: 'power1.out',
           }, t);
-          if (k - j === 1) tl.to(prev.querySelectorAll('p'), { autoAlpha: 0, duration: beat * 0.3 }, t);
+          if (k - j === 1) tl.to(prev.querySelectorAll('p'), { autoAlpha: 0, duration: beat * 0.18 }, t);
         });
         tl.call(setLine, [k], k === 0 ? 0 : t + beat * 0.4);
       });

@@ -50,7 +50,7 @@ section { padding-block: calc(var(--section-gap) / 2); }
   position: absolute; top: 24px; left: var(--margin); z-index: 5;
   font-family: "Panchang", sans-serif; font-weight: 700; font-size: var(--step-lead);
   letter-spacing: -0.015em; color: var(--ink);
-  background: rgba(24, 23, 21, 0.55); padding: 8px 14px; border-radius: var(--radius);
+  background: rgba(24, 23, 21, 0.62); padding: 8px 14px; border-radius: var(--radius);
 }
 .dock {
   position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
@@ -71,10 +71,10 @@ body.dock-hidden .dock { transform: translate(-50%, 140%); opacity: 0; pointer-e
 /* ---- hero: film title, bottom edge ---- */
 .hero { position: relative; min-height: 100svh; padding: 0; overflow: hidden; }
 .hero__picture { position: absolute; inset: 0; }
-.hero__picture img { width: 100%; height: 100%; object-fit: cover; object-position: center 78%; }
+.hero__picture img { width: 100%; height: 100%; object-fit: cover; object-position: center 85%; }
 .hero__scrim {
   position: absolute; left: 0; right: 0; bottom: 0; height: 46%;
-  background: rgba(24, 23, 21, 0.55);
+  background: rgba(24, 23, 21, 0.62);
 }
 .hero__chip {
   position: absolute; top: 24px; right: var(--margin); z-index: 3;
@@ -118,9 +118,9 @@ body.dock-hidden .dock { transform: translate(-50%, 140%); opacity: 0; pointer-e
   border-radius: var(--radius); padding: clamp(20px, 3vw, 44px);
   min-height: 46svh; display: flex; flex-direction: column;
 }
-.deck__card h3 { font-size: clamp(2.4rem, 7vw, 7rem); line-height: 0.95; }
+.deck__card h3 { font-size: clamp(2.2rem, 4.5vw, 4.2rem); line-height: 1; }
 .deck__card p { margin-top: auto; font-size: var(--step-lead); max-width: 40ch; }
-.deck__card .deck__sub { margin-top: 8px; font-size: var(--step-body); opacity: 0.8; }
+.deck__card .deck__sub { flex: 1; display: flex; align-items: center; margin-top: 0; font-size: clamp(1.8rem, 3.4vw, 3rem); font-family: "Panchang", sans-serif; font-weight: 600; opacity: 0.85; max-width: 24ch; line-height: 1.1; }
 .deck__card:nth-child(odd) { background: var(--ink); color: var(--bg); }
 .deck__card:nth-child(even) { background: var(--surface); color: var(--ink); }
 .deck__line { margin-top: 40px; font-size: var(--step-lead); max-width: 60ch; }
@@ -147,7 +147,7 @@ body.dock-hidden .dock { transform: translate(-50%, 140%); opacity: 0; pointer-e
 .menulist__attrib { margin-top: 48px; color: var(--muted); font-size: 16px; max-width: 60ch; }
 
 /* ---- gallery: staggered pairs + crossfade ---- */
-.gallery { margin-inline: var(--margin); display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 12vh; }
+.gallery { margin-inline: var(--margin); padding-top: 0; display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 24px; row-gap: 12vh; }
 .gallery__frame img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius); }
 .gallery__frame--a { grid-column: 1 / 5; aspect-ratio: 3 / 4; }
 .gallery__frame--b { grid-column: 7 / 13; aspect-ratio: 5 / 4; margin-top: 14vh; }
@@ -164,6 +164,8 @@ body.dock-hidden .dock { transform: translate(-50%, 140%); opacity: 0; pointer-e
 .scene.close { padding: 0; }
 .clf-close .btn { margin-top: 28px; }
 
+.visit { padding-bottom: calc(var(--section-gap) / 4); }
+footer { padding-top: calc(var(--section-gap) / 4); }
 /* ---- visit ---- */
 .visit { margin-inline: var(--margin); display: grid; grid-template-columns: 1fr 1fr; gap: 64px; }
 .visit h2 { font-size: var(--step-head); margin-bottom: 24px; }
