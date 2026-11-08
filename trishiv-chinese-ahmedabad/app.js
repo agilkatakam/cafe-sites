@@ -96,3 +96,13 @@ if (window.Stage) {
   Stage.init();
   if (Stage.ready) Stage.ready();
 }
+
+// --- hide the dock while the footer is on screen ---
+(() => {
+  const dock = document.querySelector('.dock');
+  const footer = document.querySelector('footer');
+  if (!dock || !footer || !('IntersectionObserver' in window)) return;
+  new IntersectionObserver((es) => {
+    es.forEach(e => dock.classList.toggle('is-hidden', e.isIntersecting));
+  }, { rootMargin: '0px 0px -40px 0px' }).observe(footer);
+})();
