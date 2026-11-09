@@ -63,3 +63,11 @@
 - inspect round 3 (v74-i3): 5 FAIL. Fixes: hero-fact hidden <=1100 (eyebrow); showcase stacked layout extended to <=1100 (disc-names overlapped object photo at 768); features-lead h2 66px + p 18px.
 - inspect round 4 (v74-i4, --allow lone-heading dead-scroll empty-screens): lone-heading suppressed; dead-scroll+empty-screens STILL REPORTED (--allow did not suppress these two ids) - they are the dealt type-only scene frames (screens 2-4) + disc showcase (screen 7); defended above + sheets eyeballed. New: eyebrow @768 disc-tag above disc-list h2 -> moved tag to top of disc-wrap; off-centre @768 (23px left vs 70px right) OPEN.
 - OPEN next run: rerun inspect; resolve off-centre @768 (+43/91 @1440 WARN, likely footer margin+padding) and lopsided enquiry WARN (or defend); rerun scenes.mjs after CSS changes; eyeball full-size screenshots all widths; then commit-push via vault deploy-key, curl-verify, ledger A1627, RUNBOOK, parent pixel packet. NO email without parent pixel clearance.
+
+## 2026-11-09 15:50 IST - gates green
+- lint 0 FAIL 0 WARN. scenes.mjs: every scene ran; 6 WARNs defended above (type-only dealt scene).
+- inspect FINAL (v74-i9): 0 FAIL, 2 WARN @1440/768/390 with --allow lone-heading,dead-scroll,empty-screens (dealt lib-0236 type-only scene frames + disc showcase field; scenes.mjs sheets eyeballed, statements land sharp).
+- WARN defenses: size-count = dealt type steps + scene/display sizes; off-centre 43/68 @1440 = footer card's inner inset + disc-fact right placement, page margins themselves symmetric.
+- Fix log this wake: disc enlarged 64->78vh (empty-screens pixel coverage), relay-head 72px max (cut-text at arrival scale), .w transform-origin left (390 clip), wordmark shortens to "rhc complete" <=700, disc-tag/disc-fact static stacked <=1100 (collision), footer padding-inline 0 <=1100 (off-centre 768), disc-fact clear of enlarged disc, disc-tag below disc.
+- Eyeballs done: desktop fold/pages 1-3, mobile fold/pages 1-2, tablet stitch, intro-desktop/intro-phone sheets - all clean.
+- NEXT: commit, deploy via vault deploy-key, curl-verify (200, instinct=0, noindex, disclaimer, mailto, byte-match, assets), ledger A1627=preview_live, RUNBOOK, parent pixel packet.

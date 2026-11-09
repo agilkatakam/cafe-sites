@@ -2,12 +2,12 @@
    Finished composition first: the three statements stand stacked and sharp; the live
    scene (under .scene.is-live) overlays them on one held stage. */
 .focus-relay-fallback .relay-item { margin-bottom: 48px; }
-.relay-head { font-size: clamp(40px, 4.6vw, 68px); font-weight: 500; letter-spacing: -0.03em; line-height: 1.0; color: var(--ink); }
+.relay-head { font-size: clamp(48px, 4.6vw, 72px); font-weight: 500; letter-spacing: -0.03em; line-height: 1.0; color: var(--ink); }
 .relay-note { margin-top: 14px; font-size: 1.125rem; line-height: 1.5; color: var(--muted); max-width: 44ch; }
 .relay-item .w { display: inline-block; }
 
 .scene.is-live .relay { position: absolute; inset: 0; }
 .scene.is-live .relay-item { position: absolute; left: var(--margin); right: var(--margin); top: 50%; transform: translateY(-50%); margin: 0; opacity: 0; }
-.scene.is-live .relay-item .w { will-change: transform, filter, opacity; }
+.scene.is-live .relay-item .w { will-change: transform, filter, opacity; transform-origin: left center; }
 .scene.is-live .relay-note { position: absolute; left: 0; top: calc(100% + 26px); will-change: transform, opacity; }
 .scene.is-live .relay-item:first-child { opacity: 1; }
