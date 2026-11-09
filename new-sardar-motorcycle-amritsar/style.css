@@ -133,3 +133,12 @@ dialog .btn i { display: none; }
 
 .disc-word { position: absolute; inset: 8% 0 0 0; display: grid; place-items: center; text-align: center; padding: 0 12%; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1; color: #132031; }
 .cta { padding-bottom: var(--section-gap); }
+
+.cta { grid-template-columns: 1fr; } .cta-copy { grid-column: 1; max-width: 60rem; }
+
+.disc-object { position: absolute; left: 11%; top: 0; width: 78%; border-radius: 50%; background: transparent; }
+.disc-word { display: none; }
+.cta-copy { max-width: none; grid-template-columns: 1fr 1fr; column-gap: 3rem; align-items: end; }
+.cta-copy h2 { grid-column: 1; grid-row: 1 / span 2; }
+.cta-copy .cta-line, .cta-copy .cta-actions { grid-column: 2; }
+@media (max-width: 767px) { .cta-copy { grid-template-columns: 1fr; } .cta-copy h2, .cta-copy .cta-line, .cta-copy .cta-actions { grid-column: 1; grid-row: auto; } }
