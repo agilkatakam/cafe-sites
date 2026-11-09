@@ -25,29 +25,6 @@
   "note": "Cropped (right-of-centre band, lower half) from the original to remove commercial signage; original 4032x2268. Share-alike: this crop stays under CC BY-SA 4.0."
  },
  {
-  "file": "photos/scene-wheels.jpg",
-  "media": "image",
-  "ref": "openverse:ab560ffb-b704-4bcd-9f3d-2934ddb5dd89",
-  "title": "Close-up of scooty and bike wheels side by side on a pavement.",
-  "creator": "Arunangshu Banerjee",
-  "creatorUrl": "https://www.eruditionindia.com",
-  "date": null,
-  "license": "CC0",
-  "licenseCode": "cc0",
-  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-  "creditRequired": false,
-  "page": "https://wordpress.org/photos/photo/469ec8dfce/",
-  "via": "WordPress Photo Directory",
-  "image": "https://pd.w.org/2026/04/469ec8dfce2dce3.52188341-2048x1536.jpeg",
-  "width": 2048,
-  "height": 1536,
-  "bytes": 625749,
-  "credit": "\"Close-up of scooty and bike wheels side by side on a pavement.\" by Arunangshu Banerjee, CC0, via WordPress Photo Directory",
-  "notes": [],
-  "saved": "2026-11-09T13:21:30.365Z",
-  "note": "Cropped to 1250x920 (x 150-1400, y 280-1200 of the 2048x1536 original) to reduce visible tyre-sidewall branding; residual embossed tyre-model text is incidental product marking, not signage. CC0."
- },
- {
   "file": "photos/wire-motorcycle-wheel-with-disc-brake.jpg",
   "media": "image",
   "ref": "openverse:d521eaca-86e2-4c11-82cc-b7d21293bb2d",
@@ -69,7 +46,8 @@
   "notes": [
    "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
   ],
-  "saved": "2026-11-09T13:21:35.752Z"
+  "saved": "2026-11-09T13:21:35.752Z",
+  "note": "Cropped: landscape 1920x1080 (y 850) and portrait for phones; no readable brand or sign. Share-alike."
  },
  {
   "file": "amritsar21-full-jpg.jpg",

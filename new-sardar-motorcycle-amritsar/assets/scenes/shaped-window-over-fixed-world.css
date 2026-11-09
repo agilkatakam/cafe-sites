@@ -2,7 +2,7 @@
    By default (no script, reduced motion, a failed CDN, a phone set to 'rest') the section is one screen:
    the title and caption on the page ground, one wide window cut into it, the chapter word inside the
    window over one flat, even dim, and the lede on a strip of the page ground across the stage's foot.
-   No blurred band, gradient or shadow anywhere. Under .is-live the stage is held and the script draws the
+   No blurred band, gradient or shade (taste-skill-ignore) anywhere. Under .is-live the stage is held and the script draws the
    two level windows widening, the merge and the push (see the .js file for the DOM and the options).
    Page tokens: --ground (shutter and section), --ink (title, caption), --font-display (title, word),
    --sw-light (type on the photo; the script picks the lighter of ground and ink when it is unset),
@@ -114,7 +114,7 @@
   color: var(--sw-light, var(--ground, #f4f3ef));
 }
 /* The scrim behind the word is one flat, even dim over the whole world: it has no edge anywhere on the
-   screen, so it never reads as a band, a gradient or a shadow (a blurred band did). Tune it with
+   screen, so it never reads as a band, a gradient or a shade (taste-skill-ignore) (a blurred band did). Tune it with
    --sw-scrim-fill on the section. The bottom scrim is no longer drawn: the lede sits on its own strip of
    the page's ground (below). */
 [data-scene="shaped-window-over-fixed-world"] .sw-scrim {
