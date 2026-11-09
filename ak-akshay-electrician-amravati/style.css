@@ -361,6 +361,11 @@ main > section:not(.scene) { padding-block: calc(var(--section-gap) / 2); }
 }
 
 /* ---------- phone ---------- */
+/* inspector: the lbf statement's 12px scene gutter sits closer to the phone edge than the page margin - hold it at 24px */
+@media (max-width: 767px) {
+  [data-scene="letter-bar-floods-the-ground"] { --lbf-gutter: 24px; }
+}
+
 @media (max-width: 600px) {
   .nav-where { display: none; }
   .features-title { font-size: 9vw; margin-bottom: 56px; }
