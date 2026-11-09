@@ -49,17 +49,6 @@
     };
     addEventListener('scroll', tick, { passive: true }); tick();
   }
-  // rolling figures: count up once
-  const figs = document.querySelectorAll('[data-roll]');
-  if (figs.length && 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const io = new IntersectionObserver((es) => es.forEach((e) => {
-      if (!e.isIntersecting) return; io.unobserve(e.target);
-      const end = +e.target.dataset.roll, t0 = performance.now();
-      const step = (t) => { const k = Math.min(1, (t - t0) / 1400); e.target.textContent = Math.round(end * (1 - Math.pow(1 - k, 3))); if (k < 1) requestAnimationFrame(step); else e.target.textContent = end; };
-      requestAnimationFrame(step);
-    }), { threshold: 0.6 });
-    figs.forEach((f) => io.observe(f));
-  }
   // statement ink fill
   const fill = document.querySelector('[data-fill]');
   if (fill && window.gsap && window.ScrollTrigger && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
