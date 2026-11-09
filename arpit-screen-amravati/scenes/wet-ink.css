@@ -1,0 +1,39 @@
+/* V73 scene lib-0105 "Type sets like wet ink" - finished composition first; live layout under .scene.is-live */
+#intro {
+  background: var(--bg);
+  padding: 0 var(--margin);
+}
+#intro .scene-stage {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: clamp(14px, 2.6vh, 26px);
+  text-align: center;
+  padding: clamp(40px, 8vh, 80px) 0;
+}
+#intro .ink {
+  margin: 0;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: clamp(2.6rem, 6.4vw, 5.75rem);
+  line-height: 1.03;
+  letter-spacing: -0.012em;
+  max-width: 18ch;
+}
+#intro .ink-last { display: grid; justify-items: center; gap: clamp(16px, 3vh, 28px); }
+#intro .scene-cta { margin: 0; }
+.wetink-defs { position: absolute; width: 0; height: 0; }
+
+@media (max-width: 1000px) {
+  #intro .ink { font-size: clamp(2.6rem, 8vw, 5rem); max-width: none; }
+  #intro .scene-stage { gap: clamp(12px, 2.2vh, 22px); }
+}
+@media (max-width: 640px) {
+  #intro .ink { font-size: 9.2vw; }
+}
+
+/* live: the stage pins for the hold; the lines keep their finished slots (motion is filter-only + a short rise) */
+.scene.is-live#intro .scene-stage {
+  height: 100svh;
+  padding: 0;
+}

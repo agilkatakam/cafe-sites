@@ -1,0 +1,72 @@
+[
+ {
+  "file": "assets/showcase-paper-dark.jpg",
+  "media": "image",
+  "ref": "library:c826",
+  "title": "",
+  "creator": "Dietmar Rabich",
+  "creatorUrl": null,
+  "date": null,
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Papierkanten_--_2020_--_9535.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Papierkanten_--_2020_--_9535.jpg/1920px-Papierkanten_--_2020_--_9535.jpg",
+  "width": 1920,
+  "height": 1440,
+  "bytes": 99060,
+  "credit": "Photo by Dietmar Rabich, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-11-09T07:11:03.892Z"
+ },
+ {
+  "file": "assets/hero-card-sheets.jpg",
+  "media": "image",
+  "ref": "library:c823",
+  "title": "",
+  "creator": "Brandi Redd brandi1",
+  "creatorUrl": null,
+  "date": null,
+  "license": "CC0",
+  "licenseCode": "cc0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "creditRequired": false,
+  "page": "https://commons.wikimedia.org/wiki/File:Scattered_white_paper_(Unsplash).jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Scattered_white_paper_%28Unsplash%29.jpg/1920px-Scattered_white_paper_%28Unsplash%29.jpg",
+  "width": 1920,
+  "height": 2758,
+  "bytes": 875374,
+  "credit": "Photo by Brandi Redd brandi1, CC0, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-11-09T07:11:04.177Z"
+ },
+ {
+  "file": "assets/footer-amravati-gate.jpg",
+  "media": "image",
+  "ref": "commons:138256277",
+  "title": "Bamboo Garden Amravati inside gate",
+  "creator": "Ganesh Dhamodkar",
+  "creatorUrl": null,
+  "date": "2023-09-29",
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Bamboo_Garden_Amravati_inside_gate.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Bamboo_Garden_Amravati_inside_gate.jpg/1920px-Bamboo_Garden_Amravati_inside_gate.jpg",
+  "width": 1920,
+  "height": 1080,
+  "bytes": 891434,
+  "credit": "\"Bamboo Garden Amravati inside gate\" by Ganesh Dhamodkar, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-11-09T07:11:04.570Z"
+ }
+]
