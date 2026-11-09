@@ -1,0 +1,10 @@
+/* weight-trade (technique lib-0192): scroll trades weight between two lines.
+   Finished composition first: both lines at middle weight on the page ground. */
+.scene-weights { position: relative; }
+.scene-weights .scene-stage {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+}
+/* live layout (pinned by stage.js) */
+.scene-weights.is-live .scene-stage { height: 100svh; }
