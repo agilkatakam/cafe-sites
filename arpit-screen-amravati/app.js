@@ -31,7 +31,7 @@
       for (const e of entries) covering.set(e.target, e.isIntersecting);
       sideIndex.classList.toggle('is-hidden', [...covering.values()].some(Boolean));
     }, { rootMargin: '-40% 0px -40% 0px', threshold: 0 });
-    ['intro', 'wordings', 'write'].forEach((id) => {
+    ['intro', 'wordings'].forEach((id) => {
       const el = document.getElementById(id);
       if (el) coverIO.observe(el);
     });
@@ -70,15 +70,23 @@
     scrubEl.textContent = '';
     scrubEl.setAttribute('aria-label', text);
     const chars = [];
-    for (const ch of text) {
-      const s = document.createElement('span');
-      s.setAttribute('aria-hidden', 'true');
-      s.textContent = ch;
-      s.style.display = 'inline-block';
-      s.style.whiteSpace = 'pre';
-      scrubEl.appendChild(s);
-      chars.push(s);
-    }
+    // words keep their chars together: whole words wrap, never a split inside a word
+    const words = text.split(' ');
+    words.forEach((word, wi) => {
+      const w = document.createElement('span');
+      w.setAttribute('aria-hidden', 'true');
+      w.style.display = 'inline-block';
+      w.style.whiteSpace = 'nowrap';
+      for (const ch of word) {
+        const s = document.createElement('span');
+        s.textContent = ch;
+        s.style.display = 'inline-block';
+        w.appendChild(s);
+        chars.push(s);
+      }
+      scrubEl.appendChild(w);
+      if (wi < words.length - 1) scrubEl.appendChild(document.createTextNode(' '));
+    });
     const phone = matchMedia('(max-width: 760px)').matches;
     const maxBlur = phone ? 8 : 12;
     let smooth = 0, rafId = null;
@@ -87,13 +95,12 @@
       const vh = innerHeight;
       const r = scrubEl.getBoundingClientRect();
       const y = r.top / vh;
-      let target;
-      if (y < 0.2) target = Math.max(0, (0.2 - y) / 0.45);       // re-blur on the way out
-      else target = Math.max(0, Math.min(1, (0.85 - y) / 0.45)); // focus on the way in
+      // focus on the way in and stay crisp once read - never re-blur the settled line
+      const target = Math.max(0, Math.min(1, (0.85 - y) / 0.45));
       smooth += (target - smooth) * 0.35;
       const n = chars.length;
       for (let i = 0; i < n; i++) {
-        const local = Math.max(0, Math.min(1, smooth * (n / 4) - i / 4 + 0.25));
+        const local = Math.max(0, Math.min(1, (smooth * (n + 4) - i) / 4)); // every char fully crisp at smooth=1
         const b = maxBlur * (1 - local);
         chars[i].style.filter = b > 0.05 ? `blur(${b.toFixed(2)}px)` : '';
       }

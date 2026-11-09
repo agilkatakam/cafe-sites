@@ -53,3 +53,10 @@ Dealt "Sky and space" set is the wrong subject for a card shop (skies/fireworks 
 - scenes.mjs: every scene ran; sheets eyeballed (desktop/tablet/phone/reduced).
 - Full-size screenshots eyeballed: desktop fold+pages, tablet fold+pages, mobile fold+page (i13).
 - Fixed during eyeball: figcaption "amravati" -> "Amravati"; scroll-margin-top 72px for anchored sections under the fixed bar.
+
+## Parent pixel review Nov 9 13:35 - corrections round
+- Closing heading split inside words (char spans wrapped individually) -> chars now grouped in word spans (whole words wrap); wave math fixed so EVERY char reaches full crisp at settle (last chars previously stuck at ~50% blur); re-blur-on-the-way-out removed (settled line stays crisp); verified crisp at rest desktop + mobile (i18); reduced motion keeps plain unsplit crisp text.
+- Unverified specifics removed: "single cards, boxed sets, matching inserts" -> "cards for the wedding itself."; "engagements, receptions, housewarmings, birthdays" -> "cards that invite people to it."; "the shop writes yours with you" -> "the wordings below are examples, set in type as illustration."; "from people who bought from the shop" -> "the score his listing shows."
+- "ask arpit" (person inferred from business name) -> two statements: "come and look." / "or ask arpit screen." (shop name, fits 2 lines at 390).
+- Slips unmistakably marked: divider on every slip now reads "- sample -" (+ panel sentence). repeated-label WARN defended: the parent-required sample marking repeats by design.
+- Side-index regression (nav-not-as-dealt flaky when stride skipped shelves): index now stands on an opaque --bg rail and no longer hides over the footer; hides only over scene + wordings band per deal.
