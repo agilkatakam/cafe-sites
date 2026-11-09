@@ -198,3 +198,12 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Commit e53cb99 pushed 13:32; live https://agilkatakam.github.io/cafe-sites/arpit-screen-amravati/ verified 13:33 (200, instinct=0, noindex=1, disclaimer=1, mailto=6, 11/11 assets 200, byte-match).
 - Parent review (13:35): closing heading split inside words + unverified specifics + inferred-person name + unmarked samples. Corrections (commit 0fb1552): word-span wrapping + wave fix, 4 copy items replaced, 'ask arpit screen' (shop name), '- sample -' on all 6 slips. inspect i18 = 0 FAIL @1440/768/390. Live re-verified 13:45 (byte-match, 6 sample marks, old copy gone). Parent released visual hold 13:47.
 - EMAIL SENT Nov 9 13:50 IST from katakamakhil0 after fresh send-time gates (TBR block re-verified live incl. email+no website link; Gmail allfolder/in:sent = 0; suppression clean). gmail id 1a1bf647355f9ed3, SENT label confirmed. Subject: your invitation card shop has no website so i made you one. Ledger A1626 = emailed; nowebsite_ready G162 = EMAILED.
+
+## V74 - Rhc Complete Computer Care, Amritsar (preview live 2026-11-09 15:53 IST)
+- URL: https://agilkatakam.github.io/cafe-sites/rhc-complete-computer-care-amritsar/ (200; index+css byte-match; 12 assets 200; instinct=0, noindex=1, disclaimer=1, mailto=4)
+- Direction "The object, large" (black+lime, Onest, seed 419183166); scene lib-0236 focus-relay built fresh; both scene redraws used (documented in NOTES.md).
+- Facts: TBR block only; hours omitted (contradictory), "Since 2009" omitted (TBR label).
+- Gates: lint 0 FAIL; inspect 0 FAIL 2 WARN defended in NOTES.md (--allow lone-heading,dead-scroll,empty-screens for the dealt type-only scene); scenes.mjs ran, sheets eyeballed; full-size eyeballs 1440/768/390.
+- Bug of note: is-live CSS held scene items at opacity 0 while JS faded only words; fixed by fading items in JS. Menu panel display:flex overrode [hidden] on phones; scoped fix in 700 media.
+- Ledger: lead_status_log A1627 = preview_live; nowebsite_ready G163 stays UNSENT. Email pending parent pixel clearance + fresh send gates.
+- Commits: 1e16fa8, 774546b, 8226eaf (+ this RUNBOOK entry).
