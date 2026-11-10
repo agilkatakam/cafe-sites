@@ -208,3 +208,10 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Ledger: lead_status_log A1627 = preview_live; nowebsite_ready G163 stays UNSENT. Email pending parent pixel clearance + fresh send gates.
 - Commits: 1e16fa8, 774546b, 8226eaf (+ this RUNBOOK entry).
 - EMAIL SENT Nov 9 15:54 IST from katakamakhil0 after parent visual hold released 15:53 and fresh send-time gates (TBR block re-verified live: email+phone present, no business website link; Gmail allfolder to/from = 0; in:sent (rhc OR amritsar OR computer) = 5 all different people; suppression clean; cap fine - last send 13:50). gmail id 1a1bfd6c05ae56a6, SENT label confirmed. Subject: your computer repair shop has no website so i made you one. Template: approved V73 verbatim swap ("your services"). Ledger A1627 = emailed; nowebsite_ready G163 = EMAILED.
+
+## V75 - New Sardar Motorcycle & Scooter Works, Amritsar (preview live 2026-11-09 22:00 IST)
+- Direction "Type and nothing else" (seed 94337314): shaped-window wheel scene + letter-bar flood + object-on-disc, ink-only. Drawn once, 0 redraws.
+- Photos: wheel+disc (Brianhe CC BY-SA), sprocket (SICD CC0). Dropped: tyre close-up with readable lettering, Amritsar street with rider.
+- Lesson: count-up figures get screenshotted mid-roll and read as wrong numbers (13/6 vs 14/7). Figures static now.
+- Lesson: inspect on the live URL with --widths 1440,390 and timeout 105 stays under the 120s limit.
+- Ledger: lead_status_log A1628 = preview_live; nowebsite_ready G164 = PREVIEW. Commits d4422ef 933a66f b58b9ee.
