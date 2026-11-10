@@ -215,3 +215,4 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Lesson: count-up figures get screenshotted mid-roll and read as wrong numbers (13/6 vs 14/7). Figures static now.
 - Lesson: inspect on the live URL with --widths 1440,390 and timeout 105 stays under the 120s limit.
 - Ledger: lead_status_log A1628 = preview_live; nowebsite_ready G164 = PREVIEW. Commits d4422ef 933a66f b58b9ee.
+- EMAIL SENT Nov 10 09:43 IST from katakamakhil0, gmail id 1a1c3a8e0a45cbf3, after parent visual clearance 09:42 and fresh gates. Ledger A1628 = emailed; G164 = EMAILED.
