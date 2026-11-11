@@ -1,0 +1,709 @@
+{
+ "version": 1,
+ "at": "2026-11-11T07:11:43.265Z",
+ "seed": 1727664457,
+ "redraws": 0,
+ "input": {
+  "brief": "concept preview for a local sports shop in Hall Bazar, Amritsar: cricket, hockey, badminton, football kits, shoes, training equipment",
+  "sector": "ecommerce",
+  "tone": "bold",
+  "have": [],
+  "keep": [],
+  "avoid": [
+   "loud-flat-poster",
+   "uneven-photographs",
+   "product-performs",
+   "dark-room",
+   "place-carries-it",
+   "dense-tiles",
+   "page-is-the-object",
+   "one-motif",
+   "borrowed-category",
+   "editorial-report",
+   "quiet-instrument",
+   "type-only-statement",
+   "split-stage",
+   "clear-service",
+   "shop-window",
+   "calm-editorial",
+   "clear-product",
+   "contact-sheet",
+   "hero-object",
+   "name-as-monument"
+  ],
+  "sections": [
+   "gallery",
+   "features",
+   "intro",
+   "cta",
+   "footer"
+  ],
+  "direction": null
+ },
+ "imagery": "no-product-photo",
+ "allow": [],
+ "direction": {
+  "id": "spec-sheet",
+  "name": "The spec sheet",
+  "weight": 1,
+  "sectors": [
+   "physical-product",
+   "dev-tool",
+   "ecommerce",
+   "architecture",
+   "real-estate",
+   "finance",
+   "saas"
+  ],
+  "tones": [
+   "technical",
+   "bold",
+   "quiet"
+  ],
+  "needs": [],
+  "pictures": 5,
+  "idea": "Precision as the personality: the product or place described the way an engineer would, exactly. Dimensions, materials, tolerances, numbers and names, set beautifully. The page wins trust by being specific where everyone else is vague; find the numbers only this subject has.",
+  "composition": "The first screen sets the object (or the place, or the product's output) large on a plain ground, with its name and a one-line description. Further down the page alternates between large views of the subject and well-set facts: a specification table with real rows, a numbered build or process only if order matters, a comparison of models as a clean table. A grid of details (close-up pictures with a short label naming what they show) can appear once.",
+  "typography": "A precise sans; tabular figures for every number; units set properly (12 mm, 1.4 kg).",
+  "typeClasses": [
+   "grotesk-tight",
+   "grotesk-light",
+   "geometric"
+  ],
+  "colour": "Very restrained: white, grey or black ground, ink, and one accent used like a signal.",
+  "paletteTags": [
+   "light-neutral",
+   "dark-neutral",
+   "mono-accent"
+  ],
+  "imagery": "The subject photographed or generated cleanly, from the front, the side, close up; its construction shown by a close photograph of the joint or part, never a drawing. Without the client's own photographs, the subject is shown by its product statement and the close-ups show its materials, never another maker's product (the sheet's hard rule).",
+  "sectionTags": [
+   "object-led",
+   "dense",
+   "quiet"
+  ],
+  "motion": "rolling-figures",
+  "richness": "Real, complete specifications and sharp details.",
+  "pitfalls": "Invented numbers; monospace labels everywhere; a table that is really a list of marketing claims; lines and boxes around every fact.",
+  "seenIn": [
+   "pro-teenage-engineering",
+   "pro-nothing",
+   "pro-leica",
+   "pro-framework"
+  ],
+  "allow": []
+ },
+ "hero": {
+  "id": "words-beside-product",
+  "name": "Words beside the product",
+  "archetype": "split",
+  "split": true,
+  "directions": [
+   "clear-product",
+   "product-performs",
+   "spec-sheet",
+   "clear-service",
+   "sentence-as-layout"
+  ],
+  "needs": [],
+  "blueprint": "The content width is split about 5 to 7. The headline, one sentence and the action sit in the narrower part, vertically centred or aligned to the top of the picture; the headline is large, 5vw or more (72px at 1440) on two lines at most, since a small headline beside a half-screen picture reads as a shop template. The wider part holds the product, the object or the real place, large, from the split to the right margin at the full height of the first screen. When the words cannot be that large in their part, the picture goes full-bleed behind them instead, with the words on its calm side. Nothing else on the first screen.",
+  "mobile": "Words first, then the picture at full width.",
+  "headline": "What it is, two to five words, at most about 26 characters.",
+  "motion": "shutter-image",
+  "seenIn": [
+   "pro-mercury",
+   "pro-ramp",
+   "pro-superhuman"
+  ]
+ },
+ "palette": {
+  "id": "paper-grey-brass",
+  "name": "Newsprint and brass",
+  "tags": [
+   "light-neutral"
+  ],
+  "bg": "#e8e8e3",
+  "surface": "#d3d3cd",
+  "ink": "#181715",
+  "muted": "#5b5a54",
+  "accent": "#bfb21a",
+  "accentInk": "#181715",
+  "fields": [
+   {
+    "bg": "#181715",
+    "ink": "#e8e8e3"
+   }
+  ],
+  "note": "Warm paper grey with near-black type holds the upper page, then whole sections flip to near-black with paper-grey type; no section is tinted. Brass yellow marks one small detail per screen, such as the button or a single word. The accent reads under 3:1 on this ground, so, whatever this note says before, it is a fill with its own text colour (the button, one block), never the colour of a word, a link or a thin mark: those take the ink.",
+  "seenIn": [
+   "aww-monolog"
+  ]
+ },
+ "type": {
+  "id": "rounded:pilcrow-rounded+asap:700",
+  "kind": "rounded",
+  "generated": true,
+  "name": "Pilcrow Rounded over Asap",
+  "class": "rounded",
+  "display": {
+   "family": "Pilcrow Rounded",
+   "cls": "rounded",
+   "weight": 700,
+   "headWeight": 700,
+   "weights": [
+    400,
+    500,
+    600,
+    700,
+    900
+   ],
+   "css": "<link href=\"https://api.fontshare.com/v2/css?f[]=pilcrow-rounded@700&display=swap\" rel=\"stylesheet\">",
+   "stack": "\"Pilcrow Rounded\", system-ui, sans-serif",
+   "settings": "weight 700, sentence case, tracking -0.011em, leading 1.01"
+  },
+  "text": {
+   "family": "Asap",
+   "cls": "humanist",
+   "weight": 400,
+   "strong": 600,
+   "weights": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900
+   ],
+   "css": "<link href=\"https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap\" rel=\"stylesheet\">",
+   "stack": "\"Asap\", system-ui, sans-serif",
+   "settings": "weight 400 for running text, 600 for emphasis and buttons, leading 1.5, 60-72 characters a line"
+  },
+  "caps": false,
+  "track": -0.011,
+  "lead": 1.01,
+  "ratio": 1.5,
+  "body": 16,
+  "displayVw": 5.8,
+  "scale": {
+   "step-small": "0.8125rem",
+   "step-body": "1.0000rem",
+   "step-lead": "clamp(1.198rem, 0.719rem + 0.59vw, 1.331rem)",
+   "step-sub": "clamp(1.800rem, 1.080rem + 1.13vw, 2.250rem)",
+   "step-head": "clamp(2.250rem, 1.350rem + 1.88vw, 3.375rem)",
+   "step-display": "clamp(2.700rem, 1.620rem + 3.60vw, 5.219rem)"
+  },
+  "note": "A rounded sans. A 1.5 scale from a 16px body; the hero's display step is about 5.8vw at 1440. Six steps and no others: small, body, lead, sub, head, display. Pilcrow Rounded only for the display and head steps; Asap for everything a visitor reads at length, buttons and navigation included. Load only the weights listed; a weight the face lacks is faked by the browser and the inspector fails it."
+ },
+ "photos": {
+  "set": "city-day",
+  "title": "City by day",
+  "note": "streets and buildings in daylight",
+  "treatment": null,
+  "others": [
+   "architecture",
+   "transport"
+  ],
+  "photos": [
+   {
+    "id": "d367",
+    "source": "commons",
+    "alt": "Clear umbrella seen from below, covered in raindrops, a soft grey building behind",
+    "tone": "light",
+    "colours": [
+     "silver",
+     "white",
+     "grey"
+    ],
+    "mono": false,
+    "calm": "right",
+    "quality": 8,
+    "ratio": 1.5,
+    "width": 4896,
+    "height": 3264,
+    "by": "freddie marriage fredmarriage",
+    "licence": "CC0",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Clear_Umbrella_Rain_Liverpool_%28Unsplash%29.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Clear_Umbrella_Rain_Liverpool_(Unsplash).jpg",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 212,
+    "alt": "Bicycle with a basket parked on a wet city street",
+    "tone": "mid",
+    "colours": [
+     "warm brown",
+     "amber",
+     "grey"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.43,
+    "by": "Sylwia Bartyzel",
+    "page": "https://unsplash.com/photos/eDDQRAYKo7k",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 322,
+    "alt": "Narrow cobbled alley between worn ochre and terracotta walls",
+    "tone": "mid",
+    "colours": [
+     "ochre",
+     "terracotta",
+     "grey"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Afroz Nawaf",
+    "page": "https://unsplash.com/photos/dSyWD7oRns8",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 826,
+    "alt": "Boat on a canal between tall brick warehouses in hazy light",
+    "tone": "dark",
+    "colours": [
+     "dark brown",
+     "hazy cream",
+     "dark teal"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.52,
+    "by": "Nick Scheerbart",
+    "page": "https://unsplash.com/photos/QmemudqzrXQ",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 308,
+    "alt": "Narrow street of colourful houses with laundry hung between them",
+    "tone": "mid",
+    "colours": [
+     "terracotta red",
+     "pale yellow",
+     "sky blue"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Charles L.",
+    "page": "https://unsplash.com/photos/5z8CIELxW1Y",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 188,
+    "alt": "Snow-dusted rooftops of an old town seen from above",
+    "tone": "mid",
+    "colours": [
+     "steel blue",
+     "white",
+     "dark brown"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "Wojtek Witkowski",
+    "page": "https://unsplash.com/photos/1fpyA_z2woY",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 820,
+    "alt": "Row of empty swings in a green park in soft morning light",
+    "tone": "mid",
+    "colours": [
+     "slate blue",
+     "soft green",
+     "earth brown"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.33,
+    "by": "Aaron Burden",
+    "page": "https://unsplash.com/photos/ob6O_xd67O0",
+    "from": "city-day",
+    "kind": "world"
+   },
+   {
+    "id": 49,
+    "alt": "Whitewashed hillside village with a windmill under hazy blue sky",
+    "tone": "light",
+    "colours": [
+     "white",
+     "pale blue"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.62,
+    "by": "Margaret Barley",
+    "page": "https://unsplash.com/photos/Qo51KwK1dKg",
+    "from": "city-day",
+    "kind": "world"
+   }
+  ]
+ },
+ "motion": {
+  "id": "edge-marquee",
+  "name": "Edge-to-edge marquee",
+  "description": "One line of very large type travels sideways across the full width at a slow constant speed, as a band between two sections or as the closing statement. Linear timing, duplicated content for a seamless loop, paused on hover and under reduced motion. One marquee per page, carrying real words, never a list of buzzwords. Its words are new information (the services, the formats, the clients the page can name), never the hero's line again."
+ },
+ "sections": [
+  {
+   "id": "gallery-dense-masonry-sheet",
+   "role": "gallery",
+   "name": "Dense masonry sheet",
+   "shape": "mosaic",
+   "structure": "gallery",
+   "tags": [
+    "dense",
+    "photo-led"
+   ],
+   "directions": [
+    "contact-sheet",
+    "dense-tiles",
+    "editorial-report",
+    "specimen-catalogue"
+   ],
+   "needs": [],
+   "blueprint": "A three-line statement at 22px, 30ch wide, sits at the 66% column with 64px of space below it; it is the only large text. Then a dense masonry of about twenty tiles in six columns with 4px gaps and 12px outer margins, built with CSS `columns: 6; column-gap: 4px` and `break-inside: avoid` on each figure. Tile sizes range from 90px squares to one feature tile of 280 by 160px that sits above the first two columns, outside the column flow. Images keep their natural ratios, so column bottoms are ragged. Every tile has one caption line at 12px directly beneath, 6px below the image and 14px above the next tile, in the form name, comma, type. Mix photographs, posters, details and textures. No hover chrome; the sheet reads at a glance and fills the full width.",
+   "mobile": "Three columns with 4px gaps and 10px margins; the feature tile spans the full width at the top. Captions stay at 12px but shorten to the name only. The statement sits above at 19px, full width and left-aligned.",
+   "seenIn": [
+    "aww-oimachi",
+    "opl-lovably"
+   ]
+  },
+  {
+   "id": "features-comparison-set-as-text",
+   "role": "features",
+   "name": "Comparison set as text",
+   "shape": "table",
+   "structure": "table",
+   "tags": [
+    "type-led",
+    "quiet"
+   ],
+   "directions": [
+    "type-only-statement",
+    "editorial-report",
+    "product-performs",
+    "quiet-instrument",
+    "borrowed-category"
+   ],
+   "needs": [],
+   "blueprint": "A comparison table with no lines and no tick marks. A CSS grid: capability names in columns 1–5 of 12 at 22–24px medium, then three answer columns of equal width (plans, methods, or this against the usual way). Every cell answers in words at 17px: 'Yes, unlimited', 'Up to five', 'Not yet', never a symbol. Seven to ten rows, each 64–72px tall, with every other row on a ground one tone darker so the eye tracks across; rows touch. The column that matters is one filled block in the accent or ink colour running the full height of the table behind its cells and rising 24px above the first row, with its text reversed. Column names sit in the top row at 17px bold. The heading, two to four words at 40–48px, hangs top-left above column 1 with 48px beneath.",
+   "mobile": "The table turns on its side: one block per capability. The name at 20px bold, then three lines beneath, each giving a column name and its answer at 16px; the featured column's line is set on the filled colour at full width. Blocks alternate the two ground tones.",
+   "seenIn": [
+    "aww-pp-neue-montreal"
+   ]
+  },
+  {
+   "id": "intro-narrow-column",
+   "role": "intro",
+   "name": "Narrow column, empty field",
+   "shape": "stack",
+   "structure": "column",
+   "tags": [
+    "quiet",
+    "type-led"
+   ],
+   "directions": [
+    "quiet-instrument",
+    "split-stage",
+    "hero-object",
+    "name-as-monument",
+    "contact-sheet",
+    "product-performs"
+   ],
+   "needs": [],
+   "blueprint": "A single text column 300–340px wide, its left edge at 15% of the viewport width, starting 64px below the section top. It holds four or five short paragraphs at 15–16px with leading 1.5 and one blank line between them; the first paragraph is in medium weight and full ink, the rest in regular weight and the soft ink. No heading, no image, no button; one underlined text link may end the last paragraph. The remaining three-quarters of the 1440 screen is untouched ground, and the section is only as tall as the text plus 160px of padding below. The column's left edge must match a line used elsewhere on the page (the wordmark's left edge or a later column). Where the page has a large object or a fixed photograph, this column is the small text beside it. Holds 90–150 words comfortably.",
+   "mobile": "The column becomes 78% of the width, left-aligned at the 20px margin, so a strip of empty ground remains on the right as a deliberate margin. Text stays at 15–16px with the first paragraph in medium weight. Padding is 72px above and 96px below.",
+   "seenIn": [
+    "opl-when-you-wish-upon-a-starboy",
+    "opl-deeo-studio-2",
+    "aww-vero-new-york"
+   ]
+  },
+  {
+   "id": "sec-split-title-closing-on-growing-media",
+   "name": "Split title closing on growing media",
+   "pattern": true,
+   "role": "cta",
+   "roles": [
+    "cta"
+   ],
+   "shape": "split",
+   "tags": [],
+   "directions": [],
+   "needs": [],
+   "pneeds": {
+    "pictures": "1",
+    "productUi": false,
+    "video": false,
+    "words": "few",
+    "assets": [
+     "photos:1"
+    ]
+   },
+   "fits": {
+    "sectors": [
+     "*"
+    ],
+    "tone": [
+     "bold",
+     "editorial",
+     "raw"
+    ],
+    "density": "airy"
+   },
+   "avoidWith": [
+    "kind:statement",
+    "kind:photo-break"
+   ],
+   "blueprint": "A band on the ink field (the ground on a dark page), two screens tall, with a sticky 100svh stage. At the start two heavy words in the display face at the display step sit far left (x 60) and far right on one baseline (3 to 7 letters each), with a small picture between them, 360 by 225 (the dealt corner), centred. While pinned for about 900px of scroll the words close in toward the centre from opposite sides while the picture grows to about 1200 by 750. At the end the words meet on the picture's lower part in the light ink; that part must be calm and of one tone (no tint laid over it; if the picture has no calm part the words stop either side of it). When the pin releases, a two-line centred 22px paragraph sits under the picture. No label above. Phone: words 64px on one row above and below the picture; the picture grows from 70% to 100% width. House rules for it: The small label is dropped. The flat 25% tint under the words is dropped (nothing laid over a picture), so the picture's lower part must be calm. Sizes are the dealt display step. The variant with five hard-cut pictures, a difference blend and uppercase is not built; the ids in merged stay for the record.",
+   "mobile": null,
+   "quality": 5
+  },
+  {
+   "id": null,
+   "role": "footer",
+   "shape": null,
+   "name": "footer",
+   "blueprint": null
+  }
+ ],
+ "references": [
+  {
+   "id": "aww-aardvark-book-club",
+   "name": "Aardvark Book Club",
+   "url": "https://aardvarkbookclub.com",
+   "source": "Awwwards Site of the Day",
+   "kind": "ecommerce",
+   "score": 7.7,
+   "idea": "A book club dressed as a sweet shop: fat black type, tumbling 3D books and boxes on wavy colour fields, annotated with handwritten asides.",
+   "mood": [
+    "playful",
+    "loud",
+    "bookish",
+    "warm"
+   ],
+   "archetype": "split-text-media",
+   "hero": "A saturated yellow field with two large wavy blobs, pale yellow then orange, rising from the bottom. A three-line headline in Champ Bold, black, at about 8.3vw with leading under 0.85, is flush to a 15px left margin and reaches 60% across. Beneath it: a four-line paragraph 310px wide and a magenta split button (label plus arrow square). Right of centre a 3D hardback in navy and pink tilts 20 degrees, 600px tall; another book is cropped by the top-left corner, a third by the bottom edge. A purple handwritten note sits rotated at far right. Nav: pale-yellow pill links centred, an orange login button, black round social icons.",
+   "type": "Champ Bold, an ultra-heavy wide sans with a looped g, for headings at 120px with tight tracking and leading; Degular for 18px body and pill labels; a purple handwritten script (Hello Organichand) for rotated margin notes and step labels. Three distinct voices.",
+   "colour": "#ffd249 #faed8f #f9a21f #ffdbfd #a4f6f8 #fd48f2 — Each section owns one flat candy colour: yellow hero, white shelf, pink steps, cyan unboxing, deep violet footer. Type stays black; buttons are magenta.",
+   "imagery": "3D-rendered hardbacks and a patterned shipping box, cut out and tilted, floating over flat wavy vector shapes; real book covers on tilted coloured cards; black line drawings of figures on step cards. Nothing sits square to the grid.",
+   "layout": "Sections are full-width panels with roughly 80px corner radius inset about 20px from the viewport, each a different colour. Headings alternate left and centre; cards overlap and rotate a few degrees; handwritten notes are tucked beside headings at an angle.",
+   "sections": [
+    {
+     "role": "showcase",
+     "description": "White band. A centred black heading at 5.5vw over a two-line subline, with a rotated handwritten note at its upper left. Below, a horizontal row of book covers, each on a rounded colour-matched card with a small tag pill at top-left; cards tilt alternately by 3 degrees at staggered heights, the last cropped by the right edge, with two round arrow buttons above at right. Later, covers give way to same-coloured info cards with genre pills, heavy title and blurb."
+    },
+    {
+     "role": "how-it-works",
+     "description": "A pale-pink rounded panel with lighter wavy shapes inside. Heavy black heading at left with a handwritten aside beside it; a small round logo stamp and a magenta split button at right. Along the bottom, four portrait cards about 250px wide in cyan, magenta, yellow and violet overlap like a fanned hand, each rotated a few degrees, with a handwritten step label at top, a black line drawing in the middle and a heavy caption at the foot."
+    },
+    {
+     "role": "other",
+     "description": "A full-viewport cyan rounded panel containing only a 3D shipping box wrapped in a wavy magenta, violet and black pattern, centred. Across the scroll it goes from closed and tilted to lid open, growing to about 57% of the viewport width, with a single handwritten note at its right. No heading and no button."
+    },
+    {
+     "role": "footer",
+     "description": "The preceding white section ends in large rounded bottom corners over a deep violet footer. Left: white logo, two store badges, two magenta round social icons. Centre: the patterned box again, cropped by the bottom edge. Right: a small heavy heading, a white rounded email field and a magenta split button. A black legal strip closes the page."
+    }
+   ],
+   "steal": [
+    "Give each section one flat saturated colour inside a large-radius inset panel and keep the type black across all of them.",
+    "Add rotated handwritten margin notes beside headings to carry secondary facts in a second voice.",
+    "Fan step cards so they overlap and tilt instead of sitting in an even grid."
+   ],
+   "media": "About 60% of the first screen is picture: a 3D book and cropped book corners over a full-bleed illustrated wave field. Below come a sticky image-sequence of a box opening inside a rounded panel, a slider of tilted cards bleeding off the right edge, covers fanned like a hand of cards, a sticker collage round a circular badge and a cut-out box rising out of the footer: 37 images and two scroll-scrubbed canvases, no video.",
+   "motion": "An indigo transition panel wipes away by 1.2s while the headline arrives word by word (515 split characters), and Lenis then drives the scrubbed scenes: the hero book turns through an image sequence, a sticky stage scrubs the box opening over 2745px, a headline slides along a curved path at scrub 0.5, and the footer is uncovered from under the rounded page. Buttons squash to 0.955 by 0.925 in 0.15s on press, the main ease is cubic-bezier(0.32,0.72,0,1), and the bounce overshoots are ones the house motion layer does not use, though the site ships 32 reduced-motion rules."
+  }
+ ],
+ "replay": null,
+ "heroSubstance": null,
+ "scenes": [
+  {
+   "id": "thumbnail-becomes-the-stage",
+   "name": "Thumbnail becomes the stage",
+   "family": "picture-transform",
+   "summary": "A statement of one or two lines at display size sits over a row of large thumbnails on the layout's columns, whose middle one is a keyhole onto a full-screen chapter; from the first step of the scroll the keyhole grows over its neighbours as they slide in under it, rises and opens to full bleed, and the statement passes through its edge, ink outside and paper inside, sliding from centred to flush left to become the chapter's heading word for word. It opens a product, a place or a film chapter from one strong muted loop or one strong picture.",
+   "place": "In the middle, as the door from the intro into the showcase or the work; the opened picture carries the chapter's feature notes on a solid band at its foot, and below 600px they follow it in the page's flow.",
+   "content": "One chapter picture or muted loop of 8-15 s (16:9, 1920x1080 or more, 8MB at most, with a poster; for software, a screen recording of the product), its subject in the centre: the keyhole opens on about the central half of its width and three quarters of its height on desktop (that crop is the thumbnail); its upper left calm and dark for the white heading; a 4:5 cut for phones. One or two satellite stills a side of neighbouring chapters in the same grade, 960px wide or more with the subject in the centre (the row crops them close to square on desktop, 3:4 on tablets, 3:5 on phones). No text burned into the pictures. A statement of up to two lines of 20 characters or fewer that names the chapter and becomes its heading word for word; an optional note under the heading; three or four feature items of a 2-3 word label and 16 words or fewer.",
+   "options": "hold 2 (1.4-2.6); phoneHold 1.6 (1.4-2.6); phone 'same' | 'rest'; scrub 0.5, true with Lenis (0-0.8); thumb, the layout's columns by default (0.12-0.5; a share under the columns is lifted to them, a larger one runs the neighbours off the edges); radius, the page's --radius or 0 (0-16 px), always 0 at full bleed; shade 0.3 (0-0.6) flat scrim over the picture under the heading; band 1 (0-1) the band under the notes, solid by default; heading 0.15 (0.1-0.25) where the heading settles, the statement starting at the same height; nav '', the selector of a fixed nav that gets is-on-dark over the picture.",
+   "phone": "The same opening with the keyhole starting at 64% of the width, 3:5, its neighbours running off the edges; hold 1.6. From 600px all four notes show two by two on the band; below 600px wide or under 540px tall they leave the stage and follow the picture in the page's flow, every one shown.",
+   "roles": [
+    "showcase",
+    "features",
+    "work",
+    "intro",
+    "gallery"
+   ],
+   "position": "middle",
+   "sectors": [
+    "*"
+   ],
+   "needs": [
+    "pictures:3"
+   ],
+   "hold": 2,
+   "weight": 0.5,
+   "carries": "features",
+   "defaultHold": 2
+  },
+  {
+   "id": "lib-0366",
+   "technique": true,
+   "name": "Closing word leaves its own trail behind it as it crosses",
+   "family": "type-choreography",
+   "position": "closing",
+   "trigger": "scroll-scrub",
+   "energy": "loud",
+   "kind": "statement",
+   "roles": [
+    "cta",
+    "contact"
+   ],
+   "sectors": [
+    "*"
+   ],
+   "needs": [
+    "pictures:0"
+   ],
+   "hold": 1,
+   "researchHold": 1.5,
+   "lines": 1,
+   "phone": "adapted",
+   "score": 7,
+   "principle": "On the last screens one very large word travels across a surface that is never wiped, so every earlier position stays painted and the word drags a long extruded trail of its own body behind it (stacked offset copies that read as stripes inside the letters) while the newest copy sits clean on top, and scrolling back wipes the trail away.",
+   "freshTake": "Close a studio's page with one promise word of 5 to 7 letters (Begin, Together, Again), not the studio's name or an email, set in a heavy serif and pinned at the vertical centre, sliding from the right edge out past the left edge over the last one and a half screens of scroll as horizontal travel. Every stamp is a solid flat letter shape, never an outline, and the ink switches between two flat colours (for example ochre and deep green on a bone ground) every 8px of travel counted from a smoothed scroll value, so the extrusion reads as evenly striped cut-paper layers at any scroll speed or refresh rate. When the word has gone, the screen holds a long striped band with the contact line set plainly over it in body type. No hollow letters, no knockout, no loop.",
+   "breaksWhen": "Long words: the size is tied to the width, so 18 letters clip unless the size is fitted to the measured width. The stroke is fixed in device pixels, so it is about three times finer on a 3x phone and the stripes look fainter. Trail density depends on frame rate and scroll speed unless the stamping is counted by distance travelled, so it looks different on every device. A full-viewport canvas redrawn every frame is costly on weak phones. Resizing clears the trail. Any section above with an opaque ground hides the canvas. Keep a real DOM word for screen readers.",
+   "carries": "cta",
+   "defaultHold": 1.5
+  }
+ ],
+ "frame": {
+  "nav": {
+   "id": "bottom-dock",
+   "text": "A dock at the bottom: at the top of the first screen only the wordmark, at the left margin, which scrolls away with the hero. The links and the action live in a capsule fixed 20px above the bottom edge and centred, there from the first screen on, 56px tall, as wide as its content, filled with the ink and lettered in the ground colour (on a dark page the surface tone with ink letters), opaque, no border, no shadow: three or four section names at 15-16px, the current one at weight 600, and the action as its one filled item in the accent. On a phone the dock spans the width less the margins, 60px plus the safe area, each target 44px or taller, and the page keeps 96px free under its last line. It slides down out of view while a pinned scene or the replay holds the screen, and comes back after.",
+   "signature": "The links and the action live in a capsule in the ink fixed 20px above the bottom edge; at the top only the wordmark."
+  },
+  "footer": {
+   "id": "foot-centred-logo-and-link-row-over-columns",
+   "text": "A filled panel on the surface tone, inset by the page margin, in the dealt corner, as tall as its content, about 700px at 1440, with 120px top padding. A centred logo lockup 56px high; 56px below it a centred row of up to seven primary links in the strong weight at the lead step on a 160px pitch (the site's other pages where it has them; on a one-page site its own sections and the contact; never a dead link), hover underlining in the ink. 96px under that, three left-aligned link columns on a 300px pitch starting at x 160 (titles at the lead step in the strong weight, body-size links), and at the far right a Back to top text link. The last row sits 80px below: the legal line at the left, the social text links and an Image credits link at the right, body size. Ink is the dealt ink on the surface tone. Phone: Lockup and primary links in a 2-up grid; columns stack. House rules for it: Designed out: the soft-tint variant with 50px top corners rising into view (a second radius and its own entrance), the 56px round back-to-top disc (a text link), the brand colour as the panel's ground (the surface tone). A rule and a row of membership marks would break the hairline and logo-wall bans; both are left out. The panel is one card, not boxes in boxes.",
+   "signature": "A filled panel inset from the page margins in the dealt corner, with a centred logo and a centred row of bold links over three link columns, so the footer reads as one rounded panel and not a full-width bar.",
+   "pattern": true,
+   "name": "Centred logo and link row over columns",
+   "avoidWith": [
+    "foot-link-columns-with-legal-tiers"
+   ]
+  },
+  "cards": {
+   "id": "overlapping",
+   "text": "Overlapping cards: a row of three or four filled cards with the dealt corner, in turn the surface tone and the ink (an ink card lettered in the ground colour), so every edge reads with no border, no shadow and no third tone. Each overlaps the one before by 24-32px and sits 24px lower, so the row steps down from left to right; its padding on the covered side is the overlap plus 24px or more, so no word sits under the card above. Hover or focus brings one to the front with a 6px rise. On a phone they stack with no overlap.",
+   "signature": "A row of three or four cards, in turn the surface tone and the ink, each overlapping the one before by 24-32px and sitting 24px lower."
+  },
+  "buttons": {
+   "id": "btn-rounded-chunky-display",
+   "text": "A heavy block: 10px radius, 64px tall at 1440, 24-28px side padding, the label in the dealt display face at the lead step in sentence case, one to three words, with an optional leading plus at the same size, filled with the accent with the accent's ink as letters. No border. Hover (200ms) brightens the fill 10% and turns a leading plus 90 degrees; press scales to 0.97. It is the loud action on a bold, game-like or food page. Colour roles: ground = page, accent = fill, accent's ink = letters. Phone: Block 60px tall with the label at the lead step, full column width; hover becomes press. House rules for it: Sentence case in the dealt display face at the lead step (the pattern's capitals are not kept). The pattern's same-colour 2px border is invisible and dropped; no outline variant, no shadow.",
+   "signature": "A heavy 64px block with 10px corners, the label in the display face at the lead step and a leading plus that turns 90 degrees on hover.",
+   "pattern": true,
+   "name": "Chunky display block",
+   "avoidWith": [
+    "btn-pill-poster-display"
+   ]
+  },
+  "corners": {
+   "id": "round",
+   "radius": "16px",
+   "text": "A 16px radius on cards and panels; pictures at 16px or square inside a card."
+  },
+  "spacing": {
+   "id": "open",
+   "section": "30-36vh",
+   "margin": "40-64px",
+   "gap": "clamp(8rem, 14vh + 10vw, 20rem)",
+   "marginCss": "clamp(1.5rem, 4vw, 4rem)",
+   "text": "Open: 30-36vh between sections (270-320px at 1440, 128-160px on a phone), page margins 40-64px at 1440 and 24px on a phone; one section to a screen at most."
+  },
+  "treatment": {
+   "id": "natural",
+   "text": "Pictures in natural colour, as shot, with matching light; no filters, no tints, no grain."
+  },
+  "interaction": {
+   "id": "none",
+   "text": "No interactive widget. The page is read: its content, pictures and motion carry it. Controls are the navigation, the links, the action and any real form."
+  },
+  "clip": {
+   "id": "one-clip",
+   "text": "One moving picture of the subject: a muted loop with a poster frame and a pause control, used once, large. Only if an honest clip of this subject exists."
+  }
+ },
+ "entrance": {
+  "id": "set-type",
+  "name": "Set type",
+  "family": "mask",
+  "summary": "headline lines rise from masks; the picture opens like a blind",
+  "energy": "medium",
+  "weight": 0.3,
+  "fits": {
+   "tones": [
+    "quiet",
+    "bold",
+    "warm",
+    "technical",
+    "playful",
+    "luxury",
+    "editorial"
+   ],
+   "imagery": [
+    "photo",
+    "interface",
+    "type-only"
+   ],
+   "requires": [
+    "display-headline"
+   ]
+  },
+  "sees": "The headline's lines rise out of their own baselines one after another while the picture opens downward like a blind; the sentence and the action rise 12 px after them.",
+  "settled": "1.2 s",
+  "markup": "Wrap each headline line: `<span class=\"line\"><span data-line style=\"--i:0\">…</span></span>`, three at most, with breaks that fit on one line at every width down to 360 px (a smaller display step on phones if they must).",
+  "byImagery": {
+   "interface": "The frame opens over the fragment, and the fragment settles from 1.08.",
+   "type-only": "Lines, then sentence and action; there is no picture step."
+  },
+  "below": {
+   "label": "Headings by line",
+   "rule": "Chapter headings (data-lines, five at most) rise line by line from their masks once, using the \"Lines that rise on scroll\" script in motion.md. Nothing else enters, and a stray data-reveal does nothing."
+  },
+  "mode": "photo"
+ },
+ "moves": [
+  {
+   "id": "mo-text-bracket-close-in",
+   "name": "Brackets close in",
+   "kind": "text",
+   "description": "A single word or two short words set large as the section's statement (display step, display face, ink, centred), flanked by two bracket glyphs from the same face at 1.2x the word's height. Scrubbed by scroll (from 85% to 50% of the viewport height) the brackets start 300px further out on each side and slide inward until they sit 0.2em from the word; the word itself is always fully visible. After landing everything holds still; a paragraph (lead step, 44 characters) sits 56px under it. Ground as dealt, accent none. Phone: word at the head step, brackets travel 120px. House rules for it: Never a small bracketed label above a heading (an eyebrow): the brackets are typographic marks around the large statement word itself; the page's own face, never a monospace; brackets stay ink, not a styled accent; scroll-linked, so the dealt entrance stands.",
+   "phone": null,
+   "avoidWith": [
+    "mo-text-char-colour-flash",
+    "mo-text-word-zoom-through"
+   ]
+  }
+ ],
+ "typeNote": null
+}

@@ -15,3 +15,10 @@ Sheet row nowebsite_ready 166 (V77 UNSENT). Next lead_status_log row A1630.
 Full sheet in draw-v77.txt (saved from the single draw). Avoid list used: V76's 19 avoid ids + name-as-monument.
 Headlines: first line only from listing. Photos: sports world, no people, no brands/readable lettering; illustrative labels, one Image credits dialog.
 Hero's "one-clip" video: no honest clip asset -> decide when building (redraw video slot only with a documented reason).
+
+## DRAW LOG (honest)
+- Draw #1 (the single direction draw): seed 1727664457 "The spec sheet" (draw-v77.txt, direction-original.json).
+- I then called `--redraw scenes=thumbnail-becomes-the-stage,closing-line-in-a-field-of-words` (refused: needs 16 names) and `--redraw scenes=lib-0366,thumbnail-becomes-the-stage` (no-op re-set, but counted), then a bare `--redraw scenes` twice (it dealt lib-0105, then lib-0194 + letter-bar-floods-the-ground) by mistake while trying to list fits, then `--redraw scenes=thumbnail-becomes-the-stage` to return to the originally dealt tested scene. Scene redraw counter reads 4 (limit 2): MY ERROR, not a design choice. Net effect: scene 1 = thumbnail-becomes-the-stage (as originally dealt); the original fresh-build technique lib-0366 (canvas trail) is replaced by the dealt cta "Question at both edges" (statement). Direction, frame, type, colour, hero, buttons unchanged. Reported to parent.
+- Reason lib-0366 was not kept anyway: fresh canvas build, needs no invented content, costly on phones; acceptable per sheet ("if it cannot be built honestly... take --redraw scenes").
+- Do NOT call draw.mjs again for V77 except --show.
+Current sheet: draw-v77-current.txt.

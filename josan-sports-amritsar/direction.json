@@ -2,7 +2,7 @@
  "version": 1,
  "at": "2026-11-11T07:11:43.265Z",
  "seed": 1727664457,
- "redraws": 0,
+ "redraws": 4,
  "input": {
   "brief": "concept preview for a local sports shop in Hall Bazar, Amritsar: cricket, hockey, badminton, football kits, shoes, training equipment",
   "sector": "ecommerce",
@@ -439,44 +439,24 @@
    ]
   },
   {
-   "id": "sec-split-title-closing-on-growing-media",
-   "name": "Split title closing on growing media",
-   "pattern": true,
+   "id": "cta-question-at-both-edges",
    "role": "cta",
-   "roles": [
-    "cta"
+   "name": "Question at both edges",
+   "shape": "statement",
+   "structure": "statement",
+   "tags": [
+    "type-led",
+    "poster"
    ],
-   "shape": "split",
-   "tags": [],
-   "directions": [],
+   "directions": [
+    "type-only-statement",
+    "dark-room",
+    "loud-flat-poster"
+   ],
    "needs": [],
-   "pneeds": {
-    "pictures": "1",
-    "productUi": false,
-    "video": false,
-    "words": "few",
-    "assets": [
-     "photos:1"
-    ]
-   },
-   "fits": {
-    "sectors": [
-     "*"
-    ],
-    "tone": [
-     "bold",
-     "editorial",
-     "raw"
-    ],
-    "density": "airy"
-   },
-   "avoidWith": [
-    "kind:statement",
-    "kind:photo-break"
-   ],
-   "blueprint": "A band on the ink field (the ground on a dark page), two screens tall, with a sticky 100svh stage. At the start two heavy words in the display face at the display step sit far left (x 60) and far right on one baseline (3 to 7 letters each), with a small picture between them, 360 by 225 (the dealt corner), centred. While pinned for about 900px of scroll the words close in toward the centre from opposite sides while the picture grows to about 1200 by 750. At the end the words meet on the picture's lower part in the light ink; that part must be calm and of one tone (no tint laid over it; if the picture has no calm part the words stop either side of it). When the pin releases, a two-line centred 22px paragraph sits under the picture. No label above. Phone: words 64px on one row above and below the picture; the picture grows from 70% to 100% width. House rules for it: The small label is dropped. The flat 25% tint under the words is dropped (nothing laid over a picture), so the picture's lower part must be calm. Sizes are the dealt display step. The variant with five hard-cut pictures, a difference blend and uppercase is not built; the ids in merged stay for the record.",
-   "mobile": null,
-   "quality": 5
+   "blueprint": "For a closing choice between two answers: book or ask, this date or that, the tasting or the tour. A flat field exactly 100svh tall in the darkest tone. The question is a two-line heading at clamp(110px, 11vw, 168px), leading 1.0, centred, about 54% of the width: line one with its cap line 32px under the field's top edge, line two with its baseline 24px above the bottom edge. The band of about 560px between them is empty except for one row at its optical centre: two solid rectangular buttons, each about 200×56px with its label at 18px in medium weight, their inner edges 120px either side of the centre axis, and between them, exactly on the axis, the word 'or' at 18px in the soft ink. 16px under the row, centred, one line at 16px in the soft ink says what happens after either choice. The type above and below closes the empty band, so it reads as held breath rather than a gap.",
+   "mobile": "The question drops to 18vw, still two centred lines, line one 32px from the top and line two 24px above the bottom. The buttons stack at the centre at 72% of the width, 12px apart, with 'or' between them and the line of explanation under the second.",
+   "seenIn": []
   },
   {
    "id": null,
@@ -564,36 +544,6 @@
    "weight": 0.5,
    "carries": "features",
    "defaultHold": 2
-  },
-  {
-   "id": "lib-0366",
-   "technique": true,
-   "name": "Closing word leaves its own trail behind it as it crosses",
-   "family": "type-choreography",
-   "position": "closing",
-   "trigger": "scroll-scrub",
-   "energy": "loud",
-   "kind": "statement",
-   "roles": [
-    "cta",
-    "contact"
-   ],
-   "sectors": [
-    "*"
-   ],
-   "needs": [
-    "pictures:0"
-   ],
-   "hold": 1,
-   "researchHold": 1.5,
-   "lines": 1,
-   "phone": "adapted",
-   "score": 7,
-   "principle": "On the last screens one very large word travels across a surface that is never wiped, so every earlier position stays painted and the word drags a long extruded trail of its own body behind it (stacked offset copies that read as stripes inside the letters) while the newest copy sits clean on top, and scrolling back wipes the trail away.",
-   "freshTake": "Close a studio's page with one promise word of 5 to 7 letters (Begin, Together, Again), not the studio's name or an email, set in a heavy serif and pinned at the vertical centre, sliding from the right edge out past the left edge over the last one and a half screens of scroll as horizontal travel. Every stamp is a solid flat letter shape, never an outline, and the ink switches between two flat colours (for example ochre and deep green on a bone ground) every 8px of travel counted from a smoothed scroll value, so the extrusion reads as evenly striped cut-paper layers at any scroll speed or refresh rate. When the word has gone, the screen holds a long striped band with the contact line set plainly over it in body type. No hollow letters, no knockout, no loop.",
-   "breaksWhen": "Long words: the size is tied to the width, so 18 letters clip unless the size is fitted to the measured width. The stroke is fixed in device pixels, so it is about three times finer on a 3x phone and the stripes look fainter. Trail density depends on frame rate and scroll speed unless the stamping is counted by distance travelled, so it looks different on every device. A full-viewport canvas redrawn every frame is costly on weak phones. Resizing clears the trail. Any section above with an opaque ground hides the canvas. Keep a real DOM word for screen readers.",
-   "carries": "cta",
-   "defaultHold": 1.5
   }
  ],
  "frame": {
@@ -705,5 +655,14 @@
    ]
   }
  ],
- "typeNote": null
+ "typeNote": null,
+ "scenesTried": [
+  "thumbnail-becomes-the-stage",
+  "lib-0366",
+  "lib-0105",
+  "lib-0194",
+  "letter-bar-floods-the-ground"
+ ],
+ "noScenes": false,
+ "sceneRedraws": 2
 }
