@@ -140,8 +140,13 @@ dialog h2 { font-size: 1.8rem; margin-bottom: 16px; } dialog li { margin-bottom:
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .wordmark { margin: 0; }
 .kh-sat .photo-tag { left: 28px; }
-[data-scene="thumbnail-becomes-the-stage"] .kh-window .kh-wtag { position: absolute; z-index: 6; top: 16px; right: auto; left: var(--margin); }
-@media (min-width: 801px) { [data-scene="thumbnail-becomes-the-stage"] .kh-window .kh-wtag { left: auto; right: 16px; } }
+[data-scene="thumbnail-becomes-the-stage"] .kh-window .kh-wtag { position: absolute; z-index: 6; top: auto; right: auto; bottom: 14svh; left: 50%; transform: translateX(-50%); white-space: nowrap; }
 .kh-sat:first-child .photo-tag { left: auto; right: 28px; }
 @media (max-width: 600px) { .kh-sat .photo-tag { display: none; } }
+.kh-slot { position: relative; }
+.kh-slot .photo-tag { position: absolute; left: 8px; bottom: 8px; z-index: 3; max-width: calc(100% - 16px); }
+.dock { transition: transform 320ms var(--ease-out); }
+.dock.is-away:not(:focus-within) { transform: translate(-50%, 160%); }
+@media (prefers-reduced-motion: reduce) { .dock { transition: none; } }
 @media (max-width: 800px) { .col { width: 100%; max-width: none; } .hero-lead, .brk p { max-width: none; } .cats-head { margin-right: 0; max-width: none; padding: 0 var(--margin); } }
+@media (min-width: 801px) { [data-scene="thumbnail-becomes-the-stage"] .kh-window .kh-wtag { bottom: 25svh; } }
