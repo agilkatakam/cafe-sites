@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Radhika Toys, Janakpuri, Bareilly - concept preview</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&amp;family=Pathway+Gothic+One&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="assets/scenes/stage.css">
+<link rel="stylesheet" href="assets/scenes/lib-0312.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-entrance="aperture">
+
+<p class="wordmark" id="top">Radhika Toys</p>
+
+<nav class="dock" aria-label="Page">
+  <a href="#listed">Listed</a>
+  <a href="#visit">Visit</a>
+  <a class="dock-act" href="#ask">Enquire</a>
+</nav>
+
+<main>
+<section class="hero" data-hero aria-labelledby="hero-title">
+  <figure class="hero-pic" data-e="picture" style="--window: 30% 34%; --picture-ground:#5b8fb5">
+    <img src="assets/photos/balloon-arch.jpg" width="1920" height="1437" alt="A curved arch of colourful balloons against a blue sky">
+    <figcaption class="photo-tag">illustrative photo, not the shop</figcaption>
+  </figure>
+  <div class="hero-text">
+    <h1 id="hero-title" data-e="headline"><span class="line">Toys, games,</span><span class="line"><span class="late">gifts.</span></span></h1>
+    <div class="hero-side" data-e="lead">
+      <p class="hero-lead">A concept preview made from its public listing.</p>
+      <a class="btn" href="#listed"><span>See the list</span></a>
+    </div>
+  </div>
+</section>
+<script>
+(() => {
+  if (!document.body || !document.body.dataset.entrance || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  for (const f of document.querySelectorAll('[data-hero] [data-e="picture"]:not([data-e-wait])')) {
+    const m = f.querySelector(':scope > img, :scope > video, :scope > picture > img');
+    if (!m || (m.tagName === 'VIDEO' ? m.readyState >= 2 : m.complete && m.naturalWidth)) continue;
+    f.setAttribute('data-e-wait', '');
+    let done = false;
+    const land = () => {
+      if (done) return; done = true;
+      if (performance.now() < 700 && document.body.dataset.entrance !== 'already-there') f.removeAttribute('data-e-wait');
+      else f.setAttribute('data-e-wait', 'late');
+    };
+    m.addEventListener(m.tagName === 'VIDEO' ? 'loadeddata' : 'load', land, { once: true });
+    m.addEventListener('error', land, { once: true });
+    setTimeout(land, 3000);
+  }
+})();
+</script>
+
+<section class="fill" aria-labelledby="fill-title">
+  <h2 class="sr-only" id="fill-title">About the store, from its listing</h2>
+  <p class="fill-text" data-fill>The listing describes a gift store with a collection of gifts and toys, open every day from 10am to 9:30pm.</p>
+</section>
+
+<section class="scene" data-scene="lib-0312" data-options='{"hold":1}' aria-labelledby="vl-title">
+  <div class="scene-stage">
+    <div class="vl-layer vl-a"><h2 class="vl-text" id="vl-title">Eleven kinds of things are named on the listing.</h2></div>
+    <div class="vl-layer vl-b"><p class="vl-text">Name plates, pooja articles, board games, puzzles and more.</p></div>
+    <div class="vl-veil" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="listed" id="listed" aria-labelledby="listed-title">
+  <h2 id="listed-title">Named on the listing</h2>
+  <p class="note">Names as listed, grouped here for reading.</p>
+  <div class="cols">
+    <ul class="col c1"><li>Toys</li><li>Games</li><li>Board Games</li><li>Puzzles</li></ul>
+    <ul class="col c2"><li>Name Plates</li><li>Wall Frames</li><li>Posters</li><li>Stationery Products</li></ul>
+    <ul class="col c3"><li>Pooja Articles</li><li>Religious Statues</li><li>God Idols</li></ul>
+  </div>
+</section>
+
+<section class="edge" aria-label="Illustrative picture">
+  <figure class="edge-pic" data-edge>
+    <img src="assets/photos/matsue-colorful-obon-lanterns.jpg" width="1920" height="1405" alt="Rows of colourful paper lanterns floating on dark water at dusk">
+    <figcaption class="photo-tag">illustrative photo, not the shop</figcaption>
+  </figure>
+</section>
+
+<section class="intro" id="visit" aria-labelledby="visit-title">
+  <div class="intro-head">
+    <h2 id="visit-title">Details from the listing</h2>
+    <p class="note">Taken from the public listing, which may have changed. Check with the store first.</p>
+  </div>
+  <figure class="intro-pic"><img src="assets/photos/rainbow-umbrella.jpg" width="1314" height="874" alt="A rainbow-striped umbrella hanging from wires against a blue sky"><figcaption class="photo-tag">illustrative photo, not the shop</figcaption></figure>
+  <dl class="facts">
+    <div><dt>Address</dt><dd>Janakpuri, Bareilly, UP 243122</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Sunday, 10am to 9:30pm</dd></div>
+    <div><dt>Phone</dt><dd><a href="tel:+919258330001">92583 30001</a></dd></div>
+    <div><dt>Email</dt><dd><a href="mailto:radhikatoysandgifts@gmail.com">radhikatoysandgifts@gmail.com</a></dd></div>
+  </dl>
+</section>
+</main>
+
+<footer class="footer" id="ask">
+  <div class="foot-l">
+    <h2>Ask the store, write or call?</h2>
+    <div class="foot-act">
+      <a class="btn btn-bar" href="mailto:radhikatoysandgifts@gmail.com"><span>Write</span></a>
+      <a class="btn btn-bar" href="tel:+919258330001"><span>Call</span></a>
+    </div>
+    <p class="ask-note">Enquiries only. This preview is not the store and sells or books nothing.</p>
+  </div>
+  <div class="foot-r">
+    <div class="foot-cols">
+      <ul><li><a href="#listed">Listed</a></li><li><a href="#visit">Visit</a></li><li><a href="#top">Back to top</a></li></ul>
+      <ul><li><a href="mailto:radhikatoysandgifts@gmail.com">radhikatoysandgifts@gmail.com</a></li><li><a href="tel:+919258330001">92583 30001</a></li><li>Janakpuri, Bareilly, UP 243122</li></ul>
+    </div>
+    <div class="foot-last">
+      <p class="foot-legal">Concept preview. Enquiries only, not a booking service.</p>
+      <button class="foot-credits" type="button" id="credits-open">Image credits</button>
+    </div>
+  </div>
+</footer>
+
+<dialog id="credits-dialog" aria-labelledby="credits-title">
+  <h2 id="credits-title">Image credits</h2>
+  <ul>
+    <li>"Balloon arch" by Ishmael Orendain, CC BY 2.0, via Wikimedia Commons (resized).</li>
+    <li>"Rainbow umbrella" (DZ6 0482) by PattayaPatrol, CC BY-SA 4.0, via Wikimedia Commons (resized).</li>
+    <li>"Matsue colorful obon lanterns" by Wikitravel Shared user JamesAlexanderJack, CC BY-SA 3.0, via Wikimedia Commons (resized).</li>
+  </ul>
+  <p>All photos are illustrative: they show a party, a festival and a street in general, not this store or its stock.</p>
+  <form method="dialog"><button class="btn" type="submit"><span>Close</span></button></form>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="assets/scenes/stage.js"></script>
+<script src="assets/scenes/lib-0312.js"></script>
+<script src="base.js"></script>
+<script src="app.js"></script>
+<script>Stage.smooth(); Stage.init();</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.scene[data-scene="lib-0312"] .vl-layer { display: flex; align-items: center; min-height: 70svh; padding: var(--section-gap) var(--margin); }
+.scene[data-scene="lib-0312"] .vl-a { background: var(--bg); color: var(--ink); }
+.scene[data-scene="lib-0312"] .vl-b { background: var(--ink); color: var(--bg); }
+.scene[data-scene="lib-0312"] .vl-veil { display: none; }
+.scene[data-scene="lib-0312"].is-live .scene-stage { position: relative; }
+.scene[data-scene="lib-0312"].is-live .vl-layer { position: absolute; inset: 0; min-height: 0; padding: 0 var(--margin); }
+.scene[data-scene="lib-0312"].is-live .vl-veil { display: block; position: absolute; inset: 0; background: var(--accent); z-index: 2; }
+.vl-text { font-family: var(--font-display); font-size: var(--step-display); line-height: .88; letter-spacing: .002em; max-width: 12em; margin: 0; font-weight: 400; }

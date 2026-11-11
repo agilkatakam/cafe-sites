@@ -1,0 +1,55 @@
+[
+  {
+    "file": "assets/photos/balloon-arch.jpg",
+    "media": "image",
+    "ref": "openverse:bfab5071-7fae-477e-83cf-0c774dd06d78",
+    "title": "Balloon arch",
+    "creator": "Ishmael Orendain",
+    "creatorUrl": "https://www.flickr.com/people/ishmaelo",
+    "date": null,
+    "license": "CC BY 2.0",
+    "licenseCode": "by",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/w/index.php?curid=1113880",
+    "via": "Wikimedia Commons",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Balloon_arch.jpg/1920px-Balloon_arch.jpg",
+    "width": 1920,
+    "height": 1437,
+    "bytes": 466405,
+    "credit": "\"Balloon arch\" by Ishmael Orendain, CC BY 2.0, via Wikimedia Commons",
+    "notes": [],
+    "saved": "2026-11-11T10:14:28.783Z"
+  },
+  {
+    "file": "assets/photos/matsue-colorful-obon-lanterns.jpg",
+    "media": "image",
+    "ref": "openverse:0dcc4c72-c80a-437f-a50f-71facb7ab0ed",
+    "title": "Matsue colorful obon lanterns",
+    "creator": "Wikitravel Shared user JamesAlexanderJack",
+    "creatorUrl": "https://wikitravel.org/wiki/shared/index.php?title=User:JamesAlexanderJack",
+    "date": null,
+    "license": "CC BY-SA 3.0",
+    "licenseCode": "by-sa",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "creditRequired": true,
+    "page": "https://commons.wikimedia.org/w/index.php?curid=29856204",
+    "via": "Wikimedia Commons",
+    "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Matsue_colorful_obon_lanterns.jpg/1920px-Matsue_colorful_obon_lanterns.jpg",
+    "width": 1920,
+    "height": 1405,
+    "bytes": 266657,
+    "credit": "\"Matsue colorful obon lanterns\" by Wikitravel Shared user JamesAlexanderJack, CC BY-SA 3.0, via Wikimedia Commons",
+    "notes": [
+      "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+    ],
+    "saved": "2026-11-11T10:14:39.176Z"
+  },
+  {
+    "file": "assets/photos/rainbow-umbrella.jpg",
+    "creator": "PattayaPatrol",
+    "license": "CC BY-SA 4.0",
+    "via": "Wikimedia Commons",
+    "title": "A colorful rainbow umbrella suspended from overhead wires"
+  }
+]
