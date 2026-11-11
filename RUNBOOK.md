@@ -233,3 +233,4 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Omitted from listing: manufacture/bespoke claims, same-day delivery, reviews, rating, budget claims. Hours attributed to the listing.
 - Lesson: grid items with grid-row shared overlapped; give the cta grid explicit columns. Inspect --allow used and documented in NOTES.md.
 - Ledger: lead_status_log A1630 = preview_live; nowebsite_ready G166 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
+- EMAIL SENT Nov 11 13:09 IST from katakamakhil0 to josansports@gmail.com, gmail id 1a1c98c3520f1ae0, after parent clearance 13:09 and fresh gates (dedupe 0, no suppression, cap clear). Ledger A1630 = emailed; G166 = EMAILED.
