@@ -234,3 +234,10 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Lesson: grid items with grid-row shared overlapped; give the cta grid explicit columns. Inspect --allow used and documented in NOTES.md.
 - Ledger: lead_status_log A1630 = preview_live; nowebsite_ready G166 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
 - EMAIL SENT Nov 11 13:09 IST from katakamakhil0 to josansports@gmail.com, gmail id 1a1c98c3520f1ae0, after parent clearance 13:09 and fresh gates (dedupe 0, no suppression, cap clear). Ledger A1630 = emailed; G166 = EMAILED.
+
+## V79 Radhika Toys, Janakpuri, Bareilly (Nov 11 2026)
+- Live: https://agilkatakam.github.io/cafe-sites/radhika-toys-bareilly/ . Direction "The pinned poster" (seed 306157415, one draw, 0 redraws): bottle green and gold, Pathway Gothic One / Instrument Sans, aperture entrance, bottom dock, two-halves footer, fresh scene lib-0312 (veil hides the palette swap) built on Stage.
+- Photos (3, fewer than sheet): balloon arch (Ishmael Orendain CC BY 2.0), rainbow umbrella on wires (PattayaPatrol CC BY-SA 4.0), lanterns on water (JamesAlexanderJack CC BY-SA 3.0). Rejected: lanterns with faces, gift bag with printed graphics, party hall. Gallery replaced by listed names as text.
+- Omitted: Since 2005, score, reviews, delivery/online/personalised claims. Inspect --allow documented in NOTES.md.
+- Lesson: scene tweens on the same property need explicit fromTo values or the second reads the unrendered start; words that wait under a same-colour veil avoid the covered-text fail in the live frames.
+- Ledger: A1632 = preview_live; G168 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
