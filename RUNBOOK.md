@@ -216,3 +216,11 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Lesson: inspect on the live URL with --widths 1440,390 and timeout 105 stays under the 120s limit.
 - Ledger: lead_status_log A1628 = preview_live; nowebsite_ready G164 = PREVIEW. Commits d4422ef 933a66f b58b9ee.
 - EMAIL SENT Nov 10 09:43 IST from katakamakhil0, gmail id 1a1c3a8e0a45cbf3, after parent visual clearance 09:42 and fresh gates. Ledger A1628 = emailed; G164 = EMAILED.
+
+## V76 Aim4Music Academy (music schools, Amritsar) - preview live Nov 11 2026
+- URL https://agilkatakam.github.io/cafe-sites/aim4music-academy-amritsar/ ; lead dharamkoti123@gmail.com, sheet row 165. Direction "The name as a monument" (seed 745455316, one draw, 0 redraws): colour-block hero, seam-pocket + letter-physics scenes, dealt-deck cards.
+- Gates: lint 0 FAIL; inspect 1440/390 0 FAIL (5 WARN defended in NOTES.md); scenes run, 6 empty-steps WARN (dark-ground scenes); live curl 200, instinct=0, noindex, disclaimer, mailto, byte-match, all assets 200.
+- Photos (3): piano (Puikstekend CC BY-SA), violin (Providence Doucet CC0), guitar (Kiefer.Wolfowitz CC BY-SA). Rejected: tabla/dholak/drum-kit shots with people; guitar-store wall with brands/price tags.
+- Omitted from listing: rating, hours (contradictory), "Since 2011", superlatives.
+- Lesson: a large centred wordmark runs into the ink block at 400px; set ~270px so no letter is lost. Lesson: a mobile photo caption right above a heading is flagged as an eyebrow: put the heading first.
+- Ledger: lead_status_log A1629 = preview_live; nowebsite_ready G165 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
