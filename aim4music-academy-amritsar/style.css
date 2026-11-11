@@ -39,7 +39,7 @@ h2{font-size:var(--step-head)}
 .bar.is-band .bar-r{color:var(--ink)}
 .bar-act{min-height:44px;padding:0 24px;font-size:1rem}
 .bar-mark{position:absolute;left:50%;top:0;height:100%;display:flex;align-items:center;transform:translateX(-50%);pointer-events:none}
-.bar-mark{font:var(--display-weight) 3.6rem/1 var(--font-display);letter-spacing:-0.037em;color:var(--ink);transform-origin:top center;white-space:nowrap}
+.bar-mark{font:var(--display-weight) 3.6rem/1 var(--font-display);letter-spacing:-0.037em;color:var(--ink);transform-origin:center center;white-space:nowrap}
 .bar-mark{pointer-events:auto}
 .bar-menu{display:none;background:none;border:0;padding:0;min-height:44px;font:inherit;color:var(--ink);cursor:pointer}
 .menu-panel{background:var(--bg);display:flex;flex-direction:column;gap:6px;padding:8px var(--margin) 20px;font-size:1.125rem}
