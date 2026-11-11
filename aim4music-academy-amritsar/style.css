@@ -140,10 +140,10 @@ dialog h2{margin-bottom:16px}
   .poster-list{padding:48px 0}
   .poster-list li{flex-direction:column;gap:6px;margin-bottom:22px}
   .pf{text-align:left;font-size:.9375rem;max-width:none}
-  .gallery{display:block;min-height:0;padding:var(--section-gap) var(--margin);position:relative}
+  .gallery{display:flex;flex-direction:column;min-height:0;padding:var(--section-gap) var(--margin);position:relative}
   .g{position:relative;left:auto;top:auto;bottom:auto;width:46%}
-  .g1{margin-bottom:28px}.g2{margin:28px 0 28px auto}.g3{margin-top:28px;margin-bottom:64px}
-  .gal-mid{margin:0 auto}
+  .g1{margin-bottom:28px}.g2{margin:28px 0 28px auto}.g3{margin-top:28px}
+  .gal-mid{margin:0 auto 48px;order:-1}
   .gal-mid h2{font-size:clamp(1.8rem,7vw,2.25rem)}
   .deck{flex-direction:column;align-items:center;gap:40px}
   .card{width:calc(100% - 16px);max-width:none;}
