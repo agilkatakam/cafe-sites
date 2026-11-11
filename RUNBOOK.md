@@ -224,3 +224,4 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Omitted from listing: rating, hours (contradictory), "Since 2011", superlatives.
 - Lesson: a large centred wordmark runs into the ink block at 400px; set ~270px so no letter is lost. Lesson: a mobile photo caption right above a heading is flagged as an eyebrow: put the heading first.
 - Ledger: lead_status_log A1629 = preview_live; nowebsite_ready G165 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
+- EMAIL SENT Nov 11 10:06 IST from katakamakhil0 to dharamkoti123@gmail.com, gmail id 1a1c8e4ec9100551, after parent visual clearance 10:06 and fresh gates (dedupe clean, no suppression, cap clear). Ledger A1629 = emailed; G165 = EMAILED.
