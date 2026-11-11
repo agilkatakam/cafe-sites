@@ -225,3 +225,11 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Lesson: a large centred wordmark runs into the ink block at 400px; set ~270px so no letter is lost. Lesson: a mobile photo caption right above a heading is flagged as an eyebrow: put the heading first.
 - Ledger: lead_status_log A1629 = preview_live; nowebsite_ready G165 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
 - EMAIL SENT Nov 11 10:06 IST from katakamakhil0 to dharamkoti123@gmail.com, gmail id 1a1c8e4ec9100551, after parent visual clearance 10:06 and fresh gates (dedupe clean, no suppression, cap clear). Ledger A1629 = emailed; G165 = EMAILED.
+
+## V77 Josan Sports, Hall Bazar, Amritsar (sports shops) - preview live Nov 11 2026 13:02 IST
+- URL https://agilkatakam.github.io/cafe-sites/josan-sports-amritsar/ ; commit ab0d302. Sheet row nowebsite_ready 166 (josansports@gmail.com).
+- Direction "The spec sheet" (seed 1727664457), draw once; scene redraw counter reads 4 due to my mistaken --redraw calls (see NOTES.md draw log). Scenes: thumbnail-becomes-the-stage (dealt) + cta "Question at both edges" (statement).
+- Photos (4): outdoor court (Nilo Velez CC0), indoor court (mdburnette CC0), football goal net (Santeri Viinamaki CC BY-SA 4.0), cricket stumps (Acabashi CC BY-SA). Rejected: pool (distant spectators), Royal London stumps (brand lettering). No video.
+- Omitted from listing: manufacture/bespoke claims, same-day delivery, reviews, rating, budget claims. Hours attributed to the listing.
+- Lesson: grid items with grid-row shared overlapped; give the cta grid explicit columns. Inspect --allow used and documented in NOTES.md.
+- Ledger: lead_status_log A1630 = preview_live; nowebsite_ready G166 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
