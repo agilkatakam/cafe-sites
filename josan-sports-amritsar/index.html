@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Josan Sports, Hall Bazar, Amritsar - concept preview</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=pilcrow-rounded@700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="assets/scenes/stage.css">
+<link rel="stylesheet" href="assets/scenes/thumbnail-becomes-the-stage.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-entrance="set-type">
+
+<p class="wordmark" id="top">Josan Sports</p>
+
+<nav class="dock" aria-label="Page">
+  <a href="#categories">Categories</a>
+  <a href="#chapter">Chapter</a>
+  <a href="#visit">Visit</a>
+  <a class="dock-act" href="#ask">Enquire</a>
+</nav>
+
+<main>
+<section class="hero" data-hero aria-labelledby="hero-title">
+  <div class="hero-text">
+    <h1 id="hero-title" data-e="headline"><span class="line"><span data-line style="--i:0">Hockey to</span></span><span class="line"><span data-line style="--i:1">swimming.</span></span></h1>
+    <p class="hero-lead" data-e="lead">A concept preview for a sports shop in Hall Bazar, Amritsar, made from its public listing.</p>
+    <a class="btn" data-e="action" href="#categories"><span>See what is listed</span><i aria-hidden="true">+</i></a>
+  </div>
+  <figure class="hero-pic" data-e="picture" style="--picture-ground:#8fa3b3">
+    <img src="assets/photos/an-empty-outdoor-basketball-court-with-a.jpg" width="2048" height="1365" alt="An empty outdoor court with a hoop and white line markings on a brick-red surface">
+    <figcaption class="photo-tag">illustrative photo, not the shop</figcaption>
+  </figure>
+</section>
+<script>
+(() => {
+  if (!document.body || !document.body.dataset.entrance || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  for (const f of document.querySelectorAll('[data-hero] [data-e="picture"]:not([data-e-wait])')) {
+    const m = f.querySelector(':scope > img, :scope > video, :scope > picture > img');
+    if (!m || (m.tagName === 'VIDEO' ? m.readyState >= 2 : m.complete && m.naturalWidth)) continue;
+    f.setAttribute('data-e-wait', '');
+    let done = false;
+    const land = () => {
+      if (done) return; done = true;
+      if (performance.now() < 700 && document.body.dataset.entrance !== 'already-there') f.removeAttribute('data-e-wait');
+      else f.setAttribute('data-e-wait', 'late');
+    };
+    m.addEventListener(m.tagName === 'VIDEO' ? 'loadeddata' : 'load', land, { once: true });
+    m.addEventListener('error', land, { once: true });
+    setTimeout(land, 3000);
+  }
+})();
+</script>
+
+<section class="cats" id="categories" aria-labelledby="cats-title">
+  <div class="cats-head">
+    <h2 id="cats-title">The listing names sixteen kinds of sports goods.</h2>
+    <p>Sports clothing, accessories and equipment for men, women and children, as the listing describes the shop.</p>
+  </div>
+  <ul class="sheet">
+    <li class="t t-a">Hockey</li>
+    <li class="t t-c">Football Kits</li>
+    <li class="t t-b">Shoes</li>
+    <li class="t t-d">Training Equipment</li>
+    <li class="t t-a">Cricket</li>
+    <li class="t t-e">Boots</li>
+    <li class="t t-c">Badminton</li>
+    <li class="t t-b">Netball</li>
+    <li class="t t-d">Football Training Wear</li>
+    <li class="t t-a">Basketball</li>
+    <li class="t t-e">Shorts</li>
+    <li class="t t-c">Jackets</li>
+    <li class="t t-b">Rugby</li>
+    <li class="t t-a">Sweatshirts</li>
+    <li class="t t-e">Sunglasses</li>
+    <li class="t t-d">Swimming</li>
+  </ul>
+</section>
+
+<section class="marq" aria-labelledby="marq-title">
+  <h2 id="marq-title" class="sr">More named on the listing</h2>
+  <div class="marq-track">
+    <p>Running shoes <b aria-hidden="true">/</b> Sunglasses <b aria-hidden="true">/</b> Sweatshirts <b aria-hidden="true">/</b> Football training wear <b aria-hidden="true">/</b> Netball <b aria-hidden="true">/</b> Rugby <b aria-hidden="true">/</b> </p>
+    <p aria-hidden="true">Running shoes <b>/</b> Sunglasses <b>/</b> Sweatshirts <b>/</b> Football training wear <b>/</b> Netball <b>/</b> Rugby <b>/</b> </p>
+  </div>
+</section>
+
+<section class="scene" id="chapter" data-scene="thumbnail-becomes-the-stage" data-options='{"hold":2,"phoneHold":1.6,"shade":0.45}' aria-labelledby="kh-title">
+  <div class="scene-stage">
+    <div class="kh-statement-box">
+      <h2 class="kh-statement" id="kh-title">
+        <span class="kh-line kh-line--lead"><span class="kh-mask"><span class="kh-in">Kit for the court,</span></span></span>
+        <span class="kh-line"><span class="kh-mask"><span class="kh-in">the field, the pool.</span></span></span>
+      </h2>
+    </div>
+    <div class="kh-row" aria-hidden="true">
+      <div class="kh-sat"><img src="assets/photos/football-goal-net.jpg" width="1920" height="1440" alt=""><span class="photo-tag">illustrative photo, not the shop</span></div>
+      <div class="kh-slot"><img class="kh-slot-poster" src="assets/photos/an-empty-indoor-basketball-court-with-polished.jpg" width="2048" height="1536" alt=""></div>
+      <div class="kh-sat"><img src="assets/photos/highgate-cricket-club-cricket-stumps-haringey-london.jpg" width="1600" height="1200" alt=""><span class="photo-tag">illustrative photo, not the shop</span></div>
+    </div>
+    <div class="kh-window">
+      <div class="kh-media">
+        <img src="assets/photos/an-empty-indoor-basketball-court-with-polished.jpg" width="2048" height="1536" alt="An empty indoor basketball court with a polished wooden floor and hoops at each end">
+      </div>
+      <div class="kh-shade" aria-hidden="true"></div>
+      <div class="kh-statement-box kh-statement-box--paper" aria-hidden="true">
+        <div class="kh-statement">
+          <span class="kh-line kh-line--lead"><span class="kh-mask"><span class="kh-in">Kit for the court,</span></span></span>
+          <span class="kh-line"><span class="kh-mask"><span class="kh-in">the field, the pool.</span></span></span>
+        </div>
+      </div>
+      <div class="kh-chapter">
+        <p class="kh-note">What the listing says it stocks</p>
+        <ul class="kh-features">
+          <li><h3>Team sports</h3><p>Hockey, netball, cricket, badminton, basketball, rugby and football are all named.</p></li>
+          <li><h3>Footwear</h3><p>Shoes and boots are listed, and the description mentions running shoes.</p></li>
+          <li><h3>Clothing</h3><p>Football kits, shorts, jackets, sweatshirts and football training wear.</p></li>
+          <li><h3>Extras</h3><p>Sunglasses, swimming and training equipment also appear on the listing.</p></li>
+        </ul>
+      </div>
+      <span class="photo-tag kh-wtag">illustrative photo, not the shop</span>
+    </div>
+  </div>
+</section>
+
+<section class="brk" aria-labelledby="brk-title">
+  <div class="brk-row">
+    <span class="brk-b brk-l" aria-hidden="true">[</span>
+    <h2 id="brk-title" class="brk-w">Hall Bazar</h2>
+    <span class="brk-b brk-r" aria-hidden="true">]</span>
+  </div>
+  <p>Josan Building, Josan Market, Amritsar 143006, as the listing gives it.</p>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-title">
+  <div class="col">
+    <h2 id="visit-title">Details from the listing</h2>
+    <p>Taken from the public listing, which may have changed. Check with the shop first.</p>
+    <p>The listing shows Monday to Saturday, 10am to 8pm, and Sunday closed.</p>
+  </div>
+  <div class="deck">
+    <article class="card c1"><h3>Address</h3><p>Josan Building, Josan Market, Hall Bazar</p><p class="fact">Amritsar, PB 143006</p><p><a href="https://www.google.com/maps/search/?api=1&amp;query=Josan+Building+Josan+Market+Hall+Bazar+Amritsar+143006">Directions on a map</a></p></article>
+    <article class="card c2"><h3>Phone</h3><p class="fact"><a href="tel:+911832551511">0183 255 1511</a></p><p class="fact"><a href="tel:+919814055252">98140 55252</a></p></article>
+    <article class="card c3"><h3>Email</h3><p class="fact"><a href="mailto:josansports@gmail.com">josansports@gmail.com</a></p><p>The address on the listing.</p></article>
+  </div>
+</section>
+
+<section class="ask" id="ask" aria-labelledby="ask-title">
+  <h2 id="ask-title"><span>Ask the shop,</span><span>write or call?</span></h2>
+  <div class="ask-row">
+    <a class="btn btn-fill" href="mailto:josansports@gmail.com"><span>Write</span><i aria-hidden="true">+</i></a>
+    <span class="ask-or">or</span>
+    <a class="btn btn-ink" href="tel:+919814055252"><span>Call</span><i aria-hidden="true">+</i></a>
+  </div>
+  <p class="ask-note">Enquiries only. This preview is not the shop and sells or books nothing.</p>
+</section>
+</main>
+
+<footer class="footer" id="footer">
+  <div class="foot-panel">
+    <p class="foot-logo">Josan Sports</p>
+    <ul class="foot-links">
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#chapter">Chapter</a></li>
+      <li><a href="#visit">Visit</a></li>
+      <li><a href="#ask">Enquire</a></li>
+    </ul>
+    <div class="foot-cols">
+      <div><h3>Find</h3><p>Josan Building, Josan Market, Hall Bazar</p><p>Amritsar, PB 143006</p></div>
+      <div><h3>Contact</h3><p><a href="mailto:josansports@gmail.com">josansports@gmail.com</a></p><p><a href="tel:+911832551511">0183 255 1511</a></p><p><a href="tel:+919814055252">98140 55252</a></p></div>
+      <div><h3>Hours on the listing</h3><p>Monday to Saturday, 10am to 8pm</p><p>Sunday closed</p></div>
+      <a class="foot-top" href="#top">Back to top</a>
+    </div>
+    <div class="foot-last">
+      <p class="foot-legal">Concept preview. Enquiries only, not a booking service.</p>
+      <button class="foot-credits" type="button" id="credits-open">Image credits</button>
+    </div>
+  </div>
+</footer>
+
+<dialog id="credits-dialog" aria-labelledby="credits-title">
+  <h2 id="credits-title">Image credits</h2>
+  <ul>
+    <li>"Empty outdoor basketball court" by Nilo Velez, CC0, via the WordPress Photo Directory (resized).</li>
+    <li>"Empty indoor basketball court" by mdburnette, CC0, via the WordPress Photo Directory (resized).</li>
+    <li>"Football goal net" by Santeri Viinamäki, CC BY-SA 4.0, via Wikimedia Commons (resized).</li>
+    <li>"Highgate Cricket Club cricket stumps" by Acabashi, CC BY-SA, via Wikimedia Commons (resized).</li>
+  </ul>
+  <p>All photos are illustrative: they show sports places and equipment in general, not this shop or its stock.</p>
+  <form method="dialog"><button class="btn btn-ink" type="submit"><span>Close</span><i aria-hidden="true">+</i></button></form>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="assets/scenes/stage.js"></script>
+<script src="assets/scenes/thumbnail-becomes-the-stage.js"></script>
+<script src="base.js"></script>
+<script src="app.js"></script>
+<script>Stage.smooth(); Stage.init();</script>
+</body>
+</html>
