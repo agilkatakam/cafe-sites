@@ -1,0 +1,3500 @@
+{
+ "url": "index.html",
+ "at": "2026-11-11T04:21:45.525Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 10,
+   "pageScreens": 9.9,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 47,
+     "vw": 3.3,
+     "text": "Classes",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 18
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 1,
+     "how": [
+      "a box or button"
+     ],
+     "colouredShare": 0
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0.18,
+     "words": 119
+    },
+    "labels": [
+     {
+      "text": "illustrative photo, not the ac",
+      "y": 4242
+     },
+     {
+      "text": "illustrative photo, not the ac",
+      "y": 4216
+     },
+     {
+      "text": "illustrative photo, not the ac",
+      "y": 4656
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [
+     {
+      "text": "Singing to dholak, seven classes. Singing to dholak, seven c",
+      "words": 10,
+      "ui": false,
+      "level": "H1"
+     },
+     {
+      "text": "Where and how to reach it",
+      "words": 6,
+      "ui": false,
+      "level": "H2"
+     },
+     {
+      "text": "Pick up an instrument. Pick up an instrument.",
+      "words": 8,
+      "ui": false,
+      "level": "H2"
+     }
+    ],
+    "uiWords": [],
+    "sentences": 4,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 22,
+    "pageWords": {
+     "all": 202,
+     "footer": 18
+    },
+    "wordySections": [],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 5,
+     "menu": false,
+     "foot": 0
+    },
+    "giantContact": [],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [
+     {
+      "head": "Where and how to reach it",
+      "first": "Address H.no-77, Continental E",
+      "n": 3,
+      "fill": "#2b2622",
+      "how": "filled"
+     }
+    ],
+    "loneColumns": [],
+    "splitHero": null,
+    "tileWalls": [],
+    "ground": [
+     235,
+     229,
+     227
+    ],
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [],
+    "loneHeld": []
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.73,
+    0.38,
+    0.61,
+    0.98,
+    0.39,
+    0.44,
+    1,
+    1,
+    1,
+    1
+   ],
+   "content": [
+    0.22,
+    0.13,
+    0.15,
+    0.35,
+    0.25,
+    0.16,
+    0.36,
+    0.31,
+    0.17,
+    0.08
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 47,
+    "css": 0,
+    "transitions": 3,
+    "scripted": 44,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 8895,
+     "screens": 9.9,
+     "words": 220,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "piano.jpg",
+      "violin.jpg",
+      "guitar.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Singing to dholak, seven classes. Singing to dholak, seven classes.",
+     "words": 10,
+     "chars": 67,
+     "lines": 2,
+     "size": 113,
+     "vw": 7.8,
+     "font": "Funnel Display",
+     "weight": 500,
+     "tracking": -0.037,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.62,
+     "top": 565,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Singing to dholak, seven classes. Singing to dholak, seven classes.",
+     "words": 10,
+     "lines": 2,
+     "size": 113,
+     "font": "Funnel Display",
+     "spacing": -0.04,
+     "pairs": 54
+    },
+    "h2s": [
+     {
+      "text": "What is taught",
+      "size": 47.1,
+      "top": 1005
+     },
+     {
+      "text": "Instruments of the lesson room",
+      "size": 33.6,
+      "top": 4121
+     },
+     {
+      "text": "Where and how to reach it",
+      "size": 47.1,
+      "top": 4754
+     },
+     {
+      "text": "Pick up an instrument. Pick up an instrument.",
+      "size": 181.4,
+      "top": 5579
+     },
+     {
+      "text": "Ask the academy.",
+      "size": 144,
+      "top": 7608
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#taught",
+      "#pictures",
+      "#top",
+      "#visit",
+      "#enquire",
+      "#about"
+     ],
+     "labels": [
+      "enquire",
+      "see the classes"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Aim4Music",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.2,
+      "top": 0,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Singing to dholak, seven classes. Singing to dholak, seven classes.",
+      "words": 10,
+      "chars": 67,
+      "lines": 2,
+      "size": 113,
+      "vw": 7.8,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.62,
+      "top": 565,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What is taught",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.36,
+      "top": 1005,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Singing",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.1,
+      "top": 1093,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Drums",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.09,
+      "top": 1106,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Dholak",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.09,
+      "top": 1125,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Guitar",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.08,
+      "top": 1157,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Beginners",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.13,
+      "top": 1158,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Experienced",
+      "words": 1,
+      "chars": 11,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.15,
+      "top": 1220,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Violin",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 1245,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Tabla",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.07,
+      "top": 1294,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Piano",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 63.4,
+      "vw": 4.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.07,
+      "top": 1533,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Private lessons",
+      "words": 2,
+      "chars": 15,
+      "lines": 1,
+      "size": 144,
+      "vw": 10,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.66,
+      "top": 3137,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Group lessons",
+      "words": 2,
+      "chars": 13,
+      "lines": 1,
+      "size": 144,
+      "vw": 10,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.63,
+      "top": 3291,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "All ages",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 144,
+      "vw": 10,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 3428,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Any level",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 144,
+      "vw": 10,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.39,
+      "top": 3564,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Instruments of the lesson room",
+      "words": 5,
+      "chars": 30,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 2.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.32,
+      "top": 4121,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where and how to reach it",
+      "words": 6,
+      "chars": 25,
+      "lines": 2,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.89,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.26,
+      "top": 4754,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Address",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 2.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.25,
+      "top": 4938,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Phone",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 2.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.25,
+      "top": 4941,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Email",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 33.6,
+      "vw": 2.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.25,
+      "top": 4943,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Pick up an instrument. Pick up an instrument.",
+      "words": 8,
+      "chars": 45,
+      "lines": 2,
+      "size": 181.4,
+      "vw": 12.6,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.92,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 5579,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ask the academy.",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 144,
+      "vw": 10,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.69,
+      "top": 7608,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Classes",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 8342,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Pictures",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 8403,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Visit",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 8464,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 8525,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Contact",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 47.1,
+      "vw": 3.3,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 8586,
+      "tag": "li",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 28,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 18,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Figtree",
+       "share": 0.69,
+       "mono": false
+      },
+      {
+       "family": "Funnel Display",
+       "share": 0.31,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      16,
+      18,
+      20,
+      23,
+      34,
+      47,
+      58,
+      63,
+      113,
+      144,
+      181
+     ],
+     "sizeCount": 12,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Figtree",
+      "size": 20,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 77,
+     "max": {
+      "size": 181.4,
+      "vw": 12.6,
+      "font": "Funnel Display",
+      "text": "P"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.19,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ebe5e3",
+     "bodyBgHsl": {
+      "h": 15,
+      "s": 0.17,
+      "l": 0.91
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ebe5e3",
+       "top": 0,
+       "hsl": {
+        "h": 15,
+        "s": 0.17,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#2b2622",
+       "top": 0,
+       "hsl": {
+        "h": 27,
+        "s": 0.12,
+        "l": 0.15
+       }
+      },
+      {
+       "color": "#d7d0cd",
+       "top": 8265,
+       "hsl": {
+        "h": 18,
+        "s": 0.11,
+        "l": 0.82
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b2622",
+       "share": 0.44
+      },
+      {
+       "color": "#ebe5e3",
+       "share": 0.35
+      },
+      {
+       "color": "#5f5652",
+       "share": 0.18
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "fills": [
+      {
+       "color": "#ebe5e3",
+       "hsl": {
+        "h": 15,
+        "s": 0.17,
+        "l": 0.91
+       },
+       "top": 0
+      },
+      {
+       "color": "#d7d0cd",
+       "hsl": {
+        "h": 18,
+        "s": 0.11,
+        "l": 0.82
+       },
+       "top": 495
+      },
+      {
+       "color": "#2b2622",
+       "hsl": {
+        "h": 27,
+        "s": 0.12,
+        "l": 0.15
+       },
+       "top": 0
+      }
+     ],
+     "button": {
+      "bg": "#0f7d45",
+      "hsl": {
+       "h": 149,
+       "s": 0.79,
+       "l": 0.27
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 56,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Enquire",
+      "See the classes"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 3,
+     "mediaRadius": 4,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 5,
+     "fixed": true,
+     "height": 120,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": false
+    },
+    "fontsLoaded": [
+     "funnel display",
+     "figtree"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 8895,
+    "margins": {
+     "left": 43,
+     "right": 43
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 28,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "A concept preview for a music school in Amritsar, ",
+       "size": 23,
+       "tag": "p"
+      },
+      "left": 43,
+      "right": 502,
+      "textLeft": 43,
+      "textRight": 502,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#taught.scene.spg",
+      "tag": "section",
+      "top": 900,
+      "height": 2160,
+      "words": 26,
+      "media": 0,
+      "middle": 36,
+      "heading": {
+       "text": "Singing",
+       "size": 63,
+       "tag": "li"
+      },
+      "left": 86,
+      "right": 98,
+      "textLeft": 86,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#lessons.poster",
+      "tag": "section",
+      "top": 3060,
+      "height": 718,
+      "words": 23,
+      "media": 0,
+      "middle": 183,
+      "heading": {
+       "text": "Private lessons",
+       "size": 144,
+       "tag": "span"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#pictures.gallery",
+      "tag": "section",
+      "top": 3778,
+      "height": 900,
+      "words": 32,
+      "media": 3,
+      "middle": 83,
+      "heading": {
+       "text": "Instruments of the lesson room",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 160,
+      "right": 155,
+      "textLeft": 160,
+      "textRight": 198,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 4678,
+      "height": 618,
+      "words": 56,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where and how to reach it",
+       "size": 47,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 178,
+      "textLeft": 43,
+      "textRight": 178,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.scene.lp",
+      "tag": "section",
+      "top": 5295,
+      "height": 2160,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#enquire.cta",
+      "tag": "section",
+      "top": 7455,
+      "height": 810,
+      "words": 25,
+      "media": 0,
+      "middle": 476,
+      "heading": {
+       "text": "Ask the",
+       "size": 144,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 81,
+      "textLeft": 43,
+      "textRight": 81,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 8265,
+      "height": 630,
+      "words": 19,
+      "media": 0,
+      "middle": 524,
+      "heading": {
+       "text": "Classes",
+       "size": 47,
+       "tag": "a"
+      },
+      "left": 43,
+      "right": 43,
+      "textLeft": 43,
+      "textRight": 43,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 236,
+      "height": 308
+     },
+     {
+      "top": 7896,
+      "height": 272
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Singing to dholak, seven classes. Singing to dholak, seven classes.",
+      "size": 113,
+      "top": 565,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 9
+     },
+     {
+      "x": 75,
+      "n": 2
+     },
+     {
+      "x": 86,
+      "n": 1
+     },
+     {
+      "x": 539,
+      "n": 1
+     },
+     {
+      "x": 842,
+      "n": 1
+     },
+     {
+      "x": 997,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 16,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.33,
+    "voidBox": {
+     "x": 0,
+     "y": 240,
+     "w": 1440,
+     "h": 300
+    },
+    "halves": {
+     "left": {
+      "void": 0.38,
+      "media": 0,
+      "held": 0.64,
+      "upper": 0.33,
+      "lower": 1
+     },
+     "right": {
+      "void": 0.67,
+      "media": 0,
+      "held": 0.85,
+      "upper": 0.79,
+      "lower": 0.92
+     }
+    }
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [],
+   "letters": [],
+   "tileWalls": [],
+   "hero": {
+    "h1": "Singing to dholak, seven classes. Singing to dholak, seven c",
+    "centred": false,
+    "size": 113
+   },
+   "visits": [],
+   "build": {
+    "framed": [
+     {
+      "head": "Where and how to reach it",
+      "n": 3,
+      "list": true,
+      "y": 4678,
+      "items": [
+       "Address H.no-77, Continental (filled #2b2622, 428x211)",
+       "Phone The number on the list (filled #d7d0cd, 425x204)",
+       "Email The address on the lis (filled #2b2622, 423x200)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [
+     {
+      "head": "Singing to dholak, seven classes. Singing to dhola",
+      "kind": "none"
+     },
+     {
+      "head": "What is taught",
+      "kind": "scene"
+     },
+     {
+      "head": "Private lessons one-on-one guidance, as listed Gro",
+      "kind": "none"
+     },
+     {
+      "head": "Instruments of the lesson room",
+      "kind": "none"
+     },
+     {
+      "head": "Where and how to reach it",
+      "kind": "none"
+     },
+     {
+      "head": "Pick up an instrument. Pick up an instrument.",
+      "kind": "scene"
+     },
+     {
+      "head": "Ask the academy.",
+      "kind": "none"
+     }
+    ],
+    "runOn": [],
+    "credits": {
+     "entries": 3,
+     "capacity": 3,
+     "pictures": 3,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog",
+     "shown": [
+      "piano",
+      "violin",
+      "guitar"
+     ]
+    },
+    "space": {
+     "blocks": 8,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 900,
+      "fold": 900,
+      "next": {
+       "sel": "section#taught.scene.spg",
+       "head": "What is taught",
+       "top": 900,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": [
+      {
+       "a": "Instruments of the lesson room",
+       "b": "Where and how to reach it",
+       "aSel": "section#pictures.gallery",
+       "bSel": "section#visit.visit",
+       "gap": 74,
+       "y": 4671
+      }
+     ]
+    },
+    "nav": {
+     "bar": "header.bar",
+     "top": 0,
+     "h": 120,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": [],
+    "grounds": [
+     {
+      "hex": "#2b2622",
+      "where": "div.blk.blk-c",
+      "n": 1,
+      "screens": 5.76,
+      "role": "ink",
+      "sections": 4,
+      "tones": [
+       [
+        "#2b2622",
+        5.76
+       ]
+      ],
+      "scene": true,
+      "asked": null
+     },
+     {
+      "hex": "#ebe5e3",
+      "where": "page",
+      "n": 1,
+      "screens": 3.02,
+      "role": "page",
+      "sections": 3,
+      "tones": [
+       [
+        "#ebe5e3",
+        3.02
+       ]
+      ],
+      "scene": true,
+      "asked": null,
+      "step": null
+     },
+     {
+      "hex": "#d7d0cd",
+      "where": "div.blk.blk-b",
+      "n": 1,
+      "screens": 0.9,
+      "role": null,
+      "sections": 1,
+      "tones": [
+       [
+        "#d7d0cd",
+        0.9
+       ]
+      ],
+      "scene": false,
+      "asked": null
+     },
+     {
+      "hex": "#0f7d45",
+      "where": "a.btn.hero-btn",
+      "n": 1,
+      "screens": 0.08,
+      "role": "accent",
+      "sections": 0,
+      "tones": [
+       [
+        "#0f7d45",
+        0.08
+       ]
+      ],
+      "scene": false,
+      "asked": null
+     }
+    ],
+    "buttons": [
+     {
+      "key": "pill filled",
+      "n": 3,
+      "labels": [
+       "See the classes",
+       "Write to the academy"
+      ],
+      "h": [
+       44,
+       56
+      ]
+     },
+     {
+      "key": "type",
+      "n": 1,
+      "labels": [
+       "Where to find it"
+      ]
+     }
+    ],
+    "navs": {
+     "load": {
+      "phase": "load",
+      "form": "centred wordmark",
+      "band": true,
+      "held": false,
+      "n": 5,
+      "top": 5,
+      "mark": "Aim4Music",
+      "items": [
+       "Classes",
+       "Pictures",
+       "Aim4Music",
+       "Visit",
+       "Enquire"
+      ]
+     },
+     "down": {
+      "phase": "down",
+      "form": "centred wordmark",
+      "band": true,
+      "held": true,
+      "n": 5,
+      "top": 5,
+      "mark": "Aim4Music",
+      "items": [
+       "Classes",
+       "Pictures",
+       "Aim4Music",
+       "Visit",
+       "Enquire"
+      ]
+     },
+     "up": {
+      "phase": "up",
+      "form": "centred wordmark",
+      "band": true,
+      "held": true,
+      "n": 5,
+      "top": 5,
+      "mark": "Aim4Music",
+      "items": [
+       "Classes",
+       "Pictures",
+       "Aim4Music",
+       "Visit",
+       "Enquire"
+      ]
+     },
+     "held": 0,
+     "aside": false,
+     "buttons": [
+      {
+       "key": "pill filled",
+       "n": 1,
+       "labels": [
+        "Enquire"
+       ],
+       "h": [
+        44,
+        44
+       ]
+      }
+     ],
+     "dealt": null
+    },
+    "places": [],
+    "footLinks": [],
+    "structures": [
+     {
+      "head": "Singing to dholak, seven classes. Singin",
+      "y": 0,
+      "hero": true,
+      "pos": "mixed",
+      "cols": 1,
+      "lead": "text",
+      "word": "statement",
+      "boxed": false
+     },
+     {
+      "head": "What is taught",
+      "y": 900,
+      "hero": false,
+      "pos": "over",
+      "cols": 3,
+      "lead": "list",
+      "word": "columns",
+      "boxed": false
+     },
+     {
+      "head": "lessons",
+      "y": 3060,
+      "hero": false,
+      "pos": "none",
+      "cols": 2,
+      "lead": "list",
+      "word": "columns",
+      "boxed": false
+     },
+     {
+      "head": "Instruments of the lesson room",
+      "y": 3778,
+      "hero": false,
+      "pos": "mixed",
+      "cols": 2,
+      "lead": "pictures",
+      "word": "gallery",
+      "boxed": false
+     },
+     {
+      "head": "Where and how to reach it",
+      "y": 4678,
+      "hero": false,
+      "pos": "over",
+      "cols": 3,
+      "lead": "cards",
+      "word": "grid",
+      "boxed": true
+     },
+     {
+      "head": "Ask the academy.",
+      "y": 7455,
+      "hero": false,
+      "pos": "over",
+      "cols": 2,
+      "lead": "text",
+      "word": "columns",
+      "boxed": false
+     },
+     {
+      "head": "the footer",
+      "y": 8265,
+      "hero": false,
+      "foot": true,
+      "pos": "none",
+      "cols": 2,
+      "lead": "list",
+      "word": "columns",
+      "boxed": false
+     }
+    ],
+    "pictures": {
+     "shown": [],
+     "credits": [],
+     "kind": null
+    }
+   },
+   "dead": {
+    "tested": 0,
+    "unsure": 0,
+    "dead": []
+   },
+   "rest": [
+    {
+     "y": 0,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Singing to dholak, seven classes. @565"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 904,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1800,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2160,
+     "dy": 27,
+     "end": "seam-pocket-gathers-the-words",
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h What is taught @105"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2700,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3600,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "piano 0.051 @330",
+      "violin 0.051 @368",
+      "guitar 0.03 @744"
+     ],
+     "heads": [
+      "h Instruments of the lesson room @521"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4500,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Where and how to reach it @254",
+      "h Address @438",
+      "h Phone @441",
+      "h Email @443"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5400,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6300,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6555,
+     "dy": 27,
+     "end": "letter-physics",
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "d Seven classes are listed. @202"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 7200,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Ask the academy. @408"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 7995,
+     "dy": -27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ],
+   "scenesAtRest": {
+    "boxedLists": [],
+    "framed": []
+   }
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 11,
+   "pageScreens": 10.1,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 36,
+     "vw": 9.2,
+     "text": "Classes",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 18
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 1,
+     "how": [
+      "a box or button"
+     ],
+     "colouredShare": 0.01
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0,
+     "words": 119
+    },
+    "labels": [
+     {
+      "text": "one-on-one guidance, as listed",
+      "y": 2866
+     },
+     {
+      "text": "also on the listing",
+      "y": 3026
+     },
+     {
+      "text": "learners young and old",
+      "y": 3131
+     },
+     {
+      "text": "beginners and experienced",
+      "y": 3235
+     },
+     {
+      "text": "illustrative photo, not the ac",
+      "y": 3649
+     },
+     {
+      "text": "illustrative photo, not the ac",
+      "y": 3818
+     },
+     {
+      "text": "illustrative photo, not the ac",
+      "y": 4146
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [
+     {
+      "text": "Seven classes, one academy. Seven classes, one academy.",
+      "words": 8,
+      "ui": false,
+      "level": "H1"
+     },
+     {
+      "text": "Where and how to reach it",
+      "words": 6,
+      "ui": false,
+      "level": "H2"
+     },
+     {
+      "text": "Pick up an instrument. Pick up an instrument.",
+      "words": 8,
+      "ui": false,
+      "level": "H2"
+     }
+    ],
+    "uiWords": [],
+    "sentences": 4,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 21,
+    "pageWords": {
+     "all": 199,
+     "footer": 18
+    },
+    "wordySections": [],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 3,
+     "menu": true,
+     "foot": 0
+    },
+    "giantContact": [],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [
+     {
+      "head": "Where and how to reach it",
+      "first": "Address H.no-77, Continental E",
+      "n": 3,
+      "fill": "#2b2622",
+      "how": "filled"
+     }
+    ],
+    "loneColumns": [],
+    "splitHero": null,
+    "tileWalls": [],
+    "ground": null,
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [],
+    "loneHeld": []
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.76,
+    0.5,
+    0.72,
+    0.93,
+    0.43,
+    0.52,
+    0.84,
+    1,
+    1,
+    1,
+    1
+   ],
+   "content": [
+    0.2,
+    0.22,
+    0.22,
+    0.36,
+    0.4,
+    0.26,
+    0.36,
+    0.16,
+    0.19,
+    0.27,
+    0.27
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 28,
+    "css": 0,
+    "transitions": 3,
+    "scripted": 25,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 8558,
+     "screens": 10.1,
+     "words": 214,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "piano.jpg",
+      "violin.jpg",
+      "guitar.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Seven classes, one academy. Seven classes, one academy.",
+     "words": 8,
+     "chars": 55,
+     "lines": 2,
+     "size": 51.2,
+     "vw": 13.1,
+     "font": "Funnel Display",
+     "weight": 500,
+     "tracking": -0.037,
+     "leading": 0.9,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "center",
+     "widthRatio": 0.83,
+     "top": 654,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Seven classes, one academy. Seven classes, one academy.",
+     "words": 8,
+     "lines": 2,
+     "size": 51.2,
+     "font": "Funnel Display",
+     "spacing": -0.04,
+     "pairs": 44
+    },
+    "h2s": [
+     {
+      "text": "What is taught",
+      "size": 36,
+      "top": 888
+     },
+     {
+      "text": "Instruments of the lesson room",
+      "size": 28.8,
+      "top": 4140
+     },
+     {
+      "text": "Where and how to reach it",
+      "size": 36,
+      "top": 4471
+     },
+     {
+      "text": "Pick up an instrument. Pick up an instrument.",
+      "size": 61.4,
+      "top": 5777
+     },
+     {
+      "text": "Ask the academy.",
+      "size": 58.5,
+      "top": 7366
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#taught",
+      "#pictures",
+      "#top",
+      "#visit",
+      "#enquire",
+      "#about"
+     ],
+     "labels": [
+      "enquire",
+      "see the classes"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Aim4Music",
+      "words": 1,
+      "chars": 9,
+      "lines": 1,
+      "size": 32,
+      "vw": 8.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.41,
+      "top": 0,
+      "tag": "a",
+      "kind": "heading"
+     },
+     {
+      "text": "Seven classes, one academy. Seven classes, one academy.",
+      "words": 8,
+      "chars": 55,
+      "lines": 2,
+      "size": 51.2,
+      "vw": 13.1,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.83,
+      "top": 654,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "What is taught",
+      "words": 3,
+      "chars": 14,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.96,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.92,
+      "top": 888,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Singing",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.22,
+      "top": 1038,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Guitar",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.18,
+      "top": 1041,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Drums",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.2,
+      "top": 1120,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Tabla",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 1122,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Piano",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 1237,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Violin",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.16,
+      "top": 1259,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Dholak",
+      "words": 1,
+      "chars": 6,
+      "lines": 1,
+      "size": 36.7,
+      "vw": 9.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1.08,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.21,
+      "top": 1420,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Private lessons",
+      "words": 2,
+      "chars": 15,
+      "lines": 2,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2749,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Group lessons",
+      "words": 2,
+      "chars": 13,
+      "lines": 2,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 2909,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "All ages",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.51,
+      "top": 3069,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Any level",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Funnel Display",
+      "weight": 400,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.59,
+      "top": 3174,
+      "tag": "span",
+      "kind": "statement"
+     },
+     {
+      "text": "Instruments of the lesson room",
+      "words": 5,
+      "chars": 30,
+      "lines": 2,
+      "size": 28.8,
+      "vw": 7.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4140,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Where and how to reach it",
+      "words": 6,
+      "chars": 25,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.89,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.74,
+      "top": 4471,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Address",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 7.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 4641,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Phone",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 7.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 4897,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Email",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 28.8,
+      "vw": 7.4,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.71,
+      "top": 5099,
+      "tag": "h3",
+      "kind": "heading"
+     },
+     {
+      "text": "Pick up an instrument. Pick up an instrument.",
+      "words": 8,
+      "chars": 45,
+      "lines": 2,
+      "size": 61.4,
+      "vw": 15.7,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.025,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "center",
+      "position": "center",
+      "widthRatio": 0.86,
+      "top": 5777,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ask the academy.",
+      "words": 3,
+      "chars": 16,
+      "lines": 2,
+      "size": 58.5,
+      "vw": 15,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 0.9,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7366,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Classes",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 7993,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Pictures",
+      "words": 1,
+      "chars": 8,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8044,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Visit",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8095,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "About",
+      "words": 1,
+      "chars": 5,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8146,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Contact",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Funnel Display",
+      "weight": 500,
+      "tracking": -0.037,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 8197,
+      "tag": "li",
+      "kind": "statement"
+     }
+    ],
+    "headingSummary": {
+     "count": 26,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 16,
+     "centered": 2,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Figtree",
+       "share": 0.7,
+       "mono": false
+      },
+      {
+       "family": "Funnel Display",
+       "share": 0.3,
+       "mono": false
+      }
+     ],
+     "familyCount": 2,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      29,
+      32,
+      36,
+      37,
+      51,
+      59,
+      61
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Figtree",
+      "size": 18,
+      "leading": 1.35,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": null
+     },
+     "measureChars": 44,
+     "max": {
+      "size": 61.4,
+      "vw": 15.7,
+      "font": "Funnel Display",
+      "text": "P"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.2,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#ebe5e3",
+     "bodyBgHsl": {
+      "h": 15,
+      "s": 0.17,
+      "l": 0.91
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ebe5e3",
+       "top": 0,
+       "hsl": {
+        "h": 15,
+        "s": 0.17,
+        "l": 0.91
+       }
+      },
+      {
+       "color": "#d7d0cd",
+       "top": 304,
+       "hsl": {
+        "h": 18,
+        "s": 0.11,
+        "l": 0.82
+       }
+      },
+      {
+       "color": "#2b2622",
+       "top": 844,
+       "hsl": {
+        "h": 27,
+        "s": 0.12,
+        "l": 0.15
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#2b2622",
+       "share": 0.43
+      },
+      {
+       "color": "#ebe5e3",
+       "share": 0.36
+      },
+      {
+       "color": "#5f5652",
+       "share": 0.18
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.03
+      }
+     ],
+     "fills": [
+      {
+       "color": "#ebe5e3",
+       "hsl": {
+        "h": 15,
+        "s": 0.17,
+        "l": 0.91
+       },
+       "top": 0
+      },
+      {
+       "color": "#d7d0cd",
+       "hsl": {
+        "h": 18,
+        "s": 0.11,
+        "l": 0.82
+       },
+       "top": 304
+      },
+      {
+       "color": "#2b2622",
+       "hsl": {
+        "h": 27,
+        "s": 0.12,
+        "l": 0.15
+       },
+       "top": 694
+      },
+      {
+       "color": "#0f7d45",
+       "hsl": {
+        "h": 149,
+        "s": 0.79,
+        "l": 0.27
+       },
+       "top": 764
+      }
+     ],
+     "button": {
+      "bg": "#0f7d45",
+      "hsl": {
+       "h": 149,
+       "s": 0.79,
+       "l": 0.27
+      },
+      "fg": "#ffffff"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": "pill",
+     "height": 40,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Enquire",
+      "See the classes"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 0,
+     "boxRadius": 0,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 3,
+       "iconTopped": false,
+       "rounded": false,
+       "top": 4613
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 2,
+     "fixed": true,
+     "height": 100,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": false
+    },
+    "fontsLoaded": [
+     "funnel display",
+     "figtree"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 8558,
+    "margins": {
+     "left": 16,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 26,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 45,
+      "textLeft": 20,
+      "textRight": 45,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#taught.scene.spg",
+      "tag": "section",
+      "top": 844,
+      "height": 1857,
+      "words": 24,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Singing",
+       "size": 37,
+       "tag": "li"
+      },
+      "left": 16,
+      "right": 19,
+      "textLeft": 16,
+      "textRight": 19,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#lessons.poster",
+      "tag": "section",
+      "top": 2701,
+      "height": 625,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Private lessons",
+       "size": 59,
+       "tag": "span"
+      },
+      "left": 20,
+      "right": 140,
+      "textLeft": 20,
+      "textRight": 140,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#pictures.gallery",
+      "tag": "section",
+      "top": 3326,
+      "height": 1097,
+      "words": 32,
+      "media": 3,
+      "middle": 0,
+      "heading": null,
+      "left": 55,
+      "right": 20,
+      "textLeft": 55,
+      "textRight": 35,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 4423,
+      "height": 990,
+      "words": 56,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Where and how to reach it",
+       "size": 36,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#about.scene.lp",
+      "tag": "section",
+      "top": 5413,
+      "height": 1857,
+      "words": 0,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": null,
+      "right": null,
+      "textLeft": null,
+      "textRight": null,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#enquire.cta",
+      "tag": "section",
+      "top": 7270,
+      "height": 675,
+      "words": 25,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Ask the",
+       "size": 59,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 38,
+      "textLeft": 20,
+      "textRight": 38,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 7945,
+      "height": 613,
+      "words": 19,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Classes",
+       "size": 36,
+       "tag": "a"
+      },
+      "left": 20,
+      "right": 96,
+      "textLeft": 20,
+      "textRight": 96,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 164,
+      "height": 480
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Seven classes, one academy. Seven classes, one academy.",
+      "size": 51,
+      "top": 654,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 11
+     },
+     {
+      "x": 55,
+      "n": 4
+     }
+    ],
+    "leftBlocks": 15,
+    "bodySize": 18,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null,
+    "halves": null
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [],
+   "letters": [],
+   "tileWalls": [],
+   "hero": null,
+   "visits": [],
+   "build": {
+    "framed": [
+     {
+      "head": "Where and how to reach it",
+      "n": 3,
+      "list": true,
+      "y": 4423,
+      "items": [
+       "Address H.no-77, Continental (filled #2b2622, 337x220)",
+       "Phone The number on the list (filled #d7d0cd, 335x164)",
+       "Email The address on the lis (filled #2b2622, 335x163)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [],
+    "runOn": [],
+    "credits": {
+     "entries": 3,
+     "capacity": 3,
+     "pictures": 3,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog",
+     "shown": [
+      "piano",
+      "violin",
+      "guitar"
+     ]
+    },
+    "space": {
+     "blocks": 8,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 844,
+      "fold": 844,
+      "next": {
+       "sel": "section#taught.scene.spg",
+       "head": "What is taught",
+       "top": 844,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": []
+    },
+    "nav": {
+     "bar": "header.bar",
+     "top": 0,
+     "h": 100,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": []
+   },
+   "dead": null,
+   "rest": [
+    {
+     "y": 0,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Seven classes, one academy. @654"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 848,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1688,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1857,
+     "dy": 25,
+     "end": "seam-pocket-gathers-the-words",
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h What is taught @44"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2532,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3376,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "piano 0.087 @49",
+      "violin 0.087 @292",
+      "guitar 0.087 @547"
+     ],
+     "heads": [
+      "h Instruments of the lesson room @764"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4220,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Where and how to reach it @251",
+      "h Address @421",
+      "h Phone @677"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5064,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Email @35",
+      "h P i c k u p a n i n s t r u m e n t . @713"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5908,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6426,
+     "dy": 25,
+     "end": "letter-physics",
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "d Seven classes are listed. @300"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6752,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "d Seven classes are listed. @-26",
+      "h Ask the academy. @614"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 7596,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ]
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "12 different font sizes (13, 16, 18, 20, 23, 34, 47, 58, 63, 113, 144, 181).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "33% of the first screen is one empty block (1440×300px at 0,240).",
+   "fix": "Place the void on purpose or fill it: move the picture, the film or one fact into it, grow the headline to meet it, or shrink the screen to its content. A void reads as placed only when something closes it on the far side and it is the screen's one rest."
+  },
+  {
+   "level": "WARN",
+   "id": "section-air",
+   "width": 1440,
+   "message": "1 section(s) follow the one before with under 12% of the screen between their content: \"Where and how to reach it\" 74px under \"Instruments of the lesson room\".",
+   "fix": "Give sections real space: about 16% of the screen or more between one section's last line and the next one's first (140px or more at 1440 by 900), the same step everywhere, more before a change of subject. A page where the next section is already there reads as cluttered."
+  },
+  {
+   "level": "WARN",
+   "id": "surface-count",
+   "width": 1440,
+   "message": "3 grounds on the page, by the screens they cover: #2b2622 (the ink, 5.76 screens, over 4 sections); #ebe5e3 (the page, 3.02 screens); #d7d0cd (div.blk.blk-b, 0.9 screens).",
+   "fix": "One ground and one surface tone a step from it, and no tint between them. The ink grounds a band at most (the footer and one section), and so do a dealt field and the accent (one section each); a scene's veil or band takes one of these, never a tone sampled from its photograph, unless its own sheet asks for one (then that is the page's band). Every other section, panel and card takes one of these, a sheet in another colour (a white receipt on grey) is set on the section ground, and a piece of work keeps its own colours inside its picture."
+  },
+  {
+   "level": "WARN",
+   "id": "blank-gap",
+   "width": 390,
+   "message": "A 480px stretch at 164px holds nothing.",
+   "fix": "Check that it is a deliberate rest (once per page at most); otherwise close it to the normal section gap."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/desktop-page-02.jpg",
+    "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 10,
+   "stride": 1,
+   "pageScreens": 9.9,
+   "atFoot": true
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/mobile-page-01.jpg",
+    "/tmp/cafe-sites/aim4music-academy-amritsar/.taste-skill/inspect/mobile-page-02.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 11,
+   "stride": 1,
+   "pageScreens": 10.1,
+   "atFoot": true
+  }
+ ]
+}

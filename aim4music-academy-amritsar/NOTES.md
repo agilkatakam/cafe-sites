@@ -31,3 +31,12 @@ NOTE: a second draw call with the same seed into a scratch dir (/tmp/d76, histor
 
 ## Remaining steps
 1. Source 4 photos. 2. copy base.css/base.js + stage + seam-pocket + letter-physics scene assets from /tmp/taste-skill/skills/taste-skill/assets (checkout f2d1470~1 if wiped). 3. write index.html/style.css/app.js. 4. lint 0 FAIL; inspect (--widths 1440,390, timeout 105) 0 FAIL; scenes.mjs + eyeball. 5. deploy via vault deploy-key recipe, curl-verify. 6. ledger A1629 preview_live + G165 PREVIEW; RUNBOOK; pixel packet to parent (no count-ups!). 7. email ONLY after parent clearance + fresh gates (subject "your music school has no website so i made you one", V73 template, one link, to dharamkoti123@gmail.com).
+
+## BUILD RESULT (Nov 11 ~09:55 IST)
+- Built: index.html, style.css, app.js, base.css/js, assets/scenes (stage, seam-pocket-gathers-the-words, letter-physics), 3 photos (piano, violin, guitar). lint 0 FAIL. inspect 1440/390: 0 FAIL, 5 WARN defended: size-count (dealt scale + nav/card steps), hero-void (hero blocks are dealt flat colour, lead line sits in the ground block), section-air 74px (gallery drift), surface-count (dealt hero blocks use surface), blank-gap mobile (hero bands).
+- scenes.mjs: both scenes run, 6 empty-steps WARN (dark-ground scenes, defended: ink stage by design).
+- Headline: desktop "Singing to dholak, / seven classes." (listing-sourced: 7 classes; crosses the ink-block edge); mobile "Seven classes, / one academy." (3-line wrap otherwise).
+- Wordmark ~270px at 1440 (not 400): at 400 it ran into the ink block and lost letters. Mobile hero lead shown above bands.
+- Dropped moves (no fitting host section / unsafe overlap): late-word-slides-in (would overlap the hero button), mask-roll-swap (no state change), rounded-tile-goes-edge (no tile), slow crossfade (only 3 photos and no hero picture). Card deal animation removed (inspector: text-over-text). Entrance already-there, nothing below the fold.
+- Photo budget 3 of 4. Fourth slot to type. Guitar photo title says "Russian ... seven steel strings"; used only as "a guitar", labelled illustrative.
+- No figures, rating, hours or "since" claims on page. Static.
