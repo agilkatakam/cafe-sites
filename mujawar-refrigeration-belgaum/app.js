@@ -25,6 +25,9 @@
       ws.forEach((w, i) => { w.style.opacity = (0.45 + 0.55 * Math.max(0, Math.min(1, p - i))).toFixed(2); });
     } });
   }
+  // the finished statement fades out as the scene hands over, so it never slides under the fixed pill
+  const sc = document.querySelector('[data-scene="dot-becomes-the-full-stop"]');
+  if (sc) { const st = sc.querySelector('.scene-stage'); if (st) ScrollTrigger.create({ trigger: sc, start: 'bottom 95%', end: 'bottom 60%', scrub: true, onUpdate: (s) => { st.style.opacity = (1 - s.progress).toFixed(2); } }); }
   // the hero picture drifts slowly
   const img = document.querySelector('.hero-r img');
   if (img) gsap.fromTo(img, { yPercent: 0 }, { yPercent: 6, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
