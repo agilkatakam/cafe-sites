@@ -22,3 +22,14 @@
   const io = new IntersectionObserver((en) => { for (const e of en) if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } }, { rootMargin: '0px 0px -15% 0px' });
   els.forEach((el) => io.observe(el));
 })();
+
+(() => {
+  // the finished statement fades out as the scene hands over, so it never slides under the fixed band
+  const run = () => {
+    if (!window.ScrollTrigger || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const sc = document.querySelector('[data-scene="letter-bar-floods-the-ground"]');
+    const nx = sc && sc.querySelector('.lbf-next');
+    if (nx) ScrollTrigger.create({ trigger: sc, start: 'bottom 95%', end: 'bottom 62%', scrub: true, onUpdate: (s) => { nx.style.opacity = (1 - s.progress).toFixed(2); } });
+  };
+  if (document.readyState === 'complete') run(); else addEventListener('load', run);
+})();
