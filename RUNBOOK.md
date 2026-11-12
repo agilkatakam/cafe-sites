@@ -241,3 +241,10 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Omitted: Since 2005, score, reviews, delivery/online/personalised claims. Inspect --allow documented in NOTES.md.
 - Lesson: scene tweens on the same property need explicit fromTo values or the second reads the unrendered start; words that wait under a same-colour veil avoid the covered-text fail in the live frames.
 - Ledger: A1632 = preview_live; G168 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
+
+## V80 Bajrang Dhaba, Bareilly (Nov 12)
+- Live: https://agilkatakam.github.io/cafe-sites/bajrang-dhaba-bareilly/ . Direction "The specimen catalogue" (seed 1266974553, one draw, 0 redraws): stone and ink, Be Vietnam Pro, hero mosaic of dish names, card fan as filter tool, sticky visit band under a full-height footer, scene lib-0105 (wet ink lines).
+- Photos (4, fewer than sheet): road and three marigold shots, all CC BY-SA from Wikimedia Commons. No food photos (sheet bans stock food as the client's menu).
+- Contact-block "Online Order" links to swiggy.com, not an own site. Omitted: Since 2000, score, reviews, rupee prices, 2026 Highlights.
+- Lesson: a sticky underlay needs a footer at least one screen tall, or its top strip shows under the fixed nav at page end.
+- Ledger: A1634 = preview_live; G169 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
