@@ -9,9 +9,9 @@
     phone: 'same',
     build(tl, { q }) {
       const lines = q('.wi-line'), act = q('.wi-act')[0], blur = document.getElementById('wet-b');
-      const starts = [0, 0.18, 0.36, 0.54];
+      const starts = [0, 0, 0.1, 0.5];
       lines.forEach((el, i) => {
-        if (i === 0) return;
+        if (i < 2) return;
         const o = { v: 1 };
         const paint = () => {
           const v = o.v;
@@ -19,9 +19,9 @@
           if (v > 0.02) { blur.setAttribute('stdDeviation', (v * 8).toFixed(2)); el.style.filter = 'url(#wet)'; }
           else el.style.filter = 'none';
         };
-        tl.fromTo(o, { v: 1 }, { v: 0, duration: 0.2, ease: 'none', onUpdate: paint, onReverseComplete: paint }, starts[i]);
+        tl.fromTo(o, { v: 1 }, { v: 0, duration: 0.4, ease: "none", onUpdate: paint, onReverseComplete: paint }, starts[i]);
       });
-      if (act) tl.fromTo(act, { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.18, ease: 'none' }, 0.74);
+      if (act) tl.fromTo(act, { autoAlpha: 0, y: 24 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: 'none' }, 0.55);
     },
   });
 })();

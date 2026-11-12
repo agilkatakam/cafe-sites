@@ -12,3 +12,9 @@ TODO next run: read draw-v80.txt completely, then photos (people-free, brand-fre
 ## Read so far (21:45): sheet lines 1-130 (frame, idea, composition, type, colour, imagery, start of hero). STILL TO READ: lines 130-251 (hero details, sections, scenes "Type sets like wet ink", pushed line motion, small moves, interactive tool, entrance already-there).
 Plan, no redraw needed: the specimen tiles hold the dish NAMES in type (the sheet bans stock food pictures as the client's menu: "dish stands in type"); photos only as mood (<=6, interior/street/texture; no cappuccino/latte stock - wrong trade, none of the dealt coffee set fits a dhaba; use desert-and-road or own searches: e.g. brass thali-free textures, terracotta, marigold, road at dusk) or none. Interactive tool idea: "build a thali" filter over the listed dishes (paneer / dal / sabzi / chaap) with no prices, plain fallback list.
 Pending check: the TBR Contact block shows "Online Order" before the email; confirm its link target is not an own website (view page HTML links).
+
+## V80 build notes (Nov 12)
+- Deviations: no shaped-window first-screen scene (no place photo exists); no "grows from small" rows (no per-row photos); phone mosaic 3 tiles; gallery 4 photos, no text tiles; fan cards carry no pictures.
+- Scene lib-0105: scenes.mjs WARN empty-steps/dead-hold defended: the first two lines are present from frame 0 by design (avoids lone-heading), the third line and button arrive after; hold is 1 screen.
+- Photos: 4 CC BY-SA from Wikimedia Commons, credited in Image credits dialog. No food photos (sheet bans stock food as client's menu).
+- Omitted from listing: since-year, scores, reviews, prices, 2026 Highlights.
