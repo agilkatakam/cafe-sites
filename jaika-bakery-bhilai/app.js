@@ -13,7 +13,7 @@
       const col = document.createElement('span'); col.className = 'roll__col';
       const strip = document.createElement('span'); strip.className = 'roll__strip';
       strip.style.setProperty('--d', ch); strip.style.setProperty('--i', i++);
-      for (let n = 0; n < 10; n++) { const s = document.createElement('span'); s.textContent = n; strip.append(s); }
+      for (let n = 0; n < 10; n++) { const s = document.createElement('span'); s.dataset.n = n; strip.append(s); }
       col.append(strip); shown.append(col);
     }
     el.classList.add('roll'); el.replaceChildren(shown);
