@@ -1,0 +1,6 @@
+.scene[data-scene="lib-0105"] .scene-stage { display: flex; flex-direction: column; justify-content: center; gap: 40px; padding: var(--section-gap) var(--margin); background: var(--bg); }
+.wi { font: 500 var(--step-display)/1 var(--font-display); letter-spacing: -0.033em; display: flex; flex-direction: column; gap: 0.1em; max-width: 18em; }
+.wi-line { display: block; }
+.wi-act { align-self: flex-start; }
+.scene[data-scene="lib-0105"].is-live .scene-stage { padding-block: 0; }
+.scene[data-scene="lib-0105"].is-live .wi-line:not(:first-child) { opacity: 0; }
