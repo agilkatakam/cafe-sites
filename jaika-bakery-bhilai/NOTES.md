@@ -7,3 +7,4 @@ Draw: seed 1371639447, one draw. I passed the wrong avoid id (sentence-is-the-la
 - inspect: `--allow few-pictures`. Only two honest, licensed, neutral photos exist (lamp, curtain); the sheet bans cake/goods by another's photo and the dealt cappuccino is unusable. Parent Nov 11 permits fewer photos.
 - Rolling figures use only listing hours (7:30am, 12:00am); no 4.8 / Since 2010.
 - Warn defended: palette-cream (stone sand dealt), blank-gap (ink contact to footer ground change).
+- scenes: empty-steps WARN defended: the dealt letter-bar hold starts/ends on the bare ground by design (statement on one line, then ink); finished composition holds both statements.

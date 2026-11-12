@@ -122,3 +122,6 @@ dialog ul { display: grid; gap: 10px; margin-bottom: 16px; list-style: disc; pad
 dialog form { margin-top: 20px; }
 .roll__strip > span::before { content: attr(data-n); }
 .row span, .row.head span { font-family: var(--font-text); }
+.roll__col { width: 0.5em; }
+.roll__strip > span { text-align: center; }
+.rows { width: 100%; }
