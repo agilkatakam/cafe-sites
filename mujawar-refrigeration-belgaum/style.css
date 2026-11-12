@@ -90,14 +90,14 @@ h1, h2 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.
 
 /* footer: two halves */
 .footer { display: grid; grid-template-columns: 1fr 1fr; min-height: 100svh; }
-.foot-l { background: var(--ink); color: var(--accent-ink); padding: 72px var(--margin); display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
+.foot-l { background: var(--ink); color: var(--accent-ink); padding: 128px var(--margin) 72px; display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
 .foot-l h2 { font-size: var(--step-head); max-width: 12ch; }
-.foot-r { background: var(--surface); padding: 72px var(--margin); display: grid; gap: 20px; align-content: start; }
+.foot-r { background: var(--surface); padding: 128px var(--margin) 72px; display: grid; gap: 20px; align-content: start; }
 .foot-links { display: flex; gap: 28px; }
 .foot-links a, .foot-mid a { font-size: var(--step-body); }
 .foot-mid { display: grid; gap: 6px; }
 .foot-credits { justify-self: start; background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
-@media (max-width: 800px) { .footer { grid-template-columns: 1fr; } .foot-l, .foot-r { padding: 48px var(--margin); } }
+@media (max-width: 800px) { .footer { grid-template-columns: 1fr; } .foot-l, .foot-r { padding: 104px var(--margin) 48px; } }
 
 dialog { border: 0; border-radius: var(--radius); background: var(--surface); color: var(--ink); max-width: min(520px, calc(100vw - 32px)); padding: 28px; }
 dialog::backdrop { background: rgba(0,0,0,.6); }
