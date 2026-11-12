@@ -122,7 +122,7 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; letter-spacing:
 @media (max-width: 800px) { .vcard { grid-template-columns: 1fr; gap: 4px; } .vcard .k { margin-top: 10px; } }
 
 /* footer: the sheet that covers it */
-.footer { position: relative; z-index: 2; background: var(--bg); min-height: 60svh; display: flex; flex-direction: column; justify-content: space-between; padding-top: var(--section-gap); }
+.footer { position: relative; z-index: 2; background: var(--bg); min-height: 100svh; display: flex; flex-direction: column; justify-content: space-between; padding-top: var(--section-gap); }
 .foot-top { padding: 0 var(--margin); display: flex; flex-direction: column; gap: 32px; align-items: flex-start; margin-bottom: 96px; }
 .foot-top h2 { font-size: min(var(--step-display), 6vw); max-width: 12em; }
 .foot-band { background: var(--surface); padding: 32px var(--margin); display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; align-items: start; }
