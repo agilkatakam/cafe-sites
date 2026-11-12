@@ -256,3 +256,11 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Facts: open 24 hours, air conditioning services, P B Road Belgaum 590001, phone, email, all as listed. Omitted: 16 years, Since 2008, score, reviews, AI Overview.
 - Lesson: never chmod the vault key directory (K must end in /password); full-height footer avoids the fixed pill covering text at page end.
 - Ledger: preview_live; G170 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
+
+## V82 Jaika Bakery (Bhilai) - Nov 12
+- Live: https://agilkatakam.github.io/cafe-sites/jaika-bakery-bhilai/ . Direction "The sentence is the layout" repeated V81's (my --avoid id was wrong: sentence-as-layout is the correct id). Seed 1371639447. Stone sand + ink, Anton + Source Sans 3, chapter-band nav, aperture entrance, rolling hours figures, scene letter-bar-floods-the-ground ("Hours as listed" -> "Call before you come").
+- Redraws: scenes=none then scenes=letter-bar-floods-the-ground. Original sheet in draw-v82-orig.txt.
+- Photos (2): lamp CC BY-SA 4.0 (LoMit), curtain CC0 (Steinar Engeland). Bakery/cake photos by another's hand are banned; inspect --allow few-pictures documented.
+- Facts: open Mon-Sun 7:30am-12am, Smriti Nagar Bhilai 490020, two phones, email, celebration cakes, all as listed. Omitted: Since 2010, 4.8 score, reviews, AI Overview. "Online Order" link is Swiggy, not own site.
+- Lesson: pass the exact previous direction id to --avoid (read it from direction.json .direction.id).
+- Ledger: preview_live; G171 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
