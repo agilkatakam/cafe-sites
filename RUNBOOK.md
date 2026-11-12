@@ -248,3 +248,11 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Contact-block "Online Order" links to swiggy.com, not an own site. Omitted: Since 2000, score, reviews, rupee prices, 2026 Highlights.
 - Lesson: a sticky underlay needs a footer at least one screen tall, or its top strip shows under the fixed nav at page end.
 - Ledger: A1634 = preview_live; G169 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
+
+## V81 Mujawar Refrigeration & Home Appliances, Belgaum (Nov 12)
+- Live: https://agilkatakam.github.io/cafe-sites/mujawar-refrigeration-belgaum/ . Direction "The sentence is the layout" (seed 1415067890, one draw): red and pale pink, Lexend, floating pill nav, line-blocks entrance, hero "AC services in Belgaum" beside a curtain photo, ink-fill statement, scene dot-becomes-the-full-stop ("Listed as open 24 hours."), form card, two-halves footer.
+- Redraws: scenes=none then scenes=dot-becomes-the-full-stop (dealt scenes needed a peak photo and a plane cut-out). Original sheet in draw-v81-orig.txt.
+- Photos (2): curtain CC0 (Steinar Engeland), lamp CC BY-SA 4.0 (LoMit). A furnished room fails room-not-theirs; dealt set was cafe photos. inspect --allow few-pictures documented.
+- Facts: open 24 hours, air conditioning services, P B Road Belgaum 590001, phone, email, all as listed. Omitted: 16 years, Since 2008, score, reviews, AI Overview.
+- Lesson: never chmod the vault key directory (K must end in /password); full-height footer avoids the fixed pill covering text at page end.
+- Ledger: preview_live; G170 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
