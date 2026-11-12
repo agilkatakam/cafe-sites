@@ -89,7 +89,7 @@ h1, h2 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.
 @media (max-width: 800px) { .contact { grid-template-columns: 1fr; } .card { padding: 24px; } }
 
 /* footer: two halves */
-.footer { display: grid; grid-template-columns: 1fr 1fr; min-height: 56svh; }
+.footer { display: grid; grid-template-columns: 1fr 1fr; min-height: 100svh; }
 .foot-l { background: var(--ink); color: var(--accent-ink); padding: 72px var(--margin); display: flex; flex-direction: column; justify-content: space-between; gap: 40px; }
 .foot-l h2 { font-size: var(--step-head); max-width: 12ch; }
 .foot-r { background: var(--surface); padding: 72px var(--margin); display: grid; gap: 20px; align-content: start; }
