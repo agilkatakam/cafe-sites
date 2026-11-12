@@ -1,0 +1,48 @@
+[
+ {
+  "file": "assets/photos/lamp.jpg",
+  "media": "image",
+  "ref": "library:d88",
+  "title": "",
+  "creator": "LoMit",
+  "creatorUrl": null,
+  "date": null,
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/wiki/File:Lamp_with_a_lampshade_illuminated_by_sunlight.jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lamp_with_a_lampshade_illuminated_by_sunlight.jpg/1920px-Lamp_with_a_lampshade_illuminated_by_sunlight.jpg",
+  "width": 1920,
+  "height": 2636,
+  "bytes": 521518,
+  "credit": "Photo by LoMit, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-11-12T16:16:11.846Z"
+ },
+ {
+  "file": "assets/photos/curtain.jpg",
+  "media": "image",
+  "ref": "library:c325",
+  "title": "",
+  "creator": "Steinar Engeland steinart",
+  "creatorUrl": null,
+  "date": null,
+  "license": "CC0",
+  "licenseCode": "cc0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "creditRequired": false,
+  "page": "https://commons.wikimedia.org/wiki/File:Window_frame_shadow_on_a_curtain_(Unsplash).jpg",
+  "via": "Wikimedia Commons",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Window_frame_shadow_on_a_curtain_%28Unsplash%29.jpg/1920px-Window_frame_shadow_on_a_curtain_%28Unsplash%29.jpg",
+  "width": 1920,
+  "height": 1240,
+  "bytes": 1125568,
+  "credit": "Photo by Steinar Engeland steinart, CC0, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-11-12T16:16:12.195Z"
+ }
+]

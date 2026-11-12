@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Jaika Bakery, Smriti Nagar, Bhilai - concept preview</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="assets/scenes/stage.css">
+<link rel="stylesheet" href="assets/scenes/letter-bar-floods-the-ground.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-entrance="aperture">
+
+<header class="band">
+  <a class="mark" href="#top" id="top">Jaika Bakery</a>
+  <nav aria-label="Page">
+    <a href="#listing">Listing</a>
+    <a class="act" href="#contact">Enquire</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" data-hero aria-labelledby="hero-title">
+  <div class="hero-l">
+    <h1 id="hero-title" data-e="headline">Celebration cakes in Smriti Nagar</h1>
+    <div class="hero-b">
+      <p class="hero-lead" data-e="lead">A concept preview made from the shop's public listing.</p>
+      <a class="pill" data-e="action" href="mailto:sudhakarjaika@gmail.com"><span>Email the shop</span><i aria-hidden="true">&rarr;</i></a>
+    </div>
+  </div>
+  <div class="hero-r" data-e="picture" style="--picture-ground:#d9d0b8; --window: 30% 30%">
+    <img src="assets/photos/lamp.jpg" width="1920" height="2636" alt="A cream table lamp on a glossy side table in low sun">
+    <span class="photo-tag">illustrative photo, not the shop</span>
+  </div>
+  <ul class="facts" aria-label="From the listing">
+    <li>Open every day, 7:30am to midnight</li>
+    <li>Smriti Nagar, Bhilai 490020</li>
+    <li>Phone <a class="nw" href="tel:+919229256027">92292 56027</a></li>
+  </ul>
+</section>
+<script>
+(() => {
+  if (!document.body || !document.body.dataset.entrance || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  for (const f of document.querySelectorAll('[data-hero] [data-e="picture"]:not([data-e-wait])')) {
+    const m = f.querySelector(':scope > img');
+    if (!m || (m.complete && m.naturalWidth)) continue;
+    f.setAttribute('data-e-wait', '');
+    const land = () => { f.removeAttribute('data-e-wait'); };
+    m.addEventListener('load', land, { once: true }); m.addEventListener('error', land, { once: true });
+  }
+})();
+</script>
+
+<section class="gal" id="photos" aria-labelledby="gal-title">
+  <h2 id="gal-title">Mood only, not the shop</h2>
+  <figure class="gal-f">
+    <div class="gal-pic" data-reveal="picture"><img src="assets/photos/curtain.jpg" width="1920" height="1240" alt="Window shadows and plants on a sheer cream curtain in soft daylight" loading="lazy"><span class="photo-tag">illustrative photo, not the shop</span></div>
+    <figcaption><b>Window light</b><span>A detail that belongs to no one. It is not the shop, its cakes or its people.</span></figcaption>
+  </figure>
+</section>
+
+<section class="table" id="listing" aria-labelledby="table-title">
+  <h2 id="table-title">The listing, line by line</h2>
+  <p class="fig"><span class="sr-only">Opens 7:30am, closes 12am.</span><span class="fig-in" aria-hidden="true"><span data-roll>7:30</span><small>am opens</small></span><span class="fig-in" aria-hidden="true"><span data-roll>12:00</span><small>am closes</small></span></p>
+  <div class="rows" role="table" aria-label="Details as listed">
+    <div class="row head" role="row"><span role="columnheader">Detail</span><span role="columnheader">As listed</span></div>
+    <div class="row" role="row"><span role="cell">Hours</span><span role="cell">Monday to Sunday, 7:30am to 12am</span></div>
+    <div class="row" role="row"><span role="cell">Area</span><span role="cell">Smriti Nagar, Bhilai, Chhattisgarh 490020</span></div>
+    <div class="row" role="row"><span role="cell">Phone</span><span role="cell"><a class="nw" href="tel:+919229256027">92292 56027</a>, <a class="nw" href="tel:+917884033240">07884 033240</a></span></div>
+    <div class="row" role="row"><span role="cell">Email</span><span role="cell"><a class="nw" href="mailto:sudhakarjaika@gmail.com">sudhakarjaika@gmail.com</a></span></div>
+    <div class="row" role="row"><span role="cell">Offers</span><span role="cell">Celebration cakes, per its listing</span></div>
+  </div>
+  <p class="note">Taken from the public listing. It may have changed: check with the shop.</p>
+</section>
+
+<section class="scene" data-scene="letter-bar-floods-the-ground" data-options='{"pivot":10}' aria-labelledby="lbf-line">
+  <div class="scene-stage">
+    <h2 class="lbf-line" id="lbf-line">Hours as listed</h2>
+    <div class="lbf-ground">
+      <div class="lbf-next">
+        <h2 id="call-first">Call before you come</h2>
+        <p>The listing gives 7:30am to midnight, every day. Hours can change, so ask the shop first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-title">
+  <h2 id="contact-title" class="sr-only">Contact the shop</h2>
+  <ul class="clist">
+    <li><span>Email</span><a class="nw" href="mailto:sudhakarjaika@gmail.com">sudhakarjaika@gmail.com</a></li>
+    <li><span>Phone</span><a class="nw" href="tel:+919229256027">92292 56027</a></li>
+    <li><span>Phone</span><a class="nw" href="tel:+917884033240">07884 033240</a></li>
+    <li><span>Directions</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Jaika+Bakery+Smriti+Nagar+Bhilai+490020">Open a map</a></li>
+  </ul>
+  <p class="note">Enquiries only. This preview is not the shop and takes no orders.</p>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="foot-l">
+    <h2>Write to the shop before you visit</h2>
+    <a class="pill pill-inv" href="mailto:sudhakarjaika@gmail.com"><span>Email the shop</span><i aria-hidden="true">&rarr;</i></a>
+  </div>
+  <div class="foot-r">
+    <ul class="foot-links"><li><a href="#listing">Listing</a></li><li><a href="#contact">Enquire</a></li></ul>
+    <div class="foot-mid"><a class="nw" href="mailto:sudhakarjaika@gmail.com">sudhakarjaika@gmail.com</a><a class="nw" href="tel:+919229256027">92292 56027</a><span>Smriti Nagar, Bhilai</span></div>
+    <p>Concept preview. Enquiries only, not a booking service.</p>
+    <button class="foot-credits" type="button" id="credits-open">Image credits</button>
+  </div>
+</footer>
+
+<dialog id="credits-dialog" aria-labelledby="credits-title">
+  <h2 id="credits-title">Image credits</h2>
+  <ul>
+    <li>"Lamp with a lampshade illuminated by sunlight" by LoMit, CC BY-SA 4.0, via Wikimedia Commons (resized).</li>
+    <li>Photo of a sheer curtain in window light by Steinar Engeland, CC0, via Wikimedia Commons.</li>
+  </ul>
+  <p>Both photos are illustrative: a lamp and a curtain in general, not this shop or its cakes.</p>
+  <form method="dialog"><button class="pill" type="submit"><span>Close</span><i aria-hidden="true">&rarr;</i></button></form>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="assets/scenes/stage.js"></script>
+<script src="assets/scenes/letter-bar-floods-the-ground.js"></script>
+<script src="base.js"></script>
+<script src="app.js"></script>
+<script>Stage.smooth(); Stage.init();</script>
+</body>
+</html>
