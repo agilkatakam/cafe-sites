@@ -264,3 +264,7 @@ Never derive or guess preview slugs. Check only actual deployed folder names (ls
 - Facts: open Mon-Sun 7:30am-12am, Smriti Nagar Bhilai 490020, two phones, email, celebration cakes, all as listed. Omitted: Since 2010, 4.8 score, reviews, AI Overview. "Online Order" link is Swiggy, not own site.
 - Lesson: pass the exact previous direction id to --avoid (read it from direction.json .direction.id).
 - Ledger: preview_live; G171 = PREVIEW. NOT emailed; awaiting parent pixel clearance.
+
+## Nov 13 (V83-V84)
+- V83 Shree Vibgyor Cards (row 172) SKIPPED: shop's 2017 Reddit post links vibgyorcards.com (503), possible own site; two directory addresses.
+- V84 New Santosh Juice Center (Bhiwandi, row 173) live: https://agilkatakam.github.io/cafe-sites/new-santosh-juice-bhiwandi/ . Direction "One motif" + scene letter-bar-floods-the-ground. Draw crashed once (cumulative avoid list exhausted pool), retried with last 7 ids. `.lbf-next` fade added at scene exit. Awaiting parent clearance before email.
