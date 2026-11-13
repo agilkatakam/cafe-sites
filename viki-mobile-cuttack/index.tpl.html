@@ -12,8 +12,6 @@
 <link href="https://api.fontshare.com/v2/css?f[]=ranade@400,500&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="assets/scenes/stage.css">
-<link rel="stylesheet" href="assets/scenes/page-lifts-off-closing-picture.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body data-entrance="set-type">
@@ -31,20 +29,24 @@
     <div class="hb hb--b" aria-hidden="true"></div>
     <div class="hb hb--c" aria-hidden="true"></div>
     <p class="hero__mark">Viki Mobile</p>
+    <ul class="hero__facts" data-e="lead">
+      <li>Opposite Manyavar &amp; Amber, Manglabag, Cuttack</li>
+      <li>Listed hours: 10am - 1:30pm, 2pm - 9:30pm</li>
+      <li>Call 9861122202</li>
+    </ul>
     <div class="hl">
       <h1 class="hl__l hl__l--k" data-e="headline"><span class="line"><span data-line style="--i:0">Smartphones and</span></span><span class="line"><span data-line style="--i:1">accessories, Manglabag.</span></span></h1>
       <div class="hl__l hl__l--w" data-e="headline" aria-hidden="true"><span class="line"><span data-line style="--i:0">Smartphones and</span></span><span class="line"><span data-line style="--i:1">accessories, Manglabag.</span></span></div>
     </div>
     <div class="hero__act" data-e="action">
-      <p class="hero__lead" data-e="lead">A concept preview for Viki Mobile in Cuttack, built from its public listing.</p>
-      <a class="btn" href="@@MAIL@@">Email the shop</a>
+            <a class="btn" href="@@MAIL@@">Email the shop</a>
     </div>
   </section>
 
   <section class="intro" id="shop">
     <h2 class="intro__h">
       <span class="intro__r1">Find us</span>
-      <span class="intro__r2"><span class="intro__w3">Manglabag,</span><span class="intro__w4" data-rise>Cuttack</span></span>
+      <span class="intro__r2">Manglabag, Cuttack</span>
     </h2>
     <div class="intro__body">
       <p>Its ThreeBestRated listing describes Viki Mobile as offering smartphones and accessories at affordable prices, opposite Manyavar &amp; Amber.</p>
@@ -53,7 +55,6 @@
   </section>
 
   <section class="range" id="range">
-    <p class="push" aria-hidden="true"><span class="push__t">Odisha</span></p>
     <h2 class="range__h">As listed</h2>
     <div class="cards">
       <article class="card card--s"><h3>The range</h3><p>Smartphones and accessories at affordable prices, the listing says.</p></article>
@@ -62,32 +63,13 @@
     </div>
   </section>
 
-  <section class="board lifting-sheet" id="board" aria-label="Photograph cut into tiles">
-    <div class="board__grid board__grid--d">
-      @@DESK@@
-    </div>
-    <div class="board__grid board__grid--p">
-      @@PHONE@@
-    </div>
-    <p class="phototag">Illustrative photo, not the shop: the Mahanadi River, Odisha, as its source names it.</p>
-  </section>
-
-  <section class="scene" id="visit" data-scene="page-lifts-off-closing-picture" style="--lift-band-ink:#000;--ground:#fff;--hold:1" data-options='{"hold":1}' aria-labelledby="close-title">
-    <div class="scene-stage">
-      <div class="lift">
-        <div class="lift-band">
-          <h2 class="lift-title" id="close-title">Write to the shop</h2>
-          <div class="lift-contact">
-            <p>Opposite Manyavar &amp; Amber, Manglabag, Cuttack, Odisha 753001</p>
-            <p>10am - 1:30pm, 2pm - 9:30pm<br><a href="mailto:@@EM@@">@@EM@@</a><br><a href="tel:+919861122202">9861122202</a></p>
-          </div>
-        </div>
-        <a class="lift-picture" href="@@MAIL@@">
-          <img class="lift-media" src="assets/photos/sunset.jpg" width="3200" height="2400" alt="Sun low over rice fields and palms beside still water, Odisha" loading="eager">
-          <span class="lift-label">Email the shop</span>
-        </a>
-        <p class="phototag phototag--lift">Illustrative photo, not the shop: a village sunset in Puri district, Odisha.</p>
-      </div>
+  <section class="visit" id="visit">
+    <h2 class="visit__h">Write to the shop</h2>
+    <div class="visit__body">
+      <p>Listed hours: 10am - 1:30pm, 2pm - 9:30pm<br>Hours may have changed, so check with the shop first.</p>
+      <p>Phone: <a href="tel:+919861122202">9861122202</a> or <a href="tel:+919337055505">9337055505</a></p>
+      <a class="btn" href="@@MAIL@@">Email the shop</a>
+      <p class="visit__note">Concept preview built from the shop's public listing. Enquiries only, not a booking service.</p>
     </div>
   </section>
 
@@ -104,28 +86,14 @@
     <div class="foot__row">
       <a href="#shop">Shop</a><a href="#range">Range</a><a href="#visit">Visit</a>
       <span>Concept preview. Enquiries only, not a booking service.</span>
-      <button class="foot__credits" id="creditsbtn">Image credits</button>
     </div>
   </footer>
 
-  <dialog class="credits" id="creditsdialog">
-    <h2>Image credits</h2>
-    <ul>
-      <li><a href="https://commons.wikimedia.org/w/index.php?curid=3166499" rel="noopener">&ldquo;Mahanadi River&rdquo;</a> by Sujit kumar, CC BY-SA 4.0, via Wikimedia Commons. Cropped. Illustrative photo.</li>
-      <li><a href="https://commons.wikimedia.org/w/index.php?curid=129439958" rel="noopener">&ldquo;Sunset in Odisha , village - Raiberuan, District - Puri&rdquo;</a> by Bhagabata Sethy, CC BY-SA 4.0, via Wikimedia Commons. Illustrative photo.</li>
-    </ul>
-    <p>Photographs are illustrative: they show Odisha, never the shop, its stock or its people.</p>
-    <form method="dialog"><button class="btn btn--sm">Close</button></form>
-  </dialog>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
 <script src="base.js"></script>
-<script src="assets/scenes/stage.js"></script>
-<script src="assets/scenes/page-lifts-off-closing-picture.js"></script>
 <script src="app.js"></script>
-<script>Stage.init();</script>
 </body>
 </html>
