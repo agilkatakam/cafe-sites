@@ -11,89 +11,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=ranade@400,500&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="base.css">
 <link rel="stylesheet" href="style.css">
 </head>
-<body data-entrance="set-type">
-
-<nav class="dock" aria-label="Sections">
-  <a href="#shop">Shop</a>
-  <a href="#range">Range</a>
-  <a href="#visit">Visit</a>
-  <a class="dock__act" href="tel:+919861122202">Call the shop</a>
-</nav>
-
+<body>
+<header class="top">
+  <p class="top__mark">Viki Mobile</p>
+  <nav class="top__nav" aria-label="Sections"><a href="#shop">Shop</a><a href="#range">Range</a><a href="#visit">Visit</a><a class="top__act" href="tel:+919861122202">Call the shop</a></nav>
+</header>
 <main>
-  <section class="hero" data-hero id="top">
-    <div class="hb hb--a" aria-hidden="true"></div>
-    <div class="hb hb--b" aria-hidden="true"></div>
-    <div class="hb hb--c" aria-hidden="true"></div>
-    <p class="hero__mark">Viki Mobile</p>
-    <ul class="hero__facts" data-e="lead">
-      <li>Opposite Manyavar &amp; Amber, Manglabag, Cuttack</li>
-      <li>Listed hours: 10am - 1:30pm, 2pm - 9:30pm</li>
-      <li>Call 9861122202</li>
-    </ul>
-    <div class="hl">
-      <h1 class="hl__l hl__l--k" data-e="headline"><span class="line"><span data-line style="--i:0">Smartphones and</span></span><span class="line"><span data-line style="--i:1">accessories, Manglabag.</span></span></h1>
-      <div class="hl__l hl__l--w" data-e="headline" aria-hidden="true"><span class="line"><span data-line style="--i:0">Smartphones and</span></span><span class="line"><span data-line style="--i:1">accessories, Manglabag.</span></span></div>
+  <section class="hero" id="top">
+    <div class="hero__main">
+      <h1>Smartphones, Manglabag.</h1>
+      <a class="btn" href="mailto:vikimobile@gmail.com?subject=Enquiry%20for%20Viki%20Mobile">Email the shop</a>
+      <p class="note">Concept preview. Enquiries only, not a booking service.</p>
     </div>
-    <div class="hero__act" data-e="action">
-            <a class="btn" href="mailto:vikimobile@gmail.com?subject=Enquiry%20for%20Viki%20Mobile">Email the shop</a>
-    </div>
-  </section>
-
-  <section class="intro" id="shop">
-    <h2 class="intro__h">
-      <span class="intro__r1">Find us</span>
-      <span class="intro__r2">Manglabag, Cuttack</span>
-    </h2>
-    <div class="intro__body">
-      <p>Its ThreeBestRated listing describes Viki Mobile as offering smartphones and accessories at affordable prices, opposite Manyavar &amp; Amber.</p>
-      <a class="btn" href="#range">See what it lists</a>
-    </div>
+    <aside class="hero__card" id="shop" aria-label="Shop details">
+      <h2>Find us</h2>
+      <p>Opposite Manyavar &amp; Amber, Manglabag, Cuttack</p>
+      <p>Listed hours: 10am - 1:30pm, 2pm - 9:30pm</p>
+      <p>Phone: <a href="tel:+919861122202">9861122202</a> or <a href="tel:+919337055505">9337055505</a></p>
+    </aside>
   </section>
 
   <section class="range" id="range">
-    <h2 class="range__h">As listed</h2>
+    <h2>As listed</h2>
     <div class="cards">
-      <article class="card card--s"><h3>The range</h3><p>Smartphones and accessories at affordable prices, the listing says.</p></article>
+      <article class="card"><h3>The range</h3><p>Smartphones and accessories at affordable prices, the listing says.</p></article>
       <article class="card card--k"><h3>The hours</h3><p>10am to 1:30pm, then 2pm to 9:30pm. Hours may have changed, so check with the shop first.</p></article>
-      <article class="card card--s"><h3>The place</h3><p>Opposite Manyavar &amp; Amber, Manglabag, Cuttack, Odisha 753001.</p></article>
+      <article class="card"><h3>The place</h3><p>Opposite Manyavar &amp; Amber, Manglabag, Cuttack, Odisha 753001.</p></article>
     </div>
   </section>
 
-  <section class="visit" id="visit">
-    <h2 class="visit__h">Write to the shop</h2>
-    <div class="visit__body">
-      <p>Listed hours: 10am - 1:30pm, 2pm - 9:30pm<br>Hours may have changed, so check with the shop first.</p>
+  <footer class="foot" id="visit">
+    <h2>Write to the shop</h2>
+    <div class="foot__r">
+      <p class="foot__mail"><a href="mailto:vikimobile@gmail.com">vikimobile@gmail.com</a></p>
+      <button class="btn btn--sm" id="copybtn" data-copy="vikimobile@gmail.com">Copy</button>
+      <p>Opposite Manyavar &amp; Amber, Manglabag, Cuttack, Odisha 753001</p>
       <p>Phone: <a href="tel:+919861122202">9861122202</a> or <a href="tel:+919337055505">9337055505</a></p>
-      <a class="btn" href="mailto:vikimobile@gmail.com?subject=Enquiry%20for%20Viki%20Mobile">Email the shop</a>
-      <p class="visit__note">Concept preview built from the shop's public listing. Enquiries only, not a booking service.</p>
-    </div>
-  </section>
-
-  <footer class="foot">
-    <div class="foot__top">
-      <h2 class="foot__h">Visit</h2>
-      <div class="foot__r">
-        <p class="foot__mail"><a href="mailto:vikimobile@gmail.com">vikimobile@gmail.com</a></p>
-        <button class="btn btn--sm" id="copybtn" data-copy="vikimobile@gmail.com">Copy</button>
-        <p class="foot__city">Opposite Manyavar &amp; Amber, Manglabag, Cuttack, Odisha 753001</p>
-        <a class="foot__dir" href="https://www.google.com/maps/search/?api=1&amp;query=Viki+Mobile+Manglabag+Cuttack+Odisha+753001" rel="noopener">Directions</a>
-      </div>
-    </div>
-    <div class="foot__row">
-      <a href="#shop">Shop</a><a href="#range">Range</a><a href="#visit">Visit</a>
-      <span>Concept preview. Enquiries only, not a booking service.</span>
+      <a class="foot__dir" href="https://www.google.com/maps/search/?api=1&amp;query=Viki+Mobile+Manglabag+Cuttack+Odisha+753001" rel="noopener">Directions</a>
+      <p class="foot__note">Concept preview. Enquiries only, not a booking service.</p>
     </div>
   </footer>
-
 </main>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-<script src="base.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
