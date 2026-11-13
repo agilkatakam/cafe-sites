@@ -1,14 +1,16 @@
 {
  "url": "index.html",
- "at": "2026-11-13T04:20:47.540Z",
- "allow": [],
+ "at": "2026-11-13T04:23:49.285Z",
+ "allow": [
+  "surface-count"
+ ],
  "viewports": [
   {
    "width": 1440,
    "height": 900,
    "load": "load",
-   "screens": 9,
-   "pageScreens": 8.3,
+   "screens": 8,
+   "pageScreens": 7.9,
    "stride": 1,
    "extra": {
     "imageInHeadline": [],
@@ -33,7 +35,7 @@
     "ranges": [],
     "boxed": {
      "share": 0,
-     "words": 179
+     "words": 171
     },
     "labels": [
      {
@@ -42,11 +44,11 @@
      },
      {
       "text": "illustrative photo, not the sh",
-      "y": 3338
+      "y": 3303
      },
      {
       "text": "illustrative photo, not the sh",
-      "y": 4891
+      "y": 4795
      }
     ],
     "walls": [],
@@ -74,18 +76,10 @@
     "sceneDrawings": [],
     "firstScreenWords": 22,
     "pageWords": {
-     "all": 250,
+     "all": 242,
      "footer": 30
     },
-    "wordySections": [
-     {
-      "words": 65,
-      "loose": 65,
-      "items": 0,
-      "over": 0,
-      "head": "New Santosh Juice Center is listed as a "
-     }
-    ],
+    "wordySections": [],
     "cutText": [],
     "truncated": [],
     "stickyBands": [],
@@ -95,14 +89,7 @@
      "menu": false,
      "foot": 0
     },
-    "giantContact": [
-     {
-      "text": "99201 08998",
-      "size": 60,
-      "vw": 4.2,
-      "what": "contact"
-     }
-    ],
+    "giantContact": [],
     "heroCard": null,
     "bento": [],
     "smallBody": [],
@@ -155,7 +142,6 @@
     true,
     true,
     true,
-    true,
     true
    ],
    "upReach": true,
@@ -167,22 +153,20 @@
     0.11,
     1,
     1,
-    0.39,
-    0.79,
-    0.33,
-    0.61,
-    0.73
+    0.47,
+    0.86,
+    0.28,
+    0.76
    ],
    "content": [
     0.48,
     0.13,
     0.11,
+    0.18,
+    0.2,
+    0.76,
     0.19,
-    0.17,
-    0.63,
-    0.3,
-    0.13,
-    0.11
+    0.1
    ],
    "filmContent": [],
    "motion": {
@@ -199,9 +183,9 @@
      "h": 900
     },
     "page": {
-     "height": 7454,
-     "screens": 8.3,
-     "words": 268,
+     "height": 7139,
+     "screens": 7.9,
+     "words": 260,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -266,22 +250,22 @@
      {
       "text": "Cold drinks, ice cream",
       "size": 115.2,
-      "top": 3687
+      "top": 3652
      },
      {
       "text": "Open every day, as listed",
       "size": 57.6,
-      "top": 3953
+      "top": 3918
      },
      {
       "text": "Ice and light",
       "size": 34.1,
-      "top": 5635
+      "top": 5539
      },
      {
       "text": "Write to the shop before you visit",
       "size": 34.1,
-      "top": 7034
+      "top": 6719
      }
     ],
     "reach": {
@@ -289,10 +273,10 @@
       "#top",
       "#hours",
       "#visit",
-      "mailto:anandguptaazad11@gmail.com"
+      "#contact"
      ],
      "labels": [
-      "email",
+      "enquire",
       "see the listed hours"
      ]
     },
@@ -356,7 +340,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.69,
-      "top": 3687,
+      "top": 3652,
       "tag": "h2",
       "kind": "heading"
      },
@@ -377,7 +361,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.29,
-      "top": 3953,
+      "top": 3918,
       "tag": "h2",
       "kind": "heading"
      },
@@ -398,7 +382,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.45,
-      "top": 5635,
+      "top": 5539,
       "tag": "li",
       "kind": "statement"
      },
@@ -419,7 +403,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.45,
-      "top": 5635,
+      "top": 5539,
       "tag": "h2",
       "kind": "heading"
      },
@@ -440,7 +424,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.45,
-      "top": 5703,
+      "top": 5607,
       "tag": "li",
       "kind": "statement"
      },
@@ -461,7 +445,7 @@
       "align": "left",
       "position": "right",
       "widthRatio": 0.45,
-      "top": 5770,
+      "top": 5674,
       "tag": "li",
       "kind": "statement"
      },
@@ -470,8 +454,8 @@
       "words": 4,
       "chars": 24,
       "lines": 1,
-      "size": 60.5,
-      "vw": 4.2,
+      "size": 41.8,
+      "vw": 2.9,
       "font": "Josefin Slab",
       "weight": 400,
       "tracking": -0.01,
@@ -480,9 +464,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6036,
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 5940,
       "tag": "p",
       "kind": "statement"
      },
@@ -491,8 +475,8 @@
       "words": 3,
       "chars": 18,
       "lines": 1,
-      "size": 60.5,
-      "vw": 4.2,
+      "size": 41.8,
+      "vw": 2.9,
       "font": "Josefin Slab",
       "weight": 400,
       "tracking": -0.01,
@@ -501,9 +485,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6192,
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 6064,
       "tag": "p",
       "kind": "statement"
      },
@@ -512,8 +496,8 @@
       "words": 4,
       "chars": 28,
       "lines": 1,
-      "size": 60.5,
-      "vw": 4.2,
+      "size": 41.8,
+      "vw": 2.9,
       "font": "Josefin Slab",
       "weight": 400,
       "tracking": -0.01,
@@ -522,9 +506,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6347,
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 6188,
       "tag": "p",
       "kind": "statement"
      },
@@ -533,8 +517,8 @@
       "words": 4,
       "chars": 19,
       "lines": 1,
-      "size": 60.5,
-      "vw": 4.2,
+      "size": 41.8,
+      "vw": 2.9,
       "font": "Josefin Slab",
       "weight": 400,
       "tracking": -0.01,
@@ -543,9 +527,9 @@
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6502,
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 6312,
       "tag": "p",
       "kind": "statement"
      },
@@ -554,19 +538,19 @@
       "words": 2,
       "chars": 11,
       "lines": 1,
-      "size": 60.5,
-      "vw": 4.2,
+      "size": 33.1,
+      "vw": 2.3,
       "font": "Josefin Slab",
       "weight": 400,
-      "tracking": -0.01,
+      "tracking": -0.013,
       "leading": 1,
       "upper": false,
       "italic": false,
       "mono": false,
       "align": "left",
-      "position": "center",
-      "widthRatio": 0.94,
-      "top": 6657,
+      "position": "left",
+      "widthRatio": 0.6,
+      "top": 6436,
       "tag": "p",
       "kind": "statement"
      },
@@ -587,7 +571,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.32,
-      "top": 7034,
+      "top": 6719,
       "tag": "h2",
       "kind": "heading"
      }
@@ -618,14 +602,16 @@
       20,
       26,
       27,
+      33,
       34,
+      42,
       58,
       61,
       104,
       115,
       130
      ],
-     "sizeCount": 13,
+     "sizeCount": 15,
      "notLoaded": [],
      "synthetic": [],
      "body": {
@@ -636,7 +622,7 @@
       "tracking": 0,
       "contrast": 15.4
      },
-     "measureChars": 69,
+     "measureChars": 51,
      "max": {
       "size": 129.6,
       "vw": 9,
@@ -694,7 +680,7 @@
       },
       {
        "color": "#2a2c2f",
-       "top": 4867,
+       "top": 4771,
        "hsl": {
         "h": 216,
         "s": 0.06,
@@ -705,15 +691,15 @@
      "textColors": [
       {
        "color": "#eff0f1",
-       "share": 0.52
+       "share": 0.53
       },
       {
        "color": "#18191b",
-       "share": 0.28
+       "share": 0.26
       },
       {
        "color": "#9c9ea3",
-       "share": 0.2
+       "share": 0.21
       }
      ],
      "fills": [
@@ -751,7 +737,7 @@
         "s": 0.06,
         "l": 0.17
        },
-       "top": 3081
+       "top": 3046
       },
       {
        "color": "#ff4a1f",
@@ -760,7 +746,7 @@
         "s": 1,
         "l": 0.56
        },
-       "top": 4478
+       "top": 4382
       }
      ],
      "button": {
@@ -784,7 +770,7 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Email",
+      "Enquire",
       "See the listed hours"
      ]
     },
@@ -832,10 +818,10 @@
      "w": 1440,
      "h": 900
     },
-    "pageH": 7454,
+    "pageH": 7139,
     "margins": {
      "left": 43,
-     "right": 49
+     "right": 43
     },
     "sections": [
      {
@@ -888,8 +874,8 @@
       "sel": "section#about.intro",
       "tag": "section",
       "top": 2790,
-      "height": 821,
-      "words": 65,
+      "height": 785,
+      "words": 57,
       "media": 1,
       "middle": 368,
       "heading": {
@@ -898,9 +884,9 @@
        "tag": "p"
       },
       "left": 43,
-      "right": 56,
+      "right": 44,
       "textLeft": 43,
-      "textRight": 56,
+      "textRight": 44,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -910,7 +896,7 @@
      {
       "sel": "section.push",
       "tag": "section",
-      "top": 3611,
+      "top": 3575,
       "height": 266,
       "words": 4,
       "media": 0,
@@ -933,16 +919,16 @@
      {
       "sel": "section#hours.hours",
       "tag": "section",
-      "top": 3877,
-      "height": 914,
+      "top": 3841,
+      "height": 854,
       "words": 52,
       "media": 0,
-      "middle": 821,
+      "middle": 641,
       "heading": null,
-      "left": 43,
-      "right": 67,
-      "textLeft": 43,
-      "textRight": 67,
+      "left": 67,
+      "right": 43,
+      "textLeft": 67,
+      "textRight": 43,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -952,7 +938,7 @@
      {
       "sel": "section#photos.gal",
       "tag": "section",
-      "top": 4791,
+      "top": 4695,
       "height": 1169,
       "words": 42,
       "media": 1,
@@ -971,20 +957,20 @@
      {
       "sel": "section#visit.visit",
       "tag": "section",
-      "top": 5960,
-      "height": 954,
+      "top": 5864,
+      "height": 735,
       "words": 35,
       "media": 0,
-      "middle": 0,
+      "middle": 365,
       "heading": {
        "text": "New Santosh Juice Center",
-       "size": 60,
+       "size": 42,
        "tag": "p"
       },
-      "left": 43,
-      "right": 604,
-      "textLeft": 43,
-      "textRight": 604,
+      "left": 63,
+      "right": 79,
+      "textLeft": 63,
+      "textRight": 79,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -994,7 +980,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 6914,
+      "top": 6599,
       "height": 540,
       "words": 31,
       "media": 0,
@@ -1015,12 +1001,7 @@
       "pinned": false
      }
     ],
-    "gaps": [
-     {
-      "top": 3804,
-      "height": 296
-     }
-    ],
+    "gaps": [],
     "h1s": [
      {
       "text": "Fresh juice in Bhiwandi",
@@ -1033,7 +1014,7 @@
     "edges": [
      {
       "x": 43,
-      "n": 6
+      "n": 5
      },
      {
       "x": 732,
@@ -1049,6 +1030,10 @@
      },
      {
       "x": 744,
+      "n": 1
+     },
+     {
+      "x": 962,
       "n": 1
      }
     ],
@@ -1117,7 +1102,24 @@
    },
    "visits": [],
    "build": {
-    "framed": [],
+    "framed": [
+     {
+      "head": "Visit and contact",
+      "n": 3,
+      "list": true,
+      "y": 5864,
+      "items": [
+       "New Santosh Juice Center (filled #2a2c2f, 870x86)",
+       "Gokul Nagar, Bhiwandi 421302 (filled #2a2c2f, 870x86)",
+       "99201 08998 (filled #2a2c2f, 870x86)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
     "heroWindows": [],
     "stats": [],
     "emailFields": [],
@@ -1196,13 +1198,13 @@
       "hex": "#18191b",
       "where": "page",
       "n": 1,
-      "screens": 4.07,
+      "screens": 3.26,
       "role": "page",
       "sections": 6,
       "tones": [
        [
         "#18191b",
-        4.07
+        3.26
        ]
       ],
       "scene": true,
@@ -1227,15 +1229,15 @@
      },
      {
       "hex": "#2a2c2f",
-      "where": "p.r",
+      "where": "li",
       "n": 1,
-      "screens": 1,
+      "screens": 1.32,
       "role": null,
       "sections": 2,
       "tones": [
        [
         "#2a2c2f",
-        1
+        1.32
        ]
       ],
       "scene": false,
@@ -1243,15 +1245,15 @@
      },
      {
       "hex": "#ff4a1f",
-      "where": "a.btn",
+      "where": "li.is-today",
       "n": 1,
-      "screens": 0.02,
+      "screens": 0.17,
       "role": "accent",
-      "sections": 0,
+      "sections": 1,
       "tones": [
        [
         "#ff4a1f",
-        0.02
+        0.17
        ]
       ],
       "scene": false,
@@ -1292,7 +1294,7 @@
        "New Santosh Juice Ce",
        "Hours",
        "Visit",
-       "Email"
+       "Enquire"
       ]
      },
      "down": {
@@ -1307,7 +1309,7 @@
        "New Santosh Juice Ce",
        "Hours",
        "Visit",
-       "Email"
+       "Enquire"
       ]
      },
      "up": {
@@ -1322,7 +1324,7 @@
        "New Santosh Juice Ce",
        "Hours",
        "Visit",
-       "Email"
+       "Enquire"
       ]
      },
      "held": 0,
@@ -1332,7 +1334,7 @@
        "key": "soft filled",
        "n": 1,
        "labels": [
-        "Email"
+        "Enquire"
        ],
        "h": [
         40,
@@ -1342,44 +1344,7 @@
      ],
      "dealt": null
     },
-    "places": [
-     {
-      "items": [
-       {
-        "id": 3,
-        "label": "Email",
-        "button": true,
-        "where": "the bar"
-       },
-       {
-        "id": 6,
-        "label": "Email the shop",
-        "button": true,
-        "where": "the footer"
-       }
-      ],
-      "place": "mailto:anandguptaazad11@gmail.com",
-      "screen": 8
-     },
-     {
-      "items": [
-       {
-        "id": 3,
-        "label": "Email",
-        "button": true,
-        "where": "the bar"
-       },
-       {
-        "id": 6,
-        "label": "Email the shop",
-        "button": true,
-        "where": "the footer"
-       }
-      ],
-      "place": "mailto:anandguptaazad11@gmail.com",
-      "screen": 8
-     }
-    ],
+    "places": [],
     "footLinks": [],
     "structures": [
      {
@@ -1404,7 +1369,7 @@
      },
      {
       "head": "Cold drinks, ice cream",
-      "y": 3611,
+      "y": 3575,
       "hero": false,
       "word": "statement",
       "lead": "none",
@@ -1412,7 +1377,7 @@
      },
      {
       "head": "Open every day, as listed",
-      "y": 3877,
+      "y": 3841,
       "hero": false,
       "pos": "over",
       "cols": 2,
@@ -1422,7 +1387,7 @@
      },
      {
       "head": "Ice and light",
-      "y": 4791,
+      "y": 4695,
       "hero": false,
       "pos": "mixed",
       "cols": 2,
@@ -1432,17 +1397,17 @@
      },
      {
       "head": "visit",
-      "y": 5960,
+      "y": 5864,
       "hero": false,
       "pos": "none",
-      "cols": 1,
+      "cols": 2,
       "lead": "text",
-      "word": "statement",
+      "word": "columns",
       "boxed": false
      },
      {
       "head": "the footer",
-      "y": 6914,
+      "y": 6599,
       "hero": false,
       "foot": true,
       "pos": "none",
@@ -1512,7 +1477,7 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "lemon 0.07 @381"
+      "lemon 0.07 @346"
      ],
      "heads": [],
      "veils": [],
@@ -1537,7 +1502,9 @@
      "dy": 27,
      "end": null,
      "clipped": [],
-     "pics": [],
+     "pics": [
+      "ice-ice-baby 0.698 @271"
+     ],
      "heads": [],
      "veils": [],
      "cutHeads": [],
@@ -1549,27 +1516,11 @@
      "dy": 27,
      "end": null,
      "clipped": [],
-     "pics": [
-      "ice-ice-baby 0.139 @-533"
-     ],
-     "heads": [
-      "h Ice and light @235",
-      "d New Santosh Juice Center @636"
-     ],
-     "veils": [],
-     "cutHeads": [],
-     "edges": [],
-     "strands": []
-    },
-    {
-     "y": 6300,
-     "dy": 27,
-     "end": null,
-     "clipped": [],
      "pics": [],
      "heads": [
-      "d Gokul Nagar, Bhiwandi 421302 @47",
-      "d 6:30am - 12am daily @202"
+      "h Ice and light @139",
+      "d New Santosh Juice Center @540",
+      "d Gokul Nagar, Bhiwandi 421302 @788"
      ],
      "veils": [],
      "cutHeads": [],
@@ -1577,12 +1528,14 @@
      "strands": []
     },
     {
-     "y": 6554,
+     "y": 6239,
      "dy": -27,
      "end": null,
      "clipped": [],
      "pics": [],
-     "heads": [],
+     "heads": [
+      "d 6:30am - 12am daily @73"
+     ],
      "veils": [],
      "cutHeads": [],
      "edges": [],
@@ -1624,7 +1577,7 @@
     "ranges": [],
     "boxed": {
      "share": 0,
-     "words": 179
+     "words": 171
     },
     "labels": [
      {
@@ -1633,11 +1586,11 @@
      },
      {
       "text": "illustrative photo, not the sh",
-      "y": 2999
+      "y": 2970
      },
      {
       "text": "illustrative photo, not the sh",
-      "y": 4241
+      "y": 4232
      }
     ],
     "walls": [],
@@ -1665,18 +1618,10 @@
     "sceneDrawings": [],
     "firstScreenWords": 22,
     "pageWords": {
-     "all": 250,
+     "all": 242,
      "footer": 30
     },
-    "wordySections": [
-     {
-      "words": 65,
-      "loose": 65,
-      "items": 0,
-      "over": 0,
-      "head": "New Santosh Juice Center is listed as a "
-     }
-    ],
+    "wordySections": [],
     "cutText": [],
     "truncated": [],
     "stickyBands": [],
@@ -1686,14 +1631,7 @@
      "menu": false,
      "foot": 0
     },
-    "giantContact": [
-     {
-      "text": "99201 08998",
-      "size": 31,
-      "vw": 8,
-      "what": "contact"
-     }
-    ],
+    "giantContact": [],
     "heroCard": null,
     "bento": [],
     "smallBody": [],
@@ -1762,24 +1700,24 @@
    "overText": [],
    "frameErrors": [],
    "filled": [
-    0.49,
-    0.1,
+    0.5,
+    0.11,
     1,
-    0.83,
-    0.6,
     0.78,
-    0.46,
-    0.87
+    0.62,
+    0.78,
+    0.51,
+    0.9
    ],
    "content": [
-    0.58,
+    0.59,
     0.1,
-    0.13,
-    0.53,
+    0.14,
+    0.48,
     0.24,
     0.78,
-    0.29,
-    0.18
+    0.26,
+    0.21
    ],
    "filmContent": [],
    "motion": {
@@ -1796,9 +1734,9 @@
      "h": 844
     },
     "page": {
-     "height": 6486,
+     "height": 6476,
      "screens": 7.7,
-     "words": 268,
+     "words": 260,
      "img": 3,
      "video": 0,
      "canvas": 0,
@@ -1863,22 +1801,22 @@
      {
       "text": "Cold drinks, ice cream",
       "size": 35.1,
-      "top": 3221
+      "top": 3192
      },
      {
       "text": "Open every day, as listed",
       "size": 36,
-      "top": 3351
+      "top": 3323
      },
      {
       "text": "Ice and light",
       "size": 26.8,
-      "top": 4772
+      "top": 4762
      },
      {
       "text": "Write to the shop before you visit",
       "size": 26.8,
-      "top": 5907
+      "top": 5897
      }
     ],
     "reach": {
@@ -1886,10 +1824,10 @@
       "#top",
       "#hours",
       "#visit",
-      "mailto:anandguptaazad11@gmail.com"
+      "#contact"
      ],
      "labels": [
-      "email",
+      "enquire",
       "see the listed hours"
      ]
     },
@@ -1953,7 +1891,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.78,
-      "top": 3221,
+      "top": 3192,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1974,7 +1912,7 @@
       "align": "left",
       "position": "left",
       "widthRatio": 0.68,
-      "top": 3351,
+      "top": 3323,
       "tag": "h2",
       "kind": "heading"
      },
@@ -1995,7 +1933,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4772,
+      "top": 4762,
       "tag": "h2",
       "kind": "heading"
      },
@@ -2016,7 +1954,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4880,
+      "top": 4870,
       "tag": "li",
       "kind": "statement"
      },
@@ -2037,7 +1975,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4924,
+      "top": 4915,
       "tag": "li",
       "kind": "statement"
      },
@@ -2058,7 +1996,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 4968,
+      "top": 4959,
       "tag": "li",
       "kind": "statement"
      },
@@ -2079,7 +2017,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5168,
+      "top": 5158,
       "tag": "p",
       "kind": "statement"
      },
@@ -2100,7 +2038,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5280,
+      "top": 5270,
       "tag": "p",
       "kind": "statement"
      },
@@ -2121,7 +2059,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5392,
+      "top": 5382,
       "tag": "p",
       "kind": "statement"
      },
@@ -2142,7 +2080,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5504,
+      "top": 5494,
       "tag": "p",
       "kind": "statement"
      },
@@ -2151,11 +2089,11 @@
       "words": 2,
       "chars": 11,
       "lines": 1,
-      "size": 31.2,
-      "vw": 8,
+      "size": 27.3,
+      "vw": 7,
       "font": "Josefin Slab",
       "weight": 400,
-      "tracking": -0.01,
+      "tracking": -0.011,
       "leading": 1,
       "upper": false,
       "italic": false,
@@ -2163,7 +2101,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5616,
+      "top": 5606,
       "tag": "p",
       "kind": "statement"
      },
@@ -2184,7 +2122,7 @@
       "align": "left",
       "position": "center",
       "widthRatio": 0.9,
-      "top": 5907,
+      "top": 5897,
       "tag": "h2",
       "kind": "heading"
      }
@@ -2292,7 +2230,7 @@
       },
       {
        "color": "#2a2c2f",
-       "top": 4217,
+       "top": 4208,
        "hsl": {
         "h": 216,
         "s": 0.06,
@@ -2303,15 +2241,15 @@
      "textColors": [
       {
        "color": "#eff0f1",
-       "share": 0.52
+       "share": 0.53
       },
       {
        "color": "#18191b",
-       "share": 0.28
+       "share": 0.26
       },
       {
        "color": "#9c9ea3",
-       "share": 0.2
+       "share": 0.21
       }
      ],
      "fills": [
@@ -2358,7 +2296,7 @@
         "s": 0.06,
         "l": 0.17
        },
-       "top": 2833
+       "top": 2804
       }
      ],
      "button": {
@@ -2382,7 +2320,7 @@
      "mono": 0,
      "upper": 0,
      "heroLabels": [
-      "Email",
+      "Enquire",
       "See the listed hours"
      ]
     },
@@ -2430,7 +2368,7 @@
      "w": 390,
      "h": 844
     },
-    "pageH": 6486,
+    "pageH": 6476,
     "margins": {
      "left": 20,
      "right": 20
@@ -2486,15 +2424,15 @@
       "sel": "section#about.intro",
       "tag": "section",
       "top": 2532,
-      "height": 641,
-      "words": 65,
+      "height": 612,
+      "words": 57,
       "media": 1,
       "middle": 0,
       "heading": null,
       "left": 20,
       "right": 20,
       "textLeft": 20,
-      "textRight": 23,
+      "textRight": 32,
       "fullBleed": false,
       "footer": false,
       "hero": false,
@@ -2504,7 +2442,7 @@
      {
       "sel": "section.push",
       "tag": "section",
-      "top": 3173,
+      "top": 3144,
       "height": 130,
       "words": 4,
       "media": 0,
@@ -2527,15 +2465,15 @@
      {
       "sel": "section#hours.hours",
       "tag": "section",
-      "top": 3303,
-      "height": 866,
+      "top": 3275,
+      "height": 885,
       "words": 52,
       "media": 0,
       "middle": 0,
       "heading": null,
-      "left": 20,
+      "left": 36,
       "right": 36,
-      "textLeft": 20,
+      "textLeft": 36,
       "textRight": 36,
       "fullBleed": false,
       "footer": false,
@@ -2546,7 +2484,7 @@
      {
       "sel": "section#photos.gal",
       "tag": "section",
-      "top": 4169,
+      "top": 4160,
       "height": 951,
       "words": 42,
       "media": 1,
@@ -2565,7 +2503,7 @@
      {
       "sel": "section#visit.visit",
       "tag": "section",
-      "top": 5120,
+      "top": 5110,
       "height": 707,
       "words": 35,
       "media": 0,
@@ -2588,7 +2526,7 @@
      {
       "sel": "footer.footer",
       "tag": "footer",
-      "top": 5827,
+      "top": 5817,
       "height": 659,
       "words": 31,
       "media": 0,
@@ -2671,7 +2609,7 @@
       "head": "Open every day, as listed",
       "n": 4,
       "list": true,
-      "y": 3303,
+      "y": 3275,
       "items": [
        "Monday 6:30am - 12am as list (filled #2a2c2f, 350x84)",
        "Wednesday 6:30am - 12am as l (filled #2a2c2f, 350x84)",
@@ -2688,7 +2626,7 @@
       "head": "Visit and contact",
       "n": 3,
       "list": true,
-      "y": 5120,
+      "y": 5110,
       "items": [
        "New Santosh Juice Center (filled #2a2c2f, 350x84)",
        "Gokul Nagar, Bhiwandi 421302 (filled #2a2c2f, 350x84)",
@@ -2796,10 +2734,10 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "lemon 0.095 @301"
+      "lemon 0.095 @272"
      ],
      "heads": [
-      "h Cold drinks, ice cream @689"
+      "h Cold drinks, ice cream @660"
      ],
      "veils": [],
      "cutHeads": [],
@@ -2824,10 +2762,10 @@
      "end": null,
      "clipped": [],
      "pics": [
-      "ice-ice-baby 0.597 @-3"
+      "ice-ice-baby 0.585 @-12"
      ],
      "heads": [
-      "h Ice and light @552"
+      "h Ice and light @542"
      ],
      "veils": [],
      "cutHeads": [],
@@ -2841,9 +2779,9 @@
      "clipped": [],
      "pics": [],
      "heads": [
-      "d New Santosh Juice Center @104",
-      "d Gokul Nagar, Bhiwandi 421302 @328",
-      "d 6:30am - 12am daily @440"
+      "d New Santosh Juice Center @94",
+      "d Gokul Nagar, Bhiwandi 421302 @318",
+      "d 6:30am - 12am daily @430"
      ],
      "veils": [],
      "cutHeads": [],
@@ -2851,7 +2789,7 @@
      "strands": []
     },
     {
-     "y": 5642,
+     "y": 5632,
      "dy": -25,
      "end": null,
      "clipped": [],
@@ -2870,7 +2808,7 @@
    "level": "WARN",
    "id": "size-count",
    "width": 1440,
-   "message": "13 different font sizes (13, 16, 17, 19, 20, 26, 27, 34, 58, 61, 104, 115, 130).",
+   "message": "15 different font sizes (13, 16, 17, 19, 20, 26, 27, 33, 34, 42, 58, 61, 104, 115, 130).",
    "fix": "A page needs about five: display, heading, lead, body, small.",
    "alsoAt": [
     390
@@ -2878,48 +2816,10 @@
   },
   {
    "level": "WARN",
-   "id": "empty-middle",
-   "width": 1440,
-   "message": "1 section(s) have content at both edges and 821px of nothing between: section#hours.hours",
-   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half."
-  },
-  {
-   "level": "WARN",
    "id": "hero-void",
    "width": 1440,
    "message": "The first screen's picture holds the right half, and 71% of the left half is bare ground.",
    "fix": "Close the left half: span it with the name or headline (at display size, raised to meet the picture's top), give it a second element (a fact, the action, a second picture), or set it on a field of its own colour. A sentence floating in the middle of it does not close it."
-  },
-  {
-   "level": "WARN",
-   "id": "wordy-section",
-   "width": 1440,
-   "message": "1 section(s) carry more than 60 words outside their lists and tables: \"New Santosh Juice Center is listed as a \" (65 words).",
-   "fix": "A section says one thing in 60 words at most: a heading, one or two short sentences, and the facts as a list or a table. A card says its point in about 25 words. Cut, never shrink the type."
-  },
-  {
-   "level": "FAIL",
-   "id": "giant-contact",
-   "width": 1440,
-   "message": "The contact \"99201 08998\" is set at 60px (4.2vw).",
-   "fix": "Set the email no larger than the h3 step, as a mailto link with a Copy button beside it, among the contact facts. The name belongs in the navigation and the hero; the page ends on the action as a statement, never on its own address or name set large.",
-   "alsoAt": [
-    390
-   ]
-  },
-  {
-   "level": "WARN",
-   "id": "surface-count",
-   "width": 1440,
-   "message": "3 grounds on the page, by the screens they cover: #18191b (the page, 4.07 screens); #eff0f1 (the ink, 1.94 screens, over 2 sections, a second band); #2a2c2f (p.r, 1 screen).",
-   "fix": "One ground and one surface tone a step from it, and no tint between them. The ink grounds a band at most (the footer and one section), and so do a dealt field and the accent (one section each); a scene's veil or band takes one of these, never a tone sampled from its photograph, unless its own sheet asks for one (then that is the page's band). Every other section, panel and card takes one of these, a sheet in another colour (a white receipt on grey) is set on the section ground, and a piece of work keeps its own colours inside its picture."
-  },
-  {
-   "level": "FAIL",
-   "id": "duplicate-action",
-   "width": 1440,
-   "message": "One place reached twice on one screen: the bar and the footer, \"Email\" and \"Email the shop\" (mailto:anandguptaazad11@gmail.com, screen 8).",
-   "fix": "One action once a screen, the bar's and the hero's included: never two ways to one place on one screen, in one block or two. Keep one and send the other somewhere else (the quieter sibling to the next section, a mail with its own subject), or bring the bar's action in only once the hero's own has scrolled away and let it step aside while the closing action is on the screen. Cards of one group each keep their own action."
   },
   {
    "level": "FAIL",
@@ -2936,14 +2836,13 @@
    "fold": "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-fold.jpg",
    "pages": [
     "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-01.jpg",
-    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-02.jpg",
-    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-03.jpg"
+    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-02.jpg"
    ],
    "film": [],
    "replay": [],
-   "walked": 9,
+   "walked": 8,
    "stride": 1,
-   "pageScreens": 8.3,
+   "pageScreens": 7.9,
    "atFoot": true
   },
   {
