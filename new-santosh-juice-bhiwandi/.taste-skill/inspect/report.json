@@ -1,0 +1,2964 @@
+{
+ "url": "index.html",
+ "at": "2026-11-13T04:20:47.540Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 9,
+   "pageScreens": 8.3,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 34,
+     "vw": 2.4,
+     "text": "Write to the shop before you visit",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 30
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 1,
+     "how": [
+      "a ground"
+     ],
+     "colouredShare": 0.06
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0,
+     "words": 179
+    },
+    "labels": [
+     {
+      "text": "illustrative photo, not the sh",
+      "y": 866
+     },
+     {
+      "text": "illustrative photo, not the sh",
+      "y": 3338
+     },
+     {
+      "text": "illustrative photo, not the sh",
+      "y": 4891
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [
+     {
+      "text": "Write to the shop before you visit",
+      "words": 7,
+      "ui": false,
+      "level": "H2"
+     }
+    ],
+    "uiWords": [],
+    "sentences": 4,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 22,
+    "pageWords": {
+     "all": 250,
+     "footer": 30
+    },
+    "wordySections": [
+     {
+      "words": 65,
+      "loose": 65,
+      "items": 0,
+      "over": 0,
+      "head": "New Santosh Juice Center is listed as a "
+     }
+    ],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 4,
+     "menu": false,
+     "foot": 0
+    },
+    "giantContact": [
+     {
+      "text": "99201 08998",
+      "size": 60,
+      "vw": 4.2,
+      "what": "contact"
+     }
+    ],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [
+     {
+      "head": "Open every day, as listed",
+      "first": "Monday 6:30am - 12am as listed",
+      "n": 4,
+      "fill": "#2a2c2f",
+      "how": "filled"
+     },
+     {
+      "head": "Visit and contact",
+      "first": "New Santosh Juice Center",
+      "n": 3,
+      "fill": "#2a2c2f",
+      "how": "filled"
+     }
+    ],
+    "loneColumns": [],
+    "splitHero": null,
+    "tileWalls": [],
+    "ground": [
+     24,
+     25,
+     27
+    ],
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [],
+    "loneHeld": []
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.43,
+    0.11,
+    1,
+    1,
+    0.39,
+    0.79,
+    0.33,
+    0.61,
+    0.73
+   ],
+   "content": [
+    0.48,
+    0.13,
+    0.11,
+    0.19,
+    0.17,
+    0.63,
+    0.3,
+    0.13,
+    0.11
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 38,
+    "css": 3,
+    "transitions": 29,
+    "scripted": 6,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 7454,
+     "screens": 8.3,
+     "words": 268,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "strawberries.jpg",
+      "lemon.jpg",
+      "ice-ice-baby.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Fresh juice in Bhiwandi",
+     "words": 4,
+     "chars": 23,
+     "lines": 2,
+     "size": 103.7,
+     "vw": 7.2,
+     "font": "Josefin Slab",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.34,
+     "top": 325,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Fresh juice in Bhiwandi",
+     "words": 4,
+     "lines": 2,
+     "size": 103.7,
+     "font": "Josefin Slab",
+     "spacing": -0.03,
+     "pairs": 18
+    },
+    "h2s": [
+     {
+      "text": "Open till midnight",
+      "size": 129.6,
+      "top": 1302
+     },
+     {
+      "text": "Cold drinks, ice cream",
+      "size": 115.2,
+      "top": 3687
+     },
+     {
+      "text": "Open every day, as listed",
+      "size": 57.6,
+      "top": 3953
+     },
+     {
+      "text": "Ice and light",
+      "size": 34.1,
+      "top": 5635
+     },
+     {
+      "text": "Write to the shop before you visit",
+      "size": 34.1,
+      "top": 7034
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#top",
+      "#hours",
+      "#visit",
+      "mailto:anandguptaazad11@gmail.com"
+     ],
+     "labels": [
+      "email",
+      "see the listed hours"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Fresh juice in Bhiwandi",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 103.7,
+      "vw": 7.2,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.34,
+      "top": 325,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Open till midnight",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 129.6,
+      "vw": 9,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.68,
+      "top": 1302,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cold drinks, ice cream",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 115.2,
+      "vw": 8,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.69,
+      "top": 3687,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Open every day, as listed",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 57.6,
+      "vw": 4,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.29,
+      "top": 3953,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Fruit juices",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 5635,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Ice and light",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 34.1,
+      "vw": 2.4,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.45,
+      "top": 5635,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cold drinks",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 5703,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Ice cream",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.45,
+      "top": 5770,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "New Santosh Juice Center",
+      "words": 4,
+      "chars": 24,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6036,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Shivaji Chowk Road",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6192,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Gokul Nagar, Bhiwandi 421302",
+      "words": 4,
+      "chars": 28,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6347,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "6:30am - 12am daily",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6502,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "99201 08998",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 60.5,
+      "vw": 4.2,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.94,
+      "top": 6657,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Write to the shop before you visit",
+      "words": 7,
+      "chars": 34,
+      "lines": 1,
+      "size": 34.1,
+      "vw": 2.4,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.32,
+      "top": 7034,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 8,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Josefin Slab",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      16,
+      17,
+      19,
+      20,
+      26,
+      27,
+      34,
+      58,
+      61,
+      104,
+      115,
+      130
+     ],
+     "sizeCount": 13,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Josefin Slab",
+      "size": 17,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.4
+     },
+     "measureChars": 69,
+     "max": {
+      "size": 129.6,
+      "vw": 9,
+      "font": "Josefin Slab",
+      "text": "Open ti"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#18191b",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.06,
+      "l": 0.1
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#a8321e",
+       "top": 0,
+       "hsl": {
+        "h": 9,
+        "s": 0.7,
+        "l": 0.39
+       }
+      },
+      {
+       "color": "#18191b",
+       "top": 900,
+       "hsl": {
+        "h": 220,
+        "s": 0.06,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#eff0f1",
+       "top": 2790,
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#2a2c2f",
+       "top": 4867,
+       "hsl": {
+        "h": 216,
+        "s": 0.06,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#eff0f1",
+       "share": 0.52
+      },
+      {
+       "color": "#18191b",
+       "share": 0.28
+      },
+      {
+       "color": "#9c9ea3",
+       "share": 0.2
+      }
+     ],
+     "fills": [
+      {
+       "color": "#18191b",
+       "hsl": {
+        "h": 220,
+        "s": 0.06,
+        "l": 0.1
+       },
+       "top": 0
+      },
+      {
+       "color": "#a8321e",
+       "hsl": {
+        "h": 9,
+        "s": 0.7,
+        "l": 0.39
+       },
+       "top": 0
+      },
+      {
+       "color": "#eff0f1",
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       },
+       "top": 2790
+      },
+      {
+       "color": "#2a2c2f",
+       "hsl": {
+        "h": 216,
+        "s": 0.06,
+        "l": 0.17
+       },
+       "top": 3081
+      },
+      {
+       "color": "#ff4a1f",
+       "hsl": {
+        "h": 12,
+        "s": 1,
+        "l": 0.56
+       },
+       "top": 4478
+      }
+     ],
+     "button": {
+      "bg": "#ff4a1f",
+      "hsl": {
+       "h": 12,
+       "s": 1,
+       "l": 0.56
+      },
+      "fg": "#18191b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 8,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Email",
+      "See the listed hours"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 1,
+     "boxRadius": 99,
+     "squareMedia": 1,
+     "roundedMedia": 2,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 96,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": true
+    },
+    "fontsLoaded": [
+     "josefin slab"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 7454,
+    "margins": {
+     "left": 43,
+     "right": 49
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 900,
+      "words": 23,
+      "media": 0,
+      "middle": 497,
+      "heading": {
+       "text": "Fresh juice",
+       "size": 104,
+       "tag": "h1"
+      },
+      "left": 43,
+      "right": 239,
+      "textLeft": 43,
+      "textRight": 239,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.scene.is-live",
+      "tag": "section",
+      "top": 900,
+      "height": 1890,
+      "words": 4,
+      "media": 0,
+      "middle": 43,
+      "heading": {
+       "text": "Open ti",
+       "size": 130,
+       "tag": "h2"
+      },
+      "left": 300,
+      "right": 152,
+      "textLeft": 300,
+      "textRight": 152,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#about.intro",
+      "tag": "section",
+      "top": 2790,
+      "height": 821,
+      "words": 65,
+      "media": 1,
+      "middle": 368,
+      "heading": {
+       "text": "New Santosh Juice Center is listed as a fruit juic",
+       "size": 27,
+       "tag": "p"
+      },
+      "left": 43,
+      "right": 56,
+      "textLeft": 43,
+      "textRight": 56,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.push",
+      "tag": "section",
+      "top": 3611,
+      "height": 266,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cold drinks, ice cream",
+       "size": 115,
+       "tag": "h2"
+      },
+      "left": 394,
+      "right": 49,
+      "textLeft": 394,
+      "textRight": 49,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#hours.hours",
+      "tag": "section",
+      "top": 3877,
+      "height": 914,
+      "words": 52,
+      "media": 0,
+      "middle": 821,
+      "heading": null,
+      "left": 43,
+      "right": 67,
+      "textLeft": 43,
+      "textRight": 67,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#photos.gal",
+      "tag": "section",
+      "top": 4791,
+      "height": 1169,
+      "words": 42,
+      "media": 1,
+      "middle": 177,
+      "heading": null,
+      "left": 43,
+      "right": 197,
+      "textLeft": 43,
+      "textRight": 197,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 5960,
+      "height": 954,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "New Santosh Juice Center",
+       "size": 60,
+       "tag": "p"
+      },
+      "left": 43,
+      "right": 604,
+      "textLeft": 43,
+      "textRight": 604,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 6914,
+      "height": 540,
+      "words": 31,
+      "media": 0,
+      "middle": 178,
+      "heading": {
+       "text": "Write to the shop before you visit",
+       "size": 34,
+       "tag": "h2"
+      },
+      "left": 43,
+      "right": 265,
+      "textLeft": 43,
+      "textRight": 265,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [
+     {
+      "top": 3804,
+      "height": 296
+     }
+    ],
+    "h1s": [
+     {
+      "text": "Fresh juice in Bhiwandi",
+      "size": 104,
+      "top": 325,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 43,
+      "n": 6
+     },
+     {
+      "x": 732,
+      "n": 2
+     },
+     {
+      "x": 300,
+      "n": 1
+     },
+     {
+      "x": 394,
+      "n": 1
+     },
+     {
+      "x": 744,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 17,
+    "stage": false,
+    "explains": true,
+    "slivers": [],
+    "voidShare": 0.14,
+    "voidBox": {
+     "x": 0,
+     "y": 660,
+     "w": 780,
+     "h": 240
+    },
+    "halves": {
+     "left": {
+      "void": 0.31,
+      "media": 0,
+      "held": 0.29,
+      "upper": 0.4,
+      "lower": 0.15
+     },
+     "right": {
+      "void": 0.08,
+      "media": 0.92,
+      "held": 0.92,
+      "upper": 0.92,
+      "lower": 0.92
+     }
+    }
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [
+    {
+     "text": "illustrative photo, not the shop",
+     "size": 13,
+     "need": 4.5,
+     "media": "strawberries.jpg",
+     "p10": 15.42,
+     "p25": 15.42,
+     "p50": 15.42,
+     "under": 0,
+     "segs": 4,
+     "segLow": 0,
+     "segWorst": 15.42,
+     "y": 0
+    }
+   ],
+   "letters": [],
+   "tileWalls": [],
+   "hero": {
+    "h1": "Fresh juice in Bhiwandi",
+    "centred": false,
+    "size": 104,
+    "sub": "A concept preview built from the shop's public listing.",
+    "card": {
+     "src": "strawberries.jpg",
+     "radius": 999,
+     "w": 0.39,
+     "where": "beside them"
+    },
+    "stack": false
+   },
+   "visits": [],
+   "build": {
+    "framed": [],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [
+     {
+      "head": "Fresh juice in Bhiwandi",
+      "kind": "other"
+     },
+     {
+      "head": "Open till midnight",
+      "kind": "scene"
+     },
+     {
+      "head": "New Santosh Juice Center is listed as a fruit juic",
+      "kind": "other"
+     },
+     {
+      "head": "Cold drinks, ice cream",
+      "kind": "none"
+     },
+     {
+      "head": "Open every day, as listed",
+      "kind": "none"
+     },
+     {
+      "head": "Ice and light",
+      "kind": "other"
+     },
+     {
+      "head": "Visit and contact",
+      "kind": "none"
+     }
+    ],
+    "runOn": [],
+    "credits": {
+     "entries": 3,
+     "capacity": 3,
+     "pictures": 3,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog",
+     "shown": [
+      "strawberries",
+      "lemon",
+      "ice-ice-baby"
+     ]
+    },
+    "space": {
+     "blocks": 8,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 900,
+      "fold": 900,
+      "next": {
+       "sel": "section.scene.is-live",
+       "head": "Open till midnight",
+       "top": 900,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": []
+    },
+    "nav": {
+     "bar": "header.bar",
+     "top": 0,
+     "h": 96,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": [],
+    "grounds": [
+     {
+      "hex": "#18191b",
+      "where": "page",
+      "n": 1,
+      "screens": 4.07,
+      "role": "page",
+      "sections": 6,
+      "tones": [
+       [
+        "#18191b",
+        4.07
+       ]
+      ],
+      "scene": true,
+      "asked": null,
+      "step": null
+     },
+     {
+      "hex": "#eff0f1",
+      "where": "div.lbf-ground",
+      "n": 1,
+      "screens": 1.94,
+      "role": "ink",
+      "sections": 2,
+      "tones": [
+       [
+        "#eff0f1",
+        1.94
+       ]
+      ],
+      "scene": true,
+      "asked": null
+     },
+     {
+      "hex": "#2a2c2f",
+      "where": "p.r",
+      "n": 1,
+      "screens": 1,
+      "role": null,
+      "sections": 2,
+      "tones": [
+       [
+        "#2a2c2f",
+        1
+       ]
+      ],
+      "scene": false,
+      "asked": null
+     },
+     {
+      "hex": "#ff4a1f",
+      "where": "a.btn",
+      "n": 1,
+      "screens": 0.02,
+      "role": "accent",
+      "sections": 0,
+      "tones": [
+       [
+        "#ff4a1f",
+        0.02
+       ]
+      ],
+      "scene": false,
+      "asked": null
+     }
+    ],
+    "buttons": [
+     {
+      "key": "soft filled",
+      "n": 3,
+      "labels": [
+       "See the listed hours",
+       "Email the shop"
+      ],
+      "h": [
+       40,
+       46
+      ]
+     },
+     {
+      "key": "type",
+      "n": 1,
+      "labels": [
+       "Shivaji Chowk Road"
+      ]
+     }
+    ],
+    "navs": {
+     "load": {
+      "phase": "load",
+      "form": "top bar",
+      "band": true,
+      "held": false,
+      "n": 4,
+      "top": 4,
+      "mark": "New Santosh Juice Center",
+      "items": [
+       "New Santosh Juice Ce",
+       "Hours",
+       "Visit",
+       "Email"
+      ]
+     },
+     "down": {
+      "phase": "down",
+      "form": "top bar",
+      "band": true,
+      "held": true,
+      "n": 4,
+      "top": 4,
+      "mark": "New Santosh Juice Center",
+      "items": [
+       "New Santosh Juice Ce",
+       "Hours",
+       "Visit",
+       "Email"
+      ]
+     },
+     "up": {
+      "phase": "up",
+      "form": "top bar",
+      "band": true,
+      "held": true,
+      "n": 4,
+      "top": 4,
+      "mark": "New Santosh Juice Center",
+      "items": [
+       "New Santosh Juice Ce",
+       "Hours",
+       "Visit",
+       "Email"
+      ]
+     },
+     "held": 0,
+     "aside": false,
+     "buttons": [
+      {
+       "key": "soft filled",
+       "n": 1,
+       "labels": [
+        "Email"
+       ],
+       "h": [
+        40,
+        40
+       ]
+      }
+     ],
+     "dealt": null
+    },
+    "places": [
+     {
+      "items": [
+       {
+        "id": 3,
+        "label": "Email",
+        "button": true,
+        "where": "the bar"
+       },
+       {
+        "id": 6,
+        "label": "Email the shop",
+        "button": true,
+        "where": "the footer"
+       }
+      ],
+      "place": "mailto:anandguptaazad11@gmail.com",
+      "screen": 8
+     },
+     {
+      "items": [
+       {
+        "id": 3,
+        "label": "Email",
+        "button": true,
+        "where": "the bar"
+       },
+       {
+        "id": 6,
+        "label": "Email the shop",
+        "button": true,
+        "where": "the footer"
+       }
+      ],
+      "place": "mailto:anandguptaazad11@gmail.com",
+      "screen": 8
+     }
+    ],
+    "footLinks": [],
+    "structures": [
+     {
+      "head": "Fresh juice in Bhiwandi",
+      "y": 0,
+      "hero": true,
+      "pos": "beside",
+      "cols": 2,
+      "lead": "panel",
+      "word": "split",
+      "boxed": true
+     },
+     {
+      "head": "about",
+      "y": 2790,
+      "hero": false,
+      "pos": "none",
+      "cols": 1,
+      "lead": "picture",
+      "word": "single-picture",
+      "boxed": false
+     },
+     {
+      "head": "Cold drinks, ice cream",
+      "y": 3611,
+      "hero": false,
+      "word": "statement",
+      "lead": "none",
+      "boxed": false
+     },
+     {
+      "head": "Open every day, as listed",
+      "y": 3877,
+      "hero": false,
+      "pos": "over",
+      "cols": 2,
+      "lead": "list",
+      "word": "columns",
+      "boxed": false
+     },
+     {
+      "head": "Ice and light",
+      "y": 4791,
+      "hero": false,
+      "pos": "mixed",
+      "cols": 2,
+      "lead": "list",
+      "word": "columns",
+      "boxed": false
+     },
+     {
+      "head": "visit",
+      "y": 5960,
+      "hero": false,
+      "pos": "none",
+      "cols": 1,
+      "lead": "text",
+      "word": "statement",
+      "boxed": false
+     },
+     {
+      "head": "the footer",
+      "y": 6914,
+      "hero": false,
+      "foot": true,
+      "pos": "none",
+      "cols": 3,
+      "lead": "list",
+      "word": "columns",
+      "boxed": false
+     }
+    ],
+    "pictures": {
+     "shown": [],
+     "credits": [],
+     "kind": null
+    }
+   },
+   "dead": {
+    "tested": 0,
+    "unsure": 0,
+    "dead": []
+   },
+   "rest": [
+    {
+     "y": 0,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "strawberries 0.388 @0"
+     ],
+     "heads": [
+      "h Fresh juice in Bhiwandi @325"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 904,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1890,
+     "dy": 27,
+     "end": "letter-bar-floods-the-ground",
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Fruit juices, cold drinks and ice cream @315"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2700,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "lemon 0.07 @381"
+     ],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3600,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4500,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5400,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "ice-ice-baby 0.139 @-533"
+     ],
+     "heads": [
+      "h Ice and light @235",
+      "d New Santosh Juice Center @636"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6300,
+     "dy": 27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "d Gokul Nagar, Bhiwandi 421302 @47",
+      "d 6:30am - 12am daily @202"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 6554,
+     "dy": -27,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ],
+   "scenesAtRest": {
+    "boxedLists": [],
+    "framed": []
+   }
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 8,
+   "pageScreens": 7.7,
+   "stride": 1,
+   "extra": {
+    "imageInHeadline": [],
+    "inlinePictures": [],
+    "footer": {
+     "size": 27,
+     "vw": 6.9,
+     "text": "Write to the shop before you visit",
+     "creditLinks": 0,
+     "creditMentions": 0,
+     "words": 30
+    },
+    "upscaled": [],
+    "colour": {
+     "hues": 1,
+     "how": [
+      "a ground"
+     ],
+     "colouredShare": 0.07
+    },
+    "rails": [],
+    "ranges": [],
+    "boxed": {
+     "share": 0,
+     "words": 179
+    },
+    "labels": [
+     {
+      "text": "illustrative photo, not the sh",
+      "y": 818
+     },
+     {
+      "text": "illustrative photo, not the sh",
+      "y": 2999
+     },
+     {
+      "text": "illustrative photo, not the sh",
+      "y": 4241
+     }
+    ],
+    "walls": [],
+    "rightHuddled": [],
+    "longTitles": [
+     {
+      "text": "Write to the shop before you visit",
+      "words": 7,
+      "ui": false,
+      "level": "H2"
+     }
+    ],
+    "uiWords": [],
+    "sentences": 4,
+    "tinyUi": 0,
+    "placeholders": [],
+    "builderNotes": [],
+    "repeatedPictures": [],
+    "pictureSeries": [],
+    "repeatedHeadings": [],
+    "hollow": [],
+    "productFrame": [],
+    "switchList": 0,
+    "drawings": [],
+    "sceneDrawings": [],
+    "firstScreenWords": 22,
+    "pageWords": {
+     "all": 250,
+     "footer": 30
+    },
+    "wordySections": [
+     {
+      "words": 65,
+      "loose": 65,
+      "items": 0,
+      "over": 0,
+      "head": "New Santosh Juice Center is listed as a "
+     }
+    ],
+    "cutText": [],
+    "truncated": [],
+    "stickyBands": [],
+    "formInSentence": [],
+    "nav": {
+     "links": 4,
+     "menu": false,
+     "foot": 0
+    },
+    "giantContact": [
+     {
+      "text": "99201 08998",
+      "size": 31,
+      "vw": 8,
+      "what": "contact"
+     }
+    ],
+    "heroCard": null,
+    "bento": [],
+    "smallBody": [],
+    "smallUnderHead": [],
+    "brokenAddress": [],
+    "resultFirst": [],
+    "emptyBoxes": [],
+    "hollowFragment": [],
+    "sceneTracks": [],
+    "replays": [],
+    "fragmentBoxes": [],
+    "boxedLists": [
+     {
+      "head": "Open every day, as listed",
+      "first": "Monday 6:30am - 12am as listed",
+      "n": 4,
+      "fill": "#2a2c2f",
+      "how": "filled"
+     },
+     {
+      "head": "Visit and contact",
+      "first": "New Santosh Juice Center",
+      "n": 3,
+      "fill": "#2a2c2f",
+      "how": "filled"
+     }
+    ],
+    "loneColumns": [],
+    "splitHero": null,
+    "tileWalls": [],
+    "ground": null,
+    "dotTracks": [],
+    "controls": {
+     "decorative": [],
+     "greyed": [],
+     "tested": 0
+    },
+    "loneScreens": [
+     {
+      "text": "Open till midnight",
+      "size": 42,
+      "big": false,
+      "screen": 2
+     }
+    ],
+    "loneHeld": [
+     {
+      "text": "Open till midnight",
+      "walk": 1,
+      "film": 0
+     }
+    ]
+   },
+   "reached": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "upReach": true,
+   "unread": [],
+   "overText": [],
+   "frameErrors": [],
+   "filled": [
+    0.49,
+    0.1,
+    1,
+    0.83,
+    0.6,
+    0.78,
+    0.46,
+    0.87
+   ],
+   "content": [
+    0.58,
+    0.1,
+    0.13,
+    0.53,
+    0.24,
+    0.78,
+    0.29,
+    0.18
+   ],
+   "filmContent": [],
+   "motion": {
+    "elements": 38,
+    "css": 3,
+    "transitions": 29,
+    "scripted": 6,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 6486,
+     "screens": 7.7,
+     "words": 268,
+     "img": 3,
+     "video": 0,
+     "canvas": 0,
+     "svg": 0,
+     "sections": 7,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "pauseControl": false,
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 3,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [
+      "strawberries.jpg",
+      "lemon.jpg",
+      "ice-ice-baby.jpg"
+     ],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0,
+     "tableGaps": []
+    },
+    "hero": {
+     "text": "Fresh juice in Bhiwandi",
+     "words": 4,
+     "chars": 23,
+     "lines": 2,
+     "size": 44.9,
+     "vw": 11.5,
+     "font": "Josefin Slab",
+     "weight": 500,
+     "tracking": -0.03,
+     "leading": 0.95,
+     "upper": false,
+     "italic": false,
+     "mono": false,
+     "align": "left",
+     "position": "left",
+     "widthRatio": 0.55,
+     "top": 127,
+     "tag": "h1",
+     "kind": "heading"
+    },
+    "h1": {
+     "text": "Fresh juice in Bhiwandi",
+     "words": 4,
+     "lines": 2,
+     "size": 44.9,
+     "font": "Josefin Slab",
+     "spacing": -0.03,
+     "pairs": 18
+    },
+    "h2s": [
+     {
+      "text": "Open till midnight",
+      "size": 42.1,
+      "top": 1251
+     },
+     {
+      "text": "Cold drinks, ice cream",
+      "size": 35.1,
+      "top": 3221
+     },
+     {
+      "text": "Open every day, as listed",
+      "size": 36,
+      "top": 3351
+     },
+     {
+      "text": "Ice and light",
+      "size": 26.8,
+      "top": 4772
+     },
+     {
+      "text": "Write to the shop before you visit",
+      "size": 26.8,
+      "top": 5907
+     }
+    ],
+    "reach": {
+     "dest": [
+      "#top",
+      "#hours",
+      "#visit",
+      "mailto:anandguptaazad11@gmail.com"
+     ],
+     "labels": [
+      "email",
+      "see the listed hours"
+     ]
+    },
+    "headings": [
+     {
+      "text": "Fresh juice in Bhiwandi",
+      "words": 4,
+      "chars": 23,
+      "lines": 2,
+      "size": 44.9,
+      "vw": 11.5,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.03,
+      "leading": 0.95,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.55,
+      "top": 127,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "Open till midnight",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 42.1,
+      "vw": 10.8,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.81,
+      "top": 1251,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Cold drinks, ice cream",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 35.1,
+      "vw": 9,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.02,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.78,
+      "top": 3221,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Open every day, as listed",
+      "words": 5,
+      "chars": 25,
+      "lines": 2,
+      "size": 36,
+      "vw": 9.2,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.68,
+      "top": 3351,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Ice and light",
+      "words": 3,
+      "chars": 13,
+      "lines": 1,
+      "size": 26.8,
+      "vw": 6.9,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4772,
+      "tag": "h2",
+      "kind": "heading"
+     },
+     {
+      "text": "Fruit juices",
+      "words": 2,
+      "chars": 12,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4880,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Cold drinks",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4924,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "Ice cream",
+      "words": 2,
+      "chars": 9,
+      "lines": 1,
+      "size": 38.4,
+      "vw": 9.8,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": 0,
+      "leading": 1.05,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 4968,
+      "tag": "li",
+      "kind": "statement"
+     },
+     {
+      "text": "New Santosh Juice Center",
+      "words": 4,
+      "chars": 24,
+      "lines": 2,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5168,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Shivaji Chowk Road",
+      "words": 3,
+      "chars": 18,
+      "lines": 1,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5280,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Gokul Nagar, Bhiwandi 421302",
+      "words": 4,
+      "chars": 28,
+      "lines": 2,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5392,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "6:30am - 12am daily",
+      "words": 4,
+      "chars": 19,
+      "lines": 1,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5504,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "99201 08998",
+      "words": 2,
+      "chars": 11,
+      "lines": 1,
+      "size": 31.2,
+      "vw": 8,
+      "font": "Josefin Slab",
+      "weight": 400,
+      "tracking": -0.01,
+      "leading": 1,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5616,
+      "tag": "p",
+      "kind": "statement"
+     },
+     {
+      "text": "Write to the shop before you visit",
+      "words": 7,
+      "chars": 34,
+      "lines": 2,
+      "size": 26.8,
+      "vw": 6.9,
+      "font": "Josefin Slab",
+      "weight": 500,
+      "tracking": -0.01,
+      "leading": 0.98,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.9,
+      "top": 5907,
+      "tag": "h2",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 14,
+     "maxLines": 2,
+     "over2Lines": 0,
+     "statements": 8,
+     "centered": 0,
+     "medianWords": 3,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Josefin Slab",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      22,
+      27,
+      31,
+      35,
+      36,
+      38,
+      42,
+      45
+     ],
+     "sizeCount": 14,
+     "notLoaded": [],
+     "synthetic": [],
+     "body": {
+      "font": "Josefin Slab",
+      "size": 22,
+      "leading": 1.3,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 15.4
+     },
+     "measureChars": 32,
+     "max": {
+      "size": 44.9,
+      "vw": 11.5,
+      "font": "Josefin Slab",
+      "text": "Fresh juicein Bhiwandi"
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 0
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#18191b",
+     "bodyBgHsl": {
+      "h": 220,
+      "s": 0.06,
+      "l": 0.1
+     },
+     "dark": true,
+     "sectionBgs": [
+      {
+       "color": "#a8321e",
+       "top": 473,
+       "hsl": {
+        "h": 9,
+        "s": 0.7,
+        "l": 0.39
+       }
+      },
+      {
+       "color": "#18191b",
+       "top": 844,
+       "hsl": {
+        "h": 220,
+        "s": 0.06,
+        "l": 0.1
+       }
+      },
+      {
+       "color": "#eff0f1",
+       "top": 2532,
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       }
+      },
+      {
+       "color": "#2a2c2f",
+       "top": 4217,
+       "hsl": {
+        "h": 216,
+        "s": 0.06,
+        "l": 0.17
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#eff0f1",
+       "share": 0.52
+      },
+      {
+       "color": "#18191b",
+       "share": 0.28
+      },
+      {
+       "color": "#9c9ea3",
+       "share": 0.2
+      }
+     ],
+     "fills": [
+      {
+       "color": "#18191b",
+       "hsl": {
+        "h": 220,
+        "s": 0.06,
+        "l": 0.1
+       },
+       "top": 0
+      },
+      {
+       "color": "#ff4a1f",
+       "hsl": {
+        "h": 12,
+        "s": 1,
+        "l": 0.56
+       },
+       "top": 292
+      },
+      {
+       "color": "#a8321e",
+       "hsl": {
+        "h": 9,
+        "s": 0.7,
+        "l": 0.39
+       },
+       "top": 473
+      },
+      {
+       "color": "#eff0f1",
+       "hsl": {
+        "h": 210,
+        "s": 0.07,
+        "l": 0.94
+       },
+       "top": 2532
+      },
+      {
+       "color": "#2a2c2f",
+       "hsl": {
+        "h": 216,
+        "s": 0.06,
+        "l": 0.17
+       },
+       "top": 2833
+      }
+     ],
+     "button": {
+      "bg": "#ff4a1f",
+      "hsl": {
+       "h": 12,
+       "s": 1,
+       "l": 0.56
+      },
+      "fg": "#18191b"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 2,
+     "radius": 8,
+     "height": 46,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Email",
+      "See the listed hours"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 0,
+     "hairlineSamples": [],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 8,
+     "squareMedia": 1,
+     "roundedMedia": 2,
+     "mediaRadius": 999,
+     "textShadow": 0,
+     "cardRows": []
+    },
+    "heroMedia": [
+     {
+      "type": "img",
+      "ratio": 0.39
+     }
+    ],
+    "nav": {
+     "links": 4,
+     "fixed": true,
+     "height": 72,
+     "floatingPill": false,
+     "blur": false,
+     "opaque": true
+    },
+    "fontsLoaded": [
+     "josefin slab"
+    ]
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 6486,
+    "margins": {
+     "left": 20,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.hero",
+      "tag": "section",
+      "top": 0,
+      "height": 844,
+      "words": 23,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Fresh juice",
+       "size": 45,
+       "tag": "h1"
+      },
+      "left": 20,
+      "right": 106,
+      "textLeft": 20,
+      "textRight": 106,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.scene.is-live",
+      "tag": "section",
+      "top": 844,
+      "height": 1688,
+      "words": 4,
+      "media": 0,
+      "middle": 14,
+      "heading": {
+       "text": "Open ti",
+       "size": 42,
+       "tag": "h2"
+      },
+      "left": 59,
+      "right": 11,
+      "textLeft": 59,
+      "textRight": 11,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": true
+     },
+     {
+      "sel": "section#about.intro",
+      "tag": "section",
+      "top": 2532,
+      "height": 641,
+      "words": 65,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 23,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section.push",
+      "tag": "section",
+      "top": 3173,
+      "height": 130,
+      "words": 4,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Cold drinks, ice cream",
+       "size": 35,
+       "tag": "h2"
+      },
+      "left": 67,
+      "right": 20,
+      "textLeft": 67,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#hours.hours",
+      "tag": "section",
+      "top": 3303,
+      "height": 866,
+      "words": 52,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 36,
+      "textLeft": 20,
+      "textRight": 36,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#photos.gal",
+      "tag": "section",
+      "top": 4169,
+      "height": 951,
+      "words": 42,
+      "media": 1,
+      "middle": 0,
+      "heading": null,
+      "left": 20,
+      "right": 31,
+      "textLeft": 20,
+      "textRight": 31,
+      "fullBleed": true,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "section#visit.visit",
+      "tag": "section",
+      "top": 5120,
+      "height": 707,
+      "words": 35,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "New Santosh Juice Center",
+       "size": 31,
+       "tag": "p"
+      },
+      "left": 20,
+      "right": 33,
+      "textLeft": 20,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "footer.footer",
+      "tag": "footer",
+      "top": 5827,
+      "height": 659,
+      "words": 31,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Write to the shop before you visit",
+       "size": 27,
+       "tag": "h2"
+      },
+      "left": 20,
+      "right": 20,
+      "textLeft": 20,
+      "textRight": 20,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Fresh juice in Bhiwandi",
+      "size": 45,
+      "top": 127,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 20,
+      "n": 8
+     },
+     {
+      "x": 59,
+      "n": 2
+     },
+     {
+      "x": 201,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 11,
+    "bodySize": 17,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null,
+    "halves": null
+   },
+   "app": null,
+   "consoleErrors": [],
+   "missingImages": [],
+   "photoText": [
+    {
+     "text": "illustrative photo, not the shop",
+     "size": 13,
+     "need": 4.5,
+     "media": "lemon.jpg",
+     "p10": 15.42,
+     "p25": 15.42,
+     "p50": 15.42,
+     "under": 0.01,
+     "segs": 4,
+     "segLow": 0,
+     "segWorst": 15.42,
+     "y": 2534
+    }
+   ],
+   "letters": [],
+   "tileWalls": [],
+   "hero": null,
+   "visits": [],
+   "build": {
+    "framed": [
+     {
+      "head": "Open every day, as listed",
+      "n": 4,
+      "list": true,
+      "y": 3303,
+      "items": [
+       "Monday 6:30am - 12am as list (filled #2a2c2f, 350x84)",
+       "Wednesday 6:30am - 12am as l (filled #2a2c2f, 350x84)",
+       "Friday 6:30am - 12am as list (filled #ff4a1f, 350x84)",
+       "Sunday 6:30am - 12am as list (filled #2a2c2f, 350x84)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     },
+     {
+      "head": "Visit and contact",
+      "n": 3,
+      "list": true,
+      "y": 5120,
+      "items": [
+       "New Santosh Juice Center (filled #2a2c2f, 350x84)",
+       "Gokul Nagar, Bhiwandi 421302 (filled #2a2c2f, 350x84)",
+       "99201 08998 (filled #2a2c2f, 350x84)"
+      ],
+      "outlined": 0,
+      "nested": [],
+      "onPhoto": [],
+      "shaped": [],
+      "shapedN": 0
+     }
+    ],
+    "heroWindows": [],
+    "stats": [],
+    "emailFields": [],
+    "splits": [],
+    "runOn": [],
+    "credits": {
+     "entries": 3,
+     "capacity": 3,
+     "pictures": 3,
+     "unmatched": [],
+     "ledgerMiss": [],
+     "where": "dialog",
+     "shown": [
+      "strawberries",
+      "lemon",
+      "ice-ice-baby"
+     ]
+    },
+    "space": {
+     "blocks": 8,
+     "hero": {
+      "sel": "section.hero",
+      "bottom": 844,
+      "fold": 844,
+      "next": {
+       "sel": "section.scene.is-live",
+       "head": "Open till midnight",
+       "top": 844,
+       "seen": null
+      },
+      "cut": null,
+      "title": null
+     },
+     "air": []
+    },
+    "nav": {
+     "bar": "header.bar",
+     "top": 0,
+     "h": 72,
+     "items": [],
+     "sentences": [],
+     "above": []
+    },
+    "crops": []
+   },
+   "dead": null,
+   "rest": [
+    {
+     "y": 0,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "strawberries 0.395 @473"
+     ],
+     "heads": [
+      "h Fresh juice in Bhiwandi @127"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 848,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 1688,
+     "dy": 25,
+     "end": "letter-bar-floods-the-ground",
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "h Fruit juices, cold drinks and ice cream @350"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 2532,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "lemon 0.095 @301"
+     ],
+     "heads": [
+      "h Cold drinks, ice cream @689"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 3376,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 4220,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [
+      "ice-ice-baby 0.597 @-3"
+     ],
+     "heads": [
+      "h Ice and light @552"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5064,
+     "dy": 25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [
+      "d New Santosh Juice Center @104",
+      "d Gokul Nagar, Bhiwandi 421302 @328",
+      "d 6:30am - 12am daily @440"
+     ],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    },
+    {
+     "y": 5642,
+     "dy": -25,
+     "end": null,
+     "clipped": [],
+     "pics": [],
+     "heads": [],
+     "veils": [],
+     "cutHeads": [],
+     "edges": [],
+     "strands": []
+    }
+   ]
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "size-count",
+   "width": 1440,
+   "message": "13 different font sizes (13, 16, 17, 19, 20, 26, 27, 34, 58, 61, 104, 115, 130).",
+   "fix": "A page needs about five: display, heading, lead, body, small.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "empty-middle",
+   "width": 1440,
+   "message": "1 section(s) have content at both edges and 821px of nothing between: section#hours.hours",
+   "fix": "Bring the two parts together on the grid, or put the picture or figure of the section in the middle. An empty middle third reads as a hole, the same as an empty half."
+  },
+  {
+   "level": "WARN",
+   "id": "hero-void",
+   "width": 1440,
+   "message": "The first screen's picture holds the right half, and 71% of the left half is bare ground.",
+   "fix": "Close the left half: span it with the name or headline (at display size, raised to meet the picture's top), give it a second element (a fact, the action, a second picture), or set it on a field of its own colour. A sentence floating in the middle of it does not close it."
+  },
+  {
+   "level": "WARN",
+   "id": "wordy-section",
+   "width": 1440,
+   "message": "1 section(s) carry more than 60 words outside their lists and tables: \"New Santosh Juice Center is listed as a \" (65 words).",
+   "fix": "A section says one thing in 60 words at most: a heading, one or two short sentences, and the facts as a list or a table. A card says its point in about 25 words. Cut, never shrink the type."
+  },
+  {
+   "level": "FAIL",
+   "id": "giant-contact",
+   "width": 1440,
+   "message": "The contact \"99201 08998\" is set at 60px (4.2vw).",
+   "fix": "Set the email no larger than the h3 step, as a mailto link with a Copy button beside it, among the contact facts. The name belongs in the navigation and the hero; the page ends on the action as a statement, never on its own address or name set large.",
+   "alsoAt": [
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "surface-count",
+   "width": 1440,
+   "message": "3 grounds on the page, by the screens they cover: #18191b (the page, 4.07 screens); #eff0f1 (the ink, 1.94 screens, over 2 sections, a second band); #2a2c2f (p.r, 1 screen).",
+   "fix": "One ground and one surface tone a step from it, and no tint between them. The ink grounds a band at most (the footer and one section), and so do a dealt field and the accent (one section each); a scene's veil or band takes one of these, never a tone sampled from its photograph, unless its own sheet asks for one (then that is the page's band). Every other section, panel and card takes one of these, a sheet in another colour (a white receipt on grey) is set on the section ground, and a piece of work keeps its own colours inside its picture."
+  },
+  {
+   "level": "FAIL",
+   "id": "duplicate-action",
+   "width": 1440,
+   "message": "One place reached twice on one screen: the bar and the footer, \"Email\" and \"Email the shop\" (mailto:anandguptaazad11@gmail.com, screen 8).",
+   "fix": "One action once a screen, the bar's and the hero's included: never two ways to one place on one screen, in one block or two. Keep one and send the other somewhere else (the quieter sibling to the next section, a mail with its own subject), or bring the bar's action in only once the hero's own has scrolled away and let it step aside while the closing action is on the screen. Cards of one group each keep their own action."
+  },
+  {
+   "level": "FAIL",
+   "id": "lone-heading",
+   "width": 390,
+   "message": "A section heading sits alone, the rest of its row or screen empty: \"Open till midnight\" alone on screen 2.",
+   "fix": "A heading leads its content and never holds a column or a screen by itself. Set it over its content (the list under it, in one column), or give its column real weight (the sentence that sums the section up, a figure, a picture); a heading that opens a scene arrives with its picture already in view. Only a display statement that is the section's whole subject stands alone."
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-01.jpg",
+    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-02.jpg",
+    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/desktop-page-03.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 9,
+   "stride": 1,
+   "pageScreens": 8.3,
+   "atFoot": true
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/mobile-fold.jpg",
+   "pages": [
+    "/tmp/cafe-sites/new-santosh-juice-bhiwandi/.taste-skill/inspect/mobile-page-01.jpg"
+   ],
+   "film": [],
+   "replay": [],
+   "walked": 8,
+   "stride": 1,
+   "pageScreens": 7.7,
+   "atFoot": true
+  }
+ ]
+}
