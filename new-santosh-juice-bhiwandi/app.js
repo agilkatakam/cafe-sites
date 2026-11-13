@@ -33,6 +33,10 @@
         const p = s.progress; tile.style.clipPath = `inset(0 ${(px * (1 - p)).toFixed(1)}px round ${(16 * (1 - p)).toFixed(1)}px)`;
       } });
     }
+    // the finished statement fades as it nears the bar, so no readable text sits under it
+    const nx = document.querySelector('.lbf-next');
+    const sceneEl = document.querySelector('[data-scene]');
+    if (nx && sceneEl) ScrollTrigger.create({ trigger: sceneEl, start: 'bottom 88%', end: 'bottom 64%', scrub: true, onUpdate: (s) => { nx.style.opacity = (1 - s.progress).toFixed(2); } });
     // char blur scrub on the hours heading
     const h = document.querySelector('[data-blur]');
     if (h && !h.dataset.split) {

@@ -48,14 +48,14 @@ h1, h2 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.
 .hero-lead { font-size: 1.1875rem; max-width: 24em; color: var(--ink); }
 .hero-r { position: absolute; right: var(--margin); top: 0; height: 110svh; width: min(40vw, 62svh); border-radius: 999px; overflow: hidden; background: var(--picture-ground, var(--surface)); }
 .hero-r img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
-.hero-r .photo-tag { left: 50%; transform: translateX(-50%); bottom: 11svh; white-space: nowrap; }
+.hero-r .photo-tag { left: 50%; transform: translateX(-50%); bottom: auto; top: 128px; white-space: nowrap; }
 @media (max-width: 860px) {
   .hero { display: block; padding-top: 0; }
   .hero-l { padding: 15svh 0 0; gap: 16px; position: relative; z-index: 2; }
   .hero h1 { font-size: 11.5vw; }
   .hero-lead { font-size: 1rem; max-width: 19em; }
   .hero-r { left: var(--margin); right: var(--margin); width: auto; top: 56svh; height: 46svh; border-radius: 999px; }
-  .hero-r .photo-tag { bottom: 18px; }
+  .hero-r .photo-tag { top: 18px; bottom: auto; }
 }
 
 /* scene hand-over: ground graphite, ink the light grey */
@@ -78,7 +78,7 @@ h1, h2 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.
 }
 
 /* pushed line */
-.push { padding: calc(var(--section-gap) / 2) 0; overflow: clip; }
+.push { padding: calc(var(--section-gap) / 2) 0 calc(var(--section-gap) / 2); overflow: clip; margin-top: 10svh; }
 .push-line { font-size: clamp(3rem, 8vw, 8.5rem); white-space: nowrap; width: max-content; margin: 0 auto; letter-spacing: -0.02em; }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
