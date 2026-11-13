@@ -1,0 +1,72 @@
+[
+ {
+  "file": "assets/photos/lemon.jpg",
+  "media": "image",
+  "ref": "openverse:d5ea31a1-d34c-425a-9eaf-01e0174b4607",
+  "title": "Lemon macro detail fruit",
+  "creator": "Thomas Tolkien from Scarborough, UK",
+  "creatorUrl": "https://www.flickr.com/photos/38585972@N04",
+  "date": null,
+  "license": "CC BY 2.0",
+  "licenseCode": "by",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=12703500",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Lemon_macro_detail_fruit.jpg/1920px-Lemon_macro_detail_fruit.jpg",
+  "width": 1920,
+  "height": 884,
+  "bytes": 188336,
+  "credit": "\"Lemon macro detail fruit\" by Thomas Tolkien from Scarborough, UK, CC BY 2.0, via Wikimedia Commons",
+  "notes": [],
+  "saved": "2026-11-13T04:15:28.071Z"
+ },
+ {
+  "file": "assets/photos/strawberries.jpg",
+  "media": "image",
+  "ref": "openverse:63dba179-1c3d-498a-9de8-4e1331f54c53",
+  "title": "DFC 4376 A heaping pile of fresh strawberries - ripe juicy and ready to enjoy",
+  "creator": "PattayaPatrol",
+  "creatorUrl": "https://www.flickr.com/people/PattayaPatrol",
+  "date": null,
+  "license": "CC BY-SA 4.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=189031534",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/DFC_4376_A_heaping_pile_of_fresh_strawberries_-_ripe_juicy_and_ready_to_enjoy.jpg/3840px-DFC_4376_A_heaping_pile_of_fresh_strawberries_-_ripe_juicy_and_ready_to_enjoy.jpg",
+  "width": 3840,
+  "height": 2560,
+  "bytes": 1291373,
+  "credit": "\"DFC 4376 A heaping pile of fresh strawberries - ripe juicy and ready to enjoy\" by PattayaPatrol, CC BY-SA 4.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-11-13T04:16:39.232Z"
+ },
+ {
+  "file": "assets/photos/ice-ice-baby.jpg",
+  "media": "image",
+  "ref": "openverse:2c4d899a-bd66-4196-b289-20f27b35c204",
+  "title": "Ice Ice Baby",
+  "creator": "Jan Bambach",
+  "creatorUrl": "https://500px.com/JanBa",
+  "date": null,
+  "license": "CC BY-SA 3.0",
+  "licenseCode": "by-sa",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "creditRequired": true,
+  "page": "https://commons.wikimedia.org/w/index.php?curid=73722610",
+  "via": "Wikimedia Commons",
+  "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Ice_Ice_Baby_%28152310615%29.jpeg/1920px-Ice_Ice_Baby_%28152310615%29.jpeg",
+  "width": 1920,
+  "height": 1280,
+  "bytes": 308855,
+  "credit": "\"Ice Ice Baby\" by Jan Bambach, CC BY-SA 3.0, via Wikimedia Commons",
+  "notes": [
+   "Share-alike: an altered version (recoloured, combined with other pictures) must be shared under the same licence."
+  ],
+  "saved": "2026-11-13T04:17:21.006Z"
+ }
+]
