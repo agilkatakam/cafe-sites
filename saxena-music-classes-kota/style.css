@@ -48,3 +48,4 @@ p{margin:0}a{color:inherit}
 .foot{background:#1a1512;border-top:1px solid #4a3f37}.foot,.foot a,.foot h2{color:#f3ece4}.btn--sm{color:#f3ece4;border-color:#f3ece4}.hero__shape{background:var(--surface)}.hero__card,.hero__card a,.card--g,.btn__c{color:#fff}.top__nav .top__act{color:#fff}.btn{border-color:var(--ink)}.hero__card h2,.card--g h3{color:#fff}.hero h1{font-weight:400}
 .hero__card{overflow-wrap:normal}.hero__card a,.foot__mail a{overflow-wrap:anywhere}
 @media (max-width:700px){.hero__card{font-size:1rem}.foot__mail{font-size:1.2rem}}
+.top__nav .top__act{white-space:nowrap}@media (max-width:700px){.top__nav a{padding:0 6px}.top__nav .top__act{padding:0 12px}.top__mark{font-size:1rem}}
