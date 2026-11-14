@@ -1,0 +1,2 @@
+kmc-airconditioners-mysore: facts from the ThreeBestRated dedicated listing (address, phone; category AC services) only; ratings/'since'/AI text omitted. Phone 8095596872 only. Direction in direction.json (Type and nothing else; Bodoni Moda/Sofia Sans, white + rich blue), compact static layout, no photos, no fixed dock. Directions link uses the single address on the listing.
+Inspect allow: few-pictures,wordy-hero,hero-not-alone,still-page,off-centre,wordy-page,section-air.
