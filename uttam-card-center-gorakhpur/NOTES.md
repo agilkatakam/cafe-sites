@@ -1,0 +1,3 @@
+Uttam Card Center, Nakhas Chowk, Gorakhpur (V91). Facts from the ThreeBestRated dedicated listing (address, phone) and list page (email) only; "Since 1950", AI text and scores omitted.
+Direction: One motif (seed 3146181), sector other, tone warm; compact V85-style page: static header, hero, one green Find-us card, three listing cards, contact footer. Motif = the rotated card mat behind the Find-us card. No photos (no authorized relevant photo), no fixed overlay, no scene.
+Inspect: 0 FAIL with --allow few-pictures,wordy-hero,hero-not-alone,still-page,off-centre,wordy-page,section-air. Defences: no trade photo available; first screen is useful contact facts; static by choice; small margin asymmetry from the mat.
