@@ -1,0 +1,762 @@
+{
+ "version": 1,
+ "at": "2026-11-15T03:15:44.379Z",
+ "seed": 1202201524,
+ "redraws": 0,
+ "input": {
+  "brief": "concept preview for Lily's Ladies and Kids Tailoring in Kanjikuzhi",
+  "sector": "fashion",
+  "tone": "warm",
+  "have": [],
+  "keep": [],
+  "avoid": [
+   "one-motif",
+   "the-printed-annual",
+   "the-place-carries-it",
+   "the-clear-service",
+   "the-calm-magazine",
+   "type-and-nothing-else",
+   "uneven-photographs",
+   "page-is-the-object",
+   "calm-editorial",
+   "clear-service",
+   "sentence-as-layout",
+   "shop-window",
+   "split-stage"
+  ],
+  "sections": [
+   "gallery",
+   "intro",
+   "work",
+   "cta",
+   "footer"
+  ],
+  "direction": null
+ },
+ "imagery": "atmosphere",
+ "allow": [],
+ "direction": {
+  "id": "dark-room",
+  "name": "The dark room",
+  "sectors": [
+   "hospitality",
+   "restaurant",
+   "music",
+   "fashion",
+   "physical-product",
+   "finance",
+   "architecture",
+   "studio-portfolio",
+   "ai-product",
+   "personal-portfolio"
+  ],
+  "tones": [
+   "quiet",
+   "luxury"
+  ],
+  "needs": [],
+  "pictures": 4,
+  "bare": true,
+  "idea": "One dark field from top to bottom, and in it, lit things. Photographs and objects appear like exhibits in a dim gallery: each with space around it, each the brightest thing on its screen. Type is light, small and sparse. The darkness is not a theme switch; it is a room, and the page is a slow walk through it. It suits subjects sold on atmosphere and material: an evening restaurant, a metal card, a record, a house at dusk.",
+  "composition": "A single near-black or deep-toned ground runs the full page with no section bands. First screen: either the name at full width in a light weight whole on the bottom margin with one dim photograph above it, or one object or photograph centred at 40–50% of the viewport with a line of text beneath at 16–18px. Each later screen holds one or two lit items at a generous size (the main one 40–60% of the screen width) with its text set beside it at full reading size; the darkness frames the items, it does not replace content. Images vary in size but all share the same darkness at their edges so they sit in the ground without frames. Practical details come last in a simple two-column text block. The only solid light element on the page is the single primary action.",
+  "typography": "Light or regular weights; they glow on dark. Avoid heavy bold, which looks cheap on black. Headings 4–7vw at most; text 16–18px with leading 1.6 and a slightly lifted ink (not pure white).",
+  "typeClasses": [
+   "grotesk-light",
+   "serif-light-large",
+   "serif-display",
+   "extended-heavy"
+  ],
+  "colour": "A dark ground with a tint (blue-black, green-black, brown-black), a soft light ink, a dimmer ink for secondary text, and one warm or bright accent used once per screen at most.",
+  "paletteTags": [
+   "dark-neutral"
+  ],
+  "imagery": "Low-key photographs: dark backgrounds, one light source, subjects emerging from shadow. Their dark edges should blend into the page ground.",
+  "photoTreatment": "If a photograph's background is lighter than the page, darken the image slightly (`filter: brightness(0.85) contrast(1.05)`) rather than adding a frame.",
+  "sectionTags": [
+   "photo-led",
+   "quiet",
+   "object-led"
+  ],
+  "motion": "slow-crossfade",
+  "richness": "Light against dark, and the slow pacing.",
+  "pitfalls": "Grey text on black fails contrast quickly: check it. No glow effects, no neon accent, no coloured light blobs. A dark page with a bright busy photograph is not this direction; choose low-key images. Dark does not mean empty: every screen still carries its content at a readable size, and running text is a light ink at 7:1 or more, not a dim grey.",
+  "seenIn": [
+   "opl-kereliott",
+   "aww-moto-finance",
+   "aww-izanami",
+   "aww-cipher",
+   "opl-deeo-studio-2"
+  ],
+  "allow": [],
+  "photoTone": "dark"
+ },
+ "hero": {
+  "id": "title-from-top-to-bottom-edge",
+  "name": "Title from the top edge to the bottom edge",
+  "archetype": "bottom-anchored-type",
+  "directions": [
+   "place-carries-it",
+   "name-as-monument",
+   "dark-room"
+  ],
+  "needs": [],
+  "blueprint": "One full-bleed photograph or film at 100vw by 100svh, with a horizon near half height and empty sky or darkness above. The headline is two lines in a heavy face at clamp(140px, 13vw, 200px), leading 0.85, pulled as far apart as the screen allows: line one flush to the 32px left margin with its cap line 72px from the top; line two indented 28vw (403px) and anchored to the bottom, its descenders on the bottom margin, 32px above the lower edge, running towards the right margin. Lay the hero out as a grid of three rows (`grid-template-rows: auto 1fr auto`): line one in the first row, line two in the third, both spans of one `h1` with `display: contents`. The middle row leaves the picture clear apart from one supporting sentence at 18px, max 44ch, crossing the horizon at 48% of the height from 30vw, and the single action directly beneath it as a solid rectangular button with its label at 18px. The wordmark and two text links sit top-right on the 32px margin at 15px; the top-left belongs to line one. Choose a picture whose upper-left and lower-right are calm enough for the type, or lay a flat dark scrim under those two corners only.",
+  "mobile": "Keep the two lines at 19vw: line one flush left on a 16px margin 88px down, line two right-aligned to the 16px margin with its descenders 20px above the bottom. The sentence at 17px and the action button sit between them on the left margin, at 46% of the height. The picture is re-cropped to portrait around the horizon.",
+  "headline": "Two words or short phrases, one per line, at most about 8 characters each.",
+  "motion": "masked-headline",
+  "seenIn": [
+   "aww-the-state-of-the-gallery"
+  ]
+ },
+ "palette": {
+  "id": "plum-black-pink",
+  "name": "Black and red",
+  "tags": [
+   "mono-accent",
+   "dark-neutral"
+  ],
+  "bg": "#0d060b",
+  "surface": "#23161f",
+  "ink": "#ffffff",
+  "muted": "#9a8f97",
+  "accent": "#ff488b",
+  "accentInk": "#0d060b",
+  "fields": [
+   {
+    "bg": "#ffffff",
+    "ink": "#101421"
+   }
+  ],
+  "note": "A studied palette with its other fields left out: black ground, white ink, one red accent for the primary action and links. Two grounds and one band: the page ground and --surface, and the ink as ground, one section at most. Every other colour on the page comes from photographs or the product.",
+  "seenIn": [
+   "aww-cerebrium"
+  ],
+  "trimmed": true
+ },
+ "type": {
+  "id": "serif-over-sans:bricolage-grotesque+atkinson-hyperlegible-next:400",
+  "kind": "serif-over-sans",
+  "generated": true,
+  "name": "Bricolage Grotesque over Atkinson Hyperlegible Next",
+  "class": "serif-display",
+  "display": {
+   "family": "Bricolage Grotesque",
+   "cls": "serif-display",
+   "weight": 400,
+   "headWeight": 400,
+   "weights": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "css": "<link href=\"https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400&display=swap\" rel=\"stylesheet\">",
+   "stack": "\"Bricolage Grotesque\", Georgia, serif",
+   "settings": "weight 400, sentence case, tracking -0.028em, leading 0.98"
+  },
+  "text": {
+   "family": "Atkinson Hyperlegible Next",
+   "cls": "humanist",
+   "weight": 400,
+   "strong": 600,
+   "weights": [
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800
+   ],
+   "css": "<link href=\"https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&display=swap\" rel=\"stylesheet\">",
+   "stack": "\"Atkinson Hyperlegible Next\", system-ui, sans-serif",
+   "settings": "weight 400 for running text, 600 for emphasis and buttons, leading 1.5, 60-72 characters a line"
+  },
+  "caps": false,
+  "track": -0.028,
+  "lead": 0.98,
+  "ratio": 1.333,
+  "body": 17,
+  "displayVw": 5,
+  "scale": {
+   "step-small": "0.8125rem",
+   "step-body": "1.0625rem",
+   "step-lead": "clamp(1.277rem, 0.766rem + 0.63vw, 1.419rem)",
+   "step-sub": "clamp(1.510rem, 0.906rem + 0.94vw, 1.887rem)",
+   "step-head": "clamp(1.887rem, 1.132rem + 1.40vw, 2.519rem)",
+   "step-display": "clamp(2.015rem, 1.209rem + 3.10vw, 4.500rem)"
+  },
+  "note": "A serif display over a sans. A 1.333 scale from a 17px body; the hero's display step is about 5vw at 1440. Six steps and no others: small, body, lead, sub, head, display. Bricolage Grotesque only for the display and head steps; Atkinson Hyperlegible Next for everything a visitor reads at length, buttons and navigation included. Load only the weights listed; a weight the face lacks is faked by the browser and the inspector fails it."
+ },
+ "photos": {
+  "set": "plants-and-flowers",
+  "title": "Plants and flowers",
+  "note": "botanical close-ups, leaves and flowers",
+  "treatment": "If a photograph's background is lighter than the page, darken the image slightly (`filter: brightness(0.85) contrast(1.05)`) rather than adding a frame.",
+  "others": [
+   "city-night",
+   "texture"
+  ],
+  "photos": [
+   {
+    "id": 306,
+    "alt": "White water lily with yellow centre among dark lily pads",
+    "tone": "dark",
+    "colours": [
+     "white",
+     "dark green",
+     "yellow"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 5,
+    "ratio": 1.33,
+    "by": "Schicka",
+    "page": "https://unsplash.com/photos/6T7kfc3VitU",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 738,
+    "alt": "Single white calla lily against a dark, almost black background",
+    "tone": "dark",
+    "colours": [
+     "near black",
+     "cream white",
+     "soft green"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 5,
+    "ratio": 0.67,
+    "by": "Marta Pawlik",
+    "page": "https://unsplash.com/photos/yqmlajPxR3Y",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 940,
+    "alt": "Blue-green succulent rosettes filling the frame from above",
+    "tone": "mid",
+    "colours": [
+     "teal green",
+     "dark green",
+     "dusty purple"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 5,
+    "ratio": 0.66,
+    "by": "Annie Spratt",
+    "page": "https://unsplash.com/photos/8mqOw4DBBSg",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 239,
+    "alt": "Hand holding a dandelion seed head against a dark background",
+    "tone": "dark",
+    "colours": [
+     "black",
+     "white",
+     "dark green"
+    ],
+    "mono": false,
+    "calm": "left",
+    "quality": 4,
+    "ratio": 1.25,
+    "by": "Coley Christine",
+    "page": "https://unsplash.com/photos/GyvMk5pPDXI",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 976,
+    "alt": "Orange tulips blooming in a sunlit woodland",
+    "tone": "mid",
+    "colours": [
+     "orange",
+     "leaf green",
+     "warm yellow"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.72,
+    "by": "Ales Krivec",
+    "page": "https://unsplash.com/photos/hLxqYJspAkE",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 844,
+    "alt": "Close-up of green bamboo stalks in soft focus",
+    "tone": "mid",
+    "colours": [
+     "bamboo green",
+     "sage",
+     "dark green"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.5,
+    "by": "kazuend",
+    "page": "https://unsplash.com/photos/LVdiXyu2eTc",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 248,
+    "alt": "Round cactus in a pot seen from above, softly blurred",
+    "tone": "mid",
+    "colours": [
+     "sage green",
+     "warm tan",
+     "soft pink"
+    ],
+    "mono": false,
+    "calm": "top",
+    "quality": 4,
+    "ratio": 1.49,
+    "by": "Oliver Pacas",
+    "page": "https://unsplash.com/photos/tZrrWkQT9MM",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   },
+   {
+    "id": 189,
+    "alt": "Water droplets on a broad green leaf with fine veins",
+    "tone": "mid",
+    "colours": [
+     "bright green",
+     "lime green"
+    ],
+    "mono": false,
+    "calm": "none",
+    "quality": 4,
+    "ratio": 1.33,
+    "by": "Buzo Jesús",
+    "page": "https://unsplash.com/photos/pHM4a_RZSLE",
+    "from": "plants-and-flowers",
+    "kind": "world"
+   }
+  ]
+ },
+ "motion": {
+  "id": "sideways-gallery",
+  "name": "Sideways gallery",
+  "description": "A short set of pictures (eight or fewer: rooms, kitchens, pieces) moves sideways while the vertical scroll holds the stage, one pixel of scroll for one pixel of travel, and the hold ends the moment the last picture reaches the margin. Only on wide screens with motion allowed and only when the row is under three screens long; phones, reduced motion and longer rows get the native drag row with snapping. Focusing a link scrolls its picture into view, and the only copy of a call to action never sits inside the moving row. Recipe: 'Sideways gallery' in references/motion.md."
+ },
+ "sections": [
+  {
+   "id": "sec-photo-trio-with-two-column-captions-under",
+   "name": "Photo trio, split captions under",
+   "pattern": true,
+   "role": "gallery",
+   "roles": [
+    "gallery",
+    "work"
+   ],
+   "shape": "split",
+   "tags": [],
+   "directions": [],
+   "needs": [],
+   "pneeds": {
+    "pictures": "2-3",
+    "productUi": false,
+    "video": false,
+    "words": "few",
+    "assets": [
+     "photos:3"
+    ]
+   },
+   "fits": {
+    "sectors": [
+     "*"
+    ],
+    "tone": [
+     "calm",
+     "editorial",
+     "warm"
+    ],
+    "density": "balanced"
+   },
+   "avoidWith": [
+    "sec-photo-text-photo-triptych",
+    "kind:card-row"
+   ],
+   "blueprint": "Three cards in a row on a 12-column grid, four columns each (about 416 wide at 1440) with 24px gutters inside the page margins. Each card is one fill (the surface tone, the dealt corner): a 416x252 landscape picture flush at the top, then a caption plate with 20px padding that holds a title at the lead step in a left column (about 140px wide) and a paragraph of one to three lines at the body step in muted ink in a right column (about 220px wide). The caption sits inside the card fill, never floating loose. It has no entrance of its own: it arrives with the dealt entrance. On hover the picture scales to 1.03 and the title column shifts 4px. Phone: one column of cards 16px apart, the caption plate stacks the title above the text, picture 16:10. House rules for it: Captions live in the filled plate, so the card carries the hierarchy. The colour-block wipe is dropped (accent spread over three pictures, and its own entrance); the 15px paragraph is at the body step. No outline, no shadow.",
+   "mobile": null,
+   "quality": 4
+  },
+  {
+   "id": "intro-pinned-sentence-photos-pass",
+   "role": "intro",
+   "name": "Pinned sentence, photographs pass",
+   "shape": "pinned",
+   "structure": "stage",
+   "tags": [
+    "photo-led",
+    "type-led"
+   ],
+   "directions": [
+    "pinned-poster",
+    "uneven-photographs",
+    "dark-room",
+    "place-carries-it"
+   ],
+   "needs": [],
+   "blueprint": "A wrapper 300svh tall. Inside it a `position: sticky; top: 0` layer of 100svh holds one sentence of 6–10 words, centred, two lines at clamp(36px, 4.6vw, 68px), leading 1.1, in a block 62% of the viewport wide. The sentence is a paragraph, not a heading; it is white with `mix-blend-mode: difference` (or a solid ink that reads over every photograph) and has a higher `z-index` than the images. Behind it, three photographs sit in normal flow at different sizes and sides and scroll past the fixed sentence: a 4:5 portrait 24vw wide with its left edge at 6vw; 70svh lower a 16:10 landscape 38vw wide touching the right margin; 70svh lower a 1:1 frame 18vw wide starting at 30vw. Each crosses the sentence once. When the wrapper ends, the sentence releases and scrolls away with the last photograph. No scroll hijacking.",
+   "mobile": "Wrapper 260svh. The sentence pins at 40% of the screen height at 8vw, three lines at most, with 20px margins. Photographs alternate: 64% wide on the left margin, 78% wide on the right margin, then 52% on the left, with 50svh between them.",
+   "seenIn": [
+    "opl-the-deep-end",
+    "aww-revelatio-studio"
+   ]
+  },
+  {
+   "id": "work-quiet-ledger-preview",
+   "role": "work",
+   "name": "Quiet ledger, side preview",
+   "shape": "list",
+   "structure": "list",
+   "tags": [
+    "quiet",
+    "type-led"
+   ],
+   "directions": [
+    "quiet-instrument",
+    "product-performs",
+    "split-stage",
+    "type-only-statement",
+    "contact-sheet"
+   ],
+   "needs": [],
+   "blueprint": "A plain ledger in one column 560px wide whose left edge sits at 22% of the viewport width. A heading of two or three words at 24–28px in medium weight, then 32px of space, then one row per project, 44px tall: the name at 16px in full ink at the left, the kind of work at 14px in the soft ink starting at 55% of the column, and the year right-aligned with tabular figures. Nothing is drawn between rows; the three fixed starts make the columns. Hovering or focusing a row keeps it in full ink, drops the others to the soft ink, and shows that project's image in the empty area right of the column: a 4:3 frame 300px wide, `position: absolute`, its top aligned to the hovered row, 64px from the column's right edge, appearing with a 150ms fade. Holds 6–20 rows; group by year with 28px of extra space.",
+   "mobile": "The column fills the width with 20px margins. Rows are 52px tall: name at the left, year at the right, kind of work on a second line at 13px. There is no hover preview; instead the first three projects each show a 16:10 image at full column width above their row.",
+   "seenIn": [
+    "opl-shawn-golden",
+    "opl-britt-taylor",
+    "opl-george-wood"
+   ]
+  },
+  {
+   "id": "cta-idea-restated-inverted",
+   "role": "cta",
+   "name": "The idea again, inverted",
+   "shape": "statement",
+   "structure": "statement",
+   "tags": [
+    "type-led",
+    "poster",
+    "colour-field"
+   ],
+   "directions": [
+    "type-only-statement",
+    "name-as-monument",
+    "sentence-as-layout",
+    "editorial-report",
+    "loud-flat-poster",
+    "colour-chapters"
+   ],
+   "needs": [],
+   "blueprint": "The close flips the page's colours: ink becomes the ground and the ground becomes the ink, across a full-bleed field at least 90svh tall. The page's opening idea returns as a headline of three to five words at 9–11vw on two lines, leading 0.9, flush left, positioned in the upper two-thirds; it should echo the hero's wording, not repeat it. Along the bottom, on one shared baseline 40px above the edge: one supporting sentence at 20px in columns 1–5 and one rectangular button in the accent colour, right-aligned in columns 10–12, about 56px tall. Nothing else: no image, no second button, no logo. The field's top edge is a hard horizontal line where it meets the section above. If the footer follows on the same inverted field, leave 160px before it so the close still reads as its own screen.",
+   "mobile": "The same inverted field at 80svh. Headline at 15vw on two lines at the top. The sentence sits lower at 17px, and the button spans the full width at the bottom, 56px tall, with 20px margins. Nothing else is added.",
+   "seenIn": [
+    "opl-textmode-overlay",
+    "aww-made-with-gsap-1"
+   ]
+  },
+  {
+   "id": null,
+   "role": "footer",
+   "shape": null,
+   "name": "footer",
+   "blueprint": null
+  }
+ ],
+ "references": [
+  {
+   "id": "aww-moto-finance",
+   "name": "Moto Finance",
+   "url": "https://www.moto-card.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "finance",
+   "score": 7.3,
+   "idea": "A metal card presented like a museum piece: lit by a single overhead light box in a black room, then orbiting through dim architectural stills.",
+   "mood": [
+    "nocturnal",
+    "exclusive",
+    "cold",
+    "cinematic"
+   ],
+   "archetype": "product-object-centre",
+   "hero": "Black full-bleed 3D scene. A pale silver-lavender light panel, a trapezoid in perspective like a ceiling light box, occupies the top 20% and centre 55% of the viewport. The two-line uppercase headline, centred at 4.4vw in medium grotesk with tight leading, straddles the panel's lower edge so its first line sits half on light, half on black. In the exact centre a small metal card stands on a low plinth, only about 150px wide, surrounded by darkness. A light-grey pill button (about 250 by 52px) is centred near the bottom; the logo is top-left and a dark pill button top-right.",
+   "type": "Neue Montreal only: weight 500 uppercase at 64px (4.4vw) with near-zero tracking and leading under 1.0 for headings, 20px sentence case for body, tiny caps labels in the footer. Three sizes; centred until the left-aligned footer.",
+   "colour": "#080808 #edefef #c4cbd6 #e1e5e5 #2a2f3a — Black with cool silver-grey and no brand colour at all. One section inverts to pale grey-white with grey type; the only chroma is amber city lights and a blue atmosphere rim on the globe.",
+   "imagery": "Rendered chrome card with an embossed profile medallion, a night-side Earth, and small dim architectural and fashion stills floating as tilted panels in 3D. Everything underexposed, cool and low-saturation.",
+   "layout": "Full-viewport scenes stacked one per screen, each with a centred uppercase heading, an optional short sub-line and a pill button. One light interlude breaks the black. The footer switches to a left-aligned statement with link columns at the far right.",
+   "sections": [
+    {
+     "role": "features",
+     "description": "Centred heading at the top with a two-line grey sub-line and a pale pill button directly under it. The lower 45% is the top arc of a night-side Earth rising from the bottom edge, about 75% of the viewport wide, with city lights and a bright blue-white rim on the upper right. Three small dark capsule labels with check icons float over and beside the globe at staggered positions, like status notifications."
+    },
+    {
+     "role": "gallery",
+     "description": "A dark 3D room: about twelve small photo panels (roughly 70 by 90px, each tilted at its own angle, heavily dimmed) arranged in two loose rows across the full width, receding with blur. The card stands edge-on in the centre, much larger, catching a specular highlight. Later the card faces front at top-centre and a centred two-line heading with a pill button sits under it."
+    },
+    {
+     "role": "stats",
+     "description": "A pale grey-white band. Two tall columns of currency amounts in mid-size light-grey sans, one at a quarter and one at three-quarters of the width, each fading to white at top and bottom like slot-machine reels, with the centre rows darkest. Between them, three short centred lines of small black text. The bottom edge of the band reveals a dark photograph."
+    }
+   ],
+   "steal": [
+    "Let a headline straddle the edge of a light shape so one line is half on light and half on dark.",
+    "Show the product very small in a large dark space in the first viewport, then let it grow as the page scrolls.",
+    "Use vertically scrolling columns of real-looking figures, faded at both ends, as a quiet backdrop for a three-line statement."
+   ],
+   "media": "An 11s hero video of a CG metal card on a plinth covers the whole first screen and holds on its last frame. Then a pinned WebGL globe in the lower half under centred text, a 3D card centred in a depth cloud of small photo tiles dimmed to 30-40%, full-bleed sticky photographs with text docked in opposite corners, and a photo strip sitting on an index list; all low-key and desaturated, photos meeting the near-black ground through 200-300px fades, 0px radius.",
+   "motion": "The intro ends in about 1.2s as the camera pushes in and the headline, nav and button arrive (load 9.9s), and Lenis then runs 32 ScrollTriggers: the globe pins for 2.5 viewports at scrub 1, the card turns in 3D across its section, the theme inverts to pale grey with the nav colour following, and benefit rows scrub in one by one. Lines rise by yPercent over 0.65s power3.out and leave over 0.45s power2.in, and headings rise from a blur over 1s power2.inOut."
+  },
+  {
+   "id": "opl-kereliott",
+   "name": "Kereliott",
+   "url": "https://kereliott.com/",
+   "source": "One Page Love",
+   "kind": "hospitality",
+   "score": 7.3,
+   "idea": "A quiet house gets a quiet page: one dark field, one typeface, the name set as wide as the screen and photographs left to drift in generous darkness.",
+   "mood": [
+    "calm",
+    "understated",
+    "nocturnal",
+    "refined"
+   ],
+   "archetype": "giant-wordmark",
+   "hero": "Very dark green-black field with cream type. A two-line introductory sentence at about 30px sits top-left inside 30px margins; a small cream rectangular button sits top-right. The upper half is otherwise empty. The house name fills the full content width in a flared humanist sans, mixed case, with capitals about 19vw tall, its baseline at roughly 87% of the viewport height. Immediately beneath, separated by a gap of a few pixels, the top sliver of a full-width landscape photograph enters from the bottom edge.",
+   "type": "A single face, Trust, in regular weight: a humanist sans with flared terminals and old-style figures. The wordmark is an oversized graphic; all other text is one size of about 20-30px plus tiny 10px photo captions. Hierarchy is position, not weight.",
+   "colour": "#161c1a #eae8dc #222926 #1f2926 — Cream on green-black from top to bottom with no accent colour. The map is drawn in a tone barely lighter than the ground, so photographs supply all the colour.",
+   "imagery": "Natural-light photos of a stone cottage, garden and deck with square corners, in mixed portrait and landscape crops at differing sizes. One full-width opener, then small images placed singly with tiny captions under the left corner.",
+   "layout": "30px margins, text held to the left 60% in one size. Photographs are staggered left and right at different widths with large dark gaps between, like pictures passed on a wall. The name and a booking button stay fixed in the top corners.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "A full-width landscape photograph runs margin to margin directly under the wordmark, followed after a gap by a four-line paragraph in the single text size, left-aligned and spanning about 85% of the width. There is no heading or label; the text simply continues the sentence begun at the top of the page."
+    },
+    {
+     "role": "other",
+     "description": "After a left-aligned paragraph, a silhouette map of the region sits centre-left, about half the viewport wide, filled in a green only a few percent lighter than the background. Five towns are marked with small ring dots and tiny labels; only the house's town has a solid cream dot. No border, legend or frame."
+    },
+    {
+     "role": "gallery",
+     "description": "Photographs are placed one or two per screen in a stagger: a portrait image about 30% wide against the left margin, a larger near-square one starting lower against the right margin, later a landscape image top-right of centre and a smaller one bottom-left. Each has a 10px caption under its left corner. More than half of every screen is empty dark ground."
+    },
+    {
+     "role": "contact",
+     "description": "Two short left-aligned sentences in the standard text size with underlined inline links to booking platforms and an email address, then a small cream certification badge. The footer is a single line at the very bottom: social link left, copyright centre, three underlined utility links right, with a tall empty gap above."
+    }
+   ],
+   "steal": [
+    "Size the wordmark to fill the content width exactly and let the first photograph tuck directly under its baseline.",
+    "Draw a location map as a tone-on-tone silhouette with one filled dot among ring dots.",
+    "Use a single typeface in one weight and essentially one text size, creating hierarchy through placement and emptiness."
+   ]
+  },
+  {
+   "id": "aww-decathlon-yestalgia",
+   "name": "Decathlon Yestalgia",
+   "url": "https://decathlonyestalgia.com/",
+   "source": "Awwwards Site of the Day",
+   "kind": "fashion",
+   "score": 7.8,
+   "idea": "A full-commitment late-80s Memphis pastiche: sticker shapes with hard black shadows, ultra-condensed capitals and a glitching wordmark that flips nostalgia from no to yes.",
+   "mood": [
+    "retro",
+    "loud",
+    "joyful",
+    "cartoonish",
+    "sunny"
+   ],
+   "archetype": "collage-scatter",
+   "hero": "Pale grey page. A portrait video card, 35% of the width and 75% of the height with square corners, sits dead centre showing a hand on a boombox; across its middle a slanted, extruded gradient wordmark is caught mid-glitch and overhangs the card's left edge. Five flat sticker shapes with speckle patterns and solid black offset shadows are scattered in the empty flanks: pink arc upper-left, lime lightning bolt lower-left, orange disc upper-right, blue arch lower-right, a teal triangle cropped by the top edge. The header is inset 8%: a chunky lime menu button left, the retro logo centred, language selector and shop button right, all with hard black shadows.",
+   "type": "Roboto Flex throughout, pushed to its narrowest, heaviest setting for uppercase headlines at about 14vw with tight leading; 12–16px medium uppercase for buttons. Campaign wordmarks are custom lettering: slanted, extruded and gradient-filled.",
+   "colour": "#f4f4f4 #eaa0cd #e9dae6 #d9e13f #0a0809 #f0923a — Starts neutral grey, shifts to pale pink then saturated bubblegum pink on scroll. Lime marks every control; orange, sky blue, green and purple appear in illustrations, always outlined in black.",
+   "imagery": "Sun-drenched lifestyle video and photos (older skaters, a boombox) alongside thick-outlined cartoon illustration, palm trees, a striped sunset and speckled geometric stickers; photos appear as tilted white-bordered prints overlapping headlines.",
+   "layout": "A centred axis for media and headlines with decoration scattered in the margins and cropped by viewport edges. Each scroll stage changes background colour and adds a pattern (grid paper, stripes, perspective grid). Headlines stay put while pictures and characters pass over them.",
+   "sections": [
+    {
+     "role": "intro",
+     "description": "Pale pink with faint grid-paper lines. A two-line ultra-condensed black headline, each line about 14vw tall, sits centre-left and takes 40% of the width. Decoration crowds the lower half: an orange half-sun with palm trees rising at the right, a pink speckled arc and a cartoon character peeking from the bottom-left, a four-point sparkle upper-left. White horizontal stripes of increasing thickness run across the bottom edge as the hand-off to the next colour."
+    },
+    {
+     "role": "other",
+     "description": "Bubblegum pink. A cartoon skater riding a cassette tape, with chrome numerals and a lightning bolt behind, is placed centre-right at about 40% of the viewport height and overlaps the headline. The three-line condensed headline is distorted mid-scroll: its second and third lines sink and shear toward the lower right as if printed on a curling poster. Pink and white stripe bands cap the top."
+    },
+    {
+     "role": "gallery",
+     "description": "Same pink field. A small condensed line is centred above the giant two-line headline. Two portrait photographs with thin white borders, each roughly 380×510px, are dropped on top of the headline's centre, tilted about −8 and +6 degrees and overlapping each other, hiding half the letters. One orange speckled disc sits alone at the right; a lime bolt is cropped by the top-left corner."
+    },
+    {
+     "role": "footer",
+     "description": "Pink field overlaid with a white wireframe grid plane tilted in perspective. A pennant-shaped campaign logo in purple, green, pink and yellow sits at centre; sticker shapes are pinned to the corners and cut off by the viewport; two 10px legal links are centred at the very bottom. There are no link columns at all."
+    }
+   ],
+   "steal": [
+    "Give every control and sticker a solid black offset shadow instead of a blurred one so flat shapes feel like die-cut objects.",
+    "Start the hero video as a centred portrait card surrounded by scattered shapes, then scale it to full-bleed on first scroll.",
+    "Drop tilted, white-bordered photos directly on top of a giant condensed headline so the type becomes background."
+   ],
+   "media": "A centred portrait video window of about 506x674 covers about 26% of the fold, with flat stickers in the corners, and opens to full bleed by clip-path over an 1800px runway, so by the second screen the video covers the whole screen. Later: an illustration scene rising over a statement, tilted photos rising over a headline, an edge-to-edge product grid of 3-up and 4-up rows mixing stills and 2-4s loops, a carousel of tilted portrait videos and a name index scrolling past a held square picture; 36 pictures and 16 muted looping videos, no radius.",
+   "motion": "No preloader: the montage cuts through four shots in 4.5s while the half-ring stickers turn, and Lenis then runs two sticky frames, the first opening the hero inset from about 26% per side to 0, the second raising an illustration scene over the statement as the ground switches from lavender to hot pink. Images reveal by clip-path over 1.6s cubic-bezier(0.77,0,0.175,1) with an inner image move on the same ease, statement characters fade and move over 1s, and UI moves at 0.3s cubic-bezier(0.215,0.61,0.355,1)."
+  }
+ ],
+ "replay": null,
+ "heroSubstance": null,
+ "scenes": [
+  {
+   "id": "lib-0105",
+   "technique": true,
+   "name": "Type sets like wet ink",
+   "family": "type-choreography",
+   "position": "middle",
+   "trigger": "scroll-scrub",
+   "energy": "medium",
+   "kind": "statement",
+   "roles": [
+    "intro",
+    "about"
+   ],
+   "sectors": [
+    "*"
+   ],
+   "needs": [
+    "pictures:0"
+   ],
+   "hold": 1,
+   "researchHold": 0,
+   "phone": "same",
+   "score": 8,
+   "principle": "Display type exists first as swollen, merged ink blobs and sharpens into clean letters line by line as it reaches its place on screen, because a blur is pushed through a hard alpha threshold that relaxes as the blur clears, so words seem to set like wet ink rather than fade in.",
+   "freshTake": "For a mineral-water brand's manifesto, set four short lines of a heavy round grotesk in one ink on a flat chalk ground, one line per screen of native scroll. Each line condenses out of chunky blobs as it rises from the lower third to the centre, and stays crisp once set, with the blur at 8px at most, so the reader sets the pace line by line; the last line stays crisp with the one button under it. Nothing else on the page melts: every other heading cuts or slides plainly, no accent colour in the lines, no paragraph or drawings around them.",
+   "breaksWhen": "Thin, light or serif faces lose their hairlines in the threshold and settle looking bolder than set. Over photographs or busy grounds the blobs read as dirt. One SVG filter per line is costly: more than four or five moving at once stutters on phones and in some browsers, so attach the filter only while a line moves and remove it at rest. Fonts must load before the lines are split. Reduced motion needs a plain cut to crisp type. Used on every heading of a page it becomes a tic.",
+   "carries": "intro",
+   "defaultHold": 1
+  }
+ ],
+ "frame": {
+  "nav": {
+   "id": "contained-bar",
+   "text": "A contained bar: a filled band inside the page margins, 16px below the top edge, 60-64px tall, in the surface tone with the dealt panel corner; the wordmark at its left inner edge, the links and the action at its right. Fixed, opaque, no border, no shadow. On a phone it keeps the margins and holds the wordmark and Menu.",
+   "signature": "A filled bar inside the page margins, 16px below the top edge, in the surface tone with the dealt corner, never full width."
+  },
+  "footer": {
+   "id": "foot-directory-over-type-marquee",
+   "text": "A compact directory over a full-width moving band, about 500px in all at 1440, with the page margin as side padding. Directory (about 280px, on the surface tone): at the left a call line at the sub step in the display face with the contact link under it; in the middle two link columns on a 240px pitch at body size; at the right a signup, a filled email field in the dealt corner joined to the dealt button (the page's one email form). 96px lower the band is 120-140px tall and full-bleed, filled in the dealt field colour (the ink as ground, lettered in the ground colour). In it a short invitation phrase of two to four words (never the brand name or an email) is set at the display step in the display face, repeated with a 64px gap, and slides left in a continuous loop at 60-90px per second. Hover slows the band to a stop; the whole band is one link to the contact page. Reduced motion: one still instance of the phrase, centred. Phone: The directory stacks (call line, link columns 2-up, signup full width). The band drops to 72px with the phrase at the head step and a slower loop. House rules for it: Designed out: the accent as a text ground (the band takes the field colour), the pill field and button (the dealt corner and button), a phrase larger than the display step. Sliding the brand name would be the banned giant footer name: the band slides an invitation. A marquee is not a drag rail; no rules.",
+   "signature": "A full-width band 120-140px tall in the flipped ground whose two-to-four-word invitation at display size slides left without stopping and slows to a halt on hover; the whole band is one link.",
+   "pattern": true,
+   "name": "Directory over phrase marquee",
+   "avoidWith": [
+    "foot-closing-centred-display-headline",
+    "foot-display-word-left-with-button",
+    "another marquee band directly above the footer",
+    "a signup or newsletter section elsewhere on the page"
+   ]
+  },
+  "cards": {
+   "id": "card-very-round-panel-photo-right-half",
+   "text": "One wide panel across the content width, about 520px tall, the dealt corner, surface-tone fill. The left 55% carries a title of up to two lines at the sub step at the top on 48px padding, a two-line paragraph at the body step of at most 20 words under it and the dealt button anchored to the lower left. The right 45% is one portrait photograph (0.71 at least) that runs flush to the panel's top, right and bottom edges and shares the dealt corner. Hover: the photograph scales to 1.04 inside its clip over 700ms. The panel arrives with the dealt entrance. Phone: the photograph on top at 4:3, the text below, button full width. House rules for it: A flush photograph inside the panel is a normal card, not a box on a photograph; the button is the dealt button; one surface tone; a staged or lit photograph.",
+   "signature": "One wide panel whose right 45% is a portrait photograph running flush to the top, right and bottom edges, with title, two lines and the dealt button on the left.",
+   "pattern": true,
+   "name": "Panel, photo half",
+   "avoidWith": [
+    "card-wide-split-photo-left-title-link",
+    "kind:split-panel directly above"
+   ]
+  },
+  "buttons": {
+   "id": "btn-tag-skewed-roll",
+   "text": "A compact slanted tag: 44px tall and about 190px wide, the whole button skewed 12 degrees (transform: skewX(-12deg) on the button, the label and the arrow counter-skewed so the letters stand upright), square corners, so it reads as a parallelogram. Fill: the accent, with on-accent ink (4.5:1). Label 16px sentence case in the dealt button weight, 22px side padding, a 14px arrow glyph 10px after the label. Hover: the label rolls up out of a 20px mask while the same label rolls in from below, the arrow slides 4px right (240ms ease-out), and the fill steps to the ink with ground-coloured letters. Press: scale 0.97. Place it beside a short line of text or as the single action under a card title. Second action: the label alone with its arrow in the ink, the same roll on hover, no tag. Phone: the same 44px tag with a 48px hit area and the same slant; it goes full width only when it is the one action of its section. House rules for it: Label is 16px sentence case in the body face: no tracked capitals, no monospace. One flat fill (the accent) with on-accent ink: no tint, no second fill, no border, no shadow. The 12-degree slant and the roll are the idea; the tag is the button's own shape, not a drawn shape.",
+   "signature": "A parallelogram tag skewed 12 degrees with upright letters, not a rectangle or a pill, whose label rolls up through a 20px mask on hover.",
+   "pattern": true,
+   "name": "Skewed tag, label roll",
+   "avoidWith": [
+    "btn-tag-cut-corner-invert",
+    "btn-square-inset-chip-roll"
+   ]
+  },
+  "corners": {
+   "id": "round",
+   "radius": "16px",
+   "text": "A 16px radius on cards and panels; pictures at 16px or square inside a card."
+  },
+  "spacing": {
+   "id": "airy",
+   "section": "22-28vh",
+   "margin": "48-72px",
+   "gap": "clamp(7rem, 12vh + 7vw, 15.75rem)",
+   "marginCss": "clamp(1.5rem, 4.5vw, 4.5rem)",
+   "text": "Airy: 22-28vh between sections (200-250px at 1440, 112-140px on a phone), page margins 48-72px at 1440 and 24px on a phone."
+  },
+  "treatment": {
+   "id": "one-grade",
+   "text": "One grade over every picture (slightly warm or slightly cool, a little lifted shadows), the same on all of them."
+  },
+  "interaction": {
+   "id": "none",
+   "text": "No interactive widget. The page is read: its content, pictures and motion carry it. Controls are the navigation, the links, the action and any real form."
+  },
+  "clip": {
+   "id": "none",
+   "text": "No video. Motion comes from the page itself."
+  }
+ },
+ "entrance": {
+  "id": "already-there",
+  "name": "Already there",
+  "family": "still",
+  "summary": "nothing arrives; the first frame is the finished screen",
+  "energy": "calm",
+  "weight": 0.8,
+  "toneWeight": {
+   "bold": 0.7,
+   "playful": 0.7
+  },
+  "fits": {
+   "tones": [
+    "quiet",
+    "luxury",
+    "warm",
+    "editorial",
+    "technical",
+    "bold",
+    "playful"
+   ],
+   "imagery": [
+    "photo",
+    "interface",
+    "type-only"
+   ],
+   "requires": [
+    "page-has-scene-or-moving-picture"
+   ]
+  },
+  "sees": "Nothing arrives. The first frame is the finished first screen. The only motion is inside the media: a clip that plays, a product that responds to the pointer, a picture that fades in only if it arrived late.",
+  "settled": "the first frame",
+  "markup": "",
+  "byImagery": {
+   "photo": "The photograph is there. If none of it had painted by the first frame, it waits on --picture-ground and fades in over 320 ms. A dealt clip plays from frame one, with that frame as its poster.",
+   "interface": "The fragment is HTML and is there at once. Its life is its hover and focus states and any interaction the sheet dealt.",
+   "type-only": "Nothing on the first screen moves."
+  },
+  "below": {
+   "label": "Nothing",
+   "rule": "Nothing enters below the fold, and no element on the page gets data-reveal. Section content is simply there, and motion comes from the moves the sheet deals, any moving picture and feedback under the hand. Lazy pictures get the same arrival courtesy as the hero: they wait on their ground colour and fade in when they land. That is loading, not a reveal."
+  },
+  "mode": "photo"
+ },
+ "moves": [],
+ "typeNote": null
+}

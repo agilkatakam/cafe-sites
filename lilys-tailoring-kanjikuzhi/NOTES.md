@@ -1,0 +1,2 @@
+lilys-tailoring-kanjikuzhi: facts from the Quickerala listing browser-read 2026-11-15 (address, email, description); supplier ledger rows lead_status_log A1742:G1787. No business phone on listing (platform support number ignored), so no tel link or Directions. No photos, ratings or invented claims. Direction in direction.json; compact static layout.
+Inspect allow: few-pictures,wordy-hero,hero-not-alone,still-page,off-centre,wordy-page,section-air.
