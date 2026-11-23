@@ -1,4 +1,4 @@
-// Viki Mobile, Cuttack
+// La Della Caterers, Puthencruz
 (function () {
   var cb = document.getElementById('copybtn');
   if (cb) cb.addEventListener('click', function () {
